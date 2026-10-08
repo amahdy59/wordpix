@@ -27,20 +27,20 @@
       "Defense Table"
     ],
     "targetWordsArabic": [
-      "قاض",
-      "شخص يسمى «لاويير»",
-      "مدع عام",
-      "شخص يسمى «ديفينسي اتتورنيي»",
-      "عملية يسمى «بايليفف»",
+      "قاضٍ",
+      "محامٍ",
+      "مدعٍ عام",
+      "محامي الدفاع",
+      "موظف أمن المحكمة",
       "كاتب محضر المحكمة",
       "عضو هيئة محلفين",
-      "شخص يسمى «ويتنيسس»",
+      "شاهد",
       "موظف",
       "مترجم شفهي",
       "منصة القاضي",
-      "غرفة يسمى «ويتنيسس ستاند»",
-      "غرفة يسمى «جوري بوكس»",
-      "غرفة يسمى «جالليري»",
+      "منصة الشهود",
+      "مقاعد هيئة المحلفين",
+      "مقاعد الجمهور",
       "طاولة الدفاع"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Jury Box; include Jury Box, Gallery, and Defense Table naturally where visually appropriate, but make the real-world use of Jury Box the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Courtroom",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Judge"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge, Lawyer, Prosecutor, and Defense Attorney and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Judge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bailiff"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Jury Member, and Witness and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Bailiff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clerk"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clerk, Interpreter, Judge's Bench, and Witness Stand and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Clerk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jury Box"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jury Box, Gallery, and Defense Table and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Jury Box",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,11 +202,11 @@
     ],
     "targetWordsArabic": [
       "طاولة الادعاء",
-      "منصة إلقاء",
+      "منصة قراءة",
       "ختم المحكمة",
       "حاجز",
       "مخرج",
-      "مطرقة قاض",
+      "مطرقة القاضي",
       "كتاب قانون",
       "ملف غلاف",
       "كيس أدلة",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Subpoena as the central item; include Subpoena, Verdict Form, and Witness List naturally where visually appropriate, but make the real-world use of Subpoena the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Courtroom",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prosecution Table"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Lectern, Court Seal, and Railing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Prosecution Table",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Exit"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exit, Gavel, Law Book, and Case File and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Exit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Evidence Bag"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Evidence Bag, Badge, Handcuffs, and Oath Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Evidence Bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Subpoena"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Verdict Form, and Witness List and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Subpoena",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -350,20 +376,20 @@
     ],
     "targetWordsArabic": [
       "محاكمة",
-      "مصطلح قانوني يسمى «هيارينج»",
+      "جلسة قضائية",
       "شهادة",
       "استجواب مضاد",
-      "مصطلح قانوني يسمى «وبجيكتيون»",
-      "حكم قضائي",
+      "اعتراض",
+      "قرار قضائي",
       "حكم قضائي",
       "استئناف",
       "براءة",
       "إدانة",
-      "شخص يسمى «كونتراكت»",
-      "إفادة خطية مشفوعة بالقسم",
-      "مذكرة قانونية",
-      "مصطلح قانوني يسمى «سوممونس»",
-      "مصطلح قانوني يسمى «كومبلاينت»"
+      "عقد",
+      "إفادة مكتوبة تحت القسم",
+      "أمر قضائي",
+      "إخطار بالحضور أمام المحكمة",
+      "صحيفة دعوى"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Warrant as the central item; include Warrant, Summons, and Complaint naturally where visually appropriate, but make the real-world use of Warrant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trial"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trial, Hearing, Testimony, and Cross-Examination and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Trial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Objection"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Ruling, Sentence, and Appeal and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Objection",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Acquittal"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acquittal, Conviction, Contract, and Affidavit and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Acquittal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Warrant"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Warrant, Summons, and Complaint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Warrant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -511,20 +550,20 @@
     ],
     "targetWordsArabic": [
       "طلب قضائي",
-      "وثيقة يسمى «برييف»",
-      "مصطلح قانوني يسمى «ديبوسيتيون»",
-      "مصطلح قانوني يسمى «ينجونكتيون»",
+      "مذكرة قانونية",
+      "شهادة مسجلة تحت القسم قبل المحاكمة",
+      "أمر قضائي بالإلزام أو المنع",
       "دفع أو إقرار قضائي",
       "روب حمام / برنس",
       "شعر مستعار",
       "بدلة",
-      "مادة يسمى «تيي»",
+      "ربطة عنق",
       "حقيبة أوراق",
-      "حبل بطاقة تعريف",
-      "شخص يسمى «يد بادجي»",
+      "حبل تعليق بطاقة",
+      "بطاقة تعريف",
       "قلم",
-      "-",
-      "ملف (مجلد حفظ الأوراق)"
+      "دفتر ملاحظات",
+      "حافظة أوراق"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Pen as the central item; include Pen, Notepad, and Folder naturally where visually appropriate, but make the real-world use of Pen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Courtroom",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Motion"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion, Brief, Deposition, and Injunction and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Motion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plea"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plea, Robe, Wig, and Suit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Plea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tie"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tie, Briefcase, Lanyard, and ID Badge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pen"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pen, Notepad, and Folder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -665,15 +717,15 @@
       "Deliberate"
     ],
     "targetWordsArabic": [
-      "شخص يسمى «ديفيندانت»",
-      "شخص يسمى «بلاينتيفف»",
-      "مصطلح قانوني يسمى «جوري»",
-      "مصطلح قانوني يسمى «يفيدينكي»",
+      "مدعى عليه",
+      "مدعٍ",
+      "هيئة المحلفين",
+      "أدلة",
       "وثيقة",
-      "مصطلح قانوني يسمى «واث»",
-      "مصطلح قانوني يسمى «فيرديكت»",
-      "يستجوب شاهدا استجوابا مضادا",
-      "يتداول"
+      "قسم",
+      "حكم هيئة المحلفين",
+      "يستجوب شاهدًا استجوابًا مضادًا",
+      "يتداول لاتخاذ قرار"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
@@ -707,7 +759,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "Deliberate",
+          "targetWords": ["Deliberate"],
           "scenario": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
@@ -717,7 +769,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Deliberate through a realistic adult task; include Deliberate, Defendant, and Plaintiff naturally where visually appropriate, but make the real-world use of Deliberate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Courtroom",
@@ -726,16 +779,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Defendant"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Defendant, Plaintiff, Jury, and Evidence and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Defendant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Document"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Document, Oath, Verdict, and Cross-Examine and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Document",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Deliberate"
+        "prompt": "In the the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberate and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Deliberate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

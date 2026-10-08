@@ -31,23 +31,23 @@
       "محقق",
       "رقيب",
       "رئيس الشرطة",
-      "موظف اتصالات",
-      "ضابط وحدة الكلاب البوليسية",
+      "موظف توجيه البلاغات",
+      "ضابط يعمل مع كلب شرطة",
       "ضابط دورية",
       "محلل أدلة جنائية",
       "ضابط مرور",
-      "متخف",
+      "متخفٍ",
       "شارة",
       "أصفاد",
       "إذاعة",
       "مصباح يدوي",
-      "هراوة"
+      "عصا شرطة"
     ],
     "usage": {
       "goal": "Learn to use common the police station 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the police station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the police station context illustrating this situation: During a routine the police station task, an adult compares Radio, Flashlight, Baton. The person selects Radio for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the police station scene showing lesson-related items or actions including Radio, Flashlight, Baton in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Police Station: Mini Dialogue",
-      "text": "Maya is in a situation connected to the police station. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters police officer, detective, and sergeant, with each word connected to a different part of the service. A visitor to the public-service setting encounters chief, dispatcher, and k9 officer, with each word connected to a different part of the service. The patrol officer, forensic analyst, and traffic officer appear in the same situation, each with a different role.",
+      "title": "The Police Station 1: A short reading",
+      "text": "Maya visits the police station to report a lost bag. A police officer takes the details in a notebook. A detective speaks with another visitor nearby. The dispatcher uses a radio to contact the patrol team. Maya describes where she last saw her bag and checks the report before leaving.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Police Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Police Officer"
+        "prompt": "During a routine the police station task, an adult compares Police Officer, Detective, Sergeant. The person selects Police Officer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Police Officer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chief"
+        "prompt": "During a routine the police station task, an adult compares Chief, Dispatcher, K9 Officer. The person selects Chief for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chief",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Patrol Officer"
+        "prompt": "During a routine the police station task, an adult compares Patrol Officer, Forensic Analyst, Traffic Officer. The person selects Patrol Officer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Patrol Officer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Undercover"
+        "prompt": "During a routine the police station task, an adult compares Undercover, Badge, Handcuffs. The person selects Undercover for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Undercover",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Radio"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Police Officer"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Sergeant"
+        "prompt": "During a routine the police station task, an adult compares Radio, Flashlight, Baton. The person selects Radio for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Radio",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Projector” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya visit the station?",
+        "answer": "To report a lost bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -190,9 +205,9 @@
     ],
     "targetWordsArabic": [
       "سترة بلا أكمام",
-      "كاميرا ترتدى على الجسم",
-      "صاعق كهربائي",
-      "رذاذ الفلفل",
+      "كاميرا تُرتدى على الجسم",
+      "جهاز صعق كهربائي",
+      "رذاذ فلفل",
       "صافرة",
       "سيارة دورية",
       "دراجة نارية",
@@ -201,15 +216,15 @@
       "دراجة",
       "قارب",
       "سيارة رياضية متعددة الاستخدامات",
-      "وحدة الكلاب البوليسية",
+      "وحدة كلاب الشرطة",
       "سيارة شرطة غير مميزة",
       "سيارة إسعاف"
     ],
     "usage": {
       "goal": "Learn to use common the police station 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the police station.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the police station context illustrating this situation: During a routine the police station task, an adult compares K9 Unit, Undercover Car, Ambulance. The person selects K9 Unit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the police station scene showing lesson-related items or actions including K9 Unit, Undercover Car, Ambulance in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Police Station: Simple Message",
-      "text": "Maya is in a situation connected to the police station. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters vest, body camera, and taser, with each word connected to a different part of the service. A visitor to the public-service setting encounters pepper spray, whistle, and patrol car, with each word connected to a different part of the service.",
+      "title": "The Police Station 2: A short reading",
+      "text": "During a station visit, Omar sees a patrol car, a motorcycle, and a bicycle used by officers. A guide explains a body camera and a protective vest. The ambulance belongs to a different emergency team. Omar asks how the dispatcher decides which vehicle to send, and the guide explains that situations differ.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Police Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vest"
+        "prompt": "During a routine the police station task, an adult compares Vest, Body Camera, Taser. The person selects Vest for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Vest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pepper Spray"
+        "prompt": "During a routine the police station task, an adult compares Pepper Spray, Whistle, Patrol Car. The person selects Pepper Spray for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pepper Spray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Motorcycle"
+        "prompt": "During a routine the police station task, an adult compares Motorcycle, Helicopter, Van. The person selects Motorcycle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Motorcycle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bicycle"
+        "prompt": "During a routine the police station task, an adult compares Bicycle, Boat, Suv. The person selects Bicycle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bicycle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "K9 Unit"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Vest"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Taser"
+        "prompt": "During a routine the police station task, an adult compares K9 Unit, Undercover Car, Ambulance. The person selects K9 Unit for the next step.\nWhich option does the person select for the next step?",
+        "answer": "K9 Unit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Police Officer” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which vehicle belongs to a different emergency team?",
+        "answer": "The ambulance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -351,27 +381,27 @@
       "Evidence Bag"
     ],
     "targetWordsArabic": [
-      "مكتب الاستقبال",
-      "زنزانة احتجاز",
+      "مكتب استقبال",
+      "زنزانة احتجاز مؤقت",
       "غرفة استجواب",
       "غرفة الأدلة",
       "غرفة خزانة",
       "مركز توجيه وبلاغات",
-      "مخزن أسلحة",
+      "مستودع أسلحة",
       "موقف سيارات",
       "غرفة استراحة",
       "غرفة تدريب",
       "تقرير",
-      "مذكرة قانونية",
+      "أمر قضائي",
       "بصمة إصبع",
-      "صورة جنائية",
+      "صورة لتسجيل الموقوف",
       "كيس أدلة"
     ],
     "usage": {
       "goal": "Learn to use common the police station 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the police station.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the police station context illustrating this situation: During a routine the police station task, an adult compares Fingerprint, Mugshot, Evidence Bag. The person selects Fingerprint for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the police station scene showing lesson-related items or actions including Fingerprint, Mugshot, Evidence Bag in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Police Station: Notice-Style Text",
-      "text": "Maya is in a situation connected to the police station. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters front desk, holding cell, and interrogation room, with each word connected to a different part of the service. The group moves between the evidence room, locker room, and dispatch center as the activity continues. A visitor to the public-service setting encounters armory, parking lot, and break room, with each word connected to a different part of the service.",
+      "title": "The Police Station 3: A short reading",
+      "text": "Maya speaks to a worker at the front desk. She waits while an officer finds her report. On a guided tour, visitors learn about the evidence room and dispatch center. The guide explains that a holding cell is a secure room used temporarily. Visitors stay in the public area throughout the visit.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Police Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Front Desk"
+        "prompt": "During a routine the police station task, an adult compares Front Desk, Holding Cell, Interrogation Room. The person selects Front Desk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Front Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Evidence Room"
+        "prompt": "During a routine the police station task, an adult compares Evidence Room, Locker Room, Dispatch Center. The person selects Evidence Room for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Evidence Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Armory"
+        "prompt": "During a routine the police station task, an adult compares Armory, Parking Lot, Break Room. The person selects Armory for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Armory",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Training Room"
+        "prompt": "During a routine the police station task, an adult compares Training Room, Report, Warrant. The person selects Training Room for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Training Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fingerprint"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Front Desk"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Interrogation Room"
+        "prompt": "During a routine the police station task, an adult compares Fingerprint, Mugshot, Evidence Bag. The person selects Fingerprint for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fingerprint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Vest” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where do visitors stay during the visit?",
+        "answer": "In the public area",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -515,16 +560,16 @@
     "targetWordsArabic": [
       "ملف غلاف",
       "بطاقة هوية",
-      "دفتر (كراسة ملاحظات)",
+      "دفتر ملاحظات",
       "قلم",
       "حاسوب",
       "ممر مشاة",
       "إشارة مرور",
       "حد السرعة",
-      "علامة توقف",
+      "إشارة توقف",
       "صفارة إنذار",
       "حاجز",
-      "قمع",
+      "قُمع",
       "شريط تحذير",
       "كاميرا",
       "إنذار"
@@ -532,8 +577,8 @@
     "usage": {
       "goal": "Learn to use common the police station 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the police station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -595,41 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the police station context illustrating this situation: During a routine the police station task, an adult compares Caution Tape, Camera, Alarm. The person selects Caution Tape for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the police station scene showing lesson-related items or actions including Caution Tape, Camera, Alarm in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Police Station: Short Description",
-      "text": "Maya is in a situation connected to the police station. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters case file, id card, and notebook, with each word connected to a different part of the service. A visitor to the public-service setting encounters pen, computer, and crosswalk, with each word connected to a different part of the service.",
+      "title": "The Police Station 4: A short reading",
+      "text": "An officer writes details in a notebook and checks an ID card. Outside, a traffic light stands beside a crosswalk. A stop sign and speed limit sign help drivers follow road rules. A cone and barrier mark an area that is closed. Maya follows the open path back to the bus stop.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Police Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Case File"
+        "prompt": "During a routine the police station task, an adult compares Case File, Id Card, Notebook. The person selects Case File for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Case File",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pen"
+        "prompt": "During a routine the police station task, an adult compares Pen, Computer, Crosswalk. The person selects Pen for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Traffic Light"
+        "prompt": "During a routine the police station task, an adult compares Traffic Light, Speed Limit, Stop Sign. The person selects Traffic Light for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Traffic Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Siren"
+        "prompt": "During a routine the police station task, an adult compares Siren, Barrier, Cone. The person selects Siren for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Siren",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Caution Tape"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Case File"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Notebook"
+        "prompt": "During a routine the police station task, an adult compares Caution Tape, Camera, Alarm. The person selects Caution Tape for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Caution Tape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Front Desk” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What marks the closed area?",
+        "answer": "A cone and barrier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

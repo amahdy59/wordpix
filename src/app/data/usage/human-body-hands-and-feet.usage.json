@@ -35,9 +35,9 @@
       "إصبع",
       "إبهام",
       "إصبع مؤشر",
-      "الإصبع الأوسط",
+      "إصبع الوسطى",
       "إصبع خاتم",
-      "الخنصر",
+      "إصبع الخنصر",
       "طرف الإصبع",
       "بصمة إصبع",
       "ظفر",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the human body (hands & feet) 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Fingerprint, Nail, Cuticle. The next step focuses on Fingerprint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Fingerprint, Nail, Cuticle in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet): Email",
-      "text": "Omar has an everyday task connected to the human body (hands & feet). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with hand, palm, and back of hand. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with wrist, knuckle, and finger. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Hands & Feet) 1: A short reading",
+      "text": "Maya labels a hand drawing with palm, wrist, thumb, and index finger. Omar adds middle finger and knuckle. They turn to a photograph showing the back of a hand. The teacher asks which side contains the palm. Both learners compare the photograph with their drawing before checking the remaining finger labels.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hand"
+        "prompt": "During a routine care or examination situation, an adult reviews Hand, Palm, Back of Hand. The next step focuses on Hand.\nWhich option is the focus of the next step?",
+        "answer": "Hand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wrist"
+        "prompt": "During a routine care or examination situation, an adult reviews Wrist, Knuckle, Finger. The next step focuses on Wrist.\nWhich option is the focus of the next step?",
+        "answer": "Wrist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thumb"
+        "prompt": "During a routine care or examination situation, an adult reviews Thumb, Index Finger, Middle Finger. The next step focuses on Thumb.\nWhich option is the focus of the next step?",
+        "answer": "Thumb",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ring Finger"
+        "prompt": "During a routine care or examination situation, an adult reviews Ring Finger, Little Finger, Fingertip. The next step focuses on Ring Finger.\nWhich option is the focus of the next step?",
+        "answer": "Ring Finger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fingerprint"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Hand"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Wrist"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Fingerprint, Nail, Cuticle. The next step focuses on Fingerprint.\nWhich option is the focus of the next step?",
+        "answer": "Fingerprint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Kick” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What two labels does Omar add?",
+        "answer": "Middle finger and knuckle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -205,15 +216,15 @@
       "قبض بإحكام",
       "يشير",
       "فرقعة الأصابع",
-      "يلوح",
+      "يلوّح",
       "تصفيق",
       "قبضة"
     ],
     "usage": {
       "goal": "Learn to use the human body (hands & feet) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Wave, Clap, Fist. The next step focuses on Wave. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Wave, Clap, Fist in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet): Personal Message",
-      "text": "Omar has an everyday task connected to the human body (hands & feet). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with joint, phalanx, and webbing. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with crease, lifeline, and grip. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Hands & Feet) 2: A short reading",
+      "text": "Omar uses grip and grasp to describe someone holding a handle. Maya chooses pinch for a picture of fingers holding a tiny object. Another image shows a person squeezing a soft ball. On a hand diagram, they identify a joint, a crease, and webbing. They separate the movement words from the body-part labels.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Joint"
+        "prompt": "During a routine care or examination situation, an adult reviews Joint, Phalanx, Webbing. The next step focuses on Joint.\nWhich option is the focus of the next step?",
+        "answer": "Joint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crease"
+        "prompt": "During a routine care or examination situation, an adult reviews Crease, Lifeline, Grip. The next step focuses on Crease.\nWhich option is the focus of the next step?",
+        "answer": "Crease",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pinch"
+        "prompt": "During a routine care or examination situation, an adult reviews Pinch, Grasp, Squeeze. The next step focuses on Pinch.\nWhich option is the focus of the next step?",
+        "answer": "Pinch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clench"
+        "prompt": "During a routine care or examination situation, an adult reviews Clench, Point, Snap. The next step focuses on Clench.\nWhich option is the focus of the next step?",
+        "answer": "Clench",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wave"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Joint"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Crease"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Wave, Clap, Fist. The next step focuses on Wave.\nWhich option is the focus of the next step?",
+        "answer": "Wave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Hand” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which action does Maya choose for holding a tiny object between fingers?",
+        "answer": "Pinch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -372,14 +394,14 @@
       "عناية بالأظافر",
       "عناية بأظافر القدم",
       "تلميع ظفر",
-      "مبرد أظافر",
+      "مِبرَد أظافر",
       "غسول أو لوشن"
     ],
     "usage": {
       "goal": "Learn to use the human body (hands & feet) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Nail Polish, Nail File, Lotion. The next step focuses on Nail Polish. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Nail Polish, Nail File, Lotion in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet): Short Dialogue",
-      "text": "Omar has an everyday task connected to the human body (hands & feet). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with foot, heel, and sole. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with arch, instep, and ankle. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Hands & Feet) 3: A short reading",
+      "text": "The class studies a diagram of a foot. Maya identifies the heel, sole, and arch. Omar finds the ankle and toes. A side view makes the instep easier to see. They compare the two views and describe where each part is located. Then they place the labels on a drawing without looking at the key.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Foot"
+        "prompt": "During a routine care or examination situation, an adult reviews Foot, Heel, Sole. The next step focuses on Foot.\nWhich option is the focus of the next step?",
+        "answer": "Foot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Arch"
+        "prompt": "During a routine care or examination situation, an adult reviews Arch, Instep, Ankle. The next step focuses on Arch.\nWhich option is the focus of the next step?",
+        "answer": "Arch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toe"
+        "prompt": "During a routine care or examination situation, an adult reviews Toe, Ball, Bridge. The next step focuses on Toe.\nWhich option is the focus of the next step?",
+        "answer": "Toe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toenail"
+        "prompt": "During a routine care or examination situation, an adult reviews Toenail, Manicure, Pedicure. The next step focuses on Toenail.\nWhich option is the focus of the next step?",
+        "answer": "Toenail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nail Polish"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Foot"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Arch"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Nail Polish, Nail File, Lotion. The next step focuses on Nail Polish.\nWhich option is the focus of the next step?",
+        "answer": "Nail Polish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Joint” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which view makes the instep easier to see?",
+        "answer": "A side view",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -508,12 +541,12 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Moisturizer", "Exfoliant", "Pumice Stone", "Cuticle Oil", "Hand Cream"],
-    "targetWordsArabic": ["مرطب", "مقشر", "حجر خفاف", "زيت الجلد المحيط بالأظافر", "كريمة يد"],
+    "targetWordsArabic": ["مرطّب", "مقشّر", "حجر خفاف", "زيت الجلد المحيط بالأظافر", "كريمة يد"],
     "usage": {
       "goal": "Learn to use the human body (hands & feet) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -539,33 +572,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Cuticle Oil, Hand Cream, Moisturizer. The next step focuses on Cuticle Oil. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Cuticle Oil, Hand Cream in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet): Tips/Notice",
-      "text": "Omar has an everyday task connected to the human body (hands & feet). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with moisturizer, exfoliant, and pumice stone. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with cuticle oil and hand cream. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Hands & Feet) 4: A short reading",
+      "text": "Maya reads labels on hand-care products in a shop. She compares moisturizer with hand cream and notices a bottle of cuticle oil. Omar identifies a pumice stone by its rough surface. They ask the assistant what each product is called, then write the names beside the product pictures in their vocabulary notes.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moisturizer"
+        "prompt": "During a routine care or examination situation, an adult reviews Moisturizer, Exfoliant, Pumice Stone. The next step focuses on Moisturizer.\nWhich option is the focus of the next step?",
+        "answer": "Moisturizer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cuticle Oil"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Moisturizer"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Cuticle Oil"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Cuticle Oil, Hand Cream, Moisturizer. The next step focuses on Cuticle Oil.\nWhich option is the focus of the next step?",
+        "answer": "Cuticle Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -574,6 +602,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Foot” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "How does Omar identify the pumice stone?",
+        "answer": "By its rough surface",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

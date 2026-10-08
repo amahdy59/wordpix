@@ -29,13 +29,13 @@
     "targetWordsArabic": [
       "جدة",
       "جد",
-      "الجدة",
-      "الجد",
-      "الجدة الكبرى",
-      "الجد الأكبر",
-      "الجدة",
-      "الجد",
-      "الجدة",
+      "جدة",
+      "جد",
+      "أم الجد أو الجدة",
+      "أب الجد أو الجدة",
+      "جدة (تعبير عائلي)",
+      "أب (تعبير عائلي)",
+      "جدة",
       "جد أو جدة",
       "عمة أو خالة",
       "عم أو خال",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Cousin, First Cousin, Second Cousin. The person selects Cousin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult extended family scene showing lesson-related items or actions including Cousin, First Cousin, Second Cousin in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Extended Family: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grandmother"
+        "prompt": "During a routine extended family task, an adult compares Grandmother, Grandfather, Grandma. The person selects Grandmother for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grandmother",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grandpa"
+        "prompt": "During a routine extended family task, an adult compares Grandpa, Great-Grandmother, Great-Grandfather. The person selects Grandpa for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grandpa",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nana"
+        "prompt": "During a routine extended family task, an adult compares Nana, Papa, Granny. The person selects Nana for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nana",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grandparent"
+        "prompt": "During a routine extended family task, an adult compares Grandparent, Aunt, Uncle. The person selects Grandparent for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grandparent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cousin"
+        "prompt": "During a routine extended family task, an adult compares Cousin, First Cousin, Second Cousin. The person selects Cousin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cousin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -193,20 +209,20 @@
       "Family-in-Law"
     ],
     "targetWordsArabic": [
-      "عمة أو خالة الجد",
-      "عم أو خال الجد",
+      "عمة أو خالة أحد الوالدين",
+      "عم أو خال أحد الوالدين",
       "ابنة الأخ أو الأخت",
       "ابن الأخ أو الأخت",
-      "قريب بالمصاهرة",
-      "الحماة",
-      "الحمو",
-      "أخت الزوج أو الزوجة",
-      "أخو الزوج أو الزوجة",
+      "قريب بالمصاهرة من جهة أبناء العمومة",
+      "أم الزوج أو الزوجة",
+      "أب الزوج أو الزوجة",
+      "أخت الزوج أو الزوجة، أو زوجة الأخ",
+      "أخو الزوج أو الزوجة، أو زوج الأخت",
       "زوج الابنة",
       "زوجة الابن",
-      "أقارب الزوج أو الزوجة",
+      "أقارب بالمصاهرة",
       "عائلة الزوج أو الزوجة",
-      "الأقارب الممتدون بالمصاهرة",
+      "أقارب المصاهرة الأبعد",
       "عائلة بالمصاهرة"
     ],
     "usage": {
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Spouse's Family, Extended In-Laws, Family-in-Law. The person selects Spouse's Family for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult extended family scene showing lesson-related items or actions including Spouse's Family, Extended In-Laws, Family-in-Law in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Extended Family: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Great-Aunt"
+        "prompt": "During a routine extended family task, an adult compares Great-Aunt, Great-Uncle, Niece. The person selects Great-Aunt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Great-Aunt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nephew"
+        "prompt": "During a routine extended family task, an adult compares Nephew, Cousin-in-Law, Mother-in-Law. The person selects Nephew for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nephew",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Father-in-Law"
+        "prompt": "During a routine extended family task, an adult compares Father-in-Law, Sister-in-Law, Brother-in-Law. The person selects Father-in-Law for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Father-in-Law",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Son-in-Law"
+        "prompt": "During a routine extended family task, an adult compares Son-in-Law, Daughter-in-Law, In-Laws. The person selects Son-in-Law for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Son-in-Law",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spouse's Family"
+        "prompt": "During a routine extended family task, an adult compares Spouse's Family, Extended In-Laws, Family-in-Law. The person selects Spouse's Family for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Spouse's Family",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -354,15 +386,15 @@
       "Family Wedding"
     ],
     "targetWordsArabic": [
-      "لقاء عائلي",
-      "عشاء العطلة",
+      "لقاء عائلي بعد فراق",
+      "عشاء بمناسبة عطلة",
       "عيد الشكر",
-      "عيد الميلاد",
-      "عيد الفصح",
-      "احتفال بعيد الميلاد",
+      "عيد الميلاد المسيحي",
+      "عيد القيامة",
+      "احتفال بعيد ميلاد",
       "ذكرى سنوية",
       "يشوي على الشواية",
-      "نزهة (رحلة نزهة وتناول طعام في الهواء الطلق)",
+      "نزهة مع طعام",
       "زفاف عائلة"
     ],
     "usage": {
@@ -409,7 +441,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Family Wedding",
+          "targetWords": ["Family Wedding"],
           "scenario": "During a routine extended family task, an adult compares Family Wedding, Reunion, Holiday Dinner. The person selects Family Wedding for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -419,7 +451,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Family Wedding, Reunion, Holiday Dinner. The person selects Family Wedding for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult extended family scene showing lesson-related items or actions including Family Wedding in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Extended Family: Short Dialogue",
@@ -428,20 +461,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reunion"
+        "prompt": "During a routine extended family task, an adult compares Reunion, Holiday Dinner, Thanksgiving. The person selects Reunion for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Reunion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Christmas"
+        "prompt": "During a routine extended family task, an adult compares Christmas, Easter, Birthday Celebration. The person selects Christmas for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Christmas",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Anniversary"
+        "prompt": "During a routine extended family task, an adult compares Anniversary, Barbecue, Picnic. The person selects Anniversary for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Anniversary",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Family Wedding"
+        "prompt": "During a routine extended family task, an adult compares Family Wedding, Reunion, Holiday Dinner. The person selects Family Wedding for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Family Wedding",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

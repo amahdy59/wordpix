@@ -27,19 +27,19 @@
       "Cable Tie"
     ],
     "targetWordsArabic": [
-      "جهاز يسمى «سولار بانيل»",
+      "لوح شمسي",
       "عاكس كهربائي",
       "تخزين بطارية",
-      "منظم شحن",
+      "منظّم شحن",
       "إطار تثبيت",
-      "متعقب",
+      "متعقّب",
       "صندوق توصيل كهربائي",
       "صندوق تجميع كهربائي",
-      "محول كهربائي",
+      "محوّل كهربائي",
       "اتصال بالشبكة الكهربائية",
       "مثقاب",
       "مفتاح ربط",
-      "قطاعة سلك",
+      "قطّاعة سلك",
       "أداة كبس الوصلات",
       "رباط كابلات"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wire Cutter as the central item; include Wire Cutter, Crimping Tool, and Cable Tie naturally where visually appropriate, but make the real-world use of Wire Cutter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Solar Farm",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Solar Panel"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Solar Panel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mounting Frame"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mounting Frame",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Transformer"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Transformer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wire Cutter"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wire Cutter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -191,8 +204,8 @@
       "قناة أسلاك",
       "قضيب تأريض",
       "ملتيميتر",
-      "مستو",
-      "سلم",
+      "مستوٍ",
+      "سلّم",
       "غرفة عامل ضابط",
       "سياج أمني",
       "طريق وصول",
@@ -201,8 +214,8 @@
       "كاميرا",
       "محطة فرعية",
       "مسار للكابلات",
-      "مانع صواعق",
-      "نظام يسمى «جرووندينج سيستيم»"
+      "مانعة صواعق",
+      "نظام تأريض"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cable Tray as the central item; include Cable Tray, Lightning Rod, and Grounding System naturally where visually appropriate, but make the real-world use of Cable Tray the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Solar Farm",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conduit"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Conduit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ladder"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ladder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gate"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cable Tray"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cable Tray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -358,10 +384,10 @@
       "كيلوواط",
       "عداد طاقة",
       "خط كهرباء",
-      "لوحة توزيع",
+      "لوحة توزيع كهربائي",
       "فرشاة تنظيف",
       "خرطوم مياه",
-      "طائرة مسيرة فحص",
+      "طائرة مسيّرة فحص",
       "كاميرا حرارية",
       "سترة بلا أكمام سلامة"
     ],
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Inspection Drone as the central item; include Inspection Drone, Thermal Camera, and Safety Vest naturally where visually appropriate, but make the real-world use of Inspection Drone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Solar Farm",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunlight"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sunlight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Current"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Current",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Power Line"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Power Line",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Inspection Drone"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Inspection Drone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -512,11 +551,11 @@
     "targetWordsArabic": [
       "قبعة صلب",
       "قفازات",
-      "أداة يسمى «توول بيلت»",
+      "حزام أدوات",
       "سجل الرحلة",
       "لوح كتابة",
-      "عضو يسمى «وبين فييلد»",
-      "سماء صاف",
+      "أرض مكشوفة",
+      "سماء صافٍ",
       "ظل",
       "سحابة",
       "شروق الشمس",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wildflower as the central item; include Wildflower, Bird, and Fence Post naturally where visually appropriate, but make the real-world use of Wildflower the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Solar Farm",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hard Hat"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hard Hat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clipboard"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Clipboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cloud"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cloud",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wildflower"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wildflower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -673,7 +725,7 @@
     "targetWordsArabic": [
       "بطارية",
       "كابل",
-      "هيكل تثبيت",
+      "هيكل تثبيت الألواح",
       "عداد",
       "شبكة كهربائية",
       "شحن",
@@ -741,7 +793,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Efficiency as the central item; include Efficiency, Conservation, and Recycle naturally where visually appropriate, but make the real-world use of Efficiency the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Solar Farm",
@@ -750,20 +803,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Battery"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Battery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grid"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Grid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Renewable"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Renewable",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Efficiency"
+        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Efficiency",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

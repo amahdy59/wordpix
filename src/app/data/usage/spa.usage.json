@@ -29,25 +29,25 @@
     "targetWordsArabic": [
       "تدليك",
       "عناية بالوجه",
-      "لف الجسم",
-      "يفرك",
+      "لفّ الجسم",
+      "مقشّر للبشرة",
       "عناية بالأظافر",
       "عناية بأظافر القدم",
       "علاج بالروائح",
       "بالحجارة الساخنة",
       "تدليك الأنسجة العميقة",
-      "علم المنعكسات",
+      "تدليك انعكاسي",
       "تدليك سويدي",
       "تقشير",
-      "مقشر للجسم",
-      "لف الجسم بالأعشاب البحرية",
+      "مقشّر للجسم",
+      "لفّ الجسم بالأعشاب البحرية",
       "قناع للوجه"
     ],
     "usage": {
       "goal": "Learn to use the spa 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Body Scrub, Seaweed Wrap, Facial Mask. The person selects Body Scrub for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Body Scrub, Seaweed Wrap, Facial Mask in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Email",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with massage, facial, and body wrap. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with scrub, manicure, and pedicure. Each term belongs to a different part of the care process.",
+      "title": "The Spa 1: A short reading",
+      "text": "Maya reads the spa menu before booking. She compares a massage with a facial and asks how long each appointment takes. Omar chooses a manicure instead of a pedicure. The receptionist explains the available times. They confirm their bookings and ask what they should bring before leaving the reception desk.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Massage"
+        "prompt": "During a routine the spa task, an adult compares Massage, Facial, Body Wrap. The person selects Massage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Massage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scrub"
+        "prompt": "During a routine the spa task, an adult compares Scrub, Manicure, Pedicure. The person selects Scrub for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Scrub",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aromatherapy"
+        "prompt": "During a routine the spa task, an adult compares Aromatherapy, Hot Stone, Deep Tissue. The person selects Aromatherapy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Aromatherapy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reflexology"
+        "prompt": "During a routine the spa task, an adult compares Reflexology, Swedish Massage, Exfoliation. The person selects Reflexology for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Reflexology",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Body Scrub"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Massage"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Scrub"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Body Scrub, Seaweed Wrap, Facial Mask. The person selects Body Scrub for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Body Scrub",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Sink” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar choose instead of a pedicure?",
+        "answer": "A manicure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -194,7 +205,7 @@
     ],
     "targetWordsArabic": [
       "قناع طيني",
-      "شرائح خيار",
+      "خيار",
       "تدليك تايلاندي",
       "تدليك رياضي",
       "تصريف لمفاوي",
@@ -203,7 +214,7 @@
       "العلاج بالبرودة",
       "علاج مائي",
       "خزان الطفو",
-      "حمام معدني",
+      "حمّام معدني",
       "علاج بشمع البارافين",
       "نقع القدمين",
       "علاج فروة الرأس",
@@ -212,8 +223,8 @@
     "usage": {
       "goal": "Learn to use the spa 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Foot Soak, Scalp Treatment, Facial Steamer. The person selects Foot Soak for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Foot Soak, Scalp Treatment, Facial Steamer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Personal Message",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with clay mask, cucumber slices, and thai massage. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with sports massage, lymphatic drainage, and cupping therapy. Each term belongs to a different part of the care process.",
+      "title": "The Spa 2: A short reading",
+      "text": "The spa menu lists Thai massage, sports massage, and hot stone therapy. Maya asks how the appointments differ before selecting one. A facial photograph shows a clay mask and cucumber slices. Omar checks the appointment length rather than guessing from the name. The receptionist answers their questions and confirms the available times.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clay Mask"
+        "prompt": "During a routine the spa task, an adult compares Clay Mask, Cucumber Slices, Thai Massage. The person selects Clay Mask for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Clay Mask",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sports Massage"
+        "prompt": "During a routine the spa task, an adult compares Sports Massage, Lymphatic Drainage, Cupping Therapy. The person selects Sports Massage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sports Massage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hot Stone Therapy"
+        "prompt": "During a routine the spa task, an adult compares Hot Stone Therapy, Cold Therapy, Hydrotherapy. The person selects Hot Stone Therapy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hot Stone Therapy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flotation Tank"
+        "prompt": "During a routine the spa task, an adult compares Flotation Tank, Mineral Bath, Paraffin Wax Treatment. The person selects Flotation Tank for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flotation Tank",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Foot Soak"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Clay Mask"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Sports Massage"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Foot Soak, Scalp Treatment, Facial Steamer. The person selects Foot Soak for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Foot Soak",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Massage” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the facial photograph show?",
+        "answer": "A clay mask and cucumber slices",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -362,24 +384,24 @@
       "ديرما رولر",
       "العلاج بضوء LED",
       "ساونا",
-      "غرفة يطبخ بالبخار",
-      "حوض ساخن",
+      "غرفة بخار",
+      "حوض استحمام ساخن",
       "مسبح",
       "غرفة استرخاء",
-      "دش",
-      "غرفة خزانة",
-      "استقبال",
+      "دُش",
+      "غرفة تبديل الملابس والخزائن",
+      "منطقة الاستقبال",
       "-",
       "شرفة",
       "حوض غطس",
       "غرفة ملح",
-      "حمام طيني"
+      "حمام طين"
     ],
     "usage": {
       "goal": "Learn to use the spa 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Plunge Pool, Salt Room, Mud Bath. The person selects Plunge Pool for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Plunge Pool, Salt Room, Mud Bath in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Short Dialogue",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with dermaroller, led light therapy, and sauna. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with steam room, hot tub, and pool. Each term belongs to a different part of the care process.",
+      "title": "The Spa 3: A short reading",
+      "text": "Maya tours the spa before her appointment. The receptionist points out the sauna, steam room, and pool. Omar finds the locker room and shower. A relaxation room has quiet seating. They read the facility information and ask which areas are included in their bookings before putting their bags in the lockers.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dermaroller"
+        "prompt": "During a routine the spa task, an adult compares Dermaroller, LED Light Therapy, Sauna. The person selects Dermaroller for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dermaroller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Steam Room"
+        "prompt": "During a routine the spa task, an adult compares Steam Room, Hot Tub, Pool. The person selects Steam Room for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Steam Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Relaxation Room"
+        "prompt": "During a routine the spa task, an adult compares Relaxation Room, Shower, Locker Room. The person selects Relaxation Room for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Relaxation Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception"
+        "prompt": "During a routine the spa task, an adult compares Reception, Garden, Terrace. The person selects Reception for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Reception",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plunge Pool"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Dermaroller"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Steam Room"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Plunge Pool, Salt Room, Mud Bath. The person selects Plunge Pool for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Plunge Pool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Clay Mask” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where do Maya and Omar put their bags?",
+        "answer": "In the lockers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -525,27 +558,27 @@
       "Mud"
     ],
     "targetWordsArabic": [
-      "سخان مناشف",
+      "سخّان مناشف",
       "ساونا بالأشعة تحت الحمراء",
       "العلاج بالتبريد",
-      "مقشر بالملح",
-      "مقشر بالسكر",
-      "مقشر بالقهوة",
-      "لف الجسم بالطين",
-      "لف للجسم يسوق باسم ديتوكس",
+      "مقشّر بالملح",
+      "مقشّر بالسكر",
+      "مقشّر بالقهوة",
+      "لفّ الجسم بالطين",
+      "لفّ للجسم يُسوَّق باسم ديتوكس",
       "زيت عطري",
       "غسول أو لوشن",
-      "كريمة",
-      "قناع",
-      "مصل عناية",
+      "كريم للبشرة",
+      "قناع للبشرة",
+      "سيروم للبشرة",
       "ملح",
       "طين"
     ],
     "usage": {
       "goal": "Learn to use the spa 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Serum, Salt, Mud. The person selects Serum for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Serum, Salt, Mud in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Tips/Notice",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with towel warmer, infrared sauna, and cryotherapy. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with salt scrub, sugar scrub, and coffee scrub. Each term belongs to a different part of the care process.",
+      "title": "The Spa 4: A short reading",
+      "text": "The spa receptionist explains the product names on a display. Maya compares a salt scrub, sugar scrub, and coffee scrub. A towel warmer stands behind the service counter. Omar asks about an essential oil used in an appointment. They check what the booked service includes before paying at reception.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Towel Warmer"
+        "prompt": "During a routine the spa task, an adult compares Towel Warmer, Infrared Sauna, Cryotherapy. The person selects Towel Warmer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Towel Warmer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Salt Scrub"
+        "prompt": "During a routine the spa task, an adult compares Salt Scrub, Sugar Scrub, Coffee Scrub. The person selects Salt Scrub for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Salt Scrub",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clay Wrap"
+        "prompt": "During a routine the spa task, an adult compares Clay Wrap, Detox Wrap, Essential Oil. The person selects Clay Wrap for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Clay Wrap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lotion"
+        "prompt": "During a routine the spa task, an adult compares Lotion, Cream, Mask. The person selects Lotion for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lotion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Serum"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Towel Warmer"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Salt Scrub"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Serum, Salt, Mud. The person selects Serum for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Serum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Dermaroller” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which three scrubs does Maya compare?",
+        "answer": "A salt scrub, sugar scrub, and coffee scrub",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -695,9 +739,9 @@
       "بخور",
       "عشبة",
       "ناشر روائح",
-      "مرطب",
+      "مرطّب",
       "تونر للبشرة",
-      "منظف",
+      "منظّف",
       "كريم للعينين",
       "جل الألوفيرا",
       "زيت الجوجوبا",
@@ -710,8 +754,8 @@
     "usage": {
       "goal": "Learn to use the spa 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Lavender Oil, Tea Tree Oil, Peppermint Oil. The person selects Lavender Oil for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Lavender Oil, Tea Tree Oil, Peppermint Oil in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Everyday Description",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with candle, incense, and herb. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with diffuser, moisturizer, and toner. Each term belongs to a different part of the care process.",
+      "title": "The Spa 5: A short reading",
+      "text": "Maya notices a candle and diffuser in the reception area. A product display holds moisturizer, toner, cleanser, and eye cream. Omar reads the label on aloe vera gel. They use the display to practice the product names from their lesson. The receptionist answers a question about the items available to buy.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Candle"
+        "prompt": "During a routine the spa task, an adult compares Candle, Incense, Herb. The person selects Candle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Candle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diffuser"
+        "prompt": "During a routine the spa task, an adult compares Diffuser, Moisturizer, Toner. The person selects Diffuser for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Diffuser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cleanser"
+        "prompt": "During a routine the spa task, an adult compares Cleanser, Eye Cream, Aloe Vera Gel. The person selects Cleanser for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cleanser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jojoba Oil"
+        "prompt": "During a routine the spa task, an adult compares Jojoba Oil, Coconut Oil, Eucalyptus Oil. The person selects Jojoba Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Jojoba Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lavender Oil"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Candle"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Diffuser"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Lavender Oil, Tea Tree Oil, Peppermint Oil. The person selects Lavender Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lavender Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Towel Warmer” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which product label does Omar read?",
+        "answer": "The label on aloe vera gel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -857,7 +912,7 @@
       "Water Feature"
     ],
     "targetWordsArabic": [
-      "مرطب الشفاه (زبدة الشفاه)",
+      "مرطب شفاه",
       "طاولة تدليك",
       "روب حمام / برنس",
       "شبشب / خف منزلي",
@@ -865,19 +920,19 @@
       "عصابة رأس",
       "قناع عين",
       "وسادة زينة (خدادية)",
-      "سرير مدفأ",
+      "سرير مُدفّأ",
       "حوض",
       "مسند رأس",
-      "بطانية كهربائية مدفأة",
+      "بطانية كهربائية مُدفّأة",
       "وسادة تأمل",
       "حديقة زن",
-      "ميزة ماء"
+      "عنصر مائي للزينة"
     ],
     "usage": {
       "goal": "Learn to use the spa 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Meditation Cushion, Zen Garden, Water Feature. The person selects Meditation Cushion for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Meditation Cushion, Zen Garden, Water Feature in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Email",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with lip balm, massage table, and robe. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with slippers, towel, and headband. Each term belongs to a different part of the care process.",
+      "title": "The Spa 6: A short reading",
+      "text": "Omar receives a robe, slippers, and a towel when he checks in. Maya puts a headband and lip balm in her bag. In the treatment room, a cushion rests on the massage table. A folded eye mask is nearby. They ask where to leave their belongings before their appointments begin.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lip Balm"
+        "prompt": "During a routine the spa task, an adult compares Lip Balm, Massage Table, Robe. The person selects Lip Balm for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lip Balm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Slippers"
+        "prompt": "During a routine the spa task, an adult compares Slippers, Towel, Headband. The person selects Slippers for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Slippers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eye Mask"
+        "prompt": "During a routine the spa task, an adult compares Eye Mask, Cushion, Heated Bed. The person selects Eye Mask for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Eye Mask",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Basin"
+        "prompt": "During a routine the spa task, an adult compares Basin, Headrest, Heated Blanket. The person selects Basin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Basin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Meditation Cushion"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Lip Balm"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Slippers"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Meditation Cushion, Zen Garden, Water Feature. The person selects Meditation Cushion for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Meditation Cushion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Candle” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What rests on the massage table?",
+        "answer": "A cushion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1030,20 +1096,20 @@
       "تنفس",
       "يقظة ذهنية",
       "تمدد",
-      "إزالة السموم",
+      "ديتوكس؛ تسمية تسويقية للتنقية",
       "ترطيب الجسم",
       "نوم",
       "توازن",
       "استرخاء",
       "شاي عشبي",
-      "ماء منكه بالنقع",
+      "ماء منكّه بالنقع",
       "موسيقى محيطية هادئة"
     ],
     "usage": {
       "goal": "Learn to use the spa 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1105,45 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Herbal Tea, Infused Water, Ambient Music. The person selects Herbal Tea for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Herbal Tea, Infused Water, Ambient Music in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Personal Message",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with bamboo mat, stone pathway, and meditation. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with yoga, breathing, and mindfulness. Each term belongs to a different part of the care process.",
+      "title": "The Spa 7: A short reading",
+      "text": "A stone pathway leads to the spa's quiet garden. Maya brings a bamboo mat to a yoga session. Omar joins a meditation class where the instructor introduces breathing and mindfulness vocabulary. They follow the session schedule and take a break afterward. Maya describes the garden to Omar while they collect their belongings.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bamboo Mat"
+        "prompt": "During a routine the spa task, an adult compares Bamboo Mat, Stone Pathway, Meditation. The person selects Bamboo Mat for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bamboo Mat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Yoga"
+        "prompt": "During a routine the spa task, an adult compares Yoga, Breathing, Mindfulness. The person selects Yoga for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Yoga",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stretching"
+        "prompt": "During a routine the spa task, an adult compares Stretching, Detox, Hydration. The person selects Stretching for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Stretching",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sleep"
+        "prompt": "During a routine the spa task, an adult compares Sleep, Balance, Relaxation. The person selects Sleep for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sleep",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Herbal Tea"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bamboo Mat"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Yoga"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Herbal Tea, Infused Water, Ambient Music. The person selects Herbal Tea for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Herbal Tea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1152,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Lip Balm” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya bring to the yoga session?",
+        "answer": "A bamboo mat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1196,18 +1273,18 @@
       "أخصائي عناية بالبشرة",
       "موظف استقبال",
       "فني أظافر",
-      "مدلكة",
-      "مدرب يوغا",
-      "مرافق خدمة",
-      "موظف خدمات",
+      "مدلّكة",
+      "مدرّب يوغا",
+      "موظف خدمة الضيوف",
+      "موظف خدمات الضيوف",
       "أخصائي تغذية",
       "مدرب"
     ],
     "usage": {
       "goal": "Learn to use the spa 8 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1269,45 +1346,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Nutritionist, Trainer, Acupuncture. The person selects Nutritionist for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the spa scene showing lesson-related items or actions including Nutritionist, Trainer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Spa: Short Dialogue",
-      "text": "Omar has an everyday task connected to the spa. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with acupuncture, shiatsu, and hot wax. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with meditation room, therapist, and esthetician. Each term belongs to a different part of the care process.",
+      "title": "The Spa 8: A short reading",
+      "text": "Maya checks the staff list at reception. It includes a therapist, an esthetician, and a nail technician. Omar asks where the meditation room is located. The menu also lists acupuncture and shiatsu appointments. They ask the receptionist about the services and available practitioners before deciding which appointment to book.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Acupuncture"
+        "prompt": "During a routine the spa task, an adult compares Acupuncture, Shiatsu, Hot Wax. The person selects Acupuncture for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Acupuncture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Meditation Room"
+        "prompt": "During a routine the spa task, an adult compares Meditation Room, Therapist, Esthetician. The person selects Meditation Room for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Meditation Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Receptionist"
+        "prompt": "During a routine the spa task, an adult compares Receptionist, Nail Technician, Masseuse. The person selects Receptionist for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Receptionist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Yoga Instructor"
+        "prompt": "During a routine the spa task, an adult compares Yoga Instructor, Attendant, Concierge. The person selects Yoga Instructor for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Yoga Instructor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nutritionist"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Acupuncture"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Meditation Room"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the spa task, an adult compares Nutritionist, Trainer, Acupuncture. The person selects Nutritionist for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nutritionist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1316,6 +1397,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Bamboo Mat” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Omar ask to go?",
+        "answer": "To the meditation room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

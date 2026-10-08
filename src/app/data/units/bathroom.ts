@@ -558,7 +558,7 @@ export const VOCABULARY: VocabularyItem[] = [
   },
   {
     id: "take-shower",
-    label: "Take Shower",
+    label: "Take a Shower",
     phonetic: "/teɪk ˈʃaʊər/",
     cefr: "A2",
     img: "/word-images/bathroom/take-shower.avif",

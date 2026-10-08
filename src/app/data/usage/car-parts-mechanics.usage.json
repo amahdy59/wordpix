@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "محرك",
       "ناقل حركة",
-      "حقيبة صغيرة",
+      "قابض الحركة",
       "مكربن",
       "شمعة إشعال",
       "مكبس",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Bumper as the central item; include Bumper, Fender, and Door naturally where visually appropriate, but make the real-world use of Bumper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Car Parts & Mechanics: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Engine"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engine, Transmission, Clutch, and Carburetor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Engine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spark Plug"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spark Plug, Piston, Crankshaft, and Camshaft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spark Plug",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Turbocharger"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turbocharger, Exhaust, Hood, and Trunk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Turbocharger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bumper"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bumper, Fender, and Door and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bumper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -193,16 +206,16 @@
       "مرآة جانبية",
       "مصباح أمامي",
       "مصباح خلفي",
-      "لوحة معلومات",
+      "لوحة العدادات",
       "عجلة القيادة",
-      "ناقل الحركة",
+      "ذراع تغيير السرعات",
       "دواسة",
-      "حزام مقعد",
+      "حزام الأمان",
       "وسادة هوائية",
-      "مركبة يسمى «جلوفي بوكس»",
-      "وحدة تحكم",
-      "واق للعين شمس",
-      "مركبة يسمى «ريارفييو ميررور»"
+      "درج لوحة القيادة",
+      "الكونسول الوسطي",
+      "حاجب الشمس",
+      "مرآة رؤية خلفية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand non-technical service information and discuss vehicle maintenance safely and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Console as the central item; include Console, Sun Visor, and Rearview Mirror naturally where visually appropriate, but make the real-world use of Console the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Car Parts & Mechanics",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Roof"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roof, Windshield, Side Mirror, and Headlight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Roof",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Taillight"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Taillight, Dashboard, Steering Wheel, and Gear Shift and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Taillight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pedal"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pedal, Seat Belt, Airbag, and Glove Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pedal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Console"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Console, Sun Visor, and Rearview Mirror and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Console",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -353,12 +379,12 @@
       "عجلة",
       "جنط",
       "غطاء محور العجلة",
-      "مكان يسمى «براكي باد»",
+      "وسادة مكبح",
       "قرص الفرامل",
-      "مركبة يسمى «شوك ابسوربير»",
+      "ممتص صدمات",
       "نابض",
       "محور",
-      "ضبط المحاذاة",
+      "ضبط زوايا العجلات",
       "زيت المحرك",
       "سائل تبريد",
       "سائل الفرامل",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Fluid as the central item; include Brake Fluid, Transmission Fluid, and Windshield Washer naturally where visually appropriate, but make the real-world use of Brake Fluid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tire"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tire, Wheel, Rim, and Hub Cap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tire",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brake Pad"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Brake Disc, Shock Absorber, and Spring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brake Pad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Axle"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Axle, Alignment, Engine Oil, and Coolant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Axle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brake Fluid"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Windshield Washer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brake Fluid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -493,7 +532,7 @@
     "cefrStage": "B2",
     "stageName": "B2 Fluency & Work",
     "targetWordsEnglish": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid", "Refrigerant"],
-    "targetWordsArabic": ["سائل التوجيه المعزز", "وقود", "ديزل", "حمض بطارية", "مادة تبريد"],
+    "targetWordsArabic": ["سائل التوجيه المعزّز", "وقود", "ديزل", "حمض بطارية", "مادة تبريد"],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand non-technical service information and discuss vehicle maintenance safely and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the vehicle service center with reasonable fluency.",
@@ -514,7 +553,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Refrigerant",
+          "targetWords": ["Refrigerant"],
           "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Refrigerant and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -524,7 +563,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Refrigerant as the central item; include Refrigerant, Power Steering Fluid, and Gas naturally where visually appropriate, but make the real-world use of Refrigerant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Car Parts & Mechanics: Practical Information",
@@ -533,12 +573,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Power Steering Fluid"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Steering Fluid, Gas, Diesel, and Battery Acid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Power Steering Fluid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Refrigerant"
+        "prompt": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Refrigerant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Refrigerant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

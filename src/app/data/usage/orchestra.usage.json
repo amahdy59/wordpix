@@ -34,9 +34,9 @@
       "قيثارة",
       "غيتار",
       "فيونكة",
-      "أداة أو جهاز يسمى «سترينج»",
+      "وتر",
       "مفتاح ضبط الأوتار",
-      "أداة أو جهاز يسمى «تشين ريست»",
+      "مسند الذقن",
       "ناي فلوت",
       "كلارينيت",
       "أوبوا",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Oboe as the central item; include Oboe, Bassoon, and Piccolo naturally where visually appropriate, but make the real-world use of Oboe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: The Orchestra",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Violin"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Violin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Harp"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Harp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tuning Peg"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tuning Peg",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oboe"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Oboe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -190,18 +203,18 @@
     "targetWordsArabic": [
       "ناي ريكوردر",
       "ساكسفون",
-      "مادة يسمى «رييد»",
-      "شخص يسمى «مووثبييكي»",
+      "ريشة آلة نفخ",
+      "قطعة فم آلة نفخ",
       "مفتاح موسيقي",
       "بوق ترومبيت",
       "ترومبون",
       "بوق فرنسي",
       "توبا",
-      "آلة موسيقية يسمى «كورنيت»",
-      "بوق عسكري",
+      "كورنيت",
+      "بوق بلا صمامات",
       "صمام",
       "جرس",
-      "كاتم صوت للآلة",
+      "كاتم صوت آلة موسيقية",
       "شريحة مجهرية"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Bell as the central item; include Bell, Mute, and Slide naturally where visually appropriate, but make the real-world use of Bell the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Orchestra",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Recorder"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Recorder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Key"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Key",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tuba"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tuba",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bell"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,20 +376,20 @@
     ],
     "targetWordsArabic": [
       "طبل",
-      "طبل جانبي",
-      "أداة أو جهاز يسمى «باسس دروم»",
-      "أداة أو جهاز يسمى «تيمباني»",
+      "طبل سنير",
+      "طبل كبير",
+      "طبول تيمباني",
       "صنج",
       "مثلث",
       "إكسيليفون",
       "دف",
       "غونغ",
       "ساق دجاج",
-      "قاعة حفلات",
+      "قاعة حفلات موسيقية",
       "مرحلة",
       "حامل نوتة موسيقية",
       "منصة قائد الأوركسترا",
-      "هراوة"
+      "عصا قائد الأوركسترا"
     ],
     "usage": {
       "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Music Stand as the central item; include Music Stand, Conductor's Podium, and Baton naturally where visually appropriate, but make the real-world use of Music Stand the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Orchestra",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Drum"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Drum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cymbal"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cymbal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gong"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gong",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Music Stand"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Music Stand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -510,20 +549,20 @@
       "Audience"
     ],
     "targetWordsArabic": [
-      "نوتة موسيقية",
-      "نتيجة",
-      "أداة يسمى «تونينج فورك»",
+      "نوتة موسيقية مكتوبة",
+      "مدونة موسيقية",
+      "شوكة رنانة",
       "مترونوم",
       "حلقة تداول أوركسترا",
       "محصل أو مشرف قطار",
-      "قائد مجموعة الكمان",
-      "عازف أو مؤد منفرد",
+      "عازف الكمان الأول",
+      "عازف منفرد",
       "العازف الأول",
       "قائد مجموعة الآلات",
-      "شخص يسمى «اككومبانيست»",
-      "شخص يسمى «كومبوسير»",
-      "شخص يسمى «اررانجير»",
-      "مقلب صفحات النوتة",
+      "عازف مرافق",
+      "ملحن",
+      "موزع موسيقي",
+      "مقلّب صفحات النوتة",
       "جمهور"
     ],
     "usage": {
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult working with or speaking to the Arranger; include Arranger, Page Turner, and Audience naturally where visually appropriate, but make the real-world use of Arranger the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: The Orchestra",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sheet Music"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sheet Music",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Orchestra Pit"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Orchestra Pit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "First Chair"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "First Chair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Arranger"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Arranger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -654,7 +706,7 @@
     "cefrStage": "B1",
     "stageName": "B1 Wider World",
     "targetWordsEnglish": ["Podium", "Symphony", "Rehearsal", "Program"],
-    "targetWordsArabic": ["شخص يسمى «بوديوم»", "سيمفونية", "بروفة", "برنامج العرض"],
+    "targetWordsArabic": ["منصة قائد الأوركسترا", "سيمفونية", "بروفة", "برنامج العرض"],
     "usage": {
       "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the music room.",
@@ -673,7 +725,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Podium as the central item; include Podium, Symphony, and Rehearsal naturally where visually appropriate, but make the real-world use of Podium the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Orchestra",
@@ -682,8 +735,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Podium"
+        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Podium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

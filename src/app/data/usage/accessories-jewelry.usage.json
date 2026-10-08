@@ -28,14 +28,14 @@
     ],
     "targetWordsArabic": [
       "قبعة",
-      "قبعة بواق",
+      "قبعة ذات واقٍ أمامي",
       "قبعة صوفية",
       "قبعة بيريه",
       "عصابة رأس",
       "مشبك شعر",
       "تاج صغير",
       "عمامة",
-      "واق للعين",
+      "واقٍ للعين",
       "قبعة فيدورا",
       "قلادة",
       "دلاية",
@@ -58,7 +58,7 @@
             "options": ["Hat", "Cap", "Beanie"],
             "expectedAnswer": "Beanie"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beanie while also considering Hat and Cap. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Hat, Cap, and Beanie visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Hat, Cap, Beanie in a natural setting."
         },
         {
@@ -70,7 +70,7 @@
             "options": ["Beret", "Headband", "Hair Clip"],
             "expectedAnswer": "Beret"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beret while also considering Headband and Hair Clip. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Beret, Headband, and Hair Clip visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Beret, Headband, Hair Clip in a natural setting."
         },
         {
@@ -82,7 +82,7 @@
             "options": ["Tiara", "Turban", "Visor"],
             "expectedAnswer": "Turban"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Turban while also considering Tiara and Visor. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Tiara, Turban, and Visor visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Tiara, Turban, Visor in a natural setting."
         },
         {
@@ -94,7 +94,7 @@
             "options": ["Fedora", "Necklace", "Pendant"],
             "expectedAnswer": "Pendant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pendant while also considering Fedora and Necklace. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Fedora, Necklace, and Pendant visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Fedora, Necklace, Pendant in a natural setting."
         },
         {
@@ -106,10 +106,11 @@
             "options": ["Choker", "Chain", "Bracelet"],
             "expectedAnswer": "Choker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Choker while also considering Chain and Bracelet. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Choker, Chain, and Bracelet visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Choker, Chain, Bracelet in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Accessories & Jewelry: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hat"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beanie while also considering Hat and Cap. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Beanie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beret"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beret while also considering Headband and Hair Clip. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Beret",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tiara"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Turban while also considering Tiara and Visor. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Turban",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fedora"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pendant while also considering Fedora and Necklace. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Pendant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Choker"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Choker while also considering Chain and Bracelet. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Choker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -201,11 +217,11 @@
       "خاتم",
       "خاتم خطوبة",
       "حلقة زفاف",
-      "خاتم خاتم ختم",
+      "خاتم ختم",
       "قرط",
       "قرط مسماري",
       "قرط حلقي",
-      "قرط متدل",
+      "قُرط متدلٍّ",
       "قرط يلتف حول الأذن",
       "ثقب للزينة"
     ],
@@ -224,7 +240,7 @@
             "options": ["Bangle", "Watch", "Wristband"],
             "expectedAnswer": "Bangle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Bangle while also considering Watch and Wristband. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Bangle, Watch, and Wristband visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Bangle, Watch, Wristband in a natural setting."
         },
         {
@@ -236,7 +252,7 @@
             "options": ["Cuff", "Charm Bracelet", "Ring"],
             "expectedAnswer": "Charm Bracelet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Charm Bracelet while also considering Cuff and Ring. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Cuff, Charm Bracelet, and Ring visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Cuff, Charm Bracelet, Ring in a natural setting."
         },
         {
@@ -248,7 +264,7 @@
             "options": ["Engagement Ring", "Wedding Band", "Signet Ring"],
             "expectedAnswer": "Signet Ring"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Signet Ring while also considering Engagement Ring and Wedding Band. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Engagement Ring, Wedding Band, and Signet Ring visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Engagement Ring, Wedding Band, Signet Ring in a natural setting."
         },
         {
@@ -260,7 +276,7 @@
             "options": ["Earring", "Stud", "Hoop"],
             "expectedAnswer": "Earring"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Earring while also considering Stud and Hoop. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Earring, Stud, and Hoop visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Earring, Stud, Hoop in a natural setting."
         },
         {
@@ -272,10 +288,11 @@
             "options": ["Dangle Earring", "Ear Cuff", "Piercing"],
             "expectedAnswer": "Ear Cuff"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Ear Cuff while also considering Dangle Earring and Piercing. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Dangle Earring, Ear Cuff, and Piercing visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Dangle Earring, Ear Cuff, Piercing in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Accessories & Jewelry: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bangle"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Bangle while also considering Watch and Wristband. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Bangle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cuff"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Charm Bracelet while also considering Cuff and Ring. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Charm Bracelet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Engagement Ring"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Signet Ring while also considering Engagement Ring and Wedding Band. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Signet Ring",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Earring"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Earring while also considering Stud and Hoop. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Earring",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dangle Earring"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Ear Cuff while also considering Dangle Earring and Piercing. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Ear Cuff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -368,7 +400,7 @@
       "محفظة نقود",
       "حقيبة أوراق",
       "كيس سفر",
-      "عبوة خصر",
+      "حقيبة خصر",
       "نظارة شمسية",
       "نظارات (نظارة)",
       "وشاح",
@@ -390,7 +422,7 @@
             "options": ["Handbag", "Backpack", "Tote Bag"],
             "expectedAnswer": "Backpack"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Backpack while also considering Handbag and Tote Bag. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Handbag, Backpack, and Tote Bag visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Handbag, Backpack, Tote Bag in a natural setting."
         },
         {
@@ -402,7 +434,7 @@
             "options": ["Messenger Bag", "Clutch", "Wallet"],
             "expectedAnswer": "Wallet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Wallet while also considering Messenger Bag and Clutch. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Messenger Bag, Clutch, and Wallet visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Messenger Bag, Clutch, Wallet in a natural setting."
         },
         {
@@ -414,7 +446,7 @@
             "options": ["Purse", "Briefcase", "Duffel Bag"],
             "expectedAnswer": "Purse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Purse while also considering Briefcase and Duffel Bag. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Purse, Briefcase, and Duffel Bag visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Purse, Briefcase, Duffel Bag in a natural setting."
         },
         {
@@ -426,7 +458,7 @@
             "options": ["Fanny Pack", "Sunglasses", "Glasses"],
             "expectedAnswer": "Sunglasses"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Sunglasses while also considering Fanny Pack and Glasses. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Fanny Pack, Sunglasses, and Glasses visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Fanny Pack, Sunglasses, Glasses in a natural setting."
         },
         {
@@ -438,10 +470,11 @@
             "options": ["Scarf", "Gloves", "Belt"],
             "expectedAnswer": "Belt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Belt while also considering Scarf and Gloves. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Scarf, Gloves, and Belt visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Scarf, Gloves, Belt in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Accessories & Jewelry: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Handbag"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Backpack while also considering Handbag and Tote Bag. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Backpack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Messenger Bag"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Wallet while also considering Messenger Bag and Clutch. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Wallet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Purse"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Purse while also considering Briefcase and Duffel Bag. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Purse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fanny Pack"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Sunglasses while also considering Fanny Pack and Glasses. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Sunglasses",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scarf"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Belt while also considering Scarf and Gloves. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Belt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -524,22 +572,23 @@
             "options": ["Umbrella", "Tie Pin", "Brooch"],
             "expectedAnswer": "Brooch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Brooch while also considering Umbrella and Tie Pin. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Umbrella, Tie Pin, and Brooch visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Umbrella, Tie Pin, Brooch in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pocket Watch", "Cane"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pocket Watch while also considering Cane, undefined, and undefined. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pocket Watch while also considering Cane. She chooses one useful item for each activity and checks that everything is secure.",
           "check": {
             "question": "Which target does Leila notice first in this situation?",
             "options": ["Pocket Watch", "Cane", "Umbrella"],
             "expectedAnswer": "Pocket Watch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a accessories & jewelry context illustrating this situation: While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pocket Watch while also considering Cane, undefined, and undefined. She chooses one useful item for each activity and checks that everything is secure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in packing for a trip, with Pocket Watch and Cane visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Pocket Watch, Cane in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Accessories & Jewelry: Tips/Notice",
@@ -548,12 +597,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Umbrella"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Brooch while also considering Umbrella and Tie Pin. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Brooch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pocket Watch"
+        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pocket Watch while also considering Cane. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "answer": "Pocket Watch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

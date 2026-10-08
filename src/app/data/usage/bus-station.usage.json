@@ -27,21 +27,21 @@
       "Schedule"
     ],
     "targetWordsArabic": [
-      "حافلة مدينة",
+      "حافلة المدينة",
       "حافلة ذات طابقين",
       "حافلة سفر",
       "حافلة صغيرة",
-      "حافلة نقل",
+      "حافلة نقل ترددي",
       "حافلة مدرسية",
-      "حافلة ترولي",
+      "حافلة كهربائية بسلك علوي",
       "حافلة مفصلية",
       "حافلة ليلية",
       "حافلة سريعة",
-      "رصيف",
-      "مأوى",
+      "رصيف الحافلات",
+      "مظلة انتظار الحافلات",
       "مقعد",
-      "-",
-      "جدول"
+      "كشك تذاكر",
+      "جدول الرحلات"
     ],
     "usage": {
       "goal": "Learn to use the bus station 1 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Bench, Ticket Booth, Schedule. The option needed for the next step is Bench. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Bench, Ticket Booth, Schedule in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bus Station: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "City Bus"
+        "prompt": "During a routine travel task, an adult compares City Bus, Double Decker, Coach. The option needed for the next step is City Bus.\nWhich option is needed for the next step in the journey?",
+        "answer": "City Bus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Minibus"
+        "prompt": "During a routine travel task, an adult compares Minibus, Shuttle, School Bus. The option needed for the next step is Minibus.\nWhich option is needed for the next step in the journey?",
+        "answer": "Minibus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trolley"
+        "prompt": "During a routine travel task, an adult compares Trolley, Articulated Bus, Night Bus. The option needed for the next step is Trolley.\nWhich option is needed for the next step in the journey?",
+        "answer": "Trolley",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Express Bus"
+        "prompt": "During a routine travel task, an adult compares Express Bus, Platform, Shelter. The option needed for the next step is Express Bus.\nWhich option is needed for the next step in the journey?",
+        "answer": "Express Bus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bench"
+        "prompt": "During a routine travel task, an adult compares Bench, Ticket Booth, Schedule. The option needed for the next step is Bench.\nWhich option is needed for the next step in the journey?",
+        "answer": "Bench",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -199,13 +215,13 @@
       "دورة مياه",
       "ساعة حائط / ساعة",
       "تذكرة",
-      "بطاقة مرور",
+      "اشتراك مواصلات",
       "أجرة",
       "بطاقة مواصلات لا تلامسية",
       "آلة",
       "إيصال",
       "منطقة",
-      "تحويل",
+      "الانتقال بين وسائل النقل",
       "تذكرة يومية",
       "خصم للطلاب"
     ],
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Transfer, Day Pass, Student Discount. The option needed for the next step is Transfer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Transfer, Day Pass, Student Discount in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bus Station: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Map"
+        "prompt": "During a routine travel task, an adult compares Map, Vending Machine, Trash Can. The option needed for the next step is Map.\nWhich option is needed for the next step in the journey?",
+        "answer": "Map",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Restroom"
+        "prompt": "During a routine travel task, an adult compares Restroom, Clock, Ticket. The option needed for the next step is Restroom.\nWhich option is needed for the next step in the journey?",
+        "answer": "Restroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pass"
+        "prompt": "During a routine travel task, an adult compares Pass, Fare, Tap Card. The option needed for the next step is Pass.\nWhich option is needed for the next step in the journey?",
+        "answer": "Pass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Machine"
+        "prompt": "During a routine travel task, an adult compares Machine, Receipt, Zone. The option needed for the next step is Machine.\nWhich option is needed for the next step in the journey?",
+        "answer": "Machine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Transfer"
+        "prompt": "During a routine travel task, an adult compares Transfer, Day Pass, Student Discount. The option needed for the next step is Transfer.\nWhich option is needed for the next step in the journey?",
+        "answer": "Transfer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -361,19 +393,19 @@
     "targetWordsArabic": [
       "مقعد",
       "ممر",
-      "درابزين",
+      "قضيب للإمساك",
       "جرس",
       "زر طلب التوقف",
       "نافذة (شباك)",
       "باب",
       "مقعد السائق",
       "منحدر للكراسي المتحركة",
-      "رف أمتعة",
+      "حامل أمتعة",
       "سائق",
       "راكب",
-      "متنقل يومي",
-      "مفتش",
-      "مرافق خدمة"
+      "راكب يتنقل يوميًا",
+      "مفتش تذاكر",
+      "موظف خدمة الركاب"
     ],
     "usage": {
       "goal": "Learn to use the bus station 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Commuter, Inspector, Attendant. The option needed for the next step is Commuter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Commuter, Inspector, Attendant in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bus Station: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seat"
+        "prompt": "During a routine travel task, an adult compares Seat, Aisle, Handrail. The option needed for the next step is Seat.\nWhich option is needed for the next step in the journey?",
+        "answer": "Seat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bell"
+        "prompt": "During a routine travel task, an adult compares Bell, Stop Button, Window. The option needed for the next step is Bell.\nWhich option is needed for the next step in the journey?",
+        "answer": "Bell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Door"
+        "prompt": "During a routine travel task, an adult compares Door, Driver Seat, Wheelchair Ramp. The option needed for the next step is Door.\nWhich option is needed for the next step in the journey?",
+        "answer": "Door",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Luggage Rack"
+        "prompt": "During a routine travel task, an adult compares Luggage Rack, Driver, Passenger. The option needed for the next step is Luggage Rack.\nWhich option is needed for the next step in the journey?",
+        "answer": "Luggage Rack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Commuter"
+        "prompt": "During a routine travel task, an adult compares Commuter, Inspector, Attendant. The option needed for the next step is Commuter.\nWhich option is needed for the next step in the journey?",
+        "answer": "Commuter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -534,8 +582,8 @@
       "لافتة الوجهة",
       "جدول مواعيد",
       "إشعار بالتأخير",
-      "علامة توقف",
-      "حارة حافلات",
+      "علامة قف",
+      "مسار حافلات",
       "ممنوع الدخول",
       "المحطة التالية",
       "المحطة النهائية",
@@ -607,7 +655,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Next Stop, Final Stop, Detour. The option needed for the next step is Next Stop. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Next Stop, Final Stop, Detour in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bus Station: Everyday Description",
@@ -616,24 +665,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tourist"
+        "prompt": "During a routine travel task, an adult compares Tourist, Student, Elderly. The option needed for the next step is Tourist.\nWhich option is needed for the next step in the journey?",
+        "answer": "Tourist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parent"
+        "prompt": "During a routine travel task, an adult compares Parent, Child, Route Number. The option needed for the next step is Parent.\nWhich option is needed for the next step in the journey?",
+        "answer": "Parent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Destination Sign"
+        "prompt": "During a routine travel task, an adult compares Destination Sign, Timetable, Delay Notice. The option needed for the next step is Destination Sign.\nWhich option is needed for the next step in the journey?",
+        "answer": "Destination Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stop Sign"
+        "prompt": "During a routine travel task, an adult compares Stop Sign, Bus Lane, No Entry. The option needed for the next step is Stop Sign.\nWhich option is needed for the next step in the journey?",
+        "answer": "Stop Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Next Stop"
+        "prompt": "During a routine travel task, an adult compares Next Stop, Final Stop, Detour. The option needed for the next step is Next Stop.\nWhich option is needed for the next step in the journey?",
+        "answer": "Next Stop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

@@ -36,12 +36,12 @@
       "يشرح",
       "يصف",
       "يعلن",
-      "يصرح",
+      "يصرّح أو يعلن رسميًا",
       "يهمس",
       "يصيح",
       "يصرخ",
       "يصرخ بشدة",
-      "يتمتم"
+      "يتمتم بصوت خافت"
     ],
     "usage": {
       "goal": "Learn to use common communication verbs 1 vocabulary to handle a familiar adult everyday task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Yell, Scream, Murmur. The situation requires the person to yell next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Yell, Scream, Murmur in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Communication Verbs: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Talk"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Talk, Speak, Say. The situation requires the person to talk next.\nWhat should the person do next?",
+        "answer": "Talk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tell"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Tell, Ask, Answer. The situation requires the person to tell next.\nWhat should the person do next?",
+        "answer": "Tell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Explain"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Explain, Describe, Announce. The situation requires the person to explain next.\nWhat should the person do next?",
+        "answer": "Explain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Declare"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Declare, Whisper, Shout. The situation requires the person to declare next.\nWhat should the person do next?",
+        "answer": "Declare",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Yell"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Yell, Scream, Murmur. The situation requires the person to yell next.\nWhat should the person do next?",
+        "answer": "Yell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -192,18 +208,18 @@
       "يغمغم",
       "يتلعثم",
       "يتأتئ",
-      "يغني",
+      "يغني أو ينشد",
       "يردد",
       "يناقش",
       "يناظر",
       "يجادل",
       "يوافق",
-      "يختلف",
+      "يختلف في الرأي",
       "يتفاوض",
       "يقنع",
-      "يقنع",
+      "يُقنع بالحجة",
       "يقترح",
-      "يقترح"
+      "يطرح مقترحًا"
     ],
     "usage": {
       "goal": "Learn to use common communication verbs 2 vocabulary to handle a familiar adult everyday task.",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Convince, Suggest, Propose. The situation requires the person to convince next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Convince, Suggest, Propose in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Communication Verbs: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mumble"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Mumble, Stutter, Stammer. The situation requires the person to mumble next.\nWhat should the person do next?",
+        "answer": "Mumble",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sing"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Sing, Chant, Discuss. The situation requires the person to sing next.\nWhat should the person do next?",
+        "answer": "Sing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Debate"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Debate, Argue, Agree. The situation requires the person to debate next.\nWhat should the person do next?",
+        "answer": "Debate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Disagree"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Disagree, Negotiate, Persuade. The situation requires the person to disagree next.\nWhat should the person do next?",
+        "answer": "Disagree",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Convince"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Convince, Suggest, Propose. The situation requires the person to convince next.\nWhat should the person do next?",
+        "answer": "Convince",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -353,19 +385,19 @@
     "targetWordsArabic": [
       "يكتب",
       "يقرأ",
-      "نوع",
-      "يرسل بريدا إلكترونيا",
+      "يطبع على لوحة المفاتيح",
+      "يرسل بريدًا إلكترونيًا",
       "يرسل رسالة نصية",
-      "طباعة",
+      "يطبع على الورق",
       "ينشر",
-      "يحرر",
-      "مسودة",
-      "يراجع",
-      "إيماءة",
+      "يحرر النص",
+      "يكتب مسودة",
+      "يراجع وينقح",
+      "يشير بيده أو يومئ",
       "يومئ برأسه",
-      "يهز رأسه من جانب إلى آخر",
-      "يشير",
-      "يلوح"
+      "يهزّ رأسه نفيًا",
+      "يشير بإصبعه",
+      "يلوّح بيده"
     ],
     "usage": {
       "goal": "Learn to use common communication verbs 3 vocabulary to handle a familiar adult everyday task.",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Shake Head, Point, Wave. The situation requires the person to shake head next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Shake Head, Point, Wave in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Communication Verbs: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Write"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Write, Read, Type. The situation requires the person to write next.\nWhat should the person do next?",
+        "answer": "Write",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Email"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Email, Text, Print. The situation requires the person to email next.\nWhat should the person do next?",
+        "answer": "Email",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Publish"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Publish, Edit, Draft. The situation requires the person to publish next.\nWhat should the person do next?",
+        "answer": "Publish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Revise"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Revise, Gesture, Nod. The situation requires the person to revise next.\nWhat should the person do next?",
+        "answer": "Revise",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shake Head"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Shake Head, Point, Wave. The situation requires the person to shake head next.\nWhat should the person do next?",
+        "answer": "Shake Head",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -496,7 +544,13 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Shrug", "Signal", "Mime", "Sign", "Wink"],
-    "targetWordsArabic": ["يهز كتفيه", "إشارة", "يمثل بالإيماء", "علامة", "يغمز"],
+    "targetWordsArabic": [
+      "يهز كتفيه",
+      "يعطي إشارة",
+      "يمثّل بالإيماء",
+      "يتواصل بلغة الإشارة أو يوقّع",
+      "يغمز"
+    ],
     "usage": {
       "goal": "Learn to use common communication verbs 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to communication verbs.",
@@ -527,7 +581,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Sign, Wink, Shrug. The situation requires the person to sign next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Sign, Wink in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Communication Verbs: Notice-Style Text",
@@ -536,12 +591,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shrug"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Shrug, Signal, Mime. The situation requires the person to shrug next.\nWhat should the person do next?",
+        "answer": "Shrug",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sign"
+        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Sign, Wink, Shrug. The situation requires the person to sign next.\nWhat should the person do next?",
+        "answer": "Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

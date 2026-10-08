@@ -28,16 +28,16 @@
     ],
     "targetWordsArabic": [
       "هيكل السفينة",
-      "غرفة يسمى «كوننينج تووير»",
+      "برج قيادة الغواصة",
       "منظار بيريسكوبي",
       "فتحة دخول",
       "نافذة دائرية",
       "خزان اتزان",
       "مروحة دافعة",
-      "دفة",
-      "أنبوب طوربيد",
-      "قبة سونار",
-      "جهاز يسمى «كونترول بانيل»",
+      "دفّة",
+      "أنبوب إطلاق طوربيد",
+      "قُبّة سونار",
+      "لوحة تحكم",
       "شاشة الملاحة",
       "مقياس العمق",
       "بوصلة",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Depth Gauge as the central item; include Depth Gauge, Compass, and Radar naturally where visually appropriate, but make the real-world use of Depth Gauge the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Submarine",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hull"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hull",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Porthole"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Porthole",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Torpedo Tube"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Torpedo Tube",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Depth Gauge"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Depth Gauge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -190,18 +203,18 @@
     "targetWordsArabic": [
       "شاشة السونار",
       "دفة القيادة",
-      "ذراع التحكم بالدفع",
+      "متحكم قدرة المحرك",
       "جهاز اتصال لاسلكي",
       "إنذار",
       "سرير بطابقين",
       "مطبخ صغير",
-      "عضو يسمى «ميسس هالل»",
+      "قاعة طعام الطاقم",
       "خزانة تخزين",
       "-",
-      "دش",
+      "دُش",
       "غسيل الملابس",
       "-",
-      "غرفة يسمى «ريكرياتيون رووم»",
+      "غرفة ترفيه",
       "مقصورة القبطان"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Library as the central item; include Library, Recreation Room, and Captain's Cabin naturally where visually appropriate, but make the real-world use of Library the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Submarine",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sonar Display"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sonar Display",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Alarm"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Alarm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Storage Locker"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Storage Locker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Library"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Library",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -352,9 +378,9 @@
       "قبطان",
       "ملاح",
       "مهندس",
-      "مشغل السونار",
-      "مشغل اللاسلكي",
-      "طاه",
+      "مشغّل السونار",
+      "مشغّل اللاسلكي",
+      "طاهٍ",
       "مسعف",
       "غواص",
       "فني",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the GPS as the central item; include GPS, Buoy, and Anchor naturally where visually appropriate, but make the real-world use of GPS the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Submarine",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Captain"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Captain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Radio Operator"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Radio Operator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Technician"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Technician",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "GPS"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "GPS",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -512,7 +551,7 @@
     "targetWordsArabic": [
       "كشاف بحث",
       "كاميرا تحت الماء",
-      "جهاز يسمى «يتشو سووندير»",
+      "جهاز قياس العمق بالصدى",
       "مقياس تيار الماء",
       "سجل الرحلة",
       "حوت",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Seaweed as the central item; include Seaweed, Plankton, and Shipwreck naturally where visually appropriate, but make the real-world use of Seaweed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Submarine",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Searchlight"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Searchlight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Logbook"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Logbook",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Giant Squid"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Giant Squid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seaweed"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Seaweed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -685,7 +737,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Valve as the central item; include Valve, Officer, and Sonar naturally where visually appropriate, but make the real-world use of Valve the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Submarine",
@@ -694,12 +747,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sonar"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sonar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Valve"
+        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Valve",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

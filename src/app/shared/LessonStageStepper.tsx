@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Check, Lock } from "lucide-react";
 
 export interface LessonStageStepperItem {
   id: string;
@@ -133,13 +134,26 @@ export function LessonStageStepper({
                 }`}
               >
                 <span
-                  className={`flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-black ${isCurrent ? "bg-primary-foreground text-primary" : isCompleted ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"}`}
+                  className={`flex size-6 shrink-0 items-center justify-center rounded-full text-[10px] font-black transition-colors ${
+                    isCurrent
+                      ? "bg-primary-foreground text-primary"
+                      : isCompleted
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground"
+                  }`}
                   aria-hidden
                 >
-                  {isCompleted ? "✓" : index + 1}
+                  {isCompleted ? (
+                    <Check className="size-3.5 stroke-[3]" />
+                  ) : stage.locked ? (
+                    <Lock className="size-3.5" />
+                  ) : Icon ? (
+                    <Icon className="size-3.5" />
+                  ) : (
+                    index + 1
+                  )}
                 </span>
-                {Icon && <Icon className="size-3.5 shrink-0" aria-hidden />}
-                <span className="whitespace-nowrap tracking-tight">{stage.label}</span>
+                <span className="truncate tracking-tight">{stage.label}</span>
               </button>
             </li>
           );

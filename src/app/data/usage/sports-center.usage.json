@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "كرة القدم",
       "كرة السلة",
-      "التنس",
+      "تنس",
       "كرة الطائرة",
       "بيسبول",
       "كرة القدم الأمريكية",
-      "الرغبي",
-      "الكريكيت",
+      "رغبي",
+      "كريكيت",
       "ريشة طائرة",
       "تنس الطاولة",
-      "الغولف",
-      "البولينغ",
+      "غولف",
+      "بولينغ",
       "مقدمة باطن القدم",
-      "مضرب التنس (مضرب شبكي)",
-      "مضرب البيسبول (مضرب)"
+      "مضرب",
+      "مضرب خشبي"
     ],
     "usage": {
       "goal": "Learn to use common l4 sports center 1 vocabulary to handle a familiar adult everyday task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares ball, racket, bat. The person selects ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including ball, racket, bat in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Sports Center: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "soccer"
+        "prompt": "During a routine l4 sports center task, an adult compares soccer, basketball, tennis. The person selects soccer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "soccer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "volleyball"
+        "prompt": "During a routine l4 sports center task, an adult compares volleyball, baseball, football. The person selects volleyball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "volleyball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "rugby"
+        "prompt": "During a routine l4 sports center task, an adult compares rugby, cricket, badminton. The person selects rugby for the next step.\nWhich option does the person select for the next step?",
+        "answer": "rugby",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "table tennis"
+        "prompt": "During a routine l4 sports center task, an adult compares table tennis, golf, bowling. The person selects table tennis for the next step.\nWhich option does the person select for the next step?",
+        "answer": "table tennis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ball"
+        "prompt": "During a routine l4 sports center task, an adult compares ball, racket, bat. The person selects ball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -191,7 +207,7 @@
     "targetWordsArabic": [
       "خوذة",
       "واقي الساق",
-      "واقية الركبة",
+      "واقي الركبة",
       "قفاز",
       "صافي",
       "مرمى",
@@ -199,11 +215,11 @@
       "لوحة نتائج",
       "صافرة",
       "ساعة توقيت",
-      "قمع",
-      "الجري (الركض)",
-      "العدو السريع",
-      "سباق التتابع",
-      "سباق الحواجز"
+      "قُمع",
+      "جري",
+      "عدو سريع",
+      "سباق تتابع",
+      "سباق حواجز"
     ],
     "usage": {
       "goal": "Learn to use common l4 sports center 2 vocabulary to handle a familiar adult everyday task.",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares sprinting, relay race, hurdles. The person selects sprinting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including sprinting, relay race, hurdles in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Sports Center: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "helmet"
+        "prompt": "During a routine l4 sports center task, an adult compares helmet, shin guard, knee pad. The person selects helmet for the next step.\nWhich option does the person select for the next step?",
+        "answer": "helmet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "glove"
+        "prompt": "During a routine l4 sports center task, an adult compares glove, net, goal. The person selects glove for the next step.\nWhich option does the person select for the next step?",
+        "answer": "glove",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "hoop"
+        "prompt": "During a routine l4 sports center task, an adult compares hoop, scoreboard, whistle. The person selects hoop for the next step.\nWhich option does the person select for the next step?",
+        "answer": "hoop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "stopwatch"
+        "prompt": "During a routine l4 sports center task, an adult compares stopwatch, cone, running. The person selects stopwatch for the next step.\nWhich option does the person select for the next step?",
+        "answer": "stopwatch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sprinting"
+        "prompt": "During a routine l4 sports center task, an adult compares sprinting, relay race, hurdles. The person selects sprinting for the next step.\nWhich option does the person select for the next step?",
+        "answer": "sprinting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -351,17 +383,17 @@
       "freestyle"
     ],
     "targetWordsArabic": [
-      "الوثب الطويل",
-      "الوثب العالي",
+      "وثب طويل",
+      "وثب عالٍ",
       "رمي الرمح",
       "رمي القرص",
       "قبو معماري عمود",
       "ماراثون",
-      "مكعب انطلاق",
+      "مسند انطلاق",
       "طابور مذاق نهائي",
       "مسبح سباحة",
-      "لوح القفز",
-      "حارة",
+      "لوح قفز إلى الماء",
+      "حارة سباق",
       "لوح سباحة",
       "قبعة سباحة",
       "سباحة الظهر",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares swim cap, backstroke, freestyle. The person selects swim cap for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including swim cap, backstroke, freestyle in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Sports Center: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "long jump"
+        "prompt": "During a routine l4 sports center task, an adult compares long jump, high jump, javelin. The person selects long jump for the next step.\nWhich option does the person select for the next step?",
+        "answer": "long jump",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "discus"
+        "prompt": "During a routine l4 sports center task, an adult compares discus, pole vault, marathon. The person selects discus for the next step.\nWhich option does the person select for the next step?",
+        "answer": "discus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "starting block"
+        "prompt": "During a routine l4 sports center task, an adult compares starting block, finish line, swimming pool. The person selects starting block for the next step.\nWhich option does the person select for the next step?",
+        "answer": "starting block",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "diving board"
+        "prompt": "During a routine l4 sports center task, an adult compares diving board, lane, kickboard. The person selects diving board for the next step.\nWhich option does the person select for the next step?",
+        "answer": "diving board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "swim cap"
+        "prompt": "During a routine l4 sports center task, an adult compares swim cap, backstroke, freestyle. The person selects swim cap for the next step.\nWhich option does the person select for the next step?",
+        "answer": "swim cap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -522,12 +570,12 @@
       "مدرجات",
       "مسار",
       "ملعب",
-      "ملعب",
+      "ملعب محدد الحدود",
       "خاتم",
-      "بساط",
+      "بساط رياضي",
       "جهاز مشي",
       "غرفة أوزان",
-      "دش"
+      "دُش"
     ],
     "usage": {
       "goal": "Learn to use common l4 sports center 4 vocabulary to handle a familiar adult everyday task.",
@@ -595,7 +643,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares treadmill, weight room, shower. The person selects treadmill for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including treadmill, weight room, shower in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Sports Center: Notice-Style Text",
@@ -604,24 +653,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "butterfly stroke"
+        "prompt": "During a routine l4 sports center task, an adult compares butterfly stroke, water polo, synchronized swimming. The person selects butterfly stroke for the next step.\nWhich option does the person select for the next step?",
+        "answer": "butterfly stroke",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "gymnasium"
+        "prompt": "During a routine l4 sports center task, an adult compares gymnasium, locker room, bench. The person selects gymnasium for the next step.\nWhich option does the person select for the next step?",
+        "answer": "gymnasium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bleachers"
+        "prompt": "During a routine l4 sports center task, an adult compares bleachers, track, field. The person selects bleachers for the next step.\nWhich option does the person select for the next step?",
+        "answer": "bleachers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "court"
+        "prompt": "During a routine l4 sports center task, an adult compares court, ring, mat. The person selects court for the next step.\nWhich option does the person select for the next step?",
+        "answer": "court",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "treadmill"
+        "prompt": "During a routine l4 sports center task, an adult compares treadmill, weight room, shower. The person selects treadmill for the next step.\nWhich option does the person select for the next step?",
+        "answer": "treadmill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -675,7 +739,7 @@
       "رياضي",
       "حافلة سفر",
       "حكم",
-      "زميل فريق",
+      "زميل في الفريق",
       "إحماء",
       "مرونة",
       "نتيجة",
@@ -739,7 +803,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares throw, catch, dribble. The person selects throw for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including throw, catch, dribble in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Sports Center: Short Description",
@@ -748,20 +813,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "athlete"
+        "prompt": "During a routine l4 sports center task, an adult compares athlete, coach, referee. The person selects athlete for the next step.\nWhich option does the person select for the next step?",
+        "answer": "athlete",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "teammate"
+        "prompt": "During a routine l4 sports center task, an adult compares teammate, warm up, stretch. The person selects teammate for the next step.\nWhich option does the person select for the next step?",
+        "answer": "teammate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "score"
+        "prompt": "During a routine l4 sports center task, an adult compares score, pass, kick. The person selects score for the next step.\nWhich option does the person select for the next step?",
+        "answer": "score",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "throw"
+        "prompt": "During a routine l4 sports center task, an adult compares throw, catch, dribble. The person selects throw for the next step.\nWhich option does the person select for the next step?",
+        "answer": "throw",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

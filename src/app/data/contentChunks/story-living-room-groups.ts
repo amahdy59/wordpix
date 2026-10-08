@@ -9,5 +9,5 @@ export const stories: Record<string, string> = {
   "living-room-4":
     "In this section, you will learn about Tablecloth, Placemat, Coaster, Doormat, Tapestry, Plant, Vase, Photo Frame, Painting, Book, Magazine, Newspaper, Board Game, Puzzle, Playing Cards. These are essential items to know.",
   "living-room-5":
-    "In this section, you will learn about Lamp, Phone, Tablet, Charger, Headphones, Watch TV, Read Book, Play Games, Listen to Music, Relax, Sit Down, Chat, Take a Nap. These are essential items to know.",
+    "In this section, you will learn about Lamp, Phone, Tablet, Charger, Headphones, Watch TV, Read a Book, Play Games, Listen to Music, Relax, Sit Down, Chat, Take a Nap. These are essential items to know.",
 };

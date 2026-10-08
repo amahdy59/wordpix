@@ -211,7 +211,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
     thumbnailFocalPoint: { x: 50, y: 85 },
     name: "Cleaning Items",
     description:
-      "Learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle.",
+      "Learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take a Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle.",
     topicId: "bathroom-6",
     wordIds: [
       "sponge",
@@ -233,7 +233,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "gargle",
     ],
     story:
-      "In this section, you will learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle. These are essential items to know.",
+      "In this section, you will learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take a Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle. These are essential items to know.",
   },
 ];
 
@@ -599,7 +599,7 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
     id: "living-room-5",
     name: "The Living Room 5",
     description:
-      "Learn about Lamp, Phone, Tablet, Charger, Headphones, Watch TV, Read Book, Play Games, Listen to Music, Relax, S...",
+      "Learn about Lamp, Phone, Tablet, Charger, Headphones, Watch TV, Read a Book, Play Games, Listen to Music, Relax, S...",
     topicId: "living-room-5",
     wordIds: [
       "lamp",
@@ -617,7 +617,7 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "take-a-nap",
     ],
     story:
-      "In this section, you will learn about Lamp, Phone, Tablet, Charger, Headphones, Watch TV, Read Book, Play Games, Listen to Music, Relax, Sit Down, Chat, Take a Nap. These are essential items to know.",
+      "In this section, you will learn about Lamp, Phone, Tablet, Charger, Headphones, Watch TV, Read a Book, Play Games, Listen to Music, Relax, Sit Down, Chat, Take a Nap. These are essential items to know.",
   },
 ];
 

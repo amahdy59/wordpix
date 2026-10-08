@@ -4,10 +4,12 @@ import { motion, useReducedMotion } from "framer-motion";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame } from "../shared";
-import { identifySentence } from "../content/wordGrammar";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
-import { WordImage } from "../shared/WordImage";
+import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import { useLessonUsage } from "../data/useLessonUsage";
+import { getRichSentence } from "./exerciseContent";
+import { sentenceCloze } from "./sentenceCloze";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
@@ -17,9 +19,6 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
-import { findLessonSceneImage, loadLessonUsage } from "../data/usageRegistry";
-import type { UsageSceneChunk } from "../data/usageTypes";
-import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   step: number;
@@ -43,25 +42,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const spoken = useSpokenFeedback();
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
-  const [contextScene, setContextScene] = useState<UsageSceneChunk | null>(null);
-  const [sceneImageFailed, setSceneImageFailed] = useState(false);
+  const usageState = useLessonUsage(lessonId);
+  const usage = usageState.status === "ready" ? usageState.data : null;
   usePrefetchImage(queue.next);
-
-  useEffect(() => {
-    let cancelled = false;
-    setContextScene(null);
-    setSceneImageFailed(false);
-
-    void loadLessonUsage(lessonId).then((usage) => {
-      if (cancelled || !usage) return;
-      const matchingScene = findLessonSceneImage(usage, currentTargetWord.label);
-      if (matchingScene) setContextScene(matchingScene);
-    });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [currentTargetWord.label, lessonId]);
 
   const options = useMemo(() => {
     const otherWords = words.filter((word) => word.id !== currentTargetWord.id);
@@ -72,16 +55,10 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     [currentTargetWord.id]
   );
   const answerSentence = useMemo(
-    () =>
-      authoredSentence?.full ?? identifySentence(currentTargetWord.label, currentTargetWord.topic),
-    [authoredSentence, currentTargetWord]
+    () => authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full,
+    [authoredSentence, currentTargetWord, usage]
   );
-  const questionImagePath = authoredSentence?.media?.imagePath ?? contextScene?.imagePath;
-  const questionImageAlt =
-    authoredSentence?.media?.imageAlt ??
-    contextScene?.imageAlt ??
-    contextScene?.imageBrief ??
-    currentTargetWord.description;
+  const media = resolveSentenceMedia(currentTargetWord.id, answerSentence, usage);
 
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
@@ -190,27 +167,14 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
         activityLabel={t("exercise.wordChoicesAria")}
         media={
-          <MediaFrame aspect="scene" className="max-h-[38dvh] sm:max-h-[46dvh]">
-            {questionImagePath && !sceneImageFailed ? (
-              // onError is an image lifecycle event used only to select the safe fallback.
-              // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-              <img
-                src={resolveAssetUrl(questionImagePath)}
-                alt={questionImageAlt}
-                loading="eager"
-                fetchPriority="high"
-                className="size-full object-cover"
-                onError={() => setSceneImageFailed(true)}
-              />
-            ) : (
-              <WordImage
-                word={currentTargetWord}
-                className="size-full object-cover"
-                loading="eager"
-                fetchPriority="high"
-              />
-            )}
-          </MediaFrame>
+          <SentenceQuestionSupport
+            key={currentTargetWord.id}
+            word={currentTargetWord}
+            sentence={answerSentence}
+            prompt={sentenceCloze(answerSentence, currentTargetWord.label)}
+            media={media}
+            answered={feedback !== null}
+          />
         }
         activity={
           <div className="grid w-full grid-cols-2 gap-2 sm:gap-3" dir="ltr" lang="en">

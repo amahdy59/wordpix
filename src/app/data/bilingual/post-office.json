@@ -20,28 +20,28 @@
     "definition": "A wrapped item sent through the mail or a delivery service."
   },
   "stamp": {
-    "definition": "A carved or raised object used to print the same design repeatedly.",
-    "arabicTranslation": "طابع"
+    "definition": "A small adhesive label or printed mark showing that postage has been paid.",
+    "arabicTranslation": "طابع بريدي"
   },
   "sticker": {
     "arabicTranslation": "ملصق",
     "definition": "A small piece of paper or plastic with an adhesive back."
   },
   "label": {
-    "definition": "A brief description given for purposes of identification.",
-    "arabicTranslation": "علامة"
+    "definition": "A paper or adhesive tag showing a parcel's address or other details.",
+    "arabicTranslation": "ملصق بريدي"
   },
   "address": {
-    "definition": "(computer science) the code that identifies where a piece of information is stored.",
+    "definition": "The details identifying where a letter or parcel should be delivered.",
     "arabicTranslation": "عنوان"
   },
   "return-address": {
     "definition": "An address on a letter or package identifies the sender and shows where to send it if delivery is unsuccessful.",
-    "arabicTranslation": "عنوان عائد"
+    "arabicTranslation": "عنوان المرسل"
   },
   "zip-code": {
-    "definition": "A ZIP code is a set of letters and numbers that helps postal workers sort mail.",
-    "arabicTranslation": "عامل يُسمّى «زيب كودي»"
+    "definition": "A five-digit US postal code, sometimes followed by four additional digits.",
+    "arabicTranslation": "رمز بريدي أمريكي"
   },
   "tracking-number": {
     "definition": "A unique code used to identify and follow the progress of a mailed parcel or letter.",
@@ -62,12 +62,12 @@
     "arabicTranslation": "فتحة"
   },
   "counter": {
-    "definition": "A calculator that keeps a record of the number of times something happens.",
+    "definition": "A service surface where postal staff assist customers.",
     "arabicTranslation": "منضدة"
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم",
+    "arabicTranslation": "ميزان",
     "exampleUsage": "The scale was used during the activity."
   },
   "receipt": {
@@ -79,7 +79,7 @@
     "arabicTranslation": "توصيل"
   },
   "pickup": {
-    "definition": "The attribute of being capable of rapid acceleration.",
+    "definition": "The collection of a letter or parcel from a specified location.",
     "arabicTranslation": "استلام"
   },
   "signature": {
@@ -88,7 +88,7 @@
   },
   "registered-mail": {
     "definition": "Mail that the post office records and monitors to help ensure its safe delivery.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريجيستيريد مايل»"
+    "arabicTranslation": "بريد مسجل"
   },
   "express-mail": {
     "definition": "A faster postal service that gives priority to delivery compared with standard mail.",
@@ -111,7 +111,7 @@
     "arabicTranslation": "ساعي بريد"
   },
   "clerk": {
-    "definition": "To work as a clerk, as in the legal business.",
+    "definition": "A postal worker who assists customers at the service counter.",
     "arabicTranslation": "موظف"
   },
   "postmaster": {
@@ -128,7 +128,7 @@
     "arabicTranslation": "عامل فرز"
   },
   "courier": {
-    "definition": "A person who carries a message.",
+    "definition": "A worker who collects and delivers parcels or documents.",
     "arabicTranslation": "مندوب توصيل"
   },
   "customer": {
@@ -141,7 +141,7 @@
     "arabicTranslation": "حقيبة بريد"
   },
   "cart": {
-    "definition": "To transport something in a cart.",
+    "definition": "A wheeled trolley used to move letters or parcels.",
     "arabicTranslation": "عربة"
   },
   "sorting-machine": {
@@ -150,8 +150,8 @@
     "arabicTranslation": "آلة فرز"
   },
   "scanner": {
-    "definition": "A device that turns a paper image or document into a digital file.",
-    "arabicTranslation": "ماسح ضوئي",
+    "definition": "A device that reads a parcel's barcode to record or track it.",
+    "arabicTranslation": "قارئ الرموز الشريطية",
     "exampleUsage": "The scanner was used during the activity."
   },
   "tape": {
@@ -159,8 +159,8 @@
     "arabicTranslation": "شريط لاصق"
   },
   "bubble-wrap": {
-    "definition": "To surround an object with bubble wrap, protecting it from damage while it is stored or shipped.",
-    "arabicTranslation": "سفينة يُسمّى «بوببلي وراب»"
+    "definition": "Plastic packing material with small air-filled bubbles that protects objects.",
+    "arabicTranslation": "غلاف فقاعي"
   },
   "packing-peanuts": {
     "definition": "Small lightweight pieces of packaging material used to fill empty space and cushion items in a box.",
@@ -168,7 +168,7 @@
     "arabicTranslation": "حبيبات تغليف واقية"
   },
   "box": {
-    "definition": "Private area in a theater or grandstand where a small group can watch the performance.",
+    "definition": "A container, usually made of cardboard, used to pack items for mailing.",
     "arabicTranslation": "صندوق"
   },
   "padded-envelope": {
@@ -178,7 +178,7 @@
   },
   "rubber-band": {
     "definition": "A flexible loop used to hold things together.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روببير باند»"
+    "arabicTranslation": "رباط مطاطي"
   },
   "ink-pad": {
     "definition": "A small pad containing ink used with rubber stamps.",
@@ -186,8 +186,8 @@
     "arabicTranslation": "وسادة حبر"
   },
   "date-stamp": {
-    "definition": "Applying a date stamp to a document or object records when it was created, received, or processed.",
-    "arabicTranslation": "وثيقة يُسمّى «داتي ستامب»"
+    "definition": "A tool or printed mark showing a date.",
+    "arabicTranslation": "ختم تاريخ"
   },
   "lobby": {
     "definition": "A large entrance or reception room or area.",
@@ -200,11 +200,11 @@
   },
   "po-box": {
     "definition": "A numbered compartment at a post office stores mail for collection by its recipient.",
-    "arabicTranslation": "جزء يُسمّى «بو بوكس»"
+    "arabicTranslation": "صندوق بريد"
   },
   "loading-dock": {
     "definition": "A raised platform beside a road or railway where cargo is transferred to or from trucks and trains.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوادينج دوك»"
+    "arabicTranslation": "رصيف تحميل"
   },
   "sorting-room": {
     "definition": "A room where letters and parcels are organized for dispatch or delivery.",
@@ -223,12 +223,12 @@
   },
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
-    "arabicTranslation": "آلة يُسمّى «فيندينج ماتشيني»",
+    "arabicTranslation": "آلة بيع ذاتي",
     "exampleUsage": "The vending machine was used during the activity."
   },
   "form": {
-    "definition": "A category of things distinguished by some common characteristic or quality.",
-    "arabicTranslation": "شكل"
+    "definition": "A document with spaces for customers to enter postal-service information.",
+    "arabicTranslation": "استمارة"
   },
   "pen": {
     "definition": "A writing implement with a point from which ink flows.",
@@ -236,10 +236,10 @@
   },
   "waiting-area": {
     "definition": "A room in a place such as an airport or hotel where people sit until they are ready to leave or be served.",
-    "arabicTranslation": "غرفة يُسمّى «وايتينج اريا»"
+    "arabicTranslation": "منطقة انتظار"
   },
   "queue": {
-    "definition": "To form a queue, form a line, stand in line.",
+    "definition": "A line of people waiting for their turn.",
     "arabicTranslation": "طابور"
   }
 }

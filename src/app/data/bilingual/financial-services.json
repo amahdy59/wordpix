@@ -1,15 +1,15 @@
 {
   "mortgage": {
-    "definition": "A conditional conveyance of property as security for the repayment of a loan.",
+    "definition": "A loan secured by property, commonly used to buy a home.",
     "arabicTranslation": "رهن عقاري"
   },
   "auto-loan": {
     "definition": "A loan provided to an individual for buying an automobile.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اوتو لوان»"
+    "arabicTranslation": "قرض سيارة"
   },
   "personal-loan": {
     "definition": "Money lent to an individual for personal expenses, typically without collateral, after considering the borrower's reliability and ability to repay.",
-    "arabicTranslation": "شخص يُسمّى «بيرسونال لوان»"
+    "arabicTranslation": "قرض شخصي"
   },
   "student-loan": {
     "definition": "Money borrowed to help pay education costs and repaid under agreed terms.",
@@ -17,8 +17,8 @@
     "arabicTranslation": "قرض طلابي"
   },
   "line-of-credit": {
-    "definition": "It is the largest amount of borrowed money a lender permits a customer to use.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليني وف كريديت»"
+    "definition": "An arrangement allowing someone to borrow money up to an agreed limit.",
+    "arabicTranslation": "تسهيل ائتماني"
   },
   "credit-score": {
     "definition": "A number based on a person's credit history that lenders may use when assessing borrowing risk.",
@@ -27,10 +27,10 @@
   },
   "interest-rate": {
     "definition": "A percentage showing what borrowing money costs or what saving and lending it can earn over a set period, usually one year.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتيريست راتي»"
+    "arabicTranslation": "معدل فائدة"
   },
   "principal": {
-    "definition": "The person responsible for managing a school.",
+    "definition": "The original amount of a loan or investment, before interest.",
     "arabicTranslation": "أصل القرض"
   },
   "collateral": {
@@ -44,7 +44,7 @@
   },
   "health-insurance": {
     "definition": "Coverage that helps pay medical and other health-care costs under an insurance contract, usually in return for regular premiums.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيالث ينسورانكي»"
+    "arabicTranslation": "تأمين صحي"
   },
   "car-insurance": {
     "definition": "Coverage purchased from an insurance company protects people from financial losses linked to owning or using a car.",
@@ -70,7 +70,7 @@
     "definition": "The amount paid regularly for an insurance policy."
   },
   "deductible": {
-    "definition": "A clause in an insurance policy that relieves the insurer of responsibility to pay the initial loss up to a stated amount.",
+    "definition": "The amount an insured person pays before the policy covers specified costs.",
     "arabicTranslation": "مبلغ تحمّل"
   },
   "coverage": {
@@ -82,23 +82,23 @@
     "definition": "A request for payment from an insurer after a covered loss."
   },
   "policy": {
-    "definition": "A plan of action adopted by an individual or social group.",
-    "arabicTranslation": "بوليصة"
+    "definition": "A document setting out the terms and conditions of insurance coverage.",
+    "arabicTranslation": "وثيقة تأمين"
   },
   "stock": {
     "definition": "The capital raised by a corporation through the issue of shares entitling holders to an ownership interest (equity).",
     "arabicTranslation": "سهم"
   },
   "bond": {
-    "definition": "A connection based on kinship or marriage or common interest.",
+    "definition": "An investment in which money is lent to an issuer under agreed repayment terms.",
     "arabicTranslation": "سند"
   },
   "mutual-fund": {
     "definition": "Money from many investors is combined to purchase a broad range of assets.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موتوال فوند»"
+    "arabicTranslation": "صندوق استثمار مشترك"
   },
   "etf": {
-    "definition": "A mutual fund that is traded on a stock exchange.",
+    "definition": "An investment fund whose shares trade on a stock exchange.",
     "arabicTranslation": "صندوق متداول"
   },
   "portfolio": {
@@ -111,22 +111,22 @@
   },
   "capital-gain": {
     "definition": "The profit created when stocks, property, or a business become more valuable between purchase and sale.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كابيتال جاين»"
+    "arabicTranslation": "ربح رأسمالي"
   },
   "risk": {
-    "definition": "To expose to a chance of loss or damage.",
+    "definition": "The possibility that an investment will lose money or fail to meet expectations.",
     "arabicTranslation": "مخاطر"
   },
   "return": {
-    "definition": "A coming to or returning home.",
-    "arabicTranslation": "عائد"
+    "definition": "The money gained or lost on an investment over a period.",
+    "arabicTranslation": "عائد استثمار"
   },
   "diversification": {
     "definition": "The act of introducing variety (especially in investments or in the variety of goods and services offered).",
     "arabicTranslation": "تنويع"
   },
   "401k": {
-    "definition": "The G20 is a group where leaders from major economies work together on worldwide economic and financial concerns.",
+    "definition": "A U.S. employer-sponsored retirement savings plan funded through employee contributions and sometimes employer contributions.",
     "arabicTranslation": "خطة تقاعد 401(k)"
   },
   "ira": {
@@ -138,20 +138,20 @@
     "definition": "Money paid regularly to a person after retirement."
   },
   "social-security": {
-    "definition": "A U.S. social welfare program providing benefits to retired people, survivors of deceased workers, some unemployed people, and older adults needing financial assistance.",
-    "arabicTranslation": "أمن اجتماعي"
+    "definition": "A U.S. program providing retirement, disability, and survivor benefits to eligible people.",
+    "arabicTranslation": "الضمان الاجتماعي الأمريكي"
   },
   "annuity": {
-    "definition": "Income from capital investment paid in a series of regular payments.",
-    "arabicTranslation": "دفعات سنوية"
+    "definition": "A financial contract that can provide a series of regular payments.",
+    "arabicTranslation": "عقد دفعات دورية"
   },
   "retirement-fund": {
-    "definition": "A regular monthly payment provided to a person after they leave employment.",
-    "arabicTranslation": "شخص يُسمّى «ريتيريمينت فوند»"
+    "definition": "Money or investments set aside to support someone after retirement.",
+    "arabicTranslation": "صندوق تقاعد"
   },
   "compound-interest": {
     "definition": "Interest is added to the original amount, so later interest also grows on those earlier additions.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كومبووند ينتيريست»"
+    "arabicTranslation": "فائدة مركبة"
   },
   "contribution": {
     "definition": "An amount of money contributed.",
@@ -163,7 +163,7 @@
     "arabicTranslation": "استحقاق تدريجي للحقوق المالية"
   },
   "beneficiary": {
-    "definition": "Having or arising from a benefice.",
+    "definition": "A person or organization entitled to receive money or benefits.",
     "arabicTranslation": "مستفيد"
   }
 }

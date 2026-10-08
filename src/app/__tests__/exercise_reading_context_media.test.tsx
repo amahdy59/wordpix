@@ -33,7 +33,7 @@ describe("ExerciseReadingContext media", () => {
     );
 
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
-    expect(screen.getByText(/Placeholder image/i)).toBeVisible();
+    expect(screen.queryByText(/Image placeholder/i)).not.toBeInTheDocument();
     expect(screen.getByText(/I paint a red apple under a yellow sun/)).toBeVisible();
   });
 

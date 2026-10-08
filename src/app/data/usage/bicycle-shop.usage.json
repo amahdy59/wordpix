@@ -31,17 +31,17 @@
       "دراجة جبلية",
       "دراجة هجينة",
       "دراجة بي إم إكس",
-      "دراجة كروزر",
+      "دراجة للتجول المريح",
       "دراجة قابلة للطي",
       "دراجة كهربائية",
-      "دراجة ترادفية",
+      "دراجة لشخصين",
       "دراجة أطفال",
       "دراجة شحن",
       "عجلة",
-      "إطار سيارة",
+      "إطار دراجة",
       "سلسلة",
       "دواسة",
-      "مقود"
+      "مقود دراجة"
     ],
     "usage": {
       "goal": "Learn to use the bicycle shop 1 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bicycle shop context illustrating this situation: During a routine travel task, an adult compares Chain, Pedal, Handlebar. The option needed for the next step is Chain. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bicycle shop scene showing lesson-related items or actions including Chain, Pedal, Handlebar in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bicycle Shop: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Road Bike"
+        "prompt": "During a routine travel task, an adult compares Road Bike, Mountain Bike, Hybrid. The option needed for the next step is Road Bike.\nWhich option is needed for the next step in the journey?",
+        "answer": "Road Bike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bmx"
+        "prompt": "During a routine travel task, an adult compares Bmx, Cruiser, Folding Bike. The option needed for the next step is Bmx.\nWhich option is needed for the next step in the journey?",
+        "answer": "Bmx",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Electric Bike"
+        "prompt": "During a routine travel task, an adult compares Electric Bike, Tandem, Kids Bike. The option needed for the next step is Electric Bike.\nWhich option is needed for the next step in the journey?",
+        "answer": "Electric Bike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cargo Bike"
+        "prompt": "During a routine travel task, an adult compares Cargo Bike, Wheel, Tire. The option needed for the next step is Cargo Bike.\nWhich option is needed for the next step in the journey?",
+        "answer": "Cargo Bike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chain"
+        "prompt": "During a routine travel task, an adult compares Chain, Pedal, Handlebar. The option needed for the next step is Chain.\nWhich option is needed for the next step in the journey?",
+        "answer": "Chain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -194,17 +210,17 @@
     ],
     "targetWordsArabic": [
       "مقعد",
-      "فرامل",
+      "مكبح",
       "ترس",
-      "شعاع عجلة",
-      "إطار",
+      "سلك عجلة",
+      "هيكل الدراجة",
       "خوذة",
       "قفل",
-      "فاتح",
+      "مصباح دراجة",
       "جرس",
       "مرآة",
       "سلة",
-      "حامل دراجة",
+      "حامل أمتعة",
       "مضخة",
       "زجاجة ماء",
       "حامل هاتف"
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bicycle shop context illustrating this situation: During a routine travel task, an adult compares Pump, Water Bottle, Phone Mount. The option needed for the next step is Pump. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bicycle shop scene showing lesson-related items or actions including Pump, Water Bottle, Phone Mount in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bicycle Shop: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seat"
+        "prompt": "During a routine travel task, an adult compares Seat, Brake, Gear. The option needed for the next step is Seat.\nWhich option is needed for the next step in the journey?",
+        "answer": "Seat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spoke"
+        "prompt": "During a routine travel task, an adult compares Spoke, Frame, Helmet. The option needed for the next step is Spoke.\nWhich option is needed for the next step in the journey?",
+        "answer": "Spoke",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lock"
+        "prompt": "During a routine travel task, an adult compares Lock, Light, Bell. The option needed for the next step is Lock.\nWhich option is needed for the next step in the journey?",
+        "answer": "Lock",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
+        "prompt": "During a routine travel task, an adult compares Mirror, Basket, Rack. The option needed for the next step is Mirror.\nWhich option is needed for the next step in the journey?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pump"
+        "prompt": "During a routine travel task, an adult compares Pump, Water Bottle, Phone Mount. The option needed for the next step is Pump.\nWhich option is needed for the next step in the journey?",
+        "answer": "Pump",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -359,14 +391,14 @@
       "Chain Tool"
     ],
     "targetWordsArabic": [
-      "قميص رياضي",
+      "قميص ركوب دراجات",
       "سروال قصير",
       "قفازات",
-      "أحذية",
+      "أحذية ركوب دراجات",
       "نظارة شمسية",
       "سترة مطر",
       "سترة عاكسة للضوء",
-      "قبعة بواق",
+      "قبعة بواقٍ",
       "أكمام تدفئة للذراعين",
       "أغطية تدفئة للساقين",
       "مفتاح ربط",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bicycle shop context illustrating this situation: During a routine travel task, an adult compares Patch Kit, Multi Tool, Chain Tool. The option needed for the next step is Patch Kit. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bicycle shop scene showing lesson-related items or actions including Patch Kit, Multi Tool, Chain Tool in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bicycle Shop: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jersey"
+        "prompt": "During a routine travel task, an adult compares Jersey, Shorts, Gloves. The option needed for the next step is Jersey.\nWhich option is needed for the next step in the journey?",
+        "answer": "Jersey",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shoes"
+        "prompt": "During a routine travel task, an adult compares Shoes, Sunglasses, Rain Jacket. The option needed for the next step is Shoes.\nWhich option is needed for the next step in the journey?",
+        "answer": "Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reflective Vest"
+        "prompt": "During a routine travel task, an adult compares Reflective Vest, Cap, Arm Warmers. The option needed for the next step is Reflective Vest.\nWhich option is needed for the next step in the journey?",
+        "answer": "Reflective Vest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leg Warmers"
+        "prompt": "During a routine travel task, an adult compares Leg Warmers, Wrench, Tire Lever. The option needed for the next step is Leg Warmers.\nWhich option is needed for the next step in the journey?",
+        "answer": "Leg Warmers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Patch Kit"
+        "prompt": "During a routine travel task, an adult compares Patch Kit, Multi Tool, Chain Tool. The option needed for the next step is Patch Kit.\nWhich option is needed for the next step in the journey?",
+        "answer": "Patch Kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -525,21 +573,21 @@
       "Flat Tire"
     ],
     "targetWordsArabic": [
-      "شحم",
-      "يقف",
+      "شحم تزييت",
+      "حامل دراجة",
       "مفتاح أسلاك العجلة",
-      "كابل",
+      "كابل الفرامل أو تغيير السرعات",
       "بطانة فرامل",
       "مسار دراجات",
       "مسار",
-      "ممر (ممشى الحديقة)",
-      "-",
-      "يدير",
-      "إشارة",
+      "ممر",
+      "تل",
+      "ينعطف",
+      "يشير إلى تغيير الاتجاه أو التوقف",
       "يتوقف",
-      "حديقة",
+      "يركن الدراجة",
       "يقفل الدراجة",
-      "إطار سيارة مسطح"
+      "إطار فارغ من الهواء"
     ],
     "usage": {
       "goal": "Learn to use the bicycle shop 4 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -607,7 +655,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the bicycle shop context illustrating this situation: During a routine travel task, an adult compares Park, Lock Up, Flat Tire. The option needed for the next step is Park. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the bicycle shop scene showing lesson-related items or actions including Park, Lock Up, Flat Tire in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bicycle Shop: Everyday Description",
@@ -616,24 +665,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grease"
+        "prompt": "During a routine travel task, an adult compares Grease, Stand, Spoke Wrench. The option needed for the next step is Grease.\nWhich option is needed for the next step in the journey?",
+        "answer": "Grease",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cable"
+        "prompt": "During a routine travel task, an adult compares Cable, Brake Pad, Bike Lane. The option needed for the next step is Cable.\nWhich option is needed for the next step in the journey?",
+        "answer": "Cable",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trail"
+        "prompt": "During a routine travel task, an adult compares Trail, Path, Hill. The option needed for the next step is Trail.\nWhich option is needed for the next step in the journey?",
+        "answer": "Trail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Turn"
+        "prompt": "During a routine travel task, an adult compares Turn, Signal, Stop. The option needed for the next step is Turn.\nWhich option is needed for the next step in the journey?",
+        "answer": "Turn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Park"
+        "prompt": "During a routine travel task, an adult compares Park, Lock Up, Flat Tire. The option needed for the next step is Park.\nWhich option is needed for the next step in the journey?",
+        "answer": "Park",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

@@ -54,3 +54,30 @@ it("notifies natural completion but ignores an ending after stop or replacement"
   expect(ended).toHaveBeenCalledTimes(1);
   unmount();
 });
+
+it("reads corrected source text completely without requesting an outdated clip", () => {
+  const speak = vi.fn();
+  vi.stubGlobal("speechSynthesis", {
+    speak,
+    cancel: vi.fn(),
+    getVoices: () => [],
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+    resume: vi.fn(),
+  });
+  vi.stubGlobal(
+    "SpeechSynthesisUtterance",
+    class {
+      constructor(public text: string) {}
+    }
+  );
+  const { result, unmount } = renderHook(() => useAudio({ preferLocal: true }));
+  const text = "The questioner (Gabriel) asked about faith. The reply explained its meaning.";
+  act(() =>
+    result.current.speak(text, "en-US", "audio/aa/" + "a".repeat(64) + ".mp3", {
+      synthesisOnly: true,
+    })
+  );
+  expect(speak.mock.calls.at(-1)![0].text).toBe(text);
+  unmount();
+});

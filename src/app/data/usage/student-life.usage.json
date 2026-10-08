@@ -27,21 +27,21 @@
       "Student Government"
     ],
     "targetWordsArabic": [
-      "غرفة يسمى «دورم رووم»",
+      "غرفة في سكن الطلاب",
       "زميل سكن",
-      "شخص يسمى «ريسيدينت ادفيسور»",
-      "غرفة يسمى «كوممون رووم»",
+      "مشرف سكن طلابي",
+      "غرفة مشتركة",
       "غرفة غسيل",
-      "عضو يسمى «ميال بلان»",
+      "اشتراك وجبات جامعي",
       "مفتاح السكن",
       "الانتقال للسكن",
       "مغادرة السكن",
       "سكن خارج الحرم الجامعي",
-      "ناد",
+      "نادٍ",
       "منظمة",
       "أخوية طلابية",
       "جمعية طالبات",
-      "اتحاد طلاب"
+      "مجلس طلابي"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Fraternity through a realistic adult task; include Fraternity, Sorority, and Student Government naturally where visually appropriate, but make the real-world use of Fraternity the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Student Life",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dorm Room"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dorm Room, Roommate, Resident Advisor, and Common Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Dorm Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Laundry Room"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Laundry Room, Meal Plan, Dorm Key, and Move-In and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Laundry Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Move-Out"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Move-Out, Off-Campus Housing, Club, and Organization and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Move-Out",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fraternity"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fraternity, Sorority, and Student Government and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Fraternity",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -192,17 +205,17 @@
       "محطة إذاعة",
       "متطوع",
       "رياضات داخل الجامعة",
-      "جزء يسمى «دراما كلوب»",
+      "نادي مسرح",
       "حفلة",
       "حفل موسيقي",
       "يوم المباراة",
-      "تجمع قبل فعالية",
+      "تجمع قبل مباراة قرب السيارات",
       "موعد للمذاكرة",
-      "متجر قهوة",
-      "طعام يسمى «فوود كوورت»",
+      "مقهى",
+      "منطقة مطاعم",
       "ليلة فيلم",
       "رحلة برية بالسيارة",
-      "حفل ربيعي رسمي"
+      "حفل طلابي رسمي في الربيع"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Movie Night as the central item; include Movie Night, Road Trip, and Spring Formal naturally where visually appropriate, but make the real-world use of Movie Night the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Student Life",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Newspaper"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newspaper, Radio Station, Volunteer, and Intramural Sports and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Newspaper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Drama Club"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drama Club, Party, Concert, and Game Day and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Drama Club",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tailgate"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tailgate, Study Date, Coffee Shop, and Food Court and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tailgate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Movie Night"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Movie Night, Road Trip, and Spring Formal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Movie Night",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -346,7 +372,7 @@
     "targetWordsArabic": [
       "رسوم دراسية",
       "منحة دراسية",
-      "إسعاف مالي",
+      "مساعدة مالية",
       "قرض طلابي",
       "برنامج عمل ودراسة",
       "عمل بدوام جزئي",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Student Discount as the central item; include Student Discount, Grant, and Tuition naturally where visually appropriate, but make the real-world use of Student Discount the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Student Life",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tuition"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuition, Scholarship, Financial Aid, and Student Loan and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Tuition",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Work-Study"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Work-Study, Part-Time Job, Budget, and Textbook Cost and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Work-Study",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Student Discount"
+        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Discount, and Grant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Student Discount",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

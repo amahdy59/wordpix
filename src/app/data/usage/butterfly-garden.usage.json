@@ -30,9 +30,9 @@
       "فراشة الملك",
       "فراشة ذيل السنونو",
       "فراشة السيدة المرسومة",
-      "فراشة مورفو الزرقاء",
+      "فراشة مورفو زرقاء",
       "فراشة أدميرال",
-      "فراشة الملفوف البيضاء",
+      "فراشة بيضاء الملفوف",
       "فراشة سكيبر",
       "فراشة فريتيلاري",
       "فراشة الكبريت",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Chrysalis as the central item; include Chrysalis, Butterfly, and Metamorphosis naturally where visually appropriate, but make the real-world use of Chrysalis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Butterfly Garden: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Monarch"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monarch, Swallowtail, Painted Lady, and Blue Morpho and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Monarch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Admiral"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Admiral, Cabbage White, Skipper, and Fritillary and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Admiral",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sulphur"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sulphur, Viceroy, Egg, and Caterpillar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sulphur",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chrysalis"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Butterfly, and Metamorphosis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chrysalis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -192,7 +205,7 @@
       "طور يرقي",
       "يخرج",
       "جاف جناح",
-      "الطيران الأول",
+      "أول طيران",
       "جناح",
       "هوائي",
       "خرطوم",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Scale as the central item; include Scale, Vein, and Spiracle naturally where visually appropriate, but make the real-world use of Scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Butterfly Garden",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Molt"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Molt, Instar, Emerge, and Wing Dry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Molt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "First Flight"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Flight, Wing, Antenna, and Proboscis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "First Flight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thorax"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thorax, Abdomen, Eye, and Leg and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Thorax",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scale"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Vein, and Spiracle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -360,7 +386,7 @@
       "لويزة",
       "بودليا",
       "التغذي على الرحيق",
-      "التشمس",
+      "التشمّس",
       "تزاوج",
       "وضع البيض",
       "هجرة"
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult illustrating Mating through a realistic adult task; include Mating, Laying Eggs, and Migration naturally where visually appropriate, but make the real-world use of Mating the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Butterfly Garden",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Milkweed"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Milkweed, Lavender, Zinnia, and Marigold and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Milkweed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunflower"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunflower, Coneflower, Aster, and Lantana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sunflower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Verbena"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Verbena, Buddleia, Nectar Feeding, and Basking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Verbena",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mating"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mating, Laying Eggs, and Migration and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Mating",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -521,7 +560,7 @@
       "تعريشة",
       "بيت زجاجي",
       "علامة",
-      "أداة يسمى «ماجنيفيينج جلاسس»",
+      "عدسة مكبرة",
       "صافي",
       "كتاب دليل",
       "كاميرا"
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Net as the central item; include Net, Guide Book, and Camera naturally where visually appropriate, but make the real-world use of Net the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Butterfly Garden: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Camouflage"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camouflage, Mimicry, Puddling, and Roosting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Camouflage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Territorial"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Territorial, Pathway, Bench, and Fountain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Territorial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trellis"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trellis, Greenhouse, Sign, and Magnifying Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trellis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Net"
+        "prompt": "In the the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Net, Guide Book, and Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Net",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

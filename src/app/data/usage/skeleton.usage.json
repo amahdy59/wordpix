@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "جمجمة",
       "قحف",
-      "مصطلح طبي أو تشريحي يسمى «جاو بوني»",
+      "عظم الفك",
       "عظم الوجنة",
       "محجر العين",
-      "عظم يسمى «ناسال بوني»",
-      "مصطلح طبي أو تشريحي يسمى «تيمبلي بوني»",
-      "مصطلح طبي أو تشريحي يسمى «فورامين ماجنوم»",
+      "عظم الأنف",
+      "عظم صدغي",
+      "ثقبة عظمى",
       "فك سفلي",
       "فك علوي",
       "عمود فقري",
       "فقرة",
-      "مصطلح طبي أو تشريحي يسمى «كيرفيكال سبيني»",
-      "مصطلح طبي أو تشريحي يسمى «ثوراكيك سبيني»",
-      "مصطلح طبي أو تشريحي يسمى «لومبار سبيني»"
+      "عمود فقري عنقي",
+      "عمود فقري صدري",
+      "عمود فقري قطني"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Cervical Spine as the central item; include Cervical Spine, Thoracic Spine, and Lumbar Spine naturally where visually appropriate, but make the real-world use of Cervical Spine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Skeleton",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skull"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Skull",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eye Socket"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Eye Socket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mandible"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mandible",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cervical Spine"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cervical Spine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -201,8 +214,8 @@
       "عظام الرسغ",
       "عظام مشط اليد",
       "السلاميات",
-      "عظم يسمى «شوولدير جوينت»",
-      "مصطلح طبي أو تشريحي يسمى «يلبوو جوينت»"
+      "مفصل الكتف",
+      "مفصل المرفق"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Phalanges as the central item; include Phalanges, Shoulder Joint, and Elbow Joint naturally where visually appropriate, but make the real-world use of Phalanges the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Skeleton",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sacrum"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sacrum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ribcage"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ribcage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Radius"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Radius",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Phalanges"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Phalanges",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -356,14 +382,14 @@
       "الشظية",
       "عظام الرصغ",
       "عظام مشط القدم",
-      "مصطلح طبي أو تشريحي يسمى «توي بونيس»",
-      "عظم يسمى «هيب جوينت»",
-      "عظم يسمى «كنيي جوينت»",
+      "عظام أصابع القدم",
+      "مفصل الورك",
+      "مفصل الركبة",
       "مفصل",
       "غضروف",
       "رباط",
       "وتر",
-      "عظم يسمى «بوني مارروو»"
+      "نخاع العظم"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Ligament through a realistic adult task; include Ligament, Tendon, and Bone Marrow naturally where visually appropriate, but make the real-world use of Ligament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Skeleton",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pelvis"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pelvis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fibula"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fibula",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hip Joint"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hip Joint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ligament"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Ligament",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -511,19 +550,19 @@
     ],
     "targetWordsArabic": [
       "السمحاق",
-      "مصطلح طبي أو تشريحي يسمى «سينوفيال فلويد»",
+      "سائل زليلي",
       "قرص",
       "غضروف هلالي",
       "جراب زلالي",
       "كالسيوم",
-      "مصطلح طبي أو تشريحي يسمى «فيتامين د»",
+      "فيتامين د",
       "هشاشة العظام",
       "كسر",
       "أشعة سينية",
       "جبيرة جبسية",
       "جبيرة",
-      "عظم يسمى «بوني دينسيتي»",
-      "مصطلح طبي أو تشريحي يسمى «جرووث بلاتي»",
+      "كثافة العظام",
+      "صفيحة نمو",
       "نموذج هيكل عظمي"
     ],
     "usage": {
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Bone Density through a realistic adult task; include Bone Density, Growth Plate, and Skeleton Model naturally where visually appropriate, but make the real-world use of Bone Density the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Skeleton",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Periosteum"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Periosteum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bursa"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bursa",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fracture"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Fracture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bone Density"
+        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Bone Density",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

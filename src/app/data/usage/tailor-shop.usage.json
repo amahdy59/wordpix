@@ -33,13 +33,13 @@
       "مكوك خيط",
       "كشتبان",
       "وسادة دبابيس",
-      "دبوس مستقيم",
-      "أداة فك الغرز",
+      "دبوس خياطة",
+      "أداة فكّ الغرز",
       "مقص خياطة",
-      "قطاعة دوارة",
+      "قطّاعة دوّارة",
       "شريط قياس",
       "مسطرة",
-      "نمط",
+      "باترون خياطة",
       "قلم تعليم الأقمشة",
       "طباشير"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Pattern as the central item; include Pattern, Fabric Marker, and Chalk naturally where visually appropriate, but make the real-world use of Pattern the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Tailor Shop",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sewing Machine"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Needle, Thread, and Bobbin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sewing Machine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thimble"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thimble, Pin Cushion, Straight Pin, and Seam Ripper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Thimble",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sewing Scissors"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Scissors, Rotary Cutter, Tape Measure, and Ruler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sewing Scissors",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pattern"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern, Fabric Marker, and Chalk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pattern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Polyester as the central item; include Polyester, Velvet, and Corduroy naturally where visually appropriate, but make the real-world use of Polyester the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Tailor Shop",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cutting Mat"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cutting Mat, Dress Form, Mannequin, and T-Square and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cutting Mat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "French Curve"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Cotton, Silk, and Wool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "French Curve",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Linen"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Linen, Denim, Leather, and Chiffon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Linen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Polyester"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polyester, Velvet, and Corduroy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Polyester",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,18 +376,18 @@
     ],
     "targetWordsArabic": [
       "زر",
-      "سحاب",
+      "سحّاب",
       "خطاف وعروة",
-      "فرقعة الأصابع",
+      "زر كبّاس",
       "إبزيم",
       "شريط",
       "دانتيل",
-      "حلقة مطاط مرن",
+      "شريط مطاطي",
       "فيلكرو",
       "شريط قص مائل",
-      "طوق",
-      "غلاف كوب",
-      "سوار عريض",
+      "ياقة",
+      "كُمّ",
+      "طرف الكُمّ",
       "حاشية",
       "جيب"
     ],
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Cuff as the central item; include Cuff, Hem, and Pocket naturally where visually appropriate, but make the real-world use of Cuff the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Button"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Button, Zipper, Hook and Eye, and Snap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Button",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Buckle"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buckle, Ribbon, Lace, and Elastic Band and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Buckle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Velcro"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Velcro, Bias Tape, Collar, and Sleeve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Velcro",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cuff"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cuff, Hem, and Pocket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cuff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -517,12 +556,12 @@
       "بطانة",
       "غرفة قياس",
       "مرآة بطول كامل",
-      "سطح يسمى «يرونينج بوارد»",
-      "مكواة يطبخ بالبخار",
+      "طاولة كي",
+      "مكواة بخارية",
       "حامل ملابس",
       "رف",
       "درج",
-      "علامة",
+      "بطاقة الملابس",
       "نموذج طلب",
       "إيصال"
     ],
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Label as the central item; include Label, Order Form, and Receipt naturally where visually appropriate, but make the real-world use of Label the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Tailor Shop",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lapel"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lapel, Waistband, Seam, and Dart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lapel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lining"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lining, Fitting Room, Full-Length Mirror, and Ironing Board and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Lining",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Steam Iron"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steam Iron, Hanging Rack, Shelf, and Drawer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Steam Iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Label"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Order Form, and Receipt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Label",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -674,7 +726,7 @@
       "دبوس",
       "مكواة",
       "قماش",
-      "مطاط مرن",
+      "مطاط الملابس",
       "بطانة تقوية داخلية",
       "فستان",
       "بدلة",
@@ -739,7 +791,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Blouse as the central item; include Blouse, Vest, and Scissors naturally where visually appropriate, but make the real-world use of Blouse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Tailor Shop",
@@ -748,20 +801,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scissors"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pin, Iron, and Fabric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scissors",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Elastic"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Elastic, Interfacing, Dress, and Suit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Elastic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skirt"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skirt, Trousers, Jacket, and Shirt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Skirt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blouse"
+        "prompt": "In the the tailor shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blouse, and Vest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Blouse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

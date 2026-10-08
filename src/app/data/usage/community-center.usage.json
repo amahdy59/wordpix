@@ -31,7 +31,7 @@
       "قاعة محاضرات",
       "-",
       "-",
-      "غرفة الفنون",
+      "غرفة فنون",
       "غرفة موسيقى",
       "مختبر حاسوب",
       "غرفة اجتماع",
@@ -41,13 +41,13 @@
       "حصة رقص",
       "حصة طبخ",
       "حصة رسم بالألوان",
-      "حصة فخار"
+      "حصة فخّار"
     ],
     "usage": {
       "goal": "Learn to use common the community center 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Cooking Class, Painting Class, Pottery Class. The person selects Cooking Class for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the community center scene showing lesson-related items or actions including Cooking Class, Painting Class, Pottery Class in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Community Center: Mini Dialogue",
-      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters gymnasium, auditorium, and kitchen, with each word connected to a different part of the service. A visitor to the public-service setting encounters classroom, art room, and music room, with each word connected to a different part of the service.",
+      "title": "The Community Center 1: A short reading",
+      "text": "Maya visits the community center to choose a course. The art room has a painting class, and the kitchen hosts a cooking class. Omar prefers the computer lab. They ask about a dance class in the gymnasium too. Before enrolling, they check the timetable and find a course that fits their work schedules.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gymnasium"
+        "prompt": "During a routine the community center task, an adult compares Gymnasium, Auditorium, Kitchen. The person selects Gymnasium for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gymnasium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Classroom"
+        "prompt": "During a routine the community center task, an adult compares Classroom, Art Room, Music Room. The person selects Classroom for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Classroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer Lab"
+        "prompt": "During a routine the community center task, an adult compares Computer Lab, Meeting Room, Library. The person selects Computer Lab for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Computer Lab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Daycare"
+        "prompt": "During a routine the community center task, an adult compares Daycare, Yoga Class, Dance Class. The person selects Daycare for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Daycare",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cooking Class"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Gymnasium"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Kitchen"
+        "prompt": "During a routine the community center task, an adult compares Cooking Class, Painting Class, Pottery Class. The person selects Cooking Class for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cooking Class",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Sunny” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which room does Omar prefer?",
+        "answer": "The computer lab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -192,12 +207,12 @@
       "حصة لغة",
       "دروس مساعدة",
       "تأمل",
-      "ناد كتاب",
+      "نادٍ كتاب",
       "ليلة عرض فيلم",
       "كرة السلة",
       "كرة الطائرة",
       "ريشة طائرة",
-      "تنس الطاولة",
+      "تنس طاولة",
       "سباحة",
       "كاراتيه",
       "زومبا",
@@ -208,8 +223,8 @@
     "usage": {
       "goal": "Learn to use common the community center 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Aerobics, Weight Training, Stretching. The person selects Aerobics for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the community center scene showing lesson-related items or actions including Aerobics, Weight Training, Stretching in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Community Center: Simple Message",
-      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters language class, tutoring, and meditation, with each word connected to a different part of the service. A visitor to the public-service setting encounters book club, film night, and basketball, with each word connected to a different part of the service.",
+      "title": "The Community Center 2: A short reading",
+      "text": "Omar joins a language class and a book club. Maya chooses table tennis instead of volleyball. The center also offers meditation and film night. They compare the activity times before paying. On Tuesday, Omar brings his book, while Maya takes her sports clothes for a game after work.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Language Class"
+        "prompt": "During a routine the community center task, an adult compares Language Class, Tutoring, Meditation. The person selects Language Class for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Language Class",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Book Club"
+        "prompt": "During a routine the community center task, an adult compares Book Club, Film Night, Basketball. The person selects Book Club for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Book Club",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Volleyball"
+        "prompt": "During a routine the community center task, an adult compares Volleyball, Badminton, Table Tennis. The person selects Volleyball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Volleyball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Swimming"
+        "prompt": "During a routine the community center task, an adult compares Swimming, Karate, Zumba. The person selects Swimming for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Swimming",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aerobics"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Language Class"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Meditation"
+        "prompt": "During a routine the community center task, an adult compares Aerobics, Weight Training, Stretching. The person selects Aerobics for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Aerobics",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Gymnasium” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya choose instead of volleyball?",
+        "answer": "Table tennis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -361,7 +391,7 @@
       "سوق المزارعين",
       "حملة تبرع بالدم",
       "تصويت",
-      "لوحة إعلانات (لوحة معلومات)",
+      "لوحة إعلانات",
       "نافورة ماء",
       "خزانة",
       "مقعد",
@@ -370,8 +400,8 @@
     "usage": {
       "goal": "Learn to use common the community center 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Locker, Bench, Stage. The person selects Locker for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the community center scene showing lesson-related items or actions including Locker, Bench, Stage in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Community Center: Notice-Style Text",
-      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters bake sale, talent show, and holiday party, with each word connected to a different part of the service. A visitor to the public-service setting encounters workshop, seminar, and concert, with each word connected to a different part of the service.",
+      "title": "The Community Center 3: A short reading",
+      "text": "The community center plans a bake sale and a talent show. Volunteers put a notice on the bulletin board. A stage is ready for singers, and an exhibition fills another room. Maya offers to help at the farmers market. Omar asks the coordinator where the workshop will take place.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bake Sale"
+        "prompt": "During a routine the community center task, an adult compares Bake Sale, Talent Show, Holiday Party. The person selects Bake Sale for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bake Sale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Workshop"
+        "prompt": "During a routine the community center task, an adult compares Workshop, Seminar, Concert. The person selects Workshop for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Workshop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Exhibition"
+        "prompt": "During a routine the community center task, an adult compares Exhibition, Farmers Market, Blood Drive. The person selects Exhibition for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Exhibition",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Voting"
+        "prompt": "During a routine the community center task, an adult compares Voting, Bulletin Board, Water Fountain. The person selects Voting for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Voting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Locker"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Bake Sale"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Holiday Party"
+        "prompt": "During a routine the community center task, an adult compares Locker, Bench, Stage. The person selects Locker for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Locker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Language Class” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where do volunteers put the notice?",
+        "answer": "On the bulletin board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -532,8 +577,8 @@
     "usage": {
       "goal": "Learn to use common the community center 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -595,41 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Coach, Receptionist, Janitor. The person selects Coach for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the community center scene showing lesson-related items or actions including Coach, Receptionist, Janitor in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Community Center: Short Description",
-      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters projector, whiteboard, and microphone, with each word connected to a different part of the service. A visitor to the public-service setting encounters speaker, clock, and instructor, with each word connected to a different part of the service. A visitor to the public-service setting encounters coordinator, volunteer, and member, with each word connected to a different part of the service.",
+      "title": "The Community Center 4: A short reading",
+      "text": "The coordinator checks the projector, microphone, and speaker before the event. A volunteer writes the schedule on a whiteboard. The instructor welcomes members at the door, while the receptionist answers questions. Omar helps move chairs, and Maya checks the clock. Everyone knows which task to finish before the audience arrives.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Projector"
+        "prompt": "During a routine the community center task, an adult compares Projector, Whiteboard, Microphone. The person selects Projector for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Projector",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Speaker"
+        "prompt": "During a routine the community center task, an adult compares Speaker, Clock, Instructor. The person selects Speaker for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Speaker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coordinator"
+        "prompt": "During a routine the community center task, an adult compares Coordinator, Volunteer, Member. The person selects Coordinator for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coordinator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Child"
+        "prompt": "During a routine the community center task, an adult compares Child, Senior, Lifeguard. The person selects Child for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Child",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coach"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Projector"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Microphone"
+        "prompt": "During a routine the community center task, an adult compares Coach, Receptionist, Janitor. The person selects Coach for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coach",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Bake Sale” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does the volunteer write the schedule?",
+        "answer": "On a whiteboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

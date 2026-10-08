@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Scale, Otoscope, X Ray. The next step focuses on Scale. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Scale, Otoscope, X Ray in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dog"
+        "prompt": "During a routine care or examination situation, an adult reviews Dog, Cat, Rabbit. The next step focuses on Dog.\nWhich option is the focus of the next step?",
+        "answer": "Dog",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hamster"
+        "prompt": "During a routine care or examination situation, an adult reviews Hamster, Parrot, Turtle. The next step focuses on Hamster.\nWhich option is the focus of the next step?",
+        "answer": "Hamster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Guinea Pig"
+        "prompt": "During a routine care or examination situation, an adult reviews Guinea Pig, Fish, Snake. The next step focuses on Guinea Pig.\nWhich option is the focus of the next step?",
+        "answer": "Guinea Pig",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ferret"
+        "prompt": "During a routine care or examination situation, an adult reviews Ferret, Stethoscope, Thermometer. The next step focuses on Ferret.\nWhich option is the focus of the next step?",
+        "answer": "Ferret",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scale"
+        "prompt": "During a routine care or examination situation, an adult reviews Scale, Otoscope, X Ray. The next step focuses on Scale.\nWhich option is the focus of the next step?",
+        "answer": "Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -190,7 +206,7 @@
     ],
     "targetWordsArabic": [
       "موجات فوق صوتية",
-      "تحليل دم",
+      "فحص دم",
       "مجهر",
       "حقنة",
       "ضمادة",
@@ -201,9 +217,9 @@
       "تعقيم الأنثى",
       "تعقيم الحيوان",
       "دواء",
-      "غرز جراحية",
+      "غُرز جراحية",
       "جبيرة جبسية",
-      "طوق مخروطي واق"
+      "طوق مخروطي واقٍ"
     ],
     "usage": {
       "goal": "Learn to use common the vet clinic 2 vocabulary to handle a familiar adult everyday task.",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Stitches, Cast, Cone Collar. The next step focuses on Stitches. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Stitches, Cast, Cone Collar in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ultrasound"
+        "prompt": "During a routine care or examination situation, an adult reviews Ultrasound, Blood Test, Microscope. The next step focuses on Ultrasound.\nWhich option is the focus of the next step?",
+        "answer": "Ultrasound",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Syringe"
+        "prompt": "During a routine care or examination situation, an adult reviews Syringe, Bandage, Vaccination. The next step focuses on Syringe.\nWhich option is the focus of the next step?",
+        "answer": "Syringe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Surgery"
+        "prompt": "During a routine care or examination situation, an adult reviews Surgery, Dental Cleaning, Microchip. The next step focuses on Surgery.\nWhich option is the focus of the next step?",
+        "answer": "Surgery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spay"
+        "prompt": "During a routine care or examination situation, an adult reviews Spay, Neuter, Medication. The next step focuses on Spay.\nWhich option is the focus of the next step?",
+        "answer": "Spay",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stitches"
+        "prompt": "During a routine care or examination situation, an adult reviews Stitches, Cast, Cone Collar. The next step focuses on Stitches.\nWhich option is the focus of the next step?",
+        "answer": "Stitches",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -353,14 +385,14 @@
     "targetWordsArabic": [
       "غرفة انتظار",
       "طاولة فحص",
-      "غرفة العمليات",
+      "غرفة عمليات",
       "بيت كلاب",
       "صيدلية",
       "استقبال",
       "مختبر",
-      "غرفة الإفاقة",
+      "غرفة إفاقة",
       "منطقة العناية بالحيوانات",
-      "ساحة خارجية مسورة للحيوانات",
+      "ساحة خارجية مسوّرة للحيوانات",
       "مقود",
       "حاملة حيوان",
       "كمامة حيوان",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Muzzle, Treats, Food Bowl. The next step focuses on Muzzle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Muzzle, Treats, Food Bowl in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waiting Room"
+        "prompt": "During a routine care or examination situation, an adult reviews Waiting Room, Exam Table, Operating Room. The next step focuses on Waiting Room.\nWhich option is the focus of the next step?",
+        "answer": "Waiting Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kennel"
+        "prompt": "During a routine care or examination situation, an adult reviews Kennel, Pharmacy, Reception. The next step focuses on Kennel.\nWhich option is the focus of the next step?",
+        "answer": "Kennel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lab"
+        "prompt": "During a routine care or examination situation, an adult reviews Lab, Recovery Room, Grooming Area. The next step focuses on Lab.\nWhich option is the focus of the next step?",
+        "answer": "Lab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Outdoor Run"
+        "prompt": "During a routine care or examination situation, an adult reviews Outdoor Run, Leash, Carrier. The next step focuses on Outdoor Run.\nWhich option is the focus of the next step?",
+        "answer": "Outdoor Run",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Muzzle"
+        "prompt": "During a routine care or examination situation, an adult reviews Muzzle, Treats, Food Bowl. The next step focuses on Muzzle.\nWhich option is the focus of the next step?",
+        "answer": "Muzzle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -523,7 +571,7 @@
       "موظف استقبال",
       "مصفف حيوانات",
       "عامل رعاية بيوت الحيوانات",
-      "جراح",
+      "جرّاح",
       "أخصائي",
       "متدرب",
       "متطوع",
@@ -595,7 +643,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Intern, Volunteer, Pet Owner. The next step focuses on Intern. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Intern, Volunteer, Pet Owner in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Notice-Style Text",
@@ -604,24 +653,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Water Dish"
+        "prompt": "During a routine care or examination situation, an adult reviews Water Dish, Collar, Tag. The next step focuses on Water Dish.\nWhich option is the focus of the next step?",
+        "answer": "Water Dish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nail Clippers"
+        "prompt": "During a routine care or examination situation, an adult reviews Nail Clippers, Brush, Veterinarian. The next step focuses on Nail Clippers.\nWhich option is the focus of the next step?",
+        "answer": "Nail Clippers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vet Tech"
+        "prompt": "During a routine care or examination situation, an adult reviews Vet Tech, Receptionist, Groomer. The next step focuses on Vet Tech.\nWhich option is the focus of the next step?",
+        "answer": "Vet Tech",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kennel Attendant"
+        "prompt": "During a routine care or examination situation, an adult reviews Kennel Attendant, Surgeon, Specialist. The next step focuses on Kennel Attendant.\nWhich option is the focus of the next step?",
+        "answer": "Kennel Attendant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Intern"
+        "prompt": "During a routine care or examination situation, an adult reviews Intern, Volunteer, Pet Owner. The next step focuses on Intern.\nWhich option is the focus of the next step?",
+        "answer": "Intern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

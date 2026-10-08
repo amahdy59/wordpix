@@ -58,7 +58,7 @@
             "options": ["Sneakers", "Canvas Shoes", "Slip-Ons"],
             "expectedAnswer": "Slip-Ons"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Slip-Ons while also considering Sneakers and Canvas Shoes. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Sneakers, Canvas Shoes, and Slip-Ons visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Sneakers, Canvas Shoes, Slip-Ons in a natural setting."
         },
         {
@@ -70,7 +70,7 @@
             "options": ["Espadrilles", "Moccasins", "Boat Shoes"],
             "expectedAnswer": "Espadrilles"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Espadrilles while also considering Moccasins and Boat Shoes. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Espadrilles, Moccasins, and Boat Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Espadrilles, Moccasins, Boat Shoes in a natural setting."
         },
         {
@@ -82,7 +82,7 @@
             "options": ["Platform Shoes", "High-Tops", "Low-Tops"],
             "expectedAnswer": "High-Tops"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices High-Tops while also considering Platform Shoes and Low-Tops. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Platform Shoes, High-Tops, and Low-Tops visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Platform Shoes, High-Tops, Low-Tops in a natural setting."
         },
         {
@@ -94,7 +94,7 @@
             "options": ["Skate Shoes", "Oxford Shoes", "Derby Shoes"],
             "expectedAnswer": "Derby Shoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Derby Shoes while also considering Skate Shoes and Oxford Shoes. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Skate Shoes, Oxford Shoes, and Derby Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Skate Shoes, Oxford Shoes, Derby Shoes in a natural setting."
         },
         {
@@ -106,10 +106,11 @@
             "options": ["Loafers", "Brogues", "Monk Strap"],
             "expectedAnswer": "Loafers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Loafers while also considering Brogues and Monk Strap. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Loafers, Brogues, and Monk Strap visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Loafers, Brogues, Monk Strap in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Footwear: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sneakers"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Slip-Ons while also considering Sneakers and Canvas Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Slip-Ons",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Espadrilles"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Espadrilles while also considering Moccasins and Boat Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Espadrilles",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Platform Shoes"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices High-Tops while also considering Platform Shoes and Low-Tops. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "High-Tops",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skate Shoes"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Derby Shoes while also considering Skate Shoes and Oxford Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Derby Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Loafers"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Loafers while also considering Brogues and Monk Strap. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Loafers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -203,9 +219,9 @@
       "أحذية قتالية طويلة",
       "أحذية تشيلسي",
       "أحذية رعاة البقر",
-      "-",
+      "أحذية مطر",
       "أحذية ثلج",
-      "أحذية تنزه",
+      "أحذية مشي في الطبيعة",
       "أحذية عمل",
       "أحذية ركوب الخيل"
     ],
@@ -224,7 +240,7 @@
             "options": ["Pumps", "Stilettos", "Kitten Heels"],
             "expectedAnswer": "Pumps"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Pumps while also considering Stilettos and Kitten Heels. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Pumps, Stilettos, and Kitten Heels visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Pumps, Stilettos, Kitten Heels in a natural setting."
         },
         {
@@ -236,7 +252,7 @@
             "options": ["Block Heels", "Dress Shoes", "Ankle Boots"],
             "expectedAnswer": "Dress Shoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dress Shoes while also considering Block Heels and Ankle Boots. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Block Heels, Dress Shoes, and Ankle Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Block Heels, Dress Shoes, Ankle Boots in a natural setting."
         },
         {
@@ -248,7 +264,7 @@
             "options": ["Knee-High Boots", "Combat Boots", "Chelsea Boots"],
             "expectedAnswer": "Chelsea Boots"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Chelsea Boots while also considering Knee-High Boots and Combat Boots. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Knee-High Boots, Combat Boots, and Chelsea Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Knee-High Boots, Combat Boots, Chelsea Boots in a natural setting."
         },
         {
@@ -260,7 +276,7 @@
             "options": ["Cowboy Boots", "Rain Boots", "Snow Boots"],
             "expectedAnswer": "Cowboy Boots"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Cowboy Boots while also considering Rain Boots and Snow Boots. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Cowboy Boots, Rain Boots, and Snow Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Cowboy Boots, Rain Boots, Snow Boots in a natural setting."
         },
         {
@@ -272,10 +288,11 @@
             "options": ["Hiking Boots", "Work Boots", "Riding Boots"],
             "expectedAnswer": "Work Boots"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Work Boots while also considering Hiking Boots and Riding Boots. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Hiking Boots, Work Boots, and Riding Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Hiking Boots, Work Boots, Riding Boots in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Footwear: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pumps"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Pumps while also considering Stilettos and Kitten Heels. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Pumps",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Block Heels"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dress Shoes while also considering Block Heels and Ankle Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Dress Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Knee-High Boots"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Chelsea Boots while also considering Knee-High Boots and Combat Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Chelsea Boots",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cowboy Boots"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Cowboy Boots while also considering Rain Boots and Snow Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Cowboy Boots",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hiking Boots"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Work Boots while also considering Hiking Boots and Riding Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Work Boots",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -390,7 +422,7 @@
             "options": ["Sandals", "Flip-Flops", "Slides"],
             "expectedAnswer": "Flip-Flops"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Flip-Flops while also considering Sandals and Slides. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Sandals, Flip-Flops, and Slides visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Sandals, Flip-Flops, Slides in a natural setting."
         },
         {
@@ -402,7 +434,7 @@
             "options": ["Gladiator Sandals", "Wedges", "Platform Sandals"],
             "expectedAnswer": "Platform Sandals"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Platform Sandals while also considering Gladiator Sandals and Wedges. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Gladiator Sandals, Wedges, and Platform Sandals visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Gladiator Sandals, Wedges, Platform Sandals in a natural setting."
         },
         {
@@ -414,7 +446,7 @@
             "options": ["Strappy Sandals", "Huaraches", "Clogs"],
             "expectedAnswer": "Strappy Sandals"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Strappy Sandals while also considering Huaraches and Clogs. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Strappy Sandals, Huaraches, and Clogs visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Strappy Sandals, Huaraches, Clogs in a natural setting."
         },
         {
@@ -426,7 +458,7 @@
             "options": ["Mules", "Running Shoes", "Cross-Trainers"],
             "expectedAnswer": "Running Shoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Running Shoes while also considering Mules and Cross-Trainers. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Mules, Running Shoes, and Cross-Trainers visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Mules, Running Shoes, Cross-Trainers in a natural setting."
         },
         {
@@ -438,10 +470,11 @@
             "options": ["Basketball Shoes", "Soccer Cleats", "Tennis Shoes"],
             "expectedAnswer": "Tennis Shoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Tennis Shoes while also considering Basketball Shoes and Soccer Cleats. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Basketball Shoes, Soccer Cleats, and Tennis Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Basketball Shoes, Soccer Cleats, Tennis Shoes in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Footwear: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sandals"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Flip-Flops while also considering Sandals and Slides. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Flip-Flops",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gladiator Sandals"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Platform Sandals while also considering Gladiator Sandals and Wedges. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Platform Sandals",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Strappy Sandals"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Strappy Sandals while also considering Huaraches and Clogs. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Strappy Sandals",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mules"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Running Shoes while also considering Mules and Cross-Trainers. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Running Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Basketball Shoes"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Tennis Shoes while also considering Basketball Shoes and Soccer Cleats. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Tennis Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -536,22 +584,23 @@
             "options": ["Climbing Shoes", "Cycling Shoes", "Dance Shoes"],
             "expectedAnswer": "Dance Shoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dance Shoes while also considering Climbing Shoes and Cycling Shoes. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Climbing Shoes, Cycling Shoes, and Dance Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Climbing Shoes, Cycling Shoes, Dance Shoes in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bowling Shoes", "Slippers"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Bowling Shoes while also considering Slippers, undefined, and undefined. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Bowling Shoes while also considering Slippers. He chooses the pair that gives the right support, comfort, and protection.",
           "check": {
             "question": "Which target does Sam notice first in this situation?",
             "options": ["Bowling Shoes", "Slippers", "Climbing Shoes"],
             "expectedAnswer": "Bowling Shoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a footwear context illustrating this situation: Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Bowling Shoes while also considering Slippers, undefined, and undefined. He chooses the pair that gives the right support, comfort, and protection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in getting ready for an activity, with Bowling Shoes and Slippers visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult footwear scene showing lesson-related items or actions including Bowling Shoes, Slippers in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Footwear: Tips/Notice",
@@ -560,12 +609,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Climbing Shoes"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dance Shoes while also considering Climbing Shoes and Cycling Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Dance Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bowling Shoes"
+        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Bowling Shoes while also considering Slippers. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "answer": "Bowling Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

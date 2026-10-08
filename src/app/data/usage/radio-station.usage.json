@@ -34,9 +34,9 @@
       "جهاز إرسال",
       "هوائي",
       "مضخم",
-      "-",
-      "جهاز يسمى «كومبريسسور»",
-      "-",
+      "معادل صوت",
+      "ضاغط صوت",
+      "مرشح أصوات النفخ",
       "كابينة صوت",
       "لوح معالجة صوتية",
       "لافتة على الهواء",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the On-Air Sign as the central item; include On-Air Sign, Desk, and Chair naturally where visually appropriate, but make the real-world use of On-Air Sign the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Radio Station",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Microphone"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Microphone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Transmitter"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Transmitter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compressor"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Compressor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "On-Air Sign"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "On-Air Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -200,7 +213,7 @@
       "كابل XLR",
       "مضخم سماعات رأس",
       "برامج صوتية",
-      "شكل يسمى «وافيفورم»",
+      "شكل موجي",
       "زر التشغيل",
       "زر التسجيل"
     ],
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Waveform as the central item; include Waveform, Playback Button, and Record Button naturally where visually appropriate, but make the real-world use of Waveform the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Radio Station",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Computer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cable Management"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cable Management",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Phantom Power"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Phantom Power",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waveform"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Waveform",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,8 +376,8 @@
     ],
     "targetWordsArabic": [
       "قائمة تشغيل",
-      "مقطع دعائي قصير",
-      "لعبة يسمى «سووند يففيكت»",
+      "لحن إعلاني قصير",
+      "مؤثر صوتي",
       "تعريف المحطة",
       "فاصل إعلاني",
       "نشرة أخبار",
@@ -359,9 +385,9 @@
       "تقرير المرور",
       "فقرة مقابلة",
       "فقرة موسيقية",
-      "مقدم إذاعي",
+      "مقدّم إذاعي",
       "منسق موسيقى",
-      "شخص يسمى «برودوكير»",
+      "منتج برامج",
       "مهندس صوت",
       "مذيع أخبار"
     ],
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Producer as the central item; include Producer, Sound Engineer, and News Anchor naturally where visually appropriate, but make the real-world use of Producer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Radio Station",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Playlist"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Playlist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Commercial Break"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Commercial Break",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Interview Segment"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Interview Segment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Producer"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Producer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -511,7 +550,7 @@
     ],
     "targetWordsArabic": [
       "مراسل مرور",
-      "مقدم الطقس",
+      "مقدّم الطقس",
       "مدير مبيعات",
       "مخرج برنامج العرض",
       "متدرب",
@@ -521,9 +560,9 @@
       "تطبيق هاتف ذكي",
       "بودكاست",
       "بث عبر الإنترنت",
-      "شخص يسمى «ليستينير»",
+      "مستمع",
       "قرص ضبط التردد",
-      "جهاز يسمى «فولومي كنوب»",
+      "مقبض التحكم بالصوت",
       "جهاز ضبط النغم"
     ],
     "usage": {
@@ -585,7 +624,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Frequency Dial as the central item; include Frequency Dial, Volume Knob, and Tuner naturally where visually appropriate, but make the real-world use of Frequency Dial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Radio Station",
@@ -594,20 +634,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Traffic Reporter"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Traffic Reporter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Intern"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Intern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smartphone App"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smartphone App",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frequency Dial"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Frequency Dial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -682,9 +734,9 @@
       "بطاقة تذكير",
       "نص مسرحي",
       "تردد",
-      "-",
-      "-",
-      "شخص يسمى «ينتيرفييو»"
+      "قناة",
+      "إعلان تجاري",
+      "مقابلة"
     ],
     "usage": {
       "goal": "Develop the language needed to exchange information about media production, deadlines, and equipment in a realistic adult context.",
@@ -728,7 +780,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Frequency as the central item; include Frequency, Channel, and Commercial naturally where visually appropriate, but make the real-world use of Frequency the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Radio Station",
@@ -737,16 +790,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Turntable"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Turntable",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Control Room"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Control Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frequency"
+        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Frequency",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

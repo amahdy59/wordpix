@@ -602,7 +602,7 @@ export const VOCABULARY: VocabularyItem[] = [
   },
   {
     id: "read-book",
-    label: "Read Book",
+    label: "Read a Book",
     phonetic: "/riːd bʊk/",
     cefr: "A2",
     img: "/word-images/living-room/read-book.avif",

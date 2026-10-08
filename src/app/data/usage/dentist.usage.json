@@ -37,7 +37,7 @@
       "ملقط",
       "حقنة",
       "أداة حشو الأسنان",
-      "حفار أسنان",
+      "حفّار أسنان",
       "أداة صقل",
       "حامل الأملغم",
       "ملعقة خلط أسنان",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the dentist 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Amalgam Carrier, Dental Spatula, Rubber Dam. The next step focuses on Amalgam Carrier. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Amalgam Carrier, Dental Spatula, Rubber Dam in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Email",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with dental mirror, probe, and scaler. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with dental drill, suction tube, and polisher. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 1: A short reading",
+      "text": "Maya learns dental equipment names before her appointment. A picture shows a dental mirror, probe, and scaler on a tray. Another shows a dental drill and suction tube. Omar matches the labels to the pictures in class. They ask the teacher which names refer to tools for looking and which refer to other dental work.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Mirror"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Mirror, Probe, Scaler. The next step focuses on Dental Mirror.\nWhich option is the focus of the next step?",
+        "answer": "Dental Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Drill"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Drill, Suction Tube, Polisher. The next step focuses on Dental Drill.\nWhich option is the focus of the next step?",
+        "answer": "Dental Drill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Pick"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Pick, Tweezers, Syringe. The next step focuses on Dental Pick.\nWhich option is the focus of the next step?",
+        "answer": "Dental Pick",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Filling Tool"
+        "prompt": "During a routine care or examination situation, an adult reviews Filling Tool, Excavator, Burnisher. The next step focuses on Filling Tool.\nWhich option is the focus of the next step?",
+        "answer": "Filling Tool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Amalgam Carrier"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Dental Mirror"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Dental Drill"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Amalgam Carrier, Dental Spatula, Rubber Dam. The next step focuses on Amalgam Carrier.\nWhich option is the focus of the next step?",
+        "answer": "Amalgam Carrier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Pestle” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "How do the learners practice the equipment names?",
+        "answer": "They match labels to pictures",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -193,7 +204,7 @@
       "Air/Water Syringe"
     ],
     "targetWordsArabic": [
-      "دعامة إبقاء الفم مفتوحا",
+      "دعامة إبقاء الفم مفتوحًا",
       "شريط قالب حول السن",
       "كرسي أسنان",
       "مصباح علوي",
@@ -206,14 +217,14 @@
       "مسند ذراع",
       "مسند رأس",
       "حوض بصق",
-      "لوحة أدوات",
+      "لوحة تحكم بالأدوات",
       "حقنة هواء وماء للأسنان"
     ],
     "usage": {
       "goal": "Learn to use the dentist 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Cuspidor, Instrument Panel, Air/Water Syringe. The next step focuses on Cuspidor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Cuspidor, Instrument Panel, Air/Water Syringe in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Personal Message",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with bite block, matrix band, and dental chair. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with overhead light, rinse bowl, and tray table. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 2: A short reading",
+      "text": "Omar sits in the dental chair while the dentist adjusts the overhead light. A monitor and rinse bowl are nearby. Maya reads a picture guide showing an X-ray machine and dental lamp. The dental assistant prepares the tray table. Omar asks what will happen next, and the dentist explains the planned examination.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bite Block"
+        "prompt": "During a routine care or examination situation, an adult reviews Bite Block, Matrix Band, Dental Chair. The next step focuses on Bite Block.\nWhich option is the focus of the next step?",
+        "answer": "Bite Block",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Overhead Light"
+        "prompt": "During a routine care or examination situation, an adult reviews Overhead Light, Rinse Bowl, Tray Table. The next step focuses on Overhead Light.\nWhich option is the focus of the next step?",
+        "answer": "Overhead Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Monitor"
+        "prompt": "During a routine care or examination situation, an adult reviews Monitor, X-Ray Machine, Dental Lamp. The next step focuses on Monitor.\nWhich option is the focus of the next step?",
+        "answer": "Monitor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Foot Pedal"
+        "prompt": "During a routine care or examination situation, an adult reviews Foot Pedal, Armrest, Headrest. The next step focuses on Foot Pedal.\nWhich option is the focus of the next step?",
+        "answer": "Foot Pedal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cuspidor"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bite Block"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Overhead Light"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Cuspidor, Instrument Panel, Air/Water Syringe. The next step focuses on Cuspidor.\nWhich option is the focus of the next step?",
+        "answer": "Cuspidor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Dental Mirror” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the dentist adjust?",
+        "answer": "The overhead light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -368,7 +390,7 @@
       "غسول فم",
       "جل الفلورايد",
       "شمع أسنان",
-      "مثبت أسنان",
+      "مثبّت أسنان",
       "تقويم أسنان",
       "واقي أسنان",
       "شريط تبييض الأسنان",
@@ -378,8 +400,8 @@
     "usage": {
       "goal": "Learn to use the dentist 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Whitening Strip, Interdental Brush, Denture Cleaner. The next step focuses on Whitening Strip. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Whitening Strip, Interdental Brush, Denture Cleaner in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Short Dialogue",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with dental stool, sterilizer, and autoclave. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with toothbrush, toothpaste, and dental floss. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 3: A short reading",
+      "text": "Maya compares a toothbrush, toothpaste, and dental floss in a vocabulary exercise. Omar identifies mouthwash and dental wax in pictures. A separate photograph shows a sterilizer and an autoclave used in a clinic. They keep the home-care products in one group and the clinic equipment in another before checking the labels.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Stool"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Stool, Sterilizer, Autoclave. The next step focuses on Dental Stool.\nWhich option is the focus of the next step?",
+        "answer": "Dental Stool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toothbrush"
+        "prompt": "During a routine care or examination situation, an adult reviews Toothbrush, Toothpaste, Dental Floss. The next step focuses on Toothbrush.\nWhich option is the focus of the next step?",
+        "answer": "Toothbrush",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mouthwash"
+        "prompt": "During a routine care or examination situation, an adult reviews Mouthwash, Fluoride Gel, Dental Wax. The next step focuses on Mouthwash.\nWhich option is the focus of the next step?",
+        "answer": "Mouthwash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retainer"
+        "prompt": "During a routine care or examination situation, an adult reviews Retainer, Braces, Mouth Guard. The next step focuses on Retainer.\nWhich option is the focus of the next step?",
+        "answer": "Retainer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whitening Strip"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Dental Stool"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Toothbrush"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Whitening Strip, Interdental Brush, Denture Cleaner. The next step focuses on Whitening Strip.\nWhich option is the focus of the next step?",
+        "answer": "Whitening Strip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Bite Block” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which items go in a separate group from home-care products?",
+        "answer": "Clinic equipment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -533,7 +566,7 @@
       "أخصائي صحة الأسنان",
       "مساعد طبيب أسنان",
       "موظف استقبال",
-      "جراح فم",
+      "جرّاح فم",
       "أخصائي تقويم أسنان",
       "فني أسنان",
       "مريض",
@@ -544,8 +577,8 @@
     "usage": {
       "goal": "Learn to use the dentist 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Child Patient, Parent, Periodontist. The next step focuses on Child Patient. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Child Patient, Parent, Periodontist in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Tips/Notice",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with desensitizing paste, dental cement, and temporary filling. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with night guard, dentist, and dental hygienist. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 4: A short reading",
+      "text": "The receptionist welcomes Omar to the clinic. A dental assistant takes him to the dentist. Maya asks about an appointment with the dental hygienist. The dentist explains a night guard and a temporary filling using pictures. Omar listens and asks questions before agreeing to the proposed treatment plan.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Desensitizing Paste"
+        "prompt": "During a routine care or examination situation, an adult reviews Desensitizing Paste, Dental Cement, Temporary Filling. The next step focuses on Desensitizing Paste.\nWhich option is the focus of the next step?",
+        "answer": "Desensitizing Paste",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Night Guard"
+        "prompt": "During a routine care or examination situation, an adult reviews Night Guard, Dentist, Dental Hygienist. The next step focuses on Night Guard.\nWhich option is the focus of the next step?",
+        "answer": "Night Guard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Assistant"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Assistant, Receptionist, Oral Surgeon. The next step focuses on Dental Assistant.\nWhich option is the focus of the next step?",
+        "answer": "Dental Assistant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Orthodontist"
+        "prompt": "During a routine care or examination situation, an adult reviews Orthodontist, Dental Technician, Patient. The next step focuses on Orthodontist.\nWhich option is the focus of the next step?",
+        "answer": "Orthodontist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Child Patient"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Desensitizing Paste"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Night Guard"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Child Patient, Parent, Periodontist. The next step focuses on Child Patient.\nWhich option is the focus of the next step?",
+        "answer": "Child Patient",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Dental Stool” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which appointment does Maya ask about?",
+        "answer": "An appointment with the dental hygienist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -694,7 +738,7 @@
       "أخصائي تعويضات سنية",
       "أخصائي علاج جذور",
       "طبيب أسنان أطفال",
-      "ممرض أسنان",
+      "ممرّض أسنان",
       "فني أشعة أسنان",
       "سن",
       "ضرس",
@@ -710,8 +754,8 @@
     "usage": {
       "goal": "Learn to use the dentist 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Root, Enamel, Crown. The next step focuses on Root. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Root, Enamel, Crown in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Everyday Description",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with prosthodontist, endodontist, and pediatric dentist. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with dental nurse, dental radiographer, and tooth. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 5: A short reading",
+      "text": "Maya studies a tooth diagram and identifies a molar, canine, and incisor. Omar reads about dental specialists, including an endodontist and a pediatric dentist. They compare the specialist names with their descriptions. A dental nurse helps a visitor nearby, while the radiographer prepares the room for the next appointment.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prosthodontist"
+        "prompt": "During a routine care or examination situation, an adult reviews Prosthodontist, Endodontist, Pediatric Dentist. The next step focuses on Prosthodontist.\nWhich option is the focus of the next step?",
+        "answer": "Prosthodontist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Nurse"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Nurse, Dental Radiographer, Tooth. The next step focuses on Dental Nurse.\nWhich option is the focus of the next step?",
+        "answer": "Dental Nurse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Molar"
+        "prompt": "During a routine care or examination situation, an adult reviews Molar, Canine, Incisor. The next step focuses on Molar.\nWhich option is the focus of the next step?",
+        "answer": "Molar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gum"
+        "prompt": "During a routine care or examination situation, an adult reviews Gum, Tongue, Jaw. The next step focuses on Gum.\nWhich option is the focus of the next step?",
+        "answer": "Gum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Root"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Prosthodontist"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Dental Nurse"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Root, Enamel, Crown. The next step focuses on Root.\nWhich option is the focus of the next step?",
+        "answer": "Root",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Desensitizing Paste” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which three tooth types does Maya identify?",
+        "answer": "A molar, canine, and incisor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -866,7 +921,7 @@
       "ملاط السن",
       "رباط دواعم السن",
       "غرفة انتظار",
-      "مكتب الاستقبال",
+      "مكتب استقبال",
       "مجلة",
       "حوض أسماك",
       "شهادة",
@@ -876,8 +931,8 @@
     "usage": {
       "goal": "Learn to use the dentist 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Certificate, Poster, Appointment Card. The next step focuses on Certificate. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Certificate, Poster, Appointment Card in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Email",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with premolar, wisdom tooth, and baby tooth. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with palate, uvula, and dentin. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 6: A short reading",
+      "text": "Omar labels a premolar, wisdom tooth, and baby tooth on separate diagrams. Maya finds the palate and uvula on a mouth drawing. Their next picture shows dentin and cementum inside a tooth. They check each label against the key, then return to the waiting room before the dentist calls them.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Premolar"
+        "prompt": "During a routine care or examination situation, an adult reviews Premolar, Wisdom Tooth, Baby Tooth. The next step focuses on Premolar.\nWhich option is the focus of the next step?",
+        "answer": "Premolar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Palate"
+        "prompt": "During a routine care or examination situation, an adult reviews Palate, Uvula, Dentin. The next step focuses on Palate.\nWhich option is the focus of the next step?",
+        "answer": "Palate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cementum"
+        "prompt": "During a routine care or examination situation, an adult reviews Cementum, Periodontal Ligament, Waiting Room. The next step focuses on Cementum.\nWhich option is the focus of the next step?",
+        "answer": "Cementum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception Desk"
+        "prompt": "During a routine care or examination situation, an adult reviews Reception Desk, Magazine, Fish Tank. The next step focuses on Reception Desk.\nWhich option is the focus of the next step?",
+        "answer": "Reception Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Certificate"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Premolar"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Palate"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Certificate, Poster, Appointment Card. The next step focuses on Certificate.\nWhich option is the focus of the next step?",
+        "answer": "Certificate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Prosthodontist” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which parts does Maya find on the mouth drawing?",
+        "answer": "The palate and uvula",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1035,15 +1101,15 @@
       "مرآة",
       "مثقاب",
       "شفط",
-      "فاتح",
+      "مصباح فحص الأسنان",
       "صينية",
       "حشوة"
     ],
     "usage": {
       "goal": "Learn to use the dentist 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1105,45 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Light, Tray, Filling. The next step focuses on Light. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Light, Tray, Filling in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Personal Message",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with insurance form, clipboard, and toy box. Each term belongs to a different part of the care process. The group moves between the sterilization room, x-ray room, and consultation room as the activity continues. During the visit, the patient and medical team deal with dental records, consent form, and treatment plan.",
+      "title": "The Dentist 7: A short reading",
+      "text": "Maya completes an insurance form on a clipboard in the waiting room. The receptionist checks her dental records and appointment details. In the consultation room, the dentist explains the treatment plan and consent form. Maya asks a question about the next visit. The receptionist writes down the date before she leaves.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Insurance Form"
+        "prompt": "During a routine care or examination situation, an adult reviews Insurance Form, Clipboard, Toy Box. The next step focuses on Insurance Form.\nWhich option is the focus of the next step?",
+        "answer": "Insurance Form",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sterilization Room"
+        "prompt": "During a routine care or examination situation, an adult reviews Sterilization Room, X-Ray Room, Consultation Room. The next step focuses on Sterilization Room.\nWhich option is the focus of the next step?",
+        "answer": "Sterilization Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Records"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Records, Consent Form, Treatment Plan. The next step focuses on Dental Records.\nWhich option is the focus of the next step?",
+        "answer": "Dental Records",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
+        "prompt": "During a routine care or examination situation, an adult reviews Mirror, Drill, Suction. The next step focuses on Mirror.\nWhich option is the focus of the next step?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Light"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Insurance Form"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Sterilization Room"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Light, Tray, Filling. The next step focuses on Light.\nWhich option is the focus of the next step?",
+        "answer": "Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1152,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Premolar” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What form does Maya complete in the waiting room?",
+        "answer": "An insurance form",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1198,8 +1275,8 @@
     "usage": {
       "goal": "Learn to use the dentist 8 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dentist.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1239,7 +1316,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Anesthesia",
+          "targetWords": ["Anesthesia"],
           "scenario": "During a routine care or examination situation, an adult reviews Anesthesia, Mouthguard, Floss. The next step focuses on Anesthesia.",
           "check": {
             "question": "Which option is the focus of the next step?",
@@ -1249,41 +1326,42 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dentist context illustrating this situation: During a routine care or examination situation, an adult reviews Anesthesia, Mouthguard, Floss. The next step focuses on Anesthesia. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dentist scene showing lesson-related items or actions including Anesthesia in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dentist: Short Dialogue",
-      "text": "Omar has an everyday task connected to the dentist. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with mouthguard, floss, and cleaning. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with checkup, cavity, and extraction. Each term belongs to a different part of the care process.",
+      "title": "The Dentist 8: A short reading",
+      "text": "Omar has a dental checkup and asks about cleaning. The dentist explains a cavity using a drawing. Maya learns the words extraction, whitening, and sealant in her language lesson. They compare the descriptions rather than treating the words as interchangeable. Omar books another appointment and keeps the clinic's written information.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dentist. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mouthguard"
+        "prompt": "During a routine care or examination situation, an adult reviews Mouthguard, Floss, Cleaning. The next step focuses on Mouthguard.\nWhich option is the focus of the next step?",
+        "answer": "Mouthguard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Checkup"
+        "prompt": "During a routine care or examination situation, an adult reviews Checkup, Cavity, Extraction. The next step focuses on Checkup.\nWhich option is the focus of the next step?",
+        "answer": "Checkup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whitening"
+        "prompt": "During a routine care or examination situation, an adult reviews Whitening, Sealant, Impression. The next step focuses on Whitening.\nWhich option is the focus of the next step?",
+        "answer": "Whitening",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Anesthesia"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Mouthguard"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Checkup"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Anesthesia, Mouthguard, Floss. The next step focuses on Anesthesia.\nWhich option is the focus of the next step?",
+        "answer": "Anesthesia",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1292,6 +1370,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Insurance Form” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "How does the dentist explain a cavity?",
+        "answer": "With a drawing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

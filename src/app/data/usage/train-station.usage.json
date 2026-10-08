@@ -27,19 +27,19 @@
       "concourse"
     ],
     "targetWordsArabic": [
-      "قطار راكب",
+      "قطار ركاب",
       "قطار بضائع",
       "قطار فائق السرعة",
       "مترو",
       "قاطرة",
       "عربة قطار",
-      "مشروب يسمى «دينينج كار»",
+      "عربة مطعم",
       "عربة نوم",
-      "عربة مؤخرة القطار",
-      "-",
-      "رصيف",
-      "مسار",
-      "مكتب تذكرة",
+      "عربة طاقم في مؤخرة قطار بضائع",
+      "قطار أحادي السكة",
+      "رصيف المحطة",
+      "سكة حديد",
+      "مكتب التذاكر",
       "غرفة انتظار",
       "ردهة رئيسية"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or approaching the ticket office as the main location; include ticket office, waiting room, and concourse naturally where visually appropriate, but make the real-world use of ticket office the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "passenger train"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare passenger train, freight train, high-speed train, and subway and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "passenger train",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "locomotive"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare locomotive, train car, dining car, and sleeper car and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "locomotive",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "caboose"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare caboose, monorail, platform, and track and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "caboose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ticket office"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ticket office, waiting room, and concourse and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "ticket office",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,16 +201,16 @@
       "reservation"
     ],
     "targetWordsArabic": [
-      "مبنى يسمى «ينفورماتيون ديسك»",
-      "-",
-      "آلة يسمى «فيندينج ماتشيني»",
+      "مكتب استعلامات",
+      "كشك صحف",
+      "آلة بيع ذاتي",
       "دورة مياه",
       "مرآب سيارات",
       "موقف سيارات أجرة",
       "موقف حافلات",
       "تذكرة",
-      "مكان يسمى «رووند تريب»",
-      "اتجاه واحد",
+      "رحلة ذهاب وعودة",
+      "ذهاب فقط",
       "جدول",
       "جدول مواعيد",
       "لوحة المغادرة",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the departure board as the central item; include departure board, arrival board, and reservation naturally where visually appropriate, but make the real-world use of departure board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Train Station",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "information desk"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare information desk, newsstand, vending machine, and restroom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "information desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "parking garage"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking garage, taxi stand, bus stop, and ticket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "parking garage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "round trip"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare round trip, one-way, schedule, and timetable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "round trip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "departure board"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare departure board, arrival board, and reservation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "departure board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -351,16 +377,16 @@
     "targetWordsArabic": [
       "رقم المقعد",
       "الدرجة الأولى",
-      "سفينة يسمى «يكونومي كلاسس»",
-      "بطاقة مرور",
+      "درجة اقتصادية",
+      "اشتراك سفر",
       "بوابة دوارة",
       "إشارة",
       "حاجز معبر سكك حديدية",
-      "قوس القدم",
+      "جسر",
       "نفق",
       "سلك كهربائي علوي",
-      "سكة حديدية",
-      "مبدل شبكي",
+      "قضيب سكة حديد",
+      "محوّل سكة حديد",
       "حاجز نهاية السكة",
       "برج ساعة",
       "محصل أو مشرف قطار"
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the buffer stop as the central item; include buffer stop, clock tower, and conductor naturally where visually appropriate, but make the real-world use of buffer stop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: Train Station",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "seat number"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare seat number, first class, economy class, and pass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "seat number",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "turnstile"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare turnstile, signal, crossing gate, and bridge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "turnstile",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tunnel"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tunnel, overhead wire, rail, and switch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "tunnel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "buffer stop"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare buffer stop, clock tower, and conductor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "buffer stop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -506,16 +545,16 @@
       "validating"
     ],
     "targetWordsArabic": [
-      "مهندس",
-      "حمّال",
-      "متنقل يومي",
-      "شخص يسمى «ترافيلير»",
-      "طائرة يسمى «بواردينج»",
-      "مغادرة",
-      "مكان يسمى «ارريفينج»",
-      "تبديل وسيلة النقل",
-      "مكان يسمى «وايتينج»",
-      "إعلان",
+      "سائق قطار",
+      "حمال أمتعة",
+      "راكب يتنقل يوميًا",
+      "مسافر",
+      "الصعود إلى القطار",
+      "المغادرة",
+      "الوصول",
+      "الانتقال إلى قطار آخر",
+      "الانتظار",
+      "الإعلان",
       "التحقق من صلاحية التذكرة"
     ],
     "usage": {
@@ -560,7 +599,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult illustrating waiting through a realistic adult task; include waiting, announcing, and validating naturally where visually appropriate, but make the real-world use of waiting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
@@ -569,16 +609,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "engineer"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare engineer, porter, commuter, and traveler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "engineer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "boarding"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare boarding, departing, arriving, and transferring and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "boarding",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "waiting"
+        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare waiting, announcing, and validating and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "waiting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

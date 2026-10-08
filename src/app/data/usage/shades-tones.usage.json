@@ -28,20 +28,20 @@
     ],
     "targetWordsArabic": [
       "قرمزي داكن",
-      "قرمزي",
+      "أحمر قانٍ",
       "عنابي",
-      "وردة",
-      "يحمر خجلا",
-      "بورغوندي",
-      "ياقوتي",
-      "كرز",
-      "توت العليق",
-      "فوشيا",
+      "وردي زاهٍ",
+      "وردي هادئ",
+      "أحمر داكن مائل للأرجواني",
+      "أحمر ياقوتي",
+      "أحمر كرزي",
+      "أحمر توتي",
+      "فوشي",
       "كحلي",
-      "أزرق سماء",
+      "أزرق سماوي",
       "أزرق ملكي",
       "أزرق مائي",
-      "نعناع"
+      "أخضر نعناعي فاتح"
     ],
     "usage": {
       "goal": "Learn to use common shades & tones 1 vocabulary to handle a familiar adult everyday task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Royal Blue, Aqua, Mint. The selected item or situation is best described as royal blue. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Royal Blue, Aqua, Mint in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Shades & Tones: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crimson"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Crimson, Scarlet, Maroon. The selected item or situation is best described as crimson.\nWhich description best fits the selected item or situation?",
+        "answer": "Crimson",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rose"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Rose, Blush, Burgundy. The selected item or situation is best described as rose.\nWhich description best fits the selected item or situation?",
+        "answer": "Rose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ruby"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Ruby, Cherry, Raspberry. The selected item or situation is best described as ruby.\nWhich description best fits the selected item or situation?",
+        "answer": "Ruby",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fuchsia"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Fuchsia, Navy, Sky Blue. The selected item or situation is best described as fuchsia.\nWhich description best fits the selected item or situation?",
+        "answer": "Fuchsia",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Royal Blue"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Royal Blue, Aqua, Mint. The selected item or situation is best described as royal blue.\nWhich description best fits the selected item or situation?",
+        "answer": "Royal Blue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -189,19 +205,19 @@
       "Bronze"
     ],
     "targetWordsArabic": [
-      "زمردي",
-      "زيتونة",
-      "أخضر غابة",
-      "أخضر مزرق فاتح",
-      "أخضر يشمي",
+      "أخضر زمردي",
+      "أخضر زيتوني",
+      "أخضر غابي داكن",
+      "أخضر بحري فاتح",
+      "أخضر يشبي",
       "ذهبي",
       "كهرماني",
-      "خردلي",
+      "أصفر خردلي",
       "عسل (عسل نحل)",
-      "ليمون",
+      "أصفر ليموني",
       "خوخي",
-      "يوسفي",
-      "صدئي",
+      "برتقالي يوسفي",
+      "بني محمر",
       "نحاسي",
       "برونزي"
     ],
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Rust, Copper, Bronze. The selected item or situation is best described as rust. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Rust, Copper, Bronze in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Shades & Tones: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Emerald"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Emerald, Olive, Forest Green. The selected item or situation is best described as emerald.\nWhich description best fits the selected item or situation?",
+        "answer": "Emerald",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seafoam"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Seafoam, Jade, Gold. The selected item or situation is best described as seafoam.\nWhich description best fits the selected item or situation?",
+        "answer": "Seafoam",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Amber"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Amber, Mustard, Honey. The selected item or situation is best described as amber.\nWhich description best fits the selected item or situation?",
+        "answer": "Amber",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lemon"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Lemon, Peach, Tangerine. The selected item or situation is best described as lemon.\nWhich description best fits the selected item or situation?",
+        "answer": "Lemon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rust"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Rust, Copper, Bronze. The selected item or situation is best described as rust.\nWhich description best fits the selected item or situation?",
+        "answer": "Rust",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -352,20 +384,20 @@
     ],
     "targetWordsArabic": [
       "عاجي",
-      "كريمة",
+      "كريمي",
       "بيج",
-      "أسمر فاتح",
+      "بني فاتح أو حنطي",
       "كاكي",
-      "رمادي بني",
-      "فحمي",
-      "أردوازي",
-      "رمادي رمادي",
+      "رمادي مائل للبني",
+      "رمادي فحمي",
+      "رمادي مزرق",
+      "رمادي فاتح",
       "فضي",
-      "برقوق",
-      "بنفسجي باهت",
-      "ليلكي",
-      "أوركيد",
-      "نبيذ"
+      "أرجواني برقوقي داكن",
+      "بنفسجي هادئ",
+      "أرجواني فاتح",
+      "أرجواني زهري",
+      "أحمر قاتم"
     ],
     "usage": {
       "goal": "Learn to use common shades & tones 3 vocabulary to handle a familiar adult everyday task.",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Lilac, Orchid, Wine. The selected item or situation is best described as lilac. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Lilac, Orchid, Wine in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Shades & Tones: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ivory"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Ivory, Cream, Beige. The selected item or situation is best described as ivory.\nWhich description best fits the selected item or situation?",
+        "answer": "Ivory",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tan"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Tan, Khaki, Taupe. The selected item or situation is best described as tan.\nWhich description best fits the selected item or situation?",
+        "answer": "Tan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Charcoal"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Charcoal, Slate, Ash. The selected item or situation is best described as charcoal.\nWhich description best fits the selected item or situation?",
+        "answer": "Charcoal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Silver"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Silver, Plum, Mauve. The selected item or situation is best described as silver.\nWhich description best fits the selected item or situation?",
+        "answer": "Silver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lilac"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Lilac, Orchid, Wine. The selected item or situation is best described as lilac.\nWhich description best fits the selected item or situation?",
+        "answer": "Lilac",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -496,7 +544,13 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Eggplant", "Periwinkle", "Champagne", "Sand", "Smoke"],
-    "targetWordsArabic": ["باذنجان", "أزرق بنفسجي فاتح", "شمبانيا", "رمل", "يدخن الطعام"],
+    "targetWordsArabic": [
+      "باذنجاني داكن",
+      "أزرق مائل للبنفسجي الفاتح",
+      "ذهبي فاتح مائل للبيج",
+      "رملي",
+      "رمادي دخاني"
+    ],
     "usage": {
       "goal": "Learn to use common shades & tones 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to shades & tones.",
@@ -527,7 +581,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Sand, Smoke, Eggplant. The selected item or situation is best described as sand. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Sand, Smoke in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Shades & Tones: Notice-Style Text",
@@ -536,12 +591,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eggplant"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Eggplant, Periwinkle, Champagne. The selected item or situation is best described as eggplant.\nWhich description best fits the selected item or situation?",
+        "answer": "Eggplant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sand"
+        "prompt": "An adult compares three possible descriptions in a shades & tones context: Sand, Smoke, Eggplant. The selected item or situation is best described as sand.\nWhich description best fits the selected item or situation?",
+        "answer": "Sand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

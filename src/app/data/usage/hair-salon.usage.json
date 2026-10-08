@@ -27,18 +27,18 @@
       "Braids"
     ],
     "targetWordsArabic": [
-      "يشذب أو يقص أطراف",
+      "يقص الأطراف",
       "طبقات الشعر",
       "قصة بوب",
-      "قصة بيكسي",
-      "تدرج قص الشعر",
+      "قصة شعر قصيرة جدًا",
+      "تدرّج قص الشعر",
       "قصة أندركت",
       "غرة",
-      "يقطع طنين",
-      "قصة شعر متدرجة",
-      "قصة شعر قصيرة جدا",
-      "تسريحة موهوك",
-      "غرة الشعر",
+      "قصة شعر قصيرة جدًا بالماكينة",
+      "قصة شعر متدرجة مشعثة",
+      "قصة شعر قصيرة متساوية",
+      "قصة موهوك",
+      "غُرّة الشعر",
       "فرق جانبي للشعر",
       "تسريحة تمشيط الشعر إلى الجانب",
       "ضفائر"
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the hair salon 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Side Part, Comb Over, Braids. The person selects Side Part for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Side Part, Comb Over, Braids in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Email",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with trim, layers, and bob. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with pixie, fade, and undercut. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 1: A short reading",
+      "text": "Maya shows the stylist a photograph of a bob. She wants a trim rather than a completely new style. Omar asks about a fade and an undercut for his next appointment. The stylist explains the choices and checks how much hair Maya wants removed. Maya confirms the length before the haircut begins.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trim"
+        "prompt": "During a routine the hair salon task, an adult compares Trim, Layers, Bob. The person selects Trim for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Trim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pixie"
+        "prompt": "During a routine the hair salon task, an adult compares Pixie, Fade, Undercut. The person selects Pixie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pixie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bangs"
+        "prompt": "During a routine the hair salon task, an adult compares Bangs, Buzz Cut, Shag. The person selects Bangs for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bangs",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crew Cut"
+        "prompt": "During a routine the hair salon task, an adult compares Crew Cut, Mohawk, Bangs/Fringe. The person selects Crew Cut for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Crew Cut",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Side Part"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Trim"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Pixie"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Side Part, Comb Over, Braids. The person selects Side Part for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Side Part",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Lens Edger” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya want rather than a completely new style?",
+        "answer": "A trim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -193,27 +204,27 @@
       "Pin"
     ],
     "targetWordsArabic": [
-      "ضفائر ملاصقة للرأس",
-      "جدائل الراستا",
+      "ضفائر ملاصقة لفروة الرأس",
+      "خصل شعر متلبدة",
       "وصلات شعر",
       "شعر مستعار",
       "شبكة شعر",
       "تجفيف الشعر بالمجفف",
       "يجعد الشعر",
       "يفرد الشعر",
-      "يضفر الشعر",
+      "يضفر",
       "تسريحة مرفوعة",
       "ذيل حصان",
       "كعكة شعر",
-      "تموجات",
-      "يلوي",
-      "دبوس"
+      "تموجات شعر",
+      "يلفّ خصل الشعر",
+      "دبوس شعر"
     ],
     "usage": {
       "goal": "Learn to use the hair salon 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Waves, Twist, Pin. The person selects Waves for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Waves, Twist, Pin in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Personal Message",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with cornrows, dreadlocks, and extensions. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with wig, hair net, and blow dry. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 2: A short reading",
+      "text": "Omar reads a hairstyle chart showing cornrows, dreadlocks, and extensions. Maya chooses a braid for an event. She asks the stylist to curl the loose ends instead of straightening them. A wig and hair net are in a separate display. The stylist checks Maya's photograph before starting the requested style.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cornrows"
+        "prompt": "During a routine the hair salon task, an adult compares Cornrows, Dreadlocks, Extensions. The person selects Cornrows for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cornrows",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wig"
+        "prompt": "During a routine the hair salon task, an adult compares Wig, Hair Net, Blow Dry. The person selects Wig for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wig",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Curl"
+        "prompt": "During a routine the hair salon task, an adult compares Curl, Straighten, Braid. The person selects Curl for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Curl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Updo"
+        "prompt": "During a routine the hair salon task, an adult compares Updo, Ponytail, Bun. The person selects Updo for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Updo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waves"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Cornrows"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Wig"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Waves, Twist, Pin. The person selects Waves for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Waves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Trim” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What hairstyle does Maya choose for an event?",
+        "answer": "A braid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -363,7 +385,7 @@
       "مكواة تجعيد الشعر",
       "مكواة فرد الشعر",
       "مجفف شعر",
-      "ناشر روائح",
+      "موزّع هواء مجفف الشعر",
       "رداء حماية للشعر",
       "شريط رقبة للحلاقة",
       "عمود الحلاق المخطط",
@@ -378,8 +400,8 @@
     "usage": {
       "goal": "Learn to use the hair salon 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Hair Wax, Mousse, Hair Spray. The person selects Hair Wax for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Hair Wax, Mousse, Hair Spray in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Short Dialogue",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with hair rollers, curling iron, and flat iron. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with blow dryer, diffuser, and hair cape. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 3: A short reading",
+      "text": "The stylist puts a hair cape around Maya and prepares a blow dryer with a diffuser. A flat iron and curling iron are nearby, but they are not needed for this appointment. Omar notices hair rollers on another station. The stylist clears unused tools away and checks that Maya is comfortable.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hair Rollers"
+        "prompt": "During a routine the hair salon task, an adult compares Hair Rollers, Curling Iron, Flat Iron. The person selects Hair Rollers for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hair Rollers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blow Dryer"
+        "prompt": "During a routine the hair salon task, an adult compares Blow Dryer, Diffuser, Hair Cape. The person selects Blow Dryer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Blow Dryer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Neck Strip"
+        "prompt": "During a routine the hair salon task, an adult compares Neck Strip, Barber Pole, Shaving Cream. The person selects Neck Strip for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Neck Strip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aftershave"
+        "prompt": "During a routine the hair salon task, an adult compares Aftershave, Pomade, Hair Gel. The person selects Aftershave for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Aftershave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hair Wax"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Hair Rollers"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Blow Dryer"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Hair Wax, Mousse, Hair Spray. The person selects Hair Wax for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hair Wax",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Cornrows” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the stylist put around Maya?",
+        "answer": "A hair cape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -525,27 +558,27 @@
       "Razor Fade"
     ],
     "targetWordsArabic": [
-      "خصل ملونة",
+      "خصلات شعر أفتح",
       "خصلات شعر أغمق",
       "بالياج",
       "أومبريه؛ تدرج لوني",
       "تجديد لون جذور الشعر",
-      "مبيض",
-      "تونر للبشرة",
+      "مفتّح لون الشعر",
+      "مصحّح لون الشعر",
       "صبغة",
-      "ورق قصدير لتلوين الشعر",
-      "عجلة لون",
+      "ورق ألمنيوم",
+      "عجلة الألوان",
       "محلول تجعيد دائم للشعر",
-      "مادة معادلة",
+      "مثبت كيميائي لتجعيد الشعر",
       "تدليك فروة الرأس",
       "منشفة دافئة",
-      "تدرج حلاقة قريب جدا"
+      "تدرّج حلاقة قريب جدًا"
     ],
     "usage": {
       "goal": "Learn to use the hair salon 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Scalp Massage, Hot Towel, Razor Fade. The person selects Scalp Massage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Scalp Massage, Hot Towel, Razor Fade in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Tips/Notice",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with highlights, lowlights, and balayage. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with ombre, root touch up, and bleach. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 4: A short reading",
+      "text": "Maya asks about highlights and lowlights before choosing a color service. The stylist shows photographs of balayage and ombre. Omar books a root touch up for another day. Maya explains the result she wants, and the stylist discusses the process. They agree on the plan before any color is applied.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Highlights"
+        "prompt": "During a routine the hair salon task, an adult compares Highlights, Lowlights, Balayage. The person selects Highlights for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Highlights",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ombre"
+        "prompt": "During a routine the hair salon task, an adult compares Ombre, Root Touch Up, Bleach. The person selects Ombre for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ombre",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toner"
+        "prompt": "During a routine the hair salon task, an adult compares Toner, Dye, Foil. The person selects Toner for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Toner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Color Wheel"
+        "prompt": "During a routine the hair salon task, an adult compares Color Wheel, Perm Solution, Neutralizer. The person selects Color Wheel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Color Wheel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scalp Massage"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Highlights"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Ombre"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Scalp Massage, Hot Towel, Razor Fade. The person selects Scalp Massage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Scalp Massage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Hair Rollers” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar book for another day?",
+        "answer": "A root touch up",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -691,18 +735,18 @@
       "Shampoo"
     ],
     "targetWordsArabic": [
-      "تدرج تدريجي",
-      "قصة بوب",
+      "تدرّج تدريجي",
+      "قَصّة بوب",
       "مقص",
       "مشط",
-      "فرشاة",
-      "ماكينة قص",
+      "فرشاة شعر",
+      "ماكينة قص الشعر",
       "شفرة حلاقة",
       "رداء حلاقة",
       "مشبك شعر",
       "ماكينة قص الشعر",
       "آلة تشذيب",
-      "شفرة حلاقة مستقيمة",
+      "موس حلاقة مستقيم",
       "مقص تخفيف الشعر",
       "مشابك تقسيم الشعر",
       "شامبو"
@@ -710,8 +754,8 @@
     "usage": {
       "goal": "Learn to use the hair salon 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Thinning Shears, Sectioning Clips, Shampoo. The person selects Thinning Shears for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Thinning Shears, Sectioning Clips, Shampoo in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Everyday Description",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with taper, bob cut, and scissors. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with comb, brush, and clipper. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 5: A short reading",
+      "text": "Omar sits in the salon chair while the stylist checks his haircut request. A comb, scissors, and clippers are on the station. Maya asks for a bob cut at the next chair. The stylist uses a clip to separate her hair. Both customers confirm the length they want before the cuts begin.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Taper"
+        "prompt": "During a routine the hair salon task, an adult compares Taper, Bob Cut, Scissors. The person selects Taper for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Taper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Comb"
+        "prompt": "During a routine the hair salon task, an adult compares Comb, Brush, Clipper. The person selects Comb for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Comb",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Razor"
+        "prompt": "During a routine the hair salon task, an adult compares Razor, Cape, Clip. The person selects Razor for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Razor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hair Clipper"
+        "prompt": "During a routine the hair salon task, an adult compares Hair Clipper, Trimmer, Straight Razor. The person selects Hair Clipper for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hair Clipper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thinning Shears"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Taper"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Comb"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Thinning Shears, Sectioning Clips, Shampoo. The person selects Thinning Shears for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Thinning Shears",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Highlights” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the stylist use to separate Maya's hair?",
+        "answer": "A clip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -860,24 +915,24 @@
       "بلسم",
       "مثبت شعر",
       "جل",
-      "مصل عناية",
-      "زيت",
-      "قناع",
+      "سيروم للشعر",
+      "زيت للشعر",
+      "قناع للشعر",
       "شامبو جاف",
-      "مستحضر يترك على الشعر",
+      "مستحضر يُترك على الشعر",
       "صبغة شعر",
       "كرسي",
       "مرآة",
-      "محطة",
-      "حوض",
+      "وحدة عمل في الصالون",
+      "حوض غسل الشعر",
       "منطقة انتظار",
       "مجلة"
     ],
     "usage": {
       "goal": "Learn to use the hair salon 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Sink, Waiting Area, Magazine. The person selects Sink for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Sink, Waiting Area, Magazine in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Email",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with conditioner, hairspray, and gel. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with serum, oil, and mask. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 6: A short reading",
+      "text": "Maya asks which product was used after her haircut. The stylist shows her a conditioner and a leave-in product. Omar compares gel with hairspray in the shop display. He sees a serum and dry shampoo on another shelf. They check the product names and ask questions before choosing anything to take home.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conditioner"
+        "prompt": "During a routine the hair salon task, an adult compares Conditioner, Hairspray, Gel. The person selects Conditioner for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Conditioner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Serum"
+        "prompt": "During a routine the hair salon task, an adult compares Serum, Oil, Mask. The person selects Serum for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Serum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry Shampoo"
+        "prompt": "During a routine the hair salon task, an adult compares Dry Shampoo, Leave In, Hair Dye. The person selects Dry Shampoo for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dry Shampoo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chair"
+        "prompt": "During a routine the hair salon task, an adult compares Chair, Mirror, Station. The person selects Chair for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sink"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Conditioner"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Serum"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Sink, Waiting Area, Magazine. The person selects Sink for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sink",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Taper” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two products does Omar compare?",
+        "answer": "Gel and hairspray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1015,10 +1081,10 @@
       "Styling Station"
     ],
     "targetWordsArabic": [
-      "استقبال",
-      "كتاب موعد",
+      "منطقة الاستقبال",
+      "دفتر المواعيد",
       "وعاء الإكراميات",
-      "رداء حماية",
+      "رداء واقٍ",
       "كرسي صالون",
       "حوض غسل الشعر",
       "محطة تصفيف الشعر"
@@ -1026,8 +1092,8 @@
     "usage": {
       "goal": "Learn to use the hair salon 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1055,7 +1121,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "Styling Station",
+          "targetWords": ["Styling Station"],
           "scenario": "During a routine the hair salon task, an adult compares Styling Station, Reception, Appointment Book. The person selects Styling Station for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -1065,37 +1131,35 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Styling Station, Reception, Appointment Book. The person selects Styling Station for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Styling Station in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon: Personal Message",
-      "text": "Omar has an everyday task connected to the hair salon. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with reception, appointment book, and tip jar. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with smock, salon chair, and wash basin. Each term belongs to a different part of the care process.",
+      "title": "The Hair Salon 7: A short reading",
+      "text": "Omar checks in at reception for his appointment. The receptionist finds his name in the appointment book. Maya waits while the stylist cleans the salon chair and styling station. A wash basin is at the back of the room. When the chair is ready, the receptionist tells Omar where to sit.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception"
+        "prompt": "During a routine the hair salon task, an adult compares Reception, Appointment Book, Tip Jar. The person selects Reception for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Reception",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smock"
+        "prompt": "During a routine the hair salon task, an adult compares Smock, Salon Chair, Wash Basin. The person selects Smock for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Smock",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Styling Station"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Reception"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Smock"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the hair salon task, an adult compares Styling Station, Reception, Appointment Book. The person selects Styling Station for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Styling Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1104,6 +1168,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Conditioner” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does the receptionist find Omar's name?",
+        "answer": "In the appointment book",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

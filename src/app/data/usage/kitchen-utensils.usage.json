@@ -34,20 +34,20 @@
       "مقص",
       "قشارة خضراوات",
       "مبشرة",
-      "قطاعة ماندولين",
+      "قطّاعة ماندولين",
       "لوح التقطيع (قرمة)",
-      "مسن",
+      "مِسنّ",
       "مقلاة القلي (طاسة قلي)",
       "قدر صلصة (كاسرولة)",
       "قدر كبير عميق",
       "مقلاة صينية (ووك)",
-      "قدر هولندي"
+      "قدر ثقيل بغطاء محكم"
     ],
     "usage": {
       "goal": "Learn to use common kitchen utensils 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to kitchen utensils.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a kitchen utensils context illustrating this situation: During a routine kitchen utensils task, an adult compares Stock Pot, Wok, Dutch Oven. The person selects Stock Pot for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult kitchen utensils scene showing lesson-related items or actions including Stock Pot, Wok, Dutch Oven in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Kitchen Utensils: Mini Dialogue",
-      "text": "Maya is in a situation connected to kitchen utensils. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chef's knife, paring knife, and bread knife. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with cleaver, scissors, and peeler. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Kitchen Utensils 1: A short reading",
+      "text": "Maya uses a paring knife to peel a piece of fruit. A bread knife is for the loaf on the cutting board. Omar takes a frying pan for the eggs and a saucepan for water. The peeler and grater are in a drawer. They put each tool back after cleaning the kitchen.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Kitchen Utensils. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chef's Knife"
+        "prompt": "During a routine kitchen utensils task, an adult compares Chef's Knife, Paring Knife, Bread Knife. The person selects Chef's Knife for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chef's Knife",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cleaver"
+        "prompt": "During a routine kitchen utensils task, an adult compares Cleaver, Scissors, Peeler. The person selects Cleaver for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cleaver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grater"
+        "prompt": "During a routine kitchen utensils task, an adult compares Grater, Mandoline, Cutting Board. The person selects Grater for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grater",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sharpener"
+        "prompt": "During a routine kitchen utensils task, an adult compares Sharpener, Frying Pan, Saucepan. The person selects Sharpener for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sharpener",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stock Pot"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Chef's Knife"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Bread Knife"
+        "prompt": "During a routine kitchen utensils task, an adult compares Stock Pot, Wok, Dutch Oven. The person selects Stock Pot for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Stock Pot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Gin” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What tool does Maya use to peel fruit?",
+        "answer": "A paring knife",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -190,7 +205,7 @@
     ],
     "targetWordsArabic": [
       "مقلاة",
-      "صينية خبز مسطحة",
+      "صينية خبز مسطّحة",
       "طاجن فرن (صينية بايركس / كاسرول)",
       "صينية تحمير",
       "صاج طهي",
@@ -208,8 +223,8 @@
     "usage": {
       "goal": "Learn to use common kitchen utensils 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to kitchen utensils.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a kitchen utensils context illustrating this situation: During a routine kitchen utensils task, an adult compares Colander, Strainer, Funnel. The person selects Colander for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult kitchen utensils scene showing lesson-related items or actions including Colander, Strainer, Funnel in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Kitchen Utensils: Simple Message",
-      "text": "Maya is in a situation connected to kitchen utensils. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with skillet, baking sheet, and casserole dish. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with roasting pan, griddle, and spatula. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Kitchen Utensils 2: A short reading",
+      "text": "Omar makes soup in a pot and serves it with a ladle. Maya uses tongs to lift vegetables and a wooden spoon to stir a sauce. A colander drains the pasta. The baking sheet is for dinner rolls. They keep the rolling pin and whisk on the counter until their cooking is finished.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Kitchen Utensils. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skillet"
+        "prompt": "During a routine kitchen utensils task, an adult compares Skillet, Baking Sheet, Casserole Dish. The person selects Skillet for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Skillet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Roasting Pan"
+        "prompt": "During a routine kitchen utensils task, an adult compares Roasting Pan, Griddle, Spatula. The person selects Roasting Pan for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Roasting Pan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ladle"
+        "prompt": "During a routine kitchen utensils task, an adult compares Ladle, Tongs, Whisk. The person selects Ladle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ladle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wooden Spoon"
+        "prompt": "During a routine kitchen utensils task, an adult compares Wooden Spoon, Slotted Spoon, Rolling Pin. The person selects Wooden Spoon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wooden Spoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Colander"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Skillet"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Casserole Dish"
+        "prompt": "During a routine kitchen utensils task, an adult compares Colander, Strainer, Funnel. The person selects Colander for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Colander",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Chef's Knife” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What tool does Omar use to serve soup?",
+        "answer": "A ladle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -356,13 +386,13 @@
       "ميزان مطبخ",
       "مقياس حرارة",
       "مؤقت",
-      "مكيال سوائل",
-      "مكيال مكونات جافة",
+      "كوب قياس السوائل",
+      "كوب قياس المكونات الجافة",
       "ملعقة صغيرة",
       "ملعقة كبيرة",
       "كوب قياس بالأونصة",
       "خلاط كهربائي",
-      "محضرة طعام",
+      "محضّرة طعام",
       "خلاط",
       "محمصة الخبز (توستر)",
       "غلاية ماء (كاتل)"
@@ -370,8 +400,8 @@
     "usage": {
       "goal": "Learn to use common kitchen utensils 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to kitchen utensils.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a kitchen utensils context illustrating this situation: During a routine kitchen utensils task, an adult compares Mixer, Toaster, Kettle. The person selects Mixer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult kitchen utensils scene showing lesson-related items or actions including Mixer, Toaster, Kettle in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Kitchen Utensils: Notice-Style Text",
-      "text": "Maya is in a situation connected to kitchen utensils. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with measuring cup, measuring spoon, and kitchen scale. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with thermometer, timer, and liquid measure. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Kitchen Utensils 3: A short reading",
+      "text": "Maya reads a recipe and uses a measuring cup for flour. A measuring spoon helps with a small amount of spice. Omar checks the kitchen scale and sets a timer. The blender makes a sauce, while the kettle heats water. They check their measurements before mixing the ingredients together.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Kitchen Utensils. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Measuring Cup"
+        "prompt": "During a routine kitchen utensils task, an adult compares Measuring Cup, Measuring Spoon, Kitchen Scale. The person selects Measuring Cup for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Measuring Cup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thermometer"
+        "prompt": "During a routine kitchen utensils task, an adult compares Thermometer, Timer, Liquid Measure. The person selects Thermometer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Thermometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry Measure"
+        "prompt": "During a routine kitchen utensils task, an adult compares Dry Measure, Teaspoon, Tablespoon. The person selects Dry Measure for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dry Measure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ounce Glass"
+        "prompt": "During a routine kitchen utensils task, an adult compares Ounce Glass, Blender, Food Processor. The person selects Ounce Glass for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ounce Glass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mixer"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Measuring Cup"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Kitchen Scale"
+        "prompt": "During a routine kitchen utensils task, an adult compares Mixer, Toaster, Kettle. The person selects Mixer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mixer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Skillet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya use to measure flour?",
+        "answer": "A measuring cup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -496,12 +541,18 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Rice Cooker", "Slow Cooker", "Waffle Iron", "Juicer", "Coffee Maker"],
-    "targetWordsArabic": ["جهاز طبخ الأرز", "طباخ بطيء", "مكواة وافل", "عصارة", "ماكينة القهوة"],
+    "targetWordsArabic": [
+      "جهاز طبخ الأرز",
+      "طباخ بطيء",
+      "جهاز صنع الوافل",
+      "عصّارة",
+      "ماكينة القهوة"
+    ],
     "usage": {
       "goal": "Learn to use common kitchen utensils 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to kitchen utensils.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -527,29 +578,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a kitchen utensils context illustrating this situation: During a routine kitchen utensils task, an adult compares Juicer, Coffee Maker, Rice Cooker. The person selects Juicer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult kitchen utensils scene showing lesson-related items or actions including Juicer, Coffee Maker in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Kitchen Utensils: Short Description",
-      "text": "Maya is in a situation connected to kitchen utensils. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with rice cooker, slow cooker, and waffle iron. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with juicer and coffee maker. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Kitchen Utensils 4: A short reading",
+      "text": "Omar puts rice in the rice cooker and starts it. Maya uses a juicer for fruit, then makes coffee with the coffee maker. They plan to use the slow cooker for dinner. The waffle iron stays in the cupboard today. They leave space on the counter for serving their breakfast.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Kitchen Utensils. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rice Cooker"
+        "prompt": "During a routine kitchen utensils task, an adult compares Rice Cooker, Slow Cooker, Waffle Iron. The person selects Rice Cooker for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rice Cooker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Juicer"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Rice Cooker"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Waffle Iron"
+        "prompt": "During a routine kitchen utensils task, an adult compares Juicer, Coffee Maker, Rice Cooker. The person selects Juicer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Juicer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -558,6 +608,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Measuring Cup” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which appliance stays in the cupboard?",
+        "answer": "The waffle iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

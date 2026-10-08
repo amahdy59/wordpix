@@ -31,17 +31,17 @@
       "حمم بركانية",
       "صهارة",
       "فتحة تهوية",
-      "كالديرا بركانية",
-      "قمع",
+      "فوهة بركانية واسعة",
+      "قُمع",
       "أنبوب حمم بركانية",
       "نابض ساخن",
-      "نافورة حارة",
+      "نافورة مياه حارة طبيعية",
       "فوهة بخارية بركانية",
-      "مادة يسمى «يروبتيون»",
+      "ثوران بركاني",
       "تدفق الحمم",
       "سحابة رماد بركاني",
-      "تدفق فتاتي بركاني",
-      "هزة أرضية"
+      "تدفّق فتاتي بركاني",
+      "هزة أرضية خفيفة"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Ash Cloud as the central item; include Ash Cloud, Pyroclastic Flow, and Tremor naturally where visually appropriate, but make the real-world use of Ash Cloud the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Volcano",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crater"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crater",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Caldera"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Caldera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Geyser"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Geyser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ash Cloud"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ash Cloud",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,17 +201,17 @@
       "Fossil"
     ],
     "targetWordsArabic": [
-      "سطح يسمى «يارثكاكي»",
+      "زلزال",
       "انفجار",
       "فتحة تهوية يطبخ بالبخار",
-      "تدفق طيني",
+      "تدفّق طيني",
       "انبعاث وقود",
       "بازلت",
       "سبج",
-      "سطح يسمى «بوميكي»",
+      "حجر خفاف",
       "جرانيت",
       "حجر جيري",
-      "طف بركاني",
+      "صخر من رماد بركاني متماسك",
       "صخر بركاني",
       "زجاج بركاني",
       "بلورة معدنية",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Volcanic Glass as the central item; include Volcanic Glass, Mineral Crystal, and Fossil naturally where visually appropriate, but make the real-world use of Volcanic Glass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Volcano",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Earthquake"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Earthquake",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gas Emission"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gas Emission",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Granite"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Granite",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Volcanic Glass"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Volcanic Glass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,20 +375,20 @@
       "Cliff"
     ],
     "targetWordsArabic": [
-      "أداة أو جهاز يسمى «سييسموجراف»",
+      "جهاز تسجيل الزلازل",
       "مقياس الميل",
       "محلل غازات",
       "كاميرا حرارية",
       "محطة GPS للرصد",
       "محطة طقس",
-      "طائرة مسيرة",
+      "طائرة مسيّرة",
       "صورة قمر صناعي",
       "عدة أخذ عينات",
       "كاشف إشعاع",
       "حقل حمم",
-      "عملية يسمى «فولكانيك يسلاند»",
+      "جزيرة بركانية",
       "قمة جبل",
-      "-",
+      "وادٍ",
       "جرف"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Mountain Peak as the central item; include Mountain Peak, Valley, and Cliff naturally where visually appropriate, but make the real-world use of Mountain Peak the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Volcano",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seismograph"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Seismograph",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "GPS Station"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "GPS Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sample Kit"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sample Kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mountain Peak"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mountain Peak",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -511,17 +550,17 @@
     ],
     "targetWordsArabic": [
       "كهف",
-      "منطقة يسمى «لاكي»",
+      "بحيرة",
       "سحابة بخار",
       "شاطئ برمال سوداء",
-      "مادة يسمى «روك فورماتيون»",
+      "تكوين صخري",
       "مسار إخلاء",
-      "جهاز يسمى «وارنينج سيرين»",
-      "قناع واق من الغازات",
+      "صفارة إنذار",
+      "قناع واقٍ من الغازات",
       "قبعة صلب",
       "بدلة واقية",
       "مأوى طوارئ",
-      "طائرة يسمى «هيليكوبتير»",
+      "مروحية",
       "فريق إنقاذ",
       "حاجز",
       "منطقة خطر"
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult working with or speaking to the Rescue Team; include Rescue Team, Barrier, and Hazard Zone naturally where visually appropriate, but make the real-world use of Rescue Team the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Volcano",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cave"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rock Formation"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rock Formation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hard Hat"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hard Hat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rescue Team"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Rescue Team",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -671,7 +723,7 @@
       "بلورة",
       "صفيحة تكتونية",
       "فتحة حرارية",
-      "خامل"
+      "خامد"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -703,7 +755,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Crystal as the central item; include Crystal, Tectonic Plate, and Thermal Vent naturally where visually appropriate, but make the real-world use of Crystal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Volcano",
@@ -712,12 +765,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mantle"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mantle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crystal"
+        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crystal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

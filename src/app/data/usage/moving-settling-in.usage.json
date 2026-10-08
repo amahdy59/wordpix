@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "صندوق نقل",
       "شريط تغليف",
-      "سفينة يسمى «بوببلي وراب»",
+      "غلاف فقاعي",
       "ورق تغليف وحماية",
-      "قلم تخطيط (ماركر)",
+      "قلم تعليم",
       "بطانية نقل",
-      "-",
-      "شاحنة يد",
+      "عربة نقل يدوية",
+      "عربة نقل يدوية بعجلتين",
       "حبل",
       "رباط بلاستيكي",
-      "عبوة",
-      "مكان يسمى «لواد»",
-      "حاوية يسمى «ونلواد»",
-      "يفرغ الأمتعة",
-      "علامة"
+      "يحزم الأمتعة",
+      "يحمّل الأمتعة",
+      "يفرغ الحمولة",
+      "يفرغ الحقائب والصناديق",
+      "يضع ملصقًا تعريفيًا"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Unload as the central item; include Unload, Unpack, and Label naturally where visually appropriate, but make the real-world use of Unload the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: Moving & Settling In",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moving Box"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moving Box, Packing Tape, Bubble Wrap, and Packing Paper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moving Box",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Marker"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marker, Moving Blanket, Dolly, and Hand Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Marker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rope"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Zip Tie, Pack, and Load and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Unload"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Unload, Unpack, and Label and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Unload",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -191,18 +204,18 @@
       "يفرز",
       "يتبرع",
       "يتخلص من",
-      "جزء يسمى «ديساسسيمبلي»",
-      "جزء يسمى «رياسسيمبلي»",
-      "يغير العنوان",
+      "يفكك",
+      "يعيد التجميع",
+      "يغيّر العنوان",
       "ينقل خدمات المرافق",
-      "يركب خدمة الإنترنت",
-      "يسجل المركبة",
-      "يحدث بيانات الرخصة",
+      "يركّب خدمة الإنترنت",
+      "يسجّل المركبة",
+      "يحدّث بيانات الرخصة",
       "يبحث عن طبيب",
-      "عملية يسمى «ينرولل ين ستشوول»",
-      "يتعرف إلى الجيران",
+      "يسجل في مدرسة",
+      "يتعرّف إلى الجيران",
       "يستكشف المنطقة",
-      "جزء يسمى «هووسيوارمينج»"
+      "حفل بمناسبة الانتقال إلى منزل جديد"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Meet Neighbors as the central item; include Meet Neighbors, Explore Area, and Housewarming naturally where visually appropriate, but make the real-world use of Meet Neighbors the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "What You Need to Know: Moving & Settling In",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sort"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sort, Donate, Discard, and Disassemble and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sort",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reassemble"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reassemble, Change Address, Transfer Utilities, and Install Internet and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Reassemble",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Register Vehicle"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Register Vehicle, Update License, Find Doctor, and Enroll in School and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Register Vehicle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Meet Neighbors"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meet Neighbors, Explore Area, and Housewarming and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Meet Neighbors",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -347,13 +373,13 @@
       "أريكة",
       "هيكل السرير (شاسيه السرير)",
       "مرتبة",
-      "طاولة الطعام (سفرة)",
+      "طاولة طعام",
       "خزانة الأدراج (تسريحة)",
       "طاولة السرير (كمودينة)",
       "خزانة كتب",
       "مكتب",
       "طاولة قهوة",
-      "طاولة التلفاز (مكتبة التلفاز)"
+      "حامل تلفاز"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Coffee Table as the central item; include Coffee Table, TV Stand, and Sofa naturally where visually appropriate, but make the real-world use of Coffee Table the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sofa"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sofa, Bed Frame, Mattress, and Dining Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sofa",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dresser"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dresser, Nightstand, Bookcase, and Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dresser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coffee Table"
+        "prompt": "In the moving & settling in setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coffee Table, and TV Stand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Coffee Table",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

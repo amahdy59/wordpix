@@ -82,5 +82,334 @@
     "imagePath": "question-images/v1/vegetables-3-usage-scene-4/3dbd5a0eeb892282ad071c08f72bb158ba57df5444262821da5245e3fc704b41.webp",
     "imageAlt": "Small striped delicata squash, red tomatoes, and red, yellow, and green bell peppers in separate displays.",
     "sourceNode": "1673:655"
+  },
+  "bedroom-1-usage-scene-3": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews bookshelf, mirror, and stool. They need the item that is a simple seat without a back.",
+    "reviewedAnswer": "Stool",
+    "imagePath": "question-images/v1/bedroom-1-usage-scene-3/8af8de2717b99a63baa4e6d9624c4e74e1bbfc7e9d91c92745b94c3ae8388821.webp",
+    "imageAlt": "A tall bookshelf, a round wall mirror and a wooden seat without a back.",
+    "sourceNode": "1673:260"
+  },
+  "bedroom-1-usage-scene-4": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews chest of drawers, pillow, and blanket. They need the item that has several drawers for storing clothes.",
+    "reviewedAnswer": "Chest of Drawers",
+    "imagePath": "question-images/v1/bedroom-1-usage-scene-4/1879a1ae4489ba460c1f73506d118726fd2e1d9739a89f422e70c03901b8e458.webp",
+    "imageAlt": "A chest of drawers beside a bed with a pillow and a folded blanket.",
+    "sourceNode": "1673:263"
+  },
+  "bedroom-1-usage-scene-5": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews sheet, mattress, and duvet. They need the item that is a piece of bed linen placed on or over the mattress.",
+    "reviewedAnswer": "Sheet",
+    "imagePath": "question-images/v1/bedroom-1-usage-scene-5/05c40010b33906c790b5cc8666173e41d95a08990e380f5006f5a7d66dd72c9f.webp",
+    "imageAlt": "A white sheet folded back to expose a mattress, with a padded duvet on the bed.",
+    "sourceNode": "1673:266"
+  },
+  "bedroom-2-usage-scene-3": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews curtain, window, and door. They need the item that covers a window for privacy or to block light.",
+    "reviewedAnswer": "Curtain",
+    "imagePath": "question-images/v1/bedroom-2-usage-scene-3/8e25bc1e3e3b70877f75775aed512570c86e6436b23f4ec4c58f8b1bc65261b4.webp",
+    "imageAlt": "Curtains beside a window and an open interior door.",
+    "sourceNode": "1673:276"
+  },
+  "bedroom-3-usage-scene-2": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews plant, vase, and candle. They need the item that is a living decorative plant kept indoors.",
+    "reviewedAnswer": "Plant",
+    "imagePath": "question-images/v1/bedroom-3-usage-scene-2/75304386c42df8bd966058eab7f5a8463412d49f17b68254919c3fcbf67e97ef.webp",
+    "imageAlt": "A leafy potted plant, a small glass vase with a flower, and a white candle.",
+    "sourceNode": "1673:289"
+  },
+  "bedroom-3-usage-scene-3": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews calendar, tissue box, and wastebasket. They need the item that holds small pieces of rubbish.",
+    "reviewedAnswer": "Wastebasket",
+    "imagePath": "question-images/v1/bedroom-3-usage-scene-3/6660d981842b0a739925e555988e9b91860cf8ba9b02f86bb20ad62ac868cf46.webp",
+    "imageAlt": "A desktop calendar and a box of tissues above a small wastebasket.",
+    "sourceNode": "1673:292"
+  },
+  "bedroom-4-usage-scene-4": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews tablet, speaker, and reading light. They need the item that is a portable touchscreen computer.",
+    "reviewedAnswer": "Tablet",
+    "imagePath": "question-images/v1/bedroom-4-usage-scene-4/f0f5c6da35f9d0cc48af2513a04f9d3a0906937c6c94a394ced7f65e13aabb35.webp",
+    "imageAlt": "A tablet on a stand beside a small speaker and a bedside reading lamp.",
+    "sourceNode": "1673:311"
+  },
+  "bedroom-4-usage-scene-5": {
+    "reviewedScenario": "During an adult bedroom setup or home check, the tenant reviews remote control. They need the item that operates equipment from a distance.",
+    "reviewedAnswer": "Remote Control",
+    "imagePath": "question-images/v1/bedroom-4-usage-scene-5/1b6e4423f405fb407ba5759fdd18c09daab7c21dcabdf1fd266b822d64e05984.webp",
+    "imageAlt": "A television remote on a wooden bedside table.",
+    "sourceNode": "1673:314"
+  },
+  "bathroom-1-usage-scene-3": {
+    "reviewedScenario": "In a home bathroom, an adult checks or uses mirror, towel rack, and cabinet. The highlighted item is the mirror.",
+    "reviewedAnswer": "Mirror",
+    "imagePath": "question-images/v1/bathroom-1-usage-scene-3/d2b004c08052f0851914c0bca3345793b883ac242553000e0edadf9a8611b6a1.webp",
+    "imageAlt": "A bathroom wall mirror, a rail holding a towel, and a wooden storage cabinet.",
+    "sourceNode": "1673:324"
+  },
+  "bathroom-2-usage-scene-2": {
+    "reviewedScenario": "After brushing, Sami puts the toothbrush beside the toothpaste and dries his face with a towel.",
+    "reviewedAnswer": "Towel",
+    "imagePath": "question-images/v1/bathroom-2-usage-scene-2/075bbffb3ab3a58cbead3d03833e820e2be873e398c3bdd3b707e1f77f462fd5.webp",
+    "imageAlt": "A toothbrush and a toothpaste tube beside a towel at a bathroom sink.",
+    "sourceNode": "1673:334"
+  },
+  "bathroom-3-usage-scene-1": {
+    "reviewedScenario": "In a home bathroom, an adult checks or uses toilet paper, cotton balls, and cotton swab. The highlighted item is the toilet paper.",
+    "reviewedAnswer": "Toilet Paper",
+    "imagePath": "question-images/v1/bathroom-3-usage-scene-1/2f543cdf38ce5bd0ee758440aa00e0ef5fe9e899593a31bd77a96fc96f6b66db.webp",
+    "imageAlt": "Rolls of toilet paper, cotton balls in a jar, and cotton swabs in a glass.",
+    "sourceNode": "1673:344"
+  },
+  "bathroom-3-usage-scene-2": {
+    "reviewedScenario": "In a hotel room, an adult checks or uses razor, nail clipper, and hair dryer. The highlighted item is the razor.",
+    "reviewedAnswer": "Razor",
+    "imagePath": "question-images/v1/bathroom-3-usage-scene-2/9d5ea7bacab4f9faf8139886ec6fc9fdc6ab23af3d990832816f51b3402c6722.webp",
+    "imageAlt": "An electric razor, a small metal nail clipper, and a hair dryer on a bathroom counter.",
+    "sourceNode": "1673:347"
+  },
+  "bathroom-3-usage-scene-3": {
+    "reviewedScenario": "In a guest bathroom, an adult checks or uses scale, laundry basket, and first aid kit. The highlighted item is the laundry basket.",
+    "reviewedAnswer": "Laundry Basket",
+    "imagePath": "question-images/v1/bathroom-3-usage-scene-3/dcfbfdc6bf6081d30545633f1233f22d7ff74d5f6974721e6353eda6b4f4d723.webp",
+    "imageAlt": "A bathroom scale, a basket of laundry, and a first aid box with a cross symbol.",
+    "sourceNode": "1673:350"
+  },
+  "bathroom-4-usage-scene-1": {
+    "reviewedScenario": "In a hotel room, an adult checks or uses bath mat, shower curtain, and shower head. The highlighted item is the bath mat.",
+    "reviewedAnswer": "Bath Mat",
+    "imagePath": "question-images/v1/bathroom-4-usage-scene-1/a057db81839131cc0f93f9e5e7a494bc62094735b63afe700ca33442ea8f4eea.webp",
+    "imageAlt": "A bath mat on the floor below a shower curtain and a wall-mounted shower head.",
+    "sourceNode": "1673:357"
+  },
+  "bathroom-4-usage-scene-2": {
+    "reviewedScenario": "In a guest bathroom, an adult checks or uses bath towel, hand towel, and washcloth. The highlighted item is the bath towel.",
+    "reviewedAnswer": "Bath Towel",
+    "imagePath": "question-images/v1/bathroom-4-usage-scene-2/2a695c2b6d66f2a2b4304b3a089001c35e663051a81d5e41896f89a6c528c8dc.webp",
+    "imageAlt": "A large rolled bath towel, a smaller folded hand towel, and a small washcloth.",
+    "sourceNode": "1673:360"
+  },
+  "bathroom-4-usage-scene-3": {
+    "reviewedScenario": "During a morning routine, an adult checks or uses soap dish, shampoo bottle, and rubber duck. The highlighted item is the soap dish.",
+    "reviewedAnswer": "Soap Dish",
+    "imagePath": "question-images/v1/bathroom-4-usage-scene-3/2c87418aa65b7bf92bfe63732ae792d8fe8a5276517848c89c769035429d3c4a.webp",
+    "imageAlt": "A dish holding soap, a shampoo bottle, and a yellow rubber duck beside a bath.",
+    "sourceNode": "1673:363"
+  },
+  "bathroom-6-usage-scene-1": {
+    "reviewedScenario": "Mariam fills the bucket, wets the sponge, and scrubs the bath with a brush.",
+    "reviewedAnswer": "Bucket",
+    "imagePath": "question-images/v1/bathroom-6-usage-scene-1/9c9f00cebf98f78437debb70bb3d5a9cee46650f51a4924f5fbe20a3221c2b6a.webp",
+    "imageAlt": "A bucket, a long-handled scrubbing brush, and a sponge on a bathroom counter.",
+    "sourceNode": "1673:383"
+  },
+  "bathroom-6-usage-scene-2": {
+    "reviewedScenario": "Omar wears gloves, sprays the mirror with a spray bottle, and wipes it with a cloth.",
+    "reviewedAnswer": "Cloth",
+    "imagePath": "question-images/v1/bathroom-6-usage-scene-2/866e253a4654eb4ecd020e71fcd4e6bba9924180e1e94fef6a7deea4a3bd841b.webp",
+    "imageAlt": "Cleaning gloves, a spray bottle, and a cloth beside a bathroom sink.",
+    "sourceNode": "1673:386"
+  },
+  "kitchen-1-usage-scene-4": {
+    "reviewedScenario": "In a shared kitchen, an adult checks or uses freezer, pot, and pan. The highlighted item is the freezer.",
+    "reviewedAnswer": "Freezer",
+    "imagePath": "question-images/v1/kitchen-1-usage-scene-4/d62ca680840b771f367f3385388bd416314dbd17c85dabe012343f8c0bbe0767.webp",
+    "imageAlt": "An open freezer drawer beside a cooking pot and a shallow pan on the stove.",
+    "sourceNode": "1673:411"
+  },
+  "kitchen-1-usage-scene-5": {
+    "reviewedScenario": "During a meal preparation, an adult checks or uses frying pan, baking tray, and saucepan. The highlighted item is the frying pan.",
+    "reviewedAnswer": "Frying Pan",
+    "imagePath": "question-images/v1/kitchen-1-usage-scene-5/cd63b3f1b2f8a75386757e22a2b2e81fa1792a4841ba3f65018d0c9d654d933d.webp",
+    "imageAlt": "A frying pan holding eggs, a baking tray with cookies, and a saucepan with sauce.",
+    "sourceNode": "1673:414"
+  },
+  "kitchen-2-usage-scene-1": {
+    "reviewedScenario": "In a home kitchen, an adult checks or uses wok, casserole dish, and baking dish. The highlighted item is the wok.",
+    "reviewedAnswer": "Wok",
+    "imagePath": "question-images/v1/kitchen-2-usage-scene-1/5d271a1e95c3648185840d829a561785dd3679661cb608c6df5e550c0a214e72.webp",
+    "imageAlt": "Three views of a wok, a lidded casserole dish, and a rectangular baking dish.",
+    "sourceNode": "1673:418"
+  },
+  "kitchen-2-usage-scene-2": {
+    "reviewedScenario": "During a cooking class, an adult checks or uses steamer, pressure cooker, and fork. The highlighted item is the pressure cooker.",
+    "reviewedAnswer": "Pressure Cooker",
+    "imagePath": "question-images/v1/kitchen-2-usage-scene-2/02fa9b834618db483925df7967795a60316541be00393b2bbf1640b685f0dd16.webp",
+    "imageAlt": "A stacked steamer, a lidded pressure cooker, and a fork on a kitchen counter.",
+    "sourceNode": "1673:421"
+  },
+  "kitchen-2-usage-scene-3": {
+    "reviewedScenario": "In a shared kitchen, an adult checks or uses knife, spoon, and spatula. The highlighted item is the knife.",
+    "reviewedAnswer": "Knife",
+    "imagePath": "question-images/v1/kitchen-2-usage-scene-3/d473bf0fa66db45982afe292af5fb09cbf4b4a97fb4cd4ae90bf4350ae5f6a93.webp",
+    "imageAlt": "A knife on a cutting board, a spoon in a bowl, and a spatula in a pan.",
+    "sourceNode": "1673:424"
+  },
+  "kitchen-2-usage-scene-4": {
+    "reviewedScenario": "During a meal preparation, an adult checks or uses ladle, whisk, and tongs. The highlighted item is the ladle.",
+    "reviewedAnswer": "Ladle",
+    "imagePath": "question-images/v1/kitchen-2-usage-scene-4/e3d75bbf33aa2c80d136d03d74bec8395f73aaad911473feb7cdf5e6ca71d2a4.webp",
+    "imageAlt": "A ladle lifting food from a pot, a whisk in a mixing bowl, and tongs holding food over a plate.",
+    "sourceNode": "1673:427"
+  },
+  "kitchen-2-usage-scene-5": {
+    "reviewedScenario": "During a kitchen cleanup, an adult checks or uses peeler, grater, and rolling pin. The highlighted item is the rolling pin.",
+    "reviewedAnswer": "Rolling Pin",
+    "imagePath": "question-images/v1/kitchen-2-usage-scene-5/e56264aa7d6280bb6b011a37260dab5df9db3b738ca6d9ec10ce4f5d8f1bad34.webp",
+    "imageAlt": "A vegetable peeler, a box grater, and a wooden rolling pin on a kitchen counter.",
+    "sourceNode": "1673:430"
+  },
+  "kitchen-3-usage-scene-3": {
+    "reviewedScenario": "During a meal preparation, an adult checks or uses cup, saucer, and cutting board. The highlighted item is the saucer.",
+    "reviewedAnswer": "Saucer",
+    "imagePath": "question-images/v1/kitchen-3-usage-scene-3/b4e57936a84c9121dc053f7192a1731e975f7b29e79d963f3edba8114a5e4b43.webp",
+    "imageAlt": "Cups resting on saucers beside a wooden cutting board.",
+    "sourceNode": "1673:440"
+  },
+  "kitchen-3-usage-scene-5": {
+    "reviewedScenario": "In a home kitchen, an adult checks or uses mixing bowl, pitcher, and dish towel. The highlighted item is the mixing bowl.",
+    "reviewedAnswer": "Mixing Bowl",
+    "imagePath": "question-images/v1/kitchen-3-usage-scene-5/9ffa366e821c423491179fbf7fa51e43a8abb9dbc1c4e655374fe67d79cbafdb.webp",
+    "imageAlt": "A mixing bowl, a glass pitcher, and a folded dish towel on a kitchen counter.",
+    "sourceNode": "1673:446"
+  },
+  "kitchen-4-usage-scene-1": {
+    "reviewedScenario": "In a shared kitchen, an adult checks or uses oven mitt, apron, and trash can. The highlighted item is the oven mitt.",
+    "reviewedAnswer": "Oven Mitt",
+    "imagePath": "question-images/v1/kitchen-4-usage-scene-1/8db0df95249af4bdacad0b379b28fa44e1a36b0930c39cfba66f32ac08cae22e.webp",
+    "imageAlt": "An oven mitt and an apron hanging near a kitchen trash can.",
+    "sourceNode": "1673:450"
+  },
+  "kitchen-4-usage-scene-2": {
+    "reviewedScenario": "During a meal preparation, an adult checks or uses paper towel, plastic wrap, and aluminum foil. The highlighted item is the paper towel.",
+    "reviewedAnswer": "Paper Towel",
+    "imagePath": "question-images/v1/kitchen-4-usage-scene-2/72213f3d28c72fbd652ee5ae480223b310a1771aae25d6abfaa78e92a48f8443.webp",
+    "imageAlt": "A roll of paper towels, clear plastic wrap over a bowl, and foil covering a pan.",
+    "sourceNode": "1673:453"
+  },
+  "kitchen-4-usage-scene-3": {
+    "reviewedScenario": "During a kitchen cleanup, an adult checks or uses food container, sponge, and dish soap. The highlighted item is the food container.",
+    "reviewedAnswer": "Food Container",
+    "imagePath": "question-images/v1/kitchen-4-usage-scene-3/2ab5356d1e71a653a0680f5171f6ff36ec4fe060c467f690f1fa8c98a156b864.webp",
+    "imageAlt": "A clear food container, a sponge, and a dish-soap bottle beside a sink.",
+    "sourceNode": "1673:456"
+  },
+  "kitchen-4-usage-scene-4": {
+    "reviewedScenario": "In a home kitchen, an adult checks or uses dish rack, cling film, and bread. The highlighted item is the dish rack.",
+    "reviewedAnswer": "Dish Rack",
+    "imagePath": "question-images/v1/kitchen-4-usage-scene-4/d8b111d3c55f0de19b28038a69e3eacbdfffb67448727318852c78461187b7c5.webp",
+    "imageAlt": "Dishes in a drying rack beside bread wrapped in transparent cling film.",
+    "sourceNode": "1673:459"
+  },
+  "kitchen-4-usage-scene-5": {
+    "reviewedScenario": "During a cooking class, an adult checks or uses butter, milk, and egg. The highlighted item is the egg.",
+    "reviewedAnswer": "Egg",
+    "imagePath": "question-images/v1/kitchen-4-usage-scene-5/c8afdaa982ceb6f13d012526e0af918e6898f3f7252b4cc4a04648b87d385bcc.webp",
+    "imageAlt": "Butter on a small board, milk in a measuring cup, and eggs in a bowl.",
+    "sourceNode": "1673:462"
+  },
+  "kitchen-5-usage-scene-1": {
+    "reviewedScenario": "For a quick dinner, Bilal cooks pasta and rice, then adds cheese to the pasta.",
+    "reviewedAnswer": "Cheese",
+    "imagePath": "question-images/v1/kitchen-5-usage-scene-1/01ec183ff4501e07f221e99e7e1a1da7f4c314f3dc3efd4570973f9b72a354b0.webp",
+    "imageAlt": "Pasta, rice, and cheese being grated over food on a kitchen counter.",
+    "sourceNode": "1673:466"
+  },
+  "living-room-1-usage-scene-4": {
+    "reviewedScenario": "During an evening at home, an adult checks or uses stool, bookshelf, and tv stand. The highlighted item is the stool.",
+    "reviewedAnswer": "Stool",
+    "imagePath": "question-images/v1/living-room-1-usage-scene-4/86a96c7ba5dffb1f524f7783ef52560cefcbe2cf5b499ee229364c67b20dba8b.webp",
+    "imageAlt": "A wooden stool beside a bookshelf and a television stand.",
+    "sourceNode": "1673:488"
+  },
+  "living-room-1-usage-scene-5": {
+    "reviewedScenario": "During a guest preparation, an adult checks or uses cabinet, sideboard, and shelf. The highlighted item is the sideboard.",
+    "reviewedAnswer": "Sideboard",
+    "imagePath": "question-images/v1/living-room-1-usage-scene-5/f8004c4ea473ee11f157d0b27140378d46a98aa3649e6284a89a3c2d1481a125.webp",
+    "imageAlt": "Kitchen cabinets and shelves beside a living-room sideboard with an open door.",
+    "sourceNode": "1673:491"
+  },
+  "living-room-2-usage-scene-1": {
+    "reviewedScenario": "During a home visit, an adult checks or uses drawer, magazine rack, and display case. The highlighted item is the magazine rack.",
+    "reviewedAnswer": "Magazine Rack",
+    "imagePath": "question-images/v1/living-room-2-usage-scene-1/c2b5abb5958f1080cafa2ed15cc008d7f8aad6477f22e851a9fdcc3d1ff632e9.webp",
+    "imageAlt": "An open drawer beside a magazine rack and a glass-fronted display case.",
+    "sourceNode": "1673:495"
+  },
+  "living-room-2-usage-scene-2": {
+    "reviewedScenario": "During a moving day, an adult checks or uses coat rack, shoe rack, and television. The highlighted item is the shoe rack.",
+    "reviewedAnswer": "Shoe Rack",
+    "imagePath": "question-images/v1/living-room-2-usage-scene-2/61dcf9f6b35329857e1c9104fcf529c0d152d0346c0b109bcdead501b5dc4004.webp",
+    "imageAlt": "A coat rack, a rack holding shoes, and a television in a living room.",
+    "sourceNode": "1673:498"
+  },
+  "living-room-2-usage-scene-4": {
+    "reviewedScenario": "During a guest preparation, an adult checks or uses dvd player, sound bar, and wi-fi router. The highlighted item is the wi-fi router.",
+    "reviewedAnswer": "Wi-Fi Router",
+    "imagePath": "question-images/v1/living-room-2-usage-scene-4/4e2955c96a67bdfa4a67f18f094dbe55507f246873bfb2213a35e0f5d74eeda4.webp",
+    "imageAlt": "A low DVD player, a long sound bar, and a Wi-Fi router with antennas.",
+    "sourceNode": "1673:504"
+  },
+  "living-room-2-usage-scene-5": {
+    "reviewedScenario": "During an apartment setup, an adult checks or uses power strip, cable, and plug. The highlighted item is the plug.",
+    "reviewedAnswer": "Plug",
+    "imagePath": "question-images/v1/living-room-2-usage-scene-5/68b437318b4cb99da31f92285253e0f35981197c35fcb7f4c68ecd0e068b87da.webp",
+    "imageAlt": "A power strip beside an electrical cable and its plug at a wall outlet.",
+    "sourceNode": "1673:507"
+  },
+  "living-room-3-usage-scene-4": {
+    "reviewedScenario": "During an apartment setup, an adult checks or uses wall clock, cushion, and throw blanket. The highlighted item is the wall clock.",
+    "reviewedAnswer": "Wall Clock",
+    "imagePath": "question-images/v1/living-room-3-usage-scene-4/1ca63d8ee03a6f23a9af0a7c91a5b818d91fd807fa9e57f052097735dc46b76b.webp",
+    "imageAlt": "A wall clock above an armchair holding a cushion and a throw blanket.",
+    "sourceNode": "1673:520"
+  },
+  "living-room-4-usage-scene-1": {
+    "reviewedScenario": "During an evening at home, an adult checks or uses tablecloth, placemat, and coaster. The highlighted item is the coaster.",
+    "reviewedAnswer": "Coaster",
+    "imagePath": "question-images/v1/living-room-4-usage-scene-1/3110238f8070012f00893c7b440d206d12216cb07c8cccf10af219db2ccc5f51.webp",
+    "imageAlt": "A tablecloth, a woven placemat, and a small round coaster on a wooden table.",
+    "sourceNode": "1673:527"
+  },
+  "living-room-4-usage-scene-2": {
+    "reviewedScenario": "During a guest preparation, an adult checks or uses doormat, tapestry, and plant. The highlighted item is the doormat.",
+    "reviewedAnswer": "Doormat",
+    "imagePath": "question-images/v1/living-room-4-usage-scene-2/42361170ef2f60b48c0560c31219832cd230a2a751076a182a1caff55b6511fb.webp",
+    "imageAlt": "A doormat holding boots below a wall tapestry and a potted plant.",
+    "sourceNode": "1673:530"
+  },
+  "living-room-4-usage-scene-4": {
+    "reviewedScenario": "During a home visit, an adult checks or uses book, magazine, and newspaper. The highlighted item is the newspaper.",
+    "reviewedAnswer": "Newspaper",
+    "imagePath": "question-images/v1/living-room-4-usage-scene-4/bd51297db36deac93cc670198bcfa7306df560223d7a2f1f8c64ec4f1f08a3b1.webp",
+    "imageAlt": "A book, a magazine, and a newspaper separated on a coffee table.",
+    "sourceNode": "1673:536"
+  },
+  "living-room-4-usage-scene-5": {
+    "reviewedScenario": "During a moving day, an adult checks or uses board game, puzzle, and playing cards. The highlighted item is the board game.",
+    "reviewedAnswer": "Board Game",
+    "imagePath": "question-images/v1/living-room-4-usage-scene-5/ea4c28b5e68e189592f339993c28632897510408634057895782134f0c638f38.webp",
+    "imageAlt": "A board game, a jigsaw puzzle, and playing cards on a living-room table.",
+    "sourceNode": "1673:539"
+  },
+  "living-room-5-usage-scene-1": {
+    "reviewedScenario": "The lamp lights the table while Lina checks her phone and her tablet charges nearby.",
+    "reviewedAnswer": "Lamp",
+    "imagePath": "question-images/v1/living-room-5-usage-scene-1/968c965ec4ed56694ec67bc12141b35b3d72673d2610cad30c7309dc1e8cbe98.webp",
+    "imageAlt": "A lamp beside a phone and a tablet on a living-room table.",
+    "sourceNode": "1673:543"
+  },
+  "vegetables-4-usage-scene-1": {
+    "reviewedScenario": "At the market counter, a shopper sees habanero, serrano, and poblano and asks how to cook habanero.",
+    "reviewedAnswer": "Habanero",
+    "imagePath": "question-images/v1/vegetables-4-usage-scene-1/4c978c8dca4efde42a1602a3ea0b7d98d15483256e9146b24a8a18c5fbea1b3a.webp",
+    "imageAlt": "Orange habanero peppers, slender green serrano peppers, and broad dark poblano peppers in separate bowls.",
+    "sourceNode": "1673:662"
+  },
+  "vegetables-4-usage-scene-3": {
+    "reviewedScenario": "At the kitchen prep table, a shopper sees garlic, leek, and shallot and sets garlic aside for soup.",
+    "reviewedAnswer": "Garlic",
+    "imagePath": "question-images/v1/vegetables-4-usage-scene-3/1ea5643ccac5ce58d3ca8c181f53847bbb859350762eb62638212a970d12279b.webp",
+    "imageAlt": "A garlic bulb, a leek, and a shallot separated on a produce counter.",
+    "sourceNode": "1673:668"
   }
 }

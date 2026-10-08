@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the aisle as the central item; include aisle, armrest, and cup holder naturally where visually appropriate, but make the real-world use of aisle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Cinema: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "screen"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare screen, auditorium, lobby, and box office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "screen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "concession stand"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare concession stand, hallway, emergency exit, and projection room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "concession stand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "restroom"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare restroom, parking lot, seat, and row and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "restroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "aisle"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare aisle, armrest, and cup holder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "aisle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,10 +201,10 @@
       "combo meal"
     ],
     "targetWordsArabic": [
-      "نظارات ثلاثية الأبعاد",
+      "نظارة ثلاثية الأبعاد",
       "مقعد قابل للإمالة",
       "شرفة",
-      "غرفة يسمى «فرونت روو»",
+      "الصف الأمامي",
       "الصف الخلفي",
       "فشار",
       "مشروب غازي",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the slushie as the central item; include slushie, water bottle, and combo meal naturally where visually appropriate, but make the real-world use of slushie the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Cinema",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "3D glasses"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D glasses, recliner, balcony, and front row and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "3D glasses",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "back row"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare back row, popcorn, soda, and nachos and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "back row",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "candy"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare candy, hot dog, ice cream, and pretzel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "candy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "slushie"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare slushie, water bottle, and combo meal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "slushie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -351,19 +377,19 @@
     "targetWordsArabic": [
       "فيلم",
       "مقطورة",
-      "شارة النهاية",
+      "أسماء المشاركين في الفيلم",
       "مخرج",
       "ممثل",
       "ممثلة",
       "مشهد",
-      "موسيقى تصويرية",
-      "-",
+      "الموسيقى والأصوات المصاحبة للفيلم",
+      "نص الحوار الظاهر على الشاشة",
       "رسوم متحركة",
-      "كوميديا",
-      "دراما",
+      "فيلم كوميدي",
+      "فيلم درامي",
       "فعل",
-      "رعب",
-      "رومانسي"
+      "فيلم رعب",
+      "فيلم رومانسي"
     ],
     "usage": {
       "goal": "Develop the language needed to discuss events, venue features, and practical visitor arrangements in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the action as the central item; include action, horror, and romance naturally where visually appropriate, but make the real-world use of action the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Cinema",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "movie"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare movie, trailer, credits, and director and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "movie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "actor"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare actor, actress, scene, and soundtrack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "actor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "subtitle"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare subtitle, animation, comedy, and drama and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "subtitle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "action"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare action, horror, and romance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "action",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -510,16 +549,16 @@
       "intermission"
     ],
     "targetWordsArabic": [
-      "إثارة وتشويق",
-      "وثيقة يسمى «دوكومينتاري»",
-      "خيال",
+      "فيلم تشويق",
+      "فيلم وثائقي",
+      "فيلم خيالي",
       "خيال علمي",
-      "فيلم أو عرض موسيقي",
+      "فيلم موسيقي",
       "تذكرة",
       "موعد العرض",
-      "عرض أول",
-      "ملصق جداري",
-      "لافتة سينما",
+      "العرض الأول",
+      "ملصق",
+      "لوحة إعلانات فوق مدخل السينما",
       "تصنيف عمري",
       "مراجعة",
       "جمهور",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the audience as the central item; include audience, applause, and intermission naturally where visually appropriate, but make the real-world use of audience the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Cinema: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "thriller"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare thriller, documentary, fantasy, and science fiction and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "thriller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "musical"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare musical, ticket, showtime, and premiere and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "musical",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "poster"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare poster, marquee, rating, and review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "poster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "audience"
+        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare audience, applause, and intermission and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "audience",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

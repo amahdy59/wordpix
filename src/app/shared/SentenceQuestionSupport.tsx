@@ -28,13 +28,18 @@ export function resolveSentenceMedia(
     : undefined;
 }
 
-export function ScenePlaceholder() {
+export function ScenePlaceholder({ clue }: { clue?: string }) {
   const { t } = useI18n();
   return (
     <div className="flex min-h-32 w-full flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-border bg-secondary p-4 text-center">
       <ImageOff className="size-8 text-foreground" aria-hidden />
       <span className="font-semibold text-foreground">{t("story.imagePending")}</span>
       <span className="text-sm text-foreground">{t("exercise.scenePlaceholderDescription")}</span>
+      {clue && (
+        <p lang="en" dir="ltr" className="text-base font-semibold leading-relaxed text-foreground">
+          {clue}
+        </p>
+      )}
     </div>
   );
 }
@@ -106,7 +111,7 @@ export function SentenceQuestionSupport({
   return (
     <div className="flex min-w-0 flex-col gap-3">
       {hasImage ? (
-        <MediaFrame fit="contain" aspect="scene" className="max-h-[32dvh] sm:max-h-[38dvh]">
+        <MediaFrame fit="contain" aspect="scene" className="w-full">
           <QuestionImage
             media={media}
             className="size-full object-contain"

@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Milligram, Ton, Ounce. The person selects Milligram for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Milligram, Ton, Ounce in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Measurements & Units: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Millimeter"
+        "prompt": "During a routine measurements & units task, an adult compares Millimeter, Centimeter, Meter. The person selects Millimeter for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Millimeter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kilometer"
+        "prompt": "During a routine measurements & units task, an adult compares Kilometer, Inch, Foot. The person selects Kilometer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Kilometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Yard"
+        "prompt": "During a routine measurements & units task, an adult compares Yard, Mile, Ruler. The person selects Yard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Yard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tape Measure"
+        "prompt": "During a routine measurements & units task, an adult compares Tape Measure, Gram, Kilogram. The person selects Tape Measure for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tape Measure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Milligram"
+        "prompt": "During a routine measurements & units task, an adult compares Milligram, Ton, Ounce. The person selects Milligram for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Milligram",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Teaspoon, Fluid Ounce, Barrel. The person selects Teaspoon for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Teaspoon, Fluid Ounce, Barrel in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Measurements & Units: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pound"
+        "prompt": "During a routine measurements & units task, an adult compares Pound, Stone, Scale. The person selects Pound for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pound",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balance"
+        "prompt": "During a routine measurements & units task, an adult compares Balance, Heavy, Milliliter. The person selects Balance for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Balance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Liter"
+        "prompt": "During a routine measurements & units task, an adult compares Liter, Gallon, Quart. The person selects Liter for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Liter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pint"
+        "prompt": "During a routine measurements & units task, an adult compares Pint, Cup, Tablespoon. The person selects Pint for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teaspoon"
+        "prompt": "During a routine measurements & units task, an adult compares Teaspoon, Fluid Ounce, Barrel. The person selects Teaspoon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Teaspoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -351,12 +383,12 @@
       "Day"
     ],
     "targetWordsArabic": [
-      "مئوي",
+      "درجة مئوية",
       "فهرنهايت",
       "كلفن",
-      "درجة علمية",
-      "درجة الغليان",
-      "نقطة التجمد",
+      "درجة حرارة",
+      "نقطة الغليان",
+      "نقطة التجمّد",
       "درجة الحرارة جسم",
       "درجة الحرارة غرفة",
       "مقياس حرارة",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Minute, Hour, Day. The person selects Minute for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Minute, Hour, Day in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Measurements & Units: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Celsius"
+        "prompt": "During a routine measurements & units task, an adult compares Celsius, Fahrenheit, Kelvin. The person selects Celsius for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Celsius",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Degree"
+        "prompt": "During a routine measurements & units task, an adult compares Degree, Boiling Point, Freezing Point. The person selects Degree for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Degree",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Body Temperature"
+        "prompt": "During a routine measurements & units task, an adult compares Body Temperature, Room Temperature, Thermometer. The person selects Body Temperature for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Body Temperature",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Heat"
+        "prompt": "During a routine measurements & units task, an adult compares Heat, Millisecond, Second. The person selects Heat for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Heat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Minute"
+        "prompt": "During a routine measurements & units task, an adult compares Minute, Hour, Day. The person selects Minute for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Minute",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -527,7 +575,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Distance, Rate, Speed. The person selects Distance for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Distance, Rate in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Measurements & Units: Notice-Style Text",
@@ -536,12 +585,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Speed"
+        "prompt": "During a routine measurements & units task, an adult compares Speed, Velocity, Acceleration. The person selects Speed for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Speed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Distance"
+        "prompt": "During a routine measurements & units task, an adult compares Distance, Rate, Speed. The person selects Distance for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Distance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

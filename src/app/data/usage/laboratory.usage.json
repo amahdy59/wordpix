@@ -29,16 +29,16 @@
     "targetWordsArabic": [
       "كأس مخبري",
       "دورق",
-      "حاوية يسمى «تيست توبي»",
+      "أنبوب اختبار",
       "ماصة",
-      "حاوية يسمى «جرادواتيد كيليندير»",
+      "أسطوانة مدرجة",
       "طبق بتري",
       "قمع",
       "سحاحة",
-      "أداة أو جهاز يسمى «يرلينمييير فلاسك»",
-      "أداة أو جهاز يسمى «فولوميتريك فلاسك»",
+      "دورق إرلنماير",
+      "دورق حجمي",
       "زجاج ساعة",
-      "قطارة",
+      "قطّارة",
       "مجهر",
       "موقد بنسن",
       "جهاز طرد مركزي"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Microscope as the central item; include Microscope, Bunsen Burner, and Centrifuge naturally where visually appropriate, but make the real-world use of Microscope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Laboratory",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beaker"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Beaker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Graduated Cylinder"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Graduated Cylinder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Erlenmeyer Flask"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Erlenmeyer Flask",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Microscope"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Microscope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,20 +201,20 @@
       "First Aid Kit"
     ],
     "targetWordsArabic": [
-      "طعام يسمى «هوت بلاتي»",
+      "لوح تسخين",
       "مقياس رسم",
       "مقياس حرارة",
-      "جهاز يسمى «ف ميتير»",
+      "مقياس الرقم الهيدروجيني",
       "مطياف",
       "حاضنة",
-      "أداة أو جهاز يسمى «فومي هوود»",
+      "خزانة شفط أبخرة",
       "معطف مختبر",
       "نظارات واقية سلامة",
-      "مادة كيميائية يسمى «لاتيكس جلوفيس»",
+      "قفازات لاتكس",
       "واقي وجه",
-      "جهاز يسمى «فيري يكستينجويشير»",
-      "أداة أو جهاز يسمى «يييواش ستاتيون»",
-      "دش طوارئ للمواد الكيميائية",
+      "طفاية حريق",
+      "محطة غسل العينين",
+      "دُش طوارئ للمواد الكيميائية",
       "أول إسعاف طقم"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Eyewash Station as the main location; include Eyewash Station, Chemical Shower, and First Aid Kit naturally where visually appropriate, but make the real-world use of Eyewash Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Laboratory",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hot Plate"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hot Plate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spectrometer"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spectrometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Safety Goggles"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Safety Goggles",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eyewash Station"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Eyewash Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -356,11 +382,11 @@
       "حامل مختبري رأسي",
       "ملعقة تقليب (سباتيولا)",
       "قضيب تحريك",
-      "هاون ومدقة",
+      "هاون ومدقّة",
       "مشرط",
       "ملقط جراحي",
       "حقنة",
-      "أداة يسمى «ماجنيفيينج جلاسس»",
+      "عدسة مكبرة",
       "حمض",
       "قاعدة كيميائية",
       "محلول"
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Acid as the central item; include Acid, Base, and Solution naturally where visually appropriate, but make the real-world use of Acid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Laboratory",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hazard Sign"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hazard Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ring Stand"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ring Stand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scalpel"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scalpel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Acid"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Acid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -517,7 +556,7 @@
       "شريحة مجهرية",
       "صبغة",
       "بلورة",
-      "مادة يسمى «لاب نوتيبووك»",
+      "دفتر مختبر",
       "ورق رسم بياني",
       "آلة حاسبة",
       "حاسوب",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Timer as the central item; include Timer, Label, and Barcode naturally where visually appropriate, but make the real-world use of Timer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Laboratory",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Indicator"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Indicator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Slide"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Slide",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Graph Paper"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Graph Paper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Timer"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Timer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -679,13 +731,13 @@
       "مذيب",
       "إنزيم",
       "يحلل",
-      "يركب",
-      "يعاير",
-      "يرشح",
+      "يركّب",
+      "يُعاير",
+      "يرشّح",
       "يستخلص",
-      "يعقم",
+      "يعقّم",
       "وثيقة",
-      "غرفة يسمى «بيير ريفييو»"
+      "مراجعة الأقران"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
@@ -741,7 +793,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Sterilize as the central item; include Sterilize, Document, and Peer Review naturally where visually appropriate, but make the real-world use of Sterilize the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Laboratory",
@@ -750,20 +803,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Log Sheet"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Log Sheet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Catalyst"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Catalyst",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Synthesize"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Synthesize",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sterilize"
+        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sterilize",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

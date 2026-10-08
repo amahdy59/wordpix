@@ -28,8 +28,8 @@
     ],
     "targetWordsArabic": [
       "طبيب",
-      "ممرض",
-      "جراح",
+      "ممرض أو ممرضة",
+      "جرّاح",
       "مسعف",
       "موظف استقبال",
       "صيدلي",
@@ -38,7 +38,7 @@
       "طبيب أطفال",
       "طبيب نفسي",
       "قابلة",
-      "مساعد خدمات مرضى",
+      "مساعد خدمات بالمستشفى",
       "طبيب عيون",
       "طبيب جلدية",
       "طبيب قلب"
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including ophthalmologist, dermatologist, cardiologist in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L5 Hospital: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "doctor"
+        "prompt": "During a routine care or examination situation, an adult reviews doctor, nurse, surgeon. The next step focuses on doctor.\nWhich option is the focus of the next step?",
+        "answer": "doctor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "paramedic"
+        "prompt": "During a routine care or examination situation, an adult reviews paramedic, receptionist, pharmacist. The next step focuses on paramedic.\nWhich option is the focus of the next step?",
+        "answer": "paramedic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "anesthesiologist"
+        "prompt": "During a routine care or examination situation, an adult reviews anesthesiologist, radiologist, pediatrician. The next step focuses on anesthesiologist.\nWhich option is the focus of the next step?",
+        "answer": "anesthesiologist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "psychiatrist"
+        "prompt": "During a routine care or examination situation, an adult reviews psychiatrist, midwife, orderly. The next step focuses on psychiatrist.\nWhich option is the focus of the next step?",
+        "answer": "psychiatrist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ophthalmologist"
+        "prompt": "During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist.\nWhich option is the focus of the next step?",
+        "answer": "ophthalmologist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -206,14 +222,14 @@
       "فني طب طوارئ",
       "غرفة طوارئ",
       "غرفة انتظار",
-      "غرفة العمليات",
+      "غرفة عمليات",
       "غرفة الإفاقة"
     ],
     "usage": {
       "goal": "Learn to use l5 hospital 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +291,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including waiting room, operating room, recovery room in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Personal Message",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with neurologist, orthopedist, and ent specialist. Each term belongs to a different part of the care process. The patient may meet the urologist, oncologist, and gastroenterologist during different parts of a visit, with each professional handling a different role. During the visit, the patient and medical team deal with pulmonologist, physiotherapist, and dietitian.",
+      "title": "L5 Hospital 2: A short reading",
+      "text": "Maya reads a hospital directory to find the right clinic for her appointment. It lists a neurologist, an orthopedist, and an ENT specialist on different floors. Omar asks the receptionist where the physiotherapist works. The receptionist points to the map. Both visitors check the room numbers before leaving the reception area.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "neurologist"
+        "prompt": "During a routine care or examination situation, an adult reviews neurologist, orthopedist, ENT specialist. The next step focuses on neurologist.\nWhich option is the focus of the next step?",
+        "answer": "neurologist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "urologist"
+        "prompt": "During a routine care or examination situation, an adult reviews urologist, oncologist, gastroenterologist. The next step focuses on urologist.\nWhich option is the focus of the next step?",
+        "answer": "urologist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pulmonologist"
+        "prompt": "During a routine care or examination situation, an adult reviews pulmonologist, physiotherapist, dietitian. The next step focuses on pulmonologist.\nWhich option is the focus of the next step?",
+        "answer": "pulmonologist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lab technician"
+        "prompt": "During a routine care or examination situation, an adult reviews lab technician, EMT, emergency room. The next step focuses on lab technician.\nWhich option is the focus of the next step?",
+        "answer": "lab technician",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "waiting room"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "neurologist"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "urologist"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room.\nWhich option is the focus of the next step?",
+        "answer": "waiting room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +342,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “doctor” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What do Maya and Omar check before leaving reception?",
+        "answer": "The room numbers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -361,8 +388,8 @@
     "targetWordsArabic": [
       "غرفة مريض",
       "وحدة العناية المركزة",
-      "جناح الولادة",
-      "حضانة حديثي الولادة",
+      "قسم الولادة",
+      "قسم رعاية حديثي الولادة",
       "مختبر",
       "قسم الأشعة",
       "كافتيريا",
@@ -378,8 +405,8 @@
     "usage": {
       "goal": "Learn to use l5 hospital 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +468,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including isolation room, sterilization room, rehabilitation room in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Short Dialogue",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with patient room, intensive care unit, and maternity ward. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with nursery, laboratory, and radiology. Each term belongs to a different part of the care process.",
+      "title": "L5 Hospital 3: A short reading",
+      "text": "Omar follows the signs to a patient room. He passes the laboratory and radiology department on the way. Maya is waiting near the consulting room. They check the visitor information before entering the ward. Later, they meet in the cafeteria and ask where the hospital pharmacy is located.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "patient room"
+        "prompt": "During a routine care or examination situation, an adult reviews patient room, intensive care unit, maternity ward. The next step focuses on patient room.\nWhich option is the focus of the next step?",
+        "answer": "patient room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "nursery"
+        "prompt": "During a routine care or examination situation, an adult reviews nursery, laboratory, radiology. The next step focuses on nursery.\nWhich option is the focus of the next step?",
+        "answer": "nursery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cafeteria"
+        "prompt": "During a routine care or examination situation, an adult reviews cafeteria, pharmacy, consulting room. The next step focuses on cafeteria.\nWhich option is the focus of the next step?",
+        "answer": "cafeteria",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "triage area"
+        "prompt": "During a routine care or examination situation, an adult reviews triage area, burn unit, dialysis unit. The next step focuses on triage area.\nWhich option is the focus of the next step?",
+        "answer": "triage area",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "isolation room"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "patient room"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "nursery"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room.\nWhich option is the focus of the next step?",
+        "answer": "isolation room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +519,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “neurologist” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where do Maya and Omar meet later?",
+        "answer": "In the cafeteria",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -538,14 +576,14 @@
       "مشرط",
       "ضمادة",
       "جبيرة جبسية",
-      "جهاز تنفس صناعي",
+      "جهاز تنفس اصطناعي",
       "قسطرة"
     ],
     "usage": {
       "goal": "Learn to use l5 hospital 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +645,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including cast, ventilator, catheter in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Tips/Notice",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with blood bank, stethoscope, and syringe. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with thermometer, blood pressure monitor, and iv drip. Each term belongs to a different part of the care process.",
+      "title": "L5 Hospital 4: A short reading",
+      "text": "A hospital guide shows the class photographs of a stethoscope, a syringe, and a thermometer. Maya matches the words to the pictures. Omar identifies a wheelchair and a stretcher. Another photograph shows an oxygen mask and an IV drip. They use the labels to describe the equipment in complete English sentences.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "blood bank"
+        "prompt": "During a routine care or examination situation, an adult reviews blood bank, stethoscope, syringe. The next step focuses on blood bank.\nWhich option is the focus of the next step?",
+        "answer": "blood bank",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "thermometer"
+        "prompt": "During a routine care or examination situation, an adult reviews thermometer, blood pressure monitor, IV drip. The next step focuses on thermometer.\nWhich option is the focus of the next step?",
+        "answer": "thermometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "wheelchair"
+        "prompt": "During a routine care or examination situation, an adult reviews wheelchair, stretcher, oxygen mask. The next step focuses on wheelchair.\nWhich option is the focus of the next step?",
+        "answer": "wheelchair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "defibrillator"
+        "prompt": "During a routine care or examination situation, an adult reviews defibrillator, scalpel, bandage. The next step focuses on defibrillator.\nWhich option is the focus of the next step?",
+        "answer": "defibrillator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cast"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "blood bank"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "thermometer"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast.\nWhich option is the focus of the next step?",
+        "answer": "cast",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +696,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “patient room” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two transport items does Omar identify?",
+        "answer": "A wheelchair and a stretcher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -693,16 +742,16 @@
     "targetWordsArabic": [
       "مقياس التأكسج النبضي",
       "جهاز تخطيط القلب الكهربائي",
-      "جهاز استنشاق",
-      "عاصبة",
+      "جهاز رذاذ دوائي",
+      "رباط ضاغط لإيقاف النزيف",
       "كمامة جراحية",
       "مطرقة فحص المنعكسات",
-      "القلب",
-      "الرئتان",
-      "الدماغ",
-      "عظمة",
-      "الدم",
-      "النبض",
+      "قلب",
+      "رئتان",
+      "دماغ",
+      "عظم",
+      "دم",
+      "نبض",
       "حمى",
       "عدوى",
       "إصابة"
@@ -710,8 +759,8 @@
     "usage": {
       "goal": "Learn to use l5 hospital 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +822,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including fever, infection, injury in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Everyday Description",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with pulse oximeter, ecg machine, and nebulizer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tourniquet, surgical mask, and reflex hammer. Each term belongs to a different part of the care process.",
+      "title": "L5 Hospital 5: A short reading",
+      "text": "Omar learns the names pulse oximeter, ECG machine, and nebulizer from illustrated cards. Maya compares a surgical mask with an oxygen mask from an earlier lesson. A separate diagram shows the heart, lungs, and brain. They group the cards into equipment and body parts, then check their choices with the teacher.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pulse oximeter"
+        "prompt": "During a routine care or examination situation, an adult reviews pulse oximeter, ECG machine, nebulizer. The next step focuses on pulse oximeter.\nWhich option is the focus of the next step?",
+        "answer": "pulse oximeter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tourniquet"
+        "prompt": "During a routine care or examination situation, an adult reviews tourniquet, surgical mask, reflex hammer. The next step focuses on tourniquet.\nWhich option is the focus of the next step?",
+        "answer": "tourniquet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "heart"
+        "prompt": "During a routine care or examination situation, an adult reviews heart, lungs, brain. The next step focuses on heart.\nWhich option is the focus of the next step?",
+        "answer": "heart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bone"
+        "prompt": "During a routine care or examination situation, an adult reviews bone, blood, pulse. The next step focuses on bone.\nWhich option is the focus of the next step?",
+        "answer": "bone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fever"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "pulse oximeter"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "tourniquet"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever.\nWhich option is the focus of the next step?",
+        "answer": "fever",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +873,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “blood bank” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two groups do the learners make?",
+        "answer": "Equipment and body parts",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -860,24 +920,24 @@
       "كسر",
       "حساسية",
       "طفح جلدي",
-      "الكبد",
-      "الكليتان",
+      "كبد",
+      "كليتان",
       "عمود فقري",
-      "المعدة",
-      "الأمعاء",
-      "العضلات",
+      "معدة",
+      "أمعاء",
+      "عضلات",
       "الشرايين",
-      "الزائدة الدودية",
+      "زائدة دودية",
       "التهاب",
       "غثيان",
-      "فحص",
+      "فحص طبي",
       "تشخيص"
     ],
     "usage": {
       "goal": "Learn to use l5 hospital 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +999,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including nausea, examination, diagnosis in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Email",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with fracture, allergy, and rash. Each term belongs to a different part of the care process. The learner identifies the liver, kidneys, and spine and connects each part to its place or function in the body. During the visit, the patient and medical team deal with stomach, intestines, and muscles.",
+      "title": "L5 Hospital 6: A short reading",
+      "text": "Maya labels a diagram showing the liver, kidneys, stomach, and intestines. Omar identifies the spine and muscles on another drawing. The lesson also introduces fracture, allergy, and rash as words used in health conversations. They practice describing a picture clearly rather than trying to diagnose a person from it.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fracture"
+        "prompt": "During a routine care or examination situation, an adult reviews fracture, allergy, rash. The next step focuses on fracture.\nWhich option is the focus of the next step?",
+        "answer": "fracture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "liver"
+        "prompt": "During a routine care or examination situation, an adult reviews liver, kidneys, spine. The next step focuses on liver.\nWhich option is the focus of the next step?",
+        "answer": "liver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "stomach"
+        "prompt": "During a routine care or examination situation, an adult reviews stomach, intestines, muscles. The next step focuses on stomach.\nWhich option is the focus of the next step?",
+        "answer": "stomach",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "arteries"
+        "prompt": "During a routine care or examination situation, an adult reviews arteries, appendix, inflammation. The next step focuses on arteries.\nWhich option is the focus of the next step?",
+        "answer": "arteries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "nausea"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "fracture"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "liver"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea.\nWhich option is the focus of the next step?",
+        "answer": "nausea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1050,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “pulse oximeter” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Do the learners diagnose someone or describe a picture?",
+        "answer": "They describe a picture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1031,7 +1102,7 @@
       "تطعيم",
       "موجات فوق صوتية",
       "فحص بالرنين المغناطيسي",
-      "غرز جراحية",
+      "غُرز جراحية",
       "علاج جسدي",
       "خزعة",
       "غسيل الكلى",
@@ -1042,8 +1113,8 @@
     "usage": {
       "goal": "Learn to use l5 hospital 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1105,45 +1176,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including transfusion, chemotherapy, endoscopy in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Personal Message",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with prescription, surgery, and x-ray. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with blood test, injection, and vaccination. Each term belongs to a different part of the care process.",
+      "title": "L5 Hospital 7: A short reading",
+      "text": "The receptionist gives Omar directions to the blood test room. Maya has an appointment for an X-ray in another department. A poster lists ultrasound and MRI scan as other services. They check their appointment details and ask where to wait. The receptionist explains that the nurse will call their names.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "prescription"
+        "prompt": "During a routine care or examination situation, an adult reviews prescription, surgery, X-ray. The next step focuses on prescription.\nWhich option is the focus of the next step?",
+        "answer": "prescription",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "blood test"
+        "prompt": "During a routine care or examination situation, an adult reviews blood test, injection, vaccination. The next step focuses on blood test.\nWhich option is the focus of the next step?",
+        "answer": "blood test",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ultrasound"
+        "prompt": "During a routine care or examination situation, an adult reviews ultrasound, MRI scan, stitches. The next step focuses on ultrasound.\nWhich option is the focus of the next step?",
+        "answer": "ultrasound",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "physical therapy"
+        "prompt": "During a routine care or examination situation, an adult reviews physical therapy, biopsy, dialysis. The next step focuses on physical therapy.\nWhich option is the focus of the next step?",
+        "answer": "physical therapy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "transfusion"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "prescription"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "blood test"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion.\nWhich option is the focus of the next step?",
+        "answer": "transfusion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1152,6 +1227,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “fracture” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What appointment does Maya have?",
+        "answer": "An X-ray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1189,7 +1271,7 @@
       "ambulance"
     ],
     "targetWordsArabic": [
-      "أشعة مقطعية",
+      "تصوير مقطعي محوسب",
       "تنظير القولون",
       "زراعة عضو",
       "سرير مستشفى",
@@ -1199,17 +1281,17 @@
       "خريطة ملاحية",
       "لوح كتابة",
       "دواء",
-      "أقراص دواء",
+      "حبوب دواء",
       "مرهم",
       "عكازات",
-      "مشاية",
+      "مشاية طبية",
       "سيارة إسعاف"
     ],
     "usage": {
       "goal": "Learn to use l5 hospital 8 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1271,45 +1353,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including crutches, walker, ambulance in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Short Dialogue",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with ct scan, colonoscopy, and transplant. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with hospital bed, pillow, and blanket. Each term belongs to a different part of the care process.",
+      "title": "L5 Hospital 8: A short reading",
+      "text": "Omar visits a relative in hospital. A chart and clipboard are beside the hospital bed. There is a pillow and blanket on the bed and a gown in the cupboard. Maya checks the visitor information. Their relative has a CT scan scheduled later, so they keep the visit short and agree to return tomorrow.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "CT scan"
+        "prompt": "During a routine care or examination situation, an adult reviews CT scan, colonoscopy, transplant. The next step focuses on CT scan.\nWhich option is the focus of the next step?",
+        "answer": "CT scan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "hospital bed"
+        "prompt": "During a routine care or examination situation, an adult reviews hospital bed, pillow, blanket. The next step focuses on hospital bed.\nWhich option is the focus of the next step?",
+        "answer": "hospital bed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "gown"
+        "prompt": "During a routine care or examination situation, an adult reviews gown, chart, clipboard. The next step focuses on gown.\nWhich option is the focus of the next step?",
+        "answer": "gown",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "medicine"
+        "prompt": "During a routine care or examination situation, an adult reviews medicine, pills, ointment. The next step focuses on medicine.\nWhich option is the focus of the next step?",
+        "answer": "medicine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "crutches"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "CT scan"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "hospital bed"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches.\nWhich option is the focus of the next step?",
+        "answer": "crutches",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1318,6 +1404,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “prescription” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why do Maya and Omar keep their visit short?",
+        "answer": "Their relative has a CT scan scheduled later",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1349,9 +1442,9 @@
     ],
     "targetWordsArabic": [
       "واقي وجه",
-      "معقم اليدين (مطهر اليدين)",
+      "معقم اليدين",
       "حاوية الأدوات الحادة",
-      "وعاء سريري",
+      "وعاء قضاء الحاجة للمرضى",
       "سوار تعريف المريض",
       "زر استدعاء",
       "حامل المحاليل الوريدية",
@@ -1360,8 +1453,8 @@
     "usage": {
       "goal": "Learn to use l5 hospital 9 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1399,37 +1492,35 @@
           "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including IV pole, oxygen tank in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Tips/Notice",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with face shield, hand sanitizer, and sharps container. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with bedpan, patient wristband, and call button. Each term belongs to a different part of the care process.",
+      "title": "L5 Hospital 9: A short reading",
+      "text": "Maya attends workplace orientation in a hospital. The guide identifies a face shield, hand sanitizer, and a sharps container. Omar locates the call button beside a patient's bed. A wristband carries the patient's details. They ask the guide about the IV pole and oxygen tank before writing the equipment names in their notes.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "face shield"
+        "prompt": "During a routine care or examination situation, an adult reviews face shield, hand sanitizer, sharps container. The next step focuses on face shield.\nWhich option is the focus of the next step?",
+        "answer": "face shield",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bedpan"
+        "prompt": "During a routine care or examination situation, an adult reviews bedpan, patient wristband, call button. The next step focuses on bedpan.\nWhich option is the focus of the next step?",
+        "answer": "bedpan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "IV pole"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "face shield"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "bedpan"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole.\nWhich option is the focus of the next step?",
+        "answer": "IV pole",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1438,6 +1529,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “CT scan” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where is the call button?",
+        "answer": "Beside a patient's bed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

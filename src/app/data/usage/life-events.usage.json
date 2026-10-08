@@ -34,11 +34,11 @@
       "حفلة تقاعد",
       "حفلة استقبال مولود",
       "خطوبة",
-      "حفلة منزل جديد",
-      "ترقية",
+      "احتفال بالسكن الجديد",
+      "ترقية وظيفية",
       "وداع",
       "أول يوم في المدرسة",
-      "تعلم القيادة",
+      "تعلّم القيادة",
       "أول وظيفة",
       "الانتقال من المنزل",
       "شراء منزل"
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares First Job, Moving Out, Buying a Home. The person selects First Job for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult life events scene showing lesson-related items or actions including First Job, Moving Out, Buying a Home in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Life Events: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Birthday"
+        "prompt": "During a routine life events task, an adult compares Birthday, Wedding, Anniversary. The person selects Birthday for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Birthday",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Graduation"
+        "prompt": "During a routine life events task, an adult compares Graduation, Retirement Party, Baby Shower. The person selects Graduation for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Graduation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Engagement"
+        "prompt": "During a routine life events task, an adult compares Engagement, Housewarming, Promotion. The person selects Engagement for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Engagement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Farewell"
+        "prompt": "During a routine life events task, an adult compares Farewell, First Day of School, Learning to Drive. The person selects Farewell for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Farewell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "First Job"
+        "prompt": "During a routine life events task, an adult compares First Job, Moving Out, Buying a Home. The person selects First Job for the next step.\nWhich option does the person select for the next step?",
+        "answer": "First Job",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -195,19 +211,19 @@
     "targetWordsArabic": [
       "الزواج",
       "إنجاب طفل",
-      "تغيير مهني",
+      "تغيير المسار المهني",
       "تقاعد",
       "السفر إلى الخارج",
-      "خسارة",
-      "حزن على الفقد",
+      "فقدان",
+      "حزن على فقد",
       "جنازة",
       "طلاق",
       "مرض",
       "حادث",
       "الانتقال إلى مكان آخر",
       "تسريح من العمل",
-      "انفصال",
-      "تعاف"
+      "انتهاء علاقة",
+      "تعافٍ"
     ],
     "usage": {
       "goal": "Learn to use life events 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Layoff, Breakup, Recovery. The person selects Layoff for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult life events scene showing lesson-related items or actions including Layoff, Breakup, Recovery in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Life Events: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Getting Married"
+        "prompt": "During a routine life events task, an adult compares Getting Married, Having a Baby, Career Change. The person selects Getting Married for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Getting Married",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retirement"
+        "prompt": "During a routine life events task, an adult compares Retirement, Traveling Abroad, Loss. The person selects Retirement for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Retirement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grief"
+        "prompt": "During a routine life events task, an adult compares Grief, Funeral, Divorce. The person selects Grief for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grief",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Illness"
+        "prompt": "During a routine life events task, an adult compares Illness, Accident, Moving Away. The person selects Illness for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Illness",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Layoff"
+        "prompt": "During a routine life events task, an adult compares Layoff, Breakup, Recovery. The person selects Layoff for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Layoff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -364,16 +396,16 @@
       "دبلوم",
       "درجة علمية",
       "ميدالية",
-      "كأس",
+      "كأس تكريم",
       "منحة دراسية",
-      "منشور علمي",
+      "نشر",
       "براءة اختراع",
-      "معمودية",
-      "مناولة",
-      "بار متسفا",
-      "سر التثبيت",
+      "تعميد",
+      "تناول القربان",
+      "احتفال بلوغ ديني يهودي",
+      "تثبيت ديني مسيحي",
       "مراسم تخرج",
-      "تنصيب"
+      "تنصيب أو افتتاح رسمي"
     ],
     "usage": {
       "goal": "Learn to use life events 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Confirmation, Graduation Ceremony, Inauguration. The person selects Confirmation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult life events scene showing lesson-related items or actions including Confirmation, Graduation Ceremony, Inauguration in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Life Events: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Award"
+        "prompt": "During a routine life events task, an adult compares Award, Certificate, Diploma. The person selects Award for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Award",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Degree"
+        "prompt": "During a routine life events task, an adult compares Degree, Medal, Trophy. The person selects Degree for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Degree",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scholarship"
+        "prompt": "During a routine life events task, an adult compares Scholarship, Publication, Patent. The person selects Scholarship for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Scholarship",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Baptism"
+        "prompt": "During a routine life events task, an adult compares Baptism, Communion, Bar Mitzvah. The person selects Baptism for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Baptism",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Confirmation"
+        "prompt": "During a routine life events task, an adult compares Confirmation, Graduation Ceremony, Inauguration. The person selects Confirmation for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Confirmation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -508,7 +556,7 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Oath", "Pledge", "Blessing", "Memorial"],
-    "targetWordsArabic": ["قسم", "تعهد", "بركة", "تأبين"],
+    "targetWordsArabic": ["قسم", "تعهد", "دعاء بالبركة", "تأبين"],
     "usage": {
       "goal": "Learn to use life events 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to life events.",
@@ -529,7 +577,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Memorial",
+          "targetWords": ["Memorial"],
           "scenario": "During a routine life events task, an adult compares Memorial, Oath, Pledge. The person selects Memorial for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -539,7 +587,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Memorial, Oath, Pledge. The person selects Memorial for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult life events scene showing lesson-related items or actions including Memorial in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Life Events: Everyday Description",
@@ -548,12 +597,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oath"
+        "prompt": "During a routine life events task, an adult compares Oath, Pledge, Blessing. The person selects Oath for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Oath",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Memorial"
+        "prompt": "During a routine life events task, an adult compares Memorial, Oath, Pledge. The person selects Memorial for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Memorial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

@@ -28,12 +28,12 @@
     ],
     "targetWordsArabic": [
       "بشرة دهنية",
-      "جلد جاف",
+      "بشرة جافة",
       "بشرة مختلطة",
       "بشرة حساسة",
-      "بشرة عادية",
-      "معرض لحب الشباب",
-      "جلد ناضج",
+      "بشرة متوازنة",
+      "معرّض لحب الشباب",
+      "بشرة ناضجة",
       "بشرة فاتحة",
       "بشرة داكنة",
       "بشرة زيتونية",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use skin & hair 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to skin & hair.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -64,13 +64,13 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Sensitive Skin", "Normal Skin", "Acne-Prone"],
-          "scenario": "Before choosing a new face wash, Omar tells the pharmacist that his skin becomes red easily. She recommends a gentle product for sensitive skin and asks whether he is acne-prone.",
+          "scenario": "Before choosing a new face wash, Omar asks whether he needs a cleanser for normal skin or sensitive skin. The pharmacist explains that normal skin rarely reacts, recommends a gentle product for sensitive skin, and asks whether he is acne-prone.",
           "check": {
-            "question": "What kind of skin becomes red easily for Omar?",
+            "question": "What kind of skin does the pharmacist recommend a gentle product for?",
             "options": ["Sensitive Skin", "Normal Skin", "Acne-Prone"],
             "expectedAnswer": "Sensitive Skin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: Before choosing a new face wash, Omar tells the pharmacist that his skin becomes red easily. She recommends a gentle product for sensitive skin and asks whether he is acne-prone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: Before choosing a new face wash, Omar asks whether he needs a cleanser for normal skin or sensitive skin. The pharmacist explains that normal skin rarely reacts, recommends a gentle product for sensitive skin, and asks whether he is acne-prone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Sensitive Skin, Normal Skin, Acne-Prone in a natural setting."
         },
         {
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: After a long hike, Ben has a red rash on his shoulder and a small blister on his heel. The pharmacist asks whether the rash began after the sunburn. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Rash, Sunburn, Blister in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Skin & Hair: Email",
-      "text": "Omar has an everyday task connected to skin & hair. The new vocabulary helps him follow the situation and respond clearly. The learner identifies the oily skin, dry skin, and combination skin and connects each part to its place or function in the body. During the visit, the patient and medical team deal with sensitive skin, normal skin, and acne-prone. Each term belongs to a different part of the care process.",
+      "title": "Skin & Hair 1: A short reading",
+      "text": "At a shop, Maya compares labels for oily skin, dry skin, and combination skin. Omar finds products marked for normal skin, sensitive skin, and acne-prone skin. The assistant explains the words on the labels without choosing a product for them. They write the terms in their vocabulary notes and match them to the definitions from class.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Skin & Hair. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oily Skin"
+        "prompt": "At a skincare consultation, Lina says her forehead becomes oily but her cheeks feel dry. The specialist explains that combination skin can have both patterns.\nWhat kind of skin can be oily in one area and dry in another?",
+        "answer": "Combination Skin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sensitive Skin"
+        "prompt": "Before choosing a new face wash, Omar asks whether he needs a cleanser for normal skin or sensitive skin. The pharmacist explains that normal skin rarely reacts, recommends a gentle product for sensitive skin, and asks whether he is acne-prone.\nWhat kind of skin does the pharmacist recommend a gentle product for?",
+        "answer": "Sensitive Skin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mature Skin"
+        "prompt": "At a photography workshop, the tutor adjusts the light for three adult models. She explains that fair skin and dark skin reflect light differently, while mature skin may show more lines.\nWhich type of skin may show more lines?",
+        "answer": "Mature Skin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Olive Skin"
+        "prompt": "At the clinic, a nurse asks about a dry patch on Farah's olive skin. Farah explains that the patch is not acne, and the doctor checks whether eczema is causing the irritation.\nWhat skin condition does the doctor check for?",
+        "answer": "Eczema",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rash"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Oily Skin"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Sensitive Skin"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "After a long hike, Ben has a red rash on his shoulder and a small blister on his heel. The pharmacist asks whether the rash began after the sunburn.\nWhat does Ben have on his heel?",
+        "answer": "Blister",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Dark Eyes” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Does the assistant choose a product for the learners?",
+        "answer": "No, the assistant explains the label words",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -195,16 +206,16 @@
     "targetWordsArabic": [
       "كدمة",
       "ندبة",
-      "علامة تمدد",
+      "علامة تمدد الجلد",
       "تجاعيد",
       "بقعة جافة من الجلد",
       "شامبو",
       "بلسم",
       "قناع للشعر",
-      "مصل عناية",
+      "سيروم للعناية",
       "زيت شعر",
       "شامبو جاف",
-      "مستحضر شعر يترك دون شطف",
+      "مستحضر شعر يُترك دون شطف",
       "مزيل تشابك الشعر",
       "مثبت شعر",
       "موس شعر"
@@ -212,8 +223,8 @@
     "usage": {
       "goal": "Learn to use skin & hair 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to skin & hair.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: Before a presentation, the stylist uses detangler to smooth Jo's hair, mousse to add shape, and a light hair spray to hold the finished style. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Detangler, Hair Spray, Mousse in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Skin & Hair: Personal Message",
-      "text": "Omar has an everyday task connected to skin & hair. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with bruise, scar, and stretch mark. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with wrinkles, dry patch, and shampoo. Each term belongs to a different part of the care process.",
+      "title": "Skin & Hair 2: A short reading",
+      "text": "Maya compares shampoo and conditioner bottles at the shop. She also sees a hair mask and a serum. In a separate vocabulary exercise, Omar matches bruise, scar, and stretch mark to descriptions. They keep product names on one page and skin features on another so they can revise the two groups separately.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Skin & Hair. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bruise"
+        "prompt": "While preparing for a beach trip, Nadia notices an old scar and a stretch mark. She also has a small bruise from yesterday's suitcase, so she decides to pack a first-aid kit.\nWhat came from yesterday's suitcase?",
+        "answer": "Bruise",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wrinkles"
+        "prompt": "At a salon consultation, the stylist recommends a mild shampoo for a dry patch near Maya's hairline. Maya also asks about a cream for wrinkles.\nWhat does the stylist recommend for Maya's hair?",
+        "answer": "Shampoo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conditioner"
+        "prompt": "On a self-care evening, Rami washes his hair, applies conditioner, and leaves a hair mask on for ten minutes. He finishes with a small amount of serum on the ends.\nWhat does Rami apply first after washing his hair?",
+        "answer": "Conditioner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hair Oil"
+        "prompt": "Before an early meeting, Salma uses dry shampoo because she has no time to wash her hair. She adds leave-in conditioner and a drop of hair oil to the ends.\nWhat does Salma add to the ends of her hair?",
+        "answer": "Hair Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Detangler"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bruise"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Wrinkles"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "Before a presentation, the stylist uses detangler to smooth Jo's hair, mousse to add shape, and a light hair spray to hold the finished style.\nWhat holds Jo's finished style in place?",
+        "answer": "Hair Spray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Oily Skin” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why do the learners put products and skin features on separate pages?",
+        "answer": "To revise the two groups separately",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -360,7 +382,7 @@
     ],
     "targetWordsArabic": [
       "مشط",
-      "فرشاة",
+      "فرشاة شعر",
       "مجفف شعر",
       "مكواة فرد الشعر",
       "مكواة تجعيد الشعر",
@@ -368,18 +390,18 @@
       "دبوس شعر",
       "ربطة شعر",
       "عصابة رأس",
-      "بكرة شعر",
-      "منظف",
+      "بَكَرَة شعر",
+      "منظّف",
       "تونر للبشرة",
-      "مرطب",
+      "مرطّب",
       "واقي شمس",
-      "مقشر للبشرة"
+      "مقشّر للبشرة"
     ],
     "usage": {
       "goal": "Learn to use skin & hair 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to skin & hair.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: Before leaving for the beach, Dalia uses an exfoliant on a different day from her usual routine. Today she applies moisturizer and sunscreen to protect her skin. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Moisturizer, Sunscreen, Exfoliant in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Skin & Hair: Short Dialogue",
-      "text": "Omar has an everyday task connected to skin & hair. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with comb, brush, and hair dryer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with flat iron, curling iron, and hair clip. Each term belongs to a different part of the care process.",
+      "title": "Skin & Hair 3: A short reading",
+      "text": "Omar puts a comb and a brush in his bag before a trip. Maya packs a hair dryer and a hair tie. She leaves the flat iron and curling iron at home. A bobby pin is on the table beside a headband. They check the bag again before closing it.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Skin & Hair. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Comb"
+        "prompt": "At the salon, the stylist uses a comb to separate sections, a brush to smooth them, and a hair dryer to finish the blow-dry before the client leaves.\nWhat does the stylist use to finish the blow-dry?",
+        "answer": "Hair Dryer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flat Iron"
+        "prompt": "For a dinner event, Mei secures one section with a hair clip, uses a curling iron on the ends, and then straightens one front section with a flat iron.\nWhat secures one section of Mei's hair?",
+        "answer": "Hair Clip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bobby Pin"
+        "prompt": "During a workout, Aisha pulls her hair back with a hair tie and keeps short strands away from her face with a headband. A bobby pin fixes one loose piece.\nWhat keeps short strands away from Aisha's face?",
+        "answer": "Headband",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hair Roller"
+        "prompt": "At home, Karim follows his evening routine: he washes his face with cleanser, applies toner, and sets a hair roller before reading.\nWhat does Karim use to wash his face?",
+        "answer": "Cleanser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moisturizer"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Comb"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Flat Iron"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "Before leaving for the beach, Dalia uses an exfoliant on a different day from her usual routine. Today she applies moisturizer and sunscreen to protect her skin.\nWhat does Dalia apply to protect her skin?",
+        "answer": "Sunscreen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Bruise” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which tools does Maya leave at home?",
+        "answer": "The flat iron and curling iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -508,12 +541,12 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Face Mask", "Eye Cream", "Lip Balm", "Night Cream"],
-    "targetWordsArabic": ["قناع للوجه", "كريم للعينين", "مرطب الشفاه (زبدة الشفاه)", "كريم ليلي"],
+    "targetWordsArabic": ["قناع للوجه", "كريم للعينين", "مرطب شفاه", "كريم ليلي"],
     "usage": {
       "goal": "Learn to use skin & hair 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to skin & hair.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -524,48 +557,43 @@
             "options": ["Face Mask", "Eye Cream", "Lip Balm"],
             "expectedAnswer": "Lip Balm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Lip Balm while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a morning routine, with Face Mask, Eye Cream, and Lip Balm visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Face Mask, Eye Cream, Lip Balm in a natural setting."
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Night Cream",
-          "scenario": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering undefined, undefined, and undefined. She chooses the right product and explains her routine to a friend.",
+          "targetWords": ["Night Cream"],
+          "scenario": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.",
           "check": {
             "question": "Which target does Maya notice first in this situation?",
             "options": ["Night Cream", "Face Mask", "Eye Cream"],
             "expectedAnswer": "Night Cream"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a skin & hair context illustrating this situation: Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering undefined, undefined, and undefined. She chooses the right product and explains her routine to a friend. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a morning routine, with Night Cream visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Night Cream in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Skin & Hair: Tips/Notice",
-      "text": "Omar has an everyday task connected to skin & hair. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with face mask, eye cream, and lip balm. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with night cream. Each term belongs to a different part of the care process.",
+      "title": "Skin & Hair 4: A short reading",
+      "text": "Maya looks at four skin-care product labels. One says face mask, another eye cream, another lip balm, and another night cream. She matches the names to product photographs in her language lesson. Omar writes a short description of the lip balm container. The teacher checks their answers before the next activity.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Skin & Hair. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Face Mask"
+        "prompt": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Lip Balm while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.\nWhich target does Maya notice first in this situation?",
+        "answer": "Lip Balm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Night Cream"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Face Mask"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Night Cream"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.\nWhich target does Maya notice first in this situation?",
+        "answer": "Night Cream",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -574,6 +602,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Comb” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar describe?",
+        "answer": "The lip balm container",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

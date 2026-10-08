@@ -32,13 +32,13 @@
       "فروة الرأس",
       "ذراع النظارة",
       "تاج",
-      "الجبهة",
+      "جبهة",
       "فك",
-      "الذقن",
-      "الرقبة",
-      "الحلق",
+      "ذقن",
+      "رقبة",
+      "حلق",
       "عين",
-      "الحاجب",
+      "حاجب",
       "جفن",
       "رمش",
       "بؤبؤ"
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Eyelid, Eyelash, Pupil in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Human Body (Head & Face): Email",
@@ -196,24 +197,24 @@
       "قزحية",
       "شبكية",
       "قرنية",
-      "القناة الدمعية",
+      "قناة دمعية",
       "محجر العين",
       "أنف",
       "فتحة الأنف",
       "جسر الأنف",
-      "الفم",
-      "الشفة",
+      "فم",
+      "شفة",
       "الشفة العليا",
       "الشفة السفلى",
       "لسان",
       "حنك",
-      "اللثة"
+      "لثة"
     ],
     "usage": {
       "goal": "Learn to use the human body (head & face) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +276,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a dental check-up, the dentist asks David to open his mouth. She checks his gums, asks him to lift his tongue, and looks at the roof of his mouth, called the palate. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Tongue, Palate, Gums in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face): Personal Message",
-      "text": "Omar has an everyday task connected to the human body (head & face). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with iris, retina, and cornea. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tear duct, eye socket, and nose. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Head & Face) 2: A short reading",
+      "text": "Maya studies a diagram of the eye. She identifies the iris, retina, and cornea. Another diagram shows a tear duct beside the eye. Omar labels the nose, nostril, and mouth on a face drawing. They compare their answers with the key, then practice describing where each part is located.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Iris"
+        "prompt": "At an eye clinic, Salma looks at a bright target while the optometrist examines her eye. The coloured iris surrounds the pupil, the clear cornea is at the front, and the retina is at the back.\nWhich part of the eye is at the back and receives the image?",
+        "answer": "Retina",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tear Duct"
+        "prompt": "After a windy walk, Omar's eye waters. The nurse explains that tears drain through a tear duct near the nose, while the eye socket protects the eye behind the face.\nWhere do Omar's tears drain?",
+        "answer": "Tear Duct",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nostril"
+        "prompt": "Before a portrait session, the photographer asks Hana to turn her face slightly. The bridge of her nose catches the light, and she checks that one nostril is not blocked before she smiles.\nWhat does Hana check before she smiles?",
+        "answer": "Nostril",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lip"
+        "prompt": "At a makeup counter, Rania tests a lip balm. She applies a little to her upper lip and lower lip, then checks the colour in a small mirror.\nWhere does Rania apply the lip balm?",
+        "answer": "Lip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tongue"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Iris"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Tear Duct"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "At a dental check-up, the dentist asks David to open his mouth. She checks his gums, asks him to lift his tongue, and looks at the roof of his mouth, called the palate.\nWhat is the roof of David's mouth called?",
+        "answer": "Palate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +327,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Head” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which three parts does Omar label on the face drawing?",
+        "answer": "The nose, nostril, and mouth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -363,10 +375,10 @@
       "شحمة الأذن",
       "قناة الأذن",
       "طبلة الأذن",
-      "الأذن الداخلية",
-      "الأذن الخارجية",
-      "السمع",
-      "يلوح صوت",
+      "أذن داخلية",
+      "أذن خارجية",
+      "سمع",
+      "يلوّح صوت",
       "توازن",
       "قوقعة الأذن",
       "سن",
@@ -378,8 +390,8 @@
     "usage": {
       "goal": "Learn to use the human body (head & face) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +453,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a dental lesson, the teacher asks students to compare their teeth. A canine tears food, a premolar helps crush it, and a molar does most of the grinding. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Canine, Molar, Premolar in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face): Short Dialogue",
-      "text": "Omar has an everyday task connected to the human body (head & face). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with ear, earlobe, and ear canal. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with eardrum, inner ear, and outer ear. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Head & Face) 3: A short reading",
+      "text": "Omar reads a diagram showing the outer ear, ear canal, and eardrum. The text explains how sound waves travel through the ear. Maya identifies the inner ear on another diagram. They match the labels carefully and ask their teacher about hearing and balance before completing the short vocabulary exercise.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ear"
+        "prompt": "At a jewellery shop, Leila tries on a small earring. The assistant checks that the clasp is comfortable on her earlobe and reminds her never to push it into the ear canal.\nWhere does the earring sit?",
+        "answer": "Earlobe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eardrum"
+        "prompt": "During a hearing test, the specialist looks at Maya's outer ear before checking the eardrum. She explains that the inner ear helps the body hear and stay balanced.\nWhat does the specialist look at first?",
+        "answer": "Outer Ear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hearing"
+        "prompt": "At the clinic, a short sound wave plays through Daniel's headphones. The specialist records his hearing and asks whether he feels any change in his balance.\nWhat does the specialist record?",
+        "answer": "Hearing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cochlea"
+        "prompt": "At a science museum, the guide compares a model of the cochlea with a model tooth. She points out that an incisor is the sharp front tooth used for cutting food.\nWhich tooth is used for cutting food?",
+        "answer": "Incisor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Canine"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Ear"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Eardrum"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "At a dental lesson, the teacher asks students to compare their teeth. A canine tears food, a premolar helps crush it, and a molar does most of the grinding.\nWhich tooth does most of the grinding?",
+        "answer": "Molar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +504,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Iris” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the text explain?",
+        "answer": "How sound waves travel through the ear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -529,21 +552,21 @@
       "مينا الأسنان",
       "جذر",
       "شعر",
-      "منبت الشعر",
+      "خط نمو الشعر",
       "جزء",
       "خصلة شعر",
       "لحية",
       "شارب",
       "سوالف",
-      "لحية خفيفة",
-      "لحية صغيرة",
+      "شعر لحية قصير",
+      "لحية على الذقن",
       "ضفيرة"
     ],
     "usage": {
       "goal": "Learn to use the human body (head & face) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -605,45 +628,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: During a routine care or examination situation, an adult reviews Goatee, Braid, Wisdom Tooth. The next step focuses on Goatee. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Goatee, Braid in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face): Tips/Notice",
-      "text": "Omar has an everyday task connected to the human body (head & face). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with wisdom tooth, baby tooth, and enamel. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with root, hair, and hairline. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Head & Face) 4: A short reading",
+      "text": "Maya looks at a dental diagram and finds a baby tooth and a wisdom tooth. She labels the enamel and root on a larger drawing. Omar uses a face picture to identify a beard, hairline, and mustache. They keep the dental labels separate from the hair words to make their notes easier to read.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wisdom Tooth"
+        "prompt": "At a dental appointment, Yasmin asks why her wisdom tooth hurts. The dentist explains that enamel protects each tooth, while a baby tooth is the first kind of tooth children have.\nWhat is hurting Yasmin?",
+        "answer": "Wisdom Tooth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Root"
+        "prompt": "At the salon, Karim asks for a shorter haircut but wants a clean hairline. The barber trims each section of hair carefully and avoids pulling at the root.\nWhat does Karim want the barber to keep clean?",
+        "answer": "Hairline",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Part"
+        "prompt": "Before a job interview, Nabil checks his beard in the mirror. He changes the part of his hair and removes one loose strand from his jacket.\nWhat does Nabil check in the mirror?",
+        "answer": "Beard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mustache"
+        "prompt": "For a formal event, Tarek trims his stubble and shortens his sideburns. He leaves his mustache neat so his face looks tidy in the photographs.\nWhat does Tarek leave neat?",
+        "answer": "Mustache",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Goatee"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Wisdom Tooth"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Root"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Goatee, Braid, Wisdom Tooth. The next step focuses on Goatee.\nWhich option is the focus of the next step?",
+        "answer": "Goatee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -652,6 +679,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Ear” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which dental structures does Maya label on the larger drawing?",
+        "answer": "The enamel and root",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

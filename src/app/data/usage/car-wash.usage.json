@@ -27,17 +27,17 @@
       "Dryer"
     ],
     "targetWordsArabic": [
-      "غسيل آلي",
-      "غسيل يد",
+      "غسيل سيارات آلي",
+      "غسيل السيارة يدويًا",
       "خدمة ذاتية",
-      "دون لمس",
+      "غسيل دون ملامسة السيارة",
       "غسيل بالرغوة",
-      "غسيل شمع",
+      "غسيل مع طبقة شمع واقية",
       "الجزء السفلي للسيارة",
       "غسيل العجلات",
       "شطف",
       "جاف",
-      "غسالة ضغط",
+      "جهاز غسيل بالماء المضغوط",
       "مدفع رغوة",
       "فرشاة",
       "أسطوانة",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Brush, Roller, Dryer. The person selects Brush for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Brush, Roller, Dryer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Car Wash: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Automatic Wash"
+        "prompt": "During a routine the car wash task, an adult compares Automatic Wash, Hand Wash, Self Service. The person selects Automatic Wash for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Automatic Wash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Touchless"
+        "prompt": "During a routine the car wash task, an adult compares Touchless, Foam Wash, Wax Wash. The person selects Touchless for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Touchless",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Undercarriage"
+        "prompt": "During a routine the car wash task, an adult compares Undercarriage, Wheel Wash, Rinse. The person selects Undercarriage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Undercarriage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry"
+        "prompt": "During a routine the car wash task, an adult compares Dry, Pressure Washer, Foam Cannon. The person selects Dry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brush"
+        "prompt": "During a routine the car wash task, an adult compares Brush, Roller, Dryer. The person selects Brush for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Brush",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -198,13 +214,13 @@
       "منشفة",
       "إسفنجة",
       "دلو",
-      "صابون سيارة",
+      "منظف غسيل السيارات",
       "شمع",
       "ملمع إطارات",
-      "عامل نظافة زجاج",
-      "عامل نظافة داخلي",
-      "تلميع",
-      "قضيب طين تنظيف",
+      "منظف الزجاج",
+      "منظف داخل السيارة",
+      "ملمّع",
+      "قالب طين لتنظيف طلاء السيارة",
       "ألياف دقيقة (مايكروفايبر)",
       "مزيل شحوم",
       "مادة واقية"
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Microfiber, Degreaser, Protectant. The person selects Microfiber for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Microfiber, Degreaser, Protectant in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Car Wash: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vacuum"
+        "prompt": "During a routine the car wash task, an adult compares Vacuum, Air Freshener, Towel. The person selects Vacuum for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Vacuum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sponge"
+        "prompt": "During a routine the car wash task, an adult compares Sponge, Bucket, Car Soap. The person selects Sponge for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sponge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wax"
+        "prompt": "During a routine the car wash task, an adult compares Wax, Tire Shine, Glass Cleaner. The person selects Wax for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wax",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Interior Cleaner"
+        "prompt": "During a routine the car wash task, an adult compares Interior Cleaner, Polish, Clay Bar. The person selects Interior Cleaner for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Interior Cleaner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Microfiber"
+        "prompt": "During a routine the car wash task, an adult compares Microfiber, Degreaser, Protectant. The person selects Microfiber for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Microfiber",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -369,11 +401,11 @@
       "إطار سيارة",
       "زجاج أمامي",
       "مصباح أمامي",
-      "حجرة خدمة",
+      "حجرة غسيل أو خدمة",
       "مسار",
-      "ناقل",
-      "آلة عملات",
-      "رمز دفع"
+      "ناقل آلي للسيارات",
+      "آلة تعمل بالعملات",
+      "قطعة دفع"
     ],
     "usage": {
       "goal": "Learn to use the car wash 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Conveyor, Coin Machine, Token. The person selects Conveyor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Conveyor, Coin Machine, Token in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Car Wash: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hood"
+        "prompt": "During a routine the car wash task, an adult compares Hood, Roof, Door. The person selects Hood for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hood",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trunk"
+        "prompt": "During a routine the car wash task, an adult compares Trunk, Bumper, Mirror. The person selects Trunk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Trunk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wheel"
+        "prompt": "During a routine the car wash task, an adult compares Wheel, Tire, Windshield. The person selects Wheel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wheel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Headlight"
+        "prompt": "During a routine the car wash task, an adult compares Headlight, Bay, Track. The person selects Headlight for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Headlight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conveyor"
+        "prompt": "During a routine the car wash task, an adult compares Conveyor, Coin Machine, Token. The person selects Conveyor for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Conveyor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -605,7 +653,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Wipe Dash, Freshen, Timer. The person selects Wipe Dash for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Wipe Dash, Freshen in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Car Wash: Everyday Description",
@@ -614,24 +663,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Timer"
+        "prompt": "During a routine the car wash task, an adult compares Timer, Drain, Sign. The person selects Timer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Timer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Menu Board"
+        "prompt": "During a routine the car wash task, an adult compares Menu Board, Waiting Area, Pre Rinse. The person selects Menu Board for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Menu Board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Soap Spray"
+        "prompt": "During a routine the car wash task, an adult compares Soap Spray, Scrub, Wax Coat. The person selects Soap Spray for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Soap Spray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blow Dry"
+        "prompt": "During a routine the car wash task, an adult compares Blow Dry, Hand Dry, Vacuum Interior. The person selects Blow Dry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Blow Dry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wipe Dash"
+        "prompt": "During a routine the car wash task, an adult compares Wipe Dash, Freshen, Timer. The person selects Wipe Dash for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wipe Dash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

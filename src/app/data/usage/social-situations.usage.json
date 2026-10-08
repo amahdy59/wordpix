@@ -27,20 +27,20 @@
       "Sorry"
     ],
     "targetWordsArabic": [
-      "مرحبا",
-      "وداعا",
+      "مرحبًا",
+      "وداعًا",
       "سعيد بلقائك",
       "كيف حالك؟",
-      "أراك لاحقا",
+      "أراك لاحقًا",
       "صباح الخير",
       "تصبح على خير",
-      "أهلا وسهلا",
-      "اعتن بنفسك",
-      "تحية أو شكر",
+      "أهلاً وسهلاً",
+      "اعتنِ بنفسك",
+      "تحية طيبة أو شكرًا",
       "من فضلك",
-      "شكرا لك",
+      "شكرًا لك",
       "على الرحب والسعة",
-      "عذرا",
+      "لو سمحت أو عفوًا",
       "آسف"
     ],
     "usage": {
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares You're Welcome, Excuse Me, Sorry. The person selects You're Welcome for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult social situations scene showing lesson-related items or actions including You're Welcome, Excuse Me, Sorry in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Social Situations: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hello"
+        "prompt": "During a routine social situations task, an adult compares Hello, Goodbye, Nice to Meet You. The person selects Hello for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hello",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "How Are You"
+        "prompt": "During a routine social situations task, an adult compares How Are You, See You Later, Good Morning. The person selects How Are You for the next step.\nWhich option does the person select for the next step?",
+        "answer": "How Are You",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Good Night"
+        "prompt": "During a routine social situations task, an adult compares Good Night, Welcome, Take Care. The person selects Good Night for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Good Night",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cheers"
+        "prompt": "During a routine social situations task, an adult compares Cheers, Please, Thank You. The person selects Cheers for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cheers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "You're Welcome"
+        "prompt": "During a routine social situations task, an adult compares You're Welcome, Excuse Me, Sorry. The person selects You're Welcome for the next step.\nWhich option does the person select for the next step?",
+        "answer": "You're Welcome",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -193,21 +209,21 @@
       "Reconciliation"
     ],
     "targetWordsArabic": [
-      "عفوا",
-      "تفضل قبلي",
+      "عفوًا",
+      "تفضّل قبلي",
       "لا مشكلة",
       "بكل سرور",
-      "يرحمك الله",
+      "يرحمك الله أو بارك الله فيك",
       "اعتذار",
-      "تسامح",
+      "عفو ومغفرة",
       "حل وسط",
-      "وساطة",
+      "وساطة للإصلاح",
       "تفاوض",
       "تفاهم",
-      "تعاطف",
-      "حل",
-      "سلام",
-      "مصالحة"
+      "تعاطف وتفهّم",
+      "حل الخلاف",
+      "سلام ووئام",
+      "مصالحة وإصلاح ذات البين"
     ],
     "usage": {
       "goal": "Learn to use social situations 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Resolution, Peace, Reconciliation. The person selects Resolution for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult social situations scene showing lesson-related items or actions including Resolution, Peace, Reconciliation in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Social Situations: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pardon"
+        "prompt": "During a routine social situations task, an adult compares Pardon, After You, No Problem. The person selects Pardon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pardon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "My Pleasure"
+        "prompt": "During a routine social situations task, an adult compares My Pleasure, Bless You, Apology. The person selects My Pleasure for the next step.\nWhich option does the person select for the next step?",
+        "answer": "My Pleasure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Forgiveness"
+        "prompt": "During a routine social situations task, an adult compares Forgiveness, Compromise, Mediation. The person selects Forgiveness for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Forgiveness",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Negotiation"
+        "prompt": "During a routine social situations task, an adult compares Negotiation, Understanding, Empathy. The person selects Negotiation for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Negotiation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Resolution"
+        "prompt": "During a routine social situations task, an adult compares Resolution, Peace, Reconciliation. The person selects Resolution for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Resolution",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -354,16 +386,16 @@
       "Encouragement"
     ],
     "targetWordsArabic": [
-      "استماع",
-      "مشاركة",
-      "التناوب",
+      "الإنصات والاستماع",
+      "مشاركة وعطاء",
+      "تبادل الأدوار بانتظام",
       "تعاون",
-      "احترام",
-      "صدق",
-      "لطف",
+      "احترام وتقدير",
+      "صدق وأمانة",
+      "لطف وإحسان",
       "صبر",
-      "تسامح",
-      "تشجيع"
+      "سعة الصدر والتسامح",
+      "تشجيع ومساندة"
     ],
     "usage": {
       "goal": "Learn to use social situations 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -409,7 +441,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Encouragement",
+          "targetWords": ["Encouragement"],
           "scenario": "During a routine social situations task, an adult compares Encouragement, Listening, Sharing. The person selects Encouragement for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -419,7 +451,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Encouragement, Listening, Sharing. The person selects Encouragement for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult social situations scene showing lesson-related items or actions including Encouragement in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Social Situations: Short Dialogue",
@@ -428,20 +461,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Listening"
+        "prompt": "During a routine social situations task, an adult compares Listening, Sharing, Taking Turns. The person selects Listening for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Listening",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cooperation"
+        "prompt": "During a routine social situations task, an adult compares Cooperation, Respect, Honesty. The person selects Cooperation for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cooperation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kindness"
+        "prompt": "During a routine social situations task, an adult compares Kindness, Patience, Tolerance. The person selects Kindness for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Kindness",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Encouragement"
+        "prompt": "During a routine social situations task, an adult compares Encouragement, Listening, Sharing. The person selects Encouragement for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Encouragement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

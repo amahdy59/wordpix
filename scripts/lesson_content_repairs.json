@@ -1,0 +1,288 @@
+{
+  "shapes-geometry": {
+    "circle": [
+      "A round, flat shape whose boundary stays the same distance from its center.",
+      "Draw a circle around the correct answer."
+    ],
+    "square": [
+      "A flat shape with four equal sides and four right angles.",
+      "The tile is a square with equal sides."
+    ],
+    "triangle": [
+      "A flat shape with three straight sides and three corners.",
+      "The sign has the shape of a triangle."
+    ],
+    "rectangle": [
+      "A flat shape with four straight sides and four right angles.",
+      "Draw a rectangle around the address."
+    ],
+    "oval": [
+      "A rounded, flat shape that is longer in one direction.",
+      "The mirror has an oval frame."
+    ],
+    "diamond": [
+      "A four-sided shape with equal sides, usually shown resting on one corner.",
+      "The pattern has a diamond in the center."
+    ],
+    "pentagon": [
+      "A flat shape with five straight sides and five corners.",
+      "Draw a pentagon with five sides."
+    ],
+    "hexagon": [
+      "A flat shape with six straight sides and six corners.",
+      "Each cell has the shape of a hexagon."
+    ],
+    "octagon": [
+      "A flat shape with eight straight sides and eight corners.",
+      "The stop sign is an octagon."
+    ],
+    "star": [
+      "A flat shape with points extending outward from its center.",
+      "Place a star beside your favorite design."
+    ],
+    "sphere": [
+      "A round solid whose surface stays the same distance from its center.",
+      "The model globe is a sphere."
+    ],
+    "cube": [
+      "A solid shape with six equal square faces.",
+      "Each face of the cube is the same size."
+    ],
+    "cylinder": [
+      "A solid with two equal, parallel circular ends joined by a curved surface.",
+      "The can has the shape of a cylinder."
+    ],
+    "cone": [
+      "A solid with a circular base that narrows to one point.",
+      "The party hat has the shape of a cone."
+    ],
+    "pyramid": [
+      "A solid with a polygon base and triangular faces meeting at one point.",
+      "The paper pyramid has a pointed top."
+    ],
+    "prism": [
+      "A solid with two matching, parallel polygon bases joined by flat faces.",
+      "The glass prism separates the light into colors."
+    ],
+    "cuboid": [
+      "A solid shape with six rectangular faces and eight corners.",
+      "The shipping box is a cuboid."
+    ],
+    "hemisphere": [
+      "One half of a solid ball, divided through its center.",
+      "The bowl is shaped like a hemisphere."
+    ],
+    "torus": [
+      "A ring-shaped solid or surface with a hole through the middle.",
+      "The model torus looks like a doughnut."
+    ],
+    "tetrahedron": [
+      "A solid shape with four triangular faces and four corners.",
+      "The tetrahedron has four triangular faces."
+    ],
+    "line": [
+      "A straight path that extends endlessly in both directions in geometry.",
+      "Mark two points on the line."
+    ],
+    "curve": [
+      "A line or boundary that bends rather than staying straight.",
+      "Follow the curve along the edge of the drawing."
+    ],
+    "straight": [
+      "Continuing in one direction without bending or turning.",
+      "Use a ruler to draw a straight mark."
+    ],
+    "zigzag": [
+      "A path or pattern that repeatedly changes direction at sharp angles.",
+      "The border has a zigzag pattern."
+    ],
+    "spiral": [
+      "A curve that winds around a center while moving farther away.",
+      "Draw a spiral from the center outward."
+    ],
+    "right-angle": [
+      "An angle measuring exactly ninety degrees, like the corner of a sheet of paper.",
+      "The corner forms a right angle."
+    ],
+    "acute-angle": [
+      "An angle measuring more than zero degrees but less than ninety degrees.",
+      "The narrow corner forms an acute angle."
+    ],
+    "obtuse-angle": [
+      "An angle measuring more than ninety degrees but less than one hundred eighty degrees.",
+      "The open door forms an obtuse angle with the wall."
+    ],
+    "parallel": [
+      "Describes straight lines in the same plane that never meet.",
+      "The two rails are parallel."
+    ],
+    "perpendicular": [
+      "Describes lines or surfaces that meet at a ninety-degree angle.",
+      "The vertical mark is perpendicular to the base."
+    ],
+    "area": [
+      "The amount of space inside a flat shape, measured in square units.",
+      "Measure the area of the floor before buying tiles."
+    ],
+    "perimeter": [
+      "The total distance around the outside boundary of a flat shape.",
+      "Measure the perimeter before fitting the border."
+    ],
+    "volume": [
+      "The amount of space a solid occupies, measured in cubic units.",
+      "The box has a volume of eight cubic meters."
+    ],
+    "radius": [
+      "The distance from the center of a circle to its boundary.",
+      "The wheel has a radius of thirty centimeters."
+    ],
+    "diameter": [
+      "The distance across a circle through its center, from one boundary point to another.",
+      "Measure the diameter across the middle of the lid."
+    ],
+    "circumference": [
+      "The distance around the boundary of a circle.",
+      "Wrap a tape around the wheel to measure its circumference."
+    ],
+    "diagonal": [
+      "A line joining two corners of a polygon that are not next to each other.",
+      "Draw a diagonal across the rectangle."
+    ],
+    "symmetry": [
+      "The property of matching parts after a reflection, rotation, or other transformation.",
+      "The folded design has reflection symmetry."
+    ],
+    "vertex": [
+      "A point where sides or edges of a geometric shape meet.",
+      "Mark the vertex at the top of the shape."
+    ],
+    "edge": [
+      "A boundary of a flat shape, or a line where two solid faces meet.",
+      "Run your finger along one edge of the box."
+    ],
+    "repeat": ["To do, say, or show the same thing again.", "Repeat the design across the page."],
+    "sequence": [
+      "An arrangement of items that follow one another in a particular order.",
+      "Continue the sequence with the next shape."
+    ],
+    "pattern": [
+      "An arrangement of shapes, colors, or objects that follows a recognizable rule.",
+      "The fabric has a repeating pattern."
+    ],
+    "tessellation": [
+      "An arrangement of flat shapes covering a surface without gaps or overlaps.",
+      "The floor tiles form a tessellation."
+    ],
+    "fractal": [
+      "A geometric pattern with similar features appearing at increasingly small scales.",
+      "The computer displays a detailed fractal."
+    ],
+    "grid": [
+      "A network of crossing lines used to divide a surface into regular spaces.",
+      "Use the grid to position each icon."
+    ],
+    "array": [
+      "An ordered arrangement of objects, often in rows and columns.",
+      "Arrange the dots in a rectangular array."
+    ],
+    "matrix": [
+      "A rectangular arrangement of numbers or expressions in rows and columns.",
+      "Enter the values into the matrix."
+    ],
+    "mosaic": [
+      "A picture or design made from small pieces placed together.",
+      "The wall has a colorful mosaic."
+    ],
+    "kaleidoscope": [
+      "A viewing tube with mirrors that produce changing patterns from colored pieces.",
+      "Turn the kaleidoscope to change the design."
+    ]
+  },
+  "numbers-counting": {
+    "one": [
+      "The number 1, representing a single person, object, or unit.",
+      "I need one ticket for the train."
+    ],
+    "two": ["The number 2, representing one more than a single unit.", "She carries two bags."],
+    "three": ["The number 3, representing one more than two units.", "He buys three apples."],
+    "four": [
+      "The number 4, representing one more than three units.",
+      "There are four chairs around the table."
+    ],
+    "five": [
+      "The number 5, representing one more than four units.",
+      "We need five plates for dinner."
+    ],
+    "six": [
+      "The number 6, representing one more than five units.",
+      "The packet contains six eggs."
+    ],
+    "seven": ["The number 7, representing one more than six units.", "I work seven hours today."],
+    "eight": [
+      "The number 8, representing one more than seven units.",
+      "The shelf holds eight cups."
+    ],
+    "nine": ["The number 9, representing one more than eight units.", "The shop has nine boxes."],
+    "ten": ["The number 10, representing one more than nine units.", "The walk takes ten minutes."],
+    "eleven": [
+      "The number 11, representing one more than ten units.",
+      "Eleven people are waiting for the bus."
+    ],
+    "twelve": [
+      "The number 12, representing one more than eleven units.",
+      "The baker puts twelve rolls on the tray."
+    ],
+    "thirteen": [
+      "The number 13, representing one more than twelve units.",
+      "Thirteen students joined the course."
+    ],
+    "fourteen": [
+      "The number 14, representing one more than thirteen units.",
+      "The display contains fourteen wooden figures."
+    ],
+    "fifteen": [
+      "The number 15, representing one more than fourteen units.",
+      "I will return in fifteen minutes."
+    ]
+  },
+  "family": {
+    "mother": [
+      "A female parent who raises or cares for a child.",
+      "My mother called to ask about my new job."
+    ],
+    "father": [
+      "A male parent who raises or cares for a child.",
+      "Her father helped her move into the apartment."
+    ],
+    "siblings": [
+      "Brothers and sisters in the same family.",
+      "My siblings live in different cities."
+    ],
+    "twin": [
+      "One of two children born from the same pregnancy.",
+      "My twin and I have the same birthday."
+    ],
+    "mom": ["An informal word for a female parent.", "I called my mom after work."],
+    "morning-routine": [
+      "The usual activities you do after waking up to start your day.",
+      "Breakfast is part of my morning routine."
+    ],
+    "trust": [
+      "Confidence that someone is honest, reliable, and will treat you well.",
+      "Trust grows when family members keep their promises."
+    ],
+    "protection": [
+      "The act of keeping someone safe from harm or danger.",
+      "The family offered protection during a difficult time."
+    ],
+    "bond": [
+      "A close connection between people who care about one another.",
+      "They share a strong family bond.",
+      "رابطة"
+    ],
+    "heritage": [
+      "Traditions, values, and history passed down from earlier generations.",
+      "The family celebrates its cultural heritage."
+    ]
+  }
+}

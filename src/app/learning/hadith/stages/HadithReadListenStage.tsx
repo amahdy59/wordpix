@@ -84,7 +84,7 @@ export function HadithReadListenStage({
       </header>
 
       {/* Main Bilingual Source Cards */}
-      <div className={parallelReading ? "grid gap-6 lg:grid-cols-2 lg:items-stretch" : "space-y-6"}>
+      <div className={parallelReading ? "grid items-start gap-6 lg:grid-cols-2" : "space-y-6"}>
         {/* 1. Classical Arabic Card */}
         <article className="flex flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
           <div>
@@ -97,7 +97,7 @@ export function HadithReadListenStage({
             </div>
 
             <p
-              className="mt-6 font-serif text-2xl font-bold leading-[2.35] text-foreground sm:text-3xl"
+              className="mt-6 whitespace-pre-line font-serif text-2xl font-bold leading-[2] text-foreground"
               lang="ar"
               dir="rtl"
             >
@@ -133,13 +133,18 @@ export function HadithReadListenStage({
               <Globe className="size-4 text-primary" aria-hidden />
             </div>
 
-            <p
-              className="mt-6 text-base font-semibold leading-8 text-foreground sm:text-lg sm:leading-9"
+            <div
+              className="mt-6 space-y-4 text-base font-semibold leading-8 text-foreground sm:text-lg"
               lang="en"
               dir="ltr"
             >
-              {source.translation}
-            </p>
+              {source.translation
+                .split(/\n+/)
+                .filter(Boolean)
+                .map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+            </div>
 
             <p className="mt-5 rounded-xl bg-muted/50 px-3.5 py-2 text-xs font-bold italic text-muted-foreground">
               {source.citation}

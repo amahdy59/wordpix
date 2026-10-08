@@ -34,11 +34,11 @@
       "مقياس ضغط العين",
       "منظار العين",
       "توسيع حدقة العين",
-      "مجال الرؤية",
+      "مجال بصري",
       "انكسار بصري",
       "اختبار تغطية العين",
       "جهاز قياس الانكسار الآلي",
-      "مقياس تحدب القرنية",
+      "مقياس تحدّب القرنية",
       "جهاز قياس مجال الرؤية",
       "كاميرا قاع العين",
       "جهاز تصوير OCT"
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the eye doctor 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Perimeter, Fundus Camera, OCT Scanner. The next step focuses on Perimeter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Perimeter, Fundus Camera, OCT Scanner in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Email",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with eye chart, phoropter, and slit lamp. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with retinoscope, tonometer, and ophthalmoscope. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 1: A short reading",
+      "text": "Omar visits the eye doctor for an examination. He reads letters on an eye chart and looks through a phoropter. The doctor uses a slit lamp for another part of the examination. Maya learns these names from equipment photographs. Omar asks what the next test involves before following the doctor's instructions.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eye Chart"
+        "prompt": "During a routine care or examination situation, an adult reviews Eye Chart, Phoropter, Slit Lamp. The next step focuses on Eye Chart.\nWhich option is the focus of the next step?",
+        "answer": "Eye Chart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retinoscope"
+        "prompt": "During a routine care or examination situation, an adult reviews Retinoscope, Tonometer, Ophthalmoscope. The next step focuses on Retinoscope.\nWhich option is the focus of the next step?",
+        "answer": "Retinoscope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pupil Dilation"
+        "prompt": "During a routine care or examination situation, an adult reviews Pupil Dilation, Visual Field, Refraction. The next step focuses on Pupil Dilation.\nWhich option is the focus of the next step?",
+        "answer": "Pupil Dilation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cover Test"
+        "prompt": "During a routine care or examination situation, an adult reviews Cover Test, Autorefractor, Keratometer. The next step focuses on Cover Test.\nWhich option is the focus of the next step?",
+        "answer": "Cover Test",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Perimeter"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Eye Chart"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Retinoscope"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Perimeter, Fundus Camera, OCT Scanner. The next step focuses on Perimeter.\nWhich option is the focus of the next step?",
+        "answer": "Perimeter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Emergency Kit” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar read during the examination?",
+        "answer": "Letters on an eye chart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -212,8 +223,8 @@
     "usage": {
       "goal": "Learn to use the eye doctor 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Hinge, Bifocals, Progressive Lenses. The next step focuses on Hinge. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Hinge, Bifocals, Progressive Lenses in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Personal Message",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with biomicroscope, amsler grid, and ishihara plates. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with glasses, sunglasses, and contact lens. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 2: A short reading",
+      "text": "Maya compares glasses and contact lenses at the clinic. She looks at different frames and chooses a case for her glasses. In class, Omar identifies an Amsler grid and Ishihara plates from pictures. They separate equipment used for testing vision from items people wear, then compare their answers with the key.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Biomicroscope"
+        "prompt": "During a routine care or examination situation, an adult reviews Biomicroscope, Amsler Grid, Ishihara Plates. The next step focuses on Biomicroscope.\nWhich option is the focus of the next step?",
+        "answer": "Biomicroscope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Glasses"
+        "prompt": "During a routine care or examination situation, an adult reviews Glasses, Sunglasses, Contact Lens. The next step focuses on Glasses.\nWhich option is the focus of the next step?",
+        "answer": "Glasses",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frame"
+        "prompt": "During a routine care or examination situation, an adult reviews Frame, Lens, Case. The next step focuses on Frame.\nWhich option is the focus of the next step?",
+        "answer": "Frame",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cleaning Cloth"
+        "prompt": "During a routine care or examination situation, an adult reviews Cleaning Cloth, Nose Pad, Temple. The next step focuses on Cleaning Cloth.\nWhich option is the focus of the next step?",
+        "answer": "Cleaning Cloth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hinge"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Biomicroscope"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Glasses"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Hinge, Bifocals, Progressive Lenses. The next step focuses on Hinge.\nWhich option is the focus of the next step?",
+        "answer": "Hinge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Eye Chart” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya choose for her glasses?",
+        "answer": "A case",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -364,7 +386,7 @@
       "نظارات سباحة",
       "طبقة مضادة للانعكاس",
       "نظارات ترشيح الضوء الأزرق",
-      "عدسات متغيرة اللون مع الضوء",
+      "عدسات متغيّرة اللون مع الضوء",
       "قصير النظر",
       "طويل النظر",
       "استجماتيزم",
@@ -373,13 +395,13 @@
       "عين جاف",
       "مصاب بعمى الألوان",
       "كسل العين",
-      "حول العينين"
+      "حَوَل العينين"
     ],
     "usage": {
       "goal": "Learn to use the eye doctor 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Color Blind, Lazy Eye, Crossed Eyes. The next step focuses on Color Blind. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Color Blind, Lazy Eye, Crossed Eyes in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Short Dialogue",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with reading glasses, safety goggles, and swimming goggles. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with anti-glare coating, blue light glasses, and transition lenses. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 3: A short reading",
+      "text": "Omar asks about reading glasses at the clinic. Maya looks at safety goggles for work. A display also shows swimming goggles and transition lenses. They learn nearsighted, farsighted, and astigmatism from the clinic's information sheet. Each term has a different meaning, so they write separate definitions in their vocabulary notes.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reading Glasses"
+        "prompt": "During a routine care or examination situation, an adult reviews Reading Glasses, Safety Goggles, Swimming Goggles. The next step focuses on Reading Glasses.\nWhich option is the focus of the next step?",
+        "answer": "Reading Glasses",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Anti-Glare Coating"
+        "prompt": "During a routine care or examination situation, an adult reviews Anti-Glare Coating, Blue Light Glasses, Transition Lenses. The next step focuses on Anti-Glare Coating.\nWhich option is the focus of the next step?",
+        "answer": "Anti-Glare Coating",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nearsighted"
+        "prompt": "During a routine care or examination situation, an adult reviews Nearsighted, Farsighted, Astigmatism. The next step focuses on Nearsighted.\nWhich option is the focus of the next step?",
+        "answer": "Nearsighted",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Glaucoma"
+        "prompt": "During a routine care or examination situation, an adult reviews Glaucoma, Cataract, Dry Eye. The next step focuses on Glaucoma.\nWhich option is the focus of the next step?",
+        "answer": "Glaucoma",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Color Blind"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Reading Glasses"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Anti-Glare Coating"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Color Blind, Lazy Eye, Crossed Eyes. The next step focuses on Color Blind.\nWhich option is the focus of the next step?",
+        "answer": "Color Blind",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Biomicroscope” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya look at for work?",
+        "answer": "Safety goggles",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -526,7 +559,7 @@
     ],
     "targetWordsArabic": [
       "عوائم بصرية",
-      "التنكس البقعي",
+      "تنكس بقعي",
       "اعتلال الشبكية السكري",
       "التهاب الملتحمة",
       "شعيرة العين",
@@ -544,8 +577,8 @@
     "usage": {
       "goal": "Learn to use the eye doctor 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Laser Surgery, Lens Implant, Patching. The next step focuses on Laser Surgery. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Laser Surgery, Lens Implant, Patching in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Tips/Notice",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with floaters, macular degeneration, and diabetic retinopathy. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with conjunctivitis, stye, and corneal ulcer. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 4: A short reading",
+      "text": "Maya reads a vocabulary sheet about eye conditions. It includes floaters, conjunctivitis, and a stye, each with its own description. Omar checks the meaning of retinal detachment. They do not use the terms interchangeably. The teacher asks them to match each term to the information provided and explain how the descriptions differ.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Floaters"
+        "prompt": "During a routine care or examination situation, an adult reviews Floaters, Macular Degeneration, Diabetic Retinopathy. The next step focuses on Floaters.\nWhich option is the focus of the next step?",
+        "answer": "Floaters",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conjunctivitis"
+        "prompt": "During a routine care or examination situation, an adult reviews Conjunctivitis, Stye, Corneal Ulcer. The next step focuses on Conjunctivitis.\nWhich option is the focus of the next step?",
+        "answer": "Conjunctivitis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Keratoconus"
+        "prompt": "During a routine care or examination situation, an adult reviews Keratoconus, Presbyopia, Retinal Detachment. The next step focuses on Keratoconus.\nWhich option is the focus of the next step?",
+        "answer": "Keratoconus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Amblyopia"
+        "prompt": "During a routine care or examination situation, an adult reviews Amblyopia, Prescription, Eye Drops. The next step focuses on Amblyopia.\nWhich option is the focus of the next step?",
+        "answer": "Amblyopia",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Laser Surgery"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Floaters"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Conjunctivitis"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Laser Surgery, Lens Implant, Patching. The next step focuses on Laser Surgery.\nWhich option is the focus of the next step?",
+        "answer": "Laser Surgery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Reading Glasses” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which term does Omar check the meaning of?",
+        "answer": "Retinal detachment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -700,7 +744,7 @@
       "جراحة PRK لتصحيح النظر",
       "جراحة مياه بيضاء",
       "حقن داخل الجسم الزجاجي",
-      "زراعة القرنية",
+      "زراعة قرنية",
       "علاج مضاد لعامل نمو بطانة الأوعية (Anti-VEGF)",
       "دموع صناعية",
       "كمادة دافئة",
@@ -710,8 +754,8 @@
     "usage": {
       "goal": "Learn to use the eye doctor 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Warm Compress, Eye Patch, Vision Therapy. The next step focuses on Warm Compress. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Warm Compress, Eye Patch, Vision Therapy in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Everyday Description",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with therapy, medication, and dilation drops. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with corrective lens, prism, and lasik. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 5: A short reading",
+      "text": "Omar reads the appointment information before visiting the clinic. The leaflet explains corrective lenses and dilation drops. Another section introduces cataract surgery, LASIK, and PRK surgery. Maya practices asking what a term means in English. At the clinic, Omar takes his questions to the eye-care professional before making decisions about treatment.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Therapy"
+        "prompt": "During a routine care or examination situation, an adult reviews Therapy, Medication, Dilation Drops. The next step focuses on Therapy.\nWhich option is the focus of the next step?",
+        "answer": "Therapy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Corrective Lens"
+        "prompt": "During a routine care or examination situation, an adult reviews Corrective Lens, Prism, LASIK. The next step focuses on Corrective Lens.\nWhich option is the focus of the next step?",
+        "answer": "Corrective Lens",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "PRK Surgery"
+        "prompt": "During a routine care or examination situation, an adult reviews PRK Surgery, Cataract Surgery, Intravitreal Injection. The next step focuses on PRK Surgery.\nWhich option is the focus of the next step?",
+        "answer": "PRK Surgery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Corneal Transplant"
+        "prompt": "During a routine care or examination situation, an adult reviews Corneal Transplant, Anti-VEGF Therapy, Artificial Tears. The next step focuses on Corneal Transplant.\nWhich option is the focus of the next step?",
+        "answer": "Corneal Transplant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Warm Compress"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Therapy"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Corrective Lens"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Warm Compress, Eye Patch, Vision Therapy. The next step focuses on Warm Compress.\nWhich option is the focus of the next step?",
+        "answer": "Warm Compress",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Floaters” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who does Omar ask about treatment?",
+        "answer": "The eye-care professional",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -864,20 +919,20 @@
       "عصب بصري",
       "جفن",
       "رمش",
-      "القناة الدمعية",
+      "قناة دمعية",
       "صلبة العين",
       "بقعة صفراء",
-      "الجسم الزجاجي",
-      "الخلط المائي",
-      "الجسم الهدبي",
+      "جسم زجاجي",
+      "سائل مائي داخل العين",
+      "جسم هدبي",
       "ملتحمة",
       "مشيمية"
     ],
     "usage": {
       "goal": "Learn to use the eye doctor 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Ciliary Body, Conjunctiva, Choroid. The next step focuses on Ciliary Body. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Ciliary Body, Conjunctiva, Choroid in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Email",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with iris, pupil, and cornea. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with retina, optic nerve, and eyelid. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 6: A short reading",
+      "text": "Maya labels a diagram of the eye. She identifies the iris, pupil, cornea, and retina. Omar marks the optic nerve on another drawing. An eyelid, eyelash, and tear duct are shown in a front view. They compare the views to understand which structures are visible from outside and which are inside the eye.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Iris"
+        "prompt": "During a routine care or examination situation, an adult reviews Iris, Pupil, Cornea. The next step focuses on Iris.\nWhich option is the focus of the next step?",
+        "answer": "Iris",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retina"
+        "prompt": "During a routine care or examination situation, an adult reviews Retina, Optic Nerve, Eyelid. The next step focuses on Retina.\nWhich option is the focus of the next step?",
+        "answer": "Retina",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eyelash"
+        "prompt": "During a routine care or examination situation, an adult reviews Eyelash, Tear Duct, Sclera. The next step focuses on Eyelash.\nWhich option is the focus of the next step?",
+        "answer": "Eyelash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Macula"
+        "prompt": "During a routine care or examination situation, an adult reviews Macula, Vitreous Humor, Aqueous Humor. The next step focuses on Macula.\nWhich option is the focus of the next step?",
+        "answer": "Macula",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ciliary Body"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Iris"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Retina"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Ciliary Body, Conjunctiva, Choroid. The next step focuses on Ciliary Body.\nWhich option is the focus of the next step?",
+        "answer": "Ciliary Body",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Therapy” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar mark on his drawing?",
+        "answer": "The optic nerve",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1024,7 +1090,7 @@
     ],
     "targetWordsArabic": [
       "نقرة مركزية",
-      "البقعة العمياء",
+      "نقطة عمياء",
       "الغدة الدمعية",
       "غرفة انتظار",
       "كرسي فحص",
@@ -1042,8 +1108,8 @@
     "usage": {
       "goal": "Learn to use the eye doctor 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1105,45 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Appointment, Pre-Testing Room, Optical Dispensary. The next step focuses on Appointment. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Appointment, Pre-Testing Room, Optical Dispensary in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Personal Message",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with fovea, blind spot, and lacrimal gland. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with waiting room, exam chair, and display wall. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 7: A short reading",
+      "text": "Omar waits in the waiting room while Maya looks at the display wall. A worker brings a trial frame to the examination chair. In a lesson diagram, Maya identifies the fovea, blind spot, and lacrimal gland. She keeps those labels separate from the clinic furniture names before checking her vocabulary notes.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fovea"
+        "prompt": "During a routine care or examination situation, an adult reviews Fovea, Blind Spot, Lacrimal Gland. The next step focuses on Fovea.\nWhich option is the focus of the next step?",
+        "answer": "Fovea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waiting Room"
+        "prompt": "During a routine care or examination situation, an adult reviews Waiting Room, Exam Chair, Display Wall. The next step focuses on Waiting Room.\nWhich option is the focus of the next step?",
+        "answer": "Waiting Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
+        "prompt": "During a routine care or examination situation, an adult reviews Mirror, Trial Frame, Case Drawer. The next step focuses on Mirror.\nWhich option is the focus of the next step?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer"
+        "prompt": "During a routine care or examination situation, an adult reviews Computer, Receipt, Insurance Card. The next step focuses on Computer.\nWhich option is the focus of the next step?",
+        "answer": "Computer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Appointment"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Fovea"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Waiting Room"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Appointment, Pre-Testing Room, Optical Dispensary. The next step focuses on Appointment.\nWhich option is the focus of the next step?",
+        "answer": "Appointment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1152,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Iris” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Omar wait?",
+        "answer": "In the waiting room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1190,8 +1267,8 @@
     "usage": {
       "goal": "Learn to use the eye doctor 8 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the eye doctor.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1217,33 +1294,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a the eye doctor context illustrating this situation: During a routine care or examination situation, an adult reviews Frame Display, Adjustment Tools, Ultrasonic Cleaner. The next step focuses on Frame Display. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the eye doctor scene showing lesson-related items or actions including Frame Display, Adjustment Tools, Ultrasonic Cleaner in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Eye Doctor: Short Dialogue",
-      "text": "Omar has an everyday task connected to the eye doctor. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with lens edger, pupilometer, and lensometer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with frame display, adjustment tools, and ultrasonic cleaner. Each term belongs to a different part of the care process.",
+      "title": "The Eye Doctor 8: A short reading",
+      "text": "The clinic's work area has a lens edger, a pupilometer, and a lensometer. An assistant explains the names during a tour. Maya sees a frame display near the reception desk. Omar watches a worker organize adjustment tools beside an ultrasonic cleaner. They record the equipment names and match them to the photographs from their lesson.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Eye Doctor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lens Edger"
+        "prompt": "During a routine care or examination situation, an adult reviews Lens Edger, Pupilometer, Lensometer. The next step focuses on Lens Edger.\nWhich option is the focus of the next step?",
+        "answer": "Lens Edger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frame Display"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Lens Edger"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Frame Display"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Frame Display, Adjustment Tools, Ultrasonic Cleaner. The next step focuses on Frame Display.\nWhich option is the focus of the next step?",
+        "answer": "Frame Display",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1252,6 +1324,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Fovea” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar see beside the adjustment tools?",
+        "answer": "An ultrasonic cleaner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

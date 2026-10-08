@@ -8,7 +8,7 @@ test("all Hadith routes use the requested lesson and one canonical source block"
   await expect(page.getByRole("heading", { name: "Hope, Prayer, and Forgiveness" })).toBeVisible();
   await expect(page.getByRole("main").getByText("Lesson 42 of 42", { exact: true })).toBeVisible();
 
-  await page.getByRole("button", { name: /Read & Listen/ }).click();
+  await page.getByRole("tab", { name: /Read & Listen/ }).click();
   const canonical = page.getByText(/O son of Adam, so long as you call upon Me/i, {
     exact: true,
   });
@@ -33,10 +33,13 @@ test("Hadith lesson is accessible and contained on mobile", async ({ page }) => 
 
 test("Hadith 2 practice provides ten questions and restores the next stage", async ({ page }) => {
   await page.goto("/#/hadith/lesson-2");
-  await page.getByRole("button", { name: /Practice/ }).click();
+  await page.getByRole("tab", { name: /Practice/ }).click();
 
   await page.getByRole("radio", { name: "Jibril (Gabriel)", exact: true }).click();
+  await expect(page.locator("[data-quiz-question]")).toHaveCount(1);
+  await page.getByRole("button", { name: "Next Question", exact: true }).click();
   await page.getByRole("radio", { name: "Tell me and explain the topic", exact: true }).click();
+  await page.getByRole("button", { name: "Next Question", exact: true }).click();
   for (const label of [
     "Arrival and scene",
     "Islam and its pillars",
@@ -51,7 +54,7 @@ test("Hadith 2 practice provides ten questions and restores the next stage", asy
   await page.waitForTimeout(700);
   await page.reload();
   await expect(page.getByText("Saved progress restored", { exact: true })).toBeVisible();
-  await expect(page.getByRole("button", { name: /Discussion/ })).toHaveAttribute(
+  await expect(page.getByRole("tab", { name: "Review & Apply", exact: true })).toHaveAttribute(
     "aria-current",
     "step"
   );
@@ -66,7 +69,7 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
   await expect(page.getByRole("button", { name: /Warm-up/ })).toHaveCount(0);
   await expect(page.getByRole("button", { name: "Listen slowly" })).toBeVisible();
 
-  await page.getByRole("button", { name: /Vocabulary/ }).click();
+  await page.getByRole("tab", { name: /Vocabulary/ }).click();
   await expect(
     page.getByRole("heading", { name: "Core expressions, pictures, and use" })
   ).toBeVisible();
@@ -79,19 +82,27 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
     page.getByRole("button", { name: "Play pronunciation for thoughtful action", exact: true })
   ).toBeVisible();
 
-  await page.getByRole("button", { name: /Practice/ }).click();
-  await expect(page.locator("[data-quiz-question]")).toHaveCount(10);
-  await expect(page.getByAltText("Vocabulary picture clue")).toBeVisible();
+  await page.getByRole("tab", { name: /Practice/ }).click();
+  await expect(page.locator("[data-quiz-question]")).toHaveCount(1);
+  await expect(page.getByRole("progressbar", { name: "Practice completion" })).toHaveAttribute(
+    "aria-valuemax",
+    "10"
+  );
+  await expect(
+    page.getByRole("radiogroup", {
+      name: /Which word means your clear reason or plan for doing something/,
+    })
+  ).toBeVisible();
+  await page.getByRole("radio", { name: "intention", exact: true }).click();
+  await page.getByRole("button", { name: "Next Question", exact: true }).click();
   await expect(
     page.getByRole("radiogroup", {
       name: /What main message does the Hadith teach about an action/,
     })
   ).toBeVisible();
-  await page.getByRole("button", { name: /Discussion/ }).click();
-  await expect(
-    page.getByRole("heading", { name: "Make the Hadith useful in your life" })
-  ).toBeVisible();
-  await expect(page.getByText("Show sample answer", { exact: true })).toHaveCount(4);
+  await page.getByRole("tab", { name: "Review & Apply", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Guided discussion" })).toBeVisible();
+  await expect(page.getByText("Show sample answer", { exact: true })).toHaveCount(1);
 
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

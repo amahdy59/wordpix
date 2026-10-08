@@ -5,7 +5,7 @@
     "arabicTranslation": "محطة شحن مركبات كهربائية"
   },
   "connector": {
-    "definition": "An instrumentality that connects.",
+    "definition": "The part at the end of a charging cable that connects to a vehicle.",
     "arabicTranslation": "موصل",
     "exampleUsage": "The connector was used during the activity."
   },
@@ -23,12 +23,12 @@
     "exampleUsage": "The adapter was used during the activity."
   },
   "level-1": {
-    "definition": "To level a surface is to flatten it by removing bumps and uneven parts.",
-    "arabicTranslation": "1 مستوٍ"
+    "definition": "In North American terminology, AC vehicle charging using a standard 120-volt supply.",
+    "arabicTranslation": "شحن التيار المتردد من المستوى الأول"
   },
   "level-2": {
-    "definition": "To level a surface is to flatten it by removing bumps and uneven parts.",
-    "arabicTranslation": "2 مستوٍ"
+    "definition": "In North American terminology, AC vehicle charging using a 208- or 240-volt supply.",
+    "arabicTranslation": "شحن التيار المتردد من المستوى الثاني"
   },
   "dc-fast-charger": {
     "definition": "A high-power charger that supplies direct current to an electric vehicle battery for relatively rapid charging.",
@@ -52,12 +52,12 @@
   },
   "electric-motor": {
     "definition": "A machine that converts electrical energy into rotational motion, usually by using coils and magnets to create a turning force.",
-    "arabicTranslation": "آلة يُسمّى «يليكتريك موتور»",
+    "arabicTranslation": "محرك كهربائي",
     "exampleUsage": "The electric motor was used during the activity."
   },
   "regenerative-braking": {
     "definition": "A braking system in electric and hybrid vehicles that changes some energy from motion into electricity and stores it in the battery.",
-    "arabicTranslation": "مركبة يُسمّى «ريجينيراتيفي براكينج»"
+    "arabicTranslation": "كبح استرجاعي"
   },
   "inverter": {
     "definition": "An electrical converter that converts direct current into alternating current.",
@@ -84,12 +84,12 @@
     "arabicTranslation": "إلكترونيات القدرة"
   },
   "bms": {
-    "definition": "Solid excretory product evacuated from the bowels.",
+    "definition": "A battery management system that monitors and controls a battery pack.",
     "arabicTranslation": "نظام إدارة البطارية"
   },
   "cell": {
-    "definition": "(biology) the basic structural and functional unit of all organisms.",
-    "arabicTranslation": "خلية"
+    "definition": "One electrochemical unit within a battery that stores and supplies electrical energy.",
+    "arabicTranslation": "خلية بطارية"
   },
   "parking-spot": {
     "definition": "A marked space where a vehicle may be parked.",
@@ -102,11 +102,11 @@
   },
   "solar-panel": {
     "definition": "A device with linked semiconductor cells that changes sunlight directly into electrical power.",
-    "arabicTranslation": "جهاز يُسمّى «سولار بانيل»",
+    "arabicTranslation": "لوح شمسي",
     "exampleUsage": "The solar panel was used during the activity."
   },
   "lighting": {
-    "definition": "Having abundant light or illumination.",
+    "definition": "Lights installed to illuminate the charging area.",
     "arabicTranslation": "إضاءة"
   },
   "signage": {
@@ -114,12 +114,12 @@
     "arabicTranslation": "لافتات"
   },
   "bollard": {
-    "definition": "A strong post (as on a wharf or quay or ship for attaching mooring lines).",
-    "arabicTranslation": "حاجز عمودي"
+    "definition": "A short strong post used to protect equipment or control vehicle access.",
+    "arabicTranslation": "عمود حماية"
   },
   "curb": {
-    "definition": "A stock exchange in New York, previously known as the New York Curb Exchange.",
-    "arabicTranslation": "رصيف مرتفع"
+    "definition": "The raised edge separating a roadway or parking area from a sidewalk.",
+    "arabicTranslation": "حافة الرصيف"
   },
   "handicap-space": {
     "definition": "A parking space reserved for vehicles used by people with disabilities who meet local eligibility rules.",
@@ -127,7 +127,7 @@
     "arabicTranslation": "مكان مخصص لذوي الإعاقة"
   },
   "bench": {
-    "definition": "A level shelf of land interrupting a declivity (with steep slopes above and below).",
+    "definition": "A long seat for several people.",
     "arabicTranslation": "مقعد"
   },
   "rfid-card": {
@@ -137,19 +137,19 @@
   },
   "mobile-app": {
     "definition": "A software program built to work on a smartphone or tablet, usually obtained through an app store or another digital platform.",
-    "arabicTranslation": "برنامج يُسمّى «موبيلي ابب»"
+    "arabicTranslation": "تطبيق هاتف"
   },
   "qr-code": {
-    "definition": "A QR code uses a shared standard that defines its square pattern, information capacity, versions, and error correction, so different devices and apps can scan it reliably.",
-    "arabicTranslation": "جهاز يُسمّى «كر كودي»",
+    "definition": "A square pattern that a device can scan to read information.",
+    "arabicTranslation": "رمز استجابة سريعة",
     "exampleUsage": "The qr code was used during the activity."
   },
   "account": {
-    "definition": "A record or narrative description of past events.",
+    "definition": "A registered user's record for accessing and paying for charging services.",
     "arabicTranslation": "حساب"
   },
   "subscription": {
-    "definition": "A payment for consecutive issues of a newspaper or magazine for a given period of time.",
+    "definition": "An agreement to pay regularly for access to a charging service.",
     "arabicTranslation": "اشتراك"
   },
   "per-kwh": {
@@ -167,7 +167,7 @@
     "arabicTranslation": "إيصال"
   },
   "network": {
-    "definition": "An interconnected system of things or people.",
+    "definition": "A group of charging stations operated or connected under a shared service.",
     "arabicTranslation": "شبكة"
   },
   "roaming": {
@@ -180,17 +180,17 @@
     "arabicTranslation": "كيلوواط"
   },
   "state-of-charge": {
-    "definition": "A device indicator shows the amount of electrical charge remaining in its battery.",
-    "arabicTranslation": "جهاز يُسمّى «ستاتي وف تشارجي»",
+    "definition": "The amount of charge remaining in a battery, often shown as a percentage.",
+    "arabicTranslation": "مستوى شحن البطارية",
     "exampleUsage": "The state of charge was used during the activity."
   },
   "range": {
-    "definition": "An area in which something acts or operates or has power or control:.",
-    "arabicTranslation": "مدى"
+    "definition": "The distance an electric vehicle can travel with its available battery charge.",
+    "arabicTranslation": "مدى السير"
   },
   "voltage": {
-    "definition": "The rate at which energy is drawn from a source that produces a flow of electricity in a circuit.",
-    "arabicTranslation": "جهد كهربائي"
+    "definition": "The electrical potential difference between two points, measured in volts.",
+    "arabicTranslation": "فرق الجهد الكهربائي"
   },
   "amperage": {
     "definition": "The strength of an electrical current measured in amperes.",
@@ -216,7 +216,7 @@
     "arabicTranslation": "تكلفة"
   },
   "efficiency": {
-    "definition": "Skillfulness in avoiding wasted time and effort.",
+    "definition": "How effectively a system uses energy, with less energy lost or wasted.",
     "arabicTranslation": "كفاءة"
   },
   "ground-fault": {
@@ -225,8 +225,8 @@
     "arabicTranslation": "عطل تسريب أرضي"
   },
   "emergency-stop": {
-    "definition": "Describes a device or control built to halt machinery at once during an emergency, reducing the risk of injury or damage.",
-    "arabicTranslation": "جهاز يُسمّى «يميرجينكي ستوب»",
+    "definition": "A control that immediately stops equipment in an emergency.",
+    "arabicTranslation": "زر توقف طارئ",
     "exampleUsage": "The emergency stop was used during the activity."
   },
   "ventilation": {
@@ -239,7 +239,7 @@
   },
   "firmware-update": {
     "definition": "A manufacturer-provided software package changes the built-in instructions that control a hardware device. It may fix faults, close security gaps, or add new functions.",
-    "arabicTranslation": "جهاز يُسمّى «فيرمواري وبداتي»",
+    "arabicTranslation": "تحديث البرنامج الثابت",
     "exampleUsage": "The firmware update was used during the activity."
   },
   "weatherproof": {
@@ -252,11 +252,11 @@
     "arabicTranslation": "مقاوم للعبث"
   },
   "lockout": {
-    "definition": "A management action resisting employee's demands.",
-    "arabicTranslation": "قفل أمان"
+    "definition": "A safety procedure that isolates equipment from its energy supply before work.",
+    "arabicTranslation": "عزل مصادر الطاقة وقفلها"
   },
   "certification": {
-    "definition": "The act of certifying or bestowing a franchise on.",
+    "definition": "Confirmation by an authorized body that equipment meets specified requirements.",
     "arabicTranslation": "شهادة اعتماد"
   },
   "warranty": {

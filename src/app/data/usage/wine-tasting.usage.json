@@ -33,7 +33,7 @@
       "آثار السائل على الكأس",
       "جنط",
       "عتامة",
-      "لون يسمى «هوي»",
+      "درجة اللون",
       "عمق",
       "لمعان",
       "رواسب",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Nose as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Wine Tasting: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Color"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color, Clarity, Viscosity, and Legs and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Color",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rim"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rim, Opacity, Hue, and Depth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brilliance"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brilliance, Sediment, Aroma, and Bouquet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brilliance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nose"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nose, Floral, and Fruity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Nose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -193,7 +206,7 @@
     ],
     "targetWordsArabic": [
       "ترابي",
-      "متبل",
+      "متبّل",
       "عشبي",
       "معدني",
       "ذو طابع خشبي من البلوط",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Structure as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: Wine Tasting",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Earthy"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthy, Spicy, Herbaceous, and Mineral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Earthy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oaky"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oaky, Body, Tannin, and Acidity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Oaky",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sweetness"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sweetness, Finish, Balance, and Complexity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sweetness",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Structure"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Structure, Mouthfeel, and Length and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Structure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -365,13 +391,13 @@
       "قوي",
       "رقيق",
       "غني",
-      "لون يسمى «ليغت»",
+      "خفيف القوام",
       "ممتلئ القوام",
       "تنسيق الجبن مع مشروب",
       "تنسيق أطباق اللحوم مع مشروب",
       "تنسيق المأكولات البحرية مع مشروب",
       "تنسيق الحلوى مع مشروب",
-      "مقبلات"
+      "مقبّلات"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
@@ -427,7 +453,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff illustrating Seafood Pairing through a realistic adult task, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Wine Tasting",
@@ -436,20 +463,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry, Sweet, Crisp, and Smooth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Velvety"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Velvety, Bold, Delicate, and Rich and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Velvety",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Light"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Light, Full-Bodied, Cheese Pairing, and Meat Pairing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seafood Pairing"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seafood Pairing, Dessert Pairing, and Appetizer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Seafood Pairing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -512,9 +551,9 @@
       "Cheese Board"
     ],
     "targetWordsArabic": [
-      "طبق يسمى «ماين كوورسي»",
-      "منظف للحنك بين النكهات",
-      "قائمة تذوق",
+      "طبق رئيسي",
+      "منظّف للحنك بين النكهات",
+      "قائمة تذوّق",
       "مجموعة عينات نبيذ للمقارنة",
       "لوح تقديم الجبن"
     ],
@@ -538,7 +577,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Cheese Board",
+          "targetWords": ["Cheese Board"],
           "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cheese Board and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -548,7 +587,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cheese Board as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Wine Tasting: Practical Information",
@@ -557,12 +597,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Main Course"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Main Course, Palate Cleanser, Tasting Menu, and Wine Flight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Main Course",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cheese Board"
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cheese Board and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cheese Board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

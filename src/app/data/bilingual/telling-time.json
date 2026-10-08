@@ -5,11 +5,11 @@
   },
   "hour-hand": {
     "definition": "The shorter of a clock’s two hands indicates the current hour.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوور هاند»"
+    "arabicTranslation": "عقرب الساعات"
   },
   "minute-hand": {
     "definition": "The longer hand on an analog clock indicates the number of minutes past the hour.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مينوتي هاند»"
+    "arabicTranslation": "عقرب الدقائق"
   },
   "second-hand": {
     "definition": "The thin hand on an analog clock or watch that shows seconds.",
@@ -18,19 +18,19 @@
   },
   "clock-face": {
     "definition": "The front of a clock presents the time using numbers, tick marks, hands, or a digital display.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كلوك فاكي»"
+    "arabicTranslation": "وجه الساعة"
   },
   "digital-clock": {
     "definition": "An electronic clock that displays the hour and minute as numbers instead of using hands on a dial.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديجيتال كلوك»"
+    "arabicTranslation": "ساعة رقمية"
   },
   "sundial": {
     "definition": "Timepiece that indicates the daylight hours by the shadow that the gnomon casts on a calibrated dial.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سونديال»"
+    "arabicTranslation": "ساعة شمسية"
   },
   "hourglass": {
-    "definition": "A sandglass that runs for sixty minutes.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوورجلاسس»"
+    "definition": "A device that measures a set period as sand flows between two glass chambers.",
+    "arabicTranslation": "ساعة رملية"
   },
   "second": {
     "arabicTranslation": "الثاني",
@@ -38,10 +38,10 @@
   },
   "minute": {
     "definition": "A unit of time equal to 60 seconds or 1/60th of an hour.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مينوتي»"
+    "arabicTranslation": "دقيقة"
   },
   "hour": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوور»",
+    "arabicTranslation": "ساعة",
     "definition": "A period of sixty minutes."
   },
   "half-hour": {
@@ -55,24 +55,24 @@
     "definition": "A period of fifteen minutes."
   },
   "noon": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نوون»",
+    "arabicTranslation": "ظهر",
     "definition": "Twelve o'clock in the middle of the day."
   },
   "midnight": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميدنيغت»",
+    "arabicTranslation": "منتصف الليل",
     "definition": "Twelve o'clock at night, between two days."
   },
   "dawn": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «داون»",
+    "arabicTranslation": "فجر",
     "definition": "The time in the morning when daylight first appears."
   },
   "dusk": {
     "definition": "The time of day immediately following sunset.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دوسك»"
+    "arabicTranslation": "غسق"
   },
   "twilight": {
     "definition": "The time of day immediately following sunset.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تويليغت»"
+    "arabicTranslation": "شفق"
   },
   "o-clock": {
     "definition": "Used after a number to state an exact hour on the clock.",
@@ -120,24 +120,24 @@
     "arabicTranslation": "إلا عشر دقائق"
   },
   "sharp": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «شارب»",
-    "definition": "Keenly and painfully felt."
+    "arabicTranslation": "تمامًا في الموعد",
+    "definition": "Exactly at a stated time, without being early or late."
   },
   "morning": {
     "definition": "The time period between dawn and noon.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مورنينج»"
+    "arabicTranslation": "صباح"
   },
   "afternoon": {
     "definition": "The part of the day between noon and evening.",
-    "arabicTranslation": "جزء يُسمّى «افتيرنوون»"
+    "arabicTranslation": "بعد الظهر"
   },
   "evening": {
     "definition": "The latter part of the day (the period of decreasing daylight from late afternoon until nightfall).",
-    "arabicTranslation": "جزء يُسمّى «يفينينج»"
+    "arabicTranslation": "مساء"
   },
   "night": {
     "definition": "The time between sunset and midnight.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيغت»"
+    "arabicTranslation": "ليل"
   },
   "sunrise": {
     "definition": "The time when the sun first appears in the sky.",
@@ -148,7 +148,7 @@
     "arabicTranslation": "غروب الشمس"
   },
   "midday": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميدداي»",
+    "arabicTranslation": "منتصف النهار",
     "definition": "The middle of the day, around twelve o'clock."
   },
   "late-night": {
@@ -157,36 +157,36 @@
     "arabicTranslation": "وقت متأخر من الليل"
   },
   "early-morning": {
-    "definition": "The part of the day between the middle of the night and sunrise, usually beginning around four o’clock and continuing briefly after dawn as darkness gives way to daylight.",
-    "arabicTranslation": "جزء يُسمّى «يارلي مورنينج»"
+    "definition": "The first part of the morning, around sunrise.",
+    "arabicTranslation": "الصباح الباكر"
   },
   "nightfall": {
     "definition": "The time of day immediately following sunset.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيغتفالل»"
+    "arabicTranslation": "حلول الليل"
   },
   "a-m-": {
-    "definition": "A number that keeps another number the same when you add it.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ا.م.»"
+    "definition": "Used with times from midnight up to, but not including, noon.",
+    "arabicTranslation": "قبل الظهر"
   },
   "p-m-": {
-    "definition": "A number that keeps another number the same when you add it.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ب.م.»"
+    "definition": "Used with times from noon up to, but not including, midnight.",
+    "arabicTranslation": "بعد الظهر"
   },
   "on-time": {
     "definition": "Arriving on time means reaching a place at the agreed or expected moment.",
-    "arabicTranslation": "مكان يُسمّى «ون تيمي»"
+    "arabicTranslation": "في الموعد"
   },
   "early": {
     "definition": "At or near the beginning of a period of time or course of events or before the usual or expected time.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يارلي»"
+    "arabicTranslation": "مبكر"
   },
   "late": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لاتي»",
+    "arabicTranslation": "متأخر",
     "definition": "After the expected or planned time."
   },
   "ahead-of-time": {
     "definition": "It refers to doing something earlier than the customary or anticipated time.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اهياد وف تيمي»"
+    "arabicTranslation": "قبل الموعد"
   },
   "behind-schedule": {
     "definition": "Later than the planned time or not progressing as quickly as planned.",
@@ -194,12 +194,12 @@
     "arabicTranslation": "متأخر عن الجدول"
   },
   "overtime": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وفيرتيمي»",
+    "arabicTranslation": "وقت عمل إضافي",
     "definition": "Time worked beyond the usual working hours."
   },
   "countdown": {
     "definition": "Counting backward from an arbitrary number to indicate the time remaining before some event (such as launching a space vehicle).",
-    "arabicTranslation": "مركبة يُسمّى «كوونتدوون»"
+    "arabicTranslation": "عد تنازلي"
   },
   "stopwatch": {
     "definition": "A watch that measures how long an activity takes.",

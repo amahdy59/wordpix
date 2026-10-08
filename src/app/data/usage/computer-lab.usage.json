@@ -106,20 +106,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Desktop Computer"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desktop Computer, Laptop, Monitor, and Keyboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Desktop Computer",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mouse"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mouse, Trackpad, Webcam, and Headset and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mouse",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Printer"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Printer",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Operating System"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Operating System, Browser, and Search Engine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Operating System",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -267,20 +279,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "App"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App, Icon, Menu, and Toolbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "App",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cursor"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cursor, Folder, File, and Window and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cursor",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tab"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Wi-Fi Router, Ethernet Cable, and Server and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tab",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Modem"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modem, Network Switch, and Hotspot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Modem",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -428,20 +452,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Firewall"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Cloud Storage, Download, and Upload and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Firewall",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Charger"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charger, Power Strip, Surge Protector, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Charger",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adapter"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Mouse Pad, Laptop Stand, and Docking Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Adapter",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stylus"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Screen Protector, and Typing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stylus",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -589,20 +625,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scrolling"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scrolling, Clicking, Dragging, and Copying and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Scrolling",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pasting"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pasting, Saving, Printing, and Editing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Pasting",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Searching"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Password, Username, and Log In and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Searching",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Log Out"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Out, Update, and Backup and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Log Out",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -750,20 +798,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Antivirus"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antivirus, Spam, Pop-Up, and Privacy Settings and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Antivirus",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Speaker, Email, and Document and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Computer",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spreadsheet"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spreadsheet, Presentation, Type, and Click and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spreadsheet",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scroll"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scroll, Save, and Search and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scroll",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -843,8 +903,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Code"
+        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Code",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

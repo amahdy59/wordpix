@@ -119,9 +119,9 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
                   onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
                 />
               </MediaFrame>
-            ) : (
+            ) : cluster.microReading.media ? (
               <ScenePlaceholder />
-            )}
+            ) : null}
             <p
               lang="en"
               dir="ltr"

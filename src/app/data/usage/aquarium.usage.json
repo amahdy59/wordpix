@@ -31,14 +31,14 @@
       "سمكة الملاك",
       "سمكة منتفخة",
       "سمكة الأسد",
-      "سمكة يسمى «سووردفيش»",
+      "سمك أبو سيف",
       "فرس البحر",
-      "كائن أو عنصر طبيعي يسمى «ييل»",
+      "سمك أنقليس",
       "شيطان البحر؛ مانتا راي",
       "شفنين لاسع",
-      "سمكة يسمى «بيرانها»",
+      "سمك بيرانا",
       "باراكودا",
-      "سمكة يسمى «كاتفيش»",
+      "سمك سلور",
       "دلفين",
       "حوت",
       "أسد البحر"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the dolphin as the central item; include dolphin, whale, and sea lion naturally where visually appropriate, but make the real-world use of dolphin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Aquarium: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "clownfish"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare clownfish, angelfish, pufferfish, and lionfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "clownfish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "swordfish"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare swordfish, seahorse, eel, and manta ray and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "swordfish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "stingray"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare stingray, piranha, barracuda, and catfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "stingray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "dolphin"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare dolphin, whale, and sea lion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "dolphin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,11 +202,11 @@
     ],
     "targetWordsArabic": [
       "ختم",
-      "حيوان ثديي يسمى «والروس»",
+      "فظ",
       "حوت بيلوغا",
-      "كائن أو عنصر طبيعي يسمى «وركا»",
+      "حوت أوركا",
       "خروف البحر",
-      "كائن أو عنصر طبيعي يسمى «ناروهال»",
+      "حوت وحيد القرن",
       "قضاعة البحر",
       "قنديل البحر",
       "أخطبوط",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the lobster as the central item; include lobster, crab, and shrimp naturally where visually appropriate, but make the real-world use of lobster the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Aquarium",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "seal"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare seal, walrus, beluga whale, and orca and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "seal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "manatee"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare manatee, narwhal, sea otter, and jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "manatee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "octopus"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare octopus, squid, starfish, and sea urchin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "octopus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lobster"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lobster, crab, and shrimp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "lobster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -351,18 +377,18 @@
     "targetWordsArabic": [
       "شقائق النعمان البحرية",
       "خيار البحر",
-      "كائن أو عنصر طبيعي يسمى «ناوتيلوس»",
+      "نوتيلوس",
       "مرجان",
       "شعاب مرجان",
       "غابة عشب بحري كبير",
-      "بركة مد وجزر",
+      "بركة مدّ وجزر",
       "أعماق البحر",
       "حوض مياه استوائية",
       "حوض مياه عذبة",
-      "شجرة يسمى «مانجروفي»",
+      "شجرة مانغروف",
       "حطام سفينة",
       "كهف",
-      "كائن أو عنصر طبيعي يسمى «وبين وكيان»",
+      "المحيط المفتوح",
       "نفق زجاجي"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the cave as the central item; include cave, open ocean, and glass tunnel naturally where visually appropriate, but make the real-world use of cave the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Aquarium",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "anemone"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare anemone, sea cucumber, nautilus, and coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "anemone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "coral reef"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare coral reef, kelp forest, tide pool, and deep sea and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "coral reef",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tropical tank"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tropical tank, freshwater tank, mangrove, and shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "tropical tank",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cave"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare cave, open ocean, and glass tunnel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "cave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -508,15 +547,15 @@
     "targetWordsArabic": [
       "حوض لمس تفاعلي",
       "نافذة مشاهدة",
-      "كائن أو عنصر طبيعي يسمى «تانك»",
-      "يرشح",
+      "حوض مائي",
+      "يرشّح",
       "مضخة",
       "إضاءة",
       "محطة تغذية",
       "لافتة معرض",
       "متجر هدية",
       "شباك التذاكر",
-      "مكان يسمى «جويديد توور»"
+      "جولة برفقة مرشد"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -560,7 +599,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or approaching the gift shop as the main location; include gift shop, ticket counter, and guided tour naturally where visually appropriate, but make the real-world use of gift shop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Aquarium: Practical Information",
@@ -569,16 +609,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "touch pool"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare touch pool, viewing window, tank, and filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "touch pool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pump"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pump, lighting, feeding station, and exhibit sign and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "pump",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "gift shop"
+        "prompt": "In the l6 aquarium setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare gift shop, ticket counter, and guided tour and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "gift shop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

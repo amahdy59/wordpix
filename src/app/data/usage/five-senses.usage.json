@@ -34,14 +34,14 @@
       "شبكية",
       "قرنية",
       "عصب بصري",
-      "الرؤية لون",
-      "إدراك عمق",
-      "الرؤية محيطي",
+      "رؤية الألوان",
+      "إدراك العمق",
+      "رؤية محيطية",
       "صوت",
       "أذن",
       "طبلة الأذن",
       "قوقعة الأذن",
-      "حدة الصوت"
+      "حدّة الصوت"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Eardrum as the central item; include Eardrum, Cochlea, and Pitch naturally where visually appropriate, but make the real-world use of Eardrum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Five Senses",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vision"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Vision",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retina"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Retina",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Depth Perception"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Depth Perception",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eardrum"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Eardrum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -195,13 +208,13 @@
       "عصب سمعي",
       "أنف",
       "فتحة الأنف",
-      "شمي",
+      "شَمّي",
       "رائحة عطرية",
-      "عطر",
+      "عِطر",
       "رائحة",
       "رائحة",
       "رائحة كريهة",
-      "نفاذ",
+      "نفّاذ",
       "تجويف أنفي"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Stench as the central item; include Stench, Pungent, and Nasal Cavity naturally where visually appropriate, but make the real-world use of Stench the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Five Senses",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Volume"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Volume",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Auditory Nerve"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Auditory Nerve",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aroma"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Aroma",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stench"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stench",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -354,11 +380,11 @@
       "حلو",
       "حامض",
       "مالح",
-      "مر",
+      "مُرّ",
       "أومامي",
       "نكهة",
       "حنك",
-      "يتذوق",
+      "يتذوّق",
       "جلد",
       "نهاية عصبية",
       "ضغط",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Pressure through a realistic adult task; include Pressure, Temperature, and Texture naturally where visually appropriate, but make the real-world use of Pressure the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Five Senses",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tongue"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tongue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Salty"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Salty",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Palate"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Palate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pressure"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Pressure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -512,12 +551,12 @@
     "targetWordsArabic": [
       "ألم",
       "دغدغة",
-      "حكة",
+      "حكّة",
       "ناعم",
       "خشن",
       "ساطع",
       "مرتفع الصوت",
-      "عطر",
+      "عَطِر",
       "لذيذ",
       "طري",
       "داكن",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Stinky as the central item; include Stinky, Bland, and Hard naturally where visually appropriate, but make the real-world use of Stinky the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Five Senses",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pain"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rough"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rough",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Delicious"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Delicious",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stinky"
+        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stinky",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

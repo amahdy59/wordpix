@@ -37,8 +37,8 @@
       "شقة علوية مفتوحة",
       "كوخ",
       "منزل دوبلكس",
-      "مبنى مكتب",
-      "متجر تجزئة",
+      "مبنى مكاتب",
+      "متجر بيع بالتجزئة",
       "مستودع",
       "مصنع",
       "مساحة تجارية لمطعم"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Warehouse as the central item; include Warehouse, Factory, and Restaurant Space naturally where visually appropriate, but make the real-world use of Warehouse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: Property Types",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "House"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare House, Apartment, Condo, and Townhouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "House",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Villa"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Villa, Studio, Penthouse, and Loft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Villa",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cottage"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cottage, Duplex, Office Building, and Retail Store and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cottage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Warehouse"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Warehouse, Factory, and Restaurant Space and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Warehouse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -193,13 +206,13 @@
       "متعدد الاستخدامات",
       "صالة عرض",
       "مساحة عمل مشتركة",
-      "ريفي",
-      "منزل ريفي",
+      "منزل ريفي في مزرعة",
+      "منزل بطابق واحد",
       "كوخ خشبي",
       "منزل شاطئ",
       "منزل عائم",
-      "منزل صغير جدا",
-      "أسلوب أو طراز يسمى «موبيلي هومي»",
+      "منزل صغير جدًا",
+      "منزل متنقل",
       "قلعة",
       "قصر",
       "بنغلو"
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Castle as the central item; include Castle, Mansion, and Bungalow naturally where visually appropriate, but make the real-world use of Castle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "What You Need to Know: Property Types",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shopping Center"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shopping Center, Hotel, Mixed-Use, and Showroom and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Shopping Center",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coworking Space"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coworking Space, Farmhouse, Ranch, and Cabin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Coworking Space",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beach House"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beach House, Houseboat, Tiny House, and Mobile Home and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Beach House",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Castle"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Castle, Mansion, and Bungalow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Castle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Parking through a realistic adult task; include Parking, Storage, and Square Footage naturally where visually appropriate, but make the real-world use of Parking the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Square Footage"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Square Footage, Lot Size, Bedrooms, and Bathrooms and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Square Footage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Garage"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garage, Pool, Garden, and View and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Garage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parking"
+        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parking, and Storage and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Parking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

@@ -31,11 +31,11 @@
       "مبتهج",
       "متحمس",
       "فخور",
-      "ممتن",
-      "راضٍ",
+      "ممتن أو شاكر",
+      "راضٍ أو قنوع",
       "مستمتع",
-      "مسرور",
-      "مرح",
+      "مسرور جدًا",
+      "مرح أو بشوش",
       "متفائل",
       "حزين",
       "غاضب",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Scared, Worried, and Frustrated; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
           "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "After the Team Presentation",
@@ -186,16 +187,16 @@
     ],
     "targetWordsArabic": [
       "خائب الأمل",
-      "منزعج",
+      "متضايق أو منزعج",
       "منزعج",
       "ضجر",
       "وحيد",
       "هادئ",
       "متعب",
       "متفاجئ",
-      "مرتبك",
-      "فضولي",
-      "متفكر",
+      "مرتبك أو محتار",
+      "فضولي أو محب للاستطلاع",
+      "متفكّر",
       "مسترخٍ",
       "غير مبالٍ",
       "نعسان",
@@ -267,7 +268,8 @@
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Indifferent, Sleepy, and Alert; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
           "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Long Day at Work",
@@ -341,12 +343,12 @@
       "جائع",
       "عطشان",
       "شبعان",
-      "بارد",
-      "حار",
+      "شاعر بالبرد",
+      "شاعر بالحر",
       "يشعر بالدوار",
       "يشعر بالغثيان",
       "مُنهك",
-      "نشيط",
+      "نشيط وحيوي",
       "مرتاح"
     ],
     "usage": {
@@ -393,7 +395,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Comfortable",
+          "targetWords": ["Comfortable"],
           "scenario": "During an adult workplace or travel situation, people may feel comfortable. The person being discussed feels physically at ease in the chair and room.",
           "check": {
             "question": "Which word best describes the person's state in this situation?",
@@ -403,7 +405,8 @@
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Comfortable; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
           "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Checking How You Feel",

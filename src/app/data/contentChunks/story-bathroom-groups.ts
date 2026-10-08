@@ -11,5 +11,5 @@ export const stories: Record<string, string> = {
   "bathroom-5":
     "In this section, you will learn about Face Cream, Sunscreen, Lip Balm, Hand Soap, Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, and Wet Wipes. These are essential items to know.",
   "bathroom-6":
-    "In this section, you will learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle. These are essential items to know.",
+    "In this section, you will learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take a Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle. These are essential items to know.",
 };

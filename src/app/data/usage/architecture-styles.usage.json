@@ -35,10 +35,10 @@
       "عصر النهضة",
       "باروكي",
       "كلاسيكي جديد",
-      "أسلوب أو طراز يسمى «بياوكس-ارتس»",
+      "طراز بوزار",
       "بالادي",
-      "نبات يسمى «ارت نووفياو»",
-      "شكل يسمى «ارت ديكو»",
+      "طراز الفن الجديد",
+      "طراز آرت ديكو",
       "باوهاوس",
       "حداثي",
       "بروتالي؛ من طراز العمارة الوحشية"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Bauhaus as the central item; include Bauhaus, Modernist, and Brutalist naturally where visually appropriate, but make the real-world use of Bauhaus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Architecture Styles",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Greek"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Greek, Roman, Byzantine, and Romanesque and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Greek",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gothic"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gothic, Renaissance, Baroque, and Neoclassical and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gothic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beaux-Arts"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaux-Arts, Palladian, Art Nouveau, and Art Deco and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Beaux-Arts",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bauhaus"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bauhaus, Modernist, and Brutalist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bauhaus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -201,7 +214,7 @@
       "مستدام",
       "بارامتري",
       "عضوي",
-      "محب للطبيعة",
+      "محبّ للطبيعة",
       "مبنى ذكي",
       "إعادة استخدام تكيفي",
       "صفر صافي",
@@ -267,7 +280,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Net Zero as the central item; include Net Zero, Passive House, and Modular naturally where visually appropriate, but make the real-world use of Net Zero the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: Architecture Styles",
@@ -276,20 +290,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "International Style"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare International Style, Mid-Century Modern, Postmodern, and Deconstructivist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "International Style",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "High-Tech"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare High-Tech, Minimalist, Sustainable, and Parametric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "High-Tech",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Organic"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Organic, Biophilic, Smart Building, and Adaptive Reuse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Organic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Net Zero"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Net Zero, Passive House, and Modular and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Net Zero",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -357,7 +383,7 @@
       "Minaret"
     ],
     "targetWordsArabic": [
-      "قبة",
+      "قُبّة",
       "قوس",
       "قبو معماري",
       "كابولي",
@@ -410,7 +436,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Portico as the central item; include Portico, Minaret, and Dome naturally where visually appropriate, but make the real-world use of Portico the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Architecture Styles",
@@ -419,16 +446,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dome"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dome, Arch, Vault, and Cantilever and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dome",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Facade"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Facade, Atrium, Skylight, and Colonnade and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Facade",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Portico"
+        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portico, and Minaret and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Portico",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

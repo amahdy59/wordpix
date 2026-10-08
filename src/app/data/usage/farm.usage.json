@@ -118,24 +118,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cow"
+        "prompt": "During a routine the farm task, an adult compares Cow, Pig, Chicken. The person selects Cow for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cow",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Horse"
+        "prompt": "During a routine the farm task, an adult compares Horse, Sheep, Goat. The person selects Horse for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Horse",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Duck"
+        "prompt": "During a routine the farm task, an adult compares Duck, Donkey, Turkey. The person selects Duck for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Duck",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rooster"
+        "prompt": "During a routine the farm task, an adult compares Rooster, Hen, Lamb. The person selects Rooster for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rooster",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wheat"
+        "prompt": "During a routine the farm task, an adult compares Wheat, Corn, Carrot. The person selects Wheat for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wheat",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -280,24 +295,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Potato"
+        "prompt": "During a routine the farm task, an adult compares Potato, Tomato, Lettuce. The person selects Potato for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Potato",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Onion"
+        "prompt": "During a routine the farm task, an adult compares Onion, Pumpkin, Bean. The person selects Onion for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Onion",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pea"
+        "prompt": "During a routine the farm task, an adult compares Pea, Cabbage, Beetroot. The person selects Pea for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pea",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Apple Tree"
+        "prompt": "During a routine the farm task, an adult compares Apple Tree, Pear Tree, Cherry Tree. The person selects Apple Tree for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Apple Tree",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Orange Tree"
+        "prompt": "During a routine the farm task, an adult compares Orange Tree, Strawberry, Blueberry. The person selects Orange Tree for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Orange Tree",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -442,24 +472,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Raspberry"
+        "prompt": "During a routine the farm task, an adult compares Raspberry, Grape Vine, Peach Tree. The person selects Raspberry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Raspberry",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plum Tree"
+        "prompt": "During a routine the farm task, an adult compares Plum Tree, Barn, Farmhouse. The person selects Plum Tree for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Plum Tree",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Silo"
+        "prompt": "During a routine the farm task, an adult compares Silo, Chicken Coop, Stable. The person selects Silo for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Silo",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Greenhouse"
+        "prompt": "During a routine the farm task, an adult compares Greenhouse, Storage Shed, Windmill. The person selects Greenhouse for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Greenhouse",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dairy"
+        "prompt": "During a routine the farm task, an adult compares Dairy, Well, Tractor. The person selects Dairy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dairy",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -604,24 +649,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plow"
+        "prompt": "During a routine the farm task, an adult compares Plow, Trailer, Hay Bale. The person selects Plow for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Plow",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pitchfork"
+        "prompt": "During a routine the farm task, an adult compares Pitchfork, Bucket, Wheelbarrow. The person selects Pitchfork for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pitchfork",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Feed Trough"
+        "prompt": "During a routine the farm task, an adult compares Feed Trough, Water Tank, Scarecrow. The person selects Feed Trough for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Feed Trough",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Milk"
+        "prompt": "During a routine the farm task, an adult compares Milk, Egg, Wool. The person selects Milk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Milk",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Honey"
+        "prompt": "During a routine the farm task, an adult compares Honey, Cheese, Butter. The person selects Honey for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Honey",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -766,24 +826,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cream"
+        "prompt": "During a routine the farm task, an adult compares Cream, Flour, Jam. The person selects Cream for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cream",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Apple Cider"
+        "prompt": "During a routine the farm task, an adult compares Apple Cider, Rabbit, Goose. The person selects Apple Cider for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Apple Cider",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hen House"
+        "prompt": "During a routine the farm task, an adult compares Hen House, Shed, Fence. The person selects Hen House for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hen House",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shovel"
+        "prompt": "During a routine the farm task, an adult compares Shovel, Hoe, Rake. The person selects Shovel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shovel",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Watering Can"
+        "prompt": "During a routine the farm task, an adult compares Watering Can, Sunflower, Hay. The person selects Watering Can for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Watering Can",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -908,20 +983,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Straw"
+        "prompt": "During a routine the farm task, an adult compares Straw, Farmer, Dog. The person selects Straw for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Straw",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cat"
+        "prompt": "During a routine the farm task, an adult compares Cat, Pond, Mud. The person selects Cat for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cat",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunrise"
+        "prompt": "During a routine the farm task, an adult compares Sunrise, Sunset, Rain. The person selects Sunrise for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sunrise",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Harvest"
+        "prompt": "During a routine the farm task, an adult compares Harvest, Saddle, Straw. The person selects Harvest for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Harvest",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

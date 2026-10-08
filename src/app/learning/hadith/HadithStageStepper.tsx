@@ -1,12 +1,4 @@
-import {
-  BookA,
-  Check,
-  CheckCircle2,
-  Headphones,
-  MessageCircle,
-  Target,
-  type LucideIcon,
-} from "lucide-react";
+import { BookA, Check, CheckCircle2, Headphones, Target, type LucideIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useI18n } from "../../../i18n";
 import { HADITH_STAGE_IDS, type HadithStageId } from "./hadithCurriculumStages";
@@ -21,8 +13,7 @@ const STAGE_ICONS: Record<HadithStageId, LucideIcon> = {
   "read-listen": Headphones,
   vocabulary: BookA,
   practice: CheckCircle2,
-  speak: MessageCircle,
-  "check-review": Target,
+  review: Target,
 };
 
 const focusRing =
@@ -33,7 +24,8 @@ export function HadithStageStepper({
   completedStages = [],
   onSelectStage,
 }: Props) {
-  const { t } = useI18n();
+  const { t, dir } = useI18n();
+  const railRef = useRef<HTMLOListElement>(null);
   const currentStageId = HADITH_STAGE_IDS[currentStageIndex];
   const completedSet = new Set(completedStages);
   const currentButtonRef = useRef<HTMLButtonElement>(null);
@@ -46,6 +38,29 @@ export function HadithStageStepper({
       inline: "center",
     });
   }, [currentStageIndex]);
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>, index: number) => {
+    if (
+      event.key !== "ArrowRight" &&
+      event.key !== "ArrowLeft" &&
+      event.key !== "Home" &&
+      event.key !== "End"
+    ) {
+      return;
+    }
+    event.preventDefault();
+    const total = HADITH_STAGE_IDS.length;
+    let nextIndex: number;
+    if (event.key === "Home") {
+      nextIndex = 0;
+    } else if (event.key === "End") {
+      nextIndex = total - 1;
+    } else {
+      const forward = (event.key === "ArrowRight") === (dir === "ltr");
+      nextIndex = (index + (forward ? 1 : -1) + total) % total;
+    }
+    railRef.current?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[nextIndex]?.focus();
+  };
 
   return (
     <nav className="mt-6 w-full space-y-3" aria-label={t("hadith.stageNavigation")}>
@@ -71,7 +86,7 @@ export function HadithStageStepper({
           className="h-2 w-full overflow-hidden rounded-full bg-muted"
         >
           <div
-            className="h-full bg-primary transition-all duration-300 ease-out"
+            className="h-full bg-primary transition-all duration-300 ease-out motion-reduce:transition-none"
             style={{
               width: `${((currentStageIndex + 1) / HADITH_STAGE_IDS.length) * 100}%`,
             }}
@@ -79,31 +94,47 @@ export function HadithStageStepper({
         </div>
       </div>
 
-      {/* Stepper Rail: scrollable on mobile, grid on desktop */}
-      <ol className="flex snap-x snap-mandatory gap-2 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-5 sm:overflow-visible sm:pb-0">
+      {/* Stepper Rail: 4-column balanced grid on tablet & desktop */}
+      <ol
+        ref={railRef}
+        role="tablist"
+        aria-label={t("hadith.stageNavigation")}
+        className="flex snap-x snap-mandatory gap-2.5 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-4 sm:overflow-visible sm:pb-0"
+      >
         {HADITH_STAGE_IDS.map((id, index) => {
           const isCurrent = index === currentStageIndex;
-          const isCompleted = completedSet.has(id) || index < currentStageIndex;
+          const isCompleted = completedSet.has(id);
           const Icon = STAGE_ICONS[id];
           const label = t(`hadith.stageLabels.${id}`);
 
           return (
-            <li key={id} className="min-w-[7.5rem] shrink-0 snap-start sm:min-w-0">
+            <li
+              key={id}
+              role="presentation"
+              className="min-w-[8.5rem] shrink-0 snap-start sm:min-w-0"
+            >
               <button
                 ref={isCurrent ? currentButtonRef : undefined}
                 type="button"
-                onClick={() => onSelectStage(index)}
+                role="tab"
+                id={`hadith-tab-${id}`}
+                aria-controls="hadith-stage-panel"
+                aria-selected={isCurrent}
                 aria-current={isCurrent ? "step" : undefined}
-                className={`group relative flex min-h-12 w-full items-center justify-center gap-1.5 rounded-2xl border-2 px-2 py-2 text-[11px] sm:text-xs font-black transition-all active:scale-[0.98] ${focusRing} ${
+                tabIndex={isCurrent ? 0 : -1}
+                onClick={() => onSelectStage(index)}
+                onKeyDown={(e) => handleKeyDown(e, index)}
+                className={`group relative flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl border-2 px-3 py-2 text-xs font-black transition-all active:scale-[0.98] ${focusRing} ${
                   isCurrent
-                    ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                    ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
                     : isCompleted
                       ? "border-primary/25 bg-primary/10 text-primary hover:border-primary/45 hover:bg-primary/15"
                       : "border-border bg-card text-muted-foreground hover:border-primary/30 hover:bg-muted/60"
                 }`}
               >
+                {/* Single clean indicator: checkmark when completed, step icon when current or upcoming */}
                 <span
-                  className={`flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-black ${
+                  className={`flex size-6 shrink-0 items-center justify-center rounded-full transition-colors ${
                     isCurrent
                       ? "bg-primary-foreground text-primary"
                       : isCompleted
@@ -112,12 +143,14 @@ export function HadithStageStepper({
                   }`}
                   aria-hidden
                 >
-                  {isCompleted ? <Check className="size-3 stroke-[3]" /> : index + 1}
+                  {isCompleted ? (
+                    <Check className="size-3.5 stroke-[3]" />
+                  ) : (
+                    <Icon className="size-3.5" />
+                  )}
                 </span>
 
-                <Icon className="size-3.5 shrink-0" aria-hidden />
-
-                <span className="whitespace-nowrap tracking-tight">{label}</span>
+                <span className="truncate tracking-tight">{label}</span>
               </button>
             </li>
           );

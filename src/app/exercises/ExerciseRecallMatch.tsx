@@ -14,7 +14,7 @@ import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
 
@@ -32,6 +32,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   dispatch,
 }: Props) {
   const { t } = useI18n();
+  const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
 
@@ -249,10 +250,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               <motion.button
                 key={card.id}
                 type="button"
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                initial={{ opacity: 0, y: 20 }}
+                transition={
+                  reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 400, damping: 17 }
+                }
+                initial={reduceMotion ? false : { opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}`}
+                aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}. ${card.description}`}
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
@@ -283,10 +286,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   {(showCorrectOverlay || showIncorrectOverlay) && (
                     <motion.div
                       key={`overlay-${card.id}`}
-                      initial={{ opacity: 0 }}
+                      initial={reduceMotion ? false : { opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0.18 }}
+                      transition={reduceMotion ? { duration: 0 } : { duration: 0.18 }}
                       className={`absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none ${
                         showIncorrectOverlay
                           ? "bg-wp-rose/70 backdrop-blur-[2px]"
@@ -294,9 +297,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                       }`}
                     >
                       <motion.div
-                        initial={{ scale: 0.3, opacity: 0 }}
+                        initial={reduceMotion ? false : { scale: 0.3, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 450, damping: 20, delay: 0.05 }}
+                        transition={
+                          reduceMotion
+                            ? { duration: 0 }
+                            : { type: "spring", stiffness: 450, damping: 20, delay: 0.05 }
+                        }
                       >
                         {showIncorrectOverlay ? (
                           <XCircle
@@ -312,9 +319,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                       </motion.div>
 
                       <motion.span
-                        initial={{ y: 6, opacity: 0 }}
+                        initial={reduceMotion ? false : { y: 6, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.15 }}
+                        transition={reduceMotion ? { duration: 0 } : { delay: 0.15 }}
                         className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
                       >
                         {showIncorrectOverlay ? "Wrong" : "Correct!"}
@@ -332,10 +339,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           {feedback !== null && !accessibility.autoAdvance && (
             <motion.div
               key="continue-strip"
-              initial={{ opacity: 0, y: 8 }}
+              initial={reduceMotion ? false : { opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
               className={`shrink-0 rounded-2xl px-5 py-3 flex items-center justify-between gap-3 border ${
                 feedback === "correct"
                   ? "bg-wp-green/10 border-wp-green/30"

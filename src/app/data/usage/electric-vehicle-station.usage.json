@@ -32,14 +32,14 @@
       "قابس",
       "كابل",
       "مهايئ",
-      "1 مستو",
-      "2 مستو",
+      "شحن التيار المتردد من المستوى الأول",
+      "شحن التيار المتردد من المستوى الثاني",
       "شاحن سريع بالتيار المستمر",
       "منفذ الشحن",
       "جهاز دفع إلكتروني",
       "حزمة بطاريات",
-      "آلة يسمى «يليكتريك موتور»",
-      "مركبة يسمى «ريجينيراتيفي براكينج»",
+      "محرك كهربائي",
+      "كبح استرجاعي",
       "عاكس كهربائي",
       "شاحن مدمج بالمركبة"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Regenerative Braking through a realistic adult task; include Regenerative Braking, Inverter, and Onboard Charger naturally where visually appropriate, but make the real-world use of Regenerative Braking the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Electric Vehicle Station",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Charging Station"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Station, Connector, Plug, and Cable and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Charging Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adapter"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Level 1, Level 2, and Dc Fast Charger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Adapter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Charging Port"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Port, Payment Terminal, Battery Pack, and Electric Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Charging Port",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Regenerative Braking"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regenerative Braking, Inverter, and Onboard Charger and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Regenerative Braking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -192,14 +205,14 @@
       "وحدة الدفع",
       "إلكترونيات القدرة",
       "نظام إدارة البطارية",
-      "خلية",
+      "خلية بطارية",
       "مكان لوقوف السيارة",
-      "مظلة",
-      "جهاز يسمى «سولار بانيل»",
+      "مظلّة",
+      "لوح شمسي",
       "إضاءة",
       "لافتات",
-      "حاجز عمودي",
-      "رصيف مرتفع",
+      "عمود حماية",
+      "حافة الرصيف",
       "مكان مخصص لذوي الإعاقة",
       "سلة مهملات",
       "مقعد"
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Handicap Space as the central item; include Handicap Space, Trash Can, and Bench naturally where visually appropriate, but make the real-world use of Handicap Space the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Electric Vehicle Station",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thermal Management"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thermal Management, Drive Unit, Power Electronics, and Bms and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Thermal Management",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cell"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell, Parking Spot, Canopy, and Solar Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lighting"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lighting, Signage, Bollard, and Curb and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Lighting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Handicap Space"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Handicap Space, Trash Can, and Bench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Handicap Space",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -350,8 +376,8 @@
     ],
     "targetWordsArabic": [
       "بطاقة تعريف بالترددات الراديوية (RFID)",
-      "برنامج يسمى «موبيلي ابب»",
-      "جهاز يسمى «كر كودي»",
+      "تطبيق هاتف",
+      "رمز استجابة سريعة",
       "حساب",
       "اشتراك",
       "لكل كيلوواط ساعة",
@@ -360,9 +386,9 @@
       "شبكة",
       "التجوال بين شبكات الشحن",
       "كيلوواط",
-      "جهاز يسمى «ستاتي وف تشارجي»",
-      "مدى",
-      "جهد كهربائي",
+      "مستوى شحن البطارية",
+      "مدى السير",
+      "فرق الجهد الكهربائي",
       "شدة التيار"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Range as the central item; include Range, Voltage, and Amperage naturally where visually appropriate, but make the real-world use of Range the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Electric Vehicle Station",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rfid Card"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rfid Card, Mobile App, Qr Code, and Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rfid Card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Subscription"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subscription, Per Kwh, Session Fee, and Receipt and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Subscription",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Network"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Network, Roaming, Kilowatt, and State Of Charge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Network",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Range"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Range, Voltage, and Amperage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Range",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -516,13 +555,13 @@
       "تكلفة",
       "كفاءة",
       "عطل تسريب أرضي",
-      "جهاز يسمى «يميرجينكي ستوب»",
+      "زر توقف طارئ",
       "تهوية",
       "فحص",
-      "جهاز يسمى «فيرمواري وبداتي»",
+      "تحديث البرنامج الثابت",
       "مقاوم للعوامل الجوية",
       "مقاوم للعبث",
-      "قفل أمان",
+      "عزل مصادر الطاقة وقفلها",
       "شهادة اعتماد",
       "ضمان"
     ],
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Lockout as the central item; include Lockout, Certification, and Warranty naturally where visually appropriate, but make the real-world use of Lockout the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Electric Vehicle Station",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Charging Speed"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Speed, Time Remaining, Energy Used, and Cost and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Charging Speed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Efficiency"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Ground Fault, Emergency Stop, and Ventilation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Efficiency",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Inspection"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection, Firmware Update, Weatherproof, and Tamper Proof and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Inspection",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lockout"
+        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lockout, Certification, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lockout",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

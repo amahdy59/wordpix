@@ -27,21 +27,21 @@
       "Ice Sheet"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «بولار بيار»",
+      "دب قطبي",
       "ثعلب قطبي",
-      "حيوان ثديي يسمى «والروس»",
+      "فظ",
       "ختم",
       "بطريق",
       "بومة ثلجية",
-      "كائن أو عنصر طبيعي يسمى «ريينديير»",
+      "رنة",
       "أرنب قطبي",
-      "كائن أو عنصر طبيعي يسمى «ناروهال»",
+      "حوت وحيد القرن",
       "حوت بيلوغا",
-      "طائر يسمى «بوففين»",
-      "كائن أو عنصر طبيعي يسمى «ليممينج»",
-      "كائن أو عنصر طبيعي يسمى «يكيبيرج»",
-      "كائن أو عنصر طبيعي يسمى «جلاكيير»",
-      "كائن أو عنصر طبيعي يسمى «يكي شييت»"
+      "طائر البفن",
+      "قارض اللاموس",
+      "جبل جليدي",
+      "نهر جليدي",
+      "غطاء جليدي"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Iceberg as the central item; include Iceberg, Glacier, and Ice Sheet naturally where visually appropriate, but make the real-world use of Iceberg the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Arctic",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Polar Bear"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Polar Bear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Penguin"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Penguin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Narwhal"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Narwhal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Iceberg"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Iceberg",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,21 +201,21 @@
       "Coastline"
     ],
     "targetWordsArabic": [
-      "قبعة بواق ثلج",
-      "كائن أو عنصر طبيعي يسمى «سنووفييلد»",
-      "سطح يسمى «فروست»",
-      "سطح يسمى «يكيكلي»",
-      "شكل يسمى «سنووفلاكي»",
-      "كائن أو عنصر طبيعي يسمى «سلوش»",
+      "قبعة بواقٍ ثلج",
+      "حقل ثلجي",
+      "صقيع",
+      "كتلة جليدية متدلية",
+      "ندفة ثلج",
+      "ثلج ذائب جزئيًا",
       "ثلج عبوة",
-      "كائن أو عنصر طبيعي يسمى «كريفاسسي»",
+      "شق جليدي عميق",
       "كهف جليدي",
-      "شجرة يسمى «توندرا»",
-      "كائن أو عنصر طبيعي يسمى «فجورد»",
-      "بحيرة متجمدة",
+      "تندرا",
+      "خليج ضيق بين منحدرات",
+      "بحيرة متجمّدة",
       "جبل",
-      "كائن أو عنصر طبيعي يسمى «فالليي»",
-      "كائن أو عنصر طبيعي يسمى «كواستليني»"
+      "وادٍ",
+      "خط ساحلي"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Mountain as the central item; include Mountain, Valley, and Coastline naturally where visually appropriate, but make the real-world use of Mountain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Arctic",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ice Cap"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ice Cap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowflake"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snowflake",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ice Cave"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ice Cave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mountain"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mountain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -349,21 +375,21 @@
       "Dog Sled"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «بينينسولا»",
-      "منطقة يسمى «يسلاند»",
+      "شبه جزيرة",
+      "جزيرة",
       "حجرة خدمة",
-      "كائن أو عنصر طبيعي يسمى «كليفف»",
+      "جرف",
       "معطف باركا",
       "أحذية ثلج",
-      "كائن أو عنصر طبيعي يسمى «فور هات»",
-      "كائن أو عنصر طبيعي يسمى «ميتتينس»",
+      "قبعة فرو",
+      "قفازات تجمع الأصابع",
       "وشاح",
       "ملابس داخلية حرارية",
       "نظارات واقية",
       "غطاء للوجه",
       "بنطال ثلج",
       "جوارب صوفية",
-      "كائن أو عنصر طبيعي يسمى «دوج سليد»"
+      "مزلجة تجرها الكلاب"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snow Pants as the central item; include Snow Pants, Wool Socks, and Dog Sled naturally where visually appropriate, but make the real-world use of Snow Pants the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Arctic",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Peninsula"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Peninsula",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parka"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Parka",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scarf"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scarf",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snow Pants"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snow Pants",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -510,19 +549,19 @@
       "Campfire"
     ],
     "targetWordsArabic": [
-      "مركبة يسمى «سنووموبيلي»",
+      "مركبة ثلجية",
       "كاسحة جليد",
       "كاياك",
-      "كائن أو عنصر طبيعي يسمى «سكيس»",
-      "كائن أو عنصر طبيعي يسمى «سنووشويس»",
-      "طائرة يسمى «هيليكوبتير»",
+      "زلاجات",
+      "أحذية ثلجية عريضة",
+      "مروحية",
       "سفينة أبحاث",
-      "مركبة يسمى «سليد»",
-      "كائن أو عنصر طبيعي يسمى «توبوججان»",
-      "كائن أو عنصر طبيعي يسمى «يجلوو»",
+      "مزلجة",
+      "مزلجة مسطحة",
+      "كوخ ثلجي",
       "محطة أبحاث",
-      "كائن أو عنصر طبيعي يسمى «نورثيرن ليغتس»",
-      "كائن أو عنصر طبيعي يسمى «ميدنيغت سون»",
+      "شفق قطبي شمالي",
+      "شمس منتصف الليل",
       "صيد السمك عبر الجليد",
       "نار مخيم"
     ],
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Midnight Sun as the central item; include Midnight Sun, Ice Fishing, and Campfire naturally where visually appropriate, but make the real-world use of Midnight Sun the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Arctic",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowmobile"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snowmobile",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowshoes"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snowshoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toboggan"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Toboggan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Midnight Sun"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Midnight Sun",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -668,18 +720,18 @@
       "Icebreaker"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «تيليسكوبي»",
+      "تلسكوب",
       "علم",
       "محطة طقس",
-      "كائن أو عنصر طبيعي يسمى «ساتيلليتي ديش»",
+      "طبق استقبال الأقمار الصناعية",
       "حوت",
-      "كائن أو عنصر طبيعي يسمى «بيرمافروست»",
-      "كائن أو عنصر طبيعي يسمى «سنوو»",
+      "تربة متجمدة باستمرار",
+      "ثلج",
       "شفق قطبي",
-      "كائن أو عنصر طبيعي يسمى «سنووشوي»",
-      "عضو يسمى «يكسبيديتيون»",
+      "حذاء ثلجي عريض",
+      "بعثة استكشافية",
       "بوصلة",
-      "سفينة يسمى «يكيبرياكير»"
+      "سفينة كاسحة للجليد"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
@@ -723,7 +775,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snowshoe as the central item; include Snowshoe, Expedition, and Compass naturally where visually appropriate, but make the real-world use of Snowshoe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Arctic",
@@ -732,16 +785,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Telescope"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Telescope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whale"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Whale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowshoe"
+        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snowshoe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

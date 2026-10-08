@@ -34,7 +34,7 @@
       "طابق",
       "سقف",
       "درج",
-      "مبنى يسمى «يليفاتور شافت»",
+      "بئر مصعد",
       "جدار حامل",
       "جمالون",
       "خرسانة",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Brick as the central item; include Brick, Glass, and Timber naturally where visually appropriate, but make the real-world use of Brick the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Building & Construction",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Foundation"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Column, Beam, and Wall and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Foundation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Floor"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor, Roof, Staircase, and Elevator Shaft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Floor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Load-Bearing Wall"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Load-Bearing Wall, Truss, Concrete, and Steel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Load-Bearing Wall",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brick"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brick, Glass, and Timber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brick",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -198,7 +211,7 @@
       "ألواح جبسية",
       "حديد تسليح",
       "حفر",
-      "صب الأساس",
+      "صبّ الأساس",
       "هيكل تأطير",
       "أعمال سقف",
       "سباكة",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Painting through a realistic adult task; include Painting, Flooring, and Inspection naturally where visually appropriate, but make the real-world use of Painting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: Building & Construction",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stone"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stone, Aluminum, Insulation, and Drywall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rebar"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rebar, Excavation, Pouring Foundation, and Framing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rebar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Roofing"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roofing, Plumbing, Electrical, and Drywall Installation and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Roofing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Painting"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Painting, Flooring, and Inspection and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Painting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -352,15 +378,15 @@
       "Safety Inspector"
     ],
     "targetWordsArabic": [
-      "مبنى يسمى «جينيرال كونتراكتور»",
+      "مقاول عام",
       "رئيس عمال",
       "نجار",
       "كهربائي",
       "سباك",
-      "بناء",
+      "بنّاء",
       "عامل حديد",
-      "شخص يسمى «كراني وبيراتور»",
-      "مساح",
+      "مشغل رافعة",
+      "مسّاح",
       "مفتش سلامة"
     ],
     "usage": {
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Surveyor as the central item; include Surveyor, Safety Inspector, and General Contractor naturally where visually appropriate, but make the real-world use of Surveyor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Building & Construction",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "General Contractor"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Contractor, Foreman, Carpenter, and Electrician and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "General Contractor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plumber"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumber, Mason, Ironworker, and Crane Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Plumber",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Surveyor"
+        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Surveyor, and Safety Inspector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Surveyor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

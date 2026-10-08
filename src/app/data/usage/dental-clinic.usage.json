@@ -30,7 +30,7 @@
       "تنظيف",
       "حشوة",
       "خلع",
-      "علاج قناة الجذر",
+      "قناة جذر السن",
       "تاج",
       "قوس القدم",
       "زرعة أسنان",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the dental clinic 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Onlay, Gum Graft, Bone Graft. The next step focuses on Onlay. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Onlay, Gum Graft, Bone Graft in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Email",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. The learner connects cleaning, filling, and extraction to the main activity and explains what each term means in context. During the visit, the patient and medical team deal with root canal, crown, and bridge. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with implant, whitening, and bonding.",
+      "title": "The Dental Clinic 1: A short reading",
+      "text": "Maya reads a clinic information sheet that lists cleaning, filling, and extraction. Another section describes a crown, bridge, and implant. She asks the dentist which term appears in her treatment plan. The dentist explains it with a diagram. Maya writes the name down so she can understand the appointment information later.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cleaning"
+        "prompt": "During a routine care or examination situation, an adult reviews Cleaning, Filling, Extraction. The next step focuses on Cleaning.\nWhich option is the focus of the next step?",
+        "answer": "Cleaning",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Root Canal"
+        "prompt": "During a routine care or examination situation, an adult reviews Root Canal, Crown, Bridge. The next step focuses on Root Canal.\nWhich option is the focus of the next step?",
+        "answer": "Root Canal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Implant"
+        "prompt": "During a routine care or examination situation, an adult reviews Implant, Whitening, Bonding. The next step focuses on Implant.\nWhich option is the focus of the next step?",
+        "answer": "Implant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sealant"
+        "prompt": "During a routine care or examination situation, an adult reviews Sealant, Veneer, Inlay. The next step focuses on Sealant.\nWhich option is the focus of the next step?",
+        "answer": "Sealant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Onlay"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Cleaning"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Root Canal"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Onlay, Gum Graft, Bone Graft. The next step focuses on Onlay.\nWhich option is the focus of the next step?",
+        "answer": "Onlay",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Mouthguard” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya write the treatment name down?",
+        "answer": "To understand her appointment information later",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -194,7 +205,7 @@
     ],
     "targetWordsArabic": [
       "إعادة تشكيل السن",
-      "تصريف خراج",
+      "تصريف خُراج",
       "علاج بالفلورايد",
       "مثقاب",
       "مرآة",
@@ -202,7 +213,7 @@
       "أداة إزالة الجير",
       "شفط",
       "جهاز أشعة سينية",
-      "مصباح تصلب الحشوات",
+      "ضوء تصليب حشوات الأسنان",
       "ملقط جراحي",
       "صينية طبعة أسنان",
       "أداة تلميع",
@@ -212,8 +223,8 @@
     "usage": {
       "goal": "Learn to use the dental clinic 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Polisher, Elevator, Luxator. The next step focuses on Polisher. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Polisher, Elevator, Luxator in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Personal Message",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with tooth reshaping, abscess drainage, and fluoride treatment. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with drill, mirror, and probe. Each term belongs to a different part of the care process.",
+      "title": "The Dental Clinic 2: A short reading",
+      "text": "Omar looks at pictures of a dental mirror, probe, scaler, and drill. A photograph also shows suction equipment and an X-ray machine. In the vocabulary lesson, he matches each name to its purpose. Maya reads about tooth reshaping and fluoride treatment. The teacher checks that they can distinguish treatments from tools.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tooth Reshaping"
+        "prompt": "During a routine care or examination situation, an adult reviews Tooth Reshaping, Abscess Drainage, Fluoride Treatment. The next step focuses on Tooth Reshaping.\nWhich option is the focus of the next step?",
+        "answer": "Tooth Reshaping",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Drill"
+        "prompt": "During a routine care or examination situation, an adult reviews Drill, Mirror, Probe. The next step focuses on Drill.\nWhich option is the focus of the next step?",
+        "answer": "Drill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scaler"
+        "prompt": "During a routine care or examination situation, an adult reviews Scaler, Suction, X Ray Machine. The next step focuses on Scaler.\nWhich option is the focus of the next step?",
+        "answer": "Scaler",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Curing Light"
+        "prompt": "During a routine care or examination situation, an adult reviews Curing Light, Forceps, Impression Tray. The next step focuses on Curing Light.\nWhich option is the focus of the next step?",
+        "answer": "Curing Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Polisher"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Tooth Reshaping"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Drill"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Polisher, Elevator, Luxator. The next step focuses on Polisher.\nWhich option is the focus of the next step?",
+        "answer": "Polisher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Cleaning” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What distinction does the teacher check?",
+        "answer": "The difference between treatments and tools",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -359,10 +381,10 @@
       "Palate"
     ],
     "targetWordsArabic": [
-      "رافعة السمحاق",
+      "رافعة سمحاق",
       "مبرد عظم",
-      "قبضة أسنان",
-      "جهاز تنظيف جير بالموجات فوق الصوتية",
+      "قبضة أدوات الأسنان",
+      "جهاز إزالة الجير بالموجات فوق الصوتية",
       "جهاز تحديد ذروة الجذر",
       "ضرس",
       "قاطع",
@@ -378,8 +400,8 @@
     "usage": {
       "goal": "Learn to use the dental clinic 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Nerve, Jaw, Palate. The next step focuses on Nerve. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Nerve, Jaw, Palate in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Short Dialogue",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with periosteal elevator, bone file, and dental handpiece. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with ultrasonic scaler, apex locator, and molar. Each term belongs to a different part of the care process.",
+      "title": "The Dental Clinic 3: A short reading",
+      "text": "A diagram labels a molar, incisor, canine, and wisdom tooth. Maya checks the tooth names first. Omar then matches periosteal elevator and bone file to equipment photographs. The lesson also introduces a dental handpiece and an ultrasonic scaler. They place the tool cards beside their descriptions and compare the answers with the key.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Periosteal Elevator"
+        "prompt": "During a routine care or examination situation, an adult reviews Periosteal Elevator, Bone File, Dental Handpiece. The next step focuses on Periosteal Elevator.\nWhich option is the focus of the next step?",
+        "answer": "Periosteal Elevator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ultrasonic Scaler"
+        "prompt": "During a routine care or examination situation, an adult reviews Ultrasonic Scaler, Apex Locator, Molar. The next step focuses on Ultrasonic Scaler.\nWhich option is the focus of the next step?",
+        "answer": "Ultrasonic Scaler",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Incisor"
+        "prompt": "During a routine care or examination situation, an adult reviews Incisor, Canine, Wisdom Tooth. The next step focuses on Incisor.\nWhich option is the focus of the next step?",
+        "answer": "Incisor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gum"
+        "prompt": "During a routine care or examination situation, an adult reviews Gum, Enamel, Root. The next step focuses on Gum.\nWhich option is the focus of the next step?",
+        "answer": "Gum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nerve"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Periosteal Elevator"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Ultrasonic Scaler"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Nerve, Jaw, Palate. The next step focuses on Nerve.\nWhich option is the focus of the next step?",
+        "answer": "Nerve",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Tooth Reshaping” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar match to equipment photographs?",
+        "answer": "A periosteal elevator and a bone file",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -528,24 +561,24 @@
       "ضاحك",
       "ضاحك",
       "لثة",
-      "العظم السنخي",
+      "عظم سنخي",
       "لب السن",
-      "سنخ السن",
+      "تجويف السن في الفك",
       "قوس أسنان",
       "فك علوي",
       "فك سفلي",
       "تقويم أسنان",
-      "مثبت أسنان",
+      "مثبّت أسنان",
       "قالب تقويم شفاف",
       "دعامة",
       "سلك",
-      "رباط مطاطي (مطاط)"
+      "حلقة مطاطية لتقويم الأسنان"
     ],
     "usage": {
       "goal": "Learn to use the dental clinic 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Bracket, Wire, Rubber Band. The next step focuses on Bracket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Bracket, Wire, Rubber Band in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Tips/Notice",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with premolar, bicuspid, and gingiva. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with alveolar bone, dental pulp, and tooth socket. Each term belongs to a different part of the care process.",
+      "title": "The Dental Clinic 4: A short reading",
+      "text": "Omar studies a drawing of a tooth in the jaw. He labels the dental pulp and tooth socket. Maya identifies the gingiva and alveolar bone around it. Another diagram shows the maxilla and mandible. The class uses separate labels for the tooth, the surrounding tissues, and the upper and lower jaws.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Premolar"
+        "prompt": "During a routine care or examination situation, an adult reviews Premolar, Bicuspid, Gingiva. The next step focuses on Premolar.\nWhich option is the focus of the next step?",
+        "answer": "Premolar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Alveolar Bone"
+        "prompt": "During a routine care or examination situation, an adult reviews Alveolar Bone, Dental Pulp, Tooth Socket. The next step focuses on Alveolar Bone.\nWhich option is the focus of the next step?",
+        "answer": "Alveolar Bone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Arch"
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Arch, Maxilla, Mandible. The next step focuses on Dental Arch.\nWhich option is the focus of the next step?",
+        "answer": "Dental Arch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Braces"
+        "prompt": "During a routine care or examination situation, an adult reviews Braces, Retainer, Aligner. The next step focuses on Braces.\nWhich option is the focus of the next step?",
+        "answer": "Braces",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bracket"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Premolar"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Alveolar Bone"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Bracket, Wire, Rubber Band. The next step focuses on Bracket.\nWhich option is the focus of the next step?",
+        "answer": "Bracket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Periosteal Elevator” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which structures are the maxilla and mandible?",
+        "answer": "The upper and lower jaws",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -692,13 +736,13 @@
     ],
     "targetWordsArabic": [
       "فاصل تقويم",
-      "موسع الفك",
+      "موسّع الفك",
       "جهاز تقويم خارجي",
       "قالب",
-      "تقويم خزفي",
-      "تقويم لساني",
+      "تقويم أسنان خزفي",
+      "تقويم أسنان داخلي",
       "إنفزلاين",
-      "صفيحة إطباق",
+      "صفيحة عض",
       "سلسلة مطاطية لتقويم الأسنان",
       "رباط تقويم",
       "سلك تقويم الأسنان",
@@ -710,8 +754,8 @@
     "usage": {
       "goal": "Learn to use the dental clinic 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Toothbrush, Toothpaste, Floss. The next step focuses on Toothbrush. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Toothbrush, Toothpaste, Floss in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Everyday Description",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with spacer, expander, and headgear. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with mold, ceramic braces, and lingual braces. Each term belongs to a different part of the care process.",
+      "title": "The Dental Clinic 5: A short reading",
+      "text": "Maya reads a leaflet about orthodontic equipment. It shows ceramic braces and lingual braces in different pictures. Omar identifies a spacer and an expander in a vocabulary activity. They compare these with a bite plate and a mold. The lesson asks them to explain which picture matches each term before checking the key.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spacer"
+        "prompt": "During a routine care or examination situation, an adult reviews Spacer, Expander, Headgear. The next step focuses on Spacer.\nWhich option is the focus of the next step?",
+        "answer": "Spacer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mold"
+        "prompt": "During a routine care or examination situation, an adult reviews Mold, Ceramic Braces, Lingual Braces. The next step focuses on Mold.\nWhich option is the focus of the next step?",
+        "answer": "Mold",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Invisalign"
+        "prompt": "During a routine care or examination situation, an adult reviews Invisalign, Bite Plate, Power Chain. The next step focuses on Invisalign.\nWhich option is the focus of the next step?",
+        "answer": "Invisalign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ligature"
+        "prompt": "During a routine care or examination situation, an adult reviews Ligature, Archwire, Dental Wax. The next step focuses on Ligature.\nWhich option is the focus of the next step?",
+        "answer": "Ligature",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toothbrush"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Spacer"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Mold"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Toothbrush, Toothpaste, Floss. The next step focuses on Toothbrush.\nWhich option is the focus of the next step?",
+        "answer": "Toothbrush",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Premolar” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two types of braces does the leaflet show?",
+        "answer": "Ceramic braces and lingual braces",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -866,7 +921,7 @@
       "تجويف",
       "فرشاة أسنان كهربائية",
       "أداة أسنان مدببة",
-      "جهاز ري فموي",
+      "جهاز ريّ فموي",
       "غسول فم مضاد للبكتيريا",
       "مادة سادة للأسنان",
       "قرص كاشف للبلاك",
@@ -876,8 +931,8 @@
     "usage": {
       "goal": "Learn to use the dental clinic 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Disclosing Tablet, Gum Stimulator, Dental Chair. The next step focuses on Disclosing Tablet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Disclosing Tablet, Gum Stimulator, Dental Chair in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Email",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with mouthwash, tongue scraper, and water flosser. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with fluoride, plaque, and tartar. Each term belongs to a different part of the care process.",
+      "title": "The Dental Clinic 6: A short reading",
+      "text": "Omar buys a toothbrush and asks about dental floss. Maya compares a tongue scraper with a water flosser in a product display. During class, they learn the difference between plaque, tartar, and a cavity from illustrated descriptions. They write a separate note for each term so the meanings remain clear.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mouthwash"
+        "prompt": "During a routine care or examination situation, an adult reviews Mouthwash, Tongue Scraper, Water Flosser. The next step focuses on Mouthwash.\nWhich option is the focus of the next step?",
+        "answer": "Mouthwash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fluoride"
+        "prompt": "During a routine care or examination situation, an adult reviews Fluoride, Plaque, Tartar. The next step focuses on Fluoride.\nWhich option is the focus of the next step?",
+        "answer": "Fluoride",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cavity"
+        "prompt": "During a routine care or examination situation, an adult reviews Cavity, Electric Toothbrush, Dental Pick. The next step focuses on Cavity.\nWhich option is the focus of the next step?",
+        "answer": "Cavity",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oral Irrigator"
+        "prompt": "During a routine care or examination situation, an adult reviews Oral Irrigator, Antibacterial Rinse, Dental Sealant. The next step focuses on Oral Irrigator.\nWhich option is the focus of the next step?",
+        "answer": "Oral Irrigator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Disclosing Tablet"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Mouthwash"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Fluoride"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Disclosing Tablet, Gum Stimulator, Dental Chair. The next step focuses on Disclosing Tablet.\nWhich option is the focus of the next step?",
+        "answer": "Disclosing Tablet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Spacer” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two products does Maya compare?",
+        "answer": "A tongue scraper and a water flosser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1023,7 +1089,7 @@
       "Suction Unit"
     ],
     "targetWordsArabic": [
-      "فاتح",
+      "مصباح فحص الأسنان",
       "مريلة",
       "صينية",
       "قفازات",
@@ -1034,16 +1100,16 @@
       "بطاقة موعد",
       "أشعة بانورامية للأسنان",
       "كاميرا داخل الفم",
-      "فاصل الأملغم",
+      "فاصل أملغم",
       "نظام أكسيد النيتروز",
-      "ضاغط هواء للأسنان",
+      "ضاغط هواء لعيادة الأسنان",
       "وحدة شفط"
     ],
     "usage": {
       "goal": "Learn to use the dental clinic 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1105,45 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Nitrous Oxide System, Dental Compressor, Suction Unit. The next step focuses on Nitrous Oxide System. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Nitrous Oxide System, Dental Compressor, Suction Unit in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Personal Message",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with light, bib, and tray. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with gloves, mask, and goggles. Each term belongs to a different part of the care process.",
+      "title": "The Dental Clinic 7: A short reading",
+      "text": "The dental assistant prepares a tray, gloves, and a bib. The dentist adjusts the light while Omar sits in the chair. Maya checks an appointment card in the waiting room. An insurance form is on the reception counter. The receptionist confirms the next visit and gives Maya the card to take home.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Light"
+        "prompt": "During a routine care or examination situation, an adult reviews Light, Bib, Tray. The next step focuses on Light.\nWhich option is the focus of the next step?",
+        "answer": "Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gloves"
+        "prompt": "During a routine care or examination situation, an adult reviews Gloves, Mask, Goggles. The next step focuses on Gloves.\nWhich option is the focus of the next step?",
+        "answer": "Gloves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waiting Room"
+        "prompt": "During a routine care or examination situation, an adult reviews Waiting Room, Insurance Form, Appointment Card. The next step focuses on Waiting Room.\nWhich option is the focus of the next step?",
+        "answer": "Waiting Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Panoramic X Ray"
+        "prompt": "During a routine care or examination situation, an adult reviews Panoramic X Ray, Intraoral Camera, Amalgam Separator. The next step focuses on Panoramic X Ray.\nWhich option is the focus of the next step?",
+        "answer": "Panoramic X Ray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nitrous Oxide System"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Light"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Gloves"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Nitrous Oxide System, Dental Compressor, Suction Unit. The next step focuses on Nitrous Oxide System.\nWhich option is the focus of the next step?",
+        "answer": "Nitrous Oxide System",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1152,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Mouthwash” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the receptionist give Maya to take home?",
+        "answer": "An appointment card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1176,12 +1253,12 @@
     "usage": {
       "goal": "Learn to use the dental clinic 8 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
-          "targetWords": "Emergency Kit",
+          "targetWords": ["Emergency Kit"],
           "scenario": "During a routine care or examination situation, an adult reviews Emergency Kit, Cleaning, Filling. The next step focuses on Emergency Kit.",
           "check": {
             "question": "Which option is the focus of the next step?",
@@ -1191,29 +1268,21 @@
           "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Emergency Kit, Cleaning, Filling. The next step focuses on Emergency Kit. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Emergency Kit in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Dental Clinic: Short Dialogue",
-      "text": "Omar has an everyday task connected to the dental clinic. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with emergency kit. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "title": "The Dental Clinic 8: A short reading",
+      "text": "During orientation, the dental team checks the location of the emergency kit. Maya learns the equipment name from a photograph in her language lesson. Omar writes a sentence about where the kit is stored. They compare their descriptions with the picture, then ask the instructor which staff members are responsible for checking its contents.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Emergency Kit"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Emergency Kit"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Emergency Kit"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Emergency Kit, Cleaning, Filling. The next step focuses on Emergency Kit.\nWhich option is the focus of the next step?",
+        "answer": "Emergency Kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1222,6 +1291,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Light” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the dental team locate during orientation?",
+        "answer": "The emergency kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

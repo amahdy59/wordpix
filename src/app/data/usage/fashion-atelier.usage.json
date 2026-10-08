@@ -33,15 +33,15 @@
       "طاولة قص",
       "مكواة",
       "قدر البخار (حلة بخار / مبخرة)",
-      "آلة يسمى «سيرجير»",
+      "ماكينة خياطة أوفرلوك",
       "ماكينة تطريز",
       "ورق باترون",
       "طباشير خياط",
       "إبرة",
       "خيط",
       "مقص",
-      "مقص مسنن للخياطة",
-      "أداة فك الغرز"
+      "مقص مسنّن للخياطة",
+      "أداة فكّ الغرز"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Scissors as the central item; include Scissors, Pinking Shears, and Seam Ripper naturally where visually appropriate, but make the real-world use of Scissors the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Fashion Atelier",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sewing Machine"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sewing Machine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Iron"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pattern Paper"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pattern Paper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scissors"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scissors",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -201,12 +214,12 @@
       "تشكيل القماش على المانيكان",
       "صناعة الباترون",
       "قماش موسلين",
-      "قماش يسمى «تويلي»",
+      "نموذج تجريبي للملبس",
       "تجربة المقاس",
-      "تعديل الملابس",
+      "تعديل مقاس الملبس",
       "عينة",
       "نموذج أولي",
-      "عملية يسمى «برودوكتيون»"
+      "إنتاج الملابس"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Sample as the central item; include Sample, Prototype, and Production naturally where visually appropriate, but make the real-world use of Sample the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Fashion Atelier",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pin Cushion"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pin Cushion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Zipper Foot"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Zipper Foot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Muslin"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Muslin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sample"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sample",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -357,11 +383,11 @@
       "خياط",
       "صانع باترون",
       "مصمم منسوجات",
-      "أسلوب أو طراز يسمى «ستيليست»",
+      "منسق أزياء",
       "رسام أزياء",
-      "شخص يسمى «ميرتشانديسير»",
-      "شخص يسمى «بويير»",
-      "نموذج"
+      "مختص عرض وترويج المنتجات",
+      "مسؤول شراء المنتجات للمتجر",
+      "عارض أزياء"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult working with or speaking to the Buyer; include Buyer, Model, and Fashion Designer naturally where visually appropriate, but make the real-world use of Buyer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Fashion Atelier",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fashion Designer"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fashion Designer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Textile Designer"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Textile Designer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Buyer"
+        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Buyer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

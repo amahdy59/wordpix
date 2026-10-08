@@ -27,21 +27,21 @@
       "Sidewalk"
     ],
     "targetWordsArabic": [
-      "علامة توقف",
-      "علامة إفساح الطريق",
-      "مصطلح قانوني يسمى «سبييد ليميت»",
+      "علامة قف",
+      "علامة إعطاء الأولوية",
+      "الحد الأقصى للسرعة",
       "اتجاه واحد",
       "ممنوع الوقوف",
-      "سطح يسمى «بيديستريان كروسسينج»",
+      "معبر مشاة",
       "منطقة مدرسة",
       "منطقة أعمال طرق",
-      "يندمج في المسار",
+      "الاندماج في حركة السير",
       "لافتة مخرج",
-      "حارة",
-      "الكتف",
+      "حارة سير",
+      "كتف الطريق",
       "جزيرة وسطية",
-      "رصيف مرتفع",
-      "منطقة يسمى «سيديوالك»"
+      "حافة الرصيف",
+      "رصيف"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Median as the central item; include Median, Curb, and Sidewalk naturally where visually appropriate, but make the real-world use of Median the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Driving & Road Rules: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stop Sign"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stop Sign, Yield Sign, Speed Limit, and One Way and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stop Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "No Parking"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare No Parking, Pedestrian Crossing, School Zone, and Construction Zone and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "No Parking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Merge"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Merge, Exit Sign, Lane, and Shoulder and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Merge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Median"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Median, Curb, and Sidewalk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Median",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,20 +201,20 @@
       "DUI"
     ],
     "targetWordsArabic": [
-      "مكان يسمى «كروسسوالك»",
-      "لون يسمى «تراففيك ليغت»",
-      "دوار",
+      "معبر مشاة",
+      "إشارة مرور",
+      "دوار مروري",
       "جسر علوي",
-      "نفق سفلي",
-      "يسرع",
-      "فرامل",
+      "ممر سفلي",
+      "يزيد السرعة",
+      "يستخدم المكابح",
       "يوجه المركبة",
-      "إشارة",
-      "يتجاوز",
-      "حديقة",
-      "مركبة يسمى «ريفيرسي»",
-      "مركبة يسمى «و-تورن»",
-      "غرفة يسمى «يييلد»",
+      "يشير إلى تغيير الاتجاه",
+      "يتجاوز مركبة",
+      "يركن المركبة",
+      "يرجع بالمركبة إلى الخلف",
+      "دوران للعودة في الاتجاه المعاكس",
+      "يعطي الأولوية",
       "القيادة تحت تأثير الكحول أو المخدرات"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the U-Turn as the central item; include U-Turn, Yield, and DUI naturally where visually appropriate, but make the real-world use of U-Turn the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Driving & Road Rules",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crosswalk"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crosswalk, Traffic Light, Roundabout, and Overpass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crosswalk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Underpass"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underpass, Accelerate, Brake, and Steer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Underpass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Signal"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Signal, Overtake, Park, and Reverse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Signal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "U-Turn"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare U-Turn, Yield, and DUI and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "U-Turn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -344,11 +370,11 @@
     "targetWordsArabic": [
       "قانون حزام الأمان",
       "حق الأولوية",
-      "شخص يسمى «بليند سبوت»",
+      "نقطة عمياء",
       "القيادة الدفاعية",
-      "عدوانية الطريق",
+      "غضب أثناء القيادة",
       "حادث فرار بعد الاصطدام",
-      "مطالبة تأمين",
+      "مطالبة تأمينية",
       "مخالفة مرورية"
     ],
     "usage": {
@@ -381,7 +407,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Road Rage as the central item; include Road Rage, Hit and Run, and Insurance Claim naturally where visually appropriate, but make the real-world use of Road Rage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Driving & Road Rules",
@@ -390,12 +417,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seat Belt Law"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seat Belt Law, Right of Way, Blind Spot, and Defensive Driving and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Seat Belt Law",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Road Rage"
+        "prompt": "In the driving & road rules setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Road Rage, Hit and Run, Insurance Claim, and Traffic Ticket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Road Rage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

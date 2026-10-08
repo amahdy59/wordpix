@@ -102,40 +102,40 @@
     "arabicTranslation": "جهاز استقبال"
   },
   "joystick": {
-    "definition": "A lever used by a pilot to control the ailerons and elevators of an airplane.",
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «جويستيك»"
+    "definition": "A movable control stick used to direct a drone.",
+    "arabicTranslation": "عصا تحكم"
   },
   "throttle": {
-    "definition": "A pedal that controls the throttle valve.",
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ثروتتلي»"
+    "definition": "A control that changes the power delivered to a drone's motors.",
+    "arabicTranslation": "متحكم قدرة المحرك"
   },
   "yaw": {
-    "definition": "An erratic deflection from an intended course.",
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ياو»"
+    "definition": "Rotation of a drone around its vertical axis.",
+    "arabicTranslation": "دوران حول المحور الرأسي"
   },
   "pitch": {
     "definition": "The act of throwing a baseball or softball by the pitcher towards home plate, which initiates play by giving the batter a chance to hit it.",
     "arabicTranslation": "حدّة الصوت"
   },
   "roll": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «رولل»",
+    "arabicTranslation": "ميل حول المحور الطولي",
     "definition": "The side-to-side tilt of a drone around its lengthwise axis."
   },
   "trim": {
-    "definition": "To balance in flight by regulating the control surfaces.",
-    "arabicTranslation": "سطح يُسمّى «تريم»"
+    "definition": "To adjust a drone's controls so it remains balanced in flight.",
+    "arabicTranslation": "ضبط اتزان الطيران"
   },
   "failsafe": {
     "definition": "Designed to remain safe or reduce harm when a part, system, or process stops working properly.",
     "arabicTranslation": "وضع أمان تلقائي"
   },
   "return-to-home": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ريتورن تو هومي»",
+    "arabicTranslation": "العودة التلقائية إلى نقطة الانطلاق",
     "definition": "A drone function that automatically flies it back to its launch point."
   },
   "soldering-iron": {
     "definition": "A handheld tool with a heated tip used to melt and apply solder, a metal alloy that joins electrical parts.",
-    "arabicTranslation": "أداة يُسمّى «سولديرينج يرون»",
+    "arabicTranslation": "كاوية لحام",
     "exampleUsage": "The soldering iron was used during the activity."
   },
   "multimeter": {
@@ -149,7 +149,7 @@
     "exampleUsage": "The screwdriver was used during the activity."
   },
   "hex-wrench": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «هيكس ورينتش»",
+    "arabicTranslation": "مفتاح سداسي",
     "definition": "A tool with a hexagonal tip used to turn matching screws."
   },
   "pliers": {
@@ -158,7 +158,7 @@
     "exampleUsage": "The pliers was used during the activity."
   },
   "heat-shrink": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «هيات شرينك»",
+    "arabicTranslation": "أنبوب عازل يتقلص بالحرارة",
     "definition": "Plastic tubing that tightens around a wire when heated."
   },
   "zip-tie": {
@@ -174,7 +174,7 @@
     "definition": "A charger that keeps the cells of a battery at suitable voltages."
   },
   "prop-balancer": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «بروب بالانكير»",
+    "arabicTranslation": "أداة موازنة المروحة",
     "definition": "A tool used to check and correct the balance of a drone propeller."
   },
   "firmware": {
@@ -182,11 +182,11 @@
     "arabicTranslation": "برمجيات ثابتة"
   },
   "ground-station": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «جرووند ستاتيون»",
+    "arabicTranslation": "محطة تحكم أرضية",
     "definition": "A computer or controller used to monitor and direct a drone remotely."
   },
   "flight-log": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «فليغت لوج»",
+    "arabicTranslation": "سجل طيران",
     "definition": "A record of a drone's flight path, settings, and events."
   },
   "waypoint": {
@@ -202,7 +202,7 @@
     "arabicTranslation": "قياس عن بعد"
   },
   "pid-tuning": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «بيد تونينج»",
+    "arabicTranslation": "ضبط معاملات متحكم بي آي دي",
     "definition": "Adjusting flight-control settings that keep a drone stable."
   },
   "calibration": {
@@ -228,15 +228,15 @@
     "definition": "An official document giving permission to do something."
   },
   "no-fly-zone": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «نو فلي زوني»",
+    "arabicTranslation": "منطقة حظر طيران",
     "definition": "An area where drone flights are prohibited or restricted."
   },
   "visual-line-of-sight": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «فيسوال ليني وف سيغت»",
+    "arabicTranslation": "رؤية الطائرة مباشرة بالعين",
     "definition": "The ability to see a drone directly without viewing it through a screen."
   },
   "altitude-limit": {
-    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «التيتودي ليميت»",
+    "arabicTranslation": "حد ارتفاع الطيران",
     "definition": "The maximum height at which a drone is allowed to fly."
   },
   "pre-flight-check": {

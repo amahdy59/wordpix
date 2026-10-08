@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the Barbecue as the central item; include Barbecue, Kebab, and Pizza Slice naturally where visually appropriate, but make the real-world use of Barbecue the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Festival: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Banner"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Banner, Bunting, Balloon, and Streamer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Banner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lantern"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lantern, Garland, Flag, and Ribbon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lantern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Confetti"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Confetti, Piñata, Wreath, and Paper Flower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Confetti",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Barbecue"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Barbecue, Kebab, and Pizza Slice and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Barbecue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -190,7 +203,7 @@
     "targetWordsArabic": [
       "تاكو",
       "سمبوسة",
-      "لفائف ربيعية",
+      "لفافة سبرينغ رول",
       "وافل",
       "كريب",
       "سيخ فواكه",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the Milkshake as the central item; include Milkshake, Juice Box, and Cotton Candy naturally where visually appropriate, but make the real-world use of Milkshake the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Festival",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Taco"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Taco, Samosa, Spring Roll, and Waffle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Taco",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crepe"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crepe, Fruit Skewer, Roasted Corn, and Doughnut and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crepe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fried Chicken"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fried Chicken, Lemonade, Smoothie, and Hot Chocolate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fried Chicken",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Milkshake"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Milkshake, Juice Box, and Cotton Candy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Milkshake",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -355,14 +381,14 @@
       "كريمة ثلج",
       "مرحلة",
       "حلقة",
-      "مغن",
+      "مغنٍ",
       "منصة دي جي",
       "مكبر صوت (سبيكر / سماعة)",
       "ساحة رقص",
-      "مؤدي رقص بالنار",
+      "مؤدّي رقص بالنار",
       "بهلوان",
-      "-",
-      "شخص يسمى «فاكي باينتير»",
+      "مؤدٍ يمشي على ركائز",
+      "رسام وجوه",
       "موكب"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the Stilt Walker as the central item; include Stilt Walker, Face Painter, and Parade naturally where visually appropriate, but make the real-world use of Stilt Walker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Festival",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Caramel Apple"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caramel Apple, Popcorn, Churro, and Ice Cream and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Caramel Apple",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stage"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Band, Singer, and DJ Booth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Speaker"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speaker, Dance Floor, Fire Dancer, and Acrobat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Speaker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stilt Walker"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stilt Walker, Face Painter, and Parade and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stilt Walker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -511,18 +550,18 @@
     ],
     "targetWordsArabic": [
       "لعبة مهرجان",
-      "-",
+      "كشك تصوير",
       "فنون وحرف يدوية",
       "عرض دمى",
       "عرض سحري",
       "مسابقة مواهب",
-      "لعبة يسمى «ترياسوري هونت»",
+      "لعبة البحث عن الكنز",
       "مسابقة أزياء تنكرية",
       "سحب جوائز",
       "تذكرة",
       "سوار معصم",
       "خريطة",
-      "شكل يسمى «فولدينج تشاير»",
+      "كرسي قابل للطي",
       "بطانية",
       "واقي شمس"
     ],
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the Folding Chair as the central item; include Folding Chair, Blanket, and Sunscreen naturally where visually appropriate, but make the real-world use of Folding Chair the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Festival: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Carnival Game"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Carnival Game, Photo Booth, Arts and Crafts, and Puppet Show and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Carnival Game",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Magic Show"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magic Show, Talent Contest, Treasure Hunt, and Costume Contest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Magic Show",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Raffle"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Raffle, Ticket, Wristband, and Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Raffle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Folding Chair"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Folding Chair, Blanket, and Sunscreen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Folding Chair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -675,14 +727,14 @@
       "حقيبة ظهر",
       "معطف مطر فضفاض",
       "شاحن محمول",
-      "حبال إضاءة (فرع نور / إضاءة زينة)",
+      "سلسلة أضواء",
       "ألعاب نارية",
-      "موسيقى حية",
+      "موسيقى حيّة",
       "رقص",
       "ساحر استعراضي",
       "طلاء للوجه",
       "مهرج",
-      "-",
+      "نقانق مغطاة بعجين ومقلية على عصا",
       "كعكة قمع",
       "بريتزل",
       "تفاح حلوى"
@@ -741,7 +793,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the Funnel Cake as the central item; include Funnel Cake, Pretzel, and Candy Apple naturally where visually appropriate, but make the real-world use of Funnel Cake the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Festival",
@@ -750,20 +803,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Water Bottle"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Bottle, Backpack, Rain Poncho, and Portable Charger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Water Bottle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "String Lights"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare String Lights, Fireworks, Live Music, and Dance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "String Lights",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Magician"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magician, Face Paint, Clown, and Corn Dog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Magician",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Funnel Cake"
+        "prompt": "In the the festival setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Funnel Cake, Pretzel, and Candy Apple and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Funnel Cake",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

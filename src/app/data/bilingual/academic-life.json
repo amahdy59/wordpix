@@ -4,15 +4,15 @@
     "arabicTranslation": "أستاذ جامعي"
   },
   "lecturer": {
-    "definition": "A public lecturer at certain universities.",
+    "definition": "A teacher who gives classes or lectures at a college or university.",
     "arabicTranslation": "محاضر"
   },
   "teaching-assistant": {
     "definition": "A helper who supports a teacher in the classroom.",
-    "arabicTranslation": "غرفة يُسمّى «تياتشينج اسسيستانت»"
+    "arabicTranslation": "مساعد تدريس"
   },
   "dean": {
-    "definition": "A man who is the senior member of a group.",
+    "definition": "The head of a faculty or school within a university.",
     "arabicTranslation": "عميد"
   },
   "provost": {
@@ -20,8 +20,8 @@
     "arabicTranslation": "نائب رئيس أكاديمي"
   },
   "chancellor": {
-    "definition": "The British cabinet minister responsible for finance.",
-    "arabicTranslation": "رئيس الجامعة"
+    "definition": "The head or ceremonial leader of a university, depending on its system.",
+    "arabicTranslation": "رئيس الجامعة أو رئيسها الفخري"
   },
   "advisor": {
     "arabicTranslation": "مرشد",
@@ -61,8 +61,8 @@
     "arabicTranslation": "ورشة"
   },
   "syllabus": {
-    "definition": "An integrated course of academic studies.",
-    "arabicTranslation": "منهج المقرر"
+    "definition": "A document listing a course's topics, requirements, and schedule.",
+    "arabicTranslation": "خطة المقرر"
   },
   "prerequisite": {
     "definition": "Something that is required in advance.",
@@ -74,11 +74,11 @@
   },
   "core-course": {
     "definition": "A course that anchors an academic curriculum by providing required or foundational learning.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوري كوورسي»"
+    "arabicTranslation": "مقرر أساسي"
   },
   "credit-hour": {
     "definition": "A measure of academic credit based on attending one class hour each week throughout a semester.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريديت هوور»"
+    "arabicTranslation": "ساعة معتمدة"
   },
   "grade": {
     "definition": "A mark or result showing how well work was done.",
@@ -104,23 +104,23 @@
     "arabicTranslation": "قائمة الشرف"
   },
   "transcript": {
-    "definition": "Something that has been transcribed.",
+    "definition": "An official record of a student's courses and grades.",
     "arabicTranslation": "كشف درجات"
   },
   "midterm": {
-    "definition": "The middle of the gestation period.",
+    "definition": "An examination held around the middle of an academic term.",
     "arabicTranslation": "اختبار منتصف الفصل"
   },
   "final-exam": {
     "definition": "An examination at the end of a course or academic term measures students’ understanding of all the material.",
-    "arabicTranslation": "مادة يُسمّى «فينال يكسام»"
+    "arabicTranslation": "امتحان نهائي"
   },
   "quiz": {
     "definition": "An examination consisting of a few short questions.",
     "arabicTranslation": "اختبار قصير"
   },
   "rubric": {
-    "arabicTranslation": "معيار تقييم",
+    "arabicTranslation": "سُلّم تقييم",
     "definition": "A set of criteria used to assess a piece of work."
   },
   "bachelor-s": {
@@ -147,16 +147,16 @@
     "arabicTranslation": "دبلوم"
   },
   "certificate": {
-    "definition": "To present someone with a certificate.",
+    "definition": "A document confirming that someone has completed a course or earned a qualification.",
     "arabicTranslation": "شهادة"
   },
   "major": {
-    "definition": "Of greater importance or stature or rank.",
+    "definition": "The main subject a student studies for a degree.",
     "arabicTranslation": "تخصص رئيسي"
   },
   "minor": {
-    "definition": "Of lesser importance or stature or rank.",
-    "arabicTranslation": "قاصر"
+    "definition": "A secondary subject a student studies alongside a major.",
+    "arabicTranslation": "تخصص فرعي"
   },
   "double-major": {
     "definition": "A course of study in which a student completes the main requirements for two academic subjects.",
@@ -164,7 +164,7 @@
     "arabicTranslation": "تخصص مزدوج"
   },
   "concentration": {
-    "definition": "Strengthening the concentration (as of a solute in a mixture) by removing diluting material.",
+    "definition": "A focused area of study within a broader academic subject.",
     "arabicTranslation": "مسار تخصصي"
   }
 }

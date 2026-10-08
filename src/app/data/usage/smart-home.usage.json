@@ -28,7 +28,7 @@
     ],
     "targetWordsArabic": [
       "مكبر صوت ذكي",
-      "جهاز يسمى «فويكي كومماند»",
+      "أمر صوتي",
       "كلمة تنبيه",
       "روتين",
       "تذكير",
@@ -38,8 +38,8 @@
       "جهاز اتصال داخلي",
       "متعدد الغرف",
       "مصباح ذكي",
-      "مخفض إضاءة",
-      "متغير الألوان",
+      "مخفّض إضاءة",
+      "متغيّر الألوان",
       "شريط إضاءة",
       "مستشعر حركة"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Color Changing through a realistic adult task; include Color Changing, Light Strip, and Motion Sensor naturally where visually appropriate, but make the real-world use of Color Changing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Smart Home",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smart Speaker"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smart Speaker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reminder"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Reminder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Intercom"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Intercom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Color Changing"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Color Changing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the App Alert as the central item; include App Alert, Cloud Storage, and Night Vision naturally where visually appropriate, but make the real-world use of App Alert the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Smart Home",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Schedule"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Schedule",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Daylight"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Daylight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Motion Detector"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Motion Detector",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "App Alert"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "App Alert",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -349,14 +375,14 @@
       "Universal Remote"
     ],
     "targetWordsArabic": [
-      "منظم حرارة ذكي",
+      "منظّم حرارة ذكي",
       "مستشعر درجة الحرارة",
       "مستشعر رطوبة",
       "منطقة",
       "وضع اقتصادي",
       "سياج جغرافي افتراضي",
       "فتحة تهوية",
-      "منقي هواء",
+      "منقّي هواء",
       "مروحة",
       "جهاز بث",
       "تلفاز ذكي",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Projector as the central item; include Projector, Gaming Console, and Universal Remote naturally where visually appropriate, but make the real-world use of Projector the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Smart Home",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smart Thermostat"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smart Thermostat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eco Mode"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Eco Mode",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fan"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Projector"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Projector",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -521,7 +560,7 @@
       "مجفف",
       "ثلاجة (براد)",
       "غسالة الصحون (جلاية)",
-      "ري",
+      "ريّ",
       "جهاز فتح باب المرآب"
     ],
     "usage": {
@@ -578,7 +617,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Irrigation through a realistic adult task; include Irrigation, Garage Opener, and Hdmi naturally where visually appropriate, but make the real-world use of Irrigation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Smart Home",
@@ -587,20 +627,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hdmi"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hdmi",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Robot Vacuum"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Robot Vacuum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Washer"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Washer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Irrigation"
+        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Irrigation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

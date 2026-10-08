@@ -36,7 +36,7 @@
       "جاموس",
       "فهد صائد",
       "نمر مرقط",
-      "نو",
+      "نوّ",
       "ميركات",
       "خنزير ثؤلولي",
       "نمس",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Mongoose as the central item; include Mongoose, Hyena, and Jackal naturally where visually appropriate, but make the real-world use of Mongoose the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Savanna",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lion"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lion, Elephant, Giraffe, and Zebra and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hippo"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hippo, Rhino, Buffalo, and Cheetah and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hippo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leopard"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leopard, Wildebeest, Meerkat, and Warthog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Leopard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mongoose"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mongoose, Hyena, and Jackal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mongoose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -196,8 +209,8 @@
       "أرض عشبية",
       "شجرة الأكاسيا",
       "باوباب",
-      "تل النمل الأبيض",
-      "مشروب يسمى «واتيرينج هولي»",
+      "تلّ النمل الأبيض",
+      "مورد ماء للحيوانات",
       "أفق",
       "غروب الشمس",
       "مجرى نهر جاف",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Dry Riverbed as the central item; include Dry Riverbed, Kopje, and Dust naturally where visually appropriate, but make the real-world use of Dry Riverbed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Savanna",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Baboon"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Baboon, Gazelle, Impala, and Ostrich and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Baboon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vulture"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vulture, Grassland, Acacia Tree, and Baobab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Vulture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Termite Mound"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Termite Mound, Watering Hole, Horizon, and Sunset and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Termite Mound",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry Riverbed"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry Riverbed, Kopje, and Dust and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dry Riverbed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -352,12 +378,12 @@
       "نحام",
       "نسر",
       "لقلق",
-      "طائر النساج",
+      "طائر النسّاج",
       "أبو قرن",
       "طائر السكرتير",
       "دجاج غينيا",
       "رفراف",
-      "آلة يسمى «كراني»",
+      "طائر الكركي",
       "مالك الحزين",
       "سيارة جيب",
       "منظار ثنائي",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Camera as the central item; include Camera, Guide, and Tent naturally where visually appropriate, but make the real-world use of Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Savanna",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flamingo"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Eagle, Stork, and Weaver Bird and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Flamingo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hornbill"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hornbill, Secretary Bird, Guinea Fowl, and Kingfisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hornbill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crane"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Heron, Jeep, and Binoculars and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crane",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Camera"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Guide, and Tent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Camera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -520,8 +559,8 @@
       "قطيع",
       "هجرة",
       "جفاف",
-      "كائن أو عنصر طبيعي يسمى «رايني سياسون»",
-      "عضو يسمى «فوود تشاين»",
+      "موسم الأمطار",
+      "سلسلة غذائية",
       "تمويه",
       "إقليم",
       "وكر"
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Camouflage as the central item; include Camouflage, Territory, and Den naturally where visually appropriate, but make the real-world use of Camouflage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Savanna",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Campfire"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Campfire, Ranger, Tracks, and Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Campfire",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunhat"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunhat, Predator, Prey, and Herd and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sunhat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Migration"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migration, Drought, Rainy Season, and Food Chain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Migration",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Camouflage"
+        "prompt": "In the the savanna setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camouflage, Territory, and Den and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Camouflage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

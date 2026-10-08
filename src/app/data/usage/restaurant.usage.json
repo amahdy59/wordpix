@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "طاولة",
       "كرسي",
-      "مقصورة جلوس",
+      "مقاعد مطعم متقابلة",
       "قائمة الطعام",
       "منديل",
       "مفرش طاولة",
@@ -41,13 +41,13 @@
       "كرسي أطفال مرتفع",
       "مقعد مرتفع",
       "منضدة",
-      "طبق / صحن"
+      "طبق"
     ],
     "usage": {
       "goal": "Learn to use common l4 restaurant 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 restaurant.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares bar stool, counter, plate. The person selects bar stool for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including bar stool, counter, plate in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L4 Restaurant: Mini Dialogue",
-      "text": "Maya is in a situation connected to l4 restaurant. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with table, chair, and booth. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with menu, napkin, and tablecloth. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "L4 Restaurant 1: A short reading",
+      "text": "Maya books a table for two. The host offers a booth, but she prefers a table near the window. A menu and a napkin are at each place setting. There is a candle in the centerpiece and a salt shaker beside it. Omar moves his chair closer so they can read the menu together.",
       "imageBrief": "Create one coherent A1-level visual for the reading about L4 Restaurant. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "table"
+        "prompt": "During a routine l4 restaurant task, an adult compares table, chair, booth. The person selects table for the next step.\nWhich option does the person select for the next step?",
+        "answer": "table",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "menu"
+        "prompt": "During a routine l4 restaurant task, an adult compares menu, napkin, tablecloth. The person selects menu for the next step.\nWhich option does the person select for the next step?",
+        "answer": "menu",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "candle"
+        "prompt": "During a routine l4 restaurant task, an adult compares candle, centerpiece, place setting. The person selects candle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "candle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "salt shaker"
+        "prompt": "During a routine l4 restaurant task, an adult compares salt shaker, pepper shaker, high chair. The person selects salt shaker for the next step.\nWhich option does the person select for the next step?",
+        "answer": "salt shaker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bar stool"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "table"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "booth"
+        "prompt": "During a routine l4 restaurant task, an adult compares bar stool, counter, plate. The person selects bar stool for the next step.\nWhich option does the person select for the next step?",
+        "answer": "bar stool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Warming Rack” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Maya prefer to sit?",
+        "answer": "At a table near the window",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -189,18 +204,18 @@
       "waitress"
     ],
     "targetWordsArabic": [
-      "زبدية / سلطانية (وعاء / طاسة)",
-      "زجاج",
+      "وعاء",
+      "كأس",
       "شوكة",
       "سكين",
       "ملعقة",
       "فنجان",
-      "صحن الفنجان",
-      "كوب كبير (مج)",
+      "صحن فنجان",
+      "كوب بمقبض",
       "عيدان الأكل",
       "شفاطة",
       "صينية تقديم",
-      "إبريق (دورق ماء / شفشق)",
+      "إبريق",
       "كأس نبيذ",
       "نادل",
       "نادلة"
@@ -208,8 +223,8 @@
     "usage": {
       "goal": "Learn to use common l4 restaurant 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 restaurant.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares wine glass, waiter, waitress. The person selects wine glass for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including wine glass, waiter, waitress in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L4 Restaurant: Simple Message",
-      "text": "Maya is in a situation connected to l4 restaurant. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with bowl, glass, and fork. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with knife, spoon, and cup. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "L4 Restaurant 2: A short reading",
+      "text": "The waiter brings soup in a bowl and water in a glass. Maya uses a spoon for her soup. Omar has a fork and a knife for his meal. A serving tray holds extra cups and a pitcher of water. When Maya asks for tea, the waiter brings a cup and a saucer.",
       "imageBrief": "Create one coherent A1-level visual for the reading about L4 Restaurant. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bowl"
+        "prompt": "During a routine l4 restaurant task, an adult compares bowl, glass, fork. The person selects bowl for the next step.\nWhich option does the person select for the next step?",
+        "answer": "bowl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "knife"
+        "prompt": "During a routine l4 restaurant task, an adult compares knife, spoon, cup. The person selects knife for the next step.\nWhich option does the person select for the next step?",
+        "answer": "knife",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "saucer"
+        "prompt": "During a routine l4 restaurant task, an adult compares saucer, mug, chopsticks. The person selects saucer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "saucer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "straw"
+        "prompt": "During a routine l4 restaurant task, an adult compares straw, serving tray, pitcher. The person selects straw for the next step.\nWhich option does the person select for the next step?",
+        "answer": "straw",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "wine glass"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "bowl"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "fork"
+        "prompt": "During a routine l4 restaurant task, an adult compares wine glass, waiter, waitress. The person selects wine glass for the next step.\nWhich option does the person select for the next step?",
+        "answer": "wine glass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “table” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya use for her soup?",
+        "answer": "A spoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -351,27 +381,27 @@
       "special"
     ],
     "targetWordsArabic": [
-      "طاه",
-      "طاه",
+      "طاهٍ",
+      "طاهٍ",
       "مضيف",
       "مضيفة المطعم",
       "مساعد النادل",
       "ساقي بار",
-      "غسالة الصحون (جلاية)",
+      "عامل غسل الأطباق",
       "مدير",
       "ساقي نبيذ متخصص",
       "باريستا",
-      "مقبلات",
-      "الطبق الرئيسي",
+      "مقبّلات",
+      "طبق رئيسي",
       "حلوى",
       "طبق جانبي",
-      "طبق اليوم"
+      "طبق مميز"
     ],
     "usage": {
       "goal": "Learn to use common l4 restaurant 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 restaurant.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares dessert, side dish, special. The person selects dessert for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including dessert, side dish, special in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L4 Restaurant: Notice-Style Text",
-      "text": "Maya is in a situation connected to l4 restaurant. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chef, cook, and host. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with hostess, busser, and bartender. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "L4 Restaurant 3: A short reading",
+      "text": "The host welcomes the guests while the chef prepares the main course. A cook makes the side dish, and the bartender serves drinks. Maya orders an appetizer and later chooses dessert. The busser clears the empty plates. The manager checks that the guests have everything they need before the next group arrives.",
       "imageBrief": "Create one coherent A1-level visual for the reading about L4 Restaurant. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "chef"
+        "prompt": "During a routine l4 restaurant task, an adult compares chef, cook, host. The person selects chef for the next step.\nWhich option does the person select for the next step?",
+        "answer": "chef",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "hostess"
+        "prompt": "During a routine l4 restaurant task, an adult compares hostess, busser, bartender. The person selects hostess for the next step.\nWhich option does the person select for the next step?",
+        "answer": "hostess",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "dishwasher"
+        "prompt": "During a routine l4 restaurant task, an adult compares dishwasher, manager, sommelier. The person selects dishwasher for the next step.\nWhich option does the person select for the next step?",
+        "answer": "dishwasher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "barista"
+        "prompt": "During a routine l4 restaurant task, an adult compares barista, appetizer, main course. The person selects barista for the next step.\nWhich option does the person select for the next step?",
+        "answer": "barista",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "dessert"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "chef"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "host"
+        "prompt": "During a routine l4 restaurant task, an adult compares dessert, side dish, special. The person selects dessert for the next step.\nWhich option does the person select for the next step?",
+        "answer": "dessert",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “bowl” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who clears the empty plates?",
+        "answer": "The busser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -514,26 +559,26 @@
     ],
     "targetWordsArabic": [
       "فاتورة",
-      "شيك",
+      "فاتورة المطعم",
       "إكرامية",
       "إيصال",
       "حجز",
       "دفتر تسجيل الطلبات",
       "فرن",
-      "موقد غاز / بوتاجاز",
-      "يشوي",
+      "موقد",
+      "شواية",
       "قلاية",
-      "قدر / حلة",
-      "مقلاة / طاسة",
-      "لوح التقطيع (قرمة)",
+      "قدر",
+      "مقلاة",
+      "لوح تقطيع",
       "مغرفة",
-      "ملعقة تقليب (سباتيولا)"
+      "ملعقة مسطحة"
     ],
     "usage": {
       "goal": "Learn to use common l4 restaurant 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 restaurant.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -595,41 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares cutting board, ladle, spatula. The person selects cutting board for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including cutting board, ladle, spatula in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L4 Restaurant: Short Description",
-      "text": "Maya is in a situation connected to l4 restaurant. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with bill, check, and tip. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with receipt, reservation, and order pad. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "L4 Restaurant 4: A short reading",
+      "text": "Omar checks his reservation at the entrance. The server writes the order on an order pad. In the kitchen, a pan is on the stove and a pot is near the oven. After dinner, Omar asks for the bill. He pays, leaves a tip, and keeps the receipt in his wallet.",
       "imageBrief": "Create one coherent A1-level visual for the reading about L4 Restaurant. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bill"
+        "prompt": "During a routine l4 restaurant task, an adult compares bill, check, tip. The person selects bill for the next step.\nWhich option does the person select for the next step?",
+        "answer": "bill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "receipt"
+        "prompt": "During a routine l4 restaurant task, an adult compares receipt, reservation, order pad. The person selects receipt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "receipt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "oven"
+        "prompt": "During a routine l4 restaurant task, an adult compares oven, stove, grill. The person selects oven for the next step.\nWhich option does the person select for the next step?",
+        "answer": "oven",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fryer"
+        "prompt": "During a routine l4 restaurant task, an adult compares fryer, pot, pan. The person selects fryer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "fryer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cutting board"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "bill"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "tip"
+        "prompt": "During a routine l4 restaurant task, an adult compares cutting board, ladle, spatula. The person selects cutting board for the next step.\nWhich option does the person select for the next step?",
+        "answer": "cutting board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “chef” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does the server write the order?",
+        "answer": "On an order pad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -675,27 +735,27 @@
       "bread"
     ],
     "targetWordsArabic": [
-      "يخفق",
+      "مضرب خفق",
       "خلاط",
-      "ثلاجة (براد)",
-      "مجمد (فريزر)",
-      "حوض",
+      "ثلاجة",
+      "مجمد",
+      "حوض غسيل",
       "حساء",
       "سلطة",
       "شريحة لحم",
-      "معكرونة (باستا)",
+      "معكرونة",
       "بيتزا",
       "شطيرة",
       "برغر",
       "سوشي",
-      "أرز (رز)",
-      "خبز (عيش)"
+      "أرز",
+      "خبز"
     ],
     "usage": {
       "goal": "Learn to use common l4 restaurant 5 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 restaurant.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -757,41 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares sushi, rice, bread. The person selects sushi for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including sushi, rice, bread in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L4 Restaurant: Mini Dialogue",
-      "text": "Maya is in a situation connected to l4 restaurant. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with whisk, mixer, and refrigerator. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with freezer, sink, and soup. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "L4 Restaurant 5: A short reading",
+      "text": "The cook takes vegetables from the refrigerator and washes them in the sink. She makes soup and a salad for the lunch menu. A whisk and a mixer are on the work surface. Maya orders pasta, while Omar chooses a sandwich. They ask for bread to share and take their seats.",
       "imageBrief": "Create one coherent A1-level visual for the reading about L4 Restaurant. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "whisk"
+        "prompt": "During a routine l4 restaurant task, an adult compares whisk, mixer, refrigerator. The person selects whisk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "whisk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "freezer"
+        "prompt": "During a routine l4 restaurant task, an adult compares freezer, sink, soup. The person selects freezer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "freezer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "salad"
+        "prompt": "During a routine l4 restaurant task, an adult compares salad, steak, pasta. The person selects salad for the next step.\nWhich option does the person select for the next step?",
+        "answer": "salad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pizza"
+        "prompt": "During a routine l4 restaurant task, an adult compares pizza, sandwich, burger. The person selects pizza for the next step.\nWhich option does the person select for the next step?",
+        "answer": "pizza",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sushi"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "whisk"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "refrigerator"
+        "prompt": "During a routine l4 restaurant task, an adult compares sushi, rice, bread. The person selects sushi for the next step.\nWhich option does the person select for the next step?",
+        "answer": "sushi",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -800,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “bill” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar choose for lunch?",
+        "answer": "A sandwich",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -820,12 +895,12 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["sauce", "dressing", "garnish", "seasoning"],
-    "targetWordsArabic": ["صلصة", "ارتداء الملابس", "يزين الطعام", "توابل"],
+    "targetWordsArabic": ["صلصة", "صلصة السلطة", "زينة الطعام", "توابل"],
     "usage": {
       "goal": "Learn to use common l4 restaurant 6 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 restaurant.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -841,7 +916,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "seasoning",
+          "targetWords": ["seasoning"],
           "scenario": "During a routine l4 restaurant task, an adult compares seasoning, sauce, dressing. The person selects seasoning for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -851,29 +926,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares seasoning, sauce, dressing. The person selects seasoning for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including seasoning in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "L4 Restaurant: Simple Message",
-      "text": "Maya is in a situation connected to l4 restaurant. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with sauce, dressing, and garnish. The scene shows how these words naturally belong in the same food-service context. The learner connects seasoning to the main activity and explains what each term means in context. The words now belong to one memorable scene instead of an isolated list.",
+      "title": "L4 Restaurant 6: A short reading",
+      "text": "The cook tastes the sauce before serving the meal. It needs more seasoning, so she adds a little pepper. She puts dressing on the salad and adds a garnish to the plate. Maya likes the sauce but asks for the dressing on the side next time. The server writes down her request.",
       "imageBrief": "Create one coherent A1-level visual for the reading about L4 Restaurant. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sauce"
+        "prompt": "During a routine l4 restaurant task, an adult compares sauce, dressing, garnish. The person selects sauce for the next step.\nWhich option does the person select for the next step?",
+        "answer": "sauce",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "seasoning"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "sauce"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "garnish"
+        "prompt": "During a routine l4 restaurant task, an adult compares seasoning, sauce, dressing. The person selects seasoning for the next step.\nWhich option does the person select for the next step?",
+        "answer": "seasoning",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -882,6 +956,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “whisk” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya request for next time?",
+        "answer": "Dressing on the side",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

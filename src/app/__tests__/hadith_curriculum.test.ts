@@ -5,7 +5,11 @@ import {
   HADITH_STAGE_IDS,
   getHadithLesson,
 } from "../learning/hadith/hadithCurriculum";
-import { HADITH_AUDIO_ASSETS, HADITH_AUDIO_PROFILES } from "../learning/hadith/hadithAudioManifest";
+import {
+  HADITH_AUDIO_ASSETS,
+  HADITH_AUDIO_PROFILES,
+  getHadithRecordedSource,
+} from "../learning/hadith/hadithAudioManifest";
 import { audioKey } from "../shared/assetUrls";
 import { parseHadithVocabulary } from "../learning/hadith/HadithVocabularyStudy";
 import { HADITH_THEMES, getHadithTheme } from "../learning/hadith/hadithThemes";
@@ -25,14 +29,8 @@ describe("Hadith curriculum", () => {
     }
   });
 
-  it("uses the five focused learner stages in order", () => {
-    expect(HADITH_STAGE_IDS).toEqual([
-      "read-listen",
-      "vocabulary",
-      "practice",
-      "speak",
-      "check-review",
-    ]);
+  it("uses the four focused learner stages in order", () => {
+    expect(HADITH_STAGE_IDS).toEqual(["read-listen", "vocabulary", "practice", "review"]);
   });
 
   it("resolves a Hadith by stable id", () => {
@@ -71,10 +69,10 @@ describe("Hadith curriculum", () => {
       const curriculumLesson = getHadithLesson(lesson.id);
       expect(curriculumLesson).toBeDefined();
       await expect(
-        audioKey(curriculumLesson!.source.arabic, HADITH_AUDIO_PROFILES.ar)
+        audioKey(getHadithRecordedSource(lesson.id).arabic, HADITH_AUDIO_PROFILES.ar)
       ).resolves.toBe(lesson.arabic.objectKey);
       await expect(
-        audioKey(curriculumLesson!.source.translation, HADITH_AUDIO_PROFILES.en)
+        audioKey(getHadithRecordedSource(lesson.id).translation, HADITH_AUDIO_PROFILES.en)
       ).resolves.toBe(lesson.translation.objectKey);
     }
   });
@@ -82,7 +80,7 @@ describe("Hadith curriculum", () => {
   it("parses every Hadith 1 vocabulary record without dropping examples or Arabic support", () => {
     const lines = getHadithLesson("hadith-01")!.stages.vocabulary.text;
     expect(parseHadithVocabulary(lines)).toEqual([
-      expect.objectContaining({ term: "action", example: expect.stringContaining("Helping") }),
+      expect.objectContaining({ term: "action", example: expect.stringContaining("action") }),
       expect.objectContaining({ term: "intention", arabic: "النِّيَّات" }),
       expect.objectContaining({ term: "motive" }),
       expect.objectContaining({ term: "migrate" }),
@@ -106,6 +104,19 @@ describe("Hadith curriculum", () => {
       expect(new Set(termKeys).size, `${lesson.id} preview terms deduplicated`).toBe(
         termKeys.length
       );
+    }
+  });
+
+  it("parses clean review questions without preamble instruction noise across all lessons", async () => {
+    const { getParsedHadithStages } = await import("../learning/hadith/hadithLessonContent");
+    for (const lesson of HADITH_LESSONS) {
+      const { review } = getParsedHadithStages(lesson);
+      expect(review.length, lesson.id).toBeGreaterThanOrEqual(1);
+      for (const item of review) {
+        expect(item.question, lesson.id).not.toMatch(/^answer each question first/i);
+        expect(item.question, lesson.id).not.toMatch(/^outcome-aligned/i);
+        expect(item.question.length, lesson.id).toBeGreaterThanOrEqual(10);
+      }
     }
   });
 });

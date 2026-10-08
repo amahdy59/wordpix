@@ -12,11 +12,23 @@ describe("reviewed usage illustration integration", () => {
     const scenes = lessons.flatMap((lesson) => lesson.usage.scenes);
     expect(
       scenes.filter((scene) => scene.imagePath?.startsWith("question-images/v1/"))
-    ).toHaveLength(12);
+    ).toHaveLength(14);
     const grape = lessons
       .find((lesson) => lesson.lessonId === "fruits-1")
       ?.usage.scenes.find((scene) => scene.chunkNumber === 2);
     expect(grape?.imagePath?.startsWith("question-images/v1/")).not.toBe(true);
+  });
+
+  it("attaches all 59 reviewed object scenes across fruits, vegetables, bedroom, bathroom, kitchen, and living-room", async () => {
+    const units = ["fruits", "vegetables", "bedroom", "bathroom", "kitchen", "living-room"];
+    const lessons = (await Promise.all(units.map(loadUnitUsageForEditorial))).flatMap(
+      (unit) => unit ?? []
+    );
+    const scenes = lessons.flatMap((lesson) => lesson.usage.scenes);
+    const objectScenes = scenes.filter((scene) =>
+      scene.imagePath?.startsWith("question-images/v1/")
+    );
+    expect(objectScenes).toHaveLength(59);
   });
   it("attaches exactly 50 reviewed scenes through the real usage loader", async () => {
     const lessons = (

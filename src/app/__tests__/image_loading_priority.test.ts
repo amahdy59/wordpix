@@ -25,11 +25,16 @@ interface Case {
   /** Marker identifying the WordImage call to inspect. */
   anchor: string;
   high: boolean;
-  tag?: "WordImage" | "img" | "QuestionImage";
+  tag?: "WordImage" | "img" | "QuestionImage" | "SentenceQuestionSupport";
 }
 
 const HEROES: Case[] = [
-  { file: "exercises/ExerciseContextFill.tsx", anchor: "word={currentTargetWord}", high: true },
+  {
+    file: "exercises/ExerciseContextFill.tsx",
+    anchor: "word={currentTargetWord}",
+    high: true,
+    tag: "SentenceQuestionSupport",
+  },
   {
     file: "shared/SentenceQuestionSupport.tsx",
     anchor: "media={media}",
@@ -51,6 +56,13 @@ function wordImageCall(source: string, anchor: string, tag = "WordImage"): strin
   const open = source.lastIndexOf(`<${tag}`, at);
   expect(open, `no <${tag} before ${anchor}`).toBeGreaterThan(-1);
   const close = source.indexOf("/>", at);
+  if (tag === "SentenceQuestionSupport") {
+    return wordImageCall(
+      read("shared/SentenceQuestionSupport.tsx"),
+      "media={media}",
+      "QuestionImage"
+    );
+  }
   return source.slice(open, close + 2);
 }
 
@@ -66,7 +78,7 @@ describe("exercise imagery is fetched eagerly", () => {
       const call = wordImageCall(read(file), anchor, tag);
       if (high)
         expect(call).toContain(
-          tag === "img" || tag === "QuestionImage"
+          tag === "img" || tag === "QuestionImage" || tag === "SentenceQuestionSupport"
             ? 'fetchpriority: "high"'
             : 'fetchPriority="high"'
         );

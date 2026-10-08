@@ -29,11 +29,11 @@
     "targetWordsArabic": [
       "رمل",
       "محيط",
-      "يلوح",
+      "يلوّح",
       "شاطئ",
       "جرف",
       "كثيب",
-      "بركة مد وجزر",
+      "بركة مدّ وجزر",
       "أفق",
       "شعاب",
       "خليج صغير",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares towel, sunscreen, umbrella. The person selects towel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including towel, sunscreen, umbrella in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Beach: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sand"
+        "prompt": "During a routine l4 beach task, an adult compares sand, ocean, wave. The person selects sand for the next step.\nWhich option does the person select for the next step?",
+        "answer": "sand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "shore"
+        "prompt": "During a routine l4 beach task, an adult compares shore, cliff, dune. The person selects shore for the next step.\nWhich option does the person select for the next step?",
+        "answer": "shore",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tide pool"
+        "prompt": "During a routine l4 beach task, an adult compares tide pool, horizon, reef. The person selects tide pool for the next step.\nWhich option does the person select for the next step?",
+        "answer": "tide pool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cove"
+        "prompt": "During a routine l4 beach task, an adult compares cove, bay, lagoon. The person selects cove for the next step.\nWhich option does the person select for the next step?",
+        "answer": "cove",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "towel"
+        "prompt": "During a routine l4 beach task, an adult compares towel, sunscreen, umbrella. The person selects towel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "towel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares surfing, snorkeling, diving. The person selects surfing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including surfing, snorkeling, diving in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Beach: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "beach chair"
+        "prompt": "During a routine l4 beach task, an adult compares beach chair, cooler, flip-flops. The person selects beach chair for the next step.\nWhich option does the person select for the next step?",
+        "answer": "beach chair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sunglasses"
+        "prompt": "During a routine l4 beach task, an adult compares sunglasses, hat, swimsuit. The person selects sunglasses for the next step.\nWhich option does the person select for the next step?",
+        "answer": "sunglasses",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bikini"
+        "prompt": "During a routine l4 beach task, an adult compares bikini, swim trunks, goggles. The person selects bikini for the next step.\nWhich option does the person select for the next step?",
+        "answer": "bikini",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "snorkel"
+        "prompt": "During a routine l4 beach task, an adult compares snorkel, fins, swimming. The person selects snorkel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "snorkel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "surfing"
+        "prompt": "During a routine l4 beach task, an adult compares surfing, snorkeling, diving. The person selects surfing for the next step.\nWhich option does the person select for the next step?",
+        "answer": "surfing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -363,7 +395,7 @@
       "قرص طائر",
       "كرة الطائرة",
       "تشمس",
-      "نزهة (رحلة نزهة وتناول طعام في الهواء الطلق)",
+      "نزهة مع طعام",
       "تطيير طائرة ورقية",
       "جمع الأصداف"
     ],
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares picnic, kite flying, shell collecting. The person selects picnic for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including picnic, kite flying, shell collecting in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Beach: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "kayaking"
+        "prompt": "During a routine l4 beach task, an adult compares kayaking, paddleboarding, boogie boarding. The person selects kayaking for the next step.\nWhich option does the person select for the next step?",
+        "answer": "kayaking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "jet skiing"
+        "prompt": "During a routine l4 beach task, an adult compares jet skiing, sailing, windsurfing. The person selects jet skiing for the next step.\nWhich option does the person select for the next step?",
+        "answer": "jet skiing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "water skiing"
+        "prompt": "During a routine l4 beach task, an adult compares water skiing, fishing, sandcastle. The person selects water skiing for the next step.\nWhich option does the person select for the next step?",
+        "answer": "water skiing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "frisbee"
+        "prompt": "During a routine l4 beach task, an adult compares frisbee, volleyball, sunbathing. The person selects frisbee for the next step.\nWhich option does the person select for the next step?",
+        "answer": "frisbee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "picnic"
+        "prompt": "During a routine l4 beach task, an adult compares picnic, kite flying, shell collecting. The person selects picnic for the next step.\nWhich option does the person select for the next step?",
+        "answer": "picnic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -515,9 +563,9 @@
     "targetWordsArabic": [
       "يشوي على الشواية",
       "نار مخيم",
-      "قراءة (ممارسة القراءة على الشاطئ)",
-      "مشي (المشي على رمال الشاطئ)",
-      "ركض (الجري الخفيف على الشاطئ / هرولة)",
+      "قراءة",
+      "مشي",
+      "هرولة",
       "نورس",
       "سلطعون",
       "نجم البحر",
@@ -595,7 +643,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares seahorse, clam, coral. The person selects seahorse for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including seahorse, clam, coral in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Beach: Notice-Style Text",
@@ -604,24 +653,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "barbecue"
+        "prompt": "During a routine l4 beach task, an adult compares barbecue, bonfire, reading. The person selects barbecue for the next step.\nWhich option does the person select for the next step?",
+        "answer": "barbecue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "walking"
+        "prompt": "During a routine l4 beach task, an adult compares walking, jogging, seagull. The person selects walking for the next step.\nWhich option does the person select for the next step?",
+        "answer": "walking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "crab"
+        "prompt": "During a routine l4 beach task, an adult compares crab, starfish, jellyfish. The person selects crab for the next step.\nWhich option does the person select for the next step?",
+        "answer": "crab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "dolphin"
+        "prompt": "During a routine l4 beach task, an adult compares dolphin, sea turtle, pelican. The person selects dolphin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "dolphin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "seahorse"
+        "prompt": "During a routine l4 beach task, an adult compares seahorse, clam, coral. The person selects seahorse for the next step.\nWhich option does the person select for the next step?",
+        "answer": "seahorse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -678,12 +742,12 @@
       "برج منقذ",
       "علم تحذير",
       "أول إسعاف طقم",
-      "دش",
+      "دُش",
       "غرفة تبديل الملابس",
       "ممشى خشبي",
       "رصيف بحري",
       "موقف سيارات",
-      "سلة مهملات"
+      "سلة قمامة"
     ],
     "usage": {
       "goal": "Learn to use common l4 beach 5 vocabulary to handle a familiar adult everyday task.",
@@ -739,7 +803,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares pier, parking lot, trash can. The person selects pier for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including pier, parking lot, trash can in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "L4 Beach: Short Description",
@@ -748,20 +813,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "seaweed"
+        "prompt": "During a routine l4 beach task, an adult compares seaweed, sea urchin, lifeguard. The person selects seaweed for the next step.\nWhich option does the person select for the next step?",
+        "answer": "seaweed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lifeguard tower"
+        "prompt": "During a routine l4 beach task, an adult compares lifeguard tower, warning flag, first aid kit. The person selects lifeguard tower for the next step.\nWhich option does the person select for the next step?",
+        "answer": "lifeguard tower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "shower"
+        "prompt": "During a routine l4 beach task, an adult compares shower, changing room, boardwalk. The person selects shower for the next step.\nWhich option does the person select for the next step?",
+        "answer": "shower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pier"
+        "prompt": "During a routine l4 beach task, an adult compares pier, parking lot, trash can. The person selects pier for the next step.\nWhich option does the person select for the next step?",
+        "answer": "pier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

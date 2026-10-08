@@ -38,7 +38,7 @@
       "بريق",
       "غمازة",
       "عبوس",
-      "يبرز شفتيه",
+      "يُبرز شفتيه",
       "دمعة",
       "يبكي",
       "ينتحب"
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a facial expressions context illustrating this situation: During a routine facial expressions task, an adult compares Tear, Cry, Sob. The person selects Tear for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult facial expressions scene showing lesson-related items or actions including Tear, Cry, Sob in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Facial Expressions: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smile"
+        "prompt": "During a routine facial expressions task, an adult compares Smile, Grin, Beam. The person selects Smile for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Smile",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smirk"
+        "prompt": "During a routine facial expressions task, an adult compares Smirk, Laugh, Giggle. The person selects Smirk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Smirk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chuckle"
+        "prompt": "During a routine facial expressions task, an adult compares Chuckle, Wink, Twinkle. The person selects Chuckle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chuckle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dimple"
+        "prompt": "During a routine facial expressions task, an adult compares Dimple, Frown, Pout. The person selects Dimple for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dimple",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tear"
+        "prompt": "During a routine facial expressions task, an adult compares Tear, Cry, Sob. The person selects Tear for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -196,18 +212,18 @@
       "ينتحب بخفوت",
       "تكشيرة",
       "يرتجف",
-      "يتدلى",
+      "يتدلّى",
       "كآبة",
-      "يقطب",
+      "يقطّب",
       "نظرة حادة",
       "زمجرة",
-      "يشد فكه",
-      "يقطب جبينه",
-      "يوسع فتحتي أنفه",
+      "يشدّ فكه",
+      "يقطّب جبينه",
+      "يوسّع فتحتي أنفه",
       "ابتسامة ازدراء",
-      "يصر على أسنانه",
-      "يحدق",
-      "يضيق عينيه"
+      "يَصِرّ على أسنانه",
+      "يحدّق",
+      "يُضيّق عينيه"
     ],
     "usage": {
       "goal": "Learn to use facial expressions 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a facial expressions context illustrating this situation: During a routine facial expressions task, an adult compares Grit Teeth, Stare, Squint. The person selects Grit Teeth for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult facial expressions scene showing lesson-related items or actions including Grit Teeth, Stare, Squint in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Facial Expressions: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whimper"
+        "prompt": "During a routine facial expressions task, an adult compares Whimper, Grimace, Quiver. The person selects Whimper for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Whimper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Droop"
+        "prompt": "During a routine facial expressions task, an adult compares Droop, Gloom, Scowl. The person selects Droop for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Droop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Glare"
+        "prompt": "During a routine facial expressions task, an adult compares Glare, Snarl, Clench Jaw. The person selects Glare for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Glare",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Furrow Brow"
+        "prompt": "During a routine facial expressions task, an adult compares Furrow Brow, Flare Nostrils, Sneer. The person selects Furrow Brow for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Furrow Brow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grit Teeth"
+        "prompt": "During a routine facial expressions task, an adult compares Grit Teeth, Stare, Squint. The person selects Grit Teeth for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grit Teeth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -360,7 +392,7 @@
     ],
     "targetWordsArabic": [
       "يلهث من الدهشة",
-      "عيون متسعة",
+      "عيون متّسعة",
       "فم مفتوح من الدهشة",
       "حاجبان مرفوعان",
       "يفزع",
@@ -370,10 +402,10 @@
       "يرتجف",
       "يرمش",
       "يتثاءب",
-      "يحمر خجلا",
-      "تدوير العينين استهجانا",
+      "يحمرّ خجلًا",
+      "تدوير العينين استهجانًا",
       "يومئ برأسه",
-      "هز الرأس من جانب إلى آخر"
+      "هزّ الرأس من جانب إلى آخر"
     ],
     "usage": {
       "goal": "Learn to use facial expressions 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a facial expressions context illustrating this situation: During a routine facial expressions task, an adult compares Eye Roll, Nod, Shake Head. The person selects Eye Roll for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult facial expressions scene showing lesson-related items or actions including Eye Roll, Nod, Shake Head in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Facial Expressions: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gasp"
+        "prompt": "During a routine facial expressions task, an adult compares Gasp, Wide Eyes, Dropped Jaw. The person selects Gasp for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gasp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Raised Eyebrows"
+        "prompt": "During a routine facial expressions task, an adult compares Raised Eyebrows, Startle, Pale Face. The person selects Raised Eyebrows for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Raised Eyebrows",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frozen"
+        "prompt": "During a routine facial expressions task, an adult compares Frozen, Shudder, Tremble. The person selects Frozen for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Frozen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blink"
+        "prompt": "During a routine facial expressions task, an adult compares Blink, Yawn, Blush. The person selects Blink for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Blink",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eye Roll"
+        "prompt": "During a routine facial expressions task, an adult compares Eye Roll, Nod, Shake Head. The person selects Eye Roll for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Eye Roll",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -508,7 +556,13 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Bite Lip", "Stick Out Tongue", "Raise Hand", "Shrug", "Thumbs Up"],
-    "targetWordsArabic": ["يعض شفته", "يخرج لسانه", "يرفع يده", "يهز كتفيه", "إشارة الإبهام لأعلى"],
+    "targetWordsArabic": [
+      "يعضّ شفته",
+      "يُخرج لسانه",
+      "يرفع يده",
+      "يهز كتفيه",
+      "إشارة رفع الإبهام للموافقة"
+    ],
     "usage": {
       "goal": "Learn to use facial expressions 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to facial expressions.",
@@ -539,7 +593,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a facial expressions context illustrating this situation: During a routine facial expressions task, an adult compares Shrug, Thumbs Up, Bite Lip. The person selects Shrug for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult facial expressions scene showing lesson-related items or actions including Shrug, Thumbs Up in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Facial Expressions: Everyday Description",
@@ -548,12 +603,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bite Lip"
+        "prompt": "During a routine facial expressions task, an adult compares Bite Lip, Stick Out Tongue, Raise Hand. The person selects Bite Lip for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bite Lip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shrug"
+        "prompt": "During a routine facial expressions task, an adult compares Shrug, Thumbs Up, Bite Lip. The person selects Shrug for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shrug",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

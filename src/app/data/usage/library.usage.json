@@ -28,7 +28,7 @@
     ],
     "targetWordsArabic": [
       "رواية",
-      "كتاب مصور",
+      "كتاب مصوّر",
       "كتاب مرجعي",
       "كتاب قصص مصورة",
       "مجلة",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Study Desk as the central item; include Study Desk, Chair, and Bean Bag naturally where visually appropriate, but make the real-world use of Study Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: The Library",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Novel"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Novel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Comic Book"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Comic Book",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Encyclopedia"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Encyclopedia",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Poetry Book"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Poetry Book",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Study Desk"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Study Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -282,7 +298,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Return Desk as the central item; include Return Desk, Help Desk, and Archive naturally where visually appropriate, but make the real-world use of Return Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "What You Need to Know: The Library",
@@ -291,24 +308,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Step Stool"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Step Stool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer Desk"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Computer Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Non-Fiction"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Non-Fiction",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Periodicals"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Periodicals",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Return Desk"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Return Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -378,7 +410,7 @@
       "إرجاع الكتب",
       "البحث",
       "الدراسة",
-      "تصفح الكتب",
+      "تصفّح الكتب",
       "حجز الكتب",
       "تصوير المستندات",
       "الكتابة على لوحة المفاتيح",
@@ -386,7 +418,7 @@
       "بطاقة مكتبة",
       "ماسح باركود",
       "طابع",
-      "علامة كتاب",
+      "علامة صفحة",
       "غلاف الكتاب"
     ],
     "usage": {
@@ -455,7 +487,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Stamp as the central item; include Stamp, Bookmark, and Book Cover naturally where visually appropriate, but make the real-world use of Stamp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Library",
@@ -464,24 +497,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reading"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Searching"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Searching",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reserving"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Reserving",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whispering"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Whispering",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stamp"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stamp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -546,7 +594,7 @@
       "Cleaner"
     ],
     "targetWordsArabic": [
-      "علامة",
+      "ملصق تعريفي",
       "فهرس المكتبة",
       "حاسوب",
       "طابعة",
@@ -628,7 +676,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Storyteller as the central item; include Storyteller, Guard, and Cleaner naturally where visually appropriate, but make the real-world use of Storyteller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Library",
@@ -637,24 +686,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Label"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Label",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Printer"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Printer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Assistant"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Assistant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Student"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Student",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Storyteller"
+        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Storyteller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

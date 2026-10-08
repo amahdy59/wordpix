@@ -1,0 +1,144 @@
+{
+  "mechanic": {
+    "engine": { "definition": "The machine in a vehicle that produces power to move it." },
+    "battery": {
+      "definition": "A device that stores electrical energy and supplies power to a vehicle."
+    },
+    "alternator": {
+      "definition": "A generator that supplies electrical power and charges a vehicle's battery while the engine runs."
+    },
+    "radiator": {
+      "definition": "A heat exchanger that helps cool the engine by releasing heat from coolant."
+    },
+    "air-filter": { "arabicTranslation": "مرشح الهواء" },
+    "oil-filter": { "arabicTranslation": "مرشح الزيت" },
+    "lift": {
+      "definition": "A workshop machine that raises a vehicle so workers can reach underneath it.",
+      "arabicTranslation": "رافعة سيارات"
+    },
+    "grinder": {
+      "definition": "A power tool with a rotating abrasive disc for grinding or cutting materials.",
+      "arabicTranslation": "آلة تجليخ"
+    },
+    "coolant": {
+      "definition": "A fluid that carries heat away from an engine to help prevent overheating."
+    },
+    "washer": {
+      "definition": "A small flat ring placed under a nut or bolt head to spread the load.",
+      "arabicTranslation": "حلقة تثبيت"
+    },
+    "tune-up": {
+      "definition": "Maintenance and adjustments intended to improve an engine's operation."
+    },
+    "alignment": {
+      "definition": "The adjustment of wheel angles so the vehicle travels as intended.",
+      "arabicTranslation": "ضبط زوايا العجلات"
+    },
+    "paint-job": {
+      "definition": "The work of painting a vehicle's exterior, or the resulting finish."
+    }
+  },
+  "bicycle-shop": {
+    "hybrid": {
+      "definition": "A bicycle combining features of road and mountain bikes for everyday riding."
+    },
+    "bmx": {
+      "definition": "A compact, sturdy bicycle designed for motocross racing, jumps, or tricks."
+    },
+    "wheel": { "definition": "A circular part that turns and allows a bicycle to move." },
+    "tire": {
+      "definition": "The rubber covering around a bicycle wheel that grips the ground.",
+      "arabicTranslation": "إطار دراجة"
+    },
+    "chain": {
+      "definition": "A series of metal links that transfers power from the pedals to the rear wheel."
+    },
+    "pedal": { "definition": "A foot-operated part that the rider pushes to move the bicycle." },
+    "frame": {
+      "definition": "The main supporting structure to which a bicycle's parts are attached.",
+      "arabicTranslation": "هيكل الدراجة"
+    },
+    "rack": { "definition": "A support attached to a bicycle for carrying luggage." },
+    "shorts": { "definition": "Short trousers worn for cycling or other activities." },
+    "gloves": {
+      "definition": "Hand coverings worn for grip, comfort, or protection while cycling."
+    },
+    "cable": {
+      "definition": "A flexible wire that transmits movement to brakes or gears.",
+      "arabicTranslation": "كابل الفرامل أو تغيير السرعات"
+    },
+    "brake-pad": {
+      "definition": "A replaceable friction pad that presses against a rim or disc to slow the wheel.",
+      "arabicTranslation": "بطانة فرامل"
+    },
+    "bike-lane": { "definition": "A part of a road designated for bicycle traffic." },
+    "trail": { "definition": "A route through a natural area used for walking or cycling." },
+    "turn": { "definition": "To change direction while riding.", "arabicTranslation": "ينعطف" },
+    "signal": {
+      "definition": "To indicate an intended turn or stop to other road users.",
+      "arabicTranslation": "يشير إلى تغيير الاتجاه أو التوقف"
+    },
+    "stop": { "definition": "To bring the bicycle to a standstill." },
+    "flat-tire": {
+      "definition": "A tire that has lost too much air to be used normally.",
+      "arabicTranslation": "إطار فارغ من الهواء"
+    }
+  },
+  "electric-vehicle-station": {
+    "connector": {
+      "definition": "The part at the end of a charging cable that connects to a vehicle."
+    },
+    "level-1": {
+      "definition": "In North American terminology, AC vehicle charging using a standard 120-volt supply.",
+      "arabicTranslation": "شحن التيار المتردد من المستوى الأول"
+    },
+    "level-2": {
+      "definition": "In North American terminology, AC vehicle charging using a 208- or 240-volt supply.",
+      "arabicTranslation": "شحن التيار المتردد من المستوى الثاني"
+    },
+    "bms": {
+      "definition": "A battery management system that monitors and controls a battery pack."
+    },
+    "cell": {
+      "definition": "One electrochemical unit within a battery that stores and supplies electrical energy.",
+      "arabicTranslation": "خلية بطارية"
+    },
+    "lighting": { "definition": "Lights installed to illuminate the charging area." },
+    "bollard": {
+      "definition": "A short strong post used to protect equipment or control vehicle access.",
+      "arabicTranslation": "عمود حماية"
+    },
+    "curb": {
+      "definition": "The raised edge separating a roadway or parking area from a sidewalk.",
+      "arabicTranslation": "حافة الرصيف"
+    },
+    "bench": { "definition": "A long seat for several people." },
+    "account": {
+      "definition": "A registered user's record for accessing and paying for charging services."
+    },
+    "subscription": {
+      "definition": "An agreement to pay regularly for access to a charging service."
+    },
+    "network": {
+      "definition": "A group of charging stations operated or connected under a shared service."
+    },
+    "range": {
+      "definition": "The distance an electric vehicle can travel with its available battery charge.",
+      "arabicTranslation": "مدى السير"
+    },
+    "voltage": {
+      "definition": "The electrical potential difference between two points, measured in volts.",
+      "arabicTranslation": "فرق الجهد الكهربائي"
+    },
+    "efficiency": {
+      "definition": "How effectively a system uses energy, with less energy lost or wasted."
+    },
+    "lockout": {
+      "definition": "A safety procedure that isolates equipment from its energy supply before work.",
+      "arabicTranslation": "عزل مصادر الطاقة وقفلها"
+    },
+    "certification": {
+      "definition": "Confirmation by an authorized body that equipment meets specified requirements."
+    }
+  }
+}

@@ -33,7 +33,7 @@
       "كتان",
       "كشمير",
       "قنب نسيجي",
-      "خيزران",
+      "نسيج مشتق من الخيزران",
       "جوت",
       "موهير",
       "ألبكة",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Acrylic as the central item; include Acrylic, Spandex, and Rayon naturally where visually appropriate, but make the real-world use of Acrylic the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Fabrics & Textiles",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cotton"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cotton, Silk, Wool, and Linen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cotton",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cashmere"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cashmere, Hemp, Bamboo, and Jute and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cashmere",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mohair"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mohair, Alpaca, Polyester, and Nylon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mohair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Acrylic"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acrylic, Spandex, and Rayon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Acrylic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -194,7 +207,7 @@
     "targetWordsArabic": [
       "ليكرا",
       "ألياف دقيقة (مايكروفايبر)",
-      "قماش يسمى «جوري-تيكس»",
+      "نسيج غور تكس",
       "كيفلار",
       "نيوبرين",
       "مخمل",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Crepe as the central item; include Crepe, Tulle, and Lace naturally where visually appropriate, but make the real-world use of Crepe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Fabrics & Textiles",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lycra"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lycra, Microfiber, Gore-Tex, and Kevlar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lycra",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Neoprene"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Neoprene, Velvet, Satin, and Chiffon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Neoprene",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Organza"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Organza, Taffeta, Brocade, and Jacquard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Organza",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crepe"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crepe, Tulle, and Lace and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crepe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -357,21 +383,21 @@
       "Steam"
     ],
     "targetWordsArabic": [
-      "نسيج",
+      "طريقة النسج",
       "حياكة",
       "سدى",
       "لحمة",
-      "قماش يسمى «ثرياد كوونت»",
+      "كثافة الخيوط",
       "وزن",
       "انسدال",
       "مرونة",
       "قابلية التهوية",
       "متانة",
-      "غسيل يد",
-      "غسيل آلة",
-      "ينظف جاف",
-      "مكواة",
-      "يطبخ بالبخار"
+      "يغسل يدويًا",
+      "يغسل في الغسالة",
+      "ينظف تنظيفًا جافًا",
+      "يكوي",
+      "يعالج بالبخار"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
@@ -427,7 +453,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Dry Clean as the central item; include Dry Clean, Iron, and Steam naturally where visually appropriate, but make the real-world use of Dry Clean the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Fabrics & Textiles",
@@ -436,20 +463,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Weave"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weave, Knit, Warp, and Weft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Weave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thread Count"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread Count, Weight, Drape, and Stretch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Thread Count",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Breathability"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Breathability, Durability, Hand Wash, and Machine Wash and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Breathability",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry Clean"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry Clean, Iron, and Steam and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dry Clean",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -506,11 +545,11 @@
     "stageName": "C1 Mastery",
     "targetWordsEnglish": ["Bleach", "Tumble Dry", "Line Dry", "Stain Removal", "Fabric Softener"],
     "targetWordsArabic": [
-      "مبيض",
-      "تجفيف دوار",
-      "جاف طابور",
-      "سطح يسمى «ستاين ريموفال»",
-      "منعم أقمشة"
+      "يبيّض",
+      "يجفف في مجفف دوار",
+      "يجفف على حبل الغسيل",
+      "إزالة البقع",
+      "منعّم أقمشة"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
@@ -532,7 +571,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Fabric Softener",
+          "targetWords": ["Fabric Softener"],
           "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric Softener and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -542,7 +581,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Fabric Softener as the central item; include Fabric Softener, Bleach, and Tumble Dry naturally where visually appropriate, but make the real-world use of Fabric Softener the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Fabrics & Textiles",
@@ -551,12 +591,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bleach"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bleach, Tumble Dry, Line Dry, and Stain Removal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bleach",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fabric Softener"
+        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric Softener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fabric Softener",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

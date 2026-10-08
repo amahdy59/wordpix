@@ -32,15 +32,15 @@
       "-",
       "-",
       "غرفة طعام",
-      "مكتب منزل",
+      "مكتب منزلي",
       "غرفة غسيل",
-      "قبو",
+      "طابق سفلي",
       "علية",
-      "غرفة يسمى «بانتري»",
+      "مخزن أطعمة",
       "فناء خلفي",
-      "شجرة يسمى «فرونت يارد»",
-      "منطقة يسمى «باتيو»",
-      "سفينة يسمى «ديك»",
+      "فناء أمامي",
+      "فناء مرصوف",
+      "منصة خارجية خشبية",
       "شرفة"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Patio as the main location; include Patio, Deck, and Balcony naturally where visually appropriate, but make the real-world use of Patio the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: Home Features",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Living Room"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Room, Bedroom, Bathroom, and Kitchen and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Living Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dining Room"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dining Room, Home Office, Laundry Room, and Basement and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Dining Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Attic"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Attic, Pantry, Backyard, and Front Yard and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Attic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Patio"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patio, Deck, and Balcony and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Patio",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,12 +201,12 @@
       "French Doors"
     ],
     "targetWordsArabic": [
-      "شرفة",
-      "مبنى يسمى «بورتش»",
-      "هيكل يسمى «جازيبو»",
-      "نبات يسمى «بيرجولا»",
-      "أداة يسمى «جاردين شيد»",
-      "مدفأة",
+      "مساحة خارجية مستوية",
+      "شرفة مدخل",
+      "كشك حديقة مظلل",
+      "برجولة",
+      "مخزن أدوات الحديقة",
+      "مدفأة حائطية",
       "غرفة ملابس داخلية",
       "رفوف مدمجة",
       "كرانيش علوية زخرفية",
@@ -201,7 +214,7 @@
       "أرضية بلاط",
       "سقف مرتفع مقبب",
       "نافذة سقفية",
-      "هيكل يسمى «باي ويندوو»",
+      "نافذة بارزة",
       "أبواب فرنسية زجاجية"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Skylight as the central item; include Skylight, Bay Window, and French Doors naturally where visually appropriate, but make the real-world use of Skylight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "What You Need to Know: Home Features",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Terrace"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrace, Porch, Gazebo, and Pergola and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Terrace",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Garden Shed"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden Shed, Fireplace, Walk-In Closet, and Built-In Shelves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Garden Shed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crown Molding"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown Molding, Hardwood Floor, Tile Floor, and Vaulted Ceiling and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Crown Molding",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skylight"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skylight, Bay Window, and French Doors and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Skylight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -346,12 +372,12 @@
     "targetWordsArabic": [
       "نظام التدفئة والتهوية وتكييف الهواء (HVAC)",
       "تكييف مركزي",
-      "مبنى يسمى «فورناكي»",
+      "فرن تدفئة",
       "سخان مياه",
       "سباكة",
-      "مبنى يسمى «يليكتريكال بانيل»",
-      "قاطع كهربائي",
-      "منظم حرارة",
+      "لوحة كهربائية",
+      "قاطع دائرة كهربائية",
+      "منظّم حرارة",
       "خزان صرف صحي",
       "ماء بئر"
     ],
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Septic Tank as the central item; include Septic Tank, Well Water, and HVAC naturally where visually appropriate, but make the real-world use of Septic Tank the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "HVAC"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare HVAC, Central Air, Furnace, and Water Heater and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "HVAC",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plumbing"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumbing, Electrical Panel, Circuit Breaker, and Thermostat and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Plumbing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Septic Tank"
+        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Septic Tank, and Well Water and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Septic Tank",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

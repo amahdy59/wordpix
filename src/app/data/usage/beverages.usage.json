@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "قهوة",
       "شاي",
-      "شوكولاتة ساخن",
+      "شوكولاتة ساخنة",
       "إسبريسو",
       "كابتشينو",
       "لاتيه",
@@ -40,14 +40,14 @@
       "ماء",
       "شاي مثلج",
       "ليمونادة",
-      "قهوة مثلج",
+      "قهوة مثلجة",
       "مخفوق الحليب"
     ],
     "usage": {
       "goal": "Learn to use common beverages 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to beverages.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a beverages context illustrating this situation: During a routine beverages task, an adult compares Lemonade, Iced Coffee, Milkshake. The person selects Lemonade for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult beverages scene showing lesson-related items or actions including Lemonade, Iced Coffee, Milkshake in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Beverages: Mini Dialogue",
-      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with coffee, tea, and hot chocolate. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with espresso, cappuccino, and latte. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Beverages 1: A short reading",
+      "text": "Omar starts the morning with coffee. Maya prefers tea, and their guest asks for hot chocolate. At the café, the barista offers a latte or cappuccino too. Omar chooses an espresso this time. Maya orders herbal tea and a glass of water. They collect their drinks and find a quiet table.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coffee"
+        "prompt": "During a routine beverages task, an adult compares Coffee, Tea, Hot Chocolate. The person selects Coffee for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coffee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Espresso"
+        "prompt": "During a routine beverages task, an adult compares Espresso, Cappuccino, Latte. The person selects Espresso for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Espresso",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mocha"
+        "prompt": "During a routine beverages task, an adult compares Mocha, Herbal Tea, Green Tea. The person selects Mocha for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mocha",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chai"
+        "prompt": "During a routine beverages task, an adult compares Chai, Water, Iced Tea. The person selects Chai for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chai",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lemonade"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Coffee"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Hot Chocolate"
+        "prompt": "During a routine beverages task, an adult compares Lemonade, Iced Coffee, Milkshake. The person selects Lemonade for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lemonade",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Seitan” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which coffee does Omar choose at the café?",
+        "answer": "An espresso",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -190,11 +205,11 @@
     ],
     "targetWordsArabic": [
       "سموثي",
-      "مشروب سلاش مثلج",
+      "مشروب سلاش مثلّج",
       "ماء غازي",
-      "ماء منشط",
-      "قهوة أو شاي محضر بالنقع البارد",
-      "عصير برتقالي",
+      "ماء التونيك",
+      "قهوة أو شاي مُحضَّر بالنقع البارد",
+      "عصير برتقال",
       "عصير تفاح",
       "عصير عنب",
       "عصير التوت البري",
@@ -203,13 +218,13 @@
       "عصير الأناناس",
       "عصير المانجو",
       "عصير الرمان",
-      "عصير طازج معصر"
+      "عصير طازج مُعَصَّر"
     ],
     "usage": {
       "goal": "Learn to use common beverages 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to beverages.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a beverages context illustrating this situation: During a routine beverages task, an adult compares Mango Juice, Pomegranate Juice, Fresh Squeeze. The person selects Mango Juice for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult beverages scene showing lesson-related items or actions including Mango Juice, Pomegranate Juice, Fresh Squeeze in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Beverages: Simple Message",
-      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with smoothie, slushie, and sparkling water. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with tonic water, cold brew, and orange juice. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Beverages 2: A short reading",
+      "text": "Maya buys orange juice and apple juice for breakfast. Omar chooses sparkling water for lunch. He sees a smoothie and cold brew in the chilled display but buys neither today. Maya reads the label on a bottle of grape juice. They compare the bottle sizes before taking the drinks to the checkout.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smoothie"
+        "prompt": "During a routine beverages task, an adult compares Smoothie, Slushie, Sparkling Water. The person selects Smoothie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Smoothie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tonic Water"
+        "prompt": "During a routine beverages task, an adult compares Tonic Water, Cold Brew, Orange Juice. The person selects Tonic Water for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tonic Water",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Apple Juice"
+        "prompt": "During a routine beverages task, an adult compares Apple Juice, Grape Juice, Cranberry Juice. The person selects Apple Juice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Apple Juice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tomato Juice"
+        "prompt": "During a routine beverages task, an adult compares Tomato Juice, Carrot Juice, Pineapple Juice. The person selects Tomato Juice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tomato Juice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mango Juice"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Smoothie"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Sparkling Water"
+        "prompt": "During a routine beverages task, an adult compares Mango Juice, Pomegranate Juice, Fresh Squeeze. The person selects Mango Juice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mango Juice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Coffee” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which drink does Omar choose for lunch?",
+        "answer": "Sparkling water",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -353,13 +383,13 @@
     "targetWordsArabic": [
       "مشروب غازي",
       "كولا",
-      "مشروب زنجبيل غازي",
-      "جعة جذر",
-      "مشروب غازي كريمة",
+      "مشروب غازي بنكهة الزنجبيل",
+      "مشروب غازي بنكهة الجذور",
+      "مشروب غازي بنكهة الفانيليا",
       "نكهة أو مشروب الليمون والليمون الأخضر",
-      "يشرب طاقة",
-      "يشرب رياضي",
-      "كومبوتشا؛ شاي مخمر",
+      "مشروب طاقة",
+      "مشروب رياضي",
+      "كومبوتشا؛ شاي مُخمَّر",
       "ماء جوز الهند",
       "جعة",
       "نبيذ",
@@ -370,8 +400,8 @@
     "usage": {
       "goal": "Learn to use common beverages 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to beverages.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a beverages context illustrating this situation: During a routine beverages task, an adult compares Champagne, Whiskey, Vodka. The person selects Champagne for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult beverages scene showing lesson-related items or actions including Champagne, Whiskey, Vodka in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Beverages: Notice-Style Text",
-      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with soda, cola, and ginger ale. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with root beer, cream soda, and lemon-lime. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Beverages 3: A short reading",
+      "text": "The menu separates soft drinks from alcoholic drinks. Maya chooses ginger ale, and Omar orders coconut water. Another table orders beer and wine. The server checks each order before bringing it. Maya asks for water as well because she wants a second drink without choosing another sweet option.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Soda"
+        "prompt": "During a routine beverages task, an adult compares Soda, Cola, Ginger Ale. The person selects Soda for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Soda",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Root Beer"
+        "prompt": "During a routine beverages task, an adult compares Root Beer, Cream Soda, Lemon-Lime. The person selects Root Beer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Root Beer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Energy Drink"
+        "prompt": "During a routine beverages task, an adult compares Energy Drink, Sports Drink, Kombucha. The person selects Energy Drink for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Energy Drink",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coconut Water"
+        "prompt": "During a routine beverages task, an adult compares Coconut Water, Beer, Wine. The person selects Coconut Water for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coconut Water",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Champagne"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Soda"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Ginger Ale"
+        "prompt": "During a routine beverages task, an adult compares Champagne, Whiskey, Vodka. The person selects Champagne for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Champagne",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Smoothie” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which drink does Maya choose from the menu?",
+        "answer": "Ginger ale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -500,8 +545,8 @@
     "usage": {
       "goal": "Learn to use common beverages 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to beverages.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -527,29 +572,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a beverages context illustrating this situation: During a routine beverages task, an adult compares Brandy, Cocktail, Gin. The person selects Brandy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult beverages scene showing lesson-related items or actions including Brandy, Cocktail in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Beverages: Short Description",
-      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with gin, rum, and tequila. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with brandy and cocktail. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Beverages 4: A short reading",
+      "text": "At a bar, a customer reads the cocktail menu and asks what is in one drink. The bartender explains that it contains rum. Other drinks on the menu use gin, tequila, or brandy. The customer asks for a version without alcohol instead. The bartender confirms the request before preparing the drink.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gin"
+        "prompt": "During a routine beverages task, an adult compares Gin, Rum, Tequila. The person selects Gin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brandy"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Gin"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Tequila"
+        "prompt": "During a routine beverages task, an adult compares Brandy, Cocktail, Gin. The person selects Brandy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Brandy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -558,6 +602,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Soda” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What version of the drink does the customer request?",
+        "answer": "A version without alcohol",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

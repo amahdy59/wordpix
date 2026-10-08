@@ -31,14 +31,14 @@
       "كرسي مكتب",
       "خزانة ملفات",
       "رف الكتب / مكتبة حائطية",
-      "غرفة يسمى «كوبيكلي»",
+      "حجرة عمل مقسمة",
       "مكتب للوقوف",
-      "طاولة مؤتمر",
+      "طاولة اجتماعات",
       "سبورة بيضاء",
-      "لوحة إعلانات (لوحة معلومات)",
-      "نظام يسمى «بارتيتيون»",
+      "لوحة إعلانات",
+      "حاجز تقسيم",
       "حاسوب",
-      "شاشة مراقبة",
+      "شاشة حاسوب",
       "لوحة مفاتيح",
       "فأرة حاسوب",
       "طابعة"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Keyboard as the central item; include Keyboard, Mouse, and Printer naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Office",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Desk"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cubicle"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cubicle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bulletin Board"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bulletin Board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Keyboard"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Keyboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -192,17 +205,17 @@
       "جهاز عرض",
       "آلة تمزيق الورق",
       "جهاز فاكس",
-      "مادة يسمى «كوبيير»",
+      "آلة تصوير مستندات",
       "حاسوب محمول (لابتوب)",
-      "-",
-      "-",
-      "موجه",
-      "-",
+      "سماعة رأس بميكروفون",
+      "كاميرا ويب",
+      "موجّه",
+      "خادم حاسوبي",
       "ذاكرة USB",
-      "جهاز يسمى «يكستيرنال هارد دريفي»",
-      "جهاز يسمى «دوكينج ستاتيون»",
+      "قرص صلب خارجي",
+      "محطة توصيل حاسوب محمول",
       "نظام هاتف",
-      "جهاز يسمى «فيديو كونفيرينكينج»"
+      "عقد اجتماعات عبر الفيديو"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Docking Station as the main location; include Docking Station, Phone System, and Video Conferencing naturally where visually appropriate, but make the real-world use of Docking Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Office",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scanner"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scanner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Copier"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Copier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Router"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Router",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Docking Station"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Docking Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -359,10 +385,10 @@
       "غرفة البريد",
       "غرفة تخزين",
       "دورة مياه",
-      "مكان يسمى «دريسس كودي»",
-      "مشروب يسمى «هاببي هوور»",
+      "قواعد اللباس",
+      "فترة عروض مخفضة على المشروبات",
       "بناء الفريق",
-      "عامل يسمى «بيرفورمانكي ريفييو»",
+      "تقييم أداء",
       "تهيئة الموظف الجديد"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult working with or speaking to the Team Building; include Team Building, Performance Review, and Onboarding naturally where visually appropriate, but make the real-world use of Team Building the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Office",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Reception",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Meeting Room"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Meeting Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Storage Room"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Storage Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Team Building"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Team Building",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -500,10 +539,10 @@
       "Office Party"
     ],
     "targetWordsArabic": [
-      "العمل عن بعد",
+      "العمل عن بُعد",
       "ساعات عمل مرنة",
       "سياسة الباب المفتوح",
-      "صندوق تبريد ماء",
+      "مُبرّد مياه",
       "حفلة مكتب"
     ],
     "usage": {
@@ -526,7 +565,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Office Party",
+          "targetWords": ["Office Party"],
           "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
@@ -536,7 +575,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Office Party as the main location; include Office Party, Remote Work, and Flex Hours naturally where visually appropriate, but make the real-world use of Office Party the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Office",
@@ -545,12 +585,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Remote Work"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Remote Work",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Office Party"
+        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Office Party",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

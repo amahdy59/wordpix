@@ -30,18 +30,18 @@
       "بار رياضي",
       "بار شعبي بسيط",
       "حانة نبيذ",
-      "غرفة يسمى «سبياكياسي»",
+      "حانة سرية أو مستوحاة من الحانات السرية",
       "بار على السطح",
       "بار بطابع استوائي",
-      "غرفة يسمى «بوب»",
-      "مبنى يسمى «تافيرن»",
-      "حانة تخمير",
-      "شخص يسمى «لوونجي»",
-      "مشروب يسمى «هاببي هوور»",
+      "حانة",
+      "حانة",
+      "حانة تصنع الجعة التي تقدمها",
+      "صالة مشروبات",
+      "فترة عروض مخفضة على المشروبات",
       "إعلان قرب انتهاء تقديم المشروبات الكحولية",
-      "-",
+      "حساب مشروبات مفتوح",
       "إكرامية",
-      "مشروب يسمى «رووند وف درينكس»"
+      "جولة مشروبات للمجموعة"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Tab as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Bar Culture: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sports Bar"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Bar, Dive Bar, Wine Bar, and Speakeasy and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Sports Bar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rooftop Bar"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rooftop Bar, Tiki Bar, Pub, and Tavern and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Rooftop Bar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brewpub"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brewpub, Lounge, Happy Hour, and Last Call and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brewpub",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tab"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Tip, and Round of Drinks and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -192,17 +205,17 @@
       "Big Screen"
     ],
     "targetWordsArabic": [
-      "يحمص",
+      "يحمّص",
       "تحية أو شكر",
-      "شخص يسمى «ديسيجناتيد دريفير»",
+      "سائق متفق عليه لا يشرب الكحول",
       "حساب مفتوح في البار",
-      "مشروب يسمى «كوفير تشارجي»",
-      "موسيقى حية",
+      "رسم دخول",
+      "موسيقى حيّة",
       "كاريوكي",
       "ليلة مسابقة معلومات",
-      "لوحة سهام",
+      "لوحة رمي السهام",
       "طاولة مسبح",
-      "جهاز موسيقى اختياري",
+      "آلة موسيقى تعمل بالعملات",
       "ليلة كوميديا",
       "فعالية ميكروفون مفتوح",
       "ساحة رقص",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Open Mic as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: Bar Culture",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toast"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toast, Cheers, Designated Driver, and Bar Tab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Toast",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cover Charge"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cover Charge, Live Music, Karaoke, and Trivia Night and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cover Charge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dart Board"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dart Board, Pool Table, Jukebox, and Comedy Night and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dart Board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Open Mic"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Open Mic, Dance Floor, and Big Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Open Mic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -351,12 +377,12 @@
       "Cut Off"
     ],
     "targetWordsArabic": [
-      "فعل أو عملية يسمى «موديراتيون»",
+      "اعتدال",
       "خدمة مشاركة الرحلات",
       "استراحة لشرب الماء",
-      "اعرف حدك",
-      "تمهل",
-      "تناول الطعام مسبقا",
+      "اعرف حدّك",
+      "تمهّل",
+      "تناول الطعام مسبقًا",
       "فحص بطاقة الهوية",
       "عمر قانوني",
       "إيقاف تقديم المشروبات الكحولية"
@@ -393,7 +419,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "Cut Off",
+          "targetWords": ["Cut Off"],
           "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cut Off and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -403,7 +429,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cut Off as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Bar Culture",
@@ -412,16 +439,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moderation"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moderation, Ride Share, Water Break, and Know Your Limit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moderation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pace Yourself"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pace Yourself, Eat Before, ID Check, and Legal Age and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pace Yourself",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cut Off"
+        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cut Off and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cut Off",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

@@ -32,16 +32,16 @@
       "عدسة",
       "عدسة واسعة الزاوية",
       "عدسة مقربة",
-      "-",
+      "حامل ثلاثي",
       "حامل كاميرا أحادي",
       "حزام كاميرا",
-      "قبعة بواق عدسة",
+      "قبعة بواقٍ عدسة",
       "حقيبة كاميرا",
-      "لون يسمى «فلاش»",
+      "فلاش",
       "سوفت بوكس؛ صندوق إضاءة ناعمة",
       "إضاءة بمظلة تصوير",
       "إضاءة حلقية",
-      "عاكس ضوئي"
+      "عاكس ضوء"
     ],
     "usage": {
       "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Umbrella Light as the central item; include Umbrella Light, Ring Light, and Reflector naturally where visually appropriate, but make the real-world use of Umbrella Light the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Photography Studio",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "DSLR Camera"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DSLR Camera, Mirrorless Camera, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "DSLR Camera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wide-Angle Lens"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wide-Angle Lens, Telephoto Lens, and Tripod and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wide-Angle Lens",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Monopod"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monopod, Camera Strap, and Lens Cap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Monopod",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Camera Bag"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera Bag, Flash, and Softbox and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Camera Bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Umbrella Light"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Umbrella Light, Ring Light, and Reflector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Umbrella Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -203,7 +219,7 @@
       "ناشر روائح",
       "حامل إضاءة",
       "إضاءة مستمرة",
-      "أداة أو جهاز يسمى «ستروبي»",
+      "ضوء وامض للتصوير",
       "مرشح جل لوني",
       "خلفية",
       "ورق خلفية تصوير",
@@ -212,9 +228,9 @@
       "محطة مكياج",
       "حامل ملابس",
       "ملقط تثبيت",
-      "كيس تثقيل",
+      "كيس رمل للتثبيت",
       "شريط غافر",
-      "جهاز يسمى «يكستينسيون كورد»"
+      "سلك تمديد كهربائي"
     ],
     "usage": {
       "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
@@ -282,7 +298,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Sandbag as the central item; include Sandbag, Gaffer Tape, and Extension Cord naturally where visually appropriate, but make the real-world use of Sandbag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Photography Studio",
@@ -291,24 +308,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diffuser"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diffuser, Light Stand, and Continuous Light and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Diffuser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Strobe"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Strobe, Gel Filter, and Backdrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Strobe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Background Paper"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Background Paper, Posing Stool, and Props Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Background Paper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Makeup Station"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Makeup Station, Wardrobe Rack, and Clamp and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Makeup Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sandbag"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandbag, Gaffer Tape, and Extension Cord and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sandbag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -374,7 +406,7 @@
     ],
     "targetWordsArabic": [
       "زر الغالق",
-      "جهاز يسمى «فييوفيندير»",
+      "محدد المنظر",
       "شاشة LCD",
       "بطاقة ذاكرة",
       "بطارية",
@@ -386,7 +418,7 @@
       "شاشة مراقبة حاسوب",
       "برنامج تحرير الصور",
       "عجلة لون",
-      "مدرج تكراري",
+      "رسم بياني لتوزيع سطوع الصورة",
       "أداة القص"
     ],
     "usage": {
@@ -455,7 +487,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Color Wheel as the central item; include Color Wheel, Histogram, and Crop Tool naturally where visually appropriate, but make the real-world use of Color Wheel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -464,24 +497,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shutter Button"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shutter Button, Viewfinder, and LCD Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Shutter Button",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Memory Card"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Memory Card, Battery, and Hot Shoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Memory Card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dial"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dial, Focus Ring, and Image Sensor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lens Hood"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lens Hood, Computer Monitor, and Editing Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lens Hood",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Color Wheel"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Wheel, Histogram, and Crop Tool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Color Wheel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -548,12 +596,12 @@
     "targetWordsArabic": [
       "أداة الفرشاة",
       "طبقة",
-      "يرشح",
+      "يرشّح",
       "إعداد مسبق",
-      "-",
-      "شخص يسمى «بورترايت»",
-      "-",
-      "آلة يسمى «ماكرو»",
+      "تصدير",
+      "صورة شخصية",
+      "صورة منظر طبيعي",
+      "تصوير الأجسام الصغيرة عن قرب",
       "صورة منتج",
       "أزياء",
       "زفاف",
@@ -628,7 +676,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Food Photography as the central item; include Food Photography, Black and White, and Panorama naturally where visually appropriate, but make the real-world use of Food Photography the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Photography Studio",
@@ -637,24 +686,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brush Tool"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brush Tool, Layer, and Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brush Tool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Preset"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preset, Export, and Portrait and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Preset",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Landscape"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Landscape, Macro, and Product Shot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Landscape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fashion"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion, Wedding, and Event and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fashion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Food Photography"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Food Photography, Black and White, and Panorama and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Food Photography",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -721,16 +785,16 @@
     "targetWordsArabic": [
       "كاميرا",
       "صندوق إضاءة",
-      "جهاز يسمى «ابيرتوري»",
+      "فتحة العدسة",
       "سرعة الغالق",
-      "حساسية الضوء ISO",
-      "تركيز بؤري",
+      "إعداد حساسية الكاميرا للضوء",
+      "ضبط البؤرة",
       "تعريض ضوئي",
       "توازن اللون الأبيض",
-      "زووم",
+      "تقريب أو إبعاد المشهد",
       "زاوية واسعة",
       "يحرر",
-      "اقتصاص",
+      "اقتصاص الصورة",
       "تنقيح الصورة",
       "طباعة",
       "إطار"
@@ -801,7 +865,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult clearly carrying out the action Retouch; include Retouch, Print, and Frame naturally where visually appropriate, but make the real-world use of Retouch the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Photography Studio",
@@ -810,24 +875,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Camera"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Light Box, and Aperture and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Camera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shutter Speed"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shutter Speed, ISO, and Focus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Shutter Speed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Exposure"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exposure, White Balance, and Zoom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Exposure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wide Angle"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wide Angle, Edit, and Crop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wide Angle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retouch"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retouch, Print, and Frame and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Retouch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -875,7 +955,7 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Portfolio", "Gallery"],
-    "targetWordsArabic": ["محفظة استثمارية", "غرفة يسمى «جالليري»"],
+    "targetWordsArabic": ["محفظة استثمارية", "معرض صور"],
     "usage": {
       "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
       "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
@@ -894,7 +974,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Portfolio as the central item; include Portfolio, Gallery, and Option 1 naturally where visually appropriate, but make the real-world use of Portfolio the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -903,8 +984,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Portfolio"
+        "prompt": "In the the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portfolio, and Gallery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Portfolio",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

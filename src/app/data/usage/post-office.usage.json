@@ -32,12 +32,12 @@
       "بطاقة بريدية",
       "طرد",
       "طرد بريدي",
-      "طابع",
+      "طابع بريدي",
       "ملصق",
-      "علامة",
+      "ملصق بريدي",
       "عنوان",
-      "عنوان عائد",
-      "عامل يسمى «زيب كودي»",
+      "عنوان المرسل",
+      "رمز بريدي أمريكي",
       "رقم تتبع",
       "صندوق بريد",
       "صندوق بريد",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the mailbox as the central item; include mailbox, post box, and slot naturally where visually appropriate, but make the real-world use of mailbox the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Post Office: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "letter"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare letter, envelope, postcard, and package and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "letter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "parcel"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parcel, stamp, sticker, and label and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "parcel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "address"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare address, return address, zip code, and tracking number and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "address",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "mailbox"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare mailbox, post box, and slot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "mailbox",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,14 +202,14 @@
     ],
     "targetWordsArabic": [
       "منضدة",
-      "مقياس رسم",
+      "ميزان",
       "إيصال",
       "توصيل",
       "استلام",
       "توقيع",
       "بريد مسجل",
       "بريد سريع",
-      "بريد مسجل مع إثبات",
+      "بريد مسجّل مع إثبات",
       "عامل بريد",
       "ساعي بريد",
       "موظف",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the postmaster as the central item; include postmaster, delivery driver, and sorter naturally where visually appropriate, but make the real-world use of postmaster the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Post Office",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "counter"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare counter, scale, receipt, and delivery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pickup"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pickup, signature, registered mail, and express mail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "pickup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "certified mail"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare certified mail, postal worker, mail carrier, and clerk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "certified mail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "postmaster"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare postmaster, delivery driver, and sorter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "postmaster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -354,15 +380,15 @@
       "حقيبة بريد",
       "عربة",
       "آلة فرز",
-      "ماسح ضوئي",
+      "قارئ الرموز الشريطية",
       "شريط لاصق",
-      "سفينة يسمى «بوببلي وراب»",
+      "غلاف فقاعي",
       "حبيبات تغليف واقية",
       "صندوق",
-      "مظروف مبطن",
-      "رباط مطاطي (مطاط)",
+      "مظروف مبطّن",
+      "رباط مطاطي",
       "وسادة حبر",
-      "وثيقة يسمى «داتي ستامب»",
+      "ختم تاريخ",
       "ردهة"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the ink pad as the central item; include ink pad, date stamp, and lobby naturally where visually appropriate, but make the real-world use of ink pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Post Office",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "courier"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare courier, customer, mail bag, and cart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "courier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sorting machine"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sorting machine, scanner, tape, and bubble wrap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "sorting machine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "packing peanuts"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare packing peanuts, box, padded envelope, and rubber band and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "packing peanuts",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ink pad"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ink pad, date stamp, and lobby and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ink pad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -507,15 +546,15 @@
     ],
     "targetWordsArabic": [
       "نافذة خدمة",
-      "جزء يسمى «بو بوكس»",
-      "منصة تحميل",
+      "صندوق بريد",
+      "رصيف تحميل",
       "غرفة فرز البريد",
       "موقف سيارات",
       "منطقة تسليم",
-      "آلة يسمى «فيندينج ماتشيني»",
-      "شكل",
+      "آلة بيع ذاتي",
+      "استمارة",
       "قلم",
-      "غرفة يسمى «وايتينج اريا»",
+      "منطقة انتظار",
       "طابور"
     ],
     "usage": {
@@ -560,7 +599,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the pen as the central item; include pen, waiting area, and queue naturally where visually appropriate, but make the real-world use of pen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Post Office: Practical Information",
@@ -569,16 +609,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "service window"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare service window, PO box, loading dock, and sorting room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "service window",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "parking lot"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking lot, drop-off area, vending machine, and form and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "parking lot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "pen"
+        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pen, waiting area, and queue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "pen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

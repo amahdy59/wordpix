@@ -39,8 +39,8 @@
       "داخل",
       "خارج",
       "بجانب",
-      "قريب",
-      "بعيد",
+      "قريب من",
+      "بعيد عن",
       "مقابل"
     ],
     "usage": {
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: A café is near the office, a bus stop is far from it, and a bank is opposite the office entrance. The highlighted café is near the office. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Near, Far, Opposite in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Moving into a New Office",
@@ -185,20 +186,20 @@
       "Toward"
     ],
     "targetWordsArabic": [
-      "ملاصقا لـ",
+      "مستند إلى",
       "حول",
-      "وسط",
-      "داخل",
+      "بين مجموعة",
+      "ضمن",
       "وراء",
       "إلى داخل",
       "إلى خارج",
-      "إلى فوق",
-      "بعيدا عن السطح",
+      "إلى سطح",
+      "بعيدًا عن السطح",
       "عبر",
-      "عبر",
-      "على طول",
+      "إلى الجانب الآخر",
+      "على امتداد",
       "فوق",
-      "متجاوزا",
+      "بعد تجاوز",
       "نحو"
     ],
     "usage": {
@@ -267,7 +268,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: In a storeroom, boxes and furniture demonstrate the relationships over, past, and toward. The highlighted relationship is over. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Over, Past, Toward in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Prepositions of Place 2: Organising an Office Move",
@@ -341,9 +343,9 @@
       "أعلى",
       "أسفل",
       "يسار",
-      "يمين",
+      "حق",
       "مركز",
-      "الوسط",
+      "وسط",
       "زاوية",
       "حافة",
       "جانب",
@@ -393,7 +395,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "End",
+          "targetWords": ["End"],
           "scenario": "In a storeroom, a marker is shown at positions including end. The highlighted position is end.",
           "check": {
             "question": "Where is the object in relation to the reference point in the example with end?",
@@ -403,7 +405,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: In a storeroom, a marker is shown at positions including end. The highlighted position is end. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including End in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Prepositions of Place 3: Organising an Office Move",

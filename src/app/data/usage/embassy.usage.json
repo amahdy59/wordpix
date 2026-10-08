@@ -34,12 +34,12 @@
       "كشك حراسة",
       "قاعة استقبال",
       "غرفة انتظار",
-      "غرفة مؤتمر",
+      "قاعة اجتماعات",
       "-",
       "فناء",
       "جواز سفر",
       "تأشيرة",
-      "شكل طلب",
+      "نموذج طلب",
       "بطاقة هوية",
       "شهادة ميلاد"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Application Form as the central item; include Application Form, Identity Card, and Birth Certificate naturally where visually appropriate, but make the real-world use of Application Form the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Embassy",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Embassy Building"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Embassy Building, Flag Pole, National Flag, and Security Gate and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Embassy Building",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Guard Booth"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guard Booth, Reception Hall, Waiting Room, and Conference Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Guard Booth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Garden"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden, Courtyard, Passport, and Visa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Garden",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Application Form"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Application Form, Identity Card, and Birth Certificate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Application Form",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Safe as the central item; include Safe, Shredder, and Laminator naturally where visually appropriate, but make the real-world use of Safe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Embassy",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Photograph"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photograph, Stamp, Seal, and Letter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Photograph",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Envelope"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Envelope, Desk, Computer, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Envelope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Telephone"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telephone, Fax Machine, Scanner, and Filing Cabinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Telephone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Safe"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safe, Shredder, and Laminator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Safe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Diplomat as the central item; include Diplomat, Secretary, and Translator naturally where visually appropriate, but make the real-world use of Diplomat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Security Camera"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Camera, Metal Detector, X-Ray Machine, and Security Guard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Security Camera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Badge"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Badge, Visitor Pass, Turnstile, and Alarm System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Badge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Intercom"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Bulletproof Glass, Ambassador, and Consul and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Intercom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diplomat"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diplomat, Secretary, and Translator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Diplomat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Gift as the central item; include Gift, Certificate, and Plaque naturally where visually appropriate, but make the real-world use of Gift the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Embassy",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Protocol Officer"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Protocol Officer, Cultural Attaché, Legal Advisor, and Driver and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Protocol Officer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Receptionist"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Receptionist, National Emblem, Map, and Globe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Receptionist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clock with Time Zones"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock with Time Zones, Painting, Sculpture, and Book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Clock with Time Zones",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gift"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift, Certificate, and Plaque and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gift",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -672,7 +724,7 @@
     "targetWordsArabic": [
       "طلب",
       "إثبات هوية",
-      "شكل",
+      "نموذج",
       "مترجم شفهي",
       "حارس",
       "موظف",
@@ -739,7 +791,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Alliance through a realistic adult task; include Alliance, Summit, and Application naturally where visually appropriate, but make the real-world use of Alliance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Embassy",
@@ -748,20 +801,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Application"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Application, Identification, Form, and Interpreter and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Application",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Guard"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guard, Clerk, Attaché, and Flag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Guard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Ceremony, Treaty, and Negotiation and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Reception",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Alliance"
+        "prompt": "In the the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alliance, and Summit and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Alliance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

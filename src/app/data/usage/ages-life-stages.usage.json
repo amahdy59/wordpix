@@ -27,7 +27,7 @@
       "Puberty"
     ],
     "targetWordsArabic": [
-      "مولود حديثا",
+      "مولود حديثًا",
       "رضيع",
       "رضيع",
       "طفل دارج",
@@ -58,7 +58,7 @@
             "options": ["Newborn", "Baby", "Infant"],
             "expectedAnswer": "Infant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Infant while also considering Newborn and Baby. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Newborn, Baby, and Infant visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Newborn, Baby, Infant in a natural setting."
         },
         {
@@ -70,7 +70,7 @@
             "options": ["Toddler", "Preschooler", "Child"],
             "expectedAnswer": "Toddler"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Toddler while also considering Preschooler and Child. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Toddler, Preschooler, and Child visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Toddler, Preschooler, Child in a natural setting."
         },
         {
@@ -82,7 +82,7 @@
             "options": ["Kid", "Youngster", "Childhood"],
             "expectedAnswer": "Youngster"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Youngster while also considering Kid and Childhood. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Kid, Youngster, and Childhood visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Kid, Youngster, Childhood in a natural setting."
         },
         {
@@ -94,7 +94,7 @@
             "options": ["Growth", "Teenager", "Adolescent"],
             "expectedAnswer": "Adolescent"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Adolescent while also considering Growth and Teenager. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Growth, Teenager, and Adolescent visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Growth, Teenager, Adolescent in a natural setting."
         },
         {
@@ -106,10 +106,11 @@
             "options": ["Teen", "Youth", "Puberty"],
             "expectedAnswer": "Teen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Teen while also considering Youth and Puberty. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Teen, Youth, and Puberty visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Teen, Youth, Puberty in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Ages & Life Stages: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Newborn"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Infant while also considering Newborn and Baby. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Infant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toddler"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Toddler while also considering Preschooler and Child. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Toddler",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kid"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Youngster while also considering Kid and Childhood. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Youngster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Growth"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Adolescent while also considering Growth and Teenager. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Adolescent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teen"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Teen while also considering Youth and Puberty. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Teen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -224,7 +240,7 @@
             "options": ["Growth Spurt", "Young Adult", "Coming of Age"],
             "expectedAnswer": "Growth Spurt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Growth Spurt while also considering Young Adult and Coming of Age. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Growth Spurt, Young Adult, and Coming of Age visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Growth Spurt, Young Adult, Coming of Age in a natural setting."
         },
         {
@@ -236,7 +252,7 @@
             "options": ["Juvenile", "Minor", "Adult"],
             "expectedAnswer": "Minor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Minor while also considering Juvenile and Adult. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Juvenile, Minor, and Adult visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Juvenile, Minor, Adult in a natural setting."
         },
         {
@@ -248,7 +264,7 @@
             "options": ["Grown-Up", "Middle-Aged", "Mature"],
             "expectedAnswer": "Mature"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Mature while also considering Grown-Up and Middle-Aged. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Grown-Up, Middle-Aged, and Mature visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Grown-Up, Middle-Aged, Mature in a natural setting."
         },
         {
@@ -260,7 +276,7 @@
             "options": ["Prime", "Independent", "Responsible"],
             "expectedAnswer": "Prime"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Prime while also considering Independent and Responsible. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Prime, Independent, and Responsible visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Prime, Independent, Responsible in a natural setting."
         },
         {
@@ -272,10 +288,11 @@
             "options": ["Experienced", "Professional", "Elderly"],
             "expectedAnswer": "Professional"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Professional while also considering Experienced and Elderly. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Experienced, Professional, and Elderly visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Experienced, Professional, Elderly in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Ages & Life Stages: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Growth Spurt"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Growth Spurt while also considering Young Adult and Coming of Age. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Growth Spurt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Juvenile"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Minor while also considering Juvenile and Adult. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Minor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grown-Up"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Mature while also considering Grown-Up and Middle-Aged. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Mature",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prime"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Prime while also considering Independent and Responsible. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Prime",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Experienced"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Professional while also considering Experienced and Elderly. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Professional",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -362,16 +394,16 @@
       "كبير السن",
       "متقاعد",
       "جد أو جدة",
-      "تقدم في العمر",
+      "تقدّم في العمر",
       "حكمة",
       "تقاعد",
-      "سنوات الشيخوخة",
+      "سنوات ما بعد التقاعد",
       "شيخ أو كبير السن",
       "طول العمر",
       "ميلاد",
-      "الخطوات الأولى",
-      "الكلمات الأولى",
-      "بدء الدراسة",
+      "خطوات الطفل الأولى",
+      "كلمات الطفل الأولى",
+      "بداية الالتحاق بالمدرسة",
       "تخرج",
       "أول وظيفة"
     ],
@@ -390,7 +422,7 @@
             "options": ["Senior", "Retiree", "Grandparent"],
             "expectedAnswer": "Retiree"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retiree while also considering Senior and Grandparent. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Senior, Retiree, and Grandparent visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Senior, Retiree, Grandparent in a natural setting."
         },
         {
@@ -402,7 +434,7 @@
             "options": ["Aging", "Wisdom", "Retirement"],
             "expectedAnswer": "Retirement"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retirement while also considering Aging and Wisdom. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Aging, Wisdom, and Retirement visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Aging, Wisdom, Retirement in a natural setting."
         },
         {
@@ -414,7 +446,7 @@
             "options": ["Golden Years", "Elder", "Longevity"],
             "expectedAnswer": "Golden Years"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Golden Years while also considering Elder and Longevity. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Golden Years, Elder, and Longevity visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Golden Years, Elder, Longevity in a natural setting."
         },
         {
@@ -426,7 +458,7 @@
             "options": ["Birth", "First Steps", "First Words"],
             "expectedAnswer": "First Steps"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Steps while also considering Birth and First Words. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Birth, First Steps, and First Words visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Birth, First Steps, First Words in a natural setting."
         },
         {
@@ -438,10 +470,11 @@
             "options": ["School Start", "Graduation", "First Job"],
             "expectedAnswer": "First Job"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Job while also considering School Start and Graduation. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with School Start, Graduation, and First Job visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including School Start, Graduation, First Job in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Ages & Life Stages: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Senior"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retiree while also considering Senior and Grandparent. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Retiree",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aging"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retirement while also considering Aging and Wisdom. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Retirement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Golden Years"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Golden Years while also considering Elder and Longevity. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Golden Years",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Birth"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Steps while also considering Birth and First Words. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "First Steps",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "School Start"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Job while also considering School Start and Graduation. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "First Job",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -508,7 +556,7 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Marriage", "Parenthood", "Legacy"],
-    "targetWordsArabic": ["زواج", "أبوة وأمومة", "إرث"],
+    "targetWordsArabic": ["زواج", "أبوّة وأمومة", "إرث"],
     "usage": {
       "goal": "Learn to use ages & life stages 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to ages & life stages.",
@@ -524,10 +572,11 @@
             "options": ["Marriage", "Parenthood", "Legacy"],
             "expectedAnswer": "Legacy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a ages & life stages context illustrating this situation: During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Legacy while also considering Marriage and Parenthood. She describes each person respectfully and explains what is happening in the photograph. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a family video call, with Marriage, Parenthood, and Legacy visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult ages & life stages scene showing lesson-related items or actions including Marriage, Parenthood, Legacy in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Ages & Life Stages: Everyday Description",
@@ -536,8 +585,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Marriage"
+        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Legacy while also considering Marriage and Parenthood. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "answer": "Legacy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

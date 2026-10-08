@@ -16,6 +16,7 @@ import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { staggerContainer, staggerItem } from "../shared/animations";
+import { SpecializedTracksCard } from "./SpecializedTracksCard";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -236,6 +237,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   </motion.button>
                 </div>
               </Card>
+            </Section>
+          </motion.div>
+
+          {/* SECTION 1.5: SPECIALIZED CURRICULA */}
+          <motion.div variants={staggerItem}>
+            <Section
+              id="section-specialized"
+              title={t("dashboard.specializedTracks") || "Specialized Tracks"}
+            >
+              <SpecializedTracksCard dispatch={dispatch} />
             </Section>
           </motion.div>
         </div>

@@ -30,18 +30,18 @@
       "صالة عرض",
       "ساحة سيارات",
       "مركز صيانة",
-      "مركبة يسمى «بارتس ديبارتمينت»",
-      "جزء يسمى «فينانكي وففيكي»",
+      "قسم قطع الغيار",
+      "مكتب تمويل السيارات",
       "غرفة انتظار",
       "منطقة تنظيف وتجهيز السيارات",
       "مسار تجربة القيادة",
-      "استقبال",
+      "منطقة الاستقبال",
       "مكتب المدير",
-      "مركبة يسمى «تيست دريفي»",
+      "قيادة تجريبية",
       "سيارة مستبدلة ضمن صفقة",
       "تمويل",
-      "تأجير",
-      "دفعة مقدمة"
+      "عقد تأجير سيارة",
+      "دفعة أولى"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult illustrating Financing through a realistic adult task; include Financing, Lease, and Down Payment naturally where visually appropriate, but make the real-world use of Financing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Auto Dealership: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Showroom"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Showroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Finance Office"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Finance Office",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Reception",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Financing"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Financing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -196,8 +209,8 @@
       "جديد",
       "مستعمل",
       "مستعملة معتمدة",
-      "عرض تجريبي",
-      "عدد الكيلومترات",
+      "سيارة للعرض والتجربة",
+      "المسافة المقطوعة",
       "كارفاكس؛ تقرير تاريخ السيارة",
       "ضمان",
       "ضمان ممتد",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Extended Warranty as the central item; include Extended Warranty, Recall, and Lemon Law naturally where visually appropriate, but make the real-world use of Extended Warranty the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Auto Dealership",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Monthly Payment"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Monthly Payment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Closing"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Closing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Demo"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Demo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Extended Warranty"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Extended Warranty",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -346,14 +372,14 @@
     "targetWordsArabic": [
       "موظف مبيعات",
       "مدير التمويل",
-      "مرشد خدمة",
+      "مستشار صيانة السيارات",
       "فني",
-      "سفينة يسمى «جينيرال ماناجير»",
+      "مدير عام",
       "موظف استقبال",
       "مختص تنظيف وتلميع السيارات",
-      "سفينة يسمى «بارتس سبيكياليست»",
-      "مرافق خدمة ساحة سيارات",
-      "سفينة يسمى «تيتلي كليرك»"
+      "مختص قطع غيار",
+      "عامل ساحة السيارات",
+      "موظف مستندات الملكية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Lot Attendant as the central item; include Lot Attendant, Title Clerk, and Sales Associate naturally where visually appropriate, but make the real-world use of Lot Attendant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Auto Dealership",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sales Associate"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sales Associate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "General Manager"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "General Manager",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lot Attendant"
+        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lot Attendant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

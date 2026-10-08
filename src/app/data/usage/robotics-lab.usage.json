@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "محرك",
       "مستشعر",
-      "سطح يسمى «كيركويت بوارد»",
+      "لوحة دوائر إلكترونية",
       "حزمة بطاريات",
       "ترس",
       "عجلة",
       "محور",
       "إطار",
-      "مصطلح تقني أو أداة يسمى «ارم»",
-      "جزء يسمى «جريببير»",
+      "ذراع آلية",
+      "قابض آلي",
       "وحدة كاميرا",
-      "مصطلح تقني أو أداة يسمى «ليد»",
+      "صمام ثنائي باعث للضوء",
       "سلك",
-      "جهاز يسمى «ريسيستور»",
-      "جهاز يسمى «كاباكيتور»"
+      "مقاوم كهربائي",
+      "مكثف"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wire as the central item; include Wire, Resistor, and Capacitor naturally where visually appropriate, but make the real-world use of Wire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Robotics Lab",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Motor"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Motor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gear"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Arm"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Arm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wire"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wire",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,19 +201,19 @@
       "Tweezers"
     ],
     "targetWordsArabic": [
-      "جهاز يسمى «ترانسيستور»",
-      "مصطلح تقني أو أداة يسمى «ديودي»",
+      "ترانزستور",
+      "صمام ثنائي",
       "شريحة إلكترونية",
-      "مصطلح تقني أو أداة يسمى «بريادبوارد»",
-      "أداة يسمى «سولديرينج يرون»",
-      "مصطلح تقني أو أداة يسمى «سولدير»",
+      "لوحة تجارب إلكترونية",
+      "كاوية لحام",
+      "يلحم بالقصدير",
       "ملتيميتر",
       "طقم مفكات",
       "كماشة",
-      "قطاعة سلك",
-      "أداة يسمى «ويري ستريببير»",
+      "قطّاعة سلك",
+      "أداة تعرية الأسلاك",
       "مسدس غراء ساخن",
-      "أداة يسمى «اللين كيي»",
+      "مفتاح سداسي",
       "مفتاح ربط",
       "ملقط"
     ],
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Allen Key as the central item; include Allen Key, Wrench, and Tweezers naturally where visually appropriate, but make the real-world use of Allen Key the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Robotics Lab",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Transistor"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Transistor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Soldering Iron"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Soldering Iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pliers"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pliers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Allen Key"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Allen Key",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -349,21 +375,21 @@
       "Robotic Arm"
     ],
     "targetWordsArabic": [
-      "أداة يسمى «ماجنيفيينج جلاسس»",
-      "أداة أيد مساعدة",
+      "عدسة مكبرة",
+      "أداة أيدٍ مساعدة",
       "حاسوب",
       "شاشة مراقبة",
       "لوحة مفاتيح",
       "فأرة حاسوب",
-      "لون يسمى «كودي يديتور»",
-      "جهاز يسمى «وسب كابلي»",
+      "محرر شيفرة",
+      "كابل يو إس بي",
       "متحكم",
-      "مصطلح تقني أو أداة يسمى «جويستيك»",
+      "عصا تحكم",
       "جهاز التحكم عن بعد (ريموت)",
       "جهاز لوحي (تابلت)",
-      "آلة يسمى «هومانويد روبوت»",
-      "طائرة مسيرة",
-      "مصطلح تقني أو أداة يسمى «روبوتيك ارم»"
+      "روبوت شبيه بالإنسان",
+      "طائرة مسيّرة",
+      "ذراع آلية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Humanoid Robot as the central item; include Humanoid Robot, Drone, and Robotic Arm naturally where visually appropriate, but make the real-world use of Humanoid Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Robotics Lab",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Magnifying Glass"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Magnifying Glass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Keyboard"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Keyboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Controller"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Controller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Humanoid Robot"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Humanoid Robot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -517,14 +556,14 @@
       "روبوت تحت الماء",
       "روبوت طائر",
       "روبوت ثعباني",
-      "مصطلح تقني أو أداة يسمى «ووركبينتش»",
+      "طاولة عمل",
       "صندوق تخزين",
-      "مصطلح تقني أو أداة يسمى «بيجبوارد»",
-      "مصطلح تقني أو أداة يسمى «سافيتي جلاسسيس»",
-      "مادة يسمى «لاب نوتيبووك»",
-      "جهاز يسمى «3د برينتير»",
+      "لوح مثقب لتعليق الأدوات",
+      "نظارات واقية",
+      "دفتر مختبر",
+      "طابعة ثلاثية الأبعاد",
       "قاطع ليزر",
-      "مصطلح تقني أو أداة يسمى «وسكيللوسكوبي»"
+      "راسم ذبذبات"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the 3D Printer as the central item; include 3D Printer, Laser Cutter, and Oscilloscope naturally where visually appropriate, but make the real-world use of 3D Printer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Robotics Lab",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wheeled Robot"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wheeled Robot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Underwater Robot"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Underwater Robot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Storage Bin"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Storage Bin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "3D Printer"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "3D Printer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -671,21 +723,21 @@
       "Input"
     ],
     "targetWordsArabic": [
-      "جهاز يسمى «بووير سوببلي»",
+      "مزود طاقة",
       "حصيرة اختبار",
       "بطارية",
-      "مصطلح تقني أو أداة يسمى «هومانويد»",
-      "شخص يسمى «روفير»",
-      "مركبة يسمى «تشاسسيس»",
+      "شبيه بالإنسان",
+      "مركبة جوالة",
+      "هيكل",
       "مسار",
-      "مصطلح تقني أو أداة يسمى «كودي»",
-      "مصطلح تقني أو أداة يسمى «الجوريثم»",
-      "مصطلح تقني أو أداة يسمى «لووب»",
-      "مصطلح تقني أو أداة يسمى «فونكتيون»",
-      "مصطلح تقني أو أداة يسمى «ديبوج»",
-      "آلة يسمى «كومبيلي»",
+      "شيفرة برمجية",
+      "خوارزمية",
+      "حلقة تكرار",
+      "دالة برمجية",
+      "يصحح أخطاء البرنامج",
+      "يترجم الشيفرة إلى برنامج قابل للتنفيذ",
       "متغير",
-      "شخص يسمى «ينبوت»"
+      "مدخلات"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -741,7 +793,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult clearly carrying out the action Compile; include Compile, Variable, and Input naturally where visually appropriate, but make the real-world use of Compile the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Robotics Lab",
@@ -750,20 +803,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Power Supply"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Power Supply",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rover"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rover",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Algorithm"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Algorithm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compile"
+        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Compile",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

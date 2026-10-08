@@ -1,0 +1,2542 @@
+{
+  "airport": {
+    "passport": {
+      "definition": "An official document that identifies a traveler and is used for international travel."
+    },
+    "visa": {
+      "definition": "Official permission to enter or stay in a country under specified conditions."
+    },
+    "conveyor-belt": {
+      "definition": "A moving belt that carries luggage through the airport."
+    },
+    "metal-detector": {
+      "definition": "A screening device that detects metal carried by a person or in belongings."
+    },
+    "scanner": {
+      "definition": "A machine used to examine passengers or baggage during security screening.",
+      "arabicTranslation": "جهاز فحص أمني"
+    },
+    "runway": {
+      "definition": "A long prepared surface where aircraft take off and land.",
+      "arabicTranslation": "مدرج الطائرات"
+    },
+    "food-court": {
+      "definition": "An area with several food outlets and shared seating."
+    },
+    "ground-crew": {
+      "definition": "Airport workers who service aircraft, handle baggage, or support flights on the ground."
+    },
+    "mechanic": {
+      "definition": "A skilled worker who maintains and repairs aircraft."
+    },
+    "life-vest": {
+      "arabicTranslation": "سترة نجاة"
+    },
+    "delay": {
+      "definition": "A later arrival or departure than the scheduled time."
+    },
+    "layover": {
+      "definition": "A stop between flights during a journey."
+    }
+  },
+  "train-station": {
+    "passenger-train": {
+      "arabicTranslation": "قطار ركاب"
+    },
+    "platform": {
+      "definition": "The area beside a railway track where passengers board or leave trains.",
+      "arabicTranslation": "رصيف المحطة"
+    },
+    "track": {
+      "definition": "The rails and supporting structure on which a train runs.",
+      "arabicTranslation": "سكة حديد"
+    },
+    "ticket-office": {
+      "definition": "A staffed office where passengers buy train tickets.",
+      "arabicTranslation": "مكتب التذاكر"
+    },
+    "concourse": {
+      "definition": "A large open area in a station through which passengers move."
+    },
+    "ticket": {
+      "definition": "A printed or electronic document that permits travel on a train."
+    },
+    "one-way": {
+      "definition": "Describing a journey or ticket to a destination without a return journey.",
+      "arabicTranslation": "ذهاب فقط"
+    },
+    "pass": {
+      "definition": "A ticket that permits specified train journeys over a period of time.",
+      "arabicTranslation": "اشتراك سفر"
+    },
+    "signal": {
+      "definition": "A railway light or sign that tells train drivers when to stop or proceed."
+    },
+    "bridge": {
+      "definition": "A structure that carries a railway or road over water, a valley, or another route.",
+      "arabicTranslation": "جسر"
+    },
+    "switch": {
+      "definition": "A movable section of railway track that guides a train onto another track.",
+      "arabicTranslation": "محوّل سكة حديد"
+    },
+    "conductor": {
+      "definition": "A train crew member who checks tickets and assists passengers."
+    },
+    "engineer": {
+      "definition": "The person who operates a locomotive; also called a train driver.",
+      "arabicTranslation": "سائق قطار"
+    },
+    "commuter": {
+      "definition": "A person who regularly travels between home and work or study.",
+      "arabicTranslation": "راكب يتنقل يوميًا"
+    }
+  },
+  "bus-station": {
+    "coach": {
+      "definition": "A bus designed for longer journeys, usually with comfortable seating."
+    },
+    "minibus": {
+      "definition": "A small bus that carries fewer passengers than a full-sized bus."
+    },
+    "shuttle": {
+      "definition": "A bus service that travels repeatedly between specific places.",
+      "arabicTranslation": "حافلة نقل ترددي"
+    },
+    "trolley": {
+      "definition": "An electric bus powered through overhead wires.",
+      "arabicTranslation": "حافلة كهربائية بسلك علوي"
+    },
+    "platform": {
+      "definition": "A designated area where passengers board or leave buses.",
+      "arabicTranslation": "رصيف الحافلات"
+    },
+    "shelter": {
+      "arabicTranslation": "مظلة انتظار الحافلات"
+    },
+    "schedule": {
+      "definition": "A list of planned bus departure and arrival times.",
+      "arabicTranslation": "جدول الرحلات"
+    },
+    "ticket": {
+      "definition": "A printed or electronic document that permits travel on a bus."
+    },
+    "pass": {
+      "definition": "A ticket that permits specified bus journeys over a period of time.",
+      "arabicTranslation": "اشتراك مواصلات"
+    },
+    "fare": {
+      "definition": "The price paid for a journey on public transport."
+    },
+    "zone": {
+      "definition": "An area used to determine the fare for a public-transport journey."
+    },
+    "transfer": {
+      "definition": "A change from one bus or transport service to another during a journey.",
+      "arabicTranslation": "الانتقال بين وسائل النقل"
+    },
+    "handrail": {
+      "definition": "A fixed rail that passengers hold for support or balance.",
+      "arabicTranslation": "قضيب للإمساك"
+    },
+    "luggage-rack": {
+      "definition": "A frame or shelf on a bus for storing passengers' bags."
+    },
+    "driver": {
+      "definition": "The person who controls and drives the bus."
+    },
+    "commuter": {
+      "definition": "A person who regularly travels between home and work or study.",
+      "arabicTranslation": "راكب يتنقل يوميًا"
+    },
+    "inspector": {
+      "definition": "A transport worker who checks that passengers have valid tickets.",
+      "arabicTranslation": "مفتش تذاكر"
+    },
+    "attendant": {
+      "definition": "A worker who assists passengers or provides services at the station.",
+      "arabicTranslation": "موظف خدمة الركاب"
+    }
+  },
+  "subway": {
+    "platform": {
+      "definition": "The area beside the tracks where passengers board or leave metro trains.",
+      "arabicTranslation": "رصيف المحطة"
+    },
+    "track": {
+      "definition": "The rails and supporting structure on which a metro train runs.",
+      "arabicTranslation": "سكة حديد"
+    },
+    "concourse": {
+      "definition": "A large open area in a station through which passengers move."
+    },
+    "exit": {
+      "definition": "A doorway or route used to leave the station."
+    },
+    "car": {
+      "definition": "One passenger carriage forming part of a metro train.",
+      "arabicTranslation": "عربة مترو"
+    },
+    "handrail": {
+      "definition": "A fixed rail that passengers hold for support or balance.",
+      "arabicTranslation": "قضيب للإمساك"
+    },
+    "pole": {
+      "definition": "An upright bar that standing passengers can hold for support.",
+      "arabicTranslation": "عمود للإمساك"
+    },
+    "emergency-brake": {
+      "definition": "A control used to request or activate an emergency stop on a train."
+    },
+    "tap": {
+      "definition": "To briefly place a travel card near or against a reader to record a journey.",
+      "arabicTranslation": "يمرر بطاقة المواصلات على القارئ"
+    },
+    "fare": {
+      "definition": "The price paid for a journey on public transport."
+    },
+    "transfer-sign": {
+      "arabicTranslation": "لافتة الانتقال بين الخطوط"
+    },
+    "commuter": {
+      "definition": "A person who regularly travels between home and work or study.",
+      "arabicTranslation": "راكب يتنقل يوميًا"
+    },
+    "guard": {
+      "definition": "A worker responsible for safety and security at the station.",
+      "arabicTranslation": "حارس أمن"
+    },
+    "conductor": {
+      "definition": "A train crew member who assists passengers and may check tickets."
+    },
+    "cleaner": {
+      "definition": "A worker who cleans trains or station areas."
+    },
+    "queue": {
+      "definition": "A line of people waiting for their turn."
+    },
+    "cctv": {
+      "arabicTranslation": "نظام كاميرات مراقبة"
+    },
+    "barrier": {
+      "definition": "A gate or obstacle that controls access or separates areas."
+    },
+    "first-aid-kit": {
+      "arabicTranslation": "حقيبة إسعافات أولية"
+    }
+  },
+  "harbor": {
+    "fishing-boat": {
+      "definition": "A boat used to catch fish."
+    },
+    "kayak": {
+      "definition": "A narrow boat moved with a paddle that has a blade at each end."
+    },
+    "dock": {
+      "definition": "A place beside the water where boats stop for loading, unloading, or repairs.",
+      "arabicTranslation": "رصيف رسو"
+    },
+    "wharf": {
+      "definition": "A structure beside the water where ships load or unload goods.",
+      "arabicTranslation": "رصيف شحن"
+    },
+    "jetty": {
+      "definition": "A structure extending from the shore into the water, used for access or protection."
+    },
+    "marina": {
+      "definition": "A harbor area with places to moor small leisure boats."
+    },
+    "pallet": {
+      "definition": "A flat platform used to support goods while they are stored or moved."
+    },
+    "freight": {
+      "definition": "Goods transported by ship, train, or truck.",
+      "arabicTranslation": "بضائع الشحن"
+    },
+    "anchor": {
+      "definition": "A heavy object lowered into the water to keep a boat in place."
+    },
+    "compass": {
+      "definition": "An instrument that shows direction using a needle that points north."
+    },
+    "radio": {
+      "definition": "A device used to send and receive spoken messages by radio waves.",
+      "arabicTranslation": "جهاز اتصال لاسلكي"
+    },
+    "horn": {
+      "definition": "A device on a vessel that makes a loud sound to signal or warn."
+    },
+    "life-jacket": {
+      "arabicTranslation": "سترة نجاة"
+    },
+    "seal": {
+      "definition": "A sea mammal with flippers that can also rest on land.",
+      "arabicTranslation": "فقمة"
+    },
+    "chain": {
+      "definition": "A connected series of metal links used to secure or pull things."
+    },
+    "tide": {
+      "definition": "The regular rise and fall of sea level."
+    },
+    "wave": {
+      "definition": "A moving rise in the surface of the water.",
+      "arabicTranslation": "موجة"
+    },
+    "captain": {
+      "definition": "The person in command of a ship or boat."
+    }
+  },
+  "gas-station": {
+    "premium": {
+      "definition": "A grade of fuel with a higher octane rating than regular gasoline.",
+      "arabicTranslation": "بنزين عالي الأوكتان"
+    },
+    "drinks": {
+      "definition": "Liquids that people consume, such as water, juice, or coffee."
+    },
+    "chips": {
+      "definition": "Thin slices of potato cooked until crisp and eaten as a snack.",
+      "arabicTranslation": "رقائق بطاطس"
+    },
+    "gum": {
+      "definition": "A soft flavored substance that people chew without swallowing.",
+      "arabicTranslation": "علكة"
+    },
+    "oil": {
+      "definition": "A liquid lubricant used to reduce friction in an engine.",
+      "arabicTranslation": "زيت المحرك"
+    },
+    "coolant": {
+      "definition": "A fluid that carries heat away from an engine to help prevent overheating."
+    },
+    "funnel": {
+      "definition": "A tool with a wide top and narrow spout for pouring liquid into a small opening."
+    },
+    "canopy": {
+      "definition": "A roof-like cover over the fuel pumps that provides shelter."
+    },
+    "truck": {
+      "definition": "A motor vehicle designed to carry goods."
+    },
+    "suv": {
+      "definition": "A passenger vehicle with a taller body and higher ground clearance than many cars."
+    },
+    "van": {
+      "definition": "A road vehicle with an enclosed body for carrying people or goods.",
+      "arabicTranslation": "شاحنة مغلقة أو حافلة صغيرة"
+    },
+    "bus": {
+      "definition": "A large road vehicle that carries many passengers."
+    },
+    "convertible": {
+      "definition": "A car with a roof that can be folded or removed."
+    },
+    "attendant": {
+      "definition": "A worker who helps customers at a gas station.",
+      "arabicTranslation": "عامل محطة الوقود"
+    }
+  },
+  "car-wash": {
+    "hand-wash": {
+      "definition": "Cleaning a vehicle by hand using water, soap, and washing tools.",
+      "arabicTranslation": "غسيل السيارة يدويًا"
+    },
+    "touchless": {
+      "definition": "Describing a car wash that cleans with sprays without brushes touching the vehicle.",
+      "arabicTranslation": "غسيل دون ملامسة السيارة"
+    },
+    "wax-wash": {
+      "definition": "A car-wash service that includes applying a protective wax coating.",
+      "arabicTranslation": "غسيل مع طبقة شمع واقية"
+    },
+    "undercarriage": {
+      "definition": "The underside of a vehicle and the parts mounted beneath its body."
+    },
+    "pressure-washer": {
+      "definition": "A machine that sprays water at high pressure to remove dirt.",
+      "arabicTranslation": "جهاز غسيل بالماء المضغوط"
+    },
+    "foam-cannon": {
+      "definition": "An attachment that sprays a layer of cleaning foam over a vehicle."
+    },
+    "roller": {
+      "definition": "A rotating cylinder or brush used in automatic car-wash equipment."
+    },
+    "dryer": {
+      "definition": "A machine that blows air to remove water from a washed vehicle."
+    },
+    "air-freshener": {
+      "definition": "A product used to give the inside of a vehicle a pleasant smell."
+    },
+    "bucket": {
+      "definition": "An open container with a handle used to carry water or washing supplies."
+    },
+    "car-soap": {
+      "definition": "A cleaning product formulated for washing a vehicle's exterior.",
+      "arabicTranslation": "منظف غسيل السيارات"
+    },
+    "tire-shine": {
+      "definition": "A product applied to tires to give their outer surfaces a glossy finish."
+    },
+    "glass-cleaner": {
+      "definition": "A cleaning product used to remove marks and dirt from windows.",
+      "arabicTranslation": "منظف الزجاج"
+    },
+    "interior-cleaner": {
+      "definition": "A cleaning product used on surfaces inside a vehicle.",
+      "arabicTranslation": "منظف داخل السيارة"
+    },
+    "polish": {
+      "arabicTranslation": "ملمّع"
+    },
+    "hood": {
+      "definition": "The hinged cover over a car's engine compartment."
+    },
+    "roof": {
+      "definition": "The top outer part of a vehicle's body."
+    },
+    "bumper": {
+      "definition": "A part fitted to the front or rear of a vehicle to help absorb minor impacts."
+    },
+    "bay": {
+      "definition": "A designated space where a vehicle is washed or serviced.",
+      "arabicTranslation": "حجرة غسيل أو خدمة"
+    },
+    "track": {
+      "definition": "A guide or path that directs a vehicle through an automatic car wash."
+    },
+    "conveyor": {
+      "definition": "A moving system that carries a vehicle through an automatic car wash.",
+      "arabicTranslation": "ناقل آلي للسيارات"
+    },
+    "token": {
+      "definition": "A coin-like object used as payment to operate washing equipment.",
+      "arabicTranslation": "قطعة دفع"
+    },
+    "timer": {
+      "definition": "A device that measures how long washing equipment runs."
+    },
+    "scrub": {
+      "definition": "To clean a surface by rubbing it firmly with a brush or cloth."
+    }
+  },
+  "car-parts-mechanics": {
+    "engine": {
+      "definition": "The machine in a vehicle that produces power to move it."
+    },
+    "clutch": {
+      "definition": "A mechanism that connects or disconnects an engine from the transmission.",
+      "arabicTranslation": "قابض الحركة"
+    },
+    "carburetor": {
+      "definition": "A device in some engines that mixes fuel with air before combustion."
+    },
+    "crankshaft": {
+      "definition": "A shaft that converts the pistons' movement into rotation."
+    },
+    "camshaft": {
+      "definition": "A rotating shaft that controls when an engine's valves open and close."
+    },
+    "hood": {
+      "definition": "The hinged cover over a car's engine compartment."
+    },
+    "bumper": {
+      "definition": "A part fitted to the front or rear of a vehicle to help absorb minor impacts."
+    },
+    "roof": {
+      "definition": "The top outer part of a vehicle's body."
+    },
+    "dashboard": {
+      "definition": "The panel in front of the driver that contains instruments and controls.",
+      "arabicTranslation": "لوحة العدادات"
+    },
+    "gear-shift": {
+      "arabicTranslation": "ذراع تغيير السرعات"
+    },
+    "pedal": {
+      "definition": "A foot-operated control used to accelerate, brake, or operate the clutch."
+    },
+    "seat-belt": {
+      "arabicTranslation": "حزام الأمان"
+    },
+    "console": {
+      "definition": "The section between the front seats that holds controls and storage.",
+      "arabicTranslation": "الكونسول الوسطي"
+    },
+    "sun-visor": {
+      "arabicTranslation": "حاجب الشمس"
+    },
+    "spring": {
+      "definition": "An elastic metal part that compresses or stretches to absorb forces."
+    },
+    "alignment": {
+      "definition": "The adjustment of wheel angles so the vehicle travels as intended.",
+      "arabicTranslation": "ضبط زوايا العجلات"
+    },
+    "coolant": {
+      "definition": "A fluid that carries heat away from an engine to help prevent overheating."
+    },
+    "gas": {
+      "definition": "Gasoline used as fuel in a vehicle's engine."
+    },
+    "refrigerant": {
+      "definition": "A substance that carries heat through an air-conditioning system."
+    }
+  },
+  "car-types": {
+    "hatchback": {
+      "definition": "A car with a rear door that opens upward to access the cargo area."
+    },
+    "convertible": {
+      "definition": "A car with a roof that can be folded or removed."
+    },
+    "suv": {
+      "definition": "A passenger vehicle with a taller body and higher ground clearance than many cars."
+    },
+    "sports-car": {
+      "definition": "A car designed for responsive handling and strong performance.",
+      "arabicTranslation": "سيارة رياضية"
+    },
+    "luxury-car": {
+      "definition": "A car that offers a high level of comfort, finish, and features."
+    },
+    "pickup-truck": {
+      "arabicTranslation": "شاحنة صغيرة بصندوق مكشوف"
+    },
+    "van": {
+      "definition": "A road vehicle with an enclosed body for carrying people or goods.",
+      "arabicTranslation": "شاحنة مغلقة أو حافلة صغيرة"
+    },
+    "box-truck": {
+      "arabicTranslation": "شاحنة بصندوق مغلق"
+    },
+    "delivery-van": {
+      "arabicTranslation": "شاحنة توصيل صغيرة"
+    },
+    "electric-car": {
+      "definition": "A car powered by an electric motor using energy from a battery."
+    },
+    "hybrid": {
+      "definition": "A car that uses both a fuel-powered engine and an electric motor."
+    },
+    "hearse": {
+      "definition": "A vehicle used to carry a coffin to a funeral or burial."
+    }
+  },
+  "auto-dealership": {
+    "lot": {
+      "definition": "An outdoor area where a dealership parks and displays vehicles."
+    },
+    "reception": {
+      "definition": "The area where visitors are welcomed and directed to staff.",
+      "arabicTranslation": "منطقة الاستقبال"
+    },
+    "test-drive": {
+      "definition": "A short drive taken to assess a vehicle before buying it."
+    },
+    "lease": {
+      "definition": "An agreement to use a vehicle for a set period in exchange for payments.",
+      "arabicTranslation": "عقد تأجير سيارة"
+    },
+    "down-payment": {
+      "definition": "The initial amount paid toward a purchase before the remaining payments."
+    },
+    "used": {
+      "definition": "Previously owned or operated by someone else."
+    },
+    "demo": {
+      "definition": "A vehicle used by a dealership to demonstrate a model to customers.",
+      "arabicTranslation": "سيارة للعرض والتجربة"
+    },
+    "mileage": {
+      "definition": "The distance a vehicle has traveled, measured in miles or kilometers.",
+      "arabicTranslation": "المسافة المقطوعة"
+    },
+    "service-advisor": {
+      "arabicTranslation": "مستشار صيانة السيارات"
+    },
+    "technician": {
+      "definition": "A trained worker who diagnoses and repairs vehicle faults."
+    },
+    "lot-attendant": {
+      "arabicTranslation": "عامل ساحة السيارات"
+    }
+  },
+  "driving-road-rules": {
+    "stop-sign": {
+      "definition": "A road sign requiring drivers to come to a complete stop."
+    },
+    "crosswalk": {
+      "definition": "A marked area of a road designated for pedestrians to cross."
+    },
+    "curb": {
+      "definition": "The raised edge separating a road from a sidewalk.",
+      "arabicTranslation": "حافة الرصيف"
+    },
+    "underpass": {
+      "definition": "A road or pedestrian passage that runs beneath another route."
+    },
+    "brake": {
+      "definition": "To slow or stop a vehicle using its brakes."
+    },
+    "steer": {
+      "definition": "To control the direction in which a vehicle moves."
+    },
+    "signal": {
+      "definition": "To use an indicator or another signal to show an intended maneuver.",
+      "arabicTranslation": "يشير إلى تغيير الاتجاه"
+    },
+    "overtake": {
+      "definition": "To pass a vehicle traveling in the same direction."
+    },
+    "insurance-claim": {
+      "definition": "A request to an insurer for payment or coverage under a policy.",
+      "arabicTranslation": "مطالبة تأمينية"
+    }
+  },
+  "mechanic": {
+    "engine": {
+      "definition": "The machine in a vehicle that produces power to move it."
+    },
+    "battery": {
+      "definition": "A device that stores electrical energy and supplies power to a vehicle."
+    },
+    "alternator": {
+      "definition": "A generator that supplies electrical power and charges a vehicle's battery while the engine runs."
+    },
+    "radiator": {
+      "definition": "A heat exchanger that helps cool the engine by releasing heat from coolant."
+    },
+    "air-filter": {
+      "arabicTranslation": "مرشح الهواء"
+    },
+    "oil-filter": {
+      "arabicTranslation": "مرشح الزيت"
+    },
+    "lift": {
+      "definition": "A workshop machine that raises a vehicle so workers can reach underneath it.",
+      "arabicTranslation": "رافعة سيارات"
+    },
+    "grinder": {
+      "definition": "A power tool with a rotating abrasive disc for grinding or cutting materials.",
+      "arabicTranslation": "آلة تجليخ"
+    },
+    "coolant": {
+      "definition": "A fluid that carries heat away from an engine to help prevent overheating."
+    },
+    "washer": {
+      "definition": "A small flat ring placed under a nut or bolt head to spread the load.",
+      "arabicTranslation": "حلقة تثبيت"
+    },
+    "tune-up": {
+      "definition": "Maintenance and adjustments intended to improve an engine's operation."
+    },
+    "alignment": {
+      "definition": "The adjustment of wheel angles so the vehicle travels as intended.",
+      "arabicTranslation": "ضبط زوايا العجلات"
+    },
+    "paint-job": {
+      "definition": "The work of painting a vehicle's exterior, or the resulting finish."
+    }
+  },
+  "bicycle-shop": {
+    "hybrid": {
+      "definition": "A bicycle combining features of road and mountain bikes for everyday riding."
+    },
+    "bmx": {
+      "definition": "A compact, sturdy bicycle designed for motocross racing, jumps, or tricks."
+    },
+    "wheel": {
+      "definition": "A circular part that turns and allows a bicycle to move."
+    },
+    "tire": {
+      "definition": "The rubber covering around a bicycle wheel that grips the ground.",
+      "arabicTranslation": "إطار دراجة"
+    },
+    "chain": {
+      "definition": "A series of metal links that transfers power from the pedals to the rear wheel."
+    },
+    "pedal": {
+      "definition": "A foot-operated part that the rider pushes to move the bicycle."
+    },
+    "frame": {
+      "definition": "The main supporting structure to which a bicycle's parts are attached.",
+      "arabicTranslation": "هيكل الدراجة"
+    },
+    "rack": {
+      "definition": "A support attached to a bicycle for carrying luggage."
+    },
+    "shorts": {
+      "definition": "Short trousers worn for cycling or other activities."
+    },
+    "gloves": {
+      "definition": "Hand coverings worn for grip, comfort, or protection while cycling."
+    },
+    "cable": {
+      "definition": "A flexible wire that transmits movement to brakes or gears.",
+      "arabicTranslation": "كابل الفرامل أو تغيير السرعات"
+    },
+    "brake-pad": {
+      "definition": "A replaceable friction pad that presses against a rim or disc to slow the wheel.",
+      "arabicTranslation": "بطانة فرامل"
+    },
+    "bike-lane": {
+      "definition": "A part of a road designated for bicycle traffic."
+    },
+    "trail": {
+      "definition": "A route through a natural area used for walking or cycling."
+    },
+    "turn": {
+      "definition": "To change direction while riding.",
+      "arabicTranslation": "ينعطف"
+    },
+    "signal": {
+      "definition": "To indicate an intended turn or stop to other road users.",
+      "arabicTranslation": "يشير إلى تغيير الاتجاه أو التوقف"
+    },
+    "stop": {
+      "definition": "To bring the bicycle to a standstill."
+    },
+    "flat-tire": {
+      "definition": "A tire that has lost too much air to be used normally.",
+      "arabicTranslation": "إطار فارغ من الهواء"
+    }
+  },
+  "electric-vehicle-station": {
+    "connector": {
+      "definition": "The part at the end of a charging cable that connects to a vehicle."
+    },
+    "level-1": {
+      "definition": "In North American terminology, AC vehicle charging using a standard 120-volt supply.",
+      "arabicTranslation": "شحن التيار المتردد من المستوى الأول"
+    },
+    "level-2": {
+      "definition": "In North American terminology, AC vehicle charging using a 208- or 240-volt supply.",
+      "arabicTranslation": "شحن التيار المتردد من المستوى الثاني"
+    },
+    "bms": {
+      "definition": "A battery management system that monitors and controls a battery pack."
+    },
+    "cell": {
+      "definition": "One electrochemical unit within a battery that stores and supplies electrical energy.",
+      "arabicTranslation": "خلية بطارية"
+    },
+    "lighting": {
+      "definition": "Lights installed to illuminate the charging area."
+    },
+    "bollard": {
+      "definition": "A short strong post used to protect equipment or control vehicle access.",
+      "arabicTranslation": "عمود حماية"
+    },
+    "curb": {
+      "definition": "The raised edge separating a roadway or parking area from a sidewalk.",
+      "arabicTranslation": "حافة الرصيف"
+    },
+    "bench": {
+      "definition": "A long seat for several people."
+    },
+    "account": {
+      "definition": "A registered user's record for accessing and paying for charging services."
+    },
+    "subscription": {
+      "definition": "An agreement to pay regularly for access to a charging service."
+    },
+    "network": {
+      "definition": "A group of charging stations operated or connected under a shared service."
+    },
+    "range": {
+      "definition": "The distance an electric vehicle can travel with its available battery charge.",
+      "arabicTranslation": "مدى السير"
+    },
+    "voltage": {
+      "definition": "The electrical potential difference between two points, measured in volts.",
+      "arabicTranslation": "فرق الجهد الكهربائي"
+    },
+    "efficiency": {
+      "definition": "How effectively a system uses energy, with less energy lost or wasted."
+    },
+    "lockout": {
+      "definition": "A safety procedure that isolates equipment from its energy supply before work.",
+      "arabicTranslation": "عزل مصادر الطاقة وقفلها"
+    },
+    "certification": {
+      "definition": "Confirmation by an authorized body that equipment meets specified requirements."
+    }
+  },
+  "hotel": {
+    "receptionist": {
+      "definition": "A hotel worker who welcomes guests and handles arrivals, bookings, and requests."
+    },
+    "doorman": {
+      "definition": "A worker who welcomes guests at the entrance and assists with doors or arrivals."
+    },
+    "safe": {
+      "definition": "A secure lockable box for storing money, documents, or valuables."
+    },
+    "swimming-pool": {
+      "arabicTranslation": "مسبح"
+    },
+    "spa": {
+      "definition": "A place offering relaxation or personal-care services such as massages.",
+      "arabicTranslation": "مركز استرخاء وعناية"
+    },
+    "conference-room": {
+      "definition": "A hotel room equipped for meetings or organized events.",
+      "arabicTranslation": "قاعة اجتماعات"
+    },
+    "laundry": {
+      "definition": "A service that washes and dries guests' clothes.",
+      "arabicTranslation": "خدمة غسل الملابس"
+    },
+    "concierge": {
+      "definition": "A hotel worker who assists guests with information, reservations, and local arrangements.",
+      "arabicTranslation": "موظف خدمات الضيوف"
+    },
+    "valet": {
+      "definition": "A worker who parks and retrieves guests' cars.",
+      "arabicTranslation": "عامل صف السيارات"
+    },
+    "shuttle": {
+      "definition": "A vehicle service that travels repeatedly between the hotel and specified locations.",
+      "arabicTranslation": "حافلة نقل ترددي"
+    },
+    "wifi": {
+      "definition": "Wireless technology used to connect devices to a local network."
+    },
+    "balcony": {
+      "definition": "An outdoor platform projecting from an upper floor of a building."
+    },
+    "view": {
+      "definition": "The scenery visible from a room or another location."
+    },
+    "bellhop": {
+      "definition": "A hotel worker who carries guests' luggage and may escort them to their rooms."
+    },
+    "checkout": {
+      "definition": "The process of paying any remaining charges and leaving a hotel."
+    }
+  },
+  "restaurant": {
+    "table": {
+      "definition": "A piece of furniture with a flat top used for eating meals."
+    },
+    "menu": {
+      "definition": "A list of the food and drinks available to order."
+    },
+    "centerpiece": {
+      "definition": "A decorative arrangement placed in the middle of a dining table."
+    },
+    "glass": {
+      "arabicTranslation": "كأس"
+    },
+    "chopsticks": {
+      "definition": "A pair of thin sticks held in one hand to pick up food."
+    },
+    "straw": {
+      "definition": "A narrow tube used to drink liquid."
+    },
+    "waitress": {
+      "definition": "A woman whose job is to serve customers at restaurant tables."
+    },
+    "cook": {
+      "definition": "A person whose job is to prepare food."
+    },
+    "host": {
+      "definition": "A restaurant worker who welcomes guests and arranges their seating."
+    },
+    "dishwasher": {
+      "definition": "A kitchen worker who washes dishes and utensils.",
+      "arabicTranslation": "عامل غسل الأطباق"
+    },
+    "check": {
+      "definition": "The bill for a restaurant meal, especially in American English.",
+      "arabicTranslation": "فاتورة المطعم"
+    },
+    "tip": {
+      "definition": "Extra money given to staff for their service."
+    },
+    "grill": {
+      "arabicTranslation": "شواية"
+    },
+    "fryer": {
+      "definition": "A cooking appliance that cooks food in hot oil."
+    },
+    "whisk": {
+      "arabicTranslation": "مضرب خفق"
+    },
+    "mixer": {
+      "definition": "A kitchen machine that mixes or beats ingredients."
+    },
+    "sink": {
+      "definition": "A basin with running water and a drain used for washing dishes or hands.",
+      "arabicTranslation": "حوض غسيل"
+    },
+    "soup": {
+      "definition": "A liquid dish made by cooking ingredients in water or stock."
+    },
+    "sushi": {
+      "definition": "A Japanese dish made with seasoned rice and toppings or fillings such as fish or vegetables."
+    },
+    "dressing": {
+      "definition": "A sauce added to a salad.",
+      "arabicTranslation": "صلصة السلطة"
+    },
+    "garnish": {
+      "arabicTranslation": "زينة الطعام"
+    },
+    "seasoning": {
+      "definition": "Salt, herbs, spices, or other ingredients added to give food flavor."
+    }
+  },
+  "market": {
+    "orange": {
+      "arabicTranslation": "برتقال"
+    },
+    "grape": {
+      "definition": "A small round fruit that grows in clusters and can be green, red, or purple."
+    },
+    "mango": {
+      "definition": "A tropical fruit with sweet yellow or orange flesh and a large flat stone."
+    },
+    "peach": {
+      "definition": "A round fruit with soft fuzzy skin, sweet flesh, and a hard stone.",
+      "arabicTranslation": "خوخ"
+    },
+    "beef": {
+      "definition": "Meat from cattle."
+    },
+    "chicken": {
+      "definition": "Meat from a chicken, sold as a whole bird or in cuts."
+    },
+    "turkey": {
+      "definition": "Meat from a turkey, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم الديك الرومي"
+    },
+    "fish": {
+      "definition": "Fish sold as food, whole or in portions.",
+      "arabicTranslation": "سمك"
+    },
+    "tuna": {
+      "definition": "Meat from a large sea fish, commonly sold fresh or canned."
+    },
+    "lamb": {
+      "definition": "Meat from a young sheep."
+    },
+    "yogurt": {
+      "definition": "A thick dairy food made by fermenting milk with bacteria."
+    },
+    "cream": {
+      "definition": "The thick, fatty part of milk, used in cooking or desserts."
+    },
+    "checkout": {
+      "definition": "The counter where customers pay for their purchases.",
+      "arabicTranslation": "صندوق المحاسبة"
+    },
+    "aisle": {
+      "definition": "A passage between rows of shelves or stalls."
+    },
+    "cash-register": {
+      "arabicTranslation": "آلة تسجيل النقد"
+    },
+    "scale": {
+      "arabicTranslation": "ميزان"
+    },
+    "coupon": {
+      "definition": "A voucher or code that gives a discount or another stated offer."
+    },
+    "cherry": {
+      "definition": "A small round red or dark fruit with a stone in the middle."
+    },
+    "cart": {
+      "definition": "A wheeled container used to carry shopping."
+    }
+  },
+  "supermarket": {
+    "orange": {
+      "arabicTranslation": "برتقال"
+    },
+    "mango": {
+      "definition": "A tropical fruit with sweet yellow or orange flesh and a large flat stone."
+    },
+    "peach": {
+      "arabicTranslation": "خوخ"
+    },
+    "cherry": {
+      "definition": "A small round red or dark fruit with a stone in the middle."
+    },
+    "coconut": {
+      "definition": "A tropical fruit with a hard shell, white flesh, and liquid inside."
+    },
+    "eggplant": {
+      "definition": "A vegetable with glossy skin, often purple, and soft pale flesh."
+    },
+    "tangerine": {
+      "definition": "A small citrus fruit with orange skin that is easy to peel."
+    },
+    "turnip": {
+      "definition": "A round root vegetable, often white with a purple top."
+    },
+    "mint": {
+      "definition": "An aromatic herb with leaves used to flavor food and drinks."
+    },
+    "bay-leaf": {
+      "arabicTranslation": "ورق الغار"
+    },
+    "yogurt": {
+      "definition": "A thick dairy food made by fermenting milk with bacteria."
+    },
+    "eggs": {
+      "definition": "Eggs sold as food, often from chickens, eaten cooked or used in recipes."
+    },
+    "cream": {
+      "definition": "The thick, fatty part of milk, used in cooking or desserts."
+    },
+    "ice-cream": {
+      "arabicTranslation": "آيس كريم"
+    },
+    "sour-cream": {
+      "arabicTranslation": "كريمة حامضة"
+    },
+    "tofu": {
+      "definition": "A soft or firm food made by coagulating soy milk into curds.",
+      "arabicTranslation": "توفو"
+    },
+    "quinoa": {
+      "definition": "Small edible seeds cooked and used in meals like a grain."
+    },
+    "whole-wheat-bread": {
+      "definition": "Bread made from flour containing all parts of the wheat grain."
+    },
+    "chicken": {
+      "definition": "Meat from a chicken, sold as a whole bird or in cuts."
+    },
+    "beef": {
+      "definition": "Meat from cattle."
+    },
+    "fish": {
+      "definition": "Fish sold as food, whole or in portions.",
+      "arabicTranslation": "سمك"
+    },
+    "tuna": {
+      "definition": "Meat from a large sea fish, commonly sold fresh or canned."
+    },
+    "lamb": {
+      "definition": "Meat from a young sheep."
+    },
+    "turkey": {
+      "definition": "Meat from a turkey, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم الديك الرومي"
+    },
+    "duck": {
+      "definition": "Meat from a duck, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم البط"
+    },
+    "crab": {
+      "definition": "A shellfish with a hard shell and claws, sold as food."
+    },
+    "drumstick": {
+      "definition": "The lower part of a poultry leg, sold or served as a cut of meat.",
+      "arabicTranslation": "ساق دجاج"
+    },
+    "wing": {
+      "definition": "A poultry wing sold or served as a cut of meat.",
+      "arabicTranslation": "جناح دجاج"
+    },
+    "shopping-cart": {
+      "definition": "A wheeled basket used to carry products while shopping."
+    },
+    "shelf": {
+      "definition": "A horizontal surface used to display or store products."
+    },
+    "aisle": {
+      "definition": "A passage between rows of shelves in a store."
+    },
+    "checkout": {
+      "arabicTranslation": "صندوق المحاسبة"
+    },
+    "coupon": {
+      "definition": "A voucher or code that gives a discount or another stated offer."
+    },
+    "scale": {
+      "arabicTranslation": "ميزان"
+    },
+    "cash-register": {
+      "arabicTranslation": "آلة تسجيل النقد"
+    },
+    "conveyor-belt": {
+      "definition": "A moving belt that carries groceries toward the cashier."
+    },
+    "scanner": {
+      "definition": "A device that reads product barcodes at the checkout.",
+      "arabicTranslation": "قارئ الرموز الشريطية"
+    },
+    "bleach": {
+      "definition": "A chemical cleaning product used to whiten materials or disinfect surfaces."
+    },
+    "water": {
+      "definition": "A clear liquid sold for drinking."
+    },
+    "energy-drink": {
+      "arabicTranslation": "مشروب طاقة"
+    },
+    "hot-chocolate": {
+      "arabicTranslation": "شوكولاتة ساخنة"
+    },
+    "orange-juice": {
+      "arabicTranslation": "عصير برتقال"
+    },
+    "chips": {
+      "definition": "Thin slices of potato cooked until crisp and eaten as a snack.",
+      "arabicTranslation": "رقائق بطاطس"
+    },
+    "nuts": {
+      "definition": "Edible kernels with hard shells, such as almonds or walnuts."
+    },
+    "gum": {
+      "definition": "A soft flavored substance that people chew without swallowing."
+    },
+    "pudding": {
+      "definition": "A soft sweet dessert, often made with milk and thickened by cooking."
+    },
+    "trail-mix": {
+      "arabicTranslation": "خليط مكسرات وفواكه مجففة"
+    },
+    "ice-pop": {
+      "arabicTranslation": "مثلجات على عصا"
+    },
+    "olive-oil": {
+      "arabicTranslation": "زيت الزيتون"
+    },
+    "vegetable-oil": {
+      "definition": "Oil extracted from plants and commonly used for cooking.",
+      "arabicTranslation": "زيت نباتي"
+    },
+    "baking-soda": {
+      "arabicTranslation": "بيكربونات الصوديوم"
+    },
+    "baking-powder": {
+      "arabicTranslation": "مسحوق الخَبز"
+    },
+    "cayenne": {
+      "definition": "A hot seasoning made from ground dried red chili peppers."
+    },
+    "tissue": {
+      "arabicTranslation": "منديل ورقي"
+    },
+    "sunscreen": {
+      "definition": "A product applied to skin to help protect it from ultraviolet radiation."
+    },
+    "body-wash": {
+      "arabicTranslation": "غسول الجسم"
+    },
+    "dental-floss": {
+      "arabicTranslation": "خيط تنظيف الأسنان"
+    },
+    "bag": {
+      "definition": "A flexible container used to carry shopping or other items."
+    },
+    "container": {
+      "definition": "An object used to hold or store things."
+    },
+    "push": {
+      "definition": "To move a cart or another object away from you by applying force."
+    },
+    "stock": {
+      "arabicTranslation": "يملأ الرفوف بالبضائع"
+    },
+    "load": {
+      "arabicTranslation": "يحمّل البضائع"
+    },
+    "frozen": {
+      "arabicTranslation": "مجمّد"
+    },
+    "nutrition-facts": {
+      "arabicTranslation": "المعلومات الغذائية"
+    },
+    "salami": {
+      "definition": "A cured sausage, often sliced and eaten cold."
+    }
+  },
+  "shopping-mall": {
+    "jewelry-store": {
+      "definition": "A shop that sells jewelry such as rings, necklaces, and bracelets."
+    },
+    "pharmacy": {
+      "definition": "A shop or service where medicines are dispensed and health products are sold."
+    },
+    "directory": {
+      "definition": "A map or list showing the mall's shops and facilities.",
+      "arabicTranslation": "دليل المتاجر"
+    },
+    "bench": {
+      "definition": "A long seat for several people."
+    },
+    "exit": {
+      "definition": "A doorway or route used to leave the building."
+    },
+    "line": {
+      "definition": "A queue of people waiting for their turn."
+    },
+    "cinema": {
+      "definition": "A place where people watch films on a large screen."
+    },
+    "lost-and-found": {
+      "definition": "A service that stores lost belongings so their owners can claim them."
+    },
+    "stroller": {
+      "definition": "A small wheeled chair used to transport a baby or young child."
+    }
+  },
+  "post-office": {
+    "stamp": {
+      "definition": "A small adhesive label or printed mark showing that postage has been paid.",
+      "arabicTranslation": "طابع بريدي"
+    },
+    "label": {
+      "definition": "A paper or adhesive tag showing a parcel's address or other details.",
+      "arabicTranslation": "ملصق بريدي"
+    },
+    "address": {
+      "definition": "The details identifying where a letter or parcel should be delivered."
+    },
+    "return-address": {
+      "arabicTranslation": "عنوان المرسل"
+    },
+    "counter": {
+      "definition": "A service surface where postal staff assist customers."
+    },
+    "scale": {
+      "arabicTranslation": "ميزان"
+    },
+    "pickup": {
+      "definition": "The collection of a letter or parcel from a specified location."
+    },
+    "clerk": {
+      "definition": "A postal worker who assists customers at the service counter."
+    },
+    "courier": {
+      "definition": "A worker who collects and delivers parcels or documents."
+    },
+    "cart": {
+      "definition": "A wheeled trolley used to move letters or parcels."
+    },
+    "scanner": {
+      "definition": "A device that reads a parcel's barcode to record or track it.",
+      "arabicTranslation": "قارئ الرموز الشريطية"
+    },
+    "box": {
+      "definition": "A container, usually made of cardboard, used to pack items for mailing."
+    },
+    "form": {
+      "definition": "A document with spaces for customers to enter postal-service information.",
+      "arabicTranslation": "استمارة"
+    },
+    "queue": {
+      "definition": "A line of people waiting for their turn."
+    }
+  },
+  "pharmacy": {
+    "syrup": {
+      "definition": "A sweetened liquid medicine taken by mouth.",
+      "arabicTranslation": "شراب دوائي"
+    },
+    "cream": {
+      "definition": "A soft preparation applied to the skin for treatment or care.",
+      "arabicTranslation": "كريم موضعي"
+    },
+    "eye-drops": {
+      "definition": "A liquid preparation placed in the eyes for treatment or lubrication."
+    },
+    "inhaler": {
+      "definition": "A device that delivers medicine into the airways as a person breathes in."
+    },
+    "injection": {
+      "definition": "The administration of a substance into the body using a needle."
+    },
+    "patch": {
+      "definition": "An adhesive preparation worn on the skin to deliver medicine."
+    },
+    "lozenge": {
+      "definition": "A small medicated tablet that dissolves slowly in the mouth."
+    },
+    "pill-bottle": {
+      "arabicTranslation": "عبوة أقراص دوائية"
+    },
+    "blister-pack": {
+      "definition": "Packaging with separate sealed pockets for individual tablets or capsules.",
+      "arabicTranslation": "شريط أقراص بجيوب محكمة"
+    },
+    "nasal-spray": {
+      "definition": "A liquid preparation sprayed into the nose."
+    },
+    "ear-drops": {
+      "definition": "A liquid medicine intended to be placed in the ear canal.",
+      "arabicTranslation": "قطرات أذن"
+    },
+    "injection-pen": {
+      "definition": "A pen-shaped device used to inject a measured dose of medicine.",
+      "arabicTranslation": "قلم حقن"
+    },
+    "prescription-counter": {
+      "definition": "The service counter where prescriptions are submitted or medicines are dispensed.",
+      "arabicTranslation": "منضدة صرف الوصفات"
+    },
+    "cash-register": {
+      "arabicTranslation": "آلة تسجيل النقد"
+    },
+    "scale": {
+      "arabicTranslation": "ميزان"
+    },
+    "mortar-and-pestle": {
+      "definition": "A bowl and a hand tool used together to crush or mix substances."
+    },
+    "label-printer": {
+      "definition": "A device that prints labels with medicine or patient information.",
+      "arabicTranslation": "طابعة ملصقات"
+    },
+    "pill-cutter": {
+      "arabicTranslation": "قطّاعة أقراص"
+    },
+    "patient-profile": {
+      "definition": "A pharmacy record containing relevant patient and medication information."
+    },
+    "plaster": {
+      "definition": "A small adhesive dressing used to cover a minor wound."
+    },
+    "cotton-ball": {
+      "definition": "A small soft ball of cotton used for applying products or cleaning skin.",
+      "arabicTranslation": "كرة قطنية"
+    },
+    "vitamin-supplement": {
+      "arabicTranslation": "مكمل فيتامينات"
+    },
+    "mineral-supplement": {
+      "arabicTranslation": "مكمل معادن"
+    },
+    "antibiotic": {
+      "definition": "A medicine used to treat or prevent certain bacterial infections."
+    },
+    "anti-inflammatory": {
+      "definition": "A medicine that reduces inflammation."
+    },
+    "antihistamine": {
+      "definition": "A medicine that blocks the effects of histamine and can relieve allergy symptoms."
+    },
+    "body-lotion": {
+      "definition": "A liquid or creamy product applied to moisturize body skin.",
+      "arabicTranslation": "لوشن للجسم"
+    },
+    "sunscreen": {
+      "definition": "A product applied to skin to help protect it from ultraviolet radiation."
+    },
+    "supplement": {
+      "definition": "A product taken in addition to food to supply nutrients or other dietary substances."
+    },
+    "probiotic": {
+      "definition": "A product containing live microorganisms intended to have health benefits.",
+      "arabicTranslation": "مستحضر بروبيوتيك"
+    },
+    "laxative": {
+      "definition": "A medicine used to help relieve constipation."
+    },
+    "cough-syrup": {
+      "definition": "A liquid medicine intended to relieve coughing."
+    },
+    "clean-room": {
+      "arabicTranslation": "غرفة نظيفة مضبوطة التلوث"
+    },
+    "cleaner": {
+      "definition": "A worker whose job is to clean the pharmacy."
+    },
+    "pill": {
+      "definition": "A small solid dose of medicine taken by mouth."
+    },
+    "label": {
+      "definition": "A tag showing a medicine's name, instructions, and other required details.",
+      "arabicTranslation": "ملصق الدواء"
+    },
+    "counter": {
+      "definition": "A service surface where pharmacy staff assist customers."
+    },
+    "prescription": {
+      "definition": "An authorized prescriber's instruction for a patient's medicine."
+    },
+    "dosage": {
+      "definition": "The amount of a medicine to take and the schedule for taking it.",
+      "arabicTranslation": "مقدار الجرعة وجدولها"
+    },
+    "consultation": {
+      "definition": "A discussion with a pharmacist or other professional to obtain advice."
+    },
+    "refill": {
+      "definition": "Another supply of an existing prescription medicine when authorized."
+    },
+    "insurance": {
+      "definition": "An arrangement that covers specified healthcare costs under a policy.",
+      "arabicTranslation": "تأمين صحي"
+    }
+  },
+  "kitchen-utensils": {
+    "scissors": {
+      "definition": "A hand tool with two hinged blades used to cut food or packaging."
+    },
+    "funnel": {
+      "definition": "A tool with a wide top and narrow spout for pouring liquid into a small opening."
+    },
+    "teaspoon": {
+      "definition": "A small spoon, or a cooking measure commonly equal to 5 milliliters."
+    },
+    "tablespoon": {
+      "definition": "A larger spoon, or a cooking measure commonly equal to 15 milliliters."
+    },
+    "waffle-iron": {
+      "arabicTranslation": "جهاز صنع الوافل"
+    },
+    "juicer": {
+      "definition": "A device that extracts juice from fruit or vegetables."
+    }
+  },
+  "cooking-methods": {
+    "boil": {
+      "definition": "To cook food in liquid that is bubbling at its boiling point."
+    },
+    "simmer": {
+      "definition": "To cook food gently in liquid kept just below a full boil."
+    },
+    "stew": {
+      "definition": "To cook food slowly in liquid.",
+      "arabicTranslation": "يطبخ ببطء في سائل"
+    },
+    "pressure-cook": {
+      "arabicTranslation": "يطهو في قدر الضغط"
+    },
+    "grill": {
+      "definition": "To cook food over direct heat, often on a metal grid."
+    },
+    "toast": {
+      "definition": "To heat bread or other food until its surface becomes brown and crisp."
+    },
+    "smoke": {
+      "definition": "To expose food to smoke to add flavor or help preserve it."
+    },
+    "dehydrate": {
+      "definition": "To dry food by removing much of its moisture."
+    },
+    "rotisserie": {
+      "definition": "A method of roasting food on a rotating spit."
+    },
+    "sear": {
+      "definition": "To brown the surface of food quickly with strong heat."
+    },
+    "chop": {
+      "definition": "To cut food into pieces with a knife."
+    },
+    "dice": {
+      "definition": "To cut food into small cubes."
+    },
+    "mince": {
+      "definition": "To cut food into very small pieces."
+    },
+    "blend": {
+      "definition": "To mix ingredients until they are combined, often using a blender."
+    },
+    "fold": {
+      "arabicTranslation": "يمزج برفق"
+    },
+    "knead": {
+      "definition": "To press, stretch, and fold dough to develop its texture."
+    },
+    "beat": {
+      "definition": "To mix ingredients vigorously with a whisk, spoon, or mixer."
+    },
+    "cream": {
+      "definition": "To beat fat and sugar together until the mixture becomes light and smooth.",
+      "arabicTranslation": "يخفق الدهن والسكر حتى يصبحا كريميين"
+    }
+  },
+  "seasonings-condiments": {
+    "cardamom": {
+      "definition": "An aromatic spice made from the seeds or pods of the cardamom plant."
+    },
+    "basil": {
+      "definition": "An aromatic herb with leaves used to flavor food."
+    },
+    "thyme": {
+      "definition": "An herb with small aromatic leaves used in cooking."
+    },
+    "parsley": {
+      "definition": "An herb with green leaves used to flavor or garnish food."
+    },
+    "cilantro": {
+      "definition": "The fresh leaves of the coriander plant, used as an herb."
+    },
+    "mint": {
+      "definition": "An aromatic herb with leaves used to flavor food and drinks."
+    },
+    "bay-leaf": {
+      "arabicTranslation": "ورق الغار"
+    },
+    "sage": {
+      "definition": "An herb with aromatic gray-green leaves used as a seasoning."
+    },
+    "mayonnaise": {
+      "definition": "A thick sauce traditionally made from oil, egg yolk, and vinegar or lemon juice."
+    },
+    "worcestershire": {
+      "definition": "A dark savory sauce used to season food."
+    },
+    "pesto": {
+      "definition": "A sauce traditionally made with basil, oil, nuts, garlic, and cheese."
+    },
+    "olive-oil": {
+      "arabicTranslation": "زيت الزيتون"
+    },
+    "vegetable-oil": {
+      "definition": "Oil extracted from plants and commonly used for cooking.",
+      "arabicTranslation": "زيت نباتي"
+    },
+    "jelly": {
+      "definition": "A clear sweet fruit preserve made from juice, sugar, and a gelling substance.",
+      "arabicTranslation": "هلام الفاكهة"
+    },
+    "agave": {
+      "definition": "A sweet syrup made from the agave plant and used as a sweetener.",
+      "arabicTranslation": "شراب الأغاف"
+    }
+  },
+  "ice-cream-shop": {
+    "mint": {
+      "definition": "A cool-tasting herb flavor used in ice cream."
+    },
+    "mango": {
+      "definition": "A tropical fruit with sweet yellow or orange flesh, used as an ice-cream flavor."
+    },
+    "pistachio": {
+      "definition": "An edible nut with a pale green kernel, used to flavor ice cream."
+    },
+    "scoop": {
+      "definition": "A rounded portion of ice cream served with a scoop tool.",
+      "arabicTranslation": "كرة آيس كريم"
+    },
+    "cone": {
+      "definition": "A crisp edible cone used to hold ice cream.",
+      "arabicTranslation": "قرطاس آيس كريم"
+    },
+    "sorbet": {
+      "definition": "A frozen dessert usually made from fruit, water, and sugar without dairy."
+    },
+    "sprinkles": {
+      "definition": "Small colorful sugar or chocolate pieces used to decorate desserts."
+    },
+    "cherry": {
+      "definition": "A small fruit, often used as a topping for ice cream."
+    },
+    "straw": {
+      "definition": "A narrow tube used to drink liquid."
+    },
+    "display-case": {
+      "definition": "A glass-fronted counter or cabinet used to display ice cream or other products.",
+      "arabicTranslation": "واجهة عرض زجاجية"
+    },
+    "waffle-iron": {
+      "arabicTranslation": "جهاز صنع الوافل"
+    },
+    "cash-register": {
+      "arabicTranslation": "آلة تسجيل النقد"
+    },
+    "menu": {
+      "definition": "A list of the ice creams, food, and drinks available to order."
+    },
+    "counter": {
+      "definition": "A service surface where staff take orders or serve customers."
+    },
+    "umbrella": {
+      "definition": "A large cover above outdoor tables that provides shade or shelter."
+    }
+  },
+  "pizza-shop": {
+    "pepperoni": {
+      "definition": "A pizza topped with slices of pepperoni sausage.",
+      "arabicTranslation": "بيتزا بيبروني"
+    },
+    "mushroom": {
+      "definition": "An edible fungus used as a pizza topping."
+    },
+    "pineapple": {
+      "definition": "A tropical fruit with sweet yellow flesh, used as a pizza topping."
+    },
+    "slice": {
+      "arabicTranslation": "شريحة بيتزا"
+    },
+    "soda": {
+      "definition": "A sweet carbonated drink."
+    },
+    "menu": {
+      "definition": "A list of the food and drinks available to order."
+    },
+    "mixer": {
+      "definition": "A kitchen machine used to combine ingredients, such as pizza dough."
+    },
+    "register": {
+      "definition": "A machine that records purchases and processes payments.",
+      "arabicTranslation": "آلة تسجيل النقد"
+    },
+    "table": {
+      "definition": "A piece of furniture with a flat top used for eating meals."
+    },
+    "ticket": {
+      "definition": "A printed or digital slip showing a customer's food order.",
+      "arabicTranslation": "قسيمة الطلب"
+    }
+  },
+  "coffee-shop": {
+    "timer": {
+      "definition": "A device used to measure brewing or preparation time."
+    },
+    "bagel": {
+      "definition": "A ring-shaped bread roll with a firm crust and chewy texture."
+    }
+  },
+  "beverages": {
+    "hot-chocolate": {
+      "arabicTranslation": "شوكولاتة ساخنة"
+    },
+    "cappuccino": {
+      "definition": "A coffee drink made with espresso, steamed milk, and a layer of milk foam."
+    },
+    "latte": {
+      "definition": "A coffee drink made with espresso and a generous amount of steamed milk."
+    },
+    "mocha": {
+      "definition": "A coffee drink made with espresso, chocolate, and milk."
+    },
+    "chai": {
+      "definition": "Tea, often served in cafés as a spiced drink with milk."
+    },
+    "iced-coffee": {
+      "definition": "Coffee served cold, usually over ice.",
+      "arabicTranslation": "قهوة مثلجة"
+    },
+    "smoothie": {
+      "definition": "A thick drink made by blending fruit or vegetables, often with yogurt or milk."
+    },
+    "tonic-water": {
+      "definition": "A carbonated drink with a bitter flavor from quinine.",
+      "arabicTranslation": "ماء التونيك"
+    },
+    "orange-juice": {
+      "arabicTranslation": "عصير برتقال"
+    },
+    "root-beer": {
+      "definition": "A sweet carbonated drink flavored with plant extracts, usually without alcohol.",
+      "arabicTranslation": "مشروب غازي بنكهة الجذور"
+    },
+    "cream-soda": {
+      "arabicTranslation": "مشروب غازي بنكهة الفانيليا"
+    },
+    "energy-drink": {
+      "arabicTranslation": "مشروب طاقة"
+    },
+    "sports-drink": {
+      "definition": "A drink formulated to supply fluids, carbohydrates, or electrolytes during exercise.",
+      "arabicTranslation": "مشروب رياضي"
+    },
+    "champagne": {
+      "definition": "A sparkling wine made in the Champagne region of France."
+    }
+  },
+  "grains-dairy": {
+    "oats": {
+      "definition": "A cereal grain commonly used in porridge and baked foods."
+    },
+    "quinoa": {
+      "definition": "Small edible seeds cooked and used in meals like a grain."
+    },
+    "buckwheat": {
+      "definition": "Edible seeds used like a grain or ground into flour."
+    },
+    "toast": {
+      "definition": "Bread heated until its surface becomes brown and crisp.",
+      "arabicTranslation": "خبز محمّص"
+    },
+    "spaghetti": {
+      "definition": "Pasta made in long thin strands."
+    },
+    "ramen": {
+      "definition": "Japanese-style wheat noodles, often served in broth."
+    },
+    "yogurt": {
+      "definition": "A thick dairy food made by fermenting milk with bacteria."
+    },
+    "sour-cream": {
+      "arabicTranslation": "كريمة حامضة"
+    },
+    "ice-cream": {
+      "arabicTranslation": "آيس كريم"
+    },
+    "tofu": {
+      "definition": "A soft or firm food made by coagulating soy milk into curds."
+    }
+  },
+  "meat-seafood": {
+    "chicken": {
+      "definition": "Meat from a chicken, sold as a whole bird or in cuts."
+    },
+    "turkey": {
+      "definition": "Meat from a turkey, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم الديك الرومي"
+    },
+    "duck": {
+      "arabicTranslation": "لحم البط"
+    },
+    "goose": {
+      "arabicTranslation": "لحم الأوز"
+    },
+    "wing": {
+      "definition": "A poultry wing sold or served as a cut of meat.",
+      "arabicTranslation": "جناح دجاج"
+    },
+    "thigh": {
+      "definition": "The upper part of a poultry leg, sold as a cut of meat.",
+      "arabicTranslation": "فخذ دجاج"
+    },
+    "beef": {
+      "definition": "Meat from cattle."
+    },
+    "lamb": {
+      "definition": "Meat from a young sheep."
+    },
+    "roast": {
+      "definition": "A large cut of meat intended for cooking with dry heat.",
+      "arabicTranslation": "قطعة لحم للشواء"
+    },
+    "tuna": {
+      "definition": "Meat from a large sea fish, commonly sold fresh or canned."
+    },
+    "crab": {
+      "definition": "A shellfish with a hard shell and claws, sold as food."
+    },
+    "mussel": {
+      "definition": "An edible shellfish with two dark elongated shells."
+    },
+    "salami": {
+      "definition": "A cured sausage, often sliced and eaten cold."
+    },
+    "jerky": {
+      "definition": "Strips of dried, seasoned meat."
+    },
+    "fillet": {
+      "definition": "A boneless portion of meat or fish."
+    },
+    "chop": {
+      "arabicTranslation": "قطعة لحم بعظم"
+    },
+    "shank": {
+      "definition": "A cut of meat from the lower part of an animal's leg."
+    },
+    "diced": {
+      "definition": "Cut into small cubes."
+    }
+  },
+  "fabrics-textiles": {
+    "bamboo": {
+      "definition": "A textile made from fibers derived from bamboo plants.",
+      "arabicTranslation": "نسيج مشتق من الخيزران"
+    },
+    "jute": {
+      "definition": "A strong plant fiber used to make coarse cloth, sacks, and rope."
+    },
+    "alpaca": {
+      "definition": "A soft textile fiber obtained from alpacas, or fabric made from it."
+    },
+    "polyester": {
+      "definition": "A synthetic fiber used to make fabrics and other products."
+    },
+    "rayon": {
+      "definition": "A manufactured fiber made from processed cellulose."
+    },
+    "microfiber": {
+      "definition": "Fabric made from very fine synthetic fibers."
+    },
+    "brocade": {
+      "definition": "A rich fabric with raised patterns woven into it."
+    },
+    "weave": {
+      "definition": "The pattern in which threads are interlaced to form fabric.",
+      "arabicTranslation": "طريقة النسج"
+    },
+    "weight": {
+      "definition": "How heavy a fabric is for a given area."
+    },
+    "stretch": {
+      "definition": "The ability of a fabric to extend when pulled."
+    },
+    "breathability": {
+      "definition": "The ability of a fabric to allow air or moisture vapor to pass through."
+    },
+    "hand-wash": {
+      "definition": "To wash clothing by hand rather than in a machine.",
+      "arabicTranslation": "يغسل يدويًا"
+    },
+    "machine-wash": {
+      "arabicTranslation": "يغسل في الغسالة"
+    },
+    "dry-clean": {
+      "arabicTranslation": "ينظف تنظيفًا جافًا"
+    },
+    "iron": {
+      "definition": "To smooth wrinkles in fabric with a heated iron.",
+      "arabicTranslation": "يكوي"
+    },
+    "steam": {
+      "definition": "To use steam to refresh fabric or remove wrinkles.",
+      "arabicTranslation": "يعالج بالبخار"
+    },
+    "bleach": {
+      "definition": "To whiten fabric or remove color using a bleaching agent.",
+      "arabicTranslation": "يبيّض"
+    },
+    "line-dry": {
+      "definition": "To dry clothing by hanging it on a line.",
+      "arabicTranslation": "يجفف على حبل الغسيل"
+    },
+    "fabric-softener": {
+      "definition": "A laundry product used to make washed fabric feel softer."
+    }
+  },
+  "materials": {
+    "marble": {
+      "definition": "A hard stone with patterns or veins, used in buildings and sculpture."
+    },
+    "iron": {
+      "arabicTranslation": "حديد"
+    },
+    "gold": {
+      "arabicTranslation": "ذهب"
+    },
+    "silver": {
+      "definition": "A precious silvery-white metal used in jewelry and other products.",
+      "arabicTranslation": "فضة"
+    },
+    "bronze": {
+      "arabicTranslation": "برونز"
+    },
+    "linen": {
+      "definition": "Fabric made from fibers of the flax plant."
+    },
+    "denim": {
+      "definition": "A strong cotton fabric commonly used to make jeans."
+    },
+    "polyester": {
+      "definition": "A synthetic fiber used to make fabrics and other products."
+    },
+    "velvet": {
+      "definition": "A fabric with a dense, soft raised surface."
+    },
+    "fiberglass": {
+      "definition": "Fine glass fibers used in insulation or to reinforce other materials."
+    },
+    "silicone": {
+      "definition": "A heat-resistant synthetic material used in sealants, molds, and many other products."
+    },
+    "resin": {
+      "definition": "A natural or synthetic substance that can be used in coatings, adhesives, or molded products."
+    },
+    "plaster": {
+      "arabicTranslation": "جبس"
+    },
+    "insulation": {
+      "definition": "Material used to reduce the transfer of heat, sound, or electricity."
+    },
+    "mortar": {
+      "arabicTranslation": "مونة بناء"
+    }
+  },
+  "everyday-clothing": {
+    "t-shirt": {
+      "definition": "A casual shirt, usually with short sleeves and no collar."
+    },
+    "hoodie": {
+      "definition": "A sweatshirt with an attached hood."
+    },
+    "jeans": {
+      "definition": "Trousers made from denim fabric."
+    },
+    "pants": {
+      "definition": "Clothing covering the body from the waist down with a separate part for each leg; American English for trousers."
+    },
+    "leggings": {
+      "definition": "Close-fitting stretchy trousers."
+    },
+    "khakis": {
+      "definition": "Casual trousers made from khaki-colored fabric."
+    },
+    "capris": {
+      "definition": "Trousers that end below the knee but above the ankle."
+    },
+    "coat": {
+      "definition": "An outer garment worn over other clothes for warmth or protection."
+    },
+    "fleece": {
+      "definition": "A soft warm garment made from fleece fabric."
+    },
+    "dress": {
+      "definition": "A one-piece garment with an upper section and a skirt."
+    },
+    "jumpsuit": {
+      "definition": "A one-piece garment combining a top and trousers."
+    },
+    "romper": {
+      "definition": "A one-piece outfit combining a top and shorts.",
+      "arabicTranslation": "لباس قطعة واحدة بسروال قصير"
+    },
+    "uniform": {
+      "definition": "Standard clothing worn by members of an organization or profession."
+    },
+    "undershirt": {
+      "definition": "A shirt worn under other clothing, next to the skin."
+    }
+  },
+  "footwear": {
+    "sneakers": {
+      "definition": "Casual or athletic shoes with flexible rubber soles."
+    },
+    "stilettos": {
+      "definition": "Shoes with tall, very thin heels."
+    },
+    "slides": {
+      "definition": "Open-back sandals with a strap or band across the foot."
+    },
+    "wedges": {
+      "definition": "Shoes with a sole that forms a continuous wedge beneath the heel and foot."
+    },
+    "clogs": {
+      "definition": "Shoes with thick rigid soles, traditionally made of wood."
+    },
+    "mules": {
+      "definition": "Shoes with closed fronts and open backs."
+    }
+  },
+  "formal-business-wear": {
+    "dress-shirt": {
+      "definition": "A smart collared shirt worn with formal or business clothing.",
+      "arabicTranslation": "قميص رسمي"
+    },
+    "cocktail-dress": {
+      "definition": "A smart dress worn for semi-formal social events.",
+      "arabicTranslation": "فستان للمناسبات شبه الرسمية"
+    },
+    "pencil-skirt": {
+      "arabicTranslation": "تنورة مستقيمة ضيقة"
+    },
+    "cardigan": {
+      "definition": "A knitted garment that opens at the front and is worn over other clothes."
+    },
+    "uniform": {
+      "definition": "Standard clothing worn by members of an organization or profession."
+    },
+    "hard-hat": {
+      "definition": "A rigid protective helmet worn at a work site.",
+      "arabicTranslation": "خوذة أمان"
+    },
+    "safety-vest": {
+      "arabicTranslation": "سترة عالية الوضوح"
+    },
+    "steel-toe-boots": {
+      "arabicTranslation": "أحذية أمان بمقدمة فولاذية"
+    },
+    "gloves": {
+      "definition": "Hand coverings worn for protection while working."
+    }
+  },
+  "tailor-shop": {
+    "needle": {
+      "definition": "A thin pointed sewing tool with a hole for thread."
+    },
+    "thimble": {
+      "definition": "A small protective cap worn on a finger when pushing a sewing needle."
+    },
+    "pattern": {
+      "arabicTranslation": "باترون خياطة"
+    },
+    "chalk": {
+      "definition": "A removable marking material used to draw guides on fabric."
+    },
+    "denim": {
+      "definition": "A strong cotton fabric commonly used to make jeans."
+    },
+    "polyester": {
+      "definition": "A synthetic fiber used to make fabrics and other products."
+    },
+    "snap": {
+      "definition": "A clothing fastener made from two parts that press together.",
+      "arabicTranslation": "زر كبّاس"
+    },
+    "buckle": {
+      "definition": "A frame-and-pin fastener used to secure a belt or strap."
+    },
+    "ribbon": {
+      "definition": "A narrow strip of fabric used for decoration or fastening."
+    },
+    "lace": {
+      "definition": "A delicate fabric with an open decorative pattern."
+    },
+    "elastic-band": {
+      "definition": "A stretchy strip used in clothing to hold or gather fabric.",
+      "arabicTranslation": "شريط مطاطي"
+    },
+    "collar": {
+      "definition": "The part of a garment that surrounds the neck.",
+      "arabicTranslation": "ياقة"
+    },
+    "sleeve": {
+      "arabicTranslation": "كُمّ"
+    },
+    "cuff": {
+      "definition": "The finished band or edge at the end of a sleeve.",
+      "arabicTranslation": "طرف الكُمّ"
+    },
+    "hem": {
+      "definition": "A folded and sewn edge that finishes a garment."
+    },
+    "dart": {
+      "definition": "A tapered fold sewn into fabric to shape a garment."
+    },
+    "lining": {
+      "definition": "An inner layer of fabric sewn inside a garment."
+    },
+    "steam-iron": {
+      "arabicTranslation": "مكواة بخارية"
+    },
+    "label": {
+      "definition": "A small tag on clothing showing brand, size, care, or other information.",
+      "arabicTranslation": "بطاقة الملابس"
+    },
+    "scissors": {
+      "definition": "A hand tool with two hinged blades used to cut fabric or thread."
+    },
+    "pin": {
+      "definition": "A thin pointed fastener used to hold fabric in place temporarily."
+    },
+    "iron": {
+      "definition": "A heated appliance used to press fabric and remove wrinkles."
+    },
+    "elastic": {
+      "definition": "A stretchy material used to hold or gather parts of a garment.",
+      "arabicTranslation": "مطاط الملابس"
+    },
+    "trousers": {
+      "definition": "Clothing covering the body from the waist down, with a separate part for each leg."
+    }
+  },
+  "fashion-design": {
+    "dart": {
+      "definition": "A tapered fold sewn into fabric to shape a garment."
+    },
+    "collar": {
+      "definition": "The part of a garment that surrounds the neck.",
+      "arabicTranslation": "ياقة"
+    },
+    "cuff": {
+      "definition": "The finished band or edge at the end of a sleeve.",
+      "arabicTranslation": "طرف الكُمّ"
+    },
+    "sleeve": {
+      "arabicTranslation": "كُمّ"
+    },
+    "button": {
+      "definition": "A small fastener attached to clothing and passed through a buttonhole."
+    },
+    "snap": {
+      "definition": "A clothing fastener made from two parts that press together.",
+      "arabicTranslation": "زر كبّاس"
+    },
+    "buckle": {
+      "definition": "A frame-and-pin fastener used to secure a belt or strap."
+    },
+    "embroidery": {
+      "definition": "Decorative designs stitched onto fabric with thread."
+    },
+    "ribbon": {
+      "definition": "A narrow strip of fabric used for decoration or fastening."
+    },
+    "haute-couture": {
+      "definition": "High-end fashion made to an individual customer's measurements."
+    },
+    "collection": {
+      "definition": "A coordinated group of garments created by a designer or brand.",
+      "arabicTranslation": "مجموعة أزياء"
+    },
+    "season": {
+      "definition": "A fashion-design and sales period, such as spring/summer or autumn/winter.",
+      "arabicTranslation": "موسم أزياء"
+    },
+    "capsule": {
+      "arabicTranslation": "مجموعة أزياء مصغّرة متناسقة"
+    }
+  },
+  "fashion-atelier": {
+    "iron": {
+      "definition": "A heated appliance used to press fabric and remove wrinkles."
+    },
+    "needle": {
+      "definition": "A thin pointed sewing tool with a hole for thread."
+    },
+    "scissors": {
+      "definition": "A hand tool with two hinged blades used to cut fabric or thread."
+    },
+    "thimble": {
+      "definition": "A small protective cap worn on a finger when pushing a sewing needle."
+    },
+    "prototype": {
+      "definition": "An early garment made to test a design before further development."
+    },
+    "production": {
+      "definition": "The process of making garments for sale or distribution."
+    },
+    "seamstress": {
+      "definition": "A woman whose job is to sew or alter clothing."
+    },
+    "tailor": {
+      "definition": "A person who makes, fits, or alters clothing."
+    },
+    "model": {
+      "definition": "A person who displays clothing for photographs, fittings, or fashion shows.",
+      "arabicTranslation": "عارض أزياء"
+    }
+  },
+  "physical-appearance": {
+    "tall": {
+      "definition": "Having a greater height than is usual for the relevant group."
+    },
+    "thin": {
+      "definition": "Having a slender body with relatively little body fat."
+    },
+    "heavy": {
+      "definition": "Having a relatively large body weight."
+    },
+    "muscular": {
+      "definition": "Having visibly developed muscles."
+    },
+    "athletic": {
+      "definition": "Having a build associated with physical fitness or sport."
+    },
+    "blonde": {
+      "definition": "Having pale yellow or golden hair."
+    },
+    "brunette": {
+      "definition": "Having brown or dark brown hair."
+    },
+    "pigtails": {
+      "definition": "Hair arranged in two bunches or braids, one on each side of the head.",
+      "arabicTranslation": "خصلتان أو ضفيرتان جانبيتان"
+    }
+  },
+  "personality-character": {
+    "patient": {
+      "definition": "Able to wait or handle difficulties without becoming upset.",
+      "arabicTranslation": "صبور"
+    },
+    "friendly": {
+      "definition": "Kind and welcoming toward other people."
+    },
+    "talkative": {
+      "definition": "Often talking a lot."
+    },
+    "moody": {
+      "definition": "Having moods that change noticeably or unpredictably."
+    },
+    "charismatic": {
+      "definition": "Able to attract and influence others through personal appeal."
+    },
+    "calm": {
+      "definition": "Not feeling or showing strong agitation, fear, or anger."
+    },
+    "optimistic": {
+      "definition": "Hopeful that things will go well."
+    },
+    "confident": {
+      "definition": "Feeling sure of your abilities or decisions."
+    },
+    "passionate": {
+      "definition": "Showing strong interest or enthusiasm for something."
+    }
+  },
+  "facial-expressions": {
+    "grin": {
+      "definition": "A broad smile that shows the teeth."
+    },
+    "laugh": {
+      "definition": "To make sounds and facial movements that express amusement."
+    },
+    "giggle": {
+      "definition": "To laugh lightly or in short repeated sounds."
+    },
+    "chuckle": {
+      "definition": "To laugh quietly."
+    },
+    "wink": {
+      "definition": "To briefly close one eye as a signal."
+    },
+    "cry": {
+      "definition": "To shed tears, often because of sadness or pain."
+    },
+    "sob": {
+      "definition": "To cry with repeated sharp breaths."
+    },
+    "droop": {
+      "definition": "To hang or fall downward, as tired eyelids may do."
+    },
+    "gloom": {
+      "definition": "A feeling or expression of sadness."
+    },
+    "glare": {
+      "definition": "An intense angry or disapproving look."
+    },
+    "stare": {
+      "definition": "To look steadily at someone or something for a long time."
+    },
+    "squint": {
+      "definition": "To partly close the eyes when trying to see or reacting to bright light."
+    },
+    "startle": {
+      "definition": "To react suddenly because of surprise or alarm."
+    },
+    "frozen": {
+      "definition": "Unable to move or react for a moment because of shock or fear."
+    },
+    "tremble": {
+      "definition": "To shake slightly and involuntarily."
+    }
+  },
+  "skin-hair": {
+    "dry-skin": {
+      "arabicTranslation": "بشرة جافة"
+    },
+    "mature-skin": {
+      "arabicTranslation": "بشرة ناضجة"
+    },
+    "blister": {
+      "definition": "A small pocket of fluid that forms beneath the surface of the skin."
+    },
+    "wrinkles": {
+      "definition": "Lines or folds in the skin."
+    },
+    "serum": {
+      "definition": "A lightweight skin-care or hair-care product containing concentrated ingredients.",
+      "arabicTranslation": "سيروم للعناية"
+    },
+    "mousse": {
+      "definition": "A foamy styling product applied to hair."
+    },
+    "brush": {
+      "definition": "A tool with bristles used to arrange or untangle hair.",
+      "arabicTranslation": "فرشاة شعر"
+    },
+    "cleanser": {
+      "definition": "A skin-care product used to remove dirt, oil, or makeup."
+    },
+    "toner": {
+      "definition": "A liquid skin-care product usually applied after cleansing."
+    },
+    "sunscreen": {
+      "definition": "A product applied to skin to help protect it from ultraviolet radiation."
+    },
+    "night-cream": {
+      "definition": "A moisturizing cream intended for use on the skin at night."
+    }
+  },
+  "hair-salon": {
+    "trim": {
+      "definition": "To cut a small amount from the ends of hair."
+    },
+    "layers": {
+      "definition": "Sections of hair cut to different lengths to create shape or volume."
+    },
+    "bob": {
+      "definition": "A haircut in which the hair ends around the jaw or neck."
+    },
+    "fade": {
+      "definition": "A haircut in which hair gradually becomes shorter toward the sides and back."
+    },
+    "undercut": {
+      "definition": "A haircut with very short sides beneath longer hair on top."
+    },
+    "buzz-cut": {
+      "arabicTranslation": "قصة شعر قصيرة جدًا بالماكينة"
+    },
+    "twist": {
+      "definition": "To turn strands of hair around one another to shape a hairstyle.",
+      "arabicTranslation": "يلفّ خصل الشعر"
+    },
+    "pin": {
+      "definition": "A small fastener used to hold hair in place.",
+      "arabicTranslation": "دبوس شعر"
+    },
+    "diffuser": {
+      "definition": "A hair-dryer attachment that spreads airflow over a wider area.",
+      "arabicTranslation": "موزّع هواء مجفف الشعر"
+    },
+    "aftershave": {
+      "definition": "A lotion or other product applied to the skin after shaving."
+    },
+    "hair-gel": {
+      "definition": "A thick styling product used to hold hair in place."
+    },
+    "highlights": {
+      "definition": "Sections of hair colored lighter than the surrounding hair.",
+      "arabicTranslation": "خصلات شعر أفتح"
+    },
+    "bleach": {
+      "definition": "A product used by hair professionals to lighten hair color.",
+      "arabicTranslation": "مفتّح لون الشعر"
+    },
+    "toner": {
+      "definition": "A hair-color product used to adjust or neutralize unwanted tones.",
+      "arabicTranslation": "مصحّح لون الشعر"
+    },
+    "color-wheel": {
+      "definition": "A circular chart showing colors and their relationships.",
+      "arabicTranslation": "عجلة الألوان"
+    },
+    "taper": {
+      "definition": "A haircut in which hair gradually shortens near the neckline and sides."
+    },
+    "scissors": {
+      "definition": "A tool with two hinged blades used to cut hair."
+    },
+    "brush": {
+      "definition": "A tool with bristles used to arrange or untangle hair.",
+      "arabicTranslation": "فرشاة شعر"
+    },
+    "cape": {
+      "definition": "A protective covering worn around a client during salon services."
+    },
+    "serum": {
+      "definition": "A concentrated hair-care product used to improve the hair's feel or appearance.",
+      "arabicTranslation": "سيروم للشعر"
+    },
+    "oil": {
+      "definition": "An oil-based product applied to condition or style hair.",
+      "arabicTranslation": "زيت للشعر"
+    },
+    "mask": {
+      "definition": "A conditioning product left on hair for a time before being rinsed out.",
+      "arabicTranslation": "قناع للشعر"
+    },
+    "station": {
+      "definition": "A salon work area with a chair, mirror, and styling tools.",
+      "arabicTranslation": "وحدة عمل في الصالون"
+    },
+    "sink": {
+      "definition": "A basin equipped for washing and rinsing a client's hair.",
+      "arabicTranslation": "حوض غسل الشعر"
+    },
+    "reception": {
+      "definition": "The area where salon clients are welcomed and appointments are managed.",
+      "arabicTranslation": "منطقة الاستقبال"
+    },
+    "appointment-book": {
+      "arabicTranslation": "دفتر المواعيد"
+    }
+  },
+  "barbershop": {
+    "buzz-cut": {
+      "arabicTranslation": "قصة شعر قصيرة جدًا بالماكينة"
+    },
+    "fade": {
+      "definition": "A haircut in which hair gradually becomes shorter toward the sides and back."
+    },
+    "taper": {
+      "definition": "A haircut in which hair gradually shortens near the neckline and sides."
+    },
+    "mullet": {
+      "definition": "A haircut with shorter hair at the front and sides and longer hair at the back."
+    },
+    "bob": {
+      "definition": "A haircut in which the hair ends around the jaw or neck."
+    },
+    "layers": {
+      "definition": "Sections of hair cut to different lengths to create shape or volume."
+    },
+    "clippers": {
+      "definition": "An electric tool with moving blades used to cut hair short."
+    },
+    "scissors": {
+      "definition": "A tool with two hinged blades used to cut hair."
+    },
+    "trimmer": {
+      "definition": "A small electric grooming tool used to shape hair or beard edges."
+    },
+    "cape": {
+      "definition": "A protective covering worn around a client during barber services."
+    },
+    "hot-towel": {
+      "definition": "A warmed towel used for comfort or preparation during grooming services."
+    },
+    "conditioning": {
+      "definition": "Applying a hair-care product to make hair softer or easier to manage."
+    },
+    "coloring": {
+      "definition": "Changing or adding color to hair using a coloring product."
+    },
+    "highlights": {
+      "definition": "Sections of hair colored lighter than the surrounding hair.",
+      "arabicTranslation": "خصلات شعر أفتح"
+    },
+    "aftershave": {
+      "definition": "A lotion or other product applied to the skin after shaving."
+    },
+    "tonic": {
+      "definition": "A liquid grooming product applied to hair or the scalp.",
+      "arabicTranslation": "مستحضر تونك للشعر"
+    },
+    "oil": {
+      "definition": "An oil-based product applied to condition hair or a beard.",
+      "arabicTranslation": "زيت للعناية بالشعر أو اللحية"
+    },
+    "cream": {
+      "definition": "A soft grooming product used for skin care, shaving, or styling.",
+      "arabicTranslation": "كريم للعناية"
+    },
+    "powder": {
+      "definition": "A fine dry grooming product applied to skin or hair."
+    },
+    "headrest": {
+      "definition": "A support for the client's head attached to a barber chair."
+    },
+    "counter": {
+      "definition": "A work or service surface for tools, products, or payments."
+    },
+    "sterilizer": {
+      "definition": "Equipment used to sterilize compatible tools under a specified process."
+    },
+    "pole": {
+      "definition": "A striped sign traditionally used to identify a barbershop.",
+      "arabicTranslation": "عمود الحلاق المخطط"
+    },
+    "barber": {
+      "definition": "A person whose job is to cut hair and groom beards."
+    },
+    "client": {
+      "definition": "A person receiving a barber's services."
+    },
+    "apprentice": {
+      "definition": "A trainee learning barbering through supervised work."
+    },
+    "appointment": {
+      "definition": "An agreed date and time for a service."
+    },
+    "tip": {
+      "definition": "Extra money a client gives to staff for their service."
+    }
+  },
+  "spa": {
+    "massage": {
+      "definition": "Pressing and rubbing muscles and soft tissues using hands or equipment."
+    },
+    "facial": {
+      "definition": "A cosmetic treatment that cleanses and cares for facial skin."
+    },
+    "scrub": {
+      "definition": "A textured skin-care product or treatment used for exfoliation.",
+      "arabicTranslation": "مقشّر للبشرة"
+    },
+    "aromatherapy": {
+      "definition": "A practice using scented plant oils, often during relaxation or massage."
+    },
+    "reflexology": {
+      "definition": "A complementary practice that applies pressure to parts of the feet, hands, or ears.",
+      "arabicTranslation": "تدليك انعكاسي"
+    },
+    "hydrotherapy": {
+      "definition": "The use of water as part of a supervised therapeutic activity or treatment."
+    },
+    "steam-room": {
+      "arabicTranslation": "غرفة بخار"
+    },
+    "pool": {
+      "definition": "A constructed basin filled with water for swimming or bathing."
+    },
+    "locker-room": {
+      "arabicTranslation": "غرفة تبديل الملابس والخزائن"
+    },
+    "reception": {
+      "definition": "The area where spa visitors are welcomed and bookings are managed.",
+      "arabicTranslation": "منطقة الاستقبال"
+    },
+    "terrace": {
+      "definition": "An outdoor paved area beside or above a building."
+    },
+    "cream": {
+      "definition": "A soft cosmetic product applied to the skin.",
+      "arabicTranslation": "كريم للبشرة"
+    },
+    "mask": {
+      "definition": "A skin-care preparation left on the skin for a time before removal.",
+      "arabicTranslation": "قناع للبشرة"
+    },
+    "serum": {
+      "definition": "A lightweight skin-care product containing concentrated ingredients.",
+      "arabicTranslation": "سيروم للبشرة"
+    },
+    "mud": {
+      "definition": "A wet earthy material used in some spa treatments."
+    },
+    "incense": {
+      "definition": "A scented material that releases fragrance when burned."
+    },
+    "diffuser": {
+      "definition": "A device that disperses fragrance or scented oils into the air."
+    },
+    "toner": {
+      "definition": "A liquid skin-care product usually applied after cleansing."
+    },
+    "cleanser": {
+      "definition": "A skin-care product used to remove dirt, oil, or makeup."
+    },
+    "basin": {
+      "definition": "A bowl-shaped container or fixture used to hold water."
+    },
+    "headrest": {
+      "definition": "A support for a person's head on a treatment chair or table."
+    },
+    "water-feature": {
+      "arabicTranslation": "عنصر مائي للزينة"
+    },
+    "meditation": {
+      "definition": "A practice of focusing attention or observing thoughts to develop awareness."
+    },
+    "mindfulness": {
+      "definition": "Attention to present experience, including thoughts, feelings, and sensations."
+    },
+    "detox": {
+      "definition": "In spa marketing, a label for treatments claimed to cleanse the body; it does not establish toxin removal.",
+      "arabicTranslation": "ديتوكس؛ تسمية تسويقية للتنقية"
+    },
+    "hydration": {
+      "definition": "Having or maintaining enough water in the body."
+    },
+    "sleep": {
+      "definition": "A natural resting state in which awareness and activity are reduced."
+    },
+    "relaxation": {
+      "definition": "A state of reduced tension and a feeling of ease."
+    },
+    "acupuncture": {
+      "definition": "A practice in which trained practitioners insert thin needles at selected points on the body."
+    },
+    "shiatsu": {
+      "definition": "A Japanese form of bodywork that uses finger or hand pressure."
+    },
+    "attendant": {
+      "definition": "A worker who assists guests and maintains spa facilities.",
+      "arabicTranslation": "موظف خدمة الضيوف"
+    },
+    "concierge": {
+      "definition": "A worker who assists visitors with arrangements, bookings, or information.",
+      "arabicTranslation": "موظف خدمات الضيوف"
+    }
+  }
+}

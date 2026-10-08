@@ -35,13 +35,13 @@
       "رمل",
       "خيزران",
       "فلين",
-      "أردوازي",
+      "أردواز",
       "حجر جيري",
       "فولاذ",
-      "مكواة",
+      "حديد",
       "ألمنيوم",
-      "نحاسي",
-      "ذهبي"
+      "نحاس",
+      "ذهب"
     ],
     "usage": {
       "goal": "Learn to use common materials 1 vocabulary to handle a familiar adult everyday task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Aluminum, Copper, Gold. The selected item or situation is best described as aluminum. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult materials scene showing lesson-related items or actions including Aluminum, Copper, Gold in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Materials: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wood"
+        "prompt": "An adult compares three possible descriptions in a materials context: Wood, Stone, Marble. The selected item or situation is best described as wood.\nWhich description best fits the selected item or situation?",
+        "answer": "Wood",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Granite"
+        "prompt": "An adult compares three possible descriptions in a materials context: Granite, Clay, Sand. The selected item or situation is best described as granite.\nWhich description best fits the selected item or situation?",
+        "answer": "Granite",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bamboo"
+        "prompt": "An adult compares three possible descriptions in a materials context: Bamboo, Cork, Slate. The selected item or situation is best described as bamboo.\nWhich description best fits the selected item or situation?",
+        "answer": "Bamboo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Limestone"
+        "prompt": "An adult compares three possible descriptions in a materials context: Limestone, Steel, Iron. The selected item or situation is best described as limestone.\nWhich description best fits the selected item or situation?",
+        "answer": "Limestone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aluminum"
+        "prompt": "An adult compares three possible descriptions in a materials context: Aluminum, Copper, Gold. The selected item or situation is best described as aluminum.\nWhich description best fits the selected item or situation?",
+        "answer": "Aluminum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -189,8 +205,8 @@
       "Cashmere"
     ],
     "targetWordsArabic": [
-      "فضي",
-      "برونزي",
+      "فضة",
+      "برونز",
       "نحاس أصفر",
       "تيتانيوم",
       "بلاتين",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Velvet, Satin, Cashmere. The selected item or situation is best described as velvet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult materials scene showing lesson-related items or actions including Velvet, Satin, Cashmere in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Materials: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Silver"
+        "prompt": "An adult compares three possible descriptions in a materials context: Silver, Bronze, Brass. The selected item or situation is best described as silver.\nWhich description best fits the selected item or situation?",
+        "answer": "Silver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Titanium"
+        "prompt": "An adult compares three possible descriptions in a materials context: Titanium, Platinum, Cotton. The selected item or situation is best described as titanium.\nWhich description best fits the selected item or situation?",
+        "answer": "Titanium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Silk"
+        "prompt": "An adult compares three possible descriptions in a materials context: Silk, Wool, Linen. The selected item or situation is best described as silk.\nWhich description best fits the selected item or situation?",
+        "answer": "Silk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Denim"
+        "prompt": "An adult compares three possible descriptions in a materials context: Denim, Polyester, Nylon. The selected item or situation is best described as denim.\nWhich description best fits the selected item or situation?",
+        "answer": "Denim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Velvet"
+        "prompt": "An adult compares three possible descriptions in a materials context: Velvet, Satin, Cashmere. The selected item or situation is best described as velvet.\nWhich description best fits the selected item or situation?",
+        "answer": "Velvet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -359,12 +391,12 @@
       "أكريليك",
       "فينيل",
       "سيليكون",
-      "رغوة",
+      "مادة رغوية",
       "راتنج",
       "خرسانة",
       "طوب",
       "أسمنت",
-      "لاصق طبي",
+      "جبس",
       "ألواح جبسية"
     ],
     "usage": {
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Cement, Plaster, Drywall. The selected item or situation is best described as cement. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult materials scene showing lesson-related items or actions including Cement, Plaster, Drywall in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Materials: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plastic"
+        "prompt": "An adult compares three possible descriptions in a materials context: Plastic, Rubber, Glass. The selected item or situation is best described as plastic.\nWhich description best fits the selected item or situation?",
+        "answer": "Plastic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fiberglass"
+        "prompt": "An adult compares three possible descriptions in a materials context: Fiberglass, Carbon Fiber, Acrylic. The selected item or situation is best described as fiberglass.\nWhich description best fits the selected item or situation?",
+        "answer": "Fiberglass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vinyl"
+        "prompt": "An adult compares three possible descriptions in a materials context: Vinyl, Silicone, Foam. The selected item or situation is best described as vinyl.\nWhich description best fits the selected item or situation?",
+        "answer": "Vinyl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Resin"
+        "prompt": "An adult compares three possible descriptions in a materials context: Resin, Concrete, Brick. The selected item or situation is best described as resin.\nWhich description best fits the selected item or situation?",
+        "answer": "Resin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cement"
+        "prompt": "An adult compares three possible descriptions in a materials context: Cement, Plaster, Drywall. The selected item or situation is best described as cement.\nWhich description best fits the selected item or situation?",
+        "answer": "Cement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -496,7 +544,7 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Insulation", "Tile", "Grout", "Mortar", "Lumber"],
-    "targetWordsArabic": ["عزل", "بلاط", "مونة حشو", "هاون", "خشب منشور"],
+    "targetWordsArabic": ["عزل", "بلاط", "مادة ملء الفواصل", "مونة بناء", "خشب منشور"],
     "usage": {
       "goal": "Learn to use common materials 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to materials.",
@@ -527,7 +575,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Mortar, Lumber, Insulation. The selected item or situation is best described as mortar. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult materials scene showing lesson-related items or actions including Mortar, Lumber in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Materials: Notice-Style Text",
@@ -536,12 +585,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Insulation"
+        "prompt": "An adult compares three possible descriptions in a materials context: Insulation, Tile, Grout. The selected item or situation is best described as insulation.\nWhich description best fits the selected item or situation?",
+        "answer": "Insulation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mortar"
+        "prompt": "An adult compares three possible descriptions in a materials context: Mortar, Lumber, Insulation. The selected item or situation is best described as mortar.\nWhich description best fits the selected item or situation?",
+        "answer": "Mortar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

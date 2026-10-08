@@ -28,11 +28,11 @@
     ],
     "targetWordsArabic": [
       "مضخة وقود",
-      "فوهة",
+      "فُوّهة",
       "غطاء خزان الوقود",
       "ديزل",
-      "بنزين خال من الرصاص",
-      "قسط تأمين",
+      "بنزين خالٍ من الرصاص",
+      "بنزين عالي الأوكتان",
       "مؤشر الوقود",
       "إيصال",
       "قارئ بطاقات",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Coffee, Ice, Candy. The option needed for the next step is Coffee. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Coffee, Ice, Candy in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Gas Station: Mini Dialogue",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gas Pump"
+        "prompt": "During a routine travel task, an adult compares Gas Pump, Nozzle, Fuel Cap. The option needed for the next step is Gas Pump.\nWhich option is needed for the next step in the journey?",
+        "answer": "Gas Pump",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diesel"
+        "prompt": "During a routine travel task, an adult compares Diesel, Unleaded, Premium. The option needed for the next step is Diesel.\nWhich option is needed for the next step in the journey?",
+        "answer": "Diesel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fuel Gauge"
+        "prompt": "During a routine travel task, an adult compares Fuel Gauge, Receipt, Card Reader. The option needed for the next step is Fuel Gauge.\nWhich option is needed for the next step in the journey?",
+        "answer": "Fuel Gauge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Price Sign"
+        "prompt": "During a routine travel task, an adult compares Price Sign, Snacks, Drinks. The option needed for the next step is Price Sign.\nWhich option is needed for the next step in the journey?",
+        "answer": "Price Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coffee"
+        "prompt": "During a routine travel task, an adult compares Coffee, Ice, Candy. The option needed for the next step is Coffee.\nWhich option is needed for the next step in the journey?",
+        "answer": "Coffee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -189,14 +205,14 @@
       "Funnel"
     ],
     "targetWordsArabic": [
-      "رقائق",
+      "رقائق بطاطس",
       "علكة",
       "تذكرة يانصيب",
       "صحيفة",
       "نظارة شمسية",
       "مضخة هواء",
       "سائل تنظيف الزجاج الأمامي",
-      "زيت",
+      "زيت المحرك",
       "سائل تبريد",
       "شفرات ماسحات الزجاج",
       "مغسلة سيارات",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Tire Pressure, Antifreeze, Funnel. The option needed for the next step is Tire Pressure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Tire Pressure, Antifreeze, Funnel in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Gas Station: Simple Message",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chips"
+        "prompt": "During a routine travel task, an adult compares Chips, Gum, Lottery Ticket. The option needed for the next step is Chips.\nWhich option is needed for the next step in the journey?",
+        "answer": "Chips",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Newspaper"
+        "prompt": "During a routine travel task, an adult compares Newspaper, Sunglasses, Air Pump. The option needed for the next step is Newspaper.\nWhich option is needed for the next step in the journey?",
+        "answer": "Newspaper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Windshield Fluid"
+        "prompt": "During a routine travel task, an adult compares Windshield Fluid, Oil, Coolant. The option needed for the next step is Windshield Fluid.\nWhich option is needed for the next step in the journey?",
+        "answer": "Windshield Fluid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wiper Blades"
+        "prompt": "During a routine travel task, an adult compares Wiper Blades, Car Wash, Vacuum. The option needed for the next step is Wiper Blades.\nWhich option is needed for the next step in the journey?",
+        "answer": "Wiper Blades",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tire Pressure"
+        "prompt": "During a routine travel task, an adult compares Tire Pressure, Antifreeze, Funnel. The option needed for the next step is Tire Pressure.\nWhich option is needed for the next step in the journey?",
+        "answer": "Tire Pressure",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -351,7 +383,7 @@
       "Motorcycle"
     ],
     "targetWordsArabic": [
-      "مظلة",
+      "مظلّة",
       "مكان لوقوف السيارة",
       "حاوية نفايات كبيرة",
       "دورة مياه",
@@ -364,7 +396,7 @@
       "سيارة",
       "شاحنة",
       "سيارة رياضية متعددة الاستخدامات",
-      "شاحنة صغيرة",
+      "شاحنة مغلقة أو حافلة صغيرة",
       "دراجة نارية"
     ],
     "usage": {
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Suv, Van, Motorcycle. The option needed for the next step is Suv. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Suv, Van, Motorcycle in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Gas Station: Notice-Style Text",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Canopy"
+        "prompt": "During a routine travel task, an adult compares Canopy, Parking Spot, Dumpster. The option needed for the next step is Canopy.\nWhich option is needed for the next step in the journey?",
+        "answer": "Canopy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Restroom"
+        "prompt": "During a routine travel task, an adult compares Restroom, Ice Machine, Atm. The option needed for the next step is Restroom.\nWhich option is needed for the next step in the journey?",
+        "answer": "Restroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trash Can"
+        "prompt": "During a routine travel task, an adult compares Trash Can, Squeegee, Paper Towel. The option needed for the next step is Trash Can.\nWhich option is needed for the next step in the journey?",
+        "answer": "Trash Can",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Water Hose"
+        "prompt": "During a routine travel task, an adult compares Water Hose, Car, Truck. The option needed for the next step is Water Hose.\nWhich option is needed for the next step in the journey?",
+        "answer": "Water Hose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Suv"
+        "prompt": "During a routine travel task, an adult compares Suv, Van, Motorcycle. The option needed for the next step is Suv.\nWhich option is needed for the next step in the journey?",
+        "answer": "Suv",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -518,7 +566,7 @@
       "حافلة",
       "سيارة سيدان",
       "سيارة مكشوفة",
-      "مرافق خدمة",
+      "عامل محطة الوقود",
       "أمين صندوق",
       "عميل",
       "تعبئة الوقود",
@@ -595,7 +643,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Washing Windshield, Fueling, Driving Away. The option needed for the next step is Washing Windshield. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Washing Windshield, Fueling, Driving Away in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Gas Station: Short Description",
@@ -604,24 +653,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rv"
+        "prompt": "During a routine travel task, an adult compares Rv, Trailer, Bus. The option needed for the next step is Rv.\nWhich option is needed for the next step in the journey?",
+        "answer": "Rv",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sedan"
+        "prompt": "During a routine travel task, an adult compares Sedan, Convertible, Attendant. The option needed for the next step is Sedan.\nWhich option is needed for the next step in the journey?",
+        "answer": "Sedan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cashier"
+        "prompt": "During a routine travel task, an adult compares Cashier, Customer, Pumping Gas. The option needed for the next step is Cashier.\nWhich option is needed for the next step in the journey?",
+        "answer": "Cashier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Paying"
+        "prompt": "During a routine travel task, an adult compares Paying, Checking Oil, Filling Tires. The option needed for the next step is Paying.\nWhich option is needed for the next step in the journey?",
+        "answer": "Paying",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Washing Windshield"
+        "prompt": "During a routine travel task, an adult compares Washing Windshield, Fueling, Driving Away. The option needed for the next step is Washing Windshield.\nWhich option is needed for the next step in the journey?",
+        "answer": "Washing Windshield",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

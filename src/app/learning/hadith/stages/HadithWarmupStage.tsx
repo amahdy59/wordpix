@@ -130,7 +130,7 @@ export function HadithWarmupStage({
 
         {/* Right Column: Interactive Self-Check Poll */}
         <div className="rounded-2xl border border-border bg-background/60 p-5 sm:p-6">
-          <fieldset role="radiogroup" aria-labelledby="warmup-question-legend">
+          <fieldset aria-labelledby="warmup-question-legend">
             <legend
               id="warmup-question-legend"
               className="text-base font-black leading-snug text-foreground sm:text-lg"

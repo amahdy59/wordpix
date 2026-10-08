@@ -1,4 +1,16 @@
 import type { FigmaHadithLesson } from "./figmaHadithCatalog";
+import { z } from "zod";
+import reviewContent from "./hadithReviewContent.json";
+import warmupContent from "./hadithWarmupContent.json";
+import overviewPurpose from "./hadithOverviewPurpose.json";
+import { parseHadithVocabulary } from "./hadithVocabularyContent";
+
+const authoredWarmups = z
+  .record(
+    z.string(),
+    z.tuple([z.string().min(1), z.string().min(1), z.array(z.string().min(1)).min(2)])
+  )
+  .parse(warmupContent);
 
 export interface LearningOutcome {
   id: string;
@@ -79,6 +91,13 @@ const FIGMA_NOISE: readonly RegExp[] = [
   /^• focus is entirely lexical.*$/i,
   /^hadith\s+\d+.*$/i,
   /^you will study these verbs.*$/i,
+  /^answer each question first.*$/i,
+  /^outcome-aligned/i,
+  /^(?:speaking|review|warm-up)\s+(?:stage |phase |practice )?(?:complete|finished)/i,
+  /^step \d+ of \d+/i,
+  /^(?:click to|start recording|record again|re-record|proceed to|continue to|dismiss|view changes)/i,
+  /(?:voice|recordings?|intentions).*(?:local|stored|processed|uploaded|transmit)/i,
+  /^this is a (?:safe local|local speech)/i,
 ];
 
 function isFigmaNoise(line: string): boolean {
@@ -96,39 +115,61 @@ function parseOverview(rawLines: readonly string[], lesson: FigmaHadithLesson): 
   const pIdx = lines.findIndex((l) => /^lesson purpose/i.test(l));
   const candidate = lines.slice(1, 6).find((l) => l.length > 40 && !/HADITH/i.test(l));
   const purpose =
-    pIdx >= 0 && pIdx + 1 < lines.length
+    (overviewPurpose as Record<string, string>)[String(lesson.number)] ??
+    (pIdx >= 0 && pIdx + 1 < lines.length
       ? lines[pIdx + 1]
       : (candidate ??
-        `Study the core message, vocabulary, and application of Hadith ${lesson.number}.`);
+        `Study the core message, vocabulary, and application of Hadith ${lesson.number}.`));
 
-  const timeLine = lines.find((l) => /time/i.test(l) && /\d+/.test(l));
-  const timeMatch = timeLine?.match(/\d+/);
-  const estimatedMinutes = timeMatch ? parseInt(timeMatch[0], 10) : 25;
+  const timeMatch = lines.join(" ").match(/\b(\d+)(?:\s*[–-]\s*\d+)?\s*(?:minutes|min)\b/i);
+  const estimatedMinutes = timeMatch ? parseInt(timeMatch[1], 10) : 25;
 
-  const coreLine = lines.find((l) => /\b\d+\s+core\b/i.test(l));
-  const coreMatch = coreLine?.match(/\d+/);
-  const coreWordsCount = coreMatch ? parseInt(coreMatch[0], 10) : 5;
+  const coreWordsCount = parseHadithVocabulary(lesson.stages.vocabulary.text).length;
 
   const outcomes: LearningOutcome[] = [];
   const oIdx = lines.findIndex((l) => /learning outcomes/i.test(l));
   if (oIdx >= 0) {
     let i = oIdx + 1;
     if (i < lines.length && /by the end of/i.test(lines[i])) i++;
-    while (i < lines.length) {
+    while (i < lines.length && outcomes.length < 4) {
       const line = lines[i];
-      if (/^HADITH/i.test(line)) break;
-      if (line.length < 50 && i + 1 < lines.length && lines[i + 1].length >= 25) {
+      if (
+        /^HADITH|^source|^safeguard|^guardrail|^important|^critical|^B1 grammar|^EST\.? TIME|^start |^begin |^level/i.test(
+          line
+        )
+      )
+        break;
+      if (/^(?:\d+[.)]?|[•✓])$|^by (?:the end|completing)/i.test(line) || line.length < 10) {
+        i++;
+        continue;
+      }
+      const normalizeCount = (text: string) =>
+        text
+          .replace(
+            /\b(?:[6-7]|six|seven) (?:core |target |natural English )?(?:B1 |curriculum |moral-linguistic )?(?:vocabulary )?terms/gi,
+            "five core terms"
+          )
+          .replace(
+            /\b[6-7] core (?:moral-linguistic |B1 )?(?:vocabulary )?terms/gi,
+            "five core terms"
+          );
+      const followsNumber = i > 0 && /^\d+[.)]?$/.test(lines[i - 1]);
+      if (
+        (followsNumber || line.length < 40) &&
+        i + 1 < lines.length &&
+        lines[i + 1].length >= 60
+      ) {
         outcomes.push({
           id: `outcome-${outcomes.length + 1}`,
-          title: line,
-          description: lines[i + 1],
+          title: normalizeCount(line),
+          description: normalizeCount(lines[i + 1]),
         });
         i += 2;
       } else {
         outcomes.push({
           id: `outcome-${outcomes.length + 1}`,
           title: `Outcome ${outcomes.length + 1}`,
-          description: line,
+          description: normalizeCount(line),
         });
         i++;
       }
@@ -165,6 +206,19 @@ function parseOverview(rawLines: readonly string[], lesson: FigmaHadithLesson): 
 }
 
 function parseWarmup(rawLines: readonly string[], lesson: FigmaHadithLesson): ParsedWarmup {
+  const authored = authoredWarmups[String(lesson.number)];
+  if (authored) {
+    return {
+      title: "Notice before reading",
+      scenario: authored[0],
+      prompt: "",
+      question: authored[1],
+      choices: authored[2].map((choice) => (choice.endsWith("?") ? `“${choice}”` : choice)),
+      feedback:
+        "Compare your choice with the expressions and guidance in the lesson. This warmup is not scored.",
+      previewTerms: [],
+    };
+  }
   const lines = cleanLines(rawLines);
   const titleCandidate =
     lines[0] && !/^warm-up/i.test(lines[0]) ? lines[0] : (lines[1] ?? "Notice Before Reading");
@@ -301,7 +355,7 @@ function parseWarmup(rawLines: readonly string[], lesson: FigmaHadithLesson): Pa
   };
 }
 
-function parseSpeak(rawLines: readonly string[], _lesson: FigmaHadithLesson): ParsedSpeakTask {
+function parseSpeak(rawLines: readonly string[], lesson: FigmaHadithLesson): ParsedSpeakTask {
   const lines = cleanLines(rawLines);
   const title = lines[1] && lines[1].length < 80 ? lines[1] : "Speaking & Application";
   const description =
@@ -351,25 +405,68 @@ function parseSpeak(rawLines: readonly string[], _lesson: FigmaHadithLesson): Pa
   return {
     title,
     description,
-    frames,
-    modelDialogue,
-    checklist,
+    frames: frames.filter(
+      (line) =>
+        !/^(?:required )?(?:speaking )?sentence (?:frame|scaffold)|^sample response|^example response|^speaking (?:task|rubric)|^prompt guidelines/i.test(
+          line
+        )
+    ),
+    modelDialogue: (() => {
+      const model = modelDialogue.filter((line) => /^(?:[AB]:\s*)?["“]|^I\b/.test(line));
+      if (model.length) return model;
+      const example = parseHadithVocabulary(lesson.stages.vocabulary.text).find(
+        (word) => word.example
+      )?.example;
+      return example ? [example] : [];
+    })(),
+    checklist: checklist.filter((line) =>
+      /^(?:[✓•]\s*)?(?:I |Did |Can |Used |Included |Explained |Avoided |Clear |Answer |Complete |Respectful |Acknowledge |Use |State |Keep |My )/.test(
+        line
+      )
+    ),
   };
 }
 
 function parseReview(rawLines: readonly string[], lesson: FigmaHadithLesson): ParsedReviewItem[] {
+  const authored = (reviewContent as Record<string, string[]>)[String(lesson.number)];
+  if (authored) {
+    const word = parseHadithVocabulary(lesson.stages.vocabulary.text)[0];
+    return [
+      { question: authored[0], answer: authored[1] },
+      ...(word ? [{ question: `What does “${word.term}” mean?`, answer: word.definition }] : []),
+    ];
+  }
   const lines = cleanLines(rawLines);
   const items: ParsedReviewItem[] = [];
   let current: ParsedReviewItem | null = null;
+  const finish = () => {
+    if (current?.question && current.answer.trim()) items.push(current);
+    current = null;
+  };
 
   for (const line of lines) {
-    if (/outcome-aligned/i.test(line)) continue;
+    if (/^outcome summary|^lesson completion|^additional references|^next steps/i.test(line)) break;
+    if (
+      /outcome-aligned|^outcome:|^(?:first|second) attempt:|^hint hidden|^answer each question/i.test(
+        line
+      )
+    )
+      continue;
     if (/^\d+$/.test(line) || /^\d+[.)]/.test(line)) {
-      if (current?.question) items.push(current);
-      current = { question: "", hint: "", feedback: "", answer: "" };
+      finish();
+      const questionText = line.replace(/^\d+[.)]?\s*/, "").trim();
+      current = { question: questionText, hint: "", feedback: "", answer: "" };
       continue;
     }
-    if (!current) current = { question: "", hint: "", feedback: "", answer: "" };
+    if (!current) {
+      if (
+        !/\?$|^(?:what|why|how|which|name|list|complete|explain|write|give|identify|compare)\b/i.test(
+          line
+        )
+      )
+        continue;
+      current = { question: "", hint: "", feedback: "", answer: "" };
+    }
 
     if (/^hint/i.test(line)) {
       current.hint = line.replace(/^hint:?\s*/i, "");
@@ -377,20 +474,22 @@ function parseReview(rawLines: readonly string[], lesson: FigmaHadithLesson): Pa
       current.feedback = line.replace(/^(?:explanatory )?feedback:?\s*/i, "");
     } else if (/^model answer/i.test(line)) {
       current.answer = line.replace(/^model answer:?\s*/i, "");
-    } else if (!current.question && !/outcome:/i.test(line)) {
+    } else if (
+      !current.question &&
+      !/outcome:/i.test(line) &&
+      !/^answer each question/i.test(line)
+    ) {
       current.question = line;
-    } else if (current.answer) {
-      current.answer += " " + line;
     }
   }
-  if (current?.question) items.push(current);
+  finish();
 
   if (items.length === 0) {
     items.push({
       question: `What is the core takeaway of Hadith ${lesson.number} (${lesson.title})?`,
       hint: "Recall the main action and message presented in Read & Listen.",
       feedback: "Connect the lesson's main theme with practical everyday guidance.",
-      answer: `${lesson.title}: ${lesson.source.translation.slice(0, 140)}...`,
+      answer: lesson.source.translation,
     });
   }
 

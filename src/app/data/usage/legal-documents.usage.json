@@ -27,18 +27,18 @@
       "Brief"
     ],
     "targetWordsArabic": [
-      "شخص يسمى «كونتراكت»",
-      "اتفاقية",
-      "جزء يسمى «تيرمس»",
-      "جزء يسمى «كونديتيونس»",
-      "وثيقة يسمى «كلاوسي»",
-      "تعديل",
+      "عقد",
+      "اتفاق",
+      "بنود الاتفاق",
+      "شروط",
+      "بند",
+      "تعديل رسمي",
       "ملحق",
-      "إخلال",
+      "إخلال بالاتفاق",
       "باطل",
-      "ملزم قانونيا",
-      "شكوى قانونية",
-      "شخص يسمى «سوممونس»",
+      "ملزم",
+      "صحيفة دعوى",
+      "إخطار بالحضور أمام المحكمة",
       "أمر استدعاء قضائي",
       "طلب قضائي",
       "مذكرة قانونية"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Subpoena as the central item; include Subpoena, Motion, and Brief naturally where visually appropriate, but make the real-world use of Subpoena the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Legal Documents",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Contract"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contract, Agreement, Terms, and Conditions and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Contract",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clause"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clause, Amendment, Addendum, and Breach and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Clause",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Void"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Void, Binding, Complaint, and Summons and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Void",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Subpoena"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Motion, and Brief and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Subpoena",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -194,17 +207,17 @@
     "targetWordsArabic": [
       "التماس",
       "أمر قضائي",
-      "مصطلح قانوني يسمى «ينجونكتيون»",
-      "مذكرة قانونية",
-      "شخص يسمى «ينديكتمينت»",
+      "أمر قضائي بالإلزام أو المنع",
+      "أمر قضائي",
+      "لائحة اتهام",
       "وصية",
-      "ثقة",
-      "شخص يسمى «بووير وف اتتورنيي»",
-      "شخص يسمى «ليفينج ويلل»",
-      "وثيقة يسمى «دييد»",
+      "ترتيب لإدارة أموال لصالح مستفيد",
+      "توكيل",
+      "وصية طبية مسبقة",
       "سند ملكية",
-      "تأجير",
-      "اتفاق ما قبل الزواج",
+      "حق الملكية",
+      "عقد إيجار",
+      "متعلق باتفاق ما قبل الزواج",
       "حكم طلاق",
       "أوراق التبني"
     ],
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Prenuptial through a realistic adult task; include Prenuptial, Divorce Decree, and Adoption Papers naturally where visually appropriate, but make the real-world use of Prenuptial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Legal Documents",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Petition"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Petition, Order, Injunction, and Warrant and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Petition",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Indictment"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indictment, Will, Trust, and Power of Attorney and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Indictment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Living Will"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Will, Deed, Title, and Lease and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Living Will",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prenuptial"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prenuptial, Divorce Decree, and Adoption Papers and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Prenuptial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -354,13 +380,13 @@
     "targetWordsArabic": [
       "براءة اختراع",
       "علامة تجارية",
-      "حق مؤلف",
+      "حقوق النشر",
       "ترخيص",
-      "جزء يسمى «ندا»",
+      "اتفاقية عدم إفشاء",
       "شرط عدم المنافسة",
       "اتفاقية شراكة",
-      "هيكل يسمى «ارتيكليس وف ينكوربوراتيون»",
-      "عضو يسمى «بيلاوس»",
+      "وثيقة تأسيس شركة",
+      "لوائح داخلية",
       "اتفاقية تشغيل الشركة"
     ],
     "usage": {
@@ -410,7 +436,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Bylaws as the central item; include Bylaws, Operating Agreement, and Patent naturally where visually appropriate, but make the real-world use of Bylaws the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -419,16 +446,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Patent"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patent, Trademark, Copyright, and License and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Patent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "NDA"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NDA, Non-Compete, Partnership Agreement, and Articles of Incorporation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "NDA",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bylaws"
+        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bylaws, and Operating Agreement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bylaws",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

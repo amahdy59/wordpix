@@ -27,21 +27,21 @@
       "Associate Office"
     ],
     "targetWordsArabic": [
-      "شخص يسمى «لاويير»",
-      "شخص يسمى «اتتورنيي»",
-      "قاض",
-      "شخص يسمى «باراليجال»",
+      "محامٍ",
+      "محامٍ",
+      "قاضٍ",
+      "مساعد قانوني",
       "سكرتير قانوني",
-      "وثيقة يسمى «نوتاري»",
-      "جزء يسمى «ميدياتور»",
+      "موثق",
+      "وسيط",
       "محكم",
-      "مصطلح قانوني يسمى «بوبليك ديفيندير»",
-      "مدع عام",
+      "محامٍ توفره الدولة لمن لا يستطيع تحمل أتعاب الدفاع",
+      "ممثل الادعاء العام",
       "استقبال",
       "غرفة مؤتمر",
       "مكتبة قانونية",
       "مكتب شريك في شركة المحاماة",
-      "مكتب محام مساعد"
+      "مكتب محامٍ مساعد"
     ],
     "usage": {
       "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Law Library as the central item; include Law Library, Partner Office, and Associate Office naturally where visually appropriate, but make the real-world use of Law Library the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Law Firm",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lawyer"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Lawyer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Legal Secretary"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Legal Secretary",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Public Defender"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Public Defender",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Law Library"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Law Library",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -193,19 +206,19 @@
     ],
     "targetWordsArabic": [
       "غرفة حفظ الملفات",
-      "غرفة يسمى «وار رووم»",
+      "غرفة تنسيق فريق القضية",
       "غرفة إفادات قانونية",
-      "غرفة يسمى «وايتينج اريا»",
+      "منطقة انتظار",
       "غرفة السجلات",
-      "مصطلح قانوني يسمى «كريمينال لاو»",
-      "مصطلح قانوني يسمى «كيفيل لاو»",
+      "قانون جنائي",
+      "قانون مدني",
       "قانون عائلة",
       "قانون الشركات",
-      "نظام يسمى «تاكس لاو»",
+      "قانون الضرائب",
       "قانون الهجرة",
       "قانون العقارات",
       "قانون العمل",
-      "مصطلح قانوني يسمى «ينفيرونمينتال لاو»",
+      "قانون البيئة",
       "ملكية فكرية"
     ],
     "usage": {
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Employment Law through a realistic adult task; include Employment Law, Environmental Law, and Intellectual Property naturally where visually appropriate, but make the real-world use of Employment Law the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Law Firm",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Filing Room"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Filing Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Records Room"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Records Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Corporate Law"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Corporate Law",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Employment Law"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Employment Law",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -353,12 +379,12 @@
     ],
     "targetWordsArabic": [
       "يستشير",
-      "شخص يسمى «ريبريسينت»",
+      "يمثل قانونيًا",
       "ملف",
       "استئناف",
       "يتفاوض",
       "يتقاضى",
-      "يسوي النزاع",
+      "يسوي نزاعًا",
       "مسودة",
       "مراجعة",
       "يقدم مشورة"
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Review through a realistic adult task; include Review, Advise, and Consult naturally where visually appropriate, but make the real-world use of Review the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Consult"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Consult",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Negotiate"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Negotiate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Review"
+        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Review",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

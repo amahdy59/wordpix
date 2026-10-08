@@ -27,20 +27,20 @@
       "Clock Tower"
     ],
     "targetWordsArabic": [
-      "غرفة يسمى «ليكتوري هالل»",
+      "قاعة محاضرات",
       "-",
       "مختبر",
-      "غرفة يسمى «دورميتوري»",
+      "سكن طلابي",
       "مركز طالب",
       "صالة رياضية",
       "كافتيريا",
-      "شخص يسمى «ادمينيستراتيون»",
+      "إدارة الجامعة",
       "قاعة محاضرات",
-      "سفينة يسمى «تشابيل»",
-      "ساحة جامعية",
+      "مصلى مسيحي",
+      "ساحة جامعية محاطة بمبانٍ",
       "فناء",
       "نافورة",
-      "شخص يسمى «ستاتوي»",
+      "تمثال",
       "برج ساعة"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Fountain as the central item; include Fountain, Statue, and Clock Tower naturally where visually appropriate, but make the real-world use of Fountain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The University Campus",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lecture Hall"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Lecture Hall",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Student Center"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Student Center",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Auditorium"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Auditorium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fountain"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fountain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -192,16 +205,16 @@
       "ممر",
       "-",
       "موقف سيارات",
-      "منطقة يسمى «سبورتس فييلد»",
+      "ملعب رياضي",
       "مختبر حاسوب",
       "مرسم فني",
       "غرفة موسيقى",
       "مسرح",
       "مسبح سباحة",
       "مسار",
-      "منطقة يسمى «تيننيس كوورت»",
+      "ملعب تنس",
       "مركز صحي",
-      "مادة يسمى «كوونسيلينج كينتير»",
+      "مركز إرشاد",
       "مركز الإرشاد المهني"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Health Center as the main location; include Health Center, Counseling Center, and Career Center naturally where visually appropriate, but make the real-world use of Health Center the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The University Campus",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gate"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sports Field"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Sports Field",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Theater"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Theater",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Health Center"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Health Center",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -344,11 +370,11 @@
       "Alumni Weekend"
     ],
     "targetWordsArabic": [
-      "برنامج تعريفي",
+      "برنامج تعريفي للطلاب الجدد",
       "تسجيل",
       "يوم الانتقال للسكن",
-      "حفل التخرج",
-      "فعالية العودة للجامعة",
+      "حفل تخرج",
+      "لقاء سنوي للخريجين",
       "عطلة الربيع",
       "أسبوع الامتحانات النهائية",
       "الدراسة في الخارج",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Internship Fair as the central item; include Internship Fair, Alumni Weekend, and Orientation naturally where visually appropriate, but make the real-world use of Internship Fair the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The University Campus",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Orientation"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Orientation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Homecoming"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Homecoming",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Internship Fair"
+        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Internship Fair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

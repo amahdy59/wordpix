@@ -30,24 +30,24 @@
       "طويل",
       "قصير",
       "متوسط الطول",
-      "رشيق",
       "نحيف",
-      "ثقيل",
-      "ممتلئ البنية",
-      "عضلي",
-      "قصيرة القامة وصغيرة البنية",
-      "رياضي البنية",
-      "شعر أملس",
-      "شعر مجعد",
-      "شعر مموج",
+      "نحيل",
+      "ممتلئ الجسم",
+      "ممتلئ وقصير القامة",
+      "مفتول العضلات",
+      "صغيرة القامة",
+      "ذو بنية رياضية",
+      "شعر مستقيم",
+      "شعر مجعّد",
+      "شعر مموّج",
       "شعر كثيف",
       "شعر خفيف"
     ],
     "usage": {
       "goal": "Learn to use physical appearance 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to physical appearance.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a physical appearance context illustrating this situation: An adult compares three possible descriptions in a physical appearance context: Wavy Hair, Thick Hair, Thin Hair. The selected item or situation is best described as wavy hair. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult physical appearance scene showing lesson-related items or actions including Wavy Hair, Thick Hair, Thin Hair in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Physical Appearance: Email",
-      "text": "Omar has an everyday task connected to physical appearance. The new vocabulary helps him follow the situation and respond clearly. The lesson places tall, short, and average height in one coherent situation so the learner can connect meaning, context, and use. The lesson places slim, thin, and heavy in one coherent situation so the learner can connect meaning, context, and use. The lesson places stocky, muscular, and petite in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "Physical Appearance 1: A short reading",
+      "text": "Maya and Omar describe people in a set of photographs. One person is tall, another is short, and a third is of average height. They use slim, stocky, and muscular for different builds. The teacher asks for neutral descriptions of visible features. They compare their sentences and avoid guessing anything about the people.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Physical Appearance. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tall"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Tall, Short, Average Height. The selected item or situation is best described as tall.\nWhich description best fits the selected item or situation?",
+        "answer": "Tall",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Slim"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Slim, Thin, Heavy. The selected item or situation is best described as slim.\nWhich description best fits the selected item or situation?",
+        "answer": "Slim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stocky"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Stocky, Muscular, Petite. The selected item or situation is best described as stocky.\nWhich description best fits the selected item or situation?",
+        "answer": "Stocky",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Athletic"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Athletic, Straight Hair, Curly Hair. The selected item or situation is best described as athletic.\nWhich description best fits the selected item or situation?",
+        "answer": "Athletic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wavy Hair"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Tall"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Slim"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Wavy Hair, Thick Hair, Thin Hair. The selected item or situation is best described as wavy hair.\nWhich description best fits the selected item or situation?",
+        "answer": "Wavy Hair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Moisturizer” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What kind of descriptions does the teacher request?",
+        "answer": "Neutral descriptions of visible features",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -197,23 +208,23 @@
       "شعر ناعم ودقيق",
       "شعر منفوش",
       "شعر حريري الملمس",
-      "شعر ذو قوام أو تموج طبيعي",
+      "شعر ذو قوام أو تموّج طبيعي",
       "أشقر",
-      "بني الشعر",
+      "ذو شعر بني داكن",
       "شعر أسود",
       "شعر أحمر",
-      "كستنائي محمر",
+      "بني محمر",
       "شعر رمادي",
       "شعر أبيض",
-      "ذو خصل ملونة",
+      "ذو خصل أفتح لونًا",
       "شعر مصبوغ",
       "لون طبيعي"
     ],
     "usage": {
       "goal": "Learn to use physical appearance 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to physical appearance.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a physical appearance context illustrating this situation: An adult compares three possible descriptions in a physical appearance context: Highlighted, Dyed Hair, Natural Color. The selected item or situation is best described as highlighted. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult physical appearance scene showing lesson-related items or actions including Highlighted, Dyed Hair, Natural Color in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Physical Appearance: Personal Message",
-      "text": "Omar has an everyday task connected to physical appearance. The new vocabulary helps him follow the situation and respond clearly. The learner identifies the coarse hair, fine hair, and frizzy hair and connects each part to its place or function in the body. The lesson places silky hair, textured hair, and blonde in one coherent situation so the learner can connect meaning, context, and use. The lesson places brunette, black hair, and red hair in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "Physical Appearance 2: A short reading",
+      "text": "A hair-color display helps Maya learn blonde, brunette, and auburn. Omar compares photographs of fine hair and coarse hair. They also see examples of frizzy and silky hair. Maya writes one description for each photograph. The teacher checks that the color words and texture words refer to the correct features.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Physical Appearance. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coarse Hair"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Coarse Hair, Fine Hair, Frizzy Hair. The selected item or situation is best described as coarse hair.\nWhich description best fits the selected item or situation?",
+        "answer": "Coarse Hair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Silky Hair"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Silky Hair, Textured Hair, Blonde. The selected item or situation is best described as silky hair.\nWhich description best fits the selected item or situation?",
+        "answer": "Silky Hair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brunette"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Brunette, Black Hair, Red Hair. The selected item or situation is best described as brunette.\nWhich description best fits the selected item or situation?",
+        "answer": "Brunette",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Auburn"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Auburn, Gray Hair, White Hair. The selected item or situation is best described as auburn.\nWhich description best fits the selected item or situation?",
+        "answer": "Auburn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Highlighted"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Coarse Hair"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Silky Hair"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Highlighted, Dyed Hair, Natural Color. The selected item or situation is best described as highlighted.\nWhich description best fits the selected item or situation?",
+        "answer": "Highlighted",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Tall” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two hair textures does Omar compare?",
+        "answer": "Fine hair and coarse hair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -359,14 +381,14 @@
       "Gray Eyes"
     ],
     "targetWordsArabic": [
-      "ذيل حصان",
+      "تسريحة ذيل حصان",
       "ضفيرة",
       "كعكة شعر",
-      "ضفيرتان جانبيتان",
-      "قصة بوب",
-      "قصة شعر قصيرة جدا",
+      "خصلتان أو ضفيرتان جانبيتان",
+      "قَصّة بوب",
+      "قصة شعر قصيرة جدًا",
       "تسريحة أفرو",
-      "جدائل الراستا",
+      "خصل شعر متلبدة",
       "غرة",
       "أصلع",
       "عيون زرقاء",
@@ -378,8 +400,8 @@
     "usage": {
       "goal": "Learn to use physical appearance 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to physical appearance.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a physical appearance context illustrating this situation: An adult compares three possible descriptions in a physical appearance context: Green Eyes, Hazel Eyes, Gray Eyes. The selected item or situation is best described as green eyes. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult physical appearance scene showing lesson-related items or actions including Green Eyes, Hazel Eyes, Gray Eyes in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Physical Appearance: Short Dialogue",
-      "text": "Omar has an everyday task connected to physical appearance. The new vocabulary helps him follow the situation and respond clearly. The lesson places ponytail, braid, and bun in one coherent situation so the learner can connect meaning, context, and use. The lesson places pigtails, bob cut, and crew cut in one coherent situation so the learner can connect meaning, context, and use. The lesson places afro, dreadlocks, and bangs in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "Physical Appearance 3: A short reading",
+      "text": "Omar looks at a hairstyle chart. One photograph shows a ponytail, another a braid, and another a bun. Maya identifies a bob cut and a crew cut. The chart also includes an afro and dreadlocks. They choose a different photograph each and describe it without repeating every hairstyle in one sentence.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Physical Appearance. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ponytail"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Ponytail, Braid, Bun. The selected item or situation is best described as ponytail.\nWhich description best fits the selected item or situation?",
+        "answer": "Ponytail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pigtails"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Pigtails, Bob Cut, Crew Cut. The selected item or situation is best described as pigtails.\nWhich description best fits the selected item or situation?",
+        "answer": "Pigtails",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Afro"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Afro, Dreadlocks, Bangs. The selected item or situation is best described as afro.\nWhich description best fits the selected item or situation?",
+        "answer": "Afro",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bald"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Bald, Blue Eyes, Brown Eyes. The selected item or situation is best described as bald.\nWhich description best fits the selected item or situation?",
+        "answer": "Bald",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Green Eyes"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Ponytail"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Pigtails"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Green Eyes, Hazel Eyes, Gray Eyes. The selected item or situation is best described as green eyes.\nWhich description best fits the selected item or situation?",
+        "answer": "Green Eyes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Coarse Hair” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What two cuts does Maya identify?",
+        "answer": "A bob cut and a crew cut",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -532,11 +565,11 @@
       "متباعد العينين",
       "وجه مستدير",
       "وجه بيضاوي",
-      "فك مربع",
+      "فك مربّع",
       "عظام وجنتين مرتفعة",
       "غمازات",
       "نمش",
-      "ذقن مزدوج",
+      "ذقن مزدوجة",
       "ذقن مشقوق",
       "أنف بارز",
       "شفاه ممتلئة"
@@ -544,8 +577,8 @@
     "usage": {
       "goal": "Learn to use physical appearance 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to physical appearance.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a physical appearance context illustrating this situation: An adult compares three possible descriptions in a physical appearance context: Cleft Chin, Prominent Nose, Full Lips. The selected item or situation is best described as cleft chin. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult physical appearance scene showing lesson-related items or actions including Cleft Chin, Prominent Nose, Full Lips in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Physical Appearance: Tips/Notice",
-      "text": "Omar has an everyday task connected to physical appearance. The new vocabulary helps him follow the situation and respond clearly. The lesson places dark eyes, light eyes, and almond-shaped in one coherent situation so the learner can connect meaning, context, and use. The lesson places round eyes, wide-set, and round face in one coherent situation so the learner can connect meaning, context, and use. The lesson places oval face, square jaw, and high cheekbones in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "Physical Appearance 4: A short reading",
+      "text": "Maya practices describing faces from photographs. She notices dark eyes and a round face in one picture. Omar chooses a picture with an oval face and high cheekbones. They compare a square jaw with a softer outline. Each learner writes a short description and checks that it matches the selected photograph.",
       "imageBrief": "Create one coherent A2-level visual for the reading about Physical Appearance. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dark Eyes"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Dark Eyes, Light Eyes, Almond-Shaped. The selected item or situation is best described as dark eyes.\nWhich description best fits the selected item or situation?",
+        "answer": "Dark Eyes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Round Eyes"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Round Eyes, Wide-Set, Round Face. The selected item or situation is best described as round eyes.\nWhich description best fits the selected item or situation?",
+        "answer": "Round Eyes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oval Face"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Oval Face, Square Jaw, High Cheekbones. The selected item or situation is best described as oval face.\nWhich description best fits the selected item or situation?",
+        "answer": "Oval Face",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dimples"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Dimples, Freckles, Double Chin. The selected item or situation is best described as dimples.\nWhich description best fits the selected item or situation?",
+        "answer": "Dimples",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cleft Chin"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Dark Eyes"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Round Eyes"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "An adult compares three possible descriptions in a physical appearance context: Cleft Chin, Prominent Nose, Full Lips. The selected item or situation is best described as cleft chin.\nWhich description best fits the selected item or situation?",
+        "answer": "Cleft Chin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Ponytail” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What features appear in Omar's chosen picture?",
+        "answer": "An oval face and high cheekbones",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

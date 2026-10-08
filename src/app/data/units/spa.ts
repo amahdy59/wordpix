@@ -373,8 +373,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡɑːrdn/",
     cefr: "B2",
     img: "/word-images/spa/garden.avif",
-    description:
-      "Explore real-life garden flowers, trees & shrubs, garden tools, plant parts, garden creatures, and features through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    description: "An area of land where plants are grown.",
     topic: "spa",
   },
   {

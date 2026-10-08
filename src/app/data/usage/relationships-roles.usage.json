@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "صديق",
       "أفضل صديق",
-      "معارف",
+      "شخص تعرفه معرفة محدودة",
       "زميل دراسة",
       "زميل عمل",
       "جار",
@@ -41,7 +41,7 @@
       "زوج أو زوجة",
       "زوج",
       "زوجة",
-      "صديق عاطفي"
+      "حبيب"
     ],
     "usage": {
       "goal": "Learn to use relationships & roles 1 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a relationships & roles context illustrating this situation: During a routine relationships & roles task, an adult compares Husband, Wife, Boyfriend. The person selects Husband for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult relationships & roles scene showing lesson-related items or actions including Husband, Wife, Boyfriend in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Relationships & Roles: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Friend"
+        "prompt": "During a routine relationships & roles task, an adult compares Friend, Best Friend, Acquaintance. The person selects Friend for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Friend",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Classmate"
+        "prompt": "During a routine relationships & roles task, an adult compares Classmate, Colleague, Neighbor. The person selects Classmate for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Classmate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teammate"
+        "prompt": "During a routine relationships & roles task, an adult compares Teammate, Roommate, Pen Pal. The person selects Teammate for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Teammate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Companion"
+        "prompt": "During a routine relationships & roles task, an adult compares Companion, Partner, Spouse. The person selects Companion for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Companion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Husband"
+        "prompt": "During a routine relationships & roles task, an adult compares Husband, Wife, Boyfriend. The person selects Husband for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Husband",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -193,7 +209,7 @@
       "Coordinator"
     ],
     "targetWordsArabic": [
-      "صديقة عاطفية",
+      "حبيبة",
       "خطيب",
       "خطيبة",
       "شريك الحياة",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a relationships & roles context illustrating this situation: During a routine relationships & roles task, an adult compares Assistant, Director, Coordinator. The person selects Assistant for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult relationships & roles scene showing lesson-related items or actions including Assistant, Director, Coordinator in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Relationships & Roles: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Girlfriend"
+        "prompt": "During a routine relationships & roles task, an adult compares Girlfriend, Fiancé, Fiancée. The person selects Girlfriend for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Girlfriend",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Significant Other"
+        "prompt": "During a routine relationships & roles task, an adult compares Significant Other, Soulmate, Boss. The person selects Significant Other for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Significant Other",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Manager"
+        "prompt": "During a routine relationships & roles task, an adult compares Manager, Employee, Supervisor. The person selects Manager for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Manager",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Intern"
+        "prompt": "During a routine relationships & roles task, an adult compares Intern, Mentor, Apprentice. The person selects Intern for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Intern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Assistant"
+        "prompt": "During a routine relationships & roles task, an adult compares Assistant, Director, Coordinator. The person selects Assistant for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Assistant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -354,7 +386,7 @@
       "Treasurer"
     ],
     "targetWordsArabic": [
-      "معلم (معلمة)",
+      "معلم",
       "طالب",
       "حافلة سفر",
       "قبطان",
@@ -409,7 +441,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Treasurer",
+          "targetWords": ["Treasurer"],
           "scenario": "During a routine relationships & roles task, an adult compares Treasurer, Teacher, Student. The person selects Treasurer for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -419,7 +451,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a relationships & roles context illustrating this situation: During a routine relationships & roles task, an adult compares Treasurer, Teacher, Student. The person selects Treasurer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult relationships & roles scene showing lesson-related items or actions including Treasurer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Relationships & Roles: Short Dialogue",
@@ -428,20 +461,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teacher"
+        "prompt": "During a routine relationships & roles task, an adult compares Teacher, Student, Coach. The person selects Teacher for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Teacher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Captain"
+        "prompt": "During a routine relationships & roles task, an adult compares Captain, Leader, Volunteer. The person selects Captain for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Captain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Member"
+        "prompt": "During a routine relationships & roles task, an adult compares Member, President, Secretary. The person selects Member for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Member",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Treasurer"
+        "prompt": "During a routine relationships & roles task, an adult compares Treasurer, Teacher, Student. The person selects Treasurer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Treasurer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

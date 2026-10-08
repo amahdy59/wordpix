@@ -29,13 +29,16 @@ export function buildValidatedOptions(
   seed: number
 ): { options: string[]; correctIndex: number } | null {
   const normalized = correct.trim().toLowerCase();
-  const unique = Array.from(
-    new Set(
-      candidateDistractors
-        .map((d) => d.trim())
-        .filter((d) => d.length > 0 && d.toLowerCase() !== normalized)
-    )
-  ).slice(0, 3);
+  const seen = new Set([normalized]);
+  const unique = candidateDistractors
+    .map((d) => d.trim())
+    .filter((d) => {
+      const key = d.toLowerCase();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 3);
 
   if (unique.length < 2) return null;
 
@@ -91,11 +94,11 @@ export function buildPracticeItems(
   const allRewrites: RewriteExercise[] = materials.additionalExercises?.rewrite ?? [];
   allRewrites.forEach((e: RewriteExercise, idx: number) => {
     const correct = e.answer;
-    const candidates = [
-      e.sentence.replace(/\s*\([A-Z]+\)\s*$/, ""),
-      ...allRewrites.filter((_, i) => i !== idx).map((r) => r.answer),
-    ];
-    const result = buildValidatedOptions(correct, candidates, idx * 71 + 13);
+    const original = e.sentence.replace(/\s*\([A-Z]+\)\s*$/, "").trim();
+    if (!correct.trim() || !original || correct.trim().toLowerCase() === original.toLowerCase())
+      return;
+    const options = stableShuffle([correct, original], idx * 71 + 13);
+    const result = { options, correctIndex: options.indexOf(correct) };
     idCounter++;
     if (!result) return;
     list.push({
@@ -116,8 +119,14 @@ export function buildPracticeItems(
   const allErrors: ErrorCorrectionExercise[] = materials.errorCorrection ?? [];
   allErrors.forEach((e: ErrorCorrectionExercise, idx: number) => {
     const correct = e.right;
-    const candidates = [e.wrong, ...allErrors.filter((_, i) => i !== idx).map((ec) => ec.right)];
-    const result = buildValidatedOptions(correct, candidates, idx * 53 + 7);
+    if (
+      !correct.trim() ||
+      !e.wrong.trim() ||
+      correct.trim().toLowerCase() === e.wrong.trim().toLowerCase()
+    )
+      return;
+    const options = stableShuffle([correct, e.wrong], idx * 53 + 7);
+    const result = { options, correctIndex: options.indexOf(correct) };
     idCounter++;
     if (!result) return;
     list.push({

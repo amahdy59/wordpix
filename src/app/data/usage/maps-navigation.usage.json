@@ -33,10 +33,10 @@
       "وردة البوصلة",
       "شبكة كهربائية",
       "إحداثيات",
-      "خط العرض",
-      "خط الطول",
-      "خط كنتور",
-      "حدود",
+      "خط عرض",
+      "خط طول",
+      "خط تساوي الارتفاع",
+      "حد",
       "نظام تحديد المواقع",
       "بوصلة",
       "قمر صناعي",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Satellite, Radar, Binoculars. The option needed for the next step is Satellite. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Satellite, Radar, Binoculars in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Maps & Navigation: Mini Dialogue",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Map"
+        "prompt": "During a routine travel task, an adult compares Map, Legend, Scale. The option needed for the next step is Map.\nWhich option is needed for the next step in the journey?",
+        "answer": "Map",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compass Rose"
+        "prompt": "During a routine travel task, an adult compares Compass Rose, Grid, Coordinates. The option needed for the next step is Compass Rose.\nWhich option is needed for the next step in the journey?",
+        "answer": "Compass Rose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Latitude"
+        "prompt": "During a routine travel task, an adult compares Latitude, Longitude, Contour. The option needed for the next step is Latitude.\nWhich option is needed for the next step in the journey?",
+        "answer": "Latitude",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Boundary"
+        "prompt": "During a routine travel task, an adult compares Boundary, GPS, Compass. The option needed for the next step is Boundary.\nWhich option is needed for the next step in the journey?",
+        "answer": "Boundary",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Satellite"
+        "prompt": "During a routine travel task, an adult compares Satellite, Radar, Binoculars. The option needed for the next step is Satellite.\nWhich option is needed for the next step in the journey?",
+        "answer": "Satellite",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -189,20 +205,20 @@
       "Checkpoint"
     ],
     "targetWordsArabic": [
-      "منظار",
+      "تلسكوب",
       "مقياس ارتفاع",
-      "عداد السرعة",
+      "عداد سرعة",
       "عداد المسافة",
-      "آلة السدس",
+      "آلة السدس للملاحة",
       "مسار",
-      "ممر (ممشى الحديقة)",
+      "ممر",
       "مسار",
       "طريق مختصر",
       "تحويلة طريق",
       "وجهة",
-      "نقطة الانطلاق",
+      "نقطة انطلاق",
       "نقطة مسار",
-      "معلم على الطريق",
+      "علامة مسافة",
       "نقطة تفتيش"
     ],
     "usage": {
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Waypoint, Milestone, Checkpoint. The option needed for the next step is Waypoint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Waypoint, Milestone, Checkpoint in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Maps & Navigation: Simple Message",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Telescope"
+        "prompt": "During a routine travel task, an adult compares Telescope, Altimeter, Speedometer. The option needed for the next step is Telescope.\nWhich option is needed for the next step in the journey?",
+        "answer": "Telescope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Odometer"
+        "prompt": "During a routine travel task, an adult compares Odometer, Sextant, Route. The option needed for the next step is Odometer.\nWhich option is needed for the next step in the journey?",
+        "answer": "Odometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Path"
+        "prompt": "During a routine travel task, an adult compares Path, Trail, Shortcut. The option needed for the next step is Path.\nWhich option is needed for the next step in the journey?",
+        "answer": "Path",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Detour"
+        "prompt": "During a routine travel task, an adult compares Detour, Destination, Origin. The option needed for the next step is Detour.\nWhich option is needed for the next step in the journey?",
+        "answer": "Detour",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waypoint"
+        "prompt": "During a routine travel task, an adult compares Waypoint, Milestone, Checkpoint. The option needed for the next step is Waypoint.\nWhich option is needed for the next step in the journey?",
+        "answer": "Waypoint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -401,7 +433,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Share Location",
+          "targetWords": ["Share Location"],
           "scenario": "During a routine travel task, an adult compares Share Location, Navigation App, Pin. The option needed for the next step is Share Location.",
           "check": {
             "question": "Which option is needed for the next step in the journey?",
@@ -411,7 +443,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Share Location, Navigation App, Pin. The option needed for the next step is Share Location. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Share Location in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Maps & Navigation: Notice-Style Text",
@@ -420,20 +453,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Navigation App"
+        "prompt": "During a routine travel task, an adult compares Navigation App, Pin, Search. The option needed for the next step is Navigation App.\nWhich option is needed for the next step in the journey?",
+        "answer": "Navigation App",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Directions"
+        "prompt": "During a routine travel task, an adult compares Directions, Traffic, Estimated Time. The option needed for the next step is Directions.\nWhich option is needed for the next step in the journey?",
+        "answer": "Directions",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reroute"
+        "prompt": "During a routine travel task, an adult compares Reroute, Satellite View, Street View. The option needed for the next step is Reroute.\nWhich option is needed for the next step in the journey?",
+        "answer": "Reroute",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Share Location"
+        "prompt": "During a routine travel task, an adult compares Share Location, Navigation App, Pin. The option needed for the next step is Share Location.\nWhich option is needed for the next step in the journey?",
+        "answer": "Share Location",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

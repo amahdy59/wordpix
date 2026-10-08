@@ -29,16 +29,16 @@
     "targetWordsArabic": [
       "وكيل عقارات",
       "وسيط",
-      "شخص يسمى «اببرايسير»",
-      "مفتش",
+      "مقيم عقاري",
+      "فاحص عقارات",
       "جهة إقراض عقاري",
       "وكيل سند الملكية",
       "مدير عقارات",
-      "شخص يسمى «ديفيلوبير»",
-      "شخص يسمى «كونتراكتور»",
-      "مبنى يسمى «ارتشيتيكت»",
+      "مطور عقاري",
+      "مقاول",
+      "مهندس معماري",
       "إعلان عقاري",
-      "معاينة مفتوحة",
+      "زيارة عقارية مفتوحة",
       "معاينة عقار",
       "عرض شراء",
       "عرض مقابل"
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Showing through a realistic adult task; include Showing, Offer, and Counter Offer naturally where visually appropriate, but make the real-world use of Showing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: The Real Estate Agency",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Real Estate Agent"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Real Estate Agent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mortgage Lender"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mortgage Lender",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Contractor"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Contractor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Showing"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Showing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,16 +202,16 @@
     ],
     "targetWordsArabic": [
       "تفاوض",
-      "وثيقة يسمى «اببرايسال»",
+      "تقييم عقاري",
       "فحص",
       "إتمام الصفقة",
       "حساب ضمان",
       "رهن عقاري",
-      "جزء يسمى «دوون بايمينت»",
-      "سعر الفائدة",
+      "دفعة أولى",
+      "معدل فائدة",
       "تكاليف إتمام الصفقة",
-      "حقوق ملكية",
-      "ارتفاع القيمة",
+      "صافي قيمة الملكية في العقار",
+      "زيادة القيمة",
       "انخفاض القيمة",
       "تقييم ضريبي",
       "رسوم جمعية ملاك المنازل",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Tax Assessment through a realistic adult task; include Tax Assessment, HOA Fee, and Pre-Approval naturally where visually appropriate, but make the real-world use of Tax Assessment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "What You Need to Know: The Real Estate Agency",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Negotiation"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Negotiation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Escrow"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Escrow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Closing Costs"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Closing Costs",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tax Assessment"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Tax Assessment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -344,15 +370,15 @@
       "Proof of Income"
     ],
     "targetWordsArabic": [
-      "اتفاقية إدراج عقار",
-      "جزء يسمى «بورتشاسي اجرييمينت»",
-      "وثيقة يسمى «دييد»",
-      "وثيقة يسمى «تيتلي»",
+      "اتفاقية تسويق عقار",
+      "اتفاقية شراء",
+      "سند ملكية",
+      "حق الملكية",
       "سند قرض عقاري",
       "إفصاح",
       "مسح عقاري",
       "وثيقة تأمين",
-      "شخص يسمى «تاكس ريتورن»",
+      "إقرار ضريبي",
       "إثبات الدخل"
     ],
     "usage": {
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Tax Return as the central item; include Tax Return, Proof of Income, and Listing Agreement naturally where visually appropriate, but make the real-world use of Tax Return the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Listing Agreement"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Listing Agreement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mortgage Note"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mortgage Note",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tax Return"
+        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tax Return",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

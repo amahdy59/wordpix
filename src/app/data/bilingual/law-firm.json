@@ -1,19 +1,19 @@
 {
   "lawyer": {
     "definition": "A professional person authorized to practice law.",
-    "arabicTranslation": "شخص يُسمّى «لاويير»"
+    "arabicTranslation": "محامٍ"
   },
   "attorney": {
     "definition": "A professional person authorized to practice law.",
-    "arabicTranslation": "شخص يُسمّى «اتتورنيي»"
+    "arabicTranslation": "محامٍ"
   },
   "judge": {
     "definition": "A public official authorized to decide questions brought before a court of justice.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جودجي»"
+    "arabicTranslation": "قاضٍ"
   },
   "paralegal": {
     "definition": "A person with specialized training who assists lawyers.",
-    "arabicTranslation": "شخص يُسمّى «باراليجال»"
+    "arabicTranslation": "مساعد قانوني"
   },
   "legal-secretary": {
     "definition": "An administrative professional who supports lawyers with documents, scheduling, correspondence, and office procedures.",
@@ -22,23 +22,23 @@
   },
   "notary": {
     "definition": "Someone legally empowered to witness signatures and certify a document's validity and to take depositions.",
-    "arabicTranslation": "وثيقة يُسمّى «نوتاري»"
+    "arabicTranslation": "موثق"
   },
   "mediator": {
     "definition": "A negotiator who acts as a link between parties.",
-    "arabicTranslation": "جزء يُسمّى «ميدياتور»"
+    "arabicTranslation": "وسيط"
   },
   "arbitrator": {
     "definition": "Someone chosen to judge and decide a disputed issue.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اربيتراتور»"
+    "arabicTranslation": "محكم"
   },
   "public-defender": {
     "definition": "A government-paid lawyer represents people in criminal court when they cannot afford to hire private counsel.",
-    "arabicTranslation": "مصطلح قانوني يُسمّى «بوبليك ديفيندير»"
+    "arabicTranslation": "محامٍ توفره الدولة لمن لا يستطيع تحمل أتعاب الدفاع"
   },
   "prosecutor": {
     "definition": "A government official who conducts criminal prosecutions on behalf of the state.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بروسيكوتور»"
+    "arabicTranslation": "ممثل الادعاء العام"
   },
   "reception": {
     "definition": "The manner in which something is greeted.",
@@ -69,8 +69,8 @@
     "arabicTranslation": "غرفة حفظ الملفات"
   },
   "war-room": {
-    "definition": "A dedicated room where leaders coordinate strategy for a military operation or political campaign.",
-    "arabicTranslation": "غرفة يُسمّى «وار رووم»"
+    "definition": "A room where a legal team prepares and coordinates a case.",
+    "arabicTranslation": "غرفة تنسيق فريق القضية"
   },
   "deposition-room": {
     "definition": "A room used for a formal out-of-court session in which sworn testimony is recorded as part of legal proceedings.",
@@ -79,7 +79,7 @@
   },
   "waiting-area": {
     "definition": "A room in a place such as an airport or hotel where people sit until they are ready to leave or be served.",
-    "arabicTranslation": "غرفة يُسمّى «وايتينج اريا»"
+    "arabicTranslation": "منطقة انتظار"
   },
   "records-room": {
     "definition": "A secure room used to store and manage official records or files.",
@@ -88,11 +88,11 @@
   },
   "criminal-law": {
     "definition": "The area of law that identifies criminal acts and sets the penalties for them.",
-    "arabicTranslation": "مصطلح قانوني يُسمّى «كريمينال لاو»"
+    "arabicTranslation": "قانون جنائي"
   },
   "civil-law": {
     "definition": "This area of law resolves noncriminal conflicts involving people, businesses, agreements, possessions, and family relationships.",
-    "arabicTranslation": "مصطلح قانوني يُسمّى «كيفيل لاو»"
+    "arabicTranslation": "قانون مدني"
   },
   "family-law": {
     "definition": "This area of law sets rules for marriage, separation, care of children, and bringing children into new families. It also covers other legal matters between family members within a particular place.",
@@ -104,8 +104,8 @@
     "arabicTranslation": "قانون الشركات"
   },
   "tax-law": {
-    "definition": "The systematic study of tax rules, their policy consequences, economic effects, and differences across countries.",
-    "arabicTranslation": "نظام يُسمّى «تاكس لاو»"
+    "definition": "The laws that govern taxation.",
+    "arabicTranslation": "قانون الضرائب"
   },
   "immigration-law": {
     "definition": "The area of law dealing with entry, residence, citizenship, and immigration status under a country's legal system.",
@@ -124,19 +124,19 @@
   },
   "environmental-law": {
     "definition": "The system of laws that safeguards nature by limiting pollution and managing the use of land, water, and other resources.",
-    "arabicTranslation": "مصطلح قانوني يُسمّى «ينفيرونمينتال لاو»"
+    "arabicTranslation": "قانون البيئة"
   },
   "intellectual-property": {
-    "definition": "Legal protections give creators control over the use of their original works and inventions.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتيلليكتوال بروبيرتي»"
+    "definition": "Creations such as inventions, designs, and written works that can receive legal protection.",
+    "arabicTranslation": "ملكية فكرية"
   },
   "consult": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كونسولت»",
+    "arabicTranslation": "يستشير",
     "definition": "To seek advice from a professional or discuss a matter together."
   },
   "represent": {
     "definition": "To be a delegate or spokesperson for.",
-    "arabicTranslation": "شخص يُسمّى «ريبريسينت»"
+    "arabicTranslation": "يمثل قانونيًا"
   },
   "file": {
     "definition": "A named collection of digital information saved on a device.",
@@ -153,10 +153,10 @@
   },
   "litigate": {
     "definition": "To institute legal proceedings against.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليتيجاتي»"
+    "arabicTranslation": "يتقاضى"
   },
   "settle": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيتتلي»",
+    "arabicTranslation": "يسوي نزاعًا",
     "definition": "To resolve a legal dispute by agreement without a full trial."
   },
   "draft": {
@@ -168,7 +168,7 @@
     "arabicTranslation": "مراجعة"
   },
   "advise": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ادفيسي»",
+    "arabicTranslation": "يقدم مشورة",
     "definition": "To give someone a recommendation based on knowledge or experience."
   }
 }

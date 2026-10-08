@@ -30,13 +30,13 @@
       "أبو الحناء",
       "عصفور",
       "القيق الأزرق",
-      "مصطلح متعلق بالطيور يسمى «كاردينال»",
+      "طائر الكاردينال",
       "غراب",
       "حمامة",
       "يمامة",
       "شرشور",
-      "طائر يسمى «ورين»",
-      "طائر يسمى «ستارلينج»",
+      "طائر النمنمة",
+      "زرزور",
       "بطة",
       "بجعة",
       "أوزة",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Goose as the central item; include Goose, Heron, and Pelican naturally where visually appropriate, but make the real-world use of Goose the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bird Sanctuary: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Robin"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Robin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crow"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wren"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wren",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Goose"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Goose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,20 +202,20 @@
     ],
     "targetWordsArabic": [
       "نحام",
-      "آلة يسمى «كراني»",
+      "كركي",
       "نورس",
       "رفراف",
-      "طائر يسمى «كورمورانت»",
+      "غاق",
       "نسر",
       "صقر",
       "صقر",
       "بومة",
-      "سمكة يسمى «وسبريي»",
+      "عقاب نساري",
       "نسر آكل للجيف",
       "حدأة",
-      "طائر يسمى «هارريير»",
-      "مصطلح متعلق بالطيور يسمى «كيستريل»",
-      "طائر يسمى «كوندور»"
+      "طائر المرزة",
+      "عوسق",
+      "كوندور"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Harrier as the central item; include Harrier, Kestrel, and Condor naturally where visually appropriate, but make the real-world use of Harrier the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Bird Sanctuary",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flamingo"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Flamingo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cormorant"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cormorant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Owl"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Owl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Harrier"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Harrier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -353,17 +379,17 @@
       "ريشة",
       "جناح",
       "مخلب",
-      "مصطلح متعلق بالطيور يسمى «كريست»",
-      "جزء يسمى «تايل»",
-      "مصطلح متعلق بالطيور يسمى «برياست»",
+      "عرف الطائر",
+      "ذيل",
+      "صدر الطائر",
       "بيضة (بيض)",
       "عش",
-      "مصطلح متعلق بالطيور يسمى «بيرتش»",
-      "مصطلح متعلق بالطيور يسمى «فلي»",
+      "مجثم",
+      "يطير",
       "يغني",
-      "مصطلح متعلق بالطيور يسمى «ميجراتي»",
+      "يهاجر",
       "بناء العش",
-      "طعام يسمى «فييد»"
+      "يطعم"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult clearly carrying out the action Migrate; include Migrate, Nest Building, and Feed naturally where visually appropriate, but make the real-world use of Migrate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Bird Sanctuary",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beak"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Beak",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crest"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nest"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Nest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Migrate"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Migrate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -510,21 +549,21 @@
       "Hedge"
     ],
     "targetWordsArabic": [
-      "مصطلح متعلق بالطيور يسمى «بريين»",
-      "مصطلح متعلق بالطيور يسمى «سوار»",
-      "مصطلح متعلق بالطيور يسمى «ديفي»",
+      "ينظف ريشه بمنقاره",
+      "يحلق",
+      "ينقض أو يغوص",
       "سرب",
-      "مصطلح متعلق بالطيور يسمى «رووست»",
+      "يبيت على مجثم",
       "شجرة",
-      "شجرة يسمى «برانتش»",
-      "طائر يسمى «بيردهووسي»",
-      "آلة يسمى «فييدير»",
-      "عملية يسمى «باث»",
-      "طائر يسمى «بوند»",
-      "منطقة يسمى «ويتلاند»",
-      "مصطلح متعلق بالطيور يسمى «ميادوو»",
-      "مصطلح متعلق بالطيور يسمى «كليفف»",
-      "نبات يسمى «هيدجي»"
+      "غصن",
+      "بيت للطيور",
+      "وعاء طعام للطيور",
+      "حوض استحمام للطيور",
+      "بركة",
+      "أرض رطبة",
+      "مرج",
+      "جرف",
+      "سياج نباتي"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Meadow as the central item; include Meadow, Cliff, and Hedge naturally where visually appropriate, but make the real-world use of Meadow the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bird Sanctuary: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Preen"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Preen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Roost"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Roost",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Feeder"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Feeder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Meadow"
+        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Meadow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

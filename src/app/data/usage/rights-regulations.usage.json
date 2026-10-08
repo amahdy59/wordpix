@@ -27,13 +27,13 @@
       "Statute"
     ],
     "targetWordsArabic": [
-      "مصطلح قانوني يسمى «فرييدوم وف سبييتش»",
+      "حرية التعبير",
       "الحق في الخصوصية",
-      "شخص يسمى «دوي بروكيسس»",
+      "الإجراءات القانونية الواجبة",
       "الحماية المتساوية أمام القانون",
       "حق التصويت",
-      "مصطلح قانوني يسمى «فرييدوم وف ريليجيون»",
-      "الحق في الاستعانة بمحام",
+      "حرية الدين",
+      "الحق في الاستعانة بمحامٍ",
       "الحق في التجمع السلمي",
       "الحق في تقديم العرائض",
       "محاكمة عادلة",
@@ -107,7 +107,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Jurisdiction through a realistic adult task; include Jurisdiction, Precedent, and Statute naturally where visually appropriate, but make the real-world use of Jurisdiction the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Rights & Regulations",
@@ -116,20 +117,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Freedom of Speech"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Freedom of Speech, Right to Privacy, Due Process, and Equal Protection and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Freedom of Speech",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Right to Vote"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Right to Vote, Freedom of Religion, Right to Counsel, and Right to Assembly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Right to Vote",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Right to Petition"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Right to Petition, Fair Trial, Liability, and Negligence and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Right to Petition",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jurisdiction"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jurisdiction, Precedent, and Statute and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Jurisdiction",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -272,7 +285,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Probation through a realistic adult task; include Probation, Sentence, and Appeal naturally where visually appropriate, but make the real-world use of Probation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Rights & Regulations",
@@ -281,20 +295,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ordinance"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ordinance, Regulation, Compliance, and Enforcement and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Ordinance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adjudication"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adjudication, Arrest, Charge, and Bail and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Adjudication",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plea"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plea, Conviction, Acquittal, and Parole and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Plea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Probation"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Probation, Sentence, and Appeal and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Probation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -370,7 +396,7 @@
       "تسليم مطلوبين",
       "لجوء",
       "لاجئ",
-      "شخص يسمى «هومان ريغتس»",
+      "حقوق الإنسان",
       "اتفاقية جنيف"
     ],
     "usage": {
@@ -415,7 +441,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Human Rights through a realistic adult task; include Human Rights, Geneva Convention, and Treaty naturally where visually appropriate, but make the real-world use of Human Rights the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -424,16 +451,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Treaty"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treaty, Convention, Sovereignty, and Diplomacy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Treaty",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sanctions"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sanctions, Extradition, Asylum, and Refugee and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sanctions",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Human Rights"
+        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Human Rights, and Geneva Convention and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Human Rights",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

@@ -29,11 +29,11 @@
     "targetWordsArabic": [
       "وحدة",
       "غرفة معادلة ضغط",
-      "جهاز يسمى «سولار ارراي»",
+      "مجموعة ألواح شمسية",
       "منفذ التحام",
       "قبة مراقبة",
       "جمالون",
-      "لوح مشع للحرارة",
+      "لوح مُشِعّ للحرارة",
       "هوائي",
       "فتحة دخول",
       "نافذة (شباك)",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Gloves as the central item; include Gloves, Boots, and Tether naturally where visually appropriate, but make the real-world use of Gloves the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Space Station",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Module"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Module",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cupola"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cupola",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hatch"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hatch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gloves"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gloves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,20 +202,20 @@
     ],
     "targetWordsArabic": [
       "حقيبة نفاثة",
-      "أداة يسمى «توول بيلت»",
-      "واق للعين",
+      "حزام أدوات",
+      "واقٍ للعين",
       "خزان أكسجين",
       "سماعة رأس للاتصال",
       "كبسولة نوم",
       "مطبخ صغير",
       "جهاز تمارين",
       "مرحاض",
-      "كيس دش",
-      "شريط فيلكرو",
+      "كيس دُش",
+      "شريط تثبيت بخطافات وحلقات",
       "حاسوب محمول (لابتوب)",
       "كتاب",
       "صورة",
-      "شخص يسمى «بيرسونال لوكير»"
+      "خزانة شخصية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Book as the central item; include Book, Photo, and Personal Locker naturally where visually appropriate, but make the real-world use of Book the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Space Station",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jet Pack"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Jet Pack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Communication Headset"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Communication Headset",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toilet"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Toilet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Book"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Book",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -351,15 +377,15 @@
     "targetWordsArabic": [
       "مجهر",
       "جهاز طرد مركزي",
-      "مركبة يسمى «جلوفي بوكس»",
-      "نبات يسمى «بلانت جرووث تشامبير»",
-      "جهاز يسمى «واتير ريكيكلير»",
-      "يرشح هواء",
+      "صندوق تجارب مزود بقفازات",
+      "حجرة نمو النباتات",
+      "جهاز إعادة تدوير الماء",
+      "يرشّح هواء",
       "مطياف",
       "حاوية عينة",
-      "جهاز يسمى «داتا لوججير»",
-      "حامل تجارب",
-      "جهاز يسمى «كونترول بانيل»",
+      "جهاز تسجيل بيانات",
+      "حامل أجهزة تجارب",
+      "لوحة تحكم",
       "شاشة مراقبة",
       "لوحة مفاتيح",
       "عصا تحكم",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Keyboard as the central item; include Keyboard, Joystick, and Radio naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Space Station",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Microscope"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Microscope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Water Recycler"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Water Recycler",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Data Logger"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Data Logger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Keyboard"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Keyboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -515,15 +554,15 @@
       "كاميرا",
       "إنذار",
       "قائمة تحقق",
-      "منظر الأرض",
+      "منظر الأرض من الفضاء",
       "نجوم",
       "قمر",
       "شمس",
       "قمر صناعي",
       "حطام فضائي",
       "مركبة شحن فضائية",
-      "ذراع روبوتية",
-      "جزء يسمى «سولار فلاري»",
+      "ذراع آلية",
+      "توهج شمسي",
       "شفق قطبي"
     ],
     "usage": {
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Robotic Arm as the central item; include Robotic Arm, Solar Flare, and Aurora naturally where visually appropriate, but make the real-world use of Robotic Arm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Space Station",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clock"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Clock",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Checklist"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Checklist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sun"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sun",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Robotic Arm"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Robotic Arm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -677,7 +729,7 @@
       "حقيبة دفع نفاث",
       "جهاز مشي",
       "مولد أكسجين",
-      "طبق يسمى «كومم ديش»",
+      "طبق اتصالات",
       "نافذة مشاهدة",
       "سير في الفضاء",
       "تجربة",
@@ -741,7 +793,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Float as the central item; include Float, Exercise, and Repair naturally where visually appropriate, but make the real-world use of Float the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Space Station",
@@ -750,20 +803,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lab Module"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Lab Module",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Treadmill"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Treadmill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spacewalk"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spacewalk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Float"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Float",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -824,7 +889,7 @@
       "scenes": [
         {
           "chunkNumber": 1,
-          "targetWords": "Communicate",
+          "targetWords": ["Communicate"],
           "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -834,7 +899,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Communicate as the central item; include Communicate, Option 1, and Option 2 naturally where visually appropriate, but make the real-world use of Communicate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Space Station",
@@ -843,8 +909,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Communicate"
+        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Communicate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

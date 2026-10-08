@@ -368,7 +368,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         <FigmaPronunciationLessonScreen lessonNumber={state.lessonNumber} dispatch={dispatch} />
       );
     if (state.id === "hadith-lesson")
-      return <HadithLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
+      return (
+        <HadithLessonScreen key={state.lessonId} lessonId={state.lessonId} dispatch={dispatch} />
+      );
     if (state.id === "hadith-curriculum") return <HadithCurriculumScreen dispatch={dispatch} />;
     if (state.id === "conversation-lesson")
       return (

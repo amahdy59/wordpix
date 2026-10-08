@@ -31,16 +31,16 @@
       "فيل",
       "زرافة",
       "حمار وحشي",
-      "كائن أو عنصر طبيعي يسمى «هيببوبوتاموس»",
-      "كائن أو عنصر طبيعي يسمى «رهينوكيروس»",
+      "فرس النهر",
+      "وحيد القرن",
       "فهد صائد",
       "غوريلا",
       "ضبع",
-      "نو",
+      "نوّ",
       "غزال",
       "نعامة",
-      "شخص يسمى «تيجير»",
-      "حيوان ثديي يسمى «باندا»",
+      "نمر مخطط",
+      "باندا",
       "إنسان الغاب"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the tiger as the central item; include tiger, panda, and orangutan naturally where visually appropriate, but make the real-world use of tiger the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Zoo: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lion"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lion, elephant, giraffe, and zebra and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "lion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "hippopotamus"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare hippopotamus, rhinoceros, cheetah, and gorilla and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "hippopotamus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "hyena"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare hyena, wildebeest, gazelle, and ostrich and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "hyena",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tiger"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tiger, panda, and orangutan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "tiger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -193,15 +206,15 @@
       "تنين كومودو",
       "طاووس",
       "جاموس مائي",
-      "كائن أو عنصر طبيعي يسمى «كوبرا»",
-      "كائن أو عنصر طبيعي يسمى «ماكاكي»",
+      "كوبرا",
+      "قرد مكاك",
       "عقاب أصلع",
-      "كائن أو عنصر طبيعي يسمى «جريززلي بيار»",
-      "كائن أو عنصر طبيعي يسمى «بيسون»",
-      "كائن أو عنصر طبيعي يسمى «وولف»",
-      "كائن أو عنصر طبيعي يسمى «مووسي»",
-      "كائن أو عنصر طبيعي يسمى «راككوون»",
-      "شخص يسمى «سكونك»",
+      "دب أشيب",
+      "بيسون",
+      "ذئب",
+      "موظ",
+      "راكون",
+      "ظربان",
       "قضاعة"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the raccoon as the central item; include raccoon, skunk, and otter naturally where visually appropriate, but make the real-world use of raccoon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Zoo",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "snow leopard"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare snow leopard, red panda, komodo dragon, and peacock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "snow leopard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "water buffalo"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare water buffalo, cobra, macaque, and bald eagle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "water buffalo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "grizzly bear"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare grizzly bear, bison, wolf, and moose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "grizzly bear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "raccoon"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare raccoon, skunk, and otter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "raccoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,17 +375,17 @@
       "toucan"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «بيافير»",
-      "كائن أو عنصر طبيعي يسمى «كووجار»",
-      "زاحف يسمى «كروكوديلي»",
-      "كائن أو عنصر طبيعي يسمى «الليجاتور»",
+      "قندس",
+      "بوما",
+      "تمساح",
+      "تمساح أمريكي",
       "إغوانا",
       "حرباء",
       "سلحفاة برية",
-      "كائن أو عنصر طبيعي يسمى «بيثون»",
-      "حشرة يسمى «فروج»",
-      "كائن أو عنصر طبيعي يسمى «سالاماندير»",
-      "حشرة يسمى «جيكو»",
+      "ثعبان أصلة",
+      "ضفدع",
+      "سمندر",
+      "وزغ",
       "أفعى جرسية",
       "ببغاء",
       "نحام",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the parrot as the central item; include parrot, flamingo, and toucan naturally where visually appropriate, but make the real-world use of parrot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Zoo",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "beaver"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare beaver, cougar, crocodile, and alligator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "beaver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "iguana"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare iguana, chameleon, tortoise, and python and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "iguana",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "frog"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare frog, salamander, gecko, and rattlesnake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "frog",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "parrot"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parrot, flamingo, and toucan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "parrot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -514,15 +553,15 @@
       "بومة",
       "صقر",
       "بجع",
-      "آلة يسمى «كراني»",
-      "طائر يسمى «هوممينجبيرد»",
-      "لون يسمى «كوكاتوو»",
-      "هيكل يسمى «ينكلوسوري»",
+      "كركي",
+      "طائر طنان",
+      "ببغاء كوكاتو",
+      "حظيرة مسيجة",
       "قفص",
       "حوض أحياء مائية",
-      "طائر يسمى «افياري»",
+      "قفص طيور كبير",
       "متجر هدية",
-      "مكان يسمى «تيكيت بووث»",
+      "شباك تذاكر",
       "خريطة",
       "مقعد"
     ],
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or approaching the ticket booth as the main location; include ticket booth, map, and bench naturally where visually appropriate, but make the real-world use of ticket booth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Zoo: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "penguin"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare penguin, owl, hawk, and pelican and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "penguin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "crane"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare crane, hummingbird, cockatoo, and enclosure and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "crane",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cage"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare cage, aquarium, aviary, and gift shop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "cage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ticket booth"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ticket booth, map, and bench and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "ticket booth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -654,12 +706,7 @@
     "cefrStage": "B1",
     "stageName": "B1 Wider World",
     "targetWordsEnglish": ["fountain", "playground", "train ride", "snack bar"],
-    "targetWordsArabic": [
-      "نافورة",
-      "منطقة يسمى «بلايجرووند»",
-      "كائن أو عنصر طبيعي يسمى «تراين ريدي»",
-      "مشروب يسمى «سناك بار»"
-    ],
+    "targetWordsArabic": ["نافورة", "ساحة ألعاب", "جولة بالقطار", "مقهى وجبات خفيفة"],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
@@ -678,7 +725,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the fountain as the central item; include fountain, playground, and train ride naturally where visually appropriate, but make the real-world use of fountain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Zoo",
@@ -687,8 +735,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fountain"
+        "prompt": "In the l5 zoo setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fountain, playground, train ride, and snack bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fountain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

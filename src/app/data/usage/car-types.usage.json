@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "سيارة سيدان",
       "سيارة هاتشباك",
-      "جزء يسمى «كووبي»",
+      "سيارة كوبيه",
       "سيارة مكشوفة",
-      "منطقة يسمى «ستاتيون واجون»",
-      "أسلوب أو طراز يسمى «كروسسوفير»",
+      "سيارة ستيشن واجن",
+      "سيارة كروس أوفر",
       "سيارة رياضية متعددة الاستخدامات",
-      "شكل يسمى «مينيفان»",
-      "سيارة رياضي",
-      "مادة يسمى «لوكسوري كار»",
-      "شاحنة استلام",
-      "شاحنة صغيرة",
-      "شاحنة صندوق",
+      "سيارة عائلية صغيرة",
+      "سيارة رياضية",
+      "سيارة فاخرة",
+      "شاحنة صغيرة بصندوق مكشوف",
+      "شاحنة مغلقة أو حافلة صغيرة",
+      "شاحنة بصندوق مغلق",
       "شاحنة نصف مقطورة",
-      "مركبة يسمى «توو تروك»"
+      "شاحنة سحب"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Box Truck as the central item; include Box Truck, Semi-Truck, and Tow Truck naturally where visually appropriate, but make the real-world use of Box Truck the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Car Types: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sedan"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sedan, Hatchback, Coupe, and Convertible and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sedan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Station Wagon"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Station Wagon, Crossover, SUV, and Minivan and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Station Wagon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sports Car"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Car, Luxury Car, Pickup Truck, and Van and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sports Car",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Box Truck"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Box Truck, Semi-Truck, and Tow Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Box Truck",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,21 +201,21 @@
       "Golf Cart"
     ],
     "targetWordsArabic": [
-      "حاوية يسمى «دومب تروك»",
-      "شاحنة مسطحة",
+      "شاحنة قلابة",
+      "شاحنة مسطحة الحمولة",
       "ناقلة",
-      "شاحنة صغيرة توصيل",
+      "شاحنة توصيل صغيرة",
       "شاحنة طعام",
-      "مركبة يسمى «يليكتريك كار»",
-      "دراجة هجينة",
+      "سيارة كهربائية",
+      "سيارة هجينة",
       "سيارة عضلية عالية الأداء",
       "سيارة كلاسيكية",
       "سيارة سباق",
       "مركبة للطرق الوعرة",
       "ليموزين",
-      "مركبة يسمى «هيارسي»",
+      "سيارة نقل موتى",
       "سيارة مصفحة",
-      "مركبة يسمى «جولف كارت»"
+      "عربة غولف"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Hearse as the central item; include Hearse, Armored Car, and Golf Cart naturally where visually appropriate, but make the real-world use of Hearse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Car Types",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dump Truck"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dump Truck, Flatbed, Tanker, and Delivery Van and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dump Truck",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Food Truck"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Food Truck, Electric Car, Hybrid, and Muscle Car and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Food Truck",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Classic Car"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classic Car, Race Car, Off-Road Vehicle, and Limousine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Classic Car",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hearse"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hearse, Armored Car, and Golf Cart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hearse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -345,15 +371,15 @@
     ],
     "targetWordsArabic": [
       "دراجة نارية",
-      "قارب يسمى «سكووتير»",
+      "سكوتر آلي",
       "دراجة آلية خفيفة",
-      "دراجة طرق وعرة",
-      "دراجة نارية معدلة",
-      "شجرة يسمى «كرويسير»",
+      "دراجة نارية للطرق الوعرة",
+      "دراجة نارية بمقود مرتفع وشوكة أمامية طويلة",
+      "دراجة نارية للتجول",
       "دراجة نارية رياضية",
       "دراجة نارية سياحية",
       "سكوتر كهربائي",
-      "فيسبا"
+      "سكوتر فيسبا"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Electric Scooter as the central item; include Electric Scooter, Vespa, and Motorcycle naturally where visually appropriate, but make the real-world use of Electric Scooter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Car Types",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Motorcycle"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorcycle, Scooter, Moped, and Dirt Bike and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Motorcycle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chopper"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chopper, Cruiser, Sport Bike, and Touring Bike and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chopper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Electric Scooter"
+        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electric Scooter, and Vespa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Electric Scooter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

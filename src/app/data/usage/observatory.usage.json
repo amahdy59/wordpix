@@ -30,15 +30,15 @@
       "تلسكوب بصري",
       "تلسكوب عاكس",
       "تلسكوب كاسر",
-      "أداة أو جهاز يسمى «راديو تيليسكوبي»",
+      "تلسكوب راديوي",
       "حامل تلسكوب",
-      "أداة أو جهاز يسمى «يييبييكي»",
+      "عدسة عينية",
       "منظار توجيه للتلسكوب",
       "عدسة",
       "مرآة",
-      "-",
-      "نجمة",
-      "نظام يسمى «بلانيت»",
+      "حامل ثلاثي القوائم",
+      "نجم",
+      "كوكب",
       "قمر",
       "شمس",
       "مذنب"
@@ -102,7 +102,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Moon as the central item; include Moon, Sun, and Comet naturally where visually appropriate, but make the real-world use of Moon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Observatory",
@@ -111,20 +112,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Optical Telescope"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Optical Telescope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Telescope Mount"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Telescope Mount",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moon"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -195,18 +208,18 @@
     "targetWordsArabic": [
       "كويكب",
       "سديم",
-      "نظام يسمى «جالاكسي»",
+      "مجرة",
       "كوكبة",
       "شهاب",
-      "قبة",
-      "سقف دوار",
+      "قُبّة",
+      "سقف دوّار",
       "منصة مشاهدة",
       "غرفة عامل ضابط",
       "مختبر حاسوب",
       "-",
-      "غرفة يسمى «ليكتوري هالل»",
+      "قاعة محاضرات",
       "متجر هدية",
-      "منطقة يسمى «باركينج اريا»",
+      "موقف سيارات",
       "ممر"
     ],
     "usage": {
@@ -263,7 +276,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Gift Shop as the main location; include Gift Shop, Parking Area, and Pathway naturally where visually appropriate, but make the real-world use of Gift Shop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Observatory",
@@ -272,20 +286,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Asteroid"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Asteroid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Meteor"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Meteor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Control Room"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Control Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gift Shop"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Gift Shop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -354,9 +380,9 @@
       "Jupiter"
     ],
     "targetWordsArabic": [
-      "مطياف تصويري",
+      "جهاز تحليل الطيف",
       "كاميرا CCD",
-      "خريطة نجوم",
+      "خريطة النجوم",
       "جهاز عرض القبة السماوية",
       "شاشة مراقبة حاسوب",
       "خادم بيانات",
@@ -367,7 +393,7 @@
       "عطارد",
       "الزهرة",
       "الأرض",
-      "طبق يسمى «مارس»",
+      "المريخ",
       "المشتري"
     ],
     "usage": {
@@ -424,7 +450,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Earth as the central item; include Earth, Mars, and Jupiter naturally where visually appropriate, but make the real-world use of Earth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Observatory",
@@ -433,20 +460,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spectrograph"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spectrograph",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer Monitor"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Computer Monitor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Red Flashlight"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Red Flashlight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Earth"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Earth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -515,12 +554,12 @@
       "Meteor Shower"
     ],
     "targetWordsArabic": [
-      "جزء يسمى «ساتورن»",
-      "جزء يسمى «ورانوس»",
-      "جزء يسمى «نيبتوني»",
+      "زحل",
+      "أورانوس",
+      "نبتون",
       "بلوتو",
-      "نظام يسمى «استيرويد بيلت»",
-      "-",
+      "حزام الكويكبات",
+      "رصد النجوم",
       "تصوير",
       "تحليل البيانات",
       "رصد فلكي للجمهور",
@@ -585,7 +624,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating Sky Mapping through a realistic adult task; include Sky Mapping, Eclipse Watching, and Meteor Shower naturally where visually appropriate, but make the real-world use of Sky Mapping the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Observatory",
@@ -594,20 +634,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Saturn"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Saturn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Asteroid Belt"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Asteroid Belt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Public Viewing"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Public Viewing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sky Mapping"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Sky Mapping",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -674,18 +726,18 @@
       "Discovery"
     ],
     "targetWordsArabic": [
-      "منظار",
+      "تلسكوب",
       "كاميرا",
-      "أداة أو جهاز يسمى «فوتوميتير»",
+      "مقياس شدة الضوء",
       "حاسوب",
       "هوائي",
-      "قدر ظاهري",
+      "قدر فلكي",
       "مدار",
       "سنة ضوئية",
       "طيف",
       "دوران",
       "كسوف أو خسوف",
-      "أداة أو جهاز يسمى «ترانسيت»",
+      "عبور فلكي",
       "اكتشاف"
     ],
     "usage": {
@@ -732,7 +784,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Discovery",
+          "targetWords": ["Discovery"],
           "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -742,7 +794,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Discovery as the central item; include Discovery, Telescope, and Camera naturally where visually appropriate, but make the real-world use of Discovery the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at The Observatory",
@@ -751,20 +804,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Telescope"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Telescope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Antenna"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Antenna",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spectrum"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spectrum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Discovery"
+        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Discovery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

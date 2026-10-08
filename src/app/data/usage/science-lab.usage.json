@@ -28,13 +28,13 @@
     ],
     "targetWordsArabic": [
       "مجهر",
-      "حاوية يسمى «تيست توبي»",
+      "أنبوب اختبار",
       "كأس مخبري",
       "دورق",
       "موقد بنسن",
       "طبق بتري",
       "ماصة",
-      "حاوية يسمى «جرادواتيد كيليندير»",
+      "أسطوانة مدرجة",
       "قمع",
       "ملقط",
       "نظارات واقية سلامة",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating chemical through a realistic adult task; include chemical, element, and compound naturally where visually appropriate, but make the real-world use of chemical the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Science Lab",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "microscope"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare microscope, test tube, beaker, and flask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "microscope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bunsen burner"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bunsen burner, petri dish, pipette, and graduated cylinder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bunsen burner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "funnel"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare funnel, tongs, safety goggles, and lab coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "funnel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "chemical"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chemical, element, and compound and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "chemical",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the DNA as the central item; include DNA, gene, and organism naturally where visually appropriate, but make the real-world use of DNA the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at Science Lab",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "molecule"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare molecule, atom, reaction, and acid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "molecule",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "base"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare base, solution, crystal, and gas and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "base",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "liquid"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare liquid, cell, bacteria, and virus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "liquid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "DNA"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA, gene, and organism and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "DNA",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -362,7 +388,7 @@
       "دائرة كهربائية",
       "بطارية",
       "سلك",
-      "مبدل شبكي",
+      "مبدّل شبكي",
       "بكرة"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the wire as the central item; include wire, switch, and pulley naturally where visually appropriate, but make the real-world use of wire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Science Lab",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tissue"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tissue, organ, photosynthesis, and evolution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "tissue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ecosystem"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ecosystem, specimen, magnet, and prism and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ecosystem",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lens"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lens, pendulum, circuit, and battery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "lens",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "wire"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare wire, switch, and pulley and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "wire",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating measurement through a realistic adult task; include measurement, scale, and calculator naturally where visually appropriate, but make the real-world use of measurement the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Science Lab",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lever"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lever, spring, thermometer, and hypothesis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "lever",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "experiment"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare experiment, observation, data, and graph and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "experiment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "chart"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chart, conclusion, variable, and control and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "chart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "measurement"
+        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare measurement, scale, and calculator and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "measurement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

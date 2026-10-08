@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "تفاح",
       "موز",
-      "برتقالي",
+      "برتقال",
       "عنب",
       "فراولة",
       "طماطم",
@@ -40,14 +40,14 @@
       "بطيخ",
       "أناناس",
       "مانجو",
-      "خوخي",
+      "خوخ",
       "كمثرى"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Mango, Peach, Pear. The person selects Mango for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Mango, Peach, Pear in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with apple, banana, and orange. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with grapes, strawberry, and tomato. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 1: A short reading",
+      "text": "Maya plans a fruit salad. She puts an apple, a banana, and an orange in her basket. Then she chooses grapes and a few strawberries. She sees lettuce and a tomato nearby but leaves them for another shopping trip. At home, she washes the fruit and cuts it into a bowl for lunch.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Apple"
+        "prompt": "During a routine the supermarket task, an adult compares Apple, Banana, Orange. The person selects Apple for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Apple",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grapes"
+        "prompt": "During a routine the supermarket task, an adult compares Grapes, Strawberry, Tomato. The person selects Grapes for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grapes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lettuce"
+        "prompt": "During a routine the supermarket task, an adult compares Lettuce, Carrot, Potato. The person selects Lettuce for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lettuce",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Onion"
+        "prompt": "During a routine the supermarket task, an adult compares Onion, Watermelon, Pineapple. The person selects Onion for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Onion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mango"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Apple"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Orange"
+        "prompt": "During a routine the supermarket task, an adult compares Mango, Peach, Pear. The person selects Mango for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mango",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “sauce” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya plan to make?",
+        "answer": "A fruit salad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -208,8 +223,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Fig, Broccoli, Cauliflower. The person selects Fig for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Fig, Broccoli, Cauliflower in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Simple Message",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with plum, cherry, and blueberry. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with raspberry, lemon, and lime. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 2: A short reading",
+      "text": "Omar needs fruit for breakfast. He compares a plum and a peach, then chooses blueberries and raspberries. He adds a lemon for his tea and an avocado for lunch. Broccoli and cauliflower are in the next section. He checks his list before paying so he does not buy more than he needs.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plum"
+        "prompt": "During a routine the supermarket task, an adult compares Plum, Cherry, Blueberry. The person selects Plum for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Plum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Raspberry"
+        "prompt": "During a routine the supermarket task, an adult compares Raspberry, Lemon, Lime. The person selects Raspberry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Raspberry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Avocado"
+        "prompt": "During a routine the supermarket task, an adult compares Avocado, Coconut, Kiwi. The person selects Avocado for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Avocado",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pomegranate"
+        "prompt": "During a routine the supermarket task, an adult compares Pomegranate, Grapefruit, Cantaloupe. The person selects Pomegranate for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pomegranate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fig"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Plum"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Blueberry"
+        "prompt": "During a routine the supermarket task, an adult compares Fig, Broccoli, Cauliflower. The person selects Fig for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fig",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Apple” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar add for his tea?",
+        "answer": "A lemon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -352,7 +382,7 @@
     ],
     "targetWordsArabic": [
       "خيار",
-      "فلفل رومي",
+      "فلفل حلو",
       "ذرة",
       "سبانخ",
       "فطر",
@@ -363,15 +393,15 @@
       "فاصوليا خضراء",
       "ملفوف",
       "بطاطا حلوة",
-      "قرع عسل",
+      "قرع",
       "هليون",
       "فجل"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Pumpkin, Asparagus, Radish. The person selects Pumpkin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Pumpkin, Asparagus, Radish in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Notice-Style Text",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with cucumber, bell pepper, and corn. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with spinach, mushroom, and celery. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 3: A short reading",
+      "text": "Maya buys a cucumber and a bell pepper for a salad. She also needs spinach and a mushroom for dinner. Corn is on sale, but she chooses green beans instead. A pumpkin is too large for her basket. She checks the vegetables for freshness and carries them to the checkout.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cucumber"
+        "prompt": "During a routine the supermarket task, an adult compares Cucumber, Bell Pepper, Corn. The person selects Cucumber for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cucumber",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spinach"
+        "prompt": "During a routine the supermarket task, an adult compares Spinach, Mushroom, Celery. The person selects Spinach for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Spinach",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Zucchini"
+        "prompt": "During a routine the supermarket task, an adult compares Zucchini, Eggplant, Peas. The person selects Zucchini for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Zucchini",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Green Beans"
+        "prompt": "During a routine the supermarket task, an adult compares Green Beans, Cabbage, Sweet Potato. The person selects Green Beans for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Green Beans",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pumpkin"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Cucumber"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Corn"
+        "prompt": "During a routine the supermarket task, an adult compares Pumpkin, Asparagus, Radish. The person selects Pumpkin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pumpkin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Plum” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya choose instead of corn?",
+        "answer": "Green beans",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -532,8 +577,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -595,41 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Artichoke, Jalapeño, Squash. The person selects Artichoke for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Artichoke, Jalapeño, Squash in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Short Description",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with beet, apricot, and nectarine. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with blackberry, cranberry, and tangerine. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 4: A short reading",
+      "text": "Omar wants to try a new vegetable dish. He picks a beet, a leek, and some kale. He also buys an apricot and a nectarine for a snack. A jalapeño will make the dish spicy, so he takes only one. At home, he puts the fruit away before preparing the vegetables.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beet"
+        "prompt": "During a routine the supermarket task, an adult compares Beet, Apricot, Nectarine. The person selects Beet for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Beet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blackberry"
+        "prompt": "During a routine the supermarket task, an adult compares Blackberry, Cranberry, Tangerine. The person selects Blackberry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Blackberry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Papaya"
+        "prompt": "During a routine the supermarket task, an adult compares Papaya, Kale, Leek. The person selects Papaya for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Papaya",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brussels Sprouts"
+        "prompt": "During a routine the supermarket task, an adult compares Brussels Sprouts, Green Onion, Turnip. The person selects Brussels Sprouts for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Brussels Sprouts",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Artichoke"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Beet"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Nectarine"
+        "prompt": "During a routine the supermarket task, an adult compares Artichoke, Jalapeño, Squash. The person selects Artichoke for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Artichoke",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Cucumber” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Omar take only one jalapeño?",
+        "answer": "It will make the dish spicy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -680,11 +740,11 @@
       "إكليل الجبل",
       "بقدونس",
       "نعناع",
-      "كزبرة",
+      "كزبرة خضراء",
       "شبت",
       "ثوم معمر",
       "مريمية",
-      "ورقة نبات حجرة خدمة",
+      "ورق الغار",
       "طرخون",
       "حشيشة الليمون",
       "حليب (لبن)",
@@ -694,8 +754,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 5 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -757,41 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Milk, Cheese, Yogurt. The person selects Milk for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Milk, Cheese, Yogurt in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with basil, thyme, and rosemary. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with parsley, mint, and cilantro. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 5: A short reading",
+      "text": "Maya buys basil and parsley to flavor dinner. She smells rosemary but leaves it on the shelf. Mint is for her tea, and dill is for a salad. Before paying, she remembers milk and yogurt. She adds them to the basket and puts the herbs in a separate bag to protect their leaves.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Basil"
+        "prompt": "During a routine the supermarket task, an adult compares Basil, Thyme, Rosemary. The person selects Basil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Basil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parsley"
+        "prompt": "During a routine the supermarket task, an adult compares Parsley, Mint, Cilantro. The person selects Parsley for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Parsley",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dill"
+        "prompt": "During a routine the supermarket task, an adult compares Dill, Chives, Sage. The person selects Dill for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bay Leaf"
+        "prompt": "During a routine the supermarket task, an adult compares Bay Leaf, Tarragon, Lemongrass. The person selects Bay Leaf for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bay Leaf",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Milk"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Basil"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Rosemary"
+        "prompt": "During a routine the supermarket task, an adult compares Milk, Cheese, Yogurt. The person selects Milk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Milk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -800,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Beet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya put the herbs in a separate bag?",
+        "answer": "To protect their leaves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -841,10 +916,10 @@
       "بيض",
       "كريمة",
       "عصير",
-      "كريمة ثلج",
+      "آيس كريم",
       "بيتزا مجمدة",
       "خضروات مجمدة",
-      "كريمة حامض",
+      "كريمة حامضة",
       "كريمة مخفوقة",
       "جبن قريش",
       "توفو",
@@ -856,8 +931,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 6 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -919,41 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Margarine, Mozzarella, Cheddar. The person selects Margarine for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Margarine, Mozzarella, Cheddar in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Simple Message",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with butter, eggs, and cream. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with juice, ice cream, and frozen pizza. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 6: A short reading",
+      "text": "Omar checks the fridge before shopping. He needs butter, eggs, and cream. At the supermarket, he also chooses cottage cheese and tofu. Frozen vegetables are on his list, but frozen pizza is not. He takes the frozen food last and goes home soon after paying so it stays cold.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Butter"
+        "prompt": "During a routine the supermarket task, an adult compares Butter, Eggs, Cream. The person selects Butter for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Butter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Juice"
+        "prompt": "During a routine the supermarket task, an adult compares Juice, Ice Cream, Frozen Pizza. The person selects Juice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Juice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frozen Vegetables"
+        "prompt": "During a routine the supermarket task, an adult compares Frozen Vegetables, Sour Cream, Whipped Cream. The person selects Frozen Vegetables for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Frozen Vegetables",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cottage Cheese"
+        "prompt": "During a routine the supermarket task, an adult compares Cottage Cheese, Tofu, Cream Cheese. The person selects Cottage Cheese for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cottage Cheese",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Margarine"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Butter"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Cream"
+        "prompt": "During a routine the supermarket task, an adult compares Margarine, Mozzarella, Cheddar. The person selects Margarine for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Margarine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -962,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Basil” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "When does Omar take the frozen food?",
+        "answer": "Last",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1010,7 +1100,7 @@
       "كعكة",
       "أرز (رز)",
       "معكرونة (باستا)",
-      "حبوب إفطار",
+      "حبوب الإفطار",
       "طحين (دقيق)",
       "خبز تورتيلا",
       "دونات"
@@ -1018,8 +1108,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 7 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1081,41 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Flour, Tortilla, Donut. The person selects Flour for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Flour, Tortilla, Donut in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Notice-Style Text",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with parmesan, feta, and almond milk. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with oat milk, bread, and bagel. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 7: A short reading",
+      "text": "Maya buys bread and a bagel for breakfast. She chooses oat milk instead of almond milk this week. Parmesan is for her pasta, and feta is for a salad. She already has rice and cereal at home. She checks the flour shelf, then remembers that she still has a full bag.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parmesan"
+        "prompt": "During a routine the supermarket task, an adult compares Parmesan, Feta, Almond Milk. The person selects Parmesan for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Parmesan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oat Milk"
+        "prompt": "During a routine the supermarket task, an adult compares Oat Milk, Bread, Bagel. The person selects Oat Milk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Oat Milk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Croissant"
+        "prompt": "During a routine the supermarket task, an adult compares Croissant, Muffin, Cake. The person selects Croissant for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Croissant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rice"
+        "prompt": "During a routine the supermarket task, an adult compares Rice, Pasta, Cereal. The person selects Rice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flour"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Parmesan"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Almond Milk"
+        "prompt": "During a routine the supermarket task, an adult compares Flour, Tortilla, Donut. The person selects Flour for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flour",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1124,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Butter” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya choose instead of almond milk?",
+        "answer": "Oat milk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1162,26 +1267,26 @@
     ],
     "targetWordsArabic": [
       "فطيرة",
-      "بسكويت (بسكويت / قرص مخبوز)",
+      "بسكويت",
       "خليط بان كيك",
-      "دقيق الشوفان",
+      "شوفان",
       "خبز الذرة",
-      "باغيت (خبز فرنسي طويل)",
-      "خبز البيتا (خبز عربي / عيش بلدي)",
+      "خبز فرنسي طويل",
+      "خبز عربي",
       "خبز نان",
-      "خبزة صغيرة",
+      "رغيف صغير",
       "وافل",
-      "عجينة مخمرة (خبز الساوردو / خبز حامض)",
-      "شعيرية",
+      "خبز العجين المخمر",
+      "نودلز",
       "كسكس",
       "كينوا",
-      "خبز القمح الكامل (خبز الحبوب الكاملة / خبز الأسمر)"
+      "خبز القمح الكامل"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 8 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1243,41 +1348,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Couscous, Quinoa, Whole Wheat Bread. The person selects Couscous for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Couscous, Quinoa, Whole Wheat Bread in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Short Description",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with pie, biscuit, and pancake mix. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with oatmeal, cornbread, and baguette. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 8: A short reading",
+      "text": "Omar chooses oatmeal for breakfast and noodles for dinner. He buys a baguette, but leaves the pie for another day. There is pita beside the naan. He picks pita for lunch and a small bag of couscous. At the checkout, he places the bread on top so it will not be crushed.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pie"
+        "prompt": "During a routine the supermarket task, an adult compares Pie, Biscuit, Pancake Mix. The person selects Pie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oatmeal"
+        "prompt": "During a routine the supermarket task, an adult compares Oatmeal, Cornbread, Baguette. The person selects Oatmeal for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Oatmeal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pita"
+        "prompt": "During a routine the supermarket task, an adult compares Pita, Naan, Roll. The person selects Pita for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pita",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waffle"
+        "prompt": "During a routine the supermarket task, an adult compares Waffle, Sourdough, Noodles. The person selects Waffle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Waffle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Couscous"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Pie"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Pancake Mix"
+        "prompt": "During a routine the supermarket task, an adult compares Couscous, Quinoa, Whole Wheat Bread. The person selects Couscous for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Couscous",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1286,6 +1399,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Parmesan” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Omar put the bread on top?",
+        "answer": "So it will not be crushed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1326,24 +1446,24 @@
       "دجاج",
       "لحم بقري",
       "لحم خنزير",
-      "سمكة",
+      "سمك",
       "روبيان",
       "نقانق",
-      "لحم مقدد",
-      "ديك رومي",
-      "سلموني",
+      "لحم خنزير مقدد",
+      "لحم الديك الرومي",
+      "سلمون",
       "تونة",
       "لحم ضأن",
-      "بطة",
+      "لحم البط",
       "كركند",
       "سلطعون",
-      "لحم خنزير معالج"
+      "لحم فخذ الخنزير"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 9 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1405,41 +1525,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Lobster, Crab, Ham. The person selects Lobster for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Lobster, Crab, Ham in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chicken, beef, and pork. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with fish, shrimp, and sausage. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 9: A short reading",
+      "text": "Maya visits the meat and fish section. She chooses chicken for dinner and salmon for tomorrow. She compares beef and lamb but buys neither today. Shrimp and tuna are in a separate display. The worker packs her chicken and fish separately, and Maya checks the labels before taking them home.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chicken"
+        "prompt": "During a routine the supermarket task, an adult compares Chicken, Beef, Pork. The person selects Chicken for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chicken",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fish"
+        "prompt": "During a routine the supermarket task, an adult compares Fish, Shrimp, Sausage. The person selects Fish for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bacon"
+        "prompt": "During a routine the supermarket task, an adult compares Bacon, Turkey, Salmon. The person selects Bacon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bacon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tuna"
+        "prompt": "During a routine the supermarket task, an adult compares Tuna, Lamb, Duck. The person selects Tuna for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tuna",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lobster"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Chicken"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Pork"
+        "prompt": "During a routine the supermarket task, an adult compares Lobster, Crab, Ham. The person selects Lobster for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lobster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1448,6 +1576,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Pie” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya choose for tomorrow?",
+        "answer": "Salmon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1489,7 +1624,7 @@
       "شريحة لحم",
       "ضلوع",
       "ساق دجاج",
-      "جناح",
+      "جناح دجاج",
       "محار صدفي",
       "محار",
       "حبار",
@@ -1498,14 +1633,14 @@
       "سلة",
       "رف",
       "ممر",
-      "تسجيل المغادرة",
+      "صندوق المحاسبة",
       "رمز شريطي"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 10 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1567,41 +1702,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Aisle, Checkout, Barcode. The person selects Aisle for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Aisle, Checkout, Barcode in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Simple Message",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with ground beef, steak, and ribs. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with drumstick, wing, and clam. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 10: A short reading",
+      "text": "Omar puts ground beef in his shopping cart. He asks the worker about a steak and some ribs, then chooses only the beef. He walks down an aisle past a shelf of canned food. At the checkout, the cashier scans each barcode. Omar puts the heavier items at the bottom of his bags.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ground Beef"
+        "prompt": "During a routine the supermarket task, an adult compares Ground Beef, Steak, Ribs. The person selects Ground Beef for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ground Beef",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Drumstick"
+        "prompt": "During a routine the supermarket task, an adult compares Drumstick, Wing, Clam. The person selects Drumstick for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Drumstick",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oyster"
+        "prompt": "During a routine the supermarket task, an adult compares Oyster, Squid, Cod. The person selects Oyster for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Oyster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shopping Cart"
+        "prompt": "During a routine the supermarket task, an adult compares Shopping Cart, Basket, Shelf. The person selects Shopping Cart for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shopping Cart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aisle"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Ground Beef"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Ribs"
+        "prompt": "During a routine the supermarket task, an adult compares Aisle, Checkout, Barcode. The person selects Aisle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Aisle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1610,6 +1753,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Chicken” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Omar put heavier items?",
+        "answer": "At the bottom of his bags",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1650,12 +1800,12 @@
       "إيصال",
       "قسيمة خصم",
       "بطاقة السعر",
-      "مقياس رسم",
+      "ميزان",
       "أمين صندوق",
-      "سجل نقد",
+      "آلة تسجيل النقد",
       "دفع ذاتي",
       "حزام ناقل",
-      "ماسح ضوئي",
+      "قارئ الرموز الشريطية",
       "منضدة الأطعمة الجاهزة",
       "مسار دفع سريع",
       "بطاقة ولاء",
@@ -1666,8 +1816,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 11 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1729,41 +1879,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Sale Sign, Expiration Date, Soap. The person selects Sale Sign for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Sale Sign, Expiration Date, Soap in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Notice-Style Text",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with receipt, coupon, and price tag. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with scale, cashier, and cash register. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 11: A short reading",
+      "text": "Maya reads the price tag and sees a sale sign. At the checkout, she gives the cashier a coupon and her loyalty card. The scanner reads each item on the conveyor belt. Maya checks the receipt before leaving. Next time, she may use self-checkout if she has only a few items.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Receipt"
+        "prompt": "During a routine the supermarket task, an adult compares Receipt, Coupon, Price Tag. The person selects Receipt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Receipt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scale"
+        "prompt": "During a routine the supermarket task, an adult compares Scale, Cashier, Cash Register. The person selects Scale for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Self-Checkout"
+        "prompt": "During a routine the supermarket task, an adult compares Self-Checkout, Conveyor Belt, Scanner. The person selects Self-Checkout for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Self-Checkout",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Deli Counter"
+        "prompt": "During a routine the supermarket task, an adult compares Deli Counter, Express Lane, Loyalty Card. The person selects Deli Counter for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Deli Counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sale Sign"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Receipt"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Price Tag"
+        "prompt": "During a routine the supermarket task, an adult compares Sale Sign, Expiration Date, Soap. The person selects Sale Sign for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sale Sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1772,6 +1930,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Ground Beef” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya give the cashier?",
+        "answer": "A coupon and her loyalty card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1813,10 +1978,10 @@
       "إسفنجة",
       "مناديل مطبخ (محارم ورقية)",
       "كيس قمامة",
-      "مبيض",
+      "مبيّض",
       "ممسحة",
       "مكنسة",
-      "مصباح كهربائي (لمبة)",
+      "مصباح كهربائي",
       "بطارية",
       "صابون غسيل الأطباق (سائل جلي)",
       "ورق مرحاض",
@@ -1828,8 +1993,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 12 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1891,41 +2056,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Aluminum Foil, Plastic Wrap, Rubber Gloves. The person selects Aluminum Foil for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Aluminum Foil, Plastic Wrap, Rubber Gloves in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Short Description",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with detergent, sponge, and paper towel. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with trash bag, bleach, and mop. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 12: A short reading",
+      "text": "Omar buys detergent, a sponge, and dish soap. He also needs a paper towel roll and a trash bag. A mop is on sale, but his old one still works. He adds rubber gloves to his basket. At home, he puts the cleaning products in their usual cupboard, away from food.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Detergent"
+        "prompt": "During a routine the supermarket task, an adult compares Detergent, Sponge, Paper Towel. The person selects Detergent for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Detergent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trash Bag"
+        "prompt": "During a routine the supermarket task, an adult compares Trash Bag, Bleach, Mop. The person selects Trash Bag for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Trash Bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Broom"
+        "prompt": "During a routine the supermarket task, an adult compares Broom, Light Bulb, Battery. The person selects Broom for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Broom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dish Soap"
+        "prompt": "During a routine the supermarket task, an adult compares Dish Soap, Toilet Paper, Napkin. The person selects Dish Soap for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dish Soap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aluminum Foil"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Detergent"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Paper Towel"
+        "prompt": "During a routine the supermarket task, an adult compares Aluminum Foil, Plastic Wrap, Rubber Gloves. The person selects Aluminum Foil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Aluminum Foil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1934,6 +2107,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Receipt” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Omar leave the mop?",
+        "answer": "His old one still works",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1971,7 +2151,7 @@
       "Milk Carton"
     ],
     "targetWordsArabic": [
-      "جاروف",
+      "جاروف تنظيف",
       "معطر جو",
       "مطهر",
       "دلو",
@@ -1980,18 +2160,18 @@
       "قهوة",
       "شاي",
       "ليمونادة",
-      "يشرب طاقة",
+      "مشروب طاقة",
       "جعة",
       "نبيذ",
       "ماء غازي",
-      "شوكولاتة ساخن",
+      "شوكولاتة ساخنة",
       "عبوة حليب كرتونية"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 13 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -2053,41 +2233,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Sparkling Water, Hot Chocolate, Milk Carton. The person selects Sparkling Water for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Sparkling Water, Hot Chocolate, Milk Carton in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with dustpan, air freshener, and disinfectant. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with bucket, water, and soda. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 13: A short reading",
+      "text": "Maya takes a dustpan and a bucket from the household section. Then she chooses water and tea for the week. She leaves the soda and energy drink on the shelf. Sparkling water is for a guest who is coming tonight. Before paying, she checks that every bottle has a secure cap.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dustpan"
+        "prompt": "During a routine the supermarket task, an adult compares Dustpan, Air Freshener, Disinfectant. The person selects Dustpan for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dustpan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bucket"
+        "prompt": "During a routine the supermarket task, an adult compares Bucket, Water, Soda. The person selects Bucket for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bucket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coffee"
+        "prompt": "During a routine the supermarket task, an adult compares Coffee, Tea, Lemonade. The person selects Coffee for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coffee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Energy Drink"
+        "prompt": "During a routine the supermarket task, an adult compares Energy Drink, Beer, Wine. The person selects Energy Drink for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Energy Drink",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sparkling Water"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Dustpan"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Disinfectant"
+        "prompt": "During a routine the supermarket task, an adult compares Sparkling Water, Hot Chocolate, Milk Carton. The person selects Sparkling Water for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sparkling Water",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -2096,6 +2284,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Detergent” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who is the sparkling water for?",
+        "answer": "A guest coming tonight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -2133,17 +2328,17 @@
       "Popcorn"
     ],
     "targetWordsArabic": [
-      "عصير برتقالي",
+      "عصير برتقال",
       "شاي مثلج",
       "ماء جوز الهند",
       "سموثي",
       "عصير تفاح",
       "مخفوق الحليب",
-      "مشروب زنجبيل غازي",
+      "مشروب غازي بنكهة الزنجبيل",
       "ماء معدني",
       "شمبانيا",
-      "رقائق",
-      "بسكويت",
+      "رقائق بطاطس",
+      "قطع بسكويت",
       "شوكولاتة",
       "حلوى",
       "بسكويت مالح",
@@ -2152,8 +2347,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 14 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -2215,41 +2410,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Candy, Crackers, Popcorn. The person selects Candy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Candy, Crackers, Popcorn in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Simple Message",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with orange juice, iced tea, and coconut water. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with smoothie, apple juice, and milkshake. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 14: A short reading",
+      "text": "Omar chooses orange juice and apple juice for a picnic. He adds crackers and popcorn for sharing. He considers chips and cookies but has enough snacks already. Maya brings mineral water from another aisle. They divide the drinks between two bags so neither person has to carry all the weight.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Orange Juice"
+        "prompt": "During a routine the supermarket task, an adult compares Orange Juice, Iced Tea, Coconut Water. The person selects Orange Juice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Orange Juice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smoothie"
+        "prompt": "During a routine the supermarket task, an adult compares Smoothie, Apple Juice, Milkshake. The person selects Smoothie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Smoothie",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ginger Ale"
+        "prompt": "During a routine the supermarket task, an adult compares Ginger Ale, Mineral Water, Champagne. The person selects Ginger Ale for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ginger Ale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chips"
+        "prompt": "During a routine the supermarket task, an adult compares Chips, Cookies, Chocolate. The person selects Chips for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chips",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Candy"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Orange Juice"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Coconut Water"
+        "prompt": "During a routine the supermarket task, an adult compares Candy, Crackers, Popcorn. The person selects Candy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Candy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -2258,6 +2461,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Dustpan” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why do Maya and Omar divide the drinks between two bags?",
+        "answer": "So neither person carries all the weight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -2297,16 +2507,16 @@
     "targetWordsArabic": [
       "مكسرات",
       "علكة",
-      "لوح جرانولا (لوح شوفان ومكسرات)",
-      "بريتزل",
+      "لوح جرانولا",
+      "بسكويت مملح معقود",
       "براوني",
       "بودينغ",
-      "يخلط مسار",
-      "فواكه مجففة",
+      "خليط مكسرات وفواكه مجففة",
+      "فاكهة مجففة",
       "مارشميلو",
       "مصاصة حلوى",
       "هلام حلو",
-      "مثلجات عصا",
+      "مثلجات على عصا",
       "شوربة معلبة",
       "زبدة الفول السوداني",
       "مربى"
@@ -2314,8 +2524,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 15 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -2377,41 +2587,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Canned Soup, Peanut Butter, Jam. The person selects Canned Soup for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Canned Soup, Peanut Butter, Jam in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Notice-Style Text",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with nuts, gum, and granola bar. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with pretzels, brownie, and pudding. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 15: A short reading",
+      "text": "Maya wants snacks for a train journey. She buys nuts, dried fruit, and a granola bar. She leaves the lollipop and marshmallow on the shelf. At home, she puts the nuts and dried fruit into a small container. Peanut butter and jam are for sandwiches she will make before leaving.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nuts"
+        "prompt": "During a routine the supermarket task, an adult compares Nuts, Gum, Granola Bar. The person selects Nuts for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nuts",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pretzels"
+        "prompt": "During a routine the supermarket task, an adult compares Pretzels, Brownie, Pudding. The person selects Pretzels for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pretzels",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trail Mix"
+        "prompt": "During a routine the supermarket task, an adult compares Trail Mix, Dried Fruit, Marshmallow. The person selects Trail Mix for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Trail Mix",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lollipop"
+        "prompt": "During a routine the supermarket task, an adult compares Lollipop, Jelly, Ice Pop. The person selects Lollipop for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lollipop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Canned Soup"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Nuts"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Granola Bar"
+        "prompt": "During a routine the supermarket task, an adult compares Canned Soup, Peanut Butter, Jam. The person selects Canned Soup for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Canned Soup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -2420,6 +2638,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Orange Juice” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Maya put the nuts and dried fruit?",
+        "answer": "In a small container",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -2458,26 +2683,26 @@
     ],
     "targetWordsArabic": [
       "كاتشب",
-      "خردلي",
+      "خردل",
       "مايونيز",
       "فاصوليا معلبة",
       "صلصة سالسا",
       "مخللات",
-      "زيت زيتونة",
-      "صلصة طماطم",
+      "زيت الزيتون",
+      "صلصة الطماطم",
       "حليب جوز الهند",
       "علبة تونة",
       "سردين",
       "عسل (عسل نحل)",
       "شراب القيقب",
-      "معجون طماطم",
+      "معجون الطماطم",
       "مرق"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 16 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -2539,41 +2764,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Maple Syrup, Tomato Paste, Broth. The person selects Maple Syrup for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Maple Syrup, Tomato Paste, Broth in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Short Description",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with ketchup, mustard, and mayonnaise. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with canned beans, salsa, and pickles. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 16: A short reading",
+      "text": "Omar looks for ingredients for dinner. He takes canned beans, tomato sauce, and olive oil. He adds coconut milk for another meal. Ketchup and mustard are already in his cupboard. He checks the size of each can before paying because a large can would be more than he needs tonight.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ketchup"
+        "prompt": "During a routine the supermarket task, an adult compares Ketchup, Mustard, Mayonnaise. The person selects Ketchup for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ketchup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Canned Beans"
+        "prompt": "During a routine the supermarket task, an adult compares Canned Beans, Salsa, Pickles. The person selects Canned Beans for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Canned Beans",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Olive Oil"
+        "prompt": "During a routine the supermarket task, an adult compares Olive Oil, Tomato Sauce, Coconut Milk. The person selects Olive Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Olive Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tuna Can"
+        "prompt": "During a routine the supermarket task, an adult compares Tuna Can, Sardines, Honey. The person selects Tuna Can for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tuna Can",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Maple Syrup"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Ketchup"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Mayonnaise"
+        "prompt": "During a routine the supermarket task, an adult compares Maple Syrup, Tomato Paste, Broth. The person selects Maple Syrup for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Maple Syrup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -2582,6 +2815,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Nuts” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Omar check the can sizes?",
+        "answer": "A large can would be more than he needs tonight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -2619,11 +2859,11 @@
       "Oregano"
     ],
     "targetWordsArabic": [
-      "زيت خضروات",
+      "زيت نباتي",
       "صلصة باربكيو",
       "زبدة اللوز",
       "نوتيلا؛ كريمة بندق بالكاكاو",
-      "صلصة مخللات",
+      "صلصة خضار مخللة",
       "مربى الحمضيات",
       "ملح",
       "فلفل (فلفل أسود)",
@@ -2631,15 +2871,15 @@
       "خل",
       "صلصة الصويا",
       "صلصة حارة",
-      "قرفة (قرفة مطحونة / عيدان قرفة)",
+      "قرفة",
       "ثوم",
       "أوريغانو"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 17 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -2701,41 +2941,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Cinnamon, Garlic, Oregano. The person selects Cinnamon for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Cinnamon, Garlic, Oregano in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with vegetable oil, bbq sauce, and almond butter. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with nutella, relish, and marmalade. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 17: A short reading",
+      "text": "Maya buys salt, pepper, and vinegar for the kitchen. She chooses soy sauce for a stir-fry and cinnamon for baking. A jar of marmalade is for breakfast. She checks whether she needs sugar, then remembers the full bag at home. She returns the extra bag to the shelf before paying.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vegetable Oil"
+        "prompt": "During a routine the supermarket task, an adult compares Vegetable Oil, BBQ Sauce, Almond Butter. The person selects Vegetable Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Vegetable Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nutella"
+        "prompt": "During a routine the supermarket task, an adult compares Nutella, Relish, Marmalade. The person selects Nutella for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nutella",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Salt"
+        "prompt": "During a routine the supermarket task, an adult compares Salt, Pepper, Sugar. The person selects Salt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Salt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vinegar"
+        "prompt": "During a routine the supermarket task, an adult compares Vinegar, Soy Sauce, Hot Sauce. The person selects Vinegar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Vinegar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cinnamon"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Vegetable Oil"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Almond Butter"
+        "prompt": "During a routine the supermarket task, an adult compares Cinnamon, Garlic, Oregano. The person selects Cinnamon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cinnamon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -2744,6 +2992,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Ketchup” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya return the extra sugar?",
+        "answer": "She has a full bag at home",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -2788,11 +3043,11 @@
       "مسحوق الزنجبيل",
       "رقائق الفلفل الحار",
       "خلاصة الفانيليا",
-      "مشروب غازي خبز",
-      "بودرة خبز",
+      "بيكربونات الصوديوم",
+      "مسحوق الخَبز",
       "سكر بني",
       "مسحوق الكاري",
-      "فلفل كايين",
+      "فلفل حار مطحون",
       "قرنفل",
       "هيل",
       "شامبو"
@@ -2800,8 +3055,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 18 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -2863,41 +3118,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Cloves, Cardamom, Shampoo. The person selects Cloves for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Cloves, Cardamom, Shampoo in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Simple Message",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with cumin, paprika, and turmeric. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with nutmeg, ginger powder, and chili flakes. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 18: A short reading",
+      "text": "Omar reads a recipe and lists cumin, paprika, and turmeric. At the shop, he also finds ginger powder and chili flakes. He chooses a small packet of each spice. Baking soda and baking powder are on a different shelf. He needs neither for this meal, so he leaves that section.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cumin"
+        "prompt": "During a routine the supermarket task, an adult compares Cumin, Paprika, Turmeric. The person selects Cumin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cumin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nutmeg"
+        "prompt": "During a routine the supermarket task, an adult compares Nutmeg, Ginger Powder, Chili Flakes. The person selects Nutmeg for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nutmeg",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vanilla Extract"
+        "prompt": "During a routine the supermarket task, an adult compares Vanilla Extract, Baking Soda, Baking Powder. The person selects Vanilla Extract for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Vanilla Extract",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brown Sugar"
+        "prompt": "During a routine the supermarket task, an adult compares Brown Sugar, Curry Powder, Cayenne. The person selects Brown Sugar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Brown Sugar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cloves"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Cumin"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Turmeric"
+        "prompt": "During a routine the supermarket task, an adult compares Cloves, Cardamom, Shampoo. The person selects Cloves for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cloves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -2906,6 +3169,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Vegetable Oil” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which three spices are on Omar's recipe list?",
+        "answer": "Cumin, paprika, and turmeric",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -2947,23 +3217,23 @@
       "فرشاة أسنان",
       "مزيل عرق",
       "شفرة حلاقة",
-      "نسيج",
+      "منديل ورقي",
       "غسول أو لوشن",
       "واقي شمس",
       "لاصقة جروح صغيرة",
       "حفاضات",
       "بلسم",
-      "غسيل جسم",
+      "غسول الجسم",
       "غسول فم",
-      "ينظف بالخيط أسنان",
-      "كرات القطن",
+      "خيط تنظيف الأسنان",
+      "كرات قطنية",
       "مشط"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 19 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3025,41 +3295,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Dental Floss, Cotton Balls, Comb. The person selects Dental Floss for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Dental Floss, Cotton Balls, Comb in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Notice-Style Text",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with toothpaste, toothbrush, and deodorant. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with razor, tissue, and lotion. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 19: A short reading",
+      "text": "Maya buys toothpaste, a toothbrush, and dental floss. She adds deodorant and sunscreen to her basket. She checks the conditioner bottle to make sure it is the one she wants. A comb is on the next shelf. She already has one at home, so she pays only for the items on her list.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toothpaste"
+        "prompt": "During a routine the supermarket task, an adult compares Toothpaste, Toothbrush, Deodorant. The person selects Toothpaste for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Toothpaste",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Razor"
+        "prompt": "During a routine the supermarket task, an adult compares Razor, Tissue, Lotion. The person selects Razor for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Razor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunscreen"
+        "prompt": "During a routine the supermarket task, an adult compares Sunscreen, Band-Aid, Diapers. The person selects Sunscreen for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sunscreen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conditioner"
+        "prompt": "During a routine the supermarket task, an adult compares Conditioner, Body Wash, Mouthwash. The person selects Conditioner for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Conditioner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dental Floss"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Toothpaste"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Deodorant"
+        "prompt": "During a routine the supermarket task, an adult compares Dental Floss, Cotton Balls, Comb. The person selects Dental Floss for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dental Floss",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3068,6 +3346,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Cumin” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya leave the comb?",
+        "answer": "She already has one at home",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -3105,8 +3390,8 @@
       "Crate"
     ],
     "targetWordsArabic": [
-      "مرطب الشفاه (زبدة الشفاه)",
-      "معقم اليدين (مطهر اليدين)",
+      "مرطب الشفاه",
+      "معقم اليدين",
       "فيتامينات",
       "دواء",
       "علبة معدنية",
@@ -3115,17 +3400,17 @@
       "مرطبان",
       "كيس",
       "عبوة كرتونية",
-      "أنبوب",
+      "عبوة أنبوبية",
       "غلاف",
       "طرد",
       "حاوية",
-      "صندوق"
+      "صندوق نقل"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 20 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3187,41 +3472,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Package, Container, Crate. The person selects Package for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Package, Container, Crate in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Short Description",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with lip balm, hand sanitizer, and vitamins. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with medicine, can, and bottle. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 20: A short reading",
+      "text": "Omar needs lip balm and hand sanitizer. He compares a small tube with a larger bottle and chooses the smaller size for his bag. He also buys a jar of jam and a box of tea. The cashier offers a bag, but Omar already has a reusable container for carrying his shopping.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lip Balm"
+        "prompt": "During a routine the supermarket task, an adult compares Lip Balm, Hand Sanitizer, Vitamins. The person selects Lip Balm for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lip Balm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Medicine"
+        "prompt": "During a routine the supermarket task, an adult compares Medicine, Can, Bottle. The person selects Medicine for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Medicine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Box"
+        "prompt": "During a routine the supermarket task, an adult compares Box, Jar, Bag. The person selects Box for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Box",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Carton"
+        "prompt": "During a routine the supermarket task, an adult compares Carton, Tube, Wrapper. The person selects Carton for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Carton",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Package"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Lip Balm"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Vitamins"
+        "prompt": "During a routine the supermarket task, an adult compares Package, Container, Crate. The person selects Package for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Package",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3230,6 +3523,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Toothpaste” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What size does Omar choose for his bag?",
+        "answer": "The smaller size",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -3275,19 +3575,19 @@
       "يدفع",
       "يسحب",
       "يزن",
-      "يمسح ضوئيا",
+      "يمسح الرمز ضوئيًا",
       "يدفع",
       "يفرغ الحمولة",
-      "سهم",
+      "يملأ الرفوف بالبضائع",
       "يختار",
       "يقارن",
-      "يصل إلى"
+      "يمد يده إلى"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 21 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3349,41 +3649,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Choose, Compare, Reach. The person selects Choose for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Choose, Compare, Reach in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with tray, bunch, and loaf. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with dozen, pouch, and push. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 21: A short reading",
+      "text": "Maya chooses a bunch of bananas and a loaf of bread. She asks for a dozen eggs. She uses the scale to weigh the fruit, then compares two prices. At the checkout, she unloads her basket, watches the cashier scan the items, and pays. She puts the eggs on top of the other shopping.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tray"
+        "prompt": "During a routine the supermarket task, an adult compares Tray, Bunch, Loaf. The person selects Tray for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tray",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dozen"
+        "prompt": "During a routine the supermarket task, an adult compares Dozen, Pouch, Push. The person selects Dozen for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dozen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pull"
+        "prompt": "During a routine the supermarket task, an adult compares Pull, Weigh, Scan. The person selects Pull for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pull",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pay"
+        "prompt": "During a routine the supermarket task, an adult compares Pay, Unload, Stock. The person selects Pay for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pay",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Choose"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Tray"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Loaf"
+        "prompt": "During a routine the supermarket task, an adult compares Choose, Compare, Reach. The person selects Choose for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Choose",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3392,6 +3700,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Lip Balm” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What quantity of eggs does Maya ask for?",
+        "answer": "A dozen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -3432,8 +3747,8 @@
       "يحمل",
       "يدفع عند صندوق المحاسبة",
       "ينتظر في الصف",
-      "يحمّل",
-      "يتصفح",
+      "يحمّل البضائع",
+      "يتصفح المعروضات",
       "عميل",
       "عامل تعبئة المشتريات",
       "موظف مخزون",
@@ -3448,8 +3763,8 @@
     "usage": {
       "goal": "Learn to use common the supermarket 22 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3511,41 +3826,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Security Guard, Delivery Driver, A Pound Of. The person selects Security Guard for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Security Guard, Delivery Driver, A Pound Of in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Simple Message",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with carry, check out, and wait in line. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with load, browse, and customer. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 22: A short reading",
+      "text": "Omar asks a stock clerk where to find bread. The baker shows him a fresh loaf, and the butcher weighs a pound of meat for him. Omar waits in line to check out. The bagger helps him pack the food. Outside, he loads the bags into his car and keeps the receipt.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Carry"
+        "prompt": "During a routine the supermarket task, an adult compares Carry, Check Out, Wait in Line. The person selects Carry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Carry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Load"
+        "prompt": "During a routine the supermarket task, an adult compares Load, Browse, Customer. The person selects Load for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Load",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bagger"
+        "prompt": "During a routine the supermarket task, an adult compares Bagger, Stock Clerk, Butcher. The person selects Bagger for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bagger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Baker"
+        "prompt": "During a routine the supermarket task, an adult compares Baker, Manager, Shopper. The person selects Baker for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Baker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Security Guard"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Carry"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Wait in Line"
+        "prompt": "During a routine the supermarket task, an adult compares Security Guard, Delivery Driver, A Pound Of. The person selects Security Guard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Security Guard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3554,6 +3877,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Tray” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who helps Omar pack the food?",
+        "answer": "The bagger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -3595,7 +3925,7 @@
       "حزمة من",
       "رأس من",
       "رغيف من",
-      "اثنا عشر",
+      "دزينة",
       "شريحة من",
       "قطعة من",
       "عبوة من",
@@ -3603,15 +3933,15 @@
       "باينت من",
       "قطعة على شكل عود من",
       "عضوي",
-      "خال من الغلوتين",
-      "خال من السكر",
+      "خالٍ من الغلوتين",
+      "خالٍ من السكر",
       "قليل الدسم"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 23 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3673,41 +4003,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Gluten-Free, Sugar-Free, Low-Fat. The person selects Gluten-Free for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Gluten-Free, Sugar-Free, Low-Fat in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Notice-Style Text",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with a gallon of, a bunch of, and a head of. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with a loaf of, a dozen, and a slice of. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 23: A short reading",
+      "text": "Maya's list includes a bunch of grapes, a head of lettuce, and a loaf of bread. She also needs a dozen eggs and a pack of crackers. She compares an organic product with another brand. A gluten-free loaf is for her guest. She checks the packaging carefully before choosing the right one.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "A Gallon Of"
+        "prompt": "During a routine the supermarket task, an adult compares A Gallon Of, A Bunch Of, A Head Of. The person selects A Gallon Of for the next step.\nWhich option does the person select for the next step?",
+        "answer": "A Gallon Of",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "A Loaf Of"
+        "prompt": "During a routine the supermarket task, an adult compares A Loaf Of, A Dozen, A Slice Of. The person selects A Loaf Of for the next step.\nWhich option does the person select for the next step?",
+        "answer": "A Loaf Of",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "A Piece Of"
+        "prompt": "During a routine the supermarket task, an adult compares A Piece Of, A Pack Of, A Handful Of. The person selects A Piece Of for the next step.\nWhich option does the person select for the next step?",
+        "answer": "A Piece Of",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "A Pint Of"
+        "prompt": "During a routine the supermarket task, an adult compares A Pint Of, A Stick Of, Organic. The person selects A Pint Of for the next step.\nWhich option does the person select for the next step?",
+        "answer": "A Pint Of",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gluten-Free"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "A Gallon Of"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "A Head Of"
+        "prompt": "During a routine the supermarket task, an adult compares Gluten-Free, Sugar-Free, Low-Fat. The person selects Gluten-Free for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gluten-Free",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3716,6 +4054,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Carry” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who is the gluten-free loaf for?",
+        "answer": "Maya's guest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -3754,26 +4099,26 @@
     ],
     "targetWordsArabic": [
       "طازج",
-      "جامد من الصدمة",
+      "مجمّد",
       "معروض بتخفيض",
-      "اشتر واحدا واحصل على الثاني مجانا",
-      "يفضل الاستهلاك قبل",
-      "حقائق التغذية",
-      "غير معدل وراثيا",
-      "نباتي صرف",
+      "اشترِ واحدًا واحصل على الثاني مجانًا",
+      "يفضّل الاستهلاك قبل",
+      "المعلومات الغذائية",
+      "غير معدل وراثيًا",
+      "نباتي بالكامل",
       "كم سعر هذا؟",
       "أين يمكنني أن أجد...؟",
       "ورقي أم بلاستيكي؟",
       "هل هذا عليه تخفيض؟",
-      "نقدا أم بالبطاقة؟",
+      "نقدًا أم بالبطاقة؟",
       "هل لديكم...؟",
       "هل يمكنني الحصول على كيس؟"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 24 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3835,41 +4180,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Cash or card?, Do you have...?, Can I get a bag?. The person selects Cash or card? for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Cash or card?, Do you have...?, Can I get a bag? in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Short Description",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with fresh, frozen, and on sale. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with buy 1 get 1 free, best before, and nutrition facts. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 24: A short reading",
+      "text": "Maya asks, 'How much is this?' The cashier points to the price and explains that it is on sale. Maya checks the nutrition facts and the best before date. At the checkout, the cashier asks, 'Cash or card?' Maya pays by card and asks, 'Can I get a bag?'",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fresh"
+        "prompt": "During a routine the supermarket task, an adult compares Fresh, Frozen, On Sale. The person selects Fresh for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fresh",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Buy 1 Get 1 Free"
+        "prompt": "During a routine the supermarket task, an adult compares Buy 1 Get 1 Free, Best Before, Nutrition Facts. The person selects Buy 1 Get 1 Free for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Buy 1 Get 1 Free",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Non-GMO"
+        "prompt": "During a routine the supermarket task, an adult compares Non-GMO, Vegan, How much is this?. The person selects Non-GMO for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Non-GMO",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Where can I find...?"
+        "prompt": "During a routine the supermarket task, an adult compares Where can I find...?, Paper or plastic?, Is this on sale?. The person selects Where can I find...? for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Where can I find...?",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cash or card?"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Fresh"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "On Sale"
+        "prompt": "During a routine the supermarket task, an adult compares Cash or card?, Do you have...?, Can I get a bag?. The person selects Cash or card? for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cash or card?",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3878,6 +4231,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “A Gallon Of” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "How does Maya pay?",
+        "answer": "By card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -3913,17 +4273,17 @@
       "أين الممر...؟",
       "هل هذا طازج؟",
       "هل يمكنني تذوق هذا؟",
-      "لدي قسيمة خصم",
+      "لديّ قسيمة خصم",
       "زنجبيل",
       "عربة",
       "سلامي",
-      "حمص"
+      "حمص بالطحينة"
     ],
     "usage": {
       "goal": "Learn to use common the supermarket 25 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the supermarket.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -3961,33 +4321,35 @@
           "imageBrief": "Photorealistic adult real-world scene in a the supermarket context illustrating this situation: During a routine the supermarket task, an adult compares Cart, Salami, Hummus. The person selects Cart for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Cart, Salami, Hummus in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Supermarket: Mini Dialogue",
-      "text": "Maya is in a situation connected to the supermarket. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with i need a refund, where is aisle...?, and is this fresh?. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with can i taste this?, i have a coupon, and ginger. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Supermarket 25: A short reading",
+      "text": "Omar tells the cashier, 'I have a coupon.' He also asks, 'Can I taste this?' about a sample of hummus. Later, he notices a damaged package and says, 'I need a refund.' The cashier checks the receipt. Omar then asks where to find ginger and takes his cart to the right aisle.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Supermarket. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "I need a refund"
+        "prompt": "During a routine the supermarket task, an adult compares I need a refund, Where is aisle...?, Is this fresh?. The person selects I need a refund for the next step.\nWhich option does the person select for the next step?",
+        "answer": "I need a refund",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Can I taste this?"
+        "prompt": "During a routine the supermarket task, an adult compares Can I taste this?, I have a coupon, Ginger. The person selects Can I taste this? for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Can I taste this?",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cart"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "I need a refund"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Is this fresh?"
+        "prompt": "During a routine the supermarket task, an adult compares Cart, Salami, Hummus. The person selects Cart for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -3996,6 +4358,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Fresh” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Omar ask for a refund?",
+        "answer": "He notices a damaged package",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

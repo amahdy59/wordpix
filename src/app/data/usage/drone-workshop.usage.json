@@ -27,21 +27,21 @@
       "Esc"
     ],
     "targetWordsArabic": [
-      "طائرة مسيرة رباعية المراوح",
-      "طائرة مسيرة سداسية المراوح",
-      "طائرة مسيرة ثابتة الجناح",
-      "طائرة مسيرة للسباقات",
-      "طائرة مسيرة بمنظور الشخص الأول (FPV)",
-      "طائرة مسيرة صغيرة جدا",
-      "طائرة مسيرة للتوصيل",
-      "طائرة مسيرة للمسح",
-      "طائرة مسيرة زراعية",
-      "مركبة مسيرة تحت الماء",
+      "طائرة مسيّرة رباعية المراوح",
+      "طائرة مسيّرة سداسية المراوح",
+      "طائرة مسيّرة ثابتة الجناح",
+      "طائرة مسيّرة للسباقات",
+      "طائرة مسيّرة بمنظور الشخص الأول (FPV)",
+      "طائرة مسيّرة صغيرة جدًا",
+      "طائرة مسيّرة للتوصيل",
+      "طائرة مسيّرة للمسح",
+      "طائرة مسيّرة زراعية",
+      "مركبة مسيّرة تحت الماء",
       "مروحة دافعة",
       "محرك",
       "إطار",
       "بطارية",
-      "وحدة تحكم إلكترونية في السرعة (ESC)"
+      "وحدة تحكّم إلكترونية في السرعة (ESC)"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Frame as the central item; include Frame, Battery, and Esc naturally where visually appropriate, but make the real-world use of Frame the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Drone Workshop",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Quadcopter"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Quadcopter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fpv Drone"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fpv Drone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Agricultural Drone"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Agricultural Drone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frame"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Frame",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,21 +201,21 @@
       "Return To Home"
     ],
     "targetWordsArabic": [
-      "متحكم الطيران",
+      "متحكّم الطيران",
       "وحدة نظام تحديد المواقع",
       "هوائي",
       "كاميرا",
       "مثبت كاميرا",
       "جهاز إرسال",
       "جهاز استقبال",
-      "مصطلح تقني أو أداة يسمى «جويستيك»",
-      "مصطلح تقني أو أداة يسمى «ثروتتلي»",
-      "مصطلح تقني أو أداة يسمى «ياو»",
-      "حدة الصوت",
-      "مصطلح تقني أو أداة يسمى «رولل»",
-      "سطح يسمى «تريم»",
+      "عصا تحكم",
+      "متحكم قدرة المحرك",
+      "دوران حول المحور الرأسي",
+      "حدّة الصوت",
+      "ميل حول المحور الطولي",
+      "ضبط اتزان الطيران",
       "وضع أمان تلقائي",
-      "مصطلح تقني أو أداة يسمى «ريتورن تو هومي»"
+      "العودة التلقائية إلى نقطة الانطلاق"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Trim as the central item; include Trim, Failsafe, and Return To Home naturally where visually appropriate, but make the real-world use of Trim the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Drone Workshop",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flight Controller"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Flight Controller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gimbal"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Gimbal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Throttle"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Throttle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trim"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -349,19 +375,19 @@
       "Geofence"
     ],
     "targetWordsArabic": [
-      "أداة يسمى «سولديرينج يرون»",
+      "كاوية لحام",
       "ملتيميتر",
       "مفك براغي",
-      "مصطلح تقني أو أداة يسمى «هيكس ورينتش»",
+      "مفتاح سداسي",
       "كماشة",
-      "مصطلح تقني أو أداة يسمى «هيات شرينك»",
+      "أنبوب عازل يتقلص بالحرارة",
       "رباط بلاستيكي",
       "لاصق لولبي",
       "شاحن توازن",
-      "مصطلح تقني أو أداة يسمى «بروب بالانكير»",
+      "أداة موازنة المروحة",
       "برمجيات ثابتة",
-      "مصطلح تقني أو أداة يسمى «جرووند ستاتيون»",
-      "مصطلح تقني أو أداة يسمى «فليغت لوج»",
+      "محطة تحكم أرضية",
+      "سجل طيران",
       "نقطة مسار",
       "سياج جغرافي"
     ],
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Flight Log as the central item; include Flight Log, Waypoint, and Geofence naturally where visually appropriate, but make the real-world use of Flight Log the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Drone Workshop",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Soldering Iron"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Soldering Iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pliers"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pliers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balance Charger"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Balance Charger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flight Log"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Flight Log",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -511,15 +550,15 @@
     ],
     "targetWordsArabic": [
       "قياس عن بعد",
-      "مصطلح تقني أو أداة يسمى «بيد تونينج»",
+      "ضبط معاملات متحكم بي آي دي",
       "معايرة",
       "محاكي",
       "رسم خرائط",
       "تسجيل",
       "ترخيص",
-      "مصطلح تقني أو أداة يسمى «نو فلي زوني»",
-      "مصطلح تقني أو أداة يسمى «فيسوال ليني وف سيغت»",
-      "مصطلح تقني أو أداة يسمى «التيتودي ليميت»",
+      "منطقة حظر طيران",
+      "رؤية الطائرة مباشرة بالعين",
+      "حد ارتفاع الطيران",
       "فحص ما قبل الطيران",
       "مراقب",
       "تأمين",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Insurance through a realistic adult task; include Insurance, Airspace, and Faa naturally where visually appropriate, but make the real-world use of Insurance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Drone Workshop",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Telemetry"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Telemetry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mapping"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Mapping",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Visual Line Of Sight"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Visual Line Of Sight",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Insurance"
+        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Insurance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

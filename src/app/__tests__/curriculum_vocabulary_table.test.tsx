@@ -69,7 +69,7 @@ describe("CurriculumVocabularyTable", () => {
     expect(
       screen.getAllByText("your function or position in an organisation").length
     ).toBeGreaterThan(0);
-    expect(screen.getAllByText(`"What's your role in the project?"`).length).toBeGreaterThan(0);
+    expect(screen.getAllByText("What's your role in the project?").length).toBeGreaterThan(0);
     expect(screen.getAllByText("work with clients").length).toBeGreaterThan(0);
   });
 

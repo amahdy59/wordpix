@@ -27,14 +27,14 @@
       "Trimmer"
     ],
     "targetWordsArabic": [
-      "يقطع طنين",
-      "تدرج قص الشعر",
-      "تدرج تدريجي",
-      "قصة شعر قصيرة جدا",
+      "قصة شعر قصيرة جدًا بالماكينة",
+      "تدرّج قص الشعر",
+      "تدرّج تدريجي",
+      "قصة شعر قصيرة جدًا",
       "تسريحة بومبادور",
       "قصة أندركت",
-      "قصة فلات توب",
-      "قصة مولت",
+      "قصة شعر مسطحة من الأعلى",
+      "قصة مولِت",
       "قصة بوب",
       "طبقات الشعر",
       "ماكينة حلاقة",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the barbershop context illustrating this situation: During a routine the barbershop task, an adult compares Comb, Razor, Trimmer. The person selects Comb for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the barbershop scene showing lesson-related items or actions including Comb, Razor, Trimmer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Barbershop: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Buzz Cut"
+        "prompt": "During a routine the barbershop task, an adult compares Buzz Cut, Fade, Taper. The person selects Buzz Cut for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Buzz Cut",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crew Cut"
+        "prompt": "During a routine the barbershop task, an adult compares Crew Cut, Pompadour, Undercut. The person selects Crew Cut for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Crew Cut",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flat Top"
+        "prompt": "During a routine the barbershop task, an adult compares Flat Top, Mullet, Bob. The person selects Flat Top for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flat Top",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Layers"
+        "prompt": "During a routine the barbershop task, an adult compares Layers, Clippers, Scissors. The person selects Layers for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Layers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Comb"
+        "prompt": "During a routine the barbershop task, an adult compares Comb, Razor, Trimmer. The person selects Comb for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Comb",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -194,20 +210,20 @@
     ],
     "targetWordsArabic": [
       "فرشاة حلاقة",
-      "بخاخ (قارورة رش)",
+      "زجاجة رش",
       "رداء حلاقة",
       "مرآة",
       "سير شحذ",
       "قصة شعر",
       "حلاقة",
-      "تشذيب اللحية",
-      "تحديد حواف الشعر واللحية",
+      "تهذيب اللحية",
+      "تحديد حواف الشعر",
       "منشفة دافئة",
       "شامبو",
       "ترطيب الشعر",
       "تصفيف",
       "صبغ",
-      "خصل ملونة"
+      "خصلات شعر أفتح"
     ],
     "usage": {
       "goal": "Learn to use the barbershop 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the barbershop context illustrating this situation: During a routine the barbershop task, an adult compares Styling, Coloring, Highlights. The person selects Styling for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the barbershop scene showing lesson-related items or actions including Styling, Coloring, Highlights in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Barbershop: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shaving Brush"
+        "prompt": "During a routine the barbershop task, an adult compares Shaving Brush, Spray Bottle, Cape. The person selects Shaving Brush for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shaving Brush",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
+        "prompt": "During a routine the barbershop task, an adult compares Mirror, Strop, Haircut. The person selects Mirror for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shave"
+        "prompt": "During a routine the barbershop task, an adult compares Shave, Beard Trim, Line Up. The person selects Shave for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hot Towel"
+        "prompt": "During a routine the barbershop task, an adult compares Hot Towel, Shampoo, Conditioning. The person selects Hot Towel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hot Towel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Styling"
+        "prompt": "During a routine the barbershop task, an adult compares Styling, Coloring, Highlights. The person selects Styling for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Styling",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -365,11 +397,11 @@
       "موس شعر",
       "مثبت شعر",
       "مستحضر بعد الحلاقة",
-      "منشط",
-      "زيت",
-      "كريمة",
+      "مستحضر تونك للشعر",
+      "زيت للعناية بالشعر أو اللحية",
+      "كريم للعناية",
       "بودرة",
-      "كرسي حلاق",
+      "كرسي حلاقة",
       "مسند قدم",
       "مسند رأس",
       "منضدة",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the barbershop context illustrating this situation: During a routine the barbershop task, an adult compares Headrest, Counter, Shelf. The person selects Headrest for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the barbershop scene showing lesson-related items or actions including Headrest, Counter, Shelf in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Barbershop: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gel"
+        "prompt": "During a routine the barbershop task, an adult compares Gel, Pomade, Wax. The person selects Gel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mousse"
+        "prompt": "During a routine the barbershop task, an adult compares Mousse, Hairspray, Aftershave. The person selects Mousse for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mousse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tonic"
+        "prompt": "During a routine the barbershop task, an adult compares Tonic, Oil, Cream. The person selects Tonic for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tonic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Powder"
+        "prompt": "During a routine the barbershop task, an adult compares Powder, Barber Chair, Footrest. The person selects Powder for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Powder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Headrest"
+        "prompt": "During a routine the barbershop task, an adult compares Headrest, Counter, Shelf. The person selects Headrest for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Headrest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -527,14 +575,14 @@
     "targetWordsArabic": [
       "حوض",
       "جهاز تعقيم",
-      "عمود",
+      "عمود الحلاق المخطط",
       "مقعد انتظار",
       "حامل مجلات",
       "حلاق",
       "عميل",
       "متدرب",
       "موظف استقبال",
-      "دون موعد مسبق",
+      "زبون دون موعد مسبق",
       "موعد",
       "إكرامية",
       "محادثة",
@@ -607,7 +655,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the barbershop context illustrating this situation: During a routine the barbershop task, an adult compares Conversation, Loyalty, Tradition. The person selects Conversation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the barbershop scene showing lesson-related items or actions including Conversation, Loyalty, Tradition in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Barbershop: Tips/Notice",
@@ -616,24 +665,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sink"
+        "prompt": "During a routine the barbershop task, an adult compares Sink, Sterilizer, Pole. The person selects Sink for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sink",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Waiting Bench"
+        "prompt": "During a routine the barbershop task, an adult compares Waiting Bench, Magazine Rack, Barber. The person selects Waiting Bench for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Waiting Bench",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Client"
+        "prompt": "During a routine the barbershop task, an adult compares Client, Apprentice, Receptionist. The person selects Client for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Client",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Walk In"
+        "prompt": "During a routine the barbershop task, an adult compares Walk In, Appointment, Tip. The person selects Walk In for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Walk In",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conversation"
+        "prompt": "During a routine the barbershop task, an adult compares Conversation, Loyalty, Tradition. The person selects Conversation for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Conversation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

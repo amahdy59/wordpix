@@ -6,7 +6,7 @@ import { useAudio } from "../../shared/useAudio";
 import { useLearner } from "../../context/LearnerContext";
 import { HADITH_STAGE_IDS, HADITH_LESSONS, getHadithLesson } from "./hadithCurriculum";
 import { FIGMA_HADITH_LESSONS } from "./figmaHadithCatalog";
-import { getHadithAudioAssets } from "./hadithAudioManifest";
+import { getHadithAudioAssets, getHadithRecordedSource } from "./hadithAudioManifest";
 import { HadithPractice } from "./HadithPractice";
 import { getHadithExerciseSet } from "./hadithExerciseCatalog";
 import type { HadithConfidence } from "./hadithProgress";
@@ -14,7 +14,6 @@ import { getParsedHadithStages } from "./hadithLessonContent";
 import { HadithStageStepper } from "./HadithStageStepper";
 import { HadithReadListenStage } from "./stages/HadithReadListenStage";
 import { HadithVocabularyStage } from "./stages/HadithVocabularyStage";
-import { HadithDiscussionStage } from "./stages/HadithDiscussionStage";
 import { HadithReviewStage } from "./stages/HadithReviewStage";
 import { HadithWarmupStage } from "./stages/HadithWarmupStage";
 import { HadithOverviewSummary } from "./stages/HadithOverviewStage";
@@ -52,7 +51,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
   const [practiceScore, setPracticeScore] = useState(savedProgress?.bestScorePercent ?? 0);
 
   const stage = HADITH_STAGE_IDS[stageIndex];
-  const liveAnnouncement = `Step ${stageIndex + 1} of ${HADITH_STAGE_IDS.length}: ${t(
+  const liveAnnouncement = `${t("hadith.stepOfTotal", { current: stageIndex + 1, total: HADITH_STAGE_IDS.length })}: ${t(
     `hadith.stageLabels.${stage}`
   )}`;
   const parsedStages = useMemo(() => getParsedHadithStages(lesson), [lesson]);
@@ -129,9 +128,13 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
       return;
     }
 
-    // On final stage ("check-review"), confidence is required
+    // On final stage ("review"), confidence is required
     if (!confidence) {
       setConfidenceError(true);
+      const section = document.getElementById("confidence-section");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      section?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+      section?.focus();
       return;
     }
 
@@ -150,6 +153,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     setStageIndex(0);
     setConfidence(null);
     setConfidenceError(false);
+    setPracticeScore(0);
   };
 
   const playTrack = (track: "ar" | "en" | "en-slow") => {
@@ -162,16 +166,22 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     }
 
     setActiveTrack(track);
+    const recorded = getHadithRecordedSource(lesson.id);
     if (track === "ar") {
-      void normalAudio.speak(lesson.source.arabic, "ar-SA", audioAssets?.arabic.objectKey);
+      void normalAudio.speak(lesson.source.arabic, "ar-SA", audioAssets?.arabic.objectKey, {
+        synthesisOnly: recorded?.arabic !== lesson.source.arabic,
+      });
     } else if (track === "en") {
       void normalAudio.speak(
         lesson.source.translation,
         "en-US",
-        audioAssets?.translation.objectKey
+        audioAssets?.translation.objectKey,
+        { synthesisOnly: recorded?.translation !== lesson.source.translation }
       );
     } else {
-      void slowAudio.speak(lesson.source.translation, "en-US", audioAssets?.translation.objectKey);
+      void slowAudio.speak(lesson.source.translation, "en-US", audioAssets?.translation.objectKey, {
+        synthesisOnly: recorded?.translation !== lesson.source.translation,
+      });
     }
   };
 
@@ -185,7 +195,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
   return (
     <div
-      className="min-h-dvh w-full overflow-y-auto bg-background pb-24"
+      className="min-h-dvh w-full overflow-y-auto scroll-pb-40 bg-background sm:scroll-pb-24"
       aria-labelledby="hadith-title"
     >
       <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
@@ -261,7 +271,13 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         </header>
 
         {/* Stage Content Container */}
-        <div ref={stageContainerRef} className="w-full">
+        <div
+          ref={stageContainerRef}
+          id="hadith-stage-panel"
+          role="tabpanel"
+          aria-labelledby={`hadith-tab-${stage}`}
+          className="w-full"
+        >
           {stage === "read-listen" && (
             <div className="space-y-6">
               <HadithWarmupStage
@@ -289,17 +305,12 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             <HadithPractice exerciseSet={exerciseSet} onScoreChange={setPracticeScore} />
           )}
 
-          {stage === "speak" && (
-            <HadithDiscussionStage
-              lessonTitle={lesson.title}
-              translation={lesson.source.translation}
-              reviewItems={parsedStages.review}
-            />
-          )}
-
-          {stage === "check-review" && (
+          {stage === "review" && (
             <HadithReviewStage
               reviewItems={parsedStages.review}
+              speakTask={parsedStages.speak}
+              lessonTitle={lesson.title}
+              translation={lesson.source.translation}
               confidence={confidence}
               practiceScore={practiceScore}
               onSelectConfidence={(c) => {
@@ -311,42 +322,44 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
           )}
         </div>
 
-        {/* Footer Navigation Bar */}
-        <div className="flex flex-col-reverse justify-between gap-3 pt-2 sm:flex-row">
-          <div className="flex gap-2">
-            <button
-              type="button"
-              onClick={goBack}
-              className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-border bg-card px-5 font-black text-foreground hover:bg-muted active:scale-[0.98] ${focusRing}`}
-            >
-              <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-              <span>{t("hadith.previous") || "Previous"}</span>
-            </button>
+        {/* Sticky Accessible Footer Navigation Bar */}
+        <div className="sticky bottom-0 z-30 -mx-4 mt-8 border-t border-border/80 bg-background/95 px-4 py-3.5 backdrop-blur-md shadow-wp-md sm:-mx-8 sm:px-8">
+          <div className="wp-container-reading flex flex-col-reverse justify-between gap-3 sm:flex-row sm:items-center">
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={goBack}
+                className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-border bg-card px-5 font-black text-foreground hover:bg-muted active:scale-[0.98] ${focusRing}`}
+              >
+                <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+                <span>{t("hadith.previous") || "Previous"}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={reset}
+                className={`inline-flex min-h-12 items-center justify-center gap-1.5 rounded-2xl px-4 font-bold text-muted-foreground hover:bg-muted hover:text-foreground active:scale-[0.98] ${focusRing}`}
+              >
+                <RotateCcw className="size-4" aria-hidden />
+                <span className="text-sm">{t("hadith.resetLesson") || "Reset"}</span>
+              </button>
+            </div>
 
             <button
               type="button"
-              onClick={reset}
-              className={`inline-flex min-h-12 items-center justify-center gap-1.5 rounded-2xl px-4 font-bold text-muted-foreground hover:bg-muted hover:text-foreground active:scale-[0.98] ${focusRing}`}
+              onClick={goNext}
+              className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-7 font-black text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] ${focusRing}`}
             >
-              <RotateCcw className="size-4" aria-hidden />
-              <span className="text-sm">{t("hadith.resetLesson") || "Reset"}</span>
+              <span>
+                {stageIndex === HADITH_STAGE_IDS.length - 1
+                  ? lesson.number < HADITH_LESSONS.length
+                    ? t("hadith.nextLesson") || "Next Hadith lesson"
+                    : t("hadith.finishLesson") || "Finish lesson"
+                  : t("hadith.continue") || "Continue"}
+              </span>
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </button>
           </div>
-
-          <button
-            type="button"
-            onClick={goNext}
-            className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-6 font-black text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] ${focusRing}`}
-          >
-            <span>
-              {stageIndex === HADITH_STAGE_IDS.length - 1
-                ? lesson.number < HADITH_LESSONS.length
-                  ? t("hadith.nextLesson") || "Next Hadith lesson"
-                  : t("hadith.finishLesson") || "Finish lesson"
-                : t("hadith.continue") || "Continue"}
-            </span>
-            <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-          </button>
         </div>
 
         {/* Live Region for Screen Reader Stage Announcements */}

@@ -27,20 +27,20 @@
       "Berry Bush"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «واك»",
-      "شجرة يسمى «مابلي»",
-      "شجرة يسمى «بيرتش»",
-      "كائن أو عنصر طبيعي يسمى «بيني»",
-      "شجرة يسمى «ويللوو»",
-      "شجرة يسمى «كيدار»",
-      "شجرة يسمى «يلم»",
-      "شجرة يسمى «ريدووود»",
-      "شجرة يسمى «بييتش»",
-      "كائن أو عنصر طبيعي يسمى «سبروكي»",
+      "بلوط",
+      "قيقب",
+      "بتولا",
+      "صنوبر",
+      "صفصاف",
+      "أرز",
+      "دردار",
+      "سيكويا",
+      "زان",
+      "تنوب",
       "سرخس",
       "طحلب بري",
-      "عضو يسمى «موشرووم»",
-      "نبات يسمى «يفي»",
+      "فطر",
+      "لبلاب",
       "شجيرة توت"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Mushroom as the central item; include Mushroom, Ivy, and Berry Bush naturally where visually appropriate, but make the real-world use of Mushroom the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Forest",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oak"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak, Maple, Birch, and Pine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Oak",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Willow"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Willow, Cedar, Elm, and Redwood and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Willow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beech"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beech, Spruce, Fern, and Moss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Beech",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mushroom"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Ivy, and Berry Bush and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mushroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,20 +202,20 @@
     ],
     "targetWordsArabic": [
       "زهرة برية",
-      "كائن أو عنصر طبيعي يسمى «ليتشين»",
+      "أشنة",
       "كرمة متسلقة",
-      "شجرة يسمى «اكورن»",
-      "شجرة يسمى «بينيكوني»",
-      "كائن أو عنصر طبيعي يسمى «ديير»",
-      "كائن أو عنصر طبيعي يسمى «سكيرريل»",
+      "ثمرة بلوط",
+      "مخروط صنوبر",
+      "أيل",
+      "سنجاب",
       "أرنب",
-      "كائن أو عنصر طبيعي يسمى «فوكس»",
-      "كائن أو عنصر طبيعي يسمى «بيار»",
+      "ثعلب",
+      "دب",
       "بومة",
       "نقار الخشب",
-      "كائن أو عنصر طبيعي يسمى «راككوون»",
-      "كائن أو عنصر طبيعي يسمى «هيدجيهوج»",
-      "كائن أو عنصر طبيعي يسمى «بادجير»"
+      "راكون",
+      "قنفذ",
+      "غرير"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Raccoon as the central item; include Raccoon, Hedgehog, and Badger naturally where visually appropriate, but make the real-world use of Raccoon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Forest",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wildflower"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Lichen, Vine, and Acorn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wildflower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pinecone"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinecone, Deer, Squirrel, and Rabbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pinecone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fox"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fox, Bear, Owl, and Woodpecker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fox",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Raccoon"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Raccoon, Hedgehog, and Badger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Raccoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -357,13 +383,13 @@
       "عنكبوت",
       "يرقة",
       "دعسوقة",
-      "حشرة يسمى «بيي»",
-      "حشرة يسمى «موث»",
+      "نحلة",
+      "عثة",
       "مسار",
       "جدول",
       "فسحة في الغابة",
-      "كائن أو عنصر طبيعي يسمى «لوج»",
-      "كائن أو عنصر طبيعي يسمى «ستومب»"
+      "جذع شجرة مقطوع",
+      "جذع باقٍ بعد القطع"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult illustrating Clearing through a realistic adult task; include Clearing, Log, and Stump naturally where visually appropriate, but make the real-world use of Clearing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Forest",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Butterfly"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, Ant, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Butterfly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dragonfly"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Spider, Caterpillar, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dragonfly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bee"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bee, Moth, Trail, and Stream and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clearing"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clearing, Log, and Stump and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Clearing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -510,21 +549,21 @@
       "Icicle"
     ],
     "targetWordsArabic": [
-      "مظلة",
-      "شجرة يسمى «ونديرجرووث»",
+      "مظلّة",
+      "نباتات أرضية كثيفة",
       "قوس القدم",
       "شلال",
-      "كائن أو عنصر طبيعي يسمى «بوند»",
+      "بركة",
       "إزهار الربيع",
       "خضرة الصيف",
       "أوراق الخريف",
       "ثلوج الشتاء",
       "عش طائر",
       "هجرة",
-      "كائن أو عنصر طبيعي يسمى «هيبيرناتيون»",
-      "نبات يسمى «سييدلينج»",
+      "سبات شتوي",
+      "شتلة",
       "ورقة متساقطة",
-      "سطح يسمى «يكيكلي»"
+      "كتلة جليدية متدلية"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult illustrating Seedling through a realistic adult task; include Seedling, Fallen Leaf, and Icicle naturally where visually appropriate, but make the real-world use of Seedling the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Forest",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Canopy"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canopy, Undergrowth, Bridge, and Waterfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Canopy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pond"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pond, Spring Bloom, Summer Green, and Autumn Leaves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pond",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Winter Snow"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Winter Snow, Bird Nest, Migration, and Hibernation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Winter Snow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seedling"
+        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seedling, Fallen Leaf, and Icicle and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Seedling",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

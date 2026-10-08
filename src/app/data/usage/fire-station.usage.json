@@ -27,21 +27,21 @@
       "helicopter"
     ],
     "targetWordsArabic": [
-      "جزء يسمى «فيريفيغتير»",
+      "رجل إطفاء",
       "رئيس الإطفاء",
       "نقيب إطفاء",
       "متطوع",
       "فريق إنقاذ",
       "مفتش حرائق",
-      "موظف اتصالات",
-      "شخص يسمى «باراميديك»",
+      "منسق استجابة للطوارئ",
+      "مسعف",
       "محرك حريق",
       "شاحنة حريق",
-      "شاحنة سلم",
-      "مركبة يسمى «امبولانكي»",
+      "شاحنة سلّم",
+      "سيارة إسعاف",
       "مركبة إنقاذ",
       "صهريج مياه",
-      "طائرة يسمى «هيليكوبتير»"
+      "مروحية"
     ],
     "usage": {
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the rescue vehicle as the central item; include rescue vehicle, water tanker, and helicopter naturally where visually appropriate, but make the real-world use of rescue vehicle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Fire Station: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "firefighter"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare firefighter, fire chief, fire captain, and volunteer and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "firefighter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "rescue team"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rescue team, fire inspector, dispatcher, and paramedic and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "rescue team",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fire engine"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire engine, fire truck, ladder truck, and ambulance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fire engine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "rescue vehicle"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rescue vehicle, water tanker, and helicopter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "rescue vehicle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,18 +202,18 @@
     ],
     "targetWordsArabic": [
       "قارب إطفاء",
-      "مكان يسمى «فيري هوسي»",
-      "فوهة",
-      "جهاز يسمى «فيري يكستينجويشير»",
-      "سلم",
-      "أداة يسمى «اكسي»",
+      "خرطوم إطفاء",
+      "فُوّهة",
+      "طفاية حريق",
+      "سلّم",
+      "فأس",
       "أداة إطفاء طويلة بخطاف",
       "صنبور إطفاء",
-      "جهاز يسمى «برياثينج ابباراتوس»",
+      "جهاز تنفس مستقل",
       "أسطوانة أكسجين",
       "كاميرا حرارية",
       "إذاعة",
-      "طائر يسمى «سيرين»",
+      "صفارة إنذار",
       "خوذة",
       "سترة إطفاء واقية"
     ],
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the siren as the central item; include siren, helmet, and turnout coat naturally where visually appropriate, but make the real-world use of siren the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: Fire Station",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fire boat"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire boat, fire hose, nozzle, and fire extinguisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fire boat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ladder"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ladder, axe, pike pole, and hydrant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ladder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "breathing apparatus"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare breathing apparatus, oxygen tank, thermal camera, and radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "breathing apparatus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "siren"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare siren, helmet, and turnout coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "siren",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -351,13 +377,13 @@
     "targetWordsArabic": [
       "أحذية إطفاء",
       "قفازات",
-      "قناع وجه واق",
-      "واق للعين",
-      "حمالات",
+      "قناع وجه واقٍ",
+      "واقٍ للعين",
+      "حمالات بنطال",
       "بدلة مقاومة للحريق",
       "حريق",
-      "يدخن الطعام",
-      "مادة يسمى «فلاميس»",
+      "يدخّن الطعام",
+      "ألسنة لهب",
       "شرارة",
       "جمرة",
       "انفجار",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the alarm as the central item; include alarm, evacuation, and rescue naturally where visually appropriate, but make the real-world use of alarm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Fire Station",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "fire boots"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire boots, gloves, face mask, and visor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fire boots",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "suspenders"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare suspenders, fire-resistant suit, fire, and smoke and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "suspenders",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "flames"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flames, spark, ember, and explosion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "flames",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "alarm"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare alarm, evacuation, and rescue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "alarm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -509,8 +548,8 @@
     ],
     "targetWordsArabic": [
       "مخرج طوارئ",
-      "مبنى يسمى «فيري يسكابي»",
-      "نبات يسمى «سبرينكلير»",
+      "سلم هروب من الحريق",
+      "رشاش إطفاء",
       "حظيرة مركبات الإطفاء",
       "أماكن نوم",
       "مطبخ",
@@ -566,7 +605,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "flag",
+          "targetWords": ["flag"],
           "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flag and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -576,7 +615,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the flag as the central item; include flag, emergency exit, and fire escape naturally where visually appropriate, but make the real-world use of flag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Fire Station: Practical Information",
@@ -585,20 +625,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "emergency exit"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare emergency exit, fire escape, sprinkler, and garage bay and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "emergency exit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sleeping quarters"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sleeping quarters, kitchen, pole, and alarm bell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "sleeping quarters",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "training tower"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare training tower, locker, control room, and meeting room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "training tower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "flag"
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "flag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

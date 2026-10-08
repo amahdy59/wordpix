@@ -29,18 +29,18 @@
     "targetWordsArabic": [
       "شركة ناشئة",
       "مؤسس",
-      "شخص يسمى «كو-فووندير»",
-      "الرئيس التنفيذي",
-      "عضو يسمى «كتو»",
+      "مؤسس مشارك",
+      "رئيس تنفيذي",
+      "مدير تقني",
       "منتج أولي قابل للاستخدام",
       "عرض تقديمي للمشروع",
-      "مخطط أعمال",
-      "عضو يسمى «ميسسيون ستاتيمينت»",
+      "خطة عمل",
+      "بيان رسالة الشركة",
       "الرؤية",
       "جولة تمويل أولية",
-      "جزء يسمى «سيرييس ا»",
-      "شخص يسمى «انجيل ينفيستور»",
-      "رأس مال مخاطر",
+      "جولة تمويل من الفئة أ",
+      "مستثمر فردي في شركة ناشئة",
+      "رأس مال استثماري للشركات الناشئة",
       "تمويل جماعي"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Angel Investor as the central item; include Angel Investor, Venture Capital, and Crowdfunding naturally where visually appropriate, but make the real-world use of Angel Investor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Startup Culture",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Startup"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Startup, Founder, Co-Founder, and CEO and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Startup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "CTO"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare CTO, MVP, Pitch Deck, and Business Plan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "CTO",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mission Statement"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mission Statement, Vision, Seed Round, and Series A and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Mission Statement",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Angel Investor"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Angel Investor, Venture Capital, and Crowdfunding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Angel Investor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,20 +201,20 @@
       "Burn Rate"
     ],
     "targetWordsArabic": [
-      "يمول ذاتيا",
-      "تقييم الشركة",
-      "حقوق ملكية",
-      "تخفيف الملكية",
+      "يمول المشروع بموارده الذاتية",
+      "تقييم قيمة الشركة",
+      "حصة ملكية",
+      "انخفاض نسبة الملكية بسبب إصدار حصص جديدة",
       "ورقة الشروط",
-      "عظم يسمى «تراكتيون»",
+      "مؤشرات نمو وإقبال على المنتج",
       "اكتساب المستخدمين",
       "الاحتفاظ بالعملاء",
       "معدل فقد العملاء",
       "أساليب نمو تجريبية سريعة",
       "ملاءمة المنتج للسوق",
-      "يغير الاتجاه الاستراتيجي",
-      "مقياس رسم",
-      "منصة عرض",
+      "يغير توجه المشروع",
+      "يوسّع نطاق الشركة",
+      "المدة المتبقية قبل نفاد التمويل",
       "معدل استهلاك النقد"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Scale as the central item; include Scale, Runway, and Burn Rate naturally where visually appropriate, but make the real-world use of Scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Startup Culture",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bootstrap"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bootstrap, Valuation, Equity, and Dilution and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Bootstrap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Term Sheet"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Term Sheet, Traction, User Acquisition, and Retention and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Term Sheet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Churn Rate"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Churn Rate, Growth Hacking, Product-Market Fit, and Pivot and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Churn Rate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scale"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Runway, and Burn Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -344,16 +370,16 @@
       "Unicorn"
     ],
     "targetWordsArabic": [
-      "يحدث تغييرا جذريا",
-      "يكرر التحسين",
-      "يميل",
-      "مرن",
-      "يعدو بسرعة",
-      "جزء يسمى «ستاندوب»",
-      "اجتماع مراجعة لاحقة",
+      "يغير طريقة عمل السوق جذريًا",
+      "يحسن المنتج عبر دورات متكررة",
+      "قائم على تقليل الهدر واختبار الافتراضات",
+      "مرن وقائم على تطوير تدريجي",
+      "دورة تطوير قصيرة",
+      "اجتماع متابعة يومي قصير",
+      "اجتماع مراجعة العمل السابق",
       "الأهداف والنتائج الرئيسية (OKR)",
-      "مؤشر توجيهي رئيسي",
-      "شركة ناشئة أحادية القرن"
+      "مؤشر رئيسي يوجه نمو الشركة",
+      "شركة ناشئة خاصة قيمتها مليار دولار أو أكثر"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the North Star as the central item; include North Star, Unicorn, and Disrupt naturally where visually appropriate, but make the real-world use of North Star the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Startup Culture",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Disrupt"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Disrupt, Iterate, Lean, and Agile and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Disrupt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sprint"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sprint, Standup, Retrospective, and OKR and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sprint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "North Star"
+        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare North Star, and Unicorn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "North Star",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

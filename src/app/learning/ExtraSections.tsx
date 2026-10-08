@@ -1,9 +1,10 @@
 import { useState } from "react";
 import type { UnitLearningMaterials, RewriteExercise, MatchingExercise } from "./types";
 import type { UnitStudyProgress } from "./study/types";
-import { Select } from "../shared/Select";
 import { useI18n } from "../context/I18nContext";
 import { QuizQuestionCard } from "../shared/QuizQuestionCard";
+import { CurriculumQuizEngine } from "../shared/CurriculumQuizEngine";
+import type { MultipleChoiceExercise } from "./types";
 
 const CARD = "bg-card rounded-3xl border border-border p-5 sm:p-6 shadow-xs";
 
@@ -184,11 +185,7 @@ export function CollocationsSection({ materials }: { materials: UnitLearningMate
               {t("learningMaterials.collocationsQuizDesc")}
             </p>
           </div>
-          <div className="space-y-4">
-            {materials.collocationsQuiz.map((q, i) => (
-              <MultipleChoice key={q.id} index={i} {...q} />
-            ))}
-          </div>
+          <FocusedQuestions key={materials.unitId} questions={materials.collocationsQuiz} />
         </section>
       )}
     </div>
@@ -266,11 +263,7 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
               {t("learningMaterials.multipleChoiceDesc")}
             </p>
           </div>
-          <div className="space-y-4">
-            {ex.multipleChoice.map((q, i) => (
-              <MultipleChoice key={q.id} index={i} {...q} />
-            ))}
-          </div>
+          <FocusedQuestions key={materials.unitId} questions={ex.multipleChoice} />
         </section>
       )}
 
@@ -291,62 +284,83 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
   );
 }
 
-function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] }) {
+function RewriteAnswer({
+  answered,
+  currentAnswer,
+  onAnswer,
+  answer,
+  label,
+}: {
+  answered: boolean;
+  currentAnswer?: string;
+  onAnswer: (value: string) => void;
+  answer: string;
+  label: string;
+}) {
   const { t } = useI18n();
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [checked, setChecked] = useState(false);
-  const normalise = (val: string) =>
-    val
+  const [value, setValue] = useState(currentAnswer ?? "");
+  const normalize = (text: string) =>
+    text
+      .normalize("NFKC")
       .trim()
       .toLowerCase()
-      .replace(/[^\w\s]/gi, "");
-
+      .replace(/[^\p{L}\p{N}\s]/gu, "")
+      .replace(/\s+/gu, " ");
   return (
-    <div className="space-y-4">
-      {exercises.map((ex, i) => {
-        const val = answers[ex.id] ?? "";
-        const isCorrect = normalise(val) === normalise(ex.answer);
-        return (
-          <div key={ex.id} className="p-4 rounded-2xl border border-border bg-background">
-            <p className="text-sm text-foreground font-medium mb-2.5">
-              {i + 1}. {ex.sentence}{" "}
-              <span className="font-bold text-primary">
-                {t("learningMaterials.rewriteUseHint", { hint: ex.hintWord })}
-              </span>
-            </p>
-            <input
-              type="text"
-              value={val}
-              onChange={(e) => {
-                setAnswers((p) => ({ ...p, [ex.id]: e.target.value }));
-                setChecked(false);
-              }}
-              aria-label={`Rewritten sentence for item ${i + 1}`}
-              className={`w-full rounded-xl border px-3.5 py-2.5 bg-background text-foreground text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
-                checked
-                  ? isCorrect
-                    ? "border-wp-green bg-wp-green-light/10"
-                    : "border-destructive bg-destructive/10"
-                  : "border-border"
-              }`}
-              placeholder={t("learningMaterials.rewritePlaceholder")}
-            />
-            {checked && !isCorrect && (
-              <p className="text-wp-green text-xs sm:text-sm font-bold mt-2">
-                {t("learningMaterials.correctLabel")} {ex.answer}
-              </p>
-            )}
-          </div>
-        );
-      })}
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+        if (!answered && value.trim())
+          onAnswer(normalize(value) === normalize(answer) ? answer : value);
+      }}
+      className="space-y-3"
+    >
+      <input
+        type="text"
+        value={value}
+        disabled={answered}
+        onChange={(event) => setValue(event.target.value)}
+        aria-label={label}
+        lang="en"
+        dir="ltr"
+        className="w-full min-h-[44px] rounded-xl border border-border px-3.5 py-2.5 bg-background text-foreground outline-none focus-visible:ring-2 focus-visible:ring-primary"
+        placeholder={t("learningMaterials.rewritePlaceholder")}
+      />
       <button
-        type="button"
-        onClick={() => setChecked(true)}
-        className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary/90 transition-colors min-h-[44px] shadow-xs"
+        type="submit"
+        disabled={answered || !value.trim()}
+        className="min-h-[44px] rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50"
       >
-        {t("learningMaterials.checkAnswers")}
+        {t("quiz.checkAnswer")}
       </button>
-    </div>
+    </form>
+  );
+}
+
+function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] }) {
+  const { t } = useI18n();
+  return (
+    <CurriculumQuizEngine
+      questions={exercises.map((exercise) => ({
+        id: exercise.id,
+        stem:
+          exercise.sentence +
+          " " +
+          t("learningMaterials.rewriteUseHint", { hint: exercise.hintWord }),
+        correctValue: exercise.answer,
+        explanation: exercise.answer,
+        customBody: ({ answered, currentAnswer, onAnswer }) => (
+          <RewriteAnswer
+            key={exercise.id}
+            answered={answered}
+            currentAnswer={currentAnswer}
+            onAnswer={onAnswer}
+            answer={exercise.answer}
+            label={t("learningMaterials.rewritePlaceholder")}
+          />
+        ),
+      }))}
+    />
   );
 }
 
@@ -361,19 +375,16 @@ export function ErrorCorrectionSection({ materials }: { materials: UnitLearningM
           {t("learningMaterials.findMistakeDesc")}
         </p>
       </div>
-      <ul className="space-y-3">
-        {materials.errorCorrection.map((item, i) => (
-          <li key={item.id} className="rounded-2xl border border-border p-4 bg-background">
-            <p className="text-sm text-destructive line-through font-medium">
-              {i + 1}. {item.wrong}
-            </p>
-            <p className="text-sm text-wp-green font-bold mt-1.5">
-              {`✓ `}
-              {item.right}
-            </p>
-          </li>
-        ))}
-      </ul>
+      <FocusedQuestions
+        key={materials.unitId}
+        questions={materials.errorCorrection.map((item) => ({
+          id: item.id,
+          question: t("learningMaterials.chooseCorrection", { sentence: item.wrong }),
+          options: [item.wrong, item.right],
+          correctIndex: 1,
+          explanation: item.right,
+        }))}
+      />
     </section>
   );
 }
@@ -506,6 +517,24 @@ export function SelfAssessmentSection({
   );
 }
 
+function FocusedQuestions({ questions }: { questions: MultipleChoiceExercise[] }) {
+  return (
+    <CurriculumQuizEngine
+      questions={questions.map((q) => ({
+        id: q.id,
+        stem: q.question,
+        correctValue: String(q.correctIndex),
+        explanation: q.explanation,
+        options: q.options.map((label, index) => ({
+          value: String(index),
+          label,
+          accessibleLabel: label,
+        })),
+      }))}
+    />
+  );
+}
+
 export function MultipleChoice({
   index,
   question,
@@ -548,53 +577,15 @@ export function MultipleChoice({
 }
 
 function MatchingExerciseComponent({ exercises }: { exercises: MatchingExercise[] }) {
-  const { t } = useI18n();
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [checked, setChecked] = useState(false);
-  const words = exercises.map((ex) => ex.word).sort();
-
+  const words = [...new Set(exercises.map((exercise) => exercise.word))].sort();
   return (
-    <div className="space-y-4">
-      {exercises.map((ex, i) => {
-        const selected = answers[ex.word] || "";
-        const isCorrect = selected === ex.word;
-        return (
-          <div
-            key={i}
-            className="flex flex-col sm:flex-row sm:items-center gap-3 p-4 border border-border rounded-2xl bg-background"
-          >
-            <div className="flex-1">
-              <p className="text-sm text-foreground leading-relaxed">{ex.definition}</p>
-            </div>
-            <div className="sm:w-1/3 shrink-0">
-              <Select
-                value={selected}
-                onChange={(value) => {
-                  setAnswers((p) => ({ ...p, [ex.word]: value }));
-                  setChecked(false);
-                }}
-                ariaLabel={`Match word for definition ${i + 1}`}
-                placeholder={t("learningMaterials.selectWord")}
-                options={words.map((w) => ({ value: w, label: w }))}
-                className={`w-full rounded-xl border bg-background text-sm font-medium focus-within:ring-2 focus-within:ring-primary ${
-                  checked
-                    ? isCorrect
-                      ? "border-wp-green bg-wp-green-light/20 text-wp-green font-bold"
-                      : "border-destructive bg-destructive/10 text-destructive font-bold"
-                    : "border-border text-foreground"
-                }`}
-              />
-            </div>
-          </div>
-        );
-      })}
-      <button
-        type="button"
-        onClick={() => setChecked(true)}
-        className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary/90 transition-colors min-h-[44px] shadow-xs"
-      >
-        {t("learningMaterials.checkAnswers")}
-      </button>
-    </div>
+    <CurriculumQuizEngine
+      questions={exercises.map((exercise) => ({
+        id: exercise.word,
+        stem: exercise.definition,
+        correctValue: exercise.word,
+        options: words.map((word) => ({ value: word, label: word, accessibleLabel: word })),
+      }))}
+    />
   );
 }

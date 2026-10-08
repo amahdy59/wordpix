@@ -37,7 +37,7 @@
       "حامض ويسكي",
       "سايدكار",
       "سازيراك",
-      "جزء يسمى «كوسموبوليتان»",
+      "كوزموبوليتان",
       "بينا كولادا؛ اسم مشروب كحولي",
       "لونغ آيلاند آيسد تي؛ اسم مشروب كحولي",
       "موسكو ميول؛ اسم مشروب كحولي",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Long Island Iced Tea as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Classic Cocktails: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Martini"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Martini, Old Fashioned, Manhattan, and Negroni and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Martini",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Daiquiri"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daiquiri, Margarita, Mojito, and Whiskey Sour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Daiquiri",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sidecar"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sidecar, Sazerac, Cosmopolitan, and Piña Colada and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sidecar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Long Island Iced Tea"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Long Island Iced Tea, Moscow Mule, and Gimlet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Long Island Iced Tea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -193,20 +206,20 @@
     ],
     "targetWordsArabic": [
       "توم كولينز",
-      "طائر يسمى «بالوما»",
+      "بالوما",
       "أبيرول سبريتز؛ اسم مشروب كحولي",
       "إسبريسو مارتيني؛ اسم مشروب كحولي",
       "دارك آند ستورمي؛ اسم مشروب كحولي",
-      "مخضوض",
-      "محرك",
-      "مهروس لاستخلاص النكهة",
+      "مخلوط بالرج",
+      "مقلب",
+      "مهروس برفق",
       "متعدد الطبقات",
-      "جزء يسمى «بلينديد»",
+      "مخلوط بالخلاط",
       "محضر مباشرة في الكأس",
-      "شعور يسمى «ستراينيد»",
-      "مصفى مرتين",
-      "مشعل باللهب",
-      "طعام يسمى «ينفوسيد»"
+      "مصفى",
+      "مصفّى مرتين",
+      "مُشعَل باللهب",
+      "منقوع لاستخلاص النكهة"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Double Strained as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: Classic Cocktails",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tom Collins"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tom Collins, Paloma, Aperol Spritz, and Espresso Martini and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tom Collins",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dark and Stormy"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dark and Stormy, Shaken, Stirred, and Muddled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dark and Stormy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Layered"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layered, Blended, Built, and Strained and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Layered",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Double Strained"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Double Strained, Flamed, and Infused and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Double Strained",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -353,15 +379,15 @@
     ],
     "targetWordsArabic": [
       "على الثلج",
-      "مشروب يسمى «نيات»",
-      "مقدم دون ثلج في الكأس",
-      "مضاف إليه محلول زيتون",
+      "دون ثلج أو إضافات",
+      "مقدّم دون ثلج في الكأس",
+      "مضاف إليه ماء الزيتون المملح",
       "جاف",
-      "بنسبة أعلى من المكون المخفف",
-      "خال من الكحول",
+      "بكمية أكبر من الفيرموث",
+      "خالٍ من الكحول",
       "فئة ممتازة من المشروبات الكحولية",
       "مشروب كحولي من الفئة الأساسية في البار",
-      "طبق يسمى «هووسي سبيكيال»"
+      "مشروب خاص بالمكان"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Well Drink as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Classic Cocktails",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "On the Rocks"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On the Rocks, Neat, Straight Up, and Dirty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "On the Rocks",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dry"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry, Wet, Virgin, and Top Shelf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Well Drink"
+        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Well Drink, and House Special and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Well Drink",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

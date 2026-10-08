@@ -29,11 +29,11 @@
     "targetWordsArabic": [
       "رهن عقاري",
       "قرض سيارة",
-      "شخص يسمى «بيرسونال لوان»",
+      "قرض شخصي",
       "قرض طلابي",
-      "حد ائتماني",
+      "تسهيل ائتماني",
       "درجة ائتمانية",
-      "سعر الفائدة",
+      "معدل فائدة",
       "أصل القرض",
       "ضمان",
       "ضامن مشارك في التوقيع",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Life Insurance through a realistic adult task; include Life Insurance, Home Insurance, and Travel Insurance naturally where visually appropriate, but make the real-world use of Life Insurance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Financial Services: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mortgage"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage, Auto Loan, Personal Loan, and Student Loan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mortgage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Line of Credit"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Line of Credit, Credit Score, Interest Rate, and Principal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Line of Credit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Collateral"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Collateral, Co-Signer, Health Insurance, and Car Insurance and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Collateral",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Life Insurance"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Life Insurance, Home Insurance, and Travel Insurance and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Life Insurance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,19 +202,19 @@
     ],
     "targetWordsArabic": [
       "قسط تأمين",
-      "مبلغ تحمل",
+      "مبلغ تحمّل",
       "تغطية",
       "مطالبة",
-      "بوليصة",
+      "وثيقة تأمين",
       "سهم",
       "سند",
       "صندوق استثمار مشترك",
       "صندوق متداول",
       "محفظة استثمارية",
       "توزيعات أرباح",
-      "مكسب رأسمالي",
+      "ربح رأسمالي",
       "مخاطر",
-      "عائد",
+      "عائد استثمار",
       "تنويع"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Risk as the central item; include Risk, Return, and Diversification naturally where visually appropriate, but make the real-world use of Risk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Financial Services",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Premium"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Premium, Deductible, Coverage, and Claim and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Premium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Policy"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Policy, Stock, Bond, and Mutual Fund and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Policy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ETF"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ETF, Portfolio, Dividend, and Capital Gain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ETF",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Risk"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Risk, Return, and Diversification and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Risk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -347,9 +373,9 @@
       "خطة تقاعد 401(k)",
       "حساب تقاعد فردي",
       "معاش تقاعدي",
-      "أمن اجتماعي",
-      "دفعات سنوية",
-      "شخص يسمى «ريتيريمينت فوند»",
+      "الضمان الاجتماعي الأمريكي",
+      "عقد دفعات دورية",
+      "صندوق تقاعد",
       "فائدة مركبة",
       "مساهمة",
       "استحقاق تدريجي للحقوق المالية",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Vesting through a realistic adult task; include Vesting, Beneficiary, and 401k naturally where visually appropriate, but make the real-world use of Vesting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "401k"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 401k, IRA, Pension, and Social Security and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "401k",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Annuity"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Annuity, Retirement Fund, Compound Interest, and Contribution and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Annuity",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vesting"
+        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vesting, and Beneficiary and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Vesting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

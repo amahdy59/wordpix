@@ -31,17 +31,17 @@
       "قمة",
       "حافة جبلية",
       "جرف",
-      "-",
+      "وادٍ",
       "منحدر",
-      "لون يسمى «بوولدير»",
-      "حافة صخرية",
-      "شق جليدي",
+      "صخرة كبيرة",
+      "نتوء صخري",
+      "شق جليدي عميق",
       "هضبة",
-      "شجرة يسمى «بيني تريي»",
+      "شجرة صنوبر",
       "زهرة برية",
       "طحلب بري",
       "سرخس",
-      "نبات يسمى «ليتشين»"
+      "أشنة"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Moss as the central item; include Moss, Fern, and Lichen naturally where visually appropriate, but make the real-world use of Moss the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Mountain",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Peak"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peak, Summit, Ridge, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Peak",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Valley"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valley, Slope, Boulder, and Ledge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Valley",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crevasse"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crevasse, Plateau, Pine Tree, and Wildflower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crevasse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moss"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Fern, and Lichen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moss",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,11 +201,11 @@
       "Mountain Lion"
     ],
     "targetWordsArabic": [
-      "نبات يسمى «شروب»",
+      "شجيرة",
       "مرج جبلي مرتفع",
       "طابور شجرة",
       "جذر",
-      "شجرة يسمى «بارك»",
+      "لحاء",
       "نسر",
       "ماعز جبلي",
       "دب",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Owl as the central item; include Owl, Fox, and Mountain Lion naturally where visually appropriate, but make the real-world use of Owl the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Mountain",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shrub"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shrub, Alpine Meadow, Tree Line, and Root and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Shrub",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bark"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Eagle, Mountain Goat, and Bear and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bark",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Deer"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deer, Wolf, Marmot, and Hawk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Deer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Owl"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Fox, and Mountain Lion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Owl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,18 +375,18 @@
       "Compass"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "منطقة يسمى «ويند»",
+      "ثلج",
+      "ضباب",
+      "رياح",
       "سحابة",
-      "-",
+      "برق",
       "شروق الشمس",
       "غروب الشمس",
       "قوس قزح",
-      "سطح يسمى «فروست»",
-      "-",
+      "صقيع",
+      "بَرَد",
       "حقيبة ظهر",
-      "أحذية تنزه",
+      "أحذية مشي جبلي",
       "عصا مشي للرحلات",
       "زجاجة ماء",
       "بوصلة"
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Trekking Pole as the central item; include Trekking Pole, Water Bottle, and Compass naturally where visually appropriate, but make the real-world use of Trekking Pole the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Mountain",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snow"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow, Fog, Wind, and Cloud and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lightning"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lightning, Sunrise, Sunset, and Rainbow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Lightning",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frost"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost, Hail, Backpack, and Hiking Boots and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Frost",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trekking Pole"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trekking Pole, Water Bottle, and Compass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trekking Pole",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -511,18 +550,18 @@
     ],
     "targetWordsArabic": [
       "خريطة",
-      "-",
+      "مصباح رأسي",
       "خيمة",
-      "-",
+      "كيس نوم",
       "حبل",
-      "-",
-      "التسلق",
+      "مشي لمسافات طويلة",
+      "تسلق",
       "تخييم",
-      "جزء يسمى «سكيينج»",
+      "تزلج على الثلج",
       "تزلج بلوح الثلج",
       "تصوير",
-      "طائر يسمى «بيرد واتتشينج»",
-      "سمكة يسمى «فيشينج»",
+      "مراقبة الطيور",
+      "صيد الأسماك",
       "الجري على المسارات",
       "رصد النجوم"
     ],
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult illustrating Fishing through a realistic adult task; include Fishing, Trail Running, and Stargazing naturally where visually appropriate, but make the real-world use of Fishing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Mountain",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Map"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, Headlamp, Tent, and Sleeping Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Map",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rope"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Hiking, Climbing, and Camping and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skiing"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skiing, Snowboarding, Photography, and Bird Watching and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Skiing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fishing"
+        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing, Trail Running, and Stargazing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Fishing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

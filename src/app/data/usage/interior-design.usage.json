@@ -34,10 +34,10 @@
       "بوهيمي",
       "منتصف القرن",
       "ريفي",
-      "شكل يسمى «ارت ديكو»",
+      "طراز آرت ديكو",
       "ياباني",
       "ساحلي",
-      "لون يسمى «كولور باليتتي»",
+      "مجموعة ألوان متناسقة",
       "جدار مميز",
       "ورق حائط",
       "طلاء",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Wallpaper as the central item; include Wallpaper, Paint, and Tile naturally where visually appropriate, but make the real-world use of Wallpaper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Interior Design",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Contemporary"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contemporary, Traditional, Scandinavian, and Industrial and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Contemporary",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bohemian"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bohemian, Mid-Century, Farmhouse, and Art Deco and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bohemian",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Japanese"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Japanese, Coastal, Color Palette, and Accent Wall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Japanese",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wallpaper"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wallpaper, Paint, and Tile and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wallpaper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -198,14 +211,14 @@
       "رخام",
       "خرسانة",
       "ثريا",
-      "مصباح معلق",
+      "مصباح معلّق",
       "إضاءة مسارية",
       "مصباح غائر",
       "مصباح طابق",
       "مصباح طاولة",
       "مصباح جداري",
-      "مكان يسمى «ناتورال ليغت»",
-      "مخفض إضاءة",
+      "إضاءة طبيعية",
+      "مخفّض إضاءة",
       "شريط إضاءة LED"
     ],
     "usage": {
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Natural Light as the central item; include Natural Light, Dimmer, and LED Strip naturally where visually appropriate, but make the real-world use of Natural Light the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: Interior Design",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hardwood"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hardwood, Carpet, Stone, and Marble and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hardwood",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Concrete"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Concrete, Chandelier, Pendant Light, and Track Lighting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Concrete",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Recessed Light"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recessed Light, Floor Lamp, Table Lamp, and Sconce and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Recessed Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Natural Light"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Natural Light, Dimmer, and LED Strip and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Natural Light",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -354,7 +380,7 @@
     "targetWordsArabic": [
       "سجادة منطقة",
       "ستائر",
-      "غرفة يسمى «ثروو بيللوو»",
+      "وسادة زينة",
       "عمل فني",
       "مرآة",
       "زهرية (فازة)",
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Sculpture through a realistic adult task; include Sculpture, Photo Frame, and Area Rug naturally where visually appropriate, but make the real-world use of Sculpture the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Interior Design",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Area Rug"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Area Rug, Curtains, Throw Pillow, and Artwork and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Area Rug",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Vase, Candle, and Plant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sculpture"
+        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpture, and Photo Frame and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Sculpture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

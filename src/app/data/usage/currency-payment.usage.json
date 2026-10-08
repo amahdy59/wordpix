@@ -39,9 +39,9 @@
       "ريال برازيلي",
       "نقد",
       "بطاقة ائتمان",
-      "بطاقة خصم",
+      "بطاقة خصم مباشر",
       "شيك",
-      "تحويل سلك"
+      "تحويل مصرفي إلكتروني"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Debit Card as the central item; include Debit Card, Check, and Wire Transfer naturally where visually appropriate, but make the real-world use of Debit Card the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Currency & Payment: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "US Dollar"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare US Dollar, Euro, British Pound, and Japanese Yen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "US Dollar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chinese Yuan"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chinese Yuan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Indian Rupee"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indian Rupee, Brazilian Real, Cash, and Credit Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Indian Rupee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Debit Card"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Debit Card, Check, and Wire Transfer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Debit Card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -196,10 +209,10 @@
       "إيصال",
       "فاتورة",
       "كشف حساب",
-      "توازن",
+      "رصيد",
       "سحب على المكشوف",
-      "الحد الأدنى للدفع",
-      "جزء يسمى «دوي داتي»",
+      "الحد الأدنى للسداد",
+      "تاريخ الاستحقاق",
       "رسوم تأخير",
       "استرداد",
       "استرجاع دفعة"
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Late Fee as the central item; include Late Fee, Refund, and Chargeback naturally where visually appropriate, but make the real-world use of Late Fee the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Currency & Payment",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mobile Payment"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mobile Payment, Contactless, Apple Pay, and PayPal and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Mobile Payment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cryptocurrency"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cryptocurrency, Receipt, Invoice, and Statement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cryptocurrency",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balance"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Overdraft, Minimum Payment, and Due Date and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Balance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Late Fee"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Late Fee, Refund, and Chargeback and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Late Fee",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -345,7 +371,7 @@
     ],
     "targetWordsArabic": [
       "خدمات مصرفية عبر الإنترنت",
-      "برنامج يسمى «موبيلي ابب»",
+      "تطبيق هاتف",
       "محفظة رقمية",
       "سلسلة الكتل",
       "بيتكوين",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Peer-to-Peer as the central item; include Peer-to-Peer, Crowdfunding, and Online Banking naturally where visually appropriate, but make the real-world use of Peer-to-Peer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Online Banking"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Online Banking, Mobile App, Digital Wallet, and Blockchain and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Online Banking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bitcoin"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bitcoin, Ethereum, NFT, and Fintech and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bitcoin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Peer-to-Peer"
+        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peer-to-Peer, and Crowdfunding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Peer-to-Peer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

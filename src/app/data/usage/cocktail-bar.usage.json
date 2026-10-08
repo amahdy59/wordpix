@@ -36,11 +36,11 @@
       "رف سريع الوصول",
       "صينية للتزيين",
       "حصيرة بار",
-      "مبنى يسمى «لوونجي اريا»",
+      "منطقة جلوس واسترخاء",
       "كأس كوكتيل",
-      "مشروب يسمى «هيغبالل جلاسس»",
+      "كأس هاي بول طويل",
       "كأس قصير عريض",
-      "مشروب يسمى «شوت جلاسس»",
+      "كأس صغير لجرعة مشروب",
       "كأس نبيذ"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Rocks Glass as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Cocktail Bar: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bar Counter"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Counter, Bar Stool, Back Bar, and Draft Taps and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Bar Counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bottle Display"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bottle Display, Ice Well, Speed Rail, and Garnish Tray and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bottle Display",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bar Mat"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Mat, Lounge Area, Cocktail Glass, and Highball Glass and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Bar Mat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rocks Glass"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rocks Glass, Shot Glass, and Wine Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rocks Glass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -193,19 +206,19 @@
     ],
     "targetWordsArabic": [
       "ناي فلوت شمبانيا",
-      "كوب بيرة",
+      "قدح جعة",
       "كأس كولينز طويل",
       "كأس كوبيه",
       "كأس سنفتر",
-      "حاوية يسمى «كوكتايل شاكير»",
+      "رجاجة كوكتيل",
       "مكيال بار",
       "مدق خلط",
       "ملعقة بار طويلة",
       "مصفاة",
       "ملقط ثلج",
-      "أداة يسمى «بوتتلي وبينير»",
+      "فتاحة زجاجات",
       "فتاحة زجاجات (مفتاح الفلين)",
-      "عصارة حمضيات",
+      "عصّارة حمضيات",
       "أداة بشر قشر الحمضيات"
     ],
     "usage": {
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Corkscrew as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Cocktail Bar",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Champagne Flute"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Champagne Flute, Beer Mug, Collins Glass, and Coupe Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Champagne Flute",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snifter"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snifter, Cocktail Shaker, Jigger, and Muddler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snifter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bar Spoon"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Spoon, Strainer, Ice Tongs, and Bottle Opener and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Bar Spoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Corkscrew"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corkscrew, Citrus Press, and Zester and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Corkscrew",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the DJ as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Cocktail Bar",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bartender"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bartender, Barback, Mixologist, and Bouncer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bartender",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Host"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Host, Cocktail Waitress, Manager, and Sommelier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Host",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "DJ"
+        "prompt": "In the the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DJ, and Promoter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "DJ",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

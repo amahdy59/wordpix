@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the saxophone as the central item; include saxophone, trumpet, and trombone naturally where visually appropriate, but make the real-world use of saxophone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: Music Room",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "guitar"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare guitar, violin, and cello and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "guitar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "bass"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare bass, harp, and ukulele and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "bass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "banjo"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare banjo, mandolin, and viola and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "banjo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "double bass"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare double bass, flute, and clarinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "double bass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "saxophone"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare saxophone, trumpet, and trombone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "saxophone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -206,8 +222,8 @@
       "هارمونيكا",
       "ناي ريكوردر",
       "طبول",
-      "طبل جانبي",
-      "أداة أو جهاز يسمى «باسس دروم»",
+      "طبل سنير",
+      "طبل كبير",
       "صنج",
       "دف",
       "إكسيليفون",
@@ -282,7 +298,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the triangle as the central item; include triangle, bongo, and gong naturally where visually appropriate, but make the real-world use of triangle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: Music Room",
@@ -291,24 +308,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "oboe"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare oboe, bassoon, and tuba and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "oboe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "harmonica"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare harmonica, recorder, and drums and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "harmonica",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "snare drum"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare snare drum, bass drum, and cymbal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "snare drum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tambourine"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tambourine, xylophone, and maracas and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "tambourine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "triangle"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare triangle, bongo, and gong and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "triangle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -376,7 +408,7 @@
       "بيانو",
       "لوحة مفاتيح",
       "عضو",
-      "مركب صوتي",
+      "مُركّب صوتي",
       "أكورديون",
       "لحن",
       "إيقاع",
@@ -387,7 +419,7 @@
       "يستريح",
       "مقياس رسم",
       "مفتاح موسيقي",
-      "حدة الصوت"
+      "حدّة الصوت"
     ],
     "usage": {
       "goal": "Learn to identify musical equipment and coordinate a rehearsal in a clear, practical adult-life situation.",
@@ -455,7 +487,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the scale as the central item; include scale, key, and pitch naturally where visually appropriate, but make the real-world use of scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Music Room",
@@ -464,24 +497,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "piano"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare piano, keyboard, and organ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "piano",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "synthesizer"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare synthesizer, accordion, and melody and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "synthesizer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "rhythm"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rhythm, tempo, and beat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "rhythm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "chord"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chord, note, and rest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "chord",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "scale"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare scale, key, and pitch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -546,7 +594,7 @@
       "تناغم",
       "ديناميكيات الصوت",
       "حامل نوتة موسيقية",
-      "نوتة موسيقية",
+      "نوتة موسيقية مكتوبة",
       "مترونوم",
       "جهاز ضبط النغم",
       "مضخم",
@@ -610,7 +658,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the headphones as the central item; include headphones, conductor's baton, and music book naturally where visually appropriate, but make the real-world use of headphones the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: Music Room",
@@ -619,20 +668,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "harmony"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare harmony, dynamics, and music stand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "harmony",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "sheet music"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sheet music, metronome, and tuner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "sheet music",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "amplifier"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare amplifier, microphone, and speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "amplifier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "headphones"
+        "prompt": "In the l7 music room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare headphones, conductor's baton, and music book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "headphones",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

@@ -1,10 +1,25 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { RotateCcw, X } from "lucide-react";
 import { useI18n } from "../../../i18n";
-import { resolveAssetUrl } from "../../../utils/assetUrl";
 import type { HadithExerciseSet } from "./hadithExerciseCatalog";
 import { QuizQuestionCard } from "../../shared/QuizQuestionCard";
 import { playCorrectSound, playIncorrectSound } from "../../shared/useSound";
+import { ScenePlaceholder } from "../../shared/SentenceQuestionSupport";
+import { QuestionImage } from "../../shared/QuestionImage";
+
+function HadithImageClue({ imageRef, clue, alt }: { imageRef: string; clue: string; alt: string }) {
+  const [failed, setFailed] = useState(false);
+  return failed || !imageRef ? (
+    <ScenePlaceholder clue={clue} />
+  ) : (
+    <QuestionImage
+      media={{ imagePath: `hadith/v1/images/${imageRef}.png`, imageAlt: alt }}
+      onExhausted={() => setFailed(true)}
+      className="aspect-[4/3] w-full object-contain"
+      loading="eager"
+    />
+  );
+}
 
 interface Props {
   exerciseSet: HadithExerciseSet;
@@ -15,6 +30,11 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
   const { t } = useI18n();
   const [choices, setChoices] = useState<Record<string, string>>({});
   const [sequences, setSequences] = useState<Record<string, string[]>>({});
+  const [questionIndex, setQuestionIndex] = useState(0);
+  const questionRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    questionRef.current?.focus();
+  }, [questionIndex]);
 
   const results = useMemo(
     () =>
@@ -95,8 +115,15 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
         </div>
       </div>
 
-      <div className="mt-7 space-y-7">
-        {exerciseSet.exercises.map((exercise, exerciseIndex) => {
+      <div ref={questionRef} tabIndex={-1} className="mt-7 space-y-7 outline-none">
+        <p className="text-sm font-bold text-foreground">
+          {t("quiz.questionOf", {
+            current: questionIndex + 1,
+            total: exerciseSet.exercises.length,
+          })}
+        </p>
+        {exerciseSet.exercises.slice(questionIndex, questionIndex + 1).map((exercise) => {
+          const exerciseIndex = questionIndex;
           const result = results[exerciseIndex];
           if (exercise.type === "single-choice" || exercise.type === "image-choice") {
             return (
@@ -121,11 +148,14 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                 media={
                   exercise.type === "image-choice" ? (
                     <figure className="mx-auto mt-4 max-w-sm overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
-                      <img
-                        src={resolveAssetUrl(`hadith/v1/images/${exercise.imageRef}.png`)}
+                      <HadithImageClue
+                        key={exercise.id}
+                        imageRef={exercise.imageRef}
+                        clue={
+                          exercise.options.find((option) => option.id === exercise.answerId)
+                            ?.label ?? exercise.prompt
+                        }
                         alt={t("hadith.practiceImageAlt")}
-                        className="aspect-[4/3] w-full object-cover"
-                        loading="lazy"
                       />
                       <figcaption className="p-3 text-center text-xs font-bold text-muted-foreground">
                         {t("hadith.chooseMatchingWord")}
@@ -233,6 +263,27 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
             </fieldset>
           );
         })}
+      </div>
+
+      <div className="mt-5 flex flex-wrap justify-between gap-3">
+        <button
+          type="button"
+          disabled={questionIndex === 0}
+          onClick={() => setQuestionIndex((index) => index - 1)}
+          className="min-h-11 rounded-xl border border-border px-4 py-2 font-bold text-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          {t("quiz.previousQuestion")}
+        </button>
+        {questionIndex < exerciseSet.exercises.length - 1 && (
+          <button
+            type="button"
+            disabled={!results[questionIndex]?.answered}
+            onClick={() => setQuestionIndex((index) => index + 1)}
+            className="min-h-11 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("quiz.nextQuestion")}
+          </button>
+        )}
       </div>
 
       <p className="mt-6 font-black text-primary" role="status" aria-live="polite">

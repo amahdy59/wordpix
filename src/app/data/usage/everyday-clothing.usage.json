@@ -58,7 +58,7 @@
             "options": ["T-Shirt", "Shirt", "Blouse"],
             "expectedAnswer": "Blouse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Blouse while also considering T-Shirt and Shirt. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with T-Shirt, Shirt, and Blouse visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including T-Shirt, Shirt, Blouse in a natural setting."
         },
         {
@@ -70,7 +70,7 @@
             "options": ["Sweater", "Hoodie", "Tank Top"],
             "expectedAnswer": "Sweater"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweater while also considering Hoodie and Tank Top. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Sweater, Hoodie, and Tank Top visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Sweater, Hoodie, Tank Top in a natural setting."
         },
         {
@@ -82,7 +82,7 @@
             "options": ["Polo Shirt", "Cardigan", "Pullover"],
             "expectedAnswer": "Cardigan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Cardigan while also considering Polo Shirt and Pullover. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Polo Shirt, Cardigan, and Pullover visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Polo Shirt, Cardigan, Pullover in a natural setting."
         },
         {
@@ -94,7 +94,7 @@
             "options": ["Vest", "Jeans", "Pants"],
             "expectedAnswer": "Pants"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Pants while also considering Vest and Jeans. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Vest, Jeans, and Pants visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Vest, Jeans, Pants in a natural setting."
         },
         {
@@ -106,7 +106,7 @@
             "options": ["Shorts", "Skirt", "Leggings"],
             "expectedAnswer": "Shorts"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Shorts while also considering Skirt and Leggings. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Shorts, Skirt, and Leggings visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Shorts, Skirt, Leggings in a natural setting."
         }
       ]
@@ -118,24 +118,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "T-Shirt"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Blouse while also considering T-Shirt and Shirt. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Blouse",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sweater"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweater while also considering Hoodie and Tank Top. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Sweater",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Polo Shirt"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Cardigan while also considering Polo Shirt and Pullover. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Cardigan",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vest"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Pants while also considering Vest and Jeans. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Pants",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shorts"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Shorts while also considering Skirt and Leggings. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Shorts",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -224,7 +239,7 @@
             "options": ["Sweatpants", "Cargo Pants", "Khakis"],
             "expectedAnswer": "Sweatpants"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweatpants while also considering Cargo Pants and Khakis. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Sweatpants, Cargo Pants, and Khakis visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Sweatpants, Cargo Pants, Khakis in a natural setting."
         },
         {
@@ -236,7 +251,7 @@
             "options": ["Capris", "Culottes", "Jacket"],
             "expectedAnswer": "Culottes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Culottes while also considering Capris and Jacket. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Capris, Culottes, and Jacket visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Capris, Culottes, Jacket in a natural setting."
         },
         {
@@ -248,7 +263,7 @@
             "options": ["Coat", "Raincoat", "Windbreaker"],
             "expectedAnswer": "Windbreaker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Windbreaker while also considering Coat and Raincoat. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Coat, Raincoat, and Windbreaker visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Coat, Raincoat, Windbreaker in a natural setting."
         },
         {
@@ -260,7 +275,7 @@
             "options": ["Parka", "Blazer", "Trench Coat"],
             "expectedAnswer": "Parka"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Parka while also considering Blazer and Trench Coat. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Parka, Blazer, and Trench Coat visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Parka, Blazer, Trench Coat in a natural setting."
         },
         {
@@ -272,7 +287,7 @@
             "options": ["Puffer Jacket", "Denim Jacket", "Fleece"],
             "expectedAnswer": "Denim Jacket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Denim Jacket while also considering Puffer Jacket and Fleece. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Puffer Jacket, Denim Jacket, and Fleece visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Puffer Jacket, Denim Jacket, Fleece in a natural setting."
         }
       ]
@@ -284,24 +299,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sweatpants"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweatpants while also considering Cargo Pants and Khakis. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Sweatpants",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Capris"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Culottes while also considering Capris and Jacket. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Culottes",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coat"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Windbreaker while also considering Coat and Raincoat. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Windbreaker",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parka"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Parka while also considering Blazer and Trench Coat. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Parka",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Puffer Jacket"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Denim Jacket while also considering Puffer Jacket and Fleece. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Denim Jacket",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -364,7 +394,7 @@
       "فستان ماكسي طويل",
       "فستان قصير",
       "بدلة قطعة واحدة",
-      "رومبر",
+      "لباس قطعة واحدة بسروال قصير",
       "أوفرول",
       "بدلة رياضية",
       "زي موحد",
@@ -390,7 +420,7 @@
             "options": ["Dress", "Sundress", "Maxi Dress"],
             "expectedAnswer": "Sundress"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sundress while also considering Dress and Maxi Dress. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Dress, Sundress, and Maxi Dress visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Dress, Sundress, Maxi Dress in a natural setting."
         },
         {
@@ -402,7 +432,7 @@
             "options": ["Mini Dress", "Jumpsuit", "Romper"],
             "expectedAnswer": "Romper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Romper while also considering Mini Dress and Jumpsuit. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Mini Dress, Jumpsuit, and Romper visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Mini Dress, Jumpsuit, Romper in a natural setting."
         },
         {
@@ -414,7 +444,7 @@
             "options": ["Overalls", "Tracksuit", "Uniform"],
             "expectedAnswer": "Overalls"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Overalls while also considering Tracksuit and Uniform. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Overalls, Tracksuit, and Uniform visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Overalls, Tracksuit, Uniform in a natural setting."
         },
         {
@@ -426,7 +456,7 @@
             "options": ["Onesie", "Underwear", "Bra"],
             "expectedAnswer": "Underwear"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Underwear while also considering Onesie and Bra. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Onesie, Underwear, and Bra visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Onesie, Underwear, Bra in a natural setting."
         },
         {
@@ -438,7 +468,7 @@
             "options": ["Socks", "Undershirt", "Boxer Shorts"],
             "expectedAnswer": "Boxer Shorts"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Boxer Shorts while also considering Socks and Undershirt. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Socks, Undershirt, and Boxer Shorts visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Socks, Undershirt, Boxer Shorts in a natural setting."
         }
       ]
@@ -450,24 +480,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dress"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sundress while also considering Dress and Maxi Dress. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Sundress",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mini Dress"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Romper while also considering Mini Dress and Jumpsuit. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Romper",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Overalls"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Overalls while also considering Tracksuit and Uniform. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Overalls",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Onesie"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Underwear while also considering Onesie and Bra. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Underwear",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Socks"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Boxer Shorts while also considering Socks and Undershirt. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Boxer Shorts",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -530,19 +575,19 @@
             "options": ["Pajamas", "Nightgown", "Robe"],
             "expectedAnswer": "Robe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Robe while also considering Pajamas and Nightgown. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Pajamas, Nightgown, and Robe visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Pajamas, Nightgown, Robe in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bathrobe", "Slippers"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Bathrobe while also considering Slippers, undefined, and undefined. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Bathrobe while also considering Slippers. He compares the fabrics, fit, and purpose before making a practical choice.",
           "check": {
             "question": "Which target does Omar notice first in this situation?",
             "options": ["Bathrobe", "Slippers", "Pajamas"],
             "expectedAnswer": "Bathrobe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a everyday clothing context illustrating this situation: At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Bathrobe while also considering Slippers, undefined, and undefined. He compares the fabrics, fit, and purpose before making a practical choice. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageBrief": "Show an adult in a clothing shop, with Bathrobe and Slippers visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
           "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Bathrobe, Slippers in a natural setting."
         }
       ]
@@ -554,12 +599,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pajamas"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Robe while also considering Pajamas and Nightgown. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Robe",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bathrobe"
+        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Bathrobe while also considering Slippers. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "answer": "Bathrobe",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

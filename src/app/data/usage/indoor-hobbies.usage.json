@@ -31,8 +31,8 @@
       "كتاب قصص مصورة",
       "مجلة",
       "صحيفة",
-      "دفتر يوميات",
-      "مفكرة يومية",
+      "دفتر تدوين",
+      "مذكرات يومية",
       "شعر",
       "مدونة",
       "قارئ كتب إلكترونية",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Sculpting, Origami, Scrapbooking. The person selects Sculpting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Sculpting, Origami, Scrapbooking in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Indoor Hobbies: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Novel"
+        "prompt": "During a routine indoor hobbies task, an adult compares Novel, Comic Book, Magazine. The person selects Novel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Novel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Newspaper"
+        "prompt": "During a routine indoor hobbies task, an adult compares Newspaper, Journal, Diary. The person selects Newspaper for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Newspaper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Poetry"
+        "prompt": "During a routine indoor hobbies task, an adult compares Poetry, Blog, E-Reader. The person selects Poetry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Poetry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Audiobook"
+        "prompt": "During a routine indoor hobbies task, an adult compares Audiobook, Drawing, Painting. The person selects Audiobook for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Audiobook",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sculpting"
+        "prompt": "During a routine indoor hobbies task, an adult compares Sculpting, Origami, Scrapbooking. The person selects Sculpting for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sculpting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -193,11 +209,11 @@
       "Cello"
     ],
     "targetWordsArabic": [
-      "خط",
+      "فن الخط",
       "فخار",
       "فسيفساء",
-      "كولاج",
-      "فن الديكوباج",
+      "فن تجميع الصور والقصاصات",
+      "فن التزيين بقصاصات الورق",
       "غيتار",
       "بيانو",
       "طبول",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Keyboard, Saxophone, Cello. The person selects Keyboard for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Keyboard, Saxophone, Cello in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Indoor Hobbies: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Calligraphy"
+        "prompt": "During a routine indoor hobbies task, an adult compares Calligraphy, Pottery, Mosaic. The person selects Calligraphy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Calligraphy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Collage"
+        "prompt": "During a routine indoor hobbies task, an adult compares Collage, Decoupage, Guitar. The person selects Collage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Collage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Piano"
+        "prompt": "During a routine indoor hobbies task, an adult compares Piano, Drums, Violin. The person selects Piano for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Piano",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flute"
+        "prompt": "During a routine indoor hobbies task, an adult compares Flute, Ukulele, Harmonica. The person selects Flute for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flute",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Keyboard"
+        "prompt": "During a routine indoor hobbies task, an adult compares Keyboard, Saxophone, Cello. The person selects Keyboard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Keyboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -354,16 +386,16 @@
       "Miniatures"
     ],
     "targetWordsArabic": [
-      "طوابع",
+      "طوابع بريدية",
       "عملات معدنية",
-      "بطاقات",
-      "تماثيل صغيرة",
+      "أوراق لعب",
+      "مجسمات صغيرة",
       "أسطوانات فينيل",
-      "تحف",
+      "تحف قديمة",
       "أصداف",
       "صخور",
       "قصص مصورة",
-      "مجسمات مصغرة"
+      "نماذج مصغرة"
     ],
     "usage": {
       "goal": "Learn to use indoor hobbies 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -409,7 +441,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Miniatures",
+          "targetWords": ["Miniatures"],
           "scenario": "During a routine indoor hobbies task, an adult compares Miniatures, Stamps, Coins. The person selects Miniatures for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -419,7 +451,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Miniatures, Stamps, Coins. The person selects Miniatures for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Miniatures in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Indoor Hobbies: Short Dialogue",
@@ -428,20 +461,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stamps"
+        "prompt": "During a routine indoor hobbies task, an adult compares Stamps, Coins, Cards. The person selects Stamps for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Stamps",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Figurines"
+        "prompt": "During a routine indoor hobbies task, an adult compares Figurines, Vinyl Records, Antiques. The person selects Figurines for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Figurines",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shells"
+        "prompt": "During a routine indoor hobbies task, an adult compares Shells, Rocks, Comics. The person selects Shells for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shells",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Miniatures"
+        "prompt": "During a routine indoor hobbies task, an adult compares Miniatures, Stamps, Coins. The person selects Miniatures for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Miniatures",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

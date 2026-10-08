@@ -1,7 +1,7 @@
 {
   "passenger-train": {
     "definition": "A train used to transport people rather than freight.",
-    "arabicTranslation": "قطار راكب"
+    "arabicTranslation": "قطار ركاب"
   },
   "freight-train": {
     "definition": "A train used mainly to transport goods rather than passengers.",
@@ -18,8 +18,8 @@
     "arabicTranslation": "مترو"
   },
   "locomotive": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوكوموتيفي»",
-    "definition": "Of or relating to locomotion."
+    "arabicTranslation": "قاطرة",
+    "definition": "A railway engine that pulls or pushes train cars."
   },
   "train-car": {
     "definition": "One vehicle or carriage forming part of a train.",
@@ -28,7 +28,7 @@
   },
   "dining-car": {
     "definition": "A railway carriage that provides meals and drinks to passengers during a journey.",
-    "arabicTranslation": "مشروب يُسمّى «دينينج كار»"
+    "arabicTranslation": "عربة مطعم"
   },
   "sleeper-car": {
     "definition": "A passenger train car containing beds or sleeping compartments for overnight travel.",
@@ -37,23 +37,23 @@
   },
   "caboose": {
     "definition": "A car on a freight train for use of the train crew.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كابووسي»"
+    "arabicTranslation": "عربة طاقم في مؤخرة قطار بضائع"
   },
   "monorail": {
-    "definition": "An elevated train that moves around a park.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مونورايل»"
+    "definition": "A railway system in which trains run on a single rail.",
+    "arabicTranslation": "قطار أحادي السكة"
   },
   "platform": {
-    "definition": "A raised surface used for equipment, sets, or performances.",
-    "arabicTranslation": "رصيف"
+    "definition": "The area beside a railway track where passengers board or leave trains.",
+    "arabicTranslation": "رصيف المحطة"
   },
   "track": {
-    "definition": "A distinct selection of music from a recording or a compact disc.",
-    "arabicTranslation": "مسار"
+    "definition": "The rails and supporting structure on which a train runs.",
+    "arabicTranslation": "سكة حديد"
   },
   "ticket-office": {
-    "definition": "An office where visitors purchase tickets that let them enter a show or attraction.",
-    "arabicTranslation": "مكتب تذكرة"
+    "definition": "A staffed office where passengers buy train tickets.",
+    "arabicTranslation": "مكتب التذاكر"
   },
   "waiting-room": {
     "definition": "A room where passengers sit while waiting for a train.",
@@ -62,19 +62,19 @@
   },
   "concourse": {
     "arabicTranslation": "ردهة رئيسية",
-    "definition": "A large gathering of people."
+    "definition": "A large open area in a station through which passengers move."
   },
   "information-desk": {
     "definition": "A staffed service point helps visitors in public or institutional buildings find their way, ask questions, and obtain general assistance.",
-    "arabicTranslation": "مبنى يُسمّى «ينفورماتيون ديسك»"
+    "arabicTranslation": "مكتب استعلامات"
   },
   "newsstand": {
     "definition": "A small shop or stand that sells newspapers and magazines.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيوسستاند»"
+    "arabicTranslation": "كشك صحف"
   },
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
-    "arabicTranslation": "آلة يُسمّى «فيندينج ماتشيني»",
+    "arabicTranslation": "آلة بيع ذاتي",
     "exampleUsage": "The vending machine was used during the activity."
   },
   "restroom": {
@@ -93,19 +93,19 @@
   },
   "bus-stop": {
     "definition": "A designated roadside location where buses collect passengers or let them off, often identified by a sign, shelter, or raised platform.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوس ستوب»"
+    "arabicTranslation": "موقف حافلات"
   },
   "ticket": {
-    "definition": "A printed or electronic pass that allows entry to a ride or park.",
+    "definition": "A printed or electronic document that permits travel on a train.",
     "arabicTranslation": "تذكرة"
   },
   "round-trip": {
     "definition": "A journey that carries someone to a destination and back to the place of departure, or the combined distance or fare for both legs.",
-    "arabicTranslation": "مكان يُسمّى «رووند تريب»"
+    "arabicTranslation": "رحلة ذهاب وعودة"
   },
   "one-way": {
-    "definition": "Moving one way means following a single direction, with no change of course or return.",
-    "arabicTranslation": "اتجاه واحد"
+    "definition": "Describing a journey or ticket to a destination without a return journey.",
+    "arabicTranslation": "ذهاب فقط"
   },
   "schedule": {
     "arabicTranslation": "جدول",
@@ -127,7 +127,7 @@
   },
   "reservation": {
     "definition": "Something reserved in advance (as a hotel accommodation or a seat on a plane etc.).",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريسيرفاتيون»"
+    "arabicTranslation": "حجز"
   },
   "seat-number": {
     "definition": "A number used to identify a specific passenger seat.",
@@ -141,18 +141,18 @@
   },
   "economy-class": {
     "definition": "A travel section on a ship, train, or plane that costs less than first class.",
-    "arabicTranslation": "سفينة يُسمّى «يكونومي كلاسس»"
+    "arabicTranslation": "درجة اقتصادية"
   },
   "pass": {
-    "definition": "Of advancing the ball by throwing it.",
-    "arabicTranslation": "بطاقة مرور"
+    "definition": "A ticket that permits specified train journeys over a period of time.",
+    "arabicTranslation": "اشتراك سفر"
   },
   "turnstile": {
     "definition": "A gate consisting of a post that acts as a pivot for rotating arms.",
     "arabicTranslation": "بوابة دوارة"
   },
   "signal": {
-    "definition": "An electrical or radio message that carries information.",
+    "definition": "A railway light or sign that tells train drivers when to stop or proceed.",
     "arabicTranslation": "إشارة"
   },
   "crossing-gate": {
@@ -161,8 +161,8 @@
     "arabicTranslation": "حاجز معبر سكك حديدية"
   },
   "bridge": {
-    "definition": "A structure built over water or a low place for people to cross.",
-    "arabicTranslation": "قوس القدم"
+    "definition": "A structure that carries a railway or road over water, a valley, or another route.",
+    "arabicTranslation": "جسر"
   },
   "tunnel": {
     "definition": "A narrow passage with an opening at both ends.",
@@ -174,12 +174,12 @@
     "arabicTranslation": "سلك كهربائي علوي"
   },
   "rail": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رايل»",
+    "arabicTranslation": "قضيب سكة حديد",
     "definition": "A metal track on which a train runs."
   },
   "switch": {
-    "definition": "Railroad track having two movable rails and necessary connections.",
-    "arabicTranslation": "مبدّل شبكي"
+    "definition": "A movable section of railway track that guides a train onto another track.",
+    "arabicTranslation": "محوّل سكة حديد"
   },
   "buffer-stop": {
     "definition": "A barrier at the end of a railway track designed to prevent trains from moving beyond the track end.",
@@ -188,55 +188,55 @@
   },
   "clock-tower": {
     "definition": "A tower designed with a large clock displayed high on an exterior wall.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كلوك تووير»"
+    "arabicTranslation": "برج ساعة"
   },
   "conductor": {
-    "definition": "The person who leads a musical group.",
+    "definition": "A train crew member who checks tickets and assists passengers.",
     "arabicTranslation": "محصل أو مشرف قطار"
   },
   "engineer": {
-    "definition": "A person who designs and checks technical parts of a building project.",
+    "definition": "The person who operates a locomotive; also called a train driver.",
     "exampleUsage": "The glossary uses the term \"engineer\" in an educational description.",
-    "arabicTranslation": "مهندس"
+    "arabicTranslation": "سائق قطار"
   },
   "porter": {
-    "definition": "United States writer of novels and short stories (1890-1980).",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بورتير»"
+    "definition": "A worker who helps passengers carry luggage.",
+    "arabicTranslation": "حمال أمتعة"
   },
   "commuter": {
-    "definition": "A passenger train that is ridden primarily by passengers who travel regularly from one place to another.",
-    "arabicTranslation": "متنقل يومي"
+    "definition": "A person who regularly travels between home and work or study.",
+    "arabicTranslation": "راكب يتنقل يوميًا"
   },
   "traveler": {
     "definition": "A person who changes location.",
-    "arabicTranslation": "شخص يُسمّى «ترافيلير»"
+    "arabicTranslation": "مسافر"
   },
   "boarding": {
-    "definition": "The act of passengers and crew getting aboard a ship or aircraft.",
-    "arabicTranslation": "طائرة يُسمّى «بواردينج»"
+    "definition": "Getting onto a train.",
+    "arabicTranslation": "الصعود إلى القطار"
   },
   "departing": {
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديبارتينج»",
+    "arabicTranslation": "المغادرة",
     "definition": "That is going out or leaving."
   },
   "arriving": {
     "definition": "Getting to a place or the end of a trip.",
-    "arabicTranslation": "مكان يُسمّى «ارريفينج»"
+    "arabicTranslation": "الوصول"
   },
   "transferring": {
-    "definition": "To transfer somebody to a different position or location of work.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ترانسفيررينج»"
+    "definition": "Changing from one train or transport service to another.",
+    "arabicTranslation": "الانتقال إلى قطار آخر"
   },
   "waiting": {
     "definition": "The act of waiting (remaining inactive in one place while expecting something).",
-    "arabicTranslation": "مكان يُسمّى «وايتينج»"
+    "arabicTranslation": "الانتظار"
   },
   "announcing": {
-    "definition": "In scholarly writing, announcing can serve as a discourse marker that draws attention to the act of revealing information.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اننوونكينج»"
+    "definition": "Giving passengers spoken information, such as a departure time.",
+    "arabicTranslation": "الإعلان"
   },
   "validating": {
-    "definition": "Serving to support or corroborate.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فاليداتينج»"
+    "definition": "Checking or marking a ticket to confirm that it can be used.",
+    "arabicTranslation": "التحقق من صلاحية التذكرة"
   }
 }

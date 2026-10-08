@@ -32,16 +32,16 @@
       "جواز سفر",
       "تأشيرة",
       "أمتعة",
-      "حاوية يسمى «سويتكاسي»",
+      "حقيبة سفر",
       "أمتعة محمولة داخل الطائرة",
       "منطقة استلام الأمتعة",
       "حزام ناقل",
       "فحص أمني",
       "كاشف معدن",
-      "ماسح ضوئي",
+      "جهاز فحص أمني",
       "مبنى الركاب",
       "بوابة",
-      "منصة عرض"
+      "مدرج الطائرات"
     ],
     "usage": {
       "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or approaching the terminal as the main location; include terminal, gate, and runway naturally where visually appropriate, but make the real-world use of terminal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "check-in counter"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare check-in counter, boarding pass, passport, and visa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "check-in counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "luggage"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare luggage, suitcase, carry-on, and baggage claim and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "luggage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "conveyor belt"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare conveyor belt, security check, metal detector, and scanner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "conveyor belt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "terminal"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare terminal, gate, and runway and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "terminal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,20 +201,20 @@
       "propeller"
     ],
     "targetWordsArabic": [
-      "طائرة يسمى «كونترول تووير»",
-      "طائرة يسمى «هانجار»",
-      "منطقة يسمى «ديبارتوري لوونجي»",
+      "برج المراقبة",
+      "حظيرة طائرات",
+      "صالة المغادرة",
       "صالة الوصول",
       "متجر معفى من الرسوم",
-      "طعام يسمى «فوود كوورت»",
+      "منطقة مطاعم",
       "دورة مياه",
       "مصعد",
       "سلم متحرك",
-      "طائرة يسمى «ايربلاني»",
-      "طائرة يسمى «جيت ينجيني»",
+      "طائرة",
+      "محرك نفاث",
       "جناح",
-      "طائرة يسمى «كوكبيت»",
-      "هيكل الطائرة",
+      "قمرة القيادة",
+      "جسم الطائرة",
       "مروحة دافعة"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the cockpit as the central item; include cockpit, fuselage, and propeller naturally where visually appropriate, but make the real-world use of cockpit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Airport",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "control tower"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare control tower, hangar, departure lounge, and arrivals hall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "control tower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "duty-free shop"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare duty-free shop, food court, restroom, and elevator and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "duty-free shop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "escalator"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare escalator, airplane, jet engine, and wing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "escalator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "cockpit"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare cockpit, fuselage, and propeller and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "cockpit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,9 +375,9 @@
       "baggage handler"
     ],
     "targetWordsArabic": [
-      "جزء يسمى «تايل»",
-      "مركبة يسمى «لاندينج جيار»",
-      "غرفة يسمى «ويندوو»",
+      "ذيل الطائرة",
+      "معدات الهبوط",
+      "نافذة الطائرة",
       "ممر",
       "خزانة علوية",
       "طاولة قابلة للطي",
@@ -359,7 +385,7 @@
       "مساعد الطيار",
       "مضيف طيران",
       "راكب",
-      "طائرة يسمى «جرووند كريو»",
+      "طاقم أرضي",
       "مراقب حركة جوية",
       "موظف جمارك",
       "موظف هجرة",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult working with or speaking to the customs officer; include customs officer, immigration officer, and baggage handler naturally where visually appropriate, but make the real-world use of customs officer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: Airport",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "tail"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tail, landing gear, window, and aisle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "tail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "overhead bin"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare overhead bin, tray table, pilot, and co-pilot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "overhead bin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "flight attendant"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flight attendant, passenger, ground crew, and air traffic controller and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "flight attendant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "customs officer"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare customs officer, immigration officer, and baggage handler and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "customs officer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -509,18 +548,18 @@
     ],
     "targetWordsArabic": [
       "ميكانيكي",
-      "طائرة يسمى «بواردينج»",
+      "صعود الركاب إلى الطائرة",
       "إقلاع",
-      "سطح يسمى «لاندينج»",
+      "هبوط",
       "تحرك الطائرة على الأرض",
       "اضطراب جوي",
       "إعلان",
       "يربط حزام الأمان",
       "مخرج طوارئ",
-      "سترة بلا أكمام حياة",
-      "جهاز يسمى «وكسيجين ماسك»",
-      "فعل أو عملية يسمى «ديلاي»",
-      "توقف ترانزيت"
+      "سترة نجاة",
+      "قناع أكسجين",
+      "تأخير",
+      "توقف بين رحلتين"
     ],
     "usage": {
       "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
@@ -566,7 +605,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "layover",
+          "targetWords": ["layover"],
           "scenario": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare layover and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -576,7 +615,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the layover as the central item; include layover, mechanic, and boarding naturally where visually appropriate, but make the real-world use of layover the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
@@ -585,20 +625,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "mechanic"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare mechanic, boarding, takeoff, and landing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "mechanic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "taxiing"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare taxiing, turbulence, announcement, and fasten seatbelt and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "taxiing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "emergency exit"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare emergency exit, life vest, oxygen mask, and delay and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "emergency exit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "layover"
+        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare layover and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "layover",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

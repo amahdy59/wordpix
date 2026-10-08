@@ -27,20 +27,20 @@
       "Report"
     ],
     "targetWordsArabic": [
-      "كتاب مدرسي (مقرر دراسي)",
-      "شخص يسمى «جوورنال»",
-      "عضو يسمى «داتاباسي»",
-      "-",
-      "وثيقة يسمى «بيبليوجرافي»",
-      "استشهاد مرجعي",
-      "مكان يسمى «فووتنوتي»",
-      "مؤشر",
-      "شكل يسمى «ابستراكت»",
-      "غرفة يسمى «بيير ريفييو»",
-      "مقال أكاديمي",
-      "رسالة ماجستير",
-      "أطروحة دكتوراه",
-      "ورق",
+      "كتاب دراسي",
+      "مجلة علمية",
+      "قاعدة بيانات",
+      "محرك بحث",
+      "قائمة مراجع",
+      "إحالة مرجعية",
+      "حاشية",
+      "فهرس موضوعات",
+      "ملخص بحث",
+      "مراجعة الأقران",
+      "مقال",
+      "رسالة علمية",
+      "أطروحة",
+      "بحث أو ورقة علمية",
       "تقرير"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Dissertation through a realistic adult task; include Dissertation, Paper, and Report naturally where visually appropriate, but make the real-world use of Dissertation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Research & Study",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Textbook"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textbook, Journal, Database, and Search Engine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Textbook",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bibliography"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bibliography, Citation, Footnote, and Index and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bibliography",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Abstract"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Peer Review, Essay, and Thesis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Abstract",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dissertation"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dissertation, Paper, and Report and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Dissertation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,20 +201,20 @@
       "Study Group"
     ],
     "targetWordsArabic": [
-      "جزء يسمى «ليتيراتوري ريفييو»",
-      "جزء يسمى «ميثودولوجي»",
+      "مراجعة الدراسات السابقة",
+      "منهجية البحث",
       "استنتاج",
       "مقدمة",
-      "مادة يسمى «اببينديكس»",
+      "ملحق",
       "تدوين الملاحظات",
-      "بطاقة مراجعة",
-      "عضو يسمى «ميند ماب»",
-      "شكل يسمى «ووتليني»",
-      "منطقة يسمى «هيغليغت»",
+      "بطاقة تعليمية",
+      "خريطة ذهنية",
+      "مخطط أولي",
+      "يبرز النص",
       "يلخص",
       "مراجعة",
       "يحفظ",
-      "مادة يسمى «براكتيكي تيست»",
+      "اختبار تدريبي",
       "مجموعة دراسة"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult clearly carrying out the action Memorize; include Memorize, Practice Test, and Study Group naturally where visually appropriate, but make the real-world use of Memorize the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Research & Study",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Literature Review"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Literature Review, Methodology, Conclusion, and Introduction and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Literature Review",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Appendix"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appendix, Note-Taking, Flashcard, and Mind Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Appendix",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Outline"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Outline, Highlight, Summarize, and Review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Outline",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Memorize"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Memorize, Practice Test, and Study Group and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Memorize",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -344,14 +370,14 @@
     ],
     "targetWordsArabic": [
       "انتحال",
-      "مرجعي",
-      "شخص يسمى «وريجينال وورك»",
-      "يعيد الصياغة",
-      "اقتباس",
-      "شخص يسمى «سووركي»",
+      "مرجع",
+      "عمل أصلي",
+      "إعادة صياغة",
+      "يقتبس",
+      "مصدر",
       "النزاهة الأكاديمية",
       "تيرنيتن؛ منصة لفحص تشابه النصوص",
-      "ميثاق النزاهة الأكاديمية"
+      "ميثاق النزاهة"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
@@ -385,7 +411,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "Honor Code",
+          "targetWords": ["Honor Code"],
           "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Honor Code and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -395,7 +421,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Honor Code as the central item; include Honor Code, Plagiarism, and Reference naturally where visually appropriate, but make the real-world use of Honor Code the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Research & Study",
@@ -404,16 +431,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plagiarism"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plagiarism, Reference, Original Work, and Paraphrase and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Plagiarism",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Quote"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quote, Source, Academic Honesty, and Turnitin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Quote",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Honor Code"
+        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Honor Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Honor Code",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

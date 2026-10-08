@@ -29,10 +29,10 @@
     "targetWordsArabic": [
       "أستاذ جامعي",
       "محاضر",
-      "غرفة يسمى «تياتشينج اسسيستانت»",
+      "مساعد تدريس",
       "عميد",
       "نائب رئيس أكاديمي",
-      "رئيس الجامعة",
+      "رئيس الجامعة أو رئيسها الفخري",
       "مرشد",
       "مدرس خصوصي",
       "باحث",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Tutorial through a realistic adult task; include Tutorial, Lab Session, and Workshop naturally where visually appropriate, but make the real-world use of Tutorial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Academic Life",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Professor"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Professor, Lecturer, Teaching Assistant, and Dean and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Professor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Provost"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Provost, Chancellor, Advisor, and Tutor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Provost",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Researcher"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Researcher, Postdoc, Lecture, and Seminar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Researcher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tutorial"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutorial, Lab Session, and Workshop and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Tutorial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,7 +201,7 @@
       "Rubric"
     ],
     "targetWordsArabic": [
-      "منهج المقرر",
+      "خطة المقرر",
       "متطلب سابق",
       "مقرر اختياري",
       "مقرر أساسي",
@@ -200,9 +213,9 @@
       "قائمة الشرف",
       "كشف درجات",
       "اختبار منتصف الفصل",
-      "مادة يسمى «فينال يكسام»",
+      "امتحان نهائي",
       "اختبار قصير",
-      "معيار تقييم"
+      "سُلّم تقييم"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Final Exam as the central item; include Final Exam, Quiz, and Rubric naturally where visually appropriate, but make the real-world use of Final Exam the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Academic Life",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Syllabus"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Syllabus, Prerequisite, Elective, and Core Course and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Syllabus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Credit Hour"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Credit Hour, Grade, GPA, and Pass/Fail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Credit Hour",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dean's List"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dean's List, Honor Roll, Transcript, and Midterm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dean's List",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Final Exam"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Final Exam, Quiz, and Rubric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Final Exam",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -351,7 +377,7 @@
       "دبلوم",
       "شهادة",
       "تخصص رئيسي",
-      "قاصر",
+      "تخصص فرعي",
       "تخصص مزدوج",
       "مسار تخصصي"
     ],
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Double Major as the central item; include Double Major, Concentration, and Bachelor's naturally where visually appropriate, but make the real-world use of Double Major the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Academic Life",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bachelor's"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bachelor's, Master's, Doctorate, and Associate's and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bachelor's",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diploma"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diploma, Certificate, Major, and Minor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Diploma",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Double Major"
+        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Double Major, and Concentration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Double Major",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

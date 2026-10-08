@@ -78,7 +78,7 @@ describe("sentence question evidence", () => {
         />
       </I18nProvider>
     );
-    expect(screen.getByText(/Placeholder image/i)).toBeVisible();
+    expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
     expect(screen.getByText("5")).toBeVisible();
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
@@ -101,7 +101,7 @@ describe("sentence question evidence", () => {
     const image = screen.getByRole("img");
     fireEvent.error(image);
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
-    expect(screen.getByText(/Placeholder image/i)).toBeVisible();
+    expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
     expect(speak).toHaveBeenLastCalledWith("I can see five books.");
   });

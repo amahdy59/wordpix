@@ -70,7 +70,9 @@
     "gotIt": "فهمت ذلك",
     "listen": "استمع",
     "done": "تم",
-    "returnToExplore": "العودة إلى مسار التعلّم"
+    "returnToExplore": "العودة إلى مسار التعلّم",
+    "checkAnswer": "تحقّق من الإجابة",
+    "playing": "جارٍ التشغيل…"
   },
   "auth": {
     "email": "البريد الإلكتروني",
@@ -193,7 +195,12 @@
     "todayContinue": "تابع: {title}",
     "todayStart": "ابدأ: {title}",
     "reviewNowWords": "مراجعة {count} كلمة الآن",
-    "overdueBadge": "{count} متأخرة"
+    "overdueBadge": "{count} متأخرة",
+    "specializedTracks": "المسارات المتخصصة",
+    "trackProgress": "التقدم في {title}",
+    "resumeTrack": "دورة متخصصة قيد التقدم",
+    "continueTrack": "تابع: {title}",
+    "startFirstLesson": "ابدأ الدرس الأول"
   },
   "learn": {
     "specialCurricula": "مناهج التعلم المتخصصة",
@@ -382,7 +389,11 @@
     "statusNotStarted": "لم تبدأ",
     "filterOptions": "تصفية حسب المستوى أو التقدم",
     "clearSearchInput": "مسح البحث",
-    "selectedFilters": "عوامل التصفية المحددة"
+    "selectedFilters": "عوامل التصفية المحددة",
+    "masteredUnits": "الوحدات المتقنة",
+    "inProgressUnits": "الوحدات قيد الدراسة",
+    "notStartedUnits": "الوحدات التي لم تبدأها",
+    "searchClarification": "يعرض البحث عن الكلمات الوحدات التي تتضمن مفردات مطابقة."
   },
   "gamification": {
     "mastered": "متقن",
@@ -435,7 +446,16 @@
       "school": "الدراسة",
       "conversation": "المحادثة",
       "kids": "تعلّم الإنجليزية"
-    }
+    },
+    "strongWordsDesc": "إتقان عبر مراجعات متباعدة",
+    "familiarWordsDesc": "تعرّفت إليها واسترجعتها",
+    "learningWordsDesc": "كلمات بدأت تعلّمها مؤخرًا",
+    "recallNotTestedDesc": "لم تُكمل أي تدريبات بعد",
+    "recallAccuracyDesc": "دقة الاسترجاع في التدريب",
+    "dueForReviewDesc": "مجدولة لتقوية الاسترجاع",
+    "activeStreakDesc": "أيام دراسة متتالية",
+    "signedInStatus": "تم تسجيل الدخول · المزامنة السحابية نشطة",
+    "guestStorageStatus": "محفوظ على هذا الجهاز · سجّل الدخول للنسخ الاحتياطي والمزامنة"
   },
   "wordDetails": {
     "meaning": "المعنى",
@@ -492,7 +512,13 @@
     "continueNext": "متابعة إلى النشاط التالي",
     "noExercises": "لا توجد تمارين متاحة للتدريب.",
     "sessionPaused": "تم إيقاف الجلسة مؤقتاً. تم حفظ تقدمك.",
-    "resumeSession": "استئناف التدريب"
+    "resumeSession": "استئناف التدريب",
+    "tomorrow": "غدًا",
+    "inDays": "بعد {{count}} أيام",
+    "nextScheduled": "موعد المراجعات القادمة: {{time}}.",
+    "noReviewsTitle": "لا توجد مراجعات مستحقة بعد",
+    "noReviewsDesc": "تظهر المراجعات المتباعدة هنا بعد دراسة أول وحدة مفردات.",
+    "startLearning": "ابدأ الدرس الأول"
   },
   "settings": {
     "title": "الإعدادات وإمكانية الوصول",
@@ -562,7 +588,8 @@
       "dark": "داكن",
       "system": "النظام"
     },
-    "toggleLabel": "{setting}: {state}"
+    "toggleLabel": "{setting}: {state}",
+    "spokenFeedback": "ملاحظات صوتية"
   },
   "vocabularyPreload": {
     "title": "تحميل المفردات ({count} وحدة)",
@@ -657,6 +684,7 @@
     "rewriteSentence": "إعادة صياغة الجملة",
     "rewriteSentenceDesc": "أعد صياغة الجمل باستخدام المفردات المستهدفة المحددة.",
     "rewriteUseHint": "(استخدم: «{hint}»)",
+    "chooseCorrection": "اختر الصياغة الصحيحة: {sentence}",
     "findMistake": "اكتشف الخطأ",
     "findMistakeDesc": "لاحظ الأخطاء واكتشف التراكيب الطبيعية الفصيحة.",
     "writingPrompts": "مواضيع كتابية للتدريب",
@@ -761,7 +789,8 @@
     "formationSection": "اشتقاق الكلمات",
     "formationSectionDesc": "الصيغ المشتقة وعائلات الكلمات",
     "synonymsSection": "المترادفات والمتضادات",
-    "synonymsSectionDesc": "قارن بين المعاني المتقاربة والمتضادة"
+    "synonymsSectionDesc": "قارن بين المعاني المتقاربة والمتضادة",
+    "unitActivities": "أنشطة الوحدة"
   },
   "lesson": {
     "sessionBreakdown": "تفصيل نتائج الجلسة",
@@ -775,6 +804,8 @@
     "levelBeginner": "مبتدئ",
     "immersionBadge": "الانغماس الكامل WordPix",
     "selectWordGroup": "اختر مجموعة كلمات",
+    "testOutHint": "اختبر معرفتك بجميع كلمات هذه الوحدة في تقييم قصير.",
+    "groupCount": "عدد المجموعات: {{count}}",
     "chooseGroupDesc": "اختر مجموعة لمتابعة مسارك التعليمي.",
     "gseRange": " · GSE {start}–{end}",
     "unitOutcome": "هدف الوحدة",
@@ -975,7 +1006,10 @@
         "title": "تدريب كتابة المفردات",
         "description": "تدرّب على كتابة كلمات المفردات بدقة."
       }
-    }
+    },
+    "micRequired": "يتطلب ميكروفونًا",
+    "timedDrill": "تدريب محدد الوقت",
+    "selfPaced": "تعلّم بالوتيرة التي تناسبك"
   },
   "releaseNotes": {
     "whatsNewInVersion": "ما الجديد في الإصدار {version}",
@@ -1040,7 +1074,7 @@
     "stopSentenceAudio": "إيقاف صوت الجملة",
     "retrySentenceAudio": "إعادة تشغيل صوت الجملة",
     "sentenceAudioError": "تعذر تشغيل الصوت. حاول مجددًا أو اقرأ الجملة.",
-    "scenePlaceholderDescription": "صورة مؤقتة. استخدم التلميحات النصية للإجابة.",
+    "scenePlaceholderDescription": "نعمل على تحديث هذه الصورة. استخدم التلميح النصي للإجابة.",
     "gapFillTitle": "أكمل الجملة",
     "gapFillInstruction": "اختر الكلمة التي تكمل الجملة.",
     "gapFillImageInstruction": "انظر إلى المشهد، ثم اختر الكلمة التي تكمل الجملة.",
@@ -1412,7 +1446,10 @@
     "cueAirflow": "تدفق الهواء",
     "cueRhythmStress": "الإيقاع والنبر",
     "cueJaw": "الفك",
-    "rhythmBeatAria": "إيقاع النبر: {beat}"
+    "rhythmBeatAria": "إيقاع النبر: {beat}",
+    "previousLesson": "الدرس السابق",
+    "nextLesson": "الدرس التالي",
+    "answerPrompt": "اختر إجابة للمتابعة"
   },
   "hadith": {
     "backToCurriculum": "العودة إلى المنهج",
@@ -1467,9 +1504,11 @@
       "vocabulary": "المفردات",
       "practice": "تدريب",
       "speak": "ناقش",
-      "check-review": "تحقق وراجع"
+      "check-review": "تحقق وراجع",
+      "review": "المراجعة والتطبيق"
     },
     "lessonLabel": "درس الحديث",
+    "checkedCount": "{checked} من {total} تم التحقق",
     "beginLesson": "ابدأ الدرس",
     "learningOutcomes": "نواتج التعلم",
     "warmupLabel": "تمهيد",
@@ -1491,7 +1530,7 @@
     "listenStepTwo": "أعد الاستماع ببطء ولاحظ التعبيرات المستهدفة.",
     "listenStepThree": "اقرأ الترجمة واربط المعنى بالكلمات.",
     "listenTipOne": "ركّز على المعنى العام قبل الانشغال بالكلمات المفردة.",
-    "listenTipTwo": "انتبه إلى روابط الغرض والأفعال.",
+    "listenTipTwo": "لاحظ الكلمات المألوفة وكيف ترتبط بالفكرة الرئيسة.",
     "listenTipThree": "قارن النص العربي الكامل بمعناه الإنجليزي.",
     "readingLayout": "تنسيق القراءة ثنائية اللغة",
     "stackedReading": "موجّه",
@@ -1683,7 +1722,13 @@
           }
         }
       }
-    }
+    },
+    "retrievalQuestions": "استرجع من الذاكرة",
+    "revealModelAnswer": "اطّلع على الإجابة النموذجية",
+    "howDidYouDo": "كيف كان أداؤك؟",
+    "gotIt": "عرفت الإجابة",
+    "needReview": "أحتاج إلى مزيد من المراجعة",
+    "sentenceFrame": "بداية جملة مفيدة"
   },
   "speechPractice": {
     "title": "استمع وسجّل وقارن",
@@ -1858,7 +1903,8 @@
     "requirementsPending": "أكمل المراحل السابقة، واكتب إجابتك، وحدد كل مهام التحدي قبل الإنهاء.",
     "responseOptionDirect": "استخدم إجابة مباشرة",
     "responseOptionClarify": "اطرح سؤالًا للتوضيح",
-    "responseOptionCompromise": "اقترح حلًا متوازنًا"
+    "responseOptionCompromise": "اقترح حلًا متوازنًا",
+    "targetTermDesc": "تعلّم كيفية استخدام «{{term}}» في هذه المحادثة."
   },
   "business": {
     "title": "الإنجليزية المهنية المتقدمة",
@@ -2047,7 +2093,8 @@
     "choiceUnsure": "لست متأكدًا",
     "choiceDisagree": "لا أوافق",
     "searchPlaceholder": "ابحث عن الوحدات أو الموضوعات أو المهارات…",
-    "vocabularySearchPlaceholder": "ابحث عن المصطلحات أو التعريفات أو الأمثلة…"
+    "vocabularySearchPlaceholder": "ابحث عن المصطلحات أو التعريفات أو الأمثلة…",
+    "curriculumTitle": "منهج الإنجليزية للأعمال"
   },
   "wordInspector": {
     "pronounce": "انطق {word}"
@@ -2119,5 +2166,8 @@
     "specBitrate": "معدل النقل: مضغوط للبث السريع على الهواتف (< 5 ميجابايت)",
     "jumpHint": "انقر فوق أي سطر للانتقال إلى تلك اللحظة",
     "wordsLabel": "الكلمات:"
+  },
+  "mastery": {
+    "mastered": "متقن"
   }
 }

@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "قلم",
       "قلم رصاص",
-      "قلم تمييز بصري (هايلايتر)",
-      "قلم تخطيط (ماركر)",
+      "قلم تظليل",
+      "قلم تعليم",
       "ممحاة",
       "قلم رصاص ميكانيكي",
-      "قلم نافورة",
-      "أداة يسمى «فيلت-تيب بين»",
+      "قلم حبر سائل",
+      "قلم لباد",
       "شريط تصحيح",
       "قلم سبورة بيضاء",
       "ورق",
-      "دفتر (كراسة ملاحظات)",
+      "دفتر ملاحظات",
       "دفتر ملاحظات مسطر",
-      "ورقة ملاحظات لاصقة (ستيكي نوت)",
-      "بطاقة مؤشر"
+      "ورقة ملاحظات لاصقة",
+      "بطاقة ملاحظات"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Legal Pad as the central item; include Legal Pad, Sticky Note, and Index Card naturally where visually appropriate, but make the real-world use of Legal Pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Office Supplies",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pen"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pen, Pencil, Highlighter, and Marker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eraser"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eraser, Mechanical Pencil, Fountain Pen, and Felt-Tip Pen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Eraser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Correction Tape"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Correction Tape, Whiteboard Marker, Paper, and Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Correction Tape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Legal Pad"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Pad, Sticky Note, and Index Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Legal Pad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,19 +202,19 @@
     ],
     "targetWordsArabic": [
       "مظروف",
-      "ملف (مجلد حفظ الأوراق)",
-      "ملف حلقي (بايندر)",
+      "حافظة أوراق",
+      "ملف ذو حلقات",
       "مجلد ورقي مانيلا",
-      "علامة",
-      "أداة يسمى «ستابلير»",
+      "ملصق تعريفي",
+      "دباسة",
       "مشبك ورق",
       "مشبك أوراق معدني",
-      "رباط مطاطي (مطاط)",
+      "رباط مطاطي",
       "دبوس تثبيت",
-      "دبوس لوحة (دبوس ضغط)",
+      "دبوس رسم",
       "شريط لاصق",
-      "أصبوع صمغ (غراء لاصق)",
-      "شخص يسمى «فاستينير»",
+      "قلم صمغ",
+      "أداة تثبيت",
       "مغناطيس"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Glue Stick as the central item; include Glue Stick, Fastener, and Magnet naturally where visually appropriate, but make the real-world use of Glue Stick the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Office Supplies",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Envelope"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Envelope, Folder, Binder, and Manila Folder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Envelope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Label"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Stapler, Paper Clip, and Binder Clip and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Label",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rubber Band"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rubber Band, Pushpin, Thumbtack, and Tape and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rubber Band",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Glue Stick"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Glue Stick, Fastener, and Magnet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Glue Stick",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -354,7 +380,7 @@
       "موزع شريط لاصق",
       "صينية مستندات",
       "مصباح مكتب",
-      "سطح يسمى «مووسي باد»",
+      "لوحة فأرة الحاسوب",
       "مسند للمعصم",
       "حامل شاشة",
       "منظم كابلات",
@@ -362,7 +388,7 @@
       "طابع",
       "ملصق شحن",
       "شريط تغليف",
-      "سفينة يسمى «بوببلي وراب»",
+      "غلاف فقاعي",
       "صندوق"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Packing Tape as the central item; include Packing Tape, Bubble Wrap, and Box naturally where visually appropriate, but make the real-world use of Packing Tape the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Office Supplies",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Desk Organizer"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk Organizer, Pencil Cup, Tape Dispenser, and Letter Tray and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Desk Organizer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Desk Lamp"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk Lamp, Mouse Pad, Wrist Rest, and Monitor Stand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Desk Lamp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cable Organizer"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Organizer, Desk Calendar, Stamp, and Shipping Label and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cable Organizer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Packing Tape"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Packing Tape, Bubble Wrap, and Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Packing Tape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -500,9 +539,9 @@
       "Letter Opener"
     ],
     "targetWordsArabic": [
-      "مظروف مبطن",
+      "مظروف مبطّن",
       "ملصق إرجاع",
-      "جهاز يسمى «بوستاجي ميتير»",
+      "جهاز طباعة قيمة البريد",
       "فتحة بريد",
       "فتاحة رسائل"
     ],
@@ -526,7 +565,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Letter Opener",
+          "targetWords": ["Letter Opener"],
           "scenario": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Letter Opener and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -536,7 +575,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Letter Opener as the central item; include Letter Opener, Padded Envelope, and Return Label naturally where visually appropriate, but make the real-world use of Letter Opener the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Office Supplies",
@@ -545,12 +585,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Padded Envelope"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Padded Envelope, Return Label, Postage Meter, and Mail Slot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Padded Envelope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Letter Opener"
+        "prompt": "In the office supplies setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Letter Opener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Letter Opener",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

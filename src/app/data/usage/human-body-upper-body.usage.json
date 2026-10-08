@@ -27,18 +27,18 @@
       "Tricep"
     ],
     "targetWordsArabic": [
-      "الصدر",
+      "صدر",
       "القفص الصدري",
       "بطن",
-      "البطن",
-      "السرة",
-      "الخصر",
+      "بطن",
+      "سرة",
+      "خصر",
       "عظم القص",
-      "الثدي",
-      "عظم الترقوة",
+      "ثدي",
+      "ترقوة",
       "تفاحة آدم",
-      "الكتف",
-      "الإبط",
+      "كتف",
+      "إبط",
       "الذراع العلوي",
       "عضلة ذات الرأسين",
       "العضلة ثلاثية الرؤوس"
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the human body (upper body) 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Upper Arm, Bicep, Tricep. The next step focuses on Upper Arm. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Upper Arm, Bicep, Tricep in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body): Email",
-      "text": "Omar has an everyday task connected to the human body (upper body). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with chest, ribcage, and abdomen. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with belly, navel, and waist. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Upper Body) 1: A short reading",
+      "text": "The class labels a diagram of the upper body. Omar identifies the chest and ribcage, while Maya finds the abdomen and waist. A second drawing shows the sternum and collarbone. They use the diagram to describe each location, then check their labels against the teacher's answer key.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chest"
+        "prompt": "During a routine care or examination situation, an adult reviews Chest, Ribcage, Abdomen. The next step focuses on Chest.\nWhich option is the focus of the next step?",
+        "answer": "Chest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Belly"
+        "prompt": "During a routine care or examination situation, an adult reviews Belly, Navel, Waist. The next step focuses on Belly.\nWhich option is the focus of the next step?",
+        "answer": "Belly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sternum"
+        "prompt": "During a routine care or examination situation, an adult reviews Sternum, Breast, Collarbone. The next step focuses on Sternum.\nWhich option is the focus of the next step?",
+        "answer": "Sternum",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adam's Apple"
+        "prompt": "During a routine care or examination situation, an adult reviews Adam's Apple, Shoulder, Armpit. The next step focuses on Adam's Apple.\nWhich option is the focus of the next step?",
+        "answer": "Adam's Apple",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Upper Arm"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Chest"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Belly"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Upper Arm, Bicep, Tricep. The next step focuses on Upper Arm.\nWhich option is the focus of the next step?",
+        "answer": "Upper Arm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Wisdom Tooth” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two parts does Omar identify?",
+        "answer": "The chest and ribcage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -193,10 +204,10 @@
       "Hip"
     ],
     "targetWordsArabic": [
-      "المرفق",
-      "الساعد",
+      "مرفق",
+      "ساعد",
       "رسغ",
-      "الذراع",
+      "ذراع",
       "عضلة دالية",
       "أعلى الظهر",
       "منتصف الظهر",
@@ -205,15 +216,15 @@
       "لوح الكتف",
       "ضلع",
       "فقرة",
-      "العصعص",
+      "العُصعُص",
       "الحوض",
-      "الورك"
+      "ورك"
     ],
     "usage": {
       "goal": "Learn to use the human body (upper body) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Tailbone, Pelvis, Hip. The next step focuses on Tailbone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Tailbone, Pelvis, Hip in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body): Personal Message",
-      "text": "Omar has an everyday task connected to the human body (upper body). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with elbow, forearm, and wrist. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with arm, deltoid, and upper back. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Upper Body) 2: A short reading",
+      "text": "Maya studies a drawing of the arm. She labels the elbow, forearm, and wrist. Omar finds the spine on a back diagram and marks the upper back and lower back. The teacher asks them to compare the drawings. They explain which labels refer to an arm and which refer to the back.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Elbow"
+        "prompt": "During a routine care or examination situation, an adult reviews Elbow, Forearm, Wrist. The next step focuses on Elbow.\nWhich option is the focus of the next step?",
+        "answer": "Elbow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Arm"
+        "prompt": "During a routine care or examination situation, an adult reviews Arm, Deltoid, Upper Back. The next step focuses on Arm.\nWhich option is the focus of the next step?",
+        "answer": "Arm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mid Back"
+        "prompt": "During a routine care or examination situation, an adult reviews Mid Back, Lower Back, Spine. The next step focuses on Mid Back.\nWhich option is the focus of the next step?",
+        "answer": "Mid Back",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shoulder Blade"
+        "prompt": "During a routine care or examination situation, an adult reviews Shoulder Blade, Rib, Vertebra. The next step focuses on Shoulder Blade.\nWhich option is the focus of the next step?",
+        "answer": "Shoulder Blade",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tailbone"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Elbow"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Arm"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Tailbone, Pelvis, Hip. The next step focuses on Tailbone.\nWhich option is the focus of the next step?",
+        "answer": "Tailbone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Chest” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which three parts does Maya label?",
+        "answer": "The elbow, forearm, and wrist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -361,25 +383,25 @@
     "targetWordsArabic": [
       "عضلة صدرية",
       "بطني",
-      "عضلة مائلة",
-      "العضلة شبه المنحرفة",
+      "عضلة مائلة في البطن",
+      "عضلة شبه منحرفة",
       "العضلة الظهرية العريضة",
-      "الكفة المدورة",
+      "مجموعة عضلات وأوتار تحيط بمفصل الكتف",
       "عضلات الجذع",
       "عضلة قابضة",
       "عضلة باسطة",
       "وتر",
       "جلد",
       "مسام",
-      "نمش",
+      "بقعة نمش",
       "شامة",
       "وحمة"
     ],
     "usage": {
       "goal": "Learn to use the human body (upper body) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Freckle, Mole, Birthmark. The next step focuses on Freckle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Freckle, Mole, Birthmark in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body): Short Dialogue",
-      "text": "Omar has an everyday task connected to the human body (upper body). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with pectoral, abdominal, and oblique. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with trapezius, latissimus, and rotator cuff. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Upper Body) 3: A short reading",
+      "text": "Omar reads a muscle diagram. He identifies the pectoral muscles in the chest and an oblique muscle at the side of the abdomen. Maya labels the trapezius and rotator cuff on another drawing. The teacher explains the terms flexor and extensor. They group the labels by location before checking their answers.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pectoral"
+        "prompt": "During a routine care or examination situation, an adult reviews Pectoral, Abdominal, Oblique. The next step focuses on Pectoral.\nWhich option is the focus of the next step?",
+        "answer": "Pectoral",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trapezius"
+        "prompt": "During a routine care or examination situation, an adult reviews Trapezius, Latissimus, Rotator Cuff. The next step focuses on Trapezius.\nWhich option is the focus of the next step?",
+        "answer": "Trapezius",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Core"
+        "prompt": "During a routine care or examination situation, an adult reviews Core, Flexor, Extensor. The next step focuses on Core.\nWhich option is the focus of the next step?",
+        "answer": "Core",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tendon"
+        "prompt": "During a routine care or examination situation, an adult reviews Tendon, Skin, Pore. The next step focuses on Tendon.\nWhich option is the focus of the next step?",
+        "answer": "Tendon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Freckle"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Pectoral"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Trapezius"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Freckle, Mole, Birthmark. The next step focuses on Freckle.\nWhich option is the focus of the next step?",
+        "answer": "Freckle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Elbow” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where are the pectoral muscles in the diagram?",
+        "answer": "In the chest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -508,12 +541,12 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Scar", "Wrinkle", "Goosebumps", "Tan", "Sunburn"],
-    "targetWordsArabic": ["ندبة", "تجعد", "قشعريرة", "أسمر فاتح", "حروق الشمس"],
+    "targetWordsArabic": ["ندبة", "تجعد", "قشعريرة الجلد", "أسمر فاتح", "حروق الشمس"],
     "usage": {
       "goal": "Learn to use the human body (upper body) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -539,33 +572,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Tan, Sunburn, Scar. The next step focuses on Tan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Tan, Sunburn in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body): Tips/Notice",
-      "text": "Omar has an everyday task connected to the human body (upper body). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with scar, wrinkle, and goosebumps. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tan and sunburn. Each term belongs to a different part of the care process.",
+      "title": "The Human Body (Upper Body) 4: A short reading",
+      "text": "In a language class, Maya compares pictures showing a scar and a wrinkle. Omar sees a photograph of goosebumps on an arm. Another picture shows sunburn. They describe the visible differences using short sentences. The teacher asks them to match the words to the pictures and explain how they made each choice.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scar"
+        "prompt": "During a routine care or examination situation, an adult reviews Scar, Wrinkle, Goosebumps. The next step focuses on Scar.\nWhich option is the focus of the next step?",
+        "answer": "Scar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tan"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Scar"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Tan"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Tan, Sunburn, Scar. The next step focuses on Tan.\nWhich option is the focus of the next step?",
+        "answer": "Tan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -574,6 +602,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Pectoral” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar see on an arm?",
+        "answer": "Goosebumps",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

@@ -28,20 +28,20 @@
     ],
     "targetWordsArabic": [
       "سفينة شحن",
-      "سمكة يسمى «فيشينج بوات»",
+      "قارب صيد",
       "قارب شراعي",
       "قاطرة بحرية",
-      "عبارة",
+      "عبّارة",
       "يخت",
       "كاياك",
       "زورق كانو",
       "قارب سريع",
       "قارب نجاة",
       "صندل بحري",
-      "سفينة يسمى «كونتاينير شيب»",
-      "التحام",
+      "سفينة حاويات",
+      "رصيف رسو",
       "رصيف بحري",
-      "مرسى شحن"
+      "رصيف شحن"
     ],
     "usage": {
       "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Dock as the central item; include Dock, Pier, and Wharf naturally where visually appropriate, but make the real-world use of Dock the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cargo Ship"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cargo Ship",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ferry"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ferry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Speedboat"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Speedboat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dock"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dock",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -196,13 +209,13 @@
       "حوض جاف",
       "حوض بناء سفن",
       "حاوية شحن",
-      "آلة يسمى «كراني»",
+      "رافعة",
       "رافعة شوكية",
       "منصة تحميل",
       "شبكة حمولة",
       "منحدر تحميل",
       "مستودع",
-      "شحن"
+      "بضائع الشحن"
     ],
     "usage": {
       "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Loading Ramp as the central item; include Loading Ramp, Warehouse, and Freight naturally where visually appropriate, but make the real-world use of Loading Ramp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Harbor",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jetty"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Jetty",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Marina"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Marina",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crane"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crane",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Loading Ramp"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Loading Ramp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,20 +376,20 @@
     ],
     "targetWordsArabic": [
       "مرساة",
-      "قارب يسمى «موورينج ليني»",
+      "حبل رسو",
       "عوامة",
       "منارة إرشاد",
       "بوصلة",
       "خريطة ملاحية",
       "رادار",
-      "إذاعة",
+      "جهاز اتصال لاسلكي",
       "منظار ثنائي",
       "علم",
-      "لون يسمى «سيجنال ليغت»",
+      "ضوء إشارة بحري",
       "بوق",
-      "سمكة يسمى «فيشينج رود»",
-      "سمكة يسمى «فيشينج نيت»",
-      "سمكة يسمى «تاكلي بوكس»"
+      "سنارة صيد",
+      "شبكة صيد",
+      "صندوق أدوات صيد"
     ],
     "usage": {
       "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Fishing Rod as the central item; include Fishing Rod, Fishing Net, and Tackle Box naturally where visually appropriate, but make the real-world use of Fishing Rod the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Harbor",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Anchor"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Anchor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compass"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Compass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Binoculars"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Binoculars",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fishing Rod"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fishing Rod",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -510,16 +549,16 @@
       "Barnacle"
     ],
     "targetWordsArabic": [
-      "طعم",
+      "طُعم",
       "خطاف",
       "بكرة صيد",
       "صندوق تبريد",
       "سلة سمك",
       "سروال خوض",
-      "سترة حياة",
+      "سترة نجاة",
       "نورس",
       "بجع",
-      "ختم",
+      "فقمة",
       "سلطعون",
       "مصيدة كركند",
       "حبل",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Rope as the central item; include Rope, Chain, and Barnacle naturally where visually appropriate, but make the real-world use of Rope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bait"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bait",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fish Basket"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fish Basket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pelican"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pelican",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rope"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -667,7 +719,7 @@
     ],
     "targetWordsArabic": [
       "مد وجزر",
-      "يلوح",
+      "موجة",
       "ناقلة",
       "غواصة",
       "حاوية",
@@ -719,7 +771,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Navigation as the central item; include Navigation, Shipping Lane, and Tide naturally where visually appropriate, but make the real-world use of Navigation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Harbor",
@@ -728,16 +781,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tide"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tide",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Container"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Container",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Navigation"
+        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Navigation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

@@ -37,10 +37,10 @@
       "عضلة دالية",
       "عضلة ألوية",
       "عضلة صدرية",
-      "مصطلح طبي أو تشريحي يسمى «وهيتي بلوود كيلل»",
+      "خلية دم بيضاء",
       "جسم مضاد",
       "مستضد",
-      "عضو يسمى «ليمف نودي»",
+      "عقدة لمفاوية",
       "لوزة"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Antigen as the central item; include Antigen, Lymph Node, and Tonsil naturally where visually appropriate, but make the real-world use of Antigen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Body Systems",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Muscle"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muscle, Bicep, Tricep, and Quadricep and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Muscle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hamstring"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hamstring, Calf Muscle, Abdominal, and Deltoid and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Hamstring",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gluteus"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gluteus, Pectoral, White Blood Cell, and Antibody and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gluteus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Antigen"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antigen, Lymph Node, and Tonsil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Antigen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,8 +202,8 @@
     ],
     "targetWordsArabic": [
       "غدة زعترية",
-      "عظم يسمى «بوني مارروو»",
-      "عضو يسمى «يمموني ريسبونسي»",
+      "نخاع العظم",
+      "استجابة مناعية",
       "لقاح",
       "عدوى",
       "كلية",
@@ -201,7 +214,7 @@
       "ترشيح",
       "نفرون",
       "كلوي",
-      "سم",
+      "سمّ",
       "ترطيب الجسم"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Renal through a realistic adult task; include Renal, Toxin, and Hydration naturally where visually appropriate, but make the real-world use of Renal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Body Systems",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thymus"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thymus, Bone Marrow, Immune Response, and Vaccine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Thymus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Infection"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Infection, Kidney, Bladder, and Ureter and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Infection",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Urethra"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Urethra, Urine, Filtration, and Nephron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Urethra",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Renal"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renal, Toxin, and Hydration and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Renal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -362,8 +388,8 @@
       "طبقة من الجلد",
       "بشرة",
       "أدمة",
-      "عضلة يسمى «هاير فولليكلي»",
-      "عضو يسمى «سويات جلاند»"
+      "بصيلة شعر",
+      "غدة عرقية"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Dermis as the central item; include Dermis, Hair Follicle, and Sweat Gland naturally where visually appropriate, but make the real-world use of Dermis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Body Systems",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cell Division"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell Division, DNA, Gene, and Chromosome and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cell Division",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Embryo"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Embryo, Fetus, Pregnancy, and Birth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Embryo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Growth"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Growth, Puberty, Skin Layer, and Epidermis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Growth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dermis"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dermis, Hair Follicle, and Sweat Gland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dermis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -493,7 +532,7 @@
     "cefrStage": "B1",
     "stageName": "B1 Wider World",
     "targetWordsEnglish": ["Oil Gland", "Melanin", "Keratin", "Collagen", "Pore"],
-    "targetWordsArabic": ["عضو يسمى «ويل جلاند»", "ميلانين", "كيراتين", "كولاجين", "مسام"],
+    "targetWordsArabic": ["غدة دهنية", "ميلانين", "كيراتين", "كولاجين", "مسام"],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
@@ -514,7 +553,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Pore",
+          "targetWords": ["Pore"],
           "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pore and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -524,7 +563,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pore as the central item; include Pore, Oil Gland, and Melanin naturally where visually appropriate, but make the real-world use of Pore the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Body Systems",
@@ -533,12 +573,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oil Gland"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Gland, Melanin, Keratin, and Collagen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Oil Gland",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pore"
+        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pore and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pore",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

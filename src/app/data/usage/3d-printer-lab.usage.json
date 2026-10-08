@@ -28,15 +28,15 @@
     ],
     "targetWordsArabic": [
       "رأس الطباعة",
-      "منصة الطباعة",
-      "بكرة خيط الطباعة",
+      "منصّة الطباعة",
+      "بَكَرَة خيط الطباعة",
       "وحدة بثق الخيط",
-      "فوهة",
-      "محرك خطوي",
+      "فُوّهة",
+      "مُحرّك خُطوي",
       "حزام",
-      "سكة توجيه",
+      "سِكّة توجيه",
       "مروحة تبريد",
-      "شاشة بلورية سائلة (LCD)",
+      "شاشة بلّورية سائلة (LCD)",
       "خيط PLA من حمض متعدد اللاكتيك",
       "خيط ABS من أكريلونيتريل بوتادين ستايرين",
       "خيط PETG للطباعة",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating PETG Filament through a realistic adult task; include PETG Filament, Resin, and Nylon naturally where visually appropriate, but make the real-world use of PETG Filament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The 3D Printer Lab",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Print Head"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print Head, Build Plate, Filament Spool, and Extruder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Print Head",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nozzle"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nozzle, Stepper Motor, Belt, and Guide Rail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Nozzle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cooling Fan"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling Fan, LCD Screen, PLA Filament, and ABS Filament and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cooling Fan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "PETG Filament"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare PETG Filament, Resin, and Nylon and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "PETG Filament",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,8 +202,8 @@
     ],
     "targetWordsArabic": [
       "خيط طباعة مرن",
-      "خيط طباعة مركب بجزيئات الخشب",
-      "خيط طباعة مركب بجزيئات معدنية",
+      "خيط طباعة مركّب بجزيئات الخشب",
+      "خيط طباعة مركّب بجزيئات معدنية",
       "مادة دعم للطباعة ثلاثية الأبعاد",
       "عصا غراء",
       "حاسوب",
@@ -198,7 +211,7 @@
       "فأرة حاسوب",
       "لوح رسم رقمي",
       "مسطرة",
-      "قدمة قياس",
+      "قَدَمة قياس",
       "منقلة",
       "ورق شبكي",
       "دفتر رسم",
@@ -263,7 +276,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Grid Paper as the central item; include Grid Paper, Sketchbook, and Reference Model naturally where visually appropriate, but make the real-world use of Grid Paper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The 3D Printer Lab",
@@ -272,20 +286,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flexible Filament"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flexible Filament, Wood Filament, Metal Filament, and Support Material and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Flexible Filament",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Glue Stick"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Glue Stick, Computer, 3D Software, and Mouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Glue Stick",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Graphics Tablet"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphics Tablet, Ruler, Caliper, and Protractor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Graphics Tablet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grid Paper"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid Paper, Sketchbook, and Reference Model and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Grid Paper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -356,7 +382,7 @@
     "targetWordsArabic": [
       "ورق صنفرة",
       "ملف",
-      "سكين حرفي",
+      "سكين حِرفي",
       "كماشة",
       "ملقط",
       "طلاء",
@@ -424,7 +450,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Gear as the central item; include Gear, Bracket, and Vase naturally where visually appropriate, but make the real-world use of Gear the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The 3D Printer Lab",
@@ -433,20 +460,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sandpaper"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandpaper, File, Craft Knife, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sandpaper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tweezers"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tweezers, Paint, Paintbrush, and Primer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tweezers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Acetone"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acetone, UV Curing Lamp, Figurine, and Phone Case and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Acetone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gear"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Bracket, and Vase and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -516,7 +555,7 @@
     ],
     "targetWordsArabic": [
       "حلقة مفاتيح",
-      "قطاعة بسكويت",
+      "قطّاعة بسكويت",
       "صافرة",
       "قطعة شطرنج",
       "نموذج معماري",
@@ -528,8 +567,8 @@
       "قفازات",
       "سلة مهملات",
       "صانع علامة",
-      "كيس سحاب",
-      "مادة يسمى «ديسيككانت باك»"
+      "كيس سحّاب",
+      "كيس مادة ماصة للرطوبة"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -585,7 +624,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Label Maker as the central item; include Label Maker, Zip Bag, and Desiccant Pack naturally where visually appropriate, but make the real-world use of Label Maker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The 3D Printer Lab",
@@ -594,20 +634,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Keychain"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keychain, Cookie Cutter, Whistle, and Chess Piece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Keychain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Architectural Model"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Architectural Model, Workstation, Storage Shelf, and Ventilation Fan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Architectural Model",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fire Extinguisher"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Extinguisher, Safety Glasses, Gloves, and Trash Bin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fire Extinguisher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Label Maker"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label Maker, Zip Bag, and Desiccant Pack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Label Maker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -686,7 +738,7 @@
       "ألياف كربون",
       "حشو خشب",
       "تصميم",
-      "يقطع شرائح",
+      "يقطّع شرائح",
       "طباعة",
       "طبقة",
       "دعم",
@@ -746,7 +798,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Layer as the central item; include Layer, Support, and Infill naturally where visually appropriate, but make the real-world use of Layer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The 3D Printer Lab",
@@ -755,20 +808,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Frame"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Fan, Display, and PLA and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Frame",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ABS"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ABS, PETG, TPU, and Carbon Fiber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ABS",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wood Fill"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wood Fill, Design, Slice, and Print and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wood Fill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Layer"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layer, Support, and Infill and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Layer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -820,7 +885,7 @@
     "cefrStage": "B2",
     "stageName": "B2 Fluency & Work",
     "targetWordsEnglish": ["Calibrate", "Prototype"],
-    "targetWordsArabic": ["يعاير", "نموذج أولي"],
+    "targetWordsArabic": ["يُعاير", "نموذج أولي"],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
@@ -839,7 +904,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Calibrate through a realistic adult task; include Calibrate, Prototype, and Option 1 naturally where visually appropriate, but make the real-world use of Calibrate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The 3D Printer Lab",
@@ -848,8 +914,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Calibrate"
+        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Calibrate, and Prototype and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Calibrate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

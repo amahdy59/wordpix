@@ -34,7 +34,7 @@
       "إنتاج البودكاست",
       "تدوين",
       "برمجة",
-      "نمذجة ثلاثية الأبعاد",
+      "تصميم نماذج ثلاثية الأبعاد",
       "إنتاج موسيقي",
       "فن رقمي",
       "حياكة بالإبر",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Sewing, Embroidery, Quilting. The person selects Sewing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Sewing, Embroidery, Quilting in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Creative Hobbies: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Photography"
+        "prompt": "During a routine creative hobbies task, an adult compares Photography, Video Editing, Graphic Design. The person selects Photography for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Photography",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Animation"
+        "prompt": "During a routine creative hobbies task, an adult compares Animation, Podcasting, Blogging. The person selects Animation for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Animation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coding"
+        "prompt": "During a routine creative hobbies task, an adult compares Coding, 3D Modeling, Music Production. The person selects Coding for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coding",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Digital Art"
+        "prompt": "During a routine creative hobbies task, an adult compares Digital Art, Knitting, Crocheting. The person selects Digital Art for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Digital Art",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sewing"
+        "prompt": "During a routine creative hobbies task, an adult compares Sewing, Embroidery, Quilting. The person selects Sewing for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sewing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -197,7 +213,7 @@
       "فن المكرمية",
       "التطريز بغرزة الصليب",
       "تلبيد",
-      "صباغة بالعقد والربط",
+      "صباغة بالربط",
       "خبز",
       "تزيين الكعك",
       "صناعة الخبز",
@@ -206,8 +222,8 @@
       "التخليل",
       "صناعة الشوكولاتة",
       "صناعة المعكرونة",
-      "لف السوشي",
-      "صناعة المربى"
+      "لفّ السوشي",
+      "صناعة المربّى"
     ],
     "usage": {
       "goal": "Learn to use creative hobbies 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Pasta Making, Sushi Rolling, Jam Making. The person selects Pasta Making for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Pasta Making, Sushi Rolling, Jam Making in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Creative Hobbies: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Weaving"
+        "prompt": "During a routine creative hobbies task, an adult compares Weaving, Macramé, Cross-Stitch. The person selects Weaving for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Weaving",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Felting"
+        "prompt": "During a routine creative hobbies task, an adult compares Felting, Tie-Dye, Baking. The person selects Felting for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Felting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cake Decorating"
+        "prompt": "During a routine creative hobbies task, an adult compares Cake Decorating, Bread Making, Fermentation. The person selects Cake Decorating for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cake Decorating",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Canning"
+        "prompt": "During a routine creative hobbies task, an adult compares Canning, Pickling, Chocolate Making. The person selects Canning for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Canning",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pasta Making"
+        "prompt": "During a routine creative hobbies task, an adult compares Pasta Making, Sushi Rolling, Jam Making. The person selects Pasta Making for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pasta Making",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -357,7 +389,7 @@
       "بستنة",
       "بونساي",
       "حوض نباتات زجاجي",
-      "-",
+      "مراقبة الطيور",
       "اصطياد الفراشات",
       "تنسيق الزهور",
       "زراعة الأعشاب",
@@ -409,7 +441,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Mushroom Foraging",
+          "targetWords": ["Mushroom Foraging"],
           "scenario": "During a routine creative hobbies task, an adult compares Mushroom Foraging, Gardening, Bonsai. The person selects Mushroom Foraging for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -419,7 +451,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Mushroom Foraging, Gardening, Bonsai. The person selects Mushroom Foraging for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Mushroom Foraging in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Creative Hobbies: Short Dialogue",
@@ -428,20 +461,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gardening"
+        "prompt": "During a routine creative hobbies task, an adult compares Gardening, Bonsai, Terrarium. The person selects Gardening for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gardening",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bird Watching"
+        "prompt": "During a routine creative hobbies task, an adult compares Bird Watching, Butterfly Catching, Flower Arranging. The person selects Bird Watching for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bird Watching",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Herb Growing"
+        "prompt": "During a routine creative hobbies task, an adult compares Herb Growing, Composting, Beekeeping. The person selects Herb Growing for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Herb Growing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mushroom Foraging"
+        "prompt": "During a routine creative hobbies task, an adult compares Mushroom Foraging, Gardening, Bonsai. The person selects Mushroom Foraging for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mushroom Foraging",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

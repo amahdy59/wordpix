@@ -41,17 +41,24 @@ const contextByUnit = {
 };
 
 function listWords(words) {
+  if (!words || words.length === 0) return "";
+  if (words.length === 1) return words[0];
   if (words.length === 2) return `${words[0]} and ${words[1]}`;
-  return `${words[0]}, ${words[1]}, and ${words[2]}`;
+  return `${words.slice(0, -1).join(", ")}, and ${words[words.length - 1]}`;
 }
 
-function makeScene(unitId, scene, lessonIndex) {
+function makeScene(unitId, scene, lessonIndex, lesson) {
   const context = contextByUnit[unitId] ?? contextByUnit["everyday-clothing"];
   const words = Array.isArray(scene.targetWords) ? scene.targetWords : [scene.targetWords];
   const answerIndex = (lessonIndex + scene.chunkNumber) % words.length;
   const answer = words[answerIndex];
   const otherWords = words.filter((word) => word !== answer);
-  const scenario = `${context.opening} ${context.person} notices ${answer} while also considering ${listWords(otherWords)}. ${context.action}`;
+  const distractors = otherWords.length > 0
+    ? otherWords
+    : (lesson?.targetWordsEnglish ?? []).filter((word) => word !== answer).slice(0, 2);
+  const scenario = distractors.length > 0
+    ? `${context.opening} ${context.person} notices ${answer} while also considering ${listWords(distractors)}. ${context.action}`
+    : `${context.opening} ${context.person} reviews ${answer}. ${context.action}`;
   const question = `Which target does ${context.person} notice first in this situation?`;
   return {
     ...scene,
@@ -80,7 +87,7 @@ for (const [unitId, raw] of Object.entries(
       usage: {
         ...lesson.usage,
         scenes: (Array.isArray(lesson.usage.scenes) ? lesson.usage.scenes : [lesson.usage.scenes]).map(
-          (scene) => makeScene(unitId, scene, lesson.lessonOrderInUnit)
+          (scene) => makeScene(unitId, scene, lesson.lessonOrderInUnit, lesson)
         ),
       },
     };

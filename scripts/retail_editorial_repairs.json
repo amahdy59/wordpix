@@ -1,0 +1,231 @@
+{
+  "hotel": {
+    "receptionist": {
+      "definition": "A hotel worker who welcomes guests and handles arrivals, bookings, and requests."
+    },
+    "doorman": {
+      "definition": "A worker who welcomes guests at the entrance and assists with doors or arrivals."
+    },
+    "safe": { "definition": "A secure lockable box for storing money, documents, or valuables." },
+    "swimming-pool": { "arabicTranslation": "مسبح" },
+    "spa": {
+      "definition": "A place offering relaxation or personal-care services such as massages.",
+      "arabicTranslation": "مركز استرخاء وعناية"
+    },
+    "conference-room": {
+      "definition": "A hotel room equipped for meetings or organized events.",
+      "arabicTranslation": "قاعة اجتماعات"
+    },
+    "laundry": {
+      "definition": "A service that washes and dries guests' clothes.",
+      "arabicTranslation": "خدمة غسل الملابس"
+    },
+    "concierge": {
+      "definition": "A hotel worker who assists guests with information, reservations, and local arrangements.",
+      "arabicTranslation": "موظف خدمات الضيوف"
+    },
+    "valet": {
+      "definition": "A worker who parks and retrieves guests' cars.",
+      "arabicTranslation": "عامل صف السيارات"
+    },
+    "shuttle": {
+      "definition": "A vehicle service that travels repeatedly between the hotel and specified locations.",
+      "arabicTranslation": "حافلة نقل ترددي"
+    },
+    "wifi": { "definition": "Wireless technology used to connect devices to a local network." },
+    "balcony": {
+      "definition": "An outdoor platform projecting from an upper floor of a building."
+    },
+    "view": { "definition": "The scenery visible from a room or another location." },
+    "bellhop": {
+      "definition": "A hotel worker who carries guests' luggage and may escort them to their rooms."
+    },
+    "checkout": { "definition": "The process of paying any remaining charges and leaving a hotel." }
+  },
+  "restaurant": {
+    "table": { "definition": "A piece of furniture with a flat top used for eating meals." },
+    "menu": { "definition": "A list of the food and drinks available to order." },
+    "centerpiece": {
+      "definition": "A decorative arrangement placed in the middle of a dining table."
+    },
+    "glass": { "arabicTranslation": "كأس" },
+    "chopsticks": { "definition": "A pair of thin sticks held in one hand to pick up food." },
+    "straw": { "definition": "A narrow tube used to drink liquid." },
+    "waitress": { "definition": "A woman whose job is to serve customers at restaurant tables." },
+    "cook": { "definition": "A person whose job is to prepare food." },
+    "host": { "definition": "A restaurant worker who welcomes guests and arranges their seating." },
+    "dishwasher": {
+      "definition": "A kitchen worker who washes dishes and utensils.",
+      "arabicTranslation": "عامل غسل الأطباق"
+    },
+    "check": {
+      "definition": "The bill for a restaurant meal, especially in American English.",
+      "arabicTranslation": "فاتورة المطعم"
+    },
+    "tip": { "definition": "Extra money given to staff for their service." },
+    "grill": { "arabicTranslation": "شواية" },
+    "fryer": { "definition": "A cooking appliance that cooks food in hot oil." },
+    "whisk": { "arabicTranslation": "مضرب خفق" },
+    "mixer": { "definition": "A kitchen machine that mixes or beats ingredients." },
+    "sink": {
+      "definition": "A basin with running water and a drain used for washing dishes or hands.",
+      "arabicTranslation": "حوض غسيل"
+    },
+    "soup": { "definition": "A liquid dish made by cooking ingredients in water or stock." },
+    "sushi": {
+      "definition": "A Japanese dish made with seasoned rice and toppings or fillings such as fish or vegetables."
+    },
+    "dressing": { "definition": "A sauce added to a salad.", "arabicTranslation": "صلصة السلطة" },
+    "garnish": { "arabicTranslation": "زينة الطعام" },
+    "seasoning": {
+      "definition": "Salt, herbs, spices, or other ingredients added to give food flavor."
+    }
+  },
+  "market": {
+    "orange": { "arabicTranslation": "برتقال" },
+    "grape": {
+      "definition": "A small round fruit that grows in clusters and can be green, red, or purple."
+    },
+    "mango": {
+      "definition": "A tropical fruit with sweet yellow or orange flesh and a large flat stone."
+    },
+    "peach": {
+      "definition": "A round fruit with soft fuzzy skin, sweet flesh, and a hard stone.",
+      "arabicTranslation": "خوخ"
+    },
+    "beef": { "definition": "Meat from cattle." },
+    "chicken": { "definition": "Meat from a chicken, sold as a whole bird or in cuts." },
+    "turkey": {
+      "definition": "Meat from a turkey, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم الديك الرومي"
+    },
+    "fish": {
+      "definition": "Fish sold as food, whole or in portions.",
+      "arabicTranslation": "سمك"
+    },
+    "tuna": { "definition": "Meat from a large sea fish, commonly sold fresh or canned." },
+    "lamb": { "definition": "Meat from a young sheep." },
+    "yogurt": { "definition": "A thick dairy food made by fermenting milk with bacteria." },
+    "cream": { "definition": "The thick, fatty part of milk, used in cooking or desserts." },
+    "checkout": {
+      "definition": "The counter where customers pay for their purchases.",
+      "arabicTranslation": "صندوق المحاسبة"
+    },
+    "aisle": { "definition": "A passage between rows of shelves or stalls." },
+    "cash-register": { "arabicTranslation": "آلة تسجيل النقد" },
+    "scale": { "arabicTranslation": "ميزان" },
+    "coupon": { "definition": "A voucher or code that gives a discount or another stated offer." },
+    "cherry": { "definition": "A small round red or dark fruit with a stone in the middle." },
+    "cart": { "definition": "A wheeled container used to carry shopping." }
+  },
+  "supermarket": {
+    "orange": { "arabicTranslation": "برتقال" },
+    "mango": {
+      "definition": "A tropical fruit with sweet yellow or orange flesh and a large flat stone."
+    },
+    "peach": { "arabicTranslation": "خوخ" },
+    "cherry": { "definition": "A small round red or dark fruit with a stone in the middle." },
+    "coconut": {
+      "definition": "A tropical fruit with a hard shell, white flesh, and liquid inside."
+    },
+    "eggplant": {
+      "definition": "A vegetable with glossy skin, often purple, and soft pale flesh."
+    },
+    "tangerine": { "definition": "A small citrus fruit with orange skin that is easy to peel." },
+    "turnip": { "definition": "A round root vegetable, often white with a purple top." },
+    "mint": { "definition": "An aromatic herb with leaves used to flavor food and drinks." },
+    "bay-leaf": { "arabicTranslation": "ورق الغار" },
+    "yogurt": { "definition": "A thick dairy food made by fermenting milk with bacteria." },
+    "eggs": {
+      "definition": "Eggs sold as food, often from chickens, eaten cooked or used in recipes."
+    },
+    "cream": { "definition": "The thick, fatty part of milk, used in cooking or desserts." },
+    "ice-cream": { "arabicTranslation": "آيس كريم" },
+    "sour-cream": { "arabicTranslation": "كريمة حامضة" },
+    "tofu": {
+      "definition": "A soft or firm food made by coagulating soy milk into curds.",
+      "arabicTranslation": "توفو"
+    },
+    "quinoa": { "definition": "Small edible seeds cooked and used in meals like a grain." },
+    "whole-wheat-bread": {
+      "definition": "Bread made from flour containing all parts of the wheat grain."
+    },
+    "chicken": { "definition": "Meat from a chicken, sold as a whole bird or in cuts." },
+    "beef": { "definition": "Meat from cattle." },
+    "fish": {
+      "definition": "Fish sold as food, whole or in portions.",
+      "arabicTranslation": "سمك"
+    },
+    "tuna": { "definition": "Meat from a large sea fish, commonly sold fresh or canned." },
+    "lamb": { "definition": "Meat from a young sheep." },
+    "turkey": {
+      "definition": "Meat from a turkey, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم الديك الرومي"
+    },
+    "duck": {
+      "definition": "Meat from a duck, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم البط"
+    },
+    "crab": { "definition": "A shellfish with a hard shell and claws, sold as food." },
+    "drumstick": {
+      "definition": "The lower part of a poultry leg, sold or served as a cut of meat.",
+      "arabicTranslation": "ساق دجاج"
+    },
+    "wing": {
+      "definition": "A poultry wing sold or served as a cut of meat.",
+      "arabicTranslation": "جناح دجاج"
+    },
+    "shopping-cart": { "definition": "A wheeled basket used to carry products while shopping." },
+    "shelf": { "definition": "A horizontal surface used to display or store products." },
+    "aisle": { "definition": "A passage between rows of shelves in a store." },
+    "checkout": { "arabicTranslation": "صندوق المحاسبة" },
+    "coupon": { "definition": "A voucher or code that gives a discount or another stated offer." },
+    "scale": { "arabicTranslation": "ميزان" },
+    "cash-register": { "arabicTranslation": "آلة تسجيل النقد" },
+    "conveyor-belt": { "definition": "A moving belt that carries groceries toward the cashier." },
+    "scanner": {
+      "definition": "A device that reads product barcodes at the checkout.",
+      "arabicTranslation": "قارئ الرموز الشريطية"
+    },
+    "bleach": {
+      "definition": "A chemical cleaning product used to whiten materials or disinfect surfaces."
+    },
+    "water": { "definition": "A clear liquid sold for drinking." },
+    "energy-drink": { "arabicTranslation": "مشروب طاقة" },
+    "hot-chocolate": { "arabicTranslation": "شوكولاتة ساخنة" },
+    "orange-juice": { "arabicTranslation": "عصير برتقال" },
+    "chips": {
+      "definition": "Thin slices of potato cooked until crisp and eaten as a snack.",
+      "arabicTranslation": "رقائق بطاطس"
+    },
+    "nuts": { "definition": "Edible kernels with hard shells, such as almonds or walnuts." },
+    "gum": { "definition": "A soft flavored substance that people chew without swallowing." },
+    "pudding": {
+      "definition": "A soft sweet dessert, often made with milk and thickened by cooking."
+    },
+    "trail-mix": { "arabicTranslation": "خليط مكسرات وفواكه مجففة" },
+    "ice-pop": { "arabicTranslation": "مثلجات على عصا" },
+    "olive-oil": { "arabicTranslation": "زيت الزيتون" },
+    "vegetable-oil": {
+      "definition": "Oil extracted from plants and commonly used for cooking.",
+      "arabicTranslation": "زيت نباتي"
+    },
+    "baking-soda": { "arabicTranslation": "بيكربونات الصوديوم" },
+    "baking-powder": { "arabicTranslation": "مسحوق الخَبز" },
+    "cayenne": { "definition": "A hot seasoning made from ground dried red chili peppers." },
+    "tissue": { "arabicTranslation": "منديل ورقي" },
+    "sunscreen": {
+      "definition": "A product applied to skin to help protect it from ultraviolet radiation."
+    },
+    "body-wash": { "arabicTranslation": "غسول الجسم" },
+    "dental-floss": { "arabicTranslation": "خيط تنظيف الأسنان" },
+    "bag": { "definition": "A flexible container used to carry shopping or other items." },
+    "container": { "definition": "An object used to hold or store things." },
+    "push": { "definition": "To move a cart or another object away from you by applying force." },
+    "stock": { "arabicTranslation": "يملأ الرفوف بالبضائع" },
+    "load": { "arabicTranslation": "يحمّل البضائع" },
+    "frozen": { "arabicTranslation": "مجمّد" },
+    "nutrition-facts": { "arabicTranslation": "المعلومات الغذائية" },
+    "salami": { "definition": "A cured sausage, often sliced and eaten cold." }
+  }
+}

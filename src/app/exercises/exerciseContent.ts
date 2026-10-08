@@ -5,6 +5,7 @@ import { articleFor, classifyLabel, spokenLabel } from "../content/wordGrammar";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
 import type { LessonUsageData } from "../data/usageTypes";
 import { findLessonContextSentences } from "../data/lessonContext";
+import { sentenceCloze } from "./sentenceCloze";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -510,9 +511,19 @@ export function buildSentenceCompletion(sentence: string, targetLabel: string): 
 
 function isUsefulExample(value: string | undefined): value is string {
   if (!value?.trim()) return false;
-  return !/was used during the activity|glossary uses the term|lesson used .+ to describe|in an educational description/iu.test(
+  return !/was used during the activity|glossary uses the term|lesson used .+ to describe|in an educational description|can see, use, or|uses or discusses|each word connected to|places .+ in one coherent situation|belongs to a different part|(?:worker and customer|patient and medical team) deal with/iu.test(
     value
   );
+}
+
+/** Group counting drills are reading contexts, not individual usage examples. */
+function isStandaloneExample(sentence: string): boolean {
+  if (/_{2,}/u.test(sentence)) return false;
+  const numbers =
+    sentence.match(
+      /\b(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\b/giu
+    ) ?? [];
+  return !(numbers.length >= 3 && /[,;:]/u.test(sentence));
 }
 
 export function getRichSentence(
@@ -527,7 +538,27 @@ export function getRichSentence(
     curatedSentence?.full,
     isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
     ...findLessonContextSentences(word, usage),
-  ].filter((sentence): sentence is string => Boolean(sentence));
+  ].filter((sentence): sentence is string => {
+    if (!isUsefulExample(sentence) || !isStandaloneExample(sentence)) return false;
+    // Construction and gap fill must actually assess the selected target.
+    // Inflected examples remain available as reading, not an unrelated blank.
+    if (sentenceCloze(sentence, word.label) === sentence) return false;
+    const mentionedTargets =
+      usage?.targetWordsEnglish.filter((label) => sentenceCloze(sentence, label) !== sentence) ??
+      [];
+    if (mentionedTargets.length < 2) return true;
+    // A useful scene may mention several words, but is assigned to one target
+    // rather than repeated for every word. Prefer the earliest full phrase.
+    const owner = mentionedTargets.sort((a, b) => {
+      const first = sentence.toLowerCase().indexOf(a.toLowerCase());
+      const second = sentence.toLowerCase().indexOf(b.toLowerCase());
+      return first - second || b.length - a.length;
+    })[0];
+    return (
+      owner.toLowerCase() === word.label.toLowerCase() &&
+      !(mentionedTargets.length >= 3 && /[,;:]/u.test(sentence))
+    );
+  });
   const uniqueCandidates = [...new Set(candidates)];
   const selected =
     uniqueCandidates[Math.min(Math.max(0, contextIndex), uniqueCandidates.length - 1)];

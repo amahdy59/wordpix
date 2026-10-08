@@ -27,9 +27,9 @@
       "Handrail"
     ],
     "targetWordsArabic": [
-      "رصيف",
+      "رصيف المحطة",
       "نفق",
-      "مسار",
+      "سكة حديد",
       "سلم متحرك",
       "مصعد",
       "بوابة دوارة",
@@ -37,11 +37,11 @@
       "ردهة رئيسية",
       "مدخل",
       "مخرج",
-      "سيارة",
+      "عربة مترو",
       "باب",
       "نافذة (شباك)",
       "مقعد",
-      "درابزين"
+      "قضيب للإمساك"
     ],
     "usage": {
       "goal": "Learn to use the subway 1 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -118,24 +118,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Platform"
+        "prompt": "During a routine travel task, an adult compares Platform, Tunnel, Track. The option needed for the next step is Platform.\nWhich option is needed for the next step in the journey?",
+        "answer": "Platform",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Escalator"
+        "prompt": "During a routine travel task, an adult compares Escalator, Elevator, Turnstile. The option needed for the next step is Escalator.\nWhich option is needed for the next step in the journey?",
+        "answer": "Escalator",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mezzanine"
+        "prompt": "During a routine travel task, an adult compares Mezzanine, Concourse, Entrance. The option needed for the next step is Mezzanine.\nWhich option is needed for the next step in the journey?",
+        "answer": "Mezzanine",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Exit"
+        "prompt": "During a routine travel task, an adult compares Exit, Car, Door. The option needed for the next step is Exit.\nWhich option is needed for the next step in the journey?",
+        "answer": "Exit",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Window"
+        "prompt": "During a routine travel task, an adult compares Window, Seat, Handrail. The option needed for the next step is Window.\nWhich option is needed for the next step in the journey?",
+        "answer": "Window",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -193,14 +208,14 @@
       "Contactless"
     ],
     "targetWordsArabic": [
-      "عمود",
+      "عمود للإمساك",
       "خريطة",
       "مكبر صوت (سبيكر / سماعة)",
       "مكبح طوارئ",
       "باب اتصال بين العربات",
       "آلة بيع التذاكر",
       "بطاقة مترو",
-      "تمرير البطاقة أو اللمس",
+      "يمرر بطاقة المواصلات على القارئ",
       "أجرة",
       "بوابة",
       "يشحن الرصيد",
@@ -284,24 +299,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pole"
+        "prompt": "During a routine travel task, an adult compares Pole, Map, Speaker. The option needed for the next step is Pole.\nWhich option is needed for the next step in the journey?",
+        "answer": "Pole",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Emergency Brake"
+        "prompt": "During a routine travel task, an adult compares Emergency Brake, Connecting Door, Ticket Machine. The option needed for the next step is Emergency Brake.\nWhich option is needed for the next step in the journey?",
+        "answer": "Emergency Brake",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Metro Card"
+        "prompt": "During a routine travel task, an adult compares Metro Card, Tap, Fare. The option needed for the next step is Metro Card.\nWhich option is needed for the next step in the journey?",
+        "answer": "Metro Card",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gate"
+        "prompt": "During a routine travel task, an adult compares Gate, Top Up, Single Ride. The option needed for the next step is Gate.\nWhich option is needed for the next step in the journey?",
+        "answer": "Gate",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Weekly Pass"
+        "prompt": "During a routine travel task, an adult compares Weekly Pass, Monthly Pass, Contactless. The option needed for the next step is Weekly Pass.\nWhich option is needed for the next step in the journey?",
+        "answer": "Weekly Pass",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -362,18 +392,18 @@
       "خريطة الخطوط",
       "علامة اتجاه",
       "لافتة خروج",
-      "لافتة تحويل بين الخطوط",
+      "لافتة الانتقال بين الخطوط",
       "رقم الرصيف",
       "القطار التالي",
       "آخر قطار",
       "تحذير من الفجوة",
       "ممنوع التدخين",
       "طوارئ",
-      "متنقل يومي",
+      "راكب يتنقل يوميًا",
       "سائح",
       "فنان شارع",
       "بائع",
-      "حارس"
+      "حارس أمن"
     ],
     "usage": {
       "goal": "Learn to use the subway 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -450,24 +480,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Line Map"
+        "prompt": "During a routine travel task, an adult compares Line Map, Direction Sign, Exit Sign. The option needed for the next step is Line Map.\nWhich option is needed for the next step in the journey?",
+        "answer": "Line Map",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Transfer Sign"
+        "prompt": "During a routine travel task, an adult compares Transfer Sign, Platform Number, Next Train. The option needed for the next step is Transfer Sign.\nWhich option is needed for the next step in the journey?",
+        "answer": "Transfer Sign",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Last Train"
+        "prompt": "During a routine travel task, an adult compares Last Train, Gap Warning, No Smoking. The option needed for the next step is Last Train.\nWhich option is needed for the next step in the journey?",
+        "answer": "Last Train",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Emergency"
+        "prompt": "During a routine travel task, an adult compares Emergency, Commuter, Tourist. The option needed for the next step is Emergency.\nWhich option is needed for the next step in the journey?",
+        "answer": "Emergency",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Busker"
+        "prompt": "During a routine travel task, an adult compares Busker, Vendor, Guard. The option needed for the next step is Busker.\nWhich option is needed for the next step in the journey?",
+        "answer": "Busker",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -531,7 +576,7 @@
       "ساعة الذروة",
       "طابور",
       "الخط الأصفر",
-      "مراقبة تلفزيونية مغلقة",
+      "نظام كاميرات مراقبة",
       "هاتف طوارئ",
       "طفاية حريق",
       "جهاز مزيل الرجفان",
@@ -539,7 +584,7 @@
       "إنذار",
       "حاجز",
       "لافتة إخلاء",
-      "أول إسعاف طقم"
+      "حقيبة إسعافات أولية"
     ],
     "usage": {
       "goal": "Learn to use the subway 4 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -616,24 +661,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conductor"
+        "prompt": "During a routine travel task, an adult compares Conductor, Cleaner, Crowd. The option needed for the next step is Conductor.\nWhich option is needed for the next step in the journey?",
+        "answer": "Conductor",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rush Hour"
+        "prompt": "During a routine travel task, an adult compares Rush Hour, Queue, Yellow Line. The option needed for the next step is Rush Hour.\nWhich option is needed for the next step in the journey?",
+        "answer": "Rush Hour",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cctv"
+        "prompt": "During a routine travel task, an adult compares Cctv, Emergency Phone, Fire Extinguisher. The option needed for the next step is Cctv.\nWhich option is needed for the next step in the journey?",
+        "answer": "Cctv",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Defibrillator"
+        "prompt": "During a routine travel task, an adult compares Defibrillator, Help Point, Alarm. The option needed for the next step is Defibrillator.\nWhich option is needed for the next step in the journey?",
+        "answer": "Defibrillator",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Barrier"
+        "prompt": "During a routine travel task, an adult compares Barrier, Evacuation Sign, First Aid Kit. The option needed for the next step is Barrier.\nWhich option is needed for the next step in the journey?",
+        "answer": "Barrier",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

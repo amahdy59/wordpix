@@ -27,8 +27,8 @@
       "Speaker"
     ],
     "targetWordsArabic": [
-      "مادة يسمى «ليوتارد»",
-      "جوارب ضيقة",
+      "زي رقص ملاصق للجسم",
+      "جوارب طويلة ضيقة",
       "أحذية باليه",
       "أحذية جاز للرقص",
       "أحذية تاب",
@@ -39,7 +39,7 @@
       "تنورة",
       "أرضية رقص",
       "مرآة جدارية",
-      "عارضة تدريب الباليه",
+      "عارضة الباليه",
       "نظام صوت",
       "مكبر صوت (سبيكر / سماعة)"
     ],
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a dance studio. Show an adult using or examining the Barre as the central item; include Barre, Sound System, and Speaker naturally where visually appropriate, but make the real-world use of Barre the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a dance studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: The Dance Studio",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leotard"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leotard, Tights, and Ballet Shoes and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Leotard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jazz Shoes"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jazz Shoes, Tap Shoes, and Tutu and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Jazz Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leg Warmers"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg Warmers, Headband, and Dance Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Leg Warmers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skirt"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skirt, Dance Floor, and Wall Mirror and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Skirt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Barre"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Barre, Sound System, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Barre",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -208,13 +224,13 @@
       "باليه",
       "أحذية بوانت للباليه",
       "كعكة شعر",
-      "أرابيسك",
+      "وضعية أرابيسك",
       "بلييه؛ ثني الركبتين في الباليه",
-      "دورة باليه على قدم واحدة",
-      "وثبة جيتيه",
+      "دوران على قدم واحدة",
+      "قفزة جيتيه",
       "رقصة ثنائية",
       "ريليفيه؛ ارتفاع على مشط القدم",
-      "أسلوب أو طراز يسمى «جازز»"
+      "رقص الجاز"
     ],
     "usage": {
       "goal": "Learn to understand rehearsal instructions and discuss basic dance practice in a clear, practical adult-life situation.",
@@ -282,7 +298,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a dance studio. Show an adult using or examining the Pas de Deux as the central item; include Pas de Deux, Relevé, and Jazz naturally where visually appropriate, but make the real-world use of Pas de Deux the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a dance studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Dance Studio",
@@ -291,24 +308,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Changing Room"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Changing Room, Water Fountain, and Dance Bag and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Changing Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Towel"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Towel, Rosin Box, and Ballet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Towel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pointe Shoes"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pointe Shoes, Bun, and Arabesque and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pointe Shoes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plié"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plié, Pirouette, and Jeté and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Plié",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pas de Deux"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pas de Deux, Relevé, and Jazz and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pas de Deux",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -374,20 +406,20 @@
     ],
     "targetWordsArabic": [
       "تمرير البطاقة أو اللمس",
-      "هيب هوب",
+      "رقص الهيب هوب",
       "معاصر",
-      "غرفة يسمى «باللرووم»",
+      "رقص الصالات",
       "رقص لاتيني",
       "رقص شعبي",
       "رقص بريك",
-      "أرجوحة",
-      "غرفة يسمى «والتز»",
+      "رقص السوينغ",
+      "فالس",
       "مرونة",
       "يدور",
-      "يثب",
+      "يقفز",
       "يدير",
       "يركل",
-      "جزء يسمى «ستيب»"
+      "خطوة رقص"
     ],
     "usage": {
       "goal": "Learn to understand rehearsal instructions and discuss basic dance practice in a clear, practical adult-life situation.",
@@ -455,7 +487,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a dance studio. Show an adult using or examining the Turn as the central item; include Turn, Kick, and Step naturally where visually appropriate, but make the real-world use of Turn the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a dance studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Dance Studio",
@@ -464,24 +497,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tap"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tap, Hip-Hop, and Contemporary and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ballroom"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ballroom, Latin, and Folk Dance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ballroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Breakdancing"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Breakdancing, Swing, and Waltz and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Breakdancing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stretch"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stretch, Spin, and Leap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stretch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Turn"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turn, Kick, and Step and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Turn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -551,16 +599,16 @@
       "يلوي",
       "توازن",
       "راقص",
-      "شخص يسمى «تشوريوجرافير»",
-      "مدرس رقص",
-      "شخص يسمى «بارتنير»",
-      "عازف أو مؤد منفرد",
-      "فرقة",
+      "مصمم رقصات",
+      "مدرّس رقص",
+      "شريك رقص",
+      "راقص منفرد",
+      "فرقة رقص",
       "ممثل بديل",
       "حكم",
       "جمهور",
       "منسق موسيقى",
-      "طعام يسمى «سالسا»"
+      "رقص السالسا"
     ],
     "usage": {
       "goal": "Learn to understand rehearsal instructions and discuss basic dance practice in a clear, practical adult-life situation.",
@@ -628,7 +676,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a dance studio. Show an adult using or examining the Audience as the central item; include Audience, DJ, and Salsa naturally where visually appropriate, but make the real-world use of Audience the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a dance studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Conversation: The Dance Studio",
@@ -637,24 +686,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Slide"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Bend, and Twist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Slide",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balance"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Dancer, and Choreographer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Balance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dance Teacher"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dance Teacher, Partner, and Soloist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dance Teacher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ensemble"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ensemble, Understudy, and Judge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ensemble",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Audience"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Audience, DJ, and Salsa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Audience",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -733,7 +797,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a dance studio. Show an adult using or examining the Pointe Shoe as the central item; include Pointe Shoe, Leg Warmer, and Bow naturally where visually appropriate, but make the real-world use of Pointe Shoe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a dance studio completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Dance Studio",
@@ -742,12 +807,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Breakdance"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Breakdance, Mirror, and Mat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Breakdance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pointe Shoe"
+        "prompt": "In the the dance studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pointe Shoe, Leg Warmer, and Bow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pointe Shoe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

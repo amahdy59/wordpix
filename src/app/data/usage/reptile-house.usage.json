@@ -27,21 +27,21 @@
       "Skink"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «كوبرا»",
-      "كائن أو عنصر طبيعي يسمى «بيثون»",
+      "كوبرا",
+      "ثعبان بيثون",
       "أفعى جرسية",
-      "كائن أو عنصر طبيعي يسمى «بوا»",
-      "كائن أو عنصر طبيعي يسمى «فيبير»",
+      "ثعبان بوا",
+      "أفعى",
       "ثعبان الذرة",
       "ثعبان الملك",
       "أناكوندا",
-      "كائن أو عنصر طبيعي يسمى «مامبا»",
+      "ثعبان مامبا",
       "ثعبان الرباط",
-      "حشرة يسمى «جيكو»",
+      "وزغة",
       "إغوانا",
       "حرباء",
       "شاشة مراقبة",
-      "كائن أو عنصر طبيعي يسمى «سكينك»"
+      "سحلية سقنقور"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Chameleon as the central item; include Chameleon, Monitor, and Skink naturally where visually appropriate, but make the real-world use of Chameleon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Reptile House: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cobra"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cobra",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Viper"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Viper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mamba"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mamba",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chameleon"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chameleon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -189,18 +202,18 @@
     ],
     "targetWordsArabic": [
       "التنين الملتحي",
-      "حشرة يسمى «انولي»",
+      "سحلية أنول",
       "تنين كومودو",
-      "كائن أو عنصر طبيعي يسمى «باسيليسك»",
-      "سحلية مقرنة",
+      "سحلية باسيليسك",
+      "سحلية مقرّنة",
       "سلحفاة",
       "سلحفاة برية",
-      "كائن أو عنصر طبيعي يسمى «سيا تورتلي»",
-      "سلحفاة عضاضة",
-      "زاحف يسمى «كروكوديلي»",
-      "كائن أو عنصر طبيعي يسمى «الليجاتور»",
-      "زاحف يسمى «كايمان»",
-      "كائن أو عنصر طبيعي يسمى «تيررابين»",
+      "سلحفاة بحرية",
+      "سلحفاة عضّاضة",
+      "تمساح",
+      "تمساح قاطور",
+      "تمساح كيمان",
+      "سلحفاة مائية",
       "سلحفاة رخوة الصدفة",
       "غاريال؛ تمساح طويل الخطم"
     ],
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Terrapin as the central item; include Terrapin, Softshell, and Gharial naturally where visually appropriate, but make the real-world use of Terrapin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Reptile House",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bearded Dragon"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bearded Dragon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Horned Lizard"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Horned Lizard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snapping Turtle"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snapping Turtle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Terrapin"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Terrapin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,19 +376,19 @@
     ],
     "targetWordsArabic": [
       "مقياس رسم",
-      "كائن أو عنصر طبيعي يسمى «شيلل»",
-      "حشرة يسمى «فانج»",
+      "درع سلحفاة",
+      "ناب",
       "لسان",
-      "جزء يسمى «تايل»",
-      "طائر يسمى «كلاو»",
+      "ذيل",
+      "مخلب",
       "عين",
       "فك",
       "جلد",
-      "كائن أو عنصر طبيعي يسمى «فينوم»",
+      "سم حيواني",
       "حوض نباتات زجاجي",
       "مصباح حرارة",
-      "حاوية يسمى «واتير ديش»",
-      "شجرة يسمى «برانتش»",
+      "وعاء ماء",
+      "غصن",
       "صخرة"
     ],
     "usage": {
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Water Dish as the central item; include Water Dish, Branch, and Rock naturally where visually appropriate, but make the real-world use of Water Dish the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Reptile House",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scale"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tail"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Skin"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Skin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Water Dish"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Water Dish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -512,19 +551,19 @@
     "targetWordsArabic": [
       "رمل",
       "طحلب بري",
-      "كائن أو عنصر طبيعي يسمى «هيدي»",
-      "كائن أو عنصر طبيعي يسمى «لوج»",
-      "جزء يسمى «ميستينج سيستيم»",
-      "مبنى يسمى «شيد»",
-      "كائن أو عنصر طبيعي يسمى «باسك»",
-      "كائن أو عنصر طبيعي يسمى «هونت»",
-      "كائن أو عنصر طبيعي يسمى «سويم»",
-      "كائن أو عنصر طبيعي يسمى «بورروو»",
-      "كائن أو عنصر طبيعي يسمى «كليمب»",
+      "مخبأ",
+      "جذع شجرة مقطوع",
+      "نظام رش رذاذ",
+      "يبدل جلده",
+      "يتشمس",
+      "يصطاد",
+      "يسبح",
+      "يحفر جحرًا",
+      "يتسلق",
       "تمويه",
-      "كائن أو عنصر طبيعي يسمى «هيسس»",
-      "كائن أو عنصر طبيعي يسمى «ستريكي»",
-      "هيكل يسمى «كويل»"
+      "يفح",
+      "يهجم بسرعة",
+      "يلتف"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult clearly carrying out the action Hiss; include Hiss, Strike, and Coil naturally where visually appropriate, but make the real-world use of Hiss the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Reptile House: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sand"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sand",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Misting System"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Misting System",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Swim"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Swim",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hiss"
+        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Hiss",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

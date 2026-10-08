@@ -40,7 +40,7 @@
       "فرس البحر",
       "سمكة الزناد",
       "دلفين",
-      "كائن أو عنصر طبيعي يسمى «سيا تورتلي»",
+      "سلحفاة بحرية",
       "خروف البحر"
     ],
     "usage": {
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Dolphin as the central item; include Dolphin, Sea Turtle, and Manatee naturally where visually appropriate, but make the real-world use of Dolphin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Coral Reef",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clownfish"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Clownfish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lionfish"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lionfish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moray Eel"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moray Eel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dolphin"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dolphin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -196,7 +209,7 @@
       "حوت أحدب",
       "قضاعة",
       "مرجان",
-      "سطح يسمى «سيا انيموني»",
+      "شقائق النعمان البحرية",
       "نجم البحر",
       "قنفذ البحر",
       "قنديل البحر",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Octopus as the central item; include Octopus, Squid, and Crab naturally where visually appropriate, but make the real-world use of Octopus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Coral Reef",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whale Shark"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Whale Shark",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dugong"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dugong",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sea Anemone"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sea Anemone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Octopus"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Octopus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -357,11 +383,11 @@
       "عشب بحري",
       "عشب بحري كبير",
       "طحالب",
-      "بركة مد وجزر",
+      "بركة مدّ وجزر",
       "بحيرة ساحلية",
       "حانة رمل",
       "كهف تحت الماء",
-      "مادة يسمى «روك فورماتيون»",
+      "تكوين صخري",
       "تيار كهربائي",
       "أنبوب تنفس"
     ],
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Rock Formation as the central item; include Rock Formation, Current, and Snorkel naturally where visually appropriate, but make the real-world use of Rock Formation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Coral Reef",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lobster"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lobster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coral Reef"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Coral Reef",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tide Pool"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tide Pool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rock Formation"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rock Formation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -514,16 +553,16 @@
       "زعانف سباحة",
       "بدلة غوص",
       "أسطوانة أكسجين",
-      "منظم تنفس",
+      "منظّم تنفس",
       "حاسوب غوص",
       "كاميرا تحت الماء",
       "حزام أوزان للغوص",
       "علم الغوص",
       "محمية بحرية",
-      "لون يسمى «كورال بلياتشينج»",
+      "ابيضاض المرجان",
       "تلوث",
       "نفايات بلاستيكية",
-      "سمكة يسمى «فيشينج نيت»",
+      "شبكة صيد",
       "لافتة حماية البيئة"
     ],
     "usage": {
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Plastic Waste as the central item; include Plastic Waste, Fishing Net, and Conservation Sign naturally where visually appropriate, but make the real-world use of Plastic Waste the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Coral Reef",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diving Mask"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Diving Mask",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Regulator"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Regulator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dive Flag"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dive Flag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plastic Waste"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Plastic Waste",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -677,7 +729,7 @@
       "حوض أحياء مائية",
       "مرجان دماغي",
       "مرجان مروحي",
-      "كائن أو عنصر طبيعي يسمى «ستاغورن كورال»",
+      "مرجان قرن الأيل",
       "مرجان أنبوبي",
       "مرجان ناري",
       "مرجان فطري",
@@ -741,7 +793,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Reef Wall as the central item; include Reef Wall, Anemone, and Sandy Bottom naturally where visually appropriate, but make the real-world use of Reef Wall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Coral Reef",
@@ -750,20 +803,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Research Boat"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Research Boat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brain Coral"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brain Coral",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fire Coral"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fire Coral",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reef Wall"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Reef Wall",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -824,7 +889,7 @@
       "scenes": [
         {
           "chunkNumber": 1,
-          "targetWords": "Shipwreck",
+          "targetWords": ["Shipwreck"],
           "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -834,7 +899,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Shipwreck as the central item; include Shipwreck, Option 1, and Option 2 naturally where visually appropriate, but make the real-world use of Shipwreck the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Coral Reef",
@@ -843,8 +909,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shipwreck"
+        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Shipwreck",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

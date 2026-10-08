@@ -27,7 +27,7 @@
       "Lamp"
     ],
     "targetWordsArabic": [
-      "مكتب الاستقبال",
+      "مكتب استقبال",
       "ردهة",
       "موظف استقبال",
       "جرس",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use the hotel 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Blanket, Nightstand, Lamp. The option needed for the next step is Blanket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Blanket, Nightstand, Lamp in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hotel: Email",
-      "text": "Omar has an everyday task connected to the hotel. The new vocabulary helps him follow the situation and respond clearly. The lesson places front desk, lobby, and receptionist in one coherent situation so the learner can connect meaning, context, and use. The lesson places bell, key card, and luggage cart in one coherent situation so the learner can connect meaning, context, and use. The lesson places doorman, chandelier, and sofa in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Hotel 1: A short reading",
+      "text": "Maya arrives at the hotel and walks through the lobby to the front desk. The receptionist checks her booking and gives her a key card. Omar puts their bags on a luggage cart. They wait on a sofa while the room is confirmed. Then the receptionist explains how to find the elevator.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Front Desk"
+        "prompt": "During a routine travel task, an adult compares Front Desk, Lobby, Receptionist. The option needed for the next step is Front Desk.\nWhich option is needed for the next step in the journey?",
+        "answer": "Front Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bell"
+        "prompt": "During a routine travel task, an adult compares Bell, Key Card, Luggage Cart. The option needed for the next step is Bell.\nWhich option is needed for the next step in the journey?",
+        "answer": "Bell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Doorman"
+        "prompt": "During a routine travel task, an adult compares Doorman, Chandelier, Sofa. The option needed for the next step is Doorman.\nWhich option is needed for the next step in the journey?",
+        "answer": "Doorman",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vase"
+        "prompt": "During a routine travel task, an adult compares Vase, Bed, Pillow. The option needed for the next step is Vase.\nWhich option is needed for the next step in the journey?",
+        "answer": "Vase",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blanket"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Front Desk"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Bell"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine travel task, an adult compares Blanket, Nightstand, Lamp. The option needed for the next step is Blanket.\nWhich option is needed for the next step in the journey?",
+        "answer": "Blanket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Timer” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the receptionist give Maya?",
+        "answer": "A key card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -199,7 +210,7 @@
       "مكواة",
       "مجفف شعر",
       "حوض استحمام",
-      "دش",
+      "دُش",
       "منشفة",
       "روب حمام / برنس",
       "شبشب / خف منزلي",
@@ -212,8 +223,8 @@
     "usage": {
       "goal": "Learn to use the hotel 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Mirror, Sink, Toilet. The option needed for the next step is Mirror. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Mirror, Sink, Toilet in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hotel: Personal Message",
-      "text": "Omar has an everyday task connected to the hotel. The new vocabulary helps him follow the situation and respond clearly. The lesson places closet, safe, and mini bar in one coherent situation so the learner can connect meaning, context, and use. The lesson places iron, hair dryer, and bathtub in one coherent situation so the learner can connect meaning, context, and use. The lesson places shower, towel, and robe in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Hotel 2: A short reading",
+      "text": "Omar checks the hotel room before unpacking. He hangs clothes in the closet and asks how to use the safe. Maya finds a hair dryer beside the bathroom mirror. There is a towel near the shower and a robe on a hook. They put their bags away and leave space around the bed.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Closet"
+        "prompt": "During a routine travel task, an adult compares Closet, Safe, Mini Bar. The option needed for the next step is Closet.\nWhich option is needed for the next step in the journey?",
+        "answer": "Closet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Iron"
+        "prompt": "During a routine travel task, an adult compares Iron, Hair Dryer, Bathtub. The option needed for the next step is Iron.\nWhich option is needed for the next step in the journey?",
+        "answer": "Iron",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shower"
+        "prompt": "During a routine travel task, an adult compares Shower, Towel, Robe. The option needed for the next step is Shower.\nWhich option is needed for the next step in the journey?",
+        "answer": "Shower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Slippers"
+        "prompt": "During a routine travel task, an adult compares Slippers, Soap, Shampoo. The option needed for the next step is Slippers.\nWhich option is needed for the next step in the journey?",
+        "answer": "Slippers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mirror"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Closet"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Iron"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine travel task, an adult compares Mirror, Sink, Toilet. The option needed for the next step is Mirror.\nWhich option is needed for the next step in the journey?",
+        "answer": "Mirror",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Front Desk” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Omar hang his clothes?",
+        "answer": "In the closet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -359,27 +381,27 @@
       "Housekeeping"
     ],
     "targetWordsArabic": [
-      "مسبح سباحة",
+      "مسبح",
       "صالة رياضية",
-      "سبا",
+      "مركز استرخاء وعناية",
       "-",
       "حانة",
       "سطح",
       "-",
-      "غرفة مؤتمر",
+      "قاعة اجتماعات",
       "مركز أعمال",
-      "غسيل الملابس",
+      "خدمة غسل الملابس",
       "خدمة الغرف",
       "مكالمة إيقاظ",
-      "موظف خدمات",
-      "خدمة صف سيارات",
+      "موظف خدمات الضيوف",
+      "عامل صف السيارات",
       "خدمة تنظيف الغرف"
     ],
     "usage": {
       "goal": "Learn to use the hotel 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Concierge, Valet, Housekeeping. The option needed for the next step is Concierge. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Concierge, Valet, Housekeeping in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hotel: Short Dialogue",
-      "text": "Omar has an everyday task connected to the hotel. The new vocabulary helps him follow the situation and respond clearly. The lesson places swimming pool, gym, and spa in one coherent situation so the learner can connect meaning, context, and use. The lesson places restaurant, bar, and rooftop in one coherent situation so the learner can connect meaning, context, and use. The lesson places garden, conference room, and business center in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Hotel 3: A short reading",
+      "text": "Maya checks the hotel facilities on a map. The restaurant is near the garden, and the gym is beside the swimming pool. Omar needs the business center before his meeting in the conference room. They agree to meet at the restaurant afterward. The receptionist gives them the opening times for each facility.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Swimming Pool"
+        "prompt": "During a routine travel task, an adult compares Swimming Pool, Gym, Spa. The option needed for the next step is Swimming Pool.\nWhich option is needed for the next step in the journey?",
+        "answer": "Swimming Pool",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Restaurant"
+        "prompt": "During a routine travel task, an adult compares Restaurant, Bar, Rooftop. The option needed for the next step is Restaurant.\nWhich option is needed for the next step in the journey?",
+        "answer": "Restaurant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Garden"
+        "prompt": "During a routine travel task, an adult compares Garden, Conference Room, Business Center. The option needed for the next step is Garden.\nWhich option is needed for the next step in the journey?",
+        "answer": "Garden",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Laundry"
+        "prompt": "During a routine travel task, an adult compares Laundry, Room Service, Wake Up Call. The option needed for the next step is Laundry.\nWhich option is needed for the next step in the journey?",
+        "answer": "Laundry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Concierge"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Swimming Pool"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Restaurant"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine travel task, an adult compares Concierge, Valet, Housekeeping. The option needed for the next step is Concierge.\nWhich option is needed for the next step in the journey?",
+        "answer": "Concierge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Closet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where do Maya and Omar agree to meet afterward?",
+        "answer": "At the restaurant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -526,7 +559,7 @@
     ],
     "targetWordsArabic": [
       "بوفيه إفطار",
-      "حافلة نقل",
+      "حافلة نقل ترددي",
       "مكتب الجولات السياحية",
       "واي فاي",
       "موقف سيارات",
@@ -544,8 +577,8 @@
     "usage": {
       "goal": "Learn to use the hotel 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Hallway, Ice Machine, Vending Machine. The option needed for the next step is Hallway. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Hallway, Ice Machine, Vending Machine in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hotel: Tips/Notice",
-      "text": "Omar has an everyday task connected to the hotel. The new vocabulary helps him follow the situation and respond clearly. The lesson places breakfast buffet, shuttle, and tour desk in one coherent situation so the learner can connect meaning, context, and use. The lesson places wifi, parking, and single room in one coherent situation so the learner can connect meaning, context, and use. The lesson places double room, suite, and penthouse in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Hotel 4: A short reading",
+      "text": "Omar asks when the breakfast buffet opens. Maya checks the shuttle timetable and asks at the tour desk about a city visit. The receptionist explains the wifi and parking information. They compare a single room with a double room for a future booking, then ask what is included in the advertised price.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Breakfast Buffet"
+        "prompt": "During a routine travel task, an adult compares Breakfast Buffet, Shuttle, Tour Desk. The option needed for the next step is Breakfast Buffet.\nWhich option is needed for the next step in the journey?",
+        "answer": "Breakfast Buffet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wifi"
+        "prompt": "During a routine travel task, an adult compares Wifi, Parking, Single Room. The option needed for the next step is Wifi.\nWhich option is needed for the next step in the journey?",
+        "answer": "Wifi",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Double Room"
+        "prompt": "During a routine travel task, an adult compares Double Room, Suite, Penthouse. The option needed for the next step is Double Room.\nWhich option is needed for the next step in the journey?",
+        "answer": "Double Room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balcony"
+        "prompt": "During a routine travel task, an adult compares Balcony, View, Elevator. The option needed for the next step is Balcony.\nWhich option is needed for the next step in the journey?",
+        "answer": "Balcony",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hallway"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Breakfast Buffet"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Wifi"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine travel task, an adult compares Hallway, Ice Machine, Vending Machine. The option needed for the next step is Hallway.\nWhich option is needed for the next step in the journey?",
+        "answer": "Hallway",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Swimming Pool” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two room types do Maya and Omar compare?",
+        "answer": "A single room and a double room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -678,8 +722,8 @@
     "usage": {
       "goal": "Learn to use the hotel 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -693,29 +737,21 @@
           "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Bellhop, Checkout, Front Desk. The option needed for the next step is Bellhop. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Bellhop, Checkout in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Hotel: Everyday Description",
-      "text": "Omar has an everyday task connected to the hotel. The new vocabulary helps him follow the situation and respond clearly. The lesson places bellhop and checkout in one coherent situation so the learner can connect meaning, context, and use. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "title": "The Hotel 5: A short reading",
+      "text": "Maya checks the checkout time on her booking. Omar asks a bellhop to help move their luggage to the lobby. At the front desk, they check the bill and return the key cards. Maya keeps the receipt in her bag. They wait by the entrance until their transport arrives, then collect their luggage.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bellhop"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bellhop"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Checkout"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine travel task, an adult compares Bellhop, Checkout, Front Desk. The option needed for the next step is Bellhop.\nWhich option is needed for the next step in the journey?",
+        "answer": "Bellhop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -724,6 +760,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Breakfast Buffet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What do Maya and Omar return at the front desk?",
+        "answer": "The key cards",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

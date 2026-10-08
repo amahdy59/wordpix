@@ -27,21 +27,21 @@
       "Rectum"
     ],
     "targetWordsArabic": [
-      "عضو يسمى «هيارت»",
-      "نظام يسمى «براين»",
-      "عضو يسمى «لونجس»",
-      "طبق يسمى «ليفير»",
-      "عضو يسمى «كيدنييس»",
-      "مصطلح طبي أو تشريحي يسمى «ستوماتش»",
-      "مصطلح طبي أو تشريحي يسمى «بانكرياس»",
-      "عضو يسمى «سبليين»",
-      "مصطلح طبي أو تشريحي يسمى «جاللبلاددير»",
+      "قلب",
+      "دماغ",
+      "رئتان",
+      "كبد",
+      "كليتان",
+      "معدة",
+      "بنكرياس",
+      "طحال",
+      "مرارة",
       "مثانة",
-      "مصطلح طبي أو تشريحي يسمى «يسوفاجوس»",
-      "عضو يسمى «سمالل ينتيستيني»",
-      "نظام يسمى «لارجي ينتيستيني»",
-      "جزء يسمى «كولون»",
-      "مصطلح طبي أو تشريحي يسمى «ريكتوم»"
+      "مريء",
+      "أمعاء دقيقة",
+      "أمعاء غليظة",
+      "قولون",
+      "مستقيم"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Large Intestine as the central item; include Large Intestine, Colon, and Rectum naturally where visually appropriate, but make the real-world use of Large Intestine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Internal Organs",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Heart"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Heart, Brain, Lungs, and Liver and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Heart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kidneys"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kidneys, Stomach, Pancreas, and Spleen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Kidneys",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gallbladder"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gallbladder, Bladder, Esophagus, and Small Intestine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gallbladder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Large Intestine"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Large Intestine, Colon, and Rectum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Large Intestine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,20 +201,20 @@
       "Heart Chamber"
     ],
     "targetWordsArabic": [
-      "عملية يسمى «اببينديكس»",
-      "جزء يسمى «دوودينوم»",
-      "جزء يسمى «جيجونوم»",
-      "جزء يسمى «يليوم»",
-      "مصطلح طبي أو تشريحي يسمى «تراتشيا»",
-      "مصطلح طبي أو تشريحي يسمى «برونتشي»",
-      "مصطلح طبي أو تشريحي يسمى «برونتشيوليس»",
-      "مصطلح طبي أو تشريحي يسمى «الفيولي»",
-      "جهاز يسمى «ديافراجم»",
-      "هيكل يسمى «لارينكس»",
-      "مصطلح طبي أو تشريحي يسمى «فارينكس»",
+      "زائدة دودية",
+      "اثنا عشر",
+      "صائم",
+      "لفائفي",
+      "قصبة هوائية",
+      "شعبتان هوائيتان",
+      "قصيبات هوائية",
+      "حويصلات هوائية",
+      "حجاب حاجز",
+      "حنجرة",
+      "بلعوم",
       "تجويف أنفي",
-      "مصطلح طبي أو تشريحي يسمى «بليورا»",
-      "لون يسمى «وكسيجين»",
+      "غشاء الجنب",
+      "أكسجين",
       "حجرة قلبية"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pleura as the central item; include Pleura, Oxygen, and Heart Chamber naturally where visually appropriate, but make the real-world use of Pleura the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Internal Organs",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Appendix"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appendix, Duodenum, Jejunum, and Ileum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Appendix",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trachea"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trachea, Bronchi, Bronchioles, and Alveoli and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trachea",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Diaphragm"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diaphragm, Larynx, Pharynx, and Nasal Cavity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Diaphragm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pleura"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pleura, Oxygen, and Heart Chamber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pleura",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,21 +375,21 @@
       "Cerebellum"
     ],
     "targetWordsArabic": [
-      "مصطلح طبي أو تشريحي يسمى «اورتا»",
+      "شريان أبهر",
       "عرق الجناح",
-      "مصطلح طبي أو تشريحي يسمى «ارتيري»",
-      "مصطلح طبي أو تشريحي يسمى «كابيللاري»",
-      "مصطلح طبي أو تشريحي يسمى «ريد بلوود كيلل»",
-      "مصطلح طبي أو تشريحي يسمى «وهيتي بلوود كيلل»",
-      "مصطلح طبي أو تشريحي يسمى «بلاتيليت»",
-      "لون يسمى «بلاسما»",
-      "فعل أو عملية يسمى «بولسي»",
-      "عظم يسمى «سبينال كورد»",
+      "شريان",
+      "شعيرة دموية",
+      "خلية دم حمراء",
+      "خلية دم بيضاء",
+      "صفيحة دموية",
+      "بلازما الدم",
+      "نبض",
+      "نخاع شوكي",
       "عصب",
-      "مصطلح طبي أو تشريحي يسمى «نيورون»",
-      "عضلة يسمى «سينابسي»",
-      "مصطلح طبي أو تشريحي يسمى «كيريبروم»",
-      "مصطلح طبي أو تشريحي يسمى «كيريبيللوم»"
+      "خلية عصبية",
+      "مشبك عصبي",
+      "مخ",
+      "مخيخ"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Synapse as the central item; include Synapse, Cerebrum, and Cerebellum naturally where visually appropriate, but make the real-world use of Synapse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Internal Organs",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aorta"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aorta, Vein, Artery, and Capillary and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Aorta",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Red Blood Cell"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Blood Cell, White Blood Cell, Platelet, and Plasma and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Red Blood Cell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pulse"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pulse, Spinal Cord, Nerve, and Neuron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pulse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Synapse"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synapse, Cerebrum, and Cerebellum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Synapse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -509,18 +548,18 @@
     ],
     "targetWordsArabic": [
       "جذع الدماغ",
-      "مصطلح طبي أو تشريحي يسمى «ريفليكس»",
+      "رد فعل انعكاسي",
       "إشارة",
-      "مصطلح طبي أو تشريحي يسمى «ثيرويد»",
-      "مصطلح طبي أو تشريحي يسمى «بيتويتاري جلاند»",
-      "مصطلح طبي أو تشريحي يسمى «ادرينال جلاند»",
-      "مصطلح طبي أو تشريحي يسمى «هورموني»",
+      "غدة درقية",
+      "غدة نخامية",
+      "غدة كظرية",
+      "هرمون",
       "إنسولين",
-      "مصطلح طبي أو تشريحي يسمى «تيستوستيروني»",
-      "مصطلح طبي أو تشريحي يسمى «يستروجين»",
-      "عضو يسمى «ميتابوليسم»",
-      "عضو يسمى «جلاند»",
-      "مصطلح طبي أو تشريحي يسمى «كورتيسول»"
+      "تستوستيرون",
+      "إستروجين",
+      "أيض",
+      "غدة",
+      "كورتيزول"
     ],
     "usage": {
       "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
@@ -566,7 +605,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Cortisol",
+          "targetWords": ["Cortisol"],
           "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cortisol and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -576,7 +615,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Cortisol as the central item; include Cortisol, Brain Stem, and Reflex naturally where visually appropriate, but make the real-world use of Cortisol the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Internal Organs",
@@ -585,20 +625,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brain Stem"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Stem, Reflex, Signal, and Thyroid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brain Stem",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pituitary Gland"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pituitary Gland, Adrenal Gland, Hormone, and Insulin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pituitary Gland",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Testosterone"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Testosterone, Estrogen, Metabolism, and Gland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Testosterone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cortisol"
+        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cortisol and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cortisol",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

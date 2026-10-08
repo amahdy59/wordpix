@@ -32,16 +32,16 @@
       "ميكروفون",
       "مكبر صوت (سبيكر / سماعة)",
       "كاميرا",
-      "لوح ورقي",
-      "قلم تخطيط (ماركر)",
+      "لوح ورقي للعروض",
+      "قلم تعليم",
       "جهاز تحكم للعروض",
       "لوحة اسم",
       "جدول أعمال",
-      "مادة يسمى «ستافف مييتينج»",
-      "عضو يسمى «بوارد مييتينج»",
+      "اجتماع الموظفين",
+      "اجتماع مجلس الإدارة",
       "اجتماع فردي",
       "عصف ذهني",
-      "شخص يسمى «ستاند-وب»"
+      "اجتماع قصير وقوفًا"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the One-on-One as the central item; include One-on-One, Brainstorm, and Stand-Up naturally where visually appropriate, but make the real-world use of One-on-One the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Meeting Room",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Projector Screen"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Projector Screen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Camera"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Camera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Name Plate"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Name Plate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "One-on-One"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "One-on-One",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,20 +201,20 @@
       "Dashboard"
     ],
     "targetWordsArabic": [
-      "غرفة يسمى «توون هالل»",
-      "ورشة",
-      "جزء يسمى «ويبينار»",
-      "عملية يسمى «كيك-وفف»",
-      "اجتماع مراجعة لاحقة",
-      "غرفة يسمى «سليدي ديك»",
-      "مكان يسمى «هاندووت»",
+      "اجتماع عام للموظفين",
+      "ورشة عمل",
+      "ندوة عبر الإنترنت",
+      "اجتماع بدء المشروع",
+      "اجتماع مراجعة التجربة",
+      "مجموعة شرائح عرض",
+      "ورقة معلومات موزعة",
       "تقرير",
-      "خريطة ملاحية",
+      "مخطط بياني",
       "رسم بياني",
-      "مخطط",
-      "نظام يسمى «فلووتشارت»",
-      "-",
-      "عضو يسمى «سبريادشييت»",
+      "رسم توضيحي",
+      "مخطط تدفق",
+      "جدول زمني",
+      "جدول بيانات",
       "لوحة معلومات"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Timeline as the central item; include Timeline, Spreadsheet, and Dashboard naturally where visually appropriate, but make the real-world use of Timeline the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Meeting Room",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Town Hall"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Town Hall",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Retrospective"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Retrospective",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chart"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Timeline"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Timeline",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -349,21 +375,21 @@
       "Unmute"
     ],
     "targetWordsArabic": [
-      "هدية",
+      "يقدّم عرضًا",
       "يناقش",
-      "يصوت",
+      "تصويت",
       "يوافق",
       "يرفض",
-      "طاولة",
+      "يؤجّل المناقشة (أمريكي)؛ يطرح رسميًا (بريطاني)",
       "متابعة",
-      "شخص يسمى «اسسيجن»",
-      "دقيقة",
+      "يكلف",
+      "يدون محضر الاجتماع",
       "يرفع الجلسة",
-      "غرفة يسمى «زووم»",
+      "زوم",
       "مايكروسوفت تيمز",
       "مشاركة الشاشة",
-      "غرفة يسمى «موتي»",
-      "جهاز يسمى «ونموتي»"
+      "يكتم الصوت",
+      "يلغي كتم الصوت"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Screen Share as the central item; include Screen Share, Mute, and Unmute naturally where visually appropriate, but make the real-world use of Screen Share the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Meeting Room",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Present"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Present",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reject"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "answer": "Reject",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Minute"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Minute",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Screen Share"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Screen Share",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -499,7 +538,7 @@
       "Recording",
       "Virtual Background"
     ],
-    "targetWordsArabic": ["شخص يسمى «تشات»", "غرفة فرعية", "غرفة انتظار", "-", "خلفية افتراضية"],
+    "targetWordsArabic": ["محادثة", "غرفة فرعية", "غرفة انتظار", "تسجيل", "خلفية افتراضية"],
     "usage": {
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
@@ -520,7 +559,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Virtual Background",
+          "targetWords": ["Virtual Background"],
           "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -530,7 +569,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Virtual Background as the central item; include Virtual Background, Chat, and Breakout Room naturally where visually appropriate, but make the real-world use of Virtual Background the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Meeting Room",
@@ -539,12 +579,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chat"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Virtual Background"
+        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Virtual Background",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

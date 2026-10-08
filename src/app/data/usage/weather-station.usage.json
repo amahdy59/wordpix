@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use common the weather station 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the weather station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -112,38 +112,45 @@
       ]
     },
     "reading": {
-      "title": "The Weather Station: Short Description",
-      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places sunshine, clear sky, and partly cloudy in one coherent situation so the learner can connect meaning, context, and use. The lesson places warm breeze, dry air, and blue sky in one coherent situation so the learner can connect meaning, context, and use. The lesson places calm, mild temperature, and pleasant in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Weather Station 1: A short reading",
+      "text": "The morning begins with sunshine and a clear sky. A warm breeze moves through the garden. Later, clouds arrive and a little drizzle falls. By lunchtime, a downpour leaves a puddle near the gate. Maya waits indoors, then checks the road before walking to the bus stop with Omar.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunshine"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Sunshine, Clear Sky, Partly Cloudy. The selected item or situation is best described as sunshine.\nWhich description best fits the selected item or situation?",
+        "answer": "Sunshine",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Warm Breeze"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Warm Breeze, Dry Air, Blue Sky. The selected item or situation is best described as warm breeze.\nWhich description best fits the selected item or situation?",
+        "answer": "Warm Breeze",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Calm"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Calm, Mild Temperature, Pleasant. The selected item or situation is best described as calm.\nWhich description best fits the selected item or situation?",
+        "answer": "Calm",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balmy"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Balmy, Rain, Drizzle. The selected item or situation is best described as balmy.\nWhich description best fits the selected item or situation?",
+        "answer": "Balmy",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Downpour"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Sunshine"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Partly Cloudy"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Downpour, Puddle, Flood. The selected item or situation is best described as downpour.\nWhich description best fits the selected item or situation?",
+        "answer": "Downpour",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +159,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Weather Map” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What leaves a puddle near the gate?",
+        "answer": "A downpour",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -208,8 +222,8 @@
     "usage": {
       "goal": "Learn to use common the weather station 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the weather station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -274,38 +288,45 @@
       ]
     },
     "reading": {
-      "title": "The Weather Station: Mini Dialogue",
-      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places rainbow, umbrella, and raincoat in one coherent situation so the learner can connect meaning, context, and use. The lesson places rain boots, wet road, and snow in one coherent situation so the learner can connect meaning, context, and use. The lesson places snowflake, ice, and frost in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Weather Station 2: A short reading",
+      "text": "Omar takes an umbrella and wears rain boots because the road is wet. A rainbow appears when the rain stops. In winter, this area sometimes has snow, frost, and icicles. Maya compares photographs of a snowflake and hail during her lesson. She labels the pictures before writing a short weather report.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rainbow"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Rainbow, Umbrella, Raincoat. The selected item or situation is best described as rainbow.\nWhich description best fits the selected item or situation?",
+        "answer": "Rainbow",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rain Boots"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Rain Boots, Wet Road, Snow. The selected item or situation is best described as rain boots.\nWhich description best fits the selected item or situation?",
+        "answer": "Rain Boots",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowflake"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Snowflake, Ice, Frost. The selected item or situation is best described as snowflake.\nWhich description best fits the selected item or situation?",
+        "answer": "Snowflake",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hail"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Hail, Sleet, Icicle. The selected item or situation is best described as hail.\nWhich description best fits the selected item or situation?",
+        "answer": "Hail",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowstorm"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Rainbow"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Raincoat"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Snowstorm, Frozen Pond, Fog. The selected item or situation is best described as snowstorm.\nWhich description best fits the selected item or situation?",
+        "answer": "Snowstorm",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +335,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Sunshine” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What appears when the rain stops?",
+        "answer": "A rainbow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -370,8 +398,8 @@
     "usage": {
       "goal": "Learn to use common the weather station 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the weather station.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -436,38 +464,45 @@
       ]
     },
     "reading": {
-      "title": "The Weather Station: Simple Message",
-      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places thunderstorm, lightning, and thunder in one coherent situation so the learner can connect meaning, context, and use. The lesson places tornado, hurricane, and strong wind in one coherent situation so the learner can connect meaning, context, and use. The lesson places dust storm, heat wave, and drought in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Weather Station 3: A short reading",
+      "text": "The weather-station worker checks the thermometer, barometer, and rain gauge. Strong wind moves the weather vane. The forecast mentions a thunderstorm, so the team watches the radar. They record wind speed and rainfall rather than guessing from the sky alone. At the end of the shift, they compare the measurements.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thunderstorm"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Thunderstorm, Lightning, Thunder. The selected item or situation is best described as thunderstorm.\nWhich description best fits the selected item or situation?",
+        "answer": "Thunderstorm",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tornado"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Tornado, Hurricane, Strong Wind. The selected item or situation is best described as tornado.\nWhich description best fits the selected item or situation?",
+        "answer": "Tornado",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dust Storm"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Dust Storm, Heat Wave, Drought. The selected item or situation is best described as dust storm.\nWhich description best fits the selected item or situation?",
+        "answer": "Dust Storm",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blizzard"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Blizzard, Thermometer, Barometer. The selected item or situation is best described as blizzard.\nWhich description best fits the selected item or situation?",
+        "answer": "Blizzard",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Anemometer"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Thunderstorm"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Thunder"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Anemometer, Rain Gauge, Weather Vane. The selected item or situation is best described as anemometer.\nWhich description best fits the selected item or situation?",
+        "answer": "Anemometer",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +511,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Rainbow” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the forecast mention?",
+        "answer": "A thunderstorm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -532,8 +574,8 @@
     "usage": {
       "goal": "Learn to use common the weather station 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the weather station.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -598,38 +640,45 @@
       ]
     },
     "reading": {
-      "title": "The Weather Station: Notice-Style Text",
-      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places hygrometer, weather satellite, and radar dish in one coherent situation so the learner can connect meaning, context, and use. The lesson places weather balloon, wind sock, and spring in one coherent situation so the learner can connect meaning, context, and use. The lesson places summer, autumn, and winter in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Weather Station 4: A short reading",
+      "text": "A worker checks the hygrometer to record humidity. The wind sock shows the wind's direction, while a weather balloon carries instruments above the ground. The team records temperature and cloud cover throughout the day. They compare today's data with winter and summer records to understand how the conditions change.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hygrometer"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Hygrometer, Weather Satellite, Radar Dish. The selected item or situation is best described as hygrometer.\nWhich description best fits the selected item or situation?",
+        "answer": "Hygrometer",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Weather Balloon"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Weather Balloon, Wind Sock, Spring. The selected item or situation is best described as weather balloon.\nWhich description best fits the selected item or situation?",
+        "answer": "Weather Balloon",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Summer"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Summer, Autumn, Winter. The selected item or situation is best described as summer.\nWhich description best fits the selected item or situation?",
+        "answer": "Summer",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Temperature"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Temperature, Humidity, Wind Speed. The selected item or situation is best described as temperature.\nWhich description best fits the selected item or situation?",
+        "answer": "Temperature",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cloud Cover"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Hygrometer"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Radar Dish"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Cloud Cover, Sunrise, Sunset. The selected item or situation is best described as cloud cover.\nWhich description best fits the selected item or situation?",
+        "answer": "Cloud Cover",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +687,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Thunderstorm” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the worker use to record humidity?",
+        "answer": "A hygrometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -673,8 +729,8 @@
     "usage": {
       "goal": "Learn to use common the weather station 5 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the weather station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -727,34 +783,38 @@
       ]
     },
     "reading": {
-      "title": "The Weather Station: Short Description",
-      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places sunny, cloudy, and rainy in one coherent situation so the learner can connect meaning, context, and use. The lesson places snowy, windy, and stormy in one coherent situation so the learner can connect meaning, context, and use. The lesson places foggy, radar, and satellite in one coherent situation so the learner can connect meaning, context, and use.",
+      "title": "The Weather Station 5: A short reading",
+      "text": "Maya writes a short forecast. The morning will be sunny, but the afternoon may be cloudy and windy. Omar checks a radar image for rain. A satellite image shows a large band of clouds. They add the information to their report, then check whether tomorrow morning is likely to be foggy.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunny"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Sunny, Cloudy, Rainy. The selected item or situation is best described as sunny.\nWhich description best fits the selected item or situation?",
+        "answer": "Sunny",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snowy"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Snowy, Windy, Stormy. The selected item or situation is best described as snowy.\nWhich description best fits the selected item or situation?",
+        "answer": "Snowy",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Foggy"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Foggy, Radar, Satellite. The selected item or situation is best described as foggy.\nWhich description best fits the selected item or situation?",
+        "answer": "Foggy",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dew"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Sunny"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Rainy"
+        "prompt": "An adult compares three possible descriptions in a the weather station context: Dew, Sunny, Cloudy. The selected item or situation is best described as dew.\nWhich description best fits the selected item or situation?",
+        "answer": "Dew",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -763,6 +823,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Hygrometer” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar check for rain?",
+        "answer": "A radar image",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

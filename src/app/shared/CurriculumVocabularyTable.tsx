@@ -44,6 +44,17 @@ interface Props {
   className?: string;
 }
 
+function VocabularyImagePlaceholder({ term }: { term: string }) {
+  const { t } = useI18n();
+  return (
+    <div className="flex size-full flex-col items-center justify-center gap-1 p-2 text-center text-foreground">
+      <ImageIcon className="size-5 shrink-0" aria-hidden="true" />
+      <span className="text-xs font-semibold">{t("story.imagePending")}</span>
+      <span className="sr-only">{term}</span>
+    </div>
+  );
+}
+
 export function CurriculumVocabularyTable({
   items,
   sidebars,
@@ -206,9 +217,7 @@ export function CurriculumVocabularyTable({
                               className="size-full object-cover object-center transition-transform duration-300 group-hover/thumb:scale-105"
                             />
                           ) : (
-                            <div className="flex size-full items-center justify-center text-muted-foreground/50">
-                              <ImageIcon className="size-6" aria-hidden="true" />
-                            </div>
+                            <VocabularyImagePlaceholder term={item.term} />
                           )}
 
                           {/* Enlarge Overlay Button */}
@@ -280,7 +289,7 @@ export function CurriculumVocabularyTable({
                           className="text-sm font-normal italic leading-relaxed text-foreground/90 rounded-xl bg-muted/40 p-2.5 border border-border/40"
                           lang="en"
                         >
-                          "{item.example}"
+                          {item.example}
                         </p>
                       </td>
 
@@ -326,9 +335,7 @@ export function CurriculumVocabularyTable({
                           className="size-full object-cover object-center"
                         />
                       ) : (
-                        <div className="flex size-full items-center justify-center text-muted-foreground/50">
-                          <ImageIcon className="size-5" aria-hidden="true" />
-                        </div>
+                        <VocabularyImagePlaceholder term={item.term} />
                       )}
 
                       {hasImg && (
@@ -403,7 +410,7 @@ export function CurriculumVocabularyTable({
                   </div>
 
                   <div className="rounded-xl bg-muted/40 p-2.5 text-xs font-normal italic text-foreground/90 border border-border/40">
-                    "{item.example}"
+                    {item.example}
                   </div>
                 </article>
               );
@@ -470,6 +477,9 @@ export function CurriculumVocabularyTable({
                       <span className="mt-2 text-xs font-black uppercase tracking-widest text-muted-foreground/80">
                         {item.term}
                       </span>
+                      <span className="mt-2 text-sm font-semibold text-foreground">
+                        {t("story.imagePending")}
+                      </span>
                     </div>
                   )}
                 </div>
@@ -524,7 +534,7 @@ export function CurriculumVocabularyTable({
                   </div>
 
                   <div className="rounded-xl border border-border/60 bg-muted/30 p-3 text-xs italic text-foreground/90">
-                    "{item.example}"
+                    {item.example}
                   </div>
                 </div>
               </article>
@@ -609,12 +619,11 @@ export function CurriculumVocabularyTable({
                     src={activeModalItem.imageSrc}
                     alt=""
                     aria-hidden="true"
+                    onError={() => handleImageError(activeModalItem.id)}
                     className="size-full object-cover object-center"
                   />
                 ) : (
-                  <div className="flex size-full items-center justify-center text-muted-foreground/50">
-                    <ImageIcon className="size-12" aria-hidden="true" />
-                  </div>
+                  <VocabularyImagePlaceholder term={activeModalItem.term} />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-black/30" />
 
@@ -684,7 +693,7 @@ export function CurriculumVocabularyTable({
                     className="text-sm font-medium italic text-foreground leading-relaxed"
                     lang="en"
                   >
-                    "{activeModalItem.example}"
+                    {activeModalItem.example}
                   </p>
                   {showArabic && activeModalItem.exampleAr && (
                     <p
@@ -692,7 +701,7 @@ export function CurriculumVocabularyTable({
                       lang="ar"
                       className="mt-1 text-xs font-arabic text-muted-foreground leading-relaxed"
                     >
-                      "{activeModalItem.exampleAr}"
+                      {activeModalItem.exampleAr}
                     </p>
                   )}
                 </div>

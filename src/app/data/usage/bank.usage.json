@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "ردهة",
       "شباك الصراف",
-      "قبو معماري",
+      "خزنة محصّنة",
       "صندوق أمانات",
       "جهاز صراف آلي",
       "خدمة من السيارة",
       "مكتب",
-      "غرفة يسمى «وايتينج اريا»",
+      "منطقة انتظار",
       "مكتب الأمن",
-      "بورصة عملة",
-      "حساب جار",
+      "صرف العملات",
+      "حساب جارٍ",
       "حساب توفير",
       "حساب مشترك",
       "حساب تجاري",
-      "أداة أو جهاز يسمى «كيرتيفيكاتي وف ديبوسيت»"
+      "شهادة إيداع"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
@@ -102,7 +102,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Joint Account as the central item; include Joint Account, Business Account, and Certificate of Deposit naturally where visually appropriate, but make the real-world use of Joint Account the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Bank: Practical Information",
@@ -111,20 +112,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lobby"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lobby",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ATM"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ATM",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Security Desk"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Security Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Joint Account"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Joint Account",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -193,19 +206,19 @@
       "Check Balance"
     ],
     "targetWordsArabic": [
-      "سوق نقدي",
+      "سوق النقد",
       "حساب تقاعد",
       "حساب طلابي",
-      "شخص يسمى «تروست اككوونت»",
+      "حساب أمانة لصالح مستفيد",
       "حساب ضمان",
-      "إيداع",
-      "سحب",
-      "تحويل",
-      "سلك",
-      "يصرف شيكا",
-      "فتح حساب",
-      "يغلق حسابا",
-      "يتقدم بطلب قرض",
+      "يودع المال",
+      "يسحب المال",
+      "يحوّل المال",
+      "يحوّل المال إلكترونيًا",
+      "يصرف شيكًا",
+      "يفتح حسابًا مصرفيًا",
+      "يغلق حسابًا",
+      "يتقدّم بطلب قرض",
       "يدفع فاتورة",
       "يتحقق من الرصيد"
     ],
@@ -263,7 +276,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Apply for Loan as the central item; include Apply for Loan, Pay Bill, and Check Balance naturally where visually appropriate, but make the real-world use of Apply for Loan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Bank",
@@ -272,20 +286,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Money Market"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Money Market",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Escrow"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Escrow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wire"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wire",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Apply for Loan"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Apply for Loan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -357,8 +383,8 @@
       "محاسب",
       "مدقق",
       "مدير فرع",
-      "خدمة عميل",
-      "ضابط امتثال"
+      "خدمة العملاء",
+      "مسؤول امتثال"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
@@ -402,7 +428,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Customer Service as the central item; include Customer Service, Compliance Officer, and Teller naturally where visually appropriate, but make the real-world use of Customer Service the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -411,16 +438,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teller"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Teller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Security Guard"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Security Guard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Customer Service"
+        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Customer Service",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

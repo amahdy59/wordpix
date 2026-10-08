@@ -141,20 +141,22 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
       }
     >
       <ExerciseFamilyTemplate
-        family="reading-context"
+        family="visual-choice"
         instruction={hasBlank ? t("exercise.gapFillInstruction") : t("exercise.chooseMeaningClue")}
         helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
         activityLabel={t("exercise.gapFillActivityAria")}
+        media={
+          <SentenceQuestionSupport
+            key={currentTargetWord.id}
+            sentence={fullSentence}
+            prompt={clozeSentence}
+            word={currentTargetWord}
+            media={media}
+            answered={feedback !== null}
+          />
+        }
         activity={
           <div className="space-y-4">
-            <SentenceQuestionSupport
-              key={currentTargetWord.id}
-              sentence={fullSentence}
-              prompt={clozeSentence}
-              word={currentTargetWord}
-              media={media}
-              answered={feedback !== null}
-            />
             {hasBlank && (
               <p
                 lang="en"
@@ -166,7 +168,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
               </p>
             )}
             <div
-              className="grid w-full grid-cols-2 gap-2 sm:gap-3"
+              className={`grid w-full gap-2 sm:gap-3 ${options.length === 3 ? "sm:grid-cols-3 lg:grid-cols-1" : "sm:grid-cols-2"}`}
               role="group"
               aria-label={t("exercise.gapFillChoicesAria")}
               dir="ltr"

@@ -28,15 +28,15 @@
     ],
     "targetWordsArabic": [
       "نملة",
-      "حشرة يسمى «بيي»",
+      "نحلة",
       "فراشة",
       "دعسوقة",
       "يعسوب",
       "جرادة",
       "خنفساء",
-      "كائن أو عنصر طبيعي يسمى «فلي»",
+      "ذبابة",
       "بعوضة",
-      "حشرة يسمى «كريكيت»",
+      "صرصور الليل",
       "جناح",
       "هوائي",
       "ساق",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Leg as the central item; include Leg, Thorax, and Abdomen naturally where visually appropriate, but make the real-world use of Leg the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Insect World: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ant"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dragonfly"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dragonfly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mosquito"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mosquito",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leg"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Leg",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -191,18 +204,18 @@
       "رأس",
       "عين",
       "فك سفلي",
-      "عضو يسمى «ستينجير»",
+      "إبرة لسع",
       "خرطوم",
-      "كائن أو عنصر طبيعي يسمى «هيفي»",
-      "كائن أو عنصر طبيعي يسمى «انثيلل»",
-      "كائن أو عنصر طبيعي يسمى «ويب»",
-      "كائن أو عنصر طبيعي يسمى «كوكوون»",
+      "خلية نحل",
+      "تل النمل",
+      "شبكة عنكبوت",
+      "شرنقة",
       "عش",
-      "كائن أو عنصر طبيعي يسمى «بورروو»",
+      "جحر",
       "ورقة نبات",
-      "شجرة يسمى «بارك»",
-      "نبات يسمى «سويل»",
-      "كائن أو عنصر طبيعي يسمى «بوند سورفاكي»"
+      "لحاء",
+      "تربة",
+      "سطح البركة"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Bark as the central item; include Bark, Soil, and Pond Surface naturally where visually appropriate, but make the real-world use of Bark the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Insect World",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Head"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Head",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Proboscis"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Proboscis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cocoon"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cocoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bark"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bark",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,20 +376,20 @@
     ],
     "targetWordsArabic": [
       "بيضة (بيض)",
-      "سمكة يسمى «لارفا»",
       "يرقة",
-      "حشرة يسمى «بوبا»",
+      "يرقة",
+      "عذراء الحشرة",
       "عذراء الفراشة",
       "تحول كامل",
       "انسلاخ",
-      "حشرة يسمى «نيمف»",
+      "حورية حشرة",
       "بالغ",
-      "كائن أو عنصر طبيعي يسمى «سوارم»",
-      "كائن أو عنصر طبيعي يسمى «بولليناتي»",
-      "كائن أو عنصر طبيعي يسمى «ستينج»",
-      "كائن أو عنصر طبيعي يسمى «كراول»",
+      "سرب",
+      "يلقح الأزهار",
+      "يلسع",
+      "يزحف",
       "طنين",
-      "كائن أو عنصر طبيعي يسمى «ديج»"
+      "يحفر"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Crawl as the central item; include Crawl, Buzz, and Dig naturally where visually appropriate, but make the real-world use of Crawl the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: The Insect World",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Egg"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Egg",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chrysalis"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chrysalis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adult"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Adult",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Crawl"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Crawl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -509,20 +548,20 @@
       "Wasp"
     ],
     "targetWordsArabic": [
-      "كائن أو عنصر طبيعي يسمى «سبين»",
+      "ينسج شبكة",
       "تمويه",
-      "كائن أو عنصر طبيعي يسمى «ميجراتي»",
-      "كائن أو عنصر طبيعي يسمى «هيبيرناتي»",
-      "كائن أو عنصر طبيعي يسمى «يارثوورم»",
-      "كائن أو عنصر طبيعي يسمى «سنايل»",
-      "مشروب يسمى «سلوج»",
+      "يهاجر",
+      "يدخل في سبات",
+      "دودة أرض",
+      "حلزون",
+      "بزاقة",
       "حريش",
-      "كائن أو عنصر طبيعي يسمى «ميلليبيدي»",
-      "حشرة يسمى «افيد»",
+      "دودة ألفية الأرجل",
+      "حشرة المن",
       "فرس النبي",
       "يراعة",
-      "حشرة يسمى «موث»",
-      "كائن أو عنصر طبيعي يسمى «واسب»"
+      "عثة",
+      "دبور"
     ],
     "usage": {
       "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
@@ -578,7 +617,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Moth as the central item; include Moth, Wasp, and Spin naturally where visually appropriate, but make the real-world use of Moth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Insect World: Practical Information",
@@ -587,20 +627,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spin"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Earthworm"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Earthworm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Millipede"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Millipede",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moth"
+        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

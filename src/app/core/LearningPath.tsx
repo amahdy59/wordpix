@@ -83,6 +83,33 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
   const [expandedPhase, setExpandedPhase] = useState(currentPhaseIndex);
   const [showPictureWorldPath, setShowPictureWorldPath] = useState(false);
 
+  const pronunciationMastered = useMemo(
+    () =>
+      Object.values(learnerState.pronunciationProgress).filter((item) => item.status === "mastered")
+        .length,
+    [learnerState.pronunciationProgress]
+  );
+  const hadithMastered = useMemo(
+    () =>
+      Object.values(learnerState.hadithProgress).filter((item) => item.status === "mastered")
+        .length,
+    [learnerState.hadithProgress]
+  );
+  const conversationMastered = useMemo(
+    () =>
+      Object.values(learnerState.conversationProgress ?? {}).filter(
+        (item) => item.status === "mastered"
+      ).length,
+    [learnerState.conversationProgress]
+  );
+  const businessMastered = useMemo(
+    () =>
+      Object.values(learnerState.businessProgress ?? {}).filter(
+        (item) => item.status === "mastered"
+      ).length,
+    [learnerState.businessProgress]
+  );
+
   if (!recommendedUnit) {
     return (
       <PageContainer size="wide">
@@ -329,7 +356,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -339,17 +366,22 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-1 text-lg font-black text-foreground">
+              <h3 className="mt-2 text-lg font-black text-foreground">
                 {t("pronunciation.curriculumTitle")}
               </h3>
-              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+              <p className="mt-1 text-xs leading-5 text-muted-foreground">
                 {t("help.completed", {
-                  completed: Object.values(learnerState.pronunciationProgress).filter(
-                    (item) => item.status === "mastered"
-                  ).length,
+                  completed: pronunciationMastered,
                   total: 68,
                 })}
               </p>
+              <div className="mt-2.5">
+                <ProgressBar
+                  progressPercent={Math.round((pronunciationMastered / 68) * 100)}
+                  ariaLabel={t("pronunciation.curriculumTitle")}
+                  size="sm"
+                />
+              </div>
             </div>
             <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
               {t("pronunciation.viewCurriculum")}
@@ -360,7 +392,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -370,17 +402,22 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-1 text-lg font-black text-foreground">
+              <h3 className="mt-2 text-lg font-black text-foreground">
                 {t("hadith.curriculumTitle")}
               </h3>
-              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+              <p className="mt-1 text-xs leading-5 text-muted-foreground">
                 {t("help.completed", {
-                  completed: Object.values(learnerState.hadithProgress).filter(
-                    (item) => item.status === "mastered"
-                  ).length,
+                  completed: hadithMastered,
                   total: 42,
                 })}
               </p>
+              <div className="mt-2.5">
+                <ProgressBar
+                  progressPercent={Math.round((hadithMastered / 42) * 100)}
+                  ariaLabel={t("hadith.curriculumTitle")}
+                  size="sm"
+                />
+              </div>
             </div>
             <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
               {t("hadith.viewCurriculum")}
@@ -391,7 +428,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -401,15 +438,20 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-1 text-lg font-black text-foreground">{t("conversation.title")}</h3>
-              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+              <h3 className="mt-2 text-lg font-black text-foreground">{t("conversation.title")}</h3>
+              <p className="mt-1 text-xs leading-5 text-muted-foreground">
                 {t("conversation.completedUnits", {
-                  completed: Object.values(learnerState.conversationProgress ?? {}).filter(
-                    (item) => item.status === "mastered"
-                  ).length,
+                  completed: conversationMastered,
                   total: 40,
                 })}
               </p>
+              <div className="mt-2.5">
+                <ProgressBar
+                  progressPercent={Math.round((conversationMastered / 40) * 100)}
+                  ariaLabel={t("conversation.title")}
+                  size="sm"
+                />
+              </div>
             </div>
             <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
               {t("conversation.exploreUnits")}
@@ -420,7 +462,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -430,15 +472,20 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-1 text-lg font-black text-foreground">{t("business.title")}</h3>
-              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+              <h3 className="mt-2 text-lg font-black text-foreground">{t("business.title")}</h3>
+              <p className="mt-1 text-xs leading-5 text-muted-foreground">
                 {t("business.completedUnits", {
-                  completed: Object.values(learnerState.businessProgress ?? {}).filter(
-                    (item) => item.status === "mastered"
-                  ).length,
+                  completed: businessMastered,
                   total: 40,
                 })}
               </p>
+              <div className="mt-2.5">
+                <ProgressBar
+                  progressPercent={Math.round((businessMastered / 40) * 100)}
+                  ariaLabel={t("business.title")}
+                  size="sm"
+                />
+              </div>
             </div>
             <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
               {t("business.exploreUnits")}

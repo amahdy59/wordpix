@@ -29,17 +29,17 @@
     "targetWordsArabic": [
       "درزة",
       "بنسة خياطة",
-      "كسرة قماش",
-      "يكشكش القماش",
+      "طية منتظمة في القماش",
+      "يجمع القماش في ثنيات صغيرة",
       "حاشية",
-      "طوق",
-      "سوار عريض",
-      "غلاف كوب",
-      "جزء يسمى «بوديكي»",
+      "ياقة",
+      "طرف الكُمّ",
+      "كُمّ",
+      "الجزء العلوي من الفستان",
       "حزام خصر",
-      "سحاب",
+      "سحّاب",
       "زر",
-      "فرقعة الأصابع",
+      "زر كبّاس",
       "خطاف وعروة",
       "فيلكرو"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Snap as the central item; include Snap, Hook and Eye, and Velcro naturally where visually appropriate, but make the real-world use of Snap the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Fashion Design",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Seam"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seam, Dart, Pleat, and Gather and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Seam",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hem"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hem, Collar, Cuff, and Sleeve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hem",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bodice"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bodice, Waistband, Zipper, and Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bodice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Snap"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snap, Hook and Eye, and Velcro and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Snap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -194,19 +207,19 @@
     "targetWordsArabic": [
       "إبزيم",
       "بأربطة",
-      "قفل تبديل",
-      "رباط سحب",
+      "مشبك أسطواني",
+      "رباط شد",
       "مشبك مغناطيسي",
       "تطريز",
-      "تطريز بالخرز",
+      "تزيين بالخرز",
       "ترتر",
       "أبليك؛ زخرفة بقصاصات قماش",
-      "شرابة",
+      "شراشيب",
       "كشكشة",
       "شريط",
-      "شريط حواف زخرفي",
-      "تطريز سموك",
-      "حروف أولى مطرزة"
+      "شريط حواف بارز",
+      "تطريز على قماش مجمع",
+      "حروف اسم متشابكة"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Piping through a realistic adult task; include Piping, Smocking, and Monogram naturally where visually appropriate, but make the real-world use of Piping the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Fashion Design",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Buckle"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buckle, Lace-Up, Toggle, and Drawstring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Buckle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Magnetic Clasp"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnetic Clasp, Embroidery, Beading, and Sequin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Magnetic Clasp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Appliqué"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appliqué, Fringe, Ruffle, and Ribbon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Appliqué",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Piping"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Piping, Smocking, and Monogram and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Piping",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -352,15 +378,15 @@
       "Sustainable Fashion"
     ],
     "targetWordsArabic": [
-      "أزياء راقية",
+      "أزياء راقية مفصلة حسب الطلب",
       "ملابس جاهزة (Prêt-à-Porter)",
-      "مجموعة",
-      "فصل",
+      "مجموعة أزياء",
+      "موسم أزياء",
       "كتالوج صور للأزياء",
-      "اتجاه موضة",
-      "هيئة التصميم",
+      "اتجاه رائج في الموضة",
+      "الشكل العام للملبس",
       "توليفة لونية",
-      "كبسولة",
+      "مجموعة أزياء مصغّرة متناسقة",
       "أزياء مستدامة"
     ],
     "usage": {
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Capsule as the central item; include Capsule, Sustainable Fashion, and Haute Couture naturally where visually appropriate, but make the real-world use of Capsule the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Fashion Design",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Haute Couture"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Haute Couture, Prêt-à-Porter, Collection, and Season and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Haute Couture",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lookbook"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lookbook, Trend, Silhouette, and Colorway and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lookbook",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Capsule"
+        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Capsule, and Sustainable Fashion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Capsule",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

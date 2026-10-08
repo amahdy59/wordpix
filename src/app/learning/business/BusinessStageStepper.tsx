@@ -143,7 +143,7 @@ export function BusinessStageStepper({
               disabled={isLocked}
               aria-current={isCurrent ? "step" : undefined}
               onClick={() => onSelectStage(idx)}
-              className={`flex min-h-[44px] items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+              className={`flex min-h-[44px] items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 isCurrent
                   ? "bg-primary text-primary-foreground shadow-wp-xs font-black"
                   : isDone
@@ -195,7 +195,7 @@ export function BusinessStageStepper({
                 disabled={isLocked}
                 aria-current={isCurrent ? "step" : undefined}
                 onClick={() => onSelectStage(idx)}
-                className={`flex min-h-[44px] items-center justify-between gap-3 px-3.5 py-2.5 rounded-2xl text-start text-sm font-bold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+                className={`flex min-h-[44px] items-center justify-between gap-3 px-3.5 py-2.5 rounded-2xl text-start text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isCurrent
                     ? "bg-primary text-primary-foreground shadow-wp-xs font-black"
                     : isDone

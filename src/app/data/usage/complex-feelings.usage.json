@@ -27,21 +27,21 @@
       "Insecure"
     ],
     "targetWordsArabic": [
-      "محرج",
+      "محرَج",
       "غيور",
       "حاسد",
       "شاعر بالذنب",
-      "خجلان",
-      "مهان",
+      "خجلان أو شاعر بالخزي",
+      "مُهان",
       "فخور",
       "متواضع",
       "متعاطف",
-      "متفهم لمشاعر الآخرين",
-      "حنين للماضي",
-      "كئيب",
-      "مغمور بالمشاعر",
-      "ضعيف أو عرضة للأذى",
-      "غير واثق"
+      "متفهّم لمشاعر الآخرين",
+      "شاعر بالحنين للماضي",
+      "شجيّ أو كئيب",
+      "مُثقل بالضغوط أو المشاعر",
+      "عرضة للأذى العاطفي",
+      "غير واثق بنفسه"
     ],
     "usage": {
       "goal": "Learn to use complex feelings 1 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Overwhelmed, Vulnerable, Insecure. The selected item or situation is best described as overwhelmed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Overwhelmed, Vulnerable, Insecure in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Complex Feelings: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Embarrassed"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Embarrassed, Jealous, Envious. The selected item or situation is best described as embarrassed.\nWhich description best fits the selected item or situation?",
+        "answer": "Embarrassed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Guilty"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Guilty, Ashamed, Humiliated. The selected item or situation is best described as guilty.\nWhich description best fits the selected item or situation?",
+        "answer": "Guilty",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Proud"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Proud, Humble, Sympathetic. The selected item or situation is best described as proud.\nWhich description best fits the selected item or situation?",
+        "answer": "Proud",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Empathetic"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Empathetic, Nostalgic, Melancholic. The selected item or situation is best described as empathetic.\nWhich description best fits the selected item or situation?",
+        "answer": "Empathetic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Overwhelmed"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Overwhelmed, Vulnerable, Insecure. The selected item or situation is best described as overwhelmed.\nWhich description best fits the selected item or situation?",
+        "answer": "Overwhelmed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -194,20 +210,20 @@
     ],
     "targetWordsArabic": [
       "ذو مشاعر متضاربة",
-      "متردد المشاعر",
-      "حلو مر",
-      "حالم بحزن",
-      "شوق",
-      "قلق",
+      "ذو مشاعر مختلطة",
+      "مزيج من الفرح والحزن",
+      "حالم بحنين هادئ",
+      "شوق أو حنين",
+      "قلق ومتوتر",
       "متوتر",
       "مذعور",
-      "مضغوط نفسيا",
-      "متوتر",
-      "غير مرتاح",
+      "مضغوط نفسيًا",
+      "مشدود الأعصاب",
+      "غير مطمئن",
       "قلق لا يهدأ",
       "مرتاب بشدة",
       "متوجس",
-      "رهبة"
+      "رهبة أو خشية شديدة"
     ],
     "usage": {
       "goal": "Learn to use complex feelings 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Paranoid, Apprehensive, Dread. The selected item or situation is best described as paranoid. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Paranoid, Apprehensive, Dread in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Complex Feelings: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Conflicted"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Conflicted, Ambivalent, Bittersweet. The selected item or situation is best described as conflicted.\nWhich description best fits the selected item or situation?",
+        "answer": "Conflicted",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wistful"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Wistful, Longing, Anxious. The selected item or situation is best described as wistful.\nWhich description best fits the selected item or situation?",
+        "answer": "Wistful",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nervous"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Nervous, Panicked, Stressed. The selected item or situation is best described as nervous.\nWhich description best fits the selected item or situation?",
+        "answer": "Nervous",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tense"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Tense, Uneasy, Restless. The selected item or situation is best described as tense.\nWhich description best fits the selected item or situation?",
+        "answer": "Tense",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Paranoid"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Paranoid, Apprehensive, Dread. The selected item or situation is best described as paranoid.\nWhich description best fits the selected item or situation?",
+        "answer": "Paranoid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -359,21 +391,21 @@
       "Devotion"
     ],
     "targetWordsArabic": [
-      "ملهم",
+      "مفعم بالإلهام",
       "متحفز",
-      "مصمم",
-      "مرن وقادر على التعافي",
+      "عازم أو مصمم",
+      "مرن وصامد أمام الصعاب",
       "شجاع",
       "واثق",
-      "متمكن",
-      "محقق للرضا",
-      "ناجح ومنجز",
-      "متحرر",
-      "حب",
-      "مودة",
-      "تعاطف",
-      "حنان",
-      "إخلاص"
+      "متمكّن وذو قدرة",
+      "شاعر بالرضا والإنجاز",
+      "منجز أو ناجح",
+      "متحرر من العبء",
+      "محبة أو مودة",
+      "مودة وحنان",
+      "رحمة وشفقة",
+      "رقة وحنان",
+      "إخلاص وتفانٍ"
     ],
     "usage": {
       "goal": "Learn to use complex feelings 3 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Compassion, Tenderness, Devotion. The selected item or situation is best described as compassion. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Compassion, Tenderness, Devotion in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Complex Feelings: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Inspired"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Inspired, Motivated, Determined. The selected item or situation is best described as inspired.\nWhich description best fits the selected item or situation?",
+        "answer": "Inspired",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Resilient"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Resilient, Courageous, Confident. The selected item or situation is best described as resilient.\nWhich description best fits the selected item or situation?",
+        "answer": "Resilient",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Empowered"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Empowered, Fulfilled, Accomplished. The selected item or situation is best described as empowered.\nWhich description best fits the selected item or situation?",
+        "answer": "Empowered",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Liberated"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Liberated, Love, Affection. The selected item or situation is best described as liberated.\nWhich description best fits the selected item or situation?",
+        "answer": "Liberated",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compassion"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Compassion, Tenderness, Devotion. The selected item or situation is best described as compassion.\nWhich description best fits the selected item or situation?",
+        "answer": "Compassion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -508,7 +556,13 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Admiration", "Trust", "Belonging", "Intimacy", "Warmth"],
-    "targetWordsArabic": ["إعجاب", "ثقة", "انتماء", "ألفة", "دفء"],
+    "targetWordsArabic": [
+      "إعجاب وتقدير",
+      "ثقة",
+      "انتماء",
+      "ألفة ومودة وثيقة",
+      "دفء المودة والترحيب"
+    ],
     "usage": {
       "goal": "Learn to use complex feelings 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to complex feelings.",
@@ -539,7 +593,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Intimacy, Warmth, Admiration. The selected item or situation is best described as intimacy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Intimacy, Warmth in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Complex Feelings: Everyday Description",
@@ -548,12 +603,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Admiration"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Admiration, Trust, Belonging. The selected item or situation is best described as admiration.\nWhich description best fits the selected item or situation?",
+        "answer": "Admiration",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Intimacy"
+        "prompt": "An adult compares three possible descriptions in a complex feelings context: Intimacy, Warmth, Admiration. The selected item or situation is best described as intimacy.\nWhich description best fits the selected item or situation?",
+        "answer": "Intimacy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

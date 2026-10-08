@@ -344,10 +344,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-          className="min-h-11 w-fit rounded-xl px-3 font-bold focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <ArrowLeft className="me-2 inline size-4" aria-hidden />
-          {t("pronunciation.back")}
+          <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+          <span>{t("pronunciation.back")}</span>
         </button>
         <header className="rounded-3xl bg-gradient-to-br from-primary/15 via-card to-card p-6 shadow-sm">
           <div className="flex items-start justify-between gap-4">
@@ -374,31 +374,58 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             <Sparkles className="size-8 text-primary" aria-hidden />
           </div>
           <div
+            role="tablist"
             className="mt-5 grid grid-cols-5 gap-2"
             aria-label={t("pronunciation.stageProgress", {
               current: stage + 1,
               total: STAGES.length,
             })}
           >
-            {STAGES.map((name, index) => (
-              <button
-                key={name}
-                type="button"
-                onClick={() => {
-                  if (index <= stage) {
-                    stop();
-                    cancelSpokenFeedback();
-                    setStage(index as Stage);
-                    setTrial(0);
-                    setAnswer(null);
-                  }
-                }}
-                disabled={index > stage}
-                aria-current={index === stage ? "step" : undefined}
-                aria-label={t("pronunciation.stage", { number: index + 1, name })}
-                className={`min-h-11 rounded-xl transition-colors focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${index <= stage ? "bg-primary hover:bg-primary/80" : "bg-muted"}`}
-              />
-            ))}
+            {STAGES.map((name, index) => {
+              const isCurrent = index === stage;
+              const isDone = index < stage;
+              return (
+                <button
+                  key={name}
+                  type="button"
+                  role="tab"
+                  onClick={() => {
+                    if (index <= stage) {
+                      stop();
+                      cancelSpokenFeedback();
+                      setStage(index as Stage);
+                      setTrial(0);
+                      setAnswer(null);
+                    }
+                  }}
+                  disabled={index > stage}
+                  aria-selected={isCurrent}
+                  aria-current={isCurrent ? "step" : undefined}
+                  aria-label={t("pronunciation.stage", { number: index + 1, name })}
+                  className={`flex min-h-11 items-center justify-center gap-1.5 rounded-xl border-2 px-2 py-1.5 text-xs font-black transition-all focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${
+                    isCurrent
+                      ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
+                      : isDone
+                        ? "border-primary/25 bg-primary/10 text-primary hover:border-primary/45 hover:bg-primary/15"
+                        : "border-border bg-card text-muted-foreground/60 opacity-60"
+                  }`}
+                >
+                  <span
+                    className={`flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-black ${
+                      isCurrent
+                        ? "bg-primary-foreground text-primary"
+                        : isDone
+                          ? "bg-primary text-primary-foreground"
+                          : "bg-muted text-muted-foreground"
+                    }`}
+                    aria-hidden
+                  >
+                    {isDone ? <Check className="size-3 stroke-[3]" /> : index + 1}
+                  </span>
+                  <span className="hidden truncate sm:inline">{name}</span>
+                </button>
+              );
+            })}
           </div>
           <p className="sr-only" aria-live="polite">
             {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
@@ -677,9 +704,9 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                               <button
                                 type="button"
                                 onClick={() => speak(cue)}
-                                className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
+                                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-bold text-primary hover:bg-primary/10 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-1 focus-visible:outline-primary"
                               >
-                                <Volume2 className="size-3.5" aria-hidden />
+                                <Volume2 className="size-4" aria-hidden />
                                 {t("pronunciation.listenToContrast")}
                               </button>
                             </div>
@@ -855,46 +882,66 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </p>
             </aside>
           )}
-          <div className="mt-6 flex justify-between gap-3">
-            <button type="button" onClick={reset} className="min-h-11 rounded-xl px-3 font-bold">
-              <RotateCcw className="me-2 inline size-4" aria-hidden />
-              {t("pronunciation.reset")}
-            </button>
-            {(stage === 0 || (passed && !state.accessibility.autoAdvance) || attempts >= 2) && (
+        </section>
+
+        {/* Sticky Accessible Footer Navigation Bar */}
+        <div className="sticky bottom-0 z-30 -mx-4 -mb-24 mt-8 border-t border-border/80 bg-background/95 px-4 py-3.5 backdrop-blur-md shadow-wp-md sm:-mx-8 sm:px-8">
+          <div className="wp-container-reading flex flex-col-reverse justify-between gap-3 sm:flex-row sm:items-center">
+            <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={advance}
-                className="min-h-11 rounded-xl bg-primary px-5 font-black text-primary-foreground"
+                disabled={lessonNumber === 1}
+                onClick={() => go(lessonNumber - 1)}
+                aria-label={t("pronunciation.previousLesson") || "Previous lesson"}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-card px-3.5 text-xs font-bold text-foreground hover:bg-muted active:scale-[0.98] disabled:opacity-40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
-                {stage === 4 ? t("pronunciation.finish") : t("pronunciation.continue")}
-                <ArrowRight className="ms-2 inline size-4" aria-hidden />
+                <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+                <span>{t("pronunciation.previous")}</span>
               </button>
-            )}
+
+              <button
+                type="button"
+                disabled={lessonNumber === 68}
+                onClick={() => go(lessonNumber + 1)}
+                aria-label={t("pronunciation.nextLesson") || "Next lesson"}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-card px-3.5 text-xs font-bold text-foreground hover:bg-muted active:scale-[0.98] disabled:opacity-40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <span>{t("pronunciation.next")}</span>
+                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+              </button>
+
+              <button
+                type="button"
+                onClick={reset}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-3 text-xs font-bold text-muted-foreground hover:bg-muted hover:text-foreground active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <RotateCcw className="size-3.5" aria-hidden />
+                <span>{t("pronunciation.reset")}</span>
+              </button>
+            </div>
+
+            <div>
+              {stage === 0 || (passed && !state.accessibility.autoAdvance) || attempts >= 2 ? (
+                <button
+                  type="button"
+                  onClick={advance}
+                  className="inline-flex min-h-11 w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-primary px-6 text-sm font-black text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  <span>
+                    {stage === 4 ? t("pronunciation.finish") : t("pronunciation.continue")}
+                  </span>
+                  <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                </button>
+              ) : (
+                <span className="text-xs font-bold text-muted-foreground">
+                  {answerable
+                    ? t("pronunciation.answerPrompt") || "Select an option to advance"
+                    : null}
+                </span>
+              )}
+            </div>
           </div>
-        </section>
-        <nav
-          className="flex justify-between gap-3"
-          aria-label={t("pronunciation.lessonNavigation")}
-        >
-          <button
-            type="button"
-            disabled={lessonNumber === 1}
-            onClick={() => go(lessonNumber - 1)}
-            className="min-h-11 rounded-xl border px-4 font-bold disabled:opacity-50"
-          >
-            <ArrowLeft className="me-2 inline size-4" aria-hidden />
-            {t("pronunciation.previous")}
-          </button>
-          <button
-            type="button"
-            disabled={lessonNumber === 68}
-            onClick={() => go(lessonNumber + 1)}
-            className="min-h-11 rounded-xl border px-4 font-bold disabled:opacity-50"
-          >
-            {t("pronunciation.next")}
-            <ArrowRight className="ms-2 inline size-4" aria-hidden />
-          </button>
-        </nav>
+        </div>
       </div>
     </div>
   );

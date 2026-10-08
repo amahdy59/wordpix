@@ -32,8 +32,8 @@
       "عامل ضابط رطوبة",
       "جدار حجر",
       "باب القبو",
-      "طاولة تذوق",
-      "مكان يسمى «ديم ليغتينج»",
+      "طاولة تذوّق",
+      "إضاءة خافتة",
       "تهوية",
       "عزل",
       "ثلاجة نبيذ",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cork as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Wine Cellar: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wine Rack"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wine Rack, Temperature Control, Humidity Control, and Stone Wall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wine Rack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cellar Door"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cellar Door, Tasting Table, Dim Lighting, and Ventilation and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Cellar Door",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Insulation"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insulation, Wine Fridge, Horizontal Storage, and Bottle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Insulation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cork"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cork, Capsule, and Label and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cork",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -200,7 +213,7 @@
       "دورق تقديم",
       "كأس نبيذ",
       "فتاحة زجاجات (مفتاح الفلين)",
-      "فتاحة زجاجات نبيذ",
+      "فتّاحة زجاجات نبيذ",
       "مهوي",
       "سدادة زجاجة نبيذ",
       "فوهة صب للنبيذ",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Champagne Flute as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: The Wine Cellar",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vintage"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vintage, Bin Number, Cellar Book, and Inventory and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Vintage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Collection"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Collection, Decanter, Wine Glass, and Corkscrew and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Collection",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wine Opener"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wine Opener, Aerator, Wine Stopper, and Wine Pourer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wine Opener",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Champagne Flute"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Champagne Flute, Ice Bucket, and Wine Thermometer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Champagne Flute",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -361,7 +387,7 @@
       "وادي باروسا",
       "مندوزا",
       "وادي دورو",
-      "منطقة موزل"
+      "منطقة موزِل"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Douro Valley as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: The Wine Cellar",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bordeaux"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bordeaux, Burgundy, Champagne, and Tuscany and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bordeaux",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Napa Valley"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Napa Valley, Rioja, Barossa Valley, and Mendoza and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Napa Valley",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Douro Valley"
+        "prompt": "In the the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Douro Valley, and Mosel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Douro Valley",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

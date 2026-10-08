@@ -25,12 +25,12 @@ describe("Vocabulary descriptions", () => {
     const translated = vocabulary.filter((word) => word.arabicTranslation);
     const examples = vocabulary.filter((word) => word.exampleUsage);
 
-    // Full bilingual catalogue imported — 10332 words have Arabic translations
-    // (one intentional exclusion: "1099" has no Arabic equivalent).
+    // All imported words have context-specific Arabic glosses, including
+    // an explanatory gloss for the US tax term "1099".
     // Generic "The term X was used in Y lesson." examples have been stripped;
-    // 3496 words have curated example sentences from the approved catalogue.
-    expect(translated).toHaveLength(10332);
-    expect(examples).toHaveLength(3496);
+    // 3571 words have individual example sentences in the catalogue.
+    expect(translated).toHaveLength(10333);
+    expect(examples).toHaveLength(3571);
     expect(
       vocabulary.filter(
         (word) =>
@@ -64,7 +64,7 @@ describe("Vocabulary descriptions", () => {
     expect(
       unitWords.get("freelancing-remote-work")?.find((word) => word.id === "1099")
         ?.arabicTranslation
-    ).toBe("");
+    ).toContain("ضريبي");
     expect(unitWords.get("fruits")?.find((word) => word.id === "banana")?.arabicTranslation).toBe(
       "موز"
     );
@@ -144,7 +144,9 @@ describe("Vocabulary descriptions", () => {
         expect(word.description, `${word.id} contains placeholder copy`).not.toMatch(
           /needs manual|undefined|^this refers to the .+ used in this context\.$/i
         );
-        expect(word.description.length, `${word.id} too short`).toBeGreaterThan(25);
+        // Short concrete meanings are appropriate for beginners; padding a
+        // definition to an arbitrary length does not improve understanding.
+        expect(word.description.length, `${word.id} too short`).toBeGreaterThan(15);
         expect(word.description.length, `${word.id} too long to listen to`).toBeLessThan(350);
         expect(word.description, `${word.id} should end with a period`).toMatch(/\.$/);
         expect(word.description[0], `${word.id} should start capitalised`).toBe(

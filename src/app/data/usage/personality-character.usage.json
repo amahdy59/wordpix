@@ -31,11 +31,11 @@
       "كريم",
       "صادق",
       "شجاع",
-      "مريض",
-      "وفي",
+      "صبور",
+      "وفيّ",
       "متواضع",
       "مرح",
-      "موثوق",
+      "جدير بالاعتماد عليه",
       "رحيم",
       "عنيد",
       "غير صبور",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Shy, Moody, Selfish. The selected item or situation is best described as shy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Shy, Moody, Selfish in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Personality & Character: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kind"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Kind, Generous, Honest. The selected item or situation is best described as kind.\nWhich description best fits the selected item or situation?",
+        "answer": "Kind",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brave"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Brave, Patient, Loyal. The selected item or situation is best described as brave.\nWhich description best fits the selected item or situation?",
+        "answer": "Brave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Humble"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Humble, Cheerful, Reliable. The selected item or situation is best described as humble.\nWhich description best fits the selected item or situation?",
+        "answer": "Humble",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compassionate"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Compassionate, Stubborn, Impatient. The selected item or situation is best described as compassionate.\nWhich description best fits the selected item or situation?",
+        "answer": "Compassionate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shy"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Shy, Moody, Selfish. The selected item or situation is best described as shy.\nWhich description best fits the selected item or situation?",
+        "answer": "Shy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -199,13 +215,13 @@
       "متكبر",
       "متشائم",
       "ودود",
-      "اجتماعي ومنفتح",
+      "منفتح اجتماعيًا",
       "انطوائي",
-      "منفتح اجتماعيا",
+      "منفتح اجتماعيًا",
       "كثير الكلام",
       "هادئ",
-      "ذو كاريزما",
-      "جذاب",
+      "ذو شخصية جذابة",
+      "ساحر الشخصية",
       "اجتماعي",
       "متحفظ"
     ],
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Charming, Sociable, Reserved. The selected item or situation is best described as charming. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Charming, Sociable, Reserved in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Personality & Character: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lazy"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Lazy, Reckless, Jealous. The selected item or situation is best described as lazy.\nWhich description best fits the selected item or situation?",
+        "answer": "Lazy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Arrogant"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Arrogant, Pessimistic, Friendly. The selected item or situation is best described as arrogant.\nWhich description best fits the selected item or situation?",
+        "answer": "Arrogant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Outgoing"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Outgoing, Introverted, Extroverted. The selected item or situation is best described as outgoing.\nWhich description best fits the selected item or situation?",
+        "answer": "Outgoing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Talkative"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Talkative, Quiet, Charismatic. The selected item or situation is best described as talkative.\nWhich description best fits the selected item or situation?",
+        "answer": "Talkative",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Charming"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Charming, Sociable, Reserved. The selected item or situation is best described as charming.\nWhich description best fits the selected item or situation?",
+        "answer": "Charming",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -365,12 +397,12 @@
       "طموح",
       "ملتزم بالمواعيد",
       "مصمم",
-      "متفان",
+      "متفانٍ",
       "مبتكر",
-      "مركز",
+      "مركز الانتباه",
       "حسن التصرف",
-      "حساس",
-      "متفهم لمشاعر الآخرين",
+      "مرهف الحس",
+      "متفهّم لمشاعر الآخرين",
       "هادئ",
       "قلق",
       "متفائل"
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Calm, Anxious, Optimistic. The selected item or situation is best described as calm. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Calm, Anxious, Optimistic in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Personality & Character: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hardworking"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Hardworking, Creative, Organized. The selected item or situation is best described as hardworking.\nWhich description best fits the selected item or situation?",
+        "answer": "Hardworking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ambitious"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Ambitious, Punctual, Determined. The selected item or situation is best described as ambitious.\nWhich description best fits the selected item or situation?",
+        "answer": "Ambitious",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dedicated"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Dedicated, Innovative, Focused. The selected item or situation is best described as dedicated.\nWhich description best fits the selected item or situation?",
+        "answer": "Dedicated",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Resourceful"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Resourceful, Sensitive, Empathetic. The selected item or situation is best described as resourceful.\nWhich description best fits the selected item or situation?",
+        "answer": "Resourceful",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Calm"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Calm, Anxious, Optimistic. The selected item or situation is best described as calm.\nWhich description best fits the selected item or situation?",
+        "answer": "Calm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -508,7 +556,7 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Confident", "Insecure", "Passionate", "Thoughtful", "Dramatic"],
-    "targetWordsArabic": ["واثق", "غير واثق", "شغوف", "متفكر", "مبالغ في التعبير"],
+    "targetWordsArabic": ["واثق", "غير واثق", "شغوف", "مراعٍ للآخرين", "مبالغ في ردود فعله"],
     "usage": {
       "goal": "Learn to use personality & character 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to personality & character.",
@@ -539,7 +587,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Thoughtful, Dramatic, Confident. The selected item or situation is best described as thoughtful. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Thoughtful, Dramatic in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Personality & Character: Everyday Description",
@@ -548,12 +597,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Confident"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Confident, Insecure, Passionate. The selected item or situation is best described as confident.\nWhich description best fits the selected item or situation?",
+        "answer": "Confident",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thoughtful"
+        "prompt": "An adult compares three possible descriptions in a personality & character context: Thoughtful, Dramatic, Confident. The selected item or situation is best described as thoughtful.\nWhich description best fits the selected item or situation?",
+        "answer": "Thoughtful",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

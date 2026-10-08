@@ -27,9 +27,9 @@
       "Hockey Stick"
     ],
     "targetWordsArabic": [
-      "-",
+      "كرة قدم",
       "كرة السلة",
-      "-",
+      "كرة تنس",
       "بيسبول",
       "كرة الطائرة",
       "كرة غولف",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Baseball Bat, Cricket Bat, Hockey Stick. The person selects Baseball Bat for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Baseball Bat, Cricket Bat, Hockey Stick in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Sports Equipment: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Soccer Ball"
+        "prompt": "During a routine sports equipment task, an adult compares Soccer Ball, Basketball, Tennis Ball. The person selects Soccer Ball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Soccer Ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Baseball"
+        "prompt": "During a routine sports equipment task, an adult compares Baseball, Volleyball, Golf Ball. The person selects Baseball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Baseball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rugby Ball"
+        "prompt": "During a routine sports equipment task, an adult compares Rugby Ball, Cricket Ball, Bowling Ball. The person selects Rugby Ball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rugby Ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ping Pong Ball"
+        "prompt": "During a routine sports equipment task, an adult compares Ping Pong Ball, Tennis Racket, Badminton Racket. The person selects Ping Pong Ball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ping Pong Ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Baseball Bat"
+        "prompt": "During a routine sports equipment task, an adult compares Baseball Bat, Cricket Bat, Hockey Stick. The person selects Baseball Bat for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Baseball Bat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -192,8 +208,8 @@
       "مضرب غولف",
       "عصا لاكروس",
       "مضرب تنس طاولة",
-      "مضرب اسكواش",
-      "مطرقة بولو",
+      "مضرب إسكواش",
+      "مضرب بولو",
       "خوذة",
       "واقيات الساق",
       "واقيات الركبة",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Chest Protector, Athletic Cup, Wrist Guard. The person selects Chest Protector for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Chest Protector, Athletic Cup, Wrist Guard in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Sports Equipment: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Golf Club"
+        "prompt": "During a routine sports equipment task, an adult compares Golf Club, Lacrosse Stick, Table Tennis Paddle. The person selects Golf Club for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Golf Club",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Squash Racket"
+        "prompt": "During a routine sports equipment task, an adult compares Squash Racket, Polo Mallet, Helmet. The person selects Squash Racket for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Squash Racket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shin Guards"
+        "prompt": "During a routine sports equipment task, an adult compares Shin Guards, Knee Pads, Elbow Pads. The person selects Shin Guards for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shin Guards",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mouthguard"
+        "prompt": "During a routine sports equipment task, an adult compares Mouthguard, Goggles, Gloves. The person selects Mouthguard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mouthguard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chest Protector"
+        "prompt": "During a routine sports equipment task, an adult compares Chest Protector, Athletic Cup, Wrist Guard. The person selects Chest Protector for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chest Protector",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -355,12 +387,12 @@
       "قضيب أثقال",
       "شريط مقاومة",
       "حبل قفز",
-      "-",
+      "بساط يوغا",
       "كرة حديدية بمقبض",
-      "كرة طبية",
+      "كرة تدريب ثقيلة",
       "أسطوانة إسفنجية",
       "عارضة تمارين العقلة",
-      "دراجة تمارين",
+      "دراجة تمارين ثابتة",
       "صافي",
       "مرمى",
       "قرط حلقي",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Hoop, Whistle, Stopwatch. The person selects Hoop for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Hoop, Whistle, Stopwatch in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Sports Equipment: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dumbbell"
+        "prompt": "During a routine sports equipment task, an adult compares Dumbbell, Barbell, Resistance Band. The person selects Dumbbell for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dumbbell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jump Rope"
+        "prompt": "During a routine sports equipment task, an adult compares Jump Rope, Yoga Mat, Kettlebell. The person selects Jump Rope for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Jump Rope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Medicine Ball"
+        "prompt": "During a routine sports equipment task, an adult compares Medicine Ball, Foam Roller, Pull-Up Bar. The person selects Medicine Ball for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Medicine Ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Exercise Bike"
+        "prompt": "During a routine sports equipment task, an adult compares Exercise Bike, Net, Goal. The person selects Exercise Bike for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Exercise Bike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hoop"
+        "prompt": "During a routine sports equipment task, an adult compares Hoop, Whistle, Stopwatch. The person selects Hoop for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hoop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -496,7 +544,13 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Scoreboard", "Cones", "Lane Markers", "Starting Block", "Hurdle"],
-    "targetWordsArabic": ["لوحة نتائج", "أقماع تدريب", "علامات المسارات", "مكعب انطلاق", "حاجز"],
+    "targetWordsArabic": [
+      "لوحة نتائج",
+      "أقماع تدريب",
+      "علامات المسارات",
+      "مسند انطلاق للعدائين",
+      "حاجز"
+    ],
     "usage": {
       "goal": "Learn to use common sports equipment 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to sports equipment.",
@@ -527,7 +581,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Starting Block, Hurdle, Scoreboard. The person selects Starting Block for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Starting Block, Hurdle in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Sports Equipment: Notice-Style Text",
@@ -536,12 +591,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scoreboard"
+        "prompt": "During a routine sports equipment task, an adult compares Scoreboard, Cones, Lane Markers. The person selects Scoreboard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Scoreboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Starting Block"
+        "prompt": "During a routine sports equipment task, an adult compares Starting Block, Hurdle, Scoreboard. The person selects Starting Block for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Starting Block",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

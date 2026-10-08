@@ -29,17 +29,17 @@
     "targetWordsArabic": [
       "لوحة فنية",
       "منحوتة",
-      "شخص يسمى «ستاتوي»",
-      "شخص يسمى «بورترايت»",
-      "-",
+      "تمثال",
+      "صورة شخصية مرسومة",
+      "لوحة منظر طبيعي",
       "لوحة جدارية",
-      "مصطلح قانوني يسمى «موسايك»",
+      "فسيفساء",
       "فخار",
       "قطعة أثرية",
       "أحفورة",
       "هيكل عظمي",
       "مومياء",
-      "غرفة يسمى «جالليري»",
+      "قاعة عرض",
       "قاعة معرض",
       "ردهة"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or approaching the gallery as the main location; include gallery, exhibition hall, and lobby naturally where visually appropriate, but make the real-world use of gallery the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Museum: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "painting"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare painting, sculpture, statue, and portrait and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "painting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "landscape"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare landscape, mural, mosaic, and pottery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "landscape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "artifact"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare artifact, fossil, skeleton, and mummy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "artifact",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "gallery"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare gallery, exhibition hall, and lobby and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "gallery",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,16 +201,16 @@
       "empire"
     ],
     "targetWordsArabic": [
-      "غرفة يسمى «روتوندا»",
+      "قاعة دائرية",
       "فناء",
       "أرشيف",
       "غرفة تخزين",
       "قاعة محاضرات",
       "متجر هدية",
-      "مشروب يسمى «كافي»",
+      "مقهى",
       "غرفة معاطف",
       "دورة مياه",
-      "قديم",
+      "قديم جدًا",
       "من العصور الوسطى",
       "عصر النهضة",
       "استعماري",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the colonial as the central item; include colonial, revolution, and empire naturally where visually appropriate, but make the real-world use of colonial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Museum",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "rotunda"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rotunda, courtyard, archive, and storage room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "rotunda",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "auditorium"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare auditorium, gift shop, cafe, and cloakroom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "auditorium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "restroom"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare restroom, ancient, medieval, and Renaissance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "restroom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "colonial"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare colonial, revolution, and empire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "colonial",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -351,12 +377,12 @@
     "targetWordsArabic": [
       "سلالة حاكمة",
       "علم الآثار",
-      "عضو يسمى «كيفيليزاتيون»",
-      "شخص يسمى «مونومينت»",
+      "حضارة",
+      "نصب تذكاري",
       "أطلال",
-      "مكان يسمى «تومب»",
+      "مقبرة",
       "غلاف شاشة عرض",
-      "قاعدة عرض",
+      "قاعدة تمثال",
       "إطار",
       "علامة",
       "لوحة تذكارية",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the velvet rope as the central item; include velvet rope, audio guide, and brochure naturally where visually appropriate, but make the real-world use of velvet rope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Making a Practical Decision: Museum",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "dynasty"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare dynasty, archaeology, civilization, and monument and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "dynasty",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ruins"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ruins, tomb, display case, and pedestal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ruins",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "frame"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare frame, label, plaque, and spotlight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "frame",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "velvet rope"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare velvet rope, audio guide, and brochure and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "velvet rope",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -511,20 +550,20 @@
     ],
     "targetWordsArabic": [
       "كتالوج",
-      "-",
+      "خط زمني",
       "شاشة تفاعلية",
       "أمين متحف",
       "دليل",
-      "شخص يسمى «فيسيتور»",
+      "زائر",
       "حارس",
-      "شخص يسمى «ارتيست»",
-      "شخص يسمى «هيستوريان»",
-      "مبنى يسمى «ريستورير»",
+      "فنان",
+      "مؤرخ",
+      "مرمم",
       "إبداء الإعجاب",
       "الرسم التخطيطي",
       "التصوير الفوتوغرافي",
-      "تبرع",
-      "مكان يسمى «يكسبلورينج»"
+      "التبرع",
+      "الاستكشاف"
     ],
     "usage": {
       "goal": "Develop the language needed to discuss events, venue features, and practical visitor arrangements in a realistic adult context.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult illustrating photographing through a realistic adult task; include photographing, donating, and exploring naturally where visually appropriate, but make the real-world use of photographing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Museum: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "catalog"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare catalog, timeline, interactive screen, and curator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "catalog",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "guide"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare guide, visitor, guard, and artist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "guide",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "historian"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare historian, restorer, admiring, and sketching and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "historian",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "photographing"
+        "prompt": "In the l6 museum setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare photographing, donating, and exploring and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "photographing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

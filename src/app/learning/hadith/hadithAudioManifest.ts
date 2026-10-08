@@ -1,5 +1,6 @@
 import { z } from "zod";
 import manifest from "./hadithAudioManifest.json";
+import recordedTexts from "./hadithRecordedSourceTexts.json";
 
 const clipSchema = z.object({
   objectKey: z.string().regex(/^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/),
@@ -42,4 +43,9 @@ export const HADITH_AUDIO_ASSETS: readonly HadithAudioAssets[] = parsed.lessons;
 
 export function getHadithAudioAssets(lessonId: string): HadithAudioAssets | undefined {
   return HADITH_AUDIO_ASSETS.find((lesson) => lesson.id === lessonId);
+}
+
+/** Text spoken by the existing immutable clips; editorial corrections do not remap them. */
+export function getHadithRecordedSource(lessonId: string) {
+  return (recordedTexts as Record<string, { arabic: string; translation: string }>)[lessonId];
 }

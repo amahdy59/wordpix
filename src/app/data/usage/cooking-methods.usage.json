@@ -28,26 +28,26 @@
     ],
     "targetWordsArabic": [
       "يغلي",
-      "يطهى على نار هادئة",
+      "يُطهى على نار هادئة",
       "يطبخ بالبخار",
-      "يسلق سريعا",
+      "يسلق سريعًا",
       "يسلق برفق",
-      "يخنة أو يطهو ببطء",
+      "يطبخ ببطء في سائل",
       "يطهو ببطء مع سائل",
-      "طاه ضغط",
-      "يطهو بحمام مائي",
-      "يسلق سلقا جزئيا",
+      "يطهو في قدر الضغط",
+      "يسخن فوق حمام ماء ساخن",
+      "يسلق جزئيًا",
       "يخبز",
       "يشوي في الفرن",
       "يشوي",
       "يشوي بحرارة مباشرة",
-      "يحمص"
+      "يحمّص"
     ],
     "usage": {
       "goal": "Learn to use common cooking methods 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to cooking methods.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a cooking methods context illustrating this situation: During a routine cooking methods task, an adult considers three possible actions: Grill, Broil, Toast. The situation requires the person to grill next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult cooking methods scene showing lesson-related items or actions including Grill, Broil, Toast in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Cooking Methods: Mini Dialogue",
-      "text": "Maya is in a situation connected to cooking methods. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with boil, simmer, and steam. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with blanch, poach, and stew. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Cooking Methods 1: A short reading",
+      "text": "Maya reads three cooking instructions. She will boil water for pasta, simmer the sauce, and steam the vegetables. Omar plans to bake bread and roast a tray of potatoes. They compare the cooking times before starting. The sauce needs gentle heat, so Maya checks it while the other food cooks.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Cooking Methods. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Boil"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Boil, Simmer, Steam. The situation requires the person to boil next.\nWhat should the person do next?",
+        "answer": "Boil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blanch"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Blanch, Poach, Stew. The situation requires the person to blanch next.\nWhat should the person do next?",
+        "answer": "Blanch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Braise"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Braise, Pressure Cook, Double Boil. The situation requires the person to braise next.\nWhat should the person do next?",
+        "answer": "Braise",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parboil"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Parboil, Bake, Roast. The situation requires the person to parboil next.\nWhat should the person do next?",
+        "answer": "Parboil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grill"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Boil"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Steam"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Grill, Broil, Toast. The situation requires the person to grill next.\nWhat should the person do next?",
+        "answer": "Grill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Rice Cooker” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which method will Maya use for the vegetables?",
+        "answer": "Steam",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -189,27 +204,27 @@
       "Flash Fry"
     ],
     "targetWordsArabic": [
-      "يشوي حتى التفحم الخفيف",
-      "يدخن الطعام",
-      "يجفف",
+      "يحرق السطح قليلًا",
+      "يدخّن الطعام",
+      "يجفف الطعام",
       "يشوي على الشواية",
-      "يشوي على سيخ دوار",
+      "شواء على سيخ دوار",
       "يقلي",
-      "يقلي غمرا",
-      "يشوح",
+      "يقلي في زيت غزير",
+      "يشوّح",
       "يقلي مع التحريك",
-      "يقلي في مقلاة",
+      "يقلي في المقلاة",
       "يقلي في كمية قليلة من الزيت",
-      "يحمر السطح سريعا",
-      "يشعل الطعام بالكحول أثناء الطهي",
-      "يقلي بطريقة التمبورا",
-      "يقلي سريعا جدا في زيت شديد السخونة"
+      "يحمّر السطح سريعًا",
+      "يشعل الكحول المضاف إلى الطعام",
+      "تمبورا",
+      "يقلي سريعًا جدًا في زيت شديد السخونة"
     ],
     "usage": {
       "goal": "Learn to use common cooking methods 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to cooking methods.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a cooking methods context illustrating this situation: During a routine cooking methods task, an adult considers three possible actions: Flambe, Tempura, Flash Fry. The situation requires the person to flambe next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult cooking methods scene showing lesson-related items or actions including Flambe, Tempura, Flash Fry in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Cooking Methods: Simple Message",
-      "text": "Maya is in a situation connected to cooking methods. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with char, smoke, and dehydrate. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with barbecue, rotisserie, and fry. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Cooking Methods 2: A short reading",
+      "text": "Omar wants to stir-fry vegetables for lunch. He prepares the ingredients before heating the pan. Maya plans to sauté mushrooms and pan fry a piece of fish. They discuss deep fry and barbecue as methods for other meals. Today they choose quick methods because they have little time before work.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Cooking Methods. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Char"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Char, Smoke, Dehydrate. The situation requires the person to char next.\nWhat should the person do next?",
+        "answer": "Char",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Barbecue"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Barbecue, Rotisserie, Fry. The situation requires the person to barbecue next.\nWhat should the person do next?",
+        "answer": "Barbecue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Deep Fry"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Deep Fry, Sauté, Stir-Fry. The situation requires the person to deep fry next.\nWhat should the person do next?",
+        "answer": "Deep Fry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pan Fry"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Pan Fry, Shallow Fry, Sear. The situation requires the person to pan fry next.\nWhat should the person do next?",
+        "answer": "Pan Fry",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flambe"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Char"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Dehydrate"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Flambe, Tempura, Flash Fry. The situation requires the person to flambe next.\nWhat should the person do next?",
+        "answer": "Flambe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Boil” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why do Maya and Omar choose quick cooking methods?",
+        "answer": "They have little time before work",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -352,26 +382,26 @@
     ],
     "targetWordsArabic": [
       "يفرم",
-      "يقطع مكعبات",
-      "يفرم ناعما",
-      "يقطع شرائح",
-      "يقطع شرائح رفيعة",
+      "يقطّع مكعبات",
+      "يفرم ناعمًا",
+      "يقطّع شرائح",
+      "يقطع إلى شرائح رفيعة",
       "يبشر",
-      "يقشر",
-      "يبشر قشر الحمضيات",
+      "يقشّر",
+      "يبشر الطبقة الخارجية لقشرة الحمضيات",
       "يسحق",
       "يمزج",
       "يخلط",
-      "يحرك",
+      "يحرّك",
       "مخفقة بيض (مضرب سلك)",
-      "يطوي برفق",
+      "يمزج برفق",
       "يعجن"
     ],
     "usage": {
       "goal": "Learn to use common cooking methods 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to cooking methods.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a cooking methods context illustrating this situation: During a routine cooking methods task, an adult considers three possible actions: Whisk, Fold, Knead. The situation requires the person to whisk next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult cooking methods scene showing lesson-related items or actions including Whisk, Fold, Knead in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Cooking Methods: Notice-Style Text",
-      "text": "Maya is in a situation connected to cooking methods. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chop, dice, and mince. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with slice, julienne, and grate. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Cooking Methods 3: A short reading",
+      "text": "The recipe asks Maya to chop an onion, dice a carrot, and mince garlic. Omar will peel and grate a potato. They also need to slice a lemon and zest its peel. Once everything is ready, they mix the ingredients. Maya stirs the bowl while Omar cleans the cutting board.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Cooking Methods. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chop"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Chop, Dice, Mince. The situation requires the person to chop next.\nWhat should the person do next?",
+        "answer": "Chop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Slice"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Slice, Julienne, Grate. The situation requires the person to slice next.\nWhat should the person do next?",
+        "answer": "Slice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Peel"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Peel, Zest, Crush. The situation requires the person to peel next.\nWhat should the person do next?",
+        "answer": "Peel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blend"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Blend, Mix, Stir. The situation requires the person to blend next.\nWhat should the person do next?",
+        "answer": "Blend",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Whisk"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Chop"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Mince"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Whisk, Fold, Knead. The situation requires the person to whisk next.\nWhat should the person do next?",
+        "answer": "Whisk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Char” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar clean while Maya stirs?",
+        "answer": "The cutting board",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -496,12 +541,18 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Beat", "Cream", "Toss", "Marinate", "Glaze"],
-    "targetWordsArabic": ["يخفق", "كريمة", "يرمي بخفة", "يتبل بالنقع", "يطلي بطبقة لامعة"],
+    "targetWordsArabic": [
+      "يخفق",
+      "يخفق الدهن والسكر حتى يصبحا كريميين",
+      "يقلب برفق",
+      "يتبّل بالنقع",
+      "يغطي بطبقة لامعة"
+    ],
     "usage": {
       "goal": "Learn to use common cooking methods 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to cooking methods.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -527,29 +578,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a cooking methods context illustrating this situation: During a routine cooking methods task, an adult considers three possible actions: Marinate, Glaze, Beat. The situation requires the person to marinate next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult cooking methods scene showing lesson-related items or actions including Marinate, Glaze in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Cooking Methods: Short Description",
-      "text": "Maya is in a situation connected to cooking methods. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with beat, cream, and toss. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with marinate and glaze. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Cooking Methods 4: A short reading",
+      "text": "Maya will beat the eggs and cream the butter with sugar. Omar uses a spoon to toss a salad gently. The dinner recipe says to marinate the vegetables before cooking and glaze them afterward. They read each instruction first and arrange the ingredients in the order they will use them.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Cooking Methods. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beat"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Beat, Cream, Toss. The situation requires the person to beat next.\nWhat should the person do next?",
+        "answer": "Beat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Marinate"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Beat"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Toss"
+        "prompt": "During a routine cooking methods task, an adult considers three possible actions: Marinate, Glaze, Beat. The situation requires the person to marinate next.\nWhat should the person do next?",
+        "answer": "Marinate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -558,6 +608,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Chop” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the dinner recipe say to do before cooking the vegetables?",
+        "answer": "Marinate them",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

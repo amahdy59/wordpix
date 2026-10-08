@@ -27,21 +27,21 @@
       "Bow Tie"
     ],
     "targetWordsArabic": [
-      "مذبح",
+      "مذبح الكنيسة",
       "ممر",
-      "نذور الزواج",
+      "عهود الزواج",
       "خواتم",
-      "مأذون أو مسؤول عقد الزواج",
+      "من يجري مراسم الزواج",
       "شمعة الوحدة",
-      "قراءة (ممارسة القراءة على الشاطئ)",
-      "بركة",
+      "قراءة مراسمية",
+      "دعاء بالبركة",
       "قبلة",
       "موكب الخروج",
       "فستان زفاف",
       "طرحة العروس",
       "بدلة",
-      "بدلة سهرة رسمية",
-      "ربطة عنق فراشية"
+      "بدلة سهرة",
+      "ربطة فراشة"
     ],
     "usage": {
       "goal": "Learn to use the wedding 1 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Suit, Tuxedo, Bow Tie. The person selects Suit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Suit, Tuxedo, Bow Tie in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Wedding: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Altar"
+        "prompt": "During a routine the wedding task, an adult compares Altar, Aisle, Vows. The person selects Altar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Altar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rings"
+        "prompt": "During a routine the wedding task, an adult compares Rings, Officiant, Unity Candle. The person selects Rings for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rings",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reading"
+        "prompt": "During a routine the wedding task, an adult compares Reading, Blessing, Kiss. The person selects Reading for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Recessional"
+        "prompt": "During a routine the wedding task, an adult compares Recessional, Wedding Dress, Veil. The person selects Recessional for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Recessional",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Suit"
+        "prompt": "During a routine the wedding task, an adult compares Suit, Tuxedo, Bow Tie. The person selects Suit for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Suit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -194,20 +210,20 @@
     ],
     "targetWordsArabic": [
       "باقة عطرية",
-      "زهرة عروة",
+      "زهرة عروة السترة",
       "تاج صغير",
       "أزرار أكمام",
       "أحذية",
       "كعكة",
       "الرقصة الأولى",
-      "يحمص",
+      "يحمّص",
       "منسق موسيقى",
       "حلقة",
       "قطعة زينة مركزية",
       "ترتيب المائدة",
       "ساحة رقص",
-      "-",
-      "شمعة شرر"
+      "ركن تصوير",
+      "عود شرر احتفالي"
     ],
     "usage": {
       "goal": "Learn to use the wedding 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Dance Floor, Photo Booth, Sparkler. The person selects Dance Floor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Dance Floor, Photo Booth, Sparkler in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Wedding: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bouquet"
+        "prompt": "During a routine the wedding task, an adult compares Bouquet, Boutonniere, Tiara. The person selects Bouquet for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bouquet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cufflinks"
+        "prompt": "During a routine the wedding task, an adult compares Cufflinks, Shoes, Cake. The person selects Cufflinks for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cufflinks",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "First Dance"
+        "prompt": "During a routine the wedding task, an adult compares First Dance, Toast, Dj. The person selects First Dance for the next step.\nWhich option does the person select for the next step?",
+        "answer": "First Dance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Band"
+        "prompt": "During a routine the wedding task, an adult compares Band, Centerpiece, Table Setting. The person selects Band for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Band",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dance Floor"
+        "prompt": "During a routine the wedding task, an adult compares Dance Floor, Photo Booth, Sparkler. The person selects Dance Floor for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dance Floor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -362,7 +394,7 @@
       "عروس",
       "عريس",
       "وصيفة العروس",
-      "إشبين العريس",
+      "وصيف العريس",
       "طفلة تحمل الزهور في الزفاف",
       "حامل الخواتم",
       "الإشبين؛ وصيف العريس",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Arch, Banner, Balloon. The person selects Arch for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Arch, Banner, Balloon in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Wedding: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bride"
+        "prompt": "During a routine the wedding task, an adult compares Bride, Groom, Bridesmaid. The person selects Bride for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bride",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Groomsman"
+        "prompt": "During a routine the wedding task, an adult compares Groomsman, Flower Girl, Ring Bearer. The person selects Groomsman for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Groomsman",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Best Man"
+        "prompt": "During a routine the wedding task, an adult compares Best Man, Maid Of Honor, Guest. The person selects Best Man for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Best Man",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Photographer"
+        "prompt": "During a routine the wedding task, an adult compares Photographer, Flowers, Candles. The person selects Photographer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Photographer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Arch"
+        "prompt": "During a routine the wedding task, an adult compares Arch, Banner, Balloon. The person selects Arch for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Arch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -531,12 +579,12 @@
       "قصاصات احتفال",
       "مفرش طاولة طولي",
       "دعوة",
-      "تأكيد الحضور",
+      "يرجى تأكيد الحضور",
       "خريطة ملاحية أماكن جلوس",
       "قائمة الطعام",
-      "مكان المناسبة",
-      "متعهد تقديم الطعام",
-      "منسق زهور",
+      "مكان الاحتفال",
+      "متعهد طعام",
+      "بائع زهور",
       "منصة دي جي",
       "طاولة هدايا",
       "سجل الضيوف"
@@ -607,7 +655,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Dj Booth, Gift Table, Guest Book. The person selects Dj Booth for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Dj Booth, Gift Table, Guest Book in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Wedding: Everyday Description",
@@ -616,24 +665,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ribbon"
+        "prompt": "During a routine the wedding task, an adult compares Ribbon, Fairy Lights, Lantern. The person selects Ribbon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ribbon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Confetti"
+        "prompt": "During a routine the wedding task, an adult compares Confetti, Table Runner, Invitation. The person selects Confetti for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Confetti",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rsvp"
+        "prompt": "During a routine the wedding task, an adult compares Rsvp, Seating Chart, Menu. The person selects Rsvp for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rsvp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Venue"
+        "prompt": "During a routine the wedding task, an adult compares Venue, Caterer, Florist. The person selects Venue for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Venue",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dj Booth"
+        "prompt": "During a routine the wedding task, an adult compares Dj Booth, Gift Table, Guest Book. The person selects Dj Booth for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dj Booth",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

@@ -31,17 +31,17 @@
       "ساعة المنبه (منبه)",
       "ينهض من السرير",
       "يتمدد",
-      "تنظيف الأسنان (فرك الأسنان بالفرشاة)",
+      "ينظف أسنانه بالفرشاة",
       "يغسل وجهه",
-      "يستحم بالدش",
+      "يستحم بالدُش",
       "يرتدي ملابسه",
       "يتناول الإفطار",
-      "يجهز حقيبته",
-      "تنقل يومي",
+      "يجهّز حقيبته",
+      "يتنقل يوميًا للعمل",
       "يصل",
       "يبدأ العمل",
       "يحضر الدرس",
-      "يدون ملاحظات"
+      "يدوّن ملاحظات"
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily routines 1 vocabulary in a simple adult everyday situation.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a workday, an adult's routine includes start work, attend class, and take notes. The highlighted part of the routine is start work. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Start Work, Attend Class, Take Notes in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Daily Routines 1: A Weekday and Weekend Routine",
@@ -185,20 +186,20 @@
       "Watch TV"
     ],
     "targetWordsArabic": [
-      "يعقد اجتماعا",
+      "يعقد اجتماعًا",
       "استراحة الغداء",
       "يتعاون",
-      "يسلم العمل",
+      "يسلّم العمل",
       "يغادر المكتب",
       "بعد المدرسة",
       "واجب منزلي",
-      "تمرين",
+      "يتمرن رياضيًا",
       "يتدرب",
-      "يتسوق لشراء البقالة",
-      "يعد العشاء",
-      "ينزه الكلب",
+      "يتسوّق لشراء البقالة",
+      "يُعِدّ العشاء",
+      "يُنزّه الكلب",
       "يلعب في الخارج",
-      "يقرأ كتابا",
+      "يقرأ كتابًا",
       "يشاهد التلفاز"
     ],
     "usage": {
@@ -267,7 +268,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During an evening at home, an adult's routine includes play outside, read a book, and watch tv. The highlighted part of the routine is play outside. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Play Outside, Read a Book, Watch TV in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Daily Routines 2: A Weekday and Weekend Routine",
@@ -349,12 +351,12 @@
       "يستحم في حوض الاستحمام",
       "يرتدي ملابس النوم",
       "يقرأ",
-      "يضبط المنبه",
-      "يذهب إلى الفراش",
-      "يستغرق في النوم",
-      "يستيقظ متأخرا",
-      "وجبة فطور وغداء",
-      "يذهب للتسوق",
+      "يضبط المنبّه",
+      "يخلد إلى النوم",
+      "يغفو أو يستغرق في النوم",
+      "ينام لوقت متأخر صباحًا",
+      "وجبة فطور متأخر",
+      "يذهب للتسوّق",
       "يزور الأصدقاء",
       "يذهب إلى الحديقة",
       "يمارس الرياضة"
@@ -425,7 +427,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a weekend plan, an adult's routine includes visit friends, go to the park, and play sports. The highlighted part of the routine is visit friends. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Visit Friends, Go to the Park, Play Sports in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Daily Routines 3: A Weekday and Weekend Routine",
@@ -484,7 +487,12 @@
     "cefrStage": "Pre-A1",
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Clean House", "Do Laundry", "Go Out", "Stay Home"],
-    "targetWordsArabic": ["منزل ينظف", "يغسل الملابس", "يخرج", "يبقى في المنزل"],
+    "targetWordsArabic": [
+      "ينظف المنزل",
+      "يغسل الملابس",
+      "يخرج للتنزه أو قضاء حاجة",
+      "يبقى في المنزل"
+    ],
     "usage": {
       "goal": "Learn to recognize and use key daily routines 4 vocabulary in a simple adult everyday situation.",
       "canDoStatement": "Can recognize and use a few familiar words related to daily routines in very simple everyday situations.",
@@ -505,7 +513,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Stay Home",
+          "targetWords": ["Stay Home"],
           "scenario": "It is raining heavily, so Karim decides to stay home for the evening.",
           "check": {
             "question": "What part of the routine is taking place in the example with stay home?",
@@ -515,7 +523,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: It is raining heavily, so Karim decides to stay home for the evening. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Stay Home in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Plans for Saturday",

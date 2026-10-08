@@ -60,33 +60,17 @@ export function getHadithVisualVocabulary(terms: readonly string[], lessonNumber
     return visualVocab.slice(chunkStart, chunkStart + 5);
   }
 
-  const chunkStart = lessonNumber ? ((lessonNumber - 1) * 5) % visualVocab.length : -1;
-  const lessonChunk = chunkStart >= 0 ? visualVocab.slice(chunkStart, chunkStart + 5) : [];
-
   return terms
-    .map((term, idx) => {
+    .map((term) => {
       const normTerm = normalizeVisualLabel(term);
 
       // 1. Direct or base label match in entire visual vocabulary
-      let match = visualVocab.find((v) => {
+      const match = visualVocab.find((v) => {
         const base = v.label.split("·")[0].trim();
         return (
           normalizeVisualLabel(v.label) === normTerm || normalizeVisualLabel(base) === normTerm
         );
       });
-
-      // 2. Subphrase / substring match
-      if (!match) {
-        match = visualVocab.find((v) => {
-          const base = normalizeVisualLabel(v.label.split("·")[0].trim());
-          return normTerm.includes(base) || base.includes(normTerm);
-        });
-      }
-
-      // 3. Fallback to lesson-specific chunk position
-      if (!match && lessonChunk[idx]) {
-        match = lessonChunk[idx];
-      }
 
       return match;
     })

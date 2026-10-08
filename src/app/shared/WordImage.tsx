@@ -3,6 +3,8 @@ import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { useI18n } from "../context/I18nContext";
+import { ImageOff } from "lucide-react";
+import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
 export type ImageSizePreset = "thumb" | "card" | "hero";
@@ -207,6 +209,25 @@ export const WordImage = memo(function WordImage({
   // prop while never forwarding it — every caller asking for a priority hint
   // was silently ignored.
   const priorityAttr = { fetchpriority: fetchPriority } as Record<string, string>;
+
+  if ((failed || !word.img.trim()) && altMode !== "decorative") {
+    const clue =
+      word.description.trim() && word.description !== PLACEHOLDER_DESCRIPTION
+        ? word.description
+        : word.label;
+    return (
+      <div
+        className={`${className ?? ""} flex flex-col items-center justify-center gap-2 border border-dashed border-border bg-secondary p-4 text-center text-foreground`}
+      >
+        <ImageOff className="size-8 shrink-0" aria-hidden />
+        <span className="text-sm font-bold">{placeholderLabel}</span>
+        <span className="text-sm">{t("exercise.scenePlaceholderDescription")}</span>
+        <p lang="en" dir="ltr" className="text-base font-semibold leading-relaxed">
+          {clue}
+        </p>
+      </div>
+    );
+  }
 
   return (
     // onError is an image lifecycle event, not a user interaction; it drives

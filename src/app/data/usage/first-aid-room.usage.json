@@ -31,7 +31,7 @@
       "ضمادة",
       "شاش",
       "شريط لاصق",
-      "منديل مطهر",
+      "منديل مطهّر",
       "مقص",
       "ملقط",
       "دبوس سلامة",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use common the first aid room 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Cold Pack, Heat Pack, Finger Splint. The next step focuses on Cold Pack. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Cold Pack, Heat Pack, Finger Splint in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Short Description",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with first aid kit, bandage, and gauze. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with adhesive tape, antiseptic wipe, and scissors. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 1: A short reading",
+      "text": "In a vocabulary lesson, Maya opens a first aid kit with the instructor. They identify a bandage, gauze, adhesive tape, and scissors. Omar matches each item to its picture. A cold pack is in another compartment. The instructor explains that recognizing the supplies is different from knowing when and how to use them.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "First Aid Kit"
+        "prompt": "During a routine care or examination situation, an adult reviews First Aid Kit, Bandage, Gauze. The next step focuses on First Aid Kit.\nWhich option is the focus of the next step?",
+        "answer": "First Aid Kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adhesive Tape"
+        "prompt": "During a routine care or examination situation, an adult reviews Adhesive Tape, Antiseptic Wipe, Scissors. The next step focuses on Adhesive Tape.\nWhich option is the focus of the next step?",
+        "answer": "Adhesive Tape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tweezers"
+        "prompt": "During a routine care or examination situation, an adult reviews Tweezers, Safety Pin, Elastic Bandage. The next step focuses on Tweezers.\nWhich option is the focus of the next step?",
+        "answer": "Tweezers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Triangular Bandage"
+        "prompt": "During a routine care or examination situation, an adult reviews Triangular Bandage, Gauze Pad, Burn Cream. The next step focuses on Triangular Bandage.\nWhich option is the focus of the next step?",
+        "answer": "Triangular Bandage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cold Pack"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "First Aid Kit"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Gauze"
+        "prompt": "During a routine care or examination situation, an adult reviews Cold Pack, Heat Pack, Finger Splint. The next step focuses on Cold Pack.\nWhich option is the focus of the next step?",
+        "answer": "Cold Pack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Case File” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What is in another compartment of the kit?",
+        "answer": "A cold pack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -208,8 +223,8 @@
     "usage": {
       "goal": "Learn to use common the first aid room 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Pulse Oximeter, Eye Wash Station, CPR Mask. The next step focuses on Pulse Oximeter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Pulse Oximeter, Eye Wash Station, CPR Mask in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Mini Dialogue",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with medical tape, antibiotic ointment, and hydrocortisone cream. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with stretcher, wheelchair, and crutch. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 2: A short reading",
+      "text": "Omar tours the first-aid room during workplace orientation. He sees a stretcher, a wheelchair, and a pair of crutches. The instructor points out a thermometer and a pulse oximeter. Maya locates the eye wash station. They learn the equipment names and where to find the staff responsible for medical help.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Medical Tape"
+        "prompt": "During a routine care or examination situation, an adult reviews Medical Tape, Antibiotic Ointment, Hydrocortisone Cream. The next step focuses on Medical Tape.\nWhich option is the focus of the next step?",
+        "answer": "Medical Tape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stretcher"
+        "prompt": "During a routine care or examination situation, an adult reviews Stretcher, Wheelchair, Crutch. The next step focuses on Stretcher.\nWhich option is the focus of the next step?",
+        "answer": "Stretcher",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Splint"
+        "prompt": "During a routine care or examination situation, an adult reviews Splint, Neck Brace, Ice Pack. The next step focuses on Splint.\nWhich option is the focus of the next step?",
+        "answer": "Splint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hot Pack"
+        "prompt": "During a routine care or examination situation, an adult reviews Hot Pack, Stethoscope, Thermometer. The next step focuses on Hot Pack.\nWhich option is the focus of the next step?",
+        "answer": "Hot Pack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pulse Oximeter"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Medical Tape"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Hydrocortisone Cream"
+        "prompt": "During a routine care or examination situation, an adult reviews Pulse Oximeter, Eye Wash Station, CPR Mask. The next step focuses on Pulse Oximeter.\nWhich option is the focus of the next step?",
+        "answer": "Pulse Oximeter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “First Aid Kit” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which station does Maya locate?",
+        "answer": "The eye wash station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -354,8 +384,8 @@
       "جهاز مزيل الرجفان الخارجي الآلي (AED)",
       "دليل الإسعافات الأولية",
       "جهاز قياس سكر الدم",
-      "كفة قياس ضغط الدم",
-      "مصباح فحص صغير",
+      "كُفّة قياس ضغط الدم",
+      "مصباح على شكل قلم",
       "خافض لسان",
       "لاصق طبي",
       "شريط إغلاق جروح فراشي",
@@ -363,15 +393,15 @@
       "محلول ملحي",
       "بيروكسيد الهيدروجين",
       "يود",
-      "عود قطن",
+      "عود قطني",
       "قفازات معقمة",
       "حقنة"
     ],
     "usage": {
       "goal": "Learn to use common the first aid room 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Cotton Swab, Sterile Gloves, Syringe. The next step focuses on Cotton Swab. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Cotton Swab, Sterile Gloves, Syringe in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Simple Message",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with aed, first aid manual, and blood glucose monitor. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with blood pressure cuff, penlight, and tongue depressor. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 3: A short reading",
+      "text": "The instructor shows pictures of an AED, a blood glucose monitor, and a blood pressure cuff. Maya matches each name to the correct device. Omar finds the first aid manual beside a box of sterile gloves. They practice describing what they can see, while the trained instructor answers questions about the equipment.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "AED"
+        "prompt": "During a routine care or examination situation, an adult reviews AED, First Aid Manual, Blood Glucose Monitor. The next step focuses on AED.\nWhich option is the focus of the next step?",
+        "answer": "AED",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blood Pressure Cuff"
+        "prompt": "During a routine care or examination situation, an adult reviews Blood Pressure Cuff, Penlight, Tongue Depressor. The next step focuses on Blood Pressure Cuff.\nWhich option is the focus of the next step?",
+        "answer": "Blood Pressure Cuff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plaster"
+        "prompt": "During a routine care or examination situation, an adult reviews Plaster, Butterfly Strip, Wound Dressing. The next step focuses on Plaster.\nWhich option is the focus of the next step?",
+        "answer": "Plaster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Saline Solution"
+        "prompt": "During a routine care or examination situation, an adult reviews Saline Solution, Hydrogen Peroxide, Iodine. The next step focuses on Saline Solution.\nWhich option is the focus of the next step?",
+        "answer": "Saline Solution",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cotton Swab"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "AED"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Blood Glucose Monitor"
+        "prompt": "During a routine care or examination situation, an adult reviews Cotton Swab, Sterile Gloves, Syringe. The next step focuses on Cotton Swab.\nWhich option is the focus of the next step?",
+        "answer": "Cotton Swab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Medical Tape” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Omar find the first aid manual?",
+        "answer": "Beside a box of sterile gloves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -516,15 +561,15 @@
       "عدة خياطة جراحية",
       "شريط إغلاق الجروح",
       "دباسة جلد جراحية",
-      "حقنة ري الجروح",
-      "كحول طبي",
+      "حقنة ريّ الجروح",
+      "كحول طبي للاستعمال الخارجي",
       "جل للحروق",
       "محلول يود",
       "جهاز مزيل الرجفان",
       "قناع أكسجين",
       "أسطوانة أكسجين طبي",
       "إيبي بن؛ حاقن ذاتي للإبينفرين",
-      "عاصبة",
+      "رباط ضاغط لإيقاف النزيف",
       "بطانية طوارئ",
       "صافرة",
       "مصباح يدوي"
@@ -532,8 +577,8 @@
     "usage": {
       "goal": "Learn to use common the first aid room 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -595,41 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Emergency Blanket, Whistle, Flashlight. The next step focuses on Emergency Blanket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Emergency Blanket, Whistle, Flashlight in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Notice-Style Text",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with suture kit, wound closure strip, and skin stapler. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with irrigation syringe, rubbing alcohol, and burn gel. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 4: A short reading",
+      "text": "A first-aid room has an oxygen mask, an oxygen tank, and an emergency blanket. A defibrillator is clearly marked nearby. During orientation, the instructor identifies these items and explains who is trained to use them. Maya and Omar check the room's location and the contact details for the workplace emergency team.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Suture Kit"
+        "prompt": "During a routine care or examination situation, an adult reviews Suture Kit, Wound Closure Strip, Skin Stapler. The next step focuses on Suture Kit.\nWhich option is the focus of the next step?",
+        "answer": "Suture Kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Irrigation Syringe"
+        "prompt": "During a routine care or examination situation, an adult reviews Irrigation Syringe, Rubbing Alcohol, Burn Gel. The next step focuses on Irrigation Syringe.\nWhich option is the focus of the next step?",
+        "answer": "Irrigation Syringe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Iodine Solution"
+        "prompt": "During a routine care or examination situation, an adult reviews Iodine Solution, Defibrillator, Oxygen Mask. The next step focuses on Iodine Solution.\nWhich option is the focus of the next step?",
+        "answer": "Iodine Solution",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oxygen Tank"
+        "prompt": "During a routine care or examination situation, an adult reviews Oxygen Tank, EpiPen, Tourniquet. The next step focuses on Oxygen Tank.\nWhich option is the focus of the next step?",
+        "answer": "Oxygen Tank",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Emergency Blanket"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Suture Kit"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Skin Stapler"
+        "prompt": "During a routine care or examination situation, an adult reviews Emergency Blanket, Whistle, Flashlight. The next step focuses on Emergency Blanket.\nWhich option is the focus of the next step?",
+        "answer": "Emergency Blanket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “AED” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What contact details do the learners check?",
+        "answer": "The workplace emergency team's contact details",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -694,8 +754,8 @@
     "usage": {
       "goal": "Learn to use common the first aid room 5 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -757,41 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Paper Towel, Waste Bin, Medicine Cabinet. The next step focuses on Paper Towel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Paper Towel, Waste Bin, Medicine Cabinet in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Short Description",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with emergency phone, alarm button, and inhaler. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with cervical collar, spine board, and snakebite kit. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 5: A short reading",
+      "text": "Maya checks the workplace emergency phone and the alarm button with an instructor. The first-aid room has an examination table, a curtain, and a sink. A soap dispenser and paper towel holder are beside the sink. Omar finds the waste bin and medicine cabinet. They record where the room is on their workplace map.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Emergency Phone"
+        "prompt": "During a routine care or examination situation, an adult reviews Emergency Phone, Alarm Button, Inhaler. The next step focuses on Emergency Phone.\nWhich option is the focus of the next step?",
+        "answer": "Emergency Phone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cervical Collar"
+        "prompt": "During a routine care or examination situation, an adult reviews Cervical Collar, Spine Board, Snakebite Kit. The next step focuses on Cervical Collar.\nWhich option is the focus of the next step?",
+        "answer": "Cervical Collar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tick Remover"
+        "prompt": "During a routine care or examination situation, an adult reviews Tick Remover, Medical ID Bracelet, Examination Table. The next step focuses on Tick Remover.\nWhich option is the focus of the next step?",
+        "answer": "Tick Remover",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Curtain"
+        "prompt": "During a routine care or examination situation, an adult reviews Curtain, Sink, Soap Dispenser. The next step focuses on Curtain.\nWhich option is the focus of the next step?",
+        "answer": "Curtain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Paper Towel"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Emergency Phone"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Inhaler"
+        "prompt": "During a routine care or examination situation, an adult reviews Paper Towel, Waste Bin, Medicine Cabinet. The next step focuses on Paper Towel.\nWhich option is the focus of the next step?",
+        "answer": "Paper Towel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -800,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Suture Kit” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What is beside the sink?",
+        "answer": "A soap dispenser and paper towel holder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -839,7 +914,7 @@
     "targetWordsArabic": [
       "لوحة إرشادية جدارية",
       "ساعة حائط / ساعة",
-      "معقم اليدين (مطهر اليدين)",
+      "معقم اليدين",
       "حاجز خصوصية",
       "بطاقة جهات اتصال للطوارئ",
       "نموذج تقرير حادث",
@@ -856,8 +931,8 @@
     "usage": {
       "goal": "Learn to use common the first aid room 6 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -919,41 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Burn, Sprain, Fracture. The next step focuses on Burn. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Burn, Sprain, Fracture in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Mini Dialogue",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with wall chart, clock, and hand sanitizer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with privacy screen, emergency contact card, and incident report form. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 6: A short reading",
+      "text": "The instructor points to a CPR poster and an emergency contact card. A privacy screen stands near the examination area. Maya identifies a sharps container and a fire extinguisher in pictures. Omar learns the words cut, bruise, and burn. The lesson asks them to name the items rather than perform a medical procedure.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wall Chart"
+        "prompt": "During a routine care or examination situation, an adult reviews Wall Chart, Clock, Hand Sanitizer. The next step focuses on Wall Chart.\nWhich option is the focus of the next step?",
+        "answer": "Wall Chart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Privacy Screen"
+        "prompt": "During a routine care or examination situation, an adult reviews Privacy Screen, Emergency Contact Card, Incident Report Form. The next step focuses on Privacy Screen.\nWhich option is the focus of the next step?",
+        "answer": "Privacy Screen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Poison Control Poster"
+        "prompt": "During a routine care or examination situation, an adult reviews Poison Control Poster, CPR Poster, Fire Extinguisher. The next step focuses on Poison Control Poster.\nWhich option is the focus of the next step?",
+        "answer": "Poison Control Poster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sharps Container"
+        "prompt": "During a routine care or examination situation, an adult reviews Sharps Container, Cut, Bruise. The next step focuses on Sharps Container.\nWhich option is the focus of the next step?",
+        "answer": "Sharps Container",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Burn"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Wall Chart"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Hand Sanitizer"
+        "prompt": "During a routine care or examination situation, an adult reviews Burn, Sprain, Fracture. The next step focuses on Burn.\nWhich option is the focus of the next step?",
+        "answer": "Burn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -962,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Emergency Phone” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the lesson ask learners to do?",
+        "answer": "Name the items",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1004,8 +1094,8 @@
       "طفح جلدي",
       "نفطة",
       "شظية",
-      "ارتجاج",
-      "خلع",
+      "ارتجاج الدماغ",
+      "خلع مفصل",
       "إغماء",
       "اختناق",
       "رد فعل تحسسي",
@@ -1013,13 +1103,13 @@
       "انخفاض حرارة الجسم",
       "شريط لاصق",
       "مطهر",
-      "حمالة ذراع"
+      "حمالة للذراع"
     ],
     "usage": {
       "goal": "Learn to use common the first aid room 7 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1081,41 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Tape, Antiseptic, Sling. The next step focuses on Tape. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Tape, Antiseptic, Sling in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Simple Message",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with nosebleed, bee sting, and rash. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with blister, splinter, and concussion. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 7: A short reading",
+      "text": "In a language lesson, Omar learns words used to describe injuries and symptoms. The pictures show a nosebleed, a bee sting, and a blister. Another card explains fainting. Maya practices telling a trained responder what happened. They learn that words such as concussion and fracture describe conditions that need appropriate medical assessment.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nosebleed"
+        "prompt": "During a routine care or examination situation, an adult reviews Nosebleed, Bee Sting, Rash. The next step focuses on Nosebleed.\nWhich option is the focus of the next step?",
+        "answer": "Nosebleed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blister"
+        "prompt": "During a routine care or examination situation, an adult reviews Blister, Splinter, Concussion. The next step focuses on Blister.\nWhich option is the focus of the next step?",
+        "answer": "Blister",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dislocation"
+        "prompt": "During a routine care or examination situation, an adult reviews Dislocation, Fainting, Choking. The next step focuses on Dislocation.\nWhich option is the focus of the next step?",
+        "answer": "Dislocation",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Allergic Reaction"
+        "prompt": "During a routine care or examination situation, an adult reviews Allergic Reaction, Heat Stroke, Hypothermia. The next step focuses on Allergic Reaction.\nWhich option is the focus of the next step?",
+        "answer": "Allergic Reaction",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tape"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Nosebleed"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Rash"
+        "prompt": "During a routine care or examination situation, an adult reviews Tape, Antiseptic, Sling. The next step focuses on Tape.\nWhich option is the focus of the next step?",
+        "answer": "Tape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1124,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Wall Chart” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who does Maya practice explaining the situation to?",
+        "answer": "A trained responder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1161,8 +1266,8 @@
       "إنعاش قلبي رئوي",
       "العناية بالجروح",
       "يفحص النبض",
-      "ضغط يضع أو يطبق",
-      "يرفع",
+      "ضغط يضع أو يطبّق",
+      "يرفع الطرف المصاب",
       "يثبت لمنع الحركة",
       "يتصل بالطوارئ",
       "شاشة مراقبة"
@@ -1170,8 +1275,8 @@
     "usage": {
       "goal": "Learn to use common the first aid room 8 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the first aid room.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1211,7 +1316,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Monitor",
+          "targetWords": ["Monitor"],
           "scenario": "During a routine care or examination situation, an adult reviews Monitor, Compress, Gloves. The next step focuses on Monitor.",
           "check": {
             "question": "Which option is the focus of the next step?",
@@ -1221,37 +1326,42 @@
           "imageBrief": "Photorealistic adult real-world scene in a the first aid room context illustrating this situation: During a routine care or examination situation, an adult reviews Monitor, Compress, Gloves. The next step focuses on Monitor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the first aid room scene showing lesson-related items or actions including Monitor in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The First Aid Room: Notice-Style Text",
-      "text": "Maya is in a situation connected to the first aid room. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with compress, gloves, and cpr. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with wound care, check pulse, and apply pressure. Each term belongs to a different part of the care process.",
+      "title": "The First Aid Room 8: A short reading",
+      "text": "The class learns expressions heard in first-aid training, including check pulse, apply pressure, and call emergency. The instructor demonstrates the language alongside approved training materials. Maya identifies gloves and a compress in a picture. Omar practices describing a situation clearly. They ask the trained instructor for guidance about the actual procedures.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The First Aid Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compress"
+        "prompt": "During a routine care or examination situation, an adult reviews Compress, Gloves, CPR. The next step focuses on Compress.\nWhich option is the focus of the next step?",
+        "answer": "Compress",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wound Care"
+        "prompt": "During a routine care or examination situation, an adult reviews Wound Care, Check Pulse, Apply Pressure. The next step focuses on Wound Care.\nWhich option is the focus of the next step?",
+        "answer": "Wound Care",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Elevate"
+        "prompt": "During a routine care or examination situation, an adult reviews Elevate, Immobilize, Call Emergency. The next step focuses on Elevate.\nWhich option is the focus of the next step?",
+        "answer": "Elevate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Monitor"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Compress"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "CPR"
+        "prompt": "During a routine care or examination situation, an adult reviews Monitor, Compress, Gloves. The next step focuses on Monitor.\nWhich option is the focus of the next step?",
+        "answer": "Monitor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -1260,6 +1370,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Nosebleed” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who gives guidance about the actual procedures?",
+        "answer": "The trained instructor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

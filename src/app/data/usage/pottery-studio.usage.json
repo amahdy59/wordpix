@@ -27,19 +27,19 @@
       "Rib"
     ],
     "targetWordsArabic": [
-      "مادة يسمى «كلاي»",
+      "طين",
       "طين سائل",
-      "يطلي بطبقة لامعة",
+      "طلاء خزفي زجاجي",
       "لون تحت التزجيج",
-      "لون يسمى «ينجوبي»",
+      "بطانة طينية ملونة",
       "أكسيد",
       "صبغة",
-      "حبيبات فخارية مضافة للطين",
-      "خزف صيني",
+      "حبيبات طين محروق",
+      "بورسلين",
       "خزف حجري",
-      "عجلة الفخار",
+      "عجلة الفخّار",
       "نشابة / شوبك (مدلاك العجين)",
-      "قطاعة سلك",
+      "قطّاعة سلك",
       "أداة إبرة للفخار",
       "ضلع"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Wire Cutter as the central item; include Wire Cutter, Needle Tool, and Rib naturally where visually appropriate, but make the real-world use of Wire Cutter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Pottery Studio",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clay"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clay, Slip, Glaze, and Underglaze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Clay",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Engobe"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engobe, Oxide, Stain, and Grog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Engobe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Porcelain"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porcelain, Stoneware, Potter's Wheel, and Rolling Pin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Porcelain",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wire Cutter"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Needle Tool, and Rib and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wire Cutter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -193,16 +206,16 @@
       "أداة تشذيب للفخار",
       "أداة نحت للفخار",
       "طابع",
-      "الرمي (القذف)",
-      "شكل يسمى «كويلينج»",
+      "تشكيل الطين على عجلة الخزاف",
+      "تشكيل الطين بطريقة الحبال",
       "بناء الفخار بالشرائح",
       "تشكيل الطين بالقرص",
       "تزجيج الفخار",
-      "تشذيب",
-      "تخديد الطين",
+      "تشذيب القطعة الخزفية",
+      "خدش سطح الطين قبل الوصل",
       "عجن الطين",
-      "توسيط الطين",
-      "سحب الطين"
+      "تمركز الطين على عجلة الخزاف",
+      "رفع جدران القطعة الطينية"
     ],
     "usage": {
       "goal": "Develop the language needed to identify tools or materials and follow workshop instructions in a realistic adult context.",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult illustrating Wedging through a realistic adult task; include Wedging, Centering, and Pulling naturally where visually appropriate, but make the real-world use of Wedging the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Pottery Studio",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sponge"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Loop Tool, Trimming Tool, and Carving Tool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sponge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stamp"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Throwing, Coiling, and Slab Building and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stamp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pinching"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinching, Glazing, Trimming, and Scoring and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Pinching",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wedging"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wedging, Centering, and Pulling and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Wedging",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,14 +375,14 @@
       "Pitcher"
     ],
     "targetWordsArabic": [
-      "-",
+      "فرن خزف",
       "رف الفرن الخزفي",
       "دعامة رف فرن الخزف",
       "مزدوج حراري",
-      "جهاز يسمى «بيروميتريك كوني»",
+      "مخروط لقياس أثر الحرارة في الحرق",
       "سجل الحرق في الفرن",
       "دلو التزجيج",
-      "طلاء واق لرفوف الفرن",
+      "طلاء واقٍ لرفوف الفرن",
       "مروحة تهوية",
       "قفازات مقاومة للحرارة",
       "زبدية / سلطانية (وعاء / طاسة)",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Plate as the central item; include Plate, Vase, and Pitcher naturally where visually appropriate, but make the real-world use of Plate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kiln"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kiln, Kiln Shelf, Kiln Post, and Thermocouple and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Kiln",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pyrometric Cone"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pyrometric Cone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ventilation Fan"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Ventilation Fan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plate"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plate, Vase, and Pitcher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Plate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -513,8 +552,8 @@
       "إبريق شاي",
       "بلاط",
       "منحوتة",
-      "نبات يسمى «بلانتير»",
-      "شمعدان (حامل الشموع)",
+      "وعاء نبات",
+      "حامل شمعة",
       "طاولة عمل",
       "طاولة عجن الطين",
       "حوض",
@@ -523,8 +562,8 @@
       "رف تخزين",
       "مريلة مطبخ (مريلة)",
       "دلو",
-      "مضرب البيسبول (مضرب)",
-      "مكان يسمى «تورنتابلي»"
+      "لوح يثبت على عجلة الخزاف",
+      "منصة دوارة"
     ],
     "usage": {
       "goal": "Develop the language needed to identify tools or materials and follow workshop instructions in a realistic adult context.",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Bucket as the central item; include Bucket, Bat, and Turntable naturally where visually appropriate, but make the real-world use of Bucket the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: The Pottery Studio",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teapot"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teapot, Tile, Sculpture, and Planter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Teapot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Candle Holder"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Candle Holder, Work Table, Wedging Table, and Sink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Candle Holder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Splash Pan"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash Pan, Drying Rack, Storage Shelf, and Apron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Splash Pan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bucket"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Bat, and Turntable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bucket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -654,7 +706,7 @@
     "cefrStage": "B1",
     "stageName": "B1 Wider World",
     "targetWordsEnglish": ["Wheel", "Sculpting Tool", "Needle", "Wax", "Figurine"],
-    "targetWordsArabic": ["عجلة", "أداة يسمى «سكولبتينج توول»", "إبرة", "شمع", "تمثال صغير"],
+    "targetWordsArabic": ["عجلة", "أداة نحت", "إبرة", "شمع", "تمثال صغير"],
     "usage": {
       "goal": "Develop the language needed to identify tools or materials and follow workshop instructions in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the creative workshop.",
@@ -675,7 +727,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Figurine",
+          "targetWords": ["Figurine"],
           "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Figurine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -685,7 +737,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a creative workshop. Show an adult using or examining the Figurine as the central item; include Figurine, Wheel, and Sculpting Tool naturally where visually appropriate, but make the real-world use of Figurine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a creative workshop completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Pottery Studio",
@@ -694,12 +747,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wheel"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheel, Sculpting Tool, Needle, and Wax and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wheel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Figurine"
+        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Figurine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Figurine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

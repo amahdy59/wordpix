@@ -463,8 +463,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbeɪkəri/",
     cefr: "A1",
     img: "/word-images/market/bakery.avif",
-    description:
-      "Discover artisan breads, flaky breakfast pastries, celebration cakes, sweet cookies, baking ingredients, and kitchen equipment through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    description: "A shop where bread, cakes, and other baked food are made or sold.",
     topic: "market",
   },
   {

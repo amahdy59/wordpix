@@ -36,7 +36,7 @@
       "سلحفاة",
       "خنزير غينيا",
       "كناري",
-      "جرذ رملي أليف",
+      "جربوع",
       "غولدن ريتريفر",
       "كلب بودل",
       "كلب بولدوغ",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bulldog, German Shepherd, Labrador. The person selects Bulldog for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bulldog, German Shepherd, Labrador in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dog"
+        "prompt": "During a routine the pet shop task, an adult compares Dog, Cat, Hamster. The person selects Dog for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dog",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rabbit"
+        "prompt": "During a routine the pet shop task, an adult compares Rabbit, Goldfish, Parrot. The person selects Rabbit for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rabbit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Turtle"
+        "prompt": "During a routine the pet shop task, an adult compares Turtle, Guinea Pig, Canary. The person selects Turtle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Turtle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gerbil"
+        "prompt": "During a routine the pet shop task, an adult compares Gerbil, Golden Retriever, Poodle. The person selects Gerbil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gerbil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bulldog"
+        "prompt": "During a routine the pet shop task, an adult compares Bulldog, German Shepherd, Labrador. The person selects Bulldog for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bulldog",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Sphynx, Abyssinian, Scottish Fold. The person selects Sphynx for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Sphynx, Abyssinian, Scottish Fold in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Beagle"
+        "prompt": "During a routine the pet shop task, an adult compares Beagle, Chihuahua, Dalmatian. The person selects Beagle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Beagle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Husky"
+        "prompt": "During a routine the pet shop task, an adult compares Husky, Pug, Persian. The person selects Husky for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Husky",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Siamese"
+        "prompt": "During a routine the pet shop task, an adult compares Siamese, Maine Coon, Tabby. The person selects Siamese for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Siamese",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bengal"
+        "prompt": "During a routine the pet shop task, an adult compares Bengal, Ragdoll, British Shorthair. The person selects Bengal for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bengal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sphynx"
+        "prompt": "During a routine the pet shop task, an adult compares Sphynx, Abyssinian, Scottish Fold. The person selects Sphynx for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sphynx",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -355,7 +387,7 @@
       "طعام القطط",
       "طعام أسماك",
       "بذور للطيور",
-      "قش / دريس (علف مجفف)",
+      "تبن",
       "مكافآت للحيوان",
       "وعاء ماء",
       "وعاء طعام",
@@ -363,7 +395,7 @@
       "لعبة للمضغ",
       "طوق",
       "مقود",
-      "حزام صدر للحيوان",
+      "حزام تثبيت للحيوان",
       "سرير حيوان أليف",
       "قفص"
     ],
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Harness, Pet Bed, Cage. The person selects Harness for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Harness, Pet Bed, Cage in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Simple Message",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dog Food"
+        "prompt": "During a routine the pet shop task, an adult compares Dog Food, Cat Food, Fish Food. The person selects Dog Food for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dog Food",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bird Seed"
+        "prompt": "During a routine the pet shop task, an adult compares Bird Seed, Hay, Treats. The person selects Bird Seed for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bird Seed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Water Bowl"
+        "prompt": "During a routine the pet shop task, an adult compares Water Bowl, Food Bowl, Feeding Bottle. The person selects Water Bowl for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Water Bowl",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chew Toy"
+        "prompt": "During a routine the pet shop task, an adult compares Chew Toy, Collar, Leash. The person selects Chew Toy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chew Toy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Harness"
+        "prompt": "During a routine the pet shop task, an adult compares Harness, Pet Bed, Cage. The person selects Harness for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Harness",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -520,7 +568,7 @@
       "بطاقة اسم",
       "شامبو للحيوانات الأليفة",
       "فرشاة",
-      "قصاصة الأظافر (مقص الأظافر)",
+      "قصاصة أظافر",
       "علاج للبراغيث",
       "فيتامينات للحيوانات الأليفة",
       "أداة جمع فضلات الحيوانات",
@@ -595,7 +643,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Pet Towel, Dental Chew, Scratching Post. The person selects Pet Towel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Pet Towel, Dental Chew, Scratching Post in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Notice-Style Text",
@@ -604,24 +653,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Aquarium"
+        "prompt": "During a routine the pet shop task, an adult compares Aquarium, Litter Box, Cat Tree. The person selects Aquarium for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Aquarium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pet Carrier"
+        "prompt": "During a routine the pet shop task, an adult compares Pet Carrier, Name Tag, Pet Shampoo. The person selects Pet Carrier for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pet Carrier",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brush"
+        "prompt": "During a routine the pet shop task, an adult compares Brush, Nail Clipper, Flea Treatment. The person selects Brush for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Brush",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pet Vitamins"
+        "prompt": "During a routine the pet shop task, an adult compares Pet Vitamins, Pooper Scooper, Training Pads. The person selects Pet Vitamins for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pet Vitamins",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pet Towel"
+        "prompt": "During a routine the pet shop task, an adult compares Pet Towel, Dental Chew, Scratching Post. The person selects Pet Towel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pet Towel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -676,17 +740,17 @@
     ],
     "targetWordsArabic": [
       "ببغاء صغير",
-      "هريرة",
+      "هر صغير",
       "جرو",
       "رقائق طعام الأسماك",
-      "بذور للطيور",
-      "عظمة",
+      "حبوب للطيور",
+      "عظم",
       "سترة صوفية",
-      "منديل رقبة",
+      "منديل للعنق",
       "جرس",
       "فيونكة",
       "معطف مطر",
-      "أحذية صغيرة للحيوان الأليف",
+      "أحذية صغيرة للحيوان",
       "قفص طيور",
       "قفص هامستر",
       "سرير كلب"
@@ -757,7 +821,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bird Cage, Hamster Cage, Dog Bed. The person selects Bird Cage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bird Cage, Hamster Cage, Dog Bed in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Short Description",
@@ -766,24 +831,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parakeet"
+        "prompt": "During a routine the pet shop task, an adult compares Parakeet, Kitten, Puppy. The person selects Parakeet for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Parakeet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fish Flakes"
+        "prompt": "During a routine the pet shop task, an adult compares Fish Flakes, Birdseed, Bone. The person selects Fish Flakes for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fish Flakes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sweater"
+        "prompt": "During a routine the pet shop task, an adult compares Sweater, Bandana, Bell. The person selects Sweater for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sweater",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bow"
+        "prompt": "During a routine the pet shop task, an adult compares Bow, Raincoat, Booties. The person selects Bow for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bird Cage"
+        "prompt": "During a routine the pet shop task, an adult compares Bird Cage, Hamster Cage, Dog Bed. The person selects Bird Cage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bird Cage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -838,7 +918,7 @@
     ],
     "targetWordsArabic": [
       "حوض نباتات زجاجي",
-      "حوض سمك زجاجي",
+      "حوض أسماك دائري",
       "بيت كلاب",
       "قفص أرانب",
       "صندوق تعشيش",
@@ -850,7 +930,7 @@
       "شريحة إلكترونية",
       "واجهة عرض",
       "محطة عناية بالحيوانات",
-      "لوحة تبني الحيوانات",
+      "لوحة تبنّي الحيوانات",
       "سجل نقد"
     ],
     "usage": {
@@ -919,7 +999,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Grooming Station, Adoption Board, Cash Register. The person selects Grooming Station for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Grooming Station, Adoption Board, Cash Register in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Mini Dialogue",
@@ -928,24 +1009,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Terrarium"
+        "prompt": "During a routine the pet shop task, an adult compares Terrarium, Fish Bowl, Kennel. The person selects Terrarium for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Terrarium",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rabbit Hutch"
+        "prompt": "During a routine the pet shop task, an adult compares Rabbit Hutch, Nesting Box, Shampoo. The person selects Rabbit Hutch for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rabbit Hutch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flea Collar"
+        "prompt": "During a routine the pet shop task, an adult compares Flea Collar, Litter, Poop Bag. The person selects Flea Collar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flea Collar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vaccination Card"
+        "prompt": "During a routine the pet shop task, an adult compares Vaccination Card, Microchip, Display Window. The person selects Vaccination Card for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Vaccination Card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grooming Station"
+        "prompt": "During a routine the pet shop task, an adult compares Grooming Station, Adoption Board, Cash Register. The person selects Grooming Station for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grooming Station",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -1000,7 +1096,7 @@
     ],
     "targetWordsArabic": [
       "رف",
-      "حوض",
+      "حوض أسماك",
       "بطاقة السعر",
       "سلة تسوق",
       "ملصق جداري (بوستر)",
@@ -1009,8 +1105,8 @@
       "زبدية / سلطانية (وعاء / طاسة)",
       "لعبة",
       "يطعم",
-      "يمشي",
-      "يعتني بنظافة الحيوان",
+      "يمشي بالحيوان",
+      "يعتني بفرو الحيوان",
       "يستحم",
       "قطار",
       "يلعب"
@@ -1081,7 +1177,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bathe, Train, Play. The person selects Bathe for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bathe, Train, Play in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Simple Message",
@@ -1090,24 +1187,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shelf"
+        "prompt": "During a routine the pet shop task, an adult compares Shelf, Tank, Price Tag. The person selects Shelf for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shelf",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shopping Basket"
+        "prompt": "During a routine the pet shop task, an adult compares Shopping Basket, Poster, Toy Rack. The person selects Shopping Basket for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shopping Basket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fish"
+        "prompt": "During a routine the pet shop task, an adult compares Fish, Bowl, Toy. The person selects Fish for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Feed"
+        "prompt": "During a routine the pet shop task, an adult compares Feed, Walk, Groom. The person selects Feed for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Feed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bathe"
+        "prompt": "During a routine the pet shop task, an adult compares Bathe, Train, Play. The person selects Bathe for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bathe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -1144,7 +1256,7 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Pet", "Adopt"],
-    "targetWordsArabic": ["حيوان أليف", "يتبنى"],
+    "targetWordsArabic": ["حيوان أليف", "يتبنى حيوانًا"],
     "usage": {
       "goal": "Learn to use common the pet shop 8 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
@@ -1163,7 +1275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Pet, Adopt, Dog. The person selects Pet for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Pet, Adopt in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Notice-Style Text",
@@ -1172,8 +1285,11 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pet"
+        "prompt": "During a routine the pet shop task, an adult compares Pet, Adopt, Dog. The person selects Pet for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

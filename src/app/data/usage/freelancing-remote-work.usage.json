@@ -28,16 +28,16 @@
     ],
     "targetWordsArabic": [
       "عامل مستقل",
-      "متعاقد",
+      "متعاقد مستقل",
       "استشاري",
-      "سمكة يسمى «جيج»",
-      "محفظة استثمارية",
+      "مهمة عمل مؤقتة",
+      "ملف أعمال",
       "عميل",
       "مشروع",
       "مقترح",
-      "معدل",
-      "مثبت أسنان",
-      "زووم",
+      "أجر لكل وحدة عمل",
+      "أتعاب مقدّمة لحجز الخدمات",
+      "زوم",
       "سلاك",
       "تريلو؛ منصة لإدارة المهام",
       "نوشن",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Trello as the central item; include Trello, Notion, and Google Drive naturally where visually appropriate, but make the real-world use of Trello the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Freelancing & Remote Work",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Freelancer"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Freelancer, Contractor, Consultant, and Gig and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "Freelancer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Portfolio"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portfolio, Client, Project, and Proposal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Portfolio",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rate"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rate, Retainer, Zoom, and Slack and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Rate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trello"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trello, Notion, and Google Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trello",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -188,20 +201,20 @@
       "Burnout"
     ],
     "targetWordsArabic": [
-      "جهاز يسمى «دروببوكس»",
+      "دروب بوكس",
       "فيغما؛ منصة تصميم تعاونية",
       "ميرو",
       "أسانا",
       "كالندلي؛ خدمة جدولة مواعيد",
-      "مكتب منزل",
+      "مكتب منزلي",
       "روتين",
       "حدود العمل",
-      "فترات راحة",
+      "استراحات",
       "تمرين",
-      "بيئة عمل مريحة",
+      "تكييف بيئة العمل لتناسب المستخدم",
       "منطقة زمنية",
       "مرونة",
-      "عزلة",
+      "عزلة اجتماعية",
       "احتراق وظيفي"
     ],
     "usage": {
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult illustrating Flexibility through a realistic adult task; include Flexibility, Isolation, and Burnout naturally where visually appropriate, but make the real-world use of Flexibility the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Freelancing & Remote Work",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dropbox"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dropbox, Figma, Miro, and Asana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Dropbox",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Calendly"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Calendly, Home Office, Routine, and Boundaries and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Calendly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Breaks"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Breaks, Exercise, Ergonomics, and Time Zone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Breaks",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flexibility"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flexibility, Isolation, and Burnout and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Flexibility",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -351,16 +377,16 @@
     "targetWordsArabic": [
       "فاتورة",
       "عقد",
-      "شخص يسمى «تاكس ديدوكتيون»",
+      "خصم ضريبي",
       "ضريبة العمل الحر",
       "تأمين صحي",
       "التخطيط للتقاعد",
-      "شخص يسمى «للك»",
-      "-",
+      "شركة ذات مسؤولية محدودة",
+      "نماذج ضريبية أمريكية من فئة 1099",
       "توسع نطاق العمل دون اتفاق",
-      "عدم إفصاح",
+      "عدم الإفشاء",
       "تقنية بومودورو",
-      "طريقة يسمى «تيمي بلوكينج»",
+      "تخصيص فترات للمهام",
       "عمل عميق",
       "وضع التركيز",
       "عدم الإزعاج"
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Deep Work as the central item; include Deep Work, Focus Mode, and Do Not Disturb naturally where visually appropriate, but make the real-world use of Deep Work the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Freelancing & Remote Work",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Invoice"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invoice, Contract, Tax Deduction, and Self-Employment Tax and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Invoice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Health Insurance"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Insurance, Retirement Planning, LLC, and 1099 and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Health Insurance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scope Creep"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scope Creep, Non-Disclosure, Pomodoro, and Time Blocking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scope Creep",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Deep Work"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deep Work, Focus Mode, and Do Not Disturb and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Deep Work",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -493,7 +532,7 @@
     "cefrStage": "B2",
     "stageName": "B2 Fluency & Work",
     "targetWordsEnglish": ["Batch Processing", "Automation", "Template", "Shortcut", "Review"],
-    "targetWordsArabic": ["عملية يسمى «باتتش بروكيسسينج»", "أتمتة", "قالب", "طريق مختصر", "مراجعة"],
+    "targetWordsArabic": ["معالجة مجمعة", "أتمتة", "قالب", "اختصار", "مراجعة"],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
@@ -514,7 +553,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Review",
+          "targetWords": ["Review"],
           "scenario": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
@@ -524,7 +563,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult illustrating Review through a realistic adult task; include Review, Batch Processing, and Automation naturally where visually appropriate, but make the real-world use of Review the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Freelancing & Remote Work",
@@ -533,12 +573,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Batch Processing"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Batch Processing, Automation, Template, and Shortcut and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Batch Processing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Review"
+        "prompt": "In the freelancing & remote work setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Review",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

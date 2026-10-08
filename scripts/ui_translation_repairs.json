@@ -1,0 +1,59 @@
+{
+  "action.checkAnswer": ["Check answer", "تحقّق من الإجابة"],
+  "action.playing": ["Playing…", "جارٍ التشغيل…"],
+  "mastery.mastered": ["Mastered", "متقن"],
+  "business.curriculumTitle": ["Business English curriculum", "منهج الإنجليزية للأعمال"],
+  "practice.tomorrow": ["tomorrow", "غدًا"],
+  "practice.inDays": ["in {{count}} days", "بعد {{count}} أيام"],
+  "practice.nextScheduled": [
+    "Next reviews scheduled for {{time}}.",
+    "موعد المراجعات القادمة: {{time}}."
+  ],
+  "practice.noReviewsTitle": ["No reviews due yet", "لا توجد مراجعات مستحقة بعد"],
+  "practice.noReviewsDesc": [
+    "Spaced reviews appear here after you study your first vocabulary unit.",
+    "تظهر المراجعات المتباعدة هنا بعد دراسة أول وحدة مفردات."
+  ],
+  "practice.startLearning": ["Start first lesson", "ابدأ الدرس الأول"],
+  "skillHub.micRequired": ["Microphone required", "يتطلب ميكروفونًا"],
+  "skillHub.timedDrill": ["Timed drill", "تدريب محدد الوقت"],
+  "skillHub.selfPaced": ["At your own pace", "تعلّم بالوتيرة التي تناسبك"],
+  "settings.spokenFeedback": ["Spoken feedback", "ملاحظات صوتية"],
+  "profile.strongWordsDesc": ["Mastery across review intervals", "إتقان عبر مراجعات متباعدة"],
+  "profile.familiarWordsDesc": ["Recognized and recalled", "تعرّفت إليها واسترجعتها"],
+  "profile.learningWordsDesc": ["Introduced recently", "كلمات بدأت تعلّمها مؤخرًا"],
+  "profile.recallNotTestedDesc": ["No drills completed yet", "لم تُكمل أي تدريبات بعد"],
+  "profile.recallAccuracyDesc": ["Recall accuracy in practice", "دقة الاسترجاع في التدريب"],
+  "profile.dueForReviewDesc": ["Scheduled to strengthen recall", "مجدولة لتقوية الاسترجاع"],
+  "profile.activeStreakDesc": ["Consecutive study days", "أيام دراسة متتالية"],
+  "profile.signedInStatus": [
+    "Signed in · Cloud sync active",
+    "تم تسجيل الدخول · المزامنة السحابية نشطة"
+  ],
+  "profile.guestStorageStatus": [
+    "Stored on this device · Sign in to back up and sync",
+    "محفوظ على هذا الجهاز · سجّل الدخول للنسخ الاحتياطي والمزامنة"
+  ],
+  "dashboard.startFirstLesson": ["Start first lesson", "ابدأ الدرس الأول"],
+  "explore.masteredUnits": ["Mastered units", "الوحدات المتقنة"],
+  "explore.inProgressUnits": ["Units in progress", "الوحدات قيد الدراسة"],
+  "explore.notStartedUnits": ["Units not started", "الوحدات التي لم تبدأها"],
+  "explore.searchClarification": [
+    "Word searches find units containing matching vocabulary.",
+    "يعرض البحث عن الكلمات الوحدات التي تتضمن مفردات مطابقة."
+  ],
+  "conversation.targetTermDesc": [
+    "Study how “{{term}}” is used in this conversation.",
+    "تعلّم كيفية استخدام «{{term}}» في هذه المحادثة."
+  ],
+  "study.unitActivities": ["Unit activities", "أنشطة الوحدة"],
+  "pronunciation.previousLesson": ["Previous lesson", "الدرس السابق"],
+  "pronunciation.nextLesson": ["Next lesson", "الدرس التالي"],
+  "pronunciation.answerPrompt": ["Select an answer to continue", "اختر إجابة للمتابعة"],
+  "hadith.retrievalQuestions": ["Recall from memory", "استرجع من الذاكرة"],
+  "hadith.revealModelAnswer": ["Check model answer", "اطّلع على الإجابة النموذجية"],
+  "hadith.howDidYouDo": ["How did you do?", "كيف كان أداؤك؟"],
+  "hadith.gotIt": ["I knew it", "عرفت الإجابة"],
+  "hadith.needReview": ["I need more review", "أحتاج إلى مزيد من المراجعة"],
+  "hadith.sentenceFrame": ["Useful sentence starter", "بداية جملة مفيدة"]
+}

@@ -202,7 +202,12 @@ export function useAudio({
   }, []);
 
   const speak = useCallback(
-    (text: string, overrideLang?: string, objectKey?: string) => {
+    (
+      text: string,
+      overrideLang?: string,
+      objectKey?: string,
+      playback?: { synthesisOnly?: boolean }
+    ) => {
       const targetLang = overrideLang ?? lang;
       const cleanText = text.replace(/[-_]/g, " ").trim();
       const pronunciationAsset = getPronunciationAssetSpec(cleanText);
@@ -253,12 +258,13 @@ export function useAudio({
         }
         publish("loading");
 
-        const spokenFallbackText =
-          fallbackText
-            .replace(/^\d+[.)]\s*/, "")
-            .replace(/\s*[/(].*$/, "")
-            .replace(/[\u0600-\u06FF]/g, "")
-            .trim() || fallbackText;
+        const spokenFallbackText = playback?.synthesisOnly
+          ? fallbackText
+          : fallbackText
+              .replace(/^\d+[.)]\s*/, "")
+              .replace(/\s*[/(].*$/, "")
+              .replace(/[\u0600-\u06FF]/g, "")
+              .trim() || fallbackText;
 
         const utterance = new SpeechSynthesisUtterance(spokenFallbackText);
         utterance.lang = fallbackLang;
@@ -530,7 +536,10 @@ export function useAudio({
       // With no bucket configured there is no clip to look for, and going
       // through the async chain anyway would only delay the voice — on a phone,
       // past the point where it can still play at all.
-      if (!hasAssetHost() && !preferLocal && !usesPronunciationOverride) {
+      if (
+        playback?.synthesisOnly ||
+        (!hasAssetHost() && !preferLocal && !usesPronunciationOverride)
+      ) {
         fallbackToSynthesis(cleanText, targetLang);
         return;
       }

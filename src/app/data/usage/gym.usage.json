@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "جهاز مشي",
       "دراجة تمارين ثابتة",
-      "جهاز إليبتيكال",
+      "جهاز تمارين بيضاوي الحركة",
       "جهاز تجديف",
       "جهاز محاكاة صعود الدرج",
       "حبل قفز",
@@ -38,16 +38,16 @@
       "منصة تمارين الخطوات",
       "كيس ملاكمة",
       "حبل تمارين ثقيل",
-      "كرة طبية",
+      "كرة تدريب ثقيلة",
       "أسطوانة إسفنجية",
-      "-",
+      "بساط يوغا",
       "متتبع لياقة"
     ],
     "usage": {
       "goal": "Learn to use the gym 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the gym.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gym context illustrating this situation: During a routine the gym task, an adult compares Foam Roller, Yoga Mat, Fitness Tracker. The person selects Foam Roller for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gym scene showing lesson-related items or actions including Foam Roller, Yoga Mat, Fitness Tracker in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Gym: Email",
-      "text": "Omar has an everyday task connected to the gym. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with treadmill, stationary bike, and elliptical. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with rowing machine, stair climber, and jump rope. Each term belongs to a different part of the care process.",
+      "title": "The Gym 1: A short reading",
+      "text": "Omar chooses a stationary bike for his gym session. Maya uses an elliptical machine nearby. A treadmill and rowing machine are in another row. They look at the equipment labels and ask a trainer about the controls. Maya takes an exercise mat after finishing, while Omar puts his water bottle beside his bag.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Gym. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Treadmill"
+        "prompt": "During a routine the gym task, an adult compares Treadmill, Stationary Bike, Elliptical. The person selects Treadmill for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Treadmill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rowing Machine"
+        "prompt": "During a routine the gym task, an adult compares Rowing Machine, Stair Climber, Jump Rope. The person selects Rowing Machine for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rowing Machine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spin Bike"
+        "prompt": "During a routine the gym task, an adult compares Spin Bike, Exercise Mat, Step Platform. The person selects Spin Bike for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Spin Bike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Punching Bag"
+        "prompt": "During a routine the gym task, an adult compares Punching Bag, Battle Rope, Medicine Ball. The person selects Punching Bag for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Punching Bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Foam Roller"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Treadmill"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Rowing Machine"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the gym task, an adult compares Foam Roller, Yoga Mat, Fitness Tracker. The person selects Foam Roller for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Foam Roller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Acupuncture” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which machine does Omar choose?",
+        "answer": "A stationary bike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -212,8 +223,8 @@
     "usage": {
       "goal": "Learn to use the gym 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the gym.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gym context illustrating this situation: During a routine the gym task, an adult compares Squat Rack, Resistance Band, Weight Plate. The person selects Squat Rack for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gym scene showing lesson-related items or actions including Squat Rack, Resistance Band, Weight Plate in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Gym: Personal Message",
-      "text": "Omar has an everyday task connected to the gym. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with armband, lock, and locker. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with shaker bottle, dumbbell, and barbell. Each term belongs to a different part of the care process.",
+      "title": "The Gym 2: A short reading",
+      "text": "Maya puts her bag in a locker and secures it with a lock. Omar carries a shaker bottle to the training area. A dumbbell and kettlebell are beside the weight bench. They ask the trainer which equipment their session uses. Maya checks her armband before joining the class at the scheduled time.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Gym. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Armband"
+        "prompt": "During a routine the gym task, an adult compares Armband, Lock, Locker. The person selects Armband for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Armband",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shaker Bottle"
+        "prompt": "During a routine the gym task, an adult compares Shaker Bottle, Dumbbell, Barbell. The person selects Shaker Bottle for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shaker Bottle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Kettlebell"
+        "prompt": "During a routine the gym task, an adult compares Kettlebell, Weight Bench, Pull-Up Bar. The person selects Kettlebell for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Kettlebell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leg Press"
+        "prompt": "During a routine the gym task, an adult compares Leg Press, Cable Machine, Smith Machine. The person selects Leg Press for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Leg Press",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Squat Rack"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Armband"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Shaker Bottle"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the gym task, an adult compares Squat Rack, Resistance Band, Weight Plate. The person selects Squat Rack for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Squat Rack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Treadmill” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "How does Maya secure her locker?",
+        "answer": "With a lock",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -371,15 +393,15 @@
       "قميص بلا أكمام",
       "سروال قصير",
       "بنطال ضيق",
-      "رباط عرق",
+      "رباط لامتصاص العرق",
       "جوارب رياضية",
       "هودي"
     ],
     "usage": {
       "goal": "Learn to use the gym 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the gym.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gym context illustrating this situation: During a routine the gym task, an adult compares Sweatband, Athletic Socks, Hoodie. The person selects Sweatband for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gym scene showing lesson-related items or actions including Sweatband, Athletic Socks, Hoodie in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Gym: Short Dialogue",
-      "text": "Omar has an everyday task connected to the gym. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with weight belt, wrist wraps, and knee sleeves. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with chalk, gym towel, and water bottle. Each term belongs to a different part of the care process.",
+      "title": "The Gym 3: A short reading",
+      "text": "Omar packs a gym towel, water bottle, and sneakers before leaving home. Maya brings wrist wraps for her session with the trainer. A shelf in the gym shop displays protein powder and weight belts. They buy nothing today because they already have what they need. After training, they collect their bags from the lockers.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Gym. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Weight Belt"
+        "prompt": "During a routine the gym task, an adult compares Weight Belt, Wrist Wraps, Knee Sleeves. The person selects Weight Belt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Weight Belt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chalk"
+        "prompt": "During a routine the gym task, an adult compares Chalk, Gym Towel, Water Bottle. The person selects Chalk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chalk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Protein Powder"
+        "prompt": "During a routine the gym task, an adult compares Protein Powder, Sneakers, Sports Bra. The person selects Protein Powder for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Protein Powder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tank Top"
+        "prompt": "During a routine the gym task, an adult compares Tank Top, Shorts, Leggings. The person selects Tank Top for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tank Top",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sweatband"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Weight Belt"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Chalk"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the gym task, an adult compares Sweatband, Athletic Socks, Hoodie. The person selects Sweatband for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sweatband",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Armband” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why do Maya and Omar buy nothing from the gym shop?",
+        "answer": "They already have what they need",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -536,16 +569,16 @@
       "سترة",
       "منشفة",
       "تمرين ضغط",
-      "يقرفص",
-      "اندفاع",
-      "تمرين البلانك",
-      "الرفعة الميتة"
+      "تمرين القرفصاء",
+      "تمرين الاندفاع",
+      "تمرين اللوح",
+      "تمرين الرفعة الميتة"
     ],
     "usage": {
       "goal": "Learn to use the gym 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the gym.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gym context illustrating this situation: During a routine the gym task, an adult compares Lunge, Plank, Deadlift. The person selects Lunge for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gym scene showing lesson-related items or actions including Lunge, Plank, Deadlift in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Gym: Tips/Notice",
-      "text": "Omar has an everyday task connected to the gym. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with gym gloves, wrist wrap, and gym bag. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with headband, sports watch, and athletic shoes. Each term belongs to a different part of the care process.",
+      "title": "The Gym 4: A short reading",
+      "text": "Maya checks her gym bag before class. It contains athletic shoes, track pants, and a headband. Omar puts his sports watch beside a pair of gym gloves. He leaves his jacket in the locker. They arrive early enough to change and meet the trainer before the rest of the group enters.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Gym. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gym Gloves"
+        "prompt": "During a routine the gym task, an adult compares Gym Gloves, Wrist Wrap, Gym Bag. The person selects Gym Gloves for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gym Gloves",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Headband"
+        "prompt": "During a routine the gym task, an adult compares Headband, Sports Watch, Athletic Shoes. The person selects Headband for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Headband",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Track Pants"
+        "prompt": "During a routine the gym task, an adult compares Track Pants, Base Layers, Jacket. The person selects Track Pants for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Track Pants",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Towel"
+        "prompt": "During a routine the gym task, an adult compares Towel, Push-Up, Squat. The person selects Towel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Towel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lunge"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Gym Gloves"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Headband"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the gym task, an adult compares Lunge, Plank, Deadlift. The person selects Lunge for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Lunge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Weight Belt” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Omar leave his jacket?",
+        "answer": "In the locker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -695,23 +739,23 @@
       "تمرين جلوس للبطن",
       "تمرين بيربي",
       "تمرين عقلة",
-      "تمرين فتح وضم الساقين والذراعين",
+      "تمرين القفز مع فتح الذراعين والساقين",
       "كيس سرعة للملاكمة",
-      "تكرار",
-      "مجموعة تمارين",
+      "تكرار واحد للتمرين",
+      "مجموعة تكرارات",
       "تدريب دائري",
       "تدريب متقطع عالي الشدة (HIIT)",
       "تدريب متنوع",
       "إحماء",
       "تهدئة بعد التمرين",
       "غرفة خزانة",
-      "دش"
+      "دُش"
     ],
     "usage": {
       "goal": "Learn to use the gym 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the gym.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gym context illustrating this situation: During a routine the gym task, an adult compares Cool-Down, Locker Room, Shower. The person selects Cool-Down for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gym scene showing lesson-related items or actions including Cool-Down, Locker Room, Shower in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Gym: Everyday Description",
-      "text": "Omar has an everyday task connected to the gym. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with bench press, sit-up, and burpee. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with pull-up, jumping jack, and speed bag. Each term belongs to a different part of the care process.",
+      "title": "The Gym 5: A short reading",
+      "text": "The trainer writes repetition and set on the board. Omar asks how the terms differ, and the trainer explains the session plan. Maya recognizes a sit-up, burpee, and jumping jack in the illustrated guide. They check the names before starting. The trainer demonstrates the planned movements and answers the group's questions.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Gym. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bench Press"
+        "prompt": "During a routine the gym task, an adult compares Bench Press, Sit-Up, Burpee. The person selects Bench Press for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bench Press",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pull-Up"
+        "prompt": "During a routine the gym task, an adult compares Pull-Up, Jumping Jack, Speed Bag. The person selects Pull-Up for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pull-Up",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Repetition"
+        "prompt": "During a routine the gym task, an adult compares Repetition, Set, Circuit Training. The person selects Repetition for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Repetition",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "HIIT"
+        "prompt": "During a routine the gym task, an adult compares HIIT, Cross-Training, Warm-Up. The person selects HIIT for the next step.\nWhich option does the person select for the next step?",
+        "answer": "HIIT",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cool-Down"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bench Press"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Pull-Up"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the gym task, an adult compares Cool-Down, Locker Room, Shower. The person selects Cool-Down for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cool-Down",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Gym Gloves” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which two terms does the trainer write on the board?",
+        "answer": "Repetition and set",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -858,7 +913,7 @@
       "ساونا",
       "مسبح سباحة",
       "بار عصائر",
-      "مكتب الاستقبال",
+      "مكتب استقبال",
       "جدار مرايا",
       "مكبر صوت (سبيكر / سماعة)",
       "مروحة",
@@ -872,8 +927,8 @@
     "usage": {
       "goal": "Learn to use the gym 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the gym.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -925,7 +980,7 @@
         },
         {
           "chunkNumber": 5,
-          "targetWords": "Stretch",
+          "targetWords": ["Stretch"],
           "scenario": "During a routine the gym task, an adult compares Stretch, Sauna, Swimming Pool. The person selects Stretch for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -935,45 +990,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the gym context illustrating this situation: During a routine the gym task, an adult compares Stretch, Sauna, Swimming Pool. The person selects Stretch for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the gym scene showing lesson-related items or actions including Stretch in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Gym: Email",
-      "text": "Omar has an everyday task connected to the gym. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with sauna, swimming pool, and juice bar. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with reception desk, mirror wall, and speaker. Each term belongs to a different part of the care process.",
+      "title": "The Gym 6: A short reading",
+      "text": "Omar asks at the reception desk where to find the swimming pool. Maya meets him near the juice bar after her class. A clock hangs beside the mirror wall in the training area. They check the timetable for another visit. The sauna and steam room are in a different section of the gym.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Gym. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sauna"
+        "prompt": "During a routine the gym task, an adult compares Sauna, Swimming Pool, Juice Bar. The person selects Sauna for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sauna",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Reception Desk"
+        "prompt": "During a routine the gym task, an adult compares Reception Desk, Mirror Wall, Speaker. The person selects Reception Desk for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Reception Desk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fan"
+        "prompt": "During a routine the gym task, an adult compares Fan, Clock, Steam Room. The person selects Fan for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Personal Trainer"
+        "prompt": "During a routine the gym task, an adult compares Personal Trainer, Spotter, Exercise Ball. The person selects Personal Trainer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Personal Trainer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stretch"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Sauna"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Reception Desk"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine the gym task, an adult compares Stretch, Sauna, Swimming Pool. The person selects Stretch for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Stretch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -982,6 +1041,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Bench Press” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Maya meet Omar after class?",
+        "answer": "Near the juice bar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

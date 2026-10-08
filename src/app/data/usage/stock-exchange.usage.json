@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Trade as the central item; include Trade, Bid, and Ask naturally where visually appropriate, but make the real-world use of Trade the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Stock Exchange: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bull Market"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bull Market, Bear Market, IPO, and Market Cap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bull Market",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Volume"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Volatility, Index, and NASDAQ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Volume",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "NYSE"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NYSE, Dow Jones, Buy, and Sell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "NYSE",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trade"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trade, Bid, and Ask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trade",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -190,16 +203,16 @@
     "targetWordsArabic": [
       "فارق السعر",
       "أمر محدد السعر",
-      "أمر سوق",
+      "أمر شراء أو بيع بسعر السوق",
       "أمر إيقاف الخسارة",
       "بيع على المكشوف",
       "تحليل فني",
       "تحليل أساسي",
-      "مضاعف السعر إلى الأرباح",
-      "تقرير الأرباح",
+      "نسبة السعر إلى الربحية",
+      "تقرير أرباح",
       "إيرادات",
-      "هامش الربح",
-      "عضو يسمى «بالانكي شييت»",
+      "هامش ربح",
+      "ميزانية عمومية",
       "تدفق نقدي",
       "اتجاه السوق",
       "توقعات"
@@ -263,7 +276,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Cash Flow through a realistic adult task; include Cash Flow, Market Trend, and Forecast naturally where visually appropriate, but make the real-world use of Cash Flow the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Stock Exchange",
@@ -272,20 +286,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spread"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spread, Limit Order, Market Order, and Stop Loss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Spread",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Short Selling"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Short Selling",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Earnings Report"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earnings Report, Revenue, Profit Margin, and Balance Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Earnings Report",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cash Flow"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cash Flow, Market Trend, and Forecast and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Cash Flow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -402,7 +428,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Pit as the central item; include Pit, Exchange Rate, and Trader naturally where visually appropriate, but make the real-world use of Pit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -411,16 +438,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trader"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trader, Broker, Analyst, and Floor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trader",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bell"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Ticker, Screen, and Trading Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bell",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pit"
+        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pit, and Exchange Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

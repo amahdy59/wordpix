@@ -1,0 +1,124 @@
+{
+  "car-parts-mechanics": {
+    "engine": { "definition": "The machine in a vehicle that produces power to move it." },
+    "clutch": {
+      "definition": "A mechanism that connects or disconnects an engine from the transmission.",
+      "arabicTranslation": "قابض الحركة"
+    },
+    "carburetor": {
+      "definition": "A device in some engines that mixes fuel with air before combustion."
+    },
+    "crankshaft": { "definition": "A shaft that converts the pistons' movement into rotation." },
+    "camshaft": {
+      "definition": "A rotating shaft that controls when an engine's valves open and close."
+    },
+    "hood": { "definition": "The hinged cover over a car's engine compartment." },
+    "bumper": {
+      "definition": "A part fitted to the front or rear of a vehicle to help absorb minor impacts."
+    },
+    "roof": { "definition": "The top outer part of a vehicle's body." },
+    "dashboard": {
+      "definition": "The panel in front of the driver that contains instruments and controls.",
+      "arabicTranslation": "لوحة العدادات"
+    },
+    "gear-shift": { "arabicTranslation": "ذراع تغيير السرعات" },
+    "pedal": {
+      "definition": "A foot-operated control used to accelerate, brake, or operate the clutch."
+    },
+    "seat-belt": { "arabicTranslation": "حزام الأمان" },
+    "console": {
+      "definition": "The section between the front seats that holds controls and storage.",
+      "arabicTranslation": "الكونسول الوسطي"
+    },
+    "sun-visor": { "arabicTranslation": "حاجب الشمس" },
+    "spring": {
+      "definition": "An elastic metal part that compresses or stretches to absorb forces."
+    },
+    "alignment": {
+      "definition": "The adjustment of wheel angles so the vehicle travels as intended.",
+      "arabicTranslation": "ضبط زوايا العجلات"
+    },
+    "coolant": {
+      "definition": "A fluid that carries heat away from an engine to help prevent overheating."
+    },
+    "gas": { "definition": "Gasoline used as fuel in a vehicle's engine." },
+    "refrigerant": {
+      "definition": "A substance that carries heat through an air-conditioning system."
+    }
+  },
+  "car-types": {
+    "hatchback": {
+      "definition": "A car with a rear door that opens upward to access the cargo area."
+    },
+    "convertible": { "definition": "A car with a roof that can be folded or removed." },
+    "suv": {
+      "definition": "A passenger vehicle with a taller body and higher ground clearance than many cars."
+    },
+    "sports-car": {
+      "definition": "A car designed for responsive handling and strong performance.",
+      "arabicTranslation": "سيارة رياضية"
+    },
+    "luxury-car": {
+      "definition": "A car that offers a high level of comfort, finish, and features."
+    },
+    "pickup-truck": { "arabicTranslation": "شاحنة صغيرة بصندوق مكشوف" },
+    "van": {
+      "definition": "A road vehicle with an enclosed body for carrying people or goods.",
+      "arabicTranslation": "شاحنة مغلقة أو حافلة صغيرة"
+    },
+    "box-truck": { "arabicTranslation": "شاحنة بصندوق مغلق" },
+    "delivery-van": { "arabicTranslation": "شاحنة توصيل صغيرة" },
+    "electric-car": {
+      "definition": "A car powered by an electric motor using energy from a battery."
+    },
+    "hybrid": { "definition": "A car that uses both a fuel-powered engine and an electric motor." },
+    "hearse": { "definition": "A vehicle used to carry a coffin to a funeral or burial." }
+  },
+  "auto-dealership": {
+    "lot": { "definition": "An outdoor area where a dealership parks and displays vehicles." },
+    "reception": {
+      "definition": "The area where visitors are welcomed and directed to staff.",
+      "arabicTranslation": "منطقة الاستقبال"
+    },
+    "test-drive": { "definition": "A short drive taken to assess a vehicle before buying it." },
+    "lease": {
+      "definition": "An agreement to use a vehicle for a set period in exchange for payments.",
+      "arabicTranslation": "عقد تأجير سيارة"
+    },
+    "down-payment": {
+      "definition": "The initial amount paid toward a purchase before the remaining payments."
+    },
+    "used": { "definition": "Previously owned or operated by someone else." },
+    "demo": {
+      "definition": "A vehicle used by a dealership to demonstrate a model to customers.",
+      "arabicTranslation": "سيارة للعرض والتجربة"
+    },
+    "mileage": {
+      "definition": "The distance a vehicle has traveled, measured in miles or kilometers.",
+      "arabicTranslation": "المسافة المقطوعة"
+    },
+    "service-advisor": { "arabicTranslation": "مستشار صيانة السيارات" },
+    "technician": { "definition": "A trained worker who diagnoses and repairs vehicle faults." },
+    "lot-attendant": { "arabicTranslation": "عامل ساحة السيارات" }
+  },
+  "driving-road-rules": {
+    "stop-sign": { "definition": "A road sign requiring drivers to come to a complete stop." },
+    "crosswalk": { "definition": "A marked area of a road designated for pedestrians to cross." },
+    "curb": {
+      "definition": "The raised edge separating a road from a sidewalk.",
+      "arabicTranslation": "حافة الرصيف"
+    },
+    "underpass": { "definition": "A road or pedestrian passage that runs beneath another route." },
+    "brake": { "definition": "To slow or stop a vehicle using its brakes." },
+    "steer": { "definition": "To control the direction in which a vehicle moves." },
+    "signal": {
+      "definition": "To use an indicator or another signal to show an intended maneuver.",
+      "arabicTranslation": "يشير إلى تغيير الاتجاه"
+    },
+    "overtake": { "definition": "To pass a vehicle traveling in the same direction." },
+    "insurance-claim": {
+      "definition": "A request to an insurer for payment or coverage under a policy.",
+      "arabicTranslation": "مطالبة تأمينية"
+    }
+  }
+}

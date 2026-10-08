@@ -1,7 +1,7 @@
 {
   "city-bus": {
     "definition": "A bus that carries passengers around a city or nearby suburbs along regular routes and schedules.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كيتي بوس»"
+    "arabicTranslation": "حافلة المدينة"
   },
   "double-decker": {
     "definition": "A bus with two passenger levels, one above the other.",
@@ -9,24 +9,24 @@
     "arabicTranslation": "حافلة ذات طابقين"
   },
   "coach": {
-    "definition": "A person who trains players in a sport.",
+    "definition": "A bus designed for longer journeys, usually with comfortable seating.",
     "arabicTranslation": "حافلة سفر"
   },
   "minibus": {
-    "definition": "A light bus (4 to 10 passengers).",
+    "definition": "A small bus that carries fewer passengers than a full-sized bus.",
     "arabicTranslation": "حافلة صغيرة"
   },
   "shuttle": {
-    "definition": "Public transport that consists of a bus or train or airplane that flies back and forth between two points.",
-    "arabicTranslation": "حافلة نقل"
+    "definition": "A bus service that travels repeatedly between specific places.",
+    "arabicTranslation": "حافلة نقل ترددي"
   },
   "school-bus": {
     "definition": "A vehicle built or modified to carry students between school and activities connected with it.",
-    "arabicTranslation": "مركبة يُسمّى «ستشوول بوس»"
+    "arabicTranslation": "حافلة مدرسية"
   },
   "trolley": {
-    "definition": "A wheeled vehicle that runs on rails and is propelled by electricity.",
-    "arabicTranslation": "حافلة ترولي"
+    "definition": "An electric bus powered through overhead wires.",
+    "arabicTranslation": "حافلة كهربائية بسلك علوي"
   },
   "articulated-bus": {
     "definition": "A long bus made of two or more sections joined by a flexible connection.",
@@ -44,11 +44,11 @@
     "arabicTranslation": "حافلة سريعة"
   },
   "platform": {
-    "definition": "A raised surface used for equipment, sets, or performances.",
-    "arabicTranslation": "رصيف"
+    "definition": "A designated area where passengers board or leave buses.",
+    "arabicTranslation": "رصيف الحافلات"
   },
   "shelter": {
-    "arabicTranslation": "مأوى",
+    "arabicTranslation": "مظلة انتظار الحافلات",
     "definition": "A covered place that protects people while they wait for a bus."
   },
   "bench": {
@@ -57,11 +57,11 @@
   },
   "ticket-booth": {
     "definition": "A place where visitors buy or collect tickets.",
-    "arabicTranslation": "مكان يُسمّى «تيكيت بووث»"
+    "arabicTranslation": "كشك تذاكر"
   },
   "schedule": {
-    "definition": "To plan for an activity or event.",
-    "arabicTranslation": "جدول"
+    "definition": "A list of planned bus departure and arrival times.",
+    "arabicTranslation": "جدول الرحلات"
   },
   "map": {
     "definition": "A drawing that shows places, routes, and geographical features.",
@@ -69,7 +69,7 @@
   },
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
-    "arabicTranslation": "آلة يُسمّى «فيندينج ماتشيني»",
+    "arabicTranslation": "آلة بيع ذاتي",
     "exampleUsage": "The vending machine was used during the activity."
   },
   "restroom": {
@@ -77,16 +77,16 @@
     "arabicTranslation": "دورة مياه"
   },
   "ticket": {
-    "definition": "A printed or electronic pass that allows entry to a ride or park.",
+    "definition": "A printed or electronic document that permits travel on a bus.",
     "arabicTranslation": "تذكرة"
   },
   "pass": {
-    "definition": "Of advancing the ball by throwing it.",
-    "arabicTranslation": "بطاقة مرور"
+    "definition": "A ticket that permits specified bus journeys over a period of time.",
+    "arabicTranslation": "اشتراك مواصلات"
   },
   "fare": {
     "arabicTranslation": "أجرة",
-    "definition": "A paying (taxi) passenger."
+    "definition": "The price paid for a journey on public transport."
   },
   "tap-card": {
     "definition": "A contactless travel card that is touched against a reader to pay a fare or record a journey.",
@@ -102,12 +102,12 @@
     "definition": "A written or digital record showing that a payment was made."
   },
   "zone": {
-    "definition": "A locally circumscribed place characterized by some distinctive features.",
+    "definition": "An area used to determine the fare for a public-transport journey.",
     "arabicTranslation": "منطقة"
   },
   "transfer": {
-    "definition": "A person who transfers or is transferred from one position to another.",
-    "arabicTranslation": "تحويل"
+    "definition": "A change from one bus or transport service to another during a journey.",
+    "arabicTranslation": "الانتقال بين وسائل النقل"
   },
   "day-pass": {
     "definition": "A travel ticket that allows journeys on a transport system for one day.",
@@ -116,7 +116,7 @@
   },
   "student-discount": {
     "definition": "A reduced charge that businesses offer people enrolled in school for products or services.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستودينت ديسكوونت»"
+    "arabicTranslation": "خصم للطلاب"
   },
   "seat": {
     "definition": "Any support where you can sit (especially the part of a chair or bench etc. on which you sit).",
@@ -127,8 +127,8 @@
     "arabicTranslation": "ممر"
   },
   "handrail": {
-    "definition": "A railing at the side of a staircase or balcony to prevent people from falling.",
-    "arabicTranslation": "درابزين"
+    "definition": "A fixed rail that passengers hold for support or balance.",
+    "arabicTranslation": "قضيب للإمساك"
   },
   "bell": {
     "definition": "A device that makes a ringing sound.",
@@ -151,11 +151,11 @@
     "arabicTranslation": "منحدر للكراسي المتحركة"
   },
   "luggage-rack": {
-    "definition": "A storage frame for carrying bags above train seats or on a car roof.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوججاجي راك»"
+    "definition": "A frame or shelf on a bus for storing passengers' bags.",
+    "arabicTranslation": "حامل أمتعة"
   },
   "driver": {
-    "definition": "A golfer who hits the golf ball with a driver.",
+    "definition": "The person who controls and drives the bus.",
     "arabicTranslation": "سائق"
   },
   "passenger": {
@@ -163,16 +163,16 @@
     "arabicTranslation": "راكب"
   },
   "commuter": {
-    "definition": "A passenger train that is ridden primarily by passengers who travel regularly from one place to another.",
-    "arabicTranslation": "متنقل يومي"
+    "definition": "A person who regularly travels between home and work or study.",
+    "arabicTranslation": "راكب يتنقل يوميًا"
   },
   "inspector": {
-    "definition": "A high ranking police officer.",
-    "arabicTranslation": "مفتش"
+    "definition": "A transport worker who checks that passengers have valid tickets.",
+    "arabicTranslation": "مفتش تذاكر"
   },
   "attendant": {
-    "definition": "Being present (at a meeting or event, etc.).",
-    "arabicTranslation": "مرافق خدمة"
+    "definition": "A worker who assists passengers or provides services at the station.",
+    "arabicTranslation": "موظف خدمة الركاب"
   },
   "tourist": {
     "definition": "A person who travels for pleasure.",
@@ -215,11 +215,11 @@
   },
   "stop-sign": {
     "definition": "A red, eight-sided road sign requires drivers to halt before crossing an intersection.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستوب سيجن»"
+    "arabicTranslation": "علامة قف"
   },
   "bus-lane": {
     "definition": "A marked section of a road is reserved for buses rather than general traffic.",
-    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوس لاني»"
+    "arabicTranslation": "مسار حافلات"
   },
   "no-entry": {
     "definition": "A sign or instruction showing that people or vehicles are not allowed to enter an area.",

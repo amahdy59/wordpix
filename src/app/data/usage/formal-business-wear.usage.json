@@ -28,18 +28,18 @@
     ],
     "targetWordsArabic": [
       "بدلة",
-      "قميص فستان",
-      "مادة يسمى «تيي»",
+      "قميص رسمي",
+      "ربطة عنق",
       "ربطة عنق فراشية",
       "أزرار أكمام",
       "منديل جيب",
-      "حمالات",
-      "بدلة سهرة رسمية",
+      "حمالات بنطال",
+      "بدلة سهرة",
       "سترة بلا أكمام",
       "بنطال رسمي",
       "فستان سهرة",
-      "فستان مشروب مختلط",
-      "تنورة قلم رصاص",
+      "فستان للمناسبات شبه الرسمية",
+      "تنورة مستقيمة ضيقة",
       "سترة رسمية",
       "بلوزة حريرية"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Pencil Skirt as the central item; include Pencil Skirt, Blazer, and Silk Blouse naturally where visually appropriate, but make the real-world use of Pencil Skirt the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: Formal & Business Wear",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Suit"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Suit, Dress Shirt, Tie, and Bow Tie and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Suit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cufflinks"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cufflinks, Pocket Square, Suspenders, and Tuxedo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cufflinks",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vest"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vest, Dress Pants, Evening Gown, and Cocktail Dress and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Vest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pencil Skirt"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pencil Skirt, Blazer, and Silk Blouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pencil Skirt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -189,12 +202,12 @@
     ],
     "targetWordsArabic": [
       "بدلة نسائية ببنطال",
-      "فستان لف",
+      "فستان ملفوف",
       "شال",
       "حقيبة يد صغيرة",
-      "شخص يسمى «هييلس»",
+      "أحذية بكعب عالٍ",
       "بنطال تشينو",
-      "قميص بأزرار",
+      "قميص بأزرار عند طرفي الياقة",
       "حذاء لوفر",
       "كارديغان",
       "بنطال بطول الكاحل",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Knit Top as the central item; include Knit Top, Oxford Shoes, and Uniform naturally where visually appropriate, but make the real-world use of Knit Top the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: Formal & Business Wear",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pantsuit"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pantsuit, Wrap Dress, Shawl, and Clutch Purse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Pantsuit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Heels"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Heels, Chinos, Button-Down, and Loafers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Heels",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cardigan"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cardigan, Ankle Pants, Flats, and Polo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cardigan",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Knit Top"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Knit Top, Oxford Shoes, and Uniform and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Knit Top",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -343,13 +369,13 @@
       "Name Tag"
     ],
     "targetWordsArabic": [
-      "زي طبي",
+      "ملابس طبية",
       "معطف مختبر",
       "مريلة مطبخ (مريلة)",
-      "قبعة صلب",
-      "سترة بلا أكمام سلامة",
-      "فولاذ إصبع القدم أحذية طويلة",
-      "بدلة عمل كاملة",
+      "خوذة أمان",
+      "سترة عالية الوضوح",
+      "أحذية أمان بمقدمة فولاذية",
+      "بدلة عمل واقية",
       "قفازات",
       "بطاقة اسم"
     ],
@@ -385,7 +411,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "Name Tag",
+          "targetWords": ["Name Tag"],
           "scenario": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Tag and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -395,7 +421,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Name Tag as the central item; include Name Tag, Scrubs, and Lab Coat naturally where visually appropriate, but make the real-world use of Name Tag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: Formal & Business Wear",
@@ -404,16 +431,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scrubs"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scrubs, Lab Coat, Apron, and Hard Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scrubs",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Safety Vest"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Vest, Steel-Toe Boots, Coveralls, and Gloves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Safety Vest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Name Tag"
+        "prompt": "In the formal & business wear setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Tag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Name Tag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

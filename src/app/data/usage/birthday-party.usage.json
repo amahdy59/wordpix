@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Ice Cream, Pizza, Candy. The person selects Ice Cream for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Ice Cream, Pizza, Candy in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Birthday Party: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balloon"
+        "prompt": "During a routine the birthday party task, an adult compares Balloon, Banner, Streamer. The person selects Balloon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Balloon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Confetti"
+        "prompt": "During a routine the birthday party task, an adult compares Confetti, Party Hat, Tablecloth. The person selects Confetti for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Confetti",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Centerpiece"
+        "prompt": "During a routine the birthday party task, an adult compares Centerpiece, Garland, Pinata. The person selects Centerpiece for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Centerpiece",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bunting"
+        "prompt": "During a routine the birthday party task, an adult compares Bunting, Cake, Cupcake. The person selects Bunting for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bunting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ice Cream"
+        "prompt": "During a routine the birthday party task, an adult compares Ice Cream, Pizza, Candy. The person selects Ice Cream for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Ice Cream",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -200,10 +216,10 @@
       "رقائق",
       "لعبة الكراسي الموسيقية",
       "لعبة تثبيت الذيل",
-      "البحث عن الكنز",
+      "لعبة البحث عن الكنز",
       "لوحة فنية وجه",
       "أشكال حيوانات من البالونات",
-      "سباق التتابع",
+      "سباق تتابع",
       "كاريوكي",
       "رقص",
       "لعبة الليمبو",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Dance, Limbo, Tag. The person selects Dance for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Dance, Limbo, Tag in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Birthday Party: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Popcorn"
+        "prompt": "During a routine the birthday party task, an adult compares Popcorn, Juice Box, Lemonade. The person selects Popcorn for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Popcorn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fruit"
+        "prompt": "During a routine the birthday party task, an adult compares Fruit, Chips, Musical Chairs. The person selects Fruit for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fruit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pin The Tail"
+        "prompt": "During a routine the birthday party task, an adult compares Pin The Tail, Treasure Hunt, Face Painting. The person selects Pin The Tail for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pin The Tail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Balloon Animals"
+        "prompt": "During a routine the birthday party task, an adult compares Balloon Animals, Relay Race, Karaoke. The person selects Balloon Animals for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Balloon Animals",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dance"
+        "prompt": "During a routine the birthday party task, an adult compares Dance, Limbo, Tag. The person selects Dance for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Fork, Candle, Lighter. The person selects Fork for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Fork, Candle, Lighter in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Birthday Party: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Present"
+        "prompt": "During a routine the birthday party task, an adult compares Present, Wrapping Paper, Bow. The person selects Present for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Present",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gift Bag"
+        "prompt": "During a routine the birthday party task, an adult compares Gift Bag, Card, Ribbon. The person selects Gift Bag for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Gift Bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tissue Paper"
+        "prompt": "During a routine the birthday party task, an adult compares Tissue Paper, Surprise, Thank You Note. The person selects Tissue Paper for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tissue Paper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Plate"
+        "prompt": "During a routine the birthday party task, an adult compares Plate, Cup, Napkin. The person selects Plate for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Plate",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fork"
+        "prompt": "During a routine the birthday party task, an adult compares Fork, Candle, Lighter. The person selects Fork for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Fork",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -605,7 +653,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Sing, Celebrate, Party Horn. The person selects Sing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Sing, Celebrate in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Birthday Party: Everyday Description",
@@ -614,24 +663,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Party Horn"
+        "prompt": "During a routine the birthday party task, an adult compares Party Horn, Whistle, Glow Stick. The person selects Party Horn for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Party Horn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sticker"
+        "prompt": "During a routine the birthday party task, an adult compares Sticker, Birthday Child, Guest. The person selects Sticker for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sticker",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Clown"
+        "prompt": "During a routine the birthday party task, an adult compares Clown, Magician, Wish. The person selects Clown for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Clown",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blow Candles"
+        "prompt": "During a routine the birthday party task, an adult compares Blow Candles, Open Gifts, Group Photo. The person selects Blow Candles for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Blow Candles",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sing"
+        "prompt": "During a routine the birthday party task, an adult compares Sing, Celebrate, Party Horn. The person selects Sing for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

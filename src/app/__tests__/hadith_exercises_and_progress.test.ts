@@ -60,13 +60,13 @@ describe("Hadith pilot exercises", () => {
 describe("Hadith offline progress", () => {
   it("checkpoints without mutating prior state and retains the best score", () => {
     const initial = checkpointHadithLesson({}, "hadith-02", 2, "practice", 67);
-    const updated = checkpointHadithLesson(initial, "hadith-02", 3, "speak", 33);
+    const updated = checkpointHadithLesson(initial, "hadith-02", 3, "review", 33);
 
     expect(initial["hadith-02"].completedStages).toEqual(["practice"]);
     expect(updated["hadith-02"]).toMatchObject({
       status: "in-progress",
       currentStage: 3,
-      completedStages: ["practice", "speak"],
+      completedStages: ["practice", "review"],
       bestScorePercent: 67,
     });
   });
@@ -108,6 +108,24 @@ describe("Hadith offline progress", () => {
     expect(migrated["hadith-02"]).toMatchObject({
       currentStage: 2,
       completedStages: ["read-listen", "vocabulary"],
+    });
+  });
+
+  it("migrates saved five-stage progress into the 4-step flow", () => {
+    const migrated = normalizeHadithProgress({
+      "hadith-01": {
+        status: "in-progress",
+        currentStage: 4,
+        completedStages: ["read-listen", "vocabulary", "practice", "speak"],
+        bestScorePercent: 85,
+        sessions: 1,
+        updatedAt: "2026-09-23T00:00:00.000Z",
+      },
+    });
+
+    expect(migrated["hadith-01"]).toMatchObject({
+      currentStage: 3,
+      completedStages: ["read-listen", "vocabulary", "practice", "review"],
     });
   });
 });

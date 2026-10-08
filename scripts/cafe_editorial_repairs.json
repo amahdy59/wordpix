@@ -1,0 +1,101 @@
+{
+  "ice-cream-shop": {
+    "mint": { "definition": "A cool-tasting herb flavor used in ice cream." },
+    "mango": {
+      "definition": "A tropical fruit with sweet yellow or orange flesh, used as an ice-cream flavor."
+    },
+    "pistachio": {
+      "definition": "An edible nut with a pale green kernel, used to flavor ice cream."
+    },
+    "scoop": {
+      "definition": "A rounded portion of ice cream served with a scoop tool.",
+      "arabicTranslation": "كرة آيس كريم"
+    },
+    "cone": {
+      "definition": "A crisp edible cone used to hold ice cream.",
+      "arabicTranslation": "قرطاس آيس كريم"
+    },
+    "sorbet": {
+      "definition": "A frozen dessert usually made from fruit, water, and sugar without dairy."
+    },
+    "sprinkles": {
+      "definition": "Small colorful sugar or chocolate pieces used to decorate desserts."
+    },
+    "cherry": { "definition": "A small fruit, often used as a topping for ice cream." },
+    "straw": { "definition": "A narrow tube used to drink liquid." },
+    "display-case": {
+      "definition": "A glass-fronted counter or cabinet used to display ice cream or other products.",
+      "arabicTranslation": "واجهة عرض زجاجية"
+    },
+    "waffle-iron": { "arabicTranslation": "جهاز صنع الوافل" },
+    "cash-register": { "arabicTranslation": "آلة تسجيل النقد" },
+    "menu": { "definition": "A list of the ice creams, food, and drinks available to order." },
+    "counter": { "definition": "A service surface where staff take orders or serve customers." },
+    "umbrella": {
+      "definition": "A large cover above outdoor tables that provides shade or shelter."
+    }
+  },
+  "pizza-shop": {
+    "pepperoni": {
+      "definition": "A pizza topped with slices of pepperoni sausage.",
+      "arabicTranslation": "بيتزا بيبروني"
+    },
+    "mushroom": { "definition": "An edible fungus used as a pizza topping." },
+    "pineapple": {
+      "definition": "A tropical fruit with sweet yellow flesh, used as a pizza topping."
+    },
+    "slice": { "arabicTranslation": "شريحة بيتزا" },
+    "soda": { "definition": "A sweet carbonated drink." },
+    "menu": { "definition": "A list of the food and drinks available to order." },
+    "mixer": {
+      "definition": "A kitchen machine used to combine ingredients, such as pizza dough."
+    },
+    "register": {
+      "definition": "A machine that records purchases and processes payments.",
+      "arabicTranslation": "آلة تسجيل النقد"
+    },
+    "table": { "definition": "A piece of furniture with a flat top used for eating meals." },
+    "ticket": {
+      "definition": "A printed or digital slip showing a customer's food order.",
+      "arabicTranslation": "قسيمة الطلب"
+    }
+  },
+  "coffee-shop": {
+    "timer": { "definition": "A device used to measure brewing or preparation time." },
+    "bagel": { "definition": "A ring-shaped bread roll with a firm crust and chewy texture." }
+  },
+  "beverages": {
+    "hot-chocolate": { "arabicTranslation": "شوكولاتة ساخنة" },
+    "cappuccino": {
+      "definition": "A coffee drink made with espresso, steamed milk, and a layer of milk foam."
+    },
+    "latte": {
+      "definition": "A coffee drink made with espresso and a generous amount of steamed milk."
+    },
+    "mocha": { "definition": "A coffee drink made with espresso, chocolate, and milk." },
+    "chai": { "definition": "Tea, often served in cafés as a spiced drink with milk." },
+    "iced-coffee": {
+      "definition": "Coffee served cold, usually over ice.",
+      "arabicTranslation": "قهوة مثلجة"
+    },
+    "smoothie": {
+      "definition": "A thick drink made by blending fruit or vegetables, often with yogurt or milk."
+    },
+    "tonic-water": {
+      "definition": "A carbonated drink with a bitter flavor from quinine.",
+      "arabicTranslation": "ماء التونيك"
+    },
+    "orange-juice": { "arabicTranslation": "عصير برتقال" },
+    "root-beer": {
+      "definition": "A sweet carbonated drink flavored with plant extracts, usually without alcohol.",
+      "arabicTranslation": "مشروب غازي بنكهة الجذور"
+    },
+    "cream-soda": { "arabicTranslation": "مشروب غازي بنكهة الفانيليا" },
+    "energy-drink": { "arabicTranslation": "مشروب طاقة" },
+    "sports-drink": {
+      "definition": "A drink formulated to supply fluids, carbohydrates, or electrolytes during exercise.",
+      "arabicTranslation": "مشروب رياضي"
+    },
+    "champagne": { "definition": "A sparkling wine made in the Champagne region of France." }
+  }
+}

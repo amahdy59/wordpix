@@ -154,7 +154,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl px-2.5 font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl px-2.5 font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             aria-label="Back to Business English Curriculum"
           >
             <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />

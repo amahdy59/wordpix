@@ -202,7 +202,7 @@ describe("Shared UI Primitives", () => {
       expect(screen.getByRole("heading", { name: "Put the words in order." })).toBeInTheDocument();
       expect(screen.getByRole("group", { name: "Sentence building activity" })).toBeInTheDocument();
       expect(container.querySelector('[data-exercise-family="text-construction"]')).toHaveClass(
-        "wp-container-reading"
+        "wp-container-content"
       );
       expect(container.querySelector('[data-exercise-zone="feedback"]')).toBeInTheDocument();
       expect(container.querySelector('[data-exercise-zone="action"]')).toBeInTheDocument();

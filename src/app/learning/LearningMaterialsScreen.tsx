@@ -12,7 +12,7 @@ import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./type
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { InteractiveText } from "./study/InteractiveText";
 import { useI18n } from "../context/I18nContext";
-import { QuizQuestionCard } from "../shared/QuizQuestionCard";
+import { CurriculumQuizEngine } from "../shared/CurriculumQuizEngine";
 import { activeTimedTextSegment, buildTimedTextSegments } from "../shared/timedText";
 
 interface Props {
@@ -328,11 +328,20 @@ export function PassageSection({
         <p className="text-xs text-muted-foreground mb-4">
           {t("learningMaterials.comprehensionSubtitle")}
         </p>
-        <div className="space-y-4">
-          {passage.questions.map((q, index) => (
-            <MultipleChoice key={q.id} index={index} {...q} />
-          ))}
-        </div>
+        <CurriculumQuizEngine
+          key={`${unitId ?? "passage"}-${passage.title}`}
+          questions={passage.questions.map((q) => ({
+            id: q.id,
+            stem: q.question,
+            correctValue: String(q.correctIndex),
+            explanation: q.explanation,
+            options: q.options.map((label, index) => ({
+              value: String(index),
+              label,
+              accessibleLabel: label,
+            })),
+          }))}
+        />
 
         {passage.openQuestions && passage.openQuestions.length > 0 && (
           <div className="mt-6 rounded-2xl border border-border/80 p-5 bg-secondary/20">
@@ -351,45 +360,6 @@ export function PassageSection({
         )}
       </section>
     </div>
-  );
-}
-
-function MultipleChoice({
-  index,
-  question,
-  options,
-  correctIndex,
-  explanation,
-}: {
-  index: number;
-  question: string;
-  options: string[];
-  correctIndex: number;
-  explanation: string;
-}) {
-  const { t } = useI18n();
-  const [picked, setPicked] = useState<number | null>(null);
-
-  return (
-    <QuizQuestionCard
-      id={`materials-${index}-${question.slice(0, 24)}`}
-      index={index}
-      question={question}
-      value={picked === null ? undefined : String(picked)}
-      correctValue={String(correctIndex)}
-      onChange={(value) => setPicked(Number(value))}
-      feedback={
-        <>
-          <span className="font-black">{t("learningMaterials.explanation")} </span>
-          {explanation}
-        </>
-      }
-      options={options.map((option, optionIndex) => ({
-        value: String(optionIndex),
-        label: option,
-        accessibleLabel: option,
-      }))}
-    />
   );
 }
 

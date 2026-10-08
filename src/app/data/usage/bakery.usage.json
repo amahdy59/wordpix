@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use common the bakery 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -112,38 +112,45 @@
       ]
     },
     "reading": {
-      "title": "The Bakery: Mini Dialogue",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with white bread, whole wheat bread, and baguette. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with sourdough, rye bread, and pita. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Bakery 1: A short reading",
+      "text": "Maya stops at the bakery before work. She buys a baguette for lunch and whole wheat bread for home. A croissant and a cinnamon roll are on the counter, but she chooses a muffin with her coffee. The baker puts the bread in one bag and the muffin in another.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "White Bread"
+        "prompt": "During a routine the bakery task, an adult compares White Bread, Whole Wheat Bread, Baguette. The person selects White Bread for the next step.\nWhich option does the person select for the next step?",
+        "answer": "White Bread",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sourdough"
+        "prompt": "During a routine the bakery task, an adult compares Sourdough, Rye Bread, Pita. The person selects Sourdough for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sourdough",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Focaccia"
+        "prompt": "During a routine the bakery task, an adult compares Focaccia, Ciabatta, Brioche. The person selects Focaccia for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Focaccia",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flatbread"
+        "prompt": "During a routine the bakery task, an adult compares Flatbread, Croissant, Muffin. The person selects Flatbread for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flatbread",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Donut"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "White Bread"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Baguette"
+        "prompt": "During a routine the bakery task, an adult compares Donut, Danish, Cinnamon Roll. The person selects Donut for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Donut",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +159,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Water Dish” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya choose with her coffee?",
+        "answer": "A muffin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -208,8 +222,8 @@
     "usage": {
       "goal": "Learn to use common the bakery 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -274,38 +288,45 @@
       ]
     },
     "reading": {
-      "title": "The Bakery: Simple Message",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with éclair, scone, and strudel. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with macaron, profiterole, and birthday cake. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Bakery 2: A short reading",
+      "text": "Omar orders a birthday cake for his sister. She likes chocolate cake, but he chooses cheesecake this time. While he waits, he sees an éclair, a scone, and a lemon tart in the display case. He buys the lemon tart for himself and asks when the birthday cake will be ready.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Éclair"
+        "prompt": "During a routine the bakery task, an adult compares Éclair, Scone, Strudel. The person selects Éclair for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Éclair",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Macaron"
+        "prompt": "During a routine the bakery task, an adult compares Macaron, Profiterole, Birthday Cake. The person selects Macaron for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Macaron",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wedding Cake"
+        "prompt": "During a routine the bakery task, an adult compares Wedding Cake, Cupcake, Cheesecake. The person selects Wedding Cake for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Wedding Cake",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chocolate Cake"
+        "prompt": "During a routine the bakery task, an adult compares Chocolate Cake, Carrot Cake, Apple Pie. The person selects Chocolate Cake for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chocolate Cake",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cherry Pie"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Éclair"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Strudel"
+        "prompt": "During a routine the bakery task, an adult compares Cherry Pie, Lemon Tart, Brownie. The person selects Cherry Pie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cherry Pie",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +335,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “White Bread” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which cake does Omar choose for his sister?",
+        "answer": "Cheesecake",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -370,8 +398,8 @@
     "usage": {
       "goal": "Learn to use common the bakery 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -436,38 +464,45 @@
       ]
     },
     "reading": {
-      "title": "The Bakery: Notice-Style Text",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chocolate chip cookie, sugar cookie, and gingerbread. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with shortbread, oatmeal cookie, and wafer. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Bakery 3: A short reading",
+      "text": "Maya wants to bake a chocolate chip cookie. She buys flour, sugar, butter, and eggs. At home, she mixes the ingredients and shapes the dough. She also has a packet of crackers and a pretzel for lunch. The cookies are for her friends, so she keeps them in a separate box.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chocolate Chip Cookie"
+        "prompt": "During a routine the bakery task, an adult compares Chocolate Chip Cookie, Sugar Cookie, Gingerbread. The person selects Chocolate Chip Cookie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chocolate Chip Cookie",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shortbread"
+        "prompt": "During a routine the bakery task, an adult compares Shortbread, Oatmeal Cookie, Wafer. The person selects Shortbread for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shortbread",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Biscuit"
+        "prompt": "During a routine the bakery task, an adult compares Biscuit, Pretzel, Cracker. The person selects Biscuit for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Biscuit",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Granola Bar"
+        "prompt": "During a routine the bakery task, an adult compares Granola Bar, Flour, Sugar. The person selects Granola Bar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Granola Bar",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Butter"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Chocolate Chip Cookie"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Gingerbread"
+        "prompt": "During a routine the bakery task, an adult compares Butter, Eggs, Yeast. The person selects Butter for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Butter",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +511,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Éclair” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who are Maya's cookies for?",
+        "answer": "Her friends",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -532,8 +574,8 @@
     "usage": {
       "goal": "Learn to use common the bakery 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -598,38 +640,45 @@
       ]
     },
     "reading": {
-      "title": "The Bakery: Short Description",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with baking powder, chocolate, and vanilla. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with cream, cocoa powder, and cinnamon. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "The Bakery 4: A short reading",
+      "text": "The baker adds baking powder and vanilla to the mixture. He uses a whisk, then a spatula to fill the muffin tin. He puts it in the oven and cleans the mixer. When the muffins cool, he adds cream with a piping bag. The chocolate muffins go on a baking tray near the counter.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Baking Powder"
+        "prompt": "During a routine the bakery task, an adult compares Baking Powder, Chocolate, Vanilla. The person selects Baking Powder for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Baking Powder",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cream"
+        "prompt": "During a routine the bakery task, an adult compares Cream, Cocoa Powder, Cinnamon. The person selects Cream for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cream",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Honey"
+        "prompt": "During a routine the bakery task, an adult compares Honey, Oven, Mixer. The person selects Honey for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Honey",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rolling Pin"
+        "prompt": "During a routine the bakery task, an adult compares Rolling Pin, Baking Tray, Whisk. The person selects Rolling Pin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Rolling Pin",
+        "contextTag": "scene-4",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Spatula"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Baking Powder"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Vanilla"
+        "prompt": "During a routine the bakery task, an adult compares Spatula, Piping Bag, Muffin Tin. The person selects Spatula for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Spatula",
+        "contextTag": "scene-5",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -638,6 +687,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Chocolate Chip Cookie” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does the baker use to add cream?",
+        "answer": "A piping bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -730,16 +786,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cooling Rack"
+        "prompt": "During a routine the bakery task, an adult compares Cooling Rack, Bread Basket, Apron. The person selects Cooling Rack for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cooling Rack",
+        "contextTag": "scene-1",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Timer"
+        "prompt": "During a routine the bakery task, an adult compares Timer, Bread, Cake. The person selects Timer for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Timer",
+        "contextTag": "scene-2",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cookie"
+        "prompt": "During a routine the bakery task, an adult compares Cookie, Pie, Egg. The person selects Cookie for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cookie",
+        "contextTag": "scene-3",
+        "responseMode": "short-answer",
+        "questionType": "meaning"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "منصة عرض الأزياء",
       "خلف الكواليس",
-      "غرفة يسمى «فرونت روو»",
+      "الصف الأمامي",
       "هيكل إضاءة",
       "نظام صوت",
       "خلفية",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Rehearsal through a realistic adult task; include Rehearsal, Hair Styling, and Makeup naturally where visually appropriate, but make the real-world use of Rehearsal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Update: The Runway Show",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Catwalk"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Catwalk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sound System"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Sound System",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Press Area"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "Press Area",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rehearsal"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Rehearsal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -195,7 +208,7 @@
       "ارتداء الملابس",
       "تشكيلة",
       "تصميم الحركات",
-      "جزء يسمى «موسيك سيليكتيون»",
+      "اختيار الموسيقى",
       "دعوات",
       "أسبوع الموضة",
       "باريس",
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Label as the central item; include Label, House, and Maison naturally where visually appropriate, but make the real-world use of Label the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Runway Show",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dressing"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Dressing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Invitations"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Invitations",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "New York"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "New York",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Label"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Label",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -405,7 +431,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Street Style as the central item; include Street Style, Red Carpet, and Fashion Editor naturally where visually appropriate, but make the real-world use of Street Style the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Before You Begin: The Runway Show",
@@ -414,16 +441,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Fashion Editor"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Fashion Editor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Review"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Review",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Street Style"
+        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Street Style",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

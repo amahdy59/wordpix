@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "مخطط",
       "منقط",
-      "مربعات متقاطعة",
-      "مربعات",
+      "نقشة خطوط متقاطعة",
+      "ذو مربعات متناوبة",
       "زهري",
       "نقشة بيزلي",
       "هندسي",
       "تجريدي",
       "تمويه",
-      "صباغة بالعقد والربط",
-      "نقشة متعرجة",
+      "صباغة بالربط",
+      "نقشة عظم السمكة",
       "نقشة قدم الكلب",
-      "نقشة معينات",
-      "نقشة ترتان",
-      "نقشة مربعات صغيرة"
+      "نقشة معينات متداخلة",
+      "نقشة اسكتلندية",
+      "نسيج بمربعات صغيرة"
     ],
     "usage": {
       "goal": "Learn to use common patterns & textures 1 vocabulary to handle a familiar adult everyday task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Argyle, Tartan, Gingham. The selected item or situation is best described as argyle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Argyle, Tartan, Gingham in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Patterns & Textures: Short Description",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Striped"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Striped, Polka Dot, Plaid. The selected item or situation is best described as striped.\nWhich description best fits the selected item or situation?",
+        "answer": "Striped",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Checkered"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Checkered, Floral, Paisley. The selected item or situation is best described as checkered.\nWhich description best fits the selected item or situation?",
+        "answer": "Checkered",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Geometric"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Geometric, Abstract, Camouflage. The selected item or situation is best described as geometric.\nWhich description best fits the selected item or situation?",
+        "answer": "Geometric",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tie-Dye"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Tie-Dye, Herringbone, Houndstooth. The selected item or situation is best described as tie-dye.\nWhich description best fits the selected item or situation?",
+        "answer": "Tie-Dye",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Argyle"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Argyle, Tartan, Gingham. The selected item or situation is best described as argyle.\nWhich description best fits the selected item or situation?",
+        "answer": "Argyle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -189,20 +205,20 @@
       "Glossy"
     ],
     "targetWordsArabic": [
-      "مخطط بخطوط رفيعة",
-      "نقشة شيفرون",
-      "دمشقي",
-      "نقشة توال",
+      "خطوط رفيعة",
+      "نقشة متعرجة على شكل حرف V",
+      "نسيج دمشقي",
+      "قماش تجريبي أو مطبوع",
       "إيكات؛ نسيج مصبوغ قبل الحياكة",
       "ناعم",
       "خشن",
-      "محبب",
+      "ذو نتوءات",
       "طري",
       "صلب",
-      "وبرى",
-      "حريري",
-      "حبيبي",
-      "مطفي",
+      "زغبي",
+      "حريري الملمس",
+      "حبيبي الملمس",
+      "غير لامع",
       "لامع"
     ],
     "usage": {
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Grainy, Matte, Glossy. The selected item or situation is best described as grainy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Grainy, Matte, Glossy in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Patterns & Textures: Mini Dialogue",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pinstripe"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Pinstripe, Chevron, Damask. The selected item or situation is best described as pinstripe.\nWhich description best fits the selected item or situation?",
+        "answer": "Pinstripe",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toile"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Toile, Ikat, Smooth. The selected item or situation is best described as toile.\nWhich description best fits the selected item or situation?",
+        "answer": "Toile",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rough"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Rough, Bumpy, Soft. The selected item or situation is best described as rough.\nWhich description best fits the selected item or situation?",
+        "answer": "Rough",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hard"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Hard, Fuzzy, Silky. The selected item or situation is best described as hard.\nWhich description best fits the selected item or situation?",
+        "answer": "Hard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grainy"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Grainy, Matte, Glossy. The selected item or situation is best described as grainy.\nWhich description best fits the selected item or situation?",
+        "answer": "Grainy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -347,15 +379,15 @@
     ],
     "targetWordsArabic": [
       "مصقول",
-      "مصقول بالفرشاة",
+      "معالج بالفرشاة",
       "مطروق",
       "محفور",
-      "بارز",
-      "ذو ملمس",
-      "مضلّع",
+      "بارز النقش",
+      "ذو ملمس بارز",
+      "مضلع",
       "منسوج",
       "محبوك",
-      "مبطن"
+      "مبطن بخياطة"
     ],
     "usage": {
       "goal": "Learn to use common patterns & textures 3 vocabulary to handle a familiar adult everyday task.",
@@ -401,7 +433,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Quilted",
+          "targetWords": ["Quilted"],
           "scenario": "An adult compares three possible descriptions in a patterns & textures context: Quilted, Polished, Brushed. The selected item or situation is best described as quilted.",
           "check": {
             "question": "Which description best fits the selected item or situation?",
@@ -411,7 +443,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Quilted, Polished, Brushed. The selected item or situation is best described as quilted. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Quilted in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Patterns & Textures: Simple Message",
@@ -420,20 +453,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Polished"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Polished, Brushed, Hammered. The selected item or situation is best described as polished.\nWhich description best fits the selected item or situation?",
+        "answer": "Polished",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Etched"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Etched, Embossed, Textured. The selected item or situation is best described as etched.\nWhich description best fits the selected item or situation?",
+        "answer": "Etched",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ribbed"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Ribbed, Woven, Knitted. The selected item or situation is best described as ribbed.\nWhich description best fits the selected item or situation?",
+        "answer": "Ribbed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Quilted"
+        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Quilted, Polished, Brushed. The selected item or situation is best described as quilted.\nWhich description best fits the selected item or situation?",
+        "answer": "Quilted",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

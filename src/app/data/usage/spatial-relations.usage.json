@@ -30,10 +30,10 @@
       "كبير",
       "صغير",
       "كبير",
-      "ضئيل جدا",
+      "ضئيل جدًا",
       "ضخم",
       "هائل",
-      "مصغر",
+      "مصغّر",
       "متوسط",
       "واسع",
       "ضيق",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use common spatial relations 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to spatial relations.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Adjacent, Distant, Nearby. The correct relationship in the scene is adjacent. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Adjacent, Distant, Nearby in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Spatial Relations: Short Description",
-      "text": "Maya is in a situation connected to spatial relations. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with big, small, and large. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tiny, huge, and enormous. Each term belongs to a different part of the care process.",
+      "title": "Spatial Relations 1: A short reading",
+      "text": "Maya compares two meeting rooms. One is large and wide, while the other is small and narrow. The large room is close to the entrance. The smaller room is far away, beside the storage area. Maya chooses the nearby room because visitors will find it more easily. Omar helps her arrange the chairs.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Big"
+        "prompt": "In a practical location task, an adult compares these position expressions: Big, Small, Large. The correct relationship in the scene is big.\nWhich option correctly describes the position in the scene?",
+        "answer": "Big",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tiny"
+        "prompt": "In a practical location task, an adult compares these position expressions: Tiny, Huge, Enormous. The correct relationship in the scene is tiny.\nWhich option correctly describes the position in the scene?",
+        "answer": "Tiny",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Miniature"
+        "prompt": "In a practical location task, an adult compares these position expressions: Miniature, Medium, Wide. The correct relationship in the scene is miniature.\nWhich option correctly describes the position in the scene?",
+        "answer": "Miniature",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Narrow"
+        "prompt": "In a practical location task, an adult compares these position expressions: Narrow, Close, Far Away. The correct relationship in the scene is narrow.\nWhich option correctly describes the position in the scene?",
+        "answer": "Narrow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Adjacent"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Big"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Large"
+        "prompt": "In a practical location task, an adult compares these position expressions: Adjacent, Distant, Nearby. The correct relationship in the scene is adjacent.\nWhich option correctly describes the position in the scene?",
+        "answer": "Adjacent",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Rv” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya choose the nearby meeting room?",
+        "answer": "Visitors will find it more easily",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -189,27 +204,27 @@
       "Flat"
     ],
     "targetWordsArabic": [
-      "عن بعد",
+      "عن بُعد",
       "قريب",
       "في متناول اليد",
-      "بعيد عن المتناول",
-      "على بعد ذراع",
+      "بعيد عن متناول اليد",
+      "على بُعد ذراع",
       "مرتفع",
       "منخفض",
       "طويل",
       "قصير",
-      "داكن",
+      "عميق",
       "ضحل",
       "مرتفع",
       "غائر",
-      "مستو",
-      "مسطح"
+      "مستوٍ",
+      "مسطّح"
     ],
     "usage": {
       "goal": "Learn to use common spatial relations 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to spatial relations.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Sunken, Level, Flat. The correct relationship in the scene is sunken. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Sunken, Level, Flat in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Spatial Relations: Mini Dialogue",
-      "text": "Maya is in a situation connected to spatial relations. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with remote, proximate, and within reach. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with out of reach, arm's length, and high. Each term belongs to a different part of the care process.",
+      "title": "Spatial Relations 2: A short reading",
+      "text": "Omar moves a box from a high shelf to a low one. It was out of reach, but now it is within reach. Maya places a shallow tray beside a deep bowl. They keep the table level and flat. A tall cabinet stays at the back so it will not block the window.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Remote"
+        "prompt": "In a practical location task, an adult compares these position expressions: Remote, Proximate, Within Reach. The correct relationship in the scene is remote.\nWhich option correctly describes the position in the scene?",
+        "answer": "Remote",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Out of Reach"
+        "prompt": "In a practical location task, an adult compares these position expressions: Out of Reach, Arm's Length, High. The correct relationship in the scene is out of reach.\nWhich option correctly describes the position in the scene?",
+        "answer": "Out of Reach",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Low"
+        "prompt": "In a practical location task, an adult compares these position expressions: Low, Tall, Short. The correct relationship in the scene is low.\nWhich option correctly describes the position in the scene?",
+        "answer": "Low",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Deep"
+        "prompt": "In a practical location task, an adult compares these position expressions: Deep, Shallow, Elevated. The correct relationship in the scene is deep.\nWhich option correctly describes the position in the scene?",
+        "answer": "Deep",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunken"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Remote"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Within Reach"
+        "prompt": "In a practical location task, an adult compares these position expressions: Sunken, Level, Flat. The correct relationship in the scene is sunken.\nWhich option correctly describes the position in the scene?",
+        "answer": "Sunken",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Big” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does the tall cabinet stay at the back?",
+        "answer": "So it will not block the window",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -349,19 +379,19 @@
       "أفقي",
       "رأسي",
       "قطري",
-      "متواز",
+      "متوازٍ",
       "متعامد",
-      "مصطف",
+      "مصطفّ",
       "متناثر",
-      "متجمع",
-      "مكدس",
+      "متجمّع",
+      "مكدّس",
       "متعدد الطبقات"
     ],
     "usage": {
       "goal": "Learn to use common spatial relations 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to spatial relations.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -401,7 +431,7 @@
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Layered",
+          "targetWords": ["Layered"],
           "scenario": "In a practical location task, an adult compares these position expressions: Layered, Horizontal, Vertical. The correct relationship in the scene is layered.",
           "check": {
             "question": "Which option correctly describes the position in the scene?",
@@ -411,37 +441,42 @@
           "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Layered, Horizontal, Vertical. The correct relationship in the scene is layered. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Layered in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Spatial Relations: Simple Message",
-      "text": "Maya is in a situation connected to spatial relations. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with horizontal, vertical, and diagonal. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with parallel, perpendicular, and aligned. Each term belongs to a different part of the care process.",
+      "title": "Spatial Relations 3: A short reading",
+      "text": "Maya arranges papers in stacked trays. The files are aligned, but loose notes are scattered across the desk. Omar draws a horizontal line and a vertical line on the board. Then he adds a diagonal arrow. They compare parallel and perpendicular lines before putting the notes into clustered groups for the meeting.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Horizontal"
+        "prompt": "In a practical location task, an adult compares these position expressions: Horizontal, Vertical, Diagonal. The correct relationship in the scene is horizontal.\nWhich option correctly describes the position in the scene?",
+        "answer": "Horizontal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Parallel"
+        "prompt": "In a practical location task, an adult compares these position expressions: Parallel, Perpendicular, Aligned. The correct relationship in the scene is parallel.\nWhich option correctly describes the position in the scene?",
+        "answer": "Parallel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scattered"
+        "prompt": "In a practical location task, an adult compares these position expressions: Scattered, Clustered, Stacked. The correct relationship in the scene is scattered.\nWhich option correctly describes the position in the scene?",
+        "answer": "Scattered",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Layered"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Horizontal"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Diagonal"
+        "prompt": "In a practical location task, an adult compares these position expressions: Layered, Horizontal, Vertical. The correct relationship in the scene is layered.\nWhich option correctly describes the position in the scene?",
+        "answer": "Layered",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -450,6 +485,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Remote” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which three line directions does Omar draw?",
+        "answer": "Horizontal, vertical, and diagonal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

@@ -33,13 +33,13 @@
       "خطاب",
       "دبلوم",
       "مصافحة",
-      "موكب",
+      "موكب الدخول",
       "موكب الخروج",
       "تصفيق",
       "موسيقى",
-      "قبعة بواق",
+      "قبعة بواقٍ",
       "ثوب طويل",
-      "شرابة قبعة التخرج",
+      "شرابة القبعة",
       "حبل شرف للتخرج",
       "وشاح تخرج"
     ],
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Tassel, Honor Cord, Stole. The person selects Tassel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Tassel, Honor Cord, Stole in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Graduation: Email",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stage"
+        "prompt": "During a routine the graduation task, an adult compares Stage, Podium, Microphone. The person selects Stage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Stage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Speech"
+        "prompt": "During a routine the graduation task, an adult compares Speech, Diploma, Handshake. The person selects Speech for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Speech",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Procession"
+        "prompt": "During a routine the graduation task, an adult compares Procession, Recessional, Applause. The person selects Procession for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Procession",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Music"
+        "prompt": "During a routine the graduation task, an adult compares Music, Cap, Gown. The person selects Music for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Music",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tassel"
+        "prompt": "During a routine the graduation task, an adult compares Tassel, Honor Cord, Stole. The person selects Tassel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tassel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -193,21 +209,21 @@
       "Commencement"
     ],
     "targetWordsArabic": [
-      "وشاح",
+      "وشاح عريض",
       "أحذية رسمية",
       "خاتم التخرج",
       "دبوس",
       "ميدالية",
       "رمي قبعات التخرج",
-      "كتاب التخرج السنوي",
+      "كتاب الذكريات السنوي",
       "صورة الصف",
-      "الأول على الدفعة",
-      "الثاني على الدفعة",
-      "مرتبة شرف",
-      "بمرتبة الشرف",
+      "الخريج الأول المتحدث في الحفل",
+      "الخريج الثاني في الترتيب",
+      "مرتبة الشرف",
+      "بتقدير امتياز",
       "خريجون",
-      "الجامعة الأم",
-      "حفل التخرج"
+      "الجامعة أو المدرسة التي تخرج منها الشخص",
+      "حفل تخرج"
     ],
     "usage": {
       "goal": "Learn to use the graduation 2 vocabulary to exchange practical information and complete a routine adult-life task.",
@@ -275,7 +291,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Alumni, Alma Mater, Commencement. The person selects Alumni for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Alumni, Alma Mater, Commencement in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Graduation: Personal Message",
@@ -284,24 +301,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sash"
+        "prompt": "During a routine the graduation task, an adult compares Sash, Dress Shoes, Class Ring. The person selects Sash for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pin"
+        "prompt": "During a routine the graduation task, an adult compares Pin, Medal, Cap Toss. The person selects Pin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Pin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Yearbook"
+        "prompt": "During a routine the graduation task, an adult compares Yearbook, Class Photo, Valedictorian. The person selects Yearbook for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Yearbook",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Salutatorian"
+        "prompt": "During a routine the graduation task, an adult compares Salutatorian, Honors, Cum Laude. The person selects Salutatorian for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Salutatorian",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Alumni"
+        "prompt": "During a routine the graduation task, an adult compares Alumni, Alma Mater, Commencement. The person selects Alumni for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Alumni",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -367,7 +399,7 @@
       "بطاقة",
       "زهور",
       "شمبانيا",
-      "يحمص",
+      "يحمّص",
       "عشاء",
       "درجة علمية",
       "تخصص رئيسي",
@@ -441,7 +473,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Minor, Gpa, Transcript. The person selects Minor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Minor, Gpa, Transcript in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Graduation: Short Dialogue",
@@ -450,24 +483,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Party"
+        "prompt": "During a routine the graduation task, an adult compares Party, Cake, Balloons. The person selects Party for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Party",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Banner"
+        "prompt": "During a routine the graduation task, an adult compares Banner, Gift, Card. The person selects Banner for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Banner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Flowers"
+        "prompt": "During a routine the graduation task, an adult compares Flowers, Champagne, Toast. The person selects Flowers for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flowers",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dinner"
+        "prompt": "During a routine the graduation task, an adult compares Dinner, Degree, Major. The person selects Dinner for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dinner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Minor"
+        "prompt": "During a routine the graduation task, an adult compares Minor, Gpa, Transcript. The person selects Minor for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Minor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",
@@ -525,10 +573,10 @@
       "Moving"
     ],
     "targetWordsArabic": [
-      "رسالة ماجستير",
-      "أطروحة دكتوراه",
+      "رسالة علمية",
+      "أطروحة",
       "فصل دراسي",
-      "ساعة معتمدة",
+      "وحدة دراسية",
       "عميد",
       "فخور",
       "متحمس",
@@ -607,7 +655,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Internship, Gap Year, Moving. The person selects Internship for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Internship, Gap Year, Moving in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Graduation: Everyday Description",
@@ -616,24 +665,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thesis"
+        "prompt": "During a routine the graduation task, an adult compares Thesis, Dissertation, Semester. The person selects Thesis for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Thesis",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Credit"
+        "prompt": "During a routine the graduation task, an adult compares Credit, Dean, Proud. The person selects Credit for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Credit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Excited"
+        "prompt": "During a routine the graduation task, an adult compares Excited, Nervous, Nostalgic. The person selects Excited for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Excited",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Grateful"
+        "prompt": "During a routine the graduation task, an adult compares Grateful, Job Search, Graduate School. The person selects Grateful for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Grateful",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Internship"
+        "prompt": "During a routine the graduation task, an adult compares Internship, Gap Year, Moving. The person selects Internship for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Internship",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Specific information: Which target word is linked to the main task?",

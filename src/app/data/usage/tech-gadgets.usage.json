@@ -30,16 +30,16 @@
       "هاتف ذكي",
       "جهاز لوحي (تابلت)",
       "حاسوب محمول (لابتوب)",
-      "جهاز يسمى «سمارتواتتش»",
+      "ساعة ذكية",
       "سماعات أذن لاسلكية",
       "قارئ كتب إلكترونية",
       "شاحن محمول",
       "موزع USB-C",
-      "أداة يسمى «ستيلوس»",
-      "-",
+      "قلم لمس",
+      "كاميرا ويب",
       "مكبر صوت ذكي",
       "شاشة ذكية",
-      "منظم حرارة ذكي",
+      "منظّم حرارة ذكي",
       "قفل ذكي",
       "مكنسة روبوتية"
     ],
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smart Thermostat as the central item; include Smart Thermostat, Smart Lock, and Robot Vacuum naturally where visually appropriate, but make the real-world use of Smart Thermostat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Tech & Gadgets",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smartphone"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone, Tablet, Laptop, and Smartwatch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smartphone",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wireless Earbuds"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wireless Earbuds, E-Reader, Portable Charger, and USB-C Hub and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wireless Earbuds",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stylus"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Webcam, Smart Speaker, and Smart Display and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stylus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smart Thermostat"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Smart Lock, and Robot Vacuum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smart Thermostat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -200,7 +213,7 @@
       "جهاز مراقبة صحية",
       "ساعة GPS",
       "كاميرا حركة",
-      "كاميرا ترتدى على الجسم",
+      "كاميرا تُرتدى على الجسم",
       "متتبع نوم",
       "دعامة لتصحيح الوضعية"
     ],
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Body Camera as the central item; include Body Camera, Sleep Tracker, and Posture Corrector naturally where visually appropriate, but make the real-world use of Body Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Preparing for the Next Task: Tech & Gadgets",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smart Bulb"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Bulb, Security Camera, Smart Plug, and Video Doorbell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smart Bulb",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smart Scale"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Scale, Fitness Tracker, VR Headset, and AR Glasses and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Smart Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Smart Ring"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Ring, Health Monitor, GPS Watch, and Action Camera and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "Smart Ring",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Body Camera"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Body Camera, Sleep Tracker, and Posture Corrector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Body Camera",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -345,9 +371,9 @@
     ],
     "targetWordsArabic": [
       "لوحة مفاتيح ميكانيكية",
-      "فأرة مريحة هندسيا",
+      "فأرة مريحة هندسيًا",
       "شاشة مراقبة",
-      "جهاز يسمى «دوكينج ستاتيون»",
+      "محطة توصيل حاسوب محمول",
       "قرص SSD خارجي",
       "إضاءة كاميرا ويب",
       "ميكروفون",
@@ -397,7 +423,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Standing Desk Mat as the central item; include Standing Desk Mat, Cable Organizer, and Mechanical Keyboard naturally where visually appropriate, but make the real-world use of Standing Desk Mat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Tech & Gadgets",
@@ -406,16 +433,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mechanical Keyboard"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mechanical Keyboard, Ergonomic Mouse, Monitor, and Docking Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mechanical Keyboard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "External SSD"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare External SSD, Webcam Light, Microphone, and Green Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "External SSD",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Standing Desk Mat"
+        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Desk Mat, and Cable Organizer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Standing Desk Mat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",

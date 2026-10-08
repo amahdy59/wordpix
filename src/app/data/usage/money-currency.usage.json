@@ -30,18 +30,18 @@
       "عملة معدنية",
       "ورقة نقدية",
       "بنس",
-      "خمسة سنتات",
-      "عشرة سنتات",
-      "ربع سنة",
+      "عملة أمريكية بقيمة خمسة سنتات",
+      "عملة أمريكية بقيمة عشرة سنتات",
+      "عملة أمريكية بقيمة خمسة وعشرين سنتًا",
       "دولار",
       "يورو",
       "جنيه إسترليني",
-      "ين",
-      "حساب بنك",
+      "ين ياباني",
+      "حساب مصرفي",
       "مدخرات",
-      "حساب جار",
+      "حساب جارٍ",
       "إيداع",
-      "سحب"
+      "سحب نقدي"
     ],
     "usage": {
       "goal": "Learn to use common money & currency 1 vocabulary to handle a familiar adult everyday task.",
@@ -109,7 +109,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a money & currency context illustrating this situation: During a routine money & currency task, an adult compares Checking, Deposit, Withdrawal. The person selects Checking for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult money & currency scene showing lesson-related items or actions including Checking, Deposit, Withdrawal in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Money & Currency: Mini Dialogue",
@@ -118,24 +119,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Coin"
+        "prompt": "During a routine money & currency task, an adult compares Coin, Bill, Penny. The person selects Coin for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Coin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Nickel"
+        "prompt": "During a routine money & currency task, an adult compares Nickel, Dime, Quarter. The person selects Nickel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Nickel",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dollar"
+        "prompt": "During a routine money & currency task, an adult compares Dollar, Euro, Pound. The person selects Dollar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Dollar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Yen"
+        "prompt": "During a routine money & currency task, an adult compares Yen, Bank Account, Savings. The person selects Yen for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Yen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Checking"
+        "prompt": "During a routine money & currency task, an adult compares Checking, Deposit, Withdrawal. The person selects Checking for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Checking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -190,16 +206,16 @@
     ],
     "targetWordsArabic": [
       "جهاز صراف آلي",
-      "توازن",
+      "رصيد",
       "كشف حساب",
-      "فائدة",
+      "فائدة مالية",
       "تحويل",
       "نقد",
       "بطاقة ائتمان",
-      "بطاقة خصم",
+      "بطاقة خصم مباشر",
       "شيك",
       "إيصال",
-      "الباقي من النقود",
+      "باقي النقود",
       "إكرامية",
       "فاتورة",
       "محفظة",
@@ -271,7 +287,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a money & currency context illustrating this situation: During a routine money & currency task, an adult compares Invoice, Wallet, Price. The person selects Invoice for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult money & currency scene showing lesson-related items or actions including Invoice, Wallet, Price in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Money & Currency: Simple Message",
@@ -280,24 +297,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "ATM"
+        "prompt": "During a routine money & currency task, an adult compares ATM, Balance, Statement. The person selects ATM for the next step.\nWhich option does the person select for the next step?",
+        "answer": "ATM",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Interest"
+        "prompt": "During a routine money & currency task, an adult compares Interest, Transfer, Cash. The person selects Interest for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Interest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Credit Card"
+        "prompt": "During a routine money & currency task, an adult compares Credit Card, Debit Card, Check. The person selects Credit Card for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Credit Card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Receipt"
+        "prompt": "During a routine money & currency task, an adult compares Receipt, Change, Tip. The person selects Receipt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Receipt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Invoice"
+        "prompt": "During a routine money & currency task, an adult compares Invoice, Wallet, Price. The person selects Invoice for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Invoice",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -356,9 +388,9 @@
       "تخفيضات",
       "ضريبة",
       "ميزانية",
-      "مصروف",
+      "نفقة",
       "ميسور التكلفة",
-      "غالي",
+      "غالي الثمن",
       "رخيص",
       "دخل",
       "راتب",
@@ -433,7 +465,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a money & currency context illustrating this situation: During a routine money & currency task, an adult compares Debt, Loan, Mortgage. The person selects Debt for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult money & currency scene showing lesson-related items or actions including Debt, Loan, Mortgage in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Money & Currency: Notice-Style Text",
@@ -442,24 +475,39 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cost"
+        "prompt": "During a routine money & currency task, an adult compares Cost, Discount, Sale. The person selects Cost for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cost",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tax"
+        "prompt": "During a routine money & currency task, an adult compares Tax, Budget, Expense. The person selects Tax for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Tax",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Affordable"
+        "prompt": "During a routine money & currency task, an adult compares Affordable, Expensive, Cheap. The person selects Affordable for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Affordable",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Income"
+        "prompt": "During a routine money & currency task, an adult compares Income, Salary, Wage. The person selects Income for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Income",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Debt"
+        "prompt": "During a routine money & currency task, an adult compares Debt, Loan, Mortgage. The person selects Debt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Debt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",
@@ -517,7 +565,7 @@
         },
         {
           "chunkNumber": 2,
-          "targetWords": "Loss",
+          "targetWords": ["Loss"],
           "scenario": "During a routine money & currency task, an adult compares Loss, Insurance, Investment. The person selects Loss for the next step.",
           "check": {
             "question": "Which option does the person select for the next step?",
@@ -527,7 +575,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a money & currency context illustrating this situation: During a routine money & currency task, an adult compares Loss, Insurance, Investment. The person selects Loss for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult money & currency scene showing lesson-related items or actions including Loss in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Money & Currency: Short Description",
@@ -536,12 +585,18 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Insurance"
+        "prompt": "During a routine money & currency task, an adult compares Insurance, Investment, Profit. The person selects Insurance for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Insurance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Loss"
+        "prompt": "During a routine money & currency task, an adult compares Loss, Insurance, Investment. The person selects Loss for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Loss",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Reading detail: Which target word is used first in the text?",

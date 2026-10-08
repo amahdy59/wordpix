@@ -1,0 +1,125 @@
+{
+  "grains-dairy": {
+    "oats": { "definition": "A cereal grain commonly used in porridge and baked foods." },
+    "quinoa": { "definition": "Small edible seeds cooked and used in meals like a grain." },
+    "buckwheat": { "definition": "Edible seeds used like a grain or ground into flour." },
+    "toast": {
+      "definition": "Bread heated until its surface becomes brown and crisp.",
+      "arabicTranslation": "خبز محمّص"
+    },
+    "spaghetti": { "definition": "Pasta made in long thin strands." },
+    "ramen": { "definition": "Japanese-style wheat noodles, often served in broth." },
+    "yogurt": { "definition": "A thick dairy food made by fermenting milk with bacteria." },
+    "sour-cream": { "arabicTranslation": "كريمة حامضة" },
+    "ice-cream": { "arabicTranslation": "آيس كريم" },
+    "tofu": { "definition": "A soft or firm food made by coagulating soy milk into curds." }
+  },
+  "meat-seafood": {
+    "chicken": { "definition": "Meat from a chicken, sold as a whole bird or in cuts." },
+    "turkey": {
+      "definition": "Meat from a turkey, sold as a whole bird or in cuts.",
+      "arabicTranslation": "لحم الديك الرومي"
+    },
+    "duck": { "arabicTranslation": "لحم البط" },
+    "goose": { "arabicTranslation": "لحم الأوز" },
+    "wing": {
+      "definition": "A poultry wing sold or served as a cut of meat.",
+      "arabicTranslation": "جناح دجاج"
+    },
+    "thigh": {
+      "definition": "The upper part of a poultry leg, sold as a cut of meat.",
+      "arabicTranslation": "فخذ دجاج"
+    },
+    "beef": { "definition": "Meat from cattle." },
+    "lamb": { "definition": "Meat from a young sheep." },
+    "roast": {
+      "definition": "A large cut of meat intended for cooking with dry heat.",
+      "arabicTranslation": "قطعة لحم للشواء"
+    },
+    "tuna": { "definition": "Meat from a large sea fish, commonly sold fresh or canned." },
+    "crab": { "definition": "A shellfish with a hard shell and claws, sold as food." },
+    "mussel": { "definition": "An edible shellfish with two dark elongated shells." },
+    "salami": { "definition": "A cured sausage, often sliced and eaten cold." },
+    "jerky": { "definition": "Strips of dried, seasoned meat." },
+    "fillet": { "definition": "A boneless portion of meat or fish." },
+    "chop": { "arabicTranslation": "قطعة لحم بعظم" },
+    "shank": { "definition": "A cut of meat from the lower part of an animal's leg." },
+    "diced": { "definition": "Cut into small cubes." }
+  },
+  "fabrics-textiles": {
+    "bamboo": {
+      "definition": "A textile made from fibers derived from bamboo plants.",
+      "arabicTranslation": "نسيج مشتق من الخيزران"
+    },
+    "jute": { "definition": "A strong plant fiber used to make coarse cloth, sacks, and rope." },
+    "alpaca": {
+      "definition": "A soft textile fiber obtained from alpacas, or fabric made from it."
+    },
+    "polyester": { "definition": "A synthetic fiber used to make fabrics and other products." },
+    "rayon": { "definition": "A manufactured fiber made from processed cellulose." },
+    "microfiber": { "definition": "Fabric made from very fine synthetic fibers." },
+    "brocade": { "definition": "A rich fabric with raised patterns woven into it." },
+    "weave": {
+      "definition": "The pattern in which threads are interlaced to form fabric.",
+      "arabicTranslation": "طريقة النسج"
+    },
+    "weight": { "definition": "How heavy a fabric is for a given area." },
+    "stretch": { "definition": "The ability of a fabric to extend when pulled." },
+    "breathability": {
+      "definition": "The ability of a fabric to allow air or moisture vapor to pass through."
+    },
+    "hand-wash": {
+      "definition": "To wash clothing by hand rather than in a machine.",
+      "arabicTranslation": "يغسل يدويًا"
+    },
+    "machine-wash": { "arabicTranslation": "يغسل في الغسالة" },
+    "dry-clean": { "arabicTranslation": "ينظف تنظيفًا جافًا" },
+    "iron": {
+      "definition": "To smooth wrinkles in fabric with a heated iron.",
+      "arabicTranslation": "يكوي"
+    },
+    "steam": {
+      "definition": "To use steam to refresh fabric or remove wrinkles.",
+      "arabicTranslation": "يعالج بالبخار"
+    },
+    "bleach": {
+      "definition": "To whiten fabric or remove color using a bleaching agent.",
+      "arabicTranslation": "يبيّض"
+    },
+    "line-dry": {
+      "definition": "To dry clothing by hanging it on a line.",
+      "arabicTranslation": "يجفف على حبل الغسيل"
+    },
+    "fabric-softener": { "definition": "A laundry product used to make washed fabric feel softer." }
+  },
+  "materials": {
+    "marble": {
+      "definition": "A hard stone with patterns or veins, used in buildings and sculpture."
+    },
+    "iron": { "arabicTranslation": "حديد" },
+    "gold": { "arabicTranslation": "ذهب" },
+    "silver": {
+      "definition": "A precious silvery-white metal used in jewelry and other products.",
+      "arabicTranslation": "فضة"
+    },
+    "bronze": { "arabicTranslation": "برونز" },
+    "linen": { "definition": "Fabric made from fibers of the flax plant." },
+    "denim": { "definition": "A strong cotton fabric commonly used to make jeans." },
+    "polyester": { "definition": "A synthetic fiber used to make fabrics and other products." },
+    "velvet": { "definition": "A fabric with a dense, soft raised surface." },
+    "fiberglass": {
+      "definition": "Fine glass fibers used in insulation or to reinforce other materials."
+    },
+    "silicone": {
+      "definition": "A heat-resistant synthetic material used in sealants, molds, and many other products."
+    },
+    "resin": {
+      "definition": "A natural or synthetic substance that can be used in coatings, adhesives, or molded products."
+    },
+    "plaster": { "arabicTranslation": "جبس" },
+    "insulation": {
+      "definition": "Material used to reduce the transfer of heat, sound, or electricity."
+    },
+    "mortar": { "arabicTranslation": "مونة بناء" }
+  }
+}

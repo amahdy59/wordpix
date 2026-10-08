@@ -18,13 +18,13 @@ export interface ExerciseFamilyTemplateProps {
 const measureByFamily: Record<ExerciseFamily, string> = {
   "visual-choice": "wp-container-content",
   "listening-speaking": "wp-container-reading",
-  "text-construction": "wp-container-reading",
+  "text-construction": "wp-container-content",
   "reading-context": "wp-container-reading",
 };
 
 /**
- * A stable five-zone exercise layout. Empty feedback and action zones retain
- * their place so answering never moves the activity the learner is using.
+ * Feedback follows the activity, so answering never moves the question.
+ * Media and answers share available desktop width without cropping evidence.
  */
 export function ExerciseFamilyTemplate({
   family,
@@ -59,17 +59,32 @@ export function ExerciseFamilyTemplate({
         )}
       </header>
 
-      {media && <div data-exercise-zone="media">{media}</div>}
-
-      <div data-exercise-zone="activity" role="group" aria-label={activityLabel}>
-        {activity}
+      <div
+        className={media ? "grid min-w-0 gap-4 lg:grid-cols-2 lg:items-center lg:gap-6" : "min-w-0"}
+      >
+        {media && (
+          <div data-exercise-zone="media" className="min-w-0">
+            {media}
+          </div>
+        )}
+        <div
+          data-exercise-zone="activity"
+          role="group"
+          aria-label={activityLabel}
+          className="min-w-0"
+        >
+          {activity}
+        </div>
       </div>
 
-      <div data-exercise-zone="feedback" className="min-h-[7.5rem]">
+      <div data-exercise-zone="feedback" className={feedback ? "" : "hidden"}>
         {feedback}
       </div>
 
-      <div data-exercise-zone="action" className="flex min-h-[3rem] items-center justify-end">
+      <div
+        data-exercise-zone="action"
+        className={action ? "flex min-h-11 items-center justify-end" : "hidden"}
+      >
         {action}
       </div>
     </section>

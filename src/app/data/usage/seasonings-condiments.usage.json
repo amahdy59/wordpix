@@ -30,7 +30,7 @@
       "ملح",
       "فلفل أسود",
       "بابريكا",
-      "قرفة (قرفة مطحونة / عيدان قرفة)",
+      "قرفة",
       "كمون",
       "كركم",
       "مسحوق الفلفل الحار",
@@ -46,8 +46,8 @@
     "usage": {
       "goal": "Learn to use common seasonings & condiments 1 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to seasonings & condiments.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,41 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a seasonings & condiments context illustrating this situation: During a routine seasonings & condiments task, an adult compares Thyme, Rosemary, Parsley. The person selects Thyme for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult seasonings & condiments scene showing lesson-related items or actions including Thyme, Rosemary, Parsley in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Seasonings & Condiments: Mini Dialogue",
-      "text": "Maya is in a situation connected to seasonings & condiments. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with salt, black pepper, and paprika. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with cinnamon, cumin, and turmeric. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Seasonings & Condiments 1: A short reading",
+      "text": "Omar tastes the soup and adds a little salt and black pepper. Maya chooses cumin and paprika for another dish. Cinnamon is for the dessert, so she keeps it separate. Fresh basil and parsley are on the counter. They label the spice jars before putting them back in the cupboard.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Seasonings & Condiments. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Salt"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Salt, Black Pepper, Paprika. The person selects Salt for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Salt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cinnamon"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Cinnamon, Cumin, Turmeric. The person selects Cinnamon for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cinnamon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chili Powder"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Chili Powder, Nutmeg, Clove. The person selects Chili Powder for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Chili Powder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cardamom"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Cardamom, Basil, Oregano. The person selects Cardamom for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cardamom",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Thyme"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Salt"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Paprika"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Thyme, Rosemary, Parsley. The person selects Thyme for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Thyme",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -152,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Beat” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which spice does Maya keep for dessert?",
+        "answer": "Cinnamon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -189,13 +204,13 @@
       "Salsa"
     ],
     "targetWordsArabic": [
-      "كزبرة",
+      "كزبرة خضراء",
       "شبت",
       "نعناع",
-      "ورقة نبات حجرة خدمة",
+      "ورق الغار",
       "مريمية",
       "كاتشب",
-      "خردلي",
+      "خردل",
       "مايونيز",
       "صلصة الصويا",
       "صلصة حارة",
@@ -208,8 +223,8 @@
     "usage": {
       "goal": "Learn to use common seasonings & condiments 2 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to seasonings & condiments.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -271,41 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a seasonings & condiments context illustrating this situation: During a routine seasonings & condiments task, an adult compares Teriyaki, Pesto, Salsa. The person selects Teriyaki for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult seasonings & condiments scene showing lesson-related items or actions including Teriyaki, Pesto, Salsa in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Seasonings & Condiments: Simple Message",
-      "text": "Maya is in a situation connected to seasonings & condiments. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with cilantro, dill, and mint. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with bay leaf, sage, and ketchup. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Seasonings & Condiments 2: A short reading",
+      "text": "Maya prepares a salad with dill and mint. Omar puts mustard and mayonnaise on the table for sandwiches. He also brings ketchup, but the soy sauce stays in the kitchen for dinner. A guest asks for hot sauce. Maya passes the bottle and explains that the salad already has dressing.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Seasonings & Condiments. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cilantro"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Cilantro, Dill, Mint. The person selects Cilantro for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Cilantro",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bay Leaf"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Bay Leaf, Sage, Ketchup. The person selects Bay Leaf for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Bay Leaf",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mustard"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Mustard, Mayonnaise, Soy Sauce. The person selects Mustard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Mustard",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hot Sauce"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Hot Sauce, Worcestershire, Barbecue Sauce. The person selects Hot Sauce for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Hot Sauce",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Teriyaki"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Cilantro"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Mint"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Teriyaki, Pesto, Salsa. The person selects Teriyaki for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Teriyaki",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -314,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Salt” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which sauce stays in the kitchen for dinner?",
+        "answer": "Soy sauce",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -351,8 +381,8 @@
       "Jelly"
     ],
     "targetWordsArabic": [
-      "زيت زيتونة",
-      "زيت خضروات",
+      "زيت الزيتون",
+      "زيت نباتي",
       "زيت جوز الهند",
       "زيت السمسم",
       "خل بلسمي",
@@ -365,13 +395,13 @@
       "عسل (عسل نحل)",
       "شراب القيقب",
       "مربى",
-      "هلام حلو"
+      "هلام الفاكهة"
     ],
     "usage": {
       "goal": "Learn to use common seasonings & condiments 3 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to seasonings & condiments.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -433,41 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a seasonings & condiments context illustrating this situation: During a routine seasonings & condiments task, an adult compares Maple Syrup, Jam, Jelly. The person selects Maple Syrup for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult seasonings & condiments scene showing lesson-related items or actions including Maple Syrup, Jam, Jelly in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Seasonings & Condiments: Notice-Style Text",
-      "text": "Maya is in a situation connected to seasonings & condiments. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with olive oil, vegetable oil, and coconut oil. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with sesame oil, balsamic vinegar, and red wine vinegar. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Seasonings & Condiments 3: A short reading",
+      "text": "Omar mixes olive oil with balsamic vinegar for a salad. Maya compares vegetable oil and coconut oil for cooking. She uses honey in her tea and saves the maple syrup for pancakes. They check which bottles are nearly empty and write a shopping list before putting everything away.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Seasonings & Condiments. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Olive Oil"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Olive Oil, Vegetable Oil, Coconut Oil. The person selects Olive Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Olive Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sesame Oil"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Sesame Oil, Balsamic Vinegar, Red Wine Vinegar. The person selects Sesame Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sesame Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Apple Cider Vinegar"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Apple Cider Vinegar, Rice Vinegar, White Vinegar. The person selects Apple Cider Vinegar for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Apple Cider Vinegar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Truffle Oil"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Truffle Oil, Sugar, Honey. The person selects Truffle Oil for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Truffle Oil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Maple Syrup"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Olive Oil"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Coconut Oil"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Maple Syrup, Jam, Jelly. The person selects Maple Syrup for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Maple Syrup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -476,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Cilantro” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya save for pancakes?",
+        "answer": "Maple syrup",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -501,13 +546,13 @@
       "نوتيلا؛ كريمة بندق بالكاكاو",
       "مربى الحمضيات",
       "دبس",
-      "أغاف"
+      "شراب الأغاف"
     ],
     "usage": {
       "goal": "Learn to use common seasonings & condiments 4 vocabulary to handle a familiar adult everyday task.",
       "canDoStatement": "Can use simple words and phrases to handle familiar situations related to seasonings & condiments.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -533,29 +578,28 @@
           "imageBrief": "Photorealistic adult real-world scene in a seasonings & condiments context illustrating this situation: During a routine seasonings & condiments task, an adult compares Molasses, Agave, Peanut Butter. The person selects Molasses for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult seasonings & condiments scene showing lesson-related items or actions including Molasses, Agave in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "Seasonings & Condiments: Short Description",
-      "text": "Maya is in a situation connected to seasonings & condiments. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with peanut butter, nutella, and marmalade. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with molasses and agave. The scene shows how these words naturally belong in the same food-service context.",
+      "title": "Seasonings & Condiments 4: A short reading",
+      "text": "Maya spreads peanut butter on toast. Omar chooses marmalade instead. On the shelf, they also have Nutella, molasses, and agave syrup. Maya checks the labels before making breakfast for a guest. She asks what the guest prefers rather than adding a spread without checking. They sit down once all the plates are ready.",
       "imageBrief": "Create one coherent A1-level visual for the reading about Seasonings & Condiments. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Peanut Butter"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Peanut Butter, Nutella, Marmalade. The person selects Peanut Butter for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Peanut Butter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Molasses"
-      },
-      {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Peanut Butter"
-      },
-      {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Marmalade"
+        "prompt": "During a routine seasonings & condiments task, an adult compares Molasses, Agave, Peanut Butter. The person selects Molasses for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Molasses",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
         "prompt": "Use it: Choose one word and say one short sentence about the scene.",
@@ -564,6 +608,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Olive Oil” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Which spread does Omar choose?",
+        "answer": "Marmalade",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

@@ -70,7 +70,9 @@
     "gotIt": "Got It",
     "listen": "Listen",
     "done": "Done",
-    "returnToExplore": "Return to learning path"
+    "returnToExplore": "Return to learning path",
+    "checkAnswer": "Check answer",
+    "playing": "Playing…"
   },
   "auth": {
     "email": "Email address",
@@ -193,7 +195,12 @@
     "todayContinue": "Continue: {title}",
     "todayStart": "Start: {title}",
     "reviewNowWords": "Review {count} Words Now",
-    "overdueBadge": "{count} overdue"
+    "overdueBadge": "{count} overdue",
+    "specializedTracks": "Specialized Tracks",
+    "trackProgress": "Progress for {title}",
+    "resumeTrack": "Active Special Course",
+    "continueTrack": "Continue: {title}",
+    "startFirstLesson": "Start first lesson"
   },
   "learn": {
     "specialCurricula": "Specialized learning curricula",
@@ -382,7 +389,11 @@
     "statusNotStarted": "Not Started",
     "filterOptions": "Filter by level or progress",
     "clearSearchInput": "Clear search",
-    "selectedFilters": "selected filters"
+    "selectedFilters": "selected filters",
+    "masteredUnits": "Mastered units",
+    "inProgressUnits": "Units in progress",
+    "notStartedUnits": "Units not started",
+    "searchClarification": "Word searches find units containing matching vocabulary."
   },
   "gamification": {
     "mastered": "Mastered",
@@ -435,7 +446,16 @@
       "school": "Study",
       "conversation": "Conversation",
       "kids": "English learning"
-    }
+    },
+    "strongWordsDesc": "Mastery across review intervals",
+    "familiarWordsDesc": "Recognized and recalled",
+    "learningWordsDesc": "Introduced recently",
+    "recallNotTestedDesc": "No drills completed yet",
+    "recallAccuracyDesc": "Recall accuracy in practice",
+    "dueForReviewDesc": "Scheduled to strengthen recall",
+    "activeStreakDesc": "Consecutive study days",
+    "signedInStatus": "Signed in · Cloud sync active",
+    "guestStorageStatus": "Stored on this device · Sign in to back up and sync"
   },
   "wordDetails": {
     "meaning": "Meaning",
@@ -492,7 +512,13 @@
     "continueNext": "Continue to next activity",
     "noExercises": "No practice exercises available.",
     "sessionPaused": "Session paused. Progress saved.",
-    "resumeSession": "Resume Practice"
+    "resumeSession": "Resume Practice",
+    "tomorrow": "tomorrow",
+    "inDays": "in {{count}} days",
+    "nextScheduled": "Next reviews scheduled for {{time}}.",
+    "noReviewsTitle": "No reviews due yet",
+    "noReviewsDesc": "Spaced reviews appear here after you study your first vocabulary unit.",
+    "startLearning": "Start first lesson"
   },
   "settings": {
     "title": "Settings & Accessibility",
@@ -562,7 +588,8 @@
       "dark": "Dark",
       "system": "System"
     },
-    "toggleLabel": "{setting}: {state}"
+    "toggleLabel": "{setting}: {state}",
+    "spokenFeedback": "Spoken feedback"
   },
   "vocabularyPreload": {
     "title": "Load vocabulary ({count} units)",
@@ -657,6 +684,7 @@
     "rewriteSentence": "Rewrite the Sentence",
     "rewriteSentenceDesc": "Rephrase sentences using key targeted vocabulary.",
     "rewriteUseHint": "(Use: “{hint}”)",
+    "chooseCorrection": "Choose the correct version: {sentence}",
     "findMistake": "Find the Mistake",
     "findMistakeDesc": "Spot inaccuracies and understand standard natural phrasing.",
     "writingPrompts": "Writing Prompts",
@@ -761,7 +789,8 @@
     "formationSection": "Word formation",
     "formationSectionDesc": "Related forms and word families",
     "synonymsSection": "Synonyms and antonyms",
-    "synonymsSectionDesc": "Compare closely related meanings"
+    "synonymsSectionDesc": "Compare closely related meanings",
+    "unitActivities": "Unit activities"
   },
   "lesson": {
     "sessionBreakdown": "Session Results Breakdown",
@@ -775,6 +804,8 @@
     "levelBeginner": "Beginner",
     "immersionBadge": "WordPix Immersion",
     "selectWordGroup": "Select a Word Group",
+    "testOutHint": "Check your knowledge of all words in this unit with a short assessment.",
+    "groupCount": "{{count}} groups",
     "chooseGroupDesc": "Choose a group to continue your learning path.",
     "gseRange": " · GSE {start}–{end}",
     "unitOutcome": "Unit outcome",
@@ -975,7 +1006,10 @@
         "title": "Timed Writing Sprint",
         "description": "Practise typing vocabulary words accurately."
       }
-    }
+    },
+    "micRequired": "Microphone required",
+    "timedDrill": "Timed drill",
+    "selfPaced": "At your own pace"
   },
   "releaseNotes": {
     "whatsNewInVersion": "What's New in v{version}",
@@ -1040,7 +1074,7 @@
     "stopSentenceAudio": "Stop sentence audio",
     "retrySentenceAudio": "Retry sentence audio",
     "sentenceAudioError": "Audio could not play. Try again or read the sentence.",
-    "scenePlaceholderDescription": "Placeholder image. Use the text clues to answer.",
+    "scenePlaceholderDescription": "We’re updating this image. Use the text clue to answer.",
     "gapFillTitle": "Complete the sentence",
     "gapFillInstruction": "Choose the word that completes the sentence.",
     "gapFillImageInstruction": "Look at the scene, then choose the word that completes the sentence.",
@@ -1412,7 +1446,10 @@
     "cueAirflow": "Airflow",
     "cueRhythmStress": "Rhythm & Stress",
     "cueJaw": "Jaw",
-    "rhythmBeatAria": "Rhythm beat: {beat}"
+    "rhythmBeatAria": "Rhythm beat: {beat}",
+    "previousLesson": "Previous lesson",
+    "nextLesson": "Next lesson",
+    "answerPrompt": "Select an answer to continue"
   },
   "hadith": {
     "backToCurriculum": "Back to curriculum",
@@ -1467,9 +1504,11 @@
       "vocabulary": "Vocabulary",
       "practice": "Practice",
       "speak": "Discussion",
-      "check-review": "Check & Review"
+      "check-review": "Check & Review",
+      "review": "Review & Apply"
     },
     "lessonLabel": "Hadith lesson",
+    "checkedCount": "{checked} / {total} checked",
     "beginLesson": "Begin lesson",
     "learningOutcomes": "Learning outcomes",
     "warmupLabel": "Warm-up",
@@ -1488,10 +1527,10 @@
     "proceedToText": "Proceed to Hadith Text & Audio",
     "lessonDetails": "Lesson overview & goals",
     "listenStepOne": "Listen once for the main idea.",
-    "listenStepTwo": "Replay slowly and notice the highlighted expressions.",
+    "listenStepTwo": "Replay slowly and notice key expressions.",
     "listenStepThree": "Read the translation and connect the meaning to the words.",
     "listenTipOne": "Focus on the overall message before worrying about individual words.",
-    "listenTipTwo": "Pay attention to purpose connectors and verbs.",
+    "listenTipTwo": "Notice familiar words and how they connect to the main idea.",
     "listenTipThree": "Compare the complete Arabic source with its English meaning.",
     "readingLayout": "Bilingual reading layout",
     "stackedReading": "Guided",
@@ -1683,7 +1722,13 @@
           }
         }
       }
-    }
+    },
+    "retrievalQuestions": "Recall from memory",
+    "revealModelAnswer": "Check model answer",
+    "howDidYouDo": "How did you do?",
+    "gotIt": "I knew it",
+    "needReview": "I need more review",
+    "sentenceFrame": "Useful sentence starter"
   },
   "speechPractice": {
     "title": "Listen, record, and compare",
@@ -1858,7 +1903,8 @@
     "requirementsPending": "Complete the earlier stages, write your response, and check every challenge task before finishing.",
     "responseOptionDirect": "Use a direct answer",
     "responseOptionClarify": "Ask a clarifying question",
-    "responseOptionCompromise": "Offer a balanced compromise"
+    "responseOptionCompromise": "Offer a balanced compromise",
+    "targetTermDesc": "Study how “{{term}}” is used in this conversation."
   },
   "business": {
     "title": "Beyond Business English",
@@ -2047,7 +2093,8 @@
     "choiceUnsure": "Not sure",
     "choiceDisagree": "Disagree",
     "searchPlaceholder": "Search units, topics, or skills…",
-    "vocabularySearchPlaceholder": "Search terms, definitions, or examples…"
+    "vocabularySearchPlaceholder": "Search terms, definitions, or examples…",
+    "curriculumTitle": "Business English curriculum"
   },
   "wordInspector": {
     "pronounce": "Pronounce {word}"
@@ -2119,5 +2166,8 @@
     "specBitrate": "Bitrate: Compressed for fast mobile streaming (< 5 MB)",
     "jumpHint": "Click any line to jump to that moment",
     "wordsLabel": "Words:"
+  },
+  "mastery": {
+    "mastered": "Mastered"
   }
 }

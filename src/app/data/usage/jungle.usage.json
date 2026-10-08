@@ -33,7 +33,7 @@
       "قرد",
       "غوريلا",
       "كسلان",
-      "كائن أو عنصر طبيعي يسمى «تريي فروج»",
+      "ضفدع شجري",
       "أناكوندا",
       "حرباء",
       "تابير",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Butterfly as the central item; include Butterfly, Beetle, and Ant naturally where visually appropriate, but make the real-world use of Butterfly the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Jungle",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jaguar"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jaguar, Toucan, Parrot, and Monkey and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Jaguar",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gorilla"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gorilla, Sloth, Tree Frog, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gorilla",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Chameleon"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Tapir, Iguana, and Orangutan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Chameleon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Butterfly"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, and Ant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Butterfly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Bamboo as the central item; include Bamboo, Orchid, and Moss naturally where visually appropriate, but make the real-world use of Bamboo the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Jungle",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Mosquito"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Dragonfly, Caterpillar, and Spider and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Mosquito",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Scorpion"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scorpion, Centipede, Termite, and Grasshopper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Scorpion",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Firefly"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firefly, Palm Tree, Vine, and Fern and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Firefly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bamboo"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bamboo, Orchid, and Moss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Bamboo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -350,7 +376,7 @@
     ],
     "targetWordsArabic": [
       "ليانا",
-      "مظلة",
+      "مظلّة",
       "جذر",
       "صندوق السيارة",
       "ورقة نبات",
@@ -362,8 +388,8 @@
       "طين",
       "صخرة",
       "كهف",
-      "كائن أو عنصر طبيعي يسمى «كليفف»",
-      "واد ضيق"
+      "جرف",
+      "وادٍ ضيق"
     ],
     "usage": {
       "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Cave as the central item; include Cave, Cliff, and Ravine naturally where visually appropriate, but make the real-world use of Cave the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Important Information: The Jungle",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Liana"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Liana, Canopy, Root, and Trunk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Liana",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Leaf"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leaf, Flower, Waterfall, and River and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Leaf",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Stream"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stream, Swamp, Mud, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Stream",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cave"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Cliff, and Ravine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cave",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Buzz as the central item; include Buzz, Chirp, and Rustle naturally where visually appropriate, but make the real-world use of Buzz the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Real-World Task: The Jungle",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lagoon"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lagoon, Understory, Forest Floor, and Clearing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lagoon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Trail"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, Bridge, Tree House, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Trail",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hammock"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Campsite, Roar, and Screech and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hammock",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Buzz"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buzz, Chirp, and Rustle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Buzz",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -670,8 +722,8 @@
       "رطوبة",
       "حرارة",
       "ظل",
-      "كائن أو عنصر طبيعي يسمى «بانانا بلانت»",
-      "كائن أو عنصر طبيعي يسمى «روببير تريي»",
+      "نبات موز",
+      "شجرة مطاط",
       "قوس القدم حبل",
       "هطول أمطار"
     ],
@@ -707,7 +759,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "Rainfall",
+          "targetWords": ["Rainfall"],
           "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rainfall and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
@@ -717,7 +769,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Rainfall as the central item; include Rainfall, Splash, and Echo naturally where visually appropriate, but make the real-world use of Rainfall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "A Practical Guide: The Jungle",
@@ -726,16 +779,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Splash"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash, Echo, Humidity, and Heat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Splash",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shadow"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shadow, Banana Plant, Rubber Tree, and Rope Bridge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Shadow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Rainfall"
+        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rainfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Rainfall",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",

@@ -29,25 +29,25 @@
     "targetWordsArabic": [
       "جهاز لوحي (تابلت)",
       "كبسولة",
-      "شراب منكه",
-      "كريمة",
+      "شراب دوائي",
+      "كريم موضعي",
       "مرهم",
       "قطرات عين",
       "بخاخ استنشاق",
       "حقنة",
       "لاصقة دوائية",
       "قرص استحلاب",
-      "زجاجة حبة دواء",
-      "عبوة نفطة",
+      "عبوة أقراص دوائية",
+      "شريط أقراص بجيوب محكمة",
       "تحميلة",
-      "بخاخ أنفي",
-      "قطرة أذن"
+      "بخاخ أنف",
+      "قطرات أذن"
     ],
     "usage": {
       "goal": "Learn to use the pharmacy 1 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -109,45 +109,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Suppository, Nasal Spray, Ear Drops. The next step focuses on Suppository. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Suppository, Nasal Spray, Ear Drops in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Email",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with tablet, capsule, and syrup. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with cream, ointment, and eye drops. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 1: A short reading",
+      "text": "Omar takes a prescription to the pharmacy. The pharmacist checks it and explains whether the medicine is a tablet, capsule, or syrup. Maya waits nearby and reads a product label. She sees cream and ointment in a different section. Omar asks the pharmacist his questions before collecting the prescribed medicine.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tablet"
+        "prompt": "During a routine care or examination situation, an adult reviews Tablet, Capsule, Syrup. The next step focuses on Tablet.\nWhich option is the focus of the next step?",
+        "answer": "Tablet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cream"
+        "prompt": "During a routine care or examination situation, an adult reviews Cream, Ointment, Eye Drops. The next step focuses on Cream.\nWhich option is the focus of the next step?",
+        "answer": "Cream",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Inhaler"
+        "prompt": "During a routine care or examination situation, an adult reviews Inhaler, Injection, Patch. The next step focuses on Inhaler.\nWhich option is the focus of the next step?",
+        "answer": "Inhaler",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lozenge"
+        "prompt": "During a routine care or examination situation, an adult reviews Lozenge, Pill Bottle, Blister Pack. The next step focuses on Lozenge.\nWhich option is the focus of the next step?",
+        "answer": "Lozenge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Suppository"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Tablet"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Cream"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Suppository, Nasal Spray, Ear Drops. The next step focuses on Suppository.\nWhich option is the focus of the next step?",
+        "answer": "Suppository",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -156,6 +160,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “face shield” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar take to the pharmacy?",
+        "answer": "A prescription",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -195,25 +206,25 @@
     "targetWordsArabic": [
       "أنبوب مرهم",
       "غسول أو لوشن",
-      "قلم حقنة",
-      "منضدة وصفة طبية",
-      "سجل نقد",
+      "قلم حقن",
+      "منضدة صرف الوصفات",
+      "آلة تسجيل النقد",
       "رف أدوية",
       "ثلاجة (براد)",
-      "مقياس رسم",
-      "هاون ومدقة",
-      "أداة عد الأقراص",
-      "طابعة علامة",
+      "ميزان",
+      "هاون ومدقّة",
+      "أداة عدّ الأقراص",
+      "طابعة ملصقات",
       "ماسح باركود",
       "حاسوب",
-      "قطاعة حبة دواء",
+      "قطّاعة أقراص",
       "علبة تنظيم الحبوب"
     ],
     "usage": {
       "goal": "Learn to use the pharmacy 2 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -275,45 +286,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Computer, Pill Cutter, Pill Organizer. The next step focuses on Computer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Computer, Pill Cutter, Pill Organizer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Personal Message",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with ointment tube, lotion, and injection pen. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with prescription counter, cash register, and medicine shelf. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 2: A short reading",
+      "text": "Maya waits at the prescription counter. Behind it, a medicine shelf holds labeled packages, and a refrigerator stores other products. Omar notices a mortar and pestle in a display about pharmacy work. The pharmacist places an ointment tube in a bag and checks the customer's details before handing it over.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Ointment Tube"
+        "prompt": "During a routine care or examination situation, an adult reviews Ointment Tube, Lotion, Injection Pen. The next step focuses on Ointment Tube.\nWhich option is the focus of the next step?",
+        "answer": "Ointment Tube",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prescription Counter"
+        "prompt": "During a routine care or examination situation, an adult reviews Prescription Counter, Cash Register, Medicine Shelf. The next step focuses on Prescription Counter.\nWhich option is the focus of the next step?",
+        "answer": "Prescription Counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Refrigerator"
+        "prompt": "During a routine care or examination situation, an adult reviews Refrigerator, Scale, Mortar and Pestle. The next step focuses on Refrigerator.\nWhich option is the focus of the next step?",
+        "answer": "Refrigerator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pill Counter"
+        "prompt": "During a routine care or examination situation, an adult reviews Pill Counter, Label Printer, Barcode Scanner. The next step focuses on Pill Counter.\nWhich option is the focus of the next step?",
+        "answer": "Pill Counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Computer"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Ointment Tube"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Prescription Counter"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Computer, Pill Cutter, Pill Organizer. The next step focuses on Computer.\nWhich option is the focus of the next step?",
+        "answer": "Computer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -322,6 +337,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Tablet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Maya wait?",
+        "answer": "At the prescription counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -360,26 +382,26 @@
     ],
     "targetWordsArabic": [
       "خزانة أدوية",
-      "دواء مبرد",
+      "دواء محفوظ في الثلاجة",
       "معطف صيدلي",
       "منضدة صيدلية",
       "ميزان رقمي",
-      "ملف المريض",
+      "سجل المريض",
       "ضمادة",
       "لاصق طبي",
       "مقياس حرارة",
       "جهاز قياس ضغط الدم",
-      "جهاز قياس السكر",
+      "جهاز قياس سكر الدم",
       "اختبار حمل",
-      "معقم اليدين (مطهر اليدين)",
+      "معقم يدين",
       "مطهر",
-      "مقدمة باطن القدم قطن"
+      "كرة قطنية"
     ],
     "usage": {
       "goal": "Learn to use the pharmacy 3 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -441,45 +463,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Hand Sanitizer, Disinfectant, Cotton Ball. The next step focuses on Hand Sanitizer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Hand Sanitizer, Disinfectant, Cotton Ball in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Short Dialogue",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with medicine cabinet, refrigerated medicine, and pharmacist coat. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with pharmacy counter, digital scale, and patient profile. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 3: A short reading",
+      "text": "Omar reads the pharmacy signs to find the right counter. A pharmacist checks a patient profile before serving a customer. Maya buys a bandage and a thermometer from the shop area. She sees a digital scale behind the counter. The refrigerated medicine stays in a separate section managed by the pharmacy staff.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Medicine Cabinet"
+        "prompt": "During a routine care or examination situation, an adult reviews Medicine Cabinet, Refrigerated Medicine, Pharmacist Coat. The next step focuses on Medicine Cabinet.\nWhich option is the focus of the next step?",
+        "answer": "Medicine Cabinet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pharmacy Counter"
+        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Counter, Digital Scale, Patient Profile. The next step focuses on Pharmacy Counter.\nWhich option is the focus of the next step?",
+        "answer": "Pharmacy Counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Bandage"
+        "prompt": "During a routine care or examination situation, an adult reviews Bandage, Plaster, Thermometer. The next step focuses on Bandage.\nWhich option is the focus of the next step?",
+        "answer": "Bandage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Blood Pressure Monitor"
+        "prompt": "During a routine care or examination situation, an adult reviews Blood Pressure Monitor, Glucose Meter, Pregnancy Test. The next step focuses on Blood Pressure Monitor.\nWhich option is the focus of the next step?",
+        "answer": "Blood Pressure Monitor",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hand Sanitizer"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Medicine Cabinet"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Pharmacy Counter"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Hand Sanitizer, Disinfectant, Cotton Ball. The next step focuses on Hand Sanitizer.\nWhich option is the focus of the next step?",
+        "answer": "Hand Sanitizer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -488,6 +514,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Ointment Tube” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Maya buy?",
+        "answer": "A bandage and a thermometer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -526,9 +559,9 @@
     ],
     "targetWordsArabic": [
       "شاش",
-      "مكمل غذائي فيتامين",
-      "مكمل غذائي معدني",
-      "علاج عشبي",
+      "مكمل فيتامينات",
+      "مكمل معادن",
+      "مستحضر عشبي",
       "مضاد حيوي",
       "مسكن ألم",
       "مضاد التهاب",
@@ -536,16 +569,16 @@
       "مضاد حموضة",
       "شامبو",
       "بلسم",
-      "غسول أو لوشن جسم",
+      "لوشن للجسم",
       "واقي شمس",
-      "مرطب الشفاه (زبدة الشفاه)",
+      "مرطب شفاه",
       "مزيل عرق"
     ],
     "usage": {
       "goal": "Learn to use the pharmacy 4 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,45 +640,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Sunscreen, Lip Balm, Deodorant. The next step focuses on Sunscreen. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Sunscreen, Lip Balm, Deodorant in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Tips/Notice",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with gauze, vitamin supplement, and mineral supplement. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with herbal remedy, antibiotic, and painkiller. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 4: A short reading",
+      "text": "Maya compares the words on pharmacy labels. A vitamin supplement is on one shelf and a herbal remedy on another. Omar asks the pharmacist about a product instead of choosing from the name alone. The lesson introduces antibiotic, painkiller, and antihistamine as different medicine terms. They write each word beside its definition.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gauze"
+        "prompt": "During a routine care or examination situation, an adult reviews Gauze, Vitamin Supplement, Mineral Supplement. The next step focuses on Gauze.\nWhich option is the focus of the next step?",
+        "answer": "Gauze",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Herbal Remedy"
+        "prompt": "During a routine care or examination situation, an adult reviews Herbal Remedy, Antibiotic, Painkiller. The next step focuses on Herbal Remedy.\nWhich option is the focus of the next step?",
+        "answer": "Herbal Remedy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Anti-inflammatory"
+        "prompt": "During a routine care or examination situation, an adult reviews Anti-inflammatory, Antihistamine, Antacid. The next step focuses on Anti-inflammatory.\nWhich option is the focus of the next step?",
+        "answer": "Anti-inflammatory",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shampoo"
+        "prompt": "During a routine care or examination situation, an adult reviews Shampoo, Conditioner, Body Lotion. The next step focuses on Shampoo.\nWhich option is the focus of the next step?",
+        "answer": "Shampoo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Sunscreen"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Gauze"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Herbal Remedy"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Sunscreen, Lip Balm, Deodorant. The next step focuses on Sunscreen.\nWhich option is the focus of the next step?",
+        "answer": "Sunscreen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -654,6 +691,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Medicine Cabinet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who does Omar ask about a product?",
+        "answer": "The pharmacist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -694,14 +738,14 @@
       "محلول عدسات لاصقة",
       "فيتامين",
       "مكمل غذائي",
-      "بروبيوتيك",
-      "ملين",
-      "شراب للسعال",
+      "مستحضر بروبيوتيك",
+      "مُليّن",
+      "شراب سعال",
       "قرص استحلاب للحلق",
       "إنسولين",
-      "أداة فحص تداخلات الأدوية",
-      "منطقة تحضير التركيبات الدوائية",
-      "غرفة ينظف",
+      "أداة للتحقق من التداخلات الدوائية",
+      "منطقة تحضير الأدوية المركبة",
+      "غرفة نظيفة مضبوطة التلوث",
       "صيدلي",
       "فني صيدلة",
       "أمين صندوق",
@@ -710,8 +754,8 @@
     "usage": {
       "goal": "Learn to use the pharmacy 5 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -773,45 +817,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pharmacy Technician, Cashier, Customer. The next step focuses on Pharmacy Technician. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pharmacy Technician, Cashier, Customer in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Everyday Description",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with contact lens solution, vitamin, and supplement. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with probiotic, laxative, and cough syrup. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 5: A short reading",
+      "text": "Omar asks where to find contact lens solution. Maya looks for a throat lozenge near the cough syrup. A pharmacist is helping another customer with a prescription. The learners use the words on their shopping lists to ask clear questions. They check each product label before taking it to the counter.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Contact Lens Solution"
+        "prompt": "During a routine care or examination situation, an adult reviews Contact Lens Solution, Vitamin, Supplement. The next step focuses on Contact Lens Solution.\nWhich option is the focus of the next step?",
+        "answer": "Contact Lens Solution",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Probiotic"
+        "prompt": "During a routine care or examination situation, an adult reviews Probiotic, Laxative, Cough Syrup. The next step focuses on Probiotic.\nWhich option is the focus of the next step?",
+        "answer": "Probiotic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Throat Lozenge"
+        "prompt": "During a routine care or examination situation, an adult reviews Throat Lozenge, Insulin, Drug Interaction Checker. The next step focuses on Throat Lozenge.\nWhich option is the focus of the next step?",
+        "answer": "Throat Lozenge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Compounding Area"
+        "prompt": "During a routine care or examination situation, an adult reviews Compounding Area, Clean Room, Pharmacist. The next step focuses on Compounding Area.\nWhich option is the focus of the next step?",
+        "answer": "Compounding Area",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pharmacy Technician"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Contact Lens Solution"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Probiotic"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Technician, Cashier, Customer. The next step focuses on Pharmacy Technician.\nWhich option is the focus of the next step?",
+        "answer": "Pharmacy Technician",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -820,6 +868,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Gauze” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What product does Omar ask for?",
+        "answer": "Contact lens solution",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -864,11 +919,11 @@
       "حارس أمن",
       "عامل نظافة",
       "مساعد صيدلي",
-      "متدرب صيدلة",
+      "متدرّب صيدلة",
       "مدير صيدلية",
       "مالك صيدلية",
       "ممثل صيدلية",
-      "متدرب في الصيدلية",
+      "متدرّب في الصيدلية",
       "نافذة خدمة للسيارات",
       "غرفة استشارة",
       "منطقة انتظار"
@@ -876,8 +931,8 @@
     "usage": {
       "goal": "Learn to use the pharmacy 6 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -939,45 +994,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Drive-Through Window, Consultation Room, Waiting Area. The next step focuses on Drive-Through Window. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Drive-Through Window, Consultation Room, Waiting Area in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Email",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. The patient may meet the delivery driver, manager, and stock clerk during different parts of a visit, with each professional handling a different role. During the visit, the patient and medical team deal with consultant, security guard, and cleaner. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with pharmacy assistant, pharmacy intern, and pharmacy manager.",
+      "title": "The Pharmacy 6: A short reading",
+      "text": "A delivery driver brings boxes to the pharmacy. The stock clerk checks them while a pharmacy assistant helps customers. The manager speaks to a consultant in the office. Maya asks which worker can answer a medicine question. The assistant directs her to the pharmacist and shows her where to wait.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Delivery Driver"
+        "prompt": "During a routine care or examination situation, an adult reviews Delivery Driver, Manager, Stock Clerk. The next step focuses on Delivery Driver.\nWhich option is the focus of the next step?",
+        "answer": "Delivery Driver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Consultant"
+        "prompt": "During a routine care or examination situation, an adult reviews Consultant, Security Guard, Cleaner. The next step focuses on Consultant.\nWhich option is the focus of the next step?",
+        "answer": "Consultant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pharmacy Assistant"
+        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Assistant, Pharmacy Intern, Pharmacy Manager. The next step focuses on Pharmacy Assistant.\nWhich option is the focus of the next step?",
+        "answer": "Pharmacy Assistant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pharmacy Owner"
+        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Owner, Pharmacy Representative, Pharmacy Trainee. The next step focuses on Pharmacy Owner.\nWhich option is the focus of the next step?",
+        "answer": "Pharmacy Owner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Drive-Through Window"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Delivery Driver"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Consultant"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Drive-Through Window, Consultation Room, Waiting Area. The next step focuses on Drive-Through Window.\nWhich option is the focus of the next step?",
+        "answer": "Drive-Through Window",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -986,6 +1045,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Contact Lens Solution” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Who checks the delivery boxes?",
+        "answer": "The stock clerk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1036,14 +1102,14 @@
       "طلب إعادة صرف وصفة عبر الإنترنت",
       "خدمة مندوب توصيل",
       "عيادة تطعيم",
-      "حبة دواء",
+      "حبّة دواء",
       "هاون"
     ],
     "usage": {
       "goal": "Learn to use the pharmacy 7 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1105,45 +1171,49 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Vaccination Clinic, Pill, Mortar. The next step focuses on Vaccination Clinic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Vaccination Clinic, Pill, Mortar in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Personal Message",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with prescription drop-off, pick-up counter, and health poster. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with shopping basket, bag, and receipt. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 7: A short reading",
+      "text": "Maya leaves her prescription at prescription drop-off and waits near the pick-up counter. Omar takes a shopping basket for other items. A health poster is beside the entrance. When Maya's order is ready, she collects the bag and receipt. They leave through the doorway marked for wheelchair access.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prescription Drop-Off"
+        "prompt": "During a routine care or examination situation, an adult reviews Prescription Drop-Off, Pick-Up Counter, Health Poster. The next step focuses on Prescription Drop-Off.\nWhich option is the focus of the next step?",
+        "answer": "Prescription Drop-Off",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Shopping Basket"
+        "prompt": "During a routine care or examination situation, an adult reviews Shopping Basket, Bag, Receipt. The next step focuses on Shopping Basket.\nWhich option is the focus of the next step?",
+        "answer": "Shopping Basket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Loyalty Card"
+        "prompt": "During a routine care or examination situation, an adult reviews Loyalty Card, Parking Lot, Wheelchair Access. The next step focuses on Loyalty Card.\nWhich option is the focus of the next step?",
+        "answer": "Loyalty Card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pharmacy App"
+        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy App, Online Refill, Courier Service. The next step focuses on Pharmacy App.\nWhich option is the focus of the next step?",
+        "answer": "Pharmacy App",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Vaccination Clinic"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Prescription Drop-Off"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Shopping Basket"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Vaccination Clinic, Pill, Mortar. The next step focuses on Vaccination Clinic.\nWhich option is the focus of the next step?",
+        "answer": "Vaccination Clinic",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1152,6 +1222,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Delivery Driver” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Where does Maya wait for her order?",
+        "answer": "Near the pick-up counter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -1187,21 +1264,21 @@
     "targetWordsArabic": [
       "مدقة",
       "عبوة دواء",
-      "علامة",
+      "ملصق الدواء",
       "دفتر وصفات طبية",
       "منضدة",
       "وصفة طبية",
-      "جرعة",
+      "مقدار الجرعة وجدولها",
       "استشارة",
       "إعادة صرف",
-      "تأمين",
+      "تأمين صحي",
       "توصيل"
     ],
     "usage": {
       "goal": "Learn to use the pharmacy 8 vocabulary to exchange practical information and complete a routine adult-life task.",
       "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -1251,41 +1328,42 @@
           "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Insurance, Delivery, Pestle. The next step focuses on Insurance. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
           "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Insurance, Delivery in a natural setting."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy: Short Dialogue",
-      "text": "Omar has an everyday task connected to the pharmacy. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with pestle, medicine bottle, and label. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with prescription pad, counter, and prescription. Each term belongs to a different part of the care process.",
+      "title": "The Pharmacy 8: A short reading",
+      "text": "The pharmacist checks the prescription and the label on a medicine bottle. Omar asks about the dosage and a future refill. Maya books a consultation for another day. Behind the counter, a mortar and pestle are on a work surface. The pharmacist finishes checking the order before handing Omar his bag.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Pestle"
+        "prompt": "During a routine care or examination situation, an adult reviews Pestle, Medicine Bottle, Label. The next step focuses on Pestle.\nWhich option is the focus of the next step?",
+        "answer": "Pestle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Prescription Pad"
+        "prompt": "During a routine care or examination situation, an adult reviews Prescription Pad, Counter, Prescription. The next step focuses on Prescription Pad.\nWhich option is the focus of the next step?",
+        "answer": "Prescription Pad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Dosage"
+        "prompt": "During a routine care or examination situation, an adult reviews Dosage, Consultation, Refill. The next step focuses on Dosage.\nWhich option is the focus of the next step?",
+        "answer": "Dosage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Insurance"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Pestle"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Prescription Pad"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "During a routine care or examination situation, an adult reviews Insurance, Delivery, Pestle. The next step focuses on Insurance.\nWhich option is the focus of the next step?",
+        "answer": "Insurance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -1294,6 +1372,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Prescription Drop-Off” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar ask about?",
+        "answer": "The dosage and a future refill",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

@@ -27,21 +27,21 @@
       "Mars"
     ],
     "targetWordsArabic": [
-      "مركبة يسمى «روكيت»",
+      "صاروخ",
       "حافلة نقل فضاء",
       "قمر صناعي",
       "كبسولة",
-      "مركبة يسمى «لاندير»",
-      "شخص يسمى «روفير»",
+      "مركبة هبوط فضائية",
+      "مركبة استكشاف جوالة",
       "مسبار",
-      "معزز صاروخي",
-      "مادة كيميائية يسمى «بايلواد»",
+      "مرحلة دفع صاروخية",
+      "حمولة فضائية",
       "منصة إطلاق",
       "شمس",
       "عطارد",
       "الزهرة",
       "الأرض",
-      "طبق يسمى «مارس»"
+      "المريخ"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand scientific vocabulary, observations, and safety-related information and respond precisely in complex professional or public situations.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Venus as the central item; include Venus, Earth, and Mars naturally where visually appropriate, but make the real-world use of Venus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Space Center",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "rocket"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rocket, space shuttle, satellite, and capsule and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "rocket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "lander"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lander, rover, probe, and booster and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "lander",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "payload"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare payload, launch pad, Sun, and Mercury and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "payload",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Venus"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Venus, Earth, and Mars and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Venus",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -193,9 +206,9 @@
     ],
     "targetWordsArabic": [
       "المشتري",
-      "جزء يسمى «ساتورن»",
-      "جزء يسمى «ورانوس»",
-      "جزء يسمى «نيبتوني»",
+      "زحل",
+      "أورانوس",
+      "نبتون",
       "قمر",
       "كويكب",
       "مذنب",
@@ -203,7 +216,7 @@
       "بدلة فضاء",
       "خوذة",
       "مركز التحكم بالمهمة",
-      "مركبة يسمى «كوونتدوون»",
+      "عد تنازلي",
       "إقلاع صاروخي",
       "مدار",
       "سير في الفضاء"
@@ -262,7 +275,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the liftoff as the central item; include liftoff, orbit, and spacewalk naturally where visually appropriate, but make the real-world use of liftoff the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Adult Learner at Space Center",
@@ -271,20 +285,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jupiter"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jupiter, Saturn, Uranus, and Neptune and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Jupiter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Moon"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, asteroid, comet, and astronaut and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Moon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "spacesuit"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare spacesuit, helmet, mission control, and countdown and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "spacesuit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "liftoff"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare liftoff, orbit, and spacewalk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "liftoff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -358,20 +384,20 @@
     ],
     "targetWordsArabic": [
       "التحام فضائي",
-      "عملية يسمى «ري-ينتري»",
-      "هبوط في الماء",
-      "منظار",
-      "نجمة",
-      "نظام يسمى «جالاكسي»",
+      "عودة إلى الغلاف الجوي",
+      "هبوط مركبة فضائية في الماء",
+      "تلسكوب",
+      "نجم",
+      "مجرة",
       "سديم",
       "ثقب أسود",
-      "عملية يسمى «سوبيرنوفا»",
+      "مستعر أعظم",
       "كوكبة",
       "شهاب",
       "شفق قطبي",
       "كسوف أو خسوف",
-      "مادة يسمى «كوسميك دوست»",
-      "جهاز يسمى «سولار بانيل»"
+      "غبار كوني",
+      "لوح شمسي"
     ],
     "usage": {
       "goal": "Use nuanced domain vocabulary to understand scientific vocabulary, observations, and safety-related information and respond precisely in complex professional or public situations.",
@@ -427,7 +453,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the eclipse as the central item; include eclipse, cosmic dust, and solar panel naturally where visually appropriate, but make the real-world use of eclipse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting the Information You Need: Space Center",
@@ -436,20 +463,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "docking"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare docking, re-entry, splashdown, and telescope and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "answer": "docking",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "star"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare star, galaxy, nebula, and black hole and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "star",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "supernova"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare supernova, constellation, meteor, and aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "supernova",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "eclipse"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare eclipse, cosmic dust, and solar panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "eclipse",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",
@@ -520,10 +559,10 @@
       "رادار",
       "حاسوب",
       "خزان وقود",
-      "دافع صاروخي",
+      "محرك دفع صغير",
       "واقي حرارة",
       "مظلة هبوط",
-      "ذراع روبوتية",
+      "ذراع آلية",
       "مختبر"
     ],
     "usage": {
@@ -558,7 +597,7 @@
         },
         {
           "chunkNumber": 3,
-          "targetWords": "laboratory",
+          "targetWords": ["laboratory"],
           "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare laboratory and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
@@ -568,7 +607,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the laboratory as the main location; include laboratory, antenna, and radar naturally where visually appropriate, but make the real-world use of laboratory the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Getting Ready: Space Center",
@@ -577,16 +617,25 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "antenna"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare antenna, radar, computer, and fuel tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "antenna",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "thruster"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare thruster, heat shield, parachute, and robotic arm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "thruster",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "laboratory"
+        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare laboratory and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "answer": "laboratory",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
         "prompt": "Interpretation: What is the central issue or interpretation in the text?",

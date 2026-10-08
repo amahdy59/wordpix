@@ -29,19 +29,19 @@
     "targetWordsArabic": [
       "مفتاح ربط",
       "مفك براغي",
-      "أداة يسمى «سوكيت سيت»",
+      "طقم مفاتيح مقابس",
       "كماشة",
-      "جهاز يسمى «جاك»",
+      "رافعة سيارة",
       "مفتاح عزم",
-      "أداة يسمى «هاممير»",
-      "أداة يسمى «بري بار»",
+      "مطرقة",
+      "عتلة",
       "ملتيميتر",
       "مثقاب",
       "محرك",
       "إطار سيارة",
-      "مكان يسمى «براكي باد»",
+      "بطانة فرامل",
       "بطارية",
-      "مولد كهربائي للسيارة"
+      "مولد كهرباء السيارة"
     ],
     "usage": {
       "goal": "Develop the language needed to understand non-technical service information and discuss vehicle maintenance safely in a realistic adult context.",
@@ -97,7 +97,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Pad as the central item; include Brake Pad, Battery, and Alternator naturally where visually appropriate, but make the real-world use of Brake Pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Mechanic: Practical Information",
@@ -106,20 +107,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Wrench"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Wrench",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jack"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Jack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Multimeter"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Multimeter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brake Pad"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brake Pad",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -188,19 +201,19 @@
       "Ac System"
     ],
     "targetWordsArabic": [
-      "مبرد المحرك",
-      "جهاز يسمى «موففلير»",
+      "مشع تبريد",
+      "كاتم صوت العادم",
       "شمعة إشعال",
-      "يرشح هواء",
-      "يرشح زيت",
+      "مرشح الهواء",
+      "مرشح الزيت",
       "ناقل حركة",
-      "جزء يسمى «سوسبينسيون»",
+      "نظام تعليق",
       "عادم",
-      "جزء يسمى «كوولينج سيستيم»",
-      "سفينة يسمى «ستييرينج»",
-      "طائرة يسمى «فويل سيستيم»",
+      "نظام تبريد",
+      "نظام توجيه",
+      "نظام وقود",
       "أعمال كهربائية",
-      "مكابح",
+      "فرامل",
       "مجموعة نقل الحركة",
       "نظام تكييف الهواء"
     ],
@@ -258,7 +271,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brakes as the central item; include Brakes, Drivetrain, and Ac System naturally where visually appropriate, but make the real-world use of Brakes the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "Clarifying the Next Step: The Mechanic",
@@ -267,20 +281,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Radiator"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Radiator",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Oil Filter"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Oil Filter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Cooling System"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Cooling System",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brakes"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brakes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -349,21 +375,21 @@
       "Grease"
     ],
     "targetWordsArabic": [
-      "يرفع",
+      "رافعة سيارات",
       "جهاز فحص تشخيصي",
-      "آلة يسمى «اير كومبريسسور»",
-      "طائر يسمى «كرييبير»",
-      "أداة يسمى «توولبوكس»",
+      "ضاغط هواء",
+      "لوح متحرك للعمل أسفل السيارة",
+      "صندوق أدوات",
       "فتحة تصريف الزيت",
       "آلة تغيير الإطارات",
-      "جهاز موازنة",
-      "عامل يسمى «ويلدير»",
-      "مطحنة",
+      "جهاز موازنة العجلات",
+      "عامل لحام",
+      "آلة تجليخ",
       "زيت محرك",
       "سائل تبريد",
       "سائل الفرامل",
       "سائل ناقل الحركة",
-      "آلة يسمى «جرياسي»"
+      "شحم"
     ],
     "usage": {
       "goal": "Develop the language needed to understand non-technical service information and discuss vehicle maintenance safely in a realistic adult context.",
@@ -419,7 +445,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Fluid as the central item; include Brake Fluid, Transmission Fluid, and Grease naturally where visually appropriate, but make the real-world use of Brake Fluid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "An Update Before the Next Step",
@@ -428,20 +455,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Lift"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Lift",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Toolbox"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Toolbox",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Welder"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Welder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Brake Fluid"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Brake Fluid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
@@ -510,20 +549,20 @@
       "Estimate"
     ],
     "targetWordsArabic": [
-      "حشية",
-      "-",
+      "حشية مانعة للتسرب",
+      "مسمار ملولب",
       "صامولة",
-      "غسالة",
+      "حلقة تثبيت",
       "مشبك خرطوم",
-      "آلة يسمى «ويل تشانجي»",
-      "مركبة يسمى «تيري روتاتيون»",
+      "تغيير الزيت",
+      "تبديل مواضع الإطارات",
       "إصلاح الفرامل",
-      "صيانة ضبط دورية",
-      "ضبط المحاذاة",
+      "ضبط المحرك",
+      "ضبط زوايا العجلات",
       "فحص",
-      "مركبة يسمى «بوديوورك»",
-      "مبنى يسمى «باينت جوب»",
-      "مركبة يسمى «توو تروك»",
+      "هيكل السيارة الخارجي",
+      "طلاء السيارة",
+      "شاحنة سحب",
       "تقدير تكلفة"
     ],
     "usage": {
@@ -580,7 +619,8 @@
           "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Paint Job as the central item; include Paint Job, Tow Truck, and Estimate naturally where visually appropriate, but make the real-world use of Paint Job the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
           "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
-      ]
+      ],
+      "phrases": []
     },
     "reading": {
       "title": "The Mechanic: Practical Information",
@@ -589,20 +629,32 @@
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Gasket"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Gasket",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Hose Clamp"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Hose Clamp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Tune Up"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Tune Up",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Paint Job"
+        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "Paint Job",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
         "prompt": "Gist: What is the main situation in the reading?",
