@@ -12,6 +12,7 @@ import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { LessonTransferPractice } from "./LessonTransferPractice";
 import { ScenePlaceholder } from "../shared/SentenceQuestionSupport";
+import { answerLayout } from "../shared/answerLayout";
 import { QuestionImage } from "../shared/QuestionImage";
 
 interface Props {
@@ -105,7 +106,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
         helper={cluster.microReading.title}
         activityLabel={t("exercise.readingContextActivityAria")}
         activity={
-          <div className="space-y-5">
+          <div className="space-y-3 sm:space-y-5">
             {cluster.microReading.media && failedImage !== cluster.microReading.media.imagePath ? (
               <MediaFrame
                 fit="contain"
@@ -125,7 +126,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
             <p
               lang="en"
               dir="ltr"
-              className="rounded-2xl border border-border bg-wp-card p-5 font-sans text-lg leading-relaxed text-foreground shadow-wp-xs sm:p-6 sm:text-xl"
+              className="rounded-2xl border border-border bg-wp-card p-3 font-sans text-base leading-relaxed text-foreground shadow-wp-xs sm:p-6 sm:text-xl"
             >
               {cluster.microReading.text}
             </p>
@@ -143,7 +144,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
                 </p>
               </div>
               <div
-                className="grid gap-2 sm:grid-cols-3"
+                className={answerLayout(cluster.retrieval.options)}
                 role="group"
                 aria-label={t("exercise.readingContextActivityAria")}
                 dir="ltr"

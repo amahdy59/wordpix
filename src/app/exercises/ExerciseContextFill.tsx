@@ -19,6 +19,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
+import { answerLayout } from "../shared/answerLayout";
 
 interface Props {
   step: number;
@@ -164,7 +165,11 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       <ExerciseFamilyTemplate
         family="visual-choice"
         instruction={t("exercise.chooseCorrectWord")}
-        helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
+        helper={
+          <span className="hidden sm:inline">
+            {t("exercise.pressNumberToChooseWord", { count: options.length })}
+          </span>
+        }
         activityLabel={t("exercise.wordChoicesAria")}
         media={
           <SentenceQuestionSupport
@@ -177,7 +182,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           />
         }
         activity={
-          <div className="grid w-full grid-cols-2 gap-2 sm:gap-3" dir="ltr" lang="en">
+          <div className={answerLayout(options.map((option) => option.label))} dir="ltr" lang="en">
             {options.map((option, index) => (
               <motion.button
                 key={option.id}

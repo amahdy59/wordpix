@@ -69,6 +69,8 @@
     "listenAgain": "استمع مرة أخرى",
     "gotIt": "فهمت ذلك",
     "listen": "استمع",
+    "stop": "إيقاف",
+    "retry": "أعد المحاولة",
     "done": "تم",
     "returnToExplore": "العودة إلى مسار التعلّم",
     "checkAnswer": "تحقّق من الإجابة",
@@ -1071,6 +1073,7 @@
     "chooseMeaningClue": "اختر الكلمة التي تتوافق مع التلميح.",
     "meaningClue": "تلميح المعنى",
     "listenSentence": "استمع إلى الجملة",
+    "sentenceAudioGapHint": "تشير الوقفة إلى الكلمات الناقصة.",
     "stopSentenceAudio": "إيقاف صوت الجملة",
     "retrySentenceAudio": "إعادة تشغيل صوت الجملة",
     "sentenceAudioError": "تعذر تشغيل الصوت. حاول مجددًا أو اقرأ الجملة.",
@@ -1083,7 +1086,7 @@
     "gapFillSentenceAria": "جملة بها كلمة ناقصة: {sentence}",
     "gapFillChoicesAria": "الكلمات المناسبة للجزء الناقص",
     "readingContextTitle": "القراءة والسياق",
-    "readingContextInstruction": "اقرأ النص القصير ثم اختر الإجابة.",
+    "readingContextInstruction": "اقرأ واختر الإجابة.",
     "readingContextActivityAria": "نشاط القراءة واستخراج المعلومات",
     "readingContextQuestion": "تحقق من فهمك",
     "readingContextCorrect": "وجدت الإجابة في النص.",
@@ -1526,6 +1529,7 @@
     "englishTranslation": "الترجمة الإنجليزية",
     "proceedToText": "انتقل إلى نص الحديث والصوت",
     "lessonDetails": "نظرة عامة وأهداف الدرس",
+    "lessonDetailsShort": "الأهداف",
     "listenStepOne": "استمع مرة لفهم الفكرة الرئيسة.",
     "listenStepTwo": "أعد الاستماع ببطء ولاحظ التعبيرات المستهدفة.",
     "listenStepThree": "اقرأ الترجمة واربط المعنى بالكلمات.",
@@ -1544,7 +1548,7 @@
     "phrasalVerbs": "الأفعال المركبة",
     "collocationsAndIdioms": "المتلازمات والتعابير الاصطلاحية",
     "vocabularyAudioCue": "انطق كل كلمة بعد الاستماع إلى صوت الدرس.",
-    "vocabularyStudyInstructions": "ادرس الكلمات الخمس الأساسية أولًا. اجمع بين الصورة والمعنى والمثال والدعم العربي والنطق، ثم راجع جميع التعبيرات في بنك اللغة الكامل.",
+    "vocabularyStudyInstructions": "تعلّم الكلمات، ثم استكشف التعبيرات أدناه.",
     "completeLanguageBank": "بنك اللغة الكامل",
     "completeLanguageBankDescription": "جُمعت أدناه جميع أنماط الغرض والكلمات الإضافية والأفعال المركبة والمتلازمات في هذا الدرس.",
     "category": "الفئة",
@@ -2100,7 +2104,7 @@
     "pronounce": "انطق {word}"
   },
   "vocabulary": {
-    "tableCaption": "جدول المفردات والتعبيرات اللغوية",
+    "tableCaption": "المفردات",
     "imageHeader": "الصورة",
     "wordHeader": "الكلمة / التعبير",
     "definitionHeader": "المعنى / التعريف",
@@ -2116,8 +2120,8 @@
     "imageModalTitle": "تفاصيل المفردة",
     "exampleInContext": "مثال في السياق",
     "viewMode": "طريقة العرض",
-    "tableView": "عرض الجدول",
-    "galleryView": "عرض المعرض"
+    "tableView": "قائمة",
+    "galleryView": "معرض"
   },
   "quiz": {
     "questionOf": "السؤال {current} من {total}",

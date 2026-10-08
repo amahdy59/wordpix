@@ -48,6 +48,23 @@
 }
 
 @layer utilities {
+  .wp-answer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .wp-answer-grid-long {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  }
+
+  .wp-answer-grid > button {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: start;
+  }
+
   /* ─── Responsive layout system ───────────────────────────────────────────
      Containers own measure only; shells own gutters. This avoids double
      padding when a page container is rendered inside AppShell while keeping

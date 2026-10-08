@@ -53,7 +53,7 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
   }));
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-reading flex flex-col gap-3 sm:gap-6 py-2">
       {/* Stage Header */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
@@ -85,11 +85,6 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
         </div>
       </div>
 
-      {/* Intro Note */}
-      <div className="rounded-2xl border border-border bg-muted/20 p-4 text-xs sm:text-sm font-medium text-muted-foreground">
-        {t("conversation.languageBankIntro")}
-      </div>
-
       {/* Unified Vocabulary Table */}
       <CurriculumVocabularyTable
         items={tableItems}
@@ -105,11 +100,11 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
       </span>
 
       {/* Stage Navigation Footer */}
-      <div className="mt-4 flex items-center justify-between">
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
         <button
           type="button"
           onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
@@ -118,7 +113,7 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] max-w-full items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 font-bold text-primary-foreground shadow-wp-xs hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueToolkit")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

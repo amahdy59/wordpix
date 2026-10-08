@@ -1,5 +1,5 @@
-import { describe, expect, it, vi } from "vitest";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../context/I18nContext";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 import { AUTHORED_LESSON_CONTENT } from "../exercises/content/authoredLessonContent";
@@ -9,16 +9,21 @@ import { sentenceCloze } from "../exercises/sentenceCloze";
 
 const speak = vi.fn();
 const stop = vi.fn();
+let audioOptions: { onEnded?: () => void; onError?: () => void };
 vi.mock("../shared/useAudio", () => ({
-  useAudio: () => ({
-    speak,
-    stop,
-    isPlaying: false,
-    isLoading: false,
-    isSupported: true,
-    isError: false,
-  }),
+  useAudio: (options: typeof audioOptions) => {
+    audioOptions = options;
+    return {
+      speak,
+      stop,
+      isPlaying: false,
+      isLoading: false,
+      isSupported: true,
+      isError: false,
+    };
+  },
 }));
+afterEach(() => vi.useRealTimers());
 const word: VocabularyItem = {
   id: "five",
   label: "Five",
@@ -82,7 +87,85 @@ describe("sentence question evidence", () => {
     expect(screen.getByText("5")).toBeVisible();
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
-    expect(speak).toHaveBeenLastCalledWith("There are blank cups.");
+    expect(speak).toHaveBeenLastCalledWith("There are", undefined, undefined, {
+      synthesisOnly: true,
+    });
+  });
+
+  it("pauses once for a multiword gap, then reads the remaining context without the answer", () => {
+    vi.useFakeTimers();
+    speak.mockClear();
+    render(
+      <I18nProvider>
+        <SentenceQuestionSupport
+          word={word}
+          sentence="There are five blue cups."
+          prompt="There are ____ ____ cups."
+          answered={false}
+        />
+      </I18nProvider>
+    );
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    act(() => audioOptions.onEnded?.());
+    act(() => vi.advanceTimersByTime(649));
+    expect(speak).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole("button", { name: /Stop sentence audio/i })).toBeVisible();
+    act(() => vi.advanceTimersByTime(1));
+    expect(speak).toHaveBeenLastCalledWith("cups.", undefined, undefined, { synthesisOnly: true });
+    act(() => audioOptions.onEnded?.());
+    expect(screen.getByRole("button", { name: /Listen to the sentence/i })).toBeVisible();
+  });
+
+  it("cancels a pending fragment on stop and on unmount", () => {
+    vi.useFakeTimers();
+    const view = render(
+      <I18nProvider>
+        <SentenceQuestionSupport
+          word={word}
+          sentence="There are five cups."
+          prompt="There are ____ cups."
+          answered={false}
+        />
+      </I18nProvider>
+    );
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    act(() => audioOptions.onEnded?.());
+    fireEvent.click(screen.getByRole("button", { name: /Stop sentence audio/i }));
+    speak.mockClear();
+    act(() => vi.runAllTimers());
+    expect(speak).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    act(() => audioOptions.onEnded?.());
+    view.unmount();
+    speak.mockClear();
+    act(() => vi.runAllTimers());
+    expect(speak).not.toHaveBeenCalled();
+  });
+
+  it("cancels the gap audio when answered and then reads the complete sentence", () => {
+    vi.useFakeTimers();
+    const content = (answered: boolean) => (
+      <I18nProvider>
+        <SentenceQuestionSupport
+          word={word}
+          sentence="There are five cups."
+          prompt="There are ____ cups."
+          answered={answered}
+        />
+      </I18nProvider>
+    );
+    const view = render(content(false));
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    act(() => audioOptions.onEnded?.());
+    view.rerender(content(true));
+    speak.mockClear();
+    act(() => vi.runAllTimers());
+    expect(speak).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    expect(speak).toHaveBeenLastCalledWith("There are five cups.");
+    view.rerender(content(false));
+    view.rerender(content(true));
+    expect(screen.getByRole("button", { name: /Listen to the sentence/i })).toBeVisible();
   });
 
   it("recovers from a missing scene file without substituting vocabulary media", () => {

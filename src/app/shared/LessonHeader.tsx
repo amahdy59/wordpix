@@ -58,16 +58,13 @@ export const LessonHeader = memo(function LessonHeader({
     // flags and which leaves a screen-reader user unable to jump to it.
     <header
       aria-label="Lesson"
-      className="content-stretch flex flex-col gap-[8px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full"
+      className="content-stretch flex flex-col gap-2 px-3 py-2 sm:px-6 md:px-8 md:py-4 relative shrink-0 w-full"
     >
       <div className="content-stretch flex items-center justify-between relative shrink-0 w-full gap-3">
         <div className="shrink-0">
           <BackButton onClick={onBack} />
         </div>
-        <h1
-          title={title}
-          className="wp-type-body-emphasis truncate text-center flex-1 min-w-0 px-2"
-        >
+        <h1 title={title} className="wp-type-body-emphasis text-center flex-1 min-w-0 break-words">
           {title}
         </h1>
         <div className="shrink-0">
@@ -77,7 +74,7 @@ export const LessonHeader = memo(function LessonHeader({
 
       {/* Optional subtitle row — group name + question/sentence counter */}
       {subtitle && (
-        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm font-sans font-semibold text-muted-foreground [&>span]:min-w-0 [&>span]:break-words">
           {subtitle}
         </div>
       )}

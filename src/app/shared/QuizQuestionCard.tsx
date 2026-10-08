@@ -3,6 +3,7 @@ import { CheckCircle2, XCircle } from "lucide-react";
 import { useI18n } from "../context/I18nContext";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
 import { playCorrectSound, playIncorrectSound } from "./useSound";
+import { answerLayout } from "./answerLayout";
 
 interface Props<T extends string> {
   id: string;
@@ -40,7 +41,7 @@ export function QuizQuestionCard<T extends string>({
       className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs"
       aria-labelledby={headingId}
     >
-      <div className="p-5 sm:p-6">
+      <div className="p-3 sm:p-6">
         <div className="flex items-start gap-3">
           <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
             {index + 1}
@@ -56,7 +57,11 @@ export function QuizQuestionCard<T extends string>({
         {media && <div className="mt-5">{media}</div>}
 
         <ChoiceOptionGroup
-          className={`mt-5 grid gap-3 ${optionColumns === "two" ? "sm:grid-cols-2" : ""}`}
+          className={`mt-3 sm:mt-5 ${
+            options.every((option) => !option.secondary && option.accessibleLabel.length <= 18)
+              ? answerLayout(options.map((option) => option.accessibleLabel))
+              : `grid gap-2 ${optionColumns === "two" ? "sm:grid-cols-2" : ""}`
+          }`}
           label={typeof question === "string" ? question : t("help.chooseAnswer")}
           options={options}
           value={value}

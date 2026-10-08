@@ -162,7 +162,7 @@ describe("CurriculumVocabularyTable", () => {
     expect(screen.getByRole("heading", { level: 3, name: "role" })).toBeInTheDocument();
 
     // Switch back to Table View
-    const tableBtn = screen.getByRole("button", { name: /table/i });
+    const tableBtn = screen.getByRole("button", { name: /list/i });
     await userEvent.click(tableBtn);
     expect(screen.getByRole("table")).toBeInTheDocument();
   });

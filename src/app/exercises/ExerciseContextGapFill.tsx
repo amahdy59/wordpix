@@ -17,6 +17,7 @@ import { useDrillQueue } from "./useDrillQueue";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import { answerLayout } from "../shared/answerLayout";
 
 interface Props {
   step: number;
@@ -143,7 +144,11 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
       <ExerciseFamilyTemplate
         family="visual-choice"
         instruction={hasBlank ? t("exercise.gapFillInstruction") : t("exercise.chooseMeaningClue")}
-        helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
+        helper={
+          <span className="hidden sm:inline">
+            {t("exercise.pressNumberToChooseWord", { count: options.length })}
+          </span>
+        }
         activityLabel={t("exercise.gapFillActivityAria")}
         media={
           <SentenceQuestionSupport
@@ -162,13 +167,13 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
                 lang="en"
                 dir="ltr"
                 aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
-                className="rounded-2xl border border-border bg-wp-card p-5 text-center font-sans text-xl font-semibold leading-relaxed text-foreground shadow-wp-xs sm:text-2xl"
+                className="rounded-2xl border border-border bg-wp-card p-3 text-start font-sans text-lg font-semibold leading-relaxed text-foreground shadow-wp-xs sm:p-5 sm:text-2xl"
               >
                 {clozeSentence}
               </p>
             )}
             <div
-              className={`grid w-full gap-2 sm:gap-3 ${options.length === 3 ? "sm:grid-cols-3 lg:grid-cols-1" : "sm:grid-cols-2"}`}
+              className={answerLayout(options.map((option) => option.label))}
               role="group"
               aria-label={t("exercise.gapFillChoicesAria")}
               dir="ltr"
