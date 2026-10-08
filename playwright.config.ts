@@ -1,5 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const testPort = process.env.WORDPIX_E2E_PORT ?? "6173";
+const testBaseURL = `http://localhost:${testPort}`;
+
 export default defineConfig({
   testDir: "./e2e",
   fullyParallel: true,
@@ -8,7 +11,7 @@ export default defineConfig({
   workers: 2,
   reporter: "html",
   use: {
-    baseURL: "http://localhost:6173",
+    baseURL: testBaseURL,
     trace: "on-first-retry",
   },
   projects: [
@@ -22,8 +25,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "npm run preview -- --port 6173",
-    url: "http://localhost:6173",
+    command: `npm run preview -- --port ${testPort}`,
+    url: testBaseURL,
     reuseExistingServer: false,
     timeout: 120_000,
   },
