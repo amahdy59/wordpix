@@ -167,7 +167,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
               prompt={completion.tokens
                 .map((token, index) =>
                   index >= completion.blankStart && index < completion.blankStart + answer.length
-                    ? "blank"
+                    ? "____"
                     : token
                 )
                 .join(" ")}

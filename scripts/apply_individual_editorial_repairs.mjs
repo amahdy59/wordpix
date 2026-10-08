@@ -12,7 +12,7 @@ async function writeText(path, text) {
   }
 }
 
-const repairs = JSON.parse(await fs.readFile("scripts/individual_editorial_repairs.json", "utf8"));
+const repairs = JSON.parse(await fs.readFile(process.argv[2] ?? "scripts/individual_editorial_repairs.json", "utf8"));
 const ledgerPath = "docs/lesson-content-audit/editorial-corrections.json";
 const ledger = JSON.parse(await fs.readFile(ledgerPath, "utf8"));
 const pending = [];
@@ -24,7 +24,7 @@ for (const [unit, rows] of Object.entries(repairs)) {
     if (!data[id]) throw new Error(`Unknown word ${unit}/${id}`);
     for (const [field, value] of Object.entries(fields)) {
       if (
-        !["definition", "arabicTranslation"].includes(field) ||
+        !["definition", "arabicTranslation", "exampleUsage"].includes(field) ||
         typeof value !== "string" ||
         !value.trim()
       )

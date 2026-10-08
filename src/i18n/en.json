@@ -69,6 +69,8 @@
     "listenAgain": "Listen Again",
     "gotIt": "Got It",
     "listen": "Listen",
+    "stop": "Stop",
+    "retry": "Retry",
     "done": "Done",
     "returnToExplore": "Return to learning path",
     "checkAnswer": "Check answer",
@@ -1071,6 +1073,7 @@
     "chooseMeaningClue": "Choose the word that matches the clue.",
     "meaningClue": "Meaning clue",
     "listenSentence": "Listen to the sentence",
+    "sentenceAudioGapHint": "A pause marks the missing words.",
     "stopSentenceAudio": "Stop sentence audio",
     "retrySentenceAudio": "Retry sentence audio",
     "sentenceAudioError": "Audio could not play. Try again or read the sentence.",
@@ -1083,7 +1086,7 @@
     "gapFillSentenceAria": "Sentence with a missing word: {sentence}",
     "gapFillChoicesAria": "Words for the missing part",
     "readingContextTitle": "Reading and Context",
-    "readingContextInstruction": "Read the short text, then choose the answer.",
+    "readingContextInstruction": "Read and choose the answer.",
     "readingContextActivityAria": "Reading and retrieval activity",
     "readingContextQuestion": "Check your understanding",
     "readingContextCorrect": "You found the answer in the text.",
@@ -1526,6 +1529,7 @@
     "englishTranslation": "English Translation",
     "proceedToText": "Proceed to Hadith Text & Audio",
     "lessonDetails": "Lesson overview & goals",
+    "lessonDetailsShort": "Goals",
     "listenStepOne": "Listen once for the main idea.",
     "listenStepTwo": "Replay slowly and notice key expressions.",
     "listenStepThree": "Read the translation and connect the meaning to the words.",
@@ -1544,7 +1548,7 @@
     "phrasalVerbs": "Phrasal verbs",
     "collocationsAndIdioms": "Collocations and idioms",
     "vocabularyAudioCue": "Say each word after listening to its lesson audio.",
-    "vocabularyStudyInstructions": "Study the five core words first. Use the image, meaning, example, Arabic support, and pronunciation together; then review every expression in the complete language bank.",
+    "vocabularyStudyInstructions": "Learn the words, then explore the expressions below.",
     "completeLanguageBank": "Complete language bank",
     "completeLanguageBankDescription": "Every purpose pattern, extra word, phrasal verb, and collocation from this lesson is grouped below.",
     "category": "Category",
@@ -2100,7 +2104,7 @@
     "pronounce": "Pronounce {word}"
   },
   "vocabulary": {
-    "tableCaption": "Vocabulary and Collocations Table",
+    "tableCaption": "Vocabulary",
     "imageHeader": "Image",
     "wordHeader": "Word/Phrase",
     "definitionHeader": "Definition",
@@ -2116,8 +2120,8 @@
     "imageModalTitle": "Vocabulary Detail",
     "exampleInContext": "Example in Context",
     "viewMode": "View mode",
-    "tableView": "Table View",
-    "galleryView": "Gallery View"
+    "tableView": "List",
+    "galleryView": "Gallery"
   },
   "quiz": {
     "questionOf": "Question {current} of {total}",

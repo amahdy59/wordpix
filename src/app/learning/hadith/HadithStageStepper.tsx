@@ -63,10 +63,10 @@ export function HadithStageStepper({
   };
 
   return (
-    <nav className="mt-6 w-full space-y-3" aria-label={t("hadith.stageNavigation")}>
+    <nav className="mt-3 w-full space-y-2 sm:mt-6" aria-label={t("hadith.stageNavigation")}>
       {/* Mobile Stepper Header (< sm) */}
       <div className="flex flex-col gap-2 sm:hidden">
-        <div className="flex items-center justify-between text-xs font-black">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold">
           <span className="text-primary uppercase tracking-wider">
             {t("hadith.stepOfTotal", {
               current: currentStageIndex + 1,
@@ -99,7 +99,7 @@ export function HadithStageStepper({
         ref={railRef}
         role="tablist"
         aria-label={t("hadith.stageNavigation")}
-        className="flex snap-x snap-mandatory gap-2.5 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-4 sm:overflow-visible sm:pb-0"
+        className="grid grid-cols-2 gap-2 sm:grid-cols-4"
       >
         {HADITH_STAGE_IDS.map((id, index) => {
           const isCurrent = index === currentStageIndex;
@@ -108,11 +108,7 @@ export function HadithStageStepper({
           const label = t(`hadith.stageLabels.${id}`);
 
           return (
-            <li
-              key={id}
-              role="presentation"
-              className="min-w-[8.5rem] shrink-0 snap-start sm:min-w-0"
-            >
+            <li key={id} role="presentation" className="min-w-0">
               <button
                 ref={isCurrent ? currentButtonRef : undefined}
                 type="button"
@@ -124,7 +120,7 @@ export function HadithStageStepper({
                 tabIndex={isCurrent ? 0 : -1}
                 onClick={() => onSelectStage(index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
-                className={`group relative flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl border-2 px-3 py-2 text-xs font-black transition-all active:scale-[0.98] ${focusRing} ${
+                className={`group relative flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border-2 px-3 py-2 text-sm font-semibold transition-all motion-safe:active:scale-[0.98] ${focusRing} ${
                   isCurrent
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
                     : isCompleted
@@ -150,7 +146,7 @@ export function HadithStageStepper({
                   )}
                 </span>
 
-                <span className="truncate tracking-tight">{label}</span>
+                <span className="min-w-0 break-words">{label}</span>
               </button>
             </li>
           );

@@ -198,13 +198,13 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
       className="min-h-dvh w-full overflow-y-auto scroll-pb-40 bg-background sm:scroll-pb-24"
       aria-labelledby="hadith-title"
     >
-      <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-4 py-3 sm:gap-6 sm:py-8">
         {/* Top Action Bar */}
         <div className="flex flex-wrap items-center justify-between gap-3">
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-            className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted active:scale-[0.98] ${focusRing}`}
+            className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
             <span>{t("hadith.backToCurriculum") || "Back to curriculum"}</span>
@@ -213,7 +213,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
           <div className="flex flex-wrap items-center gap-2.5">
             {savedProgress && (
               <p
-                className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary"
+                className="sr-only sm:not-sr-only sm:inline-flex sm:items-center sm:gap-1.5 sm:rounded-full sm:bg-primary/10 sm:px-3 sm:py-1 sm:text-sm sm:font-bold sm:text-primary"
                 role="status"
               >
                 <Check className="size-3.5" aria-hidden />
@@ -221,7 +221,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
               </p>
             )}
 
-            <p className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold text-muted-foreground">
+            <p className="sr-only sm:not-sr-only sm:rounded-full sm:border sm:border-border sm:bg-card sm:px-3 sm:py-1 sm:text-sm sm:font-bold sm:text-muted-foreground">
               {t("hadith.lessonProgress", {
                 current: lesson.number,
                 total: HADITH_LESSONS.length,
@@ -231,33 +231,44 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         </div>
 
         {/* Lesson Header & Stepper */}
-        <header className="rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-7">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+        <header className="rounded-2xl border border-border bg-card p-3 shadow-wp-xs sm:p-7">
+          <div className="flex items-start justify-between gap-2">
+            <div className="min-w-0">
+              <p className="text-sm font-semibold uppercase text-primary">
                 {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
               </p>
               <h1
                 id="hadith-title"
-                className="mt-1.5 text-2xl font-black tracking-tight sm:text-3xl"
+                lang="en"
+                dir="ltr"
+                className="mt-0.5 break-words text-lg font-bold leading-tight text-foreground sm:mt-1.5 sm:text-3xl"
               >
                 {lesson.title}
               </h1>
-              {parsedStages.overview.purpose && (
-                <p className="mt-1.5 max-w-3xl text-sm font-semibold leading-relaxed text-muted-foreground">
-                  {parsedStages.overview.purpose}
-                </p>
-              )}
             </div>
 
             <details className="group shrink-0">
               <summary
-                className={`inline-flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-xl border border-border bg-background px-3.5 py-2 text-xs font-black text-foreground transition-colors hover:bg-muted ${focusRing}`}
+                aria-label={t("hadith.lessonDetails")}
+                className={`inline-flex min-h-11 cursor-pointer list-none items-center rounded-xl border border-border bg-background px-2 py-2 text-sm font-bold text-foreground transition-colors hover:bg-muted sm:px-3.5 ${focusRing}`}
               >
-                <span>{t("hadith.lessonDetails") || "Lesson overview & goals"}</span>
+                <span aria-hidden className="sm:hidden">
+                  {t("hadith.lessonDetailsShort")}
+                </span>
+                <span aria-hidden className="hidden sm:inline">
+                  {t("hadith.lessonDetails")}
+                </span>
               </summary>
               <div className="mt-3 sm:w-96">
                 <HadithOverviewSummary overview={parsedStages.overview} />
+                <button
+                  type="button"
+                  onClick={reset}
+                  className={`mt-3 inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-sm font-bold text-foreground hover:bg-muted ${focusRing}`}
+                >
+                  <RotateCcw className="size-4" aria-hidden />
+                  {t("hadith.resetLesson")}
+                </button>
               </div>
             </details>
           </div>
@@ -323,32 +334,23 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         </div>
 
         {/* Sticky Accessible Footer Navigation Bar */}
-        <div className="sticky bottom-0 z-30 -mx-4 mt-8 border-t border-border/80 bg-background/95 px-4 py-3.5 backdrop-blur-md shadow-wp-md sm:-mx-8 sm:px-8">
-          <div className="wp-container-reading flex flex-col-reverse justify-between gap-3 sm:flex-row sm:items-center">
-            <div className="flex gap-2">
+        <div className="sticky bottom-0 z-30 mt-3 border-t border-border bg-background py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+          <div className="wp-container-reading grid grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:justify-between">
+            <div className="flex">
               <button
                 type="button"
                 onClick={goBack}
-                className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-border bg-card px-5 font-black text-foreground hover:bg-muted active:scale-[0.98] ${focusRing}`}
+                className={`inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
               >
                 <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
                 <span>{t("hadith.previous") || "Previous"}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={reset}
-                className={`inline-flex min-h-12 items-center justify-center gap-1.5 rounded-2xl px-4 font-bold text-muted-foreground hover:bg-muted hover:text-foreground active:scale-[0.98] ${focusRing}`}
-              >
-                <RotateCcw className="size-4" aria-hidden />
-                <span className="text-sm">{t("hadith.resetLesson") || "Reset"}</span>
               </button>
             </div>
 
             <button
               type="button"
               onClick={goNext}
-              className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-7 font-black text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] ${focusRing}`}
+              className={`inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 text-base font-bold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] ${focusRing}`}
             >
               <span>
                 {stageIndex === HADITH_STAGE_IDS.length - 1

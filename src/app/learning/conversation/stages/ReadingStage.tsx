@@ -211,7 +211,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
 
       {/* Reading Article Card */}
       <article
-        className="rounded-3xl border border-border bg-card p-6 sm:p-9 shadow-wp-sm flex flex-col gap-5"
+        className="rounded-3xl border border-border bg-card p-3 sm:p-9 shadow-wp-sm flex flex-col gap-5"
         aria-labelledby="reading-title"
       >
         <header className="border-b border-border/60 pb-4">
@@ -233,7 +233,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
             return (
               <div
                 key={pIdx}
-                className={`relative rounded-2xl border p-4 pe-16 transition-colors ${paragraphIsPlaying ? "border-primary bg-primary/5 shadow-wp-xs" : "border-transparent hover:border-border hover:bg-muted/30"}`}
+                className={`relative rounded-2xl border p-2 pe-14 sm:p-4 sm:pe-16 transition-colors ${paragraphIsPlaying ? "border-primary bg-primary/5 shadow-wp-xs" : "border-transparent hover:border-border hover:bg-muted/30"}`}
               >
                 <p>
                   <TimedPassageText

@@ -1,5 +1,6 @@
 import { useRef, type ReactNode } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
+import { answerLayout } from "./answerLayout";
 
 export interface ChoiceOption<T extends string> {
   value: T;
@@ -28,7 +29,7 @@ export function ChoiceOptionGroup<T extends string>({
   disabled = false,
   correctValue,
   revealFeedback = false,
-  className = "grid gap-3 sm:grid-cols-2",
+  className,
 }: Props<T>) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
 
@@ -42,7 +43,11 @@ export function ChoiceOptionGroup<T extends string>({
   };
 
   return (
-    <div className={className} role="radiogroup" aria-label={label}>
+    <div
+      className={className ?? answerLayout(options.map((option) => option.accessibleLabel))}
+      role="radiogroup"
+      aria-label={label}
+    >
       {options.map((option, index) => {
         const selected = value === option.value;
         const correct = revealFeedback && option.value === correctValue;
@@ -85,7 +90,7 @@ export function ChoiceOptionGroup<T extends string>({
                 }
               }
             }}
-            className={`group relative flex min-h-[52px] items-center gap-3.5 rounded-2xl border-2 p-4 text-start text-sm sm:text-base font-bold transition-all duration-150 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${
+            className={`group relative flex min-h-[48px] min-w-0 items-center gap-2 rounded-xl border-2 p-3 text-start text-base font-semibold transition-all duration-150 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${
               correct
                 ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground shadow-wp-xs"
                 : incorrect
@@ -99,7 +104,7 @@ export function ChoiceOptionGroup<T extends string>({
           >
             {option.prefix && (
               <span
-                className={`flex size-8 shrink-0 items-center justify-center rounded-xl text-xs font-black transition-colors ${
+                className={`hidden sm:flex size-8 shrink-0 items-center justify-center rounded-xl text-sm font-bold transition-colors ${
                   correct
                     ? "bg-feedback-success/20 text-feedback-success-foreground"
                     : incorrect
@@ -112,10 +117,10 @@ export function ChoiceOptionGroup<T extends string>({
                 {option.prefix}
               </span>
             )}
-            <span className="min-w-0 flex-1 leading-snug">
+            <span className="min-w-0 flex-1 break-words leading-normal">
               <span className="block">{option.label}</span>
               {option.secondary && (
-                <span className="mt-1 block text-xs font-normal text-muted-foreground">
+                <span className="mt-1 block text-sm font-normal text-muted-foreground">
                   {option.secondary}
                 </span>
               )}

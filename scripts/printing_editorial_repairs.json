@@ -1,0 +1,73 @@
+{
+  "3d-printer-lab": {
+    "nozzle": {
+      "definition": "The small opening through which a filament printer deposits melted material."
+    },
+    "belt": {
+      "definition": "A flexible loop that transfers movement between pulleys in the printer.",
+      "arabicTranslation": "سير نقل الحركة"
+    },
+    "resin": {
+      "definition": "A liquid printing material that hardens when exposed to suitable light."
+    },
+    "computer": {
+      "definition": "An electronic device used to prepare designs and control printing tasks.",
+      "exampleUsage": "Omar opens the design on his computer before sending it to the printer."
+    },
+    "reference-model": {
+      "definition": "A model used as a guide when designing or comparing a new object."
+    },
+    "file": {
+      "definition": "A hand tool with a rough surface used to shape or smooth material.",
+      "arabicTranslation": "مِبْرَد",
+      "exampleUsage": "Nadia uses a file to smooth the edge of the printed part."
+    },
+    "paint": {
+      "definition": "A colored substance applied to a surface to decorate or protect it."
+    },
+    "gear": { "definition": "A wheel with teeth that fit into another gear to transfer movement." },
+    "keychain": { "definition": "A ring or short chain used to hold keys together." },
+    "chess-piece": { "definition": "One of the objects that players move on a chessboard." },
+    "workstation": {
+      "definition": "A work area equipped with the tools and equipment needed for a task."
+    },
+    "gloves": {
+      "definition": "Protective coverings worn on the hands while working with suitable tools or materials."
+    },
+    "frame": {
+      "definition": "The structure that supports and holds the printer's parts in position."
+    },
+    "pla": { "arabicTranslation": "حمض متعدد اللاكتيك (PLA)" },
+    "wood-fill": { "arabicTranslation": "خيط طباعة ممزوج بجزيئات الخشب" },
+    "print": { "arabicTranslation": "يطبع مجسّمًا" },
+    "infill": {
+      "definition": "The pattern of printed material inside an object that helps support its outer walls."
+    },
+    "calibrate": {
+      "definition": "To adjust a printer or measuring tool so that it works accurately."
+    },
+    "mouse": { "exampleUsage": "Nadia uses the mouse to rotate the model on the screen." },
+    "ruler": { "exampleUsage": "Omar measures the model's length with a ruler." },
+    "caliper": { "exampleUsage": "Nadia checks the printed part's width with a caliper." },
+    "protractor": { "exampleUsage": "Omar uses a protractor to check the angle in his sketch." },
+    "craft-knife": {
+      "exampleUsage": "The instructor keeps the craft knife with the model-finishing tools."
+    },
+    "pliers": { "exampleUsage": "The technician grips the small component with pliers." },
+    "tweezers": { "exampleUsage": "Nadia picks up the tiny part with tweezers." },
+    "paintbrush": { "exampleUsage": "Omar applies color to the model with a paintbrush." },
+    "cookie-cutter": {
+      "exampleUsage": "Nadia designs a star-shaped cookie cutter in the modeling software."
+    },
+    "storage-shelf": { "exampleUsage": "The finished models are on the storage shelf." },
+    "label-maker": {
+      "arabicTranslation": "جهاز طباعة الملصقات",
+      "exampleUsage": "Omar uses the label maker to identify the material boxes."
+    },
+    "fan": { "exampleUsage": "The fan moves air around the printed layers." },
+    "slice": {
+      "arabicTranslation": "يُقسّم النموذج إلى طبقات للطباعة",
+      "exampleUsage": "Nadia will slice the model before starting the print."
+    }
+  }
+}

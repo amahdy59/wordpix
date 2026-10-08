@@ -53117,51 +53117,39 @@
     ],
     "after": [
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Infant while also considering Newborn and Baby. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Infant",
-        "contextTag": "scene-1",
+        "prompt": "Nadia's niece was born three days ago. Her family introduces the newborn during a video call. Her brother says the baby is sleeping, while an infant cousin plays nearby.\nWhich word specifically describes a baby in the first few weeks of life?",
+        "answer": "Newborn",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Toddler while also considering Preschooler and Child. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia's nephew is learning to walk. The toddler takes a few steps while an adult stays close. His sister is a preschooler, and an older child shows her a picture book.\nWhich word describes the child learning to walk?",
         "answer": "Toddler",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Youngster while also considering Kid and Childhood. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Youngster",
-        "contextTag": "scene-3",
+        "prompt": "Nadia shares a photograph from her childhood. In it, she is a youngster playing with a neighbor. She laughs and says, 'I was a very energetic kid.'\nWhich word names the period of life Nadia remembers?",
+        "answer": "Childhood",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Adolescent while also considering Growth and Teenager. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Adolescent",
-        "contextTag": "scene-4",
+        "prompt": "Nadia compares two photographs of her nephew, a teenager. His growth is clear because he is much taller in the newer photograph. The adolescent also talks about his changing interests.\nWhich word describes the increase in his height?",
+        "answer": "Growth",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Teen while also considering Youth and Puberty. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia's niece is sixteen. In an informal message, Nadia calls her a teen. They discuss how interests can change during youth, and her niece recalls learning about puberty at school.\nWhich informal word refers to the sixteen-year-old?",
         "answer": "Teen",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Newborn"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Toddler"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -53170,6 +53158,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Face Mask” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "How old is Nadia's newborn niece?",
+        "answer": "Three days old",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ]
   },
@@ -53221,51 +53216,39 @@
     ],
     "after": [
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Growth Spurt while also considering Young Adult and Coming of Age. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia remembers her nephew's growth spurt, when he became taller very quickly. Now he is a young adult. At a family gathering, he talks about coming of age and taking on new responsibilities.\nWhich expression describes his rapid increase in height?",
         "answer": "Growth Spurt",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Minor while also considering Juvenile and Adult. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Minor",
-        "contextTag": "scene-2",
+        "prompt": "A family event offers one form for an adult and another for a minor. Nadia's thirty-year-old cousin uses the adult form. The organizer explains that 'juvenile' is another formal term used for a young person.\nWhich word describes the thirty-year-old cousin?",
+        "answer": "Adult",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Mature while also considering Grown-Up and Middle-Aged. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "During a disagreement, Nadia's middle-aged cousin listens calmly and suggests a fair solution. Nadia describes this sensible behavior as mature. A child watching says, 'I want to handle problems like that when I am a grown-up.'\nWhich word describes the cousin's sensible behavior?",
         "answer": "Mature",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Prime while also considering Independent and Responsible. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Prime",
-        "contextTag": "scene-4",
+        "prompt": "Nadia's cousin now lives alone and manages his own bills. He is independent and responsible about paying them on time. He feels he is in his prime because he enjoys his work and has energy for his hobbies.\nWhich word describes his ability to manage his own life?",
+        "answer": "Independent",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Professional while also considering Experienced and Elderly. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia asks a trained photographer to take a family portrait. The experienced professional explains the service and confirms the booking. She arranges comfortable seating for Nadia's elderly relatives.\nWhich word refers to the trained photographer doing this work?",
         "answer": "Professional",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Growth Spurt"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Juvenile"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -53274,6 +53257,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Newborn” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What does Nadia's cousin check before moving?",
+        "answer": "The bills he will need to pay",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ]
   },
@@ -53325,51 +53315,39 @@
     ],
     "after": [
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retiree while also considering Senior and Grandparent. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia's aunt is a senior who stopped working last month. The retiree now spends more time with friends and enjoys being a grandparent.\nWhich word describes someone who has stopped working after a career?",
         "answer": "Retiree",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retirement while also considering Aging and Wisdom. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Retirement",
-        "contextTag": "scene-2",
+        "prompt": "Nadia asks her uncle for advice about a difficult decision. His wisdom comes from knowledge and experience. During retirement, he leads a discussion group about aging and changes in everyday life.\nWhich word describes his ability to give thoughtful advice?",
+        "answer": "Wisdom",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Golden Years while also considering Elder and Longevity. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
-        "answer": "Golden Years",
-        "contextTag": "scene-3",
+        "prompt": "Nadia's grandmother has lived for more than ninety years. The family celebrates her longevity at a gathering. This respected elder says she enjoys spending her golden years with friends and relatives.\nWhich word refers to her long life?",
+        "answer": "Longevity",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Steps while also considering Birth and First Words. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "The family album records a child's birth and first words. Nadia adds a new video showing her nephew's first steps: he walks a short distance for the first time.\nWhich milestone does the new video show?",
         "answer": "First Steps",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Job while also considering School Start and Graduation. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia's brother has just started his first job, a paid position at a shop. He puts a photograph from work beside pictures of his school start and graduation in the family album.\nWhich milestone has Nadia's brother just reached?",
         "answer": "First Job",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Senior"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Aging"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "contextTag": "scene-5"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -53378,6 +53356,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Growth Spurt” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "What advice does Nadia ask her uncle for?",
+        "answer": "Advice about a new job",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ]
   },
@@ -53413,23 +53398,11 @@
     ],
     "after": [
       {
-        "prompt": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Legacy while also considering Marriage and Parenthood. She describes each person respectfully and explains what is happening in the photograph.\nWhich target does Nadia notice first in this situation?",
+        "prompt": "Nadia's grandparents helped many neighbors learn to read. Their kindness still inspires the family, and Nadia calls this their legacy.\nWhich word describes their lasting influence?",
         "answer": "Legacy",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
-      },
-      {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Marriage"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Legacy"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "contextTag": "scene-1"
       },
       {
         "prompt": "Use it: Use two target words in one connected sentence.",
@@ -53438,6 +53411,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Senior” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Nadia make the family album?",
+        "answer": "To preserve the memories for younger relatives",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ]
   },
@@ -120754,7 +120734,7 @@
       "مراهق",
       "مراهق",
       "مراهق",
-      "شاب",
+      "مرحلة الشباب",
       "بلوغ"
     ]
   },
@@ -148001,5 +147981,803 @@
       "موس شعر",
       "مثبت شعر"
     ]
+  },
+  "ages-life-stages/baby/definition": {
+    "unit": "ages-life-stages",
+    "id": "baby",
+    "field": "definition",
+    "before": "A very young child who cannot yet walk well.",
+    "after": "A very young child."
+  },
+  "ages-life-stages/infant/definition": {
+    "unit": "ages-life-stages",
+    "id": "infant",
+    "field": "definition",
+    "before": "A very young child (birth to 1 year) who has not yet begun to walk or talk.",
+    "after": "A baby, especially during the first year of life."
+  },
+  "ages-life-stages/kid/definition": {
+    "unit": "ages-life-stages",
+    "id": "kid",
+    "field": "definition",
+    "before": "A young person of either sex.",
+    "after": "An informal word for a child."
+  },
+  "ages-life-stages/youngster/definition": {
+    "unit": "ages-life-stages",
+    "id": "youngster",
+    "field": "definition",
+    "before": "A young person of either sex.",
+    "after": "A child or young person."
+  },
+  "ages-life-stages/childhood/definition": {
+    "unit": "ages-life-stages",
+    "id": "childhood",
+    "field": "definition",
+    "before": "The time of person's life when they are a child.",
+    "after": "The part of a person's life when they are a child."
+  },
+  "ages-life-stages/growth/definition": {
+    "unit": "ages-life-stages",
+    "id": "growth",
+    "field": "definition",
+    "before": "A progression from simpler to more complex forms.",
+    "after": "The process of becoming larger or developing over time."
+  },
+  "ages-life-stages/teenager/definition": {
+    "unit": "ages-life-stages",
+    "id": "teenager",
+    "field": "definition",
+    "before": "A young person between childhood and adulthood.",
+    "after": "A person aged thirteen to nineteen."
+  },
+  "ages-life-stages/adolescent/definition": {
+    "unit": "ages-life-stages",
+    "id": "adolescent",
+    "field": "definition",
+    "before": "Being of the age 13 through 19.",
+    "after": "A young person in the stage between childhood and adulthood."
+  },
+  "ages-life-stages/teen/definition": {
+    "unit": "ages-life-stages",
+    "id": "teen",
+    "field": "definition",
+    "before": "Being of the age 13 through 19.",
+    "after": "An informal word for a teenager."
+  },
+  "ages-life-stages/youth/arabicTranslation": {
+    "unit": "ages-life-stages",
+    "id": "youth",
+    "field": "arabicTranslation",
+    "before": "شاب",
+    "after": "مرحلة الشباب"
+  },
+  "ages-life-stages/puberty/definition": {
+    "unit": "ages-life-stages",
+    "id": "puberty",
+    "field": "definition",
+    "before": "The time of life when sex glands become functional.",
+    "after": "The stage when a young person's body develops toward physical adulthood."
+  },
+  "ages-life-stages/coming-of-age/definition": {
+    "unit": "ages-life-stages",
+    "id": "coming-of-age",
+    "field": "definition",
+    "before": "Coming of age is a stage in a person's life where they start to take on responsibilities.",
+    "after": "The process of becoming an adult and taking on adult responsibilities."
+  },
+  "ages-life-stages/juvenile/definition": {
+    "unit": "ages-life-stages",
+    "id": "juvenile",
+    "field": "definition",
+    "before": "Of or relating to or characteristic of or appropriate for children or young people.",
+    "after": "A young person who is not yet an adult, especially in legal contexts."
+  },
+  "ages-life-stages/adult/definition": {
+    "unit": "ages-life-stages",
+    "id": "adult",
+    "field": "definition",
+    "before": "A person who has reached full physical growth and legal maturity.",
+    "after": "A person who is no longer a child."
+  },
+  "ages-life-stages/grown-up/definition": {
+    "unit": "ages-life-stages",
+    "id": "grown-up",
+    "field": "definition",
+    "before": "A grown person, rather than a child, viewed as mature, responsible, or legally an adult.",
+    "after": "An informal word for an adult."
+  },
+  "ages-life-stages/responsible/definition": {
+    "unit": "ages-life-stages",
+    "id": "responsible",
+    "field": "definition",
+    "before": "Worthy of or requiring responsibility or trust.",
+    "after": "Reliable and able to take care of duties or make sensible decisions."
+  },
+  "ages-life-stages/professional/definition": {
+    "unit": "ages-life-stages",
+    "id": "professional",
+    "field": "definition",
+    "before": "Engaged in a profession or engaging in as a profession or means of livelihood.",
+    "after": "A person who does work that requires specialized training or skill."
+  },
+  "ages-life-stages/retiree/definition": {
+    "unit": "ages-life-stages",
+    "id": "retiree",
+    "field": "definition",
+    "before": "A person who has retired from active working.",
+    "after": "A person who has stopped working, usually after reaching retirement age."
+  },
+  "ages-life-stages/aging/definition": {
+    "unit": "ages-life-stages",
+    "id": "aging",
+    "field": "definition",
+    "before": "The organic process of growing older and showing the effects of increasing age.",
+    "after": "The process of growing older."
+  },
+  "ages-life-stages/wisdom/definition": {
+    "unit": "ages-life-stages",
+    "id": "wisdom",
+    "field": "definition",
+    "before": "An Apocryphal book consisting mainly of a meditation on wisdom.",
+    "after": "The ability to make good judgments using knowledge and experience."
+  },
+  "ages-life-stages/retirement/definition": {
+    "unit": "ages-life-stages",
+    "id": "retirement",
+    "field": "definition",
+    "before": "The state of being retired from one's business or occupation.",
+    "after": "The period of life after a person stops working, usually because of age."
+  },
+  "ages-life-stages/golden-years/definition": {
+    "unit": "ages-life-stages",
+    "id": "golden-years",
+    "field": "definition",
+    "before": "The later stage of life that begins when a person retires from full-time employment.",
+    "after": "An expression for the later years of a person's life."
+  },
+  "ages-life-stages/birth/definition": {
+    "unit": "ages-life-stages",
+    "id": "birth",
+    "field": "definition",
+    "before": "The time when something begins (especially life).",
+    "after": "The event in which a baby is born."
+  },
+  "ages-life-stages/first-job/definition": {
+    "unit": "ages-life-stages",
+    "id": "first-job",
+    "field": "definition",
+    "before": "The first job refers to the first job position a person gets after graduating from school.",
+    "after": "The first paid job a person has."
+  },
+  "ages-life-stages/marriage/definition": {
+    "unit": "ages-life-stages",
+    "id": "marriage",
+    "field": "definition",
+    "before": "Two people who are married to each other.",
+    "after": "The state of being married or the relationship between spouses."
+  },
+  "ages-life-stages/legacy/definition": {
+    "unit": "ages-life-stages",
+    "id": "legacy",
+    "field": "definition",
+    "before": "(law) a gift of personal property by will.",
+    "after": "Something a person leaves behind that continues to influence others."
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.0.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.0.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Infant while also considering Newborn and Baby. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's niece was born three days ago. Her family introduces the newborn during a video call. Her brother says the baby is sleeping, while an infant cousin plays nearby."
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.0.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.0.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word specifically describes a baby in the first few weeks of life?"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.0.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.0.check.expectedAnswer",
+    "before": "Infant",
+    "after": "Newborn"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.1.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.1.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Toddler while also considering Preschooler and Child. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's nephew is learning to walk. The toddler takes a few steps while an adult stays close. His sister is a preschooler, and an older child shows her a picture book."
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.1.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.1.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes the child learning to walk?"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.2.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.2.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Youngster while also considering Kid and Childhood. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia shares a photograph from her childhood. In it, she is a youngster playing with a neighbor. She laughs and says, 'I was a very energetic kid.'"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.2.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.2.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word names the period of life Nadia remembers?"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.2.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.2.check.expectedAnswer",
+    "before": "Youngster",
+    "after": "Childhood"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.3.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.3.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Adolescent while also considering Growth and Teenager. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia compares two photographs of her nephew, a teenager. His growth is clear because he is much taller in the newer photograph. The adolescent also talks about his changing interests."
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.3.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.3.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes the increase in his height?"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.3.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.3.check.expectedAnswer",
+    "before": "Adolescent",
+    "after": "Growth"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.4.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.4.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Teen while also considering Youth and Puberty. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's niece is sixteen. In an informal message, Nadia calls her a teen. They discuss how interests can change during youth, and her niece recalls learning about puberty at school."
+  },
+  "ages-life-stages/ages-life-stages-1/usage.scenes.4.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.scenes.4.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which informal word refers to the sixteen-year-old?"
+  },
+  "ages-life-stages/ages-life-stages-1/reading.text": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "reading.text",
+    "before": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss newborn, baby, and infant. The context makes the relationship between the words clear. In the social situation, the people experience or discuss toddler, preschooler, and child. The context makes the relationship between the words clear.",
+    "after": "Nadia calls her sister to meet a newborn niece. The baby is only three days old. Nadia also sees her nephew, a toddler who is learning to walk. Later, the family looks at old photographs. Nadia remembers her childhood games and notices how much the children have grown. She asks her sixteen-year-old niece about school before the call ends."
+  },
+  "ages-life-stages/ages-life-stages-1/usage.textType": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.textType",
+    "before": "workplace-email",
+    "after": "short-narrative"
+  },
+  "ages-life-stages/ages-life-stages-1/usage.readingTarget": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-1",
+    "field": "usage.readingTarget",
+    "before": "65-95 words",
+    "after": "45-75 words"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.0.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.0.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Growth Spurt while also considering Young Adult and Coming of Age. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia remembers her nephew's growth spurt, when he became taller very quickly. Now he is a young adult. At a family gathering, he talks about coming of age and taking on new responsibilities."
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.0.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.0.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which expression describes his rapid increase in height?"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.1.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.1.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Minor while also considering Juvenile and Adult. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "A family event offers one form for an adult and another for a minor. Nadia's thirty-year-old cousin uses the adult form. The organizer explains that 'juvenile' is another formal term used for a young person."
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.1.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.1.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes the thirty-year-old cousin?"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.1.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.1.check.expectedAnswer",
+    "before": "Minor",
+    "after": "Adult"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.2.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.2.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Mature while also considering Grown-Up and Middle-Aged. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "During a disagreement, Nadia's middle-aged cousin listens calmly and suggests a fair solution. Nadia describes this sensible behavior as mature. A child watching says, 'I want to handle problems like that when I am a grown-up.'"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.2.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.2.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes the cousin's sensible behavior?"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.3.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.3.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Prime while also considering Independent and Responsible. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's cousin now lives alone and manages his own bills. He is independent and responsible about paying them on time. He feels he is in his prime because he enjoys his work and has energy for his hobbies."
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.3.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.3.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes his ability to manage his own life?"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.3.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.3.check.expectedAnswer",
+    "before": "Prime",
+    "after": "Independent"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.4.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.4.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Professional while also considering Experienced and Elderly. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia asks a trained photographer to take a family portrait. The experienced professional explains the service and confirms the booking. She arranges comfortable seating for Nadia's elderly relatives."
+  },
+  "ages-life-stages/ages-life-stages-2/usage.scenes.4.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.scenes.4.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word refers to the trained photographer doing this work?"
+  },
+  "ages-life-stages/ages-life-stages-2/reading.text": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "reading.text",
+    "before": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss growth spurt, young adult, and coming of age. The context makes the relationship between the words clear. In the social situation, the people experience or discuss juvenile, minor, and adult. The context makes the relationship between the words clear.",
+    "after": "Nadia's cousin has started living in his own apartment. He is a young adult and wants to become more independent. Before moving, he makes a budget and checks the bills he will need to pay. His aunt gives advice, but he makes his own decisions. When a problem occurs, he discusses it calmly. Nadia thinks his response is mature and responsible."
+  },
+  "ages-life-stages/ages-life-stages-2/usage.textType": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.textType",
+    "before": "workplace-email",
+    "after": "short-narrative"
+  },
+  "ages-life-stages/ages-life-stages-2/usage.readingTarget": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-2",
+    "field": "usage.readingTarget",
+    "before": "65-95 words",
+    "after": "45-75 words"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.0.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.0.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retiree while also considering Senior and Grandparent. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's aunt is a senior who stopped working last month. The retiree now spends more time with friends and enjoys being a grandparent."
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.0.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.0.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes someone who has stopped working after a career?"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.1.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.1.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Retirement while also considering Aging and Wisdom. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia asks her uncle for advice about a difficult decision. His wisdom comes from knowledge and experience. During retirement, he leads a discussion group about aging and changes in everyday life."
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.1.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.1.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes his ability to give thoughtful advice?"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.1.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.1.check.expectedAnswer",
+    "before": "Retirement",
+    "after": "Wisdom"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.2.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.2.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Golden Years while also considering Elder and Longevity. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's grandmother has lived for more than ninety years. The family celebrates her longevity at a gathering. This respected elder says she enjoys spending her golden years with friends and relatives."
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.2.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.2.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word refers to her long life?"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.2.check.expectedAnswer": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.2.check.expectedAnswer",
+    "before": "Golden Years",
+    "after": "Longevity"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.3.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.3.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Steps while also considering Birth and First Words. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "The family album records a child's birth and first words. Nadia adds a new video showing her nephew's first steps: he walks a short distance for the first time."
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.3.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.3.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which milestone does the new video show?"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.4.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.4.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices First Job while also considering School Start and Graduation. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's brother has just started his first job, a paid position at a shop. He puts a photograph from work beside pictures of his school start and graduation in the family album."
+  },
+  "ages-life-stages/ages-life-stages-3/usage.scenes.4.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.scenes.4.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which milestone has Nadia's brother just reached?"
+  },
+  "ages-life-stages/ages-life-stages-3/reading.text": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "reading.text",
+    "before": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss senior, retiree, and grandparent. The context makes the relationship between the words clear. In the social situation, the people experience or discuss aging, wisdom, and retirement. The context makes the relationship between the words clear.",
+    "after": "Nadia's aunt has recently retired. She plans to spend time with her grandchildren and meet friends during the week. At a family lunch, Nadia asks her uncle for advice about a new job. He listens before sharing what his experience has taught him. Later, they watch a video of a toddler taking his first steps. Everyone talks about a different stage of life."
+  },
+  "ages-life-stages/ages-life-stages-3/usage.textType": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.textType",
+    "before": "dialogue",
+    "after": "short-narrative"
+  },
+  "ages-life-stages/ages-life-stages-3/usage.readingTarget": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-3",
+    "field": "usage.readingTarget",
+    "before": "65-95 words",
+    "after": "45-75 words"
+  },
+  "ages-life-stages/ages-life-stages-4/usage.scenes.0.scenario": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-4",
+    "field": "usage.scenes.0.scenario",
+    "before": "During a family video call, Nadia looks at photographs from different stages of life. Nadia notices Legacy while also considering Marriage and Parenthood. She describes each person respectfully and explains what is happening in the photograph.",
+    "after": "Nadia's grandparents helped many neighbors learn to read. Their kindness still inspires the family, and Nadia calls this their legacy."
+  },
+  "ages-life-stages/ages-life-stages-4/usage.scenes.0.check.question": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-4",
+    "field": "usage.scenes.0.check.question",
+    "before": "Which target does Nadia notice first in this situation?",
+    "after": "Which word describes their lasting influence?"
+  },
+  "ages-life-stages/ages-life-stages-4/reading.text": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-4",
+    "field": "reading.text",
+    "before": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss marriage, parenthood, and legacy. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+    "after": "Nadia interviews her grandparents for a family album. They talk about their marriage and the changes that came with parenthood. They also describe helping neighbors learn to read. Nadia wants the album to preserve these memories for younger relatives. She writes about the kindness that still influences the family. For her, this lasting influence is an important part of her grandparents' legacy."
+  },
+  "ages-life-stages/ages-life-stages-4/usage.textType": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-4",
+    "field": "usage.textType",
+    "before": "dialogue",
+    "after": "short-narrative"
+  },
+  "ages-life-stages/ages-life-stages-4/usage.readingTarget": {
+    "unit": "ages-life-stages",
+    "id": "ages-life-stages-4",
+    "field": "usage.readingTarget",
+    "before": "65-95 words",
+    "after": "45-75 words"
+  },
+  "3d-printer-lab/nozzle/definition": {
+    "unit": "3d-printer-lab",
+    "id": "nozzle",
+    "field": "definition",
+    "before": "A projecting spout from which a fluid is discharged.",
+    "after": "The small opening through which a filament printer deposits melted material."
+  },
+  "3d-printer-lab/belt/definition": {
+    "unit": "3d-printer-lab",
+    "id": "belt",
+    "field": "definition",
+    "before": "Endless loop of flexible material between two rotating shafts or pulleys.",
+    "after": "A flexible loop that transfers movement between pulleys in the printer."
+  },
+  "3d-printer-lab/belt/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "belt",
+    "field": "arabicTranslation",
+    "before": "حزام",
+    "after": "سير نقل الحركة"
+  },
+  "3d-printer-lab/resin/definition": {
+    "unit": "3d-printer-lab",
+    "id": "resin",
+    "field": "definition",
+    "before": "Any of a class of solid or semisolid viscous substances obtained either as exudations from certain plants or prepared by polymerization of simple molecules.",
+    "after": "A liquid printing material that hardens when exposed to suitable light."
+  },
+  "3d-printer-lab/computer/definition": {
+    "unit": "3d-printer-lab",
+    "id": "computer",
+    "field": "definition",
+    "before": "A machine for performing calculations automatically.",
+    "after": "An electronic device used to prepare designs and control printing tasks."
+  },
+  "3d-printer-lab/reference-model/definition": {
+    "unit": "3d-printer-lab",
+    "id": "reference-model",
+    "field": "definition",
+    "before": "An accepted abstract model provides a standard way to describe, study, create, or compare systems and events within a field.",
+    "after": "A model used as a guide when designing or comparing a new object."
+  },
+  "3d-printer-lab/file/definition": {
+    "unit": "3d-printer-lab",
+    "id": "file",
+    "field": "definition",
+    "before": "A named collection of digital information saved on a device.",
+    "after": "A hand tool with a rough surface used to shape or smooth material."
+  },
+  "3d-printer-lab/file/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "file",
+    "field": "arabicTranslation",
+    "before": "ملف",
+    "after": "مِبْرَد"
+  },
+  "3d-printer-lab/paint/definition": {
+    "unit": "3d-printer-lab",
+    "id": "paint",
+    "field": "definition",
+    "before": "To cover a surface with paint.",
+    "after": "A colored substance applied to a surface to decorate or protect it."
+  },
+  "3d-printer-lab/gear/definition": {
+    "unit": "3d-printer-lab",
+    "id": "gear",
+    "field": "definition",
+    "before": "A mechanism for transmitting motion for some specific purpose (as the steering gear of a vehicle).",
+    "after": "A wheel with teeth that fit into another gear to transfer movement."
+  },
+  "3d-printer-lab/keychain/definition": {
+    "unit": "3d-printer-lab",
+    "id": "keychain",
+    "field": "definition",
+    "before": "A small ring or chain keeps physical keys together for easier carrying. In technology, a keychain is a digital store that manages and protects authentication keys and other information used to control access.",
+    "after": "A ring or short chain used to hold keys together."
+  },
+  "3d-printer-lab/chess-piece/definition": {
+    "unit": "3d-printer-lab",
+    "id": "chess-piece",
+    "field": "definition",
+    "before": "Each movable object in chess has defined movement rules and serves a distinct strategic purpose.",
+    "after": "One of the objects that players move on a chessboard."
+  },
+  "3d-printer-lab/workstation/definition": {
+    "unit": "3d-printer-lab",
+    "id": "workstation",
+    "field": "definition",
+    "before": "A desktop digital computer that is conventionally considered to be more powerful than a microcomputer.",
+    "after": "A work area equipped with the tools and equipment needed for a task."
+  },
+  "3d-printer-lab/gloves/definition": {
+    "unit": "3d-printer-lab",
+    "id": "gloves",
+    "field": "definition",
+    "before": "The handwear used by fielders in playing baseball.",
+    "after": "Protective coverings worn on the hands while working with suitable tools or materials."
+  },
+  "3d-printer-lab/label-maker/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "label-maker",
+    "field": "arabicTranslation",
+    "before": "صانع علامة",
+    "after": "جهاز طباعة الملصقات"
+  },
+  "3d-printer-lab/frame/definition": {
+    "unit": "3d-printer-lab",
+    "id": "frame",
+    "field": "definition",
+    "before": "The supporting shape or structure of a building.",
+    "after": "The structure that supports and holds the printer's parts in position."
+  },
+  "3d-printer-lab/pla/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "pla",
+    "field": "arabicTranslation",
+    "before": "بولي لاكتيك أسيد (PLA)",
+    "after": "حمض متعدد اللاكتيك (PLA)"
+  },
+  "3d-printer-lab/wood-fill/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "wood-fill",
+    "field": "arabicTranslation",
+    "before": "حشو خشب",
+    "after": "خيط طباعة ممزوج بجزيئات الخشب"
+  },
+  "3d-printer-lab/slice/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "slice",
+    "field": "arabicTranslation",
+    "before": "يقطّع شرائح",
+    "after": "يُقسّم النموذج إلى طبقات للطباعة"
+  },
+  "3d-printer-lab/print/arabicTranslation": {
+    "unit": "3d-printer-lab",
+    "id": "print",
+    "field": "arabicTranslation",
+    "before": "طباعة",
+    "after": "يطبع مجسّمًا"
+  },
+  "3d-printer-lab/infill/definition": {
+    "unit": "3d-printer-lab",
+    "id": "infill",
+    "field": "definition",
+    "before": "Material placed in a hollow, gap, or depression helps restore a structure, object, or geological formation.",
+    "after": "The pattern of printed material inside an object that helps support its outer walls."
+  },
+  "3d-printer-lab/calibrate/definition": {
+    "unit": "3d-printer-lab",
+    "id": "calibrate",
+    "field": "definition",
+    "before": "To make fine adjustments or divide into marked intervals for optimal measuring.",
+    "after": "To adjust a printer or measuring tool so that it works accurately."
+  },
+  "3d-printer-lab/computer/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "computer",
+    "field": "exampleUsage",
+    "before": "The computer was used during the activity.",
+    "after": "Omar opens the design on his computer before sending it to the printer."
+  },
+  "3d-printer-lab/file/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "file",
+    "field": "exampleUsage",
+    "before": "The file was used during the activity.",
+    "after": "Nadia uses a file to smooth the edge of the printed part."
+  },
+  "3d-printer-lab/mouse/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "mouse",
+    "field": "exampleUsage",
+    "before": "The mouse was used during the activity.",
+    "after": "Nadia uses the mouse to rotate the model on the screen."
+  },
+  "3d-printer-lab/ruler/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "ruler",
+    "field": "exampleUsage",
+    "before": "The ruler was used during the activity.",
+    "after": "Omar measures the model's length with a ruler."
+  },
+  "3d-printer-lab/caliper/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "caliper",
+    "field": "exampleUsage",
+    "before": "The caliper was used during the activity.",
+    "after": "Nadia checks the printed part's width with a caliper."
+  },
+  "3d-printer-lab/protractor/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "protractor",
+    "field": "exampleUsage",
+    "before": "The protractor was used during the activity.",
+    "after": "Omar uses a protractor to check the angle in his sketch."
+  },
+  "3d-printer-lab/craft-knife/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "craft-knife",
+    "field": "exampleUsage",
+    "before": "The glossary uses the term \"Craft Knife\" in an educational description.",
+    "after": "The instructor keeps the craft knife with the model-finishing tools."
+  },
+  "3d-printer-lab/pliers/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "pliers",
+    "field": "exampleUsage",
+    "before": "The pliers was used during the activity.",
+    "after": "The technician grips the small component with pliers."
+  },
+  "3d-printer-lab/tweezers/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "tweezers",
+    "field": "exampleUsage",
+    "before": "The tweezers was used during the activity.",
+    "after": "Nadia picks up the tiny part with tweezers."
+  },
+  "3d-printer-lab/paintbrush/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "paintbrush",
+    "field": "exampleUsage",
+    "before": "The paintbrush was used during the activity.",
+    "after": "Omar applies color to the model with a paintbrush."
+  },
+  "3d-printer-lab/cookie-cutter/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "cookie-cutter",
+    "field": "exampleUsage",
+    "before": "The cookie cutter was used during the activity.",
+    "after": "Nadia designs a star-shaped cookie cutter in the modeling software."
+  },
+  "3d-printer-lab/storage-shelf/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "storage-shelf",
+    "field": "exampleUsage",
+    "before": "The storage shelf was used during the activity.",
+    "after": "The finished models are on the storage shelf."
+  },
+  "3d-printer-lab/label-maker/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "label-maker",
+    "field": "exampleUsage",
+    "before": "The label maker was used during the activity.",
+    "after": "Omar uses the label maker to identify the material boxes."
+  },
+  "3d-printer-lab/fan/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "fan",
+    "field": "exampleUsage",
+    "before": "The fan was used during the activity.",
+    "after": "The fan moves air around the printed layers."
+  },
+  "3d-printer-lab/slice/exampleUsage": {
+    "unit": "3d-printer-lab",
+    "id": "slice",
+    "field": "exampleUsage",
+    "before": "The slice was used during the activity.",
+    "after": "Nadia will slice the model before starting the print."
   }
 }

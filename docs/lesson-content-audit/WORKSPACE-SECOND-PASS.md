@@ -25,3 +25,11 @@ The whole-app structural audit and browser route tests do not certify every indi
 GitHub CI run 37840376023 failed the bundle budget: the initial runtime was 1,085.3 KB against a 500 KB limit. The Home specialist-course card imported all four complete course catalogs solely to resolve resume IDs and titles. It now reads a generated ID/title summary instead. The generator reads the canonical lesson catalogs; a regression checks every summary against its source. No media IDs or URL mappings change.
 
 The production build's initial runtime is now 341.4 KB. The original bundle limits remain unchanged. Local bundle validation passes; remote CI and deployment must still be checked for the pushed correction.
+
+## Current workspace review — 9 October 2026
+
+Reviewed the compact mobile question layouts, adaptive answer columns, bilingual vocabulary rows, shared buttons, safe-area spacing, Hadith stepper and footer, and sentence audio added concurrently. Retained these improvements. Corrected missing reduced-motion guards and stale playback state when returning to a question. Audio regression coverage includes multiword gaps, cancellation, unmount, answering, and revisiting prior text.
+
+Reviewed the new local image-generation planning helpers without executing their media-writing operations. Corrected inconsistent local-completion status values, missing/empty-file checks, misleading unit extraction, and report counts sourced from optional exports. Local generation is explicitly distinct from visual approval; compliance remains unapproved until reviewed. No R2 reference or mapping was changed.
+
+The individual editorial additions are recorded in [LIFE-STAGES-REVIEW.md](LIFE-STAGES-REVIEW.md) and [PRINTING-REVIEW.md](PRINTING-REVIEW.md). Manual definition/gloss reads cover 87 of 200 units; complete lesson approval remains pending. The refreshed structural audit contains 1,281 records and no findings under its automated checks.

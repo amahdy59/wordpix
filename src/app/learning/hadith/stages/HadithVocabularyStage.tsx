@@ -252,23 +252,19 @@ export function HadithVocabularyStage({
   );
 
   return (
-    <section className="wp-container-content space-y-6" aria-labelledby="stage-vocabulary-heading">
+    <section
+      className="wp-container-content space-y-3 sm:space-y-6"
+      aria-labelledby="stage-vocabulary-heading"
+    >
       {/* Header Banner */}
-      <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
-        <span className="text-xs font-black uppercase tracking-[0.18em] text-primary">
-          {t("hadith.vocabularyLabel") || "Vocabulary Study"}
-        </span>
+      <header>
         <h2
           id="stage-vocabulary-heading"
           tabIndex={-1}
-          className="mt-2 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+          className="text-lg font-bold text-foreground outline-none sm:text-2xl"
         >
           {t("hadith.visualVocabularyTitle") || "Core expressions, pictures, and use"}
         </h2>
-        <p className="mt-3 max-w-3xl text-sm font-semibold leading-relaxed text-muted-foreground">
-          {t("hadith.vocabularyStudyInstructions") ||
-            "Study the five core words first. Use the image, meaning, example, Arabic support, and pronunciation together; then review every expression in the complete language bank."}
-        </p>
       </header>
 
       {/* Core Universal Vocabulary Table & Gallery */}
@@ -281,21 +277,18 @@ export function HadithVocabularyStage({
         isAudioError={audio.isError}
         showArabic={true}
         allowViewToggle={true}
+        hideCaption={true}
         defaultView="table"
       />
 
       {/* Complete Language Bank */}
       <section
-        className="rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-7"
+        className="rounded-2xl border border-border bg-card p-3 shadow-wp-xs sm:p-7"
         aria-labelledby="language-bank-heading"
       >
         <h3 id="language-bank-heading" className="text-xl font-black text-foreground">
           {t("hadith.completeLanguageBank") || "Complete language bank"}
         </h3>
-        <p className="mt-1 text-sm text-muted-foreground">
-          {t("hadith.completeLanguageBankDescription") ||
-            "Every purpose pattern, extra word, phrasal verb, and collocation from this lesson is grouped below."}
-        </p>
 
         {/* Desktop Table View */}
         <div className="mt-5 hidden overflow-x-auto rounded-2xl border border-border md:block">
@@ -360,9 +353,16 @@ export function HadithVocabularyStage({
           {languageRows.map((item) => (
             <div
               key={`m-${item.category}-${item.expression}`}
-              className="rounded-2xl border border-border bg-background p-4 shadow-sm"
+              className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 gap-y-1 border-t border-border py-3"
             >
-              <div className="flex items-start justify-end">
+              <p
+                className="min-w-0 break-words text-base font-bold text-foreground"
+                lang="en"
+                dir="ltr"
+              >
+                {item.expression}
+              </p>
+              <div className="row-span-2">
                 <AudioButton
                   onPlay={() => playAudio(item.expression.replace(/\+.*$/, "").trim())}
                   isPlaying={
@@ -380,14 +380,7 @@ export function HadithVocabularyStage({
                   className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
                 />
               </div>
-              <p className="mt-1 text-base font-black text-foreground" lang="en" dir="ltr">
-                {item.expression}
-              </p>
-              <p
-                className="mt-1 text-xs font-semibold leading-relaxed text-muted-foreground"
-                lang="en"
-                dir="ltr"
-              >
+              <p className="min-w-0 text-base leading-relaxed text-foreground" lang="en" dir="ltr">
                 {item.explanation}
               </p>
             </div>
