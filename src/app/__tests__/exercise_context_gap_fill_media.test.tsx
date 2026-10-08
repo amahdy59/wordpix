@@ -43,7 +43,7 @@ describe("ExerciseContextGapFill sentence media", () => {
     const image = screen.getByRole("img", { name: /apple on a neutral tabletop/i });
     expect(image).toHaveAttribute(
       "src",
-      expect.stringContaining("learning-scenes/colors/colors-1-red-apple.avif")
+      expect.stringContaining("question-images/v1/sentence-red/")
     );
     expect(image).not.toHaveAttribute("alt", expect.stringMatching(/\bred\b/i));
   });
@@ -60,11 +60,11 @@ describe("ExerciseContextGapFill sentence media", () => {
     );
 
     const nextImage = screen.getByRole("img", {
-      name: /adult woman wearing a knitted hat/i,
+      name: /knitted hat on a plain tabletop/i,
     });
     expect(nextImage).toHaveAttribute(
       "src",
-      expect.stringContaining("learning-scenes/colors/colors-1-orange-hat.avif")
+      expect.stringContaining("question-images/v1/sentence-orange/")
     );
     expect(nextImage).not.toHaveAttribute("alt", expect.stringMatching(/\borange\b/i));
   });

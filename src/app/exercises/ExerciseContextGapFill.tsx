@@ -3,8 +3,9 @@ import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame } from "../shared";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
+import { sentenceCloze } from "./sentenceCloze";
 import { getRichSentence } from "./exerciseContent";
 import { resolveGroup } from "../data/courseCatalog";
 import { shuffleArray } from "../../utils/shuffle";
@@ -15,26 +16,13 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
-import { findLessonContextSentences } from "../data/lessonContext";
-import { WordImage } from "../shared/WordImage";
-import { resolveAssetUrl } from "../../utils/assetUrl";
+import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 
 interface Props {
   step: number;
   words: VocabularyItem[];
   lessonId: string;
   dispatch: React.Dispatch<Action>;
-}
-
-function toWordPattern(label: string) {
-  return new RegExp(
-    `\\b${label
-      .trim()
-      .split(/\\s+/)
-      .map((part) => part.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&"))
-      .join("\\\\s+")}\\b`,
-    "i"
-  );
 }
 
 export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
@@ -53,28 +41,12 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
 
   const authoredSentence = getAuthoredSentence(currentTargetWord.id);
-  const authoredMedia = authoredSentence?.media;
   const usage = usageState.status === "ready" ? usageState.data : null;
-  const authoredFullSentence =
-    authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full;
-  const contextSentences = findLessonContextSentences(currentTargetWord, usage);
-  // Start with visual recognition, keep the first transfer item visual too,
-  // then rotate through a contextual clue and a sentence-only prompt.
-  const variant = (queue.position - 1) % 3;
-  const showImage = variant === 1 || queue.position === 1;
-  const variantSentence =
-    variant === 1
-      ? (contextSentences[0] ?? authoredFullSentence)
-      : variant === 2
-        ? (contextSentences[1] ?? contextSentences[0] ?? authoredFullSentence)
-        : authoredFullSentence;
-  const fullSentence = variantSentence;
-  const clozeSentence = variantSentence
-    .replace(toWordPattern(currentTargetWord.label), "_____ ")
-    .trim();
-  const contextClue = contextSentences[0]
-    ?.replace(toWordPattern(currentTargetWord.label), "_____ ")
-    .trim();
+  const fullSentence = authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full;
+  const media = resolveSentenceMedia(currentTargetWord.id, fullSentence, usage);
+  const candidate = sentenceCloze(fullSentence, currentTargetWord.label);
+  const hasBlank = candidate !== fullSentence;
+  const clozeSentence = hasBlank ? candidate : t("exercise.chooseMeaningClue");
   const options = useMemo(() => {
     const distractors = words.filter((word) => word.id !== currentTargetWord.id);
     return shuffleArray([currentTargetWord, ...shuffleArray(distractors).slice(0, 2)]);
@@ -170,50 +142,29 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
     >
       <ExerciseFamilyTemplate
         family="reading-context"
-        instruction={
-          showImage
-            ? t("exercise.gapFillImageInstruction")
-            : variant === 2
-              ? t("exercise.gapFillTransferInstruction")
-              : t("exercise.gapFillInstruction")
-        }
+        instruction={hasBlank ? t("exercise.gapFillInstruction") : t("exercise.chooseMeaningClue")}
         helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
         activityLabel={t("exercise.gapFillActivityAria")}
         activity={
           <div className="space-y-4">
-            {showImage && (
-              <MediaFrame aspect="scene" className="max-h-[32dvh] sm:max-h-[38dvh]">
-                {authoredMedia ? (
-                  <img
-                    src={resolveAssetUrl(authoredMedia.imagePath)}
-                    alt={authoredMedia.imageAlt}
-                    className="size-full object-cover"
-                    loading="eager"
-                    fetchPriority="high"
-                  />
-                ) : (
-                  <WordImage
-                    word={currentTargetWord}
-                    className="size-full object-cover"
-                    loading="eager"
-                    fetchPriority="high"
-                  />
-                )}
-              </MediaFrame>
-            )}
-            {variant === 2 && contextClue && (
-              <p className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-start font-sans text-sm font-semibold leading-relaxed text-foreground">
-                {contextClue}
+            <SentenceQuestionSupport
+              key={currentTargetWord.id}
+              sentence={fullSentence}
+              prompt={clozeSentence}
+              word={currentTargetWord}
+              media={media}
+              answered={feedback !== null}
+            />
+            {hasBlank && (
+              <p
+                lang="en"
+                dir="ltr"
+                aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
+                className="rounded-2xl border border-border bg-wp-card p-5 text-center font-sans text-xl font-semibold leading-relaxed text-foreground shadow-wp-xs sm:text-2xl"
+              >
+                {clozeSentence}
               </p>
             )}
-            <p
-              lang="en"
-              dir="ltr"
-              aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
-              className="rounded-2xl border border-border bg-wp-card p-5 text-center font-sans text-xl font-semibold leading-relaxed text-foreground shadow-wp-xs sm:text-2xl"
-            >
-              {clozeSentence}
-            </p>
             <div
               className="grid w-full grid-cols-2 gap-2 sm:gap-3"
               role="group"

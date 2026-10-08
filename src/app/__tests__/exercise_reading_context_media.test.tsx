@@ -26,18 +26,26 @@ const wrapper = ({ children }: { children: ReactNode }) => (
 describe("ExerciseReadingContext media", () => {
   beforeEach(() => localStorage.clear());
 
-  it("shows the scene that supports the current Colors reading", () => {
+  it("withholds a mismatched canvas while retaining the complete reading evidence", () => {
     render(
       <ExerciseReadingContext step={5} lessonId="colors-1" words={words} dispatch={vi.fn()} />,
       { wrapper }
     );
 
-    const image = screen.getByRole("img", {
-      name: /easel and painting supplies beside a stream/i,
-    });
+    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    expect(screen.getByText(/Placeholder image/i)).toBeVisible();
+    expect(screen.getByText(/I paint a red apple under a yellow sun/)).toBeVisible();
+  });
+
+  it("shows a verified scene that supports the current Colors reading", () => {
+    render(
+      <ExerciseReadingContext step={5} lessonId="colors-2" words={words} dispatch={vi.fn()} />,
+      { wrapper }
+    );
+    const image = screen.getByRole("img", { name: /flower pots surrounded by roses/i });
     expect(image).toHaveAttribute(
       "src",
-      expect.stringContaining("learning-scenes/colors/colors-1-reading-1-painting-the-park.avif")
+      expect.stringContaining("question-images/v1/reading-colors-delicate-shades/")
     );
   });
 });

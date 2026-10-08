@@ -2,6 +2,7 @@ import { imageObjectPosition } from "./imageObjectPosition";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveAssetUrl } from "../../utils/assetUrl";
+import { useI18n } from "../context/I18nContext";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
 export type ImageSizePreset = "thumb" | "card" | "hero";
@@ -76,10 +77,17 @@ function escapeXml(value: string) {
   });
 }
 
-export function getWordFallbackDataUrl(word: VocabularyItem, altMode: ImageAltMode = "learning") {
-  const [background, foreground] = TOPIC_COLORS[word.topic] ?? ["#f1f5f9", "#0f172a"];
+export function getWordFallbackDataUrl(
+  word: VocabularyItem,
+  altMode: ImageAltMode = "learning",
+  placeholderLabel = "Image placeholder"
+) {
+  const [background] = TOPIC_COLORS[word.topic] ?? ["#f1f5f9", "#0f172a"];
+  // The shared dark neutral keeps small placeholder labels above 7:1 on
+  // every pastel fallback surface; topic accents were too light at this size.
+  const foreground = TOPIC_COLORS.electronics[1];
   const label = escapeXml(word.label);
-  const topic = escapeXml(word.topic.replace(/-/g, " ").toUpperCase());
+  const placeholder = escapeXml(placeholderLabel);
 
   const centerText = altMode === "assessment" ? "?" : label.slice(0, 1).toUpperCase();
   const bottomText = altMode === "assessment" ? "VISUAL OPTION" : label;
@@ -94,8 +102,8 @@ export function getWordFallbackDataUrl(word: VocabularyItem, altMode: ImageAltMo
       <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="${foreground}">
         ${bottomText}
       </text>
-      <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5" fill="${foreground}" opacity=".7">
-        ${topic}
+      <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="${foreground}">
+        ${placeholder}
       </text>
     </svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
@@ -148,12 +156,17 @@ export const WordImage = memo(function WordImage({
   optionIndex = 0,
   checked = false,
 }: Props) {
+  const { t } = useI18n();
   const [failed, setFailed] = useState(false);
   // One retry with a cache-busting param before giving up: a transient network
   // blip on a third-party CDN shouldn't permanently swap a lesson's picture
   // for a generic placeholder.
   const [retryToken, setRetryToken] = useState(0);
-  const fallback = useMemo(() => getWordFallbackDataUrl(word, altMode), [word, altMode]);
+  const placeholderLabel = t("story.imagePending");
+  const fallback = useMemo(
+    () => getWordFallbackDataUrl(word, altMode, placeholderLabel),
+    [word, altMode, placeholderLabel]
+  );
   const optimizedUrl = useMemo(
     () => getResponsiveImageUrl(word.img, sizePreset),
     [word.img, sizePreset]
@@ -205,7 +218,7 @@ export const WordImage = memo(function WordImage({
       // Suppressed while retrying: srcSet candidates would otherwise win over
       // the cache-busted src and keep requesting the same failing URL.
       srcSet={failed || retryToken > 0 ? undefined : srcSet}
-      alt={altText}
+      alt={failed && altMode !== "decorative" ? `${placeholderLabel}. ${altText}` : altText}
       className={`${className ? className + " object-center" : "object-center"} motion-safe:transition-opacity motion-safe:duration-200 ${isLoaded || failed ? "opacity-100" : "opacity-0"}`}
       style={{ objectPosition: objectPosition ?? imageObjectPosition(word) }}
       loading={loading}

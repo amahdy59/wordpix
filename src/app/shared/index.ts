@@ -39,3 +39,5 @@ export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";
 export { HelpDisclosure } from "./HelpDisclosure";
 
 export { CurriculumHeroHeader } from "./CurriculumHeroHeader";
+export { UnitVideoPlayer } from "./UnitVideoPlayer";
+export type { UnitVideoPlayerProps, VideoCaptionCue, CaptionMode } from "./UnitVideoPlayer";

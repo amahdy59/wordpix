@@ -25,11 +25,17 @@ interface Case {
   /** Marker identifying the WordImage call to inspect. */
   anchor: string;
   high: boolean;
+  tag?: "WordImage" | "img" | "QuestionImage";
 }
 
 const HEROES: Case[] = [
   { file: "exercises/ExerciseContextFill.tsx", anchor: "word={currentTargetWord}", high: true },
-  { file: "exercises/ExerciseSentenceBuilder.tsx", anchor: "word={currentTargetWord}", high: true },
+  {
+    file: "shared/SentenceQuestionSupport.tsx",
+    anchor: "media={media}",
+    high: true,
+    tag: "QuestionImage",
+  },
   { file: "exercises/ExerciseListenRepeat.tsx", anchor: "word={currentWord}", high: true },
   { file: "exercises/SkillExerciseRunner.tsx", anchor: "word={imageWord}", high: true },
   // Option grids: on screen and needed to answer, so eager — but four equal
@@ -39,26 +45,31 @@ const HEROES: Case[] = [
 ];
 
 /** The `<WordImage ... />` call containing `anchor`. */
-function wordImageCall(source: string, anchor: string): string {
+function wordImageCall(source: string, anchor: string, tag = "WordImage"): string {
   const at = source.indexOf(anchor);
   expect(at, `anchor ${anchor} not found`).toBeGreaterThan(-1);
-  const open = source.lastIndexOf("<WordImage", at);
-  expect(open, `no <WordImage before ${anchor}`).toBeGreaterThan(-1);
+  const open = source.lastIndexOf(`<${tag}`, at);
+  expect(open, `no <${tag} before ${anchor}`).toBeGreaterThan(-1);
   const close = source.indexOf("/>", at);
   return source.slice(open, close + 2);
 }
 
 describe("exercise imagery is fetched eagerly", () => {
-  for (const { file, anchor, high } of HEROES) {
+  for (const { file, anchor, high, tag } of HEROES) {
     it(`${file} loads its picture eagerly`, () => {
-      const call = wordImageCall(read(file), anchor);
+      const call = wordImageCall(read(file), anchor, tag);
       expect(call).toContain('loading="eager"');
       expect(call).not.toContain('loading="lazy"');
     });
 
     it(`${file} ${high ? "prioritises" : "does not over-prioritise"} it`, () => {
-      const call = wordImageCall(read(file), anchor);
-      if (high) expect(call).toContain('fetchPriority="high"');
+      const call = wordImageCall(read(file), anchor, tag);
+      if (high)
+        expect(call).toContain(
+          tag === "img" || tag === "QuestionImage"
+            ? 'fetchpriority: "high"'
+            : 'fetchPriority="high"'
+        );
       else expect(call).not.toContain('fetchPriority="high"');
     });
   }

@@ -9,6 +9,7 @@ import {
   type UsageSceneChunk,
 } from "./usageTypes";
 import { enrichReferenceLesson } from "./referenceUnitEnrichment";
+import { attachReviewedUsageIllustrations } from "./reviewedUsageIllustrations";
 
 /**
  * Lazy registry for unit curriculum usage data.
@@ -85,7 +86,7 @@ export async function loadUnitUsageForEditorial(unitId: string): Promise<UnitUsa
     const mod = await loader();
     const parsed = unitUsageDataSchema.parse(mod.default ?? mod).map(enrichReferenceLesson);
     const phrases = await loadApprovedUnitPhrases(unitId);
-    return attachApprovedPhrases(parsed, phrases);
+    return attachApprovedPhrases(attachReviewedUsageIllustrations(parsed), phrases);
   } catch {
     return null;
   }

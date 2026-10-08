@@ -1,7 +1,10 @@
+import figmaReview from "../../generated/reviewedFigmaQuestionMedia.json";
+
 export interface PilotSentenceMedia {
   imagePath: string;
   /** Describes the visual clue without spelling out the assessed word. */
   imageAlt: string;
+  imageFallbacks?: Array<{ imagePath: string; imageAlt: string }>;
 }
 
 const media = (folder: "numbers-counting" | "colors", file: string, imageAlt: string) => ({
@@ -10,11 +13,11 @@ const media = (folder: "numbers-counting" | "colors", file: string, imageAlt: st
 });
 
 /**
- * Reviewed local pilot media keyed by stable curriculum word ID.
+ * Original local pilot media keyed by stable curriculum word ID.
  *
  * Images that contain answer-revealing text, incorrect counts, generic swatches,
  * or an inaccurate subject stay out of this registry until a replacement passes
- * visual review. Cloudflare R2 references are intentionally not used or changed.
+ * visual review. Selection below applies the independent content review.
  */
 export const PILOT_SENTENCE_MEDIA: Readonly<Record<string, PilotSentenceMedia>> = {
   one: media(
@@ -399,6 +402,11 @@ type SentenceDraft = {
 };
 
 type LessonDraft = {
+  clusters?: Array<{
+    id: string;
+    microReading: { text: string; media?: PilotSentenceMedia; [key: string]: unknown };
+    [key: string]: unknown;
+  }>;
   words: Array<{
     id: string;
     sentence: SentenceDraft;
@@ -407,15 +415,86 @@ type LessonDraft = {
   [key: string]: unknown;
 };
 
+type SentenceMediaReview = {
+  status: string;
+  reviewedSentence: string;
+  imagePath?: string;
+  imageAlt?: string;
+  imageFallbacks?: Array<{ imagePath: string; imageAlt: string }>;
+};
+const sentenceReviews: Readonly<Record<string, SentenceMediaReview>> = figmaReview.sentences;
+const readingReviews: Readonly<
+  Record<
+    string,
+    {
+      status: string;
+      reviewedText: string;
+      imagePath?: string;
+      imageAlt?: string;
+    }
+  >
+> = figmaReview.readings;
+
+export function reviewedReadingMedia(
+  clusterId: string,
+  text: string,
+  original?: PilotSentenceMedia
+): PilotSentenceMedia | undefined {
+  const review = readingReviews[clusterId];
+  if (!review) return original;
+  if (
+    review.status !== "approved" ||
+    review.reviewedText !== text ||
+    !review.imagePath ||
+    !review.imageAlt
+  )
+    return undefined;
+  return { imagePath: review.imagePath, imageAlt: review.imageAlt };
+}
+
+/** Withhold rejected or stale images; preserve their underlying files and URLs. */
+export function reviewedPilotSentenceMedia(
+  wordId: string,
+  full: string
+): PilotSentenceMedia | undefined {
+  const review = sentenceReviews[wordId];
+  if (!review) return PILOT_SENTENCE_MEDIA[wordId];
+  if (
+    review.status !== "approved" ||
+    review.reviewedSentence !== full ||
+    !review.imagePath ||
+    !review.imageAlt
+  )
+    return undefined;
+  return {
+    imagePath: review.imagePath,
+    imageAlt: review.imageAlt,
+    imageFallbacks: review.imageFallbacks,
+  };
+}
+
 /** Adds reviewed media before the lesson is validated by the production schema. */
 export function withPilotSentenceMedia<T extends LessonDraft>(lesson: T): T {
   return {
     ...lesson,
+    ...(lesson.clusters && {
+      clusters: lesson.clusters.map((cluster) => ({
+        ...cluster,
+        microReading: {
+          ...cluster.microReading,
+          media: reviewedReadingMedia(
+            cluster.id,
+            cluster.microReading.text,
+            cluster.microReading.media
+          ),
+        },
+      })),
+    }),
     words: lesson.words.map((word) => ({
       ...word,
       sentence: {
         ...word.sentence,
-        media: word.sentence.media ?? PILOT_SENTENCE_MEDIA[word.id],
+        media: word.sentence.media ?? reviewedPilotSentenceMedia(word.id, word.sentence.full),
       },
     })),
   } as T;

@@ -248,6 +248,14 @@ const sentenceSchema = z.object({
       imagePath: z.string().trim().min(1),
       /** Describes the visual clue without naming the assessed answer. */
       imageAlt: z.string().trim().min(1),
+      imageFallbacks: z
+        .array(
+          z.object({
+            imagePath: z.string().trim().min(1),
+            imageAlt: z.string().trim().min(1),
+          })
+        )
+        .optional(),
     })
     .optional(),
 });
@@ -270,6 +278,14 @@ const authoredClusterSchema = z.object({
         imagePath: z.string().trim().min(1),
         /** Describes the supporting scene without disclosing the retrieval answer. */
         imageAlt: z.string().trim().min(1),
+        imageFallbacks: z
+          .array(
+            z.object({
+              imagePath: z.string().trim().min(1),
+              imageAlt: z.string().trim().min(1),
+            })
+          )
+          .optional(),
       })
       .optional(),
   }),

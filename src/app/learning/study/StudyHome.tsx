@@ -15,9 +15,12 @@ import {
   CheckCircle2,
   Sparkles,
   ArrowRight,
+  Video as VideoIcon,
 } from "lucide-react";
 import { useI18n } from "../../../i18n";
 import { getCurriculumStageLabel, type UnitCurriculumDesign } from "../curriculumModel";
+import { UnitVideoPlayer } from "../../shared";
+import { getUnitVideo } from "../../data/trialVideoData";
 
 interface Props {
   unit: CourseUnit;
@@ -55,6 +58,7 @@ export function StudyHome({
   );
   const percent = Math.round((completedCoreNodes.length / (coreNodes.length || 1)) * 100);
   const reviewDueCount = progress.reviewWordIds.length;
+  const unitVideo = getUnitVideo(unit.id);
 
   // Prioritize the first incomplete core node, falling back to last active or first
   const continueNode =
@@ -145,6 +149,42 @@ export function StudyHome({
               loading="lazy"
             />
           </div>
+        )}
+
+        {unitVideo && (
+          <section
+            aria-labelledby="unit-video-trial-heading"
+            className="rounded-2xl sm:rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-xs space-y-4"
+          >
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <div className="flex items-center gap-2.5">
+                <div className="size-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                  <VideoIcon className="size-5" aria-hidden="true" />
+                </div>
+                <div>
+                  <h2
+                    id="unit-video-trial-heading"
+                    className="font-sans font-bold text-base sm:text-lg text-foreground"
+                  >
+                    {unitVideo.title}
+                  </h2>
+                  <p className="text-xs text-muted-foreground">{unitVideo.scenarioTitle}</p>
+                </div>
+              </div>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+                {t("study.videoContext") || "Video Context"}
+              </span>
+            </div>
+
+            <UnitVideoPlayer
+              src={unitVideo.src}
+              poster={unitVideo.poster}
+              title={unitVideo.title}
+              unitTitle={unit.name}
+              cues={unitVideo.cues}
+              visualDescription={unitVideo.visualDescription}
+            />
+          </section>
         )}
 
         {/* Progress Summary Card */}

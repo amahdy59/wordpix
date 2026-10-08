@@ -1,0 +1,437 @@
+{
+  "reviewedCandidates": 119,
+  "withheld": 43,
+  "replacementsNeeded": 35,
+  "items": [
+    {
+      "questionId": "human-body-head-and-face-1-usage-scene-1",
+      "sourceNode": "1608:9",
+      "sourceRef": "b6f0510e69cf98004dd9f36ec214f9951f28697a",
+      "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
+      "currentText": "After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "human-body-head-and-face-1-usage-scene-2",
+      "sourceNode": "1608:15",
+      "sourceRef": "ed6555655dae652d7214f8c2bebf412e6b4066cf",
+      "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
+      "currentText": "At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\"",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\". Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "human-body-head-and-face-1-usage-scene-3",
+      "sourceNode": "1608:21",
+      "sourceRef": "dfbdb664a72ddeb2a2988644175988b6fda71e20",
+      "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
+      "currentText": "Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\"",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\". Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "human-body-head-and-face-1-usage-scene-4",
+      "sourceNode": "1608:27",
+      "sourceRef": "834bd0952c45ec82caa55942f760eaf5b97db3e5",
+      "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
+      "currentText": "Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "human-body-head-and-face-1-usage-scene-5",
+      "sourceNode": "1608:33",
+      "sourceRef": "ca23aa8487b32074401e809fd2133b9fa447942a",
+      "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
+      "currentText": "Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:eight",
+      "sourceNode": "1581:229",
+      "sourceRef": "93287b601202150a0fba86dc27e9762350b59cb6",
+      "reason": "Empty desks do not depict eight students.",
+      "currentText": "Eight students are here.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Eight students are here.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:thirteen",
+      "sourceNode": "1581:234",
+      "sourceRef": "96a0d07ca80449a172a6fff1b772613f914bca73",
+      "reason": "Fourteen figures do not depict thirteen people.",
+      "currentText": "Thirteen people are waiting.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Thirteen people are waiting.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:eighteen",
+      "sourceNode": "1581:239",
+      "sourceRef": "7757ad6ddfd2adf96dda1a4c404ac1055431d4a0",
+      "reason": "Twelve plates do not depict eighteen plates.",
+      "currentText": "We need eighteen plates.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: We need eighteen plates.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:nineteen",
+      "sourceNode": "1581:240",
+      "sourceRef": "ceef011fdd2aa016623331b60ee0ccbcbd3e33fb",
+      "reason": "Twenty-one figures do not depict nineteen people.",
+      "currentText": "Nineteen people are here.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Nineteen people are here.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:twenty",
+      "sourceNode": "1581:241",
+      "sourceRef": "c44861d949518c489024256e4fb3989db9aea796",
+      "reason": "The full seat count cannot be established from this view.",
+      "currentText": "The bus has twenty seats.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The bus has twenty seats.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:thirty",
+      "sourceNode": "1581:242",
+      "sourceRef": "b940a44acabc7ae55f14486a55182f387b724ac3",
+      "reason": "The student count cannot be established unambiguously.",
+      "currentText": "The class has thirty students.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The class has thirty students.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:forty",
+      "sourceNode": "1581:243",
+      "sourceRef": "f56c107ac0ed7529240172fe9a1242fd57e556b9",
+      "reason": "An open book does not establish forty pages.",
+      "currentText": "This book has forty pages.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: This book has forty pages.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:fifty",
+      "sourceNode": "1581:244",
+      "sourceRef": "37910a79f20c198228a36b6693c9a940c3bf08e3",
+      "reason": "Unlabelled coin stacks do not establish fifty pounds.",
+      "currentText": "I have fifty pounds.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: I have fifty pounds.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:seventy",
+      "sourceNode": "1581:246",
+      "sourceRef": "55bec45f5fb71f86dca686500a29c72160861ab7",
+      "reason": "An age numeral reveals the assessed answer; no grandfather is shown.",
+      "currentText": "My grandfather is seventy.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: My grandfather is seventy.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:eighty",
+      "sourceNode": "1581:247",
+      "sourceRef": "df2eaeff5303a4124cdb27636289db459c995317",
+      "reason": "Overlapping cards do not establish eighty cards.",
+      "currentText": "The box holds eighty cards.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The box holds eighty cards.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:ninety",
+      "sourceNode": "1581:248",
+      "sourceRef": "92392d06d600101036280998e7e0ff85cdf3c310",
+      "reason": "Unlabelled coin stacks do not establish ninety pounds.",
+      "currentText": "The trip costs ninety pounds.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The trip costs ninety pounds.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:hundred",
+      "sourceNode": "1581:249",
+      "sourceRef": "b901f1f05f83789880ab7773f2bcc17c14a9c82b",
+      "reason": "The figure count cannot be established unambiguously at phone size.",
+      "currentText": "One hundred people came.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: One hundred people came.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:thousand",
+      "sourceNode": "1581:250",
+      "sourceRef": "d31dec0a6de70e40dd5857473dca5755e29e4d55",
+      "reason": "The model does not establish one thousand homes.",
+      "currentText": "The town has one thousand homes.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The town has one thousand homes.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:million",
+      "sourceNode": "1581:251",
+      "sourceRef": "210788150234287139a1ef0da7868000807f7aa3",
+      "reason": "A model crowd does not establish one million people.",
+      "currentText": "The city has one million people.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The city has one million people.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:first",
+      "sourceNode": "1581:252",
+      "sourceRef": "05c3f2b6a407a24e4dbe41665ee5b09ac2e1e7fd",
+      "reason": "Cars do not represent the people in the queue.",
+      "currentText": "I am first in line.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: I am first in line.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:second",
+      "sourceNode": "1581:253",
+      "sourceRef": "ad65e84e7c0c392bd68ba6b1bec5ba975c296adf",
+      "reason": "Cars do not represent the people in the queue.",
+      "currentText": "Mona is second in line.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Mona is second in line.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:third",
+      "sourceNode": "1581:254",
+      "sourceRef": "c59186ef6babaea9864b0ba25a6ec11afeef9904",
+      "reason": "Cars do not represent the people in the queue.",
+      "currentText": "Ali is third in line.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Ali is third in line.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:fourth",
+      "sourceNode": "1581:255",
+      "sourceRef": "eca2810d7efc65aa99e94da418ee8de7ca38d1a7",
+      "reason": "Printed page number reveals the assessed answer.",
+      "currentText": "This is the fourth page.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: This is the fourth page.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:sixth",
+      "sourceNode": "1581:257",
+      "sourceRef": "dc6ca7a858edc4176ae78855eb6069813a885764",
+      "reason": "Award rosettes do not represent a woman finishing a race.",
+      "currentText": "She finished in sixth place.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: She finished in sixth place.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:seventh",
+      "sourceNode": "1581:258",
+      "sourceRef": "954eea21578e1b60406724509774d9e2ced3a7b8",
+      "reason": "The floor count and person position are ambiguous.",
+      "currentText": "He lives on the seventh floor.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: He lives on the seventh floor.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:eighth",
+      "sourceNode": "1581:259",
+      "sourceRef": "a369a714114ebecbaf317c737ab3c3d693ebdab3",
+      "reason": "Printed lesson number reveals the assessed answer.",
+      "currentText": "This is my eighth lesson.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: This is my eighth lesson.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:ninth",
+      "sourceNode": "1581:260",
+      "sourceRef": "51a1765a35ce9f464ba9782b4407a556d302dbf0",
+      "reason": "Labelled cards reveal the assessed ordinal.",
+      "currentText": "She chose the ninth card.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: She chose the ninth card.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:tenth",
+      "sourceNode": "1581:261",
+      "sourceRef": "66079410b64ea6d28e39c467f5c5eebe61d7f00c",
+      "reason": "Overlapping cards do not establish the final lesson position.",
+      "currentText": "Today is the tenth lesson.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Today is the tenth lesson.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:equals",
+      "sourceNode": "1581:266",
+      "sourceRef": "28764d34e5e639b277fb25d4e71022426a53b208",
+      "reason": "The combined apple count is visually ambiguous.",
+      "currentText": "Two plus three equals five.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Two plus three equals five.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:minus",
+      "sourceNode": "1581:268",
+      "sourceRef": "4c3e923508affdd4b546f0ab94a58c7480b6ffeb",
+      "reason": "Two groups of oranges do not demonstrate removal.",
+      "currentText": "Five minus two equals three.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Five minus two equals three.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:indigo",
+      "sourceNode": "1581:337",
+      "sourceRef": "b4867507d565900500703ef64d93eeb1d298ce8d",
+      "reason": "Fabric samples do not show the rainbow specified in the sentence.",
+      "currentText": "Indigo appears in the rainbow.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: Indigo appears in the rainbow.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:light",
+      "sourceNode": "1581:343",
+      "sourceRef": "9a7781221b5bb5da919c6a325ff885032fa4eb81",
+      "reason": "A mug does not support a sentence about light walls.",
+      "currentText": "This room has light walls.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: This room has light walls.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "sentence:gradient",
+      "sourceNode": "1581:359",
+      "sourceRef": "d8f86cf5d8fee9d6c41b4afb16eb4c4c94c3074e",
+      "reason": "A sky does not represent the poster specified in the sentence.",
+      "currentText": "The poster has a smooth gradient.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: The poster has a smooth gradient.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-1-usage-scene-2",
+      "sourceNode": "1581:405",
+      "sourceRef": "e3dcc1bf4179dc7100f51216e93bad2af75de5a2",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of rectangle, oval, and diamond. The specification gives this description: A rounded two-dimensional shape like a stretched circle..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-1-usage-scene-2/3a54e7a862d84cd185b8303e8f503c255ab22e2b4ea51b4a8660bac59a402700.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of rectangle, oval, and diamond. The specification gives this description: A rounded two-dimensional shape like a stretched circle... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-2-usage-scene-1",
+      "sourceNode": "1581:409",
+      "sourceRef": "82633d8bb81cffa876be1cc210624f9e5be89577",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of prism, cuboid, and hemisphere. The specification gives this description: One half of a sphere..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-2-usage-scene-1/6d499e9a46ed6d7baa7778b6436d793e5ce514ae83982559572fefeb6107bac5.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of prism, cuboid, and hemisphere. The specification gives this description: One half of a sphere... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-2-usage-scene-2",
+      "sourceNode": "1581:410",
+      "sourceRef": "279e3ad4f959d02b92fcb01cd79ae7afbf053c98",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of torus, tetrahedron, and line. The specification gives this description: A long narrow mark or geometric path extending in a direction..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-2-usage-scene-2/557dc9099c4fb010aa33d21051ab1a74aec87f9868373ec1648517e17916747a.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of torus, tetrahedron, and line. The specification gives this description: A long narrow mark or geometric path extending in a direction... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-2-usage-scene-4",
+      "sourceNode": "1581:412",
+      "sourceRef": "76355b7c49ba17f731b90ffe88fe10db519bf140",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of spiral, right angle, and acute angle. The specification gives this description: A curve that winds around a central point while moving outward or inward..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-2-usage-scene-4/d3b19280da313a6bbbded7fbdff1517cabcfedd4078396e91fd7a86a2d8beff4.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of spiral, right angle, and acute angle. The specification gives this description: A curve that winds around a central point while moving outward or inward... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-2-usage-scene-5",
+      "sourceNode": "1581:413",
+      "sourceRef": "ef1c6741fbc98e567dc2ad61b217a8c2b7251980",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of obtuse angle, parallel, and perpendicular. The specification gives this description: Describes lines that stay the same distance apart and do not meet..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-2-usage-scene-5/6d2ff0d150ee43ec218c4af573255a6b119fd8e6fc53cad4857792ea4eb86754.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of obtuse angle, parallel, and perpendicular. The specification gives this description: Describes lines that stay the same distance apart and do not meet... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-3-usage-scene-2",
+      "sourceNode": "1581:415",
+      "sourceRef": "217deea7ccb432250b2ecc50cde5fac8486eb840",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of radius, diameter, and circumference. The specification gives this description: A straight line across a circle through its centre..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-3-usage-scene-2/aaa9571efc15ecff9003c133ba425ee6130638fbc3f8f0ef98b4b8fc3807e415.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of radius, diameter, and circumference. The specification gives this description: A straight line across a circle through its centre... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-3-usage-scene-4",
+      "sourceNode": "1581:417",
+      "sourceRef": "4d426c692711acae2bbb5a9244c680087c2198d6",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of edge, repeat, and sequence. The specification gives this description: A set of items arranged in a particular order..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-3-usage-scene-4/221e91848dd0b16279b0bab72fb8639b0348ac4076fa1ea8860a3da26824579f.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of edge, repeat, and sequence. The specification gives this description: A set of items arranged in a particular order... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "shapes-geometry-4-usage-scene-1",
+      "sourceNode": "1581:419",
+      "sourceRef": "a99074231f5fcae3afb832a6bdb5d48874c0ef43",
+      "reason": "One or more comparison objects are inaccurate or ambiguous; retain the reviewed vector scene.",
+      "currentText": "During a practical design review, a technician compares examples of grid, array, and matrix. The specification gives this description: A pattern of crossing horizontal and vertical lines that forms rows and columns..",
+      "existingReplacement": "usage-illustrations/v1/shapes-geometry-4-usage-scene-1/7401401b5caa03c469f8132b234475e8ae67174a09fa0d1d2e5285442743f38c.webp",
+      "nextAction": "Covered by reviewed vector; source photo remains withheld.",
+      "generationPrompt": "Illustrate exactly: During a practical design review, a technician compares examples of grid, array, and matrix. The specification gives this description: A pattern of crossing horizontal and vertical lines that forms rows and columns... Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "reading:colors-primary-bright",
+      "sourceNode": "1596:5",
+      "sourceRef": "4df82002969138f6df2a0fd6a1b6eeaeb2bf142b",
+      "reason": "The canvas omits the painted apple specified by the reading; the real apple is outside the painting.",
+      "currentText": "I paint a red apple under a yellow sun. Blue water flows through green grass near an orange bench.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: I paint a red apple under a yellow sun. Blue water flows through green grass near an orange bench.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "reading:colors-light-and-optics",
+      "sourceNode": "1596:33",
+      "sourceRef": "3b3f6aa9471abdc59bb8ef1825e3cbf1f6f2aa77",
+      "reason": "The image demonstrates a prism rather than the rain-to-rainbow relationship in the reading.",
+      "currentText": "White light passes through rain to form a rainbow spectrum. Artists use fine pigment to print a smooth gradient with rich color saturation.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: White light passes through rain to form a rainbow spectrum. Artists use fine pigment to print a smooth gradient with rich color saturation.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    }
+  ]
+}

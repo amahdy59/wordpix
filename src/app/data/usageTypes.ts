@@ -38,6 +38,14 @@ export const usageSceneChunkSchema = z
     imagePath: z.string().trim().min(1).optional(),
     /** Describes the scene without spelling out an assessed answer. */
     imageAlt: z.string().trim().min(1).optional(),
+    imageFallbacks: z
+      .array(
+        z.object({
+          imagePath: z.string().trim().min(1),
+          imageAlt: z.string().trim().min(1),
+        })
+      )
+      .optional(),
   })
   .superRefine((scene, context) => {
     if (!scene.check.options.includes(scene.check.expectedAnswer)) {

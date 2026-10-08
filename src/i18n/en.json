@@ -668,6 +668,7 @@
     "rewritePlaceholder": "Rewrite the sentence using the hint…"
   },
   "study": {
+    "videoContext": "Video Context",
     "backToUnit": "Back to {unit}",
     "unitStudyMaterials": "Unit Study Materials",
     "unitDescription": "Master the vocabulary, natural collocations, contextual reading, and everyday expressions for {unit}.",
@@ -1031,6 +1032,15 @@
     "replay": "Replay",
     "replayAudio": "Replay audio",
     "pictureMatchTitle": "Picture Match",
+    "quantityClue": "Quantity",
+    "wordToPractice": "Word to practise",
+    "chooseMeaningClue": "Choose the word that matches the clue.",
+    "meaningClue": "Meaning clue",
+    "listenSentence": "Listen to the sentence",
+    "stopSentenceAudio": "Stop sentence audio",
+    "retrySentenceAudio": "Retry sentence audio",
+    "sentenceAudioError": "Audio could not play. Try again or read the sentence.",
+    "scenePlaceholderDescription": "Placeholder image. Use the text clues to answer.",
     "gapFillTitle": "Complete the sentence",
     "gapFillInstruction": "Choose the word that completes the sentence.",
     "gapFillImageInstruction": "Look at the scene, then choose the word that completes the sentence.",
@@ -2084,5 +2094,30 @@
   },
   "listening": {
     "missingWordPlaceholder": "Type the missing word…"
+  },
+  "videoPlayer": {
+    "play": "Play video",
+    "pause": "Pause video",
+    "replay": "Replay video",
+    "mute": "Mute audio",
+    "unmute": "Unmute audio",
+    "speed": "Playback speed",
+    "transcript": "Interactive Transcript",
+    "hideTranscript": "Hide Transcript",
+    "showTranscript": "Show Transcript",
+    "currentTime": "Current time",
+    "visualDescription": "Visual Scene Description (Audio Alternative)",
+    "noVideoSupport": "Your browser does not support video playback.",
+    "unableToPlay": "Unable to play video",
+    "loadErrorDesc": "The media asset could not be loaded. Please check your network or try again.",
+    "retry": "Retry",
+    "trialPlaceholderDesc": "Trial video clip ready to link. Export your scene from Google Flow and attach the URL or local file to preview.",
+    "recommendedSpecs": "Recommended Video Specifications:",
+    "specLength": "Length: 15–25 seconds (micro-learning focus)",
+    "specFormat": "Format: WebM (VP9/AV1) or MP4 (H.264)",
+    "specAspect": "Aspect Ratio: 16:9 widescreen or 4:3",
+    "specBitrate": "Bitrate: Compressed for fast mobile streaming (< 5 MB)",
+    "jumpHint": "Click any line to jump to that moment",
+    "wordsLabel": "Words:"
   }
 }

@@ -21,6 +21,8 @@ export function WordDetailsContent({
   const { t } = useI18n();
   const { speak } = useAudio();
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon([word.id]);
+  const authored = getAuthoredWord(word.id);
+  const immediateExample = authored?.sentence.full ?? word.exampleUsage;
 
   const loaded = lexicon
     ? { mod: lexicon, base: lexicon.getLexiconEntry(word.id, word.label, unitId) }
@@ -46,6 +48,31 @@ export function WordDetailsContent({
             {word.description}
           </p>
         </section>
+
+        {immediateExample && (
+          <section
+            aria-label={t("wordDetails.usageContexts", { count: 1 })}
+            className="flex flex-col gap-2.5"
+          >
+            <h3 className="font-sans text-xs font-bold uppercase tracking-wide text-foreground">
+              {t("wordDetails.usageContexts", { count: 1 })}
+            </h3>
+            <div className="rounded-2xl border border-border bg-muted/30 p-4 flex flex-col gap-2">
+              <button
+                type="button"
+                onClick={() => speak(immediateExample)}
+                aria-label={t("exercise.listenSentence")}
+                className="self-start min-h-[44px] min-w-[44px] px-2 flex items-center gap-2 text-foreground font-semibold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <Volume2 className="size-4" aria-hidden />
+                {t("wordDetails.play")}
+              </button>
+              <p lang="en" dir="ltr" className="text-base leading-relaxed text-foreground">
+                {immediateExample}
+              </p>
+            </div>
+          </section>
+        )}
 
         {lexiconFailed ? (
           <div
@@ -90,7 +117,6 @@ export function WordDetailsContent({
   }
 
   const baseEntry: LexiconEntry = loaded.base;
-  const authored = getAuthoredWord(word.id);
   const resolvedArabic = authored?.arabic ?? word.arabicTranslation ?? baseEntry.arabic;
   const resolvedExample = authored?.sentence.full ?? word.exampleUsage ?? baseEntry.exampleSentence;
 

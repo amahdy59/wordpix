@@ -22,6 +22,26 @@ export function resolveAssetUrl(path: string): string {
 
   const relative = path.replace(/^\.?\//, "");
 
+  // Reviewed usage illustrations use immutable, content-hashed object keys.
+  // Keep this separate from vocabulary and earlier pilot media mappings.
+  if (
+    import.meta.env.MODE !== "test" &&
+    PUBLIC_ASSET_BASE_URL &&
+    /^(?:usage-illustrations|question-images)\/v1\/[a-z0-9-]+\/[a-f0-9]{64}\.webp$/.test(relative)
+  ) {
+    return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
+  }
+
+  // Only this verified pilot batch is available on R2. Other learning scenes
+  // keep their existing local resolution until their own upload is verified.
+  if (
+    import.meta.env.MODE !== "test" &&
+    PUBLIC_ASSET_BASE_URL &&
+    /^learning-scenes\/shopping-mall\/shopping-mall-[12]-scene-[1-5]\.avif$/.test(relative)
+  ) {
+    return `${PUBLIC_ASSET_BASE_URL}/images/v1/${relative}`;
+  }
+
   // Hadith picture vocabulary is authored from the Figma image manifest and
   // uploaded to R2 with this exact key prefix. These files are intentionally
   // not bundled in /public, so resolving them against Vite's base would turn

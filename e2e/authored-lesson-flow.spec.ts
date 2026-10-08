@@ -121,7 +121,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     expect(errors).toEqual([]);
   });
 
-  test("context practice rotates through focused three-choice modes", async ({ page }) => {
+  test("context practice keeps sentence media and offers accessible audio", async ({ page }) => {
     test.setTimeout(60_000);
     await page.setViewportSize({ width: 390, height: 844 });
     await page.addInitScript(() => {
@@ -144,7 +144,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await choices.first().click();
     await page.waitForTimeout(1_800);
     await expect(page.locator("img")).toHaveCount(1);
-    await expect(page.getByText(/Look at the scene/i)).toBeVisible();
+    await expect(page.getByText(/Choose the word that completes the sentence/i)).toBeVisible();
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)
     ).toBe(false);

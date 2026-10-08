@@ -35,6 +35,7 @@ import type { LessonUsageData } from "../data/usageTypes";
 import { loadLessonStory } from "../data/lessonStoryLoader";
 import { rotateOptions } from "../data/lessonContext";
 import { LessonTransferPractice } from "./LessonTransferPractice";
+import { QuestionImage } from "../shared/QuestionImage";
 
 interface Props {
   step: number;
@@ -826,8 +827,11 @@ export const ExerciseStory = memo(function ExerciseStory({
                           </p>
                           <button
                             type="button"
-                            onClick={() => speak(currentChunk.scenario)}
-                            aria-label="Listen to scenario audio"
+                            onClick={() => (isPlaying ? stop() : speak(currentChunk.scenario))}
+                            aria-label={
+                              isPlaying ? t("story.stopStoryAudio") : t("exercise.listenSentence")
+                            }
+                            aria-pressed={isPlaying}
                             className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-xs transition-opacity"
                           >
                             <Volume2 className="size-4" aria-hidden />
@@ -840,14 +844,15 @@ export const ExerciseStory = memo(function ExerciseStory({
                           <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
                             {currentChunk.imagePath &&
                             !failedSceneImages[currentChunk.imagePath] ? (
-                              // onError is an image lifecycle event used only to hide a broken asset.
-                              // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-                              <img
-                                src={resolveAssetUrl(currentChunk.imagePath)}
-                                alt={currentChunk.imageAlt ?? currentChunk.imageBrief}
+                              <QuestionImage
+                                media={{
+                                  imagePath: currentChunk.imagePath,
+                                  imageAlt: currentChunk.imageAlt ?? currentChunk.imageBrief,
+                                  imageFallbacks: currentChunk.imageFallbacks,
+                                }}
                                 loading="eager"
-                                className="aspect-[4/3] w-full object-cover"
-                                onError={() =>
+                                className="aspect-video w-full object-contain"
+                                onExhausted={() =>
                                   setFailedSceneImages((current) => ({
                                     ...current,
                                     [currentChunk.imagePath!]: true,

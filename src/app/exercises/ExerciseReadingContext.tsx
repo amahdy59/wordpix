@@ -11,7 +11,8 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { LessonTransferPractice } from "./LessonTransferPractice";
-import { resolveAssetUrl } from "../../utils/assetUrl";
+import { ScenePlaceholder } from "../shared/SentenceQuestionSupport";
+import { QuestionImage } from "../shared/QuestionImage";
 
 interface Props {
   step: number;
@@ -32,6 +33,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
   const lesson = getAuthoredLessonContent(lessonId);
   const usageState = useLessonUsage(lessonId);
   const [clusterIndex, setClusterIndex] = useState(0);
+  const [failedImage, setFailedImage] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const cluster = lesson?.clusters[clusterIndex] ?? null;
   const isLastCluster = Boolean(lesson && clusterIndex === lesson.clusters.length - 1);
@@ -104,14 +106,21 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
         activityLabel={t("exercise.readingContextActivityAria")}
         activity={
           <div className="space-y-5">
-            {cluster.microReading.media && (
-              <MediaFrame as="figure" aspect="recognition" className="mx-auto w-full max-w-3xl">
-                <img
-                  src={resolveAssetUrl(cluster.microReading.media.imagePath)}
-                  alt={cluster.microReading.media.imageAlt}
+            {cluster.microReading.media && failedImage !== cluster.microReading.media.imagePath ? (
+              <MediaFrame
+                fit="contain"
+                as="figure"
+                aspect="scene"
+                className="mx-auto w-full max-w-3xl"
+              >
+                <QuestionImage
+                  media={cluster.microReading.media}
                   decoding="async"
+                  onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
                 />
               </MediaFrame>
+            ) : (
+              <ScenePlaceholder />
             )}
             <p
               lang="en"

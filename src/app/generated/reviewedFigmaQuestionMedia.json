@@ -1,0 +1,871 @@
+{
+  "sentences": {
+    "one": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "I need one ticket.",
+      "imagePath": "question-images/v1/sentence-one/472beb91c2e36280975e4d8548548b62013b07c51e8898de5f505ba18f4724c9.webp",
+      "imageAlt": "A blank admission ticket resting on a wooden counter.",
+      "sourceNode": "1581:222"
+    },
+    "two": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "We have two bags.",
+      "imagePath": "question-images/v1/sentence-two/66fb97ac5b19eb3657428009713a38b1ac445a21b42ca5c8782b90306ed51da7.webp",
+      "imageAlt": "Travel bags standing together on a station floor.",
+      "sourceNode": "1581:223"
+    },
+    "three": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "She bought three apples.",
+      "imagePath": "question-images/v1/sentence-three/bce58bc4d37ca2fd390a0c588e6a80bb541059b54682acd562ec1cec89bad53d.webp",
+      "imageAlt": "Apples grouped on a kitchen table.",
+      "sourceNode": "1581:224"
+    },
+    "four": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "There are four chairs.",
+      "imagePath": "question-images/v1/sentence-four/84c2717e45131f994c5dba9d0930f0c2bbf975f82b7f008cbad02fc6f0608fac.webp",
+      "imageAlt": "Matching chairs arranged around a small table.",
+      "sourceNode": "1581:225"
+    },
+    "five": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "I can see five books.",
+      "imagePath": "question-images/v1/sentence-five/5ca4d80d39f3bf0a70e465bc6763dde56741a4b30731a1a3000ff0f97c2bfe0c.webp",
+      "imageAlt": "Books stacked neatly with blank covers.",
+      "sourceNode": "1581:226"
+    },
+    "six": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "We need six cups.",
+      "imagePath": "question-images/v1/sentence-six/e2e9211f318763aa4ba2e9afba5ad34b7d2b901e1d97281378aa3c66befb7183.webp",
+      "imageAlt": "Plain drinking cups arranged in rows.",
+      "sourceNode": "1581:227"
+    },
+    "seven": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "A week has seven days.",
+      "imagePath": "question-images/v1/sentence-seven/60e356aa8e5573c5e15a5aaaed89c0e07fd44124f5a5694d71be4e0381dd303a.webp",
+      "imageAlt": "A weekly planner made from a complete row of blank day cards.",
+      "sourceNode": "1581:228"
+    },
+    "eight": {
+      "status": "withheld",
+      "reason": "Empty desks do not depict eight students.",
+      "reviewedSentence": "Eight students are here.",
+      "imageAlt": "Adult students seated together in a bright classroom.",
+      "sourceNode": "1581:229"
+    },
+    "nine": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The shop has nine boxes.",
+      "imagePath": "question-images/v1/sentence-nine/f42401da9f1109d7b079995fb3ff7921f02736eb34efb6c88eb35ad71203f58e.webp",
+      "imageAlt": "Cardboard boxes arranged in an orderly group inside a shop.",
+      "sourceNode": "1581:230"
+    },
+    "ten": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "I have ten fingers.",
+      "imagePath": "question-images/v1/sentence-ten/64ba4d3feb23c62960e3a60499cfb1033e936b0971991d5a3121c133370b3e45.webp",
+      "imageAlt": "Two articulated wooden hands with all fingers extended.",
+      "sourceNode": "1581:231"
+    },
+    "eleven": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The team has eleven players.",
+      "imagePath": "question-images/v1/sentence-eleven/8bf20527f3e995d1a7883246ee4287b51c5eda233447fd0d1d7d1c920a4ef277.webp",
+      "imageAlt": "A complete football team represented by wooden figures beside a ball.",
+      "sourceNode": "1581:232"
+    },
+    "twelve": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "A year has twelve months.",
+      "imagePath": "question-images/v1/sentence-twelve/4db065aef075ccac008bff47810ae7a522cb65807ea540f40c4dd98ec278744b.webp",
+      "imageAlt": "Calendar cards arranged as a complete year.",
+      "sourceNode": "1581:233"
+    },
+    "thirteen": {
+      "status": "withheld",
+      "reason": "Fourteen figures do not depict thirteen people.",
+      "reviewedSentence": "Thirteen people are waiting.",
+      "imageAlt": "Adults waiting in an orderly queue.",
+      "sourceNode": "1581:234"
+    },
+    "fourteen": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "We stayed for fourteen days.",
+      "imagePath": "question-images/v1/sentence-fourteen/117c03ab8e836dfda524464330b73623801a37842d82be0f97cbfd86d8a2ee36.webp",
+      "imageAlt": "Blank travel-day cards arranged in two equal rows.",
+      "sourceNode": "1581:235"
+    },
+    "fifteen": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The break is fifteen minutes.",
+      "imagePath": "question-images/v1/sentence-fifteen/623ef2825eb88128d8beeecf67bd69513f051459f311f8becf3a1edd729ae320.webp",
+      "imageAlt": "An analog clock with one quarter of its face highlighted.",
+      "sourceNode": "1581:236"
+    },
+    "sixteen": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "There are sixteen desks.",
+      "imagePath": "question-images/v1/sentence-sixteen/cc893c76996261e736a4a242f1ff59f3304854ee5e293e9a75ed01426d60a409.webp",
+      "imageAlt": "Classroom desks arranged in equal rows.",
+      "sourceNode": "1581:237"
+    },
+    "seventeen": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "I can see seventeen birds.",
+      "imagePath": "question-images/v1/sentence-seventeen/38afd61814ed464f179ae90645fe8b7d769aa98c37bc2dd928c7080cc2805da8.webp",
+      "imageAlt": "Birds perched across several bare branches.",
+      "sourceNode": "1581:238"
+    },
+    "eighteen": {
+      "status": "withheld",
+      "reason": "Twelve plates do not depict eighteen plates.",
+      "reviewedSentence": "We need eighteen plates.",
+      "imageAlt": "Plain plates arranged in equal rows on a long table.",
+      "sourceNode": "1581:239"
+    },
+    "nineteen": {
+      "status": "withheld",
+      "reason": "Twenty-one figures do not depict nineteen people.",
+      "reviewedSentence": "Nineteen people are here.",
+      "imageAlt": "Adults gathered together in a bright community room.",
+      "sourceNode": "1581:240"
+    },
+    "twenty": {
+      "status": "withheld",
+      "reason": "The full seat count cannot be established from this view.",
+      "reviewedSentence": "The bus has twenty seats.",
+      "imageAlt": "Paired passenger seats inside a small bus.",
+      "sourceNode": "1581:241"
+    },
+    "thirty": {
+      "status": "withheld",
+      "reason": "The student count cannot be established unambiguously.",
+      "reviewedSentence": "The class has thirty students.",
+      "imageAlt": "Student figures seated at desks in an orderly classroom.",
+      "sourceNode": "1581:242"
+    },
+    "forty": {
+      "status": "withheld",
+      "reason": "An open book does not establish forty pages.",
+      "reviewedSentence": "This book has forty pages.",
+      "imageAlt": "An open slim book showing a block of blank pages.",
+      "sourceNode": "1581:243"
+    },
+    "fifty": {
+      "status": "withheld",
+      "reason": "Unlabelled coin stacks do not establish fifty pounds.",
+      "reviewedSentence": "I have fifty pounds.",
+      "imageAlt": "Equal stacks of pound coins arranged on a wooden table.",
+      "sourceNode": "1581:244"
+    },
+    "sixty": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "One minute has sixty seconds.",
+      "imagePath": "question-images/v1/sentence-sixty/610162213de4df88d649439744c5418930b828a99c888690ce93a527d556e35d.webp",
+      "imageAlt": "An analog stopwatch with a complete circular dial.",
+      "sourceNode": "1581:245"
+    },
+    "seventy": {
+      "status": "withheld",
+      "reason": "An age numeral reveals the assessed answer; no grandfather is shown.",
+      "reviewedSentence": "My grandfather is seventy.",
+      "imageAlt": "An elderly grandfather seated at a family table.",
+      "sourceNode": "1581:246"
+    },
+    "eighty": {
+      "status": "withheld",
+      "reason": "Overlapping cards do not establish eighty cards.",
+      "reviewedSentence": "The box holds eighty cards.",
+      "imageAlt": "An orderly stack of blank cards inside a box.",
+      "sourceNode": "1581:247"
+    },
+    "ninety": {
+      "status": "withheld",
+      "reason": "Unlabelled coin stacks do not establish ninety pounds.",
+      "reviewedSentence": "The trip costs ninety pounds.",
+      "imageAlt": "Grouped stacks of pound coins arranged for a travel payment.",
+      "sourceNode": "1581:248"
+    },
+    "hundred": {
+      "status": "withheld",
+      "reason": "The figure count cannot be established unambiguously at phone size.",
+      "reviewedSentence": "One hundred people came.",
+      "imageAlt": "Wooden people arranged in an even square formation.",
+      "sourceNode": "1581:249"
+    },
+    "thousand": {
+      "status": "withheld",
+      "reason": "The model does not establish one thousand homes.",
+      "reviewedSentence": "The town has one thousand homes.",
+      "imageAlt": "Grouped trays containing a large planned collection of miniature homes.",
+      "sourceNode": "1581:250"
+    },
+    "million": {
+      "status": "withheld",
+      "reason": "A model crowd does not establish one million people.",
+      "reviewedSentence": "The city has one million people.",
+      "imageAlt": "An immense crowd of wooden people filling a model city.",
+      "sourceNode": "1581:251"
+    },
+    "first": {
+      "status": "withheld",
+      "reason": "Cars do not represent the people in the queue.",
+      "reviewedSentence": "I am first in line.",
+      "imageAlt": "A queue of adults with the front person approaching a counter.",
+      "sourceNode": "1581:252"
+    },
+    "second": {
+      "status": "withheld",
+      "reason": "Cars do not represent the people in the queue.",
+      "reviewedSentence": "Mona is second in line.",
+      "imageAlt": "A woman standing directly behind the front person in a queue.",
+      "sourceNode": "1581:253"
+    },
+    "third": {
+      "status": "withheld",
+      "reason": "Cars do not represent the people in the queue.",
+      "reviewedSentence": "Ali is third in line.",
+      "imageAlt": "A man standing behind two people in a queue.",
+      "sourceNode": "1581:254"
+    },
+    "fourth": {
+      "status": "withheld",
+      "reason": "Printed page number reveals the assessed answer.",
+      "reviewedSentence": "This is the fourth page.",
+      "imageAlt": "A hand selecting one sheet from a small ordered stack.",
+      "sourceNode": "1581:255"
+    },
+    "fifth": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Today is the fifth day.",
+      "imagePath": "question-images/v1/sentence-fifth/98fc40b250cce0229d8f05e9c5dc173f8a0c716e052eed71c8322171594d19a5.webp",
+      "imageAlt": "A row of weekday cards with one card raised.",
+      "sourceNode": "1581:256"
+    },
+    "sixth": {
+      "status": "withheld",
+      "reason": "Award rosettes do not represent a woman finishing a race.",
+      "reviewedSentence": "She finished in sixth place.",
+      "imageAlt": "A woman finishing a race behind several runners.",
+      "sourceNode": "1581:257"
+    },
+    "seventh": {
+      "status": "withheld",
+      "reason": "The floor count and person position are ambiguous.",
+      "reviewedSentence": "He lives on the seventh floor.",
+      "imageAlt": "A man visible at the top window of a multi-storey building.",
+      "sourceNode": "1581:258"
+    },
+    "eighth": {
+      "status": "withheld",
+      "reason": "Printed lesson number reveals the assessed answer.",
+      "reviewedSentence": "This is my eighth lesson.",
+      "imageAlt": "An adult learner opening the final card in a sequence.",
+      "sourceNode": "1581:259"
+    },
+    "ninth": {
+      "status": "withheld",
+      "reason": "Labelled cards reveal the assessed ordinal.",
+      "reviewedSentence": "She chose the ninth card.",
+      "imageAlt": "A woman choosing the final blank card from a row.",
+      "sourceNode": "1581:260"
+    },
+    "tenth": {
+      "status": "withheld",
+      "reason": "Overlapping cards do not establish the final lesson position.",
+      "reviewedSentence": "Today is the tenth lesson.",
+      "imageAlt": "The final blank lesson card open on a desk.",
+      "sourceNode": "1581:261"
+    },
+    "addition": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Addition joins numbers together.",
+      "imagePath": "question-images/v1/sentence-addition/e63c84ce4a7d94c36e755d382b9df643b4ba9992d0b7a3919b6e896de563eafa.webp",
+      "imageAlt": "Separate groups of wooden counters beside a joining symbol.",
+      "sourceNode": "1581:262"
+    },
+    "subtraction": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Subtraction takes a number away.",
+      "imagePath": "question-images/v1/sentence-subtraction/f21d2d49c564ec81ff544be3081a428fe0317c92fefab350bff09e9df18a9173.webp",
+      "imageAlt": "Upright counters beside counters laid down to represent removal.",
+      "sourceNode": "1581:263"
+    },
+    "multiplication": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Multiplication adds equal groups.",
+      "imagePath": "question-images/v1/sentence-multiplication/259d7e8c027ce4a8435953c8ce14ff758d3bae7afa667b0038f8a3405ea5ee32.webp",
+      "imageAlt": "Wooden beads arranged in equal groups.",
+      "sourceNode": "1581:264"
+    },
+    "division": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Division makes equal groups.",
+      "imagePath": "question-images/v1/sentence-division/4f7218540a29416a92621143ef2ee77bf6c3d7a164224151caa46406c65d947d.webp",
+      "imageAlt": "Counters shared evenly among matching bowls.",
+      "sourceNode": "1581:265"
+    },
+    "equals": {
+      "status": "withheld",
+      "reason": "The combined apple count is visually ambiguous.",
+      "reviewedSentence": "Two plus three equals five.",
+      "imageAlt": "Two groups of apples combined into one complete group.",
+      "sourceNode": "1581:266"
+    },
+    "plus": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Two plus three equals five.",
+      "imagePath": "question-images/v1/sentence-plus/1a82f40aca243c40395f33c722d3d35d1d53bd92163a3ef9f4ddf4bd48b2f4a0.webp",
+      "imageAlt": "Two groups of wooden blocks beside a joining symbol.",
+      "sourceNode": "1581:267"
+    },
+    "minus": {
+      "status": "withheld",
+      "reason": "Two groups of oranges do not demonstrate removal.",
+      "reviewedSentence": "Five minus two equals three.",
+      "imageAlt": "A hand taking oranges away from a small group.",
+      "sourceNode": "1581:268"
+    },
+    "times": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Three times four equals twelve.",
+      "imagePath": "question-images/v1/sentence-times/16ef37d08211a7bbc8ca5d4a0adca9cd275c7b42897286d525bf37faece2241b.webp",
+      "imageAlt": "Identical counters arranged in equal rows and columns.",
+      "sourceNode": "1581:269"
+    },
+    "divided-by": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Twelve divided by three equals four.",
+      "imagePath": "question-images/v1/sentence-divided-by/c6b485830226004a74b49aa3fd64b8aaf909f34460eaa38ce87bd81eebca2f49.webp",
+      "imageAlt": "Counters divided evenly among matching bowls.",
+      "sourceNode": "1581:270"
+    },
+    "percentage": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The percentage is fifty percent.",
+      "imagePath": "question-images/v1/sentence-percentage/e7322b4b33a3ce977322cbaebbdccbe2bf3e3f8ee4f4238d7e26f2c73cd541e5.webp",
+      "imageAlt": "A circle divided into two equal parts with one part filled.",
+      "sourceNode": "1581:271"
+    },
+    "red": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The apple is red.",
+      "imagePath": "question-images/v1/sentence-red/ecf56acbbdfc3c901ebc488e86776aaf64f0e98905fa502d379c51786d90f382.webp",
+      "imageAlt": "An apple on a neutral tabletop.",
+      "sourceNode": "1581:324"
+    },
+    "blue": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The sky is blue.",
+      "imagePath": "question-images/v1/sentence-blue/39f2dd740c3e59de2c7a2d2000bdd905a44965ddef49e5bb8c4645654aaebec2.webp",
+      "imageAlt": "A daytime sky above a low horizon.",
+      "sourceNode": "1581:325"
+    },
+    "yellow": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "I like yellow flowers.",
+      "imagePath": "question-images/v1/sentence-yellow/9afb0599ece4a6e84b104ed9ce428eb30b1fe81b29622d3e7d66baea4c3c7570.webp",
+      "imageAlt": "Flowers arranged in a plain vase.",
+      "sourceNode": "1581:326"
+    },
+    "green": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The grass is green.",
+      "imagePath": "question-images/v1/sentence-green/68f349c90bd7de90d806dc4990271ac8b2c4964f27b7cfd6ae44a2bbda4c7fda.webp",
+      "imageAlt": "Fresh grass filling an outdoor scene.",
+      "sourceNode": "1581:327"
+    },
+    "orange": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "She wore an orange hat.",
+      "imagePath": "question-images/v1/sentence-orange/c4e62f307277f7e203794c44e621f48c5abb8e7d7f29ea200945162ae809da5b.webp",
+      "imageAlt": "A knitted hat on a plain tabletop.",
+      "sourceNode": "1581:328"
+    },
+    "purple": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "He has a purple pen.",
+      "imagePath": "question-images/v1/sentence-purple/e06b33a52eccdf99c7ac8da62e4527542cdaa5de8da7013fa27cf22ac31c5c10.webp",
+      "imageAlt": "A pen resting on blank paper.",
+      "sourceNode": "1581:329"
+    },
+    "pink": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The cup is pink.",
+      "imagePath": "question-images/v1/sentence-pink/bb8a5a0246e0389481b5776689f271ec2664d7e6ef60c39e77f5f7ceaf767ea4.webp",
+      "imageAlt": "A ceramic cup on a neutral table.",
+      "sourceNode": "1581:330"
+    },
+    "brown": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "A brown dog sat down.",
+      "imagePath": "question-images/v1/sentence-brown/000b669bcf9a255f431b7e954f5475a4647320be965e91e7ad190bbbc00547a6.webp",
+      "imageAlt": "An adult dog sitting on a neutral floor.",
+      "sourceNode": "1581:331"
+    },
+    "white": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The wall is white.",
+      "imagePath": "question-images/v1/sentence-white/03a679e553ee4b4177f73116617d54db4c0c98d933731f5f4b291d7fc97d8e93.webp",
+      "imageAlt": "A room dominated by a plain wall in neutral daylight.",
+      "sourceNode": "1581:332"
+    },
+    "cyan": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The printer uses cyan ink.",
+      "imagePath": "question-images/v1/sentence-cyan/30fe55c8ad5a71be7729af9d49e941f92419d3e8ef01e963f8689d9e6b2f30c5.webp",
+      "imageAlt": "An open color printer showing a blue-green ink cartridge.",
+      "sourceNode": "1581:333"
+    },
+    "magenta": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Magenta is a bright color.",
+      "imagePath": "question-images/v1/sentence-magenta/7d56c6d7c69b14d793da0c3f2287619984428c1422e2cb57db0561a1673b50c8.webp",
+      "imageAlt": "A vivid reddish-purple fabric ribbon on a gray surface.",
+      "sourceNode": "1581:334"
+    },
+    "lime": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "She bought a lime shirt.",
+      "imagePath": "question-images/v1/sentence-lime/cd2658af14a6b37c0099afa01151742243d2a00660d8fa021750792d56e3878c.webp",
+      "imageAlt": "A vivid yellow-green shirt hanging against a plain background.",
+      "sourceNode": "1581:335"
+    },
+    "teal": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The door is painted teal.",
+      "imagePath": "question-images/v1/sentence-teal/b2e7b90dafbd1537eeee89f30972f8f94ee3c8e47fa4a5359154ac75adf33339.webp",
+      "imageAlt": "A painted blue-green door in a neutral room.",
+      "sourceNode": "1581:336"
+    },
+    "indigo": {
+      "status": "withheld",
+      "reason": "Fabric samples do not show the rainbow specified in the sentence.",
+      "reviewedSentence": "Indigo appears in the rainbow.",
+      "imageAlt": "Three ribbons progress from blue through deep blue-violet to purple.",
+      "sourceNode": "1581:337"
+    },
+    "violet": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "A violet flower grew here.",
+      "imagePath": "question-images/v1/sentence-violet/1fe54df9bcc7f6d0ae7561dc01ee7dcabf573a66326bae93888cf6e368992165.webp",
+      "imageAlt": "A purple-blue flower growing in soil.",
+      "sourceNode": "1581:338"
+    },
+    "coral": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The dress is coral.",
+      "imagePath": "question-images/v1/sentence-coral/1dddfeb3dce496ed70e772eaea2182dc801c560cd171292cdba244f37fda13cc.webp",
+      "imageAlt": "A pink-orange dress on a plain mannequin.",
+      "sourceNode": "1581:339"
+    },
+    "salmon": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "They chose salmon paint.",
+      "imagePath": "question-images/v1/sentence-salmon/fcead66ec4741aedbb3a9e78a326e021066e9547b099431986466ee3763113ba.webp",
+      "imageAlt": "A wall being painted a soft pink-orange with a roller.",
+      "sourceNode": "1581:340"
+    },
+    "turquoise": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The water is turquoise.",
+      "imagePath": "question-images/v1/sentence-turquoise/f3b4c3049db9659c7d129cb6f960068aea54fa2d8cbea3d08e24ea48a236ebba.webp",
+      "imageAlt": "Clear tropical water with a vivid blue-green appearance.",
+      "sourceNode": "1581:341"
+    },
+    "lavender": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Lavender soap smells fresh.",
+      "imagePath": "question-images/v1/sentence-lavender/84598cd93154f8a36f961f5d809b01def4b707879cb2dcf38a3bd147dbbf2915.webp",
+      "imageAlt": "A pale purple bar of soap beside flower sprigs.",
+      "sourceNode": "1581:342"
+    },
+    "light": {
+      "status": "withheld",
+      "reason": "A mug does not support a sentence about light walls.",
+      "reviewedSentence": "This room has light walls.",
+      "imageAlt": "A bright room with near-white walls and darker furniture.",
+      "sourceNode": "1581:343"
+    },
+    "dark": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "It is dark outside.",
+      "imagePath": "question-images/v1/sentence-dark/2862ea1a16584ab53a7e8342e5a0168a19c7a34efc5d0f78aa49d7a1d0057f4e.webp",
+      "imageAlt": "A nighttime street viewed through a window.",
+      "sourceNode": "1581:344"
+    },
+    "bright": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The lamp is bright.",
+      "imagePath": "question-images/v1/sentence-bright/f0e5d5fc76bfce2c46029029965929bee44532c74f4838eda2654f731524ead5.webp",
+      "imageAlt": "A switched-on lamp casting strong light in a dim room.",
+      "sourceNode": "1581:345"
+    },
+    "dull": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Old paint looks dull.",
+      "imagePath": "question-images/v1/sentence-dull/c58832aa832f8ad79de55447d50426233fe5cd74fa46589aff6afe433922d455.webp",
+      "imageAlt": "A faded painted wall behind a plain clay jug.",
+      "sourceNode": "1581:346"
+    },
+    "vivid": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The sunset had vivid colors.",
+      "imagePath": "question-images/v1/sentence-vivid/1426dee423f83dd53baf17a326ba0ec76911f48ce206c559044575a9669b666d.webp",
+      "imageAlt": "An intensely colored sunset over a landscape.",
+      "sourceNode": "1581:347"
+    },
+    "pale": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "She wore a pale scarf.",
+      "imagePath": "question-images/v1/sentence-pale/d5f8b93894446ad130a7b20ffa803083914f963aafd314a6fbbd020cc50e4178.webp",
+      "imageAlt": "A softly colored scarf folded on a wooden table.",
+      "sourceNode": "1581:348"
+    },
+    "deep": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "The lake is deep blue.",
+      "imagePath": "question-images/v1/sentence-deep/44b3044773c28738633e429f20cfd3039fb88b926e9cf43f444010589dbca9a5.webp",
+      "imageAlt": "A large lake with rich blue water.",
+      "sourceNode": "1581:349"
+    },
+    "warm": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Yellow gives a warm feeling.",
+      "imagePath": "question-images/v1/sentence-warm/57b654c37a9622b794660ce49d108088cae0f0d614f84a14450b58db003ef320.webp",
+      "imageAlt": "A cozy living room illuminated by golden lamplight.",
+      "sourceNode": "1581:350"
+    },
+    "cool": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Blue is a cool color.",
+      "imagePath": "question-images/v1/sentence-cool/72b568c18f0d0e14a70dcd2eaa53f313266a7464f64387a76378b91d03e483c2.webp",
+      "imageAlt": "A blue ceramic cup against a blue wall.",
+      "sourceNode": "1581:351"
+    },
+    "neutral": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Gray is a neutral shade.",
+      "imagePath": "question-images/v1/sentence-neutral/75cc7e144fb4bf120c4b0963b9b503a813aa668c8f371c62cec01c49fe3e2cd4.webp",
+      "imageAlt": "A gray ceramic vase centered between pale and muted blue vessels.",
+      "sourceNode": "1581:352"
+    },
+    "mix": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Mix blue and red together.",
+      "imagePath": "question-images/v1/sentence-mix/a2a5a2113230c543da8f00abb37795ce7ca7627faf0b9c5db482ce7772f67302.webp",
+      "imageAlt": "Red and blue paint combined into purple paint in a bowl.",
+      "sourceNode": "1581:353"
+    },
+    "blend": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Blend the edges softly.",
+      "imagePath": "question-images/v1/sentence-blend/5153610aef301fbe3dd510f801996ab60814c9fc645670f048c72af8512b6ecf.webp",
+      "imageAlt": "A soft boundary between two painted colors.",
+      "sourceNode": "1581:354"
+    },
+    "shade": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Add black for a darker shade.",
+      "imagePath": "question-images/v1/sentence-shade/e1c11301c0b208a45fa67294568d18651ef59226a2011d918cbb37add016b196.webp",
+      "imageAlt": "Dark pigment being poured into blue paint to make it darker.",
+      "sourceNode": "1581:355"
+    },
+    "tint": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "White gives a lighter tint.",
+      "imagePath": "question-images/v1/sentence-tint/d8358a33b4c14f55a14c62b20e5aca1a18379916e91da738df5e53d3da41740d.webp",
+      "imageAlt": "White paint being poured into blue paint to make it lighter.",
+      "sourceNode": "1581:356"
+    },
+    "hue": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Each flower has a unique hue.",
+      "imagePath": "question-images/v1/sentence-hue/87a08546e15c1fc2a60d92817127834ff40387e3a713ac4ad47eb658dcaf71ce.webp",
+      "imageAlt": "Flowers of the same type shown in several distinct colors.",
+      "sourceNode": "1581:357"
+    },
+    "saturation": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "High saturation creates intense colors.",
+      "imagePath": "question-images/v1/sentence-saturation/abc796541235ef5c5b64e5952adc51781bcacc5a300938facef7adc04611288a.webp",
+      "imageAlt": "Fabric samples with intense colors on a plain tabletop.",
+      "sourceNode": "1581:358"
+    },
+    "gradient": {
+      "status": "withheld",
+      "reason": "A sky does not represent the poster specified in the sentence.",
+      "reviewedSentence": "The poster has a smooth gradient.",
+      "imageAlt": "A poster transitioning smoothly from dark blue to pale blue.",
+      "sourceNode": "1581:359"
+    },
+    "rainbow": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "A rainbow appeared after rain.",
+      "imagePath": "question-images/v1/sentence-rainbow/3af395f99cf43a2790c3785981fb8e19d2772055080d413f46907fc6fe713020.webp",
+      "imageAlt": "A multicolored arc over a wet landscape after rain.",
+      "sourceNode": "1581:360"
+    },
+    "spectrum": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Prisms split light into a spectrum.",
+      "imagePath": "question-images/v1/sentence-spectrum/94951822129520dcfead525a0c50a8675653e6ca1a7395f69a8815ff66e14524.webp",
+      "imageAlt": "A glass prism separating white light into a band of colors.",
+      "sourceNode": "1581:361"
+    },
+    "pigment": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedSentence": "Natural mineral pigment lasts long.",
+      "imagePath": "question-images/v1/sentence-pigment/0faaca45c43ecd3ad3c8ff7e83eeaa6d142166c5deaafe71cd1535d72f7876d1.webp",
+      "imageAlt": "Bowls of ground mineral powder beside raw stones.",
+      "sourceNode": "1581:362"
+    }
+  },
+  "scenes": {
+    "shapes-geometry-1-usage-scene-1": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of circle, square, and triangle. The specification gives this description: A flat shape with three straight sides and three angles..",
+      "reviewedAnswer": "Triangle",
+      "imagePath": "question-images/v1/shapes-geometry-1-usage-scene-1/5f7a5601939da2222f2f035c513abe28e722291ca41a3f9211120823fee3e734.webp",
+      "imageAlt": "A round clock, a window with four equal sides, and a sign with three straight sides.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-1-usage-scene-1/17aa28a12c424510b2906a80027e63a5adb8522f0fda0f31e11dc27d8505cf88.webp",
+          "imageAlt": "Geometric examples, left to right: a flat round disc; a flat figure with four equal sides; a flat figure with three sides."
+        }
+      ],
+      "sourceNode": "1581:404"
+    },
+    "shapes-geometry-1-usage-scene-3": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of pentagon, hexagon, and octagon. The specification gives this description: A flat shape with eight sides..",
+      "reviewedAnswer": "Octagon",
+      "imagePath": "question-images/v1/shapes-geometry-1-usage-scene-3/de98dceaec5af82b30950b20a682be77ac3d309e179c4f8a5759a732b4d6c16c.webp",
+      "imageAlt": "Road signs with five, six, and eight straight sides, arranged from left to right.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-1-usage-scene-3/cb429d69bfa3dae328fe2721c91356e0325abde8836810f30df90719d78b8156.webp",
+          "imageAlt": "Geometric examples, left to right: a five-sided flat figure; a six-sided flat figure; an eight-sided flat figure."
+        }
+      ],
+      "sourceNode": "1581:406"
+    },
+    "shapes-geometry-1-usage-scene-4": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of star, sphere, and cube. The specification gives this description: A perfectly round three-dimensional shape like a ball..",
+      "reviewedAnswer": "Sphere",
+      "imagePath": "question-images/v1/shapes-geometry-1-usage-scene-4/dc9fd609d218cc09730619927abe28f752b58ad089940a0b0dd3df0a643ab190.webp",
+      "imageAlt": "A flat yellow figure with five outward points, a round wooden ball, and a solid with equal square faces.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-1-usage-scene-4/c3470cd12f0b7a876328e3b02dfde78050ad974e3d8bed4b5a8f107d6f477464.webp",
+          "imageAlt": "Geometric examples, left to right: a flat figure with five outward points; a round ball with curved surface lines; a solid with equal square faces."
+        }
+      ],
+      "sourceNode": "1581:407"
+    },
+    "shapes-geometry-1-usage-scene-5": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of cylinder, cone, and pyramid. The specification gives this description: A solid with two circular ends and one curved surface..",
+      "reviewedAnswer": "Cylinder",
+      "imagePath": "question-images/v1/shapes-geometry-1-usage-scene-5/bc1f693290c4c0d5c5a3b5d3c40d4080755fd8a2190c8ec3b889070326a39889.webp",
+      "imageAlt": "Wooden solids: two circular ends joined by a curved side, a circular base tapering to one point, and triangular faces meeting above a polygon base.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-1-usage-scene-5/5a7ab67f29c7337b4a8e0e89614e856e7afcb366c892fad71a5b1703c4c2e60e.webp",
+          "imageAlt": "Geometric examples, left to right: a solid with two circular ends and a curved side; a solid tapering from a circular base to one point; a solid with a polygon base and triangular sides meeting at an apex."
+        }
+      ],
+      "sourceNode": "1581:408"
+    },
+    "shapes-geometry-2-usage-scene-3": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of curve, straight, and zigzag. The specification gives this description: Adjective describing a line or edge that does not bend..",
+      "reviewedAnswer": "Straight",
+      "imagePath": "question-images/v1/shapes-geometry-2-usage-scene-3/5d1b8fcc96bdd520735a2807d300477fc0dc587f8b567e79c9062d93974da89e.webp",
+      "imageAlt": "A bending road, an unbending ruler, and folded paper repeatedly changing direction.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-2-usage-scene-3/8b26ee9d38526adc9a146a9e55ba7fd2326f1a3980a9c0ce633de323f9b56e78.webp",
+          "imageAlt": "Geometric examples, left to right: one bending mark; one unbending horizontal mark; a mark repeatedly changing direction."
+        }
+      ],
+      "sourceNode": "1581:411"
+    },
+    "shapes-geometry-3-usage-scene-1": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of area, perimeter, and volume. The specification gives this description: The total distance around the outside of a flat shape..",
+      "reviewedAnswer": "Perimeter",
+      "imagePath": "question-images/v1/shapes-geometry-3-usage-scene-1/ab9a60e789f292dc29273c7db964716087a52a385db19a1c7f290e36f2d10e77.webp",
+      "imageAlt": "A rectangle filled with colored tiles, a rectangular outside boundary, and a transparent box filled with small blocks.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-3-usage-scene-1/a0397a44fe49447008f7285cad9307c728e5f862978c8dc623b8b2514e0d88fa.webp",
+          "imageAlt": "Geometric examples, left to right: a rectangle filled with small squares; only the outside boundary of a rectangle; a solid divided into small blocks."
+        }
+      ],
+      "sourceNode": "1581:414"
+    },
+    "shapes-geometry-3-usage-scene-3": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of diagonal, symmetry, and vertex. The specification gives this description: A balanced arrangement in which matching parts correspond across a line or point..",
+      "reviewedAnswer": "Symmetry",
+      "imagePath": "question-images/v1/shapes-geometry-3-usage-scene-3/197f76ed3b7a5f91bdee144b6db4c33a12643f2632330bb88eed395a935dc464.webp",
+      "imageAlt": "A line joining opposite corners of square paper, a butterfly with matching left and right wings, and a marked corner of a three-sided frame.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-3-usage-scene-3/9ccc5b7be9163317919cd70cbf635779522d601d3aff15efc8c9fcf27e5c2182.webp",
+          "imageAlt": "Geometric examples, left to right: a segment joining opposite corners of a square; a triangular figure divided into matching left and right halves; a dot marking the meeting point of two sides."
+        }
+      ],
+      "sourceNode": "1581:416"
+    },
+    "shapes-geometry-3-usage-scene-5": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of pattern, tessellation, and fractal. The specification gives this description: A design or arrangement that repeats or follows a recognizable rule..",
+      "reviewedAnswer": "Pattern",
+      "imagePath": "question-images/v1/shapes-geometry-3-usage-scene-5/2321906491a3cda24efcf1bb9507ace7b0d2428b727d1415fee18516440e84fe.webp",
+      "imageAlt": "A board filled by repeating fitted tiles, a branching tree motif, and a board filled by adjacent triangular pieces.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-3-usage-scene-5/e6e86f6972b2bf6ba343e4e3b12d8cd75e9bf3d120bd4b875a43df1cf09c59c8.webp",
+          "imageAlt": "Geometric examples, left to right: alternating small squares and round figures; adjacent tiles filling a square without gaps; a branching figure with the same forked structure at several sizes."
+        }
+      ],
+      "sourceNode": "1581:418"
+    },
+    "shapes-geometry-4-usage-scene-2": {
+      "reviewedScenario": "During a practical design review, a technician compares examples of mosaic and kaleidoscope. The specification gives this description: A picture or pattern made from many small pieces placed together..",
+      "reviewedAnswer": "Mosaic",
+      "imagePath": "question-images/v1/shapes-geometry-4-usage-scene-2/2ceb1d1d2f77b746a352c99b9859881393a81cc2ada64dc7e5a03d8fab34ac19.webp",
+      "imageAlt": "An artwork assembled from many small colored pieces beside a viewing tube and its reflected multicolored view.",
+      "imageFallbacks": [
+        {
+          "imagePath": "usage-illustrations/v1/shapes-geometry-4-usage-scene-2/ab17160bacc9e671bda3fdceb6c5abea680f7102229dd6abb853b7ff5cb3c039.webp",
+          "imageAlt": "Geometric examples, left to right: small square pieces forming a larger diamond motif; a radial motif with repeating reflected segments."
+        }
+      ],
+      "sourceNode": "1581:420"
+    }
+  },
+  "readings": {
+    "colors-primary-bright": {
+      "status": "withheld",
+      "reason": "The canvas omits the painted apple specified by the reading; the real apple is outside the painting.",
+      "reviewedText": "I paint a red apple under a yellow sun. Blue water flows through green grass near an orange bench.",
+      "imageAlt": "An easel and painting supplies beside a stream in a sunny park.",
+      "sourceNode": "1596:5"
+    },
+    "colors-common-contrast": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedText": "She packed a purple notebook and a pink eraser. A brown bag holds black pens and clean white paper.",
+      "imagePath": "question-images/v1/reading-colors-common-contrast/560f4d3bc9e4e513b809cb57e6505eccd969a015f8af102ca5a30fbc94f1e0cf.webp",
+      "imageAlt": "An open school bag with a notebook, pens, paper, and an eraser on a desk.",
+      "sourceNode": "1596:9"
+    },
+    "colors-digital-palette": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedText": "Graphic designers mix cyan and magenta ink. Bright lime shapes and teal borders stand out on an indigo background.",
+      "imagePath": "question-images/v1/reading-colors-digital-palette/b8963a9f82c8ff4dbbccb6e2a8fd85941811081ec45fc184136334ad7578d3fc.webp",
+      "imageAlt": "Ink jars, geometric paper shapes, and border strips arranged on a design board.",
+      "sourceNode": "1596:13"
+    },
+    "colors-delicate-shades": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedText": "Violet blossoms grow beside coral roses. Salmon ribbons decorate turquoise pots around fresh lavender bushes.",
+      "imagePath": "question-images/v1/reading-colors-delicate-shades/a7b42b65747b317f4f7023bd8afd5a028cd15eddcb720caa72ef009bc287d123.webp",
+      "imageAlt": "Two flower pots surrounded by roses and other garden blossoms.",
+      "sourceNode": "1596:17"
+    },
+    "colors-contrast-intensity": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedText": "Bright sunlight warmed the dark street. Light curtains replaced dull blinds to highlight vivid posters in the gallery.",
+      "imagePath": "question-images/v1/reading-colors-contrast-intensity/37ac864b48822c59cdf8909f84ff9a103fb090927f1524d19331eddbb3089d06.webp",
+      "imageAlt": "A gallery interior with curtains, a shaded street outside, and framed posters on the wall.",
+      "sourceNode": "1596:21"
+    },
+    "colors-harmony-and-tone": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedText": "She painted the walls a pale neutral cream. Warm lamps softened deep wood shelves, creating a cool and quiet space.",
+      "imagePath": "question-images/v1/reading-colors-harmony-and-tone/5c740cb8c7a6a88f8c379524168bcb25c24c9724a97bfa4e6359d0bb982373ba.webp",
+      "imageAlt": "A quiet living room with softly lit walls, seating, and tall wooden shelves.",
+      "sourceNode": "1596:25"
+    },
+    "colors-mixing-principles": {
+      "status": "approved",
+      "reason": "Visible objects and visual clues support the current question.",
+      "reviewedText": "Art students mix pigments to discover every hue. Adding white creates a tint, adding black makes a shade, and artists blend them on paper.",
+      "imagePath": "question-images/v1/reading-colors-mixing-principles/be5eec9616ea85b72d0fa8dbd6289ae4b423ac3ed5817eb33fd8479919ba4fec.webp",
+      "imageAlt": "Paintbrushes, mixing bowls, pigments, and blended watercolor on an art table.",
+      "sourceNode": "1596:29"
+    },
+    "colors-light-and-optics": {
+      "status": "withheld",
+      "reason": "The image demonstrates a prism rather than the rain-to-rainbow relationship in the reading.",
+      "reviewedText": "White light passes through rain to form a rainbow spectrum. Artists use fine pigment to print a smooth gradient with rich color saturation.",
+      "imageAlt": "Art materials, a glass prism, pigments, and a smooth printed color transition on a table.",
+      "sourceNode": "1596:33"
+    }
+  }
+}

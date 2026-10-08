@@ -85,14 +85,14 @@ export const ExerciseShell = memo(function ExerciseShell({
 
         {/* Adaptive activity stage: compact and top-anchored when space is abundant. */}
         <Content
-          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-8 xl:px-10 py-3 sm:py-5 lg:py-6 flex flex-col items-center min-h-0 w-full scroll-smooth"
+          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-8 xl:px-10 py-3 sm:py-5 lg:py-6 flex flex-col items-center min-h-0 w-full motion-safe:scroll-smooth"
           aria-label={`${group.name}: ${title} exercise`}
         >
           <div
             className={
               layout === "media"
                 ? "wp-container-immersive flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
-                : "wp-container-content flex flex-col gap-3.5 sm:gap-5 justify-start pb-4 sm:pb-8"
+                : "wp-container-content flex flex-col gap-3.5 sm:gap-5 justify-start pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:pb-8"
             }
           >
             {children}

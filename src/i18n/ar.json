@@ -668,6 +668,7 @@
     "rewritePlaceholder": "أعد كتابة الجملة باستخدام التلميح…"
   },
   "study": {
+    "videoContext": "سياق الفيديو",
     "backToUnit": "العودة إلى {unit}",
     "unitStudyMaterials": "المواد الدراسية للوحدة",
     "unitDescription": "أتقن المفردات، المتلازمات اللفظية، القراءة السياقية، والتعابير اليومية لـ {unit}.",
@@ -1031,6 +1032,15 @@
     "replay": "إعادة التشغيل",
     "replayAudio": "إعادة تشغيل الصوت",
     "pictureMatchTitle": "طابق الصورة بالكلمة",
+    "quantityClue": "الكمية",
+    "wordToPractice": "كلمة للتدريب",
+    "chooseMeaningClue": "اختر الكلمة التي تتوافق مع التلميح.",
+    "meaningClue": "تلميح المعنى",
+    "listenSentence": "استمع إلى الجملة",
+    "stopSentenceAudio": "إيقاف صوت الجملة",
+    "retrySentenceAudio": "إعادة تشغيل صوت الجملة",
+    "sentenceAudioError": "تعذر تشغيل الصوت. حاول مجددًا أو اقرأ الجملة.",
+    "scenePlaceholderDescription": "صورة مؤقتة. استخدم التلميحات النصية للإجابة.",
     "gapFillTitle": "أكمل الجملة",
     "gapFillInstruction": "اختر الكلمة التي تكمل الجملة.",
     "gapFillImageInstruction": "انظر إلى المشهد، ثم اختر الكلمة التي تكمل الجملة.",
@@ -2084,5 +2094,30 @@
   },
   "listening": {
     "missingWordPlaceholder": "اكتب الكلمة الناقصة…"
+  },
+  "videoPlayer": {
+    "play": "تشغيل الفيديو",
+    "pause": "إيقاف مؤقت",
+    "replay": "إعادة التشغيل",
+    "mute": "كتم الصوت",
+    "unmute": "إلغاء كتم الصوت",
+    "speed": "سرعة التشغيل",
+    "transcript": "النص التفاعلي المتزامن",
+    "hideTranscript": "إخفاء النص التفاعلي",
+    "showTranscript": "عرض النص التفاعلي",
+    "currentTime": "الوقت الحالي",
+    "visualDescription": "الوصف البصري للمشهد (بديل صوتي)",
+    "noVideoSupport": "متصفحك لا يدعم تشغيل مقاطع الفيديو.",
+    "unableToPlay": "تعذر تشغيل الفيديو",
+    "loadErrorDesc": "تعذر تحميل ملف الوسائط. يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.",
+    "retry": "إعادة المحاولة",
+    "trialPlaceholderDesc": "المقطع التجريبي جاهز للربط. قم بتصدير مشهدك من Google Flow واربط الرابط أو الملف للمعاينة.",
+    "recommendedSpecs": "المواصفات الموصى بها للفيديو:",
+    "specLength": "المدة: 15-25 ثانية (تركيز على التعلم المصغر)",
+    "specFormat": "الصيغة: WebM أو MP4",
+    "specAspect": "أبعاد العرض: 16:9 أو 4:3",
+    "specBitrate": "معدل النقل: مضغوط للبث السريع على الهواتف (< 5 ميجابايت)",
+    "jumpHint": "انقر فوق أي سطر للانتقال إلى تلك اللحظة",
+    "wordsLabel": "الكلمات:"
   }
 }

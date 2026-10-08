@@ -31,6 +31,9 @@ coverage/
 # Local agent/browser and visual-audit artifacts
 .codex-integration-backup/
 output/
+# Generated trial media stays preserved locally and is published to immutable R2 keys.
+public/learning-scenes/numbers-counting/numbers-counting-trial.webm
+public/learning-scenes/numbers-counting/numbers-counting-trial-poster.jpg
 diff.txt
 test.png
 get_section_ids.py

@@ -4,15 +4,14 @@ import { motion, useReducedMotion } from "framer-motion";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame, Surface } from "../shared";
-import { WordImage } from "../shared/WordImage";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel, Surface } from "../shared";
+import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 import { buildSentenceCompletion, getRichSentence } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
-import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 
@@ -38,7 +37,6 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const queue = useDrillQueue(words);
   const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
-  usePrefetchImage(queue.next);
   const usage = usageState.status === "ready" ? usageState.data : null;
   const richSentence = useMemo(
     () => getRichSentence(currentTargetWord, usage, 1),
@@ -162,25 +160,26 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         activityLabel={t("exercise.sentenceBuilderActivityAria")}
         activity={
           <div className="grid w-full gap-4 lg:grid-cols-[minmax(15rem,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-6">
-            <MediaFrame aspect="recognition" className="mx-auto w-full max-w-lg lg:sticky lg:top-3">
-              <WordImage
-                word={currentTargetWord}
-                className="size-full object-cover"
-                loading="eager"
-                fetchPriority="high"
-              />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 flex items-end bg-gradient-to-t from-black/80 via-black/50 to-transparent px-4 pb-3 pt-8 sm:px-5">
-                <span className="font-sans text-base font-bold tracking-wide text-white drop-shadow-md sm:text-xl">
-                  {currentTargetWord.label}
-                </span>
-              </div>
-            </MediaFrame>
+            <SentenceQuestionSupport
+              key={currentTargetWord.id}
+              word={currentTargetWord}
+              sentence={sentence}
+              prompt={completion.tokens
+                .map((token, index) =>
+                  index >= completion.blankStart && index < completion.blankStart + answer.length
+                    ? "blank"
+                    : token
+                )
+                .join(" ")}
+              media={resolveSentenceMedia(currentTargetWord.id, sentence, usage)}
+              answered={feedback !== null}
+            />
 
             <div className="flex min-w-0 flex-col gap-3 sm:gap-4">
               <Surface
                 variant="card"
                 radius="lg"
-                padding="xs"
+                padding="sm"
                 className="flex w-full flex-col gap-2 border-2 border-primary/30"
               >
                 <div className="flex items-center justify-between gap-3">
