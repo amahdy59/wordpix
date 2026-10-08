@@ -1,0 +1,86 @@
+{
+  "fruits-1-usage-scene-1": {
+    "reviewedScenario": "At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options.",
+    "reviewedAnswer": "Banana",
+    "imagePath": "question-images/v1/fruits-1-usage-scene-1/38e92c2c753a6c445c336c967879024a00fa154fe005ce13e02f9bcd0941dcf5.webp",
+    "imageAlt": "A red apple, a curved yellow banana, and a round orange, separated on a produce counter.",
+    "sourceNode": "1673:559"
+  },
+  "fruits-1-usage-scene-3": {
+    "reviewedScenario": "At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe.",
+    "reviewedAnswer": "Peach",
+    "imagePath": "question-images/v1/fruits-1-usage-scene-3/f6824045bc59d517e909d1af00a12c9e9f9a8d7dde863ba318f18648e078f919.webp",
+    "imageAlt": "A pineapple with a spiky crown, a yellow mango, and a peach, separated on a counter.",
+    "sourceNode": "1673:565"
+  },
+  "fruits-3-usage-scene-1": {
+    "reviewedScenario": "At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe.",
+    "reviewedAnswer": "Lemon",
+    "imagePath": "question-images/v1/fruits-3-usage-scene-1/e4de1edbffd1d523a553a8ffa964f50954ecb46674052a8812104dee95d140ed.webp",
+    "imageAlt": "Yellow lemons, green limes, and a whole and cut grapefruit, separated on a table.",
+    "sourceNode": "1673:591"
+  },
+  "fruits-3-usage-scene-3": {
+    "reviewedScenario": "At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner.",
+    "reviewedAnswer": "Pomelo",
+    "imagePath": "question-images/v1/fruits-3-usage-scene-3/0e2aa719167960f819a413ddc4b9a74ef78b9cf97eb9ef0fd8c260c6cd005ef3.webp",
+    "imageAlt": "Small oval kumquats, oranges cut to show dark red flesh, and large pale pomelos in separate baskets.",
+    "sourceNode": "1673:597"
+  },
+  "fruits-3-usage-scene-5": {
+    "reviewedScenario": "At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast.",
+    "reviewedAnswer": "Date",
+    "imagePath": "question-images/v1/fruits-3-usage-scene-5/5de36ac82a79066f4a7bd4bb8b1ae542a78f64a56a4ab66caef67ca37e7cc8e8.webp",
+    "imageAlt": "Apricots, nectarines, and brown dates in separate containers on a produce tray.",
+    "sourceNode": "1673:603"
+  },
+  "fruits-4-usage-scene-2": {
+    "reviewedScenario": "At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner.",
+    "reviewedAnswer": "Persimmon",
+    "imagePath": "question-images/v1/fruits-4-usage-scene-2/bf5c820f09cc7b39250739c0e334a530682462c2bcba8c90ac77454a558ca297.webp",
+    "imageAlt": "An orange persimmon and a red pomegranate on a wooden display tray.",
+    "sourceNode": "1673:610"
+  },
+  "vegetables-1-usage-scene-1": {
+    "reviewedScenario": "At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup.",
+    "reviewedAnswer": "Carrot",
+    "imagePath": "question-images/v1/vegetables-1-usage-scene-1/dd3d22bea5f27a4661e62e7bd86b3b9e60899ebbb828739c3ae89845e30a1015.webp",
+    "imageAlt": "Orange carrots, brown potatoes, and reddish sweet potatoes in separate produce compartments.",
+    "sourceNode": "1673:614"
+  },
+  "vegetables-1-usage-scene-2": {
+    "reviewedScenario": "At the fresh-vegetable display, a shopper sees beet, turnip, and radish and compares beet with the other options.",
+    "reviewedAnswer": "Beet",
+    "imagePath": "question-images/v1/vegetables-1-usage-scene-2/c041bdc628e19da090927facc7bb2350c08fffb615419a804485c15a67393c31.webp",
+    "imageAlt": "Dark red beets, white and purple turnips, and small red radishes separated on a counter.",
+    "sourceNode": "1673:617"
+  },
+  "vegetables-2-usage-scene-3": {
+    "reviewedScenario": "At the market counter, a shopper sees cauliflower, brussels sprouts, and kohlrabi and asks how to cook cauliflower.",
+    "reviewedAnswer": "Cauliflower",
+    "imagePath": "question-images/v1/vegetables-2-usage-scene-3/b5f4f5ac1a818a33116dd8bd9dd572c4720dc0ce8c2295d1b6e83e93a5fc9fc8.webp",
+    "imageAlt": "A white cauliflower, small green Brussels sprouts, and pale green kohlrabi on a counter.",
+    "sourceNode": "1673:636"
+  },
+  "vegetables-3-usage-scene-1": {
+    "reviewedScenario": "At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal.",
+    "reviewedAnswer": "Zucchini",
+    "imagePath": "question-images/v1/vegetables-3-usage-scene-1/700de90b633dc9129e7ce555b14feebfc781498880a1543731e0515fa4f27ff8.webp",
+    "imageAlt": "A green zucchini, a round orange pumpkin, and a pale butternut squash separated on a counter.",
+    "sourceNode": "1673:646"
+  },
+  "vegetables-3-usage-scene-2": {
+    "reviewedScenario": "At the market counter, a shopper sees acorn squash, spaghetti squash, and cucumber and asks how to cook acorn squash.",
+    "reviewedAnswer": "Acorn Squash",
+    "imagePath": "question-images/v1/vegetables-3-usage-scene-2/17ba6db59b94fb78761a7fa4a64c76105ba2b7e0a35063997b60afecb2e80835.webp",
+    "imageAlt": "A dark green ridged acorn squash, a yellow spaghetti squash, and green cucumbers on a counter.",
+    "sourceNode": "1673:649"
+  },
+  "vegetables-3-usage-scene-4": {
+    "reviewedScenario": "At the kitchen prep table, a shopper sees delicata, tomato, and bell pepper and sets delicata aside for soup.",
+    "reviewedAnswer": "Delicata",
+    "imagePath": "question-images/v1/vegetables-3-usage-scene-4/3dbd5a0eeb892282ad071c08f72bb158ba57df5444262821da5245e3fc704b41.webp",
+    "imageAlt": "Small striped delicata squash, red tomatoes, and red, yellow, and green bell peppers in separate displays.",
+    "sourceNode": "1673:655"
+  }
+}

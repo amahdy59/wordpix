@@ -5,6 +5,19 @@ import { unitUsageDataSchema } from "../data/usageTypes";
 import numbers from "../data/usage/numbers-counting.usage.json";
 
 describe("reviewed usage illustration integration", () => {
+  it("attaches verified object scenes while withholding ambiguous comparisons", async () => {
+    const lessons = (
+      await Promise.all(["fruits", "vegetables"].map(loadUnitUsageForEditorial))
+    ).flatMap((unit) => unit ?? []);
+    const scenes = lessons.flatMap((lesson) => lesson.usage.scenes);
+    expect(
+      scenes.filter((scene) => scene.imagePath?.startsWith("question-images/v1/"))
+    ).toHaveLength(12);
+    const grape = lessons
+      .find((lesson) => lesson.lessonId === "fruits-1")
+      ?.usage.scenes.find((scene) => scene.chunkNumber === 2);
+    expect(grape?.imagePath?.startsWith("question-images/v1/")).not.toBe(true);
+  });
   it("attaches exactly 50 reviewed scenes through the real usage loader", async () => {
     const lessons = (
       await Promise.all(

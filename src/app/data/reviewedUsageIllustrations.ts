@@ -1,5 +1,6 @@
 import mediaManifest from "../generated/reviewedUsageIllustrations.json";
 import figmaManifest from "../generated/reviewedFigmaQuestionMedia.json";
+import objectManifest from "../generated/reviewedFigmaObjectScenes.json";
 import type { UnitUsageData } from "./usageTypes";
 
 /** Only content-hashed R2 images that passed media review and remote verification. */
@@ -14,6 +15,7 @@ type ReviewedSceneMedia = {
 const reviewedMedia: Readonly<Record<string, ReviewedSceneMedia>> = {
   ...mediaManifest,
   ...figmaManifest.scenes,
+  ...objectManifest,
 };
 
 /** Fail closed if editorial changes make an illustration's visual evidence stale. */

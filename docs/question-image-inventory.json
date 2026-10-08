@@ -1,6 +1,6 @@
 {
   "totalScenes": 3657,
-  "imagesNeeded": 3607,
+  "imagesNeeded": 3595,
   "scope": "Effective curriculum usage scenes from the production editorial loader, including reviewed media overlays and content not yet released. Content-hashed media keys have separate remote-verification receipts. Other existing images still need semantic review. Sentence-specific artwork must match the exact sentence; vocabulary artwork is not a substitute.",
   "items": [
     {
@@ -17027,18 +17027,6 @@
     {
       "unitId": "fruits",
       "lessonId": "fruits-1",
-      "sceneId": "fruits-1-usage-scene-1",
-      "targetWords": ["Apple", "Banana", "Orange"],
-      "reason": "missing-scene-image",
-      "scenario": "At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options.",
-      "question": "What does the shopper choose?",
-      "expectedAnswer": "Banana",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "fruits",
-      "lessonId": "fruits-1",
       "sceneId": "fruits-1-usage-scene-2",
       "targetWords": ["Grape", "Strawberry", "Watermelon"],
       "reason": "missing-scene-image",
@@ -17047,18 +17035,6 @@
       "expectedAnswer": "Watermelon",
       "existingImagePath": "",
       "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "fruits",
-      "lessonId": "fruits-1",
-      "sceneId": "fruits-1-usage-scene-3",
-      "targetWords": ["Pineapple", "Mango", "Peach"],
-      "reason": "missing-scene-image",
-      "scenario": "At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe.",
-      "question": "Which item is set aside for the meal?",
-      "expectedAnswer": "Peach",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
     },
     {
       "unitId": "fruits",
@@ -17147,18 +17123,6 @@
     {
       "unitId": "fruits",
       "lessonId": "fruits-3",
-      "sceneId": "fruits-3-usage-scene-1",
-      "targetWords": ["Lemon", "Lime", "Grapefruit"],
-      "reason": "missing-scene-image",
-      "scenario": "At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe.",
-      "question": "Which item does the shopper ask about in the example with lemon, lime?",
-      "expectedAnswer": "Lemon",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "fruits",
-      "lessonId": "fruits-3",
       "sceneId": "fruits-3-usage-scene-2",
       "targetWords": ["Tangerine", "Mandarin", "Clementine"],
       "reason": "missing-scene-image",
@@ -17167,18 +17131,6 @@
       "expectedAnswer": "Clementine",
       "existingImagePath": "",
       "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "fruits",
-      "lessonId": "fruits-3",
-      "sceneId": "fruits-3-usage-scene-3",
-      "targetWords": ["Kumquat", "Blood Orange", "Pomelo"],
-      "reason": "missing-scene-image",
-      "scenario": "At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner.",
-      "question": "Which produce item is the focus of the purchase in the example with kumquat, blood orange?",
-      "expectedAnswer": "Pomelo",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
     },
     {
       "unitId": "fruits",
@@ -17194,18 +17146,6 @@
     },
     {
       "unitId": "fruits",
-      "lessonId": "fruits-3",
-      "sceneId": "fruits-3-usage-scene-5",
-      "targetWords": ["Apricot", "Nectarine", "Date"],
-      "reason": "missing-scene-image",
-      "scenario": "At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast.",
-      "question": "What goes into the basket in the example with apricot, nectarine?",
-      "expectedAnswer": "Date",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "fruits",
       "lessonId": "fruits-4",
       "sceneId": "fruits-4-usage-scene-1",
       "targetWords": ["Fig", "Olive", "Avocado"],
@@ -17215,18 +17155,6 @@
       "expectedAnswer": "Fig",
       "existingImagePath": "",
       "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "fruits",
-      "lessonId": "fruits-4",
-      "sceneId": "fruits-4-usage-scene-2",
-      "targetWords": ["Persimmon", "Pomegranate"],
-      "reason": "missing-scene-image",
-      "scenario": "At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner.",
-      "question": "What is the shopper comparing with the alternatives in the example with persimmon, pomegranate?",
-      "expectedAnswer": "Persimmon",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
     },
     {
       "unitId": "garden",
@@ -41313,30 +41241,6 @@
     {
       "unitId": "vegetables",
       "lessonId": "vegetables-1",
-      "sceneId": "vegetables-1-usage-scene-1",
-      "targetWords": ["Carrot", "Potato", "Sweet Potato"],
-      "reason": "missing-scene-image",
-      "scenario": "At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup.",
-      "question": "What does the shopper choose in the example with carrot, potato?",
-      "expectedAnswer": "Carrot",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "vegetables",
-      "lessonId": "vegetables-1",
-      "sceneId": "vegetables-1-usage-scene-2",
-      "targetWords": ["Beet", "Turnip", "Radish"],
-      "reason": "missing-scene-image",
-      "scenario": "At the fresh-vegetable display, a shopper sees beet, turnip, and radish and compares beet with the other options.",
-      "question": "What goes into the basket in the example with beet, turnip?",
-      "expectedAnswer": "Beet",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: At the fresh-vegetable display, a shopper sees beet, turnip, and radish and compares beet with the other options. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the fresh-vegetable display, a shopper sees beet, turnip, and radish and compares beet with the other options.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "vegetables",
-      "lessonId": "vegetables-1",
       "sceneId": "vegetables-1-usage-scene-3",
       "targetWords": ["Parsnip", "Ginger", "Yam"],
       "reason": "missing-scene-image",
@@ -41397,18 +41301,6 @@
     {
       "unitId": "vegetables",
       "lessonId": "vegetables-2",
-      "sceneId": "vegetables-2-usage-scene-3",
-      "targetWords": ["Cauliflower", "Brussels Sprouts", "Kohlrabi"],
-      "reason": "missing-scene-image",
-      "scenario": "At the market counter, a shopper sees cauliflower, brussels sprouts, and kohlrabi and asks how to cook cauliflower.",
-      "question": "Which produce item is the focus of the purchase in the example with cauliflower, brussels sprouts?",
-      "expectedAnswer": "Cauliflower",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: At the market counter, a shopper sees cauliflower, brussels sprouts, and kohlrabi and asks how to cook cauliflower. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the market counter, a shopper sees cauliflower, brussels sprouts, and kohlrabi and asks how to cook cauliflower.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "vegetables",
-      "lessonId": "vegetables-2",
       "sceneId": "vegetables-2-usage-scene-4",
       "targetWords": ["Rapini", "Napa Cabbage", "Red Cabbage"],
       "reason": "missing-scene-image",
@@ -41433,30 +41325,6 @@
     {
       "unitId": "vegetables",
       "lessonId": "vegetables-3",
-      "sceneId": "vegetables-3-usage-scene-1",
-      "targetWords": ["Zucchini", "Pumpkin", "Butternut Squash"],
-      "reason": "missing-scene-image",
-      "scenario": "At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal.",
-      "question": "What goes into the basket in the example with zucchini, pumpkin?",
-      "expectedAnswer": "Zucchini",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "vegetables",
-      "lessonId": "vegetables-3",
-      "sceneId": "vegetables-3-usage-scene-2",
-      "targetWords": ["Acorn Squash", "Spaghetti Squash", "Cucumber"],
-      "reason": "missing-scene-image",
-      "scenario": "At the market counter, a shopper sees acorn squash, spaghetti squash, and cucumber and asks how to cook acorn squash.",
-      "question": "What is the shopper comparing with the alternatives in the example with acorn squash, spaghetti squash?",
-      "expectedAnswer": "Acorn Squash",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: At the market counter, a shopper sees acorn squash, spaghetti squash, and cucumber and asks how to cook acorn squash. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the market counter, a shopper sees acorn squash, spaghetti squash, and cucumber and asks how to cook acorn squash.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "vegetables",
-      "lessonId": "vegetables-3",
       "sceneId": "vegetables-3-usage-scene-3",
       "targetWords": ["Gourd", "Chayote", "Bitter Melon"],
       "reason": "missing-scene-image",
@@ -41465,18 +41333,6 @@
       "expectedAnswer": "Gourd",
       "existingImagePath": "",
       "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
-    },
-    {
-      "unitId": "vegetables",
-      "lessonId": "vegetables-3",
-      "sceneId": "vegetables-3-usage-scene-4",
-      "targetWords": ["Delicata", "Tomato", "Bell Pepper"],
-      "reason": "missing-scene-image",
-      "scenario": "At the kitchen prep table, a shopper sees delicata, tomato, and bell pepper and sets delicata aside for soup.",
-      "question": "Which item does the shopper ask about in the example with delicata, tomato?",
-      "expectedAnswer": "Delicata",
-      "existingImagePath": "",
-      "generationPrompt": "Photorealistic adult real-world scene in a vegetables context illustrating this situation: At the kitchen prep table, a shopper sees delicata, tomato, and bell pepper and sets delicata aside for soup. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.\nRepresent this exact context: At the kitchen prep table, a shopper sees delicata, tomato, and bell pepper and sets delicata aside for soup.\nAdult learner scene. Preserve every quantity, position, object, and color specified. Show the complete scene without cropping critical clues. No captions, answer words, watermarks, or decorative numerals."
     },
     {
       "unitId": "vegetables",

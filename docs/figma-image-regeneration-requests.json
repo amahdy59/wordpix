@@ -1,7 +1,7 @@
 {
-  "reviewedCandidates": 119,
-  "withheld": 43,
-  "replacementsNeeded": 35,
+  "reviewedCandidates": 137,
+  "withheld": 49,
+  "replacementsNeeded": 41,
   "items": [
     {
       "questionId": "human-body-head-and-face-1-usage-scene-1",
@@ -432,6 +432,66 @@
       "existingReplacement": "",
       "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: White light passes through rain to form a rainbow spectrum. Artists use fine pigment to print a smooth gradient with rich color saturation.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "fruits-1-usage-scene-2",
+      "sourceNode": "1673:562",
+      "sourceRef": "320a90acc0c976032987e0c4c40e41a140d87c63",
+      "reason": "The single large purple fruit does not clearly identify a grape at phone size.",
+      "currentText": "At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "fruits-2-usage-scene-1",
+      "sourceNode": "1673:575",
+      "sourceRef": "c2e4c055c54818b0bccc8d69691224c8292d85d5",
+      "reason": "The dark berry groups do not clearly distinguish mulberry, boysenberry and acai at phone size.",
+      "currentText": "At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "fruits-3-usage-scene-2",
+      "sourceNode": "1673:594",
+      "sourceRef": "48e8ed329d4a0e6e55c77f581a8202d60d0e27a6",
+      "reason": "The three orange citrus groups do not clearly distinguish tangerine, mandarin and clementine.",
+      "currentText": "In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "vegetables-1-usage-scene-3",
+      "sourceNode": "1673:620",
+      "sourceRef": "6e313ff47085ce0fa4e775822833fc8ef33ffe34",
+      "reason": "The dark round root does not clearly represent a yam; learners could confuse it with a beet.",
+      "currentText": "At the neighbourhood produce stall, a shopper sees parsnip, ginger, and yam and chooses parsnip for tonight's meal.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: At the neighbourhood produce stall, a shopper sees parsnip, ginger, and yam and chooses parsnip for tonight's meal.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "vegetables-2-usage-scene-4",
+      "sourceNode": "1673:639",
+      "sourceRef": "6a28d4069b674ac3c7000052246072e2d5322f37",
+      "reason": "The leafy bunch lacks clear features distinguishing rapini from the comparison vegetables.",
+      "currentText": "In the grocery aisle, a shopper sees rapini, napa cabbage, and red cabbage and puts rapini into the basket.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: In the grocery aisle, a shopper sees rapini, napa cabbage, and red cabbage and puts rapini into the basket.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
+    },
+    {
+      "questionId": "vegetables-3-usage-scene-3",
+      "sourceNode": "1673:652",
+      "sourceRef": "a02137b236cf8dbbe8323f6c79ae00bd53757029",
+      "reason": "The pale and striped produce does not clearly distinguish gourd, chayote and bitter melon.",
+      "currentText": "In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
+      "generationPrompt": "Illustrate exactly: In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     }
   ]
 }
