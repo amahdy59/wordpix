@@ -11,13 +11,7 @@ import {
 import type { Action } from "../types";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
-import { FIGMA_HADITH_LESSONS } from "../learning/hadith/figmaHadithCatalog";
-import { getConversationUnit } from "../learning/conversation/conversationCatalog";
-import { getBusinessUnit } from "../learning/business/businessCatalog";
-import {
-  FIGMA_PRONUNCIATION_LESSONS,
-  getFigmaPronunciationActivityData,
-} from "../learning/foundations/figmaPronunciationCatalog";
+import specialistSummaries from "../generated/specialistLessonSummaries.json";
 import { LEGACY_PRONUNCIATION_LESSON_NUMBERS } from "../learning/foundations/pronunciationProgress";
 import { HADITH_STAGE_IDS } from "../learning/hadith/hadithCurriculumStages";
 import { CONVERSATION_STAGE_IDS } from "../learning/conversation/conversationTypes";
@@ -50,7 +44,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
     const hadith = learnerState.hadithProgress || {};
     for (const [lessonId, p] of Object.entries(hadith)) {
       if (!p?.updatedAt || !Number.isFinite(Date.parse(p.updatedAt))) continue;
-      const lesson = FIGMA_HADITH_LESSONS.find((l) => l.id === lessonId);
+      const lesson = specialistSummaries.hadith.find((l) => l.id === lessonId);
       if (!lesson) continue;
       const completedCount = HADITH_STAGE_IDS.filter((stage) =>
         p.completedStages.includes(stage)
@@ -81,10 +75,12 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
         : LEGACY_PRONUNCIATION_LESSON_NUMBERS[lessonKey];
       if (
         !lessonNumber ||
-        !FIGMA_PRONUNCIATION_LESSONS.some((lesson) => lesson.number === lessonNumber)
+        !specialistSummaries.pronunciation.some((lesson) => lesson.number === lessonNumber)
       )
         continue;
-      const activity = getFigmaPronunciationActivityData(lessonNumber);
+      const activity = specialistSummaries.pronunciation.find(
+        (lesson) => lesson.number === lessonNumber
+      );
       if (!activity) continue;
       const currentStage = Math.min(5, Math.max(1, p.currentStage + 1));
       const pct = p.status === "mastered" ? 100 : Math.round((currentStage / 5) * 100);
@@ -107,7 +103,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
     const conversation = learnerState.conversationProgress || {};
     for (const [unitId, p] of Object.entries(conversation)) {
       if (!p?.updatedAt || !Number.isFinite(Date.parse(p.updatedAt))) continue;
-      const unit = getConversationUnit(unitId);
+      const unit = specialistSummaries.conversation.find((lesson) => lesson.id === unitId);
       if (!unit) continue;
       const completedCount = CONVERSATION_STAGE_IDS.filter((stage) =>
         p.completedStages.includes(stage)
@@ -135,7 +131,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
     const business = learnerState.businessProgress || {};
     for (const [unitId, p] of Object.entries(business)) {
       if (!p?.updatedAt || !Number.isFinite(Date.parse(p.updatedAt))) continue;
-      const unit = getBusinessUnit(unitId);
+      const unit = specialistSummaries.business.find((lesson) => lesson.id === unitId);
       if (!unit) continue;
       const completedCount = BUSINESS_STAGE_IDS.filter((stage) =>
         p.completedStages.includes(stage)

@@ -19,3 +19,9 @@ The four-stage Hadith flow, optional bilingual layout, consolidated language ban
 ## Scope limits
 
 The whole-app structural audit and browser route tests do not certify every individual lesson's semantics or image. The broader manual editorial queue remains in [REVIEW.md](REVIEW.md) and `manual-review-progress.json`.
+
+## CI bundle correction — 9 October 2026
+
+GitHub CI run 37840376023 failed the bundle budget: the initial runtime was 1,085.3 KB against a 500 KB limit. The Home specialist-course card imported all four complete course catalogs solely to resolve resume IDs and titles. It now reads a generated ID/title summary instead. The generator reads the canonical lesson catalogs; a regression checks every summary against its source. No media IDs or URL mappings change.
+
+The production build's initial runtime is now 341.4 KB. The original bundle limits remain unchanged. Local bundle validation passes; remote CI and deployment must still be checked for the pushed correction.

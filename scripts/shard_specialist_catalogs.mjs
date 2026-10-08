@@ -37,3 +37,25 @@ for (const { directory, stem } of catalogs) {
 }
 
 console.log("Prepared four specialist curriculum data shards.");
+
+// Home needs stable IDs and titles for resume links, not complete lesson bodies.
+const summaries = {};
+for (const [kind, sourcePath] of [
+  ["hadith", "src/app/learning/hadith/figmaHadithContent.json"],
+  ["pronunciation", "src/app/learning/foundations/figmaPronunciationContent.json"],
+  ["conversation", "src/app/learning/conversation/conversationCatalog.json"],
+  ["business", "src/app/learning/business/businessCatalog.json"],
+]) {
+  const data = JSON.parse(await readFile(sourcePath, "utf8"));
+  const lessons = Array.isArray(data) ? data : data.lessons;
+  summaries[kind] = lessons.map((lesson) => {
+    const number = lesson.number ?? lesson.unitNumber;
+    const title = lesson.title ?? lesson.text.find((line) => line.startsWith(`Lesson ${number} —`))?.replace(`Lesson ${number} —`, "").trim();
+    if (!title) throw new Error(`Missing specialist lesson title: ${kind}/${number}`);
+    return { id: lesson.id ?? `lesson-${String(number).padStart(2, "0")}`, number, title };
+  });
+}
+const summaryPath = "src/app/generated/specialistLessonSummaries.json";
+const summaryText = `${JSON.stringify(summaries, null, 2)}\n`;
+if (await readFile(summaryPath, "utf8").catch(() => "") !== summaryText) await writeFile(summaryPath, summaryText);
+console.log("Prepared lightweight specialist lesson summaries.");
