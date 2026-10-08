@@ -4,7 +4,7 @@ The audit has individual records for **864 vocabulary lessons, 200 study units, 
 
 **The complete manual semantic review requested by the user is still in progress.** A clean structural audit does not establish that every word, question, translation and remote image has been individually reviewed. The original baseline is preserved.
 
-Manual definition/Arabic-gloss reads are now recorded separately for 85 of 200 vocabulary units in `manual-review-progress.json`. This count does not approve all examples, questions, or images in those units. Applied batches include transport, vehicles, retail, food preparation, pharmacy, textiles, materials, clothing, appearance, and grooming. The remaining units and question checks stay explicitly pending. All 42 Hadith lessons received a separate individual editorial review of their displayed sources, vocabulary, language banks, practice, speaking and review prompts; details and remaining validation limits are in [HADITH-REVIEW.md](HADITH-REVIEW.md).
+Manual definition/Arabic-gloss reads are now recorded separately for 87 of 200 vocabulary units in `manual-review-progress.json`. This count does not approve all examples, questions, or images in those units. Applied batches include transport, vehicles, retail, food preparation, pharmacy, textiles, materials, clothing, appearance, and grooming. The remaining units and question checks stay explicitly pending. All 42 Hadith lessons received a separate individual editorial review of their displayed sources, vocabulary, language banks, practice, speaking and review prompts; details and remaining validation limits are in [HADITH-REVIEW.md](HADITH-REVIEW.md).
 
 ## Findings and corrections
 

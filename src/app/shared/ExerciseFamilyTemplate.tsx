@@ -45,7 +45,7 @@ export function ExerciseFamilyTemplate({
       aria-labelledby={instructionId}
       className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-5 ${className}`}
     >
-      <header className="text-center">
+      <header className="text-start sm:text-center">
         <h2
           id={instructionId}
           className="text-balance font-sans text-lg font-bold leading-snug text-foreground sm:text-xl"
@@ -53,9 +53,7 @@ export function ExerciseFamilyTemplate({
           {instruction}
         </h2>
         {helper && (
-          <p className="mt-1.5 font-sans text-xs font-medium text-muted-foreground sm:text-sm">
-            {helper}
-          </p>
+          <p className="mt-1 font-sans text-sm font-medium text-muted-foreground">{helper}</p>
         )}
       </header>
 

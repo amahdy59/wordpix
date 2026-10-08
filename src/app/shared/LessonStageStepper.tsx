@@ -78,7 +78,7 @@ export function LessonStageStepper({
   return (
     <nav className={`w-full space-y-3 ${className}`} aria-label={ariaLabel}>
       <div className="flex flex-col gap-2 sm:hidden">
-        <div className="flex items-center justify-between text-xs font-black">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold">
           <span className="uppercase tracking-wider text-primary">
             {stepLabel(currentIndex + 1, stages.length)}
           </span>
@@ -125,7 +125,7 @@ export function LessonStageStepper({
                 tabIndex={isCurrent ? 0 : -1}
                 onClick={() => moveFocus(index)}
                 onKeyDown={(event) => handleKeyDown(event, index)}
-                className={`group relative flex min-h-12 w-full items-center justify-center gap-1.5 rounded-2xl border-2 px-2 py-2 text-[11px] font-black transition-all sm:text-xs ${focusRing} ${
+                className={`group relative flex min-h-11 w-full items-center justify-center gap-1.5 rounded-xl border-2 px-2 py-2 text-sm font-semibold transition-all ${focusRing} ${
                   isCurrent
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-sm"
                     : isCompleted
@@ -153,7 +153,7 @@ export function LessonStageStepper({
                     index + 1
                   )}
                 </span>
-                <span className="truncate tracking-tight">{stage.label}</span>
+                <span className="min-w-0 break-words">{stage.label}</span>
               </button>
             </li>
           );

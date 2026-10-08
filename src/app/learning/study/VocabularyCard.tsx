@@ -75,7 +75,7 @@ export function VocabularyCard({
               {word.label}
             </h3>
 
-            <div className="flex items-center gap-2 sm:gap-3 mb-3">
+            <div className="flex max-w-full flex-wrap items-center justify-center gap-2 sm:gap-3 mb-3">
               <span className="text-sm sm:text-base text-muted-foreground font-mono bg-secondary/60 px-3 py-0.5 rounded-xl">
                 {pronunciation?.ipa || word.phonetic}
               </span>

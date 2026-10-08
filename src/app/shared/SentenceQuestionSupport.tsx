@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { ImageOff } from "lucide-react";
+import { useId, useState } from "react";
+import { ImageOff, Volume2 } from "lucide-react";
 import type { VocabularyItem } from "../data/courseCatalog";
 import type { LessonUsageData } from "../data/usageTypes";
 import { getAuthoredSentence } from "../exercises/content/authoredLessonContent";
@@ -7,7 +7,7 @@ import type { PilotSentenceMedia } from "../exercises/content/pilotSentenceMedia
 import { QuestionImage } from "./QuestionImage";
 import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
 import { useI18n } from "../context/I18nContext";
-import { useAudio } from "./useAudio";
+import { useSentenceAudio } from "./useSentenceAudio";
 import { Button } from "./Button";
 import { MediaFrame } from "./MediaFrame";
 
@@ -59,12 +59,8 @@ export function SentenceQuestionSupport({
 }) {
   const { t } = useI18n();
   const [failedImage, setFailedImage] = useState<string | null>(null);
-  const audio = useAudio({ lang: "en-US" });
-  const { stop } = audio;
-  useEffect(() => {
-    stop();
-    return stop;
-  }, [sentence, media?.imagePath, stop]);
+  const audioHintId = useId();
+  const audio = useSentenceAudio(answered ? sentence : prompt);
   const hasImage = media && failedImage !== media.imagePath;
   // A definition remains available to keyboard and screen-reader learners and
   // provides evidence when an essential visual is unavailable. Do not show a
@@ -109,9 +105,9 @@ export function SentenceQuestionSupport({
       ? t("exercise.meaningClue")
       : t("exercise.wordToPractice");
   return (
-    <div className="flex min-w-0 flex-col gap-3">
+    <div className="flex min-w-0 flex-col gap-2 sm:gap-3">
       {hasImage ? (
-        <MediaFrame fit="contain" aspect="scene" className="w-full">
+        <MediaFrame fit="contain" aspect="scene" className="w-full max-h-48 sm:max-h-none">
           <QuestionImage
             media={media}
             className="size-full object-contain"
@@ -123,32 +119,44 @@ export function SentenceQuestionSupport({
       ) : (
         <ScenePlaceholder />
       )}
-      <p
-        lang="en"
-        dir="ltr"
-        className="rounded-xl border border-border bg-wp-card p-4 text-start text-base leading-relaxed text-foreground"
-      >
-        <span className="font-semibold">{clueLabel}: </span>
-        {clue}
-      </p>
-      <Button
-        variant="outline"
-        size="md"
-        disabled={!audio.isSupported}
-        aria-pressed={audio.isPlaying}
-        aria-busy={audio.isLoading}
-        onClick={() =>
-          audio.isPlaying
-            ? stop()
-            : audio.speak(answered ? sentence : prompt.replace(/_{2,}/g, "blank"))
-        }
-      >
-        {audio.isPlaying
-          ? t("exercise.stopSentenceAudio")
-          : audio.isError
-            ? t("exercise.retrySentenceAudio")
-            : t("exercise.listenSentence")}
-      </Button>
+      <div className="flex flex-wrap items-center gap-2 rounded-xl border border-border bg-wp-card p-2 sm:p-3">
+        <p
+          lang="en"
+          dir="ltr"
+          className="min-w-0 flex-1 basis-36 text-start text-base leading-relaxed text-foreground"
+        >
+          <span className="font-semibold">{clueLabel}: </span>
+          {clue}
+        </p>
+        <Button
+          variant="outline"
+          size="md"
+          disabled={!audio.isSupported}
+          aria-pressed={audio.isPlaying}
+          aria-busy={audio.isLoading}
+          aria-label={
+            audio.isPlaying
+              ? t("exercise.stopSentenceAudio")
+              : audio.isError
+                ? t("exercise.retrySentenceAudio")
+                : t("exercise.listenSentence")
+          }
+          aria-describedby={!answered ? audioHintId : undefined}
+          iconLeft={<Volume2 className="size-4" aria-hidden />}
+          onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
+        >
+          {audio.isPlaying
+            ? t("action.stop")
+            : audio.isError
+              ? t("action.retry")
+              : t("action.listen")}
+        </Button>
+      </div>
+      {!answered && (
+        <span id={audioHintId} className="sr-only">
+          {t("exercise.sentenceAudioGapHint")}
+        </span>
+      )}
       {audio.isError && (
         <p role="status" className="text-sm text-foreground">
           {t("exercise.sentenceAudioError")}
