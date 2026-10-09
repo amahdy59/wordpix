@@ -121,7 +121,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     );
 
     // Should display Quick Recall banner
-    expect(screen.getByText(/0\. Quick Recall · Unit 1:/i)).toBeDefined();
+    expect(screen.getByRole("heading", { name: /Quick Recall · Unit 1:/i })).toBeDefined();
 
     // Select or type answer
     const optionButtons = screen.queryAllByRole("radio");
