@@ -36,8 +36,17 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();
   await expect(page).toHaveURL(/#\/hadith\/lesson-1$/);
   await page.getByRole("tab", { name: "Read & Listen" }).click();
-  await expect(page.getByText("Complete Hadith", { exact: true })).toHaveCount(1);
-  await expect(page.getByText(/Actions are \(judged\) by motives/)).toHaveCount(1);
+  await expect(page.getByRole("heading", { name: "Read and listen", exact: true })).toHaveCount(1);
+  const translation = page.getByRole("article").filter({
+    has: page.getByRole("heading", { name: "English Translation", exact: true }),
+  });
+  await expect(translation).toHaveCount(1);
+  await expect(
+    translation.locator("p").filter({ hasText: /Actions are \(judged\) by motives/ })
+  ).toHaveCount(1);
+  await expect(
+    translation.getByRole("button", { name: "Listen to translation", exact: true })
+  ).toBeVisible();
   expect(errors).toEqual([]);
 });
 
