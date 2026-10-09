@@ -15,10 +15,10 @@ export function LanguageInsightCard({
   const Icon = kind === "family" ? GitBranch : kind === "contrast" ? ArrowRightLeft : Lightbulb;
   const surface =
     kind === "family"
-      ? "border-primary/30 bg-secondary"
+      ? "border-primary"
       : kind === "contrast"
-        ? "border-feedback-success-border bg-feedback-success-surface"
-        : "border-feedback-warning-border bg-feedback-warning-surface";
+        ? "border-feedback-success-border"
+        : "border-feedback-warning-border";
   const color =
     kind === "family"
       ? "text-primary"
@@ -28,7 +28,7 @@ export function LanguageInsightCard({
   const family = kind === "family" && text.includes("→") ? text.split("→") : [];
   const correction = kind === "error" ? text.match(/^Not:\s*(.+?)\s*\|\s*Use:\s*(.+)$/i) : null;
   return (
-    <aside className={`min-w-0 overflow-hidden rounded-2xl border p-4 shadow-wp-xs ${surface}`}>
+    <aside className={`min-w-0 border-s-2 ps-4 py-2 ${surface}`}>
       <h3 className={`flex items-center gap-2 text-sm font-bold ${color}`}>
         <Icon className="size-5 shrink-0" aria-hidden />
         {title}
@@ -39,19 +39,17 @@ export function LanguageInsightCard({
             {family.map((word, index) => (
               <span key={`${index}-${word}`} className="inline-flex items-center gap-2">
                 {index > 0 && <span aria-hidden>→</span>}
-                <span className="rounded-lg border border-border bg-card px-2 py-1 font-bold">
-                  {word.trim()}
-                </span>
+                <span className="font-bold">{word.trim()}</span>
               </span>
             ))}
           </p>
         ) : correction ? (
           <div className="space-y-2">
-            <p className="rounded-lg border border-feedback-error-border bg-feedback-error-surface px-3 py-2 text-feedback-error-foreground">
+            <p className="border-s-2 border-feedback-error-border bg-feedback-error-surface px-3 py-2 text-feedback-error-foreground">
               <strong>{t("courseLesson.avoid")} </strong>
               {correction[1]}
             </p>
-            <p className="rounded-lg border border-feedback-success-border bg-feedback-success-surface px-3 py-2 text-feedback-success-foreground">
+            <p className="border-s-2 border-feedback-success-border bg-feedback-success-surface px-3 py-2 text-feedback-success-foreground">
               <strong>{t("courseLesson.use")} </strong>
               {correction[2]}
             </p>

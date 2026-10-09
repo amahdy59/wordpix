@@ -44,6 +44,8 @@ export interface CurriculumTopicCardProps {
   onClick: () => void;
   /** Optional className override for the outer article */
   className?: string;
+  /** Compact reference result with thumbnail and text side by side. */
+  layout?: "card" | "row";
 }
 
 /**
@@ -72,6 +74,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
   secondaryAction,
   onClick,
   className = "",
+  layout = "card",
 }: CurriculumTopicCardProps) {
   const { t } = useI18n();
   const [imageError, setImageError] = useState(false);
@@ -80,7 +83,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
 
   return (
     <article
-      className={`group relative flex h-full flex-col justify-between rounded-3xl border bg-card shadow-wp-xs transition-all ${
+      className={`group relative flex h-full flex-col justify-between ${layout === "row" ? "border-b border-border py-3" : "rounded-2xl border bg-card shadow-wp-xs"} transition-colors ${
         isCurrent
           ? "border-primary/60 bg-secondary shadow-wp-sm"
           : "border-border hover:border-primary/50 hover:shadow-wp-sm"
@@ -92,10 +95,12 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         onClick={onClick}
         aria-label={ariaLabel}
         aria-current={isCurrent ? "step" : undefined}
-        className="flex min-h-11 min-w-11 flex-1 flex-col justify-between overflow-hidden rounded-3xl text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
+        className={`flex min-h-11 min-w-11 flex-1 ${layout === "row" ? "flex-row items-center gap-3 rounded-xl" : "flex-col justify-between overflow-hidden rounded-2xl"} text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]`}
       >
         {/* Prominent Media Cover */}
-        <div className="relative aspect-[16/9] w-full shrink-0 overflow-hidden border-b border-border/50 bg-muted/40">
+        <div
+          className={`relative shrink-0 overflow-hidden bg-muted/40 ${layout === "row" ? "aspect-square w-20 rounded-xl sm:w-24" : "aspect-[16/9] w-full border-b border-border/50"}`}
+        >
           {showImage ? (
             // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
             <img
@@ -140,7 +145,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
               </span>
             )}
 
-            {levelBadge && (
+            {levelBadge && layout === "card" && (
               <span className="inline-flex min-h-7 items-center justify-center rounded-xl bg-primary px-2.5 py-1 text-xs font-black text-primary-foreground shadow-wp-xs">
                 {levelBadge}
               </span>
@@ -149,7 +154,9 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         </div>
 
         {/* Clean Title-First Body */}
-        <div className="flex flex-1 flex-col justify-between gap-3 p-4 sm:p-5">
+        <div
+          className={`flex min-w-0 flex-1 flex-col justify-between gap-3 ${layout === "row" ? "py-2 pe-12" : "p-4 sm:p-5"}`}
+        >
           <div className="flex flex-col gap-1">
             {eyebrow && (
               <span className="line-clamp-1 text-[11px] font-black uppercase tracking-wider text-muted-foreground">
@@ -161,6 +168,9 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
             </h3>
           </div>
 
+          {layout === "row" && levelBadge && (
+            <span className="text-sm font-semibold text-muted-foreground">{levelBadge}</span>
+          )}
           {/* Compact Status Footer */}
           {(statusText || actionLabel) && (
             <div className="mt-auto flex w-full items-center justify-between gap-2 border-t border-border/60 pt-3 text-xs">
@@ -184,7 +194,13 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
 
       {/* Optional Secondary Action Area (outside primary button to prevent nested controls) */}
       {secondaryAction && (
-        <div className="border-t border-border/60 px-4 py-3 sm:px-5">{secondaryAction}</div>
+        <div
+          className={
+            layout === "row" ? "pt-3 sm:ps-28" : "border-t border-border/60 px-4 py-3 sm:px-5"
+          }
+        >
+          {secondaryAction}
+        </div>
       )}
 
       {hasTooltip && (

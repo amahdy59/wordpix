@@ -18,7 +18,7 @@ const variantStyles: Record<SurfaceVariant, string> = {
   elevated: "bg-wp-card border border-border text-foreground shadow-wp-md",
   panel: "bg-wp-panel border border-wp-panel-border text-wp-text-on-panel shadow-wp-sm",
   muted: "bg-muted/50 border border-border/60 text-foreground",
-  flat: "bg-wp-card text-foreground",
+  flat: "text-foreground",
 };
 
 const radiusStyles: Record<SurfaceRadius, string> = {

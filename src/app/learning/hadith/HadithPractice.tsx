@@ -76,7 +76,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
 
   return (
     <section
-      className="wp-container-content rounded-3xl border border-border bg-card p-3 shadow-wp-sm sm:p-5"
+      className="wp-container-content py-3 sm:py-5"
       aria-labelledby="hadith-practice-heading"
     >
       <p className="sr-only">{t("hadith.practiceLabel")}</p>
@@ -91,7 +91,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
         {t("courseLesson.quizHelp")}
       </p>
 
-      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-3 rounded-xl border border-border bg-background p-2">
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-3 bg-background py-2">
         <div className="flex items-center justify-between gap-3 text-base font-black">
           <span>
             {t("quiz.questionOf", {
@@ -99,9 +99,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
               total: exerciseSet.exercises.length,
             })}
           </span>
-          <span>
-            {answered}/{exerciseSet.exercises.length}
-          </span>
+          <span>{t("quiz.answeredCount", { answered, total: exerciseSet.exercises.length })}</span>
         </div>
         <div
           className="mt-2 h-1 overflow-hidden rounded-full bg-muted"
@@ -271,7 +269,6 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
         {questionIndex < exerciseSet.exercises.length - 1 && (
           <button
             type="button"
-            disabled={!results[questionIndex]?.answered}
             onClick={() => setQuestionIndex((index) => index + 1)}
             className="min-h-11 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >

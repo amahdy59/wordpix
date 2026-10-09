@@ -84,7 +84,7 @@ export function HadithReviewStage({
   return (
     <section className="wp-container-content space-y-4" aria-labelledby="stage-review-heading">
       {/* Stage Header */}
-      <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
+      <header className="space-y-3 py-3">
         <div className="flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
             <Target className="size-3.5" aria-hidden />
@@ -108,7 +108,7 @@ export function HadithReviewStage({
 
       {/* Part 1: Active Retrieval Cards */}
       <div className="space-y-4">
-        <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 flex items-center justify-between gap-2 rounded-xl border border-border bg-background p-2">
+        <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 flex items-center justify-between gap-2 bg-background py-2">
           <h3 className="text-base font-black uppercase tracking-wider text-muted-foreground">
             {t("hadith.retrievalQuestions") || "Part 1 · Active Retrieval"}
           </h3>

@@ -36,6 +36,24 @@ const mockQuestions: QuizQuestion[] = [
 ];
 
 describe("CurriculumQuizEngine", () => {
+  it("allows unanswered navigation and returns to missing answers without submitting a score", async () => {
+    const onComplete = vi.fn();
+    render(
+      <I18nProvider>
+        <CurriculumQuizEngine
+          questions={mockQuestions}
+          onComplete={onComplete}
+          desktopPageSize={1}
+        />
+      </I18nProvider>
+    );
+    await userEvent.click(screen.getByRole("button", { name: /next question/i }));
+    expect(screen.getByText(/work ___ clients/i)).toBeInTheDocument();
+    await userEvent.click(screen.getByRole("button", { name: /return to unanswered/i }));
+    expect(screen.getByText("What does 'role' mean?")).toBeInTheDocument();
+    expect(onComplete).not.toHaveBeenCalled();
+    expect(screen.queryByRole("heading", { name: /quiz completed/i })).not.toBeInTheDocument();
+  });
   it("renders first question with progress pills (1..N) visible", () => {
     render(
       <I18nProvider>

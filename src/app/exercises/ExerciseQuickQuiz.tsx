@@ -176,7 +176,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     >
       <div className="relative flex min-h-[560px] w-full flex-1 flex-col gap-3.5 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
         {/* Question card */}
-        <div className="flex shrink-0 flex-col gap-3 rounded-2xl border border-border bg-wp-card p-4 shadow-wp-xs sm:p-5 lg:p-6">
+        <div className="flex shrink-0 flex-col gap-3 py-2">
           <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
             <h2
               className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance"
@@ -184,7 +184,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             >
               {t("exercise.whichPictureShows", { word: currentTargetWord.label })}
             </h2>
-            <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap">
+            <span className="text-sm font-sans font-semibold text-muted-foreground shrink-0 whitespace-nowrap">
               /{currentTargetWord.phonetic}/
             </span>
           </div>

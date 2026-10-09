@@ -253,27 +253,19 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 }
               />
             ) : (
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+              <dl className="grid grid-cols-2 gap-4 border-y border-border py-4 sm:grid-cols-3">
                 {STATS.map(({ value, label, icon: Icon, color }) => (
-                  <Surface
-                    key={label}
-                    variant="card"
-                    radius="lg"
-                    padding="xs"
-                    className="flex flex-col items-center gap-1 text-center p-3"
-                  >
-                    <div className="flex size-9 items-center justify-center rounded-xl bg-secondary">
-                      <Icon className={`size-4 ${color}`} />
-                    </div>
-                    <p className="mt-0.5 font-sans text-xl font-black leading-none text-foreground">
-                      {value}
-                    </p>
-                    <p className="text-center font-sans text-sm font-bold leading-tight text-foreground">
+                  <div key={label} className="flex flex-col gap-2 px-2">
+                    <dt className="flex items-center gap-2 font-sans text-sm font-bold leading-tight text-foreground">
+                      <Icon className={`size-4 shrink-0 ${color}`} aria-hidden />
                       {label}
-                    </p>
-                  </Surface>
+                    </dt>
+                    <dd className="font-sans text-2xl font-black leading-none text-foreground">
+                      {value}
+                    </dd>
+                  </div>
                 ))}
-              </div>
+              </dl>
             )}
             <HelpDisclosure label={t("help.aboutProgress")}>
               <dl className="space-y-3">
@@ -305,20 +297,20 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               {t("profile.skillMasteryDescription")}
             </p>
           </div>
-          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+          <div className="flex flex-col divide-y divide-border border-y border-border">
             {skillSummaries.map((summary) => {
               const meta = skillMeta[summary.dimension];
               const Icon = meta.icon;
               return (
                 <Surface
                   key={summary.dimension}
-                  variant="card"
-                  radius="lg"
-                  padding="sm"
-                  className="flex min-w-0 flex-col gap-3"
+                  variant="flat"
+                  radius="none"
+                  padding="none"
+                  className="grid min-w-0 gap-3 py-4 sm:grid-cols-[minmax(10rem,0.7fr)_minmax(0,1.3fr)] sm:items-center"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
+                    <span className="flex size-11 shrink-0 items-center justify-center text-primary">
                       <Icon className="size-5" aria-hidden />
                     </span>
                     <div className="min-w-0">
@@ -351,7 +343,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                       />
                     </div>
                   ) : (
-                    <p className="rounded-xl border border-border bg-secondary/40 p-3 font-sans text-sm font-semibold text-muted-foreground">
+                    <p className="font-sans text-sm font-semibold text-muted-foreground">
                       {t("profile.skillNotPracticed")}
                     </p>
                   )}
@@ -360,10 +352,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
             })}
           </div>
         </motion.section>
-        <section
-          className="rounded-2xl border border-border bg-card p-5"
-          aria-labelledby="release-notes-heading"
-        >
+        <section className="border-t border-border py-5" aria-labelledby="release-notes-heading">
           <h2 id="release-notes-heading" className="text-lg font-bold text-foreground">
             {t("releaseNotes.pageTitle")}
           </h2>

@@ -13,9 +13,9 @@ interface Props {
 export const Section = memo(function Section({ id, title, children, className = "" }: Props) {
   return (
     <section aria-labelledby={id} className={`flex flex-col gap-3 ${className}`}>
-      <span id={id} className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
+      <h2 id={id} className="font-sans font-bold text-lg text-foreground">
         {title}
-      </span>
+      </h2>
       {children}
     </section>
   );

@@ -392,7 +392,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
               <section
                 key={stage.id}
                 aria-labelledby={`stage-heading-${stage.id}`}
-                className="flex flex-col gap-4 bg-muted/20 border border-border rounded-3xl p-4 sm:p-6"
+                className="flex flex-col gap-4 border-t border-border pt-4 sm:pt-6"
               >
                 {/* Stage Accordion Header */}
                 <button
@@ -484,9 +484,10 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
         </div>
       ) : (
         /* Flat Filtered Grid */
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="flex flex-col">
           {filteredUnits.map((unit) => (
             <UnitCard
+              compact
               key={unit.id}
               unit={unit}
               stats={unitStatsMap.get(unit.id)}
@@ -501,6 +502,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
 });
 
 interface UnitCardProps {
+  compact?: boolean;
   unit: CourseUnit;
   stats?: {
     totalWords: number;
@@ -512,7 +514,13 @@ interface UnitCardProps {
   t: (key: string, options?: Record<string, string | number>) => string;
 }
 
-const UnitCard = memo(function UnitCard({ unit, stats, dispatch, t }: UnitCardProps) {
+const UnitCard = memo(function UnitCard({
+  unit,
+  stats,
+  dispatch,
+  t,
+  compact = false,
+}: UnitCardProps) {
   const curriculum = getUnitCurriculumDesign(unit);
   const wordsPracticedCount = stats?.masteredWords ?? 0;
   const totalWords = stats?.totalWords ?? unit.wordIds.length;
@@ -521,7 +529,7 @@ const UnitCard = memo(function UnitCard({ unit, stats, dispatch, t }: UnitCardPr
 
   return (
     <CurriculumTopicCard
-      className="[&_img]:aspect-[16/9]"
+      layout={compact ? "row" : "card"}
       levelBadge={curriculum.cefr}
       isMastered={isComplete}
       title={unit.name}
@@ -530,8 +538,10 @@ const UnitCard = memo(function UnitCard({ unit, stats, dispatch, t }: UnitCardPr
       tooltipText={curriculum.outcome}
       statusIcon={<Play className="size-3.5 shrink-0" aria-hidden="true" />}
       statusText={t("explore.wordsBadge", { count: totalWords })}
-      actionLabel={wordsPracticedCount > 0 ? t("action.continue") : t("explore.startUnit")}
-      onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })}
+      actionLabel={t("study.referenceGuideTitle")}
+      onClick={() =>
+        dispatch({ type: "GO", to: "learning-materials", unitId: unit.id, area: "reference" })
+      }
       secondaryAction={
         <div className="flex flex-col gap-2.5">
           {wordsPracticedCount > 0 && (

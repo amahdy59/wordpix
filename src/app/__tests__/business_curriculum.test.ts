@@ -229,6 +229,7 @@ describe("Beyond Business English (B1–C2) Curriculum", () => {
     expect(progress[unitId].confidenceRating).toBe("ready");
 
     expect(canCompleteBusinessUnit(progress, unitId)).toBe(false);
+    expect(completeBusinessUnit(progress, unitId)).toBe(progress);
 
     // Complete speaking stage as well
     progress = checkpointBusinessUnit(progress, unitId, 6, "speaking");
@@ -236,7 +237,14 @@ describe("Beyond Business English (B1–C2) Curriculum", () => {
 
     progress = completeBusinessUnit(progress, unitId);
     expect(progress[unitId].status).toBe("mastered");
-    expect(progress[unitId].completedStages).toEqual(BUSINESS_STAGE_IDS);
+    expect(progress[unitId].completedStages).toEqual([
+      "vocabulary",
+      "exercises",
+      "speaking",
+      "review",
+    ]);
+    expect(progress[unitId].completedStages).not.toContain("recall");
+    expect(progress[unitId].completedStages).not.toContain("warmup");
   });
 
   it("round-trips business curriculum and lesson hashes via useHashRouter", () => {

@@ -18,16 +18,15 @@ export const Card = memo(function Card({
   className = "",
   onClick,
 }: Props) {
-  const baseStyles = "bg-wp-card rounded-3xl p-6 flex flex-col gap-4 shadow-wp-xs transition-all";
+  const baseStyles =
+    "bg-wp-card rounded-2xl p-5 sm:p-6 flex flex-col gap-4 shadow-wp-xs transition-colors";
 
-  const variantStyles =
-    variant === "primary"
-      ? "border border-primary/30 hover:border-primary/50 cursor-pointer"
-      : "border border-border";
+  const variantStyles = variant === "primary" ? "border border-primary/30" : "border border-border";
 
   // If there's an onClick but variant is default, still show cursor pointer
-  const interactiveStyles =
-    onClick && variant !== "primary" ? "cursor-pointer hover:border-border/80" : "";
+  const interactiveStyles = onClick
+    ? "cursor-pointer hover:border-primary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+    : "";
 
   // Hover lift + press scale previously came from framer-motion; the CSS
   // below keeps identical visuals and stays inert under reduced motion,

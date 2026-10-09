@@ -2,10 +2,64 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import { BusinessLessonScreen } from "../learning/business/BusinessLessonScreen";
 import { BusinessCurriculumScreen } from "../learning/business/BusinessCurriculumScreen";
-import { LearnerProvider } from "../context/LearnerContext";
+import { LearnerProvider, useLearner } from "../context/LearnerContext";
 import { I18nProvider } from "../../i18n";
 
 describe("Business Learning Screens & Spaced Repetition", () => {
+  it("does not award XP when a caller requests completion without learning evidence", () => {
+    function CompletionProbe() {
+      const { state, recordBusinessCompletion } = useLearner();
+      return (
+        <>
+          <output aria-label="Completion evidence">
+            {JSON.stringify({ xp: state.learnerProgress.xp, progress: state.businessProgress })}
+          </output>
+          <button type="button" onClick={() => recordBusinessCompletion("unit-02")}>
+            Request completion
+          </button>
+        </>
+      );
+    }
+    render(
+      <I18nProvider>
+        <LearnerProvider>
+          <CompletionProbe />
+        </LearnerProvider>
+      </I18nProvider>
+    );
+    const before = screen.getByLabelText("Completion evidence").textContent;
+    fireEvent.click(screen.getByRole("button", { name: "Request completion" }));
+    expect(screen.getByLabelText("Completion evidence").textContent).toBe(before);
+  });
+  it("browses speaking and review without granting mastery or completing unchecked tasks", () => {
+    const dispatch = vi.fn();
+    function ProgressProbe() {
+      const { state } = useLearner();
+      const progress = state.businessProgress?.["unit-02"];
+      return <output aria-label="Business progress evidence">{JSON.stringify(progress)}</output>;
+    }
+    render(
+      <I18nProvider>
+        <LearnerProvider>
+          <BusinessLessonScreen unitId="unit-02" dispatch={dispatch} />
+          <ProgressProbe />
+        </LearnerProvider>
+      </I18nProvider>
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Review & apply" }));
+    fireEvent.click(screen.getByRole("button", { name: "Speak" }));
+    fireEvent.click(screen.getByRole("button", { name: /Continue to Review & Confidence/i }));
+    expect(
+      within(screen.getByRole("navigation", { name: "Lesson sections" })).getByRole("progressbar")
+    ).toHaveAttribute("aria-valuenow", "0");
+    fireEvent.click(screen.getByRole("button", { name: /Return to Curriculum Hub/i }));
+    const evidence = JSON.parse(
+      screen.getByLabelText("Business progress evidence").textContent ?? "{}"
+    );
+    expect(evidence.status).toBe("in-progress");
+    expect(evidence.completedStages).toEqual([]);
+    expect(evidence.quizBestScore).toBeUndefined();
+  });
   it("groups Unit 02 into four sections and exposes its initial recall stages", () => {
     const dispatch = vi.fn();
     const { container } = render(
@@ -39,7 +93,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     expect(within(nav).getByRole("progressbar")).toHaveAttribute("aria-valuemax", "9");
   });
 
-  it("enforces sequential lock: later stages are locked on initial entry", () => {
+  it("allows browsing later stages without completing recall", () => {
     const dispatch = vi.fn();
     render(
       <I18nProvider>
@@ -52,7 +106,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     const desktopNav = screen.getByRole("navigation", { name: "Lesson sections" });
     expect(within(desktopNav).getByRole("button", { name: "Recall" })).toBeEnabled();
     for (const label of ["Warm-Up", "Language", "Practice", "Review & apply"]) {
-      expect(within(desktopNav).getByRole("button", { name: label })).toBeDisabled();
+      expect(within(desktopNav).getByRole("button", { name: label })).toBeEnabled();
     }
   });
 
@@ -82,6 +136,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     const checkBtn = screen.getByRole("button", { name: /check answer/i });
     fireEvent.click(checkBtn);
 
+    fireEvent.click(screen.getByText(/optional: how did that feel/i));
     // Answer revealed, rate confidence
     expect(screen.getByText(/how easily did you recall this item/i)).toBeDefined();
     const easyBtn = screen.getByRole("button", { name: /easy/i });
@@ -183,7 +238,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     expect(onNext).toHaveBeenCalledOnce();
   });
 
-  it("sets aria-current='step' and does not mark uncompleted stages as completed when jumping via stepper", () => {
+  it("keeps navigation available without marking skipped stages complete", () => {
     const dispatch = vi.fn();
     render(
       <I18nProvider>
@@ -199,22 +254,23 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     const vocabBtn = within(desktopNav).getByRole("button", { name: "Language" });
 
     expect(warmupBtn.getAttribute("aria-current")).toBe("step");
-    expect(inputBtn.hasAttribute("disabled")).toBe(true);
-    expect(vocabBtn.hasAttribute("disabled")).toBe(true);
+    expect(inputBtn.hasAttribute("disabled")).toBe(false);
+    expect(vocabBtn.hasAttribute("disabled")).toBe(false);
 
-    // Complete Stage 1 (Warm-Up) via the Continue CTA
+    // Browsing forward does not complete an unanswered warm-up.
     fireEvent.click(screen.getByRole("button", { name: /Continue to Case Scenario/i }));
 
-    // Now on Stage 2 (Main Input); Stage 2 is current, Stage 3 (Language Bank) is still locked
+    // The current stage changes while all navigation remains available.
     expect(inputBtn.getAttribute("aria-current")).toBe("step");
-    expect(vocabBtn.hasAttribute("disabled")).toBe(true);
+    expect(vocabBtn.hasAttribute("disabled")).toBe(false);
 
     // Jump back to Stage 1 via the stepper without completing Stage 2
     fireEvent.click(warmupBtn);
     expect(warmupBtn.getAttribute("aria-current")).toBe("step");
 
-    // Stage 3 (Language Bank) must remain locked because Stage 2 was never completed
-    expect(vocabBtn.hasAttribute("disabled")).toBe(true);
+    expect(within(desktopNav).getByRole("progressbar")).toHaveAttribute("aria-valuenow", "0");
+    // Skipped sections remain uncompleted.
+    expect(vocabBtn.hasAttribute("disabled")).toBe(false);
   });
 
   it("renders multiple-choice warm-up questions with instant feedback and thumbnail image", async () => {
@@ -245,7 +301,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     expect(screen.queryAllByRole("textbox")).toHaveLength(0);
 
     const radioGroups = screen.getAllByRole("radiogroup");
-    expect(radioGroups.length).toBe(unit.warmup.prompts.length);
+    expect(radioGroups).toHaveLength(1);
     expect(radioGroups.length).toBeLessThanOrEqual(7);
 
     // 3. Radio options exist for Question 1

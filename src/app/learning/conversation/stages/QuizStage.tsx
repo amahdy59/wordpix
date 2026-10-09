@@ -9,10 +9,11 @@ interface Props {
   savedScore?: number;
   onSaveScore: (score: number) => void;
   onNext: () => void;
+  onSkip: () => void;
   onPrev: () => void;
 }
 
-export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Props) {
+export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev, onSkip }: Props) {
   const { t } = useI18n();
 
   // Map conversation quiz format → unified QuizQuestion shape with 2-column option layout
@@ -72,6 +73,13 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
         )}
       />
 
+      <button
+        type="button"
+        onClick={onSkip}
+        className="min-h-11 self-end rounded-xl px-4 py-2 font-bold text-primary underline underline-offset-4 hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        {t("quiz.continueLesson")}
+      </button>
       {/* Stage Navigation Footer */}
       <div className="mt-2 flex items-center justify-between">
         <button

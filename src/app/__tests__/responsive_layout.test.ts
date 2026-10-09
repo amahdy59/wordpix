@@ -186,9 +186,10 @@ describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
 describe("ExploreWorlds 3-Column Responsive Grid", () => {
   const source = stripComments(read("core/ExploreWorlds.tsx"));
 
-  it("supports 3-column layout on xl screens and responsive aspect ratio for banners", () => {
+  it("supports an image grid for browsing and compact rows for filtered references", () => {
     expect(source).toMatch(/xl:grid-cols-3/);
-    expect(source).toMatch(/aspect-\[16\/9\]/);
+    expect(source).toContain('layout={compact ? "row" : "card"}');
+    expect(stripComments(read("shared/CurriculumTopicCard.tsx"))).toContain("aspect-[16/9]");
   });
 
   it("starts collections collapsed and suppresses empty progress bars", () => {

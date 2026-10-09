@@ -1987,13 +1987,17 @@
       "review": "مراجعة"
     },
     "recall": {
+      "simpleInstructions": "اختر إجابة واحدة ثم تحقّق منها. يمكنك المتابعة والإجابة لاحقًا.",
+      "chooseMeaning": "ما الكلمة أو العبارة التي تطابق هذا المعنى؟",
+      "correctAnswerIs": "الإجابة هي: {answer}",
+      "optionalRating": "اختياري: كيف كانت تجربتك؟",
       "noRecallTitle": "لا توجد مراجعة مطلوبة",
       "noRecallBody": "لا توجد مهام تكرار متباعد سابقة لهذه الوحدة. أنت جاهز لبدء التهيئة!",
       "beginWarmup": "بدء التهيئة",
       "stageTag": "المرحلة 0 · استرجاع بالتكرار المتباعد",
       "srBadge": "التكرار المتباعد",
       "sourceUnitLang": "لغة الوحدة {number}",
-      "heading": "0. استرجاع سريع · الوحدة {number}: {title}",
+      "heading": "استرجاع سريع · الوحدة {number}: {title}",
       "estimatedNote": "~{minutes} دقائق · يساعد الاسترجاع النشط في جدولة مراجعتك المتباعدة التالية.",
       "promptsCompleted": "اكتمل {completed} من {total} أسئلة",
       "promptProgress": "السؤال {current} من {total}",
@@ -2032,7 +2036,8 @@
       "alternativeBadge": "نهج بديل",
       "selectedOptionNote": "لقد اخترت الخيار {key}. راجع الملاحظات الاستراتيجية أدناه:",
       "questionsProgress": "تم استكشاف {answered} من {total} أسئلة",
-      "continueToScenario": "المتابعة إلى سيناريو الحالة"
+      "continueToScenario": "المتابعة إلى سيناريو الحالة",
+      "bestPracticeOption": "الإجابة الموصى بها: الخيار {option}"
     },
     "input": {
       "stageTag": "المرحلة 2 · النص الأساسي",
@@ -2137,6 +2142,10 @@
     "galleryView": "معرض"
   },
   "quiz": {
+    "skipQuestion": "السؤال التالي · أجب لاحقًا",
+    "returnToUnanswered": "العودة إلى الأسئلة دون إجابة",
+    "continueLesson": "متابعة الدرس · أجب لاحقًا",
+    "answeredCount": "تمت الإجابة عن {answered} من {total}",
     "questionOf": "السؤال {current} من {total}",
     "reset": "إعادة الاختبار",
     "checkAnswer": "تحقق من الإجابة",

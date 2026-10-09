@@ -38,7 +38,7 @@ export function QuizQuestionCard<T extends string>({
   return (
     <article
       data-quiz-question
-      className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs"
+      className="rounded-2xl border border-border bg-card"
       aria-labelledby={headingId}
     >
       <div

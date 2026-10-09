@@ -1987,13 +1987,17 @@
       "review": "Review"
     },
     "recall": {
+      "simpleInstructions": "Choose one answer, then check it. You can move on and answer later.",
+      "chooseMeaning": "Which word or phrase matches this meaning?",
+      "correctAnswerIs": "The answer is: {answer}",
+      "optionalRating": "Optional: how did that feel?",
       "noRecallTitle": "No Recall Required",
       "noRecallBody": "This unit has no preceding spaced repetition tasks. You are ready to begin the warm-up!",
       "beginWarmup": "Begin Warm-Up",
       "stageTag": "Stage 0 · Spaced Repetition Recall",
       "srBadge": "Spaced Repetition",
       "sourceUnitLang": "Unit {number} Language",
-      "heading": "0. Quick Recall · Unit {number}: {title}",
+      "heading": "Quick Recall · Unit {number}: {title}",
       "estimatedNote": "~{minutes} minutes · Active recall helps schedule your next spaced review.",
       "promptsCompleted": "{completed} of {total} Prompts Completed",
       "promptProgress": "Prompt {current} of {total}",
@@ -2032,7 +2036,8 @@
       "alternativeBadge": "Alternative Approach",
       "selectedOptionNote": "You chose Option {key}. Review the strategic workplace feedback below:",
       "questionsProgress": "{answered} of {total} questions explored",
-      "continueToScenario": "Continue to Case Scenario"
+      "continueToScenario": "Continue to Case Scenario",
+      "bestPracticeOption": "Recommended answer: Option {option}"
     },
     "input": {
       "stageTag": "Stage 2 · Main Input",
@@ -2137,6 +2142,10 @@
     "galleryView": "Gallery"
   },
   "quiz": {
+    "skipQuestion": "Next question · answer later",
+    "returnToUnanswered": "Return to unanswered questions",
+    "continueLesson": "Continue lesson · answer later",
+    "answeredCount": "Answered {answered} of {total}",
     "questionOf": "Question {current} of {total}",
     "reset": "Reset Quiz",
     "checkAnswer": "Check Answer",

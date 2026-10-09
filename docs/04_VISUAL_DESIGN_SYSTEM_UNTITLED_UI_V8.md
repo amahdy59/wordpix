@@ -128,6 +128,17 @@ Child/adult expression is not a color theme. It may adjust density, radius, illu
 
 ## Radius, shadow, and elevation
 
+### Deliberate containment
+
+- Use cards for independent learning objects, image choices, course entries, and primary action groups.
+- Use plain headers and section spacing for titles, counters, filters, and repeated comparative data.
+- A sticky progress strip may need an opaque canvas background; it does not need its own rounded border or shadow.
+- Review nested cards individually. Selectable answers and meaningful feedback may justify internal boundaries; section headings and metadata usually do not.
+- Use compact thumbnail rows for filtered reference results and aligned labelled rows for skill comparisons.
+- Keep control radii smaller than content-card radii, and reserve stronger elevation for primary emphasis or overlays.
+- Whole-surface hover and pointer affordances require a real activation handler. A container with a child button is not automatically a clickable card.
+- Removing a surface requires rechecking its actual foreground/background contrast in both themes, including Arabic, zoom, focus, and feedback states.
+
 - Radius communicates product expression but must not reduce target area or focus visibility.
 - Use a small documented elevation scale.
 - Pair elevation with border or surface change where shadow is weak.

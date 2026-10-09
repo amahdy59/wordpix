@@ -63,7 +63,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
     requestedStage: initialStage ? CONVERSATION_STAGE_IDS.indexOf(initialStage) : undefined,
     completedStages: progress?.completedStages,
     isMastered,
-    lockFutureStages: true,
+    lockFutureStages: false,
   });
 
   const [activeStageIdx, setActiveStageIdx] = useState<number>(initialIndex);
@@ -186,7 +186,9 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
             unit={unit}
             savedVote={progress?.selectedVoteOption}
             onVote={handleVote}
-            onNext={() => completeStageAndAdvance(1)}
+            onNext={() =>
+              progress?.selectedVoteOption ? completeStageAndAdvance(1) : navigateToStage(1)
+            }
           />
         )}
 
@@ -220,6 +222,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
             savedScore={progress?.quizBestScore}
             onSaveScore={handleSaveQuizScore}
             onNext={() => completeStageAndAdvance(5)}
+            onSkip={() => navigateToStage(5)}
             onPrev={() => navigateToStage(3)}
           />
         )}

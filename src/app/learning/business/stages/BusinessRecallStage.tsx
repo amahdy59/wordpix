@@ -1,439 +1,243 @@
-import { useState } from "react";
-import { Zap, HelpCircle, CheckCircle2, ArrowRight, Star, RotateCcw } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowLeft, ArrowRight, CheckCircle2, HelpCircle, XCircle } from "lucide-react";
 import { useI18n } from "../../../../i18n";
-import type { BusinessUnit, BusinessRecallPrompt } from "../businessTypes";
+import type { BusinessUnit } from "../businessTypes";
+import { recallChoices } from "../businessRecallChoices";
 import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   unit: BusinessUnit;
   onNext: () => void;
+  onComplete?: () => void;
+  savedAnswers?: Record<string, string>;
+  onSaveAnswer?: (id: string, answer: string) => void;
   onRecordSrsConfidence?: (term: string, confidence: "again" | "hard" | "easy") => void;
 }
+const button =
+  "min-h-11 rounded-xl px-4 py-2 font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
-export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Props) {
+export function BusinessRecallStage({
+  unit,
+  onNext,
+  onComplete,
+  savedAnswers = {},
+  onSaveAnswer,
+  onRecordSrsConfidence,
+}: Props) {
   const { t } = useI18n();
-  const recallConfig = unit.recall;
-  const prompts: BusinessRecallPrompt[] = recallConfig?.prompts || [];
-
+  const prompts = unit.recall?.prompts ?? [];
   const [activeIdx, setActiveIdx] = useState(0);
-  const [typedAnswer, setTypedAnswer] = useState("");
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [answers, setAnswers] = useState<Record<string, string>>(savedAnswers);
+  const [selection, setSelection] = useState<string>();
   const [showHint, setShowHint] = useState(false);
-  const [submittedPromptIds, setSubmittedPromptIds] = useState<Set<string>>(new Set());
-  const [confidenceRatings, setConfidenceRatings] = useState<
-    Record<string, "again" | "hard" | "easy">
-  >({});
-
-  if (!recallConfig || prompts.length === 0) {
+  const [ratings, setRatings] = useState<Record<string, string>>({});
+  const heading = useRef<HTMLHeadingElement>(null);
+  const current = prompts[activeIdx];
+  const options = current ? recallChoices(current, unit) : [];
+  const submitted = current ? answers[current.id] : undefined;
+  const correctAnswer = current?.correctAnswer ?? current?.targetWord;
+  const correct = submitted === correctAnswer;
+  const answeredCount = prompts.filter((prompt) => answers[prompt.id] !== undefined).length;
+  useEffect(() => {
+    heading.current?.focus();
+  }, [activeIdx]);
+  const move = (index: number) => {
+    setActiveIdx(index);
+    setSelection(undefined);
+    setShowHint(false);
+  };
+  const check = () => {
+    if (!current || !selection || submitted !== undefined) return;
+    const next = { ...answers, [current.id]: selection };
+    setAnswers(next);
+    onSaveAnswer?.(current.id, selection);
+    if (prompts.every((prompt) => next[prompt.id] !== undefined)) onComplete?.();
+  };
+  if (!current || !unit.recall)
     return (
-      <div className="flex flex-col items-center justify-center p-8 text-center max-w-xl mx-auto gap-4">
-        <Zap className="size-10 text-primary" aria-hidden />
-        <h2 className="wp-type-stage-title font-black text-foreground">
-          {t("business.recall.noRecallTitle")}
-        </h2>
-        <p className="text-base text-muted-foreground">{t("business.recall.noRecallBody")}</p>
+      <div className="space-y-4 py-4">
+        <h2 className="text-xl font-bold">{t("business.recall.noRecallTitle")}</h2>
         <button
           type="button"
+          className={`min-h-11 ${button} bg-primary text-primary-foreground`}
           onClick={onNext}
-          className="inline-flex min-h-[44px] items-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105"
         >
-          <span>{t("business.recall.beginWarmup")}</span>
-          <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+          {t("business.recall.beginWarmup")}
         </button>
       </div>
     );
-  }
-
-  const currentPrompt = prompts[activeIdx];
-  const isSubmitted = currentPrompt ? submittedPromptIds.has(currentPrompt.id) : false;
-  const totalCompleted = submittedPromptIds.size;
-  const isAllCompleted = totalCompleted === prompts.length;
-
-  const handleCheck = () => {
-    if (!currentPrompt) return;
-    setSubmittedPromptIds((prev) => new Set(prev).add(currentPrompt.id));
-  };
-
-  const handleRateConfidence = (rating: "again" | "hard" | "easy") => {
-    if (!currentPrompt) return;
-    setConfidenceRatings((prev) => ({ ...prev, [currentPrompt.targetWord]: rating }));
-    onRecordSrsConfidence?.(currentPrompt.targetWord, rating);
-
-    if (activeIdx < prompts.length - 1) {
-      setActiveIdx((prev) => prev + 1);
-      setTypedAnswer("");
-      setSelectedOption(null);
-      setShowHint(false);
-    }
-  };
-
-  const handleReset = () => {
-    setActiveIdx(0);
-    setTypedAnswer("");
-    setSelectedOption(null);
-    setShowHint(false);
-    setSubmittedPromptIds(new Set());
-  };
-
-  const progressPercent = Math.round((totalCompleted / prompts.length) * 100);
-
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
-      {/* Header Tag */}
-      <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
-          <Zap className="size-4" aria-hidden />
-          {t("business.recall.stageTag")}
-        </span>
-        <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-0.5 text-sm font-black text-primary uppercase">
-            {t("business.recall.srBadge")}
-          </span>
-          <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest hidden sm:inline">
-            {t("business.recall.sourceUnitLang", { number: recallConfig.sourceUnitNumber })}
-          </span>
+    <div className="wp-container-content flex flex-col gap-5 py-2">
+      <header className="space-y-2">
+        <h2 className="wp-type-stage-title text-foreground">
+          {t("business.recall.heading", {
+            number: unit.recall.sourceUnitNumber,
+            title: unit.recall.sourceUnitTitle,
+          })}
+        </h2>
+        <p className="text-base text-muted-foreground">{t("business.recall.simpleInstructions")}</p>
+      </header>
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 space-y-2 bg-background py-2">
+        <div className="flex flex-wrap justify-between gap-2 text-sm font-semibold">
+          <span>{t("quiz.questionOf", { current: activeIdx + 1, total: prompts.length })}</span>
+          <span>{t("quiz.answeredCount", { answered: answeredCount, total: prompts.length })}</span>
+        </div>
+        <div
+          role="progressbar"
+          aria-valuenow={answeredCount}
+          aria-valuemin={0}
+          aria-valuemax={prompts.length}
+          aria-label={t("quiz.answeredCount", { answered: answeredCount, total: prompts.length })}
+          className="h-2 w-full overflow-hidden rounded-full bg-secondary"
+        >
+          <div
+            className="h-full rounded-full bg-primary"
+            style={{ width: `${(answeredCount / prompts.length) * 100}%` }}
+          />
         </div>
       </div>
-
-      {/* Hero Meta Card */}
-      <section
-        className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4"
-        aria-labelledby="recall-header-heading"
-      >
-        <div>
-          <div className="flex items-center gap-2">
-            <h2
-              id="recall-header-heading"
-              className="wp-type-stage-title font-black text-foreground"
-            >
-              {t("business.recall.heading", {
-                number: recallConfig.sourceUnitNumber,
-                title: recallConfig.sourceUnitTitle,
-              })}
-            </h2>
-          </div>
-          <p className="mt-1 text-base text-muted-foreground font-medium">
-            {t("business.recall.estimatedNote", { minutes: recallConfig.estimatedMinutes || 3 })}
-          </p>
-        </div>
-
-        {/* Progress Display */}
-        <div className="flex flex-col sm:items-end gap-1 shrink-0">
-          <span className="text-sm font-black text-foreground">
-            {t("business.recall.promptsCompleted", {
-              completed: totalCompleted,
-              total: prompts.length,
-            })}
-          </span>
-          <div className="w-36 h-2 rounded-full bg-muted overflow-hidden">
-            <div
-              className="h-full bg-primary transition-all duration-300"
-              style={{ width: `${progressPercent}%` }}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Active Prompt Card */}
-      {!isAllCompleted && currentPrompt && (
-        <section
-          className="rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/5 via-card to-card p-6 sm:p-8 shadow-wp-sm"
-          aria-labelledby={`prompt-title-${currentPrompt.id}`}
+      <section aria-labelledby={`recall-${current.id}`} className="space-y-4">
+        <h3
+          ref={heading}
+          tabIndex={-1}
+          id={`recall-${current.id}`}
+          className="text-xl font-bold leading-relaxed text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
         >
-          <div className="flex items-center justify-between gap-2 mb-4">
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center rounded-lg bg-secondary px-2.5 py-0.5 text-sm font-black text-primary uppercase">
-                {currentPrompt.promptTypeLabel}
-              </span>
-              <span className="text-sm font-bold text-muted-foreground">
-                {t("business.recall.promptProgress", {
-                  current: activeIdx + 1,
-                  total: prompts.length,
-                })}
-              </span>
-            </div>
-
-            {isSubmitted && (
-              <span className="inline-flex items-center gap-1 text-sm font-black uppercase text-feedback-success-foreground bg-feedback-success-surface px-2.5 py-1 rounded-full">
-                <CheckCircle2 className="size-3.5" aria-hidden />
-                {t("business.recall.answerRevealed")}
-              </span>
-            )}
-          </div>
-
-          <h2
-            id={`prompt-title-${currentPrompt.id}`}
-            className="wp-type-stage-title font-black text-foreground tracking-tight leading-snug"
-          >
-            {currentPrompt.question}
-          </h2>
-
-          {/* User Response Area */}
-          <div className="mt-6 flex flex-col gap-4">
-            {/* Multiple Choice Mode */}
-            {currentPrompt.options && currentPrompt.options.length > 0 ? (
-              <ChoiceOptionGroup
-                label={t("business.recall.choicesLabel")}
-                value={selectedOption ?? undefined}
-                onChange={(value) => {
-                  setSelectedOption(value);
-                  setTypedAnswer(value);
-                }}
-                disabled={isSubmitted}
-                correctValue={currentPrompt.correctAnswer}
-                revealFeedback={isSubmitted}
-                className="grid gap-3 sm:grid-cols-2"
-                options={currentPrompt.options.map((option, index) => ({
-                  value: option,
-                  label: option,
-                  accessibleLabel: `${index + 1}: ${option}`,
-                  prefix: String(index + 1),
-                }))}
-              />
-            ) : (
-              /* Open Text Input Mode */
-              <div className="flex flex-col gap-2">
-                <label
-                  htmlFor={`input-${currentPrompt.id}`}
-                  className="text-sm font-black uppercase text-muted-foreground"
-                >
-                  {t("business.recall.yourAnswerLabel")}
-                </label>
-                <input
-                  id={`input-${currentPrompt.id}`}
-                  type="text"
-                  disabled={isSubmitted}
-                  value={typedAnswer}
-                  onChange={(e) => setTypedAnswer(e.target.value)}
-                  placeholder={t("business.recall.inputPlaceholder")}
-                  className="w-full min-h-[44px] rounded-xl border border-input bg-background p-3.5 text-base font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
-                />
-              </div>
-            )}
-
-            {/* Hint Display */}
-            {showHint && currentPrompt.hint && (
-              <div className="flex items-start gap-2 rounded-xl bg-secondary p-3.5 text-sm sm:text-base font-semibold text-primary border border-primary/20">
-                <HelpCircle className="size-4 shrink-0 mt-0.5" aria-hidden />
-                <span>{t("business.recall.hintText", { hint: currentPrompt.hint })}</span>
-              </div>
-            )}
-
-            {/* Action Bar */}
-            {!isSubmitted ? (
-              <div className="flex items-center justify-between gap-3 pt-2">
-                {currentPrompt.hint ? (
-                  <button
-                    type="button"
-                    onClick={() => setShowHint(true)}
-                    className="inline-flex min-h-[44px] items-center gap-1.5 text-sm font-bold text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <HelpCircle className="size-4" aria-hidden />
-                    <span>{t("business.recall.needHint")}</span>
-                  </button>
-                ) : (
-                  <span />
-                )}
-
-                <button
-                  type="button"
-                  disabled={!typedAnswer.trim() && !selectedOption}
-                  onClick={handleCheck}
-                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-primary px-6 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 motion-safe:active:scale-95 disabled:opacity-50 disabled:pointer-events-none transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                >
-                  <span>{t("business.recall.checkAnswer")}</span>
-                </button>
-              </div>
-            ) : (
-              /* Answer Feedback & Confidence Rating */
-              <div className="flex flex-col gap-4 rounded-2xl bg-card border border-border p-5 mt-2 shadow-wp-xs">
-                <div>
-                  <span className="text-sm font-black uppercase tracking-wider text-primary block">
-                    {t("business.recall.targetExpressionLabel")}
-                  </span>
-                  <p className="text-xl font-black text-foreground capitalize mt-0.5">
-                    {`“${currentPrompt.targetWord}”`}
-                  </p>
-                  {currentPrompt.definition && (
-                    <p className="text-base font-medium text-muted-foreground mt-1">
-                      <span className="font-bold text-foreground">
-                        {t("business.recall.definitionPrefix")}
-                      </span>
-                      {currentPrompt.definition}
-                    </p>
-                  )}
-                  {currentPrompt.modelSentence && (
-                    <div className="mt-2 rounded-xl bg-secondary border border-primary/10 p-3 text-sm sm:text-base font-semibold italic text-primary">
-                      {currentPrompt.modelSentence}
-                    </div>
-                  )}
-                </div>
-
-                {/* Spaced Repetition Confidence Buttons */}
-                <div className="pt-3 border-t border-border/80">
-                  <p className="text-sm font-black uppercase tracking-wider text-muted-foreground mb-2">
-                    {t("business.recall.selfRatingPrompt")}
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                    <button
-                      type="button"
-                      onClick={() => handleRateConfidence("again")}
-                      className="inline-flex min-h-[44px] flex-col items-center justify-center rounded-xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-center text-sm font-bold text-destructive hover:bg-destructive/20 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-destructive"
-                    >
-                      <span className="font-black text-base">
-                        {t("business.recall.ratingAgain")}
-                      </span>
-                      <span className="text-sm font-semibold opacity-80">
-                        {t("business.recall.reviewSoon")}
-                      </span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => handleRateConfidence("hard")}
-                      className="inline-flex min-h-[44px] flex-col items-center justify-center rounded-xl border border-secondary bg-secondary/30 px-3 py-2 text-center text-sm font-bold text-foreground hover:bg-secondary/50 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                    >
-                      <span className="font-black text-base">
-                        {t("business.recall.ratingHard")}
-                      </span>
-                      <span className="text-sm font-semibold opacity-80">
-                        {t("business.recall.reviewSoon")}
-                      </span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => handleRateConfidence("easy")}
-                      className="inline-flex min-h-[44px] flex-col items-center justify-center rounded-xl border border-accent/30 bg-feedback-success-surface px-3 py-2 text-center text-sm font-bold text-feedback-success-foreground hover:bg-feedback-success-surface transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
-                    >
-                      <span className="font-black text-base">
-                        {t("business.recall.ratingEasy")}
-                      </span>
-                      <span className="text-sm font-semibold opacity-80">
-                        {t("business.recall.reviewLater")}
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* Completion Card */}
-      {isAllCompleted && (
-        <section
-          className="rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/15 via-card to-card p-6 sm:p-8 shadow-wp-sm flex flex-col gap-4"
-          aria-labelledby="spaced-mastery-title"
-        >
-          <div className="flex items-center gap-3">
-            <div className="flex size-12 items-center justify-center rounded-2xl bg-feedback-success-surface text-feedback-success-foreground">
-              <Star className="size-6" aria-hidden />
-            </div>
-            <div>
-              <h2
-                id="spaced-mastery-title"
-                className="wp-type-stage-title font-black text-foreground"
+          {t("business.recall.chooseMeaning")}
+        </h3>
+        <p className="max-w-2xl text-lg leading-relaxed text-foreground" lang="en" dir="ltr">
+          {current.definition ?? current.question}
+        </p>
+        <ChoiceOptionGroup
+          label={t("business.recall.choicesLabel")}
+          value={submitted ?? selection}
+          onChange={setSelection}
+          disabled={submitted !== undefined}
+          correctValue={correctAnswer}
+          revealFeedback={submitted !== undefined}
+          className="grid gap-3 sm:grid-cols-2"
+          options={options.map((option) => ({
+            value: option,
+            label: (
+              <bdi lang="en" dir="ltr">
+                {option}
+              </bdi>
+            ),
+            accessibleLabel: option,
+          }))}
+        />
+        {submitted === undefined && (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            {current.hint ? (
+              <button
+                type="button"
+                aria-expanded={showHint}
+                aria-controls={`hint-${current.id}`}
+                onClick={() => setShowHint(!showHint)}
+                className={`min-h-11 ${button} inline-flex items-center gap-2 text-primary hover:bg-secondary`}
               >
-                {t("business.recall.masteryCompletedTitle")}
-              </h2>
-              <p className="text-base font-semibold text-muted-foreground">
-                {t("business.recall.masteryCompletedSubtitle", {
-                  count: prompts.length,
-                  number: recallConfig.sourceUnitNumber,
-                })}
-              </p>
-            </div>
+                <HelpCircle className="size-4" aria-hidden />
+                {t("business.recall.needHint")}
+              </button>
+            ) : (
+              <span />
+            )}
+            <button
+              type="button"
+              onClick={check}
+              disabled={!selection}
+              className={`min-h-11 ${button} bg-primary text-primary-foreground disabled:opacity-50 disabled:cursor-not-allowed`}
+            >
+              {t("business.recall.checkAnswer")}
+            </button>
           </div>
-
-          <p className="wp-prose text-sm sm:text-base font-medium text-muted-foreground leading-relaxed">
-            {t("business.recall.masteryCompletedNote")}
+        )}
+        {current.hint && (
+          <p
+            hidden={!showHint}
+            id={`hint-${current.id}`}
+            className="text-base text-muted-foreground"
+          >
+            {t("business.recall.hintText", { hint: current.hint })}
           </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-border/80">
-            <button
-              type="button"
-              onClick={handleReset}
-              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border px-4 py-2 text-sm font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all"
-            >
-              <RotateCcw className="size-4" aria-hidden />
-              <span>{t("business.recall.reviewAgain")}</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={onNext}
-              className="w-full sm:w-auto inline-flex min-h-[44px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              <span>{t("business.recall.beginLessonWarmup")}</span>
-              <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-            </button>
+        )}
+        {submitted !== undefined && (
+          <div className="space-y-3 border-t border-border pt-4">
+            <p role="status" className="flex items-center gap-2 font-bold text-foreground">
+              {correct ? (
+                <CheckCircle2 className="size-5" aria-hidden />
+              ) : (
+                <XCircle className="size-5" aria-hidden />
+              )}
+              {correct
+                ? t("practice.correct")
+                : t("business.recall.correctAnswerIs", { answer: correctAnswer })}
+            </p>
+            {current.modelSentence && (
+              <p lang="en" dir="ltr" className="text-base leading-relaxed text-foreground">
+                {current.modelSentence}
+              </p>
+            )}
+            <details>
+              <summary
+                className={`min-h-11 ${button} flex cursor-pointer items-center text-primary`}
+              >
+                {t("business.recall.optionalRating")}
+              </summary>
+              <p className="py-2 text-sm text-muted-foreground">
+                {t("business.recall.selfRatingPrompt")}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {(["again", "hard", "easy"] as const).map((rating) => (
+                  <button
+                    key={rating}
+                    type="button"
+                    aria-pressed={ratings[current.id] === rating}
+                    className={`min-h-11 ${button} border border-border text-foreground hover:bg-secondary`}
+                    onClick={() => {
+                      setRatings({ ...ratings, [current.id]: rating });
+                      onRecordSrsConfidence?.(current.targetWord, rating);
+                    }}
+                  >
+                    {t(`business.recall.rating${rating[0].toUpperCase()}${rating.slice(1)}`)}
+                  </button>
+                ))}
+              </div>
+            </details>
           </div>
-        </section>
-      )}
-
-      {/* Queued Prompts Preview */}
-      {!isAllCompleted && prompts.length > 1 && (
-        <section
-          className="rounded-3xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs"
-          aria-labelledby="queued-prompts-heading"
+        )}
+      </section>
+      <nav
+        aria-label={t("courseLesson.questionNavigation")}
+        className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-4"
+      >
+        <button
+          type="button"
+          disabled={activeIdx === 0}
+          onClick={() => move(activeIdx - 1)}
+          className={`min-h-11 ${button} inline-flex items-center gap-2 border border-border text-foreground disabled:opacity-50`}
         >
-          <div className="flex items-center justify-between mb-3">
-            <h3
-              id="queued-prompts-heading"
-              className="text-sm font-black uppercase tracking-wider text-muted-foreground"
-            >
-              {t("business.recall.remainingPrompts", { count: prompts.length - totalCompleted })}
-            </h3>
-            <span className="text-sm font-bold text-muted-foreground">
-              {t("business.unitNumber", { number: recallConfig.sourceUnitNumber })}
-            </span>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            {prompts.map((p, idx) => {
-              const isDone = submittedPromptIds.has(p.id);
-              const isCurrent = idx === activeIdx;
-              return (
-                <div
-                  key={p.id}
-                  className={`flex items-center justify-between p-3 rounded-xl border transition-all ${
-                    isCurrent
-                      ? "border-primary/50 bg-secondary"
-                      : isDone
-                        ? "border-border/60 bg-muted/20 opacity-70"
-                        : "border-border bg-muted/10"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5 min-w-0">
-                    <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-muted text-sm font-black text-foreground">
-                      {idx + 1}
-                    </span>
-                    <span className="text-sm font-bold text-foreground truncate">
-                      {p.promptTypeLabel}
-                    </span>
-                  </div>
-
-                  {isDone ? (
-                    <span className="text-sm font-black text-feedback-success-foreground uppercase">
-                      {confidenceRatings[p.targetWord]
-                        ? `Rated ${confidenceRatings[p.targetWord]}`
-                        : "Completed"}
-                    </span>
-                  ) : isCurrent ? (
-                    <span className="text-sm font-black text-primary uppercase">
-                      {t("business.recall.statusActive")}
-                    </span>
-                  ) : (
-                    <span className="text-sm font-medium text-muted-foreground">
-                      {t("business.recall.statusQueued")}
-                    </span>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </section>
-      )}
+          <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+          {t("quiz.previousQuestion")}
+        </button>
+        {activeIdx < prompts.length - 1 && (
+          <button
+            type="button"
+            onClick={() => move(activeIdx + 1)}
+            className={`min-h-11 ${button} inline-flex items-center gap-2 bg-primary text-primary-foreground`}
+          >
+            {submitted === undefined ? t("quiz.skipQuestion") : t("quiz.nextQuestion")}
+            <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+          </button>
+        )}
+      </nav>
+      <button
+        type="button"
+        className={`min-h-11 ${button} self-end text-primary underline underline-offset-4 hover:bg-secondary`}
+        onClick={onNext}
+      >
+        {t("business.recall.beginLessonWarmup")}
+      </button>
     </div>
   );
 }

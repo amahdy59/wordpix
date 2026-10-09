@@ -37,6 +37,7 @@ import {
 import type { ConversationStageId } from "../learning/conversation/conversationTypes";
 import {
   checkpointBusinessUnit,
+  canCompleteBusinessUnit,
   completeBusinessUnit,
   normalizeBusinessProgress,
   saveBusinessChecklist as applyBusinessChecklist,
@@ -857,7 +858,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
   const recordBusinessCompletion = useCallback(
     (unitId: string) => {
       updateStateAndPersist((prev) => {
-        if (prev.businessProgress[unitId]?.status === "mastered") {
+        if (
+          prev.businessProgress[unitId]?.status === "mastered" ||
+          !canCompleteBusinessUnit(prev.businessProgress, unitId)
+        ) {
           return { nextState: prev };
         }
         const nextBusinessProgress = completeBusinessUnit(prev.businessProgress, unitId);

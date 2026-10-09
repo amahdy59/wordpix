@@ -35,12 +35,12 @@ export function ReleaseNotesCard() {
   };
 
   return (
-    <aside className="relative mb-2 rounded-2xl border border-primary/20 bg-secondary p-3 pe-14 shadow-wp-xs">
+    <aside className="relative mb-2 border-t border-border py-3 pe-14">
       <div className="absolute inset-y-0 end-1 flex items-center">
         <button
           type="button"
           onClick={handleDismiss}
-          className="text-primary hover:bg-secondary p-2 rounded-full transition-colors flex items-center justify-center min-w-[44px] min-h-[44px]"
+          className="text-primary hover:bg-secondary p-2 rounded-full transition-colors flex items-center justify-center min-w-[44px] min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           aria-label={t("releaseNotes.dismiss")}
         >
           <X className="size-5" />
@@ -48,7 +48,7 @@ export function ReleaseNotesCard() {
       </div>
       <details className="group">
         <summary className="flex min-h-[44px] cursor-pointer list-none items-center gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
-          <div className="bg-primary text-primary-foreground p-1.5 rounded-lg shrink-0">
+          <div className="text-primary shrink-0">
             <Sparkles className="size-4" />
           </div>
           <span className="min-w-0 flex-1">

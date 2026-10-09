@@ -172,7 +172,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
             <div
               role="tablist"
               aria-label={t("conversation.levelsLabel")}
-              className="flex items-center gap-1.5 overflow-x-auto rounded-2xl border border-border bg-card p-1.5 shadow-wp-xs"
+              className="flex items-center gap-1.5 overflow-x-auto py-1.5"
             >
               {CEFR_TABS.map((tab, idx) => {
                 const isSelected = selectedLevel === tab.id;

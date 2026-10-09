@@ -30,7 +30,7 @@ export const PageHeader = memo(function PageHeader({
   actions,
   onBack,
   backLabel = "Back",
-  variant = "hero",
+  variant = "plain",
   headingLevel = "h1",
   className = "",
 }: PageHeaderProps) {

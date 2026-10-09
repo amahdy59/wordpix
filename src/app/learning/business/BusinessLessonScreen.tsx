@@ -51,16 +51,8 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
 
   const completedStages = progress?.completedStages ?? EMPTY_COMPLETED_STAGES;
 
-  const maxUnlockedIndex = useMemo(() => {
-    if (isMastered) return availableStages.length - 1;
-    let max = 0;
-    for (let i = 0; i < availableStages.length; i++) {
-      if (completedStages.includes(availableStages[i])) {
-        max = Math.max(max, i + 1);
-      }
-    }
-    return Math.min(availableStages.length - 1, max);
-  }, [isMastered, availableStages, completedStages]);
+  // Browsing is independent of completion; checkpoints record position only.
+  const maxUnlockedIndex = availableStages.length - 1;
 
   const initialIndex = useMemo(() => {
     if (initialStage) {
@@ -229,20 +221,30 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         >
           {currentStageId === "recall" && (
             <BusinessRecallStage
+              key={unit.id}
               unit={unit}
-              onNext={handleNext}
-              onRecordSrsConfidence={() => {
-                checkpointBusiness(unit.id, activeStageIdx, "recall");
-              }}
+              savedAnswers={Object.fromEntries(
+                (unit.recall?.prompts ?? []).flatMap((prompt) => {
+                  const answer = progress?.reflectionNotes?.[`recall-answer-${prompt.id}`];
+                  return answer === undefined ? [] : [[prompt.id, answer]];
+                })
+              )}
+              onSaveAnswer={(id, answer) =>
+                saveBusinessReflection(unit.id, `recall-answer-${id}`, answer)
+              }
+              onNext={() => navigateToStage(activeStageIdx + 1)}
+              onComplete={() => checkpointBusiness(unit.id, activeStageIdx, "recall")}
             />
           )}
 
           {currentStageId === "warmup" && (
             <BusinessWarmupStage
+              key={unit.id}
               unit={unit}
               savedNotes={progress?.reflectionNotes}
               onSaveNote={(id, note) => saveBusinessReflection(unit.id, id, note)}
-              onNext={handleNext}
+              onComplete={() => checkpointBusiness(unit.id, activeStageIdx, "warmup")}
+              onNext={() => navigateToStage(activeStageIdx + 1)}
             />
           )}
 
@@ -257,11 +259,12 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
           {currentStageId === "exercises" && (
             <BusinessExerciseStage
               unit={unit}
+              onSkip={() => navigateToStage(activeStageIdx + 1)}
               savedScore={progress?.quizBestScore}
               onCompleteExercises={(score) =>
                 checkpointBusiness(unit.id, activeStageIdx, "exercises", score)
               }
-              onNext={handleNext}
+              onNext={() => navigateToStage(activeStageIdx + 1)}
             />
           )}
 
@@ -270,7 +273,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
               unit={unit}
               savedNotes={progress?.reflectionNotes}
               onSaveNote={(id, note) => saveBusinessReflection(unit.id, id, note)}
-              onNext={handleNext}
+              onNext={() => navigateToStage(activeStageIdx + 1)}
             />
           )}
 
@@ -279,7 +282,17 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
               unit={unit}
               savedChecklist={progress?.checklistCompleted}
               onSaveChecklist={(checklist) => saveBusinessChecklist(unit.id, checklist)}
-              onNext={handleNext}
+              onNext={() => {
+                const checklist = unit.speakingTask.checklist;
+                if (
+                  checklist.length > 0 &&
+                  checklist.every((item) => progress?.checklistCompleted?.includes(item))
+                ) {
+                  handleNext();
+                } else {
+                  navigateToStage(activeStageIdx + 1);
+                }
+              }}
             />
           )}
 

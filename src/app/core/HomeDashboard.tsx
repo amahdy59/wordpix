@@ -257,7 +257,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           <motion.div variants={staggerItem}>
             <Section id="section-review" title={t("dashboard.review")}>
               {dueWords.length > 0 ? (
-                <Card variant="default">
+                <div className="flex flex-col gap-3 border-t border-border py-4">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div className="flex items-center gap-2 text-foreground font-sans font-bold text-base">
                       <RotateCcw className="size-4 text-primary" />
@@ -298,11 +298,11 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     </span>
                     <ArrowRight className="size-4 rtl:rotate-180" />
                   </motion.button>
-                </Card>
+                </div>
               ) : hasLearningHistory ? (
                 <div
                   role="status"
-                  className="flex items-start gap-3 rounded-2xl border border-wp-green/30 bg-wp-green-light/30 px-4 py-3"
+                  className="flex items-start gap-3 border-s-2 border-wp-green ps-4 py-3"
                 >
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-wp-green" aria-hidden />
                   <div className="min-w-0">
@@ -324,7 +324,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               ) : (
                 <div
                   role="status"
-                  className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-secondary px-4 py-3"
+                  className="flex items-start gap-3 border-s-2 border-primary ps-4 py-3"
                 >
                   <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
                   <div className="min-w-0">

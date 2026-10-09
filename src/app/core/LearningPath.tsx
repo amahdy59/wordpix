@@ -224,7 +224,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
       {showPictureWorldPath && (
         <div id="picture-world-path" className="contents">
-          <div className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5">
+          <div className="space-y-4 py-2">
             <p className="text-sm font-black uppercase tracking-wide text-primary">
               {t("learn.routeLabel")}
             </p>
@@ -252,7 +252,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 <section
                   key={stage.id}
                   aria-labelledby={`path-phase-${phaseIndex}`}
-                  className="rounded-2xl border border-border bg-wp-card p-3 sm:p-4"
+                  className="border-t border-border py-4 sm:py-5"
                 >
                   <button
                     type="button"

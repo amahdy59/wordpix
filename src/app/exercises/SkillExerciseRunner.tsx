@@ -285,7 +285,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
           </div>
         )}
 
-        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-start justify-between gap-3">
+        <div className="py-2 flex items-start justify-between gap-3">
           <h2 className="font-sans font-bold text-foreground text-lg text-balance">
             {task.prompt}
           </h2>

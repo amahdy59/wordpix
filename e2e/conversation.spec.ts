@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
 
-test("conversation curriculum is discoverable and prevents stage skipping", async ({ page }) => {
+test("conversation curriculum is discoverable and allows browsing without answering", async ({
+  page,
+}) => {
   const errors: string[] = [];
   page.on("console", (message) => {
     if (message.type() === "error" && !message.text().includes("Failed to load resource")) {
@@ -30,7 +32,7 @@ test("conversation curriculum is discoverable and prevents stage skipping", asyn
   // The URL updates before the large lesson chunk finishes loading. Wait for
   // that route boundary explicitly so full-suite CPU contention cannot turn a
   // correct loading state into a false failure.
-  await expect(page.getByRole("button", { name: "Review & apply", exact: true })).toBeDisabled({
+  await expect(page.getByRole("button", { name: "Review & apply", exact: true })).toBeEnabled({
     timeout: 20_000,
   });
   const continueButton = page.getByRole("button", { name: "Continue to Reading" });

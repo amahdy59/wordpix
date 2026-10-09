@@ -310,27 +310,27 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         </div>
 
         {/* Exercises Grid */}
-        <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="flex flex-col divide-y divide-border">
           {categoryExercises.map((ex) => (
             <article key={ex.id} className="relative">
               <button
                 type="button"
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-                className="h-full w-full min-h-[44px] bg-wp-card border border-border hover:border-primary/60 hover:bg-secondary rounded-2xl p-5 pe-16 text-start flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-wp-sm cursor-pointer"
+                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors group"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2">
                     <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
                       {t(`skillHub.exercises.${ex.id}.title`)}
                     </h3>
-                    <span className="shrink-0 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-extrabold text-primary border border-primary/20">
+                    <span className="shrink-0 font-sans text-sm font-bold text-primary">
                       {`${ex.minimumLevel ?? "A1"}+`}
                     </span>
                   </div>
 
                   <div className="flex items-center gap-1.5 flex-wrap mt-3">
                     {ex.requiresMic && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-bold text-primary border border-primary/20">
+                      <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <Mic className="size-3" aria-hidden="true" />
                         <span>
                           {t("skillHub.micRequired", { defaultValue: "Microphone required" })}
@@ -338,23 +338,23 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                       </span>
                     )}
                     {ex.isTimed && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-wp-amber/10 px-2 py-0.5 font-sans text-[10px] font-bold text-wp-amber-foreground border border-wp-amber/20">
+                      <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <Clock className="size-3" aria-hidden="true" />
                         <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
                       </span>
                     )}
                     {!ex.isTimed && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-muted/60 px-2 py-0.5 font-sans text-[10px] font-semibold text-muted-foreground">
+                      <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <span>{t("skillHub.selfPaced", { defaultValue: "Self-paced" })}</span>
                       </span>
                     )}
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1.5 text-sm font-sans font-bold text-primary pt-2 border-t border-border/40">
+                <div className="flex shrink-0 items-center gap-1.5 text-sm font-sans font-bold text-primary">
                   <span>{t("skillHub.startExercise")}</span>
                   <ArrowRight
-                    className="size-3.5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-transform"
+                    className="size-4 motion-safe:group-hover:translate-x-1 rtl:motion-safe:group-hover:-translate-x-1 rtl:rotate-180 motion-safe:transition-transform"
                     aria-hidden="true"
                   />
                 </div>

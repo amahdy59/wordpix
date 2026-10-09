@@ -36,7 +36,7 @@ describe("ConversationLessonScreen Component", () => {
     expect(within(nav).getByRole("progressbar")).toHaveAttribute("aria-valuemax", "7");
   });
 
-  it("unlocks stages only after completing the preceding stage", () => {
+  it("allows browsing stages before answering", () => {
     const dispatch = vi.fn();
     render(
       <I18nProvider>
@@ -46,7 +46,7 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("button", { name: "Language" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "Language" })).toBeEnabled();
 
     fireEvent.click(screen.getAllByRole("radio", { name: /vote/i })[0]);
     fireEvent.click(screen.getByRole("button", { name: /continue to reading/i }));
@@ -60,7 +60,7 @@ describe("ConversationLessonScreen Component", () => {
     expect(screen.getByRole("heading", { name: "distraction" })).toBeDefined();
   });
 
-  it("does not allow a deep link to skip directly to a locked stage", () => {
+  it("opens a requested stage without completing earlier stages", () => {
     const dispatch = vi.fn();
     render(
       <I18nProvider>
@@ -70,11 +70,11 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("button", { name: /warm-up/i })).toHaveAttribute(
+    expect(screen.getByRole("button", { name: "Challenge" })).toHaveAttribute(
       "aria-current",
       "step"
     );
-    expect(screen.getByRole("button", { name: "Review & apply" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "Review & apply" })).toBeEnabled();
   });
 
   it("renders quick vote options on warmup stage", () => {
@@ -89,7 +89,7 @@ describe("ConversationLessonScreen Component", () => {
 
     const voteRadios = screen.getAllByRole("radio", { name: /vote/i });
     expect(voteRadios.length).toBeGreaterThanOrEqual(2);
-    expect(screen.getByRole("button", { name: /continue to reading/i })).toBeDisabled();
+    expect(screen.getByRole("button", { name: /continue to reading/i })).toBeEnabled();
     fireEvent.click(voteRadios[0]);
     expect(screen.getByRole("button", { name: /continue to reading/i })).toBeEnabled();
     expect(screen.getByRole("heading", { name: /practice poll snapshot/i })).toBeDefined();

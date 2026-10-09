@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   MessageSquare,
   ArrowRight,
   HelpCircle,
   CheckCircle2,
   Lightbulb,
-  Check,
   Sparkles,
 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
@@ -18,15 +17,30 @@ interface Props {
   savedNotes?: Record<string, string>;
   onSaveNote: (promptId: string, note: string) => void;
   onNext: () => void;
+  onComplete?: () => void;
 }
 
-export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext }: Props) {
+export function BusinessWarmupStage({
+  unit,
+  savedNotes = {},
+  onSaveNote,
+  onNext,
+  onComplete,
+}: Props) {
   const { t } = useI18n();
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>(savedNotes);
+
+  const [activeIdx, setActiveIdx] = useState(0);
+  const questionRef = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    questionRef.current?.focus();
+  }, [activeIdx]);
 
   const handleSelectOption = (promptId: string, optionKey: string) => {
     setSelectedAnswers((prev) => ({ ...prev, [promptId]: optionKey }));
     onSaveNote(promptId, optionKey);
+    const next = { ...selectedAnswers, [promptId]: optionKey };
+    if (unit.warmup.prompts.every((prompt) => next[prompt.id])) onComplete?.();
   };
 
   const prompts = unit.warmup?.prompts || [];
@@ -72,6 +86,8 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
           </p>
           <h2
             id="big-question-heading"
+            lang="en"
+            dir="ltr"
             className="wp-type-stage-title mt-3 lg:text-4xl font-black text-foreground tracking-tight leading-snug"
           >
             {`“${unit.essentialQuestion}”`}
@@ -83,7 +99,9 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                 <span className="font-black uppercase tracking-wide me-1.5">
                   {t("business.warmup.speakingGoalLabel")}
                 </span>
-                <span>{unit.speakingGoal}</span>
+                <bdi lang="en" dir="ltr">
+                  {unit.speakingGoal}
+                </bdi>
               </div>
             </div>
           )}
@@ -91,10 +109,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
       </section>
 
       {/* Multiple-Choice Warm-up Workplace Scenarios */}
-      <section
-        className="rounded-3xl border border-border bg-card p-5 sm:p-8 shadow-wp-xs"
-        aria-labelledby="reflection-prompts-title"
-      >
+      <section className="space-y-4 py-3" aria-labelledby="reflection-prompts-title">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-border/70">
           <div>
             <div className="flex items-center gap-2">
@@ -128,105 +143,54 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
           </span>
         </div>
 
-        <div className="mt-6 flex flex-col gap-8">
-          {prompts.map((prompt, idx) => {
+        <p className="mt-4 text-sm font-semibold text-muted-foreground">
+          {t("quiz.questionOf", { current: activeIdx + 1, total: prompts.length })}
+        </p>
+        <div className="mt-4 flex flex-col gap-4">
+          {prompts.slice(activeIdx, activeIdx + 1).map((prompt) => {
+            const idx = activeIdx;
             const hasOptions = Array.isArray(prompt.options) && prompt.options.length > 0;
             const selectedKey = selectedAnswers[prompt.id];
             const isAnswered = Boolean(selectedKey);
             const isCorrect = selectedKey === prompt.correctAnswer;
 
             return (
-              <div
-                key={prompt.id}
-                className="flex flex-col gap-4 rounded-2xl border border-border/80 bg-muted/20 p-4 sm:p-6 transition-all focus-within:border-primary/60 focus-within:bg-card"
-              >
+              <div key={prompt.id} className="flex flex-col gap-4">
                 {/* Question Prompt */}
                 <div className="flex items-start gap-3">
                   <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary mt-0.5">
                     {idx + 1}
                   </span>
-                  <h3 className="text-base sm:text-lg font-bold text-foreground leading-snug">
+                  <h3
+                    lang="en"
+                    dir="ltr"
+                    ref={questionRef}
+                    tabIndex={-1}
+                    className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary text-base sm:text-lg font-bold text-foreground leading-snug"
+                  >
                     {prompt.question}
                   </h3>
                 </div>
 
                 {hasOptions ? (
                   /* Multiple-choice option group */
-                  <div
-                    role="radiogroup"
-                    aria-label={`Question ${idx + 1}: ${prompt.question}`}
-                    className="flex flex-col gap-2.5 pt-1"
-                  >
-                    {prompt.options!.map((option) => {
-                      const isOptionSelected = selectedKey === option.key;
-                      const isOptionRecommended = option.key === prompt.correctAnswer;
-
-                      let buttonClasses =
-                        "group relative flex min-h-[52px] w-full items-start gap-3.5 rounded-2xl border p-3.5 sm:p-4 text-start transition-all cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ";
-
-                      if (!isOptionSelected) {
-                        buttonClasses +=
-                          "border-border bg-card hover:border-primary/50 hover:bg-muted/40 text-foreground";
-                      } else if (isOptionRecommended) {
-                        buttonClasses +=
-                          "border-accent bg-feedback-success-surface text-foreground ring-2 ring-accent/30 shadow-wp-xs";
-                      } else {
-                        buttonClasses +=
-                          "border-primary bg-secondary text-foreground ring-2 ring-primary/30 shadow-wp-xs";
-                      }
-
-                      return (
-                        <button
-                          key={option.key}
-                          type="button"
-                          role="radio"
-                          aria-checked={isOptionSelected}
-                          onClick={() => handleSelectOption(prompt.id, option.key)}
-                          className={buttonClasses}
-                        >
-                          {/* Option Prefix Badge: A, B, C */}
-                          <span
-                            className={`flex size-7 shrink-0 items-center justify-center rounded-xl font-black text-sm transition-colors ${
-                              isOptionSelected
-                                ? isOptionRecommended
-                                  ? "bg-accent text-accent-foreground shadow-wp-xs"
-                                  : "bg-primary text-primary-foreground shadow-wp-xs"
-                                : "bg-muted text-muted-foreground group-hover:bg-secondary group-hover:text-primary"
-                            }`}
-                          >
-                            {isOptionSelected && isOptionRecommended ? (
-                              <Check className="size-4 stroke-[3]" aria-hidden />
-                            ) : (
-                              option.key
-                            )}
-                          </span>
-
-                          {/* Option Content */}
-                          <div className="flex-1 min-w-0">
-                            <span className="text-base sm:text-base font-semibold text-foreground leading-relaxed block">
-                              {option.text}
-                            </span>
-
-                            {/* Status badge when selected */}
-                            {isOptionSelected && (
-                              <div className="mt-1.5 flex items-center gap-1.5">
-                                {isOptionRecommended ? (
-                                  <span className="inline-flex items-center gap-1 rounded-md bg-feedback-success-surface px-2 py-0.5 text-sm font-black text-feedback-success-foreground uppercase tracking-wider">
-                                    <CheckCircle2 className="size-3" aria-hidden />
-                                    {t("business.warmup.recommendedBadge")}
-                                  </span>
-                                ) : (
-                                  <span className="inline-flex items-center gap-1 rounded-md bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wider">
-                                    {t("business.warmup.alternativeBadge")}
-                                  </span>
-                                )}
-                              </div>
-                            )}
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
+                  <ChoiceOptionGroup
+                    label={prompt.question}
+                    value={selectedKey}
+                    onChange={(value) => handleSelectOption(prompt.id, value)}
+                    correctValue={prompt.correctAnswer}
+                    revealFeedback={isAnswered}
+                    options={prompt.options!.map((option) => ({
+                      value: option.key,
+                      label: (
+                        <bdi lang="en" dir="ltr">
+                          {option.text}
+                        </bdi>
+                      ),
+                      accessibleLabel: option.text,
+                      prefix: option.key,
+                    }))}
+                  />
                 ) : (
                   <ChoiceOptionGroup
                     label={prompt.question}
@@ -269,12 +233,16 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                           <span className="rounded-md bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wide">
                             {isCorrect
                               ? t("business.warmup.recommendedBadge")
-                              : `Best Practice: Option ${prompt.correctAnswer}`}
+                              : t("business.warmup.bestPracticeOption", {
+                                  option: prompt.correctAnswer,
+                                })}
                           </span>
                         )}
                       </div>
                       <p className="wp-prose text-base sm:text-base font-medium text-foreground leading-relaxed">
-                        {prompt.explanation}
+                        <bdi lang="en" dir="ltr">
+                          {prompt.explanation}
+                        </bdi>
                       </p>
                     </div>
                   </div>
@@ -285,6 +253,28 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
         </div>
       </section>
 
+      <nav
+        aria-label={t("courseLesson.questionNavigation")}
+        className="flex flex-wrap justify-between gap-3"
+      >
+        <button
+          type="button"
+          disabled={activeIdx === 0}
+          onClick={() => setActiveIdx(activeIdx - 1)}
+          className="min-h-11 rounded-xl border border-border px-4 py-2 font-bold disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          {t("quiz.previousQuestion")}
+        </button>
+        {activeIdx < prompts.length - 1 && (
+          <button
+            type="button"
+            onClick={() => setActiveIdx(activeIdx + 1)}
+            className="min-h-11 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("quiz.nextQuestion")}
+          </button>
+        )}
+      </nav>
       {/* Continue Action Button */}
       <div className="flex justify-end pt-2">
         <button

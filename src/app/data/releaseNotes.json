@@ -1,8 +1,63 @@
 {
-  "version": "0.1.7",
-  "notes": ["Hadith review buttons stay fully reachable on mobile screens."],
-  "notesAr": ["تبقى أزرار مراجعة الحديث متاحة بالكامل على شاشات الهواتف."],
+  "version": "0.1.8",
+  "notes": [
+    "Clearer question headers and more room for learning content.",
+    "Simpler learning paths, reference results, practice lists and progress summaries.",
+    "Step-by-step multiple-choice practice with the freedom to answer later."
+  ],
+  "notesAr": [
+    "عناوين أسئلة أوضح ومساحة أكبر لمحتوى التعلّم.",
+    "تنسيق أبسط لمسارات التعلّم ونتائج البحث وقوائم التدريب وملخصات التقدّم.",
+    "تدريب اختيار من متعدد خطوة بخطوة مع حرية الإجابة لاحقًا."
+  ],
   "releases": [
+    {
+      "id": "0.1.8",
+      "version": "0.1.8",
+      "date": "2026-10-09",
+      "title": {
+        "en": "Clearer learning layouts",
+        "ar": "تنسيق أوضح للتعلّم"
+      },
+      "changes": [
+        {
+          "id": "learning-visual-hierarchy",
+          "category": "improved",
+          "en": "Question counters use compact progress strips. Prompts have less framing, with answer controls and learning images kept clear.",
+          "ar": "تستخدم عدّادات الأسئلة شرائط تقدّم مختصرة. تظهر الأسئلة بإطارات أقل مع الحفاظ على وضوح خيارات الإجابة وصور التعلّم."
+        },
+        {
+          "id": "lighter-browsing-and-progress",
+          "category": "improved",
+          "en": "Learning paths use simpler section dividers. Filtered Library results use thumbnail rows, practice exercises use compact lists, and Profile groups metrics and skill progress for easier comparison.",
+          "ar": "تستخدم مسارات التعلّم فواصل أبسط بين الأقسام. تظهر نتائج المكتبة المصفّاة في صفوف بصور مصغّرة وتمارين التدريب في قوائم مختصرة، ويجمع الملف الشخصي المقاييس وتقدّم المهارات لتسهيل المقارنة."
+        },
+        {
+          "id": "clearer-card-affordance",
+          "category": "fixed",
+          "en": "Non-clickable primary card containers no longer suggest whole-card activation. Hadith practice labels the answered count explicitly.",
+          "ar": "لم تعد حاويات البطاقات الرئيسية غير القابلة للنقر توحي بإمكانية تفعيل البطاقة كاملة. ويوضّح تدريب الحديث عدد الأسئلة التي تمت الإجابة عنها."
+        },
+        {
+          "id": "guided-recognition-and-navigation",
+          "category": "improved",
+          "en": "Business recall and warm-up show one multiple-choice question at a time. Hints and confidence ratings are optional. Business and conversation sections can be browsed freely, and quizzes let you return to unanswered questions without recording a completed score.",
+          "ar": "تعرض مراجعة الأعمال والتهيئة سؤال اختيار من متعدد واحدًا في كل مرة. التلميحات وتقييم الثقة اختياريان. يمكن تصفّح أقسام الأعمال والمحادثة بحرية، وتتيح الاختبارات العودة إلى الأسئلة دون إجابة دون تسجيل نتيجة مكتملة."
+        },
+        {
+          "id": "readable-checked-answers",
+          "category": "fixed",
+          "en": "Checked answers remain readable after submission, and recall progress uses consistent theme colours. Warm-up answer guidance is available in English and Arabic.",
+          "ar": "تظل الإجابات واضحة بعد التحقق منها، ويستخدم تقدّم المراجعة ألوانًا متناسقة مع المظهر. تتوفّر إرشادات إجابات التهيئة بالإنجليزية والعربية."
+        },
+        {
+          "id": "library-reference-entry",
+          "category": "fixed",
+          "en": "Library results open the unit reference directly. Recall headings no longer show a stage-zero prefix.",
+          "ar": "تفتح نتائج المكتبة مرجع الوحدة مباشرة. لم تعد عناوين الاسترجاع تعرض بادئة المرحلة صفر."
+        }
+      ]
+    },
     {
       "id": "0.1.7",
       "version": "0.1.7",

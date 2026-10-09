@@ -112,7 +112,7 @@ function QuestionCard({
 
   return (
     <article
-      className="overflow-hidden rounded-3xl border border-border/80 bg-card shadow-wp-xs hover:border-primary/30 transition-all duration-200"
+      className="rounded-2xl border border-border bg-card"
       aria-labelledby={questionHeadingId}
     >
       <div
@@ -290,7 +290,7 @@ export function CanDoChallengeCard({
       </div>
 
       {/* Action task */}
-      <div className="rounded-2xl border border-border/80 bg-background/80 p-4 space-y-1.5">
+      <div className="border-t border-border pt-4 space-y-1.5">
         <div className="flex items-center gap-1.5 text-sm font-bold text-primary">
           <Sparkles className="size-3.5" aria-hidden="true" />
           <span>{t("wordDetails.canDoTask") || "Your Action Task"}</span>
@@ -306,7 +306,7 @@ export function CanDoChallengeCard({
       </div>
 
       {/* Model response with native audio */}
-      <div className="rounded-2xl border border-primary/20 bg-secondary p-4 space-y-3">
+      <div className="border-s-2 border-primary ps-4 py-2 space-y-3">
         <div className="flex items-center justify-between gap-2">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">
             {t("wordDetails.canDoModelResponse") || "Spoken Model Response"}
@@ -414,10 +414,15 @@ export function CurriculumQuizEngine({
   const mobileQuestion = questions[mobileIndex];
   const isMobileLastQuestion = mobileIndex === questions.length - 1;
   const mobileCurrentAnswer = mobileQuestion ? answers[mobileQuestion.id] : undefined;
-  const mobileAnswered = mobileCurrentAnswer !== undefined;
+  const allAnswered = questions.every((q) => answers[q.id] !== undefined);
 
-  // Desktop: are all questions on the current page answered?
-  const desktopPageAllAnswered = desktopPageQuestions.every((q) => answers[q.id] !== undefined);
+  const returnToUnanswered = () => {
+    const index = questions.findIndex((q) => answers[q.id] === undefined);
+    if (index >= 0) {
+      setMobileIndex(index);
+      setDesktopPage(Math.floor(index / desktopPageSize));
+    }
+  };
 
   // Focus management: move focus to question heading on navigation
   useEffect(() => {
@@ -452,6 +457,10 @@ export function CurriculumQuizEngine({
     const correct = questions.reduce((acc, q) => {
       return currentAnswers[q.id] === q.correctValue ? acc + 1 : acc;
     }, 0);
+    if (!questions.every((q) => currentAnswers[q.id] !== undefined)) {
+      returnToUnanswered();
+      return;
+    }
     setCompleted(true);
     onComplete?.({ correct, total: questions.length });
   };
@@ -639,7 +648,7 @@ export function CurriculumQuizEngine({
 
   const mobileLayout = (
     <div className={`flex flex-col gap-3 wp-container-content mx-auto w-full ${className}`}>
-      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 rounded-xl border border-border bg-background p-1">
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 bg-background py-2">
         {progressPills}
       </div>
 
@@ -672,7 +681,7 @@ export function CurriculumQuizEngine({
           <div />
         )}
 
-        {mobileAnswered && (
+        {questions.length > 0 && (
           <button
             type="button"
             onClick={handleMobileNext}
@@ -680,7 +689,9 @@ export function CurriculumQuizEngine({
           >
             <span>
               {isMobileLastQuestion
-                ? t("quiz.viewResults") || "View Results"
+                ? allAnswered
+                  ? t("quiz.viewResults")
+                  : t("quiz.returnToUnanswered")
                 : t("quiz.nextQuestion") || "Next Question"}
             </span>
             <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
@@ -695,7 +706,7 @@ export function CurriculumQuizEngine({
   const desktopLayout = (
     <div className={`flex flex-col gap-3 wp-container-content mx-auto w-full ${className}`}>
       {/* Progress pills + page indicator */}
-      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-border bg-background p-1">
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 flex flex-wrap items-center justify-between gap-2 bg-background py-2">
         {progressPills}
         <span className="shrink-0 text-sm font-bold text-muted-foreground">
           {desktopPageSize === 1
@@ -733,7 +744,7 @@ export function CurriculumQuizEngine({
               engineId={engineId}
               t={t}
               headingRef={pageIdx === 0 ? headingRef : undefined}
-              showCounter={desktopPageSize === 1}
+              showCounter={false}
             />
           );
         })}
@@ -758,7 +769,7 @@ export function CurriculumQuizEngine({
           <div />
         )}
 
-        {desktopPageAllAnswered && (
+        {questions.length > 0 && (
           <button
             type="button"
             onClick={handleDesktopNextPage}
@@ -766,7 +777,9 @@ export function CurriculumQuizEngine({
           >
             <span>
               {isLastDesktopPage
-                ? t("quiz.viewResults") || "View Results"
+                ? allAnswered
+                  ? t("quiz.viewResults")
+                  : t("quiz.returnToUnanswered")
                 : desktopPageSize === 1
                   ? t("quiz.nextQuestion") || "Next Question"
                   : t("quiz.nextPage") || "Next Questions"}

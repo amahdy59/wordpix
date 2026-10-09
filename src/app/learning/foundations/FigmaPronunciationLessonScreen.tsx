@@ -593,7 +593,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           </p>
           {answerable && (
             <p
-              className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-1 rounded-xl border border-border bg-background p-2 text-sm font-bold text-foreground"
+              className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-1 bg-background py-2 text-sm font-bold text-foreground"
               role="status"
             >
               {t("pronunciation.checkProgress", {
@@ -613,7 +613,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             <Play className="size-5" aria-hidden />
             {isPlaying ? t("pronunciation.playing") : t("pronunciation.play")}
           </button>
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-muted/60 p-3">
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 border-b border-border py-3">
             <span className="inline-flex items-center gap-2 text-base font-bold">
               <Gauge className="size-4 text-primary" aria-hidden />
               {t("pronunciation.playbackSpeed")}

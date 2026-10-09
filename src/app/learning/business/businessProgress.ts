@@ -145,7 +145,7 @@ export function saveBusinessConfidence(
 export function canCompleteBusinessUnit(progress: BusinessProgress, unitId: string): boolean {
   const current = progress[unitId];
   if (!current) return false;
-  // Require at least 6 stages completed including quiz & speaking
+  // Mastery requires completed quiz and speaking evidence. Browsing alone adds neither.
   return (
     current.completedStages.includes("exercises") && current.completedStages.includes("speaking")
   );
@@ -156,13 +156,16 @@ export function completeBusinessUnit(
   unitId: string,
   now = new Date()
 ): BusinessProgress {
+  if (!canCompleteBusinessUnit(progress, unitId)) return progress;
   const current = progress[unitId];
-  const allStages = [...BUSINESS_STAGE_IDS];
+  const completedStages = Array.from(
+    new Set([...(current?.completedStages ?? []), "review" as const])
+  );
 
   const updated: BusinessUnitProgress = {
     status: "mastered",
     currentStage: BUSINESS_STAGE_IDS.length - 1,
-    completedStages: allStages,
+    completedStages,
     quizBestScore: current?.quizBestScore,
     checklistCompleted: current?.checklistCompleted,
     reflectionNotes: current?.reflectionNotes,

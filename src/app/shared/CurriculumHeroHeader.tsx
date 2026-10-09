@@ -28,7 +28,7 @@ export function CurriculumHeroHeader({
 }: Props) {
   const { t } = useI18n();
   return (
-    <header className="space-y-4 rounded-2xl border border-border bg-card p-4 sm:p-5">
+    <header className="space-y-4 py-2">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h1
           id={titleId}

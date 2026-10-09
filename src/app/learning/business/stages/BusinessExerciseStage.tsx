@@ -9,9 +9,16 @@ interface Props {
   savedScore?: number;
   onCompleteExercises: (score: number) => void;
   onNext: () => void;
+  onSkip: () => void;
 }
 
-export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, onNext }: Props) {
+export function BusinessExerciseStage({
+  unit,
+  savedScore,
+  onCompleteExercises,
+  onNext,
+  onSkip,
+}: Props) {
   const { t } = useI18n();
 
   // Map BusinessExercise (A/B/C options) → unified QuizQuestion shape
@@ -71,7 +78,14 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
         )}
       />
 
-      {/* Proceed button (shown if previously completed and navigating back) */}
+      <button
+        type="button"
+        onClick={onSkip}
+        className="min-h-11 self-end rounded-xl px-4 py-2 font-bold text-primary underline underline-offset-4 hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        {t("quiz.continueLesson")}
+      </button>
+      {/* Stage Navigation Footer */}
     </div>
   );
 }

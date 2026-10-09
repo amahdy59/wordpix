@@ -152,7 +152,6 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         <button
           type="button"
           onClick={onNext}
-          disabled={!selectedVote}
           aria-describedby="warmup-vote-requirement"
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
         >
