@@ -32,7 +32,7 @@ test("Hadith lesson is accessible and contained on mobile", async ({ page }) => 
 });
 
 test("Hadith 2 practice provides ten questions and restores the next stage", async ({ page }) => {
-  await page.goto("/#/hadith/lesson-2");
+  await page.goto("/#/hadith/lesson-2", { waitUntil: "domcontentloaded" });
   await page.getByRole("tab", { name: /Practice/ }).click();
 
   await page.getByRole("radio", { name: "Jibril (Gabriel)", exact: true }).click();
@@ -51,13 +51,45 @@ test("Hadith 2 practice provides ten questions and restores the next stage", asy
   }
   await expect(page.getByText(/3 of 10 answered/)).toBeVisible();
   await page.getByRole("button", { name: "Continue", exact: true }).click();
-  await page.waitForTimeout(700);
-  await page.reload();
-  await expect(page.getByText("Saved progress restored", { exact: true })).toBeVisible();
   await expect(page.getByRole("tab", { name: "Review & Apply", exact: true })).toHaveAttribute(
     "aria-current",
     "step"
   );
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          new Promise<number | undefined>((resolve, reject) => {
+            const request = indexedDB.open("wordpix_offline_db");
+            request.onerror = () => reject(request.error);
+            request.onsuccess = () => {
+              const db = request.result;
+              const transaction = db.transaction("learner_state", "readonly");
+              const stateRequest = transaction.objectStore("learner_state").get("primary_state");
+              transaction.onerror = () => {
+                db.close();
+                reject(transaction.error);
+              };
+              transaction.oncomplete = () => {
+                const state = stateRequest.result as
+                  { hadithProgress?: Record<string, { currentStage?: number }> } | undefined;
+                db.close();
+                resolve(state?.hadithProgress?.["hadith-02"]?.currentStage);
+              };
+            };
+          })
+      )
+    )
+    .toBe(3);
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await expect(
+    page.getByRole("heading", { name: "Questions That Teach Religion", exact: true })
+  ).toBeVisible();
+  await expect(page.getByRole("tab", { name: "Review & Apply", exact: true })).toHaveAttribute(
+    "aria-current",
+    "step"
+  );
+  await expect(page.getByText("Saved progress restored", { exact: true })).toBeVisible();
 });
 
 test("Hadith 1 pilot presents a complete visual and interactive learning flow", async ({
