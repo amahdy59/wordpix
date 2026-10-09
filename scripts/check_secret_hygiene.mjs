@@ -27,6 +27,10 @@ const textExtensions = new Set([
   ".yml",
 ]);
 const secretPatterns = [
+  {
+    label: "Google API credential",
+    pattern: /\b(?:AIza[A-Za-z0-9_-]{30,}|AQ\.[A-Za-z0-9_-]{40,})\b/,
+  },
   { label: "private key material", pattern: /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/ },
   { label: "OpenAI-style secret key", pattern: /\bsk-[A-Za-z0-9_-]{20,}\b/ },
   { label: "AWS access key", pattern: /\bAKIA[0-9A-Z]{16}\b/ },

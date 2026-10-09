@@ -67,6 +67,12 @@
           "category": "fixed",
           "en": "The local usage-scene diagnostic counts nested scenes across all 200 units and distinguishes explicit image references from runtime fallback imagery.",
           "ar": "تحسب أداة فحص مشاهد الاستخدام المحلية المشاهد المتداخلة في الوحدات الـ٢٠٠، وتفرّق بين مراجع الصور الصريحة والصور البديلة أثناء التشغيل."
+        },
+        {
+          "id": "safe-local-image-api-helpers",
+          "category": "fixed",
+          "en": "Local image API helpers read credentials from the environment, reject unsafe output names and report failures without exposing API responses. Secret scanning also detects Google API credentials.",
+          "ar": "تقرأ أدوات واجهة الصور المحلية بيانات الاعتماد من متغيرات البيئة، وترفض أسماء الملفات غير الآمنة وتبلّغ عن الأخطاء دون كشف استجابات الواجهة. ويكتشف فحص الأسرار أيضًا بيانات اعتماد واجهات Google."
         }
       ]
     },
