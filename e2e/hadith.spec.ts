@@ -105,7 +105,7 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
   await expect(page.getByText("Show sample answer", { exact: true })).toHaveCount(1);
 
   // The bottom lesson actions must not cover a review action on small screens.
-  const sampleAnswer = page.getByRole("button", { name: "Show sample answer", exact: true });
+  const sampleAnswer = page.getByRole("button", { name: "Check model answer", exact: true });
   await sampleAnswer.scrollIntoViewIfNeeded();
   expect(
     await sampleAnswer.evaluate((button) => {
