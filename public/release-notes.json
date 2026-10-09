@@ -61,6 +61,12 @@
           "category": "improved",
           "en": "Local illustration preparation includes cleaner kitchen and living-room scene prompts, with a check for the expected batch structure.",
           "ar": "يتضمن إعداد الرسوم محليًا أوصافًا أوضح لمشاهد المطبخ وغرفة المعيشة، مع التحقّق من بنية مجموعة الصور المطلوبة."
+        },
+        {
+          "id": "authored-scene-count-helper",
+          "category": "fixed",
+          "en": "The local usage-scene diagnostic counts nested scenes across all 200 units and distinguishes explicit image references from runtime fallback imagery.",
+          "ar": "تحسب أداة فحص مشاهد الاستخدام المحلية المشاهد المتداخلة في الوحدات الـ٢٠٠، وتفرّق بين مراجع الصور الصريحة والصور البديلة أثناء التشغيل."
         }
       ]
     },
