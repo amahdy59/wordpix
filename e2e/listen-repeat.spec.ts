@@ -79,7 +79,7 @@ for (const viewport of [
 ]) {
   test(`listen layout uses available space at ${viewport.width}px`, async ({ page }, testInfo) => {
     await page.setViewportSize(viewport);
-    await page.goto("/#/learn/construction-site");
+    await page.goto("/#/learn/construction-site", { waitUntil: "domcontentloaded" });
     await page
       .getByRole("button", { name: /^Start lesson:/ })
       .first()
@@ -141,6 +141,9 @@ for (const viewport of [
         { timeout: 15_000 }
       )
       .toBe(true);
-    await page.screenshot({ path: testInfo.outputPath("listen-layout.png") });
+    await page.screenshot({
+      path: testInfo.outputPath("listen-layout.png"),
+      animations: "disabled",
+    });
   });
 }

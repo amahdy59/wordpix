@@ -47,11 +47,11 @@ for (const lang of ["en", "ar"] as const) {
   });
 }
 
-test("course orientation is optional while the next lesson stays available", async ({
-  page,
-}, testInfo) => {
-  for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
-    await page.goto(`/#/${course}`);
+for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
+  test(`${course} orientation is optional while the next lesson stays available`, async ({
+    page,
+  }, testInfo) => {
+    await page.goto(`/#/${course}`, { waitUntil: "domcontentloaded" });
     const header = page.getByRole("main").locator("header").first();
     await expect(header.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 20_000 });
     const help = header
@@ -67,5 +67,5 @@ test("course orientation is optional while the next lesson stays available", asy
       path: `output/simplified-${course}-${testInfo.project.name}.png`,
       animations: "disabled",
     });
-  }
-});
+  });
+}
