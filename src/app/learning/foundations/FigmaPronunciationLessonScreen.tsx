@@ -1,3 +1,4 @@
+import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -301,7 +302,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </div>
             {activity.reviewSentences.length > 0 && (
               <section
-                className="mt-7 rounded-2xl border border-primary/25 bg-primary/5 p-5 text-start"
+                className="mt-7 rounded-2xl border border-primary/25 bg-secondary p-5 text-start"
                 aria-labelledby="pronunciation-usage-review"
               >
                 <h2 id="pronunciation-usage-review" className="text-lg font-black">
@@ -373,60 +374,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </div>
             <Sparkles className="size-8 text-primary" aria-hidden />
           </div>
-          <div
-            role="tablist"
-            className="mt-5 grid grid-cols-3 gap-2 sm:grid-cols-5"
-            aria-label={t("pronunciation.stageProgress", {
-              current: stage + 1,
-              total: STAGES.length,
-            })}
-          >
-            {STAGES.map((name, index) => {
-              const isCurrent = index === stage;
-              const isDone = index < stage;
-              return (
-                <button
-                  key={name}
-                  type="button"
-                  role="tab"
-                  onClick={() => {
-                    if (index <= stage) {
-                      stop();
-                      cancelSpokenFeedback();
-                      setStage(index as Stage);
-                      setTrial(0);
-                      setAnswer(null);
-                    }
-                  }}
-                  disabled={index > stage}
-                  aria-selected={isCurrent}
-                  aria-current={isCurrent ? "step" : undefined}
-                  aria-label={t("pronunciation.stage", { number: index + 1, name })}
-                  className={`flex min-h-11 items-center justify-center gap-1.5 rounded-xl border-2 px-2 py-1.5 text-sm font-black transition-all focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${
-                    isCurrent
-                      ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
-                      : isDone
-                        ? "border-primary/25 bg-primary/10 text-primary hover:border-primary/45 hover:bg-primary/15"
-                        : "border-border bg-card text-muted-foreground/60 opacity-60"
-                  }`}
-                >
-                  <span
-                    className={`flex size-5 shrink-0 items-center justify-center rounded-full text-sm font-black ${
-                      isCurrent
-                        ? "bg-primary-foreground text-primary"
-                        : isDone
-                          ? "bg-primary text-primary-foreground"
-                          : "bg-muted text-muted-foreground"
-                    }`}
-                    aria-hidden
-                  >
-                    {isDone ? <Check className="size-3 stroke-[3]" /> : index + 1}
-                  </span>
-                  <span className="hidden min-w-0 break-words sm:inline">{name}</span>
-                </button>
-              );
-            })}
-          </div>
           <p className="sr-only" aria-live="polite">
             {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
           </p>
@@ -436,6 +383,28 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </p>
           )}
         </header>
+        <div className="wp-course-sticky sticky top-0 z-40 border-b border-border bg-background py-2">
+          <CourseLessonNavigation
+            stages={STAGES.map((name, index) => ({
+              id: name,
+              label: t("pronunciation.stage", { number: index + 1, name }),
+              group: ([0, 0, 1, 2, 3] as const)[index],
+              completed: index < stage,
+              locked: index > stage,
+            }))}
+            currentIndex={stage}
+            onSelect={(index) => {
+              if (index <= stage) {
+                stop();
+                cancelSpokenFeedback();
+                setStage(index as Stage);
+                setTrial(0);
+                setAnswer(null);
+              }
+            }}
+          />
+        </div>
+
         {contrastHero && contrastHeroItems?.length === 2 && stage === 0 && (
           <section
             className="rounded-3xl border-2 border-primary/25 bg-card p-5 shadow-sm sm:p-7"
@@ -453,7 +422,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   {t("pronunciation.contrastHeroDescription")}
                 </p>
               </div>
-              <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-black text-primary">
+              <span className="rounded-full bg-secondary px-3 py-1 text-sm font-black text-primary">
                 {activity.focus}
               </span>
             </div>
@@ -623,7 +592,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
           </p>
           {answerable && (
-            <p className="mt-1 text-sm font-bold text-muted-foreground">
+            <p
+              className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-1 rounded-xl border border-border bg-background p-2 text-sm font-bold text-foreground"
+              role="status"
+            >
               {t("pronunciation.checkProgress", {
                 current: trial + 1,
                 total: TRIALS_PER_STAGE,
@@ -665,7 +637,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               <p className="rounded-2xl bg-muted p-4 text-base leading-6">
                 {t("pronunciation.previewPrompt", { count: activity.items.length })}
               </p>
-              <div className="rounded-2xl border border-primary/25 bg-primary/5 p-4">
+              <div className="rounded-2xl border border-primary/25 bg-secondary p-4">
                 <h3 className="text-base font-black text-foreground">
                   {t("pronunciation.soundFocus")}
                 </h3>
@@ -704,7 +676,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                               <button
                                 type="button"
                                 onClick={() => speak(cue)}
-                                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2.5 py-1 text-sm font-bold text-primary hover:bg-primary/10 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-1 focus-visible:outline-primary"
+                                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2.5 py-1 text-sm font-bold text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-1 focus-visible:outline-primary"
                               >
                                 <Volume2 className="size-4" aria-hidden />
                                 {t("pronunciation.listenToContrast")}
@@ -759,7 +731,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       {activity.arabicSpeakerTip.tipEn}
                     </p>
                     <p
-                      className="mt-2 border-t border-feedback-warning-border/50 pt-2 font-arabic text-sm sm:text-base font-semibold leading-relaxed text-foreground/85"
+                      className="mt-2 border-t border-feedback-warning-border/50 pt-2 font-arabic text-sm sm:text-base font-semibold leading-relaxed text-foreground"
                       dir="rtl"
                       lang="ar"
                     >
@@ -810,7 +782,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                         const beat = getStressBeatPattern(lessonNumber, item.label);
                         return beat ? (
                           <span
-                            className="ms-1 rounded-md bg-primary/10 px-2 py-0.5 font-mono text-sm font-bold text-primary"
+                            className="ms-1 rounded-md bg-secondary px-2 py-0.5 font-mono text-sm font-bold text-primary"
                             aria-label={t("pronunciation.rhythmBeatAria", { beat })}
                           >
                             {beat}
@@ -855,7 +827,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           )}
           {answer && !passed && (activity.recoveryCue || activity.articulationCues.length > 0) && (
             <aside
-              className="mt-3 rounded-2xl border border-primary/30 bg-primary/5 p-4"
+              className="mt-3 rounded-2xl border border-primary/30 bg-secondary p-4"
               role="note"
             >
               <div className="flex items-center justify-between gap-2">
@@ -865,7 +837,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 <button
                   type="button"
                   onClick={() => speak(activity.recoveryCue ?? activity.articulationCues[0])}
-                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-primary/30 bg-background px-2.5 py-1 text-sm font-bold text-primary hover:bg-primary/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-primary/30 bg-background px-2.5 py-1 text-sm font-bold text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
                 >
                   <Volume2 className="size-3.5" aria-hidden />
                   {t("pronunciation.listenToContrast")}
@@ -883,6 +855,19 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </aside>
           )}
         </section>
+
+        {stage === 4 && (
+          <section className="grid gap-3 sm:grid-cols-3" aria-label={t("courseLesson.apply")}>
+            {["soundRecall", "soundContrast", "soundTransfer"].map((key) => (
+              <article key={key} className="rounded-2xl border border-primary/25 bg-secondary p-4">
+                <Lightbulb className="mb-3 size-6 text-primary" aria-hidden />
+                <h3 className="text-base font-bold leading-7 text-foreground">
+                  {t(`courseLesson.${key}`, { word: target?.label ?? activity.model })}
+                </h3>
+              </article>
+            ))}
+          </section>
+        )}
 
         {/* Sticky Accessible Footer Navigation Bar */}
         <div className="wp-sticky-controls sticky bottom-0 z-30 mt-6 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
@@ -925,7 +910,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 <button
                   type="button"
                   onClick={advance}
-                  className="inline-flex min-h-11 w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-black text-primary-foreground shadow-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="inline-flex min-h-11 w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-black text-primary-foreground shadow-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   <span>
                     {stage === 4 ? t("pronunciation.finish") : t("pronunciation.continue")}

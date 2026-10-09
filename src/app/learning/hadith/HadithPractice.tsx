@@ -15,7 +15,7 @@ function HadithImageClue({ imageRef, clue, alt }: { imageRef: string; clue: stri
     <QuestionImage
       media={{ imagePath: `hadith/v1/images/${imageRef}.png`, imageAlt: alt }}
       onExhausted={() => setFailed(true)}
-      className="aspect-[4/3] w-full object-contain"
+      className="block h-auto w-full"
       loading="eager"
     />
   );
@@ -76,12 +76,10 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
 
   return (
     <section
-      className="wp-container-content rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-8"
+      className="wp-container-content rounded-3xl border border-border bg-card p-3 shadow-wp-sm sm:p-5"
       aria-labelledby="hadith-practice-heading"
     >
-      <p className="text-sm font-black uppercase tracking-[0.18em] text-primary">
-        {t("hadith.practiceLabel")}
-      </p>
+      <p className="sr-only">{t("hadith.practiceLabel")}</p>
       <h2
         id="hadith-practice-heading"
         tabIndex={-1}
@@ -90,18 +88,23 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
         {t("hadith.practiceTitle")}
       </h2>
       <p className="mt-3 text-base font-semibold text-muted-foreground">
-        {t("hadith.practiceInstructions")}
+        {t("courseLesson.quizHelp")}
       </p>
 
-      <div className="mt-5 rounded-2xl bg-muted/60 p-4">
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-3 rounded-xl border border-border bg-background p-2">
         <div className="flex items-center justify-between gap-3 text-base font-black">
-          <span>{t("hadith.practiceCompletion")}</span>
+          <span>
+            {t("quiz.questionOf", {
+              current: questionIndex + 1,
+              total: exerciseSet.exercises.length,
+            })}
+          </span>
           <span>
             {answered}/{exerciseSet.exercises.length}
           </span>
         </div>
         <div
-          className="mt-2 h-2 overflow-hidden rounded-full bg-background"
+          className="mt-2 h-1 overflow-hidden rounded-full bg-muted"
           role="progressbar"
           aria-label={t("hadith.practiceCompletion")}
           aria-valuemin={0}
@@ -115,13 +118,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
         </div>
       </div>
 
-      <div ref={questionRef} tabIndex={-1} className="mt-7 space-y-7 outline-none">
-        <p className="text-base font-bold text-foreground">
-          {t("quiz.questionOf", {
-            current: questionIndex + 1,
-            total: exerciseSet.exercises.length,
-          })}
-        </p>
+      <div ref={questionRef} tabIndex={-1} className="mt-3 space-y-3 outline-none">
         {exerciseSet.exercises.slice(questionIndex, questionIndex + 1).map((exercise) => {
           const exerciseIndex = questionIndex;
           const result = results[exerciseIndex];
@@ -147,7 +144,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                 }))}
                 media={
                   exercise.type === "image-choice" ? (
-                    <figure className="mx-auto mt-4 max-w-sm overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
+                    <figure className="mx-auto w-full max-w-64 overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
                       <HadithImageClue
                         key={exercise.id}
                         imageRef={exercise.imageRef}
@@ -157,9 +154,6 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                         }
                         alt={t("hadith.practiceImageAlt")}
                       />
-                      <figcaption className="p-3 text-center text-sm font-bold text-muted-foreground">
-                        {t("hadith.chooseMatchingWord")}
-                      </figcaption>
                     </figure>
                   ) : undefined
                 }
@@ -194,7 +188,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                           setSequences(nextSequences);
                           publishScore(choices, nextSequences);
                         }}
-                        className="flex min-h-12 w-full items-center gap-3 rounded-xl border border-primary bg-primary/10 px-4 text-start text-base font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        className="flex min-h-12 w-full items-center gap-3 rounded-xl border border-primary bg-secondary px-4 text-start text-base font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary font-black text-primary-foreground">
                           {index + 1}

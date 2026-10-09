@@ -33,11 +33,7 @@ export const AudioButton = memo(function AudioButton({
   className = "",
 }: Props) {
   const isActive = isPlaying || isLoading;
-  const stateClasses = isError
-    ? "bg-secondary border-feedback-error-border text-feedback-error-foreground hover:bg-feedback-error-surface motion-safe:active:scale-95"
-    : isActive
-      ? "bg-primary border-primary text-primary-foreground shadow-wp-sm"
-      : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground motion-safe:active:scale-95";
+  const audioState = isError ? "error" : isActive ? "active" : "idle";
 
   const computedLabel = isError
     ? `${label} (retry audio)`
@@ -55,13 +51,14 @@ export const AudioButton = memo(function AudioButton({
       aria-pressed={isPlaying}
       aria-busy={isLoading}
       disabled={isLoading}
+      data-audio-state={audioState}
       className={[
-        "flex items-center justify-center shrink-0 min-h-[44px] min-w-[44px]",
+        "wp-audio-button flex items-center justify-center shrink-0 min-h-[44px] min-w-[44px]",
         "border font-sans",
         "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary",
         "motion-safe:transition-all duration-200",
         SIZE_CLASSES[size],
-        stateClasses,
+        "motion-safe:active:scale-95",
         className,
       ].join(" ")}
     >
@@ -70,7 +67,7 @@ export const AudioButton = memo(function AudioButton({
       ) : isLoading ? (
         <Loader2 className={`${ICON_CLASSES[size]} motion-safe:animate-spin`} aria-hidden="true" />
       ) : isPlaying ? (
-        <Volume2 className={`${ICON_CLASSES[size]} motion-safe:animate-pulse`} aria-hidden="true" />
+        <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
       ) : (
         <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
       )}

@@ -31,7 +31,7 @@ const focusRing =
   "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 export function HadithReviewStage({
-  reviewItems,
+  reviewItems: authoredReviewItems,
   speakTask,
   lessonTitle,
   translation,
@@ -41,6 +41,19 @@ export function HadithReviewStage({
   confidenceError,
 }: Props) {
   const { t } = useI18n();
+
+  const reviewItems: ParsedReviewItem[] = [
+    ...authoredReviewItems,
+    { question: t("courseLesson.recallSource"), answer: translation },
+    {
+      question: t("courseLesson.recallExplain"),
+      answer: authoredReviewItems[0]?.answer ?? translation,
+    },
+    {
+      question: t("courseLesson.recallExample"),
+      answer: speakTask?.frames.join("\n\n") || t("courseLesson.recallExampleAnswer"),
+    },
+  ];
 
   // Track which active retrieval items have had their model answer revealed
   const [revealedAnswers, setRevealedAnswers] = useState<Record<number, boolean>>({});
@@ -69,11 +82,11 @@ export function HadithReviewStage({
     "Reflect on applying this guidance with clear intention in personal and community interactions.";
 
   return (
-    <section className="wp-container-content space-y-8" aria-labelledby="stage-review-heading">
+    <section className="wp-container-content space-y-4" aria-labelledby="stage-review-heading">
       {/* Stage Header */}
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
             <Target className="size-3.5" aria-hidden />
             {t("hadith.stageLabels.review") || "Review & Apply"}
           </span>
@@ -95,7 +108,7 @@ export function HadithReviewStage({
 
       {/* Part 1: Active Retrieval Cards */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between">
+        <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 flex items-center justify-between gap-2 rounded-xl border border-border bg-background p-2">
           <h3 className="text-base font-black uppercase tracking-wider text-muted-foreground">
             {t("hadith.retrievalQuestions") || "Part 1 · Active Retrieval"}
           </h3>
@@ -120,7 +133,7 @@ export function HadithReviewStage({
               >
                 {/* Question Row */}
                 <div className="flex items-start gap-3.5">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-black text-primary">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-secondary text-sm font-black text-primary">
                     {index + 1}
                   </span>
                   <div className="flex-1 min-w-0">
@@ -157,7 +170,7 @@ export function HadithReviewStage({
                     </button>
                   ) : (
                     <div className="space-y-3">
-                      <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
+                      <div className="rounded-xl border border-primary/20 bg-secondary p-4">
                         <p className="text-sm font-black uppercase tracking-wider text-primary">
                           {t("hadith.modelLabel") || "Model Answer"}
                         </p>
@@ -258,8 +271,15 @@ export function HadithReviewStage({
             <span className="text-sm font-black uppercase tracking-wider text-muted-foreground">
               {t("hadith.sentenceFrame") || "Useful sentence starter"}
             </span>
-            <p className="mt-1 font-mono text-sm font-bold text-primary">
-              {speakTask.frames.join(" / ")}
+            <p className="mt-1 text-base font-medium leading-7 text-foreground">
+              {speakTask.frames.map((frame) => (
+                <span
+                  key={frame}
+                  className="mb-2 block rounded-lg border border-border bg-card p-3"
+                >
+                  {frame}
+                </span>
+              ))}
             </p>
           </div>
         )}
@@ -282,6 +302,17 @@ export function HadithReviewStage({
           </div>
         </details>
       </section>
+
+      <div className="grid gap-3 md:grid-cols-3" aria-label={t("hadith.discussionLabel")}>
+        {["discussionReason", "discussionAlternative", "discussionRole"].map((key, index) => (
+          <article key={key} className="rounded-2xl border border-primary/25 bg-secondary p-4">
+            <MessageCircle className="mb-3 size-6 text-primary" aria-hidden />
+            <h3 className="text-base font-bold leading-7 text-foreground">
+              {index + 2}. {t(`courseLesson.${key}`)}
+            </h3>
+          </article>
+        ))}
+      </div>
 
       {/* Part 3: Metacognitive Confidence Rating */}
       <fieldset
@@ -343,7 +374,7 @@ export function HadithReviewStage({
 
         {confidence && (
           <p
-            className="mt-5 rounded-2xl border border-primary/25 bg-primary/5 p-4 text-base font-bold text-foreground"
+            className="mt-5 rounded-2xl border border-primary/25 bg-secondary p-4 text-base font-bold text-foreground"
             role="status"
           >
             {getHadithReviewIntervalDays(practiceScore, confidence) === 1

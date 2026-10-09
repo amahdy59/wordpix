@@ -145,7 +145,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
 
   return (
     <div
-      className="wp-lesson-session flex h-full min-h-0 flex-col bg-background overflow-y-auto"
+      className="wp-lesson-session flex h-full min-h-0 flex-col overflow-y-auto bg-background"
       aria-labelledby="lesson-header-title"
     >
       {/* Top Banner Navigation */}
@@ -178,7 +178,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
                 />
               </div>
             )}
-            <span className="shrink-0 rounded-lg bg-primary/15 px-2 py-0.5 text-sm font-black text-primary uppercase">
+            <span className="shrink-0 rounded-lg bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase">
               {unit.level}
             </span>
             <h1
@@ -191,7 +191,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         </div>
 
         {isMastered && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-sm font-black text-accent">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-feedback-success-surface px-3 py-1 text-sm font-black text-feedback-success-foreground">
             <CheckCircle2 className="size-4" aria-hidden />
             <span className="hidden sm:inline">{t("business.masteredBadge")}</span>
           </span>
@@ -208,9 +208,9 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
       </div>
 
       {/* Workspace Area: Stepper + Content */}
-      <div className="wp-lesson-workspace flex-1 min-h-0 flex flex-col lg:flex-row overflow-hidden">
-        {/* Stage Stepper: mobile top, desktop sticky sidebar */}
-        <div className="shrink-0 lg:p-6 lg:overflow-y-auto">
+      <div className="wp-lesson-workspace shrink-0 flex flex-col">
+        {/* Four course sections with detailed stages inside the active section */}
+        <div className="wp-course-sticky wp-layout-gutter sticky top-0 z-40 shrink-0 border-b border-border bg-background py-2">
           <BusinessStageStepper
             activeStageIdx={activeStageIdx}
             completedStages={completedStages}
@@ -225,7 +225,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         <div
           ref={stagePanelRef}
           tabIndex={-1}
-          className="wp-lesson-panel wp-layout-gutter flex-1 min-h-0 overflow-y-auto py-4 sm:py-8 outline-none overscroll-y-contain"
+          className="wp-lesson-panel wp-layout-gutter py-4 sm:py-8 outline-none"
         >
           {currentStageId === "recall" && (
             <BusinessRecallStage

@@ -38,12 +38,12 @@ export function HadithWarmupStage({
 
   return (
     <section
-      className="wp-container-content relative overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8"
+      className="wp-container-content relative overflow-hidden rounded-3xl border border-border bg-card p-4 shadow-wp-sm sm:p-5"
       aria-labelledby="stage-warmup-heading"
     >
       {/* Top Header Row */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1 text-sm font-black uppercase tracking-wider text-primary">
           <Sparkles className="size-3.5" aria-hidden />
           {t("hadith.pilot.warmup.eyebrow") || "Notice Before Reading"}
         </span>
@@ -75,7 +75,7 @@ export function HadithWarmupStage({
       </p>
 
       {/* Main Two-Column Grid on Desktop for Balanced Visual Density */}
-      <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_1.15fr] lg:items-start">
+      <div className="mt-4 grid gap-4 lg:grid-cols-[1fr_1.15fr] lg:items-start">
         {/* Left Column: Scenario & Preview Terms */}
         <div className="space-y-5">
           <div className="flex gap-4 rounded-2xl border border-border border-s-4 border-s-primary bg-muted/40 p-5">
@@ -178,7 +178,7 @@ export function HadithWarmupStage({
                 <button
                   type="button"
                   onClick={onProceedToText}
-                  className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-sm font-black text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 ${focusRing}`}
+                  className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-sm font-black text-primary-foreground shadow-sm transition-colors hover:bg-primary ${focusRing}`}
                 >
                   <span>{t("hadith.proceedToText") || "Read Hadith"}</span>
                   <ArrowDown className="size-3.5" aria-hidden />

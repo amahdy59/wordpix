@@ -117,7 +117,7 @@ export function Select({
           {selectedOption ? selectedOption.label : placeholder}
         </span>
         <ChevronDown
-          className={`size-4 opacity-70 shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`}
+          className={`size-4 shrink-0 motion-safe:transition-transform ${isOpen ? "rotate-180" : ""}`}
           aria-hidden
         />
       </button>
@@ -162,7 +162,7 @@ export function Select({
                     }}
                     className={`flex items-center justify-between gap-2 px-4 py-3 min-h-[44px] cursor-pointer text-sm font-semibold transition-colors ${
                       isSelected
-                        ? "bg-primary/10 text-primary"
+                        ? "bg-secondary text-primary"
                         : "text-foreground hover:bg-secondary hover:text-foreground"
                     }`}
                   >

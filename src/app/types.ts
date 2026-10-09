@@ -77,6 +77,7 @@ export type Screen =
   | { id: "practice" }
   | { id: "review" }
   | { id: "profile" }
+  | { id: "release-notes" }
   | { id: "lesson-entry"; unitId?: string }
   /** Self-paced word browsing for one group — no session, no scoring. */
   | { id: "learn-words"; lessonId: string }
@@ -135,7 +136,8 @@ export type GoTarget =
   | "pronunciation-curriculum"
   | "hadith-curriculum"
   | "conversation-curriculum"
-  | "business-curriculum";
+  | "business-curriculum"
+  | "release-notes";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }

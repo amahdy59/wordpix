@@ -85,7 +85,7 @@ export function StudyHome({
       {/* Unit Banner */}
       <div className="space-y-4">
         <div>
-          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
+          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-secondary px-3 py-1 rounded-full inline-block">
             {t("study.unitStudyMaterials")}
           </span>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground mt-2 tracking-tight">
@@ -96,7 +96,7 @@ export function StudyHome({
         <HelpDisclosure label={t("help.aboutLesson")}>
           <section
             aria-labelledby="unit-outcome-heading"
-            className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-primary/5 p-4 sm:p-6"
+            className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-secondary p-4 sm:p-6"
           >
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full bg-primary px-3 py-1 text-sm font-black text-primary-foreground">
@@ -158,7 +158,7 @@ export function StudyHome({
           >
             <div className="flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-2.5">
-                <div className="size-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                <div className="size-9 rounded-xl bg-secondary text-primary flex items-center justify-center">
                   <VideoIcon className="size-5" aria-hidden="true" />
                 </div>
                 <div>
@@ -171,7 +171,7 @@ export function StudyHome({
                   <p className="text-sm text-muted-foreground">{unitVideo.scenarioTitle}</p>
                 </div>
               </div>
-              <span className="text-sm font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+              <span className="text-sm font-bold uppercase tracking-wider text-primary bg-secondary px-2.5 py-1 rounded-full">
                 {t("study.videoContext") || "Video Context"}
               </span>
             </div>
@@ -216,7 +216,7 @@ export function StudyHome({
               })}
             </span>
             {reviewDueCount > 0 && (
-              <span className="inline-flex items-center gap-1.5 text-wp-amber font-bold">
+              <span className="inline-flex items-center gap-1.5 text-wp-amber-foreground font-bold">
                 <Clock className="size-4" />
                 {t("study.reviewQueueCount", {
                   count: reviewDueCount,
@@ -275,7 +275,7 @@ export function StudyHome({
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3.5 min-w-0">
-                    <span className="p-2.5 rounded-2xl bg-primary/10 text-primary shrink-0">
+                    <span className="p-2.5 rounded-2xl bg-secondary text-primary shrink-0">
                       <Icon className="size-5" aria-hidden />
                     </span>
                     <div className="min-w-0">
@@ -361,7 +361,7 @@ export function StudyHome({
               </h3>
             </div>
           </div>
-          <span className="inline-flex items-center gap-1.5 text-base font-bold text-primary px-4 py-2 rounded-full bg-primary/10 shrink-0 ms-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors min-h-[44px]">
+          <span className="inline-flex items-center gap-1.5 text-base font-bold text-primary px-4 py-2 rounded-full bg-secondary shrink-0 ms-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors min-h-[44px]">
             <span>{t("study.open")}</span>
             <ArrowRight className="size-4" aria-hidden />
           </span>

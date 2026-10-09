@@ -171,9 +171,9 @@ export const RichPassageText = memo(function RichPassageText({
                 }
                 className={[
                   "inline-flex min-h-11 min-w-11 items-baseline rounded-md px-1 py-0.5 mx-0.5 align-baseline cursor-pointer motion-safe:transition-colors",
-                  "bg-primary/10 text-primary border border-primary/25",
+                  "bg-secondary text-primary border border-primary/25",
                   "underline decoration-primary/60 decoration-2 underline-offset-2",
-                  "hover:bg-primary/20 hover:border-primary/50 motion-safe:active:scale-[0.98]",
+                  "hover:bg-secondary hover:border-primary/50 motion-safe:active:scale-[0.98]",
                   "focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary",
                   token.bold ? "font-black" : "font-bold",
                 ]

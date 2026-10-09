@@ -125,7 +125,7 @@ export function LessonStageStepper({
                   isCurrent
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-sm"
                     : isCompleted
-                      ? "border-primary/25 bg-primary/10 text-primary hover:border-primary/45 hover:bg-primary/15"
+                      ? "border-primary/25 bg-secondary text-primary hover:border-primary/45 hover:bg-secondary"
                       : "border-border bg-card text-muted-foreground hover:border-primary/30 hover:bg-muted/60 disabled:cursor-not-allowed disabled:opacity-50"
                 }`}
               >

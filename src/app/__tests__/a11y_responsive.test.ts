@@ -54,6 +54,10 @@ const TEXT_PAIRS: [string, string, string][] = [
   ["success text on card", "--wp-green", "--wp-card"],
   ["error text on card", "--wp-rose", "--wp-card"],
   ["offline/teal text on card", "--wp-teal", "--wp-card"],
+  ["warning text on card", "--wp-amber-foreground", "--wp-card"],
+  ["warning text on page", "--wp-amber-foreground", "--wp-surface"],
+  ["teal status text", "--wp-teal-foreground", "--wp-teal-light"],
+  ["blue status text", "--wp-blue-foreground", "--wp-card"],
 ];
 
 /** Every filled accent surface and the foreground it is paired with. */
@@ -100,6 +104,19 @@ describe.each([
 });
 
 describe("Enhanced-contrast component states", () => {
+  it("keeps enabled pressed controls opaque and motion guarded", () => {
+    const css = read("styles/globals.css");
+    expect(css).not.toContain("active:opacity-90");
+    expect(css).toContain("motion-safe:active:scale-[0.98]");
+  });
+
+  it("gives audio states their own paired foreground and background", () => {
+    const css = read("styles/globals.css");
+    expect(css).toContain('.wp-audio-button[data-audio-state="active"]');
+    expect(css).toContain("color: var(--primary-foreground)");
+    expect(css).toContain('.wp-audio-button[data-audio-state="error"]');
+    expect(css).toContain("color: var(--feedback-error-foreground)");
+  });
   it("uses the live semantic text tokens in prefers-contrast mode", () => {
     expect(highContrastTokens["--wp-text"]).toBe("#ffffff");
     expect(highContrastTokens["--wp-text-secondary"]).toBe("#f1f5f9");

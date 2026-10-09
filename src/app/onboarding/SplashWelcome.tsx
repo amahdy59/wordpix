@@ -58,7 +58,7 @@ export function SplashWelcome({ dispatch }: Props) {
         {/* Center Feature Highlights */}
         <div className="relative z-10 flex flex-col gap-4 my-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white px-3.5 py-1.5 rounded-full border border-white/20 backdrop-blur-md self-start text-xs font-sans font-semibold">
-            <Sparkles className="size-3.5 text-wp-amber" />
+            <Sparkles className="size-3.5 text-wp-amber-foreground" />
             <span>{t("onboarding.visualEngine")}</span>
           </div>
           <h2 className="font-sans font-black text-3xl xl:text-4xl text-white leading-tight">
@@ -224,7 +224,7 @@ export function SplashWelcome({ dispatch }: Props) {
           <button
             type="button"
             onClick={advance}
-            className="w-full bg-wp-blue hover:opacity-90 rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
+            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >

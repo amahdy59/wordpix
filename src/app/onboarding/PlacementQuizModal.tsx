@@ -127,7 +127,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
 
         <div>
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">
-            <Sparkles className="size-4 text-wp-amber" />
+            <Sparkles className="size-4 text-wp-amber-foreground" />
             <span>{t("onboarding.adaptiveCheck", { current: stepIndex + 1, total: 3 })}</span>
           </div>
           <h2 id="placement-modal-title" className="font-sans font-black text-foreground text-2xl">

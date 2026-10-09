@@ -41,42 +41,49 @@ export function QuizQuestionCard<T extends string>({
       className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs"
       aria-labelledby={headingId}
     >
-      <div className="p-3 sm:p-6">
-        <div className="flex items-start gap-3">
-          <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
-            {index + 1}
-          </span>
-          <h3
-            id={headingId}
-            className="pt-1 text-base font-black leading-6 text-foreground sm:text-lg"
-          >
-            {question}
-          </h3>
+      <div
+        className={`p-4 sm:p-5 ${media ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]" : ""}`}
+      >
+        <div className="contents">
+          <div className="flex items-start gap-3 md:col-start-1">
+            <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-black text-primary">
+              {index + 1}
+            </span>
+            <h3
+              id={headingId}
+              className="pt-1 text-base font-black leading-6 text-foreground sm:text-lg"
+            >
+              {question}
+            </h3>
+          </div>
+
+          <ChoiceOptionGroup
+            className={`md:col-start-1 md:row-start-2 mt-3 sm:mt-5 ${
+              options.every((option) => !option.secondary && option.accessibleLabel.length <= 18)
+                ? answerLayout(options.map((option) => option.accessibleLabel))
+                : `grid gap-2 ${optionColumns === "two" ? "sm:grid-cols-2" : ""}`
+            }`}
+            label={typeof question === "string" ? question : t("help.chooseAnswer")}
+            options={options}
+            value={value}
+            onChange={(val) => {
+              if (val === correctValue) {
+                playCorrectSound();
+              } else {
+                playIncorrectSound();
+              }
+              onChange(val);
+            }}
+            disabled={answered}
+            correctValue={correctValue}
+            revealFeedback={answered}
+          />
         </div>
-
-        {media && <div className="mt-5">{media}</div>}
-
-        <ChoiceOptionGroup
-          className={`mt-3 sm:mt-5 ${
-            options.every((option) => !option.secondary && option.accessibleLabel.length <= 18)
-              ? answerLayout(options.map((option) => option.accessibleLabel))
-              : `grid gap-2 ${optionColumns === "two" ? "sm:grid-cols-2" : ""}`
-          }`}
-          label={typeof question === "string" ? question : t("help.chooseAnswer")}
-          options={options}
-          value={value}
-          onChange={(val) => {
-            if (val === correctValue) {
-              playCorrectSound();
-            } else {
-              playIncorrectSound();
-            }
-            onChange(val);
-          }}
-          disabled={answered}
-          correctValue={correctValue}
-          revealFeedback={answered}
-        />
+        {media && (
+          <div className="row-start-2 min-w-0 self-start md:col-start-2 md:row-start-1 md:row-span-2">
+            {media}
+          </div>
+        )}
       </div>
 
       {answered && (

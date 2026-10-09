@@ -233,7 +233,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
             return (
               <div
                 key={pIdx}
-                className={`relative rounded-2xl border p-2 pe-14 sm:p-4 sm:pe-16 transition-colors ${paragraphIsPlaying ? "border-primary bg-primary/5 shadow-wp-xs" : "border-transparent hover:border-border hover:bg-muted/30"}`}
+                className={`relative rounded-2xl border p-2 pe-14 sm:p-4 sm:pe-16 transition-colors ${paragraphIsPlaying ? "border-primary bg-secondary shadow-wp-xs" : "border-transparent hover:border-border hover:bg-muted/30"}`}
               >
                 <p>
                   <TimedPassageText
@@ -285,7 +285,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         </div>
 
         {/* "In Short" Core Synthesis Box */}
-        <div className="mt-4 rounded-2xl border-2 border-primary/30 bg-primary/5 p-5 sm:p-6 shadow-wp-xs">
+        <div className="mt-4 rounded-2xl border-2 border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
           {/* Header row */}
           <div className="flex items-center gap-2 text-primary font-black text-sm uppercase tracking-widest">
             <CheckCircle2 className="size-4 shrink-0" aria-hidden />
@@ -327,7 +327,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         {/* Selected Vocab Inline Helper Card */}
         {selectedVocabItem && (
           <div
-            className="rounded-2xl border-2 border-primary/35 bg-primary/5 p-4 shadow-wp-xs animate-in fade-in slide-in-from-bottom-2"
+            className="rounded-2xl border-2 border-primary/35 bg-secondary p-4 shadow-wp-xs animate-in fade-in slide-in-from-bottom-2"
             role="region"
             aria-live="polite"
             aria-label={t("conversation.learnWord", { word: selectedVocabItem.term })}
@@ -335,7 +335,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
             <div className="flex items-center justify-between">
               <span className="font-black text-foreground text-base">{selectedVocabItem.term}</span>
               {selectedVocabItem.type && (
-                <span className="text-sm font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                <span className="text-sm font-bold text-primary bg-secondary px-2 py-0.5 rounded-full">
                   {selectedVocabItem.type}
                 </span>
               )}
@@ -373,7 +373,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueLanguageBank")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

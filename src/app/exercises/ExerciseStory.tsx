@@ -194,7 +194,7 @@ export const ExerciseStory = memo(function ExerciseStory({
               "cursor-pointer inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md font-bold not-italic transition-all mx-0.5 border " +
               (activeWordId === matchedWord.id
                 ? "bg-primary text-primary-foreground scale-105 border-primary"
-                : "bg-primary/10 text-primary hover:bg-primary/20 border-primary/30")
+                : "bg-secondary text-primary hover:bg-secondary border-primary/30")
             }
           >
             <mark className="bg-transparent text-inherit font-bold not-italic p-0 m-0">{seg}</mark>
@@ -325,7 +325,7 @@ export const ExerciseStory = memo(function ExerciseStory({
           ref={nextBtnRef}
           type="button"
           onClick={() => setActiveSection("visual-flow")}
-          className="flex items-center justify-center gap-2 w-full min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+          className="flex items-center justify-center gap-2 w-full min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
         >
           <span>{t("story.nextVisualFlow")}</span>
           <ArrowRight className="size-5" aria-hidden />
@@ -346,7 +346,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             ref={nextBtnRef}
             type="button"
             onClick={() => setActiveSection("dialogue")}
-            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <span>
               {usageData?.usage?.scenes?.length
@@ -372,7 +372,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             ref={nextBtnRef}
             type="button"
             onClick={() => setActiveSection("story-tales")}
-            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <span>{t("story.nextStory")}</span>
             <ArrowRight className="size-5" aria-hidden />
@@ -397,7 +397,7 @@ export const ExerciseStory = memo(function ExerciseStory({
               setActiveSection("story-quiz");
               setActiveQuizIndex(0);
             }}
-            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <span>{t("story.nextQuiz")}</span>
             <ArrowRight className="size-5" aria-hidden />
@@ -419,7 +419,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             ref={nextBtnRef}
             type="button"
             onClick={() => dispatch({ type: "LESSON_NEXT" })}
-            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <span>{t("story.completeAndContinue")}</span>
             <ArrowRight className="size-5" aria-hidden />
@@ -533,7 +533,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                 : "text-muted-foreground hover:text-foreground")
             }
           >
-            <Sparkles className="size-3.5 shrink-0 text-wp-amber" aria-hidden />
+            <Sparkles className="size-3.5 shrink-0 text-wp-amber-foreground" aria-hidden />
             <span className="truncate">{t("story.tabStory")}</span>
           </button>
 
@@ -570,7 +570,7 @@ export const ExerciseStory = memo(function ExerciseStory({
 
                 <div className="absolute bottom-3 start-4 end-4 flex items-end justify-between gap-3">
                   <div>
-                    <span className="text-[11px] font-sans font-bold uppercase tracking-wider text-wp-amber flex items-center gap-1">
+                    <span className="text-[11px] font-sans font-bold uppercase tracking-wider text-wp-amber-foreground flex items-center gap-1">
                       <Sparkles className="size-3" />
                       <span>{t("story.inContext", { group: group.name })}</span>
                     </span>
@@ -593,7 +593,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       "flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm shadow-lg transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary cursor-pointer " +
                       (isPlaying
                         ? "bg-wp-rose text-wp-text-on-rose hover:bg-wp-rose/90 motion-safe:animate-pulse"
-                        : "bg-primary text-primary-foreground hover:opacity-90")
+                        : "bg-primary text-primary-foreground ")
                     }
                   >
                     {isPlaying ? (
@@ -681,7 +681,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                         type="button"
                         onClick={() => handlePlayWord(item.label, item.id)}
                         aria-label={t("story.listenToWord", { word: item.label })}
-                        className="absolute bottom-1.5 end-1.5 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
+                        className="absolute bottom-1.5 end-1.5 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform motion-safe:active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
                       >
                         <Volume2 className="size-3.5" aria-hidden />
                       </button>
@@ -723,7 +723,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       </h3>
                     </div>
                     {usageData.usage.canDoStatement && (
-                      <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                      <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-secondary text-primary border border-primary/20">
                         {usageData.usage.canDoStatement}
                       </span>
                     )}
@@ -731,7 +731,7 @@ export const ExerciseStory = memo(function ExerciseStory({
 
                   {usageData.usage.goal && (
                     <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-secondary/70 border border-border text-xs sm:text-sm">
-                      <span className="shrink-0 font-bold text-primary px-2 py-0.5 rounded-full bg-primary/15">
+                      <span className="shrink-0 font-bold text-primary px-2 py-0.5 rounded-full bg-secondary">
                         {t("story.usageGoalBadge")}
                       </span>
                       <p className="text-foreground font-medium leading-relaxed">
@@ -811,7 +811,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                                 type="button"
                                 onClick={() => handlePlayWord(wordLabel, matchedItem?.id)}
                                 aria-label={t("story.listenToWord", { word: wordLabel })}
-                                className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl border border-primary/30 bg-primary/10 text-primary font-bold text-xs hover:bg-primary/20 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                                className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl border border-primary/30 bg-secondary text-primary font-bold text-xs hover:bg-secondary transition-colors cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
                               >
                                 <span>{wordLabel}</span>
                                 <Volume2 className="size-3.5 opacity-70" aria-hidden />
@@ -832,7 +832,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                               isPlaying ? t("story.stopStoryAudio") : t("exercise.listenSentence")
                             }
                             aria-pressed={isPlaying}
-                            className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-xs transition-opacity"
+                            className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-xs transition-opacity"
                           >
                             <Volume2 className="size-4" aria-hidden />
                           </button>
@@ -973,7 +973,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                                 <button
                                   type="button"
                                   onClick={() => setActiveChunkIndex((i) => i + 1)}
-                                  className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-primary-foreground text-xs font-bold hover:opacity-90 transition-opacity cursor-pointer shadow-xs"
+                                  className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-primary-foreground text-xs font-bold transition-opacity cursor-pointer shadow-xs"
                                 >
                                   <span>
                                     {t("story.chunkLabel", {
@@ -1029,13 +1029,13 @@ export const ExerciseStory = memo(function ExerciseStory({
                               type="button"
                               onClick={() => speak(phrase.phrase)}
                               aria-label={t("story.usagePhraseListen", { phrase: phrase.phrase })}
-                              className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-wp-card text-primary hover:bg-primary/10 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                              className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-wp-card text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
                             >
                               <Volume2 className="size-4" aria-hidden />
                             </button>
                           </div>
                           <div className="flex flex-wrap gap-1.5">
-                            <span className="w-fit rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
+                            <span className="w-fit rounded-full bg-secondary px-2 py-0.5 text-[11px] font-semibold text-primary">
                               {t(`story.usagePhraseKinds.${phrase.kind}`)}
                             </span>
                             <span className="w-fit rounded-full border border-border bg-wp-card px-2 py-0.5 text-[11px] font-semibold text-foreground">
@@ -1076,7 +1076,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                         aria-expanded={showOptionalPhrases}
                         aria-controls="usage-phrase-cards"
                         onClick={() => setShowOptionalPhrases((current) => !current)}
-                        className="inline-flex min-h-[44px] w-fit items-center rounded-xl border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-bold text-primary hover:bg-primary/20 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        className="inline-flex min-h-[44px] w-fit items-center rounded-xl border border-primary/30 bg-secondary px-4 py-2 text-sm font-bold text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         {showOptionalPhrases
                           ? t("story.usagePhraseHideOptional")
@@ -1111,7 +1111,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                         .join(". ");
                       speak(fullDialogue);
                     }}
-                    className="flex min-h-11 items-center gap-1.5 rounded-xl border border-primary/20 bg-secondary px-3 py-1.5 font-sans text-xs font-bold text-primary hover:bg-primary/10 cursor-pointer"
+                    className="flex min-h-11 items-center gap-1.5 rounded-xl border border-primary/20 bg-secondary px-3 py-1.5 font-sans text-xs font-bold text-primary hover:bg-secondary cursor-pointer"
                   >
                     <Play className="size-3.5" />
                     <span>{t("story.playDialogue")}</span>
@@ -1145,7 +1145,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                           onClick={() => speak(line.text)}
                           aria-label={"Play line by " + line.speaker}
                           className={
-                            "size-11 rounded-lg flex items-center justify-center shrink-0 transition-opacity hover:opacity-80 cursor-pointer " +
+                            "size-11 rounded-lg flex items-center justify-center shrink-0 transition-opacity cursor-pointer " +
                             (line.speaker === "Alex"
                               ? "bg-wp-card text-primary border border-border"
                               : "bg-white/20 text-white")
@@ -1158,7 +1158,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   ))}
                 </div>
 
-                <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center gap-3.5 mt-2">
+                <div className="bg-secondary border border-primary/20 rounded-2xl p-4 flex items-center gap-3.5 mt-2">
                   <div className="size-10 rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0">
                     <Sparkles className="size-5" />
                   </div>
@@ -1183,7 +1183,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             <div className="bg-gradient-to-r from-primary/15 via-secondary to-primary/10 border border-primary/20 rounded-3xl p-5 sm:p-6 flex flex-col gap-3">
               <div className="flex items-center justify-between flex-wrap gap-2">
                 <div className="flex items-center gap-2">
-                  <span className="size-8 rounded-xl bg-wp-amber/20 text-wp-amber flex items-center justify-center">
+                  <span className="size-8 rounded-xl bg-wp-amber/20 text-wp-amber-foreground flex items-center justify-center">
                     <Sparkles className="size-4" />
                   </span>
                   <div>
@@ -1209,7 +1209,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                     "flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm shadow-sm transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary cursor-pointer " +
                     (isPlaying
                       ? "bg-wp-rose text-wp-text-on-rose motion-safe:animate-pulse"
-                      : "bg-primary text-primary-foreground hover:opacity-90")
+                      : "bg-primary text-primary-foreground ")
                   }
                 >
                   {isPlaying ? (
@@ -1261,7 +1261,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                           className={
                             "flex items-center gap-1 px-2.5 py-1 min-h-[44px] rounded-xl font-sans font-semibold text-xs border transition-colors cursor-pointer " +
                             (expandedTranslations[idx]
-                              ? "bg-primary/10 text-primary border-primary/30"
+                              ? "bg-secondary text-primary border-primary/30"
                               : "bg-secondary text-muted-foreground border-border hover:text-foreground")
                           }
                         >
@@ -1278,7 +1278,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                         type="button"
                         onClick={() => speak(passage.title + ". " + passage.text)}
                         aria-label={t("story.listenToPassage", { title: passage.title })}
-                        className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors cursor-pointer"
+                        className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-secondary flex items-center justify-center shrink-0 transition-colors cursor-pointer"
                       >
                         <Volume2 className="size-4" />
                       </button>
@@ -1296,7 +1296,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       className="bg-secondary/60 border border-border rounded-2xl p-3.5 mt-1 animate-fadeIn"
                       dir="rtl"
                     >
-                      <p className="font-arabic text-sm text-foreground/90 leading-relaxed">
+                      <p className="font-arabic text-sm text-foreground leading-relaxed">
                         {passage.textArabic}
                       </p>
                     </div>
@@ -1316,7 +1316,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-3">
               <div className="flex items-center justify-between flex-wrap gap-2">
                 <div className="flex items-center gap-2.5">
-                  <span className="size-10 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <span className="size-10 rounded-2xl bg-secondary text-primary flex items-center justify-center shrink-0">
                     <HelpCircle className="size-5" />
                   </span>
                   <div>
@@ -1330,7 +1330,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                 </div>
 
                 <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-xl border border-border">
-                  <Award className="size-4 text-wp-amber" />
+                  <Award className="size-4 text-wp-amber-foreground" />
                   <span className="font-sans font-bold text-xs text-foreground">
                     {t("story.quizScore", { score, total: storyBundle.quiz.length })}
                   </span>
@@ -1383,7 +1383,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                 <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
                   {/* Question Header */}
                   <div className="flex items-center justify-between flex-wrap gap-2">
-                    <span className="text-xs font-sans font-bold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                    <span className="text-xs font-sans font-bold text-primary bg-secondary px-3 py-1 rounded-full border border-primary/20">
                       {t("exercise.questionOf", {
                         current: activeQuizIndex + 1,
                         total: storyBundle.quiz.length,
@@ -1393,7 +1393,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                     <span className="text-xs font-sans font-bold text-muted-foreground bg-secondary px-2.5 py-1 rounded-full border border-border flex items-center gap-1">
                       {isVocabQuestion ? (
                         <>
-                          <Sparkles className="size-3 text-wp-amber" />
+                          <Sparkles className="size-3 text-wp-amber-foreground" />
                           <span>{t("story.vocabFocus")}</span>
                         </>
                       ) : (
@@ -1478,7 +1478,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       </p>
                       {currentQ.explanationArabic && (
                         <p
-                          className="font-arabic text-xs sm:text-sm text-muted-foreground/90 mt-1 pt-1.5 border-t border-border/40 leading-relaxed"
+                          className="font-arabic text-xs sm:text-sm text-muted-foreground mt-1 pt-1.5 border-t border-border/40 leading-relaxed"
                           dir="rtl"
                         >
                           {currentQ.explanationArabic}
@@ -1507,7 +1507,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                             Math.min(storyBundle.quiz.length - 1, prev + 1)
                           )
                         }
-                        className="px-5 py-2 min-h-[44px] rounded-xl font-sans font-bold text-xs bg-primary text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-1.5"
+                        className="px-5 py-2 min-h-[44px] rounded-xl font-sans font-bold text-xs bg-primary text-primary-foreground transition-opacity cursor-pointer flex items-center gap-1.5"
                       >
                         <span>{t("story.nextQuestion")}</span>
                         <ChevronRight className="size-4" />

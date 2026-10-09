@@ -1,3 +1,4 @@
+import { LanguageInsightCard } from "../../shared/LanguageInsightCard";
 import { useMemo, useState } from "react";
 import { Check, Image as ImageIcon, Volume2 } from "lucide-react";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
@@ -82,7 +83,7 @@ function AudioAction({ text }: { text: string }) {
       onClick={() => speak(text, undefined, getCurriculumAudioKey(text) ?? undefined)}
       aria-busy={isPlaying}
       aria-label={t("hadith.playVocabulary", { word: text })}
-      className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-primary px-3 text-base font-black text-primary hover:bg-primary/10 active:bg-primary/15 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-primary px-3 text-base font-black text-primary hover:bg-secondary active:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
     >
       <Volume2 className="size-4" aria-hidden />
       <span className="hidden sm:inline">
@@ -245,29 +246,22 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
             </tbody>
           </table>
         </div>
-        <div className="mt-5 grid gap-3 md:grid-cols-3">
-          <aside className="rounded-2xl bg-muted p-4">
-            <p className="text-sm font-black uppercase text-primary">{t("hadith.wordFamily")}</p>
-            <p className="mt-2 font-bold" lang="en" dir="ltr">
-              {valueAfter(lines, /^word family$/i)}
-            </p>
-          </aside>
-          <aside className="rounded-2xl bg-muted p-4">
-            <p className="text-sm font-black uppercase text-primary">
-              {t("hadith.synonymContrast")}
-            </p>
-            <p className="mt-2 text-base font-semibold" lang="en" dir="ltr">
-              {valueAfter(lines, /^synonym \/ contrast$/i)}
-            </p>
-          </aside>
-          <aside className="rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4">
-            <p className="text-sm font-black uppercase text-feedback-warning-foreground">
-              {t("hadith.commonError")}
-            </p>
-            <p className="mt-2 text-base font-semibold" lang="en" dir="ltr">
-              {valueAfter(lines, /^common error$/i)}
-            </p>
-          </aside>
+        <div className="mt-4 grid items-start gap-3 md:grid-cols-3">
+          <LanguageInsightCard
+            kind="family"
+            title={t("hadith.wordFamily")}
+            text={valueAfter(lines, /^word family$/i)}
+          />
+          <LanguageInsightCard
+            kind="contrast"
+            title={t("hadith.synonymContrast")}
+            text={valueAfter(lines, /^synonym \/ contrast$/i)}
+          />
+          <LanguageInsightCard
+            kind="error"
+            title={t("hadith.commonError")}
+            text={valueAfter(lines, /^common error$/i)}
+          />
         </div>
       </section>
 

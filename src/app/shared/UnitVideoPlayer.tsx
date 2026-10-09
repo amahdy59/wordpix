@@ -247,7 +247,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
         role="region"
         aria-label={title}
       >
-        <div className="size-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+        <div className="size-14 rounded-2xl bg-secondary text-primary flex items-center justify-center mx-auto mb-4">
           <VideoIcon className="size-7" aria-hidden="true" />
         </div>
         <h3 className="font-sans font-bold text-lg sm:text-xl text-foreground mb-2">{title}</h3>
@@ -357,7 +357,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
             <p className="font-bold text-base mb-2">
               {t("videoPlayer.unableToPlay") || "Unable to play video"}
             </p>
-            <p className="text-xs text-white/70 max-w-xs mb-4">
+            <p className="text-xs text-wp-text-on-panel-muted max-w-xs mb-4">
               {t("videoPlayer.loadErrorDesc") ||
                 "The media asset could not be loaded. Please check your network or try again."}
             </p>
@@ -367,7 +367,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
                 setHasError(false);
                 videoRef.current?.load();
               }}
-              className="min-h-[44px] px-4 py-2 bg-primary text-primary-foreground rounded-xl text-sm font-semibold hover:opacity-90 focus-visible:ring-2 focus-visible:ring-ring"
+              className="min-h-[44px] px-4 py-2 bg-primary text-primary-foreground rounded-xl text-sm font-semibold focus-visible:ring-2 focus-visible:ring-ring"
             >
               {t("videoPlayer.retry") || "Retry"}
             </button>
@@ -435,7 +435,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
               aria-valuemax={Math.floor(duration)}
               aria-valuenow={Math.floor(currentTime)}
               aria-valuetext={`${formatTime(currentTime)} of ${formatTime(duration)}`}
-              className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="w-full min-h-11 bg-muted rounded-lg cursor-pointer accent-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             />
           </div>
           <span
@@ -459,7 +459,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
                   ? t("videoPlayer.pause") || "Pause video"
                   : t("videoPlayer.play") || "Play video"
               }
-              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center bg-primary text-primary-foreground hover:opacity-90 active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
+              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center bg-primary text-primary-foreground motion-safe:active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
             >
               {isPlaying ? (
                 <Pause className="size-5 fill-current" aria-hidden="true" />
@@ -473,7 +473,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
               onClick={handleRestart}
               disabled={hasError}
               aria-label={t("videoPlayer.replay") || "Replay video"}
-              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center text-foreground hover:bg-muted/60 active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
+              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center text-foreground hover:bg-muted/60 motion-safe:active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
             >
               <RotateCcw className="size-5" aria-hidden="true" />
             </button>
@@ -487,7 +487,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
                   ? t("videoPlayer.unmute") || "Unmute audio"
                   : t("videoPlayer.mute") || "Mute audio"
               }
-              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center text-foreground hover:bg-muted/60 active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
+              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center text-foreground hover:bg-muted/60 motion-safe:active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
             >
               {isMuted ? (
                 <VolumeX className="size-5 text-destructive" aria-hidden="true" />
@@ -505,7 +505,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
               onClick={handleCycleSpeed}
               disabled={hasError}
               aria-label={`${t("videoPlayer.speed") || "Playback speed"}: ${playbackRate}x`}
-              className="min-h-[44px] px-3 rounded-xl flex items-center justify-center text-xs font-mono font-bold text-foreground border border-border hover:bg-muted/60 active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
+              className="min-h-[44px] px-3 rounded-xl flex items-center justify-center text-xs font-mono font-bold text-foreground border border-border hover:bg-muted/60 motion-safe:active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50"
             >
               {`${playbackRate}x`}
             </button>
@@ -578,7 +578,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
                   aria-label={`${cue.speaker ? cue.speaker + ": " : ""}${cue.textEn}. Jump to ${formatTime(cue.startTime)}`}
                   className={`w-full text-start p-2.5 sm:p-3 rounded-2xl border transition-all flex flex-col gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                     isActive
-                      ? "bg-primary/10 border-primary shadow-xs"
+                      ? "bg-secondary border-primary shadow-xs"
                       : "bg-wp-card border-border/70 hover:border-primary/40 hover:bg-muted/40"
                   }`}
                 >
@@ -603,7 +603,7 @@ export const UnitVideoPlayer = memo(function UnitVideoPlayer({
                       {cue.keywords.map((kw) => (
                         <span
                           key={kw}
-                          className="px-2 py-0.5 bg-primary/15 text-primary text-[11px] font-semibold rounded-md"
+                          className="px-2 py-0.5 bg-secondary text-primary text-[11px] font-semibold rounded-md"
                         >
                           {kw}
                         </span>

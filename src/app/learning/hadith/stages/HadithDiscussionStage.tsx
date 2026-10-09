@@ -53,7 +53,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
           <li key={`${index}-${item.question}`}>
             <article className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs">
               <div className="flex items-start gap-4 p-5 sm:p-6">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 font-black text-primary">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary font-black text-primary">
                   {index + 1}
                 </span>
                 <div className="min-w-0 flex-1">
@@ -71,7 +71,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
 
               <details className="group border-t border-border bg-muted/20">
                 <summary
-                  className={`flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-5 py-3 font-black text-primary hover:bg-primary/5 sm:px-6 ${focusRing}`}
+                  className={`flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-5 py-3 font-black text-primary hover:bg-secondary sm:px-6 ${focusRing}`}
                 >
                   <span className="inline-flex items-center gap-2">
                     <Lightbulb className="size-4" aria-hidden />

@@ -61,6 +61,11 @@ Run in order; fix failures before moving on:
 
 ## Guidance Documents
 
+Every shipped software update must add an English and Arabic entry to the
+permanent release history in `src/app/data/releaseNotes.json` and regenerate
+`public/release-notes.json`. Preserve earlier entries. Follow
+[`docs/RELEASE_NOTES.md`](docs/RELEASE_NOTES.md) before committing a release.
+
 Detailed production guidance docs are located in [`docs/`](docs/):
 
 - [`docs/00_README_FIRST.md`](docs/00_README_FIRST.md) — How to use the guidance pack, status labels, and core references.

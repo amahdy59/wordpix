@@ -23,10 +23,11 @@ export const Badge = memo(function Badge({
 
   const variants = {
     primary: "bg-secondary text-primary border-primary/20",
-    amber: "bg-wp-amber/10 text-wp-amber border-wp-amber/20",
-    green: "bg-wp-green-light/40 text-wp-green border-wp-green/20",
-    teal: "bg-wp-teal/10 text-wp-teal border-wp-teal/20",
-    rose: "bg-wp-rose/10 text-wp-rose border-wp-rose/20",
+    amber: "bg-wp-amber/10 text-wp-amber-foreground border-wp-amber/20",
+    green:
+      "bg-feedback-success-surface text-feedback-success-foreground border-feedback-success-border",
+    teal: "bg-wp-teal-light text-wp-teal-foreground border-wp-teal/20",
+    rose: "bg-feedback-error-surface text-feedback-error-foreground border-feedback-error-border",
     muted: "bg-muted text-muted-foreground border-border",
   };
 

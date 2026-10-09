@@ -42,7 +42,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div
-              className="size-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center"
+              className="size-10 rounded-xl bg-secondary text-primary flex items-center justify-center"
               aria-hidden
             >
               <Keyboard className="size-5" />
@@ -77,7 +77,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
         <button
           type="button"
           onClick={onClose}
-          className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
+          className="w-full bg-primary rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
         >
           {t("action.gotIt")}
         </button>

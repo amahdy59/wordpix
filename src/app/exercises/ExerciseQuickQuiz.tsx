@@ -167,7 +167,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       // is noise in the one strip of the screen reserved for what to do next.
       footer={
         <div className="w-full hidden pointer-fine:flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
-          <div className="flex items-center gap-1.5 text-wp-amber font-bold">
+          <div className="flex items-center gap-1.5 text-wp-amber-foreground font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>{t("exercise.pressNumberToChoose", { count: options.length })}</span>
           </div>
@@ -329,7 +329,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               <button
                 type="button"
                 onClick={handleContinue}
-                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
               >
                 {t("action.continue")}
                 <ArrowRight className="size-4" aria-hidden />

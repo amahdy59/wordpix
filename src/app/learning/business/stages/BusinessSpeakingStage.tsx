@@ -235,7 +235,7 @@ export function BusinessSpeakingStage({
                 key={idx}
                 className="flex items-start gap-3 rounded-xl bg-muted/30 border border-border/80 p-3.5 text-base sm:text-base font-medium text-foreground"
               >
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary">
                   {idx + 1}
                 </span>
                 <span className="pt-0.5 leading-relaxed">{step}</span>
@@ -286,8 +286,8 @@ export function BusinessSpeakingStage({
                 isRecording
                   ? "bg-destructive text-destructive-foreground animate-pulse"
                   : recordedAudioUrl
-                    ? "bg-accent/20 text-accent"
-                    : "bg-primary/15 text-primary"
+                    ? "bg-feedback-success-surface text-feedback-success-foreground"
+                    : "bg-secondary text-primary"
               }`}
             >
               <Mic className="size-6" aria-hidden />
@@ -392,7 +392,7 @@ export function BusinessSpeakingStage({
           >
             {t("business.speaking.SelfEvaluationChecklist")}
           </h2>
-          <span className="text-sm font-bold text-accent">
+          <span className="text-sm font-bold text-feedback-success-foreground">
             {t("business.speaking.checklistCompletedCount", {
               completed: checkedItems.size,
               total: unit.speakingTask.checklist.length,
@@ -415,12 +415,15 @@ export function BusinessSpeakingStage({
                 onClick={() => toggleCheck(item)}
                 className={`flex items-start gap-3.5 rounded-2xl p-4 text-start transition-all border ${
                   isChecked
-                    ? "border-accent/40 bg-accent/10 text-foreground"
+                    ? "border-accent/40 bg-feedback-success-surface text-foreground"
                     : "border-border bg-muted/20 text-muted-foreground hover:bg-muted/40 hover:text-foreground"
                 }`}
               >
                 {isChecked ? (
-                  <CheckSquare2 className="size-5 shrink-0 mt-0.5 text-accent" aria-hidden />
+                  <CheckSquare2
+                    className="size-5 shrink-0 mt-0.5 text-feedback-success-foreground"
+                    aria-hidden
+                  />
                 ) : (
                   <Square className="size-5 shrink-0 mt-0.5 text-muted-foreground" aria-hidden />
                 )}

@@ -35,6 +35,7 @@ describe("Hash round-tripping", () => {
       { id: "practice" },
       { id: "review" },
       { id: "profile" },
+      { id: "release-notes" },
       { id: "lesson-entry" },
       { id: "skill-hub" },
       { id: "pronunciation-curriculum" },

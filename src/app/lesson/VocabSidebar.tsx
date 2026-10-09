@@ -29,7 +29,7 @@ interface Props {
 const MASTERY_BADGES: Record<MasteryLevel, { bg: string; text: string } | null> = {
   0: null,
   1: { bg: "bg-wp-brand/10", text: "text-primary border-wp-brand/20" },
-  2: { bg: "bg-wp-amber/10", text: "text-wp-amber border-wp-amber/20" },
+  2: { bg: "bg-wp-amber/10", text: "text-wp-amber-foreground border-wp-amber/20" },
   3: { bg: "bg-wp-teal/10", text: "text-wp-teal border-wp-teal/20" },
 };
 
@@ -240,7 +240,7 @@ export const VocabSidebar = memo(function VocabSidebar({
         <button
           type="button"
           onClick={onPlayGame}
-          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
+          className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >

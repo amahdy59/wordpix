@@ -61,7 +61,7 @@ export function UpdatePrompt() {
 
             <div className="flex items-center gap-3 mb-4">
               <div className="size-10 rounded-full bg-wp-blue/10 flex items-center justify-center shrink-0">
-                <DownloadCloud className="size-5 text-wp-blue" />
+                <DownloadCloud className="size-5 text-wp-blue-foreground" />
               </div>
               <div>
                 <h3 className="font-sans font-bold text-foreground text-lg leading-tight">
@@ -74,7 +74,7 @@ export function UpdatePrompt() {
             </div>
 
             <div className="bg-secondary rounded-2xl p-4 mb-5 border border-border">
-              <div className="flex items-center gap-2 mb-2 text-wp-amber">
+              <div className="flex items-center gap-2 mb-2 text-wp-amber-foreground">
                 <Sparkles className="size-4" />
                 <span className="font-sans font-bold text-xs uppercase tracking-wider">
                   {t("updatePrompt.whatsNew")}
@@ -86,7 +86,7 @@ export function UpdatePrompt() {
                     key={idx}
                     className="font-sans text-sm text-foreground flex items-start gap-2"
                   >
-                    <span className="text-wp-blue shrink-0 mt-0.5">•</span>
+                    <span className="text-wp-blue-foreground shrink-0 mt-0.5">•</span>
                     <span className="leading-tight">{note}</span>
                   </li>
                 ))}

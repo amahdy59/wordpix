@@ -19,9 +19,9 @@ export function TaskChecklist({ items, checked, onToggle, columns = 1 }: Props) 
               role="checkbox"
               aria-checked={isChecked}
               onClick={() => onToggle(index)}
-              className={`flex min-h-12 w-full items-center gap-3.5 rounded-2xl border-2 p-4 text-start text-sm font-bold transition-all active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+              className={`flex min-h-12 w-full items-center gap-3.5 rounded-2xl border-2 p-4 text-start text-sm font-bold transition-all motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 isChecked
-                  ? "border-primary bg-primary/10 text-primary shadow-wp-sm"
+                  ? "border-primary bg-secondary text-primary shadow-wp-sm"
                   : "border-border bg-background text-foreground hover:border-primary/40 hover:bg-muted/40"
               }`}
             >

@@ -258,7 +258,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
               {(selectedStageId !== "all" || masteryFilter !== "all") && (
                 <div className="flex items-center gap-1.5 flex-wrap">
                   {selectedStageId !== "all" && (
-                    <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                    <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
                       {activeStage?.stage.label ?? selectedStageId}
                     </span>
                   )}
@@ -360,7 +360,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
           <button
             type="button"
             onClick={clearAllFilters}
-            className="text-primary underline font-bold min-h-[44px] flex items-center hover:opacity-80 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+            className="text-primary underline font-bold min-h-[44px] flex items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
           >
             {t("explore.clearSearch")}
           </button>

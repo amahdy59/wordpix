@@ -55,7 +55,7 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
             className="flex flex-col gap-2.5 rounded-2xl border border-border bg-card p-5 shadow-wp-xs hover:border-primary/40 transition-colors"
           >
             <div className="flex items-start gap-3 text-base font-bold text-foreground">
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
+              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary">
                 {idx + 1}
               </span>
               <span className="leading-snug pt-0.5">{prompt.prompt}</span>
@@ -83,6 +83,17 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
           description={t("conversation.discussionSpeakingHelp")}
         />
       )}
+      <div className="grid gap-3 md:grid-cols-3" aria-label={t("hadith.discussionLabel")}>
+        {["discussionReason", "discussionAlternative", "discussionRole"].map((key) => (
+          <article key={key} className="rounded-2xl border border-primary/25 bg-secondary p-4">
+            <MessageSquareText className="mb-3 size-6 text-primary" aria-hidden />
+            <h3 className="text-base font-bold leading-7 text-foreground">
+              {t(`courseLesson.${key}`)}
+            </h3>
+          </article>
+        ))}
+      </div>
+
       {/* Action Button */}
       <div className="flex justify-end pt-2">
         <button

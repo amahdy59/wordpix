@@ -141,7 +141,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
       title: t("masteryReview.upcoming"),
       items: upcomingList,
       Icon: CheckCircle2,
-      tint: "bg-primary/5 border-primary/20",
+      tint: "bg-secondary border-primary/20",
       note: t("masteryReview.upcomingNote"),
     },
   ];
@@ -201,7 +201,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             <ArrowRight className="size-4 shrink-0" aria-hidden />
           </button>
         </div>
-        <p className="hidden lg:block max-w-48 text-sm text-foreground bg-primary/5 rounded-xl p-4">
+        <p className="hidden lg:block max-w-48 text-sm text-foreground bg-secondary rounded-xl p-4">
           {t("masteryReview.retentionTip")}
         </p>
       </section>

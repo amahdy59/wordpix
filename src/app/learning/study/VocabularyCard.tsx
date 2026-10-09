@@ -60,11 +60,11 @@ export function VocabularyCard({
             <button
               type="button"
               onClick={onReveal}
-              className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform motion-safe:active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary transition-transform motion-safe:active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
             >
               <Eye className="size-5" aria-hidden />
               <span>{t("study.revealWord")}</span>
-              <kbd className="hidden sm:inline-flex ms-1 px-2 py-0.5 text-sm bg-primary-foreground/20 rounded font-mono font-normal">
+              <kbd className="hidden sm:inline-flex ms-1 px-2 py-0.5 text-sm bg-primary rounded font-mono font-normal">
                 {t("study.space")}
               </kbd>
             </button>
@@ -94,7 +94,7 @@ export function VocabularyCard({
               <button
                 type="button"
                 onClick={handleAudio}
-                className="size-10 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
+                className="size-10 shrink-0 rounded-xl bg-secondary text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
                 aria-label={`Listen to ${word.label}`}
                 title={`Listen to ${word.label} (Press A)`}
               >

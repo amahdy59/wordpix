@@ -48,6 +48,56 @@
 }
 
 @layer utilities {
+  /* Interpolating an inverted foreground/background pair passes through a
+     low-contrast midpoint. Switch colors together; animate geometry/shadows. */
+  :is(button, a, [role="button"])[class*="transition"],
+  :is(button, a, [role="button"]) [class*="transition"] {
+    transition-property: transform, box-shadow, border-color;
+  }
+  /* Immersive panels stay dark in both themes; their focus and warning
+     foregrounds must use the panel palette rather than the light-page palette. */
+  .bg-wp-panel :focus-visible,
+  .bg-wp-panel-raised :focus-visible {
+    outline-color: var(--wp-text-on-panel);
+  }
+  .bg-wp-panel .text-wp-amber-foreground,
+  .bg-wp-panel-raised .text-wp-amber-foreground {
+    color: var(--wp-amber);
+  }
+  input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    border-color: var(--control-border);
+  }
+  /* Keep the audio icon and fill paired, even when a caller adds color utilities. */
+  .wp-audio-button[data-audio-state] {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border-color: var(--border);
+  }
+  .wp-audio-button[data-audio-state]:disabled {
+    opacity: 1;
+  }
+
+  .wp-audio-button[data-audio-state="idle"]:hover {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border-color: var(--primary);
+  }
+
+  .wp-audio-button[data-audio-state="active"],
+  .wp-audio-button[data-audio-state="idle"]:active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+  }
+
+  .wp-audio-button[data-audio-state="error"] {
+    background-color: var(--feedback-error-surface);
+    color: var(--feedback-error-foreground);
+    border-color: var(--feedback-error-border);
+  }
+
   .wp-answer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
@@ -132,11 +182,25 @@
   }
 
   .wp-lesson-session {
+    --wp-course-nav-height: 4.5rem;
     scroll-padding-block: 12rem;
   }
 
   .wp-lesson-session :is(button, a, input, textarea, select, summary, [tabindex]) {
     scroll-margin-block: 1rem;
+  }
+
+  .wp-course-sticky {
+    isolation: isolate;
+  }
+  .wp-lesson-session :is([data-quiz-question], h2, h3) {
+    scroll-margin-block-start: calc(var(--wp-course-nav-height, 4.5rem) + 5rem);
+  }
+  @media (max-height: 28rem) {
+    .wp-course-sticky,
+    .wp-quiz-progress {
+      position: static;
+    }
   }
 
   .wp-prose {
@@ -348,7 +412,7 @@
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   a {
-    @apply cursor-pointer active:scale-[0.98] active:opacity-90 transition-transform;
+    @apply cursor-pointer motion-safe:active:scale-[0.98] motion-safe:transition-transform;
   }
   button:disabled,
   [role="button"][aria-disabled="true"] {

@@ -96,10 +96,10 @@ export function ChoiceOptionGroup<T extends string>({
                 : incorrect
                   ? "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground shadow-wp-xs"
                   : selected
-                    ? "border-primary bg-primary/10 text-foreground shadow-wp-sm"
+                    ? "border-primary bg-secondary text-foreground shadow-wp-sm"
                     : muted
-                      ? "border-border/40 bg-card/40 text-muted-foreground/60 opacity-50"
-                      : "border-border/80 bg-card text-foreground hover:border-primary/50 hover:bg-primary/5 hover:translate-y-[-1px] shadow-wp-xs"
+                      ? "border-border/40 bg-card/40 text-muted-foreground opacity-50"
+                      : "border-border/80 bg-card text-foreground hover:border-primary/50 hover:bg-secondary motion-safe:hover:translate-y-[-1px] shadow-wp-xs"
             }`}
           >
             {option.prefix && (
@@ -111,7 +111,7 @@ export function ChoiceOptionGroup<T extends string>({
                       ? "bg-feedback-error/20 text-feedback-error-foreground"
                       : selected
                         ? "bg-primary text-primary-foreground"
-                        : "bg-muted/80 text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary"
+                        : "bg-muted/80 text-muted-foreground group-hover:bg-secondary group-hover:text-primary"
                 }`}
               >
                 {option.prefix}

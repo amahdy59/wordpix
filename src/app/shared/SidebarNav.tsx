@@ -39,7 +39,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
           aria-label="WordPix Home"
           className="flex w-full items-center justify-start gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group"
         >
-          <div className="size-11 rounded-2xl bg-primary flex items-center justify-center shadow-wp-xs group-hover:opacity-90 transition-all shrink-0">
+          <div className="size-11 rounded-2xl bg-primary flex items-center justify-center shadow-wp-xs group-transition-all shrink-0">
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-xl">
@@ -66,7 +66,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
                   focus-visible:outline-primary transition-all group
                   ${
                     isActive
-                      ? "bg-primary/10 text-primary border border-transparent"
+                      ? "bg-secondary text-primary border border-transparent"
                       : "text-muted-foreground hover:bg-muted hover:text-foreground"
                   }
                 `}

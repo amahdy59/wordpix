@@ -22,7 +22,7 @@ export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Pro
   const { t } = useI18n();
   return (
     <div className="min-h-dvh bg-secondary flex flex-col items-center justify-center p-6 text-center">
-      <div className="size-24 rounded-3xl bg-primary/20 border border-primary/30 flex items-center justify-center shadow-2xl mb-4">
+      <div className="size-24 rounded-3xl bg-secondary border border-primary/30 flex items-center justify-center shadow-2xl mb-4">
         <PenTool className="size-12 text-primary" />
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">

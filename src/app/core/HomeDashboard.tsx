@@ -201,7 +201,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         wordQueue: activeLesson.wordIds,
                       })
                     }
-                    className="flex-1 w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-3.5 font-sans font-black text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 w-full bg-primary rounded-2xl py-3.5 font-sans font-black text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2"
                   >
                     <BookOpen className="size-5 shrink-0" />
                     <span>
@@ -289,7 +289,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         wordQueue: dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId),
                       })
                     }
-                    className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                    className="w-full bg-secondary hover:bg-secondary text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
                     <span>
                       {t("dashboard.reviewNowWords", {
@@ -324,7 +324,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               ) : (
                 <div
                   role="status"
-                  className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-primary/5 px-4 py-3"
+                  className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-secondary px-4 py-3"
                 >
                   <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
                   <div className="min-w-0">

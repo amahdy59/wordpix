@@ -61,7 +61,7 @@ export function PronunciationLessonInfoModal({
         {/* Modal Header */}
         <div className="flex items-start justify-between border-b border-border/60 p-5 sm:p-6">
           <div className="min-w-0 pe-4">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-0.5 text-sm font-black uppercase text-primary">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-2.5 py-0.5 text-sm font-black uppercase text-primary">
               <Volume2 className="size-3.5" aria-hidden />
               {t("pronunciation.badge", { current: lessonNumber, total: 68 })}
             </span>
@@ -104,7 +104,7 @@ export function PronunciationLessonInfoModal({
 
           {/* Articulation Guidance Callout */}
           {activity.articulationCues.length > 0 && (
-            <div className="rounded-2xl border border-primary/25 bg-primary/5 p-4">
+            <div className="rounded-2xl border border-primary/25 bg-secondary p-4">
               <div className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-primary">
                 <Sparkles className="size-4" aria-hidden />
                 <span>
@@ -152,7 +152,7 @@ export function PronunciationLessonInfoModal({
                 {activity.arabicSpeakerTip.tipEn}
               </p>
               <p
-                className="mt-2 border-t border-feedback-warning-border/50 pt-2 font-arabic text-sm sm:text-base font-semibold leading-relaxed text-foreground/85"
+                className="mt-2 border-t border-feedback-warning-border/50 pt-2 font-arabic text-sm sm:text-base font-semibold leading-relaxed text-foreground"
                 dir="rtl"
                 lang="ar"
               >
@@ -174,7 +174,7 @@ export function PronunciationLessonInfoModal({
                     className="inline-flex items-center gap-1.5 rounded-lg border border-border/80 bg-muted/40 px-2.5 py-1 text-sm font-bold text-foreground"
                   >
                     <span>{first}</span>
-                    <span className="text-muted-foreground/60">/</span>
+                    <span className="text-muted-foreground">/</span>
                     <span>{second}</span>
                   </span>
                 ))}
@@ -198,7 +198,7 @@ export function PronunciationLessonInfoModal({
               onClose();
               onStartLesson(lessonNumber);
             }}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-black text-primary-foreground shadow-wp-xs hover:opacity-90 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-black text-primary-foreground shadow-wp-xs motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Headphones className="size-4" aria-hidden />
             <span>

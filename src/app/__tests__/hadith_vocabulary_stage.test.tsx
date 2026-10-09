@@ -95,7 +95,9 @@ describe("HadithVocabularyStage Complete Language Bank", () => {
     expect(screen.getAllByText("honest apology").length).toBeGreaterThanOrEqual(1);
 
     // Sidebar should also be restored
-    expect(screen.getAllByText("repair → repairable → repaired").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByRole("heading", { name: "Word family" }).closest("aside")).toHaveTextContent(
+      /repair.*→.*repairable.*→.*repaired/
+    );
   });
 
   it("renders 10 rows accurately for Hadith 1", () => {

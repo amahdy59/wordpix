@@ -14,7 +14,7 @@ function getRegisterBadge(register?: string) {
       return {
         labelKey: "wordDetails.registerFormal",
         defaultLabel: "Formal",
-        color: "bg-primary/10 text-primary border-primary/30",
+        color: "bg-secondary text-primary border-primary/30",
       };
     case "casual":
       return {
@@ -114,7 +114,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
               className="size-full object-cover object-center"
             />
           ) : (
-            <div className="flex size-full items-center justify-center bg-gradient-to-br from-primary/20 via-primary/5 to-muted text-muted-foreground/60">
+            <div className="flex size-full items-center justify-center bg-gradient-to-br from-primary/20 via-primary/5 to-muted text-muted-foreground">
               <ImageIcon className="size-16" aria-hidden="true" />
             </div>
           )}
@@ -125,7 +125,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
                 {item.type && (
-                  <span className="inline-block rounded-md bg-primary/25 text-foreground text-xs font-black uppercase tracking-wider px-2.5 py-0.5 backdrop-blur-sm border border-primary/40 shadow-xs">
+                  <span className="inline-block rounded-md bg-secondary text-foreground text-xs font-black uppercase tracking-wider px-2.5 py-0.5 backdrop-blur-sm border border-primary/40 shadow-xs">
                     {item.type}
                   </span>
                 )}
@@ -168,7 +168,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                   t("vocabulary.playPronunciation", { term: item.term }) || `Listen to ${item.term}`
                 }
                 disabled={audio.status === "loading"}
-                className={`flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-2xl font-black text-xs sm:text-sm shadow-wp-md transition-all active:scale-95 cursor-pointer shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-2xl font-black text-xs sm:text-sm shadow-wp-md transition-all motion-safe:active:scale-95 cursor-pointer shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   audio.isPlaying
                     ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"
                     : "bg-primary text-primary-foreground hover:brightness-105"
@@ -246,7 +246,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                     key={idx}
                     type="button"
                     onClick={() => audio.speak(col)}
-                    className="flex items-center gap-1.5 px-3 py-1.5 min-h-[44px] rounded-xl bg-card hover:bg-primary/10 text-foreground text-xs sm:text-sm font-semibold border border-border hover:border-primary/40 active:scale-95 transition-all cursor-pointer focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                    className="flex items-center gap-1.5 px-3 py-1.5 min-h-[44px] rounded-xl bg-card hover:bg-secondary text-foreground text-xs sm:text-sm font-semibold border border-border hover:border-primary/40 motion-safe:active:scale-95 transition-all cursor-pointer focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
                     aria-label={`Listen to combination: ${col}`}
                   >
                     <span>{col}</span>
@@ -265,7 +265,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
               item.wordFamily.adj ||
               item.wordFamily.adv
             ) && (
-              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4">
+              <div className="rounded-2xl border border-primary/20 bg-secondary p-4">
                 <span className="text-xs font-black uppercase tracking-wider text-primary flex items-center gap-1.5 mb-2.5">
                   <Sparkles className="size-3.5" aria-hidden="true" />
                   <span>{t("wordDetails.wordFamily") || "Word Family"}</span>
@@ -357,7 +357,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
           <button
             type="button"
             onClick={onClose}
-            className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-bold text-sm shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-bold text-sm shadow-wp-xs hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             {t("action.done") || "Done"}
           </button>

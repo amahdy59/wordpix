@@ -186,6 +186,8 @@ export function describeScreen(
       return t("dashboard.review");
     case "profile":
       return t("nav.profile");
+    case "release-notes":
+      return t("releaseNotes.pageTitle");
     case "lesson":
       return t("lesson.stageProgress", {
         current: screen.step + 1,

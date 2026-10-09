@@ -1,3 +1,4 @@
+import { LanguageInsightCard } from "./LanguageInsightCard";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { BookOpen, Image as ImageIcon, LayoutGrid, Maximize2, Table, X } from "lucide-react";
@@ -196,7 +197,7 @@ export function CurriculumVocabularyTable({
                   return (
                     <tr
                       key={item.id}
-                      className={`transition-colors hover:bg-primary/5 ${
+                      className={`transition-colors hover:bg-secondary ${
                         isEven ? "bg-card" : "bg-muted/20"
                       }`}
                     >
@@ -268,7 +269,7 @@ export function CurriculumVocabularyTable({
                               isError={isItemError}
                               label={t("vocabulary.playPronunciation", { term: item.term })}
                               size="sm"
-                              className="rounded-lg bg-primary/10 text-primary hover:bg-primary/20"
+                              className="rounded-lg bg-secondary text-primary hover:bg-secondary"
                             />
                           )}
                         </div>
@@ -464,16 +465,16 @@ export function CurriculumVocabularyTable({
                         <span
                           dir="rtl"
                           lang="ar"
-                          className="font-arabic text-3xl font-extrabold text-primary/85 leading-normal drop-shadow-sm transition-transform duration-300 motion-safe:group-hover:scale-105"
+                          className="font-arabic text-3xl font-extrabold text-primary leading-normal drop-shadow-sm transition-transform duration-300 motion-safe:group-hover:scale-105"
                         >
                           {item.termAr}
                         </span>
                       ) : (
-                        <div className="flex size-14 items-center justify-center rounded-2xl bg-primary/10 text-primary mb-2 shadow-wp-xs">
+                        <div className="flex size-14 items-center justify-center rounded-2xl bg-secondary text-primary mb-2 shadow-wp-xs">
                           <BookOpen className="size-7" aria-hidden="true" />
                         </div>
                       )}
-                      <span className="mt-2 text-sm font-black uppercase tracking-widest text-muted-foreground/80">
+                      <span className="mt-2 text-sm font-black uppercase tracking-widest text-muted-foreground">
                         {item.term}
                       </span>
                       <span className="mt-2 text-base font-semibold text-foreground">
@@ -513,7 +514,7 @@ export function CurriculumVocabularyTable({
                           isError={isItemError}
                           label={t("vocabulary.playPronunciation", { term: item.term })}
                           size="sm"
-                          className="rounded-lg bg-primary/10 text-primary hover:bg-primary/20"
+                          className="rounded-lg bg-secondary text-primary hover:bg-secondary"
                         />
                       )}
                     </div>
@@ -544,38 +545,27 @@ export function CurriculumVocabularyTable({
 
       {/* ── Pedagogical Sidebars: Word Family, Contrast, Common Error ── */}
       {sidebars && (sidebars.wordFamily || sidebars.meaningContrast || sidebars.commonError) && (
-        <div className="grid gap-3.5 sm:grid-cols-3 pt-2">
+        <div className="grid items-start gap-3 pt-2 md:grid-cols-3">
           {sidebars.wordFamily && (
-            <aside className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs">
-              <p className="text-sm font-black uppercase tracking-wider text-primary">
-                {t("hadith.wordFamily") || "Word family"}
-              </p>
-              <p className="mt-2 text-base font-bold text-foreground" lang="en">
-                {sidebars.wordFamily}
-              </p>
-            </aside>
+            <LanguageInsightCard
+              kind="family"
+              title={t("hadith.wordFamily")}
+              text={sidebars.wordFamily}
+            />
           )}
-
           {sidebars.meaningContrast && (
-            <aside className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs">
-              <p className="text-sm font-black uppercase tracking-wider text-primary">
-                {t("hadith.synonymContrast") || "Meaning contrast"}
-              </p>
-              <p className="mt-2 text-base font-semibold text-muted-foreground" lang="en">
-                {sidebars.meaningContrast}
-              </p>
-            </aside>
+            <LanguageInsightCard
+              kind="contrast"
+              title={t("hadith.synonymContrast")}
+              text={sidebars.meaningContrast}
+            />
           )}
-
           {sidebars.commonError && (
-            <aside className="rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4 shadow-wp-xs">
-              <p className="text-sm font-black uppercase tracking-wider text-feedback-warning-foreground">
-                {t("hadith.commonError") || "Common error"}
-              </p>
-              <p className="mt-2 text-base font-semibold text-foreground" lang="en">
-                {sidebars.commonError}
-              </p>
-            </aside>
+            <LanguageInsightCard
+              kind="error"
+              title={t("hadith.commonError")}
+              text={sidebars.commonError}
+            />
           )}
         </div>
       )}
@@ -629,7 +619,7 @@ export function CurriculumVocabularyTable({
                 <div className="absolute bottom-4 start-6 end-6 flex items-end justify-between gap-3">
                   <div>
                     {activeModalItem.type && (
-                      <span className="inline-block rounded-md bg-primary/20 text-primary-foreground text-sm font-black uppercase tracking-wider px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/30">
+                      <span className="inline-block rounded-md bg-secondary text-primary-foreground text-sm font-black uppercase tracking-wider px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/30">
                         {activeModalItem.type}
                       </span>
                     )}
@@ -658,7 +648,7 @@ export function CurriculumVocabularyTable({
                       isError={isTermError(activeModalItem.term)}
                       label={t("vocabulary.playPronunciation", { term: activeModalItem.term })}
                       size="md"
-                      className="rounded-2xl bg-primary text-primary-foreground shadow-wp-md hover:opacity-95"
+                      className="rounded-2xl bg-primary text-primary-foreground shadow-wp-md "
                     />
                   )}
                 </div>
@@ -677,7 +667,7 @@ export function CurriculumVocabularyTable({
                     <p
                       dir="rtl"
                       lang="ar"
-                      className="mt-1 text-base font-semibold font-arabic leading-relaxed text-muted-foreground/80"
+                      className="mt-1 text-base font-semibold font-arabic leading-relaxed text-muted-foreground"
                     >
                       {activeModalItem.definitionAr}
                     </p>

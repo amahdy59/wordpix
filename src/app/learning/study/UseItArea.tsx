@@ -69,7 +69,7 @@ export function UseItArea({
     return (
       <div className="wp-container-content wp-layout-gutter space-y-6 py-4 sm:py-6 md:py-8">
         <div>
-          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
+          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-secondary px-3 py-1 rounded-full inline-block">
             {t("study.useInContext")}
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground mt-2">
@@ -90,7 +90,7 @@ export function UseItArea({
                 className="w-full text-start p-5 sm:p-6 rounded-3xl border border-border bg-card hover:bg-secondary/40 transition-all hover:border-primary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs group"
               >
                 <div className="flex items-center gap-3.5 mb-3">
-                  <span className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <span className="p-3 rounded-2xl bg-secondary text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <Icon className="size-5" aria-hidden />
                   </span>
                   <h2 className="font-bold text-lg text-foreground">{n.title}</h2>
@@ -117,7 +117,7 @@ export function UseItArea({
       {/* Activity Header with Learning Goal */}
       <div className="border-b border-border/70 pb-3.5 sm:pb-5">
         <div className="flex items-center gap-2.5 sm:gap-3.5 mb-1.5 sm:mb-2">
-          <span className="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-primary/10 text-primary shrink-0 shadow-2xs">
+          <span className="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-secondary text-primary shrink-0 shadow-2xs">
             <Icon className="size-5 sm:size-6" aria-hidden />
           </span>
           <div className="min-w-0">
@@ -171,7 +171,7 @@ export function UseItArea({
               onCompleteNode(node.id);
               onSelectNode(nextNode.id);
             }}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-base font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-base font-bold hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>{nextNode.title}</span>
             <ArrowRight className="size-4" aria-hidden />
@@ -179,7 +179,7 @@ export function UseItArea({
         ) : (
           <button
             onClick={onNextActivity}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-base font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-base font-bold hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>{t("study.continueNext")}</span>
             <ArrowRight className="size-4" aria-hidden />

@@ -82,7 +82,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
     <article
       className={`group relative flex h-full flex-col justify-between rounded-3xl border bg-card shadow-wp-xs transition-all ${
         isCurrent
-          ? "border-primary/60 bg-primary/5 shadow-wp-sm"
+          ? "border-primary/60 bg-secondary shadow-wp-sm"
           : "border-border hover:border-primary/50 hover:shadow-wp-sm"
       } ${className}`}
     >

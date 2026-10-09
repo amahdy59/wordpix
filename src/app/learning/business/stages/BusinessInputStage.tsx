@@ -190,7 +190,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
             {speakers.map((spk, i) => (
               <span
                 key={i}
-                className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-0.5 text-sm font-bold text-primary"
+                className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-0.5 text-sm font-bold text-primary"
               >
                 <UserCheck className="size-3" aria-hidden />
                 {spk}
@@ -247,14 +247,16 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                     : isAltSpeaker
                       ? "bg-secondary/40 border border-border hover:border-primary/40"
                       : "bg-muted/50 border border-border hover:border-primary/40"
-                } ${isPlaying ? "ring-2 ring-primary border-primary bg-primary/10 shadow-wp-sm" : ""}`}
+                } ${isPlaying ? "ring-2 ring-primary border-primary bg-secondary shadow-wp-sm" : ""}`}
               >
                 {!isNarrator && (
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2">
                       <div
                         className={`flex size-7 items-center justify-center rounded-lg text-sm font-black ${
-                          isAltSpeaker ? "bg-accent/20 text-accent" : "bg-primary/20 text-primary"
+                          isAltSpeaker
+                            ? "bg-feedback-success-surface text-feedback-success-foreground"
+                            : "bg-secondary text-primary"
                         }`}
                       >
                         {line.speaker.slice(0, 2).toUpperCase()}

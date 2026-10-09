@@ -40,7 +40,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
     <section className="wp-container-content space-y-6" aria-labelledby="stage-speak-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
             <Mic className="size-3.5" aria-hidden />
             {t("hadith.speakLabel") || "Transfer Task"}
           </span>
@@ -64,7 +64,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
 
         {/* Sentence Frame Card */}
         {speakData.frames.length > 0 ? (
-          <div className="mt-6 space-y-2 rounded-2xl border-2 border-primary/20 bg-primary/5 p-5">
+          <div className="mt-6 space-y-2 rounded-2xl border-2 border-primary/20 bg-secondary p-5">
             <p className="text-sm font-black uppercase tracking-wider text-primary">
               {t("hadith.pilot.speak.frameLabel") || "Sentence Frame"}
             </p>
@@ -75,7 +75,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
             ))}
           </div>
         ) : (
-          <div className="mt-6 rounded-2xl border-2 border-primary/20 bg-primary/5 p-5">
+          <div className="mt-6 rounded-2xl border-2 border-primary/20 bg-secondary p-5">
             <p className="text-sm font-black uppercase tracking-wider text-primary">
               {t("hadith.pilot.speak.frameLabel") || "Sentence Frame"}
             </p>
@@ -111,7 +111,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
               type="button"
               onClick={() => playAudio(modelText)}
               aria-busy={isPlaying}
-              className={`mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary px-4 text-base font-black text-primary transition-all hover:bg-primary/10 motion-safe:active:scale-[0.98] ${focusRing}`}
+              className={`mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary px-4 text-base font-black text-primary transition-all hover:bg-secondary motion-safe:active:scale-[0.98] ${focusRing}`}
             >
               <Volume2 className="size-4" aria-hidden />
               <span>

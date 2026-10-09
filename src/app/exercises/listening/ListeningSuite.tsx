@@ -160,7 +160,7 @@ export const ExListeningResults = memo(function ExListeningResults({ dispatch }:
   return (
     <div className="min-h-dvh bg-secondary flex flex-col items-center justify-center p-6 text-center">
       <div className="size-24 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl mb-4">
-        <Trophy className="size-12 text-wp-amber" />
+        <Trophy className="size-12 text-wp-amber-foreground" />
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">
         {t("suites.listeningComplete")}
@@ -174,7 +174,7 @@ export const ExListeningResults = memo(function ExListeningResults({ dispatch }:
           <p className="font-sans text-[11px] text-muted-foreground">{t("suites.totalXp")}</p>
         </div>
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
-          <p className="font-sans font-black text-2xl text-wp-blue">{progress.streak}</p>
+          <p className="font-sans font-black text-2xl text-wp-blue-foreground">{progress.streak}</p>
           <p className="font-sans text-[11px] text-muted-foreground">{t("suites.dayStreak")}</p>
         </div>
         <div className="bg-wp-card border border-border p-3 rounded-2xl">

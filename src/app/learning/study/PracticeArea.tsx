@@ -295,7 +295,7 @@ export function PracticeArea({
         <div className="flex justify-between items-start gap-3 mb-3">
           <div className="min-w-0 flex-1">
             {/* Round indicator — secondary, compact */}
-            <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-extrabold text-sm inline-block mb-1">
+            <span className="px-2.5 py-0.5 rounded-full bg-secondary text-primary font-extrabold text-sm inline-block mb-1">
               {t("practice.roundOf", {
                 current: formatNumber(currentRound, numeralSystem),
                 total: formatNumber(totalRounds, numeralSystem),

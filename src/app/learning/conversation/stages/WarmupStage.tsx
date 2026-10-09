@@ -62,7 +62,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           />
         </h2>
         {unit.speakingSkill && (
-          <p className="mt-4 rounded-xl bg-primary/10 px-4 py-3 text-base font-semibold text-primary">
+          <p className="mt-4 rounded-xl bg-secondary px-4 py-3 text-base font-semibold text-primary">
             {t("conversation.skill", { skill: unit.speakingSkill })}
           </p>
         )}
@@ -85,7 +85,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
               key={idx}
               className="flex items-start gap-3 rounded-xl bg-muted/40 p-3.5 text-base sm:text-base font-medium text-foreground leading-relaxed"
             >
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
+              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary">
                 {idx + 1}
               </span>
               <BilingualTextBlock
@@ -154,7 +154,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           onClick={onNext}
           disabled={!selectedVote}
           aria-describedby="warmup-vote-requirement"
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
         >
           <span>{t("conversation.continueReading")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

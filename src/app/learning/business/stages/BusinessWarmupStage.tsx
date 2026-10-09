@@ -77,7 +77,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
             {`“${unit.essentialQuestion}”`}
           </h2>
           {unit.speakingGoal && (
-            <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-primary/10 p-3.5 text-base font-semibold text-primary">
+            <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-secondary p-3.5 text-base font-semibold text-primary">
               <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
               <div>
                 <span className="font-black uppercase tracking-wide me-1.5">
@@ -114,7 +114,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
           <span
             className={`self-start sm:self-auto shrink-0 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-black transition-colors ${
               allAnswered
-                ? "bg-accent/15 text-accent border border-accent/30"
+                ? "bg-feedback-success-surface text-feedback-success-foreground border border-accent/30"
                 : "bg-muted text-muted-foreground"
             }`}
           >
@@ -142,7 +142,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
               >
                 {/* Question Prompt */}
                 <div className="flex items-start gap-3">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary mt-0.5">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary mt-0.5">
                     {idx + 1}
                   </span>
                   <h3 className="text-base sm:text-lg font-bold text-foreground leading-snug">
@@ -169,10 +169,10 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                           "border-border bg-card hover:border-primary/50 hover:bg-muted/40 text-foreground";
                       } else if (isOptionRecommended) {
                         buttonClasses +=
-                          "border-accent bg-accent/10 text-foreground ring-2 ring-accent/30 shadow-wp-xs";
+                          "border-accent bg-feedback-success-surface text-foreground ring-2 ring-accent/30 shadow-wp-xs";
                       } else {
                         buttonClasses +=
-                          "border-primary bg-primary/10 text-foreground ring-2 ring-primary/30 shadow-wp-xs";
+                          "border-primary bg-secondary text-foreground ring-2 ring-primary/30 shadow-wp-xs";
                       }
 
                       return (
@@ -191,7 +191,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                                 ? isOptionRecommended
                                   ? "bg-accent text-accent-foreground shadow-wp-xs"
                                   : "bg-primary text-primary-foreground shadow-wp-xs"
-                                : "bg-muted text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary"
+                                : "bg-muted text-muted-foreground group-hover:bg-secondary group-hover:text-primary"
                             }`}
                           >
                             {isOptionSelected && isOptionRecommended ? (
@@ -211,12 +211,12 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                             {isOptionSelected && (
                               <div className="mt-1.5 flex items-center gap-1.5">
                                 {isOptionRecommended ? (
-                                  <span className="inline-flex items-center gap-1 rounded-md bg-accent/20 px-2 py-0.5 text-sm font-black text-accent uppercase tracking-wider">
+                                  <span className="inline-flex items-center gap-1 rounded-md bg-feedback-success-surface px-2 py-0.5 text-sm font-black text-feedback-success-foreground uppercase tracking-wider">
                                     <CheckCircle2 className="size-3" aria-hidden />
                                     {t("business.warmup.recommendedBadge")}
                                   </span>
                                 ) : (
-                                  <span className="inline-flex items-center gap-1 rounded-md bg-primary/20 px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wider">
+                                  <span className="inline-flex items-center gap-1 rounded-md bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wider">
                                     {t("business.warmup.alternativeBadge")}
                                   </span>
                                 )}
@@ -266,7 +266,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                           {t("business.warmup.feedbackTitle")}
                         </h4>
                         {prompt.correctAnswer && (
-                          <span className="rounded-md bg-primary/15 px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wide">
+                          <span className="rounded-md bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wide">
                             {isCorrect
                               ? t("business.warmup.recommendedBadge")
                               : `Best Practice: Option ${prompt.correctAnswer}`}

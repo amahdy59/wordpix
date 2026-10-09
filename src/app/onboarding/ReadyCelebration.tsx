@@ -44,13 +44,13 @@ export function ReadyCelebration({ dispatch }: Props) {
             <h2 className="font-sans font-black text-3xl text-white leading-tight">
               {t("onboarding.envInitialized")}
             </h2>
-            <p className="font-sans text-white/70 text-sm mt-2 max-w-xs mx-auto">
+            <p className="font-sans text-wp-text-on-panel-muted text-sm mt-2 max-w-xs mx-auto">
               {t("onboarding.envEngineReady")}
             </p>
           </div>
         </div>
 
-        <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
+        <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Layers className="size-4" />
           <span>{t("onboarding.readyToLearn", { world: flagshipWorld.name })}</span>
         </div>
@@ -101,7 +101,7 @@ export function ReadyCelebration({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: flagshipWorld.id })}
-            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
+            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >

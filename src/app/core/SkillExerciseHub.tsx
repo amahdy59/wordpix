@@ -142,7 +142,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                     <span>{t("masteryReview.todayReview")}</span>
                   </span>
                   {progress.streak > 0 && (
-                    <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber bg-wp-amber/10 px-2 py-0.5 rounded-full">
+                    <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
                       <Flame className="size-3.5" aria-hidden="true" />
                       <span>{t("masteryReview.dayStreak", { count: progress.streak })}</span>
                     </span>
@@ -196,7 +196,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                     {t("masteryReview.allCaughtUp")}
                   </h2>
                   {progress.streak > 0 && (
-                    <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber bg-wp-amber/10 px-2 py-0.5 rounded-full">
+                    <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
                       <Flame className="size-3.5" aria-hidden="true" />
                       <span>{t("masteryReview.dayStreak", { count: progress.streak })}</span>
                     </span>
@@ -224,9 +224,9 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </Button>
           </div>
         ) : (
-          <div className="rounded-3xl border border-primary/25 bg-primary/5 p-5 sm:p-6 shadow-wp-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="rounded-3xl border border-primary/25 bg-secondary p-5 sm:p-6 shadow-wp-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3.5">
-              <div className="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+              <div className="size-12 rounded-xl bg-secondary text-primary flex items-center justify-center shrink-0">
                 <BookOpen className="size-6" aria-hidden="true" />
               </div>
               <div className="flex flex-col gap-0.5">
@@ -263,7 +263,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
           titleId="skill-drills-heading"
           eyebrow={
             <span className="flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-primary">
-              <Sparkles className="size-4 text-wp-amber" aria-hidden="true" />
+              <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden="true" />
               <span>
                 {t("skillHub.multimodalExercises", {
                   count: formatNumber(availableCount, numeralSystem),
@@ -316,7 +316,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <button
                 type="button"
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-                className="h-full w-full min-h-[44px] bg-wp-card border border-border hover:border-primary/60 hover:bg-primary/5 rounded-2xl p-5 pe-16 text-start flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-wp-sm cursor-pointer"
+                className="h-full w-full min-h-[44px] bg-wp-card border border-border hover:border-primary/60 hover:bg-secondary rounded-2xl p-5 pe-16 text-start flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-wp-sm cursor-pointer"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2">
@@ -330,7 +330,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
 
                   <div className="flex items-center gap-1.5 flex-wrap mt-3">
                     {ex.requiresMic && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-sans text-[10px] font-bold text-primary border border-primary/20">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-bold text-primary border border-primary/20">
                         <Mic className="size-3" aria-hidden="true" />
                         <span>
                           {t("skillHub.micRequired", { defaultValue: "Microphone required" })}
@@ -338,7 +338,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                       </span>
                     )}
                     {ex.isTimed && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-wp-amber/10 px-2 py-0.5 font-sans text-[10px] font-bold text-wp-amber border border-wp-amber/20">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-wp-amber/10 px-2 py-0.5 font-sans text-[10px] font-bold text-wp-amber-foreground border border-wp-amber/20">
                         <Clock className="size-3" aria-hidden="true" />
                         <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
                       </span>

@@ -56,7 +56,7 @@ export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeT
     theme === "dark" ? (
       <Moon className="size-4 text-wp-teal" aria-hidden />
     ) : theme === "light" ? (
-      <Sun className="size-4 text-wp-amber" aria-hidden />
+      <Sun className="size-4 text-wp-amber-foreground" aria-hidden />
     ) : (
       <Monitor className="size-4 text-primary" aria-hidden />
     );

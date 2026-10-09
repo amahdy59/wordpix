@@ -71,7 +71,7 @@ export function RoundCheckpointCard({
             <button
               type="button"
               onClick={onContinueNextRound}
-              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <span>
                 {t("practice.startRound", { round: formatNumber(roundNumber + 1, numeralSystem) })}
@@ -83,7 +83,7 @@ export function RoundCheckpointCard({
           <button
             type="button"
             onClick={onContinueNextRound}
-            className="px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           >
             <span>{t("practice.viewSummary")}</span>
             <ForwardIcon className="size-4" />

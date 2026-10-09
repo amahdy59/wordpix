@@ -22,7 +22,7 @@ import { ToolkitStage } from "./stages/ToolkitStage";
 import { QuizStage } from "./stages/QuizStage";
 import { DiscussionStage } from "./stages/DiscussionStage";
 import { ChallengeStage } from "./stages/ChallengeStage";
-import { LessonStageStepper } from "../../shared/LessonStageStepper";
+import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
 import { useLessonProgress } from "../../shared/useLessonProgress";
 
 interface Props {
@@ -133,7 +133,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
         {stageAnnouncement}
       </p>
       {/* Sticky Header & Stepper */}
-      <div className="wp-sticky-heading wp-sticky-controls sticky top-0 z-20 shrink-0 border-b border-border bg-background py-3">
+      <div className="shrink-0">
         <div className="wp-container-content wp-layout-gutter flex flex-col gap-3">
           {/* Top Bar with Back and Unit Metadata */}
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -147,7 +147,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
             </button>
 
             <div className="flex items-center gap-2">
-              <span className="rounded-lg bg-primary/10 px-2.5 py-1 text-sm font-black text-primary">
+              <span className="rounded-lg bg-secondary px-2.5 py-1 text-sm font-black text-primary">
                 {t("conversation.level", { level: unit.level })}
               </span>
               <span className="text-sm font-bold text-muted-foreground hidden sm:inline">
@@ -155,30 +155,30 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
               </span>
             </div>
           </div>
-
-          <LessonStageStepper
-            stages={STAGE_CONFIG.map((stage, idx) => ({
-              id: stage.id,
-              label: t(`conversation.stages.${stage.id}`),
-              icon: stage.icon,
-              completed: completedStages.has(stage.id) || isMastered,
-              locked: idx > maxUnlockedIndex,
-            }))}
-            currentIndex={activeStageIdx}
-            onSelect={navigateToStage}
-            ariaLabel={t("conversation.lessonStages")}
-            stepLabel={(current, total) => t("conversation.stepOfTotal", { current, total })}
-          />
         </div>
+      </div>
+
+      <div className="wp-course-sticky wp-layout-gutter sticky top-0 z-40 border-b border-border bg-background py-2">
+        <CourseLessonNavigation
+          stages={STAGE_CONFIG.map((stage, idx) => ({
+            id: stage.id,
+            label: t(`conversation.stages.${stage.id}`),
+            group: ([0, 0, 1, 1, 2, 3, 3] as const)[idx],
+            completed: completedStages.has(stage.id) || isMastered,
+            locked: idx > maxUnlockedIndex,
+          }))}
+          currentIndex={activeStageIdx}
+          onSelect={navigateToStage}
+        />
       </div>
 
       {/* Main Stage Content */}
       <div
         ref={stagePanelRef}
         id={`panel-${currentStageId}`}
-        role="tabpanel"
-        aria-labelledby={`lesson-stage-${currentStageId}`}
-        tabIndex={0}
+        role="region"
+        aria-label={t(`conversation.stages.${currentStageId}`)}
+        tabIndex={-1}
         className="wp-container-content wp-layout-gutter py-6 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
       >
         {currentStageId === "warmup" && (

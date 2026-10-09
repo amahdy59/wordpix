@@ -47,7 +47,7 @@ describe("CurriculumQuizEngine", () => {
     expect(screen.getByText("What does 'role' mean?")).toBeInTheDocument();
 
     // Progress pills: should show pill for Q1 and Q2
-    expect(screen.getByRole("list", { name: /question progress/i })).toBeInTheDocument();
+    expect(screen.getByRole("list", { name: /question navigation/i })).toBeInTheDocument();
     const pills = screen.getAllByRole("listitem");
     expect(pills.length).toBe(2);
   });

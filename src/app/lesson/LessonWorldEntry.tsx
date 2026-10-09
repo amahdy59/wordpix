@@ -154,7 +154,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
       <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
         <div className="w-full max-w-[1040px] mx-auto p-4 lg:p-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
           <div className="mb-6 flex flex-col gap-4">
-            <div className="rounded-3xl border border-primary/30 bg-primary/5 p-5 sm:p-6 shadow-wp-xs">
+            <div className="rounded-3xl border border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-sm font-black uppercase tracking-wider text-primary">
                   {t("lesson.unitOutcome")}
@@ -328,7 +328,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                       }}
                       className={`cursor-pointer min-w-[44px] min-h-[44px] size-11 flex items-center justify-center rounded-xl border transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                         isMenuOpen
-                          ? "border-primary bg-primary/10 text-primary shadow-sm"
+                          ? "border-primary bg-secondary text-primary shadow-sm"
                           : "border-border bg-wp-card hover:bg-secondary text-foreground hover:text-primary"
                       }`}
                     >
@@ -409,7 +409,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             }
                             className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                           >
-                            <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber flex items-center justify-center shrink-0">
+                            <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber-foreground flex items-center justify-center shrink-0">
                               <BookOpen className="size-4" />
                             </div>
                             <div className="flex-1">
@@ -429,7 +429,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             onClick={() => handleBrowseWords(g.id)}
                             className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                           >
-                            <div className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                            <div className="size-8 rounded-lg bg-secondary text-primary flex items-center justify-center shrink-0">
                               <Compass className="size-4" />
                             </div>
                             <div className="flex-1">

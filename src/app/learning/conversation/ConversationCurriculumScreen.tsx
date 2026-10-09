@@ -186,7 +186,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                   <span
                     className={`rounded-full px-2 py-0.5 text-sm font-black ${
                       isSelected
-                        ? "bg-primary-foreground/20 text-primary-foreground"
+                        ? "bg-primary text-primary-foreground"
                         : "bg-muted text-muted-foreground"
                     }`}
                   >
@@ -243,7 +243,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                 }
                 statusClassName={
                   isMastered
-                    ? "text-accent"
+                    ? "text-feedback-success-foreground"
                     : isInProgress
                       ? "text-primary"
                       : "text-muted-foreground font-semibold"

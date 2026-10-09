@@ -20,6 +20,8 @@
      default — white on the old emerald-500 measured 2.54:1, failing even AA.
      The pairings here are enforced by a11y_responsive.test.ts at 7:1. */
   --wp-amber: #f59e0b; /* amber-500: Streaks & XP */
+  --wp-amber-foreground: #78350f; /* amber-900: text/icons on pale surfaces */
+  --wp-teal-foreground: #134e4a; /* teal-900: text on teal status surfaces */
   --wp-text-on-amber: #1c1917; /* 8.14:1 */
   --wp-teal: #115e59; /* teal-800: Immerse/Scene mode — 7.58:1 on white */
   --wp-teal-light: #ccfbf1; /* teal-100 */
@@ -31,6 +33,7 @@
   --wp-rose-light: #ffe4e6; /* rose-100 */
   --wp-blue: #1e40af; /* blue-800: 8.72:1 with white */
   --wp-text-on-blue: #ffffff; /* 8.72:1 */
+  --wp-blue-foreground: #1e40af;
   --wp-slate: #64748b; /* slate-500: Muted details */
 
   /* Surface & Neutral Tokens */
@@ -116,6 +119,7 @@
   --destructive-foreground: var(--wp-text-on-rose);
   --border: var(--wp-border);
   --input: transparent;
+  --control-border: #64748b;
   --input-background: var(--wp-surface);
   --ring: var(--wp-brand);
   --radius: var(--wp-radius-lg);
@@ -136,13 +140,15 @@
   --feedback-success: var(--wp-green);
   --feedback-success-surface: var(--wp-green-light);
   --feedback-success-border: color-mix(in srgb, var(--wp-green) 40%, transparent);
-  --feedback-success-foreground: #065f46;
+  --feedback-success-foreground: #064e3b;
   --feedback-error: var(--wp-rose);
   --feedback-error-surface: var(--wp-rose-light);
   --feedback-error-border: color-mix(in srgb, var(--wp-rose) 40%, transparent);
-  --feedback-error-foreground: #9f1239;
+  --feedback-error-foreground: #881337;
   --feedback-warning: var(--wp-amber);
   --feedback-warning-surface: color-mix(in srgb, var(--wp-amber) 15%, transparent);
+  --feedback-warning-foreground: var(--wp-amber-foreground);
+  --feedback-warning-border: var(--wp-amber-foreground);
   --mastery-active: var(--wp-teal);
   --mastery-surface: var(--wp-teal-light);
   --progress-active: var(--wp-brand);
@@ -158,6 +164,9 @@
   --wp-brand-light: #2e1065; /* violet-950 */
 
   --wp-amber: #fbbf24; /* amber-400 */
+  --wp-amber-foreground: #fde68a;
+  --wp-teal-foreground: #99f6e4;
+  --control-border: #94a3b8;
   --wp-text-on-amber: #1c1917; /* 10.48:1 */
   --wp-teal: #2dd4bf; /* teal-400 — 7.86:1 on card */
   --wp-teal-light: #134e4a; /* teal-900 */
@@ -168,6 +177,7 @@
   --wp-text-on-rose: #4c0519; /* 8.27:1 */
   --wp-rose-light: #4c0519; /* rose-950 */
   --wp-blue: #1e40af; /* blue-800: 8.72:1 with white */
+  --wp-blue-foreground: #bfdbfe;
   --wp-text-on-blue: #ffffff; /* 8.72:1 */
   --wp-slate: #94a3b8; /* slate-400 */
 
@@ -212,6 +222,7 @@
    light and dark mode.
    ─────────────────────────────────────────────────────────────────────────── */
 .high-contrast {
+  --control-border: #000000;
   --wp-text: #000000;
   --wp-text-secondary: #1f2937; /* 15.3:1 on white */
   --wp-border: #000000;
@@ -226,6 +237,7 @@
 }
 
 .dark.high-contrast {
+  --control-border: #ffffff;
   --wp-text: #ffffff;
   --wp-text-secondary: #f1f5f9;
   --wp-border: #ffffff;
@@ -286,11 +298,16 @@
   --color-feedback-error-foreground: var(--feedback-error-foreground);
   --color-feedback-warning: var(--feedback-warning);
   --color-feedback-warning-surface: var(--feedback-warning-surface);
+  --color-feedback-warning-foreground: var(--feedback-warning-foreground);
+  --color-feedback-warning-border: var(--feedback-warning-border);
+  --color-control-border: var(--control-border);
 
   --color-wp-brand: var(--wp-brand);
   --color-wp-brand-dark: var(--wp-brand-dark);
   --color-wp-brand-light: var(--wp-brand-light);
   --color-wp-amber: var(--wp-amber);
+  --color-wp-amber-foreground: var(--wp-amber-foreground);
+  --color-wp-teal-foreground: var(--wp-teal-foreground);
   --color-wp-teal: var(--wp-teal);
   --color-wp-teal-light: var(--wp-teal-light);
   --color-wp-green: var(--wp-green);
@@ -298,6 +315,7 @@
   --color-wp-rose: var(--wp-rose);
   --color-wp-rose-light: var(--wp-rose-light);
   --color-wp-blue: var(--wp-blue);
+  --color-wp-blue-foreground: var(--wp-blue-foreground);
   --color-wp-slate: var(--wp-slate);
   --color-wp-surface: var(--wp-surface);
   --color-wp-card: var(--wp-card);
@@ -336,12 +354,19 @@
   }
 
   *:focus-visible {
-    outline: 2px solid var(--wp-brand);
+    outline: 3px solid var(--wp-brand);
     outline-offset: 2px;
   }
 
   *:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  /* A field boundary remains identifiable when the input is empty. */
+  input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    border-color: var(--control-border);
   }
 
   body {
@@ -378,10 +403,16 @@
     --wp-rose-light: #4c0519;
     --wp-text-on-rose: #000000;
     --wp-amber: #fde68a;
+    --wp-amber-foreground: #fde68a;
+    --wp-teal-foreground: #99f6e4;
+    --control-border: #ffffff;
     --wp-text-on-amber: #000000;
     --wp-teal: #99f6e4;
     --wp-teal-light: #042f2e;
+    --feedback-success-foreground: #a7f3d0;
+    --feedback-error-foreground: #fecdd3;
     --wp-blue: #bfdbfe;
+    --wp-blue-foreground: #bfdbfe;
     --wp-text-on-blue: #000000;
   }
 }

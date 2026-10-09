@@ -99,7 +99,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 type="button"
                 onClick={this.handleReset}
                 className="bg-primary text-primary-foreground font-sans font-semibold rounded-xl px-6 py-3 min-h-[44px]
-                  flex items-center justify-center gap-2 w-full motion-safe:transition-opacity hover:opacity-90
+                  flex items-center justify-center gap-2 w-full motion-safe:transition-opacity
                   focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <RefreshCw className="size-4" aria-hidden />

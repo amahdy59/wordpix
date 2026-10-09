@@ -78,7 +78,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-3">
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary">
                   {idx + 1}
                 </span>
                 <h2 className="wp-type-stage-title text-base sm:text-lg font-black text-foreground">
@@ -130,7 +130,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
           </div>
         </div>
 
-        <div className="mt-5 rounded-2xl border border-primary/25 bg-primary/5 p-4">
+        <div className="mt-5 rounded-2xl border border-primary/25 bg-secondary p-4">
           <p className="text-sm font-black uppercase tracking-wider text-primary">
             {t("conversation.partnerPrompt")}
           </p>
@@ -141,7 +141,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
             type="button"
             onClick={() => handleSpeakPhrase(unit.warmup.bigQuestion)}
             disabled={!listeningEnabled}
-            className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-base font-black text-primary hover:bg-primary/10 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+            className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-base font-black text-primary hover:bg-secondary motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
           >
             <Volume2 className="size-4" aria-hidden />
             {t("conversation.listenPartnerPrompt")}
@@ -204,7 +204,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueQuiz")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

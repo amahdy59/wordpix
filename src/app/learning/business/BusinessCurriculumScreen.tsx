@@ -195,7 +195,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                     <span
                       className={`rounded-full px-1.5 py-0.2 text-sm font-black ${
                         isSelected
-                          ? "bg-primary-foreground/20 text-primary-foreground"
+                          ? "bg-primary text-primary-foreground"
                           : "bg-muted text-muted-foreground"
                       }`}
                     >
@@ -313,7 +313,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                   }
                   statusClassName={
                     isMastered
-                      ? "text-accent"
+                      ? "text-feedback-success-foreground"
                       : isInProgress
                         ? "text-primary"
                         : "text-muted-foreground font-semibold"
@@ -372,10 +372,10 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                     key={milestone.sectionNumber}
                     className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
                       isSectionCertified
-                        ? "border-accent/40 bg-accent/5 shadow-wp-xs ring-1 ring-accent/30"
+                        ? "border-accent/40 bg-feedback-success-surface shadow-wp-xs ring-1 ring-accent/30"
                         : isStarted
-                          ? "border-primary/40 bg-primary/5"
-                          : "border-border bg-muted/20 opacity-80"
+                          ? "border-primary/40 bg-secondary"
+                          : "border-border bg-muted/20"
                     }`}
                   >
                     <div className="flex items-start justify-between gap-2">
@@ -383,7 +383,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                         {milestone.badge}
                       </span>
                       {isSectionCertified ? (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-sm font-black text-accent uppercase">
+                        <span className="inline-flex items-center gap-1 rounded-full bg-feedback-success-surface px-2 py-0.5 text-sm font-black text-feedback-success-foreground uppercase">
                           <CheckCircle2 className="size-3" aria-hidden />
                           {t("business.certifiedBadge")}
                         </span>
@@ -399,7 +399,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
 
                     <div className="mt-3">
                       <div className="flex items-center gap-1.5">
-                        <span className="rounded bg-primary/15 px-1.5 py-0.2 text-sm font-black text-primary">
+                        <span className="rounded bg-secondary px-1.5 py-0.2 text-sm font-black text-primary">
                           {milestone.level}
                         </span>
                         <h3 className="text-base font-black text-foreground line-clamp-1">

@@ -37,7 +37,7 @@ export function PronunciationLessonCard({
   const showImages = !hasImageError && Boolean(firstImage && secondImage);
 
   return (
-    <li className="group relative flex min-h-[96px] min-w-0 w-full items-center justify-between rounded-2xl border border-border bg-card p-3 shadow-wp-xs motion-safe:transition-colors hover:border-primary/50 hover:bg-primary/5 sm:p-3.5">
+    <li className="group relative flex min-h-[96px] min-w-0 w-full items-center justify-between rounded-2xl border border-border bg-card p-3 shadow-wp-xs motion-safe:transition-colors hover:border-primary/50 hover:bg-secondary sm:p-3.5">
       {/* Primary Lesson Action Trigger */}
       <button
         type="button"
@@ -73,7 +73,7 @@ export function PronunciationLessonCard({
             </div>
           ) : (
             /* Typographic / Phonetic Accent Fallback */
-            <div className="flex size-full flex-col items-center justify-center bg-primary/10 p-1 text-center text-primary">
+            <div className="flex size-full flex-col items-center justify-center bg-secondary p-1 text-center text-primary">
               <span className="font-mono text-sm font-black tracking-tight" dir="ltr">
                 {fallbackSymbols || `/L${lesson.number}/`}
               </span>
@@ -104,7 +104,7 @@ export function PronunciationLessonCard({
             </span>
             {phoneticBadge && (
               <span
-                className="max-w-full break-words rounded-md bg-primary/10 px-1.5 py-0.5 font-mono text-sm font-bold text-primary"
+                className="max-w-full break-words rounded-md bg-secondary px-1.5 py-0.5 font-mono text-sm font-bold text-primary"
                 dir="ltr"
               >
                 {phoneticBadge}
@@ -174,7 +174,7 @@ export function PronunciationLessonCard({
 
         <span
           aria-hidden="true"
-          className="hidden size-11 items-center justify-center text-muted-foreground/60 transition-colors group-hover:text-primary sm:flex"
+          className="hidden size-11 items-center justify-center text-muted-foreground transition-colors group-hover:text-primary sm:flex"
         >
           <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
         </span>

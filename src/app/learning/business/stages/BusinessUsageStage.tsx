@@ -125,10 +125,10 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
             >
               <div>
                 <div className="flex items-center justify-between gap-2">
-                  <span className="inline-flex items-center gap-1.5 rounded-lg bg-primary/10 px-3 py-1 text-base font-black text-primary">
+                  <span className="inline-flex items-center gap-1.5 rounded-lg bg-secondary px-3 py-1 text-base font-black text-primary">
                     {card.pattern}
                   </span>
-                  <CheckCircle2 className="size-4 text-primary/70 shrink-0" aria-hidden />
+                  <CheckCircle2 className="size-4 text-primary shrink-0" aria-hidden />
                 </div>
 
                 {card.context && (
@@ -141,7 +141,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
                 )}
               </div>
 
-              <div className="rounded-xl bg-card p-3.5 border border-border/70 text-base font-medium text-foreground/90 italic font-serif leading-relaxed">
+              <div className="rounded-xl bg-card p-3.5 border border-border/70 text-base font-medium text-foreground italic font-serif leading-relaxed">
                 {`“${card.example}”`}
               </div>
             </div>

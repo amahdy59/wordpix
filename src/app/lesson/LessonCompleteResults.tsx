@@ -101,14 +101,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     <div className="bg-secondary min-h-dvh flex flex-col lg:flex-row lg:overflow-hidden relative">
       {/* ── Desktop Left: Celebration visual ────────────────────────────────── */}
       <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-1/2 bg-wp-panel relative overflow-hidden px-12">
-        <div className="absolute -top-24 -end-24 size-72 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -end-24 size-72 rounded-full bg-secondary blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -start-24 size-72 rounded-full bg-wp-amber/20 blur-3xl pointer-events-none" />
         <div className="relative z-10 flex flex-col items-center gap-6 text-center">
           <div className="size-32 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl">
-            <Trophy className="size-16 text-wp-amber" aria-hidden />
+            <Trophy className="size-16 text-wp-amber-foreground" aria-hidden />
           </div>
           <div>
-            <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
+            <span className="font-sans font-bold text-xs text-wp-amber-foreground bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
               {isAssessment
                 ? assessmentPassed
                   ? "Unit Test Passed"
@@ -124,7 +124,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                   : "Keep Practicing!"
                 : `${group.name} ${isStrongSession ? "Practiced Well!" : "Completed!"}`}
             </h1>
-            <p className="font-sans font-semibold text-white/60 text-base mt-2">
+            <p className="font-sans font-semibold text-wp-text-on-panel-muted text-base mt-2">
               {isAssessment
                 ? assessmentPassed
                   ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
@@ -141,7 +141,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             {stars.map((filled, i) => (
               <Star
                 key={i}
-                className={`size-10 ${filled ? "text-wp-amber fill-wp-amber" : "text-white/20"}`}
+                className={`size-10 ${filled ? "text-wp-amber-foreground fill-wp-amber" : "text-white/20"}`}
                 aria-hidden
               />
             ))}
@@ -155,7 +155,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           {/* Mobile header */}
           <div className="lg:hidden flex flex-col items-center gap-3 text-center">
             <div className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center">
-              <Trophy className="size-10 text-wp-amber" aria-hidden />
+              <Trophy className="size-10 text-wp-amber-foreground" aria-hidden />
             </div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
@@ -187,7 +187,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
               {stars.map((filled, i) => (
                 <Star
                   key={i}
-                  className={`size-8 ${filled ? "text-wp-amber fill-wp-amber" : "text-muted-foreground"}`}
+                  className={`size-8 ${filled ? "text-wp-amber-foreground fill-wp-amber" : "text-muted-foreground"}`}
                   aria-hidden
                 />
               ))}
@@ -239,7 +239,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
               {
                 value: `${accuracy}%`,
                 label: "Accuracy",
-                color: "text-wp-blue",
+                color: "text-wp-blue-foreground",
                 bg: "bg-wp-blue/10",
               },
               {
@@ -266,7 +266,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           {xpBreakdown && xp > 0 && (
             <div className="w-full bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-1.5 shadow-wp-xs">
               <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-0.5">
-                <Sparkles className="size-4 text-wp-amber" aria-hidden />
+                <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden />
                 <span>{t("lesson.howEarnedXp", { xp })}</span>
               </div>
               <dl className="flex flex-col gap-1">
@@ -296,7 +296,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           {/* Mastery Level Upgrades Card */}
           <div className="w-full bg-wp-card border border-primary/30 rounded-2xl p-4 flex flex-col gap-2 shadow-wp-xs">
             <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
-              <Sparkles className="size-4 text-wp-amber" aria-hidden />
+              <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden />
               <span>{t("lesson.wordMemoryProgress")}</span>
             </div>
             <div className="flex items-center justify-between">

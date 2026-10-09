@@ -48,7 +48,7 @@ export function BusinessReviewStage({
         className="rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/15 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="congrats-title"
       >
-        <span className="inline-flex items-center gap-1 text-sm font-black uppercase tracking-widest text-accent">
+        <span className="inline-flex items-center gap-1 text-sm font-black uppercase tracking-widest text-feedback-success-foreground">
           <CheckCircle2 className="size-4" aria-hidden />{" "}
           {t("business.review.lessonCompletedBadge")}
         </span>

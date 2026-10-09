@@ -30,6 +30,9 @@ const LibraryScreen = lazy(() =>
 const ProfileStats = lazy(() =>
   import("../core/ProfileStats").then((m) => ({ default: m.ProfileStats }))
 );
+const ReleaseNotesPage = lazy(() =>
+  import("../core/ReleaseNotesPage").then((m) => ({ default: m.ReleaseNotesPage }))
+);
 const SkillExerciseHub = lazy(() =>
   import("../core/SkillExerciseHub").then((m) => ({ default: m.SkillExerciseHub }))
 );
@@ -346,6 +349,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "practice") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "review") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
+    if (state.id === "release-notes") return <ReleaseNotesPage dispatch={dispatch} />;
     if (state.id === "lesson-entry")
       return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
     if (state.id === "learn-words")

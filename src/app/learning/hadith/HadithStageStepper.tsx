@@ -1,3 +1,4 @@
+import { useCourseNavigationHeight } from "../../shared/useCourseNavigationHeight";
 import { BookA, Check, CheckCircle2, Headphones, Target, type LucideIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useI18n } from "../../../i18n";
@@ -25,8 +26,8 @@ export function HadithStageStepper({
   onSelectStage,
 }: Props) {
   const { t, dir } = useI18n();
+  const navigationRef = useCourseNavigationHeight();
   const railRef = useRef<HTMLOListElement>(null);
-  const currentStageId = HADITH_STAGE_IDS[currentStageIndex];
   const completedSet = new Set(completedStages);
   const currentButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -63,43 +64,17 @@ export function HadithStageStepper({
   };
 
   return (
-    <nav className="mt-3 w-full space-y-2 sm:mt-6" aria-label={t("hadith.stageNavigation")}>
-      {/* Mobile Stepper Header (< sm) */}
-      <div className="flex flex-col gap-2 sm:hidden">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-base font-semibold">
-          <span className="text-primary uppercase tracking-wider">
-            {t("hadith.stepOfTotal", {
-              current: currentStageIndex + 1,
-              total: HADITH_STAGE_IDS.length,
-            }) || `Step ${currentStageIndex + 1} of ${HADITH_STAGE_IDS.length}`}
-          </span>
-          <span className="font-bold text-foreground">
-            {t(`hadith.stageLabels.${currentStageId}`)}
-          </span>
-        </div>
-        <div
-          role="progressbar"
-          aria-valuenow={currentStageIndex + 1}
-          aria-valuemin={1}
-          aria-valuemax={HADITH_STAGE_IDS.length}
-          aria-label={t("hadith.stageNavigation")}
-          className="h-2 w-full overflow-hidden rounded-full bg-muted"
-        >
-          <div
-            className="h-full bg-primary transition-all duration-300 ease-out motion-reduce:transition-none"
-            style={{
-              width: `${((currentStageIndex + 1) / HADITH_STAGE_IDS.length) * 100}%`,
-            }}
-          />
-        </div>
-      </div>
-
+    <nav
+      ref={navigationRef}
+      className="wp-course-nav w-full space-y-1"
+      aria-label={t("hadith.stageNavigation")}
+    >
       {/* Stepper Rail: 4-column balanced grid on tablet & desktop */}
       <ol
         ref={railRef}
         role="tablist"
         aria-label={t("hadith.stageNavigation")}
-        className="grid grid-cols-2 gap-2 sm:grid-cols-4"
+        className="grid grid-cols-4 gap-1"
       >
         {HADITH_STAGE_IDS.map((id, index) => {
           const isCurrent = index === currentStageIndex;
@@ -115,16 +90,17 @@ export function HadithStageStepper({
                 role="tab"
                 id={`hadith-tab-${id}`}
                 aria-controls="hadith-stage-panel"
+                aria-label={label}
                 aria-selected={isCurrent}
                 aria-current={isCurrent ? "step" : undefined}
                 tabIndex={isCurrent ? 0 : -1}
                 onClick={() => onSelectStage(index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
-                className={`group relative flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border-2 px-3 py-2 text-base font-semibold transition-all motion-safe:active:scale-[0.98] ${focusRing} ${
+                className={`group relative flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border-2 px-1 py-1 text-sm font-semibold transition-all motion-safe:active:scale-[0.98] ${focusRing} ${
                   isCurrent
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
                     : isCompleted
-                      ? "border-primary/25 bg-primary/10 text-primary hover:border-primary/45 hover:bg-primary/15"
+                      ? "border-primary/25 bg-secondary text-primary hover:border-primary/45 hover:bg-secondary"
                       : "border-border bg-card text-muted-foreground hover:border-primary/30 hover:bg-muted/60"
                 }`}
               >
@@ -146,12 +122,36 @@ export function HadithStageStepper({
                   )}
                 </span>
 
-                <span className="min-w-0 break-words">{label}</span>
+                <span className="hidden sm:inline">{label}</span>
+                <span className="sm:hidden">
+                  {t(
+                    id === "read-listen"
+                      ? "courseLesson.inputShort"
+                      : id === "vocabulary"
+                        ? "courseLesson.languageShort"
+                        : id === "review"
+                          ? "courseLesson.applyShort"
+                          : "courseLesson.practice"
+                  )}
+                </span>
               </button>
             </li>
           );
         })}
       </ol>
+      <div
+        role="progressbar"
+        aria-label={t("courseLesson.progress")}
+        aria-valuemin={0}
+        aria-valuemax={HADITH_STAGE_IDS.length}
+        aria-valuenow={completedSet.size}
+        className="h-1 overflow-hidden rounded-full bg-muted"
+      >
+        <div
+          className="h-full bg-primary motion-safe:transition-[width]"
+          style={{ width: `${(100 * completedSet.size) / HADITH_STAGE_IDS.length}%` }}
+        />
+      </div>
     </nav>
   );
 }

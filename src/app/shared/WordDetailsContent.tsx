@@ -156,7 +156,7 @@ export function WordDetailsContent({
       {/* Arabic Translation Card. The part of speech is worth showing on
       its own, so the card stays when the gloss is missing and only
       the Arabic line drops out — see `hasArabicGloss`. */}
-      <div className="bg-primary/5 border border-primary/20 rounded-2xl px-4 py-3 flex items-center justify-between gap-3">
+      <div className="bg-secondary border border-primary/20 rounded-2xl px-4 py-3 flex items-center justify-between gap-3">
         {bilingual && loaded.mod.hasArabicGloss(entry) ? (
           <p
             className="font-arabic font-bold text-foreground text-lg sm:text-xl"
@@ -176,7 +176,7 @@ export function WordDetailsContent({
               {baseEntry.register}
             </span>
           )}
-          <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20">
+          <span className="text-xs font-sans font-bold px-3 py-1 bg-secondary text-primary rounded-full uppercase tracking-wider border border-primary/20">
             {entry.partOfSpeech}
           </span>
         </div>
@@ -247,7 +247,7 @@ export function WordDetailsContent({
                 type="button"
                 onClick={() => speak(col)}
                 aria-label={`Listen to collocation: ${col}`}
-                className="flex items-center gap-2 px-3.5 py-2 min-h-[44px] rounded-xl bg-secondary hover:bg-primary/10 text-foreground text-xs sm:text-sm font-sans font-semibold border border-border hover:border-primary/40 active:scale-95 transition-all cursor-pointer"
+                className="flex items-center gap-2 px-3.5 py-2 min-h-[44px] rounded-xl bg-secondary hover:bg-secondary text-foreground text-xs sm:text-sm font-sans font-semibold border border-border hover:border-primary/40 motion-safe:active:scale-95 transition-all cursor-pointer"
               >
                 <span>{col}</span>
                 <Volume2 className="size-3.5 text-muted-foreground" />

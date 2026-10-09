@@ -1014,10 +1014,23 @@
     "selfPaced": "تعلّم بالوتيرة التي تناسبك"
   },
   "releaseNotes": {
+    "versionLabel": "v{version}",
     "whatsNewInVersion": "ما الجديد في الإصدار {version}",
     "dismiss": "تجاهل ملاحظات الإصدار",
     "gotIt": "فهمت ذلك!",
-    "showDetails": "عرض تفاصيل الإصدار"
+    "showDetails": "عرض تفاصيل الإصدار",
+    "pageTitle": "سجل التحديثات",
+    "pageDescription": "تعرّف على مستجدات WordPix، بما فيها الميزات الجديدة والتحسينات والإصلاحات.",
+    "backToProfile": "العودة إلى الملف الشخصي",
+    "historyLabel": "سجل تحديثات التطبيق",
+    "earlierRelease": "إصدار سابق",
+    "latest": "آخر تحديث",
+    "viewAll": "عرض جميع التحديثات",
+    "categories": {
+      "added": "جديد",
+      "improved": "تحسين",
+      "fixed": "إصلاح"
+    }
   },
   "masteryReview": {
     "badge": "المراجعة اليومية للمفردات",
@@ -2173,5 +2186,30 @@
   },
   "mastery": {
     "mastered": "متقن"
+  },
+  "courseLesson": {
+    "navigation": "أقسام الدرس",
+    "input": "اقرأ واستمع",
+    "language": "اللغة",
+    "practice": "تدرّب",
+    "apply": "راجع وطبّق",
+    "progress": "إكمال الدرس",
+    "questionNavigation": "التنقّل بين الأسئلة",
+    "recallSource": "ما الرسالة الأساسية التي تتذكّرها من النص؟",
+    "recallExplain": "كيف تشرح الفكرة الأساسية لهذا الدرس لشخص آخر؟",
+    "recallExample": "ما الكلمات التي تستخدمها في موقف واقعي؟",
+    "recallExampleAnswer": "استخدم بدايات الجمل في هذا الدرس، ثم عدّل المثال ليناسب موقفك.",
+    "discussionReason": "لماذا تختار هذا الرد؟ اذكر سببًا واحدًا.",
+    "discussionAlternative": "كيف تعبّر عن الفكرة نفسها بطريقة ألطف؟",
+    "discussionRole": "تبادلا الأدوار. ماذا قد يقول الشخص الآخر بعد ذلك؟",
+    "soundRecall": "انطق «{word}» من الذاكرة. ما الذي يساعدك على نطق الصوت؟",
+    "soundContrast": "ما الذي يتغيّر في حركة فمك عند نطق الصوت المقابل؟",
+    "soundTransfer": "استخدم «{word}» في جملة قصيرة مع الحفاظ على وضوح الصوت.",
+    "quizHelp": "اختر إجابة. في أسئلة الترتيب، اختر العناصر بالترتيب، واختر العنصر مرة أخرى لإزالته.",
+    "avoid": "تجنّب:",
+    "use": "استخدم:",
+    "inputShort": "استمع",
+    "languageShort": "الكلمات",
+    "applyShort": "طبّق"
   }
 }

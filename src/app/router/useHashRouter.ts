@@ -47,6 +47,10 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
   "#/practice": { title: "WordPix — Skill Practice", getScreen: () => ({ id: "practice" }) },
   "#/review": { title: "WordPix — Daily Review", getScreen: () => ({ id: "review" }) },
   "#/profile": { title: "WordPix — Learner Profile", getScreen: () => ({ id: "profile" }) },
+  "#/release-notes": {
+    title: "WordPix — Release Notes",
+    getScreen: () => ({ id: "release-notes" }),
+  },
   "#/skills": { title: "WordPix — Skill Exercises", getScreen: () => ({ id: "skill-hub" }) },
   "#/pronunciation": {
     title: "WordPix — Pronunciation Curriculum",
@@ -126,6 +130,8 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Skill Practice" };
   if (screen.id === "review") return { hash: "#/review", title: "WordPix — Daily Review" };
   if (screen.id === "profile") return { hash: "#/profile", title: "WordPix — Learner Profile" };
+  if (screen.id === "release-notes")
+    return { hash: "#/release-notes", title: "WordPix — Release Notes" };
   if (screen.id === "lesson-entry") {
     const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
     return { hash: `#/learn/${world.id}`, title: `WordPix — ${world.name}` };

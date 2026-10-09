@@ -98,19 +98,19 @@ export function LanguageSelect({ dispatch }: Props) {
         </div>
 
         <div className="relative z-10 flex flex-col gap-6 my-auto">
-          <div className="size-16 rounded-2xl bg-primary/20 text-primary border border-primary/30 flex items-center justify-center">
-            <Target className="size-8 text-wp-amber" />
+          <div className="size-16 rounded-2xl bg-secondary text-primary border border-primary/30 flex items-center justify-center">
+            <Target className="size-8 text-wp-amber-foreground" />
           </div>
           <div>
             <h2 className="font-sans font-black text-3xl xl:text-4xl text-white leading-tight">
               {t("onboarding.paceTitle")}
             </h2>
-            <p className="font-sans text-white/70 text-base mt-2 leading-relaxed">
+            <p className="font-sans text-wp-text-on-panel-muted text-base mt-2 leading-relaxed">
               {t("onboarding.paceSubtitle")}
             </p>
           </div>
           <div className="bg-white/10 rounded-2xl p-4 border border-white/15 backdrop-blur-md flex items-center gap-3">
-            <Sparkles className="size-6 text-wp-amber shrink-0" />
+            <Sparkles className="size-6 text-wp-amber-foreground shrink-0" />
             <div className="text-xs font-sans text-white/90">
               <span className="font-bold">{t("onboarding.dailyGoalLabel")}</span>{" "}
               {t("onboarding.dailyGoalFresh", { minutes: goalMinutes })}
@@ -118,7 +118,7 @@ export function LanguageSelect({ dispatch }: Props) {
           </div>
         </div>
 
-        <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
+        <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Layers className="size-4" />
           <span>{t("onboarding.step2Config")}</span>
         </div>
@@ -199,7 +199,7 @@ export function LanguageSelect({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => setIsPlacementOpen(true)}
-              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px]"
+              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-secondary hover:bg-secondary text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px]"
             >
               <HelpCircle className="size-4" />
               <span>{t("onboarding.testMyLevel")}</span>
@@ -207,7 +207,7 @@ export function LanguageSelect({ dispatch }: Props) {
             {placement && (
               <div
                 role="status"
-                className="rounded-2xl border border-primary/30 bg-primary/5 p-4 text-start"
+                className="rounded-2xl border border-primary/30 bg-secondary p-4 text-start"
               >
                 <p className="font-sans text-sm font-bold text-foreground">
                   {t("onboarding.placementRecommendation", {
@@ -300,7 +300,7 @@ export function LanguageSelect({ dispatch }: Props) {
           <button
             type="button"
             onClick={handleStart}
-            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
+            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >

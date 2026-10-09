@@ -130,7 +130,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => dispatch({ type: "GO", to: "library" })}
-              className="flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <Library className="size-5" aria-hidden />
               <span>{t("learn.browseLibrary")}</span>
@@ -138,7 +138,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => dispatch({ type: "GO", to: "home" })}
-              className="flex min-h-[48px] items-center justify-center rounded-2xl px-6 py-3 text-base font-bold text-primary underline underline-offset-4 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="flex min-h-[48px] items-center justify-center rounded-2xl px-6 py-3 text-base font-bold text-primary underline underline-offset-4 hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {t("nav.home")}
             </button>
@@ -173,7 +173,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
       <section
         aria-labelledby="recommended-heading"
-        className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
+        className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-secondary p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
       >
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
@@ -190,7 +190,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: recommendedUnit.id })}
-          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto"
+          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto"
         >
           <BookOpen className="size-5" aria-hidden />
           <span>{t("learn.continueUnit")}</span>
@@ -356,7 +356,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -392,7 +392,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -428,7 +428,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -462,7 +462,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">

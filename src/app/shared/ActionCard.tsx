@@ -19,11 +19,11 @@ export interface ActionCardProps extends Omit<ButtonHTMLAttributes<HTMLButtonEle
 const variantStyles: Record<ActionCardVariant, { base: string; selected: string }> = {
   default: {
     base: "bg-wp-card border-border hover:border-primary/40 hover:bg-muted/30 text-foreground",
-    selected: "border-primary/60 bg-primary/5 text-foreground shadow-wp-xs",
+    selected: "border-primary/60 bg-secondary text-foreground shadow-wp-xs",
   },
   primary: {
-    base: "bg-wp-card border-primary/25 hover:border-primary/60 hover:bg-primary/5 text-foreground shadow-wp-xs",
-    selected: "border-primary bg-primary/10 text-foreground shadow-wp-sm",
+    base: "bg-wp-card border-primary/25 hover:border-primary/60 hover:bg-secondary text-foreground shadow-wp-xs",
+    selected: "border-primary bg-secondary text-foreground shadow-wp-sm",
   },
   accent: {
     base: "bg-wp-panel border-wp-panel-border hover:border-primary/50 text-wp-text-on-panel",

@@ -119,14 +119,14 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
       label: t("profile.familiarWords"),
       description: t("profile.familiarWordsDesc", { defaultValue: "Recognized & recalled" }),
       icon: Brain,
-      color: "text-wp-blue",
+      color: "text-wp-blue-foreground",
     },
     {
       value: `${learningCount}`,
       label: t("profile.learningWords"),
       description: t("profile.learningWordsDesc", { defaultValue: "Introduced recently" }),
       icon: BookOpen,
-      color: "text-wp-amber",
+      color: "text-wp-amber-foreground",
     },
     {
       value: recallAccuracy === null ? "—" : `${recallAccuracy}%`,
@@ -150,7 +150,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
       label: t("profile.activeStreak"),
       description: t("profile.activeStreakDesc", { defaultValue: "Consecutive study days" }),
       icon: Flame,
-      color: "text-wp-amber",
+      color: "text-wp-amber-foreground",
     },
   ];
 
@@ -190,7 +190,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               <div className="flex flex-col items-center md:items-start gap-1">
                 <div className="flex items-center gap-2 mt-1">
                   <span className="bg-secondary text-primary font-sans font-semibold text-sm px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
-                    <Flame className="size-3.5 text-wp-amber" />
+                    <Flame className="size-3.5 text-wp-amber-foreground" />
                     {progress.streak > 0
                       ? t("profile.streakActive", { streak: progress.streak })
                       : t("profile.streakReady")}
@@ -360,6 +360,24 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
             })}
           </div>
         </motion.section>
+        <section
+          className="rounded-2xl border border-border bg-card p-5"
+          aria-labelledby="release-notes-heading"
+        >
+          <h2 id="release-notes-heading" className="text-lg font-bold text-foreground">
+            {t("releaseNotes.pageTitle")}
+          </h2>
+          <p className="mt-2 text-base text-muted-foreground">
+            {t("releaseNotes.pageDescription")}
+          </p>
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "release-notes" })}
+            className="mt-3 inline-flex min-h-11 items-center rounded-xl border border-primary bg-secondary px-4 py-2 text-base font-semibold text-primary hover:bg-card focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("releaseNotes.viewAll")}
+          </button>
+        </section>
       </motion.div>
     </PageContainer>
   );

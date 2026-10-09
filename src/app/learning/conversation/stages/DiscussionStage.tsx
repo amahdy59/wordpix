@@ -48,7 +48,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
           >
             <div>
               <div className="flex items-center gap-2">
-                <span className="flex size-6 items-center justify-center rounded-md bg-primary/10 font-black text-sm text-primary">
+                <span className="flex size-6 items-center justify-center rounded-md bg-secondary font-black text-sm text-primary">
                   {item.id}
                 </span>
                 <h2 className="wp-type-stage-title text-base font-black uppercase tracking-wide text-primary">
@@ -92,9 +92,20 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
         maxDurationSeconds={90}
       />
 
-      <p className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-base font-semibold text-foreground">
+      <p className="rounded-2xl border border-primary/20 bg-secondary p-4 text-base font-semibold text-foreground">
         {t("conversation.discussionSpeakingHelp")}
       </p>
+
+      <div className="grid gap-3 md:grid-cols-3" aria-label={t("hadith.discussionLabel")}>
+        {["discussionReason", "discussionAlternative", "discussionRole"].map((key) => (
+          <article key={key} className="rounded-2xl border border-primary/25 bg-secondary p-4">
+            <MessageSquareText className="mb-3 size-6 text-primary" aria-hidden />
+            <h3 className="text-base font-bold leading-7 text-foreground">
+              {t(`courseLesson.${key}`)}
+            </h3>
+          </article>
+        ))}
+      </div>
 
       {/* Stage Navigation Footer */}
       <div className="mt-2 flex items-center justify-between">
@@ -112,7 +123,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
           onClick={() => {
             onNext();
           }}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueChallenge")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

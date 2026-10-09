@@ -62,7 +62,7 @@ export function ChallengeStage({
         </span>
 
         {isMastered && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-sm font-black text-accent">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-feedback-success-surface px-3 py-1 text-sm font-black text-feedback-success-foreground">
             <CheckCircle2 className="size-4" aria-hidden />
             {t("conversation.unitMastered")}
           </span>
@@ -176,7 +176,7 @@ export function ChallengeStage({
           {unit.speakingChallenge.usefulFrames.map((frame, idx) => (
             <div
               key={idx}
-              className="rounded-xl border border-primary/20 bg-primary/5 p-3 text-sm sm:text-base font-semibold text-foreground italic"
+              className="rounded-xl border border-primary/20 bg-secondary p-3 text-sm sm:text-base font-semibold text-foreground italic"
             >
               "{frame}"
             </div>
@@ -219,7 +219,7 @@ export function ChallengeStage({
 
       {/* Celebration Banner if finished */}
       {(justCompleted || isMastered) && (
-        <div className="rounded-3xl border-2 border-accent/50 bg-accent/10 p-6 text-center shadow-wp-md animate-in zoom-in-95">
+        <div className="rounded-3xl border-2 border-accent/50 bg-feedback-success-surface p-6 text-center shadow-wp-md animate-in zoom-in-95">
           <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-wp-sm">
             <CheckCircle2 className="size-8" aria-hidden />
           </div>
@@ -249,7 +249,7 @@ export function ChallengeStage({
             onClick={handleFinishUnit}
             disabled={!canFinish}
             aria-describedby="challenge-completion-requirements"
-            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
           >
             <CheckCircle2 className="size-5" aria-hidden />
             <span>{t("conversation.completeUnit")}</span>
@@ -258,7 +258,7 @@ export function ChallengeStage({
           <button
             type="button"
             onClick={onExit}
-            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>{t("conversation.backToUnits")}</span>
           </button>

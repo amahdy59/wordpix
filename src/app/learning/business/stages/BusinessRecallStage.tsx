@@ -86,7 +86,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
           {t("business.recall.stageTag")}
         </span>
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 px-2.5 py-0.5 text-sm font-black text-primary uppercase">
+          <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-0.5 text-sm font-black text-primary uppercase">
             {t("business.recall.srBadge")}
           </span>
           <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest hidden sm:inline">
@@ -142,7 +142,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
         >
           <div className="flex items-center justify-between gap-2 mb-4">
             <div className="flex items-center gap-2">
-              <span className="inline-flex items-center rounded-lg bg-primary/20 px-2.5 py-0.5 text-sm font-black text-primary uppercase">
+              <span className="inline-flex items-center rounded-lg bg-secondary px-2.5 py-0.5 text-sm font-black text-primary uppercase">
                 {currentPrompt.promptTypeLabel}
               </span>
               <span className="text-sm font-bold text-muted-foreground">
@@ -154,7 +154,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
             </div>
 
             {isSubmitted && (
-              <span className="inline-flex items-center gap-1 text-sm font-black uppercase text-accent bg-accent/15 px-2.5 py-1 rounded-full">
+              <span className="inline-flex items-center gap-1 text-sm font-black uppercase text-feedback-success-foreground bg-feedback-success-surface px-2.5 py-1 rounded-full">
                 <CheckCircle2 className="size-3.5" aria-hidden />
                 {t("business.recall.answerRevealed")}
               </span>
@@ -213,7 +213,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
 
             {/* Hint Display */}
             {showHint && currentPrompt.hint && (
-              <div className="flex items-start gap-2 rounded-xl bg-primary/10 p-3.5 text-sm sm:text-base font-semibold text-primary border border-primary/20">
+              <div className="flex items-start gap-2 rounded-xl bg-secondary p-3.5 text-sm sm:text-base font-semibold text-primary border border-primary/20">
                 <HelpCircle className="size-4 shrink-0 mt-0.5" aria-hidden />
                 <span>{t("business.recall.hintText", { hint: currentPrompt.hint })}</span>
               </div>
@@ -263,7 +263,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
                     </p>
                   )}
                   {currentPrompt.modelSentence && (
-                    <div className="mt-2 rounded-xl bg-primary/5 border border-primary/10 p-3 text-sm sm:text-base font-semibold italic text-primary">
+                    <div className="mt-2 rounded-xl bg-secondary border border-primary/10 p-3 text-sm sm:text-base font-semibold italic text-primary">
                       {currentPrompt.modelSentence}
                     </div>
                   )}
@@ -302,7 +302,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
                     <button
                       type="button"
                       onClick={() => handleRateConfidence("easy")}
-                      className="inline-flex min-h-[44px] flex-col items-center justify-center rounded-xl border border-accent/30 bg-accent/10 px-3 py-2 text-center text-sm font-bold text-accent hover:bg-accent/20 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                      className="inline-flex min-h-[44px] flex-col items-center justify-center rounded-xl border border-accent/30 bg-feedback-success-surface px-3 py-2 text-center text-sm font-bold text-feedback-success-foreground hover:bg-feedback-success-surface transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
                     >
                       <span className="font-black text-base">
                         {t("business.recall.ratingEasy")}
@@ -326,7 +326,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
           aria-labelledby="spaced-mastery-title"
         >
           <div className="flex items-center gap-3">
-            <div className="flex size-12 items-center justify-center rounded-2xl bg-accent/20 text-accent">
+            <div className="flex size-12 items-center justify-center rounded-2xl bg-feedback-success-surface text-feedback-success-foreground">
               <Star className="size-6" aria-hidden />
             </div>
             <div>
@@ -398,7 +398,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
                   key={p.id}
                   className={`flex items-center justify-between p-3 rounded-xl border transition-all ${
                     isCurrent
-                      ? "border-primary/50 bg-primary/5"
+                      ? "border-primary/50 bg-secondary"
                       : isDone
                         ? "border-border/60 bg-muted/20 opacity-70"
                         : "border-border bg-muted/10"
@@ -414,7 +414,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
                   </div>
 
                   {isDone ? (
-                    <span className="text-sm font-black text-accent uppercase">
+                    <span className="text-sm font-black text-feedback-success-foreground uppercase">
                       {confidenceRatings[p.targetWord]
                         ? `Rated ${confidenceRatings[p.targetWord]}`
                         : "Completed"}

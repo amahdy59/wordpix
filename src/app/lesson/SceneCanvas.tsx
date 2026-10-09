@@ -199,7 +199,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             <button
               type="button"
               onClick={onPlayGame}
-              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden lg:block"
+              className="bg-wp-blue rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden lg:block"
               data-action="Play Game"
             >
               {t("lesson.playGame")}
@@ -216,7 +216,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           data-action="Play Game"
           className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
-            motion-safe:transition-opacity hover:opacity-90 active:opacity-80"
+            motion-safe:transition-opacity "
         >
           {`${t("lesson.playGame")} →`}
         </button>

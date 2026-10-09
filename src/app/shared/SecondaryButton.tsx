@@ -11,7 +11,7 @@ export const SecondaryButton = memo(function SecondaryButton({ label, onClick }:
     <button
       type="button"
       onClick={onClick}
-      className="bg-wp-card border border-border text-foreground content-stretch flex h-[52px] items-center justify-center relative rounded-xl shrink-0 w-full active:opacity-80 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs hover:border-primary/40 transition-all duration-150 ease-out motion-safe:hover:scale-[1.015] motion-safe:active:scale-[0.96] motion-reduce:transition-none"
+      className="bg-wp-card border border-border text-foreground content-stretch flex h-[52px] items-center justify-center relative rounded-xl shrink-0 w-full focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs hover:border-primary/40 transition-all duration-150 ease-out motion-safe:hover:scale-[1.015] motion-safe:active:scale-[0.96] motion-reduce:transition-none"
     >
       <span className="wp-type-body text-current font-bold">{label}</span>
     </button>

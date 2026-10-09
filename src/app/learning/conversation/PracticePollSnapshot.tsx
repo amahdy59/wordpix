@@ -46,7 +46,7 @@ export function PracticePollSnapshot({ unitNumber, options, selectedOptionId }: 
       aria-labelledby="practice-poll-title"
       aria-live="polite"
     >
-      <div className="border-b border-border bg-primary/5 p-4 sm:p-5">
+      <div className="border-b border-border bg-secondary p-4 sm:p-5">
         <div className="flex items-start gap-3">
           <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-wp-sm">
             <BarChart3 className="size-5" aria-hidden />
@@ -70,7 +70,7 @@ export function PracticePollSnapshot({ unitNumber, options, selectedOptionId }: 
               <li
                 key={result.id}
                 className={`rounded-2xl border p-3.5 ${
-                  isSelected ? "border-primary bg-primary/5 shadow-wp-xs" : "border-border bg-card"
+                  isSelected ? "border-primary bg-secondary shadow-wp-xs" : "border-border bg-card"
                 }`}
               >
                 <div className="flex items-start justify-between gap-3 text-base">

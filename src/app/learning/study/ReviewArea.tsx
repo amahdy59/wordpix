@@ -51,7 +51,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
       {/* Header */}
       <div>
         <div className="flex items-center gap-3.5 mb-2">
-          <span className="p-3 rounded-2xl bg-primary/10 text-primary shadow-2xs">
+          <span className="p-3 rounded-2xl bg-secondary text-primary shadow-2xs">
             <Trophy className="size-6" aria-hidden />
           </span>
           <div className="min-w-0">
@@ -79,7 +79,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
               id="weak-words-heading"
               className="font-bold text-lg text-foreground flex items-center gap-2"
             >
-              <RotateCcw className="size-5 text-wp-amber" aria-hidden />
+              <RotateCcw className="size-5 text-wp-amber-foreground" aria-hidden />
               <span>{t("study.dueForReview", { count: weakWords.length })}</span>
             </h3>
             <p className="text-sm text-muted-foreground mt-1">{t("study.dueForReviewDesc")}</p>
@@ -143,7 +143,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
                     {!revealed ? (
                       <button
                         onClick={() => toggleReveal(word!.id, true)}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] shadow-2xs"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] shadow-2xs"
                       >
                         <Eye className="size-4" aria-hidden />
                         <span>{t("study.revealAnswer")}</span>
@@ -158,7 +158,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
                         </button>
                         <button
                           onClick={() => handleClearWord(word!.id)}
-                          className="px-5 py-2.5 rounded-2xl bg-primary/10 border border-primary/30 text-primary font-bold text-sm hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          className="px-5 py-2.5 rounded-2xl bg-secondary border border-primary/30 text-primary font-bold text-sm hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                         >
                           {t("study.rememberedIt")}
                         </button>
@@ -184,7 +184,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
               className="font-bold text-lg text-foreground flex items-center gap-2 justify-center sm:justify-start"
             >
               <span>{t("study.allCaughtUp")}</span>
-              <Sparkles className="size-4 text-wp-amber" aria-hidden />
+              <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden />
             </h3>
             <p className="text-base text-muted-foreground mt-1">{t("study.allCaughtUpDesc")}</p>
           </div>
@@ -192,7 +192,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
       )}
 
       <section
-        className="rounded-3xl border border-primary/30 bg-primary/5 p-5 sm:p-7"
+        className="rounded-3xl border border-primary/30 bg-secondary p-5 sm:p-7"
         aria-labelledby="transfer-task-heading"
       >
         <h2 id="transfer-task-heading" className="text-xl font-black text-foreground">

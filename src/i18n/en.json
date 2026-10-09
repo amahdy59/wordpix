@@ -1014,10 +1014,23 @@
     "selfPaced": "At your own pace"
   },
   "releaseNotes": {
+    "versionLabel": "v{version}",
     "whatsNewInVersion": "What's New in v{version}",
     "dismiss": "Dismiss release notes",
     "gotIt": "Got it!",
-    "showDetails": "Show release details"
+    "showDetails": "Show release details",
+    "pageTitle": "Release notes",
+    "pageDescription": "See what has changed in WordPix, including new features, improvements and fixes.",
+    "backToProfile": "Back to Profile",
+    "historyLabel": "Software update history",
+    "earlierRelease": "Earlier release",
+    "latest": "Latest update",
+    "viewAll": "View all updates",
+    "categories": {
+      "added": "Added",
+      "improved": "Improved",
+      "fixed": "Fixed"
+    }
   },
   "masteryReview": {
     "badge": "Daily vocabulary review",
@@ -2173,5 +2186,30 @@
   },
   "mastery": {
     "mastered": "Mastered"
+  },
+  "courseLesson": {
+    "navigation": "Lesson sections",
+    "input": "Read & listen",
+    "language": "Language",
+    "practice": "Practice",
+    "apply": "Review & apply",
+    "progress": "Lesson completion",
+    "questionNavigation": "Question navigation",
+    "recallSource": "What key message can you recall from the text?",
+    "recallExplain": "How would you explain this lesson’s main idea to someone else?",
+    "recallExample": "Which words would you use in a real situation?",
+    "recallExampleAnswer": "Use the sentence starters from this lesson, then adapt the example to your situation.",
+    "discussionReason": "Why would you choose this response? Give one reason.",
+    "discussionAlternative": "How could you express the same idea more gently?",
+    "discussionRole": "Switch roles. What might the other person say next?",
+    "soundRecall": "Say “{word}” from memory. What helps you make the sound?",
+    "soundContrast": "What changes in your mouth when you say the contrasting sound?",
+    "soundTransfer": "Use “{word}” in a short sentence. Keep the sound clear.",
+    "quizHelp": "Choose an answer. For ordering questions, select items in order; select again to remove.",
+    "avoid": "Avoid:",
+    "use": "Use:",
+    "inputShort": "Listen",
+    "languageShort": "Words",
+    "applyShort": "Apply"
   }
 }

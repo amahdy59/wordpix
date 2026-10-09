@@ -235,7 +235,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
             <button
               type="button"
               onClick={mostRecentTrack.onResume}
-              className="mt-4 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 font-sans text-base font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
+              className="mt-4 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 font-sans text-base font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
             >
               <Play className="size-4" aria-hidden />
               <span>
@@ -270,7 +270,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
                 key={track.id}
                 type="button"
                 onClick={track.onClick}
-                className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card p-2.5 text-start transition-colors hover:border-primary/50 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.98]"
+                className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card p-2.5 text-start transition-colors hover:border-primary/50 hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.98]"
               >
                 <div className="shrink-0">{track.icon}</div>
                 <div className="min-w-0">

@@ -119,7 +119,7 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
                 setStatus("loading");
                 setLoadAttempt((c) => c + 1);
               }}
-              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold min-h-[48px] shadow-sm hover:bg-primary/90 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold min-h-[48px] shadow-sm hover:bg-primary transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               {t("action.tryAgain")}
             </button>
@@ -153,7 +153,7 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
           <p className="font-sans text-muted-foreground mb-4">{t("learningMaterials.empty")}</p>
           <button
             onClick={handleBack}
-            className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold min-h-[48px] shadow-sm hover:bg-primary/90 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold min-h-[48px] shadow-sm hover:bg-primary transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             {t("action.back")}
           </button>
@@ -264,7 +264,7 @@ export function PassageSection({
             <h2 id="passage-heading" className="font-bold text-xl text-foreground truncate min-w-0">
               {passage.title}
             </h2>
-            <span className="text-sm font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
+            <span className="text-sm font-bold px-3 py-1 rounded-full bg-secondary text-primary border border-primary/20 shrink-0">
               {passage.level}
             </span>
           </div>
@@ -301,7 +301,7 @@ export function PassageSection({
                 key={`${segment.startRatio}-${segment.text}`}
                 className={
                   index === activeSegment
-                    ? "rounded-md bg-primary/15 px-0.5 transition-colors"
+                    ? "rounded-md bg-secondary px-0.5 transition-colors"
                     : undefined
                 }
               >
@@ -417,7 +417,7 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2.5 flex-wrap">
                 <p className="font-bold text-base text-foreground">{phrase.phrase}</p>
-                <span className="text-sm uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                <span className="text-sm uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-secondary text-primary border border-primary/20">
                   {t(PHRASE_KIND_KEY[phrase.kind])}
                 </span>
               </div>
@@ -494,7 +494,7 @@ export function DialogueSection({
             key={`${line.speaker}-${i}`}
             className="flex items-start gap-3 p-3.5 rounded-2xl bg-background border border-border hover:border-primary/40 transition-colors"
           >
-            <span className="font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-sm sm:text-base pt-1 bg-primary/10 px-2.5 py-1 rounded-lg text-center">
+            <span className="font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-sm sm:text-base pt-1 bg-secondary px-2.5 py-1 rounded-lg text-center">
               {line.speaker}:
             </span>
             <span className="text-foreground text-base sm:text-base flex-1 min-w-0 break-words leading-relaxed pt-0.5">
@@ -698,7 +698,7 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
               >
                 {columns.map(({ key }) => (
                   <td key={key} className="text-base text-foreground py-3 px-4 font-medium">
-                    {row[key] ?? <span className="text-muted-foreground/60">—</span>}
+                    {row[key] ?? <span className="text-muted-foreground">—</span>}
                   </td>
                 ))}
               </tr>
@@ -782,7 +782,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
         <button
           type="button"
           onClick={() => setChecked(true)}
-          className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary/90 transition-colors min-h-[44px] shadow-xs"
+          className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary transition-colors min-h-[44px] shadow-xs"
         >
           {t("learningMaterials.checkAnswers")}
         </button>
@@ -906,10 +906,12 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
           <span className="font-bold text-foreground">
             {t("learningMaterials.frequencyLabel")}{" "}
           </span>
-          <span className="text-wp-amber font-mono">{`★★★`}</span> {t("learningMaterials.freqCore")}{" "}
-          · <span className="text-wp-amber font-mono">{`★★`}</span>{" "}
+          <span className="text-wp-amber-foreground font-mono">{`★★★`}</span>{" "}
+          {t("learningMaterials.freqCore")} ·{" "}
+          <span className="text-wp-amber-foreground font-mono">{`★★`}</span>{" "}
           {t("learningMaterials.freqFrequent")} ·{" "}
-          <span className="text-wp-amber font-mono">{`★`}</span> {t("learningMaterials.freqTopic")}
+          <span className="text-wp-amber-foreground font-mono">{`★`}</span>{" "}
+          {t("learningMaterials.freqTopic")}
         </div>
         <div>
           <span className="font-bold text-foreground">{t("learningMaterials.notationLabel")} </span>
@@ -974,7 +976,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                     {entry.partOfSpeech}
                   </td>
                   <td className="text-base py-3 px-4">
-                    <span aria-hidden className="text-wp-amber font-mono text-base">
+                    <span aria-hidden className="text-wp-amber-foreground font-mono text-base">
                       {"★".repeat(entry.frequency)}
                     </span>
                     <span className="sr-only">

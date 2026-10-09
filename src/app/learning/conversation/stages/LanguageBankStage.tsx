@@ -113,7 +113,7 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] max-w-full items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 font-bold text-primary-foreground shadow-wp-xs hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] max-w-full items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 font-bold text-primary-foreground shadow-wp-xs motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueToolkit")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

@@ -188,7 +188,7 @@ export function MultipleChoiceQuiz({
           <button
             type="button"
             onClick={onRetry}
-            className="px-3.5 py-1.5 border border-primary/50 text-primary rounded-xl text-sm hover:bg-primary/10 transition-colors min-h-[44px] font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="px-3.5 py-1.5 border border-primary/50 text-primary rounded-xl text-sm hover:bg-secondary transition-colors min-h-[44px] font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           >
             {t("practice.tryAgain")}
           </button>

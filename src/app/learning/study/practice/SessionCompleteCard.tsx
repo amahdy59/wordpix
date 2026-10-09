@@ -49,7 +49,7 @@ export function SessionCompleteCard({
       {reviewAddedWords.length > 0 && (
         <div className="w-full bg-secondary/30 border border-border rounded-3xl p-5 mb-8 text-start">
           <h2 className="font-bold text-base text-foreground mb-2 flex items-center gap-2">
-            <RotateCcw className="size-4 text-wp-amber" aria-hidden />
+            <RotateCcw className="size-4 text-wp-amber-foreground" aria-hidden />
             {t("practice.wordsForReview", {
               count: formatNumber(reviewAddedWords.length, numeralSystem),
             })}
@@ -79,7 +79,7 @@ export function SessionCompleteCard({
         </button>
         <button
           onClick={onNextActivity}
-          className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground font-bold rounded-2xl hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
+          className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground font-bold rounded-2xl hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
         >
           <span>
             {reviewAddedWords.length > 0

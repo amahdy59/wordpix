@@ -5,7 +5,7 @@ import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../../i18n";
 
 describe("ConversationLessonScreen Component", () => {
-  it("renders Unit 1 with all 7 stages in the stepper", () => {
+  it("groups Unit 1 into four sections without losing its seven-stage progress", () => {
     const dispatch = vi.fn();
     const { container } = render(
       <I18nProvider>
@@ -22,13 +22,18 @@ describe("ConversationLessonScreen Component", () => {
         name: "Unit 1: Could You Live Without Your Smartphone for a Month?",
       }),
     ]);
-    expect(screen.getByRole("tab", { name: /warm-up/i })).toBeDefined();
-    expect(screen.getByRole("tab", { name: /reading/i })).toBeDefined();
-    expect(screen.getByRole("tab", { name: /language bank/i })).toBeDefined();
-    expect(screen.getByRole("tab", { name: /toolkit/i })).toBeDefined();
-    expect(screen.getByRole("tab", { name: /quiz/i })).toBeDefined();
-    expect(screen.getByRole("tab", { name: /discussion/i })).toBeDefined();
-    expect(screen.getByRole("tab", { name: /challenge/i })).toBeDefined();
+    const nav = screen.getByRole("navigation", { name: "Lesson sections" });
+    for (const label of [
+      "Read & listen",
+      "Language",
+      "Practice",
+      "Review & apply",
+      "Warm-up",
+      "Reading",
+    ]) {
+      expect(within(nav).getByRole("button", { name: label })).toBeDefined();
+    }
+    expect(within(nav).getByRole("progressbar")).toHaveAttribute("aria-valuemax", "7");
   });
 
   it("unlocks stages only after completing the preceding stage", () => {
@@ -41,13 +46,13 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("tab", { name: /language bank/i })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "Language" })).toBeDisabled();
 
     fireEvent.click(screen.getAllByRole("radio", { name: /vote/i })[0]);
     fireEvent.click(screen.getByRole("button", { name: /continue to reading/i }));
     fireEvent.click(screen.getByRole("button", { name: /continue to language bank/i }));
 
-    const vocabTab = screen.getByRole("tab", { name: /language bank/i });
+    const vocabTab = screen.getByRole("button", { name: "Language" });
     expect(vocabTab).toBeEnabled();
 
     // Should display Language Bank items
@@ -65,8 +70,11 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("tab", { name: /warm-up/i })).toHaveAttribute("aria-selected", "true");
-    expect(screen.getByRole("tab", { name: /challenge/i })).toBeDisabled();
+    expect(screen.getByRole("button", { name: /warm-up/i })).toHaveAttribute(
+      "aria-current",
+      "step"
+    );
+    expect(screen.getByRole("button", { name: "Review & apply" })).toBeDisabled();
   });
 
   it("renders quick vote options on warmup stage", () => {

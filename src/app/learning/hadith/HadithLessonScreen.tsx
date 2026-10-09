@@ -213,7 +213,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
           <div className="flex flex-wrap items-center gap-2.5">
             {savedProgress && (
               <p
-                className="sr-only sm:not-sr-only sm:inline-flex sm:items-center sm:gap-1.5 sm:rounded-full sm:bg-primary/10 sm:px-3 sm:py-1 sm:text-base sm:font-bold sm:text-primary"
+                className="sr-only sm:not-sr-only sm:inline-flex sm:items-center sm:gap-1.5 sm:rounded-full sm:bg-secondary sm:px-3 sm:py-1 sm:text-base sm:font-bold sm:text-primary"
                 role="status"
               >
                 <Check className="size-3.5" aria-hidden />
@@ -272,14 +272,16 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
               </div>
             </details>
           </div>
+        </header>
 
+        <div className="wp-course-sticky sticky top-0 z-40 border-b border-border bg-background py-2">
           {/* Accessible responsive lesson stepper */}
           <HadithStageStepper
             currentStageIndex={stageIndex}
             completedStages={savedProgress?.completedStages}
             onSelectStage={handleStageSelect}
           />
-        </header>
+        </div>
 
         {/* Stage Content Container */}
         <div
@@ -350,7 +352,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             <button
               type="button"
               onClick={goNext}
-              className={`inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 text-base font-bold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] ${focusRing}`}
+              className={`inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 text-base font-bold text-primary-foreground shadow-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] ${focusRing}`}
             >
               <span>
                 {stageIndex === HADITH_STAGE_IDS.length - 1

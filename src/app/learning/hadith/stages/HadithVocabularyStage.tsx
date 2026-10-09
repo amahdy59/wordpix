@@ -339,7 +339,7 @@ export function HadithVocabularyStage({
                         `Listen to ${item.expression}`
                       }
                       size="sm"
-                      className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
+                      className="border-primary/40 bg-secondary text-primary hover:bg-secondary"
                     />
                   </td>
                 </tr>
@@ -377,7 +377,7 @@ export function HadithVocabularyStage({
                     `Listen to ${item.expression}`
                   }
                   size="sm"
-                  className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
+                  className="border-primary/40 bg-secondary text-primary hover:bg-secondary"
                 />
               </div>
               <p

@@ -333,7 +333,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             current: activeWordIndex + 1,
             total: words.length,
           })}
-          className="h-1.5 bg-primary/20 rounded-full mt-3 overflow-hidden"
+          className="h-1.5 bg-secondary rounded-full mt-3 overflow-hidden"
         >
           <div
             className="h-full bg-primary rounded-full"
@@ -460,7 +460,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                         ? t("listenRepeat.stopAudioFor", { word: currentWord.label })
                         : t("listenRepeat.playAudioFor", { word: currentWord.label })
                     }
-                    className="flex items-center justify-center gap-2 px-3 py-2 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
+                    className="flex items-center justify-center gap-2 px-3 py-2 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
                   >
                     <span>
                       {isPlaying || continuous
@@ -528,7 +528,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 aria-haspopup={desktopDetails ? undefined : "dialog"}
                 aria-controls={desktopDetails ? "word-details-panel" : undefined}
                 aria-expanded={!!inspectedWord}
-                className="w-full flex items-center justify-start gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
+                className="w-full flex items-center justify-start gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
               >
                 <BookOpen className="size-4" aria-hidden />
                 <span>{t("listenRepeat.wordDetails")}</span>
@@ -576,7 +576,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
           {/* Real-Time Speech Feedback Banner with Live Waveform */}
           {speechStatus === "listening" && (
-            <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-2 flex items-center justify-between gap-2 shrink-0">
+            <div className="bg-secondary border border-primary/30 rounded-xl px-3 py-2 flex items-center justify-between gap-2 shrink-0">
               <div className="flex items-center gap-2">
                 <Mic className="size-4 text-primary motion-safe:animate-bounce" aria-hidden />
                 <span className="font-sans text-xs font-bold text-primary">
@@ -617,7 +617,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               role="status"
               className="bg-wp-amber/10 border border-wp-amber/30 rounded-xl px-3 py-2"
             >
-              <p className="font-sans text-xs font-bold text-wp-amber">
+              <p className="font-sans text-xs font-bold text-wp-amber-foreground">
                 {t("listenRepeat.tryAgainPrompt", { word: currentWord.label })}
               </p>
             </div>

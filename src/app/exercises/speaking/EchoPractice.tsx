@@ -64,7 +64,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
             type="button"
             onClick={() => speak(target.label)}
             aria-label={t("echoPractice.playModelAria", { word: target.label })}
-            className="size-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md min-h-[44px] min-w-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-transform hover:scale-105 active:scale-95"
+            className="size-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md min-h-[44px] min-w-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-transform motion-safe:hover:scale-105 motion-safe:active:scale-95"
           >
             <Volume2 className="size-8" aria-hidden />
           </button>
@@ -85,7 +85,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
                 className={`w-full min-h-[56px] py-4 px-6 rounded-2xl font-sans font-bold flex items-center justify-center gap-3 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isListening
                     ? "bg-wp-rose text-wp-text-on-rose shadow-lg"
-                    : "bg-wp-blue text-wp-text-on-blue shadow-wp-xs hover:opacity-90 active:scale-98"
+                    : "bg-wp-blue text-wp-text-on-blue shadow-wp-xs motion-safe:active:scale-98"
                 }`}
               >
                 <Mic className={`size-6 ${isListening ? "animate-bounce" : ""}`} aria-hidden />

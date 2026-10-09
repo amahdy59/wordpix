@@ -34,7 +34,7 @@ export function EmptyState({
       className={`flex min-h-48 w-full flex-col items-center justify-center text-center ${className}`}
     >
       {icon && (
-        <div className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+        <div className="flex size-12 items-center justify-center rounded-2xl bg-secondary text-primary">
           {icon}
         </div>
       )}

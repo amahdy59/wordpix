@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookOpen, Columns2, Globe, Headphones, Info, Rows3, Volume2 } from "lucide-react";
+import { BookOpen, Columns2, Globe, Headphones, Rows3, Volume2 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 
 interface Props {
@@ -89,7 +89,7 @@ export function HadithReadListenStage({
         <article className="flex flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
           <div>
             <div className="flex items-center justify-between gap-3 border-b border-border/70 pb-4">
-              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
+              <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
                 <BookOpen className="size-3.5" aria-hidden />
                 {t("hadith.arabic") || "Arabic"}
               </span>
@@ -110,7 +110,7 @@ export function HadithReadListenStage({
               type="button"
               onClick={() => onPlayAudio("ar")}
               aria-busy={isPlaying && activeTrack === "ar"}
-              className={`inline-flex min-h-12 items-center gap-2.5 rounded-2xl bg-primary px-5 font-black text-primary-foreground shadow-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] motion-reduce:transition-none ${focusRing}`}
+              className={`inline-flex min-h-12 items-center gap-2.5 rounded-2xl bg-primary px-5 font-black text-primary-foreground shadow-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] motion-reduce:transition-none ${focusRing}`}
             >
               <Headphones className="size-5" aria-hidden />
               <span>
@@ -126,7 +126,7 @@ export function HadithReadListenStage({
         <article className="flex flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
           <div>
             <div className="flex items-center justify-between gap-3 border-b border-border/70 pb-4">
-              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
+              <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
                 <Globe className="size-3.5" aria-hidden />
                 {t("hadith.englishTranslation") || "English Translation"}
               </span>
@@ -157,7 +157,7 @@ export function HadithReadListenStage({
                 type="button"
                 onClick={() => onPlayAudio("en")}
                 aria-busy={isPlaying && activeTrack === "en"}
-                className={`inline-flex min-h-12 items-center gap-2 rounded-2xl border-2 border-primary bg-primary/10 px-4 font-black text-primary transition-all hover:bg-primary/15 motion-safe:active:scale-[0.98] motion-reduce:transition-none ${focusRing}`}
+                className={`inline-flex min-h-12 items-center gap-2 rounded-2xl border-2 border-primary bg-secondary px-4 font-black text-primary transition-all hover:bg-secondary motion-safe:active:scale-[0.98] motion-reduce:transition-none ${focusRing}`}
               >
                 <Volume2 className="size-5" aria-hidden />
                 <span>
@@ -194,63 +194,6 @@ export function HadithReadListenStage({
           </div>
         </article>
       </div>
-
-      {/* 3-Step Interactive Learner Flow Bar */}
-      <aside
-        className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-7"
-        aria-labelledby="listening-guide-heading"
-      >
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-2">
-            <Info className="size-5 text-primary" aria-hidden />
-            <h3 id="listening-guide-heading" className="text-lg font-black text-foreground">
-              {t("hadith.listeningGuide") || "Learner flow"}
-            </h3>
-          </div>
-          <p className="text-sm font-semibold text-muted-foreground">
-            {t("hadith.listeningGuideDescription") ||
-              "Follow these three simple steps to practice listening and build deep comprehension:"}
-          </p>
-        </div>
-
-        <ol className="mt-5 grid gap-4 md:grid-cols-3">
-          {[
-            {
-              step: 1,
-              title: t("hadith.listenStepOne") || "Listen once for the main idea.",
-              tip: t("hadith.listenTipOne"),
-            },
-            {
-              step: 2,
-              title: t("hadith.listenStepTwo") || "Replay slowly and notice key expressions.",
-              tip: t("hadith.listenTipTwo"),
-            },
-            {
-              step: 3,
-              title: t("hadith.listenStepThree") || "Read the translation and connect meaning.",
-              tip: t("hadith.listenTipThree"),
-            },
-          ].map((item) => (
-            <li
-              key={item.step}
-              className="flex gap-3.5 rounded-2xl border border-border bg-background/70 p-4 shadow-wp-xs"
-            >
-              <span
-                className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-base font-black text-primary"
-                aria-hidden
-              >
-                {item.step}
-              </span>
-              <div className="space-y-1">
-                <p className="text-base font-black text-foreground">{item.title}</p>
-                <p className="wp-prose text-sm font-medium leading-relaxed text-muted-foreground">
-                  {item.tip}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </aside>
     </section>
   );
 }

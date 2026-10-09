@@ -101,7 +101,7 @@ export function NetworkStatusBanner() {
       }`}
     >
       <Icon
-        className={`mt-0.5 size-5 shrink-0 ${isOffline || hasSyncFailure ? "text-wp-amber" : "text-wp-green"}`}
+        className={`mt-0.5 size-5 shrink-0 ${isOffline || hasSyncFailure ? "text-wp-amber-foreground" : "text-wp-green"}`}
         aria-hidden
       />
       <div className="min-w-0">

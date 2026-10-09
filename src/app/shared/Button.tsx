@@ -15,16 +15,14 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary:
-    "bg-primary text-primary-foreground hover:opacity-95 shadow-wp-xs border border-transparent active:opacity-90",
+  primary: "bg-primary text-primary-foreground shadow-wp-xs border border-transparent ",
   secondary:
-    "bg-secondary text-primary hover:bg-secondary/80 border border-primary/25 shadow-wp-xs active:opacity-90",
+    "bg-secondary text-primary hover:bg-secondary/80 border border-primary/25 shadow-wp-xs ",
   outline:
     "bg-wp-card border border-border text-foreground hover:border-primary/50 hover:bg-muted/40 shadow-wp-xs active:bg-muted/60",
   ghost:
     "bg-transparent text-foreground hover:bg-muted/60 border border-transparent active:bg-muted/80",
-  destructive:
-    "bg-destructive text-destructive-foreground hover:opacity-95 shadow-wp-xs border border-transparent active:opacity-90",
+  destructive: "bg-destructive text-destructive-foreground shadow-wp-xs border border-transparent ",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

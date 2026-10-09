@@ -181,7 +181,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                         block: "start",
                       })
                   }
-                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-base font-black text-foreground hover:border-primary/50 hover:bg-primary/5 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-base font-black text-foreground hover:border-primary/50 hover:bg-secondary motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {t("pronunciation.chapterShort", { number: chapter.index + 1 })}
                 </button>

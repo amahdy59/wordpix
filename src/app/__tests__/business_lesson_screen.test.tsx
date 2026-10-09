@@ -6,7 +6,7 @@ import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../../i18n";
 
 describe("Business Learning Screens & Spaced Repetition", () => {
-  it("renders Unit 02 with all 9 stages in the stepper, including Stage 0 Quick Recall", () => {
+  it("groups Unit 02 into four sections and exposes its initial recall stages", () => {
     const dispatch = vi.fn();
     const { container } = render(
       <I18nProvider>
@@ -24,17 +24,19 @@ describe("Business Learning Screens & Spaced Repetition", () => {
       })
     ).toBeDefined();
 
-    // Verify stage navigation buttons in desktop sidebar
-    const desktopNav = screen.getByRole("navigation", { name: "Lesson Path Steps" });
-    expect(within(desktopNav).getByText("Quick Recall")).toBeDefined();
-    expect(within(desktopNav).getByText("Warm-Up")).toBeDefined();
-    expect(within(desktopNav).getByText("Main Input")).toBeDefined();
-    expect(within(desktopNav).getByText("Language Bank")).toBeDefined();
-    expect(within(desktopNav).getByText("Usage Focus")).toBeDefined();
-    expect(within(desktopNav).getByText("Exercise Set")).toBeDefined();
-    expect(within(desktopNav).getByText("Discussion")).toBeDefined();
-    expect(within(desktopNav).getByText("Speaking Task")).toBeDefined();
-    expect(within(desktopNav).getByText("Review & Recycling")).toBeDefined();
+    const nav = screen.getByRole("navigation", { name: "Lesson sections" });
+    for (const label of [
+      "Read & listen",
+      "Language",
+      "Practice",
+      "Review & apply",
+      "Recall",
+      "Warm-Up",
+      "Input",
+    ]) {
+      expect(within(nav).getByRole("button", { name: label })).toBeDefined();
+    }
+    expect(within(nav).getByRole("progressbar")).toHaveAttribute("aria-valuemax", "9");
   });
 
   it("enforces sequential lock: later stages are locked on initial entry", () => {
@@ -47,15 +49,11 @@ describe("Business Learning Screens & Spaced Repetition", () => {
       </I18nProvider>
     );
 
-    const desktopNav = screen.getByRole("navigation", { name: "Lesson Path Steps" });
-    const buttons = within(desktopNav).getAllByRole("button");
-
-    // Stage 0 (Recall) is active and enabled
-    expect(buttons[0]).not.toBeDisabled();
-
-    // Stage 1 (Warm-Up) and onward are locked and disabled
-    expect(buttons[1]).toBeDisabled();
-    expect(buttons[5]).toBeDisabled();
+    const desktopNav = screen.getByRole("navigation", { name: "Lesson sections" });
+    expect(within(desktopNav).getByRole("button", { name: "Recall" })).toBeEnabled();
+    for (const label of ["Warm-Up", "Language", "Practice", "Review & apply"]) {
+      expect(within(desktopNav).getByRole("button", { name: label })).toBeDisabled();
+    }
   });
 
   it("interacts with Spaced Repetition (Quick Recall) prompts and advances", () => {
@@ -195,10 +193,10 @@ describe("Business Learning Screens & Spaced Repetition", () => {
       </I18nProvider>
     );
 
-    const desktopNav = screen.getByRole("navigation", { name: "Lesson Path Steps" });
+    const desktopNav = screen.getByRole("navigation", { name: "Lesson sections" });
     const warmupBtn = within(desktopNav).getByRole("button", { name: /Warm-Up/i });
-    const inputBtn = within(desktopNav).getByRole("button", { name: /Main Input/i });
-    const vocabBtn = within(desktopNav).getByRole("button", { name: /Language Bank/i });
+    const inputBtn = within(desktopNav).getByRole("button", { name: "Input" });
+    const vocabBtn = within(desktopNav).getByRole("button", { name: "Language" });
 
     expect(warmupBtn.getAttribute("aria-current")).toBe("step");
     expect(inputBtn.hasAttribute("disabled")).toBe(true);

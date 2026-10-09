@@ -15,7 +15,7 @@ export interface FeedbackPanelProps {
 
 const toneStyles: Record<FeedbackTone, string> = {
   neutral: "border-border bg-wp-card",
-  info: "border-primary/35 bg-primary/10",
+  info: "border-primary/35 bg-secondary",
   success: "border-wp-green/40 bg-wp-green/10",
   warning: "border-wp-amber/45 bg-wp-amber/10",
   error: "border-destructive/45 bg-destructive/10",

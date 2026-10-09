@@ -54,7 +54,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
           // the 32px logo row was below the minimum touch target everywhere.
           className="flex items-center gap-2 min-h-[44px] pe-2 group focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
         >
-          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs group-hover:opacity-90 transition-all">
+          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs group-transition-all">
             <BookOpen className="size-4 text-primary-foreground" aria-hidden />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-lg">

@@ -173,9 +173,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   {/* resolvedTheme, not theme: "system" is neither "dark" nor
                       "light", so the old ternary always claimed Light Mode. */}
                   {resolvedTheme === "dark" ? (
-                    <Sun className="size-4 text-wp-amber" aria-hidden />
+                    <Sun className="size-4 text-wp-amber-foreground" aria-hidden />
                   ) : (
-                    <Moon className="size-4 text-wp-blue" aria-hidden />
+                    <Moon className="size-4 text-wp-blue-foreground" aria-hidden />
                   )}
                   <span className="capitalize">{theme}</span>
                 </button>
@@ -286,7 +286,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           {/* SECTION 2: TYPOGRAPHY & NUMERALS */}
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-              <Type className="size-4 text-wp-blue" />
+              <Type className="size-4 text-wp-blue-foreground" />
               <span>{t("settings.typographyHeading")}</span>
             </h3>
 
@@ -365,7 +365,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           {/* SECTION 3: AUDIO & ACCESSIBILITY CONTROLS */}
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-              <Volume2 className="size-4 text-wp-amber" />
+              <Volume2 className="size-4 text-wp-amber-foreground" />
               <span>{t("settings.audioHeading")}</span>
             </h3>
 
@@ -405,7 +405,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex flex-col gap-3 bg-muted/40 p-4 rounded-2xl border border-border">
                 <div className="flex items-center justify-between gap-2 flex-wrap">
                   <div className="flex items-center gap-2">
-                    <Sparkles className="size-4 text-wp-amber" aria-hidden />
+                    <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden />
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.elevenLabsTitle")}
                     </span>
@@ -415,7 +415,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => speak("Light switch.")}
                       aria-label={t("settings.testLightSwitchLabel")}
-                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-secondary font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
                       <span>{t("settings.testLightSwitch")}</span>
@@ -424,7 +424,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => speak("Vase.")}
                       aria-label={t("settings.testVaseLabel")}
-                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-secondary font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
                       <span>{t("settings.testVase")}</span>
@@ -433,7 +433,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => speak("Hello! Welcome to WordPix.")}
                       aria-label={t("settings.testSentenceLabel")}
-                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-secondary font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
                       <span>{t("settings.testSentence")}</span>
@@ -650,7 +650,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   type="button"
                   disabled={isPreloading}
                   onClick={handlePreloadAll}
-                  className="px-4 py-2.5 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-xs shadow-xs hover:opacity-90 disabled:opacity-50 transition-all shrink-0 flex items-center justify-center gap-2 min-h-[44px]"
+                  className="px-4 py-2.5 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-xs shadow-xs disabled:opacity-50 transition-all shrink-0 flex items-center justify-center gap-2 min-h-[44px]"
                 >
                   {isPreloading ? (
                     <span>{t("settings.downloadingProgress", { progress: preloadProgress })}</span>

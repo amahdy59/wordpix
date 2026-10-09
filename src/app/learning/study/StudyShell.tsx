@@ -434,7 +434,7 @@ export function StudyShell({
                 onClick={handleBackToHome}
                 className={`flex min-h-[44px] w-full items-center gap-2.5 rounded-xl px-3 py-2 text-start text-base font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                   currentArea === "home"
-                    ? "bg-primary/10 text-primary border border-primary/30"
+                    ? "bg-secondary text-primary border border-primary/30"
                     : "text-muted-foreground hover:text-foreground hover:bg-secondary"
                 }`}
               >
@@ -500,7 +500,7 @@ export function StudyShell({
                         className={`flex size-10 shrink-0 items-center justify-center rounded-xl transition-colors ${
                           isCurrentAreaActive
                             ? "bg-primary text-primary-foreground shadow-xs"
-                            : "bg-primary/10 text-primary"
+                            : "bg-secondary text-primary"
                         }`}
                       >
                         <AreaIcon aria-hidden size={20} />
@@ -555,7 +555,7 @@ export function StudyShell({
                           className={`flex min-h-[48px] w-full items-center gap-3 rounded-xl px-3 py-2 text-start text-base font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                             isActive
                               ? "bg-primary text-primary-foreground font-bold shadow-xs"
-                              : "text-foreground/80 hover:bg-secondary hover:text-foreground"
+                              : "text-foreground hover:bg-secondary hover:text-foreground"
                           }`}
                         >
                           <span
@@ -682,7 +682,7 @@ export function StudyShell({
           onClick={handleBackToHome}
           className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
             currentArea === "home"
-              ? "text-primary bg-primary/10 shadow-2xs font-extrabold"
+              ? "text-primary bg-secondary shadow-2xs font-extrabold"
               : "text-muted-foreground hover:text-foreground"
           }`}
           aria-current={currentArea === "home" ? "page" : undefined}
@@ -700,7 +700,7 @@ export function StudyShell({
               onClick={() => handleAreaSelect(area)}
               className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
                 isActive
-                  ? "text-primary bg-primary/10 shadow-2xs font-extrabold"
+                  ? "text-primary bg-secondary shadow-2xs font-extrabold"
                   : "text-muted-foreground hover:text-foreground"
               }`}
               aria-current={isActive ? "page" : undefined}

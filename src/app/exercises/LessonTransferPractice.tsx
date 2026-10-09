@@ -29,7 +29,7 @@ export function LessonTransferPractice({ usage }: Props) {
 
   return (
     <section className="space-y-4" aria-labelledby="lesson-transfer-heading">
-      <div className="rounded-3xl border border-primary/20 bg-primary/5 p-5 shadow-wp-xs sm:p-6">
+      <div className="rounded-3xl border border-primary/20 bg-secondary p-5 shadow-wp-xs sm:p-6">
         <div className="flex items-start gap-3">
           <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
             <PenLine className="size-5" aria-hidden />
@@ -107,7 +107,7 @@ export function LessonTransferPractice({ usage }: Props) {
               </div>
             ))}
           </div>
-          <p className="mt-4 rounded-xl border border-primary/20 bg-primary/5 p-3 text-sm font-semibold text-foreground">
+          <p className="mt-4 rounded-xl border border-primary/20 bg-secondary p-3 text-sm font-semibold text-foreground">
             {t("story.reviewTransferPrompt", { current: usage.targetWordsEnglish[0] })}
           </p>
           <button

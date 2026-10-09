@@ -97,7 +97,7 @@ export function PronunciationSection({ materials }: { materials: UnitLearningMat
               <p className="font-bold text-foreground text-base sm:text-base">{item.word}</p>
               <p className="text-sm text-muted-foreground">{item.stress}</p>
             </div>
-            <span className="text-primary font-mono bg-primary/10 px-2.5 py-1 rounded-xl text-sm sm:text-base font-bold">
+            <span className="text-primary font-mono bg-secondary px-2.5 py-1 rounded-xl text-sm sm:text-base font-bold">
               {item.ipa}
             </span>
           </div>
@@ -131,7 +131,7 @@ export function PriorityTiersSection({ materials }: { materials: UnitLearningMat
           </p>
         </div>
         <div className="border border-wp-amber/30 bg-wp-amber/5 p-4 rounded-2xl">
-          <p className="font-bold text-wp-amber text-base">
+          <p className="font-bold text-wp-amber-foreground text-base">
             {t("learningMaterials.tierImportant")}
           </p>
           <p className="text-base mt-1 text-foreground leading-relaxed">
@@ -496,7 +496,7 @@ export function SelfAssessmentSection({
                       className={`relative flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center rounded-xl border text-sm font-bold transition-all focus-within:outline-none focus-within:ring-2 focus-within:ring-primary ${
                         isSelected
                           ? "bg-primary text-primary-foreground border-primary shadow-xs"
-                          : "border-border text-muted-foreground hover:bg-secondary hover:text-foreground hover:border-primary/50 active:scale-95"
+                          : "border-border text-muted-foreground hover:bg-secondary hover:text-foreground hover:border-primary/50 motion-safe:active:scale-95"
                       }`}
                     >
                       <input

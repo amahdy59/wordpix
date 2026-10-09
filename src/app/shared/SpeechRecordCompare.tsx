@@ -133,7 +133,7 @@ export function SpeechRecordCompare({
         <HelpDisclosure label={t("help.howItWorks")}>
           <p>{description ?? t("speechPractice.subtitle")}</p>
         </HelpDisclosure>
-        <div className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-primary/5 p-4">
+        <div className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-secondary p-4">
           <ShieldCheck className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
           <p id={`${id}-privacy`} className="text-sm font-semibold leading-relaxed text-foreground">
             {t("speechPractice.privacy")}
@@ -156,7 +156,7 @@ export function SpeechRecordCompare({
               onClick={() => (isAudioPending ? audio.stop() : audio.speak(modelText))}
               disabled={!audio.isSupported}
               aria-busy={audio.status === "loading"}
-              className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-sm font-black text-primary transition-colors hover:bg-primary/10 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 ${focusRing}`}
+              className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-sm font-black text-primary transition-colors hover:bg-secondary motion-safe:active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 ${focusRing}`}
             >
               {audio.status === "loading" ? (
                 <LoaderCircle
@@ -203,10 +203,10 @@ export function SpeechRecordCompare({
                 onClick={recording.status === "recording" ? recording.stop : recording.start}
                 disabled={recording.status === "requesting"}
                 aria-describedby={`${id}-privacy`}
-                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-black transition-colors active:scale-[0.98] disabled:cursor-wait disabled:opacity-60 ${focusRing} ${
+                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-black transition-colors motion-safe:active:scale-[0.98] disabled:cursor-wait disabled:opacity-60 ${focusRing} ${
                   recording.status === "recording"
                     ? "bg-destructive text-destructive-foreground"
-                    : "bg-primary text-primary-foreground hover:opacity-90"
+                    : "bg-primary text-primary-foreground "
                 }`}
               >
                 {recording.status === "requesting" ? (

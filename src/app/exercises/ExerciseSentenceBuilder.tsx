@@ -239,7 +239,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                               position: blankIndex + 1,
                             })}
                             onClick={() => handleRemoveTile(blankIndex)}
-                            className="min-h-11 rounded-xl bg-primary px-3.5 py-2 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
+                            className="min-h-11 rounded-xl bg-primary px-3.5 py-2 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
                           >
                             {placedWord}
                           </motion.button>

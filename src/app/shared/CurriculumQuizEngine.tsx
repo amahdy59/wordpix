@@ -71,7 +71,7 @@ const PILL_STYLES: Record<PillStatus, string> = {
   active:
     "border-primary bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2 ring-offset-background",
   "active-page":
-    "border-primary/60 bg-primary/10 text-primary ring-2 ring-primary/40 ring-offset-1 ring-offset-background",
+    "border-primary/60 bg-secondary text-primary ring-2 ring-primary/40 ring-offset-1 ring-offset-background",
   correct:
     "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground",
   incorrect:
@@ -115,61 +115,67 @@ function QuestionCard({
       className="overflow-hidden rounded-3xl border border-border/80 bg-card shadow-wp-xs hover:border-primary/30 transition-all duration-200"
       aria-labelledby={questionHeadingId}
     >
-      <div className="p-6 sm:p-8">
-        {/* Counter label (single-question mode) */}
-        {showCounter && (
-          <p className="mb-3 text-sm font-bold uppercase tracking-wider text-muted-foreground">
-            {t("quiz.questionOf", {
-              current: index + 1,
-              total,
-            }) || `Question ${index + 1} of ${total}`}
-          </p>
-        )}
-
-        {/* Question stem */}
-        <h2
-          ref={headingRef}
-          id={questionHeadingId}
-          tabIndex={-1}
-          className="text-xl font-black leading-snug text-foreground focus-visible:outline-none sm:text-2xl"
-        >
-          {/* Question number badge in desktop multi-question mode */}
-          {!showCounter && (
-            <span className="me-2.5 inline-flex size-8 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-base font-black text-primary">
-              {index + 1}
-            </span>
+      <div
+        className={`p-4 sm:p-5 ${question.media ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]" : ""}`}
+      >
+        <div className="min-w-0">
+          {/* Counter label (single-question mode) */}
+          {showCounter && (
+            <p className="mb-3 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+              {t("quiz.questionOf", {
+                current: index + 1,
+                total,
+              }) || `Question ${index + 1} of ${total}`}
+            </p>
           )}
-          {question.stem}
-        </h2>
 
-        {/* Optional media */}
-        {question.media && <div className="mt-5">{question.media}</div>}
+          {/* Question stem */}
+          <h2
+            ref={headingRef}
+            id={questionHeadingId}
+            tabIndex={-1}
+            className="text-xl font-black leading-snug text-foreground focus-visible:outline-none sm:text-2xl"
+          >
+            {/* Question number badge in desktop multi-question mode */}
+            {!showCounter && (
+              <span className="me-2.5 inline-flex size-8 shrink-0 items-center justify-center rounded-xl bg-secondary text-base font-black text-primary">
+                {index + 1}
+              </span>
+            )}
+            {question.stem}
+          </h2>
 
-        {/* Options or Custom Body */}
-        {question.customBody ? (
-          <div className="mt-6">
-            {question.customBody({
-              answered,
-              currentAnswer,
-              onAnswer,
-            })}
-          </div>
-        ) : question.options ? (
-          <ChoiceOptionGroup
-            className={`mt-6 grid gap-3.5 ${
-              question.optionColumns === "two" || (!question.optionColumns && showCounter)
-                ? "sm:grid-cols-2"
-                : ""
-            }`}
-            label={question.stem}
-            options={question.options}
-            value={currentAnswer}
-            onChange={onAnswer}
-            disabled={answered}
-            correctValue={question.correctValue}
-            revealFeedback={answered}
-          />
-        ) : null}
+          {/* Optional media */}
+
+          {/* Options or Custom Body */}
+          {question.customBody ? (
+            <div className="mt-6">
+              {question.customBody({
+                answered,
+                currentAnswer,
+                onAnswer,
+              })}
+            </div>
+          ) : question.options ? (
+            <ChoiceOptionGroup
+              className={`mt-6 grid gap-3.5 ${
+                question.optionColumns === "two" || (!question.optionColumns && showCounter)
+                  ? "sm:grid-cols-2"
+                  : ""
+              }`}
+              label={question.stem}
+              options={question.options}
+              value={currentAnswer}
+              onChange={onAnswer}
+              disabled={answered}
+              correctValue={question.correctValue}
+              revealFeedback={answered}
+            />
+          ) : null}
+        </div>
+        {question.media && (
+          <div className="order-first min-w-0 md:order-none">{question.media}</div>
+        )}
       </div>
 
       {/* Feedback Panel */}
@@ -254,7 +260,7 @@ export function CanDoChallengeCard({
     >
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 pb-4">
         <div className="flex items-center gap-2.5">
-          <div className="flex size-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div className="flex size-9 items-center justify-center rounded-xl bg-secondary text-primary">
             <Compass className="size-5" aria-hidden="true" />
           </div>
           <div>
@@ -300,7 +306,7 @@ export function CanDoChallengeCard({
       </div>
 
       {/* Model response with native audio */}
-      <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4 space-y-3">
+      <div className="rounded-2xl border border-primary/20 bg-secondary p-4 space-y-3">
         <div className="flex items-center justify-between gap-2">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">
             {t("wordDetails.canDoModelResponse") || "Spoken Model Response"}
@@ -308,7 +314,7 @@ export function CanDoChallengeCard({
           <button
             type="button"
             onClick={() => audio.speak(challenge.modelResponseEn)}
-            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors"
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl bg-primary text-primary-foreground hover:bg-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors"
             aria-label={`${t("wordDetails.canDoListenModel") || "Listen to model answer"}: ${challenge.modelResponseEn}`}
           >
             <Volume2
@@ -341,7 +347,7 @@ export function CanDoChallengeCard({
                 key={idx}
                 type="button"
                 onClick={() => audio.speak(phrase.en)}
-                className="group flex flex-col p-2.5 rounded-xl border border-border bg-card hover:border-primary/40 hover:bg-primary/5 text-start transition-colors min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="group flex flex-col p-2.5 rounded-xl border border-border bg-card hover:border-primary/40 hover:bg-secondary text-start transition-colors min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 aria-label={`Listen to phrase: ${phrase.en}`}
               >
                 <div className="flex items-center justify-between gap-1 w-full">
@@ -579,7 +585,10 @@ export function CurriculumQuizEngine({
   // ── Progress Pills (shared between mobile and desktop layouts) ────────────
 
   const progressPills = (
-    <ol aria-label="Question progress" className="flex flex-wrap gap-2">
+    <ol
+      aria-label={t("courseLesson.questionNavigation")}
+      className="flex gap-2 overflow-x-auto p-1"
+    >
       {questions.map((q, i) => {
         const isAnswered = answers[q.id] !== undefined;
         const isCorrectAnswer = isAnswered && answers[q.id] === q.correctValue;
@@ -610,7 +619,7 @@ export function CurriculumQuizEngine({
               }}
               aria-label={t("quiz.questionPillLabel", { number: i + 1 }) || `Question ${i + 1}`}
               aria-current={isMobileActive || isDesktopActiveSingle ? "step" : undefined}
-              className={`flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-base font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
+              className={`flex shrink-0 size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-base font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
             >
               {status === "correct" ? (
                 <CheckCircle2 className="size-4" aria-hidden />
@@ -629,8 +638,10 @@ export function CurriculumQuizEngine({
   // ── Mobile Layout (single question at a time) ─────────────────────────────
 
   const mobileLayout = (
-    <div className={`flex flex-col gap-6 max-w-3xl mx-auto w-full ${className}`}>
-      {progressPills}
+    <div className={`flex flex-col gap-3 wp-container-content mx-auto w-full ${className}`}>
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 rounded-xl border border-border bg-background p-1">
+        {progressPills}
+      </div>
 
       {mobileQuestion && (
         <QuestionCard
@@ -665,7 +676,7 @@ export function CurriculumQuizEngine({
           <button
             type="button"
             onClick={handleMobileNext}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>
               {isMobileLastQuestion
@@ -682,9 +693,9 @@ export function CurriculumQuizEngine({
   // ── Desktop Layout (desktopPageSize questions per page) ──────────────────
 
   const desktopLayout = (
-    <div className={`flex flex-col gap-6 max-w-3xl mx-auto w-full ${className}`}>
+    <div className={`flex flex-col gap-3 wp-container-content mx-auto w-full ${className}`}>
       {/* Progress pills + page indicator */}
-      <div className="flex flex-wrap items-center justify-between gap-3">
+      <div className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-border bg-background p-1">
         {progressPills}
         <span className="shrink-0 text-sm font-bold text-muted-foreground">
           {desktopPageSize === 1
@@ -751,7 +762,7 @@ export function CurriculumQuizEngine({
           <button
             type="button"
             onClick={handleDesktopNextPage}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>
               {isLastDesktopPage
