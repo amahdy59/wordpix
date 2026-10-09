@@ -104,6 +104,19 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
   await expect(page.getByRole("heading", { name: "Guided discussion" })).toBeVisible();
   await expect(page.getByText("Show sample answer", { exact: true })).toHaveCount(1);
 
+  // The bottom lesson actions must not cover a review action on small screens.
+  const sampleAnswer = page.getByRole("button", { name: "Show sample answer", exact: true });
+  await sampleAnswer.scrollIntoViewIfNeeded();
+  expect(
+    await sampleAnswer.evaluate((button) => {
+      const rect = button.getBoundingClientRect();
+      return [rect.top + 2, rect.bottom - 2].every((y) =>
+        button.contains(document.elementFromPoint(rect.left + rect.width / 2, y))
+      );
+    })
+  ).toBe(true);
+  await sampleAnswer.click();
+
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
     .analyze();

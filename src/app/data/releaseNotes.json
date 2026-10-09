@@ -1,14 +1,25 @@
 {
-  "version": "0.1.6",
-  "notes": [
-    "Compact lesson navigation and quiz progress stay visible while you scroll.",
-    "Clearer vocabulary cards and more recall and discussion prompts."
-  ],
-  "notesAr": [
-    "يظل التنقّل المختصر في الدرس وتقدّم الاختبار ظاهرين أثناء التمرير.",
-    "بطاقات مفردات أوضح وأسئلة إضافية للتذكّر والنقاش."
-  ],
+  "version": "0.1.7",
+  "notes": ["Hadith review buttons stay fully reachable on mobile screens."],
+  "notesAr": ["تبقى أزرار مراجعة الحديث متاحة بالكامل على شاشات الهواتف."],
   "releases": [
+    {
+      "id": "0.1.7",
+      "version": "0.1.7",
+      "date": "2026-10-09",
+      "title": {
+        "en": "Unobstructed Hadith review controls",
+        "ar": "عناصر تحكم مراجعة الحديث دون تداخل"
+      },
+      "changes": [
+        {
+          "id": "hadith-footer-overlap",
+          "category": "fixed",
+          "en": "Bottom Hadith navigation follows the page content so it cannot cover review actions. The compact course navigation remains available at the top while scrolling.",
+          "ar": "يتبع التنقّل السفلي في دروس الحديث محتوى الصفحة كي لا يحجب أزرار المراجعة. ويظل التنقّل المختصر للدورة متاحًا في الأعلى أثناء التمرير."
+        }
+      ]
+    },
     {
       "id": "0.1.6",
       "version": "0.1.6",

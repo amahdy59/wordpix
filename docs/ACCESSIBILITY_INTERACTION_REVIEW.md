@@ -50,3 +50,14 @@ axe browser checks remain part of the combined pre-push release gate.
 Release history authoring and preservation are documented in
 [`RELEASE_NOTES.md`](RELEASE_NOTES.md). Course navigation decisions from the
 concurrent session are preserved in [`LESSON_NAVIGATION_UX.md`](LESSON_NAVIGATION_UX.md).
+
+## CI follow-up: mobile footer overlap
+
+The first combined release passed the local 122-test browser suite, but Linux
+CI detected one mobile Hadith review action partially obscured by the sticky
+bottom toolbar. The v0.1.7 correction keeps bottom navigation in normal flow;
+the compact top course rail remains sticky. The existing Hadith browser test
+now verifies that both the top and bottom edges of the sample-answer control
+can be hit before activating it, in addition to the axe scan. This records a
+real platform-specific layout failure rather than suppressing the accessibility
+rule or merely retrying the failed workflow.
