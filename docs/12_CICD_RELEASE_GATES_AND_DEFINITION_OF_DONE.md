@@ -205,6 +205,14 @@ Immediately verify:
 - Core Web Vitals sampling;
 - no cross-user data exposure.
 
+## Local browser verification on a shared workstation
+
+Set `WORDPIX_E2E_PORT` to an unused port when other sessions have previews running.
+When concurrent browser workloads cause screenshot or navigation timeouts, set
+`WORDPIX_E2E_WORKERS=1` for the normal pre-push gate. This reduces concurrency; it
+does not skip tests, change assertions, increase timeouts, or bypass hooks. The
+default remains two workers. The worker override must be a positive integer.
+
 ## References
 
 - [GitHub Actions continuous integration](https://docs.github.com/en/actions/get-started/continuous-integration)

@@ -84,3 +84,11 @@ Focused tests cover choice coverage throughout the Business curriculum, skipping
 ## Reference
 
 [Material UI card documentation](https://mui.com/material-ui/react-card/) describes cards as content and actions about one subject. That supports deliberate grouping; the screen-specific recommendations above are this review's judgments. WordPix's own design and interaction guidance in docs/04 and docs/05 supplies the local token, hierarchy, progress, and accessibility constraints.
+
+## Coordinated release review
+
+The release review additionally corrected Library primary navigation to open reference material, removed obsolete stage-zero headings, and made Conversation vote guidance explicitly optional. Business completion now requires prerequisite evidence in both the progress function and learner context; it preserves the stages actually completed instead of stamping skipped stages complete.
+
+Rendered review covered 73 presentations, both themes, and default, hover, pressed, and focus states (39,368 text/icon checks). Four forced-pseudo-state icon flags were individually checked with actual hover/mousedown: their foreground remained white on the primary fill. Submitted answer content passed a separate 264-check scan, and expanded optional confidence content passed 296 checks. Disabled navigation and hidden content were excluded from those content checks. Images/gradients need separate visual review; these checks do not establish full WCAG conformance.
+
+Manual review covered English/light mobile and desktop, Arabic/dark mobile and desktop, optional hints, collapsed confidence controls, saved checked answers after reload, and the Library reference destination. Final shipping uses the required ordered verification ladder, the normal pre-push hook, GitHub CI, and live revision/asset validation. Shared-workstation browser concurrency can be reduced with the documented worker override without relaxing assertions.

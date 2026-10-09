@@ -152,7 +152,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         <button
           type="button"
           onClick={onNext}
-          aria-describedby="warmup-vote-requirement"
+          aria-describedby="warmup-vote-guidance"
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
         >
           <span>{t("conversation.continueReading")}</span>
@@ -160,11 +160,11 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         </button>
       </div>
       <p
-        id="warmup-vote-requirement"
+        id="warmup-vote-guidance"
         className="text-end text-base font-semibold text-muted-foreground"
         aria-live="polite"
       >
-        {selectedVote ? t("conversation.voteRecorded") : t("conversation.chooseVote")}
+        {selectedVote ? t("conversation.voteRecorded") : t("conversation.optionalVote")}
       </p>
     </div>
   );

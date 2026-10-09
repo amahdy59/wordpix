@@ -36,8 +36,6 @@ test("conversation curriculum is discoverable and allows browsing without answer
     timeout: 20_000,
   });
   const continueButton = page.getByRole("button", { name: "Continue to Reading" });
-  await expect(continueButton).toBeDisabled();
-  await page.getByRole("radio").first().click();
   await expect(continueButton).toBeEnabled();
   await continueButton.click();
   await expect(page.getByRole("button", { name: "Reading", exact: true })).toHaveAttribute(
@@ -45,5 +43,14 @@ test("conversation curriculum is discoverable and allows browsing without answer
     "step"
   );
 
+  await expect(
+    page.getByRole("navigation", { name: "Lesson sections" }).getByRole("progressbar")
+  ).toHaveAttribute("aria-valuenow", "0");
+  await page.getByRole("button", { name: "Warm-up", exact: true }).click();
+  await page.getByRole("radio").first().click();
+  await page.getByRole("button", { name: "Continue to Reading" }).click();
+  await expect(
+    page.getByRole("navigation", { name: "Lesson sections" }).getByRole("progressbar")
+  ).toHaveAttribute("aria-valuenow", "1");
   expect(errors).toEqual([]);
 });
