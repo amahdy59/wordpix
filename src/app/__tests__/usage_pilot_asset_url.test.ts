@@ -28,6 +28,27 @@ describe("uploaded usage pilot images", () => {
       "/wordpix/usage-illustrations/v1/unreviewed/example.webp"
     );
   });
+  it("loads generated and shared references while rejecting malformed keys", async () => {
+    const resolve = await resolver("production", "https://media.example.com");
+    for (const key of [
+      `question-images/v2/classroom-1-scene-1/${"c".repeat(64)}.webp`,
+      `question-images/v3/shared/airport-empty-check-in-counter/${"d".repeat(64)}.webp`,
+    ]) {
+      expect(resolve(key)).toBe(`https://media.example.com/${key}`);
+      expect(resolve(`/${key}`)).toBe(`https://media.example.com/${key}`);
+    }
+    for (const key of [
+      `question-images/v3/airport/${"d".repeat(64)}.webp`,
+      "question-images/v3/shared/airport/unverified.webp",
+      `question-images/v4/shared/airport/${"d".repeat(64)}.webp`,
+    ]) {
+      expect(resolve(key)).toBe(`/wordpix/${key}`);
+    }
+    const testResolve = await resolver("test", "https://media.example.com");
+    const key = `question-images/v3/shared/airport/${"d".repeat(64)}.webp`;
+    expect(testResolve(key)).toBe(`/wordpix/${key}`);
+  });
+
   it("serves all ten verified images from R2 in production", async () => {
     const resolve = await resolver("production", "https://media.example.com/");
     for (const lesson of [1, 2]) {

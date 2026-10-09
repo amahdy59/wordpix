@@ -23,11 +23,13 @@ export function resolveAssetUrl(path: string): string {
   const relative = path.replace(/^\.?\//, "");
 
   // Reviewed usage illustrations use immutable, content-hashed object keys.
-  // Keep this separate from vocabulary and earlier pilot media mappings.
+  // Shared references have their own namespace; unverified paths stay local.
   if (
     import.meta.env.MODE !== "test" &&
     PUBLIC_ASSET_BASE_URL &&
-    /^(?:usage-illustrations|question-images)\/v1\/[a-z0-9-]+\/[a-f0-9]{64}\.webp$/.test(relative)
+    /^(?:(?:usage-illustrations|question-images)\/v1|question-images\/v2|question-images\/v3\/shared)\/[a-z0-9-]+\/[a-f0-9]{64}\.webp$/.test(
+      relative
+    )
   ) {
     return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
   }

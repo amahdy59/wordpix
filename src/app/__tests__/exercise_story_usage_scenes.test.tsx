@@ -1,9 +1,12 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, afterEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ExerciseStory } from "../exercises/ExerciseStory";
 import { COURSE_UNITS, type VocabularyItem } from "../data/lessons";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import { loadLessonUsage } from "../data/usageRegistry";
+import { I18nProvider } from "../context/I18nContext";
+import en from "../../i18n/en.json";
+import ar from "../../i18n/ar.json";
 
 const mockFarmWords: VocabularyItem[] = [
   {
@@ -33,6 +36,28 @@ const mockFarmWords: VocabularyItem[] = [
 ];
 
 describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
+  afterEach(() => localStorage.removeItem("wordpix:interface-lang"));
+
+  it.each(["en", "ar"] as const)(
+    "identifies supporting vocabulary imagery in %s without claiming a whole scene",
+    async (lang) => {
+      localStorage.setItem("wordpix:interface-lang", lang);
+      const locale = lang === "ar" ? ar : en;
+      render(
+        <I18nProvider>
+          <ExerciseStory step={5} words={[]} lessonId="airport-1" dispatch={vi.fn()} />
+        </I18nProvider>
+      );
+      fireEvent.click(await screen.findByRole("button", { name: locale.story.tabUsageScenes }));
+      expect(await screen.findByText(`${locale.story.vocabularyReference}:`)).toBeVisible();
+      const description = screen.getByText(
+        "An empty airport check-in counter with a blank monitor, baggage conveyor and queue barriers beside large terminal windows."
+      );
+      expect(description).toHaveAttribute("lang", "en");
+      expect(description).toHaveAttribute("dir", "ltr");
+      expect(screen.queryByText(`${locale.story.chunkVisualBrief}:`)).not.toBeInTheDocument();
+    }
+  );
   it("shows released usage scenes in the learner experience", async () => {
     const dispatch = vi.fn();
 

@@ -3,6 +3,7 @@ import { parseEnv } from "node:util";
 import { createRequire } from "node:module";
 import sharp from "sharp";
 import { sha256, assertCurrentScene } from "./generate_reviewed_scene_batch.mjs";
+import { reviewedMediaEntry } from "./lib/reviewed_scene_media_entry.mjs";
 const args = Object.fromEntries(
   process.argv
     .slice(2)
@@ -48,17 +49,7 @@ for (const r of reviews) {
     metadata.height < 512
   )
     throw new Error(`Reviewed image changed: ${r.sceneId}`);
-  if (legacy[r.sceneId]) throw new Error(`Preserving existing media mapping: ${r.sceneId}`);
-  const imagePath = `question-images/v2/${r.sceneId}/${r.sha256}.webp`;
-  const entry = {
-    reviewedScenario: r.reviewedScenario,
-    reviewedQuestion: r.reviewedQuestion,
-    reviewedAnswer: r.reviewedAnswer,
-    imagePath,
-    imageAlt: r.imageAlt,
-  };
-  if (manifest[r.sceneId] && JSON.stringify(manifest[r.sceneId]) !== JSON.stringify(entry))
-    throw new Error(`Preserving existing generated mapping: ${r.sceneId}`);
+  const entry = reviewedMediaEntry(r, manifest, legacy);
   prepared.push({ r, bytes, entry });
 }
 if (!process.argv.includes("--upload"))

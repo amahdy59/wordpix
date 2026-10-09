@@ -876,9 +876,18 @@ export const ExerciseStory = memo(function ExerciseStory({
                             )}
                             <figcaption className="p-3 text-xs text-muted-foreground">
                               <span className="font-bold text-foreground">
-                                {t("story.chunkVisualBrief")}:{" "}
+                                {t(
+                                  currentChunk.imagePurpose === "word-reference"
+                                    ? "story.vocabularyReference"
+                                    : "story.chunkVisualBrief"
+                                )}
+                                :{" "}
                               </span>
-                              {currentChunk.imageBrief}
+                              <span lang="en" dir="ltr">
+                                {currentChunk.imagePurpose === "word-reference"
+                                  ? currentChunk.imageAlt
+                                  : currentChunk.imageBrief}
+                              </span>
                             </figcaption>
                           </figure>
                         )}

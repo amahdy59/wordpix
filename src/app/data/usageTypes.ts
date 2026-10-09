@@ -38,6 +38,8 @@ export const usageSceneChunkSchema = z
     imagePath: z.string().trim().min(1).optional(),
     /** Describes the scene without spelling out an assessed answer. */
     imageAlt: z.string().trim().min(1).optional(),
+    /** A vocabulary reference is not evidence for an entire sentence or scene. */
+    imagePurpose: z.enum(["word-reference"]).optional(),
     imageFallbacks: z
       .array(
         z.object({
@@ -48,6 +50,13 @@ export const usageSceneChunkSchema = z
       .optional(),
   })
   .superRefine((scene, context) => {
+    if (scene.imagePurpose && (!scene.imagePath || !scene.imageAlt)) {
+      context.addIssue({
+        code: "custom",
+        path: ["imagePurpose"],
+        message: "A vocabulary reference requires an image and a visible-content description.",
+      });
+    }
     if (!scene.check.options.includes(scene.check.expectedAnswer)) {
       context.addIssue({
         code: "custom",

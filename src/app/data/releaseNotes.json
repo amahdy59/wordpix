@@ -1,14 +1,49 @@
 {
-  "version": "0.1.9",
+  "version": "0.1.10",
   "notes": [
-    "Continuous reading with clear vocabulary highlights.",
-    "Pause, resume and seek within recorded reading; missing recordings use a clearly identified device voice."
+    "Clear visual vocabulary references with descriptive captions.",
+    "Reviewed images can support more than one compatible lesson question."
   ],
   "notesAr": [
-    "قراءة متصلة مع إبراز واضح للمفردات.",
-    "إيقاف تسجيلات القراءة مؤقتًا واستئنافها والانتقال داخلها؛ يُوضّح استخدام صوت الجهاز عند غياب التسجيل."
+    "مراجع بصرية واضحة للمفردات مع أوصاف دقيقة للصور.",
+    "يمكن للصورة التي تمت مراجعتها دعم أكثر من سؤال متوافق في الدروس."
   ],
   "releases": [
+    {
+      "id": "0.1.10",
+      "version": "0.1.10",
+      "date": "2026-10-09",
+      "title": {
+        "en": "Clearer vocabulary images",
+        "ar": "صور أوضح للمفردات"
+      },
+      "changes": [
+        {
+          "id": "generated-image-url-resolution",
+          "category": "fixed",
+          "en": "Reviewed images now load reliably in lesson situations and vocabulary references.",
+          "ar": "تظهر الصور التي تمت مراجعتها بصورة موثوقة في مواقف الدروس والمراجع البصرية للمفردات."
+        },
+        {
+          "id": "reviewed-vocabulary-references",
+          "category": "added",
+          "en": "26 reviewed images support 29 additional lesson situations, including food, clothing, travel, healthcare, family and emotion vocabulary.",
+          "ar": "تدعم ٢٦ صورة تمت مراجعتها ٢٩ موقفًا إضافيًا في الدروس، بما يشمل مفردات الطعام والملابس والسفر والرعاية الصحية والأسرة والمشاعر."
+        },
+        {
+          "id": "reference-purpose-caption",
+          "category": "improved",
+          "en": "Supporting vocabulary photos are clearly labelled as visual references and describe what is actually visible. Their captions do not imply that the photo depicts the entire story.",
+          "ar": "تظهر صور المفردات الداعمة بوضوح كمراجع بصرية وتصف ما يظهر فعلًا في الصورة. ولا توحي أوصافها بأن الصورة تمثّل القصة كاملة."
+        },
+        {
+          "id": "verified-image-reuse",
+          "category": "improved",
+          "en": "Compatible lesson questions can share a reviewed image while keeping their own wording. Vocabulary-only references are excluded from whole-sentence visual support.",
+          "ar": "يمكن للأسئلة المتوافقة في الدروس مشاركة صورة تمت مراجعتها مع الاحتفاظ بصياغة كل سؤال. ولا تُستخدم صور المفردات وحدها لدعم المعنى البصري لجملة كاملة."
+        }
+      ]
+    },
     {
       "id": "0.1.9",
       "version": "0.1.9",

@@ -9,10 +9,23 @@ describe("independently reviewed generated scene media", () => {
   it("adds new scene identities without replacing established object mappings", () => {
     for (const [id, media] of Object.entries(generated)) {
       expect(previous).not.toHaveProperty(id);
-      expect(media.imagePath).toMatch(/^question-images\/v2\/[a-z0-9-]+\/\w{64}\.webp$/);
+      expect(media.imagePath).toMatch(
+        /^question-images\/(?:v2\/[a-z0-9-]+|v3\/shared\/[a-z0-9-]+)\/[a-f0-9]{64}\.webp$/
+      );
       expect(media.imageAlt.trim().length).toBeGreaterThan(20);
       expect(media.reviewedQuestion.trim()).not.toBe("");
     }
+  });
+  it("shares an approved object reference while keeping each question's evidence separate", () => {
+    const blouse = generated["everyday-clothing-1-usage-scene-1"];
+    const tailoring = generated["tailor-shop-5-usage-scene-4"];
+    expect(blouse.imagePath).toBe(tailoring.imagePath);
+    expect(blouse).toHaveProperty("imagePurpose", "word-reference");
+    expect(tailoring).toHaveProperty("imagePurpose", "word-reference");
+    expect(blouse.reviewedQuestion).not.toBe(tailoring.reviewedQuestion);
+    expect(blouse.imagePath).toMatch(
+      /^question-images\/v3\/shared\/blouse-cream-long-sleeves-hanger\//
+    );
   });
   it("attaches reviewed imagery through the current classroom curriculum", () => {
     const source = unitUsageDataSchema.parse(classroom);

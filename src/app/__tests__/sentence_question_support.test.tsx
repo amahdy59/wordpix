@@ -72,6 +72,18 @@ describe("sentence question evidence", () => {
     }
   });
 
+  it("does not turn a vocabulary reference into evidence for the whole sentence", async () => {
+    const usage = structuredClone(await loadLessonUsageForEditorial("numbers-counting-1"));
+    const scene = usage!.usage.scenes[0];
+    expect(
+      resolveSentenceMedia("unregistered-reference-word", scene.scenario, usage)
+    ).toBeDefined();
+    scene.imagePurpose = "word-reference";
+    expect(
+      resolveSentenceMedia("unregistered-reference-word", scene.scenario, usage)
+    ).toBeUndefined();
+  });
+
   it("uses a labelled placeholder and a numeric clue instead of unrelated artwork", () => {
     render(
       <I18nProvider>

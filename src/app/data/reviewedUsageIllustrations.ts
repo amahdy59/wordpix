@@ -11,6 +11,7 @@ type ReviewedSceneMedia = {
   reviewedQuestion?: string;
   imagePath: string;
   imageAlt: string;
+  imagePurpose?: unknown;
   imageFallbacks?: Array<{ imagePath: string; imageAlt: string }>;
 };
 
@@ -34,13 +35,16 @@ export function attachReviewedUsageIllustrations(lessons: UnitUsageData): UnitUs
           !media ||
           media.reviewedScenario !== scene.scenario ||
           media.reviewedAnswer !== scene.check.expectedAnswer ||
-          (media.reviewedQuestion !== undefined && media.reviewedQuestion !== scene.check.question)
+          (media.reviewedQuestion !== undefined &&
+            media.reviewedQuestion !== scene.check.question) ||
+          (media.imagePurpose !== undefined && media.imagePurpose !== "word-reference")
         )
           return scene;
         return {
           ...scene,
           imagePath: media.imagePath,
           imageAlt: media.imageAlt,
+          imagePurpose: media.imagePurpose,
           imageFallbacks: media.imageFallbacks,
         };
       }),

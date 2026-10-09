@@ -21,7 +21,10 @@ export function resolveSentenceMedia(
   if (authored?.full === sentence && authored.media) return authored.media;
   const scene = usage?.usage.scenes.find(
     (candidate) =>
-      candidate.imagePath && candidate.imageAlt && candidate.scenario.includes(sentence)
+      candidate.imagePath &&
+      candidate.imageAlt &&
+      candidate.imagePurpose !== "word-reference" &&
+      candidate.scenario.includes(sentence)
   );
   return scene?.imagePath && scene.imageAlt
     ? { imagePath: scene.imagePath, imageAlt: scene.imageAlt, imageFallbacks: scene.imageFallbacks }
