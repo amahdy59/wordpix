@@ -1,0 +1,29 @@
+import { describe, expect, it } from "vitest";
+import generated from "../generated/reviewedGeneratedSceneMedia.json";
+import previous from "../generated/reviewedFigmaObjectScenes.json";
+import classroom from "../data/usage/classroom.usage.json";
+import { unitUsageDataSchema } from "../data/usageTypes";
+import { attachReviewedUsageIllustrations } from "../data/reviewedUsageIllustrations";
+
+describe("independently reviewed generated scene media", () => {
+  it("adds new scene identities without replacing established object mappings", () => {
+    for (const [id, media] of Object.entries(generated)) {
+      expect(previous).not.toHaveProperty(id);
+      expect(media.imagePath).toMatch(/^question-images\/v2\/[a-z0-9-]+\/\w{64}\.webp$/);
+      expect(media.imageAlt.trim().length).toBeGreaterThan(20);
+      expect(media.reviewedQuestion.trim()).not.toBe("");
+    }
+  });
+  it("attaches reviewed imagery through the current classroom curriculum", () => {
+    const source = unitUsageDataSchema.parse(classroom);
+    const result = attachReviewedUsageIllustrations(source);
+    const scenes = result.flatMap((l) => l.usage.scenes);
+    expect(scenes.filter((s) => s.imagePath?.startsWith("question-images/v2/"))).toHaveLength(22);
+    expect(source[0].usage.scenes[0].imagePath).toBeUndefined();
+  });
+  it("withholds a generated image after only the question changes", () => {
+    const source = unitUsageDataSchema.parse(classroom);
+    source[0].usage.scenes[0].check.question = "Which unrelated object is being requested?";
+    expect(attachReviewedUsageIllustrations(source)[0].usage.scenes[0].imagePath).toBeUndefined();
+  });
+});

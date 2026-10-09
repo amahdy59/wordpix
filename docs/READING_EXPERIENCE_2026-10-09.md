@@ -73,3 +73,17 @@ The implementation is isolated on `codex/reading-experience` in the attached
 `reading-experience` worktree.
 The other chat's checkout and release files are not overwritten. Bilingual
 v0.1.9 release notes are prepared locally; publication is a separate action.
+
+## Completion follow-up, 9 October 2026
+
+The reading branch was integrated with the current release history. A browser
+using the allowed production origin, with app requests served from the isolated
+preview, passed recorded playback, nonempty IndexedDB caching, reload and offline
+blob playback for Conversation Unit 1 and Business Unit 1 at 1280px and 390px.
+The earlier preview-origin cache failure is superseded by these four successful
+checks; no R2 bucket setting or existing audio mapping was changed.
+
+The integrated release also adds 36 individually reviewed classroom and office
+scene photographs through a separate create-only manifest. The previous media
+mappings are preserved. Full WCAG AAA conformance remains open, tracked by the
+criterion-level audit register rather than claimed from automated checks.

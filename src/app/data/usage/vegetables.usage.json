@@ -76,9 +76,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Parsnip", "Ginger", "Yam"],
-          "scenario": "At the neighbourhood produce stall, a shopper sees parsnip, ginger, and yam and chooses parsnip for tonight's meal.",
+          "scenario": "At the organic vegetable market, a bunch of cream-colored parsnips with tapered root ends is bundled with garden twine.",
           "check": {
-            "question": "What is the shopper comparing with the alternatives in the example with parsnip, ginger?",
+            "question": "Which pale, cream-colored root vegetable is bundled with twine?",
             "options": ["Parsnip", "Ginger", "Yam"],
             "expectedAnswer": "Parsnip"
           },
@@ -88,9 +88,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Rutabaga", "Lettuce", "Spinach"],
-          "scenario": "At the market counter, a shopper sees rutabaga, lettuce, and spinach and asks how to cook rutabaga.",
+          "scenario": "In the root vegetable basket, a solid round rutabaga displays its characteristic yellow-brown skin and purple-tinged top.",
           "check": {
-            "question": "What does the shopper choose in the example with rutabaga, lettuce?",
+            "question": "Which dense, round root vegetable has yellow flesh and a purple crown?",
             "options": ["Lettuce", "Spinach", "Rutabaga"],
             "expectedAnswer": "Rutabaga"
           },
@@ -100,9 +100,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Kale", "Arugula", "Cabbage"],
-          "scenario": "In the grocery aisle, a shopper sees kale, arugula, and cabbage and puts kale into the basket.",
+          "scenario": "Arranged in the leafy greens crate, a vibrant bunch of curly green kale displays crinkled, nutrient-dense leaves.",
           "check": {
-            "question": "Which item does the shopper ask about in the example with kale, arugula?",
+            "question": "Which hardy dark green vegetable has tightly crinkled, ruffled leaves?",
             "options": ["Cabbage", "Kale", "Arugula"],
             "expectedAnswer": "Kale"
           },
@@ -211,9 +211,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Chard", "Collard Greens", "Romaine"],
-          "scenario": "At the fresh-vegetable display, a shopper sees chard, collard greens, and romaine and compares chard with the other options.",
+          "scenario": "In the organic farm box, a bunch of Swiss chard displays crisp dark green leaves supported by bright ruby and golden stalks.",
           "check": {
-            "question": "Which item does the shopper ask about in the example with chard, collard greens?",
+            "question": "Which leafy green vegetable features vibrant colorful red and yellow stems?",
             "options": ["Romaine", "Chard", "Collard Greens"],
             "expectedAnswer": "Chard"
           },
@@ -223,9 +223,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Watercress", "Bok Choy", "Broccoli"],
-          "scenario": "At the neighbourhood produce stall, a shopper sees watercress, bok choy, and broccoli and chooses watercress for tonight's meal.",
+          "scenario": "Prepared for a fresh salad, delicate sprigs of crisp peppery watercress with small round leaves are rinsed in a stainless colander.",
           "check": {
-            "question": "Which item is set aside for the meal in the example with watercress, bok choy?",
+            "question": "Which peppery aquatic salad green has tiny round leaves and tender stems?",
             "options": ["Watercress", "Bok Choy", "Broccoli"],
             "expectedAnswer": "Watercress"
           },
@@ -247,9 +247,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Rapini", "Napa Cabbage", "Red Cabbage"],
-          "scenario": "In the grocery aisle, a shopper sees rapini, napa cabbage, and red cabbage and puts rapini into the basket.",
+          "scenario": "At the Italian grocer, a bundle of fresh rapini displays slender green stems topped with tender leaves and small broccoli-like florets.",
           "check": {
-            "question": "What does the shopper choose in the example with rapini, napa cabbage?",
+            "question": "Which bitter green vegetable has tender leafy stems and tiny florets?",
             "options": ["Red Cabbage", "Rapini", "Napa Cabbage"],
             "expectedAnswer": "Rapini"
           },
@@ -259,9 +259,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Savoy Cabbage", "Romanesco", "Broccolini"],
-          "scenario": "At the kitchen prep table, a shopper sees savoy cabbage, romanesco, and broccolini and sets savoy cabbage aside for soup.",
+          "scenario": "On the vegetable market table, a round head of Savoy cabbage features intricate, deeply crinkled and textured emerald leaves.",
           "check": {
-            "question": "What goes into the basket in the example with savoy cabbage, romanesco?",
+            "question": "Which cabbage variety is recognized by its crinkled, textured ruffled leaves?",
             "options": ["Savoy Cabbage", "Romanesco", "Broccolini"],
             "expectedAnswer": "Savoy Cabbage"
           },
@@ -394,9 +394,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Gourd", "Chayote", "Bitter Melon"],
-          "scenario": "In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket.",
+          "scenario": "On the autumn harvest stand, an ornamental curved hard-shelled gourd displays colorful striped and bumpy skin.",
           "check": {
-            "question": "What does the shopper choose in the example with gourd, chayote?",
+            "question": "Which decorative hard-shelled autumn vegetable has a unique curved shape?",
             "options": ["Bitter Melon", "Gourd", "Chayote"],
             "expectedAnswer": "Gourd"
           },
@@ -418,9 +418,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Chili Pepper", "Eggplant", "Jalapeño"],
-          "scenario": "At the fresh-vegetable display, a shopper sees chili pepper, eggplant, and jalapeño and compares chili pepper with the other options.",
+          "scenario": "On the spice counter, several glossy bright red chili peppers with green stems lie beside a wooden cutting board.",
           "check": {
-            "question": "Which item is set aside for the meal in the example with chili pepper, eggplant?",
+            "question": "Which slender, pungent red pepper is used to add heat to cooking?",
             "options": ["Eggplant", "Jalapeño", "Chili Pepper"],
             "expectedAnswer": "Chili Pepper"
           },
@@ -541,9 +541,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cayenne", "Paprika", "Onion"],
-          "scenario": "In the grocery aisle, a shopper sees cayenne, paprika, and onion and puts cayenne into the basket.",
+          "scenario": "In the fresh pepper basket, slender elongated red cayenne peppers are harvested for drying and seasoning.",
           "check": {
-            "question": "Which produce item is the focus of the purchase in the example with cayenne, paprika?",
+            "question": "Which long, slender fiery red pepper is harvested for pungent seasoning?",
             "options": ["Onion", "Cayenne", "Paprika"],
             "expectedAnswer": "Cayenne"
           },
@@ -565,9 +565,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Scallion", "Chive", "Asparagus"],
-          "scenario": "At the fresh-vegetable display, a shopper sees scallion, chive, and asparagus and compares scallion with the other options.",
+          "scenario": "On the prep board, a fresh bunch of green scallions features crisp white root ends transitioning into long, hollow green stalks.",
           "check": {
-            "question": "What goes into the basket in the example with scallion, chive?",
+            "question": "Which slender green spring onion has white bulbous bases and long green tops?",
             "options": ["Chive", "Asparagus", "Scallion"],
             "expectedAnswer": "Scallion"
           },
@@ -577,9 +577,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Celery", "Artichoke", "Fennel"],
-          "scenario": "At the neighbourhood produce stall, a shopper sees celery, artichoke, and fennel and chooses celery for tonight's meal.",
+          "scenario": "Beside the salad bowl, a fresh head of celery stands upright with crisp, ribbed pale-green stalks and leafy tops.",
           "check": {
-            "question": "What is the shopper comparing with the alternatives in the example with celery, artichoke?",
+            "question": "Which crunchy, ribbed pale-green vegetable stalk is commonly chopped for soups and salads?",
             "options": ["Fennel", "Celery", "Artichoke"],
             "expectedAnswer": "Celery"
           },

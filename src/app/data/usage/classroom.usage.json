@@ -52,9 +52,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pencil", "Pen", "Eraser"],
-          "scenario": "Before the evening class begins, pencil, pen, eraser are ready for use. The pencil is beside the instructor’s notebook.",
+          "scenario": "On a clean seminar table, an instructor sets down a sharpened wooden pencil beside a blank notebook and an eraser.",
           "check": {
-            "question": "What object should be identified in the class?",
+            "question": "Which writing instrument rests beside the notebook for taking quick notes?",
             "options": ["Pencil", "Pen", "Eraser"],
             "expectedAnswer": "Pencil"
           },
@@ -64,9 +64,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Ruler", "Marker", "Crayon"],
-          "scenario": "In the training room, ruler, marker, crayon are ready for use. The ruler is beside the instructor’s notebook.",
+          "scenario": "To measure paper margins accurately, an architect places a clear plastic ruler along the edge of a drafting sheet.",
           "check": {
-            "question": "What material or piece of equipment is the focus?",
+            "question": "Which tool is placed along the edge of the sheet to measure straight lines?",
             "options": ["Marker", "Crayon", "Ruler"],
             "expectedAnswer": "Ruler"
           },
@@ -76,9 +76,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Colored Pencil", "Highlighter", "Pencil Sharpener"],
-          "scenario": "During a short adult course, colored pencil, highlighter, pencil sharpener are ready for use. The colored pencil is beside the instructor’s notebook.",
+          "scenario": "On a design workshop table, a fine colored pencil lies ready beside a neat sketchpad for adding color accents.",
           "check": {
-            "question": "Which classroom item is being used?",
+            "question": "Which tool is selected to draw and color fine details on the sketchpad?",
             "options": ["Pencil Sharpener", "Colored Pencil", "Highlighter"],
             "expectedAnswer": "Colored Pencil"
           },
@@ -88,9 +88,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Pencil Case", "Notebook", "Textbook"],
-          "scenario": "In a community course, adults use or interact with pencil case, notebook, and textbook. The highlighted item or person is the pencil case.",
+          "scenario": "Before the lecture starts, a student unzips a neat fabric pencil case to organize pens, pencils, and erasers.",
           "check": {
-            "question": "Which item does the learner need for this task?",
+            "question": "Which pouch keeps all the loose writing tools organized together?",
             "options": ["Pencil Case", "Notebook", "Textbook"],
             "expectedAnswer": "Pencil Case"
           },
@@ -100,9 +100,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Workbook", "Folder", "Binder"],
-          "scenario": "At an adult evening course, adults use or interact with workbook, folder, and binder. The highlighted item or person is the workbook.",
+          "scenario": "For the professional training session, each attendee receives a spiral-bound printed workbook containing practical exercises.",
           "check": {
-            "question": "Which classroom item is being used in the example with workbook, folder?",
+            "question": "Which document holds the course exercises and practice tasks?",
             "options": ["Folder", "Binder", "Workbook"],
             "expectedAnswer": "Workbook"
           },
@@ -210,9 +210,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sheet of Paper", "Sticky Note", "Index Card"],
-          "scenario": "Before the evening class begins, sheet of paper, sticky note, index card are ready for use. The sheet of paper is beside the instructor’s notebook.",
+          "scenario": "During the lecture, a participant takes a crisp white sheet of paper from the stack to jot down main takeaways.",
           "check": {
-            "question": "Which classroom item is being used in the example with sheet of paper, sticky note?",
+            "question": "What surface is taken from the stack to write down lecture notes?",
             "options": ["Sticky Note", "Index Card", "Sheet of Paper"],
             "expectedAnswer": "Sheet of Paper"
           },
@@ -222,9 +222,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Dictionary", "Encyclopedia", "Desk"],
-          "scenario": "In a computer workshop, adults use or interact with dictionary, encyclopedia, and desk. The highlighted item or person is the dictionary.",
+          "scenario": "On the reference library table, a thick hardcover dictionary stands ready for students looking up advanced vocabulary.",
           "check": {
-            "question": "Which item does the learner need for this task in the example with dictionary, encyclopedia?",
+            "question": "Which reference volume provides definitions and pronunciations for unfamiliar words?",
             "options": ["Desk", "Dictionary", "Encyclopedia"],
             "expectedAnswer": "Dictionary"
           },
@@ -234,9 +234,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Chair", "Whiteboard", "Projector"],
-          "scenario": "During a short adult course, chair, whiteboard, projector are ready for use. The chair is beside the instructor’s notebook.",
+          "scenario": "In the training room, an ergonomic wooden and metal chair is neatly tucked under each individual study desk.",
           "check": {
-            "question": "What material or piece of equipment is the focus in the example with chair, whiteboard?",
+            "question": "Which piece of furniture provides comfortable seating for learners during class?",
             "options": ["Chair", "Whiteboard", "Projector"],
             "expectedAnswer": "Chair"
           },
@@ -246,9 +246,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Screen", "Clock", "Globe"],
-          "scenario": "At an adult evening course, adults use or interact with screen, clock, and globe. The highlighted item or person is the screen.",
+          "scenario": "At the front of the presentation hall, a large white projection screen displays high-definition slides for the audience.",
           "check": {
-            "question": "What object should be identified in the class in the example with screen, clock?",
+            "question": "Which wide surface displays the projected digital slides to the whole room?",
             "options": ["Clock", "Globe", "Screen"],
             "expectedAnswer": "Screen"
           },
@@ -258,9 +258,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Shelf", "Locker", "Bulletin Board"],
-          "scenario": "In a workplace training room, adults use or interact with shelf, locker, and bulletin board. The highlighted item or person is the shelf.",
+          "scenario": "Along the classroom wall, a solid oak shelf neatly holds reference volumes, course folders, and neat storage bins.",
           "check": {
-            "question": "What material or piece of equipment is the focus in the example with shelf, locker?",
+            "question": "Which wall unit holds the organized books and reference materials off the floor?",
             "options": ["Bulletin Board", "Shelf", "Locker"],
             "expectedAnswer": "Shelf"
           },
@@ -368,9 +368,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Backpack", "Scissors", "Glue Stick"],
-          "scenario": "Before the evening class begins, backpack, scissors, glue stick are ready for use. The backpack is beside the instructor’s notebook.",
+          "scenario": "Arriving at the adult training center, a professional sets down a sleek waterproof commuter backpack beside the desk.",
           "check": {
-            "question": "What material or piece of equipment is the focus in the example with backpack, scissors?",
+            "question": "Which bag is used to carry laptops, notes, and personal supplies to class?",
             "options": ["Glue Stick", "Backpack", "Scissors"],
             "expectedAnswer": "Backpack"
           },
@@ -380,9 +380,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Tape", "Stapler", "Paper Clip"],
-          "scenario": "In a community course, adults use or interact with tape, stapler, and paper clip. The highlighted item or person is the tape.",
+          "scenario": "To post an announcement on the board, an assistant cuts a neat strip of clear adhesive tape from a heavy desktop dispenser.",
           "check": {
-            "question": "Which classroom item is being used in the example with tape, stapler?",
+            "question": "Which adhesive strip is pulled from the dispenser to fasten notices cleanly?",
             "options": ["Tape", "Stapler", "Paper Clip"],
             "expectedAnswer": "Tape"
           },
@@ -392,9 +392,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Rubber Band", "Thumbtack", "Calculator"],
-          "scenario": "At an adult evening course, adults use or interact with rubber band, thumbtack, and calculator. The highlighted item or person is the rubber band.",
+          "scenario": "To keep the weekly handouts bundled securely, the trainer wraps a thick elastic rubber band around the paper stack. A thumbtack is ready to pin a separate notice to the board.",
           "check": {
-            "question": "Which item does the learner need for this task in the example with rubber band, thumbtack?",
+            "question": "Which flexible loop holds the stack of paper handouts neatly together?",
             "options": ["Thumbtack", "Calculator", "Rubber Band"],
             "expectedAnswer": "Rubber Band"
           },
@@ -404,9 +404,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Compass", "Computer", "Laptop"],
-          "scenario": "In a workplace training room, adults use or interact with compass, computer, and laptop. The highlighted item or person is the compass.",
+          "scenario": "In the technical drawing workshop, a draftsman uses a precision brass compass to draw a perfect geometric circle.",
           "check": {
-            "question": "Which classroom item is being used in the example with compass, computer?",
+            "question": "Which instrument is used to scribe accurate circles and arcs on technical plans?",
             "options": ["Laptop", "Compass", "Computer"],
             "expectedAnswer": "Compass"
           },
@@ -416,9 +416,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Tablet", "Keyboard", "Mouse"],
-          "scenario": "In a language class, adults use or interact with tablet, keyboard, and mouse. The highlighted item or person is the tablet.",
+          "scenario": "During the interactive language lab, a learner uses a slim digital tablet with a stylus to complete grammar drills.",
           "check": {
-            "question": "Which item does the learner need for this task in the example with tablet, keyboard?",
+            "question": "Which touchscreen mobile device displays digital exercises and accepts stylus input?",
             "options": ["Tablet", "Keyboard", "Mouse"],
             "expectedAnswer": "Tablet"
           },
@@ -526,9 +526,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Printer", "USB Drive", "Headphones"],
-          "scenario": "Before the evening class begins, printer, usb drive, headphones are ready for use. The printer is beside the instructor’s notebook.",
+          "scenario": "Beside the instructor's workstation, a compact laser printer smoothly delivers newly printed course syllabi into the output tray.",
           "check": {
-            "question": "Which item does the learner need for this task in the example with printer, usb drive?",
+            "question": "Which machine produces physical paper copies of digital documents?",
             "options": ["Printer", "USB Drive", "Headphones"],
             "expectedAnswer": "Printer"
           },
@@ -538,9 +538,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Projector Remote", "Charger", "Teacher"],
-          "scenario": "At an adult evening course, adults use or interact with projector remote, charger, and teacher. The highlighted item or person is the projector remote.",
+          "scenario": "To advance slides smoothly without returning to the podium, the presenter holds a compact black projector remote in hand.",
           "check": {
-            "question": "Who is the learner being asked to identify?",
+            "question": "Which handheld device controls the presentation slides from across the room?",
             "options": ["Charger", "Teacher", "Projector Remote"],
             "expectedAnswer": "Projector Remote"
           },
@@ -550,9 +550,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Student", "Principal", "Librarian"],
-          "scenario": "In a workplace training room, adults use or interact with student, principal, and librarian. The highlighted item or person is the student.",
+          "scenario": "In an evening adult seminar, a focused adult student sits at his desk taking careful notes in a journal.",
           "check": {
-            "question": "Who is helping or working in the class setting?",
+            "question": "Who is the adult attendee actively participating in the learning session?",
             "options": ["Librarian", "Student", "Principal"],
             "expectedAnswer": "Student"
           },
@@ -562,9 +562,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Janitor", "School Nurse", "Substitute Teacher"],
-          "scenario": "In a language class, adults use or interact with janitor, school nurse, and substitute teacher. The highlighted item or person is the janitor.",
+          "scenario": "After the day's classes end, a dependable maintenance worker mops and polishes the wide hallway floor to keep the facility clean.",
           "check": {
-            "question": "Who is the learner being asked to identify in the example with janitor, school nurse?",
+            "question": "Who ensures the school facilities and corridors remain clean and sanitized?",
             "options": ["Janitor", "School Nurse", "Substitute Teacher"],
             "expectedAnswer": "Janitor"
           },
@@ -574,9 +574,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Teaching Assistant", "Counselor", "Security Guard"],
-          "scenario": "In a computer workshop, adults use or interact with teaching assistant, counselor, and security guard. The highlighted item or person is the teaching assistant.",
+          "scenario": "Supporting the lead instructor, a dedicated teaching assistant distributes supplementary exercise handouts to students.",
           "check": {
-            "question": "Which person in the learning centre is being identified?",
+            "question": "Who assists the professor by managing handouts and supporting learners?",
             "options": ["Counselor", "Security Guard", "Teaching Assistant"],
             "expectedAnswer": "Teaching Assistant"
           },
@@ -659,9 +659,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Homework", "Test", "Recess"],
-          "scenario": "At an adult evening course, adults use or interact with homework, test, and recess. The highlighted item or person is the homework.",
+          "scenario": "After attending the evening session, the learner finishes his assigned homework at his home desk before the next class.",
           "check": {
-            "question": "Which classroom item is being used in the example with homework, test?",
+            "question": "What assigned study tasks does a student complete independently outside class hours?",
             "options": ["Test", "Recess", "Homework"],
             "expectedAnswer": "Homework"
           },
@@ -671,9 +671,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Bell", "Grade", "Uniform"],
-          "scenario": "In a workplace training room, adults use or interact with bell, grade, and uniform. The highlighted item or person is the bell.",
+          "scenario": "On the front reception counter, a polished brass bell sits ready for visitors who need assistance from the office staff.",
           "check": {
-            "question": "Which item does the learner need for this task in the example with bell, grade?",
+            "question": "Which metal chime is tapped to signal for reception staff at the front desk?",
             "options": ["Uniform", "Bell", "Grade"],
             "expectedAnswer": "Bell"
           },

@@ -64,9 +64,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Grape", "Strawberry", "Watermelon"],
-          "scenario": "At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.",
+          "scenario": "At the morning fruit stand, a customer selects a crisp, freshly sliced ripe watermelon displaying vibrant red flesh and dark seeds.",
           "check": {
-            "question": "Which item does the shopper ask about?",
+            "question": "Which large, refreshing sweet melon does the customer choose?",
             "options": ["Grape", "Strawberry", "Watermelon"],
             "expectedAnswer": "Watermelon"
           },
@@ -88,9 +88,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Pear", "Blueberry", "Raspberry"],
-          "scenario": "In the grocery aisle, a shopper sees pear, blueberry, and raspberry and puts pear into a reusable bag.",
+          "scenario": "Arranged on a porcelain fruit platter, a ripe golden Bosc pear rests beside green apples and sweet plums.",
           "check": {
-            "question": "Which produce item is the focus of the purchase?",
+            "question": "Which teardrop-shaped sweet fruit is arranged on the platter?",
             "options": ["Pear", "Blueberry", "Raspberry"],
             "expectedAnswer": "Pear"
           },
@@ -100,9 +100,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Blackberry", "Cranberry", "Gooseberry"],
-          "scenario": "At the meal-prep table, a shopper sees blackberry, cranberry, and gooseberry and sets blackberry aside for dinner.",
+          "scenario": "In the fresh berry section, small wooden punnets display plump, glossy ripe blackberries bursting with deep purple juice.",
           "check": {
-            "question": "What does the shopper choose in the example with blackberry, cranberry?",
+            "question": "Which dark, glossy clustered berries are displayed in the wooden punnets?",
             "options": ["Cranberry", "Gooseberry", "Blackberry"],
             "expectedAnswer": "Blackberry"
           },
@@ -227,9 +227,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Mulberry", "Boysenberry", "Acai Berry"],
-          "scenario": "At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast.",
+          "scenario": "At the specialty farm shop, a basket of ripe boysenberries shows their distinct reddish-purple hue and juicy texture.",
           "check": {
-            "question": "What does the shopper choose in the example with mulberry, boysenberry?",
+            "question": "Which large reddish-purple hybrid berry is featured at the farm shop?",
             "options": ["Mulberry", "Acai Berry", "Boysenberry"],
             "expectedAnswer": "Boysenberry"
           },
@@ -239,9 +239,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Lingonberry", "Elderberry", "Papaya"],
-          "scenario": "At the weekend market counter, a shopper sees lingonberry, elderberry, and papaya and asks whether papaya is ripe.",
+          "scenario": "On the tropical fruit counter, a ripe papaya is cut in half lengthwise, revealing its bright orange flesh and round black seeds.",
           "check": {
-            "question": "What goes into the basket?",
+            "question": "Which tropical fruit is sliced in half to show vibrant orange flesh and black seeds?",
             "options": ["Elderberry", "Papaya", "Lingonberry"],
             "expectedAnswer": "Papaya"
           },
@@ -251,9 +251,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Coconut", "Passion Fruit", "Guava"],
-          "scenario": "In the grocery aisle, a shopper sees coconut, passion fruit, and guava and puts coconut into a reusable bag.",
+          "scenario": "At the island produce market, a whole brown fibrous coconut rests beside a cracked half showing pure white meat and clear water.",
           "check": {
-            "question": "What is the shopper comparing with the alternatives?",
+            "question": "Which hard-shelled tropical nut is cracked open to reveal fresh white meat?",
             "options": ["Coconut", "Passion Fruit", "Guava"],
             "expectedAnswer": "Coconut"
           },
@@ -263,9 +263,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Lychee", "Dragon Fruit", "Star Fruit"],
-          "scenario": "At the meal-prep table, a shopper sees lychee, dragon fruit, and star fruit and sets lychee aside for dinner.",
+          "scenario": "Displayed on crushed ice, a cluster of fresh lychees shows their bumpy reddish-pink peel and one fruit peeled to show translucent sweet flesh.",
           "check": {
-            "question": "What does the shopper choose in the example with lychee, dragon fruit?",
+            "question": "Which fragrant Asian fruit has a textured reddish peel and translucent white flesh?",
             "options": ["Dragon Fruit", "Star Fruit", "Lychee"],
             "expectedAnswer": "Lychee"
           },
@@ -275,9 +275,9 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Jackfruit", "Durian", "Rambutan"],
-          "scenario": "At the fresh-fruit display, a shopper sees jackfruit, durian, and rambutan and compares jackfruit with the other options.",
+          "scenario": "At the exotic fruit market, a massive spiky green jackfruit is displayed with a large yellow pod sliced open for shoppers.",
           "check": {
-            "question": "Which item does the shopper ask about in the example with jackfruit, durian?",
+            "question": "Which enormous spiky tropical fruit contains rich, sweet golden-yellow pods?",
             "options": ["Rambutan", "Jackfruit", "Durian"],
             "expectedAnswer": "Jackfruit"
           },
@@ -414,9 +414,9 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Tangerine", "Mandarin", "Clementine"],
-          "scenario": "In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.",
+          "scenario": "In a fruit bowl on the breakfast table, small sweet clementines are piled together, with one easy-to-peel fruit half unpeeled.",
           "check": {
-            "question": "Which item is set aside for the meal in the example with tangerine, mandarin?",
+            "question": "Which small, easy-to-peel sweet citrus fruit is partially unpeeled in the bowl?",
             "options": ["Clementine", "Tangerine", "Mandarin"],
             "expectedAnswer": "Clementine"
           },
@@ -438,9 +438,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Yuzu", "Cherry", "Plum"],
-          "scenario": "At the fresh-fruit display, a shopper sees yuzu, cherry, and plum and compares yuzu with the other options.",
+          "scenario": "In the Japanese culinary market, aromatic yellow yuzu citrus fruits with bumpy fragrant rinds are arranged in a cedar box.",
           "check": {
-            "question": "What does the shopper choose in the example with yuzu, cherry?",
+            "question": "Which highly aromatic Japanese citrus fruit has a textured yellow rind?",
             "options": ["Plum", "Yuzu", "Cherry"],
             "expectedAnswer": "Yuzu"
           },
@@ -545,9 +545,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Fig", "Olive", "Avocado"],
-          "scenario": "In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag.",
+          "scenario": "On a gourmet cheese board, ripe purple mission figs are quartered to reveal their sweet, jammy ruby-pink interior.",
           "check": {
-            "question": "What goes into the basket in the example with fig, olive?",
+            "question": "Which sweet Mediterranean fruit is sliced open to display its honeyed ruby interior?",
             "options": ["Fig", "Olive", "Avocado"],
             "expectedAnswer": "Fig"
           },
