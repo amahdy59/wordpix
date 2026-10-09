@@ -2221,5 +2221,25 @@
     "inputShort": "Listen",
     "languageShort": "Words",
     "applyShort": "Apply"
+  },
+  "readingPlayer": {
+    "controls": "Reading audio controls",
+    "pause": "Pause",
+    "resume": "Resume",
+    "restart": "Restart reading",
+    "retry": "Try audio again",
+    "cancel": "Cancel loading",
+    "seek": "Playback position",
+    "position": "{current} of {total}",
+    "loading": "Loading audio…",
+    "buffering": "Buffering audio…",
+    "paused": "Audio paused.",
+    "error": "Audio could not play. Try again or continue reading.",
+    "deviceVoice": "Recording unavailable. Using your device’s voice; seeking is unavailable. Pause and resume support depends on your device.",
+    "disabled": "Listening is turned off in your accessibility settings.",
+    "pauseParagraph": "Pause paragraph {number}",
+    "resumeParagraph": "Resume paragraph {number}",
+    "vocabulary": "Words in this reading",
+    "vocabularyHint": "Underlined words come from this lesson’s vocabulary. Select a word below to see its meaning and hear its pronunciation."
   }
 }

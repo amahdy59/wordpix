@@ -58,12 +58,14 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
   const audioAssets = useMemo(() => getHadithAudioAssets(lesson.id), [lesson.id]);
   const exerciseSet = useMemo(() => getHadithExerciseSet(lesson.id), [lesson.id]);
 
-  const normalAudio = useAudio({ lang: "en-US", rate: 0.9, preferLocal: true });
-  const slowAudio = useAudio({ lang: "en-US", rate: 0.72, preferLocal: true });
-  const [activeTrack, setActiveTrack] = useState<"ar" | "en" | "en-slow" | null>(null);
-
-  const isPlaying = normalAudio.isPlaying || slowAudio.isPlaying;
-  const isAudioError = normalAudio.isError || slowAudio.isError;
+  const [playbackRate, setPlaybackRate] = useState(0.85);
+  const normalAudio = useAudio({
+    lang: "en-US",
+    rate: playbackRate,
+    preferLocal: true,
+    preserveText: true,
+  });
+  const [activeTrack, setActiveTrack] = useState<"ar" | "en" | null>(null);
 
   const stageContainerRef = useRef<HTMLDivElement>(null);
 
@@ -77,7 +79,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
   const openLesson = (number: number) => {
     normalAudio.stop();
-    slowAudio.stop();
     dispatch({
       type: "OPEN_HADITH_LESSON",
       lessonId: `hadith-${String(number).padStart(2, "0")}`,
@@ -86,7 +87,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
   const handleStageSelect = (index: number) => {
     normalAudio.stop();
-    slowAudio.stop();
     setActiveTrack(null);
     setConfidenceError(false);
     setStageIndex(index);
@@ -97,7 +97,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     if (stageIndex > 0) {
       const prev = stageIndex - 1;
       normalAudio.stop();
-      slowAudio.stop();
       setActiveTrack(null);
       setConfidenceError(false);
       setStageIndex(prev);
@@ -115,7 +114,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     if (stageIndex < HADITH_STAGE_IDS.length - 1) {
       const nextStage = stageIndex + 1;
       normalAudio.stop();
-      slowAudio.stop();
       setActiveTrack(null);
       setConfidenceError(false);
       setStageIndex(nextStage);
@@ -148,7 +146,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
   const reset = () => {
     normalAudio.stop();
-    slowAudio.stop();
     setActiveTrack(null);
     setStageIndex(0);
     setConfidence(null);
@@ -156,33 +153,19 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     setPracticeScore(0);
   };
 
-  const playTrack = (track: "ar" | "en" | "en-slow") => {
+  const playTrack = (track: "ar" | "en") => {
+    if (!state.accessibility.includeListening || !normalAudio.isSupported) return;
     normalAudio.stop();
-    slowAudio.stop();
-
-    if (activeTrack === track && isPlaying) {
-      setActiveTrack(null);
-      return;
-    }
-
     setActiveTrack(track);
     const recorded = getHadithRecordedSource(lesson.id);
-    if (track === "ar") {
-      void normalAudio.speak(lesson.source.arabic, "ar-SA", audioAssets?.arabic.objectKey, {
-        synthesisOnly: recorded?.arabic !== lesson.source.arabic,
-      });
-    } else if (track === "en") {
-      void normalAudio.speak(
-        lesson.source.translation,
-        "en-US",
-        audioAssets?.translation.objectKey,
-        { synthesisOnly: recorded?.translation !== lesson.source.translation }
-      );
-    } else {
-      void slowAudio.speak(lesson.source.translation, "en-US", audioAssets?.translation.objectKey, {
-        synthesisOnly: recorded?.translation !== lesson.source.translation,
-      });
-    }
+    const text = track === "ar" ? lesson.source.arabic : lesson.source.translation;
+    const matches = track === "ar" ? recorded?.arabic === text : recorded?.translation === text;
+    normalAudio.speak(
+      text,
+      track === "ar" ? "ar-SA" : "en-US",
+      track === "ar" ? audioAssets?.arabic.objectKey : audioAssets?.translation.objectKey,
+      { synthesisOnly: !matches }
+    );
   };
 
   const scrollToHadithText = () => {
@@ -300,9 +283,12 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
               <HadithReadListenStage
                 source={lesson.source}
                 onPlayAudio={playTrack}
-                isPlaying={isPlaying}
+                audio={normalAudio}
+                playbackRate={playbackRate}
+                onRateChange={setPlaybackRate}
+                vocabularyLines={lesson.stages.vocabulary.text}
+                lessonNumber={lesson.number}
                 activeTrack={activeTrack}
-                isAudioError={isAudioError}
               />
             </div>
           )}

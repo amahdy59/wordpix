@@ -5,7 +5,12 @@ import { assetUrl, audioKey, audioUrls, AUDIO_PROFILE_V4, hasAssetHost } from ".
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
 
-export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
+export type AudioStatus =
+  "idle" | "loading" | "buffering" | "playing" | "paused" | "error" | "unsupported";
+export type AudioSource = "recording" | "device" | null;
+// One owner across narration, vocabulary inspectors and other audio hooks.
+let activeAudioOwner: symbol | null = null;
+let pauseActiveAudio: (() => void) | null = null;
 
 interface Options {
   onEnded?: () => void;
@@ -16,6 +21,8 @@ interface Options {
   volume?: number;
   /** Prefer a matching content-addressed clip bundled in public/audio. */
   preferLocal?: boolean;
+  /** Keep complete passages intact when browser speech is the fallback. */
+  preserveText?: boolean;
   /** Reports native media progress for synchronized transcript highlighting. */
   onTimeUpdate?: (currentTime: number, duration: number) => void;
 }
@@ -136,6 +143,7 @@ export function useAudio({
   pitch = 1,
   volume = 1,
   preferLocal = false,
+  preserveText = false,
   onEnded,
   onError,
   onTimeUpdate,
@@ -185,6 +193,33 @@ export function useAudio({
    * own generation against this before touching audio or state.
    */
   const requestRef = useRef(0);
+  const ownerIdRef = useRef(Symbol("audio-owner"));
+  const [source, setSource] = useState<AudioSource>(null);
+  const [progress, setProgress] = useState({ currentTime: 0, duration: 0 });
+  const rateRef = useRef(effectiveRate);
+  useEffect(() => {
+    rateRef.current = effectiveRate;
+    if (currentAudioRef.current) currentAudioRef.current.playbackRate = effectiveRate;
+  }, [effectiveRate]);
+
+  const stop = useCallback(() => {
+    requestRef.current += 1;
+    if (stallTimerRef.current !== null) {
+      clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
+    }
+    currentAudioRef.current?.pause();
+    currentAudioRef.current = null;
+    // An inactive inspector must not cancel another hook's speech on unmount.
+    if (activeAudioOwner === ownerIdRef.current) {
+      synthRef.current?.cancel();
+      activeAudioOwner = null;
+      pauseActiveAudio = null;
+    }
+    setStatus("idle");
+    setSource(null);
+    setProgress({ currentTime: 0, duration: 0 });
+  }, []);
 
   useEffect(() => {
     // Set on mount, not only cleared on unmount.
@@ -208,6 +243,20 @@ export function useAudio({
       objectKey?: string,
       playback?: { synthesisOnly?: boolean }
     ) => {
+      if (activeAudioOwner === ownerIdRef.current) stop();
+      else pauseActiveAudio?.();
+      activeAudioOwner = ownerIdRef.current;
+      pauseActiveAudio = () => {
+        const media = currentAudioRef.current;
+        if (media && Number.isFinite(media.duration) && media.duration > 0) {
+          media.pause();
+          setStatus("paused");
+          activeAudioOwner = null;
+          pauseActiveAudio = null;
+        } else stop();
+      };
+      setSource(null);
+      setProgress({ currentTime: 0, duration: 0 });
       const targetLang = overrideLang ?? lang;
       const cleanText = text.replace(/[-_]/g, " ").trim();
       const pronunciationAsset = getPronunciationAssetSpec(cleanText);
@@ -215,7 +264,16 @@ export function useAudio({
 
       const generation = ++requestRef.current;
       /** True while this call is still the one the learner is waiting on. */
-      const isCurrent = () => isMountedRef.current && requestRef.current === generation;
+      const isCurrent = () =>
+        isMountedRef.current &&
+        requestRef.current === generation &&
+        activeAudioOwner === ownerIdRef.current;
+      const reportProgress = (audio: HTMLAudioElement) => {
+        if (!isCurrent()) return;
+        const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+        setProgress({ currentTime: audio.currentTime, duration });
+        timeUpdateRef.current?.(audio.currentTime, duration);
+      };
       /**
        * Publishes status only while this call still owns the player.
        *
@@ -246,9 +304,13 @@ export function useAudio({
       const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
         if (!isCurrent()) return;
         timeUpdateRef.current?.(0, 0);
+        currentAudioRef.current?.pause();
+        currentAudioRef.current = null;
+        setSource("device");
+        setProgress({ currentTime: 0, duration: 0 });
         const synth = synthRef.current;
         if (!synth) {
-          publish("unsupported");
+          publish(typeof window.Audio === "function" ? "error" : "unsupported");
           return;
         }
 
@@ -258,17 +320,18 @@ export function useAudio({
         }
         publish("loading");
 
-        const spokenFallbackText = playback?.synthesisOnly
-          ? fallbackText
-          : fallbackText
-              .replace(/^\d+[.)]\s*/, "")
-              .replace(/\s*[/(].*$/, "")
-              .replace(/[\u0600-\u06FF]/g, "")
-              .trim() || fallbackText;
+        const spokenFallbackText =
+          playback?.synthesisOnly || preserveText
+            ? fallbackText
+            : fallbackText
+                .replace(/^\d+[.)]\s*/, "")
+                .replace(/\s*[/(].*$/, "")
+                .replace(/[\u0600-\u06FF]/g, "")
+                .trim() || fallbackText;
 
         const utterance = new SpeechSynthesisUtterance(spokenFallbackText);
         utterance.lang = fallbackLang;
-        utterance.rate = effectiveRate;
+        utterance.rate = rateRef.current;
         utterance.pitch = pitch;
         utterance.volume = volume;
 
@@ -276,19 +339,18 @@ export function useAudio({
         if (voice) utterance.voice = voice;
 
         utterance.onstart = () => {
-          if (!isMountedRef.current) return;
+          if (!isCurrent()) return;
           clearStall();
           publish("playing");
         };
         utterance.onend = () => {
           if (!isCurrent()) return;
-          if (!isMountedRef.current) return;
           clearStall();
           publish("idle");
           endedRef.current?.();
         };
         utterance.onerror = (e) => {
-          if (!isMountedRef.current) return;
+          if (!isCurrent()) return;
           clearStall();
           publish(e.error !== "interrupted" && e.error !== "canceled" ? "error" : "idle");
         };
@@ -297,6 +359,7 @@ export function useAudio({
         stallTimerRef.current = window.setTimeout(() => {
           if (!isCurrent()) return;
           setStatus((current) => (current === "loading" ? "error" : current));
+          errorRef.current?.();
         }, SPEECH_START_TIMEOUT_MS);
 
         synth.speak(utterance);
@@ -310,12 +373,20 @@ export function useAudio({
       const playBlobUrl = (blobUrl: string) => {
         if (!isCurrent()) return;
         const audio = new Audio(blobUrl);
-        audio.playbackRate = effectiveRate;
+        audio.playbackRate = rateRef.current;
         audio.volume = volume;
         audio.ontimeupdate = () => {
-          if (isCurrent()) timeUpdateRef.current?.(audio.currentTime, audio.duration || 0);
+          reportProgress(audio);
         };
+        audio.onloadedmetadata = () => reportProgress(audio);
+        audio.onwaiting = () => publish("buffering");
         audio.onplaying = () => {
+          if (!isCurrent()) {
+            audio.pause();
+            return;
+          }
+          setSource("recording");
+          reportProgress(audio);
           clearStall();
           publish("playing");
         };
@@ -326,12 +397,14 @@ export function useAudio({
           endedRef.current?.();
         };
         audio.onerror = () => {
+          if (!isCurrent()) return;
           clearStall();
           fallbackToSynthesis(cleanText, targetLang);
         };
 
         currentAudioRef.current = audio;
         audio.play().catch(() => {
+          if (!isCurrent()) return;
           clearStall();
           fallbackToSynthesis(cleanText, targetLang);
         });
@@ -447,7 +520,7 @@ export function useAudio({
             return;
           }
           const audio = new Audio(url);
-          audio.playbackRate = effectiveRate;
+          audio.playbackRate = rateRef.current;
           audio.volume = volume;
           let started = false;
           let settled = false;
@@ -466,13 +539,24 @@ export function useAudio({
           // because a clip that never began also never ends. `playing` fires
           // only once frames are actually being rendered.
           audio.onplaying = () => {
+            if (!isCurrent()) {
+              audio.pause();
+              settle(true);
+              return;
+            }
             started = true;
+            setSource("recording");
+            reportProgress(audio);
             clearStall();
             publish("playing");
             settle(true);
           };
           audio.ontimeupdate = () => {
-            if (isCurrent()) timeUpdateRef.current?.(audio.currentTime, audio.duration || 0);
+            reportProgress(audio);
+          };
+          audio.onloadedmetadata = () => reportProgress(audio);
+          audio.onwaiting = () => {
+            if (started) publish("buffering");
           };
           audio.onended = () => {
             if (!isCurrent()) return;
@@ -481,6 +565,10 @@ export function useAudio({
             endedRef.current?.();
           };
           audio.onerror = () => {
+            if (!isCurrent()) {
+              settle(true);
+              return;
+            }
             clearStall();
             // An error after playback began is the end of the clip as far as
             // the UI is concerned; before it, it is a miss to fall through on.
@@ -494,10 +582,18 @@ export function useAudio({
           // dead connection. Without this the drill would wait for it forever.
           clearStall();
           stallTimerRef.current = window.setTimeout(() => {
-            if (!started) settle(false);
+            if (!started) {
+              audio.pause();
+              audio.onplaying = () => audio.pause();
+              settle(false);
+            }
           }, SPEECH_START_TIMEOUT_MS);
 
           audio.play().catch(() => {
+            if (!isCurrent()) {
+              settle(true);
+              return;
+            }
             clearStall();
             settle(false);
           });
@@ -550,23 +646,51 @@ export function useAudio({
           if (!played) playRemainingFallbacks();
         });
     },
-    [lang, effectiveRate, pitch, volume, preferLocal]
+    [lang, pitch, volume, preferLocal, preserveText, stop]
   );
 
-  const stop = useCallback(() => {
-    // Retiring the generation stops any fetch still in flight from playing
-    // after the learner has asked for silence.
-    requestRef.current += 1;
-    if (stallTimerRef.current !== null) {
-      clearTimeout(stallTimerRef.current);
-      stallTimerRef.current = null;
+  const pause = useCallback(() => {
+    if (status !== "playing" && status !== "buffering") return;
+    if (currentAudioRef.current) currentAudioRef.current.pause();
+    else synthRef.current?.pause();
+    setStatus("paused");
+  }, [status]);
+
+  const resume = useCallback(() => {
+    if (status !== "paused") return;
+    if (activeAudioOwner !== ownerIdRef.current) pauseActiveAudio?.();
+    activeAudioOwner = ownerIdRef.current;
+    pauseActiveAudio = () => {
+      const media = currentAudioRef.current;
+      if (media && Number.isFinite(media.duration) && media.duration > 0) {
+        media.pause();
+        setStatus("paused");
+        activeAudioOwner = null;
+        pauseActiveAudio = null;
+      } else stop();
+    };
+    const audio = currentAudioRef.current;
+    if (audio) {
+      setStatus("loading");
+      void audio.play().catch(() => {
+        if (isMountedRef.current && activeAudioOwner === ownerIdRef.current) {
+          setStatus("error");
+          errorRef.current?.();
+        }
+      });
+    } else {
+      synthRef.current?.resume();
+      setStatus("playing");
     }
-    if (currentAudioRef.current) {
-      currentAudioRef.current.pause();
-      currentAudioRef.current = null;
-    }
-    synthRef.current?.cancel();
-    setStatus("idle");
+  }, [status, stop]);
+
+  const seek = useCallback((time: number) => {
+    const audio = currentAudioRef.current;
+    if (!audio || !Number.isFinite(audio.duration) || !Number.isFinite(time)) return;
+    const currentTime = Math.max(0, Math.min(time, audio.duration));
+    audio.currentTime = currentTime;
+    setProgress({ currentTime, duration: audio.duration });
+    timeUpdateRef.current?.(currentTime, audio.duration);
   }, []);
 
   useEffect(
@@ -574,18 +698,30 @@ export function useAudio({
       if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
       requestRef.current += 1;
       currentAudioRef.current?.pause();
-      synthRef.current?.cancel();
+      if (activeAudioOwner === ownerIdRef.current) {
+        synthRef.current?.cancel();
+        activeAudioOwner = null;
+        pauseActiveAudio = null;
+      }
     },
-    []
+    [stop]
   );
 
   return {
     speak,
     stop,
+    pause,
+    resume,
+    seek,
+    source,
+    ...progress,
     status,
-    isPlaying: status === "playing" || status === "loading",
+    isPlaying: status === "playing" || status === "loading" || status === "buffering",
+    isPaused: status === "paused",
     isLoading: status === "loading",
     isSupported: status !== "unsupported",
     isError: status === "error",
   };
 }
+
+export type AudioController = ReturnType<typeof useAudio>;

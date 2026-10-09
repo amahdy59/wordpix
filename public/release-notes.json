@@ -1,16 +1,43 @@
 {
-  "version": "0.1.8",
+  "version": "0.1.9",
   "notes": [
-    "Clearer question headers and more room for learning content.",
-    "Simpler learning paths, reference results, practice lists and progress summaries.",
-    "Step-by-step multiple-choice practice with the freedom to answer later."
+    "Continuous reading with clear vocabulary highlights.",
+    "Pause, resume and seek within recorded reading; missing recordings use a clearly identified device voice."
   ],
   "notesAr": [
-    "عناوين أسئلة أوضح ومساحة أكبر لمحتوى التعلّم.",
-    "تنسيق أبسط لمسارات التعلّم ونتائج البحث وقوائم التدريب وملخصات التقدّم.",
-    "تدريب اختيار من متعدد خطوة بخطوة مع حرية الإجابة لاحقًا."
+    "قراءة متصلة مع إبراز واضح للمفردات.",
+    "إيقاف تسجيلات القراءة مؤقتًا واستئنافها والانتقال داخلها؛ يُوضّح استخدام صوت الجهاز عند غياب التسجيل."
   ],
   "releases": [
+    {
+      "id": "0.1.9",
+      "version": "0.1.9",
+      "date": "2026-10-09",
+      "title": {
+        "en": "Calmer reading and better listening",
+        "ar": "قراءة أكثر وضوحًا واستماع أفضل"
+      },
+      "changes": [
+        {
+          "id": "continuous-reading",
+          "category": "improved",
+          "en": "Business and Conversation readings use one continuous article. Hadith keeps Arabic and English clearly separated within one reading surface. Related language examples have less framing.",
+          "ar": "تظهر قراءات الأعمال والمحادثة كمقال متصل. ويحافظ الحديث على الفصل الواضح بين العربية والإنجليزية داخل مساحة قراءة واحدة. وتظهر الأمثلة اللغوية المرتبطة بإطارات أقل."
+        },
+        {
+          "id": "reading-vocabulary",
+          "category": "improved",
+          "en": "Lesson vocabulary is underlined in readings, including reviewed word forms. Word details remain available through full-size buttons below the text.",
+          "ar": "تظهر مفردات الدرس وتصاريف الكلمات التي تمت مراجعتها بخط سفلي داخل القراءات. وتتوفّر تفاصيل الكلمات عبر أزرار كبيرة أسفل النص."
+        },
+        {
+          "id": "reading-playback",
+          "category": "fixed",
+          "en": "Recorded reading supports pause, resume, seeking and speed changes without restarting. Word pronunciation pauses narration, and unavailable recordings clearly identify the device-voice fallback.",
+          "ar": "تدعم تسجيلات القراءة الإيقاف المؤقت والاستئناف والانتقال إلى موضع آخر وتغيير السرعة دون إعادة التشغيل من البداية. يوقف نطق الكلمات القراءة مؤقتًا، ويُوضّح استخدام صوت الجهاز عند عدم توفّر التسجيل."
+        }
+      ]
+    },
     {
       "id": "0.1.8",
       "version": "0.1.8",
@@ -55,6 +82,18 @@
           "category": "fixed",
           "en": "Library results open the unit reference directly. Recall headings no longer show a stage-zero prefix.",
           "ar": "تفتح نتائج المكتبة مرجع الوحدة مباشرة. لم تعد عناوين الاسترجاع تعرض بادئة المرحلة صفر."
+        },
+        {
+          "id": "local-illustration-prompt-helper",
+          "category": "improved",
+          "en": "Local illustration preparation includes cleaner kitchen and living-room scene prompts, with a check for the expected batch structure.",
+          "ar": "يتضمن إعداد الرسوم محليًا أوصافًا أوضح لمشاهد المطبخ وغرفة المعيشة، مع التحقّق من بنية مجموعة الصور المطلوبة."
+        },
+        {
+          "id": "authored-scene-count-helper",
+          "category": "fixed",
+          "en": "The local usage-scene diagnostic counts nested scenes across all 200 units and distinguishes explicit image references from runtime fallback imagery.",
+          "ar": "تحسب أداة فحص مشاهد الاستخدام المحلية المشاهد المتداخلة في الوحدات الـ٢٠٠، وتفرّق بين مراجع الصور الصريحة والصور البديلة أثناء التشغيل."
         }
       ]
     },

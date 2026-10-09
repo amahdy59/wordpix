@@ -67,7 +67,7 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
 
   await expect(page.getByRole("button", { name: /Overview/ })).toHaveCount(0);
   await expect(page.getByRole("button", { name: /Warm-up/ })).toHaveCount(0);
-  await expect(page.getByRole("button", { name: "Listen slowly" })).toBeVisible();
+  await expect(page.getByRole("radio", { name: "Slow", exact: true })).toHaveCount(2);
 
   await page.getByRole("tab", { name: /Vocabulary/ }).click();
   await expect(

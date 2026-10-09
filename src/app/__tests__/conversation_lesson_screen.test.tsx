@@ -121,8 +121,8 @@ describe("ConversationLessonScreen Component", () => {
     );
     const slow = screen.getByRole("radio", { name: "Slow" });
     const normal = screen.getByRole("radio", { name: "Normal" });
-    expect(slow).toHaveAttribute("aria-checked", "true");
+    expect(slow).toBeChecked();
     fireEvent.click(normal);
-    expect(normal).toHaveAttribute("aria-checked", "true");
+    expect(normal).toBeChecked();
   });
 });

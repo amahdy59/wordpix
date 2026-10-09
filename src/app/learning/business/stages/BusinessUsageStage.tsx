@@ -91,10 +91,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
       </div>
 
       {/* Hero Card */}
-      <section
-        className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
-        aria-labelledby="usage-focus-title"
-      >
+      <section className="space-y-2" aria-labelledby="usage-focus-title">
         <p className="text-sm font-black uppercase tracking-widest text-primary">
           {t("business.usage.linguisticFramework")}
         </p>
@@ -113,10 +110,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
       </section>
 
       {/* Framework Matrix Grid / Cards */}
-      <section
-        className="rounded-3xl border border-border bg-card p-5 sm:p-8 shadow-wp-sm"
-        aria-label="Framework Matrix Rules"
-      >
+      <section className="min-w-0" aria-labelledby="usage-focus-title">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {matrixCards.map((card, idx) => (
             <div
@@ -141,7 +135,11 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
                 )}
               </div>
 
-              <div className="rounded-xl bg-card p-3.5 border border-border/70 text-base font-medium text-foreground italic font-serif leading-relaxed">
+              <div
+                className="border-t border-border pt-3 text-base text-foreground leading-relaxed"
+                lang="en"
+                dir="ltr"
+              >
                 {`“${card.example}”`}
               </div>
             </div>

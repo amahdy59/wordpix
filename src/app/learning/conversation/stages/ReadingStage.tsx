@@ -1,17 +1,18 @@
 import { useState, useMemo } from "react";
-import { BookOpen, Volume2, ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react";
+import { Pause, Volume2, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { getConversationReadingAudioKey } from "../conversationReadingAudio";
 import { useI18n } from "../../../../i18n";
 import { useLearner } from "../../../context/LearnerContext";
 import { useAudio } from "../../../shared/useAudio";
-import { PlaybackSpeedControl } from "../../../shared/PlaybackSpeedControl";
-import { RichPassageText } from "../../../shared/RichPassageText";
+import { getPassageVocabularyTerms, RichPassageText } from "../../../shared/RichPassageText";
 import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import timing from "../conversationTranscriptTiming.json";
 import { TimedPassageText, type TranscriptSpan } from "../../../shared/TimedPassageText";
+import { ReadingAudioPlayer } from "../../../shared/ReadingAudioPlayer";
+import { ReadingVocabulary } from "../../../shared/ReadingVocabulary";
 
 interface Props {
   unit: ConversationUnit;
@@ -21,361 +22,196 @@ interface Props {
 
 export function ReadingStage({ unit, onNext, onPrev }: Props) {
   const { t } = useI18n();
-  const { state: learnerState } = useLearner();
+  const { state } = useLearner();
   const [activeTerm, setActiveTerm] = useState<string | null>(null);
-  const [manualAudioStatus, setManualAudioStatus] = useState("");
   const [playbackRate, setPlaybackRate] = useState(0.85);
   const [activeTrack, setActiveTrack] = useState<"full" | number | null>(null);
-  const [mediaTime, setMediaTime] = useState(0);
-  const [hasMediaTiming, setHasMediaTiming] = useState(false);
+  const listeningEnabled = state.accessibility.includeListening;
   const unitTiming: Partial<Record<string, TranscriptSpan[][]>> = timing;
-  const listeningEnabled = learnerState.accessibility.includeListening;
+  const fullText = `${unit.reading.title}. ${unit.reading.paragraphs.join(" ")}`;
   const audio = useAudio({
     lang: "en-US",
     rate: playbackRate,
     preferLocal: true,
+    preserveText: true,
     onEnded: () => setActiveTrack(null),
-    onError: () => setActiveTrack(null),
-    onTimeUpdate: (time, duration) => {
-      setMediaTime(time);
-      setHasMediaTiming(duration > 0);
-    },
   });
-  const isPlaying = audio.isPlaying;
-
-  const audioStatus =
-    manualAudioStatus ||
-    (audio.status === "playing"
-      ? t("conversation.audioPlaying")
-      : audio.status === "error" || audio.status === "unsupported"
-        ? t("conversation.audioUnavailable")
-        : "");
-
-  const playTrack = (track: "full" | number, text: string) => {
-    if (!listeningEnabled || !audio.isSupported) {
-      setManualAudioStatus(t("conversation.audioUnavailable"));
-      return;
-    }
-    if (isPlaying && activeTrack === track) {
-      audio.stop();
-      setActiveTrack(null);
-      return;
-    }
-    audio.stop();
-    setManualAudioStatus("");
+  const vocabTerms = useMemo(() => unit.languageBank.map((item) => item.term), [unit.languageBank]);
+  const presentTerms = useMemo(
+    () => getPassageVocabularyTerms(`${fullText} ${unit.reading.inShort.summary}`, vocabTerms),
+    [fullText, unit.reading.inShort.summary, vocabTerms]
+  );
+  const selectedVocabItem = useMemo<VocabularyTableItem | null>(() => {
+    const item = unit.languageBank.find((entry) => entry.term === activeTerm);
+    return item
+      ? {
+          id: item.id,
+          term: item.term,
+          termAr: item.termAr,
+          type: item.type,
+          definition: item.meaning,
+          definitionAr: item.meaningAr,
+          example: item.example,
+          imageSrc: item.imageSrc ? resolveAssetUrl(item.imageSrc) : undefined,
+        }
+      : null;
+  }, [activeTerm, unit.languageBank]);
+  const startTrack = (track: "full" | number, text: string) => {
+    if (!listeningEnabled || !audio.isSupported) return;
     setActiveTrack(track);
-    setMediaTime(0);
-    setHasMediaTiming(false);
     audio.speak(text, "en-US", getConversationReadingAudioKey(unit.id, track, text));
   };
-
-  const handleToggleAudio = () =>
-    playTrack("full", `${unit.reading.title}. ${unit.reading.paragraphs.join(" ")}`);
-
-  const handleRateChange = (rate: number) => {
-    audio.stop();
-    setActiveTrack(null);
-    setPlaybackRate(rate);
+  const playParagraph = (index: number, text: string) => {
+    if (activeTrack === index && audio.isPaused) audio.resume();
+    else if (activeTrack === index && audio.isPlaying) {
+      if (audio.isLoading) audio.stop();
+      else audio.pause();
+    } else startTrack(index, text);
   };
-
-  // Combine all vocabulary terms from Language Bank AND target terms
-  const allVocabTerms = useMemo(() => {
-    const set = new Set<string>();
-    unit.languageBank.forEach((item) => set.add(item.term));
-    unit.reading.inShort.targetTerms.forEach((term) => set.add(term));
-    return Array.from(set);
-  }, [unit.languageBank, unit.reading.inShort.targetTerms]);
-
-  // Robust matching to map any clicked term to a rich VocabularyTableItem
-  const selectedVocabItem = useMemo<VocabularyTableItem | null>(() => {
-    if (!activeTerm) return null;
-    const norm = (s: string) => s.toLowerCase().trim().replace(/[-_]/g, " ");
-    const targetNorm = norm(activeTerm);
-
-    // 1. Direct exact or normalized match
-    let match = unit.languageBank.find((i) => norm(i.term) === targetNorm);
-
-    // 2. Plural / singular
-    if (!match) {
-      match = unit.languageBank.find((i) => {
-        const bNorm = norm(i.term);
-        return (
-          bNorm + "s" === targetNorm ||
-          targetNorm + "s" === bNorm ||
-          bNorm + "es" === targetNorm ||
-          targetNorm + "es" === bNorm
-        );
-      });
-    }
-
-    // 3. Multi-word inflection / participle (e.g. crossing -> cross, handed -> hand)
-    if (!match) {
-      match = unit.languageBank.find((i) => {
-        const bWords = norm(i.term).split(" ");
-        const tWords = targetNorm.split(" ");
-        if (bWords.length !== tWords.length) return false;
-        return bWords.every((bw, idx) => {
-          const tw = tWords[idx];
-          return (
-            bw === tw ||
-            bw + "ing" === tw ||
-            bw.replace(/e$/, "") + "ing" === tw ||
-            bw + "ed" === tw ||
-            bw + "d" === tw ||
-            bw + "s" === tw ||
-            tw + "s" === bw
-          );
-        });
-      });
-    }
-
-    // 4. Substring / phrase match
-    if (!match) {
-      match = unit.languageBank.find((i) => {
-        const bNorm = norm(i.term);
-        return (
-          (bNorm.length >= 4 && targetNorm.includes(bNorm)) ||
-          (targetNorm.length >= 4 && bNorm.includes(targetNorm))
-        );
-      });
-    }
-
-    if (match) {
-      return {
-        id: match.id,
-        term: match.term,
-        termAr: match.termAr,
-        type: match.type,
-        definition: match.meaning,
-        definitionAr: match.meaningAr,
-        example: match.example,
-        imageSrc: match.imageSrc ? resolveAssetUrl(match.imageSrc) : undefined,
-      };
-    }
-
-    // Fallback if target term exists but not in bank
-    return {
-      id: `term-${activeTerm}`,
-      term: activeTerm,
-      type: "Target Term",
-      definition:
-        t("conversation.targetTermDesc", { term: activeTerm }) ||
-        `Target vocabulary concept emphasized in this lesson.`,
-      example: `Focus on understanding "${activeTerm}" in context.`,
-    };
-  }, [activeTerm, unit.languageBank, t]);
-
+  const openTerm = (term: string) => {
+    if (audio.isLoading) audio.stop();
+    else audio.pause();
+    setActiveTerm(term);
+  };
+  const time =
+    audio.source === "recording" && (audio.isPlaying || audio.isPaused) ? audio.currentTime : null;
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
-      {/* Stage Header */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
-          <BookOpen className="size-4" aria-hidden />
-          {t("conversation.readingStage")}
-        </span>
-        <div className="flex flex-wrap items-center gap-2">
-          <PlaybackSpeedControl
-            value={playbackRate}
-            onChange={handleRateChange}
-            label={t("conversation.playbackSpeed")}
-            options={[
-              { value: 0.85, label: t("conversation.slowSpeed") },
-              { value: 1, label: t("conversation.normalSpeed") },
-            ]}
-            disabled={!listeningEnabled}
-          />
-          <button
-            type="button"
-            onClick={handleToggleAudio}
-            disabled={!listeningEnabled}
-            aria-pressed={isPlaying && activeTrack === "full"}
-            aria-busy={audio.status === "loading"}
-            className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl border px-4 py-2 text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${
-              isPlaying && activeTrack === "full"
-                ? "border-primary bg-primary text-primary-foreground shadow-wp-sm"
-                : "border-border bg-card text-foreground hover:bg-muted"
-            }`}
-          >
-            <Volume2 className="size-4.5" aria-hidden />
-            <span>
-              {isPlaying && activeTrack === "full"
-                ? t("conversation.pauseNarration")
-                : t("conversation.listenReading")}
-            </span>
-          </button>
-        </div>
-        <span className="sr-only" aria-live="polite">
-          {audioStatus}
-        </span>
-      </div>
-
-      {/* Reading Article Card */}
+    <div className="wp-container-reading space-y-6 py-2">
       <article
-        className="rounded-3xl border border-border bg-card p-3 sm:p-9 shadow-wp-sm flex flex-col gap-5"
         aria-labelledby="reading-title"
+        className="min-w-0 rounded-2xl border border-border bg-card p-4 sm:p-8"
       >
-        <header className="border-b border-border/60 pb-4">
-          <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
-            {t("conversation.level", { level: unit.level })} · {unit.topic}
-          </span>
-          <h2
-            id="reading-title"
-            className="wp-type-stage-title mt-1.5 font-black text-foreground tracking-tight"
-          >
-            {unit.reading.title}
-          </h2>
-        </header>
-
-        {/* Paragraphs with bold target terms */}
-        <div className="flex flex-col gap-4 text-base sm:text-lg leading-relaxed text-foreground font-normal">
-          {unit.reading.paragraphs.map((paragraph, pIdx) => {
-            const paragraphIsPlaying = isPlaying && activeTrack === pIdx;
-            return (
-              <div
-                key={pIdx}
-                className={`relative rounded-2xl border p-2 pe-14 sm:p-4 sm:pe-16 transition-colors ${paragraphIsPlaying ? "border-primary bg-secondary shadow-wp-xs" : "border-transparent hover:border-border hover:bg-muted/30"}`}
-              >
-                <p>
-                  <TimedPassageText
-                    text={paragraph}
-                    time={isPlaying && hasMediaTiming ? mediaTime : null}
-                    spans={
-                      getConversationReadingAudioKey(
-                        unit.id,
-                        activeTrack === "full" ? "full" : pIdx,
-                        activeTrack === "full"
-                          ? `${unit.reading.title}. ${unit.reading.paragraphs.join(" ")}`
-                          : paragraph
-                      )
-                        ? unitTiming[unit.id]?.[
-                            activeTrack === "full"
-                              ? 0
-                              : typeof activeTrack === "number" && activeTrack === pIdx
-                                ? activeTrack + 1
-                                : -1
-                          ]
-                        : undefined
-                    }
-                    offset={
-                      activeTrack === "full"
-                        ? unit.reading.title.length +
-                          2 +
-                          unit.reading.paragraphs
-                            .slice(0, pIdx)
-                            .reduce((sum, text) => sum + text.length + 1, 0)
-                        : 0
-                    }
-                    vocabTerms={allVocabTerms}
-                    onTermClick={(term) => setActiveTerm(term)}
-                  />
-                </p>
-                <button
-                  type="button"
-                  onClick={() => playTrack(pIdx, paragraph)}
-                  disabled={!listeningEnabled}
-                  aria-pressed={paragraphIsPlaying}
-                  aria-label={t("conversation.listenParagraph", { number: pIdx + 1 })}
-                  className={`absolute end-3 top-3 flex size-11 items-center justify-center rounded-xl border transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${paragraphIsPlaying ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-primary hover:bg-primary hover:text-primary-foreground"}`}
-                >
-                  <Volume2 className="size-4" aria-hidden />
-                </button>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* "In Short" Core Synthesis Box */}
-        <div className="mt-4 rounded-2xl border-2 border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
-          {/* Header row */}
-          <div className="flex items-center gap-2 text-primary font-black text-sm uppercase tracking-widest">
-            <CheckCircle2 className="size-4 shrink-0" aria-hidden />
-            <span>{t("conversation.inShort")}</span>
-          </div>
-
-          {/* Summary — bold markdown + vocab highlights */}
-          <p className="wp-prose mt-3 text-base sm:text-base font-medium leading-relaxed text-foreground">
-            <RichPassageText
-              text={unit.reading.inShort.summary}
-              vocabTerms={allVocabTerms}
-              onTermClick={(term) => setActiveTerm(term)}
-            />
-          </p>
-
-          {/* Target Terms row with proper horizontal alignment */}
-          <div className="mt-4 flex flex-wrap items-center gap-2.5 pt-3.5 border-t border-primary/20">
-            <span className="text-sm font-black uppercase tracking-wider text-muted-foreground shrink-0 select-none">
-              {t("conversation.targetTerms")}:
-            </span>
-            <div className="flex flex-wrap items-center gap-2">
-              {unit.reading.inShort.targetTerms.map((term, tIdx) => (
-                <button
-                  key={tIdx}
-                  type="button"
-                  onClick={() => setActiveTerm(term)}
-                  aria-label={
-                    t("conversation.learnWord", { word: term }) || `Learn more about ${term}`
-                  }
-                  className="inline-flex min-h-[44px] items-center rounded-xl bg-card px-3.5 py-1.5 text-sm font-bold text-primary border border-primary/30 shadow-xs hover:bg-primary hover:text-primary-foreground motion-safe:active:scale-[0.97] transition-all cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                >
-                  {term}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Selected Vocab Inline Helper Card */}
-        {selectedVocabItem && (
-          <div
-            className="rounded-2xl border-2 border-primary/35 bg-secondary p-4 shadow-wp-xs animate-in fade-in slide-in-from-bottom-2"
-            role="region"
-            aria-live="polite"
-            aria-label={t("conversation.learnWord", { word: selectedVocabItem.term })}
-          >
-            <div className="flex items-center justify-between">
-              <span className="font-black text-foreground text-base">{selectedVocabItem.term}</span>
-              {selectedVocabItem.type && (
-                <span className="text-sm font-bold text-primary bg-secondary px-2 py-0.5 rounded-full">
-                  {selectedVocabItem.type}
-                </span>
-              )}
-            </div>
-            <p className="mt-1 text-sm sm:text-base text-muted-foreground">
-              {selectedVocabItem.definition}
+        <div className="wp-prose mx-auto space-y-6">
+          <header className="space-y-2">
+            <p className="text-sm font-semibold text-foreground">
+              {t("conversation.level", { level: unit.level })} · <bdi>{unit.topic}</bdi>
             </p>
-            {selectedVocabItem.example && (
-              <p className="mt-1.5 text-sm italic text-foreground bg-muted/40 p-2 rounded-lg">
-                "{selectedVocabItem.example}"
-              </p>
-            )}
+            <h2
+              id="reading-title"
+              className="wp-type-stage-title text-foreground"
+              lang="en"
+              dir="ltr"
+            >
+              <RichPassageText
+                text={unit.reading.title}
+                vocabTerms={vocabTerms}
+                interactiveVocabulary={false}
+              />
+            </h2>
+          </header>
+          <ReadingAudioPlayer
+            audio={audio}
+            active={activeTrack !== null}
+            enabled={listeningEnabled}
+            onPlay={() => startTrack("full", fullText)}
+            onRestart={() => startTrack("full", fullText)}
+            rate={playbackRate}
+            onRateChange={setPlaybackRate}
+          />
+          <div
+            className="space-y-6 text-base leading-relaxed text-foreground sm:text-lg"
+            lang="en"
+            dir="ltr"
+          >
+            {unit.reading.paragraphs.map((paragraph, index) => {
+              const selected = activeTrack === index;
+              const key = getConversationReadingAudioKey(
+                unit.id,
+                activeTrack === "full" ? "full" : index,
+                activeTrack === "full" ? fullText : paragraph
+              );
+              const spans = key
+                ? unitTiming[unit.id]?.[activeTrack === "full" ? 0 : selected ? index + 1 : -1]
+                : undefined;
+              const offset =
+                activeTrack === "full"
+                  ? unit.reading.title.length +
+                    2 +
+                    unit.reading.paragraphs
+                      .slice(0, index)
+                      .reduce((sum, text) => sum + text.length + 1, 0)
+                  : 0;
+              return (
+                <div key={index} className="flex min-w-0 items-start gap-2 sm:gap-4">
+                  <p className="min-w-0 flex-1">
+                    <TimedPassageText
+                      text={paragraph}
+                      spans={spans}
+                      offset={offset}
+                      time={activeTrack === "full" || selected ? time : null}
+                      vocabTerms={vocabTerms}
+                      interactiveVocabulary={false}
+                    />
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => playParagraph(index, paragraph)}
+                    disabled={!listeningEnabled || !audio.isSupported}
+                    aria-pressed={selected && audio.isPlaying}
+                    aria-label={t(
+                      selected && audio.isPaused
+                        ? "readingPlayer.resumeParagraph"
+                        : selected && audio.isPlaying
+                          ? "readingPlayer.pauseParagraph"
+                          : "conversation.listenParagraph",
+                      { number: index + 1 }
+                    )}
+                    className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl text-foreground hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    {selected && audio.isPlaying ? (
+                      <Pause className="size-4" aria-hidden />
+                    ) : (
+                      <Volume2 className="size-4" aria-hidden />
+                    )}
+                  </button>
+                </div>
+              );
+            })}
           </div>
-        )}
+          <section
+            className="space-y-3 border-t border-border pt-5"
+            aria-labelledby="reading-summary-title"
+          >
+            <h3 id="reading-summary-title" className="text-base font-semibold text-foreground">
+              {t("conversation.inShort")}
+            </h3>
+            <p className="text-base text-foreground" lang="en" dir="ltr">
+              <RichPassageText
+                text={unit.reading.inShort.summary}
+                vocabTerms={vocabTerms}
+                interactiveVocabulary={false}
+              />
+            </p>
+          </section>
+          <ReadingVocabulary terms={presentTerms} onSelect={openTerm} />
+        </div>
       </article>
-
-      {/* Accessible Interactive Word Inspector Modal */}
       <VocabularyDetailModal
         item={selectedVocabItem}
-        isOpen={Boolean(activeTerm && selectedVocabItem)}
+        isOpen={Boolean(selectedVocabItem)}
         onClose={() => setActiveTerm(null)}
       />
-
-      {/* Stage Navigation Footer */}
-      <div className="mt-2 flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <button
           type="button"
-          onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          onClick={() => {
+            audio.stop();
+            onPrev();
+          }}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border px-5 py-3 font-semibold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-          <span>{t("conversation.previous")}</span>
+          {t("conversation.previous")}
         </button>
-
         <button
           type="button"
-          onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          onClick={() => {
+            audio.stop();
+            onNext();
+          }}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>{t("conversation.continueLanguageBank")}</span>
+          {t("conversation.continueLanguageBank")}
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

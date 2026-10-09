@@ -81,5 +81,6 @@ it("clears measured timing when cached media fails and falls back", async () => 
   await waitFor(() => expect(CachedAudio.instances).toHaveLength(1));
   act(() => CachedAudio.instances[0].onerror?.());
   expect(progress).toHaveBeenLastCalledWith(0, 0);
-  expect(result.current.status).toBe("unsupported");
+  expect(result.current.status).toBe("error");
+  expect(result.current.isSupported).toBe(true);
 });

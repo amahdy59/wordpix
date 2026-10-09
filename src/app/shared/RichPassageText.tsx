@@ -25,6 +25,8 @@ interface Props {
   className?: string;
   /** Raw-text offsets of the provider-timed sentence. Keeps controls mounted. */
   highlightRange?: { start: number; end: number };
+  /** Continuous reading uses marks; the adjacent glossary owns word actions. */
+  interactiveVocabulary?: boolean;
 }
 
 type PlainToken = { kind: "plain"; text: string; start: number };
@@ -32,6 +34,16 @@ type BoldToken = { kind: "bold"; text: string; start: number };
 type VocabToken = { kind: "vocab"; text: string; term: string; bold: boolean; start: number };
 type Token = PlainToken | BoldToken | VocabToken;
 const EMPTY_TERMS: string[] = [];
+// Reviewed forms, rather than broad stemming that can highlight unrelated words.
+const REVIEWED_FORMS: Readonly<Record<string, readonly string[]>> = {
+  "stress test": ["stress testing", "stress tested", "stress tests"],
+  "stress-test a system": ["stress testing a system", "stress-tested a system"],
+  "critical dependency": ["critical dependencies"],
+  redundancy: ["redundancies"],
+  "build resilience": ["building resilience", "built resilience"],
+  "diversify suppliers": ["diversifying suppliers", "diversified suppliers"],
+  "hold safety stock": ["holding safety stock", "held safety stock"],
+};
 
 function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -49,17 +61,28 @@ function buildTermMatchers(terms: string[]): TermMatcher[] {
   unique.sort((a, b) => b.length - a.length);
 
   return unique.map((term) => {
-    const esc = escapeRegex(term);
+    const forms = [term, ...(REVIEWED_FORMS[term.toLowerCase()] ?? [])];
     // Support either space or hyphen between words (e.g. false positive <-> false-positive)
-    const flex = esc.replace(/[ -]/g, "[ -]");
+    const flex = escapeRegex(term).replace(/[ -]/g, "[ -]");
     // Support optional plural s/es if term doesn't already end in s
     const plural = flex.endsWith("s") ? flex : `${flex}(?:s|es)?`;
+    const pattern = [
+      plural,
+      ...forms.slice(1).map((form) => escapeRegex(form).replace(/[ -]/g, "[ -]")),
+    ].join("|");
     return {
       canonical: term,
-      testRegex: new RegExp(`^${plural}$`, "i"),
-      patternPart: plural,
+      testRegex: new RegExp(`^(?:${pattern})$`, "i"),
+      patternPart: `(?:${pattern})`,
     };
   });
+}
+
+export function getPassageVocabularyTerms(text: string, terms: string[]): string[] {
+  const matches = tokenise(text, terms).filter(
+    (token): token is VocabToken => token.kind === "vocab"
+  );
+  return Array.from(new Set(matches.map((token) => token.term)));
 }
 
 function tokeniseForVocab(
@@ -127,6 +150,7 @@ export const RichPassageText = memo(function RichPassageText({
   onTermClick,
   className,
   highlightRange,
+  interactiveVocabulary = true,
 }: Props) {
   const { t } = useI18n();
   const tokens = useMemo(() => tokenise(text, vocabTerms), [text, vocabTerms]);
@@ -137,7 +161,7 @@ export const RichPassageText = memo(function RichPassageText({
     return (
       <>
         {token.text.slice(0, from)}
-        <mark className="rounded bg-muted text-foreground underline decoration-primary decoration-2 underline-offset-4">
+        <mark className="rounded bg-feedback-info-surface text-feedback-info-foreground">
           {token.text.slice(from, to)}
         </mark>
         {token.text.slice(to)}
@@ -160,6 +184,15 @@ export const RichPassageText = memo(function RichPassageText({
             );
 
           case "vocab":
+            if (!interactiveVocabulary)
+              return (
+                <mark
+                  key={i}
+                  className="bg-transparent font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4"
+                >
+                  {content(token)}
+                </mark>
+              );
             return (
               <button
                 key={i}

@@ -81,3 +81,39 @@ it("reads corrected source text completely without requesting an outdated clip",
   expect(speak.mock.calls.at(-1)![0].text).toBe(text);
   unmount();
 });
+
+it("preserves a complete fallback passage and restarts canceled device speech after a word takes over", () => {
+  const speak = vi.fn();
+  vi.stubGlobal("speechSynthesis", {
+    speak,
+    cancel: vi.fn(),
+    pause: vi.fn(),
+    resume: vi.fn(),
+    getVoices: () => [],
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+  });
+  vi.stubGlobal(
+    "SpeechSynthesisUtterance",
+    class {
+      constructor(public text: string) {}
+    }
+  );
+  const { result, unmount } = renderHook(() => ({
+    reading: useAudio({ preserveText: true }),
+    word: useAudio(),
+  }));
+  const text = "The supplier (in another region) closed. Production / demand remained important.";
+  act(() => result.current.reading.speak(text));
+  expect(speak.mock.calls.at(-1)![0].text).toBe(text);
+  act(() => speak.mock.calls.at(-1)![0].onstart());
+  act(() => result.current.reading.pause());
+  expect(result.current.reading.status).toBe("paused");
+  act(() => result.current.reading.resume());
+  expect(result.current.reading.status).toBe("playing");
+  act(() => result.current.word.speak("supplier"));
+  expect(result.current.reading.status).toBe("idle");
+  act(() => result.current.reading.speak(text));
+  expect(speak.mock.calls.at(-1)![0].text).toBe(text);
+  unmount();
+});

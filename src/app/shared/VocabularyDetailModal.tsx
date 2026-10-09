@@ -6,6 +6,7 @@ import { useModalA11y } from "./useModalA11y";
 import { useAudio } from "./useAudio";
 import { getCurriculumAudioKey } from "../learning/shared/curriculumAudioManifest";
 import type { VocabularyTableItem } from "./CurriculumVocabularyTable";
+import { useLearner } from "../context/LearnerContext";
 
 function getRegisterBadge(register?: string) {
   if (!register || register.toLowerCase() === "general") return null;
@@ -45,6 +46,7 @@ interface Props {
   isOpen: boolean;
   onClose: () => void;
   showArabic?: boolean;
+  audioKey?: string;
 }
 
 export const VocabularyDetailModal = memo(function VocabularyDetailModal({
@@ -52,8 +54,10 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
   isOpen,
   onClose,
   showArabic = true,
+  audioKey,
 }: Props) {
   const { t } = useI18n();
+  const { state } = useLearner();
   const [imgError, setImgError] = useState(false);
 
   const containerRef = useModalA11y({
@@ -68,8 +72,8 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
   }
 
   const handlePlayAudio = () => {
-    if (!audio.isSupported) return;
-    const manifestKey = getCurriculumAudioKey(item.term) ?? undefined;
+    if (!audio.isSupported || !state.accessibility.includeListening) return;
+    const manifestKey = audioKey ?? getCurriculumAudioKey(item.term) ?? undefined;
     audio.speak(item.term, undefined, manifestKey);
   };
 
@@ -78,7 +82,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
 
   return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/75 backdrop-blur-sm motion-safe:animate-in motion-safe:fade-in duration-200"
       role="presentation"
     >
       {/* Backdrop dismiss */}
@@ -91,7 +95,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
         aria-modal="true"
         aria-labelledby="vocab-detail-modal-term"
         tabIndex={-1}
-        className="relative w-full max-w-lg overflow-hidden rounded-t-[28px] sm:rounded-3xl border border-border bg-card shadow-wp-xl z-10 flex flex-col max-h-[92dvh] sm:max-h-[88dvh] animate-in zoom-in-95 duration-200"
+        className="relative w-full max-w-lg overflow-hidden rounded-t-[28px] sm:rounded-3xl border border-border bg-card shadow-wp-xl z-10 flex flex-col max-h-[92dvh] sm:max-h-[88dvh] motion-safe:animate-in motion-safe:zoom-in-95 duration-200"
       >
         {/* Close Button */}
         <button
@@ -167,7 +171,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                 aria-label={
                   t("vocabulary.playPronunciation", { term: item.term }) || `Listen to ${item.term}`
                 }
-                disabled={audio.status === "loading"}
+                disabled={audio.status === "loading" || !state.accessibility.includeListening}
                 className={`flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-2xl font-black text-xs sm:text-sm shadow-wp-md transition-all motion-safe:active:scale-95 cursor-pointer shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   audio.isPlaying
                     ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"

@@ -1,16 +1,18 @@
 import { useMemo, useState } from "react";
-import { BookOpen, ArrowRight, UserCheck, MessageSquareQuote, Volume2, Users } from "lucide-react";
+import { ArrowRight, Pause, Volume2 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 import { TimedPassageText } from "../../../shared/TimedPassageText";
 import { getBusinessReadingAudio } from "../businessReadingAudio";
 import { useLearner } from "../../../context/LearnerContext";
-import { PlaybackSpeedControl } from "../../../shared/PlaybackSpeedControl";
 import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import { useAudio } from "../../../shared/useAudio";
 import { getBusinessInputPresentation } from "../businessInputPresentation";
+import { ReadingAudioPlayer } from "../../../shared/ReadingAudioPlayer";
+import { ReadingVocabulary } from "../../../shared/ReadingVocabulary";
+import { getPassageVocabularyTerms, RichPassageText } from "../../../shared/RichPassageText";
 
 interface Props {
   unit: BusinessUnit;
@@ -21,311 +23,194 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   const { t } = useI18n();
   const [playingIdx, setPlayingIdx] = useState<number | "full" | null>(null);
   const [activeTerm, setActiveTerm] = useState<string | null>(null);
-  const [mediaTime, setMediaTime] = useState(0);
-  const [hasMediaTiming, setHasMediaTiming] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(0.85);
-  const { state: learnerState } = useLearner();
-  const listeningEnabled = learnerState.accessibility.includeListening;
+  const { state } = useLearner();
+  const listeningEnabled = state.accessibility.includeListening;
+  // Preserve authored text and original offsets: existing R2 takes are immutable.
   const fullText = `${unit.mainInput.title}. ${unit.mainInput.context} ${unit.mainInput.dialogue.map((line) => line.text).join(" ")}`;
   const fullRecording = getBusinessReadingAudio(unit.id, fullText);
   const presentation = useMemo(
     () => getBusinessInputPresentation(unit.mainInput),
     [unit.mainInput]
   );
-
   const audio = useAudio({
     lang: "en-US",
     rate: playbackRate,
+    preserveText: true,
     onEnded: () => setPlayingIdx(null),
-    onError: () => setPlayingIdx(null),
-    onTimeUpdate: (time, duration) => {
-      setMediaTime(time);
-      setHasMediaTiming(duration > 0);
-    },
   });
-
-  // Extract unique speakers (excluding Narrator)
-  const speakers = useMemo(() => {
-    const set = new Set<string>();
-    unit.mainInput.dialogue.forEach((d) => {
-      if (d.speaker && d.speaker.toLowerCase() !== "narrator") {
-        set.add(d.speaker.trim());
-      }
-    });
-    return Array.from(set);
-  }, [unit.mainInput.dialogue]);
-
-  // Set of target vocabulary terms for visual highlight
-  const vocabTerms = useMemo(() => {
-    return unit.languageBank.map((item) => item.term);
-  }, [unit.languageBank]);
-
+  const vocabTerms = useMemo(() => unit.languageBank.map((item) => item.term), [unit.languageBank]);
+  const presentTerms = useMemo(
+    () => getPassageVocabularyTerms(fullText, vocabTerms),
+    [fullText, vocabTerms]
+  );
   const selectedVocabItem = useMemo<VocabularyTableItem | null>(() => {
-    if (!activeTerm) return null;
-    const norm = (s: string) => s.toLowerCase().trim().replace(/[-_]/g, " ");
-    const targetNorm = norm(activeTerm);
-
-    const match = unit.languageBank.find((i) => {
-      const bNorm = norm(i.term);
-      return (
-        bNorm === targetNorm ||
-        bNorm + "s" === targetNorm ||
-        targetNorm + "s" === bNorm ||
-        (bNorm.length >= 4 && targetNorm.includes(bNorm)) ||
-        (targetNorm.length >= 4 && bNorm.includes(targetNorm))
-      );
-    });
-
-    if (match) {
-      return {
-        id: match.id,
-        term: match.term,
-        type: match.type,
-        definition: match.definition,
-        example: match.example,
-        imageSrc: match.imageSrc ? resolveAssetUrl(match.imageSrc) : undefined,
-      };
-    }
-    return null;
+    const match = unit.languageBank.find((item) => item.term === activeTerm);
+    return match
+      ? {
+          id: match.id,
+          term: match.term,
+          type: match.type,
+          definition: match.definition,
+          example: match.example,
+          imageSrc: match.imageSrc ? resolveAssetUrl(match.imageSrc) : undefined,
+        }
+      : null;
   }, [activeTerm, unit.languageBank]);
-
-  const handleSpeak = (text: string, idx: number | "full") => {
+  const startTrack = (text: string, idx: number | "full") => {
     if (!listeningEnabled || !audio.isSupported) return;
-    if (playingIdx === idx && audio.isPlaying) {
-      audio.stop();
-      setPlayingIdx(null);
-      return;
-    }
     setPlayingIdx(idx);
-    setMediaTime(0);
-    setHasMediaTiming(false);
     audio.speak(text, "en-US", getBusinessReadingAudio(unit.id, text)?.key);
   };
-
+  const playParagraph = (text: string, idx: number) => {
+    if (playingIdx === idx && audio.isPaused) audio.resume();
+    else if (playingIdx === idx && audio.isPlaying) {
+      if (audio.isLoading) audio.stop();
+      else audio.pause();
+    } else startTrack(text, idx);
+  };
+  const openTerm = (term: string) => {
+    if (audio.isLoading) audio.stop();
+    else audio.pause();
+    setActiveTerm(term);
+  };
+  const time =
+    audio.source === "recording" && (audio.isPlaying || audio.isPaused) ? audio.currentTime : null;
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
-      {/* Header Tag */}
-      <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
-          <BookOpen className="size-4" aria-hidden />
-          {t("business.input.stageTag")}
-        </span>
-        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
-          {t("business.input.scenarioTag", { level: unit.level })}
-        </span>
-      </div>
-
-      {/* Case Header Card */}
-      <section
-        className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
+    <div className="wp-container-reading space-y-6 py-2">
+      <article
         aria-labelledby="case-study-title"
+        className="min-w-0 rounded-2xl border border-border bg-card p-4 sm:p-8"
       >
-        <p className="text-sm font-black uppercase tracking-widest text-primary">
-          {t("business.input.executiveBriefing")}
-        </p>
-        <h2
-          id="case-study-title"
-          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"
-        >
-          {presentation.title}
-        </h2>
-
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <button
-            type="button"
-            onClick={() => handleSpeak(fullText, "full")}
-            disabled={!listeningEnabled || !audio.isSupported}
-            aria-pressed={playingIdx === "full" && audio.isPlaying}
-            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border px-4 text-base font-bold text-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <Volume2 className="size-4" aria-hidden />
-            {playingIdx === "full" && audio.isPlaying
-              ? t("conversation.pauseNarration")
-              : t("conversation.listenReading")}
-          </button>
-          <PlaybackSpeedControl
-            value={playbackRate}
-            onChange={(rate) => {
-              audio.stop();
-              setPlayingIdx(null);
-              setPlaybackRate(rate);
-            }}
-            label={t("conversation.playbackSpeed")}
-            disabled={!listeningEnabled}
-            options={[
-              { value: 0.85, label: t("conversation.slowSpeed") },
-              { value: 1, label: t("conversation.normalSpeed") },
-            ]}
-          />
-        </div>
-        {(audio.status === "error" || audio.status === "unsupported") && (
-          <p role="status" className="mt-2 text-base text-foreground">
-            {t("conversation.audioUnavailable")}
-          </p>
-        )}
-
-        {presentation.showContext && (
-          <div className="mt-4 rounded-2xl bg-muted/40 border border-border/80 p-4 sm:p-5">
-            <span className="text-sm font-black uppercase tracking-wider text-muted-foreground block mb-1">
-              {t("business.input.contextAndSetting")}
-            </span>
-            <p className="wp-prose text-base sm:text-base font-medium text-foreground leading-relaxed">
-              <TimedPassageText
-                text={unit.mainInput.context}
-                spans={fullRecording?.spans}
-                time={playingIdx === "full" && audio.isPlaying && hasMediaTiming ? mediaTime : null}
-                offset={unit.mainInput.title.length + 2}
-              />
+        <div className="wp-prose mx-auto space-y-6">
+          <header className="space-y-2">
+            <p className="text-sm font-semibold text-foreground">
+              {t("business.input.scenarioTag", { level: unit.level })}
             </p>
-          </div>
-        )}
-
-        {/* Participant Roster */}
-        {speakers.length > 0 && (
-          <div className="mt-4 flex flex-wrap items-center gap-2 pt-3 border-t border-border/60">
-            <span className="inline-flex items-center gap-1.5 text-sm font-bold text-muted-foreground">
-              <Users className="size-3.5" aria-hidden />
-              {t("business.input.participantsLabel")}
-            </span>
-            {speakers.map((spk, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-0.5 text-sm font-bold text-primary"
-              >
-                <UserCheck className="size-3" aria-hidden />
-                {spk}
-              </span>
-            ))}
-          </div>
-        )}
-      </section>
-
-      {/* Dialogue / Case Transcript Section */}
-      <section
-        className="rounded-3xl border border-border bg-card p-5 sm:p-8 shadow-wp-sm"
-        aria-label="Conversation Interaction"
-      >
-        <div className="flex items-center justify-between gap-2 mb-6">
-          <div className="flex items-center gap-2">
-            <MessageSquareQuote className="size-5 text-primary" aria-hidden />
-            <h2 className="wp-type-stage-title text-lg font-black text-foreground">
-              {t("business.input.executiveTranscript")}
+            <h2
+              id="case-study-title"
+              className="wp-type-stage-title text-foreground"
+              lang="en"
+              dir="ltr"
+            >
+              <RichPassageText
+                text={presentation.title}
+                vocabTerms={vocabTerms}
+                interactiveVocabulary={false}
+              />
             </h2>
-          </div>
-          <span className="text-sm font-medium text-muted-foreground">
-            {t("business.input.targetPhrasesNote")}
-          </span>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          {unit.mainInput.dialogue.map((line, idx) => {
-            if (!presentation.visibleLineIndices.has(idx)) return null;
-            const isNarrator = line.speaker.toLowerCase() === "narrator";
-            const speakerIndex = speakers.indexOf(line.speaker.trim());
-            const isAltSpeaker = speakerIndex % 2 === 1;
-
-            const isPlaying = playingIdx === idx && audio.isPlaying;
-            const recording =
-              playingIdx === "full" ? fullRecording : getBusinessReadingAudio(unit.id, line.text);
-            const offset =
-              playingIdx === "full"
-                ? unit.mainInput.title.length +
-                  2 +
-                  unit.mainInput.context.length +
-                  1 +
-                  unit.mainInput.dialogue
-                    .slice(0, idx)
-                    .reduce((sum, previous) => sum + previous.text.length + 1, 0)
-                : 0;
-            return (
-              <div
-                key={idx}
-                aria-current={isPlaying ? "true" : undefined}
-                className={`flex flex-col gap-2 p-4 sm:p-5 rounded-2xl transition-all ${
-                  isNarrator
-                    ? "bg-muted/30 border border-dashed border-border text-muted-foreground"
-                    : isAltSpeaker
-                      ? "bg-secondary/40 border border-border hover:border-primary/40"
-                      : "bg-muted/50 border border-border hover:border-primary/40"
-                } ${isPlaying ? "ring-2 ring-primary border-primary bg-secondary shadow-wp-sm" : ""}`}
-              >
-                {!isNarrator && (
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <div
-                        className={`flex size-7 items-center justify-center rounded-lg text-sm font-black ${
-                          isAltSpeaker
-                            ? "bg-feedback-success-surface text-feedback-success-foreground"
-                            : "bg-secondary text-primary"
-                        }`}
-                      >
-                        {line.speaker.slice(0, 2).toUpperCase()}
-                      </div>
-                      <span className="text-sm font-black uppercase tracking-wider text-foreground">
-                        {line.speaker}
-                      </span>
-                    </div>
-
-                    {listeningEnabled && (
-                      <button
-                        type="button"
-                        onClick={() => handleSpeak(line.text, idx)}
-                        aria-label={`Listen to ${line.speaker}: "${line.text.slice(0, 30)}..."`}
-                        aria-pressed={isPlaying}
-                        className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                      >
-                        <Volume2
-                          className={`size-4 ${playingIdx === idx ? "text-primary motion-safe:animate-pulse" : ""}`}
-                          aria-hidden
-                        />
-                      </button>
+          </header>
+          <ReadingAudioPlayer
+            audio={audio}
+            active={playingIdx !== null}
+            onPlay={() => startTrack(fullText, "full")}
+            onRestart={() => startTrack(fullText, "full")}
+            rate={playbackRate}
+            onRateChange={setPlaybackRate}
+            enabled={listeningEnabled}
+          />
+          <div
+            className="space-y-6 text-base leading-relaxed text-foreground sm:text-lg"
+            lang="en"
+            dir="ltr"
+          >
+            {presentation.showContext && (
+              <p>
+                <TimedPassageText
+                  text={unit.mainInput.context}
+                  spans={fullRecording?.spans}
+                  time={playingIdx === "full" ? time : null}
+                  offset={unit.mainInput.title.length + 2}
+                  vocabTerms={vocabTerms}
+                  interactiveVocabulary={false}
+                />
+              </p>
+            )}
+            {unit.mainInput.dialogue.map((line, idx) => {
+              if (!presentation.visibleLineIndices.has(idx)) return null;
+              const narrator = line.speaker.trim().toLowerCase() === "narrator";
+              const selected = playingIdx === idx;
+              const recording =
+                playingIdx === "full" ? fullRecording : getBusinessReadingAudio(unit.id, line.text);
+              const offset =
+                playingIdx === "full"
+                  ? unit.mainInput.title.length +
+                    2 +
+                    unit.mainInput.context.length +
+                    1 +
+                    unit.mainInput.dialogue
+                      .slice(0, idx)
+                      .reduce((sum, previous) => sum + previous.text.length + 1, 0)
+                  : 0;
+              return (
+                <div key={idx} className="flex min-w-0 items-start gap-2 sm:gap-4">
+                  <div className="min-w-0 flex-1">
+                    {!narrator && (
+                      <p className="mb-1 text-sm font-semibold text-foreground">{line.speaker}</p>
                     )}
+                    <p>
+                      <TimedPassageText
+                        text={line.text}
+                        spans={recording?.spans}
+                        time={playingIdx === "full" || selected ? time : null}
+                        offset={offset}
+                        vocabTerms={vocabTerms}
+                        interactiveVocabulary={false}
+                      />
+                    </p>
                   </div>
-                )}
-
-                <p
-                  className={`text-base leading-relaxed ${
-                    isNarrator ? "italic font-normal" : "font-medium text-foreground"
-                  }`}
-                >
-                  <TimedPassageText
-                    text={line.text}
-                    spans={recording?.spans}
-                    time={
-                      audio.isPlaying &&
-                      hasMediaTiming &&
-                      (playingIdx === "full" || playingIdx === idx)
-                        ? mediaTime
-                        : null
-                    }
-                    offset={offset}
-                    vocabTerms={vocabTerms}
-                    onTermClick={(term) => setActiveTerm(term)}
-                  />
-                </p>
-              </div>
-            );
-          })}
+                  {listeningEnabled && (
+                    <button
+                      type="button"
+                      onClick={() => playParagraph(line.text, idx)}
+                      disabled={!audio.isSupported}
+                      aria-pressed={selected && audio.isPlaying}
+                      aria-label={t(
+                        selected && audio.isPaused
+                          ? "readingPlayer.resumeParagraph"
+                          : selected && audio.isPlaying
+                            ? "readingPlayer.pauseParagraph"
+                            : "conversation.listenParagraph",
+                        { number: idx + 1 }
+                      )}
+                      className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl text-foreground hover:bg-secondary disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      {selected && audio.isPlaying ? (
+                        <Pause className="size-4" aria-hidden />
+                      ) : (
+                        <Volume2 className="size-4" aria-hidden />
+                      )}
+                    </button>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <ReadingVocabulary terms={presentTerms} onSelect={openTerm} />
         </div>
-      </section>
-
-      {/* Action Button */}
-      <div className="flex justify-end pt-2">
+      </article>
+      <div className="flex justify-end">
         <button
           type="button"
-          onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          onClick={() => {
+            audio.stop();
+            onNext();
+          }}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>{t("business.input.continueToVocab")}</span>
+          {t("business.input.continueToVocab")}
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>
-
-      {/* Accessible Interactive Word Inspector Modal */}
       <VocabularyDetailModal
         item={selectedVocabItem}
-        isOpen={Boolean(activeTerm && selectedVocabItem)}
+        isOpen={Boolean(selectedVocabItem)}
         onClose={() => setActiveTerm(null)}
+        audioKey={
+          selectedVocabItem
+            ? getBusinessReadingAudio(unit.id, selectedVocabItem.term)?.key
+            : undefined
+        }
       />
     </div>
   );

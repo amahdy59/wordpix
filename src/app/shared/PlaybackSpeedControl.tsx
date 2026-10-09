@@ -1,3 +1,5 @@
+import { useId } from "react";
+
 interface PlaybackSpeedOption {
   value: number;
   label: string;
@@ -21,6 +23,7 @@ export function PlaybackSpeedControl({
   disabled = false,
   className = "",
 }: Props) {
+  const name = useId();
   return (
     <fieldset
       role="radiogroup"
@@ -32,22 +35,26 @@ export function PlaybackSpeedControl({
       {options.map((option) => {
         const selected = value === option.value;
         return (
-          <button
+          <label
             key={option.value}
-            type="button"
-            role="radio"
-            aria-checked={selected}
-            aria-label={option.label}
-            onClick={() => onChange(option.value)}
-            disabled={disabled}
-            className={`min-h-11 rounded-lg px-3 text-sm font-black transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${
+            className={`relative inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-lg px-3 text-sm font-semibold motion-safe:transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-[3px] has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-primary ${disabled ? "cursor-not-allowed opacity-60" : ""} ${
               selected
                 ? "bg-primary text-primary-foreground shadow-wp-xs"
                 : "text-foreground hover:bg-muted"
             }`}
           >
+            <input
+              type="radio"
+              name={name}
+              value={option.value}
+              checked={selected}
+              onChange={() => onChange(option.value)}
+              disabled={disabled}
+              aria-label={option.label}
+              className="absolute inset-0 size-full cursor-pointer opacity-0"
+            />
             {option.label}
-          </button>
+          </label>
         );
       })}
     </fieldset>
