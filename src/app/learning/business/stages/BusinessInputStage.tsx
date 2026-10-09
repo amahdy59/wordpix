@@ -10,6 +10,7 @@ import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import { useAudio } from "../../../shared/useAudio";
+import { getBusinessInputPresentation } from "../businessInputPresentation";
 
 interface Props {
   unit: BusinessUnit;
@@ -27,6 +28,10 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   const listeningEnabled = learnerState.accessibility.includeListening;
   const fullText = `${unit.mainInput.title}. ${unit.mainInput.context} ${unit.mainInput.dialogue.map((line) => line.text).join(" ")}`;
   const fullRecording = getBusinessReadingAudio(unit.id, fullText);
+  const presentation = useMemo(
+    () => getBusinessInputPresentation(unit.mainInput),
+    [unit.mainInput]
+  );
 
   const audio = useAudio({
     lang: "en-US",
@@ -98,14 +103,14 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   };
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <BookOpen className="size-4" aria-hidden />
           {t("business.input.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {t("business.input.scenarioTag", { level: unit.level })}
         </span>
       </div>
@@ -115,14 +120,14 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="case-study-title"
       >
-        <p className="text-xs font-black uppercase tracking-widest text-primary">
+        <p className="text-sm font-black uppercase tracking-widest text-primary">
           {t("business.input.executiveBriefing")}
         </p>
         <h2
           id="case-study-title"
-          className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
+          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"
         >
-          {unit.mainInput.title}
+          {presentation.title}
         </h2>
 
         <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -131,7 +136,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
             onClick={() => handleSpeak(fullText, "full")}
             disabled={!listeningEnabled || !audio.isSupported}
             aria-pressed={playingIdx === "full" && audio.isPlaying}
-            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border px-4 text-sm font-bold text-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border px-4 text-base font-bold text-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Volume2 className="size-4" aria-hidden />
             {playingIdx === "full" && audio.isPlaying
@@ -154,17 +159,17 @@ export function BusinessInputStage({ unit, onNext }: Props) {
           />
         </div>
         {(audio.status === "error" || audio.status === "unsupported") && (
-          <p role="status" className="mt-2 text-sm text-foreground">
+          <p role="status" className="mt-2 text-base text-foreground">
             {t("conversation.audioUnavailable")}
           </p>
         )}
 
-        {unit.mainInput.context && (
+        {presentation.showContext && (
           <div className="mt-4 rounded-2xl bg-muted/40 border border-border/80 p-4 sm:p-5">
-            <span className="text-xs font-black uppercase tracking-wider text-muted-foreground block mb-1">
+            <span className="text-sm font-black uppercase tracking-wider text-muted-foreground block mb-1">
               {t("business.input.contextAndSetting")}
             </span>
-            <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
+            <p className="wp-prose text-base sm:text-base font-medium text-foreground leading-relaxed">
               <TimedPassageText
                 text={unit.mainInput.context}
                 spans={fullRecording?.spans}
@@ -178,14 +183,14 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         {/* Participant Roster */}
         {speakers.length > 0 && (
           <div className="mt-4 flex flex-wrap items-center gap-2 pt-3 border-t border-border/60">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-muted-foreground">
+            <span className="inline-flex items-center gap-1.5 text-sm font-bold text-muted-foreground">
               <Users className="size-3.5" aria-hidden />
               {t("business.input.participantsLabel")}
             </span>
             {speakers.map((spk, i) => (
               <span
                 key={i}
-                className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-bold text-primary"
+                className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-0.5 text-sm font-bold text-primary"
               >
                 <UserCheck className="size-3" aria-hidden />
                 {spk}
@@ -203,17 +208,18 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         <div className="flex items-center justify-between gap-2 mb-6">
           <div className="flex items-center gap-2">
             <MessageSquareQuote className="size-5 text-primary" aria-hidden />
-            <h2 className="text-lg font-black text-foreground">
+            <h2 className="wp-type-stage-title text-lg font-black text-foreground">
               {t("business.input.executiveTranscript")}
             </h2>
           </div>
-          <span className="text-xs font-medium text-muted-foreground">
+          <span className="text-sm font-medium text-muted-foreground">
             {t("business.input.targetPhrasesNote")}
           </span>
         </div>
 
         <div className="flex flex-col gap-4">
           {unit.mainInput.dialogue.map((line, idx) => {
+            if (!presentation.visibleLineIndices.has(idx)) return null;
             const isNarrator = line.speaker.toLowerCase() === "narrator";
             const speakerIndex = speakers.indexOf(line.speaker.trim());
             const isAltSpeaker = speakerIndex % 2 === 1;
@@ -247,13 +253,13 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2">
                       <div
-                        className={`flex size-7 items-center justify-center rounded-lg text-xs font-black ${
+                        className={`flex size-7 items-center justify-center rounded-lg text-sm font-black ${
                           isAltSpeaker ? "bg-accent/20 text-accent" : "bg-primary/20 text-primary"
                         }`}
                       >
                         {line.speaker.slice(0, 2).toUpperCase()}
                       </div>
-                      <span className="text-xs font-black uppercase tracking-wider text-foreground">
+                      <span className="text-sm font-black uppercase tracking-wider text-foreground">
                         {line.speaker}
                       </span>
                     </div>
@@ -306,7 +312,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("business.input.continueToVocab")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

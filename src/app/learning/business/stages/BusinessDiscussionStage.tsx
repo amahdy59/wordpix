@@ -19,14 +19,14 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
   );
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <MessageSquareText className="size-4" aria-hidden />
           {t("business.discussion.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {t("business.discussion.analysisTag", { level: unit.level })}
         </span>
       </div>
@@ -38,7 +38,10 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
       >
         <div className="flex items-center gap-2">
           <HelpCircle className="size-5 text-primary" aria-hidden />
-          <h2 id="discussion-stage-title" className="text-2xl font-black text-foreground">
+          <h2
+            id="discussion-stage-title"
+            className="wp-type-stage-title font-black text-foreground"
+          >
             {unit.discussion.title}
           </h2>
         </div>
@@ -52,7 +55,7 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
             className="flex flex-col gap-2.5 rounded-2xl border border-border bg-card p-5 shadow-wp-xs hover:border-primary/40 transition-colors"
           >
             <div className="flex items-start gap-3 text-base font-bold text-foreground">
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
+              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
                 {idx + 1}
               </span>
               <span className="leading-snug pt-0.5">{prompt.prompt}</span>
@@ -61,7 +64,7 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
               type="button"
               aria-pressed={selectedPrompt === idx}
               onClick={() => setSelectedPrompt(idx)}
-              className="min-h-11 rounded-xl border border-border px-3 text-sm font-semibold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="min-h-11 rounded-xl border border-border px-3 text-base font-semibold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {selectedPrompt === idx
                 ? t("conversation.speakingPromptSelected")
@@ -85,7 +88,7 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("business.discussion.continueToSpeaking")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

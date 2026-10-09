@@ -40,7 +40,7 @@ export function PlaybackSpeedControl({
             aria-label={option.label}
             onClick={() => onChange(option.value)}
             disabled={disabled}
-            className={`min-h-11 rounded-lg px-3 text-xs font-black transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${
+            className={`min-h-11 rounded-lg px-3 text-sm font-black transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${
               selected
                 ? "bg-primary text-primary-foreground shadow-wp-xs"
                 : "text-foreground hover:bg-muted"

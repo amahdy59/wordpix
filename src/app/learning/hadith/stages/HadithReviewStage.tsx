@@ -69,11 +69,11 @@ export function HadithReviewStage({
     "Reflect on applying this guidance with clear intention in personal and community interactions.";
 
   return (
-    <section className="wp-container-reading space-y-8" aria-labelledby="stage-review-heading">
+    <section className="wp-container-content space-y-8" aria-labelledby="stage-review-heading">
       {/* Stage Header */}
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-wider text-primary">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
             <Target className="size-3.5" aria-hidden />
             {t("hadith.stageLabels.review") || "Review & Apply"}
           </span>
@@ -82,12 +82,12 @@ export function HadithReviewStage({
         <h2
           id="stage-review-heading"
           tabIndex={-1}
-          className="mt-3 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+          className="wp-type-stage-title mt-3 font-black tracking-tight text-foreground outline-none"
         >
           {t("hadith.pilot.review.title") || "Retrieve, check, and plan your review"}
         </h2>
 
-        <p className="mt-2 text-sm font-semibold leading-relaxed text-muted-foreground">
+        <p className="wp-prose mt-2 text-base font-semibold leading-relaxed text-muted-foreground">
           {t("hadith.pilot.review.description") ||
             "Answer from memory before revealing each model answer. This active retrieval strengthens recall more than passive rereading."}
         </p>
@@ -99,7 +99,7 @@ export function HadithReviewStage({
           <h3 className="text-base font-black uppercase tracking-wider text-muted-foreground">
             {t("hadith.retrievalQuestions") || "Part 1 · Active Retrieval"}
           </h3>
-          <span className="text-xs font-bold text-muted-foreground">
+          <span className="text-sm font-bold text-muted-foreground">
             {t("hadith.checkedCount", {
               checked: Object.keys(selfRatings).length,
               total: reviewItems.length,
@@ -120,7 +120,7 @@ export function HadithReviewStage({
               >
                 {/* Question Row */}
                 <div className="flex items-start gap-3.5">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-black text-primary">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-black text-primary">
                     {index + 1}
                   </span>
                   <div className="flex-1 min-w-0">
@@ -131,12 +131,12 @@ export function HadithReviewStage({
                     {item.hint && (
                       <details className="group mt-2">
                         <summary
-                          className={`inline-flex min-h-11 cursor-pointer list-none items-center gap-1.5 text-xs font-bold text-primary hover:underline ${focusRing}`}
+                          className={`inline-flex min-h-11 cursor-pointer list-none items-center gap-1.5 text-sm font-bold text-primary hover:underline ${focusRing}`}
                         >
                           <HelpCircle className="size-3.5" aria-hidden />
                           <span>{t("hadith.hintLabel") || "Need a hint?"}</span>
                         </summary>
-                        <p className="mt-1.5 rounded-xl bg-muted/60 p-3 text-xs font-medium text-foreground">
+                        <p className="mt-1.5 rounded-xl bg-muted/60 p-3 text-sm font-medium text-foreground">
                           {item.hint}
                         </p>
                       </details>
@@ -150,7 +150,7 @@ export function HadithReviewStage({
                     <button
                       type="button"
                       onClick={() => toggleReveal(index)}
-                      className={`inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-background px-4 py-2 text-xs font-black text-foreground transition-all hover:border-primary/50 hover:bg-muted active:scale-[0.98] ${focusRing}`}
+                      className={`inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-background px-4 py-2 text-sm font-black text-foreground transition-all hover:border-primary/50 hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
                     >
                       <Eye className="size-4 text-primary" aria-hidden />
                       <span>{t("hadith.revealModelAnswer") || "Check Model Answer"}</span>
@@ -158,14 +158,14 @@ export function HadithReviewStage({
                   ) : (
                     <div className="space-y-3">
                       <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
-                        <p className="text-xs font-black uppercase tracking-wider text-primary">
+                        <p className="text-sm font-black uppercase tracking-wider text-primary">
                           {t("hadith.modelLabel") || "Model Answer"}
                         </p>
-                        <p className="mt-1 text-sm font-semibold leading-relaxed text-foreground">
+                        <p className="wp-prose mt-1 text-base font-semibold leading-relaxed text-foreground">
                           {item.answer}
                         </p>
                         {item.feedback && (
-                          <div className="mt-2.5 flex items-start gap-2 border-t border-primary/10 pt-2.5 text-xs font-medium text-muted-foreground">
+                          <div className="mt-2.5 flex items-start gap-2 border-t border-primary/10 pt-2.5 text-sm font-medium text-muted-foreground">
                             <Lightbulb className="size-4 shrink-0 text-primary" aria-hidden />
                             <span>{item.feedback}</span>
                           </div>
@@ -174,14 +174,14 @@ export function HadithReviewStage({
 
                       {/* Self-Rating Action Buttons */}
                       <div className="flex flex-wrap items-center gap-2 pt-1">
-                        <span className="text-xs font-bold text-muted-foreground me-2">
+                        <span className="text-sm font-bold text-muted-foreground me-2">
                           {t("hadith.howDidYouDo") || "How did you do?"}
                         </span>
                         <button
                           type="button"
                           onClick={() => handleSelfRating(index, "got-it")}
                           aria-pressed={rating === "got-it"}
-                          className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-black transition-colors ${focusRing} ${
+                          className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-black transition-colors ${focusRing} ${
                             rating === "got-it"
                               ? "bg-feedback-success-surface text-feedback-success-foreground border border-feedback-success-border font-black"
                               : "border border-border bg-background text-foreground hover:bg-muted"
@@ -194,7 +194,7 @@ export function HadithReviewStage({
                           type="button"
                           onClick={() => handleSelfRating(index, "need-review")}
                           aria-pressed={rating === "need-review"}
-                          className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-black transition-colors ${focusRing} ${
+                          className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-black transition-colors ${focusRing} ${
                             rating === "need-review"
                               ? "bg-feedback-warning-surface text-feedback-warning-foreground border border-feedback-warning-border font-black"
                               : "border border-border bg-background text-foreground hover:bg-muted"
@@ -223,7 +223,7 @@ export function HadithReviewStage({
           >
             {t("quiz.previousQuestion")}
           </button>
-          <span className="self-center text-sm font-bold text-muted-foreground" role="status">
+          <span className="self-center text-base font-bold text-muted-foreground" role="status">
             {t("quiz.questionOf", { current: questionIndex + 1, total: reviewItems.length })}
           </span>
           <button
@@ -249,16 +249,16 @@ export function HadithReviewStage({
           </h3>
         </div>
 
-        <p className="mt-3 text-sm font-semibold leading-relaxed text-foreground">
+        <p className="wp-prose mt-3 text-base font-semibold leading-relaxed text-foreground">
           {discussionQuestion}
         </p>
 
         {speakTask?.frames && speakTask.frames.length > 0 && (
           <div className="mt-4 rounded-xl border border-border bg-background/80 p-4">
-            <span className="text-xs font-black uppercase tracking-wider text-muted-foreground">
+            <span className="text-sm font-black uppercase tracking-wider text-muted-foreground">
               {t("hadith.sentenceFrame") || "Useful sentence starter"}
             </span>
-            <p className="mt-1 font-mono text-xs font-bold text-primary">
+            <p className="mt-1 font-mono text-sm font-bold text-primary">
               {speakTask.frames.join(" / ")}
             </p>
           </div>
@@ -266,7 +266,7 @@ export function HadithReviewStage({
 
         <details className="group mt-4 rounded-xl border border-border bg-background/50">
           <summary
-            className={`flex min-h-11 cursor-pointer list-none items-center justify-between px-4 py-2.5 text-xs font-black text-primary transition-colors hover:bg-muted ${focusRing}`}
+            className={`flex min-h-11 cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-black text-primary transition-colors hover:bg-muted ${focusRing}`}
           >
             <span className="inline-flex items-center gap-1.5">
               <Sparkles className="size-3.5" aria-hidden />
@@ -277,7 +277,7 @@ export function HadithReviewStage({
               aria-hidden
             />
           </summary>
-          <div className="border-t border-border p-4 text-xs font-medium leading-relaxed text-foreground">
+          <div className="border-t border-border p-4 text-sm font-medium leading-relaxed text-foreground">
             {discussionAnswer}
           </div>
         </details>
@@ -293,13 +293,13 @@ export function HadithReviewStage({
       >
         <legend
           id="confidence-heading"
-          className="flex items-center gap-2 px-2 text-xs font-black uppercase tracking-wider text-primary"
+          className="flex items-center gap-2 px-2 text-sm font-black uppercase tracking-wider text-primary"
         >
           <CheckCircle2 className="size-4" aria-hidden />
           {t("hadith.confidenceHeading") || "How ready do you feel?"}
         </legend>
 
-        <p className="mt-1 text-xs font-semibold text-muted-foreground">
+        <p className="mt-1 text-sm font-semibold text-muted-foreground">
           {t("hadith.confidenceDescription") ||
             "Your rating schedules your next spaced-repetition review."}
         </p>
@@ -333,7 +333,7 @@ export function HadithReviewStage({
         {confidenceError && (
           <p
             id="confidence-error-message"
-            className="mt-4 rounded-xl border border-feedback-error-border bg-feedback-error-surface p-3 text-sm font-bold text-feedback-error-foreground"
+            className="mt-4 rounded-xl border border-feedback-error-border bg-feedback-error-surface p-3 text-base font-bold text-feedback-error-foreground"
             role="alert"
           >
             {t("hadith.chooseConfidence") ||
@@ -343,7 +343,7 @@ export function HadithReviewStage({
 
         {confidence && (
           <p
-            className="mt-5 rounded-2xl border border-primary/25 bg-primary/5 p-4 text-sm font-bold text-foreground"
+            className="mt-5 rounded-2xl border border-primary/25 bg-primary/5 p-4 text-base font-bold text-foreground"
             role="status"
           >
             {getHadithReviewIntervalDays(practiceScore, confidence) === 1

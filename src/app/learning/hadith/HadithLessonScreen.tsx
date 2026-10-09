@@ -195,7 +195,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
   return (
     <div
-      className="min-h-dvh w-full overflow-y-auto scroll-pb-40 bg-background sm:scroll-pb-24"
+      className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
       aria-labelledby="hadith-title"
     >
       <div className="wp-container-content wp-layout-gutter flex flex-col gap-4 py-3 sm:gap-6 sm:py-8">
@@ -213,7 +213,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
           <div className="flex flex-wrap items-center gap-2.5">
             {savedProgress && (
               <p
-                className="sr-only sm:not-sr-only sm:inline-flex sm:items-center sm:gap-1.5 sm:rounded-full sm:bg-primary/10 sm:px-3 sm:py-1 sm:text-sm sm:font-bold sm:text-primary"
+                className="sr-only sm:not-sr-only sm:inline-flex sm:items-center sm:gap-1.5 sm:rounded-full sm:bg-primary/10 sm:px-3 sm:py-1 sm:text-base sm:font-bold sm:text-primary"
                 role="status"
               >
                 <Check className="size-3.5" aria-hidden />
@@ -221,7 +221,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
               </p>
             )}
 
-            <p className="sr-only sm:not-sr-only sm:rounded-full sm:border sm:border-border sm:bg-card sm:px-3 sm:py-1 sm:text-sm sm:font-bold sm:text-muted-foreground">
+            <p className="sr-only sm:not-sr-only sm:rounded-full sm:border sm:border-border sm:bg-card sm:px-3 sm:py-1 sm:text-base sm:font-bold sm:text-muted-foreground">
               {t("hadith.lessonProgress", {
                 current: lesson.number,
                 total: HADITH_LESSONS.length,
@@ -232,9 +232,9 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
         {/* Lesson Header & Stepper */}
         <header className="rounded-2xl border border-border bg-card p-3 shadow-wp-xs sm:p-7">
-          <div className="flex items-start justify-between gap-2">
-            <div className="min-w-0">
-              <p className="text-sm font-semibold uppercase text-primary">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div className="min-w-0 flex-1 basis-72">
+              <p className="text-base font-semibold uppercase text-primary">
                 {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
               </p>
               <h1
@@ -250,7 +250,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             <details className="group shrink-0">
               <summary
                 aria-label={t("hadith.lessonDetails")}
-                className={`inline-flex min-h-11 cursor-pointer list-none items-center rounded-xl border border-border bg-background px-2 py-2 text-sm font-bold text-foreground transition-colors hover:bg-muted sm:px-3.5 ${focusRing}`}
+                className={`inline-flex min-h-11 cursor-pointer list-none items-center rounded-xl border border-border bg-background px-2 py-2 text-base font-bold text-foreground transition-colors hover:bg-muted sm:px-3.5 ${focusRing}`}
               >
                 <span aria-hidden className="sm:hidden">
                   {t("hadith.lessonDetailsShort")}
@@ -259,12 +259,12 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
                   {t("hadith.lessonDetails")}
                 </span>
               </summary>
-              <div className="mt-3 sm:w-96">
+              <div className="mt-3 w-full max-w-96">
                 <HadithOverviewSummary overview={parsedStages.overview} />
                 <button
                   type="button"
                   onClick={reset}
-                  className={`mt-3 inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-sm font-bold text-foreground hover:bg-muted ${focusRing}`}
+                  className={`mt-3 inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-base font-bold text-foreground hover:bg-muted ${focusRing}`}
                 >
                   <RotateCcw className="size-4" aria-hidden />
                   {t("hadith.resetLesson")}
@@ -334,13 +334,13 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         </div>
 
         {/* Sticky Accessible Footer Navigation Bar */}
-        <div className="sticky bottom-0 z-30 mt-3 border-t border-border bg-background py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
-          <div className="wp-container-reading grid grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:justify-between">
+        <div className="wp-sticky-controls sticky bottom-0 z-30 mt-3 border-t border-border bg-background py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+          <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:items-center sm:justify-between">
             <div className="flex">
               <button
                 type="button"
                 onClick={goBack}
-                className={`inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
+                className={`inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-base font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
               >
                 <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
                 <span>{t("hadith.previous") || "Previous"}</span>

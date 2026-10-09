@@ -32,7 +32,7 @@ export const PrimaryButton = memo(function PrimaryButton({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`${colorClass} content-stretch flex h-[56px] items-center justify-center relative rounded-xl shrink-0 w-full active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-wp-xs transition-transform duration-150 ease-out motion-safe:enabled:hover:scale-[1.015] motion-safe:enabled:active:scale-[0.96] motion-reduce:transition-none`}
+      className={`${colorClass} content-stretch flex min-h-[56px] min-w-11 items-center justify-center relative rounded-xl shrink-0 w-full px-4 py-3 active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-wp-xs transition-transform duration-150 ease-out motion-safe:enabled:hover:scale-[1.015] motion-safe:enabled:active:scale-[0.96] motion-reduce:transition-none`}
     >
       <span className="wp-type-body-emphasis text-current font-bold">{label}</span>
     </button>

@@ -48,7 +48,7 @@ export function SessionCompleteCard({
 
       {reviewAddedWords.length > 0 && (
         <div className="w-full bg-secondary/30 border border-border rounded-3xl p-5 mb-8 text-start">
-          <h2 className="font-bold text-sm text-foreground mb-2 flex items-center gap-2">
+          <h2 className="font-bold text-base text-foreground mb-2 flex items-center gap-2">
             <RotateCcw className="size-4 text-wp-amber" aria-hidden />
             {t("practice.wordsForReview", {
               count: formatNumber(reviewAddedWords.length, numeralSystem),
@@ -60,7 +60,7 @@ export function SessionCompleteCard({
                 key={w}
                 lang="en"
                 dir="ltr"
-                className="px-3 py-1 bg-background border border-border rounded-full text-xs font-bold text-foreground"
+                className="px-3 py-1 bg-background border border-border rounded-full text-sm font-bold text-foreground"
               >
                 {w}
               </span>

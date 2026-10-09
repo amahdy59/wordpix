@@ -125,19 +125,19 @@ export function MultipleChoiceQuiz({
               type="button"
               aria-disabled={isDisabled ? "true" : undefined}
               onClick={() => !isDisabled && handlePick(i)}
-              className={`w-full text-start p-4 rounded-2xl border transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-sm sm:text-base min-h-[56px] ${
+              className={`w-full text-start p-4 rounded-2xl border transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-base sm:text-base min-h-[56px] ${
                 visualState === "correct"
                   ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-xs"
                   : visualState === "wrong"
                     ? "border-destructive/40 bg-destructive/5 text-destructive font-semibold"
                     : isDisabled
                       ? "border-border opacity-60 font-medium cursor-default"
-                      : "border-border hover:border-primary/50 hover:bg-secondary/40 font-medium active:scale-[0.99]"
+                      : "border-border hover:border-primary/50 hover:bg-secondary/40 font-medium motion-safe:active:scale-[0.99]"
               }`}
             >
               <div className="flex items-center gap-3">
                 <div
-                  className={`size-6 rounded-full border flex items-center justify-center shrink-0 text-xs font-bold ${
+                  className={`size-6 rounded-full border flex items-center justify-center shrink-0 text-sm font-bold ${
                     visualState === "correct"
                       ? "border-wp-green bg-wp-green text-wp-text-on-green"
                       : visualState === "wrong"
@@ -167,12 +167,12 @@ export function MultipleChoiceQuiz({
       {isAnswered && (
         <div role="status" aria-live="polite" aria-atomic="true" className="mt-4">
           {phase === "answered_correct" ? (
-            <p className="text-sm font-bold text-wp-green flex items-center gap-2 bg-wp-green-light/20 p-3 rounded-xl border border-wp-green/30">
+            <p className="text-base font-bold text-wp-green flex items-center gap-2 bg-wp-green-light/20 p-3 rounded-xl border border-wp-green/30">
               <CheckCircle2 className="size-5 shrink-0" aria-hidden />
               {t("practice.correct")}
             </p>
           ) : (
-            <div className="p-3 rounded-xl bg-secondary/30 border border-border text-sm">
+            <div className="p-3 rounded-xl bg-secondary/30 border border-border text-base">
               <p className="font-semibold text-foreground mb-0.5">{t("practice.notYet")}</p>
               <p className="text-muted-foreground">
                 {t("practice.correctAnswer", { answer: options[correctIndex] })}
@@ -188,7 +188,7 @@ export function MultipleChoiceQuiz({
           <button
             type="button"
             onClick={onRetry}
-            className="px-3.5 py-1.5 border border-primary/50 text-primary rounded-xl text-xs hover:bg-primary/10 transition-colors min-h-[44px] font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="px-3.5 py-1.5 border border-primary/50 text-primary rounded-xl text-sm hover:bg-primary/10 transition-colors min-h-[44px] font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           >
             {t("practice.tryAgain")}
           </button>
@@ -201,7 +201,7 @@ export function MultipleChoiceQuiz({
           <button
             type="button"
             onClick={onGiveUp}
-            className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-secondary rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           >
             <HelpCircle className="size-4" aria-hidden />
             <span>{t("practice.iDontKnow")}</span>

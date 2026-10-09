@@ -103,6 +103,77 @@
     padding-inline: var(--wp-layout-gutter-inline);
   }
 
+  .wp-exercise-immersive {
+    max-width: calc(var(--wp-layout-immersive) + 2 * var(--wp-layout-gutter-inline));
+  }
+
+  /* Tables respond to the lesson canvas, not the viewport beside a sidebar. */
+  .wp-vocabulary {
+    container-type: inline-size;
+  }
+
+  .wp-vocabulary-table {
+    display: none;
+  }
+
+  .wp-vocabulary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  }
+
+  @container (min-width: 64rem) {
+    .wp-vocabulary-table {
+      display: block;
+    }
+
+    .wp-vocabulary-cards {
+      display: none;
+    }
+  }
+
+  .wp-lesson-session {
+    scroll-padding-block: 12rem;
+  }
+
+  .wp-lesson-session :is(button, a, input, textarea, select, summary, [tabindex]) {
+    scroll-margin-block: 1rem;
+  }
+
+  .wp-prose {
+    max-inline-size: 70ch;
+    line-height: 1.65;
+    overflow-wrap: break-word;
+  }
+
+  .wp-type-stage-title {
+    font-size: clamp(var(--wp-text-xl), 1.125rem + 0.5vw, var(--wp-text-2xl));
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 48rem) {
+    .wp-sticky-heading.wp-sticky-heading {
+      position: static;
+    }
+  }
+
+  /* Sticky regions must leave space to read at zoom and in landscape. */
+  @media (max-height: 40rem) {
+    .wp-sticky-controls.wp-sticky-controls {
+      position: static;
+    }
+
+    .wp-lesson-session .wp-lesson-workspace {
+      overflow: visible;
+      flex: none;
+    }
+
+    .wp-lesson-session .wp-lesson-panel {
+      overflow: visible;
+      flex: none;
+    }
+  }
+
   .animate-wp-shake {
     animation: wp-shake 0.35s ease-in-out;
   }
@@ -171,18 +242,18 @@
     line-height: 1.5;
   }
 
-  /* text-sm/medium (14px) — Body text, descriptions */
+  /* Readable body text; captions have their own smaller style. */
   .wp-type-body {
     font-family: var(--wp-font-base);
-    font-size: var(--wp-text-sm);
+    font-size: var(--wp-text-md);
     font-weight: 500;
     line-height: 1.5;
   }
 
-  /* text-xs/medium (12px) — Captions, hints, metadata */
+  /* 14px — Captions and metadata; instructions use body text. */
   .wp-type-caption {
     font-family: var(--wp-font-base);
-    font-size: var(--wp-text-xs);
+    font-size: var(--wp-text-sm);
     font-weight: 500;
     line-height: 1.5;
   }
@@ -197,7 +268,7 @@
   }
 
   .wp-type-arabic {
-    font-size: var(--wp-text-sm);
+    font-size: var(--wp-text-md);
     font-weight: 600;
     color: var(--wp-brand);
     direction: rtl;

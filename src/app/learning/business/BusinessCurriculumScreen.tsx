@@ -185,7 +185,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                     tabIndex={isSelected ? 0 : -1}
                     onKeyDown={(e) => handleLevelKeyDown(e, idx)}
                     onClick={() => setSelectedLevel(tab.id)}
-                    className={`flex min-h-[44px] items-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-2 text-xs sm:text-sm font-bold transition-all ${
+                    className={`flex min-h-[44px] items-center gap-1.5 whitespace-nowrap rounded-xl px-3.5 py-2 text-sm sm:text-base font-bold transition-all ${
                       isSelected
                         ? "bg-primary text-primary-foreground shadow-wp-xs"
                         : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"
@@ -193,7 +193,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                   >
                     <span>{tab.id === "ALL" ? t("conversation.allLevels") : tab.id}</span>
                     <span
-                      className={`rounded-full px-1.5 py-0.2 text-[10px] font-black ${
+                      className={`rounded-full px-1.5 py-0.2 text-sm font-black ${
                         isSelected
                           ? "bg-primary-foreground/20 text-primary-foreground"
                           : "bg-muted text-muted-foreground"
@@ -218,7 +218,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t("business.searchPlaceholder")}
                 aria-label={t("business.searchPlaceholder")}
-                className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
+                className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-base font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
               />
             </div>
           </div>
@@ -236,7 +236,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
               role="group"
               aria-label={t("help.topicFilters")}
             >
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-muted-foreground me-1 shrink-0">
+              <span className="inline-flex items-center gap-1 text-sm font-bold text-muted-foreground me-1 shrink-0">
                 <Tag className="size-3" aria-hidden />
                 {t("business.topicsLabel")}
               </span>
@@ -248,7 +248,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                     type="button"
                     aria-pressed={isSelected}
                     onClick={() => setSelectedTag(tag)}
-                    className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-xs font-bold transition-all ${
+                    className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-sm font-bold transition-all ${
                       isSelected
                         ? "bg-foreground text-background shadow-wp-xs"
                         : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -350,7 +350,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                   {t("business.credentialsTitle")}
                 </h2>
               </div>
-              <span className="text-xs font-bold text-muted-foreground">
+              <span className="text-sm font-bold text-muted-foreground">
                 {t("business.credentialsSubtitle")}
               </span>
             </div>
@@ -383,12 +383,12 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                         {milestone.badge}
                       </span>
                       {isSectionCertified ? (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black text-accent uppercase">
+                        <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-sm font-black text-accent uppercase">
                           <CheckCircle2 className="size-3" aria-hidden />
                           {t("business.certifiedBadge")}
                         </span>
                       ) : (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
+                        <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-sm font-bold text-muted-foreground">
                           {t("business.sectionUnitsCount", {
                             mastered: sectionMastered,
                             total: sectionUnits.length,
@@ -399,14 +399,14 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
 
                     <div className="mt-3">
                       <div className="flex items-center gap-1.5">
-                        <span className="rounded bg-primary/15 px-1.5 py-0.2 text-[10px] font-black text-primary">
+                        <span className="rounded bg-primary/15 px-1.5 py-0.2 text-sm font-black text-primary">
                           {milestone.level}
                         </span>
-                        <h3 className="text-sm font-black text-foreground line-clamp-1">
+                        <h3 className="text-base font-black text-foreground line-clamp-1">
                           {milestone.title}
                         </h3>
                       </div>
-                      <p className="mt-1 text-xs text-muted-foreground font-medium line-clamp-2">
+                      <p className="mt-1 text-sm text-muted-foreground font-medium line-clamp-2">
                         {milestone.description}
                       </p>
                     </div>

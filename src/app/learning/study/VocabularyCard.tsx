@@ -54,17 +54,17 @@ export function VocabularyCard({
       <div className="shrink-0 px-5 py-4 sm:px-6 sm:py-5 flex flex-col items-center text-center">
         {!isRevealed ? (
           <div className="w-full flex flex-col items-center space-y-3">
-            <p className="text-muted-foreground text-sm font-medium">
+            <p className="text-muted-foreground text-base font-medium">
               {t("study.tryRecallBefore")}
             </p>
             <button
               type="button"
               onClick={onReveal}
-              className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform motion-safe:active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
             >
               <Eye className="size-5" aria-hidden />
               <span>{t("study.revealWord")}</span>
-              <kbd className="hidden sm:inline-flex ms-1 px-2 py-0.5 text-xs bg-primary-foreground/20 rounded font-mono font-normal">
+              <kbd className="hidden sm:inline-flex ms-1 px-2 py-0.5 text-sm bg-primary-foreground/20 rounded font-mono font-normal">
                 {t("study.space")}
               </kbd>
             </button>
@@ -76,14 +76,14 @@ export function VocabularyCard({
             </h3>
 
             <div className="flex max-w-full flex-wrap items-center justify-center gap-2 sm:gap-3 mb-3">
-              <span className="text-sm sm:text-base text-muted-foreground font-mono bg-secondary/60 px-3 py-0.5 rounded-xl">
+              <span className="text-base sm:text-base text-muted-foreground font-mono bg-secondary/60 px-3 py-0.5 rounded-xl">
                 {pronunciation?.ipa || word.phonetic}
               </span>
               {!immersionMode &&
                 ((word as { arabic?: string; ar?: string }).arabic ||
                   (word as { arabic?: string; ar?: string }).ar) && (
                   <span
-                    className="text-sm sm:text-base text-muted-foreground font-bold bg-secondary/40 px-3 py-0.5 rounded-xl"
+                    className="text-base sm:text-base text-muted-foreground font-bold bg-secondary/40 px-3 py-0.5 rounded-xl"
                     dir="rtl"
                     lang="ar"
                   >
@@ -103,7 +103,7 @@ export function VocabularyCard({
               <button
                 type="button"
                 onClick={cycleSpeed}
-                className="px-2.5 py-1 text-xs font-mono font-bold rounded-xl bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                className="px-2.5 py-1 text-sm font-mono font-bold rounded-xl bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                 aria-label={`Speech playback speed: ${speechRate.toFixed(1)}x. Click to change.`}
                 title={`Change speech playback speed`}
               >
@@ -117,7 +117,7 @@ export function VocabularyCard({
                 onClick={() => setShowDetails((prev) => !prev)}
                 aria-expanded={showDetails}
                 aria-controls={`word-details-${word.id}`}
-                className="w-full flex items-center justify-between py-2 px-3 text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl min-h-[44px]"
+                className="w-full flex items-center justify-between py-2 px-3 text-base font-bold text-muted-foreground hover:text-foreground hover:bg-secondary/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl min-h-[44px]"
               >
                 <span>
                   {showDetails
@@ -138,10 +138,12 @@ export function VocabularyCard({
                 >
                   {word.description && (
                     <div>
-                      <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">
+                      <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">
                         {t("study.meaning")}
                       </h4>
-                      <p className="text-foreground text-sm leading-relaxed">{word.description}</p>
+                      <p className="text-foreground text-base leading-relaxed">
+                        {word.description}
+                      </p>
                     </div>
                   )}
 
@@ -153,14 +155,14 @@ export function VocabularyCard({
                         <button
                           type="button"
                           onClick={() => setShowImmersionArabic(true)}
-                          className="text-xs font-bold text-primary hover:underline py-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary min-h-[44px] flex items-center gap-1.5"
+                          className="text-sm font-bold text-primary hover:underline py-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary min-h-[44px] flex items-center gap-1.5"
                         >
                           <Eye className="size-3.5" />
                           <span>{t("study.revealArabicMeaning")}</span>
                         </button>
                       ) : (
                         <div
-                          className="p-2.5 rounded-xl bg-background/80 border border-border/50 text-xs font-bold text-foreground"
+                          className="p-2.5 rounded-xl bg-background/80 border border-border/50 text-sm font-bold text-foreground"
                           dir="rtl"
                           lang="ar"
                         >
@@ -173,14 +175,14 @@ export function VocabularyCard({
 
                   {meta?.collocations && meta.collocations.length > 0 && (
                     <div>
-                      <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1.5">
+                      <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1.5">
                         {t("study.usefulWith")}
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {meta.collocations.map((col, i) => (
                           <span
                             key={i}
-                            className="px-3 py-1 bg-background text-foreground border border-border/80 rounded-xl text-xs font-bold shadow-2xs"
+                            className="px-3 py-1 bg-background text-foreground border border-border/80 rounded-xl text-sm font-bold shadow-2xs"
                           >
                             {col}
                           </span>

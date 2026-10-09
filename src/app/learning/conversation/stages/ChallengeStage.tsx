@@ -53,16 +53,16 @@ export function ChallengeStage({
   const canFinish = prerequisitesComplete && allTasksComplete && response.length > 0;
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <Award className="size-4" aria-hidden />
           {t("conversation.challengeStage")}
         </span>
 
         {isMastered && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-xs font-black text-accent">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-sm font-black text-accent">
             <CheckCircle2 className="size-4" aria-hidden />
             {t("conversation.unitMastered")}
           </span>
@@ -74,16 +74,16 @@ export function ChallengeStage({
         className="rounded-3xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="challenge-heading"
       >
-        <span className="text-xs font-black uppercase tracking-wider text-primary">
+        <span className="text-sm font-black uppercase tracking-wider text-primary">
           {t("conversation.realWorldChallenge")}
         </span>
         <h2
           id="challenge-heading"
-          className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
+          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"
         >
           {unit.speakingChallenge.title}
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-medium text-foreground leading-relaxed">
+        <p className="wp-prose mt-3 text-base sm:text-lg font-medium text-foreground leading-relaxed">
           {unit.speakingChallenge.scenario}
         </p>
       </section>
@@ -92,10 +92,16 @@ export function ChallengeStage({
         className="rounded-2xl border border-border bg-card p-5 sm:p-7 shadow-wp-xs"
         aria-labelledby="challenge-response-title"
       >
-        <h2 id="challenge-response-title" className="text-base font-black text-foreground">
+        <h2
+          id="challenge-response-title"
+          className="wp-type-stage-title text-base font-black text-foreground"
+        >
           {t("conversation.challengeResponse")}
         </h2>
-        <p id="challenge-response-help" className="mt-1 text-sm font-medium text-muted-foreground">
+        <p
+          id="challenge-response-help"
+          className="mt-1 text-base font-medium text-muted-foreground"
+        >
           {t("conversation.challengeResponseHelp")}
         </p>
         <div className="mt-4">
@@ -143,7 +149,7 @@ export function ChallengeStage({
       >
         <div className="flex items-center gap-2">
           <CheckSquare className="size-5 text-primary" aria-hidden />
-          <h2 id="tasks-title" className="text-base font-black text-foreground">
+          <h2 id="tasks-title" className="wp-type-stage-title text-base font-black text-foreground">
             {t("conversation.taskChecklist")}
           </h2>
         </div>
@@ -162,7 +168,7 @@ export function ChallengeStage({
         className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs"
         aria-labelledby="useful-frames-title"
       >
-        <div className="flex items-center gap-2 text-primary font-black text-sm uppercase tracking-wide">
+        <div className="flex items-center gap-2 text-primary font-black text-base uppercase tracking-wide">
           <Sparkles className="size-4.5" aria-hidden />
           <h2 id="useful-frames-title">{t("conversation.usefulFrames")}</h2>
         </div>
@@ -170,7 +176,7 @@ export function ChallengeStage({
           {unit.speakingChallenge.usefulFrames.map((frame, idx) => (
             <div
               key={idx}
-              className="rounded-xl border border-primary/20 bg-primary/5 p-3 text-xs sm:text-sm font-semibold text-foreground italic"
+              className="rounded-xl border border-primary/20 bg-primary/5 p-3 text-sm sm:text-base font-semibold text-foreground italic"
             >
               "{frame}"
             </div>
@@ -181,7 +187,7 @@ export function ChallengeStage({
       {/* Research Basis Citations */}
       {unit.researchBasis.length > 0 && (
         <section
-          className="rounded-2xl border border-border/70 bg-muted/20 p-5 text-xs text-muted-foreground"
+          className="rounded-2xl border border-border/70 bg-muted/20 p-5 text-sm text-muted-foreground"
           aria-labelledby="research-basis-title"
         >
           <h3
@@ -220,7 +226,7 @@ export function ChallengeStage({
           <h3 className="mt-3 text-xl font-black text-foreground">
             {t("conversation.unitComplete")}
           </h3>
-          <p className="mt-1 text-sm font-medium text-muted-foreground">
+          <p className="mt-1 text-base font-medium text-muted-foreground">
             {t("conversation.completionMessage", { number: unit.unitNumber })}
           </p>
         </div>
@@ -231,7 +237,7 @@ export function ChallengeStage({
         <button
           type="button"
           onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
@@ -243,7 +249,7 @@ export function ChallengeStage({
             onClick={handleFinishUnit}
             disabled={!canFinish}
             aria-describedby="challenge-completion-requirements"
-            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
           >
             <CheckCircle2 className="size-5" aria-hidden />
             <span>{t("conversation.completeUnit")}</span>
@@ -252,7 +258,7 @@ export function ChallengeStage({
           <button
             type="button"
             onClick={onExit}
-            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>{t("conversation.backToUnits")}</span>
           </button>
@@ -261,7 +267,7 @@ export function ChallengeStage({
       {!isMastered && !justCompleted && (
         <p
           id="challenge-completion-requirements"
-          className="text-center text-sm font-semibold text-muted-foreground"
+          className="text-center text-base font-semibold text-muted-foreground"
           aria-live="polite"
         >
           {canFinish ? t("conversation.requirementsMet") : t("conversation.requirementsPending")}

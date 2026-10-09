@@ -176,7 +176,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                   tabIndex={isSelected ? 0 : -1}
                   onClick={() => setSelectedLevel(tab.id)}
                   onKeyDown={(event) => handleLevelKeyDown(event, tabIndex)}
-                  className={`inline-flex min-h-[44px] shrink-0 items-center gap-2 rounded-2xl px-4 py-2 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                  className={`inline-flex min-h-[44px] shrink-0 items-center gap-2 rounded-2xl px-4 py-2 text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     isSelected
                       ? "bg-primary text-primary-foreground shadow-wp-xs"
                       : "bg-card border border-border text-foreground hover:bg-muted"
@@ -184,7 +184,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                 >
                   <span>{tab.id === "ALL" ? t("conversation.allLevels") : tab.id}</span>
                   <span
-                    className={`rounded-full px-2 py-0.5 text-[10px] font-black ${
+                    className={`rounded-full px-2 py-0.5 text-sm font-black ${
                       isSelected
                         ? "bg-primary-foreground/20 text-primary-foreground"
                         : "bg-muted text-muted-foreground"

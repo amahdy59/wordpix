@@ -30,20 +30,20 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
   ].slice(0, 4);
 
   return (
-    <section className="wp-container-reading space-y-5" aria-labelledby="stage-discussion-heading">
+    <section className="wp-container-content space-y-5" aria-labelledby="stage-discussion-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
-        <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-primary">
+        <p className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.18em] text-primary">
           <MessagesSquare className="size-4" aria-hidden />
           {t("hadith.discussionLabel")}
         </p>
         <h2
           id="stage-discussion-heading"
           tabIndex={-1}
-          className="mt-3 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+          className="wp-type-stage-title mt-3 font-black tracking-tight text-foreground outline-none"
         >
           {t("hadith.discussionTitle")}
         </h2>
-        <p className="mt-2 max-w-2xl text-sm font-semibold leading-6 text-muted-foreground">
+        <p className="mt-2 max-w-2xl text-base font-semibold leading-6 text-muted-foreground">
           {t("hadith.discussionDescription")}
         </p>
       </header>
@@ -63,7 +63,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
                       {item.question}
                     </h3>
                   </div>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p className="mt-2 text-base leading-6 text-muted-foreground">
                     {t("hadith.discussionPrompt")}
                   </p>
                 </div>
@@ -84,7 +84,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
                 </summary>
                 <div className="border-t border-border px-5 py-4 sm:px-6">
                   <p
-                    className="text-sm font-semibold leading-7 text-foreground"
+                    className="text-base font-semibold leading-7 text-foreground"
                     lang="en"
                     dir="ltr"
                   >

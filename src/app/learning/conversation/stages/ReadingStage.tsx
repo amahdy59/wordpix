@@ -166,10 +166,10 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
   }, [activeTerm, unit.languageBank, t]);
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <BookOpen className="size-4" aria-hidden />
           {t("conversation.readingStage")}
         </span>
@@ -190,7 +190,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
             disabled={!listeningEnabled}
             aria-pressed={isPlaying && activeTrack === "full"}
             aria-busy={audio.status === "loading"}
-            className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl border px-4 py-2 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${
+            className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl border px-4 py-2 text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${
               isPlaying && activeTrack === "full"
                 ? "border-primary bg-primary text-primary-foreground shadow-wp-sm"
                 : "border-border bg-card text-foreground hover:bg-muted"
@@ -215,12 +215,12 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         aria-labelledby="reading-title"
       >
         <header className="border-b border-border/60 pb-4">
-          <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+          <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
             {t("conversation.level", { level: unit.level })} · {unit.topic}
           </span>
           <h2
             id="reading-title"
-            className="mt-1.5 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
+            className="wp-type-stage-title mt-1.5 font-black text-foreground tracking-tight"
           >
             {unit.reading.title}
           </h2>
@@ -287,13 +287,13 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         {/* "In Short" Core Synthesis Box */}
         <div className="mt-4 rounded-2xl border-2 border-primary/30 bg-primary/5 p-5 sm:p-6 shadow-wp-xs">
           {/* Header row */}
-          <div className="flex items-center gap-2 text-primary font-black text-xs uppercase tracking-widest">
+          <div className="flex items-center gap-2 text-primary font-black text-sm uppercase tracking-widest">
             <CheckCircle2 className="size-4 shrink-0" aria-hidden />
             <span>{t("conversation.inShort")}</span>
           </div>
 
           {/* Summary — bold markdown + vocab highlights */}
-          <p className="mt-3 text-sm sm:text-base font-medium leading-relaxed text-foreground">
+          <p className="wp-prose mt-3 text-base sm:text-base font-medium leading-relaxed text-foreground">
             <RichPassageText
               text={unit.reading.inShort.summary}
               vocabTerms={allVocabTerms}
@@ -303,7 +303,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
 
           {/* Target Terms row with proper horizontal alignment */}
           <div className="mt-4 flex flex-wrap items-center gap-2.5 pt-3.5 border-t border-primary/20">
-            <span className="text-xs font-black uppercase tracking-wider text-muted-foreground shrink-0 select-none">
+            <span className="text-sm font-black uppercase tracking-wider text-muted-foreground shrink-0 select-none">
               {t("conversation.targetTerms")}:
             </span>
             <div className="flex flex-wrap items-center gap-2">
@@ -315,7 +315,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
                   aria-label={
                     t("conversation.learnWord", { word: term }) || `Learn more about ${term}`
                   }
-                  className="inline-flex min-h-[44px] items-center rounded-xl bg-card px-3.5 py-1.5 text-xs font-bold text-primary border border-primary/30 shadow-xs hover:bg-primary hover:text-primary-foreground active:scale-[0.97] transition-all cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                  className="inline-flex min-h-[44px] items-center rounded-xl bg-card px-3.5 py-1.5 text-sm font-bold text-primary border border-primary/30 shadow-xs hover:bg-primary hover:text-primary-foreground motion-safe:active:scale-[0.97] transition-all cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                 >
                   {term}
                 </button>
@@ -333,18 +333,18 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
             aria-label={t("conversation.learnWord", { word: selectedVocabItem.term })}
           >
             <div className="flex items-center justify-between">
-              <span className="font-black text-foreground text-sm">{selectedVocabItem.term}</span>
+              <span className="font-black text-foreground text-base">{selectedVocabItem.term}</span>
               {selectedVocabItem.type && (
-                <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                <span className="text-sm font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
                   {selectedVocabItem.type}
                 </span>
               )}
             </div>
-            <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
+            <p className="mt-1 text-sm sm:text-base text-muted-foreground">
               {selectedVocabItem.definition}
             </p>
             {selectedVocabItem.example && (
-              <p className="mt-1.5 text-xs italic text-foreground bg-muted/40 p-2 rounded-lg">
+              <p className="mt-1.5 text-sm italic text-foreground bg-muted/40 p-2 rounded-lg">
                 "{selectedVocabItem.example}"
               </p>
             )}
@@ -364,7 +364,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
@@ -373,7 +373,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueLanguageBank")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

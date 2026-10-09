@@ -43,7 +43,7 @@ export function HadithWarmupStage({
     >
       {/* Top Header Row */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1 text-sm font-black uppercase tracking-wider text-primary">
           <Sparkles className="size-3.5" aria-hidden />
           {t("hadith.pilot.warmup.eyebrow") || "Notice Before Reading"}
         </span>
@@ -52,7 +52,7 @@ export function HadithWarmupStage({
           <button
             type="button"
             onClick={onProceedToText}
-            className={`inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-background px-3.5 py-1.5 text-xs font-black text-foreground transition-colors hover:border-primary/40 hover:bg-muted ${focusRing}`}
+            className={`inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-background px-3.5 py-1.5 text-sm font-black text-foreground transition-colors hover:border-primary/40 hover:bg-muted ${focusRing}`}
           >
             <BookOpen className="size-3.5 text-primary" aria-hidden />
             <span>{t("hadith.proceedToText") || "Jump to Hadith Text"}</span>
@@ -64,12 +64,12 @@ export function HadithWarmupStage({
       <h2
         id="stage-warmup-heading"
         tabIndex={-1}
-        className="mt-3 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+        className="wp-type-stage-title mt-3 font-black tracking-tight text-foreground outline-none"
       >
         {warmup.title}
       </h2>
 
-      <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-muted-foreground">
+      <p className="wp-prose mt-2 max-w-3xl text-base font-semibold leading-relaxed text-muted-foreground">
         {t("hadith.pilot.warmup.description") ||
           "Start with a familiar reflection. There is no score here—the goal is to activate your prior knowledge before reading."}
       </p>
@@ -83,7 +83,7 @@ export function HadithWarmupStage({
             <div className="space-y-2">
               <p className="text-base font-black leading-snug text-foreground">{warmup.scenario}</p>
               {warmup.prompt && (
-                <p className="text-sm font-semibold leading-relaxed text-muted-foreground">
+                <p className="wp-prose text-base font-semibold leading-relaxed text-muted-foreground">
                   {warmup.prompt}
                 </p>
               )}
@@ -96,7 +96,7 @@ export function HadithWarmupStage({
               className="group overflow-hidden rounded-2xl border border-border bg-background transition-colors"
             >
               <summary
-                className={`flex min-h-12 cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-black text-foreground transition-colors hover:bg-muted/50 ${focusRing}`}
+                className={`flex min-h-12 cursor-pointer list-none items-center justify-between px-4 py-3 text-base font-black text-foreground transition-colors hover:bg-muted/50 ${focusRing}`}
               >
                 <span className="inline-flex items-center gap-2">
                   <Sparkles className="size-4 text-primary" aria-hidden />
@@ -114,10 +114,14 @@ export function HadithWarmupStage({
                       key={item.term}
                       className="flex flex-col gap-0.5 rounded-xl border border-border/80 bg-muted/30 px-3.5 py-2.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3"
                     >
-                      <dt className="shrink-0 text-sm font-black text-primary" lang="en" dir="ltr">
+                      <dt
+                        className="shrink-0 text-base font-black text-primary"
+                        lang="en"
+                        dir="ltr"
+                      >
                         {item.term}
                       </dt>
-                      <dd className="text-xs font-semibold leading-relaxed text-muted-foreground sm:text-end">
+                      <dd className="text-sm font-semibold leading-relaxed text-muted-foreground sm:text-end">
                         {item.meaning}
                       </dd>
                     </div>
@@ -163,7 +167,7 @@ export function HadithWarmupStage({
                   className="mt-0.5 size-5 shrink-0 text-feedback-success-foreground"
                   aria-hidden
                 />
-                <p className="text-xs font-bold leading-relaxed sm:text-sm">
+                <p className="wp-prose text-sm font-bold leading-relaxed sm:text-base">
                   {warmup.feedback ||
                     t("hadith.pilot.warmup.feedback") ||
                     "The action can look identical while the intention changes. Keep that contrast in mind as you read and listen."}
@@ -174,7 +178,7 @@ export function HadithWarmupStage({
                 <button
                   type="button"
                   onClick={onProceedToText}
-                  className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-xs font-black text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 ${focusRing}`}
+                  className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-sm font-black text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 ${focusRing}`}
                 >
                   <span>{t("hadith.proceedToText") || "Read Hadith"}</span>
                   <ArrowDown className="size-3.5" aria-hidden />

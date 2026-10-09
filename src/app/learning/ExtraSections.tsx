@@ -18,7 +18,7 @@ export function VocabularyDetailsSection({ materials }: { materials: UnitLearnin
             <h2 className="font-bold text-lg text-foreground">
               {t("learningMaterials.registerFormalityTitle")}
             </h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.registerFormalityDesc")}
             </p>
           </div>
@@ -31,7 +31,7 @@ export function VocabularyDetailsSection({ materials }: { materials: UnitLearnin
                     {item.emoji} {item.register}
                   </span>
                 </p>
-                <p className="text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground mt-1 leading-relaxed">
                   {item.description}
                 </p>
               </li>
@@ -46,18 +46,18 @@ export function VocabularyDetailsSection({ materials }: { materials: UnitLearnin
             <h2 className="font-bold text-lg text-foreground">
               {t("learningMaterials.vocabMapTitle")}
             </h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.vocabMapDesc")}
             </p>
           </div>
           <div className="grid gap-3.5 sm:grid-cols-2">
             {materials.visualVocabularyMap.map((cat, i) => (
               <div key={i} className="bg-background p-4 rounded-2xl border border-border">
-                <h3 className="font-bold text-sm sm:text-base text-foreground mb-2 flex items-center gap-2">
+                <h3 className="font-bold text-base sm:text-base text-foreground mb-2 flex items-center gap-2">
                   <span>{cat.emoji}</span>
                   <span>{cat.category}</span>
                 </h3>
-                <ul className="space-y-1.5 text-xs sm:text-sm">
+                <ul className="space-y-1.5 text-sm sm:text-base">
                   {cat.items.map((item, j) => (
                     <li key={j} className="text-muted-foreground">
                       <span className="font-bold text-primary">{item.word}</span> →{" "}
@@ -83,7 +83,7 @@ export function PronunciationSection({ materials }: { materials: UnitLearningMat
         <h2 className="font-bold text-lg text-foreground">
           {t("learningMaterials.pronunciationGuideTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.pronunciationGuideDesc")}
         </p>
       </div>
@@ -94,10 +94,10 @@ export function PronunciationSection({ materials }: { materials: UnitLearningMat
             className="flex justify-between items-center bg-background border border-border p-3.5 rounded-2xl"
           >
             <div>
-              <p className="font-bold text-foreground text-sm sm:text-base">{item.word}</p>
-              <p className="text-xs text-muted-foreground">{item.stress}</p>
+              <p className="font-bold text-foreground text-base sm:text-base">{item.word}</p>
+              <p className="text-sm text-muted-foreground">{item.stress}</p>
             </div>
-            <span className="text-primary font-mono bg-primary/10 px-2.5 py-1 rounded-xl text-xs sm:text-sm font-bold">
+            <span className="text-primary font-mono bg-primary/10 px-2.5 py-1 rounded-xl text-sm sm:text-base font-bold">
               {item.ipa}
             </span>
           </div>
@@ -117,28 +117,32 @@ export function PriorityTiersSection({ materials }: { materials: UnitLearningMat
         <h2 className="font-bold text-lg text-foreground">
           {t("learningMaterials.priorityTiersTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.priorityTiersDesc")}
         </p>
       </div>
       <div className="space-y-3">
         <div className="border border-destructive/30 bg-destructive/5 p-4 rounded-2xl">
-          <p className="font-bold text-destructive text-sm">
+          <p className="font-bold text-destructive text-base">
             {t("learningMaterials.tierEssential")}
           </p>
-          <p className="text-sm mt-1 text-foreground leading-relaxed">
+          <p className="text-base mt-1 text-foreground leading-relaxed">
             {tiers.essential.join(", ")}
           </p>
         </div>
         <div className="border border-wp-amber/30 bg-wp-amber/5 p-4 rounded-2xl">
-          <p className="font-bold text-wp-amber text-sm">{t("learningMaterials.tierImportant")}</p>
-          <p className="text-sm mt-1 text-foreground leading-relaxed">
+          <p className="font-bold text-wp-amber text-base">
+            {t("learningMaterials.tierImportant")}
+          </p>
+          <p className="text-base mt-1 text-foreground leading-relaxed">
             {tiers.important.join(", ")}
           </p>
         </div>
         <div className="border border-wp-green/30 bg-wp-green/5 p-4 rounded-2xl">
-          <p className="font-bold text-wp-green text-sm">{t("learningMaterials.tierGoodToKnow")}</p>
-          <p className="text-sm mt-1 text-foreground leading-relaxed">
+          <p className="font-bold text-wp-green text-base">
+            {t("learningMaterials.tierGoodToKnow")}
+          </p>
+          <p className="text-base mt-1 text-foreground leading-relaxed">
             {tiers.goodToKnow.join(", ")}
           </p>
         </div>
@@ -157,7 +161,7 @@ export function CollocationsSection({ materials }: { materials: UnitLearningMate
             <h2 className="font-bold text-lg text-foreground">
               {t("learningMaterials.commonCollocations")}
             </h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.commonCollocationsDesc")}
             </p>
           </div>
@@ -165,8 +169,8 @@ export function CollocationsSection({ materials }: { materials: UnitLearningMate
             {materials.collocations.map((item, i) => (
               <li key={i} className="p-4 rounded-2xl bg-background border border-border">
                 <p className="font-bold text-primary text-base sm:text-lg">{item.phrase}</p>
-                <p className="text-sm text-foreground mt-1 font-medium">{item.variations}</p>
-                <p className="text-xs sm:text-sm text-muted-foreground italic mt-2 border-s-2 border-primary/30 ps-2.5">
+                <p className="text-base text-foreground mt-1 font-medium">{item.variations}</p>
+                <p className="text-sm sm:text-base text-muted-foreground italic mt-2 border-s-2 border-primary/30 ps-2.5">
                   &ldquo;{item.example}&rdquo;
                 </p>
               </li>
@@ -181,7 +185,7 @@ export function CollocationsSection({ materials }: { materials: UnitLearningMate
             <h2 className="font-bold text-lg text-foreground">
               {t("learningMaterials.collocationsQuiz")}
             </h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.collocationsQuizDesc")}
             </p>
           </div>
@@ -201,7 +205,7 @@ export function SynonymsAntonymsSection({ materials }: { materials: UnitLearning
         <h2 className="font-bold text-lg text-foreground">
           {t("learningMaterials.synonymsAntonyms")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.synonymsAntonymsDesc")}
         </p>
       </div>
@@ -209,13 +213,13 @@ export function SynonymsAntonymsSection({ materials }: { materials: UnitLearning
         <table className="w-full text-start border-collapse min-w-[32rem]">
           <thead>
             <tr className="border-b border-border bg-secondary/30">
-              <th className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4">
+              <th className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4">
                 {t("learningMaterials.colWord")}
               </th>
-              <th className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4">
+              <th className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4">
                 {t("learningMaterials.colSynonym")}
               </th>
-              <th className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4">
+              <th className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4">
                 {t("learningMaterials.colAntonym")}
               </th>
             </tr>
@@ -223,9 +227,9 @@ export function SynonymsAntonymsSection({ materials }: { materials: UnitLearning
           <tbody className="divide-y divide-border/50">
             {materials.synonymsAntonyms.map((item, i) => (
               <tr key={i} className="hover:bg-secondary/20 transition-colors">
-                <td className="font-bold text-sm text-foreground py-3 px-4">{item.word}</td>
-                <td className="text-sm text-wp-green font-medium py-3 px-4">{item.synonym}</td>
-                <td className="text-sm text-destructive font-medium py-3 px-4">{item.antonym}</td>
+                <td className="font-bold text-base text-foreground py-3 px-4">{item.word}</td>
+                <td className="text-base text-wp-green font-medium py-3 px-4">{item.synonym}</td>
+                <td className="text-base text-destructive font-medium py-3 px-4">{item.antonym}</td>
               </tr>
             ))}
           </tbody>
@@ -245,7 +249,7 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
             <h2 className="font-bold text-lg text-foreground">{t("learningMaterials.matching")}</h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.matchingDesc")}
             </p>
           </div>
@@ -259,7 +263,7 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
             <h2 className="font-bold text-lg text-foreground">
               {t("learningMaterials.multipleChoice")}
             </h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.multipleChoiceDesc")}
             </p>
           </div>
@@ -273,7 +277,7 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
             <h2 className="font-bold text-lg text-foreground">
               {t("learningMaterials.rewriteSentence")}
             </h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.rewriteSentenceDesc")}
             </p>
           </div>
@@ -371,7 +375,7 @@ export function ErrorCorrectionSection({ materials }: { materials: UnitLearningM
     <section className={CARD}>
       <div className="border-b border-border/60 pb-3 mb-4">
         <h2 className="font-bold text-lg text-foreground">{t("learningMaterials.findMistake")}</h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.findMistakeDesc")}
         </p>
       </div>
@@ -398,7 +402,7 @@ export function WritingPromptsSection({ materials }: { materials: UnitLearningMa
         <h2 className="font-bold text-lg text-foreground">
           {t("learningMaterials.writingPrompts")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.writingPromptsDesc")}
         </p>
       </div>
@@ -406,9 +410,9 @@ export function WritingPromptsSection({ materials }: { materials: UnitLearningMa
         {materials.writingPrompts.map((p) => (
           <div key={p.id} className="border border-border p-4 sm:p-5 rounded-2xl bg-background">
             <h3 className="font-bold text-primary text-base">{p.title}</h3>
-            <p className="text-sm mt-2 text-foreground leading-relaxed">{p.prompt}</p>
+            <p className="text-base mt-2 text-foreground leading-relaxed">{p.prompt}</p>
             {p.suggestedVocabulary && (
-              <p className="text-xs text-muted-foreground mt-3 bg-secondary/40 p-2.5 rounded-xl">
+              <p className="text-sm text-muted-foreground mt-3 bg-secondary/40 p-2.5 rounded-xl">
                 <span className="font-bold text-foreground">
                   {t("learningMaterials.suggestedWords")}{" "}
                 </span>
@@ -461,7 +465,7 @@ export function SelfAssessmentSection({
         <h2 id="self-assessment-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.selfAssessment")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.selfAssessmentDesc")}
         </p>
       </div>
@@ -477,7 +481,7 @@ export function SelfAssessmentSection({
             >
               <div className="min-w-0 flex-1">
                 <p className="font-bold text-base text-foreground">{item.wordPair}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{item.question}</p>
+                <p className="text-sm text-muted-foreground mt-0.5">{item.question}</p>
               </div>
               <div
                 role="radiogroup"
@@ -489,7 +493,7 @@ export function SelfAssessmentSection({
                   return (
                     <label
                       key={score}
-                      className={`relative flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center rounded-xl border text-xs font-bold transition-all focus-within:outline-none focus-within:ring-2 focus-within:ring-primary ${
+                      className={`relative flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center rounded-xl border text-sm font-bold transition-all focus-within:outline-none focus-within:ring-2 focus-within:ring-primary ${
                         isSelected
                           ? "bg-primary text-primary-foreground border-primary shadow-xs"
                           : "border-border text-muted-foreground hover:bg-secondary hover:text-foreground hover:border-primary/50 active:scale-95"

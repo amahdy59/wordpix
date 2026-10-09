@@ -78,14 +78,14 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
   );
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <Layers className="size-4" aria-hidden />
           {t("business.usage.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {t("business.usage.functionalPatternTag", { level: unit.level })}
         </span>
       </div>
@@ -95,18 +95,18 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
         className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="usage-focus-title"
       >
-        <p className="text-xs font-black uppercase tracking-widest text-primary">
+        <p className="text-sm font-black uppercase tracking-widest text-primary">
           {t("business.usage.linguisticFramework")}
         </p>
         <h2
           id="usage-focus-title"
-          className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
+          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"
         >
           {unit.usageFocus.title.replace(/^4\.\s*Usage Focus\s*[-—]?\s*/i, "") ||
             t("business.stages.usage")}
         </h2>
         {unit.usageFocus.description && (
-          <p className="mt-3 text-base font-medium text-muted-foreground leading-relaxed whitespace-pre-line">
+          <p className="wp-prose mt-3 text-base font-medium text-muted-foreground leading-relaxed whitespace-pre-line">
             {unit.usageFocus.description}
           </p>
         )}
@@ -125,7 +125,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
             >
               <div>
                 <div className="flex items-center justify-between gap-2">
-                  <span className="inline-flex items-center gap-1.5 rounded-lg bg-primary/10 px-3 py-1 text-sm font-black text-primary">
+                  <span className="inline-flex items-center gap-1.5 rounded-lg bg-primary/10 px-3 py-1 text-base font-black text-primary">
                     {card.pattern}
                   </span>
                   <CheckCircle2 className="size-4 text-primary/70 shrink-0" aria-hidden />
@@ -133,15 +133,15 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
 
                 {card.context && (
                   <div className="mt-3">
-                    <span className="block text-[10px] font-black uppercase tracking-widest text-muted-foreground">
+                    <span className="block text-sm font-black uppercase tracking-widest text-muted-foreground">
                       {t("business.usage.contextFunctionLabel")}
                     </span>
-                    <p className="mt-0.5 text-sm font-bold text-foreground">{card.context}</p>
+                    <p className="mt-0.5 text-base font-bold text-foreground">{card.context}</p>
                   </div>
                 )}
               </div>
 
-              <div className="rounded-xl bg-card p-3.5 border border-border/70 text-sm font-medium text-foreground/90 italic font-serif leading-relaxed">
+              <div className="rounded-xl bg-card p-3.5 border border-border/70 text-base font-medium text-foreground/90 italic font-serif leading-relaxed">
                 {`“${card.example}”`}
               </div>
             </div>
@@ -154,7 +154,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("business.usage.continueToExercises")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

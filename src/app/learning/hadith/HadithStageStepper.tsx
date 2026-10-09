@@ -66,7 +66,7 @@ export function HadithStageStepper({
     <nav className="mt-3 w-full space-y-2 sm:mt-6" aria-label={t("hadith.stageNavigation")}>
       {/* Mobile Stepper Header (< sm) */}
       <div className="flex flex-col gap-2 sm:hidden">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-base font-semibold">
           <span className="text-primary uppercase tracking-wider">
             {t("hadith.stepOfTotal", {
               current: currentStageIndex + 1,
@@ -120,7 +120,7 @@ export function HadithStageStepper({
                 tabIndex={isCurrent ? 0 : -1}
                 onClick={() => onSelectStage(index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
-                className={`group relative flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border-2 px-3 py-2 text-sm font-semibold transition-all motion-safe:active:scale-[0.98] ${focusRing} ${
+                className={`group relative flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border-2 px-3 py-2 text-base font-semibold transition-all motion-safe:active:scale-[0.98] ${focusRing} ${
                   isCurrent
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
                     : isCompleted
@@ -130,7 +130,7 @@ export function HadithStageStepper({
               >
                 {/* Single clean indicator: checkmark when completed, step icon when current or upcoming */}
                 <span
-                  className={`flex size-6 shrink-0 items-center justify-center rounded-full transition-colors ${
+                  className={`hidden size-6 shrink-0 items-center justify-center rounded-full transition-colors sm:flex ${
                     isCurrent
                       ? "bg-primary-foreground text-primary"
                       : isCompleted

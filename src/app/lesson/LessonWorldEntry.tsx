@@ -138,10 +138,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           </button>
           <div className="min-w-0">
             <h1 className="font-bold text-foreground text-xl">{world.name}</h1>
-            <p className="text-muted-foreground text-sm">{t("lesson.chooseVocabGroup")}</p>
+            <p className="text-muted-foreground text-base">{t("lesson.chooseVocabGroup")}</p>
           </div>
         </div>
-        <span className="shrink-0 inline-flex items-center gap-1 font-semibold text-sm bg-secondary text-primary px-3 py-2 rounded-xl">
+        <span className="shrink-0 inline-flex items-center gap-1 font-semibold text-base bg-secondary text-primary px-3 py-2 rounded-xl">
           {curriculum.cefr}
           <span className="hidden sm:inline">
             {t("lesson.gseRange", {
@@ -156,10 +156,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           <div className="mb-6 flex flex-col gap-4">
             <div className="rounded-3xl border border-primary/30 bg-primary/5 p-5 sm:p-6 shadow-wp-xs">
               <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-xs font-black uppercase tracking-wider text-primary">
+                <span className="text-sm font-black uppercase tracking-wider text-primary">
                   {t("lesson.unitOutcome")}
                 </span>
-                <span className="text-xs font-bold text-muted-foreground">
+                <span className="text-sm font-bold text-muted-foreground">
                   {t("lesson.groupsStarted", {
                     started: startedGroups,
                     total: world.groups.length,
@@ -169,7 +169,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
               <p className="mt-2 text-xl sm:text-2xl font-black text-foreground leading-snug">
                 {curriculum.outcome}
               </p>
-              <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+              <p className="mt-1 text-base text-muted-foreground leading-relaxed">
                 {world.description}
               </p>
 
@@ -208,7 +208,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                 </button>
               </div>
 
-              <p className="mt-2.5 text-xs text-muted-foreground">
+              <p className="mt-2.5 text-sm text-muted-foreground">
                 {t("lesson.testOutHint", {
                   defaultValue:
                     "Test out: complete a quick assessment covering all unit words to mark them mastered.",
@@ -220,7 +220,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
               <h2 className="font-sans font-black text-lg text-foreground">
                 {t("lesson.selectWordGroup")}
               </h2>
-              <span className="text-xs font-medium text-muted-foreground">
+              <span className="text-sm font-medium text-muted-foreground">
                 {t("lesson.groupCount", {
                   count: world.groups.length,
                   defaultValue: `${world.groups.length} groups`,
@@ -269,17 +269,17 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     <span className="min-w-0 flex-1">
                       <span className="block font-bold text-lg text-foreground">{g.name}</span>
                       {samples.length > 0 && (
-                        <span className="block text-sm text-muted-foreground mt-1 break-words">
+                        <span className="block text-base text-muted-foreground mt-1 break-words">
                           {samples.join(" · ")}
                           {remainder > 0 ? ` · +${remainder}` : ""}
                         </span>
                       )}
                       {learnedCount > 0 && (
-                        <span className="inline-block text-sm font-semibold text-primary bg-secondary rounded-lg px-2 mt-2">
+                        <span className="inline-block text-base font-semibold text-primary bg-secondary rounded-lg px-2 mt-2">
                           {isCompleted ? "Completed" : "In progress"}
                         </span>
                       )}
-                      <span className="block text-sm text-foreground mt-2">{count}</span>
+                      <span className="block text-base text-foreground mt-2">{count}</span>
                       {learnedCount > 0 && (
                         <span
                           className="block mt-2 h-1.5 max-w-64 rounded-full bg-border overflow-hidden"
@@ -386,10 +386,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                           }`}
                         >
                           <div className="px-3 py-2 border-b border-border/60 mb-1">
-                            <p className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">
+                            <p className="font-sans font-bold text-sm text-foreground uppercase tracking-wider">
                               {t("lesson.lessonOptions")}
                             </p>
-                            <p className="font-sans text-xs text-muted-foreground truncate">
+                            <p className="font-sans text-sm text-muted-foreground truncate">
                               {g.name}
                             </p>
                           </div>
@@ -413,10 +413,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                               <BookOpen className="size-4" />
                             </div>
                             <div className="flex-1">
-                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                              <p className="font-sans font-semibold text-base leading-tight text-foreground">
                                 {t("lesson.readStory")}
                               </p>
-                              <p className="font-sans text-xs text-muted-foreground">
+                              <p className="font-sans text-sm text-muted-foreground">
                                 {t("lesson.jumpToStory")}
                               </p>
                             </div>
@@ -433,10 +433,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                               <Compass className="size-4" />
                             </div>
                             <div className="flex-1">
-                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                              <p className="font-sans font-semibold text-base leading-tight text-foreground">
                                 {t("lesson.browseWords")}
                               </p>
-                              <p className="font-sans text-xs text-muted-foreground">
+                              <p className="font-sans text-sm text-muted-foreground">
                                 {t("lesson.browseWordsDesc")}
                               </p>
                             </div>
@@ -453,10 +453,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                               <Play className="size-4 fill-current" />
                             </div>
                             <div className="flex-1">
-                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                              <p className="font-sans font-semibold text-base leading-tight text-foreground">
                                 {t("lesson.practiceAllDrills")}
                               </p>
-                              <p className="font-sans text-xs text-muted-foreground">
+                              <p className="font-sans text-sm text-muted-foreground">
                                 {t("lesson.complete6Step")}
                               </p>
                             </div>
@@ -479,7 +479,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             >
                               <div className="flex items-center gap-2">
                                 <ListOrdered className="size-4 text-primary" />
-                                <span className="font-sans font-medium text-xs">
+                                <span className="font-sans font-medium text-sm">
                                   {t("lesson.jumpToStep")}
                                 </span>
                               </div>
@@ -506,9 +506,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                                     onClick={() => handleStartGroup(g.id, item.step)}
                                     className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary min-h-[44px]"
                                   >
-                                    <span className="text-sm">{item.icon}</span>
+                                    <span className="text-base">{item.icon}</span>
                                     <div className="flex-1 min-w-0">
-                                      <p className="font-sans font-medium text-xs truncate">
+                                      <p className="font-sans font-medium text-sm truncate">
                                         {item.step + 1}. {item.name}
                                       </p>
                                     </div>

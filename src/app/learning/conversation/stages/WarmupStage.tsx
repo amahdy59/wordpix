@@ -25,10 +25,10 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
   };
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Top Controls */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <MessageSquare className="size-4" aria-hidden />
           {t("conversation.warmupStage")}
         </span>
@@ -47,12 +47,12 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         className="rounded-3xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="big-question-heading"
       >
-        <p className="text-xs font-black uppercase tracking-widest text-primary">
+        <p className="text-sm font-black uppercase tracking-widest text-primary">
           {t("conversation.centralQuestion")}
         </p>
         <h2
           id="big-question-heading"
-          className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black text-foreground tracking-tight leading-snug"
+          className="wp-type-stage-title mt-3 lg:text-4xl font-black text-foreground tracking-tight leading-snug"
         >
           <BilingualTextBlock
             english={`“${unit.warmup.bigQuestion}”`}
@@ -62,7 +62,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           />
         </h2>
         {unit.speakingSkill && (
-          <p className="mt-4 rounded-xl bg-primary/10 px-4 py-3 text-sm font-semibold text-primary">
+          <p className="mt-4 rounded-xl bg-primary/10 px-4 py-3 text-base font-semibold text-primary">
             {t("conversation.skill", { skill: unit.speakingSkill })}
           </p>
         )}
@@ -73,23 +73,26 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         className="rounded-2xl border border-border bg-card p-5 sm:p-7 shadow-wp-xs"
         aria-labelledby="discussion-prompts-title"
       >
-        <h2 id="discussion-prompts-title" className="text-base font-black text-foreground">
+        <h2
+          id="discussion-prompts-title"
+          className="wp-type-stage-title text-base font-black text-foreground"
+        >
           {t("conversation.reflectBeforeReading")}
         </h2>
         <ol className="mt-4 flex flex-col gap-3">
           {unit.warmup.prompts.map((prompt, idx) => (
             <li
               key={idx}
-              className="flex items-start gap-3 rounded-xl bg-muted/40 p-3.5 text-sm sm:text-base font-medium text-foreground leading-relaxed"
+              className="flex items-start gap-3 rounded-xl bg-muted/40 p-3.5 text-base sm:text-base font-medium text-foreground leading-relaxed"
             >
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
+              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
                 {idx + 1}
               </span>
               <BilingualTextBlock
                 english={prompt.en}
                 arabic={prompt.ar}
                 showArabic={showArabic}
-                arabicClassName="text-sm font-semibold text-muted-foreground"
+                arabicClassName="text-base font-semibold text-muted-foreground"
               />
             </li>
           ))}
@@ -103,11 +106,14 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
       >
         <div className="flex items-center gap-2">
           <Vote className="size-5 text-primary" aria-hidden />
-          <h2 id="quick-vote-title" className="text-base font-black text-foreground">
+          <h2
+            id="quick-vote-title"
+            className="wp-type-stage-title text-base font-black text-foreground"
+          >
             {t("conversation.quickVote")}
           </h2>
         </div>
-        <p className="mt-1 text-xs sm:text-sm text-muted-foreground font-medium">
+        <p className="mt-1 text-sm sm:text-base text-muted-foreground font-medium">
           {t("conversation.quickVoteDescription")}
         </p>
 
@@ -148,7 +154,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           onClick={onNext}
           disabled={!selectedVote}
           aria-describedby="warmup-vote-requirement"
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
         >
           <span>{t("conversation.continueReading")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
@@ -156,7 +162,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
       </div>
       <p
         id="warmup-vote-requirement"
-        className="text-end text-sm font-semibold text-muted-foreground"
+        className="text-end text-base font-semibold text-muted-foreground"
         aria-live="polite"
       >
         {selectedVote ? t("conversation.voteRecorded") : t("conversation.chooseVote")}

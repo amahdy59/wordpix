@@ -179,7 +179,7 @@ export function PracticeArea({
 
   if (items.length === 0) {
     return (
-      <div className="wp-container-reading wp-layout-gutter flex min-h-full items-center py-6">
+      <div className="wp-container-content wp-layout-gutter flex min-h-full items-center py-6">
         <EmptyState titleAs="p" title={t("practice.noExercises")} />
       </div>
     );
@@ -203,7 +203,7 @@ export function PracticeArea({
 
   if (phase === "checkpoint") {
     return (
-      <div className="wp-container-reading wp-layout-gutter flex w-full flex-col items-center py-4 sm:py-6 md:py-8">
+      <div className="wp-container-content wp-layout-gutter flex w-full flex-col items-center py-4 sm:py-6 md:py-8">
         <h1 className="sr-only">{t("practice.roundCheckpointLabel")}</h1>
         <RoundCheckpointCard
           roundNumber={currentRound}
@@ -289,13 +289,13 @@ export function PracticeArea({
   };
 
   return (
-    <div className="wp-container-reading wp-layout-gutter flex w-full flex-col items-center py-4 sm:py-6 md:py-8">
+    <div className="wp-container-content wp-layout-gutter flex w-full flex-col items-center py-4 sm:py-6 md:py-8">
       {/* Header & Progress */}
       <div className="w-full mb-6">
         <div className="flex justify-between items-start gap-3 mb-3">
           <div className="min-w-0 flex-1">
             {/* Round indicator — secondary, compact */}
-            <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-extrabold text-xs inline-block mb-1">
+            <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-extrabold text-sm inline-block mb-1">
               {t("practice.roundOf", {
                 current: formatNumber(currentRound, numeralSystem),
                 total: formatNumber(totalRounds, numeralSystem),
@@ -307,7 +307,7 @@ export function PracticeArea({
             </h1>
           </div>
           {/* Primary overall counter */}
-          <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1.5 rounded-full shrink-0 mt-1">
+          <span className="text-sm font-bold text-muted-foreground bg-secondary/80 px-3 py-1.5 rounded-full shrink-0 mt-1">
             {t("practice.totalOf", {
               current: formatNumber(currentIndex + 1, numeralSystem),
               total: formatNumber(items.length, numeralSystem),

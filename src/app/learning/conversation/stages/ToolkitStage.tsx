@@ -31,10 +31,10 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
   };
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <MessageCircle className="size-4" aria-hidden />
           {t("conversation.toolkitStage")}
         </span>
@@ -58,13 +58,13 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         className="rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="toolkit-title"
       >
-        <span className="text-xs font-black uppercase tracking-wider text-primary">
+        <span className="text-sm font-black uppercase tracking-wider text-primary">
           {t("conversation.targetSpeakingSkill")}
         </span>
-        <h2 id="toolkit-title" className="mt-2 text-2xl sm:text-3xl font-black text-foreground">
+        <h2 id="toolkit-title" className="wp-type-stage-title mt-2 font-black text-foreground">
           {unit.toolkit.title}
         </h2>
-        <p className="mt-2 text-sm sm:text-base font-medium text-muted-foreground leading-relaxed">
+        <p className="wp-prose mt-2 text-base sm:text-base font-medium text-muted-foreground leading-relaxed">
           {unit.speakingSkill}
         </p>
       </section>
@@ -78,10 +78,10 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-3">
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
                   {idx + 1}
                 </span>
-                <h2 className="text-base sm:text-lg font-black text-foreground">
+                <h2 className="wp-type-stage-title text-base sm:text-lg font-black text-foreground">
                   {phrase.template}
                 </h2>
               </div>
@@ -96,8 +96,8 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
               </button>
             </div>
 
-            <div className="rounded-xl border-s-4 border-primary bg-muted/40 p-4 text-sm sm:text-base font-medium text-foreground">
-              <span className="font-bold text-xs uppercase tracking-wide text-primary block mb-1">
+            <div className="rounded-xl border-s-4 border-primary bg-muted/40 p-4 text-base sm:text-base font-medium text-foreground">
+              <span className="font-bold text-sm uppercase tracking-wide text-primary block mb-1">
                 {t("conversation.modelDialogue")}:
               </span>
               "{phrase.example}"
@@ -118,27 +118,30 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
             <MessagesSquare className="size-5" aria-hidden />
           </span>
           <div>
-            <h2 id="turn-taking-title" className="text-lg font-black text-foreground">
+            <h2
+              id="turn-taking-title"
+              className="wp-type-stage-title text-lg font-black text-foreground"
+            >
               {t("conversation.turnTakingTitle")}
             </h2>
-            <p className="text-sm font-semibold text-muted-foreground">
+            <p className="text-base font-semibold text-muted-foreground">
               {t("conversation.turnTakingHelp")}
             </p>
           </div>
         </div>
 
         <div className="mt-5 rounded-2xl border border-primary/25 bg-primary/5 p-4">
-          <p className="text-xs font-black uppercase tracking-wider text-primary">
+          <p className="text-sm font-black uppercase tracking-wider text-primary">
             {t("conversation.partnerPrompt")}
           </p>
-          <p className="mt-2 text-base font-bold leading-relaxed text-foreground">
+          <p className="wp-prose mt-2 text-base font-bold leading-relaxed text-foreground">
             {unit.warmup.bigQuestion}
           </p>
           <button
             type="button"
             onClick={() => handleSpeakPhrase(unit.warmup.bigQuestion)}
             disabled={!listeningEnabled}
-            className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-sm font-black text-primary hover:bg-primary/10 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+            className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-base font-black text-primary hover:bg-primary/10 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
           >
             <Volume2 className="size-4" aria-hidden />
             {t("conversation.listenPartnerPrompt")}
@@ -146,14 +149,14 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         </div>
 
         <fieldset className="mt-5">
-          <legend className="text-sm font-black text-foreground">
+          <legend className="text-base font-black text-foreground">
             {t("conversation.chooseResponseFrame")}
           </legend>
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
             {unit.toolkit.phrases.map((phrase, index) => (
               <label
                 key={phrase.template}
-                className={`flex min-h-11 cursor-pointer items-center rounded-xl border px-4 py-3 text-sm font-bold transition-colors focus-within:outline focus-within:outline-[3px] focus-within:outline-offset-2 focus-within:outline-primary ${
+                className={`flex min-h-11 cursor-pointer items-center rounded-xl border px-4 py-3 text-base font-bold transition-colors focus-within:outline focus-within:outline-[3px] focus-within:outline-offset-2 focus-within:outline-primary ${
                   practiceFrameIndex === index
                     ? "border-primary bg-primary text-primary-foreground"
                     : "border-border bg-background text-foreground hover:bg-muted"
@@ -192,7 +195,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
@@ -201,7 +204,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueQuiz")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

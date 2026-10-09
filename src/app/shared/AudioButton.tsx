@@ -34,10 +34,10 @@ export const AudioButton = memo(function AudioButton({
 }: Props) {
   const isActive = isPlaying || isLoading;
   const stateClasses = isError
-    ? "bg-secondary border-feedback-error-border text-feedback-error-foreground hover:bg-feedback-error-surface active:scale-95"
+    ? "bg-secondary border-feedback-error-border text-feedback-error-foreground hover:bg-feedback-error-surface motion-safe:active:scale-95"
     : isActive
       ? "bg-primary border-primary text-primary-foreground shadow-wp-sm"
-      : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground active:scale-95";
+      : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground motion-safe:active:scale-95";
 
   const computedLabel = isError
     ? `${label} (retry audio)`

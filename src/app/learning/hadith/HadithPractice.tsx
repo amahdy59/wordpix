@@ -76,25 +76,25 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
 
   return (
     <section
-      className="wp-container-reading rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-8"
+      className="wp-container-content rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-8"
       aria-labelledby="hadith-practice-heading"
     >
-      <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+      <p className="text-sm font-black uppercase tracking-[0.18em] text-primary">
         {t("hadith.practiceLabel")}
       </p>
       <h2
         id="hadith-practice-heading"
         tabIndex={-1}
-        className="mt-2 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+        className="wp-type-stage-title mt-2 text-foreground outline-none"
       >
         {t("hadith.practiceTitle")}
       </h2>
-      <p className="mt-3 text-sm font-semibold text-muted-foreground">
+      <p className="mt-3 text-base font-semibold text-muted-foreground">
         {t("hadith.practiceInstructions")}
       </p>
 
       <div className="mt-5 rounded-2xl bg-muted/60 p-4">
-        <div className="flex items-center justify-between gap-3 text-sm font-black">
+        <div className="flex items-center justify-between gap-3 text-base font-black">
           <span>{t("hadith.practiceCompletion")}</span>
           <span>
             {answered}/{exerciseSet.exercises.length}
@@ -116,7 +116,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
       </div>
 
       <div ref={questionRef} tabIndex={-1} className="mt-7 space-y-7 outline-none">
-        <p className="text-sm font-bold text-foreground">
+        <p className="text-base font-bold text-foreground">
           {t("quiz.questionOf", {
             current: questionIndex + 1,
             total: exerciseSet.exercises.length,
@@ -157,7 +157,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                         }
                         alt={t("hadith.practiceImageAlt")}
                       />
-                      <figcaption className="p-3 text-center text-xs font-bold text-muted-foreground">
+                      <figcaption className="p-3 text-center text-sm font-bold text-muted-foreground">
                         {t("hadith.chooseMatchingWord")}
                       </figcaption>
                     </figure>
@@ -175,7 +175,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
               data-quiz-question
               className="rounded-2xl border border-border p-4 sm:p-5"
             >
-              <legend className="px-2 text-sm font-black">
+              <legend className="px-2 text-base font-black">
                 {exerciseIndex + 1}. {exercise.prompt}
               </legend>
               <ol className="mt-4 space-y-2" aria-label={t("hadith.selectedSequence")}>
@@ -194,7 +194,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                           setSequences(nextSequences);
                           publishScore(choices, nextSequences);
                         }}
-                        className="flex min-h-12 w-full items-center gap-3 rounded-xl border border-primary bg-primary/10 px-4 text-start text-sm font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        className="flex min-h-12 w-full items-center gap-3 rounded-xl border border-primary bg-primary/10 px-4 text-start text-base font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary font-black text-primary-foreground">
                           {index + 1}
@@ -231,7 +231,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                           else playIncorrectSound();
                         }
                       }}
-                      className="min-h-11 rounded-xl border border-border px-3 text-sm font-bold hover:border-primary active:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      className="min-h-11 rounded-xl border border-border px-3 text-base font-bold hover:border-primary active:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
                       {item.label}
                     </button>
@@ -246,7 +246,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                     setSequences(nextSequences);
                     publishScore(choices, nextSequences);
                   }}
-                  className="mt-4 min-h-11 rounded-xl px-3 text-sm font-black text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="mt-4 min-h-11 rounded-xl px-3 text-base font-black text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   <RotateCcw className="me-2 inline size-4" aria-hidden />
                   {t("hadith.resetOrder")}
@@ -254,7 +254,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
               )}
               {result.answered && (
                 <p
-                  className={`mt-4 rounded-xl p-3 text-sm font-semibold ${result.correct ? "bg-feedback-success-surface text-feedback-success-foreground" : "bg-feedback-warning-surface text-feedback-warning-foreground"}`}
+                  className={`mt-4 rounded-xl p-3 text-base font-semibold ${result.correct ? "bg-feedback-success-surface text-feedback-success-foreground" : "bg-feedback-warning-surface text-feedback-warning-foreground"}`}
                   role="status"
                 >
                   {exercise.feedback}

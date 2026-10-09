@@ -37,10 +37,10 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
   };
 
   return (
-    <section className="wp-container-reading space-y-6" aria-labelledby="stage-speak-heading">
+    <section className="wp-container-content space-y-6" aria-labelledby="stage-speak-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-wider text-primary">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
             <Mic className="size-3.5" aria-hidden />
             {t("hadith.speakLabel") || "Transfer Task"}
           </span>
@@ -49,14 +49,14 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
         <h2
           id="stage-speak-heading"
           tabIndex={-1}
-          className="mt-3 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+          className="wp-type-stage-title mt-3 font-black tracking-tight text-foreground outline-none"
         >
           {speakData.title ||
             t("hadith.pilot.speak.title") ||
             "Explain an action and its intention"}
         </h2>
 
-        <p className="mt-2 text-sm font-semibold leading-relaxed text-muted-foreground">
+        <p className="wp-prose mt-2 text-base font-semibold leading-relaxed text-muted-foreground">
           {speakData.description ||
             t("hadith.pilot.speak.description") ||
             "Choose a helpful everyday action. Speak for two or three sentences; your response is private and is not stored."}
@@ -65,7 +65,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
         {/* Sentence Frame Card */}
         {speakData.frames.length > 0 ? (
           <div className="mt-6 space-y-2 rounded-2xl border-2 border-primary/20 bg-primary/5 p-5">
-            <p className="text-xs font-black uppercase tracking-wider text-primary">
+            <p className="text-sm font-black uppercase tracking-wider text-primary">
               {t("hadith.pilot.speak.frameLabel") || "Sentence Frame"}
             </p>
             {speakData.frames.map((frame, i) => (
@@ -76,7 +76,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
           </div>
         ) : (
           <div className="mt-6 rounded-2xl border-2 border-primary/20 bg-primary/5 p-5">
-            <p className="text-xs font-black uppercase tracking-wider text-primary">
+            <p className="text-sm font-black uppercase tracking-wider text-primary">
               {t("hadith.pilot.speak.frameLabel") || "Sentence Frame"}
             </p>
             <p className="mt-2 text-lg font-black text-foreground" lang="en" dir="ltr">
@@ -100,7 +100,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
           <div className="border-t border-border p-5">
             <div className="rounded-xl bg-muted/60 p-4">
               <p
-                className="text-sm font-medium leading-relaxed text-foreground"
+                className="wp-prose text-base font-medium leading-relaxed text-foreground"
                 lang="en"
                 dir="ltr"
               >
@@ -111,7 +111,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
               type="button"
               onClick={() => playAudio(modelText)}
               aria-busy={isPlaying}
-              className={`mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary px-4 text-sm font-black text-primary transition-all hover:bg-primary/10 active:scale-[0.98] ${focusRing}`}
+              className={`mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary px-4 text-base font-black text-primary transition-all hover:bg-primary/10 motion-safe:active:scale-[0.98] ${focusRing}`}
             >
               <Volume2 className="size-4" aria-hidden />
               <span>
@@ -144,7 +144,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
           </h3>
         </div>
 
-        <p className="mt-1 text-xs text-muted-foreground">
+        <p className="mt-1 text-sm text-muted-foreground">
           {t("hadith.speakChecklistDescription")}
         </p>
 

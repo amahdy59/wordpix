@@ -48,14 +48,16 @@ describe("CurriculumVocabularyTable", () => {
     expect(screen.queryByRole("columnheader", { name: "Type" })).not.toBeInTheDocument();
   });
 
-  it("renders Type header when showType is true", () => {
+  it("groups word types with their terms when showType is true", () => {
     render(
       <I18nProvider>
         <CurriculumVocabularyTable items={mockItems} showType={true} />
       </I18nProvider>
     );
 
-    expect(screen.getByText("Type")).toBeInTheDocument();
+    const row = screen.getByRole("row", { name: /role.*Noun/i });
+    expect(within(row).getByText("Noun")).toBeInTheDocument();
+    expect(screen.queryByRole("columnheader", { name: "Type" })).not.toBeInTheDocument();
   });
 
   it("renders all vocabulary rows with terms, definitions, and examples", () => {

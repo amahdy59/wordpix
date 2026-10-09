@@ -209,7 +209,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-2">
                 {trackIcon(mostRecentTrack.type)}
-                <span className="font-sans text-xs font-black uppercase tracking-wider text-primary">
+                <span className="font-sans text-sm font-black uppercase tracking-wider text-primary">
                   {t("dashboard.resumeTrack") || "Active Special Course"}
                 </span>
               </div>
@@ -235,7 +235,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
             <button
               type="button"
               onClick={mostRecentTrack.onResume}
-              className="mt-4 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
+              className="mt-4 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 font-sans text-base font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
             >
               <Play className="size-4" aria-hidden />
               <span>
@@ -253,7 +253,7 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
                 {t("learn.specialCurricula")}
               </h3>
             </div>
-            <p className="mt-1 font-sans text-xs font-semibold leading-relaxed text-muted-foreground">
+            <p className="mt-1 font-sans text-sm font-semibold leading-relaxed text-muted-foreground">
               {t("learn.specialCurriculaSubheading")}
             </p>
           </div>
@@ -261,10 +261,10 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
 
         {/* Quick Launch Strip for All Special Tracks */}
         <div className="border-t border-border pt-3">
-          <p className="text-[11px] font-black uppercase tracking-wider text-muted-foreground">
+          <p className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
             {t("dashboard.specializedTracks") || "Specialized Tracks"}
           </p>
-          <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-4">
             {tracks.map((track) => (
               <button
                 key={track.id}
@@ -274,8 +274,8 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
               >
                 <div className="shrink-0">{track.icon}</div>
                 <div className="min-w-0">
-                  <p className="truncate text-xs font-black text-foreground">{track.title}</p>
-                  <p className="truncate text-[10px] font-bold text-muted-foreground">
+                  <p className="break-words text-base font-bold text-foreground">{track.title}</p>
+                  <p className="break-words text-sm font-semibold text-muted-foreground">
                     {track.badge}
                   </p>
                 </div>

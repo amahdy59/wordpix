@@ -50,7 +50,7 @@ function VocabularyImagePlaceholder({ term }: { term: string }) {
   return (
     <div className="flex size-full flex-col items-center justify-center gap-1 p-2 text-center text-foreground">
       <ImageIcon className="size-5 shrink-0" aria-hidden="true" />
-      <span className="text-xs font-semibold">{t("story.imagePending")}</span>
+      <span className="text-sm font-semibold">{t("story.imagePending")}</span>
       <span className="sr-only">{term}</span>
     </div>
   );
@@ -104,12 +104,12 @@ export function CurriculumVocabularyTable({
     );
 
   return (
-    <div className={`space-y-3 sm:space-y-6 ${className}`}>
+    <div className={`wp-vocabulary space-y-3 sm:space-y-6 ${className}`}>
       {/* Top View Toggle Toolbar */}
       {allowViewToggle && (
         <div className="flex flex-wrap items-center justify-between gap-2">
           {!hideCaption && (
-            <p className="text-sm font-semibold text-foreground">
+            <p className="text-base font-semibold text-foreground">
               {caption || t("vocabulary.tableCaption") || "Vocabulary and Collocations"}
             </p>
           )}
@@ -123,7 +123,7 @@ export function CurriculumVocabularyTable({
               type="button"
               onClick={() => setViewMode("table")}
               aria-pressed={viewMode === "table"}
-              className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+              className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl px-3 py-2 text-base font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
                 viewMode === "table"
                   ? "bg-primary text-primary-foreground shadow-wp-xs"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -136,7 +136,7 @@ export function CurriculumVocabularyTable({
               type="button"
               onClick={() => setViewMode("gallery")}
               aria-pressed={viewMode === "gallery"}
-              className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+              className={`inline-flex min-h-[44px] items-center gap-2 rounded-xl px-3 py-2 text-base font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
                 viewMode === "gallery"
                   ? "bg-primary text-primary-foreground shadow-wp-xs"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -152,9 +152,9 @@ export function CurriculumVocabularyTable({
       {/* ── MODE 1: TABLE VIEW ── */}
       {viewMode === "table" && (
         <>
-          {/* Desktop & Tablet Table (>= md: 768px) */}
-          <div className="hidden md:block overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs">
-            <table className="w-full border-collapse text-start">
+          {/* Reflow according to available lesson width, including sidebar layouts. */}
+          <div className="wp-vocabulary-table overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs">
+            <table className="w-full table-fixed border-collapse text-start">
               <caption className="sr-only">
                 {caption || t("vocabulary.tableCaption") || "Vocabulary and Collocations Table"}
               </caption>
@@ -162,36 +162,28 @@ export function CurriculumVocabularyTable({
                 <tr className="border-b border-border bg-muted/40">
                   <th
                     scope="col"
-                    className="w-36 py-4 ps-6 pe-3 text-start text-xs font-black uppercase tracking-wider text-primary"
+                    className="w-[14%] py-4 ps-6 pe-3 text-start text-sm font-bold uppercase tracking-wider text-primary"
                   >
                     {t("vocabulary.imageHeader") || "Image"}
                   </th>
                   <th
                     scope="col"
-                    className="w-52 py-4 px-3 text-start text-xs font-black uppercase tracking-wider text-primary"
+                    className="w-[25%] py-4 px-3 text-start text-sm font-bold uppercase tracking-wider text-primary"
                   >
                     {t("vocabulary.wordHeader") || "Word/Phrase"}
                   </th>
                   <th
                     scope="col"
-                    className="py-4 px-3 text-start text-xs font-black uppercase tracking-wider text-primary"
+                    className="w-[28%] py-4 px-3 text-start text-sm font-bold uppercase tracking-wider text-primary"
                   >
                     {t("vocabulary.definitionHeader") || "Definition"}
                   </th>
                   <th
                     scope="col"
-                    className="py-4 ps-3 pe-6 text-start text-xs font-black uppercase tracking-wider text-primary"
+                    className="py-4 ps-3 pe-6 text-start text-sm font-black uppercase tracking-wider text-primary"
                   >
                     {t("vocabulary.exampleHeader") || "Example"}
                   </th>
-                  {showType && (
-                    <th
-                      scope="col"
-                      className="w-32 py-4 ps-3 pe-6 text-end text-xs font-black uppercase tracking-wider text-primary"
-                    >
-                      {t("vocabulary.typeHeader") || "Type"}
-                    </th>
-                  )}
                 </tr>
               </thead>
               <tbody className="divide-y divide-border/60">
@@ -209,8 +201,8 @@ export function CurriculumVocabularyTable({
                       }`}
                     >
                       {/* Column 1: Image Thumbnail + Enlarge Trigger */}
-                      <td className="py-4 ps-6 pe-3 align-middle">
-                        <div className="relative group/thumb h-20 w-28 shrink-0 overflow-hidden rounded-2xl border border-border/80 bg-muted/40 shadow-wp-xs">
+                      <td className="py-5 ps-6 pe-3 align-top">
+                        <div className="relative group/thumb aspect-[4/3] w-full shrink-0 overflow-hidden rounded-xl border border-border bg-muted/40 shadow-wp-xs">
                           {hasImg ? (
                             <img
                               src={item.imageSrc}
@@ -218,7 +210,7 @@ export function CurriculumVocabularyTable({
                               aria-hidden="true"
                               loading="lazy"
                               onError={() => handleImageError(item.id)}
-                              className="size-full object-cover object-center transition-transform duration-300 group-hover/thumb:scale-105"
+                              className="size-full object-cover object-center transition-transform duration-300 motion-safe:group-hover/thumb:scale-105"
                             />
                           ) : (
                             <VocabularyImagePlaceholder term={item.term} />
@@ -235,7 +227,7 @@ export function CurriculumVocabularyTable({
                               }
                               className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-200 group-hover/thumb:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
                             >
-                              <span className="flex size-9 items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm hover:scale-110 transition-transform">
+                              <span className="flex size-9 items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm motion-safe:hover:scale-110 transition-transform">
                                 <Maximize2 className="size-4" aria-hidden="true" />
                               </span>
                             </button>
@@ -244,11 +236,31 @@ export function CurriculumVocabularyTable({
                       </td>
 
                       {/* Column 2: Word/Phrase + Pronounce Button + Arabic Subtitle */}
-                      <td className="py-4 px-3 align-middle">
-                        <div className="flex items-center gap-2">
-                          <span className="text-base font-black text-foreground" lang="en">
-                            {item.term}
-                          </span>
+                      <td className="py-5 px-3 align-top">
+                        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3">
+                          <div className="min-w-0">
+                            <span
+                              className="block break-words text-lg font-bold leading-relaxed text-foreground"
+                              lang="en"
+                              dir="ltr"
+                            >
+                              {item.term}
+                            </span>
+                            {showArabic && item.termAr && (
+                              <span
+                                dir="rtl"
+                                lang="ar"
+                                className="mt-1 block w-fit max-w-full break-words font-arabic text-lg font-semibold text-foreground"
+                              >
+                                {item.termAr}
+                              </span>
+                            )}
+                            {showType && item.type && (
+                              <span className="mt-2 inline-block rounded-lg bg-muted px-2 py-1 text-sm font-semibold text-muted-foreground">
+                                {item.type}
+                              </span>
+                            )}
+                          </div>
                           {onPlayAudio && (
                             <AudioButton
                               onPlay={() => onPlayAudio(item.term)}
@@ -260,27 +272,18 @@ export function CurriculumVocabularyTable({
                             />
                           )}
                         </div>
-                        {showArabic && item.termAr && (
-                          <span
-                            dir="rtl"
-                            lang="ar"
-                            className="mt-0.5 block font-arabic text-sm font-bold text-primary"
-                          >
-                            {item.termAr}
-                          </span>
-                        )}
                       </td>
 
                       {/* Column 3: Definition */}
-                      <td className="py-4 px-3 align-middle">
-                        <p className="text-sm font-medium leading-relaxed text-muted-foreground">
+                      <td className="py-5 px-3 align-top">
+                        <p className="text-lg leading-relaxed text-foreground" lang="en" dir="ltr">
                           {item.definition}
                         </p>
                         {showArabic && item.definitionAr && (
                           <p
                             dir="rtl"
                             lang="ar"
-                            className="mt-0.5 text-xs font-semibold font-arabic leading-relaxed text-muted-foreground/80"
+                            className="mt-2 text-lg font-arabic leading-relaxed text-foreground"
                           >
                             {item.definitionAr}
                           </p>
@@ -288,23 +291,15 @@ export function CurriculumVocabularyTable({
                       </td>
 
                       {/* Column 4: Example */}
-                      <td className="py-4 ps-3 pe-6 align-middle">
+                      <td className="py-5 ps-3 pe-6 align-top">
                         <p
-                          className="text-sm font-normal italic leading-relaxed text-foreground/90 rounded-xl bg-muted/40 p-2.5 border border-border/40"
+                          className="border-s-2 border-primary ps-3 text-lg leading-relaxed text-foreground"
                           lang="en"
+                          dir="ltr"
                         >
                           {item.example}
                         </p>
                       </td>
-
-                      {/* Optional Column 5: Type Badge */}
-                      {showType && (
-                        <td className="py-4 ps-3 pe-6 text-end align-middle">
-                          <span className="inline-block rounded-lg bg-muted px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-muted-foreground shadow-wp-xs">
-                            {item.type}
-                          </span>
-                        </td>
-                      )}
                     </tr>
                   );
                 })}
@@ -312,15 +307,18 @@ export function CurriculumVocabularyTable({
             </table>
           </div>
 
-          {/* Mobile Adaptive Reflow Cards (< md: 768px) */}
-          <div className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card md:hidden">
+          {/* Narrow containers retain all fields without horizontal scrolling. */}
+          <div className="wp-vocabulary-cards gap-4">
             {items.map((item) => {
               const hasImg = item.imageSrc && !imageErrors[item.id];
               const isItemPlaying = isTermPlaying(item.term);
               const isItemError = isTermError(item.term);
 
               return (
-                <article key={item.id} className="flex min-w-0 flex-col gap-2 p-3 text-start">
+                <article
+                  key={item.id}
+                  className="flex min-w-0 flex-col gap-3 rounded-2xl border border-border bg-card p-4 text-start"
+                >
                   <div className="grid grid-cols-[3.5rem_minmax(0,1fr)_auto] items-start gap-2.5">
                     <div className="relative group/thumb size-14 shrink-0 overflow-hidden rounded-lg border border-border bg-muted/40">
                       {hasImg ? (
@@ -365,7 +363,7 @@ export function CurriculumVocabularyTable({
                         {item.term}
                       </h3>
                       {showType && item.type && (
-                        <span className="text-sm text-muted-foreground">{item.type}</span>
+                        <span className="text-base text-muted-foreground">{item.type}</span>
                       )}
 
                       {showArabic && item.termAr && (
@@ -422,7 +420,7 @@ export function CurriculumVocabularyTable({
 
       {/* ── MODE 2: GALLERY VIEW ── */}
       {viewMode === "gallery" && (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] items-start gap-4">
           {items.map((item) => {
             const hasImg = item.imageSrc && !imageErrors[item.id];
             const isItemPlaying = isTermPlaying(item.term);
@@ -444,7 +442,7 @@ export function CurriculumVocabularyTable({
                         loading="lazy"
                         decoding="async"
                         onError={() => handleImageError(item.id)}
-                        className="size-full object-cover object-center transition-transform duration-300 group-hover/thumb:scale-105"
+                        className="size-full object-cover object-center transition-transform duration-300 motion-safe:group-hover/thumb:scale-105"
                       />
                       {/* Enlarge Overlay Button */}
                       <button
@@ -454,7 +452,7 @@ export function CurriculumVocabularyTable({
                           t("vocabulary.enlargeImage", { term: item.term }) ||
                           `Enlarge image for ${item.term}`
                         }
-                        className="absolute top-3 end-3 flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm hover:scale-110 transition-transform cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+                        className="absolute top-3 end-3 flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm motion-safe:hover:scale-110 transition-transform cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
                       >
                         <Maximize2 className="size-4" aria-hidden="true" />
                       </button>
@@ -466,7 +464,7 @@ export function CurriculumVocabularyTable({
                         <span
                           dir="rtl"
                           lang="ar"
-                          className="font-arabic text-3xl font-extrabold text-primary/85 leading-normal drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+                          className="font-arabic text-3xl font-extrabold text-primary/85 leading-normal drop-shadow-sm transition-transform duration-300 motion-safe:group-hover:scale-105"
                         >
                           {item.termAr}
                         </span>
@@ -475,10 +473,10 @@ export function CurriculumVocabularyTable({
                           <BookOpen className="size-7" aria-hidden="true" />
                         </div>
                       )}
-                      <span className="mt-2 text-xs font-black uppercase tracking-widest text-muted-foreground/80">
+                      <span className="mt-2 text-sm font-black uppercase tracking-widest text-muted-foreground/80">
                         {item.term}
                       </span>
-                      <span className="mt-2 text-sm font-semibold text-foreground">
+                      <span className="mt-2 text-base font-semibold text-foreground">
                         {t("story.imagePending")}
                       </span>
                     </div>
@@ -494,7 +492,7 @@ export function CurriculumVocabularyTable({
                           {item.term}
                         </h3>
                         {item.type && (
-                          <span className="mt-1 inline-block rounded-md bg-muted px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                          <span className="mt-1 inline-block rounded-md bg-muted px-2 py-0.5 text-sm font-bold uppercase tracking-wider text-muted-foreground">
                             {item.type}
                           </span>
                         )}
@@ -549,10 +547,10 @@ export function CurriculumVocabularyTable({
         <div className="grid gap-3.5 sm:grid-cols-3 pt-2">
           {sidebars.wordFamily && (
             <aside className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs">
-              <p className="text-xs font-black uppercase tracking-wider text-primary">
+              <p className="text-sm font-black uppercase tracking-wider text-primary">
                 {t("hadith.wordFamily") || "Word family"}
               </p>
-              <p className="mt-2 text-sm font-bold text-foreground" lang="en">
+              <p className="mt-2 text-base font-bold text-foreground" lang="en">
                 {sidebars.wordFamily}
               </p>
             </aside>
@@ -560,10 +558,10 @@ export function CurriculumVocabularyTable({
 
           {sidebars.meaningContrast && (
             <aside className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs">
-              <p className="text-xs font-black uppercase tracking-wider text-primary">
+              <p className="text-sm font-black uppercase tracking-wider text-primary">
                 {t("hadith.synonymContrast") || "Meaning contrast"}
               </p>
-              <p className="mt-2 text-sm font-semibold text-muted-foreground" lang="en">
+              <p className="mt-2 text-base font-semibold text-muted-foreground" lang="en">
                 {sidebars.meaningContrast}
               </p>
             </aside>
@@ -571,10 +569,10 @@ export function CurriculumVocabularyTable({
 
           {sidebars.commonError && (
             <aside className="rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4 shadow-wp-xs">
-              <p className="text-xs font-black uppercase tracking-wider text-feedback-warning-foreground">
+              <p className="text-sm font-black uppercase tracking-wider text-feedback-warning-foreground">
                 {t("hadith.commonError") || "Common error"}
               </p>
-              <p className="mt-2 text-sm font-semibold text-foreground" lang="en">
+              <p className="mt-2 text-base font-semibold text-foreground" lang="en">
                 {sidebars.commonError}
               </p>
             </aside>
@@ -631,7 +629,7 @@ export function CurriculumVocabularyTable({
                 <div className="absolute bottom-4 start-6 end-6 flex items-end justify-between gap-3">
                   <div>
                     {activeModalItem.type && (
-                      <span className="inline-block rounded-md bg-primary/20 text-primary-foreground text-xs font-black uppercase tracking-wider px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/30">
+                      <span className="inline-block rounded-md bg-primary/20 text-primary-foreground text-sm font-black uppercase tracking-wider px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/30">
                         {activeModalItem.type}
                       </span>
                     )}
@@ -669,7 +667,7 @@ export function CurriculumVocabularyTable({
               {/* Meaning & Context Panel */}
               <div className="p-6 space-y-4 overflow-y-auto">
                 <div>
-                  <span className="text-xs font-black uppercase tracking-wider text-primary block mb-1">
+                  <span className="text-sm font-black uppercase tracking-wider text-primary block mb-1">
                     {t("vocabulary.definitionHeader") || "Definition"}
                   </span>
                   <p className="text-base font-medium leading-relaxed text-foreground">
@@ -679,7 +677,7 @@ export function CurriculumVocabularyTable({
                     <p
                       dir="rtl"
                       lang="ar"
-                      className="mt-1 text-sm font-semibold font-arabic leading-relaxed text-muted-foreground/80"
+                      className="mt-1 text-base font-semibold font-arabic leading-relaxed text-muted-foreground/80"
                     >
                       {activeModalItem.definitionAr}
                     </p>
@@ -687,11 +685,11 @@ export function CurriculumVocabularyTable({
                 </div>
 
                 <div className="rounded-2xl border border-border/80 bg-muted/40 p-4">
-                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">
+                  <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground block mb-1">
                     {t("vocabulary.exampleInContext") || "Example in Context"}
                   </span>
                   <p
-                    className="text-sm font-medium italic text-foreground leading-relaxed"
+                    className="text-base font-medium italic text-foreground leading-relaxed"
                     lang="en"
                   >
                     {activeModalItem.example}
@@ -700,7 +698,7 @@ export function CurriculumVocabularyTable({
                     <p
                       dir="rtl"
                       lang="ar"
-                      className="mt-1 text-xs font-arabic text-muted-foreground leading-relaxed"
+                      className="mt-1 text-sm font-arabic text-muted-foreground leading-relaxed"
                     >
                       {activeModalItem.exampleAr}
                     </p>

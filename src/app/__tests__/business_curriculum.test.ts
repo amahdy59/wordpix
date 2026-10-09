@@ -21,8 +21,27 @@ import {
 } from "../learning/business/businessProgress";
 import { hashToRoute, screenToHash } from "../router/useHashRouter";
 import { resolveAssetUrl } from "../../utils/assetUrl";
+import sourceCatalog from "../learning/business/businessCatalog.json";
 
 describe("Beyond Business English (B1–C2) Curriculum", () => {
+  it("keeps the build source and runtime lesson shards in sync", () => {
+    expect(BUSINESS_UNITS).toEqual(sourceCatalog.map((unit) => businessUnitSchema.parse(unit)));
+  });
+
+  it("keeps question identities unique and instructions outside the scored quiz", () => {
+    for (const unit of BUSINESS_UNITS) {
+      const ids = unit.exercises.map((question) => question.id);
+      expect(new Set(ids).size, unit.id).toBe(ids.length);
+      for (const question of unit.exercises) {
+        expect(question.question, unit.id).not.toMatch(/^Answer from memory\. 2\./);
+        expect(
+          question.options.map((option) => option.text),
+          unit.id
+        ).not.toContain("Correct interpretation based on context");
+      }
+    }
+  });
+
   it("contains exactly 40 units across 4 CEFR sections", () => {
     expect(BUSINESS_UNITS).toHaveLength(40);
     expect(getBusinessUnitsByCefr("B1")).toHaveLength(10);

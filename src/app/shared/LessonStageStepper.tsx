@@ -78,7 +78,7 @@ export function LessonStageStepper({
   return (
     <nav className={`w-full space-y-3 ${className}`} aria-label={ariaLabel}>
       <div className="flex flex-col gap-2 sm:hidden">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-base font-semibold">
           <span className="uppercase tracking-wider text-primary">
             {stepLabel(currentIndex + 1, stages.length)}
           </span>
@@ -101,18 +101,14 @@ export function LessonStageStepper({
       <ol
         role="tablist"
         aria-label={ariaLabel}
-        className="flex snap-x snap-mandatory gap-2 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-7 sm:overflow-visible sm:pb-0"
+        className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7"
       >
         {stages.map((stage, index) => {
           const Icon = stage.icon;
           const isCurrent = index === currentIndex;
           const isCompleted = stage.completed || index < currentIndex;
           return (
-            <li
-              key={stage.id}
-              role="presentation"
-              className="min-w-[8rem] shrink-0 snap-start sm:min-w-0"
-            >
+            <li key={stage.id} role="presentation" className="min-w-0">
               <button
                 id={`lesson-stage-${stage.id}`}
                 ref={isCurrent ? currentButtonRef : undefined}
@@ -125,7 +121,7 @@ export function LessonStageStepper({
                 tabIndex={isCurrent ? 0 : -1}
                 onClick={() => moveFocus(index)}
                 onKeyDown={(event) => handleKeyDown(event, index)}
-                className={`group relative flex min-h-11 w-full items-center justify-center gap-1.5 rounded-xl border-2 px-2 py-2 text-sm font-semibold transition-all ${focusRing} ${
+                className={`group relative flex min-h-11 w-full items-center justify-center gap-1.5 rounded-xl border-2 px-2 py-2 text-base font-semibold transition-all ${focusRing} ${
                   isCurrent
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-sm"
                     : isCompleted
@@ -134,7 +130,7 @@ export function LessonStageStepper({
                 }`}
               >
                 <span
-                  className={`flex size-6 shrink-0 items-center justify-center rounded-full text-[10px] font-black transition-colors ${
+                  className={`flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-black transition-colors ${
                     isCurrent
                       ? "bg-primary-foreground text-primary"
                       : isCompleted

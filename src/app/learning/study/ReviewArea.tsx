@@ -47,7 +47,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
   }
 
   return (
-    <div className="wp-container-reading wp-layout-gutter space-y-10 py-4 sm:py-6 md:py-8">
+    <div className="wp-container-content wp-layout-gutter space-y-10 py-4 sm:py-6 md:py-8">
       {/* Header */}
       <div>
         <div className="flex items-center gap-3.5 mb-2">
@@ -55,7 +55,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
             <Trophy className="size-6" aria-hidden />
           </span>
           <div className="min-w-0">
-            <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+            <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
               {t("study.reviewQueueConfidence")}
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
@@ -63,7 +63,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
             </h1>
           </div>
         </div>
-        <p className="text-xs sm:text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl leading-relaxed">
           {t("study.reviewDesc")}
         </p>
       </div>
@@ -82,7 +82,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
               <RotateCcw className="size-5 text-wp-amber" aria-hidden />
               <span>{t("study.dueForReview", { count: weakWords.length })}</span>
             </h3>
-            <p className="text-xs text-muted-foreground mt-1">{t("study.dueForReviewDesc")}</p>
+            <p className="text-sm text-muted-foreground mt-1">{t("study.dueForReviewDesc")}</p>
           </div>
 
           <ul className="space-y-3.5">
@@ -122,17 +122,17 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
                           </button>
                         </div>
                       ) : (
-                        <p className="font-bold text-sm sm:text-base text-foreground">
+                        <p className="font-bold text-base sm:text-base text-foreground">
                           {t("study.recallEnglishWord")}
                         </p>
                       )}
                       {revealed && word!.phonetic && (
-                        <p className="text-xs text-muted-foreground font-mono mt-0.5">
+                        <p className="text-sm text-muted-foreground font-mono mt-0.5">
                           {word!.phonetic}
                         </p>
                       )}
                       {revealed && word!.description && (
-                        <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1 mt-1">
+                        <p className="text-sm sm:text-base text-muted-foreground line-clamp-1 mt-1">
                           {word!.description}
                         </p>
                       )}
@@ -143,7 +143,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
                     {!revealed ? (
                       <button
                         onClick={() => toggleReveal(word!.id, true)}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-primary text-primary-foreground font-bold text-xs hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] shadow-2xs"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] shadow-2xs"
                       >
                         <Eye className="size-4" aria-hidden />
                         <span>{t("study.revealAnswer")}</span>
@@ -152,13 +152,13 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
                       <>
                         <button
                           onClick={() => toggleReveal(word!.id, false)}
-                          className="px-4 py-2.5 rounded-2xl border border-border text-foreground font-bold text-xs hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          className="px-4 py-2.5 rounded-2xl border border-border text-foreground font-bold text-sm hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                         >
                           {t("study.keepPracticing")}
                         </button>
                         <button
                           onClick={() => handleClearWord(word!.id)}
-                          className="px-5 py-2.5 rounded-2xl bg-primary/10 border border-primary/30 text-primary font-bold text-xs hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          className="px-5 py-2.5 rounded-2xl bg-primary/10 border border-primary/30 text-primary font-bold text-sm hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                         >
                           {t("study.rememberedIt")}
                         </button>
@@ -186,7 +186,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
               <span>{t("study.allCaughtUp")}</span>
               <Sparkles className="size-4 text-wp-amber" aria-hidden />
             </h3>
-            <p className="text-sm text-muted-foreground mt-1">{t("study.allCaughtUpDesc")}</p>
+            <p className="text-base text-muted-foreground mt-1">{t("study.allCaughtUpDesc")}</p>
           </div>
         </section>
       )}
@@ -198,13 +198,17 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
         <h2 id="transfer-task-heading" className="text-xl font-black text-foreground">
           {t("study.transferTaskHeading")}
         </h2>
-        <p className="mt-2 text-sm leading-relaxed text-foreground">{curriculumDesign.finalTask}</p>
-        <p className="mt-2 text-sm text-muted-foreground">{t("study.transferTaskInstructions")}</p>
+        <p className="mt-2 text-base leading-relaxed text-foreground">
+          {curriculumDesign.finalTask}
+        </p>
+        <p className="mt-2 text-base text-muted-foreground">
+          {t("study.transferTaskInstructions")}
+        </p>
         <div className="mt-4 grid gap-3">
           {curriculumDesign.canDo.map((goal, index) => (
             <label
               key={goal}
-              className="flex min-h-11 items-center gap-3 rounded-xl border border-border bg-card p-3 text-sm text-foreground"
+              className="flex min-h-11 items-center gap-3 rounded-xl border border-border bg-card p-3 text-base text-foreground"
             >
               <input
                 type="checkbox"
@@ -236,7 +240,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
         >
           {transferPractised ? t("study.transferTaskRecorded") : t("study.transferTaskDone")}
         </button>
-        <p className="mt-2 text-xs text-muted-foreground">{t("study.transferTaskNote")}</p>
+        <p className="mt-2 text-sm text-muted-foreground">{t("study.transferTaskNote")}</p>
       </section>
 
       {/* Self Assessment Section */}

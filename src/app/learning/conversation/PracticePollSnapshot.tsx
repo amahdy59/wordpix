@@ -55,7 +55,7 @@ export function PracticePollSnapshot({ unitNumber, options, selectedOptionId }: 
             <h3 id="practice-poll-title" className="font-black text-foreground">
               {t("conversation.practicePollTitle")}
             </h3>
-            <p className="mt-1 text-sm font-semibold leading-relaxed text-muted-foreground">
+            <p className="mt-1 text-base font-semibold leading-relaxed text-muted-foreground">
               {t("conversation.practicePollDisclosure")}
             </p>
           </div>
@@ -73,7 +73,7 @@ export function PracticePollSnapshot({ unitNumber, options, selectedOptionId }: 
                   isSelected ? "border-primary bg-primary/5 shadow-wp-xs" : "border-border bg-card"
                 }`}
               >
-                <div className="flex items-start justify-between gap-3 text-sm">
+                <div className="flex items-start justify-between gap-3 text-base">
                   <span className="font-bold leading-snug text-foreground">
                     <span className="me-2 text-primary">{result.id}</span>
                     {result.text}
@@ -97,7 +97,7 @@ export function PracticePollSnapshot({ unitNumber, options, selectedOptionId }: 
                   />
                 </div>
                 {isSelected && (
-                  <p className="mt-2 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+                  <p className="mt-2 inline-flex items-center gap-1.5 text-sm font-black text-primary">
                     <CircleUserRound className="size-4" aria-hidden />
                     {t("conversation.yourPosition")}
                   </p>
@@ -108,7 +108,7 @@ export function PracticePollSnapshot({ unitNumber, options, selectedOptionId }: 
         </ul>
 
         {selected && (
-          <p className="rounded-2xl border border-border bg-card p-3.5 text-sm font-semibold leading-relaxed text-foreground">
+          <p className="rounded-2xl border border-border bg-card p-3.5 text-base font-semibold leading-relaxed text-foreground">
             {t("conversation.practicePollReflection", { choice: selected.text })}
           </p>
         )}

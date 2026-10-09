@@ -189,14 +189,14 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
 
               <div className="flex flex-col items-center md:items-start gap-1">
                 <div className="flex items-center gap-2 mt-1">
-                  <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
+                  <span className="bg-secondary text-primary font-sans font-semibold text-sm px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                     <Flame className="size-3.5 text-wp-amber" />
                     {progress.streak > 0
                       ? t("profile.streakActive", { streak: progress.streak })
                       : t("profile.streakReady")}
                   </span>
                 </div>
-                <p className="text-xs text-muted-foreground font-medium mt-1">
+                <p className="text-sm text-muted-foreground font-medium mt-1">
                   {user
                     ? t("profile.signedInStatus", { defaultValue: "Signed in · Cloud sync active" })
                     : t("profile.guestStorageStatus", {
@@ -268,7 +268,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                     <p className="mt-0.5 font-sans text-xl font-black leading-none text-foreground">
                       {value}
                     </p>
-                    <p className="text-center font-sans text-xs font-bold leading-tight text-foreground">
+                    <p className="text-center font-sans text-sm font-bold leading-tight text-foreground">
                       {label}
                     </p>
                   </Surface>
@@ -301,7 +301,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
             <h2 id="skill-mastery-heading" className="font-sans text-lg font-bold text-foreground">
               {t("profile.skillMasteryTitle")}
             </h2>
-            <p className="mt-1 max-w-3xl font-sans text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-1 max-w-3xl font-sans text-base leading-relaxed text-muted-foreground">
               {t("profile.skillMasteryDescription")}
             </p>
           </div>
@@ -322,12 +322,14 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                       <Icon className="size-5" aria-hidden />
                     </span>
                     <div className="min-w-0">
-                      <h3 className="font-sans text-sm font-bold text-foreground">{meta.label}</h3>
+                      <h3 className="font-sans text-base font-bold text-foreground">
+                        {meta.label}
+                      </h3>
                     </div>
                   </div>
                   {summary.attempts > 0 ? (
                     <div className="space-y-2">
-                      <div className="flex items-baseline justify-between gap-3 text-sm">
+                      <div className="flex items-baseline justify-between gap-3 text-base">
                         <span className="font-semibold text-foreground">
                           {t("profile.skillEvidence", {
                             established: summary.establishedWords,
@@ -349,7 +351,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                       />
                     </div>
                   ) : (
-                    <p className="rounded-xl border border-border bg-secondary/40 p-3 font-sans text-xs font-semibold text-muted-foreground">
+                    <p className="rounded-xl border border-border bg-secondary/40 p-3 font-sans text-sm font-semibold text-muted-foreground">
                       {t("profile.skillNotPracticed")}
                     </p>
                   )}

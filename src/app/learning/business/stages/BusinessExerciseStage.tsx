@@ -34,15 +34,15 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
   };
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <HelpCircle className="size-4" aria-hidden />
           {t("business.exercises.stageTag")}
         </span>
         {savedScore !== undefined && (
-          <span className="text-xs font-bold text-muted-foreground">
+          <span className="text-sm font-bold text-muted-foreground">
             {t("business.exercises.bestScore", {
               score: savedScore,
               total: unit.exercises.length,
@@ -62,7 +62,7 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
             <button
               type="button"
               onClick={onNext}
-              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-md hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-md hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <span>{t("business.exercises.proceedToDiscussion")}</span>
               <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

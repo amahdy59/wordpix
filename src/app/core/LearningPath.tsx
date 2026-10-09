@@ -123,7 +123,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           >
             {t("learn.emptyRecommendedTitle")}
           </h1>
-          <p className="mx-auto mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-2 max-w-2xl text-base font-medium leading-relaxed text-muted-foreground">
             {t("learn.emptyRecommendedDesc")}
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -138,7 +138,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => dispatch({ type: "GO", to: "home" })}
-              className="flex min-h-[48px] items-center justify-center rounded-2xl px-6 py-3 text-sm font-bold text-primary underline underline-offset-4 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="flex min-h-[48px] items-center justify-center rounded-2xl px-6 py-3 text-base font-bold text-primary underline underline-offset-4 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {t("nav.home")}
             </button>
@@ -153,7 +153,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       <PageHeader
         variant="hero"
         eyebrow={
-          <span className="flex items-center gap-2 text-xs font-bold text-primary">
+          <span className="flex items-center gap-2 text-sm font-bold text-primary">
             <Route className="size-4" aria-hidden />
             <span>{t("learn.pathBadge")}</span>
           </span>
@@ -176,7 +176,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
       >
         <div>
-          <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
+          <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
             <Sparkles className="size-4" aria-hidden />
             <span>{t("learn.recommendedWorld")}</span>
           </div>
@@ -206,13 +206,13 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5"
       >
         <span>
-          <span className="block text-xs font-black uppercase tracking-wide text-primary">
+          <span className="block text-sm font-black uppercase tracking-wide text-primary">
             {t("learn.routeBadge")}
           </span>
           <span className="mt-1 block text-xl font-black text-foreground">
             {t("learn.routeToggle")}
           </span>
-          <span className="mt-1 block text-sm font-medium text-muted-foreground">
+          <span className="mt-1 block text-base font-medium text-muted-foreground">
             {t("learn.routeHint")}
           </span>
         </span>
@@ -225,7 +225,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       {showPictureWorldPath && (
         <div id="picture-world-path" className="contents">
           <div className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5">
-            <p className="text-xs font-black uppercase tracking-wide text-primary">
+            <p className="text-sm font-black uppercase tracking-wide text-primary">
               {t("learn.routeLabel")}
             </p>
             <h2 className="mt-1 text-xl font-black text-foreground">{t("learn.routeHeading")}</h2>
@@ -268,7 +268,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                       >
                         {stage.label}
                       </span>
-                      <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
+                      <span className="mt-0.5 block text-sm font-semibold text-muted-foreground">
                         {t("learn.phaseSummary", {
                           complete: completedCount,
                           total: units.length,
@@ -369,7 +369,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               <h3 className="mt-2 text-lg font-black text-foreground">
                 {t("pronunciation.curriculumTitle")}
               </h3>
-              <p className="mt-1 text-xs leading-5 text-muted-foreground">
+              <p className="mt-1 text-sm leading-5 text-muted-foreground">
                 {t("help.completed", {
                   completed: pronunciationMastered,
                   total: 68,
@@ -383,7 +383,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("pronunciation.viewCurriculum")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>
@@ -405,7 +405,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               <h3 className="mt-2 text-lg font-black text-foreground">
                 {t("hadith.curriculumTitle")}
               </h3>
-              <p className="mt-1 text-xs leading-5 text-muted-foreground">
+              <p className="mt-1 text-sm leading-5 text-muted-foreground">
                 {t("help.completed", {
                   completed: hadithMastered,
                   total: 42,
@@ -419,7 +419,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("hadith.viewCurriculum")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>
@@ -439,7 +439,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               </div>
 
               <h3 className="mt-2 text-lg font-black text-foreground">{t("conversation.title")}</h3>
-              <p className="mt-1 text-xs leading-5 text-muted-foreground">
+              <p className="mt-1 text-sm leading-5 text-muted-foreground">
                 {t("conversation.completedUnits", {
                   completed: conversationMastered,
                   total: 40,
@@ -453,7 +453,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("conversation.exploreUnits")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>
@@ -473,7 +473,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               </div>
 
               <h3 className="mt-2 text-lg font-black text-foreground">{t("business.title")}</h3>
-              <p className="mt-1 text-xs leading-5 text-muted-foreground">
+              <p className="mt-1 text-sm leading-5 text-muted-foreground">
                 {t("business.completedUnits", {
                   completed: businessMastered,
                   total: 40,
@@ -487,7 +487,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("business.exploreUnits")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>

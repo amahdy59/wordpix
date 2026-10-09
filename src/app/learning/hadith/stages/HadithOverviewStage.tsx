@@ -11,7 +11,7 @@ export function HadithOverviewSummary({ overview }: { overview: ParsedOverview }
   const { t } = useI18n();
   return (
     <div className="space-y-4">
-      <dl className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground">
+      <dl className="flex flex-wrap gap-x-6 gap-y-2 text-base text-foreground">
         <div className="flex items-baseline gap-2">
           <dt>{t("hadith.pilot.overview.timeLabel")}</dt>
           <dd className="font-bold">{t("hadith.minutes", { count: overview.estimatedMinutes })}</dd>
@@ -21,7 +21,7 @@ export function HadithOverviewSummary({ overview }: { overview: ParsedOverview }
           <dd className="font-bold">{overview.coreWordsCount}</dd>
         </div>
       </dl>
-      <ul className="list-disc space-y-2 ps-5 text-sm text-foreground" lang="en" dir="ltr">
+      <ul className="list-disc space-y-2 ps-5 text-base text-foreground" lang="en" dir="ltr">
         {overview.outcomes.map((outcome) => (
           <li key={outcome.id}>{outcome.description}</li>
         ))}
@@ -35,7 +35,11 @@ export function HadithOverviewStage({ overview }: Props) {
 
   return (
     <section className="wp-container-content space-y-6" aria-labelledby="stage-overview-heading">
-      <h2 id="stage-overview-heading" tabIndex={-1} className="text-2xl font-black text-foreground">
+      <h2
+        id="stage-overview-heading"
+        tabIndex={-1}
+        className="wp-type-stage-title font-black text-foreground"
+      >
         {overview.title}
       </h2>
       <HadithOverviewSummary overview={overview} />

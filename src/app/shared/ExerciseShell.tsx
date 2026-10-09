@@ -46,6 +46,8 @@ export const ExerciseShell = memo(function ExerciseShell({
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
   const Content = layout === "media" ? "section" : "main";
+  const canvasClass =
+    layout === "media" ? "wp-container-immersive wp-exercise-immersive" : "wp-container-content";
 
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
@@ -74,6 +76,7 @@ export const ExerciseShell = memo(function ExerciseShell({
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
       <div className="flex-1 flex flex-col h-dvh overflow-hidden relative">
         <LessonHeader
+          className={canvasClass}
           title={title}
           subtitle={subtitle}
           current={currentProgress}
@@ -85,14 +88,14 @@ export const ExerciseShell = memo(function ExerciseShell({
 
         {/* Adaptive activity stage: compact and top-anchored when space is abundant. */}
         <Content
-          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-8 xl:px-10 py-3 sm:py-5 lg:py-6 flex flex-col items-center min-h-0 w-full motion-safe:scroll-smooth"
+          className={`${canvasClass} wp-layout-gutter flex-1 overflow-y-auto overflow-x-hidden py-3 sm:py-5 lg:py-6 flex flex-col items-center min-h-0 w-full motion-safe:scroll-smooth`}
           aria-label={`${group.name}: ${title} exercise`}
         >
           <div
             className={
               layout === "media"
-                ? "wp-container-immersive flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
-                : "wp-container-content flex flex-col gap-3.5 sm:gap-5 justify-start pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:pb-8"
+                ? "w-full flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
+                : "w-full flex flex-col gap-3.5 sm:gap-5 justify-start pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:pb-8"
             }
           >
             {children}
@@ -100,7 +103,9 @@ export const ExerciseShell = memo(function ExerciseShell({
         </Content>
 
         {footer && (
-          <footer className="wp-container-wide shrink-0 flex flex-col border-t border-border/60 bg-background px-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 sm:px-6 sm:pb-6 lg:px-8 xl:px-10">
+          <footer
+            className={`${canvasClass} wp-layout-gutter shrink-0 flex flex-col border-t border-border bg-background pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3`}
+          >
             <div className="flex w-full flex-col gap-1.5">{footer}</div>
           </footer>
         )}

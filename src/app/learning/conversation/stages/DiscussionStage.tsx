@@ -22,10 +22,10 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
   );
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <MessageSquareText className="size-4" aria-hidden />
           {t("conversation.discussionStage")}
         </span>
@@ -48,10 +48,10 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
           >
             <div>
               <div className="flex items-center gap-2">
-                <span className="flex size-6 items-center justify-center rounded-md bg-primary/10 font-black text-xs text-primary">
+                <span className="flex size-6 items-center justify-center rounded-md bg-primary/10 font-black text-sm text-primary">
                   {item.id}
                 </span>
-                <h2 className="text-sm font-black uppercase tracking-wide text-primary">
+                <h2 className="wp-type-stage-title text-base font-black uppercase tracking-wide text-primary">
                   {item.title}
                 </h2>
               </div>
@@ -61,13 +61,13 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
                 showArabic={showArabic}
                 className="mt-3"
                 englishClassName="text-base font-semibold leading-relaxed text-foreground"
-                arabicClassName="text-sm font-medium leading-relaxed text-muted-foreground"
+                arabicClassName="text-base font-medium leading-relaxed text-muted-foreground"
               />
               <button
                 type="button"
                 onClick={() => setPracticePromptIndex(index)}
                 aria-pressed={practicePromptIndex === index}
-                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border px-3 text-sm font-black transition-colors active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border px-3 text-base font-black transition-colors motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   practicePromptIndex === index
                     ? "border-primary bg-primary text-primary-foreground"
                     : "border-border bg-background text-foreground hover:bg-muted"
@@ -92,7 +92,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
         maxDurationSeconds={90}
       />
 
-      <p className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-sm font-semibold text-foreground">
+      <p className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-base font-semibold text-foreground">
         {t("conversation.discussionSpeakingHelp")}
       </p>
 
@@ -101,7 +101,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
         <button
           type="button"
           onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
@@ -112,7 +112,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
           onClick={() => {
             onNext();
           }}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueChallenge")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

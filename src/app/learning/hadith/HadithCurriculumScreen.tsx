@@ -124,7 +124,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
         </CurriculumHeroHeader>
 
         <div>
-          <label htmlFor="hadith-search" className="text-sm font-bold text-foreground">
+          <label htmlFor="hadith-search" className="text-base font-bold text-foreground">
             {t("hadith.searchLabel")}
           </label>
           <div className="relative mt-2">
@@ -158,14 +158,14 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
               >
                 <div className="flex flex-wrap items-end justify-between gap-2">
                   <div>
-                    <p className="text-xs font-black uppercase tracking-[0.16em] text-primary">
+                    <p className="text-sm font-black uppercase tracking-[0.16em] text-primary">
                       {t("hadith.themeLabel")}
                     </p>
                     <h2 id={`hadith-theme-${theme.id}`} className="mt-1 text-xl font-black">
                       {t(theme.titleKey)}
                     </h2>
                   </div>
-                  <p className="text-sm font-bold text-muted-foreground">
+                  <p className="text-base font-bold text-muted-foreground">
                     {t("hadith.themeLessonCount", { count: theme.lessons.length })}
                   </p>
                 </div>

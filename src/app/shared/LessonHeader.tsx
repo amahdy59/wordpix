@@ -4,6 +4,7 @@ import { CloseButton } from "./CloseButton";
 import { ProgressBar } from "./ProgressBar";
 
 interface Props {
+  className?: string;
   title: string;
   /**
    * Optional one-line subtitle rendered between the title row and progress bar.
@@ -37,6 +38,7 @@ interface Props {
  * Contains back arrow, centred title, ✕ close, and a progress bar.
  */
 export const LessonHeader = memo(function LessonHeader({
+  className = "wp-container-content",
   title,
   subtitle,
   current,
@@ -58,7 +60,7 @@ export const LessonHeader = memo(function LessonHeader({
     // flags and which leaves a screen-reader user unable to jump to it.
     <header
       aria-label="Lesson"
-      className="content-stretch flex flex-col gap-2 px-3 py-2 sm:px-6 md:px-8 md:py-4 relative shrink-0 w-full"
+      className={`wp-layout-gutter flex flex-col gap-2 py-3 relative shrink-0 w-full ${className}`}
     >
       <div className="content-stretch flex items-center justify-between relative shrink-0 w-full gap-3">
         <div className="shrink-0">
@@ -74,7 +76,7 @@ export const LessonHeader = memo(function LessonHeader({
 
       {/* Optional subtitle row — group name + question/sentence counter */}
       {subtitle && (
-        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm font-sans font-semibold text-muted-foreground [&>span]:min-w-0 [&>span]:break-words">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-base font-sans font-semibold text-muted-foreground [&>span]:min-w-0 [&>span]:break-words">
           {subtitle}
         </div>
       )}

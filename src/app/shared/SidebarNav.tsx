@@ -73,7 +73,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
               >
                 <Icon className="size-5 shrink-0" aria-hidden />
 
-                <span className="font-sans font-semibold text-sm ms-3">{label}</span>
+                <span className="font-sans font-semibold text-base ms-3">{label}</span>
               </button>
             );
           })}
@@ -90,7 +90,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
           className="h-12 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
         >
           <Sliders className="size-5 shrink-0" />
-          <span className="font-sans font-semibold text-sm ms-3 group-hover:text-foreground transition-colors">
+          <span className="font-sans font-semibold text-base ms-3 group-hover:text-foreground transition-colors">
             {t("nav.settings")}
           </span>
         </button>

@@ -19,7 +19,7 @@ export function LanguageToggle({
       type="button"
       aria-pressed={showArabic}
       onClick={onToggle}
-      className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2 text-xs font-black text-foreground transition-colors hover:border-primary/50 hover:bg-primary/5 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2 text-sm font-black text-foreground transition-colors hover:border-primary/50 hover:bg-primary/5 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
     >
       <Globe2 className="size-4" aria-hidden />
       {showArabic ? hideLabel : showLabel}

@@ -143,7 +143,7 @@ export function BusinessStageStepper({
               disabled={isLocked}
               aria-current={isCurrent ? "step" : undefined}
               onClick={() => onSelectStage(idx)}
-              className={`flex min-h-[44px] items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+              className={`flex min-h-[44px] items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-bold whitespace-nowrap transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 isCurrent
                   ? "bg-primary text-primary-foreground shadow-wp-xs font-black"
                   : isDone
@@ -172,10 +172,10 @@ export function BusinessStageStepper({
         className="hidden lg:flex flex-col gap-2 w-64 shrink-0 rounded-3xl border border-border bg-card p-4 shadow-wp-xs sticky top-4 h-fit"
       >
         <div className="px-3 py-2">
-          <p className="text-xs font-black uppercase tracking-widest text-muted-foreground">
+          <p className="text-sm font-black uppercase tracking-widest text-muted-foreground">
             {t("business.stepperTitle")}
           </p>
-          <p className="text-sm font-black text-foreground mt-0.5">
+          <p className="text-base font-black text-foreground mt-0.5">
             {t("business.stepperSubtitle", { count: stagesToRender.length })}
           </p>
         </div>
@@ -195,7 +195,7 @@ export function BusinessStageStepper({
                 disabled={isLocked}
                 aria-current={isCurrent ? "step" : undefined}
                 onClick={() => onSelectStage(idx)}
-                className={`flex min-h-[44px] items-center justify-between gap-3 px-3.5 py-2.5 rounded-2xl text-start text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`flex min-h-[44px] items-center justify-between gap-3 px-3.5 py-2.5 rounded-2xl text-start text-base font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isCurrent
                     ? "bg-primary text-primary-foreground shadow-wp-xs font-black"
                     : isDone
@@ -207,7 +207,7 @@ export function BusinessStageStepper({
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <span
-                    className={`flex size-6 shrink-0 items-center justify-center rounded-lg text-xs font-black ${
+                    className={`flex size-6 shrink-0 items-center justify-center rounded-lg text-sm font-black ${
                       isCurrent
                         ? "bg-primary-foreground/20 text-primary-foreground"
                         : isDone

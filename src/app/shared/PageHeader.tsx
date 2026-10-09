@@ -60,7 +60,7 @@ export const PageHeader = memo(function PageHeader({
 
         <div className="min-w-0 flex-1">
           {eyebrow && (
-            <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
+            <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
               {eyebrow}
             </div>
           )}
@@ -73,7 +73,7 @@ export const PageHeader = memo(function PageHeader({
           </HeadingTag>
 
           {subtitle && (
-            <p className="mt-2 max-w-3xl text-sm sm:text-base font-medium leading-7 text-muted-foreground text-pretty">
+            <p className="mt-2 max-w-3xl text-base sm:text-base font-medium leading-7 text-muted-foreground text-pretty">
               {subtitle}
             </p>
           )}

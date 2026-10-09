@@ -76,12 +76,12 @@ export const VocabSidebar = memo(function VocabSidebar({
         <div className="flex items-center justify-between mb-3">
           <div>
             <h2 className="font-sans font-bold text-foreground text-base">{groupName}</h2>
-            <p className="font-sans text-muted-foreground text-xs mt-0.5">
+            <p className="font-sans text-muted-foreground text-sm mt-0.5">
               {t("lesson.wordsSelectListen", { count: filteredVocabulary.length })}
             </p>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-sans font-semibold text-xs px-2.5 py-1 rounded-full bg-secondary text-primary">
+            <span className="font-sans font-semibold text-sm px-2.5 py-1 rounded-full bg-secondary text-primary">
               {t("lesson.level1A1")}
             </span>
             {mobileOpen && (
@@ -104,7 +104,7 @@ export const VocabSidebar = memo(function VocabSidebar({
           <button
             type="button"
             onClick={() => setSelectedTopic("all")}
-            className={`px-3 min-h-[44px] rounded-lg text-xs font-sans font-semibold shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+            className={`px-3 min-h-[44px] rounded-lg text-sm font-sans font-semibold shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
               selectedTopic === "all"
                 ? "bg-primary text-primary-foreground shadow-xs"
                 : "bg-muted text-muted-foreground hover:text-foreground"
@@ -120,7 +120,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                 key={topic.id}
                 type="button"
                 onClick={() => setSelectedTopic(topic.id)}
-                className={`px-3 min-h-[44px] rounded-lg text-xs font-sans font-semibold shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`px-3 min-h-[44px] rounded-lg text-sm font-sans font-semibold shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isSelected
                     ? "bg-primary text-primary-foreground shadow-xs"
                     : "bg-muted text-muted-foreground hover:text-foreground"
@@ -204,7 +204,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                   </div>
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                     <span
-                      className="break-words font-sans text-muted-foreground text-sm font-medium"
+                      className="break-words font-sans text-muted-foreground text-base font-medium"
                       lang="en"
                       dir="ltr"
                     >
@@ -240,7 +240,7 @@ export const VocabSidebar = memo(function VocabSidebar({
         <button
           type="button"
           onClick={onPlayGame}
-          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-sm min-h-[48px]
+          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >

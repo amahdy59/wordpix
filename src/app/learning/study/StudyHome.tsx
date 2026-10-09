@@ -69,13 +69,13 @@ export function StudyHome({
   const getAreaNodes = (area: StudyArea) => nodes.filter((n) => n.area === area);
 
   return (
-    <div className="wp-container-reading wp-layout-gutter space-y-6 py-4 sm:space-y-8 sm:py-6 md:py-8">
+    <div className="wp-container-content wp-layout-gutter space-y-6 py-4 sm:space-y-8 sm:py-6 md:py-8">
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="flex items-center justify-between">
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })}
-          className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl py-2 px-3 -ms-2 min-h-[44px] hover:bg-secondary/70 transition-colors"
+          className="inline-flex items-center gap-2 text-base font-bold text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl py-2 px-3 -ms-2 min-h-[44px] hover:bg-secondary/70 transition-colors"
         >
           <ArrowLeft className="size-4" aria-hidden />
           <span>{t("study.backToUnit", { unit: unit.name })}</span>
@@ -85,7 +85,7 @@ export function StudyHome({
       {/* Unit Banner */}
       <div className="space-y-4">
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
+          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
             {t("study.unitStudyMaterials")}
           </span>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground mt-2 tracking-tight">
@@ -99,41 +99,41 @@ export function StudyHome({
             className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-primary/5 p-4 sm:p-6"
           >
             <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-primary px-3 py-1 text-xs font-black text-primary-foreground">
+              <span className="rounded-full bg-primary px-3 py-1 text-sm font-black text-primary-foreground">
                 {curriculumDesign.reviewStatus === "authored"
                   ? `CEFR ${curriculumDesign.cefr}`
                   : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
               </span>
               {curriculumDesign.reviewStatus === "authored" && (
-                <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-xs font-bold text-foreground">
+                <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-sm font-bold text-foreground">
                   GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
                 </span>
               )}
-              <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold capitalize text-muted-foreground">
+              <span className="rounded-full border border-border bg-card px-3 py-1 text-sm font-bold capitalize text-muted-foreground">
                 {t("study.pathwayType", { type: curriculumDesign.archetype })}
               </span>
             </div>
             {curriculumDesign.reviewStatus === "provisional" && (
-              <p className="mt-3 text-sm text-muted-foreground">{t("study.provisionalUnit")}</p>
+              <p className="mt-3 text-base text-muted-foreground">{t("study.provisionalUnit")}</p>
             )}
             <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
               {t("study.outcomeHeading")}
             </h2>
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-1 text-base leading-relaxed text-muted-foreground">
               {curriculumDesign.outcome}
             </p>
             <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label="Unit can-do goals">
               {curriculumDesign.canDo.map((goal) => (
                 <li
                   key={goal}
-                  className="flex items-start gap-2 text-sm leading-relaxed text-foreground"
+                  className="flex items-start gap-2 text-base leading-relaxed text-foreground"
                 >
                   <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
                   <span>{goal}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-4 border-t border-primary/20 pt-3 text-sm font-semibold text-foreground">
+            <p className="mt-4 border-t border-primary/20 pt-3 text-base font-semibold text-foreground">
               <span className="text-primary">{t("study.finalMissionLabel")} </span>
               {curriculumDesign.finalTask}
             </p>
@@ -168,10 +168,10 @@ export function StudyHome({
                   >
                     {unitVideo.title}
                   </h2>
-                  <p className="text-xs text-muted-foreground">{unitVideo.scenarioTitle}</p>
+                  <p className="text-sm text-muted-foreground">{unitVideo.scenarioTitle}</p>
                 </div>
               </div>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+              <span className="text-sm font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-full">
                 {t("study.videoContext") || "Video Context"}
               </span>
             </div>
@@ -189,7 +189,7 @@ export function StudyHome({
 
         {/* Progress Summary Card */}
         <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-border bg-card shadow-xs space-y-3 sm:space-y-4">
-          <div className="flex justify-between items-center text-sm font-bold">
+          <div className="flex justify-between items-center text-base font-bold">
             <span className="text-foreground">{t("study.activityProgress")}</span>
             <span className="text-primary font-mono text-base">{`${percent}%`}</span>
           </div>
@@ -207,7 +207,7 @@ export function StudyHome({
             />
           </div>
 
-          <div className="flex flex-wrap gap-4 text-xs font-medium text-muted-foreground pt-0.5">
+          <div className="flex flex-wrap gap-4 text-sm font-medium text-muted-foreground pt-0.5">
             <span className="inline-flex items-center gap-1.5 font-bold text-foreground">
               <CheckCircle2 className="size-4 text-wp-green" />
               {t("study.activitiesCompleted", {
@@ -231,7 +231,7 @@ export function StudyHome({
       {/* Continue Action */}
       <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-border/80 rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-5">
         <div className="text-center sm:text-start flex-1 min-w-0">
-          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-1">
+          <div className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-primary mb-1">
             <Sparkles className="size-3.5" aria-hidden />
             <span>{t("study.nextStep")}</span>
           </div>
@@ -247,10 +247,10 @@ export function StudyHome({
       {/* Structured Study Path */}
       <div className="space-y-6">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-sm font-bold text-muted-foreground tracking-wider uppercase">
+          <h2 className="text-base font-bold text-muted-foreground tracking-wider uppercase">
             {t("study.yourStudyPath")}
           </h2>
-          <span className="text-xs font-bold text-muted-foreground">
+          <span className="text-sm font-bold text-muted-foreground">
             {t("study.doneCount", {
               completed: completedCoreNodes.length,
               total: coreNodes.length,
@@ -284,7 +284,7 @@ export function StudyHome({
                       </h3>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1 rounded-full shrink-0">
+                  <span className="text-sm font-bold text-muted-foreground bg-secondary/80 px-3 py-1 rounded-full shrink-0">
                     {completedCount} / {areaNodes.length}
                   </span>
                 </div>
@@ -314,11 +314,11 @@ export function StudyHome({
                               )}
                             </span>
                             <div className="min-w-0">
-                              <span className="font-bold text-sm text-foreground block truncate">
+                              <span className="font-bold text-base text-foreground block truncate">
                                 {node.title}
                               </span>
                               {node.stage && (
-                                <span className="text-[11px] font-bold uppercase tracking-wide text-primary block mt-0.5">
+                                <span className="text-sm font-bold uppercase tracking-wide text-primary block mt-0.5">
                                   {getCurriculumStageLabel(node.stage)}
                                   {node.isCore === false ? " · Optional" : ""}
                                 </span>
@@ -326,7 +326,7 @@ export function StudyHome({
                             </div>
                           </div>
                           {node.estimatedMinutes && (
-                            <span className="text-xs text-muted-foreground shrink-0 ms-3 font-medium bg-secondary/50 px-2.5 py-1 rounded-md">
+                            <span className="text-sm text-muted-foreground shrink-0 ms-3 font-medium bg-secondary/50 px-2.5 py-1 rounded-md">
                               {t("study.minutesShort", { minutes: node.estimatedMinutes })}
                             </span>
                           )}
@@ -353,7 +353,7 @@ export function StudyHome({
               <LibraryBig className="size-6" aria-hidden />
             </span>
             <div className="min-w-0">
-              <span className="text-xs font-bold uppercase tracking-wider text-primary block">
+              <span className="text-sm font-bold uppercase tracking-wider text-primary block">
                 {t("study.languageToolkit")}
               </span>
               <h3 className="font-bold text-lg text-foreground mt-0.5 truncate">
@@ -361,7 +361,7 @@ export function StudyHome({
               </h3>
             </div>
           </div>
-          <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary px-4 py-2 rounded-full bg-primary/10 shrink-0 ms-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors min-h-[44px]">
+          <span className="inline-flex items-center gap-1.5 text-base font-bold text-primary px-4 py-2 rounded-full bg-primary/10 shrink-0 ms-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors min-h-[44px]">
             <span>{t("study.open")}</span>
             <ArrowRight className="size-4" aria-hidden />
           </span>

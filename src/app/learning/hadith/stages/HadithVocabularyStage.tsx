@@ -261,7 +261,7 @@ export function HadithVocabularyStage({
         <h2
           id="stage-vocabulary-heading"
           tabIndex={-1}
-          className="text-lg font-bold text-foreground outline-none sm:text-2xl"
+          className="wp-type-stage-title text-lg font-bold text-foreground outline-none"
         >
           {t("hadith.visualVocabularyTitle") || "Core expressions, pictures, and use"}
         </h2>
@@ -292,7 +292,7 @@ export function HadithVocabularyStage({
 
         {/* Desktop Table View */}
         <div className="mt-5 hidden overflow-x-auto rounded-2xl border border-border md:block">
-          <table className="w-full border-collapse text-sm">
+          <table className="w-full border-collapse text-base">
             <caption className="sr-only">{t("hadith.languageBankTableCaption")}</caption>
             <thead className="bg-muted/70">
               <tr>
@@ -380,7 +380,11 @@ export function HadithVocabularyStage({
                   className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
                 />
               </div>
-              <p className="min-w-0 text-base leading-relaxed text-foreground" lang="en" dir="ltr">
+              <p
+                className="wp-prose min-w-0 text-base leading-relaxed text-foreground"
+                lang="en"
+                dir="ltr"
+              >
                 {item.explanation}
               </p>
             </div>

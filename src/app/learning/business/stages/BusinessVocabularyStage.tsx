@@ -69,11 +69,11 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
     <div className="wp-container-content flex flex-col gap-3 sm:gap-6 py-2">
       {/* Stage Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <BookOpen className="size-4" aria-hidden />
           {t("business.vocabStage.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {t("business.vocabStage.targetTermsCount", { count: unit.languageBank.length })}
         </span>
       </div>
@@ -84,7 +84,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
         aria-labelledby="vocab-stage-heading"
       >
         <div>
-          <h2 id="vocab-stage-heading" className="text-xl sm:text-2xl font-black text-foreground">
+          <h2 id="vocab-stage-heading" className="wp-type-stage-title font-black text-foreground">
             {t("business.vocabStage.heading")}
           </h2>
         </div>
@@ -103,7 +103,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t("business.vocabularySearchPlaceholder")}
               aria-label={t("business.vocabStage.searchAria")}
-              className="w-full min-h-[44px] rounded-xl border border-border bg-background ps-9 pe-4 text-xs sm:text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary transition-all"
+              className="w-full min-h-[44px] rounded-xl border border-border bg-background ps-9 pe-4 text-sm sm:text-base font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary transition-all"
             />
           </div>
 
@@ -117,7 +117,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
               type="button"
               onClick={() => setSelectedType("all")}
               aria-pressed={selectedType === "all"}
-              className={`inline-flex min-h-[44px] items-center px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all border focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+              className={`inline-flex min-h-[44px] items-center px-3.5 py-1.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all border focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
                 selectedType === "all"
                   ? "bg-primary text-primary-foreground border-primary shadow-wp-xs"
                   : "bg-muted/30 text-muted-foreground border-border hover:bg-muted/60 hover:text-foreground"
@@ -134,7 +134,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
                   type="button"
                   onClick={() => setSelectedType(type)}
                   aria-pressed={isSelected}
-                  className={`inline-flex min-h-[44px] items-center px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all border focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+                  className={`inline-flex min-h-[44px] items-center px-3.5 py-1.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all border focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
                     isSelected
                       ? "bg-primary text-primary-foreground border-primary shadow-wp-xs"
                       : "bg-muted/30 text-muted-foreground border-border hover:bg-muted/60 hover:text-foreground"
@@ -151,7 +151,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
       {/* Results count for filtered view */}
       {(searchQuery || selectedType !== "all") && (
         <p
-          className="text-xs font-bold text-muted-foreground"
+          className="text-sm font-bold text-muted-foreground"
           aria-live="polite"
           aria-atomic="true"
         >
@@ -164,7 +164,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
 
       {/* Unified Vocabulary Table */}
       {filteredItems.length === 0 ? (
-        <div className="rounded-3xl border border-border bg-card p-12 text-center text-sm font-medium text-muted-foreground shadow-wp-xs">
+        <div className="rounded-3xl border border-border bg-card p-12 text-center text-base font-medium text-muted-foreground shadow-wp-xs">
           {t("business.vocabStage.emptyFilter")}
         </div>
       ) : (
@@ -179,7 +179,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
 
       {/* Completion & Next Action */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-        <p className="text-xs text-muted-foreground font-medium flex items-center gap-1.5">
+        <p className="text-sm text-muted-foreground font-medium flex items-center gap-1.5">
           <CheckCircle className="size-4 text-primary" aria-hidden />
           <span>
             {t("business.vocabStage.catalogedFooter", { count: unit.languageBank.length })}
@@ -189,7 +189,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto"
         >
           <span>{t("business.vocabStage.continueToUsage")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

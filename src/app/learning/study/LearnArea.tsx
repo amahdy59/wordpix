@@ -90,17 +90,17 @@ export function LearnArea({
     return <p className="p-8 text-center text-muted-foreground">{t("study.noVocabFound")}</p>;
 
   return (
-    <div className="wp-container-wide wp-layout-gutter flex flex-col gap-5 py-4 md:py-6">
+    <div className="wp-container-content wp-layout-gutter flex flex-col gap-5 py-4 md:py-6">
       <header className="flex flex-col sm:flex-row sm:items-end gap-3 justify-between">
         <div>
-          <p className="text-xs font-bold uppercase tracking-wider text-primary flex items-center gap-2">
+          <p className="text-sm font-bold uppercase tracking-wider text-primary flex items-center gap-2">
             <BookOpen className="size-4" aria-hidden />
             {t("study.learnWholeSet")}
           </p>
           <h1 className="text-2xl font-black text-foreground mt-1">{node.title}</h1>
-          <p className="text-sm text-muted-foreground mt-1">{t("study.learnWholeSetDesc")}</p>
+          <p className="text-base text-muted-foreground mt-1">{t("study.learnWholeSetDesc")}</p>
         </div>
-        <p className="shrink-0 text-sm font-semibold text-foreground">
+        <p className="shrink-0 text-base font-semibold text-foreground">
           {t("study.progressCount", { studied: studiedCount, total: words.length })}
         </p>
       </header>
@@ -119,10 +119,10 @@ export function LearnArea({
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={t("study.searchWords")}
-            className="min-h-11 w-full rounded-xl border border-border bg-background pe-3 ps-10 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="min-h-11 w-full rounded-xl border border-border bg-background pe-3 ps-10 text-base text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           />
         </label>
-        <div className="grid grid-cols-[auto_1fr] items-center gap-2 text-sm font-semibold text-foreground">
+        <div className="grid grid-cols-[auto_1fr] items-center gap-2 text-base font-semibold text-foreground">
           <span aria-hidden="true">{t("study.show")}</span>
           <Select
             value={filter}
@@ -135,7 +135,7 @@ export function LearnArea({
               { value: "review", label: t("study.statusReviewAgain") },
             ]}
             ariaLabel={t("study.showByStatus")}
-            className="rounded-xl border border-border bg-background text-sm text-foreground focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary"
+            className="rounded-xl border border-border bg-background text-base text-foreground focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary"
           />
         </div>
       </section>
@@ -147,13 +147,13 @@ export function LearnArea({
           role="alert"
           className="rounded-2xl border border-border bg-wp-card p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4"
         >
-          <p className="font-sans text-sm text-muted-foreground flex-1">
+          <p className="font-sans text-base text-muted-foreground flex-1">
             {t("vocabularyPreload.loadErrorDesc")}
           </p>
           <button
             type="button"
             onClick={retryLexicon}
-            className="min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {t("action.tryAgain")}
           </button>
@@ -199,7 +199,7 @@ export function LearnArea({
                 <div className="flex items-start gap-3">
                   <div className="min-w-0 flex-1">
                     <h2 className="text-xl font-black text-foreground break-words">{word.label}</h2>
-                    <p className="text-sm font-mono text-muted-foreground">
+                    <p className="text-base font-mono text-muted-foreground">
                       {entry?.phonetic || word.phonetic}
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export function LearnArea({
                     {arabic}
                   </p>
                 )}
-                <p className="text-sm leading-relaxed text-muted-foreground flex-1">
+                <p className="text-base leading-relaxed text-muted-foreground flex-1">
                   {word.description ||
                     entry?.sentences?.[0]?.en ||
                     "Explore examples and word partners in details."}
@@ -250,7 +250,7 @@ export function LearnArea({
                 >
                   {t(hasExamples ? "study.viewExamples" : "study.viewDetails")}
                 </button>
-                <div className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-sm font-semibold text-foreground">
+                <div className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-base font-semibold text-foreground">
                   <span aria-hidden="true">{t("study.status")}</span>
                   <Select
                     value={status}
@@ -292,7 +292,7 @@ export function LearnArea({
         </div>
       )}
       <footer className="border border-border bg-background rounded-2xl p-3 flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
-        <p className="text-sm text-muted-foreground">{t("study.autoSaveNote")}</p>
+        <p className="text-base text-muted-foreground">{t("study.autoSaveNote")}</p>
         <button
           type="button"
           onClick={finish}

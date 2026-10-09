@@ -308,7 +308,7 @@ export function StudyShell({
           <div className="min-w-0 flex-1">
             <nav
               aria-label="Breadcrumb"
-              className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground flex-wrap"
+              className="flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-muted-foreground flex-wrap"
             >
               <span className="truncate max-w-[120px] sm:max-w-none">{unit.name}</span>
               {currentArea !== "home" && (
@@ -320,7 +320,7 @@ export function StudyShell({
                 </>
               )}
             </nav>
-            <div className="text-sm sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight line-clamp-2 break-words">
+            <div className="text-base sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight line-clamp-2 break-words">
               {currentArea === "home"
                 ? `${unit.name} Overview`
                 : (activeNode?.title ?? areaMeta[currentArea].label)}
@@ -340,7 +340,7 @@ export function StudyShell({
                 ? "Immersion Mode active (Arabic hidden)"
                 : "Bilingual Mode active (Arabic visible)"
             }
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-bold transition-colors min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+            className={`flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl border text-sm font-bold transition-colors min-h-11 min-w-11 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
               immersionMode
                 ? "bg-wp-teal/10 text-wp-teal border-wp-teal/30"
                 : "bg-secondary text-muted-foreground hover:text-foreground border-border"
@@ -352,7 +352,7 @@ export function StudyShell({
 
           {/* Progress Pill on Header */}
           <div
-            className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/80 border border-border/80 text-xs font-bold"
+            className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/80 border border-border/80 text-sm font-bold"
             role="status"
             aria-label={`Unit mastery progress: ${overallProgress}%`}
           >
@@ -366,7 +366,7 @@ export function StudyShell({
           <div className="hidden xl:flex items-center gap-1 bg-secondary/40 p-1 rounded-xl border border-border/60">
             <button
               onClick={handleBackToHome}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors min-h-[44px] ${
+              className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors min-h-[44px] ${
                 currentArea === "home"
                   ? "bg-primary text-primary-foreground shadow-xs"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
@@ -380,7 +380,7 @@ export function StudyShell({
                 <button
                   key={area}
                   onClick={() => handleAreaSelect(area)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors min-h-[44px] ${
+                  className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors min-h-[44px] ${
                     isActive
                       ? "bg-primary text-primary-foreground shadow-xs"
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
@@ -396,7 +396,7 @@ export function StudyShell({
           <button
             ref={contentsBtnRef}
             onClick={() => setIsMobileDrawerOpen(true)}
-            className="lg:hidden flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground text-xs font-bold border border-border hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="lg:hidden flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground text-sm font-bold border border-border hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
             aria-label="Open unit activities menu"
           >
             <Menu className="size-4" aria-hidden />
@@ -432,7 +432,7 @@ export function StudyShell({
             <div className="flex-1 min-w-0">
               <button
                 onClick={handleBackToHome}
-                className={`flex min-h-[44px] w-full items-center gap-2.5 rounded-xl px-3 py-2 text-start text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                className={`flex min-h-[44px] w-full items-center gap-2.5 rounded-xl px-3 py-2 text-start text-base font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                   currentArea === "home"
                     ? "bg-primary/10 text-primary border border-primary/30"
                     : "text-muted-foreground hover:text-foreground hover:bg-secondary"
@@ -443,7 +443,7 @@ export function StudyShell({
               </button>
 
               <div className="mt-3.5 pt-3 border-t border-border/60">
-                <div className="mb-1.5 flex items-center justify-between text-xs font-bold">
+                <div className="mb-1.5 flex items-center justify-between text-sm font-bold">
                   <span className="text-muted-foreground">{t("study.courseCompletion")}</span>
                   <span className="text-primary font-bold">{overallProgress}%</span>
                 </div>
@@ -507,11 +507,11 @@ export function StudyShell({
                       </span>
                       <span className="min-w-0 flex-1">
                         <span className="flex items-center justify-between gap-2">
-                          <span className="font-bold text-sm text-foreground">
+                          <span className="font-bold text-base text-foreground">
                             {t(`help.studyAreas.${area}`)}
                           </span>
                           {area !== "reference" && (
-                            <span className="text-xs font-bold text-muted-foreground">
+                            <span className="text-sm font-bold text-muted-foreground">
                               {progressValue}%
                             </span>
                           )}
@@ -552,7 +552,7 @@ export function StudyShell({
                           key={node.id}
                           onClick={() => handleNodeSelect(node.id)}
                           aria-current={isActive ? "page" : undefined}
-                          className={`flex min-h-[48px] w-full items-center gap-3 rounded-xl px-3 py-2 text-start text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                          className={`flex min-h-[48px] w-full items-center gap-3 rounded-xl px-3 py-2 text-start text-base font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                             isActive
                               ? "bg-primary text-primary-foreground font-bold shadow-xs"
                               : "text-foreground/80 hover:bg-secondary hover:text-foreground"
@@ -587,7 +587,7 @@ export function StudyShell({
                             </span>
                             {node.estimatedMinutes && (
                               <span
-                                className={`block text-xs ${
+                                className={`block text-sm ${
                                   isActive ? "text-primary-foreground/80" : "text-muted-foreground"
                                 }`}
                               >
@@ -680,7 +680,7 @@ export function StudyShell({
         <button
           type="button"
           onClick={handleBackToHome}
-          className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-[11px] font-bold transition-all min-h-[44px] min-w-[44px] ${
+          className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
             currentArea === "home"
               ? "text-primary bg-primary/10 shadow-2xs font-extrabold"
               : "text-muted-foreground hover:text-foreground"
@@ -698,7 +698,7 @@ export function StudyShell({
               key={area}
               type="button"
               onClick={() => handleAreaSelect(area)}
-              className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-[11px] font-bold transition-all min-h-[44px] min-w-[44px] ${
+              className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
                 isActive
                   ? "text-primary bg-primary/10 shadow-2xs font-extrabold"
                   : "text-muted-foreground hover:text-foreground"

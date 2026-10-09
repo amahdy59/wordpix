@@ -172,14 +172,14 @@ export function BusinessSpeakingStage({
   };
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <Mic className="size-4" aria-hidden />
           {t("business.speaking.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {t("business.speaking.simulationTag", { level: unit.level })}
         </span>
       </div>
@@ -189,12 +189,12 @@ export function BusinessSpeakingStage({
         className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="speaking-task-title"
       >
-        <p className="text-xs font-black uppercase tracking-widest text-primary">
+        <p className="text-sm font-black uppercase tracking-widest text-primary">
           {t("business.speaking.RolePlayBrief")}
         </p>
         <h2
           id="speaking-task-title"
-          className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
+          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"
         >
           {unit.speakingTask.title}
         </h2>
@@ -203,10 +203,10 @@ export function BusinessSpeakingStage({
         <div className="mt-4 flex items-start gap-3 rounded-2xl bg-secondary border border-border p-4 text-foreground">
           <ShieldAlert className="size-5 shrink-0 mt-0.5 text-primary" aria-hidden />
           <div>
-            <span className="text-xs font-black uppercase tracking-wide block mb-0.5 text-primary">
+            <span className="text-sm font-black uppercase tracking-wide block mb-0.5 text-primary">
               {t("business.speaking.keySpeakingPrinciple")}
             </span>
-            <p className="text-sm sm:text-base font-semibold italic">
+            <p className="text-base sm:text-base font-semibold italic">
               {`“${unit.speakingTask.rule}”`}
             </p>
           </div>
@@ -221,7 +221,10 @@ export function BusinessSpeakingStage({
         >
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="size-5 text-primary" aria-hidden />
-            <h2 id="practice-steps-heading" className="text-lg font-black text-foreground">
+            <h2
+              id="practice-steps-heading"
+              className="wp-type-stage-title text-lg font-black text-foreground"
+            >
               {t("business.speaking.stepsHeading")}
             </h2>
           </div>
@@ -230,9 +233,9 @@ export function BusinessSpeakingStage({
             {unit.speakingTask.steps.map((step, idx) => (
               <li
                 key={idx}
-                className="flex items-start gap-3 rounded-xl bg-muted/30 border border-border/80 p-3.5 text-sm sm:text-base font-medium text-foreground"
+                className="flex items-start gap-3 rounded-xl bg-muted/30 border border-border/80 p-3.5 text-base sm:text-base font-medium text-foreground"
               >
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary">
                   {idx + 1}
                 </span>
                 <span className="pt-0.5 leading-relaxed">{step}</span>
@@ -250,20 +253,23 @@ export function BusinessSpeakingStage({
         <div className="flex items-center justify-between gap-4 mb-3">
           <div className="flex items-center gap-2">
             <Mic className="size-5 text-primary" aria-hidden />
-            <h2 id="recording-studio-heading" className="text-lg font-black text-foreground">
+            <h2
+              id="recording-studio-heading"
+              className="wp-type-stage-title text-lg font-black text-foreground"
+            >
               {t("business.speaking.VoicePractice")}
             </h2>
           </div>
-          <span className="text-xs font-bold text-muted-foreground uppercase">
+          <span className="text-sm font-bold text-muted-foreground uppercase">
             {t("business.speaking.audioSandbox")}
           </span>
         </div>
-        <p className="text-sm text-muted-foreground font-medium mb-6">
+        <p className="text-base text-muted-foreground font-medium mb-6">
           {t("business.speaking.sandboxInstructions")}
         </p>
 
         {micError && (
-          <div className="mb-5 flex items-start gap-2.5 rounded-2xl bg-destructive/10 border border-destructive/20 p-4 text-sm text-destructive font-medium">
+          <div className="mb-5 flex items-start gap-2.5 rounded-2xl bg-destructive/10 border border-destructive/20 p-4 text-base text-destructive font-medium">
             <AlertCircle className="size-5 shrink-0 mt-0.5" aria-hidden />
             <div>
               <span className="font-bold block">{t("business.speaking.micNoticeTitle")}</span>
@@ -300,7 +306,7 @@ export function BusinessSpeakingStage({
                   <span className="inline-block size-2 rounded-full bg-destructive animate-ping" />
                 )}
               </div>
-              <p className="text-xs font-bold text-muted-foreground">
+              <p className="text-sm font-bold text-muted-foreground">
                 {t("business.speaking.durationLabel", { duration: formatTime(recordSeconds) })}
               </p>
             </div>
@@ -312,7 +318,7 @@ export function BusinessSpeakingStage({
               <button
                 type="button"
                 onClick={startRecording}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
               >
                 <Mic className="size-4" aria-hidden />
                 <span>{t("business.speaking.startRecording")}</span>
@@ -323,7 +329,7 @@ export function BusinessSpeakingStage({
               <button
                 type="button"
                 onClick={stopRecording}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-destructive px-5 py-2.5 font-bold text-destructive-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-destructive"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-destructive px-5 py-2.5 font-bold text-destructive-foreground shadow-wp-xs hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-destructive"
               >
                 <StopIcon className="size-4" aria-hidden />
                 <span>{t("business.speaking.finishAndListen")}</span>
@@ -335,7 +341,7 @@ export function BusinessSpeakingStage({
                 <button
                   type="button"
                   onClick={handleTogglePlayback}
-                  className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                 >
                   {isPlaying ? (
                     <>
@@ -353,7 +359,7 @@ export function BusinessSpeakingStage({
                 <button
                   type="button"
                   onClick={resetRecording}
-                  className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border px-3.5 py-2 text-xs font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                  className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border px-3.5 py-2 text-sm font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                   title="Re-record response"
                 >
                   <RotateCcw className="size-3.5" aria-hidden />
@@ -380,17 +386,20 @@ export function BusinessSpeakingStage({
         aria-labelledby="checklist-heading"
       >
         <div className="flex items-center justify-between gap-4 mb-2">
-          <h2 id="checklist-heading" className="text-lg font-black text-foreground">
+          <h2
+            id="checklist-heading"
+            className="wp-type-stage-title text-lg font-black text-foreground"
+          >
             {t("business.speaking.SelfEvaluationChecklist")}
           </h2>
-          <span className="text-xs font-bold text-accent">
+          <span className="text-sm font-bold text-accent">
             {t("business.speaking.checklistCompletedCount", {
               completed: checkedItems.size,
               total: unit.speakingTask.checklist.length,
             })}
           </span>
         </div>
-        <p className="text-sm text-muted-foreground font-medium mb-5">
+        <p className="text-base text-muted-foreground font-medium mb-5">
           {t("business.speaking.checklistInstructions")}
         </p>
 
@@ -415,7 +424,7 @@ export function BusinessSpeakingStage({
                 ) : (
                   <Square className="size-5 shrink-0 mt-0.5 text-muted-foreground" aria-hidden />
                 )}
-                <span className="text-sm sm:text-base font-semibold leading-relaxed">{item}</span>
+                <span className="text-base sm:text-base font-semibold leading-relaxed">{item}</span>
               </button>
             );
           })}
@@ -427,7 +436,7 @@ export function BusinessSpeakingStage({
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("business.speaking.continueToReview")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

@@ -61,13 +61,13 @@ export function ReferenceArea({ materials }: Props) {
             <LibraryBig aria-hidden size={24} />
           </span>
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-primary">
               {t("study.languageToolkit")}
             </p>
             <h2 className="mt-1 text-2xl font-black tracking-tight md:text-3xl">
               {t("study.referenceTitle")}
             </h2>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground md:text-base">
+            <p className="mt-2 max-w-2xl text-base leading-6 text-muted-foreground md:text-base">
               {t("study.referenceDesc")}
             </p>
           </div>

@@ -74,7 +74,7 @@ export function PronunciationLessonCard({
           ) : (
             /* Typographic / Phonetic Accent Fallback */
             <div className="flex size-full flex-col items-center justify-center bg-primary/10 p-1 text-center text-primary">
-              <span className="font-mono text-xs font-black tracking-tight" dir="ltr">
+              <span className="font-mono text-sm font-black tracking-tight" dir="ltr">
                 {fallbackSymbols || `/L${lesson.number}/`}
               </span>
             </div>
@@ -82,7 +82,7 @@ export function PronunciationLessonCard({
 
           {/* Floating Lesson Number / Mastered Badge */}
           <span
-            className={`absolute start-1 top-1 flex size-6 items-center justify-center rounded-md text-xs font-black shadow-wp-xs backdrop-blur-sm ${
+            className={`absolute start-1 top-1 flex size-6 items-center justify-center rounded-md text-sm font-black shadow-wp-xs backdrop-blur-sm ${
               mastered
                 ? "bg-wp-green text-wp-text-on-green"
                 : "border border-border/50 bg-card/90 text-foreground"
@@ -96,7 +96,7 @@ export function PronunciationLessonCard({
         <div className="flex w-full min-w-0 flex-1 flex-col justify-center gap-1">
           <div className="flex flex-wrap items-center gap-1.5">
             <span
-              className="min-w-0 break-words text-sm font-black text-foreground sm:text-base leading-snug"
+              className="min-w-0 break-words text-base font-black text-foreground sm:text-base leading-snug"
               lang="en"
               dir="ltr"
             >
@@ -104,7 +104,7 @@ export function PronunciationLessonCard({
             </span>
             {phoneticBadge && (
               <span
-                className="max-w-full break-words rounded-md bg-primary/10 px-1.5 py-0.5 font-mono text-xs font-bold text-primary"
+                className="max-w-full break-words rounded-md bg-primary/10 px-1.5 py-0.5 font-mono text-sm font-bold text-primary"
                 dir="ltr"
               >
                 {phoneticBadge}
@@ -115,7 +115,7 @@ export function PronunciationLessonCard({
           {/* Minimal Pair Words or Contrast Tags */}
           {primaryWords.length >= 2 && (
             <div
-              className="flex flex-wrap items-center gap-1 text-xs font-semibold text-muted-foreground"
+              className="flex flex-wrap items-center gap-1 text-sm font-semibold text-muted-foreground"
               dir="ltr"
             >
               <span className="max-w-full break-words rounded bg-muted/70 px-1.5 py-0.5 text-foreground">
@@ -131,7 +131,7 @@ export function PronunciationLessonCard({
           )}
 
           {/* Status & Review indicator */}
-          <div className="mt-0.5 flex min-w-0 items-center gap-1.5 text-xs font-bold text-primary [&>span]:min-w-0 [&>span]:break-words">
+          <div className="mt-0.5 flex min-w-0 items-center gap-1.5 text-sm font-bold text-primary [&>span]:min-w-0 [&>span]:break-words">
             <Volume2 className="size-3.5 shrink-0" aria-hidden />
             {isDue ? (
               <>

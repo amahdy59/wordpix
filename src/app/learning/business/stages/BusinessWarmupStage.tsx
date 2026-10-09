@@ -34,14 +34,14 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
   const allAnswered = prompts.length > 0 && answeredCount === prompts.length;
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <MessageSquare className="size-4" aria-hidden />
           {t("business.warmup.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {`${unit.level} · ${unit.sectionTitle}`}
         </span>
       </div>
@@ -67,17 +67,17 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
           </div>
         )}
         <div className="p-6 sm:p-8">
-          <p className="text-xs font-black uppercase tracking-widest text-primary">
+          <p className="text-sm font-black uppercase tracking-widest text-primary">
             {t("business.warmup.essentialQuestion")}
           </p>
           <h2
             id="big-question-heading"
-            className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black text-foreground tracking-tight leading-snug"
+            className="wp-type-stage-title mt-3 lg:text-4xl font-black text-foreground tracking-tight leading-snug"
           >
             {`“${unit.essentialQuestion}”`}
           </h2>
           {unit.speakingGoal && (
-            <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-primary/10 p-3.5 text-sm font-semibold text-primary">
+            <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-primary/10 p-3.5 text-base font-semibold text-primary">
               <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
               <div>
                 <span className="font-black uppercase tracking-wide me-1.5">
@@ -101,18 +101,18 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
               <HelpCircle className="size-5 text-primary" aria-hidden />
               <h2
                 id="reflection-prompts-title"
-                className="text-lg sm:text-xl font-black text-foreground"
+                className="wp-type-stage-title text-lg font-black text-foreground"
               >
                 {t("business.warmup.reflectHeading")}
               </h2>
             </div>
-            <p className="mt-1 text-sm text-muted-foreground font-medium">
+            <p className="mt-1 text-base text-muted-foreground font-medium">
               {t("business.warmup.instructionsFallback")}
             </p>
           </div>
 
           <span
-            className={`self-start sm:self-auto shrink-0 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-black transition-colors ${
+            className={`self-start sm:self-auto shrink-0 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-black transition-colors ${
               allAnswered
                 ? "bg-accent/15 text-accent border border-accent/30"
                 : "bg-muted text-muted-foreground"
@@ -142,7 +142,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
               >
                 {/* Question Prompt */}
                 <div className="flex items-start gap-3">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary mt-0.5">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-sm text-primary mt-0.5">
                     {idx + 1}
                   </span>
                   <h3 className="text-base sm:text-lg font-bold text-foreground leading-snug">
@@ -186,7 +186,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                         >
                           {/* Option Prefix Badge: A, B, C */}
                           <span
-                            className={`flex size-7 shrink-0 items-center justify-center rounded-xl font-black text-xs transition-colors ${
+                            className={`flex size-7 shrink-0 items-center justify-center rounded-xl font-black text-sm transition-colors ${
                               isOptionSelected
                                 ? isOptionRecommended
                                   ? "bg-accent text-accent-foreground shadow-wp-xs"
@@ -203,7 +203,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
 
                           {/* Option Content */}
                           <div className="flex-1 min-w-0">
-                            <span className="text-sm sm:text-base font-semibold text-foreground leading-relaxed block">
+                            <span className="text-base sm:text-base font-semibold text-foreground leading-relaxed block">
                               {option.text}
                             </span>
 
@@ -211,12 +211,12 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                             {isOptionSelected && (
                               <div className="mt-1.5 flex items-center gap-1.5">
                                 {isOptionRecommended ? (
-                                  <span className="inline-flex items-center gap-1 rounded-md bg-accent/20 px-2 py-0.5 text-[11px] font-black text-accent uppercase tracking-wider">
+                                  <span className="inline-flex items-center gap-1 rounded-md bg-accent/20 px-2 py-0.5 text-sm font-black text-accent uppercase tracking-wider">
                                     <CheckCircle2 className="size-3" aria-hidden />
                                     {t("business.warmup.recommendedBadge")}
                                   </span>
                                 ) : (
-                                  <span className="inline-flex items-center gap-1 rounded-md bg-primary/20 px-2 py-0.5 text-[11px] font-black text-primary uppercase tracking-wider">
+                                  <span className="inline-flex items-center gap-1 rounded-md bg-primary/20 px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wider">
                                     {t("business.warmup.alternativeBadge")}
                                   </span>
                                 )}
@@ -262,18 +262,18 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                     <Lightbulb className="size-5 shrink-0 text-primary mt-0.5" aria-hidden />
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                        <h4 className="font-black text-xs sm:text-sm text-foreground uppercase tracking-wider">
+                        <h4 className="font-black text-sm sm:text-base text-foreground uppercase tracking-wider">
                           {t("business.warmup.feedbackTitle")}
                         </h4>
                         {prompt.correctAnswer && (
-                          <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-black text-primary uppercase tracking-wide">
+                          <span className="rounded-md bg-primary/15 px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wide">
                             {isCorrect
                               ? t("business.warmup.recommendedBadge")
                               : `Best Practice: Option ${prompt.correctAnswer}`}
                           </span>
                         )}
                       </div>
-                      <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
+                      <p className="wp-prose text-base sm:text-base font-medium text-foreground leading-relaxed">
                         {prompt.explanation}
                       </p>
                     </div>
@@ -290,7 +290,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
         <button
           type="button"
           onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("business.warmup.continueToScenario")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

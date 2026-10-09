@@ -62,7 +62,7 @@ export function HelpDisclosure({ label, children, variant = "inline", className 
           }
         }}
         aria-label={variant === "icon" ? label : undefined}
-        className={`flex min-h-11 min-w-11 cursor-pointer list-none items-center gap-2 rounded-xl text-sm font-semibold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary [&::-webkit-details-marker]:hidden ${variant === "icon" ? "size-11 justify-center border border-border bg-card" : "w-fit px-2"}`}
+        className={`flex min-h-11 min-w-11 cursor-pointer list-none items-center gap-2 rounded-xl text-base font-semibold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary [&::-webkit-details-marker]:hidden ${variant === "icon" ? "size-11 justify-center border border-border bg-card" : "w-fit px-2"}`}
       >
         {variant === "icon" ? (
           <Info className="size-5" aria-hidden />
@@ -79,8 +79,8 @@ export function HelpDisclosure({ label, children, variant = "inline", className 
       <div
         className={
           variant === "icon"
-            ? "absolute end-0 top-full z-30 w-56 max-w-[calc(100vw-2rem)] break-words rounded-xl border border-border bg-card p-4 text-start text-sm leading-relaxed text-foreground shadow-wp-lg"
-            : "mt-1 space-y-3 break-words rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-foreground"
+            ? "absolute end-0 top-full z-30 w-56 max-w-[calc(100vw-2rem)] break-words rounded-xl border border-border bg-card p-4 text-start text-base leading-relaxed text-foreground shadow-wp-lg"
+            : "mt-1 space-y-3 break-words rounded-xl border border-border bg-card p-4 text-base leading-relaxed text-foreground"
         }
       >
         {children}

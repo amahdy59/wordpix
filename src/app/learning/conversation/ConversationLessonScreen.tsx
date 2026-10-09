@@ -123,7 +123,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
 
   return (
     <div
-      className="flex h-full min-h-0 flex-col overflow-y-auto bg-background pb-20 overscroll-y-contain"
+      className="wp-lesson-session flex h-full min-h-0 flex-col overflow-y-auto bg-background pb-[max(1rem,env(safe-area-inset-bottom))] overscroll-y-contain"
       aria-labelledby="lesson-header-title"
     >
       <h1 id="lesson-header-title" className="sr-only">
@@ -133,24 +133,24 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
         {stageAnnouncement}
       </p>
       {/* Sticky Header & Stepper */}
-      <div className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur-md px-4 py-3 sm:px-8">
-        <div className="wp-container-content flex flex-col gap-3">
+      <div className="wp-sticky-heading wp-sticky-controls sticky top-0 z-20 shrink-0 border-b border-border bg-background py-3">
+        <div className="wp-container-content wp-layout-gutter flex flex-col gap-3">
           {/* Top Bar with Back and Unit Metadata */}
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center justify-between gap-3">
             <button
               type="button"
               onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl px-2.5 py-1 text-xs font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl px-2.5 py-1 text-sm font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
               <span>{t("conversation.allUnits")}</span>
             </button>
 
             <div className="flex items-center gap-2">
-              <span className="rounded-lg bg-primary/10 px-2.5 py-1 text-xs font-black text-primary">
+              <span className="rounded-lg bg-primary/10 px-2.5 py-1 text-sm font-black text-primary">
                 {t("conversation.level", { level: unit.level })}
               </span>
-              <span className="text-xs font-bold text-muted-foreground hidden sm:inline">
+              <span className="text-sm font-bold text-muted-foreground hidden sm:inline">
                 {t("conversation.unitOfTotal", { number: unit.unitNumber, total: 40 })}
               </span>
             </div>
@@ -179,7 +179,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
         role="tabpanel"
         aria-labelledby={`lesson-stage-${currentStageId}`}
         tabIndex={0}
-        className="wp-container-content wp-layout-gutter scroll-mt-40 py-6 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+        className="wp-container-content wp-layout-gutter py-6 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
       >
         {currentStageId === "warmup" && (
           <WarmupStage

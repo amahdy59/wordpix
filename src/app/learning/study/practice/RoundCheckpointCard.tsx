@@ -43,13 +43,13 @@ export function RoundCheckpointCard({
         <Sparkles className="size-8" aria-hidden />
       </div>
       {/* Round counter — semantic eyebrow label (no uppercase in Arabic via CSS) */}
-      <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1 [lang='ar']:[text-transform:none] [lang='ar']:[letter-spacing:normal]">
+      <div className="text-sm font-bold uppercase tracking-wider text-primary mb-1 [lang='ar']:[text-transform:none] [lang='ar']:[letter-spacing:normal]">
         {t("practice.roundComplete", { round: formatNumber(roundNumber, numeralSystem) })}
       </div>
       <h2 id="checkpoint-heading" className="text-2xl font-extrabold text-foreground mb-2">
         {roundLabel}
       </h2>
-      <p className="text-muted-foreground text-sm mb-6">
+      <p className="text-muted-foreground text-base mb-6">
         {t("practice.roundScore", {
           correct: formatNumber(roundCorrect, numeralSystem),
           total: formatNumber(roundTotal, numeralSystem),
@@ -64,14 +64,14 @@ export function RoundCheckpointCard({
             <button
               type="button"
               onClick={onPause}
-              className="px-5 py-3 border border-border text-foreground rounded-2xl font-bold text-sm hover:bg-secondary transition-colors min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="px-5 py-3 border border-border text-foreground rounded-2xl font-bold text-base hover:bg-secondary transition-colors min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               {t("practice.finishForNow")}
             </button>
             <button
               type="button"
               onClick={onContinueNextRound}
-              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-sm hover:bg-primary/90 transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <span>
                 {t("practice.startRound", { round: formatNumber(roundNumber + 1, numeralSystem) })}

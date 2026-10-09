@@ -110,7 +110,7 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
           <p className="font-sans text-destructive font-bold mb-2">
             {t("learningMaterials.loadErrorTitle")}
           </p>
-          <p className="font-sans text-muted-foreground text-sm mb-6 max-w-sm">
+          <p className="font-sans text-muted-foreground text-base mb-6 max-w-sm">
             {t("learningMaterials.loadErrorDesc")}
           </p>
           <div className="flex gap-3">
@@ -199,7 +199,7 @@ export function WordsSection({
             <h2 id={`subtopic-${topic.id}`} className="font-bold text-lg text-foreground">
               {topic.title}
             </h2>
-            <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-2.5 py-0.5 rounded-full">
+            <span className="text-sm font-bold text-muted-foreground bg-secondary/80 px-2.5 py-0.5 rounded-full">
               {t("learningMaterials.itemsCount", { count: topic.wordIds.length })}
             </span>
           </div>
@@ -219,8 +219,8 @@ export function WordsSection({
                     className="w-full aspect-[4/3] object-cover bg-muted"
                   />
                   <div className="p-3">
-                    <p className="font-bold text-sm text-foreground truncate">{word.label}</p>
-                    <p className="text-xs text-muted-foreground font-mono truncate mt-0.5">
+                    <p className="font-bold text-base text-foreground truncate">{word.label}</p>
+                    <p className="text-sm text-muted-foreground font-mono truncate mt-0.5">
                       {word.phonetic}
                     </p>
                   </div>
@@ -264,7 +264,7 @@ export function PassageSection({
             <h2 id="passage-heading" className="font-bold text-xl text-foreground truncate min-w-0">
               {passage.title}
             </h2>
-            <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
+            <span className="text-sm font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
               {passage.level}
             </span>
           </div>
@@ -277,7 +277,7 @@ export function PassageSection({
                 speak(passage.text);
               }
             }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
             aria-label={
               isPlaying
                 ? t("learningMaterials.stopReadingPassage")
@@ -325,7 +325,7 @@ export function PassageSection({
         <h2 id="comprehension-heading" className="font-bold text-lg text-foreground mb-1">
           {t("learningMaterials.comprehensionTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mb-4">
+        <p className="text-sm text-muted-foreground mb-4">
           {t("learningMaterials.comprehensionSubtitle")}
         </p>
         <CurriculumQuizEngine
@@ -348,10 +348,10 @@ export function PassageSection({
             <h3 className="font-bold text-base text-foreground">
               {t("learningMaterials.thinkAboutIt")}
             </h3>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <p className="text-sm text-muted-foreground mt-0.5">
               {t("learningMaterials.thinkAboutItDesc")}
             </p>
-            <ul className="mt-3 space-y-2.5 list-disc ps-5 text-sm text-foreground leading-relaxed">
+            <ul className="mt-3 space-y-2.5 list-disc ps-5 text-base text-foreground leading-relaxed">
               {passage.openQuestions.map((question) => (
                 <li key={question}>{question}</li>
               ))}
@@ -383,7 +383,7 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
         <h2 id="phrases-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.phrasesTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.phrasesSubtitle")}
         </p>
       </div>
@@ -397,7 +397,7 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
               type="button"
               onClick={() => setFilter(key)}
               aria-pressed={filter === key}
-              className={`rounded-xl px-3.5 py-2 text-xs font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
+              className={`rounded-xl px-3.5 py-2 text-sm font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
                 filter === key
                   ? "bg-primary text-primary-foreground border-primary shadow-xs"
                   : "bg-background text-muted-foreground border-border hover:border-primary/50 hover:bg-secondary/40"
@@ -417,12 +417,12 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2.5 flex-wrap">
                 <p className="font-bold text-base text-foreground">{phrase.phrase}</p>
-                <span className="text-[11px] uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                <span className="text-sm uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
                   {t(PHRASE_KIND_KEY[phrase.kind])}
                 </span>
               </div>
-              <p className="text-sm text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
-              <p className="text-xs sm:text-sm text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
+              <p className="text-base text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
+              <p className="text-sm sm:text-base text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
                 &ldquo;{phrase.example}&rdquo;
               </p>
             </div>
@@ -469,7 +469,9 @@ export function DialogueSection({
               : "Mini Dialogue"}
           </h2>
           {dialogue.scene && (
-            <p className="mt-1 text-xs sm:text-sm text-muted-foreground italic">{dialogue.scene}</p>
+            <p className="mt-1 text-sm sm:text-base text-muted-foreground italic">
+              {dialogue.scene}
+            </p>
           )}
         </div>
         <button
@@ -478,7 +480,7 @@ export function DialogueSection({
             if (isPlaying) stop();
             else speak(fullDialogueText);
           }}
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           aria-label={isPlaying ? "Stop dialogue audio" : "Play entire dialogue audio"}
         >
           <Volume2 className="size-4" aria-hidden />
@@ -492,10 +494,10 @@ export function DialogueSection({
             key={`${line.speaker}-${i}`}
             className="flex items-start gap-3 p-3.5 rounded-2xl bg-background border border-border hover:border-primary/40 transition-colors"
           >
-            <span className="font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-xs sm:text-sm pt-1 bg-primary/10 px-2.5 py-1 rounded-lg text-center">
+            <span className="font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-sm sm:text-base pt-1 bg-primary/10 px-2.5 py-1 rounded-lg text-center">
               {line.speaker}:
             </span>
-            <span className="text-foreground text-sm sm:text-base flex-1 min-w-0 break-words leading-relaxed pt-0.5">
+            <span className="text-foreground text-base sm:text-base flex-1 min-w-0 break-words leading-relaxed pt-0.5">
               {unitId && onInspectWord ? (
                 <InteractiveText text={line.text} unitId={unitId} onInspectWord={onInspectWord} />
               ) : (
@@ -538,7 +540,7 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
         <h2 id="mistakes-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.mistakesTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.mistakesSubtitle")}
         </p>
       </div>
@@ -553,7 +555,7 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
             >
               <div className="flex justify-between items-start gap-3">
                 <p
-                  className="text-sm sm:text-base text-destructive font-medium leading-relaxed"
+                  className="text-base sm:text-base text-destructive font-medium leading-relaxed"
                   lang="en"
                   dir="ltr"
                 >
@@ -572,7 +574,7 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
                       ? `Hide correction for: ${mistake.wrong}`
                       : `Reveal correction for: ${mistake.wrong}`
                   }
-                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-secondary text-foreground hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-bold bg-secondary text-foreground hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                 >
                   {isRevealed ? (
                     <>
@@ -588,14 +590,14 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
 
               {isRevealed && (
                 <div className="mt-3.5 pt-3.5 border-t border-border/60 space-y-2 animate-in fade-in duration-150">
-                  <p className="text-sm sm:text-base text-wp-green font-bold" lang="en" dir="ltr">
+                  <p className="text-base sm:text-base text-wp-green font-bold" lang="en" dir="ltr">
                     <span aria-hidden className="font-bold">
                       {`✓ `}
                     </span>
                     <span className="sr-only">{t("learningMaterials.correctLabel")} </span>
                     {mistake.right}
                   </p>
-                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     <span className="font-bold text-foreground">
                       {t("learningMaterials.explanation")}{" "}
                     </span>
@@ -630,7 +632,7 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
         <h2 id="word-formation-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.wordFormationTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.wordFormationSubtitle")}
         </p>
       </div>
@@ -646,11 +648,11 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
               <span className="font-sans font-black text-base text-foreground">
                 {row.base || row.noun || "Word"}
               </span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
+              <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
                 {t("learningMaterials.wordFamilyBadge")}
               </span>
             </div>
-            <div className="grid grid-cols-2 gap-2 text-xs">
+            <div className="grid grid-cols-2 gap-2 text-sm">
               {columns.map(({ label, key }) => {
                 const val = row[key];
                 if (!val) return null;
@@ -659,10 +661,10 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
                     key={key}
                     className="flex flex-col gap-0.5 bg-secondary/30 rounded-xl p-2 border border-border/40"
                   >
-                    <span className="text-[10px] font-bold uppercase text-muted-foreground">
+                    <span className="text-sm font-bold uppercase text-muted-foreground">
                       {label}
                     </span>
-                    <span className="font-semibold text-foreground text-sm">{val}</span>
+                    <span className="font-semibold text-foreground text-base">{val}</span>
                   </div>
                 );
               })}
@@ -681,7 +683,7 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
                 <th
                   key={label}
                   scope="col"
-                  className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4"
+                  className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4"
                 >
                   {label}
                 </th>
@@ -695,7 +697,7 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
                 className="hover:bg-secondary/20 transition-colors"
               >
                 {columns.map(({ key }) => (
-                  <td key={key} className="text-sm text-foreground py-3 px-4 font-medium">
+                  <td key={key} className="text-base text-foreground py-3 px-4 font-medium">
                     {row[key] ?? <span className="text-muted-foreground/60">—</span>}
                   </td>
                 ))}
@@ -728,7 +730,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
         <h2 id="practice-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.fillBlanksTitle")}
         </h2>
-        <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+        <p className="text-sm sm:text-base text-muted-foreground mt-0.5">
           {t("learningMaterials.fillBlanksSubtitle")}
         </p>
       </div>
@@ -743,7 +745,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
               key={item.id}
               className="text-foreground p-3.5 rounded-2xl border border-border bg-background"
             >
-              <label className="flex flex-wrap items-center gap-2 text-sm sm:text-base font-medium">
+              <label className="flex flex-wrap items-center gap-2 text-base sm:text-base font-medium">
                 <span>
                   {index + 1}. {before}
                 </span>
@@ -755,7 +757,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                     setChecked(false);
                   }}
                   aria-label={`Answer for sentence ${index + 1}`}
-                  className={`min-w-36 rounded-xl border px-3 py-1.5 bg-background text-foreground text-sm font-bold outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] transition-colors ${
+                  className={`min-w-36 rounded-xl border px-3 py-1.5 bg-background text-foreground text-base font-bold outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] transition-colors ${
                     checked
                       ? isCorrect
                         ? "border-wp-green bg-wp-green-light/20 text-wp-green"
@@ -765,7 +767,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                 />
                 <span>{after}</span>
                 {checked && !isCorrect && (
-                  <span className="text-xs sm:text-sm text-muted-foreground font-bold ms-1">
+                  <span className="text-sm sm:text-base text-muted-foreground font-bold ms-1">
                     {t("learningMaterials.correctAnswerPrefix")}{" "}
                     <span className="text-wp-green">{item.answer}</span>
                   </span>
@@ -787,7 +789,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
         {checked && (
           <p
             role="status"
-            className="text-sm font-bold text-foreground bg-secondary/80 px-3.5 py-2 rounded-xl"
+            className="text-base font-bold text-foreground bg-secondary/80 px-3.5 py-2 rounded-xl"
           >
             {t("learningMaterials.scoreSummary", { correct: correctCount, total: items.length })}
           </p>
@@ -805,7 +807,7 @@ export function CultureSection({ materials }: { materials: UnitLearningMaterials
         <h2 id="culture-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.cultureTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.cultureSubtitle")}
         </p>
       </div>
@@ -816,7 +818,7 @@ export function CultureSection({ materials }: { materials: UnitLearningMaterials
             className="rounded-2xl border border-border p-4 sm:p-5 bg-background hover:border-primary/40 transition-colors"
           >
             <p className="font-bold text-base text-foreground">{note.title}</p>
-            <p className="text-xs sm:text-sm text-muted-foreground mt-1.5 leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground mt-1.5 leading-relaxed">
               {note.body}
             </p>
           </li>
@@ -855,7 +857,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
         <h2 id="reference-heading" className="font-bold text-lg sm:text-xl text-foreground">
           {t("learningMaterials.vocabRefTitle")}
         </h2>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-muted-foreground mt-0.5">
           {t("learningMaterials.vocabRefSubtitle")}
         </p>
       </div>
@@ -872,7 +874,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder={t("learningMaterials.searchPlaceholder")}
-            className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           />
         </div>
 
@@ -880,7 +882,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
           <div className="flex items-center gap-2">
             <label
               htmlFor="pos-filter"
-              className="text-xs font-bold text-muted-foreground shrink-0"
+              className="text-sm font-bold text-muted-foreground shrink-0"
             >
               {t("learningMaterials.posLabel")}
             </label>
@@ -892,14 +894,14 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                 value: pos,
                 label: pos === "all" ? t("learningMaterials.allPos") : pos,
               }))}
-              className="bg-background border border-border rounded-xl text-sm font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-primary"
+              className="bg-background border border-border rounded-xl text-base font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-primary"
             />
           </div>
         )}
       </div>
 
       {/* Frequency & Notation Legend */}
-      <div className="mt-3.5 p-3.5 bg-secondary/30 rounded-2xl border border-border/60 text-xs text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
+      <div className="mt-3.5 p-3.5 bg-secondary/30 rounded-2xl border border-border/60 text-sm text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
         <div>
           <span className="font-bold text-foreground">
             {t("learningMaterials.frequencyLabel")}{" "}
@@ -933,7 +935,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                 <th
                   key={h}
                   scope="col"
-                  className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4"
+                  className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4"
                 >
                   {h}
                 </th>
@@ -943,7 +945,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
           <tbody className="divide-y divide-border/50">
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={4} className="py-8 text-center text-sm text-muted-foreground">
+                <td colSpan={4} className="py-8 text-center text-base text-muted-foreground">
                   {t("learningMaterials.noMatches")}
                 </td>
               </tr>
@@ -952,7 +954,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                 <tr key={entry.word} className="hover:bg-secondary/20 transition-colors align-top">
                   <th
                     scope="row"
-                    className="font-bold text-sm text-foreground py-3 px-4 text-start"
+                    className="font-bold text-base text-foreground py-3 px-4 text-start"
                   >
                     <div className="flex items-center gap-2">
                       <span>{entry.word}</span>
@@ -968,8 +970,10 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                       </button>
                     </div>
                   </th>
-                  <td className="text-sm text-muted-foreground py-3 px-4">{entry.partOfSpeech}</td>
-                  <td className="text-sm py-3 px-4">
+                  <td className="text-base text-muted-foreground py-3 px-4">
+                    {entry.partOfSpeech}
+                  </td>
+                  <td className="text-base py-3 px-4">
                     <span aria-hidden className="text-wp-amber font-mono text-base">
                       {"★".repeat(entry.frequency)}
                     </span>
@@ -977,7 +981,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                       {t("learningMaterials.freqRating", { rating: entry.frequency })}
                     </span>
                   </td>
-                  <td className="text-sm text-foreground py-3 px-4 font-medium">
+                  <td className="text-base text-foreground py-3 px-4 font-medium">
                     {entry.collocations.join(", ")}
                   </td>
                 </tr>

@@ -82,7 +82,7 @@ function AudioAction({ text }: { text: string }) {
       onClick={() => speak(text, undefined, getCurriculumAudioKey(text) ?? undefined)}
       aria-busy={isPlaying}
       aria-label={t("hadith.playVocabulary", { word: text })}
-      className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-primary px-3 text-sm font-black text-primary hover:bg-primary/10 active:bg-primary/15 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-primary px-3 text-base font-black text-primary hover:bg-primary/10 active:bg-primary/15 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
     >
       <Volume2 className="size-4" aria-hidden />
       <span className="hidden sm:inline">
@@ -130,13 +130,13 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
   return (
     <section className="wp-container-content space-y-6" aria-labelledby="hadith-vocabulary-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
-        <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+        <p className="text-sm font-black uppercase tracking-[0.18em] text-primary">
           {t("hadith.vocabularyLabel")}
         </p>
         <h2 id="hadith-vocabulary-heading" className="mt-2 text-2xl font-black sm:text-3xl">
           {t("hadith.visualVocabularyTitle")}
         </h2>
-        <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-muted-foreground">
+        <p className="mt-3 max-w-3xl text-base font-semibold leading-6 text-muted-foreground">
           {t("hadith.vocabularyStudyInstructions")}
         </p>
       </header>
@@ -170,16 +170,16 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
                       <h3 className="text-xl font-black" lang="en" dir="ltr">
                         {item.term}
                       </h3>
-                      <p className="mt-1 text-xs font-black uppercase tracking-wide text-primary">
+                      <p className="mt-1 text-sm font-black uppercase tracking-wide text-primary">
                         {item.partOfSpeech}
                       </p>
                     </div>
                     <AudioAction text={item.term} />
                   </div>
-                  <p className="mt-4 text-sm font-semibold leading-6">{item.definition}</p>
+                  <p className="mt-4 text-base font-semibold leading-6">{item.definition}</p>
                   {item.example && (
                     <p
-                      className="mt-2 rounded-xl bg-muted p-3 text-sm italic text-muted-foreground"
+                      className="mt-2 rounded-xl bg-muted p-3 text-base italic text-muted-foreground"
                       lang="en"
                       dir="ltr"
                     >
@@ -203,11 +203,11 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
         <h3 id="language-bank-heading" className="text-xl font-black">
           {t("hadith.completeLanguageBank")}
         </h3>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className="mt-2 text-base text-muted-foreground">
           {t("hadith.completeLanguageBankDescription")}
         </p>
         <div className="mt-5 overflow-x-auto rounded-2xl border border-border">
-          <table className="w-full min-w-[42rem] border-collapse text-sm">
+          <table className="w-full min-w-[42rem] border-collapse text-base">
             <thead className="bg-muted">
               <tr>
                 <th className="p-4 text-start font-black">{t("hadith.category")}</th>
@@ -224,7 +224,7 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
                   key={`${item.category}-${item.expression}`}
                   className="border-t border-border align-top"
                 >
-                  <td className="p-4 text-xs font-black uppercase tracking-wide text-primary">
+                  <td className="p-4 text-sm font-black uppercase tracking-wide text-primary">
                     {item.category}
                   </td>
                   <td className="p-4 font-black" lang="en" dir="ltr">
@@ -247,24 +247,24 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
         </div>
         <div className="mt-5 grid gap-3 md:grid-cols-3">
           <aside className="rounded-2xl bg-muted p-4">
-            <p className="text-xs font-black uppercase text-primary">{t("hadith.wordFamily")}</p>
+            <p className="text-sm font-black uppercase text-primary">{t("hadith.wordFamily")}</p>
             <p className="mt-2 font-bold" lang="en" dir="ltr">
               {valueAfter(lines, /^word family$/i)}
             </p>
           </aside>
           <aside className="rounded-2xl bg-muted p-4">
-            <p className="text-xs font-black uppercase text-primary">
+            <p className="text-sm font-black uppercase text-primary">
               {t("hadith.synonymContrast")}
             </p>
-            <p className="mt-2 text-sm font-semibold" lang="en" dir="ltr">
+            <p className="mt-2 text-base font-semibold" lang="en" dir="ltr">
               {valueAfter(lines, /^synonym \/ contrast$/i)}
             </p>
           </aside>
           <aside className="rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4">
-            <p className="text-xs font-black uppercase text-feedback-warning-foreground">
+            <p className="text-sm font-black uppercase text-feedback-warning-foreground">
               {t("hadith.commonError")}
             </p>
-            <p className="mt-2 text-sm font-semibold" lang="en" dir="ltr">
+            <p className="mt-2 text-base font-semibold" lang="en" dir="ltr">
               {valueAfter(lines, /^common error$/i)}
             </p>
           </aside>
@@ -279,7 +279,7 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
           <ImageIcon className="size-5 text-primary" aria-hidden />
           {t("hadith.pictureVocabularyCheck")}
         </h3>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className="mt-2 text-base text-muted-foreground">
           {t("hadith.pictureVocabularyDescription")}
         </p>
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
@@ -291,7 +291,7 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
                 type="button"
                 onClick={() => setRevealedImage(item.imageRef)}
                 aria-pressed={revealed}
-                className="overflow-hidden rounded-2xl border-2 border-border bg-background text-start hover:border-primary active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="overflow-hidden rounded-2xl border-2 border-border bg-background text-start hover:border-primary motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <img
                   src={resolveAssetUrl(`hadith/v1/images/${item.imageRef}.png`)}
@@ -299,7 +299,7 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
                   className="aspect-square w-full object-cover"
                   loading="lazy"
                 />
-                <span className="flex min-h-11 items-center gap-2 px-3 text-sm font-black">
+                <span className="flex min-h-11 items-center gap-2 px-3 text-base font-black">
                   {revealed ? (
                     <>
                       <Check className="size-4 text-primary" aria-hidden />

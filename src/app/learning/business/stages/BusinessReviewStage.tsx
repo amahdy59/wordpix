@@ -31,14 +31,14 @@ export function BusinessReviewStage({
   };
 
   return (
-    <div className="wp-container-reading flex flex-col gap-6 py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
           <Award className="size-4" aria-hidden />
           {t("business.review.stageTag")}
         </span>
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
           {t("business.review.retentionTag", { level: unit.level })}
         </span>
       </div>
@@ -48,17 +48,17 @@ export function BusinessReviewStage({
         className="rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/15 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="congrats-title"
       >
-        <span className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-widest text-accent">
+        <span className="inline-flex items-center gap-1 text-sm font-black uppercase tracking-widest text-accent">
           <CheckCircle2 className="size-4" aria-hidden />{" "}
           {t("business.review.lessonCompletedBadge")}
         </span>
         <h2
           id="congrats-title"
-          className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
+          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"
         >
           {t("business.review.congratsTitle", { title: unit.title })}
         </h2>
-        <p className="mt-2 text-sm sm:text-base font-medium text-muted-foreground">
+        <p className="mt-2 text-base sm:text-base font-medium text-muted-foreground">
           {t("business.review.congratsBody", { count: unit.languageBank.length })}
         </p>
       </section>
@@ -71,7 +71,10 @@ export function BusinessReviewStage({
         >
           <div className="flex items-center gap-2 mb-3">
             <RefreshCw className="size-5 text-primary" aria-hidden />
-            <h2 id="recycled-heading" className="text-lg font-black text-foreground">
+            <h2
+              id="recycled-heading"
+              className="wp-type-stage-title text-lg font-black text-foreground"
+            >
               {t("business.review.recycledHeading")}
             </h2>
           </div>
@@ -80,7 +83,7 @@ export function BusinessReviewStage({
             {unit.review.recycledPoints.map((point, idx) => (
               <li
                 key={idx}
-                className="flex items-start gap-2.5 rounded-xl bg-muted/40 p-3 text-sm sm:text-base font-semibold text-foreground"
+                className="flex items-start gap-2.5 rounded-xl bg-muted/40 p-3 text-base sm:text-base font-semibold text-foreground"
               >
                 <span className="size-2 rounded-full bg-primary mt-2 shrink-0" aria-hidden />
                 <span>{point.replace(/^[•-]\s*/, "")}</span>
@@ -97,11 +100,14 @@ export function BusinessReviewStage({
       >
         <div className="flex items-center gap-2 mb-2">
           <Calendar className="size-5 text-primary" aria-hidden />
-          <h2 id="spaced-rep-heading" className="text-lg font-black text-foreground">
+          <h2
+            id="spaced-rep-heading"
+            className="wp-type-stage-title text-lg font-black text-foreground"
+          >
             {t("business.review.selfRatingHeading")}
           </h2>
         </div>
-        <p className="text-sm text-muted-foreground font-medium mb-4">
+        <p className="text-base text-muted-foreground font-medium mb-4">
           {t("business.review.selfRatingPrompt")}
         </p>
 
@@ -118,7 +124,7 @@ export function BusinessReviewStage({
                 key={level}
                 type="button"
                 onClick={() => handleSelectConfidence(level)}
-                className={`p-4 rounded-2xl border text-center font-bold text-sm sm:text-base transition-all ${
+                className={`p-4 rounded-2xl border text-center font-bold text-base sm:text-base transition-all ${
                   isSelected
                     ? "border-primary bg-primary text-primary-foreground shadow-wp-xs"
                     : "border-border bg-muted/20 hover:border-primary/50 text-foreground"
@@ -145,7 +151,7 @@ export function BusinessReviewStage({
           <button
             type="button"
             onClick={() => onGoToUnit(nextUnitId)}
-            className="w-full sm:w-auto inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="w-full sm:w-auto inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>{t("business.review.proceedToNextUnit")}</span>
             <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />

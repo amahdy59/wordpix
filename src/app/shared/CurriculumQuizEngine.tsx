@@ -118,7 +118,7 @@ function QuestionCard({
       <div className="p-6 sm:p-8">
         {/* Counter label (single-question mode) */}
         {showCounter && (
-          <p className="mb-3 text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          <p className="mb-3 text-sm font-bold uppercase tracking-wider text-muted-foreground">
             {t("quiz.questionOf", {
               current: index + 1,
               total,
@@ -135,7 +135,7 @@ function QuestionCard({
         >
           {/* Question number badge in desktop multi-question mode */}
           {!showCounter && (
-            <span className="me-2.5 inline-flex size-8 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
+            <span className="me-2.5 inline-flex size-8 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-base font-black text-primary">
               {index + 1}
             </span>
           )}
@@ -195,7 +195,7 @@ function QuestionCard({
               <XCircle className="size-5 shrink-0 text-feedback-error-foreground" aria-hidden />
             )}
             <p
-              className={`text-sm sm:text-base font-bold leading-6 ${
+              className={`text-base sm:text-base font-bold leading-6 ${
                 isCorrect ? "text-feedback-success-foreground" : "text-feedback-error-foreground"
               }`}
             >
@@ -208,7 +208,7 @@ function QuestionCard({
           </div>
 
           {question.explanation && (
-            <p className="mt-3 text-sm leading-relaxed text-foreground">{question.explanation}</p>
+            <p className="mt-3 text-base leading-relaxed text-foreground">{question.explanation}</p>
           )}
         </div>
       )}
@@ -258,7 +258,7 @@ export function CanDoChallengeCard({
             <Compass className="size-5" aria-hidden="true" />
           </div>
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-primary">
+            <span className="text-sm font-bold uppercase tracking-wider text-primary">
               {t("wordDetails.canDoChallenge") || "Real-World Can-Do Challenge"}
             </span>
             <h3 id="can-do-heading" className="text-base font-bold text-foreground">
@@ -266,16 +266,16 @@ export function CanDoChallengeCard({
             </h3>
           </div>
         </div>
-        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-black bg-primary text-primary-foreground">
+        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-black bg-primary text-primary-foreground">
           CEFR {challenge.cefr}
         </span>
       </div>
 
       {/* Scenario context */}
       <div className="space-y-1.5">
-        <p className="text-sm font-semibold text-foreground">{challenge.scenarioEn}</p>
+        <p className="text-base font-semibold text-foreground">{challenge.scenarioEn}</p>
         <p
-          className="text-xs text-muted-foreground font-arabic leading-relaxed"
+          className="text-sm text-muted-foreground font-arabic leading-relaxed"
           dir="rtl"
           lang="ar"
         >
@@ -285,13 +285,13 @@ export function CanDoChallengeCard({
 
       {/* Action task */}
       <div className="rounded-2xl border border-border/80 bg-background/80 p-4 space-y-1.5">
-        <div className="flex items-center gap-1.5 text-xs font-bold text-primary">
+        <div className="flex items-center gap-1.5 text-sm font-bold text-primary">
           <Sparkles className="size-3.5" aria-hidden="true" />
           <span>{t("wordDetails.canDoTask") || "Your Action Task"}</span>
         </div>
-        <p className="text-sm font-medium text-foreground">{challenge.taskEn}</p>
+        <p className="text-base font-medium text-foreground">{challenge.taskEn}</p>
         <p
-          className="text-xs text-muted-foreground font-arabic leading-relaxed"
+          className="text-sm text-muted-foreground font-arabic leading-relaxed"
           dir="rtl"
           lang="ar"
         >
@@ -302,7 +302,7 @@ export function CanDoChallengeCard({
       {/* Model response with native audio */}
       <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4 space-y-3">
         <div className="flex items-center justify-between gap-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-primary">
+          <span className="text-sm font-bold uppercase tracking-wider text-primary">
             {t("wordDetails.canDoModelResponse") || "Spoken Model Response"}
           </span>
           <button
@@ -317,11 +317,11 @@ export function CanDoChallengeCard({
             />
           </button>
         </div>
-        <p className="text-sm sm:text-base font-semibold text-foreground italic">
+        <p className="text-base sm:text-base font-semibold text-foreground italic">
           "{challenge.modelResponseEn}"
         </p>
         <p
-          className="text-xs text-muted-foreground font-arabic leading-relaxed"
+          className="text-sm text-muted-foreground font-arabic leading-relaxed"
           dir="rtl"
           lang="ar"
         >
@@ -332,7 +332,7 @@ export function CanDoChallengeCard({
       {/* Key communicative phrases */}
       {challenge.keyPhrases.length > 0 && (
         <div className="space-y-2">
-          <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
+          <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">
             {t("wordDetails.canDoKeyPhrases") || "Key Communicative Phrases"}
           </span>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -345,7 +345,7 @@ export function CanDoChallengeCard({
                 aria-label={`Listen to phrase: ${phrase.en}`}
               >
                 <div className="flex items-center justify-between gap-1 w-full">
-                  <span className="text-xs font-bold text-foreground group-hover:text-primary transition-colors">
+                  <span className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">
                     {phrase.en}
                   </span>
                   <Volume2
@@ -514,7 +514,7 @@ export function CurriculumQuizEngine({
             >
               {t("quiz.completedTitle") || "Quiz Completed!"}
             </h2>
-            <p className="mt-1 text-sm sm:text-base text-muted-foreground">
+            <p className="mt-1 text-base sm:text-base text-muted-foreground">
               {t("quiz.completedSubtitle") || "Great job completing this practice exercise."}
             </p>
           </div>
@@ -525,7 +525,7 @@ export function CurriculumQuizEngine({
             className="flex flex-col items-center gap-1 my-1"
           >
             <span className="text-5xl sm:text-6xl font-black text-primary">{pct}%</span>
-            <span className="text-sm font-semibold text-muted-foreground">
+            <span className="text-base font-semibold text-muted-foreground">
               {t("quiz.scoreSummary", { correct, total })}
             </span>
           </div>
@@ -538,7 +538,7 @@ export function CurriculumQuizEngine({
               return (
                 <span
                   key={q.id}
-                  className={`inline-flex size-9 items-center justify-center rounded-xl border-2 text-sm font-black transition-colors ${
+                  className={`inline-flex size-9 items-center justify-center rounded-xl border-2 text-base font-black transition-colors ${
                     ok
                       ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
                       : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
@@ -559,7 +559,7 @@ export function CurriculumQuizEngine({
             <button
               type="button"
               onClick={handleReset}
-              className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-secondary px-5 py-2.5 text-sm font-bold text-foreground transition-colors hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-secondary px-5 py-2.5 text-base font-bold text-foreground transition-colors hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <RotateCcw className="size-4" aria-hidden />
               <span>{t("quiz.restart") || "Restart Quiz"}</span>
@@ -610,7 +610,7 @@ export function CurriculumQuizEngine({
               }}
               aria-label={t("quiz.questionPillLabel", { number: i + 1 }) || `Question ${i + 1}`}
               aria-current={isMobileActive || isDesktopActiveSingle ? "step" : undefined}
-              className={`flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-sm font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
+              className={`flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-base font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
             >
               {status === "correct" ? (
                 <CheckCircle2 className="size-4" aria-hidden />
@@ -652,7 +652,7 @@ export function CurriculumQuizEngine({
           <button
             type="button"
             onClick={handleMobilePrev}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-base font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
             <span>{t("quiz.previousQuestion") || "Previous Question"}</span>
@@ -665,7 +665,7 @@ export function CurriculumQuizEngine({
           <button
             type="button"
             onClick={handleMobileNext}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>
               {isMobileLastQuestion
@@ -686,7 +686,7 @@ export function CurriculumQuizEngine({
       {/* Progress pills + page indicator */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         {progressPills}
-        <span className="shrink-0 text-xs font-bold text-muted-foreground">
+        <span className="shrink-0 text-sm font-bold text-muted-foreground">
           {desktopPageSize === 1
             ? t("quiz.questionOf", { current: desktopPage + 1, total: questions.length }) ||
               `Question ${desktopPage + 1} of ${questions.length}`
@@ -734,7 +734,7 @@ export function CurriculumQuizEngine({
           <button
             type="button"
             onClick={handleDesktopPrevPage}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-base font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
             <span>
@@ -751,7 +751,7 @@ export function CurriculumQuizEngine({
           <button
             type="button"
             onClick={handleDesktopNextPage}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>
               {isLastDesktopPage

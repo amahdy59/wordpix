@@ -12,7 +12,7 @@ const read = (relativePath: string) => readFileSync(resolve(appDir, relativePath
  */
 const stripComments = (source: string) =>
   source
-    .replace(/\{\s*\/\*[\s\S]*?\*\/\s*\}/g, "")
+    .replace(/\{\s*\/\*(?:[^*]|\*(?!\/))*\*\/\s*\}/g, "")
     .replace(/\/\*[\s\S]*?\*\//g, "")
     .replace(/^\s*\/\/.*$/gm, "");
 

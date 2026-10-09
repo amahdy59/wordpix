@@ -142,7 +142,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
         </CurriculumHeroHeader>
 
         <div>
-          <label htmlFor="pronunciation-search" className="text-sm font-bold text-foreground">
+          <label htmlFor="pronunciation-search" className="text-base font-bold text-foreground">
             {t("pronunciation.searchLabel")}
           </label>
           <div className="relative mt-2">
@@ -181,7 +181,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                         block: "start",
                       })
                   }
-                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-sm font-black text-foreground hover:border-primary/50 hover:bg-primary/5 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-base font-black text-foreground hover:border-primary/50 hover:bg-primary/5 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {t("pronunciation.chapterShort", { number: chapter.index + 1 })}
                 </button>
@@ -211,14 +211,14 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                 >
                   <div className="flex flex-wrap items-end justify-between gap-3">
                     <div>
-                      <p className="text-xs font-black uppercase tracking-wide text-primary">
+                      <p className="text-sm font-black uppercase tracking-wide text-primary">
                         {t("pronunciation.chapterNumber", { number: chapter.index + 1 })}
                       </p>
                       <h2 className="mt-1 text-xl font-black text-foreground">
                         {t(chapter.titleKey)}
                       </h2>
                     </div>
-                    <p className="text-sm font-bold text-muted-foreground">
+                    <p className="text-base font-bold text-muted-foreground">
                       {t("pronunciation.chapterProgress", {
                         completed: chapterCompleted,
                         total: chapter.end - chapter.start + 1,

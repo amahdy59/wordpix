@@ -365,7 +365,11 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       return <PronunciationCurriculumScreen dispatch={dispatch} />;
     if (state.id === "figma-pronunciation-lesson")
       return (
-        <FigmaPronunciationLessonScreen lessonNumber={state.lessonNumber} dispatch={dispatch} />
+        <FigmaPronunciationLessonScreen
+          key={`lesson-${String(state.lessonNumber).padStart(2, "0")}`}
+          lessonNumber={state.lessonNumber}
+          dispatch={dispatch}
+        />
       );
     if (state.id === "hadith-lesson")
       return (

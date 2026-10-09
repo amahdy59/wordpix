@@ -67,15 +67,15 @@ export function UseItArea({
 
   if (!node) {
     return (
-      <div className="wp-container-reading wp-layout-gutter space-y-6 py-4 sm:py-6 md:py-8">
+      <div className="wp-container-content wp-layout-gutter space-y-6 py-4 sm:py-6 md:py-8">
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
+          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
             {t("study.useInContext")}
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground mt-2">
             {t("study.applyEveryday")}
           </h1>
-          <p className="text-sm sm:text-base text-muted-foreground mt-1.5 leading-relaxed max-w-2xl">
+          <p className="text-base sm:text-base text-muted-foreground mt-1.5 leading-relaxed max-w-2xl">
             {t("study.applyEverydayDesc")}
           </p>
         </div>
@@ -95,7 +95,7 @@ export function UseItArea({
                   </span>
                   <h2 className="font-bold text-lg text-foreground">{n.title}</h2>
                 </div>
-                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground line-clamp-2 leading-relaxed">
                   {meta.goal}
                 </p>
               </button>
@@ -113,7 +113,7 @@ export function UseItArea({
   const Icon = meta.icon;
 
   return (
-    <div className="wp-container-reading wp-layout-gutter space-y-4 py-3.5 sm:space-y-6 sm:py-6 md:py-8">
+    <div className="wp-container-content wp-layout-gutter space-y-4 py-3.5 sm:space-y-6 sm:py-6 md:py-8">
       {/* Activity Header with Learning Goal */}
       <div className="border-b border-border/70 pb-3.5 sm:pb-5">
         <div className="flex items-center gap-2.5 sm:gap-3.5 mb-1.5 sm:mb-2">
@@ -121,7 +121,7 @@ export function UseItArea({
             <Icon className="size-5 sm:size-6" aria-hidden />
           </span>
           <div className="min-w-0">
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-muted-foreground">
+            <span className="text-sm sm:text-sm font-bold uppercase tracking-wider text-muted-foreground">
               {t("study.useInContextStep", { current: currentIndex + 1, total: allNodes.length })}
             </span>
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-foreground truncate">
@@ -129,7 +129,7 @@ export function UseItArea({
             </h1>
           </div>
         </div>
-        <p className="text-xs sm:text-sm text-muted-foreground mt-1 max-w-2xl leading-relaxed">
+        <p className="text-sm sm:text-base text-muted-foreground mt-1 max-w-2xl leading-relaxed">
           {meta.goal}
         </p>
       </div>
@@ -156,7 +156,7 @@ export function UseItArea({
         {prevNode ? (
           <button
             onClick={() => onSelectNode(prevNode.id)}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-border text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-border text-base font-bold text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px]"
           >
             <ArrowLeft className="size-4" aria-hidden />
             <span>{prevNode.title}</span>
@@ -171,7 +171,7 @@ export function UseItArea({
               onCompleteNode(node.id);
               onSelectNode(nextNode.id);
             }}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-base font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>{nextNode.title}</span>
             <ArrowRight className="size-4" aria-hidden />
@@ -179,7 +179,7 @@ export function UseItArea({
         ) : (
           <button
             onClick={onNextActivity}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-base font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>{t("study.continueNext")}</span>
             <ArrowRight className="size-4" aria-hidden />
