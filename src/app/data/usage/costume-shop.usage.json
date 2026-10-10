@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pirate", "Princess", "Knight", "Wizard"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pirate, Princess, Knight, and Wizard and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pirate, Princess, Knight, and Wizard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pirate", "Princess", "Knight"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Fairy", "Cowboy", "Astronaut", "Robot"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fairy, Cowboy, Astronaut, and Robot and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fairy, Cowboy, Astronaut, and Robot and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fairy", "Cowboy", "Astronaut"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Superhero", "Ninja", "Cat Ears", "Bunny Tail"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Superhero, Ninja, Cat Ears, and Bunny Tail and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Superhero, Ninja, Cat Ears, and Bunny Tail and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Superhero", "Ninja", "Cat Ears"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Lion Mane", "Dinosaur Suit", "Butterfly Wings"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lion Mane, Dinosaur Suit, and Butterfly Wings and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lion Mane, Dinosaur Suit, and Butterfly Wings and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lion Mane", "Dinosaur Suit", "Butterfly Wings"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Costume Shop",
-      "text": "At the the costume shop, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pirate, Princess, Knight, and Wizard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fairy, Cowboy, Astronaut, and Robot. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Superhero, Ninja, Cat Ears, and Bunny Tail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lion Mane, Dinosaur Suit, and Butterfly Wings. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the costume shop, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pirate, Princess, Knight, and Wizard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fairy, Cowboy, Astronaut, and Robot. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Superhero, Ninja, Cat Ears, and Bunny Tail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lion Mane, Dinosaur Suit, and Butterfly Wings. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pirate, Princess, Knight, and Wizard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pirate, Princess, Knight, and Wizard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pirate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fairy, Cowboy, Astronaut, and Robot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fairy, Cowboy, Astronaut, and Robot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fairy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Superhero, Ninja, Cat Ears, and Bunny Tail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Superhero, Ninja, Cat Ears, and Bunny Tail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Superhero",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lion Mane, Dinosaur Suit, and Butterfly Wings and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lion Mane, Dinosaur Suit, and Butterfly Wings and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lion Mane",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the costume shop task. Use Pirate, Princess, Knight, Wizard, Fairy, Cowboy, Astronaut, Robot, Superhero, Ninja, Cat Ears, Bunny Tail, Lion Mane, Dinosaur Suit, and Butterfly Wings in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the costume shop task. Use Pirate, Princess, Knight, Wizard, Fairy, Cowboy, Astronaut, Robot, Superhero, Ninja, Cat Ears, Bunny Tail, Lion Mane, Dinosaur Suit, and Butterfly Wings in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bear Onesie", "Shark Fin", "Ladybug", "Frog Hat"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bear Onesie, Shark Fin, Ladybug, and Frog Hat and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bear Onesie, Shark Fin, Ladybug, and Frog Hat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bear Onesie", "Shark Fin", "Ladybug"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Monkey Mask", "Mask", "Wig", "Hat"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monkey Mask, Mask, Wig, and Hat and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monkey Mask, Mask, Wig, and Hat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Monkey Mask", "Mask", "Wig"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Cape", "Sword", "Shield", "Wand"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Sword, Shield, and Wand and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Sword, Shield, and Wand and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cape", "Sword", "Shield"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Crown", "Tiara", "Eye Patch"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown, Tiara, and Eye Patch and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown, Tiara, and Eye Patch and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crown", "Tiara", "Eye Patch"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Costume Shop",
-      "text": "At the the costume shop, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bear Onesie, Shark Fin, Ladybug, and Frog Hat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monkey Mask, Mask, Wig, and Hat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cape, Sword, Shield, and Wand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crown, Tiara, and Eye Patch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the costume shop, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bear Onesie, Shark Fin, Ladybug, and Frog Hat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monkey Mask, Mask, Wig, and Hat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cape, Sword, Shield, and Wand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crown, Tiara, and Eye Patch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bear Onesie, Shark Fin, Ladybug, and Frog Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bear Onesie, Shark Fin, Ladybug, and Frog Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bear Onesie",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monkey Mask, Mask, Wig, and Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monkey Mask, Mask, Wig, and Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Monkey Mask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Sword, Shield, and Wand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Sword, Shield, and Wand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cape",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown, Tiara, and Eye Patch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown, Tiara, and Eye Patch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crown",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the costume shop task. Use Bear Onesie, Shark Fin, Ladybug, Frog Hat, Monkey Mask, Mask, Wig, Hat, Cape, Sword, Shield, Wand, Crown, Tiara, and Eye Patch in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the costume shop task. Use Bear Onesie, Shark Fin, Ladybug, Frog Hat, Monkey Mask, Mask, Wig, Hat, Cape, Sword, Shield, Wand, Crown, Tiara, and Eye Patch in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Face Paint Set", "Makeup Brush", "Sponge", "Glitter"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Face Paint Set, Makeup Brush, Sponge, and Glitter and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Face Paint Set, Makeup Brush, Sponge, and Glitter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Face Paint Set", "Makeup Brush", "Sponge"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["False Eyelashes", "Spirit Gum", "Fake Blood", "Scar Wax"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare False Eyelashes, Spirit Gum, Fake Blood, and Scar Wax and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare False Eyelashes, Spirit Gum, Fake Blood, and Scar Wax and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["False Eyelashes", "Spirit Gum", "Fake Blood"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Color Palette", "Mirror", "Fabric Roll", "Sequin"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Palette, Mirror, Fabric Roll, and Sequin and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Palette, Mirror, Fabric Roll, and Sequin and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Color Palette", "Mirror", "Fabric Roll"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Feather", "Velvet", "Satin"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feather, Velvet, and Satin and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feather, Velvet, and Satin and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Feather", "Velvet", "Satin"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the costume shop, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Face Paint Set, Makeup Brush, Sponge, and Glitter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers False Eyelashes, Spirit Gum, Fake Blood, and Scar Wax. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Color Palette, Mirror, Fabric Roll, and Sequin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Feather, Velvet, and Satin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the costume shop, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Face Paint Set, Makeup Brush, Sponge, and Glitter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers False Eyelashes, Spirit Gum, Fake Blood, and Scar Wax. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Color Palette, Mirror, Fabric Roll, and Sequin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Feather, Velvet, and Satin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Face Paint Set, Makeup Brush, Sponge, and Glitter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Face Paint Set, Makeup Brush, Sponge, and Glitter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Face Paint Set",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare False Eyelashes, Spirit Gum, Fake Blood, and Scar Wax and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare False Eyelashes, Spirit Gum, Fake Blood, and Scar Wax and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "False Eyelashes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Palette, Mirror, Fabric Roll, and Sequin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Palette, Mirror, Fabric Roll, and Sequin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Color Palette",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feather, Velvet, and Satin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feather, Velvet, and Satin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Feather",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the costume shop task. Use Face Paint Set, Makeup Brush, Sponge, Glitter, False Eyelashes, Spirit Gum, Fake Blood, Scar Wax, Color Palette, Mirror, Fabric Roll, Sequin, Feather, Velvet, and Satin in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the costume shop task. Use Face Paint Set, Makeup Brush, Sponge, Glitter, False Eyelashes, Spirit Gum, Fake Blood, Scar Wax, Color Palette, Mirror, Fabric Roll, Sequin, Feather, Velvet, and Satin in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Tulle", "Elastic", "Zipper", "Button"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tulle, Elastic, Zipper, and Button and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tulle, Elastic, Zipper, and Button and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tulle", "Elastic", "Zipper"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Thread", "Mannequin", "Display Rack", "Fitting Room"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread, Mannequin, Display Rack, and Fitting Room and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread, Mannequin, Display Rack, and Fitting Room and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Thread", "Mannequin", "Display Rack"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Full-Length Mirror", "Price Tag", "Shopping Bag", "Hanger"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Full-Length Mirror, Price Tag, Shopping Bag, and Hanger and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Full-Length Mirror, Price Tag, Shopping Bag, and Hanger and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Full-Length Mirror", "Price Tag", "Shopping Bag"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Shelf", "Register", "Catalog"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shelf, Register, and Catalog and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shelf, Register, and Catalog and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Shelf", "Register", "Catalog"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Costume Shop",
-      "text": "At the the costume shop, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tulle, Elastic, Zipper, and Button. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Thread, Mannequin, Display Rack, and Fitting Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Full-Length Mirror, Price Tag, Shopping Bag, and Hanger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Shelf, Register, and Catalog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the costume shop, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tulle, Elastic, Zipper, and Button. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Thread, Mannequin, Display Rack, and Fitting Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Full-Length Mirror, Price Tag, Shopping Bag, and Hanger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Shelf, Register, and Catalog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tulle, Elastic, Zipper, and Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tulle, Elastic, Zipper, and Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tulle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread, Mannequin, Display Rack, and Fitting Room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread, Mannequin, Display Rack, and Fitting Room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Thread",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Full-Length Mirror, Price Tag, Shopping Bag, and Hanger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Full-Length Mirror, Price Tag, Shopping Bag, and Hanger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Full-Length Mirror",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shelf, Register, and Catalog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shelf, Register, and Catalog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Shelf",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the costume shop task. Use Tulle, Elastic, Zipper, Button, Thread, Mannequin, Display Rack, Fitting Room, Full-Length Mirror, Price Tag, Shopping Bag, Hanger, Shelf, Register, and Catalog in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the costume shop task. Use Tulle, Elastic, Zipper, Button, Thread, Mannequin, Display Rack, Fitting Room, Full-Length Mirror, Price Tag, Shopping Bag, Hanger, Shelf, Register, and Catalog in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -742,7 +742,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Tutu", "Armor", "Robe", "Gown"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutu, Armor, Robe, and Gown and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutu, Armor, Robe, and Gown and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tutu", "Armor", "Robe"],
@@ -754,7 +754,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Wings", "Boots", "Gloves", "Belt"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wings, Boots, Gloves, and Belt and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wings, Boots, Gloves, and Belt and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wings", "Boots", "Gloves"],
@@ -766,7 +766,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fabric", "Ribbon", "Lace", "Silk"],
-          "scenario": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric, Ribbon, Lace, and Silk and choose the option that fits the situation.",
+          "scenario": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric, Ribbon, Lace, and Silk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fabric", "Ribbon", "Lace"],
@@ -780,26 +780,26 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Costume Shop",
-      "text": "At the the costume shop, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tutu, Armor, Robe, and Gown. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wings, Boots, Gloves, and Belt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fabric, Ribbon, Lace, and Silk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the costume shop, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tutu, Armor, Robe, and Gown. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wings, Boots, Gloves, and Belt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fabric, Ribbon, Lace, and Silk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutu, Armor, Robe, and Gown and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutu, Armor, Robe, and Gown and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tutu",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wings, Boots, Gloves, and Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wings, Boots, Gloves, and Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wings",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric, Ribbon, Lace, and Silk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the costume shop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric, Ribbon, Lace, and Silk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fabric",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -830,7 +830,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the costume shop task. Use Tutu, Armor, Robe, Gown, Wings, Boots, Gloves, Belt, Fabric, Ribbon, Lace, and Silk in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the costume shop task. Use Tutu, Armor, Robe, Gown, Wings, Boots, Gloves, Belt, Fabric, Ribbon, Lace, and Silk in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

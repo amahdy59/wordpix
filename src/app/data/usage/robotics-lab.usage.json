@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Motor", "Sensor", "Circuit Board", "Battery Pack"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Motor", "Sensor", "Circuit Board"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Gear", "Wheel", "Axle", "Frame"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gear", "Wheel", "Axle"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Arm", "Gripper", "Camera Module", "LED"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Arm", "Gripper", "Camera Module"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Wire", "Resistor", "Capacitor"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wire", "Resistor", "Capacitor"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Robotics Lab",
-      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Motor, Sensor, Circuit Board, and Battery Pack. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Gear, Wheel, Axle, and Frame. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Arm, Gripper, Camera Module, and LED. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Wire, Resistor, and Capacitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Motor, Sensor, Circuit Board, and Battery Pack. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Gear, Wheel, Axle, and Frame. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Arm, Gripper, Camera Module, and LED. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Wire, Resistor, and Capacitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Motor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Arm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wire",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Motor, Sensor, Circuit Board, Battery Pack, Gear, Wheel, Axle, Frame, Arm, Gripper, Camera Module, LED, Wire, Resistor, and Capacitor in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Motor, Sensor, Circuit Board, Battery Pack, Gear, Wheel, Axle, Frame, Arm, Gripper, Camera Module, LED, Wire, Resistor, and Capacitor in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Transistor", "Diode", "Microchip", "Breadboard"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Transistor", "Diode", "Microchip"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Soldering Iron", "Solder", "Multimeter", "Screwdriver Set"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Soldering Iron", "Solder", "Multimeter"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pliers", "Wire Cutter", "Wire Stripper", "Hot Glue Gun"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pliers", "Wire Cutter", "Wire Stripper"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Allen Key", "Wrench", "Tweezers"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Allen Key", "Wrench", "Tweezers"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Robotics Lab",
-      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Transistor, Diode, Microchip, and Breadboard. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Soldering Iron, Solder, Multimeter, and Screwdriver Set. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Allen Key, Wrench, and Tweezers. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Transistor, Diode, Microchip, and Breadboard. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Soldering Iron, Solder, Multimeter, and Screwdriver Set. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Allen Key, Wrench, and Tweezers. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Transistor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Soldering Iron",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pliers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Allen Key",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Transistor, Diode, Microchip, Breadboard, Soldering Iron, Solder, Multimeter, Screwdriver Set, Pliers, Wire Cutter, Wire Stripper, Hot Glue Gun, Allen Key, Wrench, and Tweezers in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Transistor, Diode, Microchip, Breadboard, Soldering Iron, Solder, Multimeter, Screwdriver Set, Pliers, Wire Cutter, Wire Stripper, Hot Glue Gun, Allen Key, Wrench, and Tweezers in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Magnifying Glass", "Helping Hands", "Computer", "Monitor"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Magnifying Glass", "Helping Hands", "Computer"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Keyboard", "Mouse", "Code Editor", "USB Cable"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Keyboard", "Mouse", "Code Editor"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Controller", "Joystick", "Remote Control", "Tablet"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Controller", "Joystick", "Remote Control"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Humanoid Robot", "Drone", "Robotic Arm"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Humanoid Robot", "Drone", "Robotic Arm"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Robotics Lab",
-      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Magnifying Glass, Helping Hands, Computer, and Monitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Keyboard, Mouse, Code Editor, and USB Cable. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Controller, Joystick, Remote Control, and Tablet. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Humanoid Robot, Drone, and Robotic Arm. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Magnifying Glass, Helping Hands, Computer, and Monitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Keyboard, Mouse, Code Editor, and USB Cable. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Controller, Joystick, Remote Control, and Tablet. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Humanoid Robot, Drone, and Robotic Arm. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Magnifying Glass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Keyboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Controller",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Humanoid Robot",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Magnifying Glass, Helping Hands, Computer, Monitor, Keyboard, Mouse, Code Editor, USB Cable, Controller, Joystick, Remote Control, Tablet, Humanoid Robot, Drone, and Robotic Arm in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Magnifying Glass, Helping Hands, Computer, Monitor, Keyboard, Mouse, Code Editor, USB Cable, Controller, Joystick, Remote Control, Tablet, Humanoid Robot, Drone, and Robotic Arm in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Wheeled Robot", "Walking Robot", "Line Follower", "Sumo Robot"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wheeled Robot", "Walking Robot", "Line Follower"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Underwater Robot", "Flying Robot", "Snake Robot", "Workbench"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Underwater Robot", "Flying Robot", "Snake Robot"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Bin", "Pegboard", "Safety Glasses", "Lab Notebook"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Storage Bin", "Pegboard", "Safety Glasses"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["3D Printer", "Laser Cutter", "Oscilloscope"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["3D Printer", "Laser Cutter", "Oscilloscope"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Robotics Lab",
-      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Underwater Robot, Flying Robot, Snake Robot, and Workbench. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Storage Bin, Pegboard, Safety Glasses, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers 3D Printer, Laser Cutter, and Oscilloscope. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Underwater Robot, Flying Robot, Snake Robot, and Workbench. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Storage Bin, Pegboard, Safety Glasses, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers 3D Printer, Laser Cutter, and Oscilloscope. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wheeled Robot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Underwater Robot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Storage Bin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "3D Printer",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Wheeled Robot, Walking Robot, Line Follower, Sumo Robot, Underwater Robot, Flying Robot, Snake Robot, Workbench, Storage Bin, Pegboard, Safety Glasses, Lab Notebook, 3D Printer, Laser Cutter, and Oscilloscope in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Wheeled Robot, Walking Robot, Line Follower, Sumo Robot, Underwater Robot, Flying Robot, Snake Robot, Workbench, Storage Bin, Pegboard, Safety Glasses, Lab Notebook, 3D Printer, Laser Cutter, and Oscilloscope in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Power Supply", "Testing Mat", "Battery", "Humanoid"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Power Supply", "Testing Mat", "Battery"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Rover", "Chassis", "Track", "Code"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rover", "Chassis", "Track"],
@@ -772,7 +772,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Algorithm", "Loop", "Function", "Debug"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Algorithm", "Loop", "Function"],
@@ -784,7 +784,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Compile", "Variable", "Input"],
-          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.",
+          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.",
           "check": {
             "question": "Which option best describes the main action shown in the scene?",
             "options": ["Compile", "Variable", "Input"],
@@ -798,33 +798,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Robotics Lab",
-      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Power Supply, Testing Mat, Battery, and Humanoid. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Rover, Chassis, Track, and Code. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Algorithm, Loop, Function, and Debug. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Compile, Variable, and Input. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Power Supply, Testing Mat, Battery, and Humanoid. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Rover, Chassis, Track, and Code. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Algorithm, Loop, Function, and Debug. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Compile, Variable, and Input. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Power Supply",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rover",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Algorithm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
         "answer": "Compile",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -855,7 +855,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Power Supply, Testing Mat, Battery, Humanoid, Rover, Chassis, Track, Code, Algorithm, Loop, Function, Debug, Compile, Variable, and Input in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Power Supply, Testing Mat, Battery, Humanoid, Rover, Chassis, Track, Code, Algorithm, Loop, Function, Debug, Compile, Variable, and Input in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

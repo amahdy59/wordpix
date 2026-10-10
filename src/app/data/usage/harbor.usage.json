@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Cargo Ship", "Fishing Boat", "Sailboat", "Tugboat"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cargo Ship", "Fishing Boat", "Sailboat"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Ferry", "Yacht", "Kayak", "Canoe"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ferry", "Yacht", "Kayak"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Speedboat", "Lifeboat", "Barge", "Container Ship"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Speedboat", "Lifeboat", "Barge"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Dock", "Pier", "Wharf"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dock", "Pier", "Wharf"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
-      "text": "At the the harbor, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cargo Ship, Fishing Boat, Sailboat, and Tugboat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ferry, Yacht, Kayak, and Canoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Speedboat, Lifeboat, Barge, and Container Ship. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dock, Pier, and Wharf. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cargo Ship, Fishing Boat, Sailboat, and Tugboat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ferry, Yacht, Kayak, and Canoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Speedboat, Lifeboat, Barge, and Container Ship. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dock, Pier, and Wharf. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cargo Ship",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ferry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Speedboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dock",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the harbor task. Use Cargo Ship, Fishing Boat, Sailboat, Tugboat, Ferry, Yacht, Kayak, Canoe, Speedboat, Lifeboat, Barge, Container Ship, Dock, Pier, and Wharf in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the harbor task. Use Cargo Ship, Fishing Boat, Sailboat, Tugboat, Ferry, Yacht, Kayak, Canoe, Speedboat, Lifeboat, Barge, Container Ship, Dock, Pier, and Wharf in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Jetty", "Breakwater", "Lighthouse", "Harbor Master's Office"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Jetty", "Breakwater", "Lighthouse"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Marina", "Dry Dock", "Shipyard", "Shipping Container"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Marina", "Dry Dock", "Shipyard"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Crane", "Forklift", "Pallet", "Cargo Net"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crane", "Forklift", "Pallet"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Loading Ramp", "Warehouse", "Freight"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Loading Ramp", "Warehouse", "Freight"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Harbor",
-      "text": "At the the harbor, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Jetty, Breakwater, Lighthouse, and Harbor Master's Office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Marina, Dry Dock, Shipyard, and Shipping Container. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crane, Forklift, Pallet, and Cargo Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Loading Ramp, Warehouse, and Freight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Jetty, Breakwater, Lighthouse, and Harbor Master's Office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Marina, Dry Dock, Shipyard, and Shipping Container. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crane, Forklift, Pallet, and Cargo Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Loading Ramp, Warehouse, and Freight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Jetty",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Marina",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crane",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Loading Ramp",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the harbor task. Use Jetty, Breakwater, Lighthouse, Harbor Master's Office, Marina, Dry Dock, Shipyard, Shipping Container, Crane, Forklift, Pallet, Cargo Net, Loading Ramp, Warehouse, and Freight in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the harbor task. Use Jetty, Breakwater, Lighthouse, Harbor Master's Office, Marina, Dry Dock, Shipyard, Shipping Container, Crane, Forklift, Pallet, Cargo Net, Loading Ramp, Warehouse, and Freight in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Anchor", "Mooring Line", "Buoy", "Beacon"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Anchor", "Mooring Line", "Buoy"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Compass", "Chart", "Radar", "Radio"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Compass", "Chart", "Radar"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Binoculars", "Flag", "Signal Light", "Horn"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Binoculars", "Flag", "Signal Light"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Fishing Rod", "Fishing Net", "Tackle Box"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fishing Rod", "Fishing Net", "Tackle Box"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Harbor",
-      "text": "At the the harbor, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Anchor, Mooring Line, Buoy, and Beacon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Compass, Chart, Radar, and Radio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Binoculars, Flag, Signal Light, and Horn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing Rod, Fishing Net, and Tackle Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Anchor, Mooring Line, Buoy, and Beacon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Compass, Chart, Radar, and Radio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Binoculars, Flag, Signal Light, and Horn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing Rod, Fishing Net, and Tackle Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Anchor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Compass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Binoculars",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fishing Rod",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the harbor task. Use Anchor, Mooring Line, Buoy, Beacon, Compass, Chart, Radar, Radio, Binoculars, Flag, Signal Light, Horn, Fishing Rod, Fishing Net, and Tackle Box in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the harbor task. Use Anchor, Mooring Line, Buoy, Beacon, Compass, Chart, Radar, Radio, Binoculars, Flag, Signal Light, Horn, Fishing Rod, Fishing Net, and Tackle Box in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bait", "Hook", "Reel", "Cooler"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bait", "Hook", "Reel"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Fish Basket", "Waders", "Life Jacket", "Seagull"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fish Basket", "Waders", "Life Jacket"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pelican", "Seal", "Crab", "Lobster Trap"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pelican", "Seal", "Crab"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Rope", "Chain", "Barnacle"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rope", "Chain", "Barnacle"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Planning the Next Stage of the Journey",
-      "text": "At the the harbor, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bait, Hook, Reel, and Cooler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fish Basket, Waders, Life Jacket, and Seagull. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pelican, Seal, Crab, and Lobster Trap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rope, Chain, and Barnacle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bait, Hook, Reel, and Cooler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fish Basket, Waders, Life Jacket, and Seagull. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pelican, Seal, Crab, and Lobster Trap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rope, Chain, and Barnacle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bait",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fish Basket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pelican",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rope",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the harbor task. Use Bait, Hook, Reel, Cooler, Fish Basket, Waders, Life Jacket, Seagull, Pelican, Seal, Crab, Lobster Trap, Rope, Chain, and Barnacle in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the harbor task. Use Bait, Hook, Reel, Cooler, Fish Basket, Waders, Life Jacket, Seagull, Pelican, Seal, Crab, Lobster Trap, Rope, Chain, and Barnacle in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -738,7 +738,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Tide", "Wave", "Tanker", "Submarine"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tide", "Wave", "Tanker"],
@@ -750,7 +750,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Container", "Captain", "Sailor", "Cargo"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Container", "Captain", "Sailor"],
@@ -762,7 +762,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Navigation", "Shipping Lane"],
-          "scenario": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.",
+          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Navigation", "Shipping Lane", "Tide"],
@@ -776,26 +776,26 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Harbor",
-      "text": "At the the harbor, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tide, Wave, Tanker, and Submarine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Container, Captain, Sailor, and Cargo. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Navigation and Shipping Lane. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tide, Wave, Tanker, and Submarine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Container, Captain, Sailor, and Cargo. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Navigation and Shipping Lane. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tide",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Container",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Navigation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -826,7 +826,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the harbor task. Use Tide, Wave, Tanker, Submarine, Container, Captain, Sailor, Cargo, Navigation, and Shipping Lane in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the harbor task. Use Tide, Wave, Tanker, Submarine, Container, Captain, Sailor, Cargo, Navigation, and Shipping Lane in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

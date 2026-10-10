@@ -52,103 +52,127 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Apple", "Banana", "Orange"],
-          "scenario": "On the bakery shelf, a shopper sees apple, banana, and orange and puts apple into the basket.",
+          "scenario": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall.",
           "check": {
-            "question": "What is the shopper trying to buy or use?",
+            "question": "Which fruit does Maya put in her basket?",
             "options": ["Orange", "Apple", "Banana"],
             "expectedAnswer": "Apple"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: On the bakery shelf, a shopper sees apple, banana, and orange and puts apple into the basket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Apple, Banana, Orange in a natural setting."
+          "imageBrief": "A natural apple at an unbranded fruit stall. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Grape", "Strawberry", "Watermelon"],
-          "scenario": "At the fresh-food counter, a shopper sees grape, strawberry, and watermelon and compares grape with two alternatives.",
+          "scenario": "Maya wants grapes for a snack. She chooses a small bunch rather than a strawberry or a piece of watermelon.",
           "check": {
-            "question": "What does the customer need at this point?",
+            "question": "Which fruit does Maya choose for her snack?",
             "options": ["Grape", "Strawberry", "Watermelon"],
             "expectedAnswer": "Grape"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the fresh-food counter, a shopper sees grape, strawberry, and watermelon and compares grape with two alternatives. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Grape, Strawberry, Watermelon in a natural setting."
+          "imageBrief": "A small bunch of fresh grapes, with individual grapes visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mango", "Pear", "Peach"],
-          "scenario": "In the weekly grocery aisle, a shopper sees mango, pear, and peach and chooses mango for tonight's meal.",
+          "scenario": "Maya buys a ripe mango for a fruit salad. She already has a pear and a peach at home.",
           "check": {
-            "question": "What is happening at this stage of the shopping trip?",
+            "question": "Which fruit does Maya buy for the salad?",
             "options": ["Pear", "Peach", "Mango"],
             "expectedAnswer": "Mango"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the weekly grocery aisle, a shopper sees mango, pear, and peach and chooses mango for tonight's meal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Mango, Pear, Peach in a natural setting."
+          "imageBrief": "A botanically accurate mango, whole and cut, with its large stone visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pineapple", "Lemon", "Lime"],
-          "scenario": "In the produce aisle, a shopper sees pineapple, lemon, and lime and asks where to find pineapple.",
+          "scenario": "Maya asks the fruit seller for a pineapple. The lemon and lime are for a different recipe.",
           "check": {
-            "question": "What is the shopper trying to buy or use in the example with pineapple, lemon?",
+            "question": "Which fruit does Maya ask the seller for?",
             "options": ["Lime", "Pineapple", "Lemon"],
             "expectedAnswer": "Pineapple"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the produce aisle, a shopper sees pineapple, lemon, and lime and asks where to find pineapple. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Pineapple, Lemon, Lime in a natural setting."
+          "imageBrief": "A pineapple with its distinctive crown and patterned skin. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Carrot", "Broccoli", "Onion"],
-          "scenario": "In the chilled-food case, a shopper sees carrot, broccoli, and onion and checks the price of carrot.",
+          "scenario": "Maya needs a carrot for soup. She keeps the broccoli and onion for tomorrow.",
           "check": {
-            "question": "Which item or person is central to this shopping task?",
+            "question": "Which vegetable does Maya need for soup?",
             "options": ["Carrot", "Broccoli", "Onion"],
             "expectedAnswer": "Carrot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the chilled-food case, a shopper sees carrot, broccoli, and onion and checks the price of carrot. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Carrot, Broccoli, Onion in a natural setting."
+          "imageBrief": "A carrot with its tapered orange root visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Market 1: A Weekly Shopping Trip",
-      "text": "A shopper goes through a supermarket with a list and a budget. The first part of the trip includes apple, banana, orange, grape, and strawberry. In another section, the shopper checks watermelon, mango, pear, peach, and pineapple. Near the end of the trip, the shopper deals with lemon, lime, carrot, broccoli, and onion. Before leaving, the shopper checks the basket, payment, and receipt.",
+      "title": "Market 1: Maya’s shopping trip",
+      "text": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall. Maya wants grapes for a snack. She chooses a small bunch rather than a strawberry or a piece of watermelon. Maya buys a ripe mango for a fruit salad. She already has a pear and a peach at home. Maya asks the fruit seller for a pineapple. The lemon and lime are for a different recipe. Maya needs a carrot for soup. She keeps the broccoli and onion for tomorrow.",
       "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Apple"
+        "prompt": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall.\nWhich fruit does Maya put in her basket?",
+        "answer": "Apple",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Grape"
+        "prompt": "Maya wants grapes for a snack. She chooses a small bunch rather than a strawberry or a piece of watermelon.\nWhich fruit does Maya choose for her snack?",
+        "answer": "Grape",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Mango"
+        "prompt": "Maya buys a ripe mango for a fruit salad. She already has a pear and a peach at home.\nWhich fruit does Maya buy for the salad?",
+        "answer": "Mango",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Pineapple"
+        "prompt": "Maya asks the fruit seller for a pineapple. The lemon and lime are for a different recipe.\nWhich fruit does Maya ask the seller for?",
+        "answer": "Pineapple",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Carrot"
+        "prompt": "Maya needs a carrot for soup. She keeps the broccoli and onion for tomorrow.\nWhich vegetable does Maya need for soup?",
+        "answer": "Carrot",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Apple"
+        "prompt": "Write or say one sentence using “Apple” in a different everyday situation.",
+        "answer": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "market-1-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Banana"
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Apple” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "market-1-transfer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Watermelon"
+        "prompt": "Why does Maya visit this market?",
+        "answer": "to buy food and other groceries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -211,103 +235,127 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pepper", "Tomato", "Cucumber"],
-          "scenario": "At the fresh-food counter, a shopper sees pepper, tomato, and cucumber and chooses pepper for tonight's meal.",
+          "scenario": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper.",
           "check": {
-            "question": "Which item or person is central to this shopping task in the example with pepper, tomato?",
+            "question": "Which ground spice does Maya add to the salad?",
             "options": ["Pepper", "Tomato", "Cucumber"],
             "expectedAnswer": "Pepper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the fresh-food counter, a shopper sees pepper, tomato, and cucumber and chooses pepper for tonight's meal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Pepper, Tomato, Cucumber in a natural setting."
+          "imageBrief": "Ground black pepper and peppercorns beside an unbranded pepper mill; no capsicum or bell pepper. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Lettuce", "Potato", "Mushroom"],
-          "scenario": "In the weekly grocery aisle, a shopper sees lettuce, potato, and mushroom and asks where to find lettuce.",
+          "scenario": "Maya buys lettuce for a salad. The potato and mushroom are for a hot meal.",
           "check": {
-            "question": "Which market word matches the situation?",
+            "question": "Which vegetable does Maya buy for the salad?",
             "options": ["Potato", "Mushroom", "Lettuce"],
             "expectedAnswer": "Lettuce"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the weekly grocery aisle, a shopper sees lettuce, potato, and mushroom and asks where to find lettuce. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Lettuce, Potato, Mushroom in a natural setting."
+          "imageBrief": "A lettuce with leafy details visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Spinach", "Garlic", "Corn"],
-          "scenario": "In the produce aisle, a shopper sees spinach, garlic, and corn and checks the price of spinach.",
+          "scenario": "Maya picks spinach from the vegetable stall. She will cook it with garlic and serve it with corn.",
           "check": {
-            "question": "Which product, place, or person should the learner identify?",
+            "question": "Which leafy vegetable does Maya pick?",
             "options": ["Corn", "Spinach", "Garlic"],
             "expectedAnswer": "Spinach"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the produce aisle, a shopper sees spinach, garlic, and corn and checks the price of spinach. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Spinach, Garlic, Corn in a natural setting."
+          "imageBrief": "Fresh spinach leaves at a vegetable stall. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chicken", "Beef", "Pork"],
-          "scenario": "In the chilled-food case, a shopper sees chicken, beef, and pork and puts chicken into the basket.",
+          "scenario": "At the meat counter, Maya asks for chicken. She does not need beef or pork today.",
           "check": {
-            "question": "What is the shopper trying to buy or use in the example with chicken, beef?",
+            "question": "Which meat does Maya ask for?",
             "options": ["Chicken", "Beef", "Pork"],
             "expectedAnswer": "Chicken"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the chilled-food case, a shopper sees chicken, beef, and pork and puts chicken into the basket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Chicken, Beef, Pork in a natural setting."
+          "imageBrief": "Unbranded chicken portions in a refrigerated food display. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Fish", "Shrimp", "Sausage"],
-          "scenario": "On the bakery shelf, a shopper sees fish, shrimp, and sausage and compares fish with two alternatives.",
+          "scenario": "At the seafood counter, Maya chooses a whole fish. She leaves the shrimp there and buys sausage at another stall.",
           "check": {
-            "question": "What does the customer need at this point in the example with fish, shrimp?",
+            "question": "What does Maya choose at the seafood counter?",
             "options": ["Shrimp", "Sausage", "Fish"],
             "expectedAnswer": "Fish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: On the bakery shelf, a shopper sees fish, shrimp, and sausage and compares fish with two alternatives. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Fish, Shrimp, Sausage in a natural setting."
+          "imageBrief": "A whole identifiable fish in a clean chilled seafood display, with no readable packaging. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Market 2: A Weekly Shopping Trip",
-      "text": "A shopper goes through a supermarket with a list and a budget. The first part of the trip includes pepper, tomato, cucumber, lettuce, and potato. In another section, the shopper checks mushroom, spinach, garlic, corn, and chicken. Near the end of the trip, the shopper deals with beef, pork, fish, shrimp, and sausage. Before leaving, the shopper checks the basket, payment, and receipt.",
+      "title": "Market 2: Maya’s shopping trip",
+      "text": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper. Maya buys lettuce for a salad. The potato and mushroom are for a hot meal. Maya picks spinach from the vegetable stall. She will cook it with garlic and serve it with corn. At the meat counter, Maya asks for chicken. She does not need beef or pork today. At the seafood counter, Maya chooses a whole fish. She leaves the shrimp there and buys sausage at another stall.",
       "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Pepper"
+        "prompt": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper.\nWhich ground spice does Maya add to the salad?",
+        "answer": "Pepper",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Lettuce"
+        "prompt": "Maya buys lettuce for a salad. The potato and mushroom are for a hot meal.\nWhich vegetable does Maya buy for the salad?",
+        "answer": "Lettuce",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Spinach"
+        "prompt": "Maya picks spinach from the vegetable stall. She will cook it with garlic and serve it with corn.\nWhich leafy vegetable does Maya pick?",
+        "answer": "Spinach",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Chicken"
+        "prompt": "At the meat counter, Maya asks for chicken. She does not need beef or pork today.\nWhich meat does Maya ask for?",
+        "answer": "Chicken",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Fish"
+        "prompt": "At the seafood counter, Maya chooses a whole fish. She leaves the shrimp there and buys sausage at another stall.\nWhat does Maya choose at the seafood counter?",
+        "answer": "Fish",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Pepper"
+        "prompt": "Write or say one sentence using “Pepper” in a different everyday situation.",
+        "answer": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "market-2-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Tomato"
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Pepper” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "market-2-transfer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Mushroom"
+        "prompt": "Why does Maya visit this market?",
+        "answer": "to buy food and other groceries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -370,103 +418,127 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Ham", "Bacon", "Turkey"],
-          "scenario": "In the weekly grocery aisle, a shopper sees ham, bacon, and turkey and checks the price of ham.",
+          "scenario": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home.",
           "check": {
-            "question": "What does the customer need at this point in the example with ham, bacon?",
+            "question": "Which meat does Maya ask the deli worker to slice?",
             "options": ["Bacon", "Turkey", "Ham"],
             "expectedAnswer": "Ham"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the weekly grocery aisle, a shopper sees ham, bacon, and turkey and checks the price of ham. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Ham, Bacon, Turkey in a natural setting."
+          "imageBrief": "Slices of ham in a clean deli display. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Salmon", "Tuna", "Lamb"],
-          "scenario": "In the produce aisle, a shopper sees salmon, tuna, and lamb and puts salmon into the basket.",
+          "scenario": "Maya buys salmon from the fish counter. She compares it with tuna, then asks where the lamb is sold.",
           "check": {
-            "question": "What is happening at this stage of the shopping trip in the example with salmon, tuna?",
+            "question": "Which fish does Maya buy?",
             "options": ["Lamb", "Salmon", "Tuna"],
             "expectedAnswer": "Salmon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the produce aisle, a shopper sees salmon, tuna, and lamb and puts salmon into the basket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Salmon, Tuna, Lamb in a natural setting."
+          "imageBrief": "A salmon portion with characteristic flesh visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Milk", "Cheese", "Yogurt"],
-          "scenario": "In the chilled-food case, a shopper sees milk, cheese, and yogurt and compares milk with two alternatives.",
+          "scenario": "At the dairy stall, Maya buys milk to drink. She chooses cheese and yogurt for a separate meal.",
           "check": {
-            "question": "What is the shopper trying to buy or use in the example with milk, cheese?",
+            "question": "Which dairy drink does Maya buy?",
             "options": ["Milk", "Cheese", "Yogurt"],
             "expectedAnswer": "Milk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In the chilled-food case, a shopper sees milk, cheese, and yogurt and compares milk with two alternatives. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Milk, Cheese, Yogurt in a natural setting."
+          "imageBrief": "An unbranded milk bottle beside a clear glass of milk. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Butter", "Cream", "Bread"],
-          "scenario": "On the bakery shelf, a shopper sees butter, cream, and bread and chooses butter for tonight's meal.",
+          "scenario": "Maya spreads butter on bread. She saves the cream for a dessert.",
           "check": {
-            "question": "Which item or person is central to this shopping task in the example with butter, cream?",
+            "question": "Which dairy product does Maya spread on bread?",
             "options": ["Cream", "Bread", "Butter"],
             "expectedAnswer": "Butter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: On the bakery shelf, a shopper sees butter, cream, and bread and chooses butter for tonight's meal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Butter, Cream, Bread in a natural setting."
+          "imageBrief": "Butter beside a plain slice of bread, with a spread visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Roll", "Bagel", "Croissant"],
-          "scenario": "At the fresh-food counter, a shopper sees roll, bagel, and croissant and asks where to find roll.",
+          "scenario": "Maya buys a small bread roll for lunch. A bagel and a croissant remain in the bakery basket.",
           "check": {
-            "question": "Which market word matches the situation in the example with roll, bagel?",
+            "question": "Which small bread does Maya buy for lunch?",
             "options": ["Croissant", "Roll", "Bagel"],
             "expectedAnswer": "Roll"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the fresh-food counter, a shopper sees roll, bagel, and croissant and asks where to find roll. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Roll, Bagel, Croissant in a natural setting."
+          "imageBrief": "One small bread roll, distinct from a ring-shaped bagel or a flaky croissant. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Market 3: A Weekly Shopping Trip",
-      "text": "A shopper goes through a supermarket with a list and a budget. The first part of the trip includes ham, bacon, turkey, salmon, and tuna. In another section, the shopper checks lamb, milk, cheese, yogurt, and butter. Near the end of the trip, the shopper deals with cream, bread, roll, bagel, and croissant. Before leaving, the shopper checks the basket, payment, and receipt.",
+      "title": "Market 3: Maya’s shopping trip",
+      "text": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home. Maya buys salmon from the fish counter. She compares it with tuna, then asks where the lamb is sold. At the dairy stall, Maya buys milk to drink. She chooses cheese and yogurt for a separate meal. Maya spreads butter on bread. She saves the cream for a dessert. Maya buys a small bread roll for lunch. A bagel and a croissant remain in the bakery basket.",
       "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Ham"
+        "prompt": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home.\nWhich meat does Maya ask the deli worker to slice?",
+        "answer": "Ham",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Salmon"
+        "prompt": "Maya buys salmon from the fish counter. She compares it with tuna, then asks where the lamb is sold.\nWhich fish does Maya buy?",
+        "answer": "Salmon",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Milk"
+        "prompt": "At the dairy stall, Maya buys milk to drink. She chooses cheese and yogurt for a separate meal.\nWhich dairy drink does Maya buy?",
+        "answer": "Milk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Butter"
+        "prompt": "Maya spreads butter on bread. She saves the cream for a dessert.\nWhich dairy product does Maya spread on bread?",
+        "answer": "Butter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Roll"
+        "prompt": "Maya buys a small bread roll for lunch. A bagel and a croissant remain in the bakery basket.\nWhich small bread does Maya buy for lunch?",
+        "answer": "Roll",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Ham"
+        "prompt": "Write or say one sentence using “Ham” in a different everyday situation.",
+        "answer": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "market-3-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Bacon"
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Ham” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "market-3-transfer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Lamb"
+        "prompt": "Why does Maya visit this market?",
+        "answer": "to buy food and other groceries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -529,103 +601,127 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Cake", "Pie", "Cookie"],
-          "scenario": "In a supermarket, a customer is dealing with cake, pie, and cookie. The highlighted part of the shopping trip is the cake.",
+          "scenario": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day.",
           "check": {
-            "question": "Which market word matches the situation in the example with cake, pie?",
+            "question": "Which dessert does Maya order for the celebration?",
             "options": ["Cookie", "Cake", "Pie"],
             "expectedAnswer": "Cake"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In a supermarket, a customer is dealing with cake, pie, and cookie. The highlighted part of the shopping trip is the cake. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Cake, Pie, Cookie in a natural setting."
+          "imageBrief": "A simple unbranded cake with no candles, lettering or decorations that resemble text. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Produce Section", "Deli Counter", "Bakery"],
-          "scenario": "In a supermarket, a customer is dealing with produce section, deli counter, and bakery. The highlighted part of the shopping trip is the produce section.",
+          "scenario": "Maya looks for fresh fruit and vegetables in the produce section. She will visit the deli counter and bakery later.",
           "check": {
-            "question": "Which product, place, or person should the learner identify in the example with produce section, deli counter?",
+            "question": "Which section does Maya visit for fresh fruit and vegetables?",
             "options": ["Produce Section", "Deli Counter", "Bakery"],
             "expectedAnswer": "Produce Section"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In a supermarket, a customer is dealing with produce section, deli counter, and bakery. The highlighted part of the shopping trip is the produce section. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Produce Section, Deli Counter, Bakery in a natural setting."
+          "imageBrief": "An unbranded produce display with fruit and vegetables in open crates. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Frozen Foods", "Checkout", "Aisle"],
-          "scenario": "In a supermarket, a customer is dealing with frozen foods, checkout, and aisle. The highlighted part of the shopping trip is the frozen foods.",
+          "scenario": "Maya takes frozen peas from the frozen foods section. Then she walks along an aisle towards the checkout.",
           "check": {
-            "question": "What is the shopper trying to buy or use in the example with frozen foods, checkout?",
+            "question": "Which section stores the frozen peas?",
             "options": ["Checkout", "Aisle", "Frozen Foods"],
             "expectedAnswer": "Frozen Foods"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In a supermarket, a customer is dealing with frozen foods, checkout, and aisle. The highlighted part of the shopping trip is the frozen foods. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Frozen Foods, Checkout, Aisle in a natural setting."
+          "imageBrief": "Unbranded freezer cabinets with plain frozen-food packages; no readable labels. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Shopping Cart", "Basket", "Cash Register"],
-          "scenario": "In a supermarket, a customer is dealing with shopping cart, basket, and cash register. The highlighted part of the shopping trip is the shopping cart.",
+          "scenario": "Maya uses a shopping cart for her groceries. A basket is too small, and the cash register stays at the checkout.",
           "check": {
-            "question": "What does the customer need at this point in the example with shopping cart, basket?",
+            "question": "Which wheeled carrier does Maya use?",
             "options": ["Cash Register", "Shopping Cart", "Basket"],
             "expectedAnswer": "Shopping Cart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In a supermarket, a customer is dealing with shopping cart, basket, and cash register. The highlighted part of the shopping trip is the shopping cart. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Shopping Cart, Basket, Cash Register in a natural setting."
+          "imageBrief": "An empty supermarket shopping cart with all four wheels visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Scale", "Price Tag", "Receipt"],
-          "scenario": "In a supermarket, a customer is dealing with scale, price tag, and receipt. The highlighted part of the shopping trip is the scale.",
+          "scenario": "Maya puts vegetables on a scale to find their weight. She checks a price tag before paying and keeps the receipt afterwards.",
           "check": {
-            "question": "What is happening at this stage of the shopping trip in the example with scale, price tag?",
+            "question": "Which device does Maya use to find the weight?",
             "options": ["Scale", "Price Tag", "Receipt"],
             "expectedAnswer": "Scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: In a supermarket, a customer is dealing with scale, price tag, and receipt. The highlighted part of the shopping trip is the scale. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Scale, Price Tag, Receipt in a natural setting."
+          "imageBrief": "A weighing scale with a tray of vegetables; display blank or too indistinct to read. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Market 4: A Weekly Shopping Trip",
-      "text": "A shopper goes through a supermarket with a list and a budget. The first part of the trip includes cake, pie, cookie, produce section, and deli counter. In another section, the shopper checks bakery, frozen foods, checkout, aisle, and shopping cart. Near the end of the trip, the shopper deals with basket, cash register, scale, price tag, and receipt. Before leaving, the shopper checks the basket, payment, and receipt.",
+      "title": "Market 4: Maya’s shopping trip",
+      "text": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day. Maya looks for fresh fruit and vegetables in the produce section. She will visit the deli counter and bakery later. Maya takes frozen peas from the frozen foods section. Then she walks along an aisle towards the checkout. Maya uses a shopping cart for her groceries. A basket is too small, and the cash register stays at the checkout. Maya puts vegetables on a scale to find their weight. She checks a price tag before paying and keeps the receipt afterwards.",
       "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Cake"
+        "prompt": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day.\nWhich dessert does Maya order for the celebration?",
+        "answer": "Cake",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Produce Section"
+        "prompt": "Maya looks for fresh fruit and vegetables in the produce section. She will visit the deli counter and bakery later.\nWhich section does Maya visit for fresh fruit and vegetables?",
+        "answer": "Produce Section",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Frozen Foods"
+        "prompt": "Maya takes frozen peas from the frozen foods section. Then she walks along an aisle towards the checkout.\nWhich section stores the frozen peas?",
+        "answer": "Frozen Foods",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Shopping Cart"
+        "prompt": "Maya uses a shopping cart for her groceries. A basket is too small, and the cash register stays at the checkout.\nWhich wheeled carrier does Maya use?",
+        "answer": "Shopping Cart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Scale"
+        "prompt": "Maya puts vegetables on a scale to find their weight. She checks a price tag before paying and keeps the receipt afterwards.\nWhich device does Maya use to find the weight?",
+        "answer": "Scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Cake"
+        "prompt": "Write or say one sentence using “Cake” in a different everyday situation.",
+        "answer": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "market-4-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Pie"
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Cake” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "market-4-transfer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Bakery"
+        "prompt": "Why does Maya visit this market?",
+        "answer": "to buy food and other groceries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -688,103 +784,127 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Barcode", "Shopping Bag", "Coupon"],
-          "scenario": "At the checkout area, a customer uses or sees barcode, shopping bag, and coupon. The highlighted item is the barcode.",
+          "scenario": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon.",
           "check": {
-            "question": "What is happening at this stage of the shopping trip in the example with barcode, shopping bag?",
+            "question": "Which pattern on the package does the cashier scan?",
             "options": ["Barcode", "Shopping Bag", "Coupon"],
             "expectedAnswer": "Barcode"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the checkout area, a customer uses or sees barcode, shopping bag, and coupon. The highlighted item is the barcode. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Barcode, Shopping Bag, Coupon in a natural setting."
+          "imageBrief": "A plausible barcode pattern of parallel lines on a plain package, without digits, brand names or other readable text. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Shopping List", "Credit Card", "Cash"],
-          "scenario": "At the checkout area, a customer uses or sees shopping list, credit card, and cash. The highlighted item is the shopping list.",
+          "scenario": "Maya writes a shopping list before leaving home. At the market, she checks this list and pays with cash rather than a credit card.",
           "check": {
-            "question": "What is the shopper trying to buy or use in the example with shopping list, credit card?",
+            "question": "Which written reminder helps Maya remember what to buy?",
             "options": ["Credit Card", "Cash", "Shopping List"],
             "expectedAnswer": "Shopping List"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the checkout area, a customer uses or sees shopping list, credit card, and cash. The highlighted item is the shopping list. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Shopping List, Credit Card, Cash in a natural setting."
+          "imageBrief": "A blank paper note beside groceries. The reference cannot prove a list’s contents; retain the written context. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Change", "Wallet", "Cherry"],
-          "scenario": "At the checkout area, a customer uses or sees change, wallet, and cherry. The highlighted item is the change.",
+          "scenario": "Maya pays with cash. The cashier gives her change, which she puts in her wallet before eating a cherry.",
           "check": {
-            "question": "Which item or person is central to this shopping task in the example with change, wallet?",
+            "question": "What money does the cashier give back after payment?",
             "options": ["Cherry", "Change", "Wallet"],
             "expectedAnswer": "Change"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the checkout area, a customer uses or sees change, wallet, and cherry. The highlighted item is the change. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Change, Wallet, Cherry in a natural setting."
+          "imageBrief": "Generic coins with no readable denomination or identifiable currency. The written context establishes that the coins are change. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Kiwi", "Muffin", "Shelf"],
-          "scenario": "At the checkout area, a customer uses or sees kiwi, muffin, and shelf. The highlighted item is the kiwi.",
+          "scenario": "Maya chooses a kiwi with brown skin and green flesh. She leaves a muffin on the bakery shelf.",
           "check": {
-            "question": "Which market word matches the situation in the example with kiwi, muffin?",
+            "question": "Which fruit has brown skin and green flesh in this story?",
             "options": ["Kiwi", "Muffin", "Shelf"],
             "expectedAnswer": "Kiwi"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the checkout area, a customer uses or sees kiwi, muffin, and shelf. The highlighted item is the kiwi. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Kiwi, Muffin, Shelf in a natural setting."
+          "imageBrief": "A whole brown fuzzy kiwi beside a cut kiwi with green flesh and black seeds. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Freezer", "Counter", "Cashier"],
-          "scenario": "At the checkout area, a customer uses or sees freezer, counter, and cashier. The highlighted item is the freezer.",
+          "scenario": "The cashier takes a frozen dessert from a freezer behind the counter. Maya asks how to carry it home.",
           "check": {
-            "question": "Which product, place, or person should the learner identify in the example with freezer, counter?",
+            "question": "Which appliance keeps the dessert frozen?",
             "options": ["Counter", "Cashier", "Freezer"],
             "expectedAnswer": "Freezer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: At the checkout area, a customer uses or sees freezer, counter, and cashier. The highlighted item is the freezer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Freezer, Counter, Cashier in a natural setting."
+          "imageBrief": "A plain commercial freezer with no readable labels or incidental people. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Market 5: A Weekly Shopping Trip",
-      "text": "A shopper goes through a supermarket with a list and a budget. The first part of the trip includes barcode, shopping bag, coupon, shopping list, and credit card. In another section, the shopper checks cash, change, wallet, cherry, and kiwi. Near the end of the trip, the shopper deals with muffin, shelf, freezer, counter, and cashier. Before leaving, the shopper checks the basket, payment, and receipt.",
+      "title": "Market 5: Maya’s shopping trip",
+      "text": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon. Maya writes a shopping list before leaving home. At the market, she checks this list and pays with cash rather than a credit card. Maya pays with cash. The cashier gives her change, which she puts in her wallet before eating a cherry. Maya chooses a kiwi with brown skin and green flesh. She leaves a muffin on the bakery shelf. The cashier takes a frozen dessert from a freezer behind the counter. Maya asks how to carry it home.",
       "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Barcode"
+        "prompt": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon.\nWhich pattern on the package does the cashier scan?",
+        "answer": "Barcode",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Shopping List"
+        "prompt": "Maya writes a shopping list before leaving home. At the market, she checks this list and pays with cash rather than a credit card.\nWhich written reminder helps Maya remember what to buy?",
+        "answer": "Shopping List",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Change"
+        "prompt": "Maya pays with cash. The cashier gives her change, which she puts in her wallet before eating a cherry.\nWhat money does the cashier give back after payment?",
+        "answer": "Change",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Kiwi"
+        "prompt": "Maya chooses a kiwi with brown skin and green flesh. She leaves a muffin on the bakery shelf.\nWhich fruit has brown skin and green flesh in this story?",
+        "answer": "Kiwi",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Freezer"
+        "prompt": "The cashier takes a frozen dessert from a freezer behind the counter. Maya asks how to carry it home.\nWhich appliance keeps the dessert frozen?",
+        "answer": "Freezer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Barcode"
+        "prompt": "Write or say one sentence using “Barcode” in a different everyday situation.",
+        "answer": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "market-5-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Shopping Bag"
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Barcode” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "market-5-transfer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Cash"
+        "prompt": "Why does Maya visit this market?",
+        "answer": "to buy food and other groceries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
@@ -839,87 +959,108 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Customer", "Butcher", "Baker"],
-          "scenario": "During a busy shopping period, the scene includes customer, butcher, and baker. The highlighted person or item is the customer.",
+          "scenario": "A customer buys food at the market. The butcher sells meat, and the baker sells bread.",
           "check": {
-            "question": "Which product, place, or person should the learner identify in the example with customer, butcher?",
+            "question": "Who is buying food in this story?",
             "options": ["Butcher", "Baker", "Customer"],
             "expectedAnswer": "Customer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: During a busy shopping period, the scene includes customer, butcher, and baker. The highlighted person or item is the customer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Customer, Butcher, Baker in a natural setting."
+          "imageBrief": "One modest adult man shopping. The written story distinguishes the customer from a store worker. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Manager", "Stock Clerk", "Security Guard"],
-          "scenario": "During a busy shopping period, the scene includes manager, stock clerk, and security guard. The highlighted person or item is the manager.",
+          "scenario": "The manager organises the market team. A stock clerk fills shelves, and a security guard watches the entrance.",
           "check": {
-            "question": "What is the shopper trying to buy or use in the example with manager, stock clerk?",
+            "question": "Who organises the market team?",
             "options": ["Security Guard", "Manager", "Stock Clerk"],
             "expectedAnswer": "Manager"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: During a busy shopping period, the scene includes manager, stock clerk, and security guard. The highlighted person or item is the manager. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Manager, Stock Clerk, Security Guard in a natural setting."
+          "imageBrief": "A modest adult man in a supermarket setting; the written story establishes his managerial role. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Delivery Driver", "Shopper", "Child"],
-          "scenario": "During a busy shopping period, the scene includes delivery driver, shopper, and child. The highlighted person or item is the delivery driver.",
+          "scenario": "A delivery driver brings crates to the market. A shopper arrives to buy food; the word child means a young person.",
           "check": {
-            "question": "What does the customer need at this point in the example with delivery driver, shopper?",
+            "question": "Who brings the crates to the market?",
             "options": ["Delivery Driver", "Shopper", "Child"],
             "expectedAnswer": "Delivery Driver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: During a busy shopping period, the scene includes delivery driver, shopper, and child. The highlighted person or item is the delivery driver. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Delivery Driver, Shopper, Child in a natural setting."
+          "imageBrief": "One modest adult male delivery driver unloading plain crates from an unbranded van; no incidental people or children. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cart", "Bag"],
-          "scenario": "During a busy shopping period, the scene includes cart and bag. The highlighted person or item is the cart.",
+          "scenario": "Maya puts a bag of groceries in her cart and wheels it towards the exit.",
           "check": {
-            "question": "What is happening at this stage of the shopping trip in the example with cart, bag?",
+            "question": "Which wheeled carrier holds Maya’s bag?",
             "options": ["Bag", "Customer", "Cart"],
             "expectedAnswer": "Cart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the market context illustrating this situation: During a busy shopping period, the scene includes cart and bag. The highlighted person or item is the cart. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the market scene showing lesson-related items or actions including Cart, Bag in a natural setting."
+          "imageBrief": "A wheeled shopping cart holding a plain grocery bag. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Market 6: A Weekly Shopping Trip",
-      "text": "A shopper goes through a supermarket with a list and a budget. The first part of the trip includes customer, butcher, baker, manager, and stock clerk. In another section, the shopper checks security guard, delivery driver, shopper, child, and cart. Near the end of the trip, the shopper deals with bag. Before leaving, the shopper checks the basket, payment, and receipt.",
+      "title": "Market 6: Maya’s shopping trip",
+      "text": "A customer buys food at the market. The butcher sells meat, and the baker sells bread. The manager organises the market team. A stock clerk fills shelves, and a security guard watches the entrance. A delivery driver brings crates to the market. A shopper arrives to buy food; the word child means a young person. Maya puts a bag of groceries in her cart and wheels it towards the exit.",
       "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Customer"
+        "prompt": "A customer buys food at the market. The butcher sells meat, and the baker sells bread.\nWho is buying food in this story?",
+        "answer": "Customer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Manager"
+        "prompt": "The manager organises the market team. A stock clerk fills shelves, and a security guard watches the entrance.\nWho organises the market team?",
+        "answer": "Manager",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Delivery Driver"
+        "prompt": "A delivery driver brings crates to the market. A shopper arrives to buy food; the word child means a young person.\nWho brings the crates to the market?",
+        "answer": "Delivery Driver",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Cart"
+        "prompt": "Maya puts a bag of groceries in her cart and wheels it towards the exit.\nWhich wheeled carrier holds Maya’s bag?",
+        "answer": "Cart",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Customer"
+        "prompt": "Write or say one sentence using “Customer” in a different everyday situation.",
+        "answer": "A customer buys food at the market. The butcher sells meat, and the baker sells bread.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "market-6-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Butcher"
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Customer” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "market-6-transfer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Security Guard"
+        "prompt": "Why does Maya visit this market?",
+        "answer": "to buy food and other groceries",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {

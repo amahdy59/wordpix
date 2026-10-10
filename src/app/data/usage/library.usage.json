@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Novel", "Picture Book", "Reference Book"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Novel", "Picture Book", "Reference Book"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Comic Book", "Magazine", "Newspaper"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Comic Book", "Magazine", "Newspaper"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Encyclopedia", "Atlas", "Biography"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Encyclopedia", "Atlas", "Biography"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Poetry Book", "Bookshelf", "Reading Table"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Poetry Book", "Bookshelf", "Reading Table"],
@@ -100,7 +100,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Study Desk", "Chair", "Bean Bag"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Study Desk", "Chair", "Bean Bag"],
@@ -114,40 +114,40 @@
     },
     "reading": {
       "title": "A Practical Conversation: The Library",
-      "text": "At the the library, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Novel, Picture Book, and Reference Book. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Comic Book, Magazine, and Newspaper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Encyclopedia, Atlas, and Biography. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Poetry Book, Bookshelf, and Reading Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Study Desk, Chair, and Bean Bag. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Novel, Picture Book, and Reference Book. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Comic Book, Magazine, and Newspaper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Encyclopedia, Atlas, and Biography. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Poetry Book, Bookshelf, and Reading Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Study Desk, Chair, and Bean Bag. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Novel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Comic Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Encyclopedia",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Poetry Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Study Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -174,7 +174,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the library task. Use Novel, Picture Book, Reference Book, Comic Book, Magazine, Newspaper, Encyclopedia, Atlas, Biography, Poetry Book, Bookshelf, Reading Table, Study Desk, Chair, and Bean Bag in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the library task. Use Novel, Picture Book, Reference Book, Comic Book, Magazine, Newspaper, Encyclopedia, Atlas, Biography, Poetry Book, Bookshelf, Reading Table, Study Desk, Chair, and Bean Bag in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -241,7 +241,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Step Stool", "Cart", "Lamp"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Step Stool", "Cart", "Lamp"],
@@ -253,7 +253,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Computer Desk", "Armchair", "Fiction"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Computer Desk", "Armchair", "Fiction"],
@@ -265,7 +265,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Non-Fiction", "Children's Section", "Reference Section"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Non-Fiction", "Children's Section", "Reference Section"],
@@ -277,7 +277,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Periodicals", "Media Center", "Study Room"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Periodicals", "Media Center", "Study Room"],
@@ -289,7 +289,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Return Desk", "Help Desk", "Archive"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Return Desk", "Help Desk", "Archive"],
@@ -303,40 +303,40 @@
     },
     "reading": {
       "title": "What You Need to Know: The Library",
-      "text": "At the the library, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Step Stool, Cart, and Lamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Desk, Armchair, and Fiction. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Non-Fiction, Children's Section, and Reference Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Periodicals, Media Center, and Study Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Return Desk, Help Desk, and Archive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Step Stool, Cart, and Lamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Desk, Armchair, and Fiction. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Non-Fiction, Children's Section, and Reference Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Periodicals, Media Center, and Study Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Return Desk, Help Desk, and Archive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Step Stool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Computer Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Non-Fiction",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Periodicals",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Return Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -363,7 +363,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the library task. Use Step Stool, Cart, Lamp, Computer Desk, Armchair, Fiction, Non-Fiction, Children's Section, Reference Section, Periodicals, Media Center, Study Room, Return Desk, Help Desk, and Archive in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the library task. Use Step Stool, Cart, Lamp, Computer Desk, Armchair, Fiction, Non-Fiction, Children's Section, Reference Section, Periodicals, Media Center, Study Room, Return Desk, Help Desk, and Archive in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -430,7 +430,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Reading", "Borrowing", "Returning"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Reading", "Borrowing", "Returning"],
@@ -442,7 +442,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Searching", "Studying", "Browsing"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Searching", "Studying", "Browsing"],
@@ -454,7 +454,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Reserving", "Photocopying", "Typing"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Reserving", "Photocopying", "Typing"],
@@ -466,7 +466,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Whispering", "Library Card", "Barcode Scanner"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Whispering", "Library Card", "Barcode Scanner"],
@@ -478,7 +478,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Stamp", "Bookmark", "Book Cover"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stamp", "Bookmark", "Book Cover"],
@@ -492,40 +492,40 @@
     },
     "reading": {
       "title": "Before You Begin: The Library",
-      "text": "At the the library, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Reading, Borrowing, and Returning. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Searching, Studying, and Browsing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reserving, Photocopying, and Typing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whispering, Library Card, and Barcode Scanner. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stamp, Bookmark, and Book Cover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Reading, Borrowing, and Returning. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Searching, Studying, and Browsing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reserving, Photocopying, and Typing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whispering, Library Card, and Barcode Scanner. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stamp, Bookmark, and Book Cover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Reading",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Searching",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Reserving",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Whispering",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -552,7 +552,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the library task. Use Reading, Borrowing, Returning, Searching, Studying, Browsing, Reserving, Photocopying, Typing, Whispering, Library Card, Barcode Scanner, Stamp, Bookmark, and Book Cover in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the library task. Use Reading, Borrowing, Returning, Searching, Studying, Browsing, Reserving, Photocopying, Typing, Whispering, Library Card, Barcode Scanner, Stamp, Bookmark, and Book Cover in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -619,7 +619,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Label", "Catalog", "Computer"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Label", "Catalog", "Computer"],
@@ -631,7 +631,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Printer", "Scanner", "Librarian"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Printer", "Scanner", "Librarian"],
@@ -643,7 +643,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Assistant", "Volunteer", "Reader"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Assistant", "Volunteer", "Reader"],
@@ -655,7 +655,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Student", "Researcher", "Author"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Student", "Researcher", "Author"],
@@ -667,7 +667,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Storyteller", "Guard", "Cleaner"],
-          "scenario": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.",
+          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Storyteller", "Guard", "Cleaner"],
@@ -681,40 +681,40 @@
     },
     "reading": {
       "title": "A Real-World Task: The Library",
-      "text": "At the the library, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Label, Catalog, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Printer, Scanner, and Librarian. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Assistant, Volunteer, and Reader. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Student, Researcher, and Author. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Storyteller, Guard, and Cleaner. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Label, Catalog, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Printer, Scanner, and Librarian. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Assistant, Volunteer, and Reader. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Student, Researcher, and Author. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Storyteller, Guard, and Cleaner. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Label",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Printer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Assistant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Student",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Storyteller",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -741,7 +741,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the library task. Use Label, Catalog, Computer, Printer, Scanner, Librarian, Assistant, Volunteer, Reader, Student, Researcher, Author, Storyteller, Guard, and Cleaner in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the library task. Use Label, Catalog, Computer, Printer, Scanner, Librarian, Assistant, Volunteer, Reader, Student, Researcher, Author, Storyteller, Guard, and Cleaner in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

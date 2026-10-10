@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Tent", "Sleeping Bag", "Air Mattress", "Tarp"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tent, Sleeping Bag, Air Mattress, and Tarp and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tent, Sleeping Bag, Air Mattress, and Tarp and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tent", "Sleeping Bag", "Air Mattress"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Hammock", "Tent Pole", "Tent Peg", "Rain Fly"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Tent Pole, Tent Peg, and Rain Fly and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Tent Pole, Tent Peg, and Rain Fly and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hammock", "Tent Pole", "Tent Peg"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Groundsheet", "Pillow", "Campfire", "Firewood"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Groundsheet, Pillow, Campfire, and Firewood and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Groundsheet, Pillow, Campfire, and Firewood and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Groundsheet", "Pillow", "Campfire"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Matches", "Lighter", "Grill"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Matches, Lighter, and Grill and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Matches, Lighter, and Grill and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Matches", "Lighter", "Grill"],
@@ -101,33 +101,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Camping Site",
-      "text": "At the the camping site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tent, Sleeping Bag, Air Mattress, and Tarp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hammock, Tent Pole, Tent Peg, and Rain Fly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Groundsheet, Pillow, Campfire, and Firewood. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Matches, Lighter, and Grill. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the camping site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tent, Sleeping Bag, Air Mattress, and Tarp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hammock, Tent Pole, Tent Peg, and Rain Fly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Groundsheet, Pillow, Campfire, and Firewood. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Matches, Lighter, and Grill. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tent, Sleeping Bag, Air Mattress, and Tarp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tent, Sleeping Bag, Air Mattress, and Tarp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tent",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Tent Pole, Tent Peg, and Rain Fly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Tent Pole, Tent Peg, and Rain Fly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hammock",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Groundsheet, Pillow, Campfire, and Firewood and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Groundsheet, Pillow, Campfire, and Firewood and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Groundsheet",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Matches, Lighter, and Grill and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Matches, Lighter, and Grill and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Matches",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -158,7 +158,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the camping site task. Use Tent, Sleeping Bag, Air Mattress, Tarp, Hammock, Tent Pole, Tent Peg, Rain Fly, Groundsheet, Pillow, Campfire, Firewood, Matches, Lighter, and Grill in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the camping site task. Use Tent, Sleeping Bag, Air Mattress, Tarp, Hammock, Tent Pole, Tent Peg, Rain Fly, Groundsheet, Pillow, Campfire, Firewood, Matches, Lighter, and Grill in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -225,7 +225,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Camp Stove", "Cooler", "Water Jug", "Thermos"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camp Stove, Cooler, Water Jug, and Thermos and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camp Stove, Cooler, Water Jug, and Thermos and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Camp Stove", "Cooler", "Water Jug"],
@@ -237,7 +237,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Camping Pot", "Marshmallow", "Skewer", "Compass"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camping Pot, Marshmallow, Skewer, and Compass and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camping Pot, Marshmallow, Skewer, and Compass and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Camping Pot", "Marshmallow", "Skewer"],
@@ -249,7 +249,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Map", "GPS Device", "Flashlight", "Headlamp"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, GPS Device, Flashlight, and Headlamp and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, GPS Device, Flashlight, and Headlamp and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Map", "GPS Device", "Flashlight"],
@@ -261,7 +261,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Lantern", "Binoculars", "Whistle"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lantern, Binoculars, and Whistle and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lantern, Binoculars, and Whistle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lantern", "Binoculars", "Whistle"],
@@ -274,33 +274,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Camping Site",
-      "text": "At the the camping site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camp Stove, Cooler, Water Jug, and Thermos. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Camping Pot, Marshmallow, Skewer, and Compass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Map, GPS Device, Flashlight, and Headlamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lantern, Binoculars, and Whistle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the camping site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camp Stove, Cooler, Water Jug, and Thermos. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Camping Pot, Marshmallow, Skewer, and Compass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Map, GPS Device, Flashlight, and Headlamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lantern, Binoculars, and Whistle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camp Stove, Cooler, Water Jug, and Thermos and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camp Stove, Cooler, Water Jug, and Thermos and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Camp Stove",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camping Pot, Marshmallow, Skewer, and Compass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camping Pot, Marshmallow, Skewer, and Compass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Camping Pot",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, GPS Device, Flashlight, and Headlamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, GPS Device, Flashlight, and Headlamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Map",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lantern, Binoculars, and Whistle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lantern, Binoculars, and Whistle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lantern",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -331,7 +331,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the camping site task. Use Camp Stove, Cooler, Water Jug, Thermos, Camping Pot, Marshmallow, Skewer, Compass, Map, GPS Device, Flashlight, Headlamp, Lantern, Binoculars, and Whistle in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the camping site task. Use Camp Stove, Cooler, Water Jug, Thermos, Camping Pot, Marshmallow, Skewer, Compass, Map, GPS Device, Flashlight, Headlamp, Lantern, Binoculars, and Whistle in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Signal Mirror", "Trail Marker", "Backpack", "Hiking Boots"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Signal Mirror, Trail Marker, Backpack, and Hiking Boots and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Signal Mirror, Trail Marker, Backpack, and Hiking Boots and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Signal Mirror", "Trail Marker", "Backpack"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Walking Stick", "Water Bottle", "Pocket Knife", "Rope"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Walking Stick, Water Bottle, Pocket Knife, and Rope and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Walking Stick, Water Bottle, Pocket Knife, and Rope and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Walking Stick", "Water Bottle", "Pocket Knife"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Carabiner", "Dry Bag", "First Aid Kit", "Sunscreen"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Carabiner, Dry Bag, First Aid Kit, and Sunscreen and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Carabiner, Dry Bag, First Aid Kit, and Sunscreen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Carabiner", "Dry Bag", "First Aid Kit"],
@@ -434,7 +434,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Trail", "River", "Waterfall"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, River, and Waterfall and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, River, and Waterfall and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trail", "River", "Waterfall"],
@@ -447,33 +447,33 @@
     },
     "reading": {
       "title": "Important Information: The Camping Site",
-      "text": "At the the camping site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Signal Mirror, Trail Marker, Backpack, and Hiking Boots. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Walking Stick, Water Bottle, Pocket Knife, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Carabiner, Dry Bag, First Aid Kit, and Sunscreen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trail, River, and Waterfall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the camping site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Signal Mirror, Trail Marker, Backpack, and Hiking Boots. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Walking Stick, Water Bottle, Pocket Knife, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Carabiner, Dry Bag, First Aid Kit, and Sunscreen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trail, River, and Waterfall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Signal Mirror, Trail Marker, Backpack, and Hiking Boots and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Signal Mirror, Trail Marker, Backpack, and Hiking Boots and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Signal Mirror",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Walking Stick, Water Bottle, Pocket Knife, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Walking Stick, Water Bottle, Pocket Knife, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Walking Stick",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Carabiner, Dry Bag, First Aid Kit, and Sunscreen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Carabiner, Dry Bag, First Aid Kit, and Sunscreen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Carabiner",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, River, and Waterfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, River, and Waterfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trail",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -504,7 +504,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the camping site task. Use Signal Mirror, Trail Marker, Backpack, Hiking Boots, Walking Stick, Water Bottle, Pocket Knife, Rope, Carabiner, Dry Bag, First Aid Kit, Sunscreen, Trail, River, and Waterfall in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the camping site task. Use Signal Mirror, Trail Marker, Backpack, Hiking Boots, Walking Stick, Water Bottle, Pocket Knife, Rope, Carabiner, Dry Bag, First Aid Kit, Sunscreen, Trail, River, and Waterfall in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -571,7 +571,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Mountain", "Valley", "Pine Tree", "Wildflower"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, Pine Tree, and Wildflower and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, Pine Tree, and Wildflower and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mountain", "Valley", "Pine Tree"],
@@ -583,7 +583,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Mushroom", "Rock", "Cliff", "Meadow"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Rock, Cliff, and Meadow and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Rock, Cliff, and Meadow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mushroom", "Rock", "Cliff"],
@@ -595,7 +595,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Lake", "Hiking", "Fishing", "Swimming"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lake, Hiking, Fishing, and Swimming and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lake, Hiking, Fishing, and Swimming and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lake", "Hiking", "Fishing"],
@@ -607,7 +607,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Canoeing", "Bird Watching", "Star Gazing"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoeing, Bird Watching, and Star Gazing and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoeing, Bird Watching, and Star Gazing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Canoeing", "Bird Watching", "Star Gazing"],
@@ -620,33 +620,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Camping Site",
-      "text": "At the the camping site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mountain, Valley, Pine Tree, and Wildflower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mushroom, Rock, Cliff, and Meadow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lake, Hiking, Fishing, and Swimming. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Canoeing, Bird Watching, and Star Gazing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the camping site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mountain, Valley, Pine Tree, and Wildflower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mushroom, Rock, Cliff, and Meadow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lake, Hiking, Fishing, and Swimming. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Canoeing, Bird Watching, and Star Gazing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, Pine Tree, and Wildflower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, Pine Tree, and Wildflower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mountain",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Rock, Cliff, and Meadow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Rock, Cliff, and Meadow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mushroom",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lake, Hiking, Fishing, and Swimming and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lake, Hiking, Fishing, and Swimming and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lake",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoeing, Bird Watching, and Star Gazing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoeing, Bird Watching, and Star Gazing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Canoeing",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -677,7 +677,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the camping site task. Use Mountain, Valley, Pine Tree, Wildflower, Mushroom, Rock, Cliff, Meadow, Lake, Hiking, Fishing, Swimming, Canoeing, Bird Watching, and Star Gazing in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the camping site task. Use Mountain, Valley, Pine Tree, Wildflower, Mushroom, Rock, Cliff, Meadow, Lake, Hiking, Fishing, Swimming, Canoeing, Bird Watching, and Star Gazing in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -738,7 +738,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Photography", "Rock Climbing", "Mountain Biking", "Cooking"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photography, Rock Climbing, Mountain Biking, and Cooking and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photography, Rock Climbing, Mountain Biking, and Cooking and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Photography", "Rock Climbing", "Mountain Biking"],
@@ -750,7 +750,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Hike", "Fish", "Cook", "Roast Marshmallow"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hike, Fish, Cook, and Roast Marshmallow and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hike, Fish, Cook, and Roast Marshmallow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hike", "Fish", "Cook"],
@@ -762,7 +762,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Star Gaze", "Paddle", "Set Up Tent", "Explore"],
-          "scenario": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Star Gaze, Paddle, Set Up Tent, and Explore and choose the option that fits the situation.",
+          "scenario": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Star Gaze, Paddle, Set Up Tent, and Explore and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Star Gaze", "Paddle", "Set Up Tent"],
@@ -775,26 +775,26 @@
     },
     "reading": {
       "title": "A Practical Guide: The Camping Site",
-      "text": "At the the camping site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Photography, Rock Climbing, Mountain Biking, and Cooking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hike, Fish, Cook, and Roast Marshmallow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Star Gaze, Paddle, Set Up Tent, and Explore. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the camping site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Photography, Rock Climbing, Mountain Biking, and Cooking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hike, Fish, Cook, and Roast Marshmallow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Star Gaze, Paddle, Set Up Tent, and Explore. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photography, Rock Climbing, Mountain Biking, and Cooking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photography, Rock Climbing, Mountain Biking, and Cooking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Photography",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hike, Fish, Cook, and Roast Marshmallow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hike, Fish, Cook, and Roast Marshmallow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hike",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Star Gaze, Paddle, Set Up Tent, and Explore and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the camping site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Star Gaze, Paddle, Set Up Tent, and Explore and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Star Gaze",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
@@ -825,7 +825,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the camping site task. Use Photography, Rock Climbing, Mountain Biking, Cooking, Hike, Fish, Cook, Roast Marshmallow, Star Gaze, Paddle, Set Up Tent, and Explore in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the camping site task. Use Photography, Rock Climbing, Mountain Biking, Cooking, Hike, Fish, Cook, Roast Marshmallow, Star Gaze, Paddle, Set Up Tent, and Explore in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

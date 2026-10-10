@@ -430,14 +430,14 @@
         {
           "chunkNumber": 3,
           "targetWords": ["dishwasher", "manager", "sommelier"],
-          "scenario": "During a routine l4 restaurant task, an adult compares dishwasher, manager, sommelier. The person selects dishwasher for the next step.",
+          "scenario": "The dishwasher washes used plates in the restaurant kitchen. The manager organises the staff, while the sommelier advises guests about wine. Here, dishwasher means a worker.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which worker washes the used plates?",
             "options": ["dishwasher", "manager", "sommelier"],
             "expectedAnswer": "dishwasher"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 restaurant context illustrating this situation: During a routine l4 restaurant task, an adult compares dishwasher, manager, sommelier. The person selects dishwasher for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 restaurant scene showing lesson-related items or actions including dishwasher, manager, sommelier in a natural setting."
+          "imageBrief": "One modest adult male kitchen worker washing plates at a sink. Show the person, not a dishwashing machine. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
+          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
         },
         {
           "chunkNumber": 4,
@@ -487,7 +487,7 @@
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine l4 restaurant task, an adult compares dishwasher, manager, sommelier. The person selects dishwasher for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The dishwasher washes used plates in the restaurant kitchen. The manager organises the staff, while the sommelier advises guests about wine. Here, dishwasher means a worker.\nWhich worker washes the used plates?",
         "answer": "dishwasher",
         "questionType": "meaning",
         "responseMode": "short-answer",

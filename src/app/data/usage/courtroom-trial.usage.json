@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Judge's Bench", "Witness Stand", "Jury Box", "Defense Table"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge's Bench, Witness Stand, Jury Box, and Defense Table and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge's Bench, Witness Stand, Jury Box, and Defense Table and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Judge's Bench", "Witness Stand", "Jury Box"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Prosecution Table", "Gallery", "Bar", "Clerk's Desk"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Gallery, Bar, and Clerk's Desk and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Gallery, Bar, and Clerk's Desk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Prosecution Table", "Gallery", "Bar"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Bailiff's Post", "Podium", "Judge", "Jury"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff's Post, Podium, Judge, and Jury and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff's Post, Podium, Judge, and Jury and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Bailiff's Post", "Podium", "Judge"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Plaintiff", "Defendant", "Witness"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plaintiff, Defendant, and Witness and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plaintiff, Defendant, and Witness and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Plaintiff", "Defendant", "Witness"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Courtroom Trial",
-      "text": "At the the courtroom trial, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Judge's Bench, Witness Stand, Jury Box, and Defense Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Prosecution Table, Gallery, Bar, and Clerk's Desk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bailiff's Post, Podium, Judge, and Jury. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plaintiff, Defendant, and Witness. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the courtroom trial, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Judge's Bench, Witness Stand, Jury Box, and Defense Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Prosecution Table, Gallery, Bar, and Clerk's Desk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bailiff's Post, Podium, Judge, and Jury. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plaintiff, Defendant, and Witness. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge's Bench, Witness Stand, Jury Box, and Defense Table and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge's Bench, Witness Stand, Jury Box, and Defense Table and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Judge's Bench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Gallery, Bar, and Clerk's Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Gallery, Bar, and Clerk's Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Prosecution Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff's Post, Podium, Judge, and Jury and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff's Post, Podium, Judge, and Jury and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Bailiff's Post",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plaintiff, Defendant, and Witness and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plaintiff, Defendant, and Witness and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Plaintiff",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -163,7 +163,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the courtroom trial task. Use Judge's Bench, Witness Stand, Jury Box, Defense Table, Prosecution Table, Gallery, Bar, Clerk's Desk, Bailiff's Post, Podium, Judge, Jury, Plaintiff, Defendant, and Witness in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the courtroom trial task. Use Judge's Bench, Witness Stand, Jury Box, Defense Table, Prosecution Table, Gallery, Bar, Clerk's Desk, Bailiff's Post, Podium, Judge, Jury, Plaintiff, Defendant, and Witness in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -230,7 +230,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bailiff", "Court Reporter", "Clerk", "Foreman"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Clerk, and Foreman and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Clerk, and Foreman and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Bailiff", "Court Reporter", "Clerk"],
@@ -242,7 +242,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Expert Witness", "Opening Statement", "Testimony", "Cross-Examination"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Expert Witness, Opening Statement, Testimony, and Cross-Examination and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Expert Witness, Opening Statement, Testimony, and Cross-Examination and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Expert Witness", "Opening Statement", "Testimony"],
@@ -254,7 +254,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Objection", "Sustained", "Overruled", "Closing Argument"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Sustained, Overruled, and Closing Argument and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Sustained, Overruled, and Closing Argument and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Objection", "Sustained", "Overruled"],
@@ -266,7 +266,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Deliberation", "Verdict", "Sentencing"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberation, Verdict, and Sentencing and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberation, Verdict, and Sentencing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Deliberation", "Verdict", "Sentencing"],
@@ -280,33 +280,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Courtroom Trial",
-      "text": "At the the courtroom trial, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bailiff, Court Reporter, Clerk, and Foreman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Expert Witness, Opening Statement, Testimony, and Cross-Examination. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Objection, Sustained, Overruled, and Closing Argument. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deliberation, Verdict, and Sentencing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the courtroom trial, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bailiff, Court Reporter, Clerk, and Foreman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Expert Witness, Opening Statement, Testimony, and Cross-Examination. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Objection, Sustained, Overruled, and Closing Argument. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deliberation, Verdict, and Sentencing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Clerk, and Foreman and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Clerk, and Foreman and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Bailiff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Expert Witness, Opening Statement, Testimony, and Cross-Examination and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Expert Witness, Opening Statement, Testimony, and Cross-Examination and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Expert Witness",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Sustained, Overruled, and Closing Argument and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Sustained, Overruled, and Closing Argument and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Objection",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberation, Verdict, and Sentencing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberation, Verdict, and Sentencing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Deliberation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -341,7 +341,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the courtroom trial task. Use Bailiff, Court Reporter, Clerk, Foreman, Expert Witness, Opening Statement, Testimony, Cross-Examination, Objection, Sustained, Overruled, Closing Argument, Deliberation, Verdict, and Sentencing in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the courtroom trial task. Use Bailiff, Court Reporter, Clerk, Foreman, Expert Witness, Opening Statement, Testimony, Cross-Examination, Objection, Sustained, Overruled, Closing Argument, Deliberation, Verdict, and Sentencing in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -396,7 +396,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Exhibit", "Document", "Photograph", "Video"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exhibit, Document, Photograph, and Video and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exhibit, Document, Photograph, and Video and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Exhibit", "Document", "Photograph"],
@@ -408,7 +408,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["DNA Evidence", "Fingerprint", "Affidavit", "Deposition"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA Evidence, Fingerprint, Affidavit, and Deposition and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA Evidence, Fingerprint, Affidavit, and Deposition and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["DNA Evidence", "Fingerprint", "Affidavit"],
@@ -420,7 +420,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Forensic Evidence"],
-          "scenario": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Forensic Evidence and choose the option that fits the situation.",
+          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Forensic Evidence and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Forensic Evidence", "Exhibit", "Document"],
@@ -434,26 +434,26 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the courtroom trial, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Exhibit, Document, Photograph, and Video. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers DNA Evidence, Fingerprint, Affidavit, and Deposition. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Forensic Evidence. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the courtroom trial, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Exhibit, Document, Photograph, and Video. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers DNA Evidence, Fingerprint, Affidavit, and Deposition. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Forensic Evidence. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exhibit, Document, Photograph, and Video and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exhibit, Document, Photograph, and Video and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Exhibit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA Evidence, Fingerprint, Affidavit, and Deposition and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA Evidence, Fingerprint, Affidavit, and Deposition and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "DNA Evidence",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Forensic Evidence and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Forensic Evidence and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Forensic Evidence",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -488,7 +488,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the courtroom trial task. Use Exhibit, Document, Photograph, Video, DNA Evidence, Fingerprint, Affidavit, Deposition, and Forensic Evidence in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the courtroom trial task. Use Exhibit, Document, Photograph, Video, DNA Evidence, Fingerprint, Affidavit, Deposition, and Forensic Evidence in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

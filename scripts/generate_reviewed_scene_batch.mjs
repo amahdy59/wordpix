@@ -4,6 +4,7 @@ import crypto from "node:crypto";
 import { parseEnv } from "node:util";
 import { pathToFileURL } from "node:url";
 import sharp from "sharp";
+import { loadGenerationSource, assertGenerationReady } from "./lib/usage_generation_preflight.mjs";
 
 export const sha256 = (bytes) => crypto.createHash("sha256").update(bytes).digest("hex");
 export function validateJobs(items) {
@@ -41,13 +42,7 @@ export function requestFor(item) {
   };
 }
 export function assertCurrentScene(item, sourceRoot) {
-  const file = path.join(sourceRoot, "src/app/data/usage", `${item.unitId}.usage.json`);
-  const lesson = JSON.parse(fs.readFileSync(file, "utf8")).find(
-    (l) => l.lessonId === item.lessonId
-  );
-  const scene = lesson?.usage.scenes.find(
-    (s) => `${lesson.lessonId}-usage-scene-${s.chunkNumber}` === item.sceneId
-  );
+  const { scene } = loadGenerationSource(item, sourceRoot);
   if (
     !scene ||
     scene.scenario !== item.reviewedScenario ||
@@ -81,14 +76,18 @@ export async function generateBatch(options) {
     throw new Error("Use a supported image model.");
   const selected = jobs.slice(0, Math.min(limit, Math.floor(budget / 0.15)));
   if (!selected.length) throw new Error("Spending bound must allow one $0.15 reserved request.");
-  for (const item of selected) assertCurrentScene(item, options.sourceRoot);
+  for (const item of selected) {
+    assertCurrentScene(item, options.sourceRoot);
+    assertGenerationReady(item, options.sourceRoot);
+  }
   if (!options.generate)
     return {
       queued: jobs.length,
       selected: selected.length,
       concurrency,
       model,
-      reservedCostUpperBoundUsd: selected.length * 0.15,
+      reservedCostUsd: selected.length * 0.15,
+      costBasis: "Local request reservation; verify provider pricing and reconcile billed usage.",
       requests: 0,
     };
   const env = options.envFile ? parseEnv(fs.readFileSync(options.envFile, "utf8")) : {};
@@ -143,6 +142,7 @@ export async function generateBatch(options) {
         fs.writeFileSync(receipt, JSON.stringify(record, null, 2), { flag: "wx" });
         try {
           assertCurrentScene(item, options.sourceRoot);
+          assertGenerationReady(item, options.sourceRoot);
           const response = await fetch(
             `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
             {
@@ -199,7 +199,8 @@ export async function generateBatch(options) {
   const summary = {
     model,
     requested: selected.length,
-    reservedCostUpperBoundUsd: selected.length * 0.15,
+    reservedCostUsd: selected.length * 0.15,
+    costBasis: "Local request reservation; verify provider pricing and reconcile billed usage.",
     results,
   };
   fs.writeFileSync(path.join(out, `run-${Date.now()}.json`), JSON.stringify(summary, null, 2));
@@ -228,7 +229,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   })
     .then((summary) => {
       console.log(JSON.stringify(summary));
-      if (summary.results?.some((r) => r.status === "failed")) process.exitCode = 1;
+      if (summary.results?.some((r) => !["generated", "reused"].includes(r.status)))
+        process.exitCode = 1;
     })
     .catch((error) => {
       console.error(error.message);

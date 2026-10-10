@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Quadcopter", "Hexacopter", "Fixed Wing", "Racing Drone"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Quadcopter", "Hexacopter", "Fixed Wing"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Fpv Drone", "Nano Drone", "Delivery Drone", "Survey Drone"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fpv Drone", "Nano Drone", "Delivery Drone"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Agricultural Drone", "Underwater Drone", "Propeller", "Motor"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Agricultural Drone", "Underwater Drone", "Propeller"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Frame", "Battery", "Esc"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Frame", "Battery", "Esc"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Drone Workshop",
-      "text": "At the the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Quadcopter, Hexacopter, Fixed Wing, and Racing Drone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Agricultural Drone, Underwater Drone, Propeller, and Motor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Frame, Battery, and Esc. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Quadcopter, Hexacopter, Fixed Wing, and Racing Drone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Agricultural Drone, Underwater Drone, Propeller, and Motor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Frame, Battery, and Esc. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Quadcopter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fpv Drone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Agricultural Drone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Frame",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the drone workshop task. Use Quadcopter, Hexacopter, Fixed Wing, Racing Drone, Fpv Drone, Nano Drone, Delivery Drone, Survey Drone, Agricultural Drone, Underwater Drone, Propeller, Motor, Frame, Battery, and Esc in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Quadcopter, Hexacopter, Fixed Wing, Racing Drone, Fpv Drone, Nano Drone, Delivery Drone, Survey Drone, Agricultural Drone, Underwater Drone, Propeller, Motor, Frame, Battery, and Esc in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Flight Controller", "Gps Module", "Antenna", "Camera"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Flight Controller", "Gps Module", "Antenna"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Gimbal", "Transmitter", "Receiver", "Joystick"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Gimbal", "Transmitter", "Receiver"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Throttle", "Yaw", "Pitch", "Roll"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Throttle", "Yaw", "Pitch"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Trim", "Failsafe", "Return To Home"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trim", "Failsafe", "Return To Home"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Drone Workshop",
-      "text": "At the the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Flight Controller, Gps Module, Antenna, and Camera. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Gimbal, Transmitter, Receiver, and Joystick. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Throttle, Yaw, Pitch, and Roll. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Trim, Failsafe, and Return To Home. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Flight Controller, Gps Module, Antenna, and Camera. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Gimbal, Transmitter, Receiver, and Joystick. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Throttle, Yaw, Pitch, and Roll. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Trim, Failsafe, and Return To Home. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Flight Controller",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Gimbal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Throttle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trim",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the drone workshop task. Use Flight Controller, Gps Module, Antenna, Camera, Gimbal, Transmitter, Receiver, Joystick, Throttle, Yaw, Pitch, Roll, Trim, Failsafe, and Return To Home in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Flight Controller, Gps Module, Antenna, Camera, Gimbal, Transmitter, Receiver, Joystick, Throttle, Yaw, Pitch, Roll, Trim, Failsafe, and Return To Home in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Soldering Iron", "Multimeter", "Screwdriver", "Hex Wrench"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Soldering Iron", "Multimeter", "Screwdriver"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pliers", "Heat Shrink", "Zip Tie", "Loctite"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pliers", "Heat Shrink", "Zip Tie"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Balance Charger", "Prop Balancer", "Firmware", "Ground Station"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Balance Charger", "Prop Balancer", "Firmware"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Flight Log", "Waypoint", "Geofence"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Flight Log", "Waypoint", "Geofence"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Drone Workshop",
-      "text": "At the the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Pliers, Heat Shrink, Zip Tie, and Loctite. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Balance Charger, Prop Balancer, Firmware, and Ground Station. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Flight Log, Waypoint, and Geofence. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Pliers, Heat Shrink, Zip Tie, and Loctite. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Balance Charger, Prop Balancer, Firmware, and Ground Station. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Flight Log, Waypoint, and Geofence. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Soldering Iron",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pliers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Balance Charger",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Flight Log",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the drone workshop task. Use Soldering Iron, Multimeter, Screwdriver, Hex Wrench, Pliers, Heat Shrink, Zip Tie, Loctite, Balance Charger, Prop Balancer, Firmware, Ground Station, Flight Log, Waypoint, and Geofence in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Soldering Iron, Multimeter, Screwdriver, Hex Wrench, Pliers, Heat Shrink, Zip Tie, Loctite, Balance Charger, Prop Balancer, Firmware, Ground Station, Flight Log, Waypoint, and Geofence in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Telemetry", "Pid Tuning", "Calibration", "Simulator"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Telemetry", "Pid Tuning", "Calibration"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Mapping", "Registration", "License", "No Fly Zone"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Mapping", "Registration", "License"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Visual Line Of Sight", "Altitude Limit", "Pre Flight Check", "Spotter"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Visual Line Of Sight", "Altitude Limit", "Pre Flight Check"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Insurance", "Airspace", "Faa"],
-          "scenario": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.",
+          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Insurance", "Airspace", "Faa"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Drone Workshop",
-      "text": "At the the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Telemetry, Pid Tuning, Calibration, and Simulator. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Mapping, Registration, License, and No Fly Zone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Insurance, Airspace, and Faa. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Telemetry, Pid Tuning, Calibration, and Simulator. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Mapping, Registration, License, and No Fly Zone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Insurance, Airspace, and Faa. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Telemetry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Mapping",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Visual Line Of Sight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Insurance",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the drone workshop task. Use Telemetry, PID Tuning, Calibration, Simulator, Mapping, Registration, License, No Fly Zone, Visual Line Of Sight, Altitude Limit, Pre Flight Check, Spotter, Insurance, Airspace, and Faa in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Telemetry, PID Tuning, Calibration, Simulator, Mapping, Registration, License, No Fly Zone, Visual Line Of Sight, Altitude Limit, Pre Flight Check, Spotter, Insurance, Airspace, and Faa in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

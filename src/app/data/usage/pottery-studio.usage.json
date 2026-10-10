@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Clay", "Slip", "Glaze", "Underglaze"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clay, Slip, Glaze, and Underglaze and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clay, Slip, Glaze, and Underglaze and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Clay", "Slip", "Glaze"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Engobe", "Oxide", "Stain", "Grog"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engobe, Oxide, Stain, and Grog and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engobe, Oxide, Stain, and Grog and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Engobe", "Oxide", "Stain"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Porcelain", "Stoneware", "Potter's Wheel", "Rolling Pin"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porcelain, Stoneware, Potter's Wheel, and Rolling Pin and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porcelain, Stoneware, Potter's Wheel, and Rolling Pin and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Porcelain", "Stoneware", "Potter's Wheel"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Wire Cutter", "Needle Tool", "Rib"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Needle Tool, and Rib and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Needle Tool, and Rib and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wire Cutter", "Needle Tool", "Rib"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Pottery Studio",
-      "text": "At the the pottery studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Clay, Slip, Glaze, and Underglaze. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Engobe, Oxide, Stain, and Grog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Porcelain, Stoneware, Potter's Wheel, and Rolling Pin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wire Cutter, Needle Tool, and Rib. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the pottery studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Clay, Slip, Glaze, and Underglaze. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Engobe, Oxide, Stain, and Grog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Porcelain, Stoneware, Potter's Wheel, and Rolling Pin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wire Cutter, Needle Tool, and Rib. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Pottery Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clay, Slip, Glaze, and Underglaze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clay, Slip, Glaze, and Underglaze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Clay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engobe, Oxide, Stain, and Grog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engobe, Oxide, Stain, and Grog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Engobe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porcelain, Stoneware, Potter's Wheel, and Rolling Pin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porcelain, Stoneware, Potter's Wheel, and Rolling Pin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Porcelain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Needle Tool, and Rib and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Needle Tool, and Rib and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wire Cutter",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the pottery studio task. Use Clay, Slip, Glaze, Underglaze, Engobe, Oxide, Stain, Grog, Porcelain, Stoneware, Potter's Wheel, Rolling Pin, Wire Cutter, Needle Tool, and Rib in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the pottery studio task. Use Clay, Slip, Glaze, Underglaze, Engobe, Oxide, Stain, Grog, Porcelain, Stoneware, Potter's Wheel, Rolling Pin, Wire Cutter, Needle Tool, and Rib in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sponge", "Loop Tool", "Trimming Tool", "Carving Tool"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Loop Tool, Trimming Tool, and Carving Tool and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Loop Tool, Trimming Tool, and Carving Tool and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sponge", "Loop Tool", "Trimming Tool"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Stamp", "Throwing", "Coiling", "Slab Building"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Throwing, Coiling, and Slab Building and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Throwing, Coiling, and Slab Building and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stamp", "Throwing", "Coiling"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pinching", "Glazing", "Trimming", "Scoring"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinching, Glazing, Trimming, and Scoring and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinching, Glazing, Trimming, and Scoring and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Pinching", "Glazing", "Trimming"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Wedging", "Centering", "Pulling"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wedging, Centering, and Pulling and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wedging, Centering, and Pulling and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Wedging", "Centering", "Pulling"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Pottery Studio",
-      "text": "At the the pottery studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sponge, Loop Tool, Trimming Tool, and Carving Tool. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stamp, Throwing, Coiling, and Slab Building. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pinching, Glazing, Trimming, and Scoring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wedging, Centering, and Pulling. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the pottery studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sponge, Loop Tool, Trimming Tool, and Carving Tool. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stamp, Throwing, Coiling, and Slab Building. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pinching, Glazing, Trimming, and Scoring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wedging, Centering, and Pulling. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Pottery Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Loop Tool, Trimming Tool, and Carving Tool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Loop Tool, Trimming Tool, and Carving Tool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sponge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Throwing, Coiling, and Slab Building and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Throwing, Coiling, and Slab Building and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinching, Glazing, Trimming, and Scoring and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinching, Glazing, Trimming, and Scoring and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Pinching",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wedging, Centering, and Pulling and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wedging, Centering, and Pulling and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Wedging",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the pottery studio task. Use Sponge, Loop Tool, Trimming Tool, Carving Tool, Stamp, Throwing, Coiling, Slab Building, Pinching, Glazing, Trimming, Scoring, Wedging, Centering, and Pulling in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the pottery studio task. Use Sponge, Loop Tool, Trimming Tool, Carving Tool, Stamp, Throwing, Coiling, Slab Building, Pinching, Glazing, Trimming, Scoring, Wedging, Centering, and Pulling in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Kiln", "Kiln Shelf", "Kiln Post", "Thermocouple"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kiln, Kiln Shelf, Kiln Post, and Thermocouple and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kiln, Kiln Shelf, Kiln Post, and Thermocouple and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Kiln", "Kiln Shelf", "Kiln Post"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pyrometric Cone", "Firing Log", "Glaze Bucket", "Kiln Wash"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pyrometric Cone", "Firing Log", "Glaze Bucket"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Ventilation Fan", "Heat-Resistant Gloves", "Bowl", "Mug"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ventilation Fan", "Heat-Resistant Gloves", "Bowl"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Plate", "Vase", "Pitcher"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plate, Vase, and Pitcher and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plate, Vase, and Pitcher and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Plate", "Vase", "Pitcher"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the pottery studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Kiln, Kiln Shelf, Kiln Post, and Thermocouple. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plate, Vase, and Pitcher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the pottery studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Kiln, Kiln Shelf, Kiln Post, and Thermocouple. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plate, Vase, and Pitcher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Pottery Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kiln, Kiln Shelf, Kiln Post, and Thermocouple and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kiln, Kiln Shelf, Kiln Post, and Thermocouple and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Kiln",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pyrometric Cone, Firing Log, Glaze Bucket, and Kiln Wash and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pyrometric Cone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ventilation Fan, Heat-Resistant Gloves, Bowl, and Mug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ventilation Fan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plate, Vase, and Pitcher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plate, Vase, and Pitcher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Plate",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the pottery studio task. Use Kiln, Kiln Shelf, Kiln Post, Thermocouple, Pyrometric Cone, Firing Log, Glaze Bucket, Kiln Wash, Ventilation Fan, Heat-Resistant Gloves, Bowl, Mug, Plate, Vase, and Pitcher in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the pottery studio task. Use Kiln, Kiln Shelf, Kiln Post, Thermocouple, Pyrometric Cone, Firing Log, Glaze Bucket, Kiln Wash, Ventilation Fan, Heat-Resistant Gloves, Bowl, Mug, Plate, Vase, and Pitcher in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Teapot", "Tile", "Sculpture", "Planter"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teapot, Tile, Sculpture, and Planter and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teapot, Tile, Sculpture, and Planter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Teapot", "Tile", "Sculpture"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Candle Holder", "Work Table", "Wedging Table", "Sink"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Candle Holder, Work Table, Wedging Table, and Sink and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Candle Holder, Work Table, Wedging Table, and Sink and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Candle Holder", "Work Table", "Wedging Table"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Splash Pan", "Drying Rack", "Storage Shelf", "Apron"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash Pan, Drying Rack, Storage Shelf, and Apron and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash Pan, Drying Rack, Storage Shelf, and Apron and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Splash Pan", "Drying Rack", "Storage Shelf"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Bucket", "Bat", "Turntable"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Bat, and Turntable and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Bat, and Turntable and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bucket", "Bat", "Turntable"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Pottery Studio",
-      "text": "At the the pottery studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Teapot, Tile, Sculpture, and Planter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Candle Holder, Work Table, Wedging Table, and Sink. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Splash Pan, Drying Rack, Storage Shelf, and Apron. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bucket, Bat, and Turntable. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the pottery studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Teapot, Tile, Sculpture, and Planter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Candle Holder, Work Table, Wedging Table, and Sink. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Splash Pan, Drying Rack, Storage Shelf, and Apron. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bucket, Bat, and Turntable. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Pottery Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teapot, Tile, Sculpture, and Planter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teapot, Tile, Sculpture, and Planter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Teapot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Candle Holder, Work Table, Wedging Table, and Sink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Candle Holder, Work Table, Wedging Table, and Sink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Candle Holder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash Pan, Drying Rack, Storage Shelf, and Apron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash Pan, Drying Rack, Storage Shelf, and Apron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Splash Pan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Bat, and Turntable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Bat, and Turntable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bucket",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the pottery studio task. Use Teapot, Tile, Sculpture, Planter, Candle Holder, Work Table, Wedging Table, Sink, Splash Pan, Drying Rack, Storage Shelf, Apron, Bucket, Bat, and Turntable in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the pottery studio task. Use Teapot, Tile, Sculpture, Planter, Candle Holder, Work Table, Wedging Table, Sink, Splash Pan, Drying Rack, Storage Shelf, Apron, Bucket, Bat, and Turntable in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -716,7 +716,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Wheel", "Sculpting Tool", "Needle", "Wax"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheel, Sculpting Tool, Needle, and Wax and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheel, Sculpting Tool, Needle, and Wax and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wheel", "Sculpting Tool", "Needle"],
@@ -728,7 +728,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Figurine"],
-          "scenario": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Figurine and choose the option that fits the situation.",
+          "scenario": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Figurine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Figurine", "Wheel", "Sculpting Tool"],
@@ -742,19 +742,19 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Pottery Studio",
-      "text": "At the the pottery studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wheel, Sculpting Tool, Needle, and Wax. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Figurine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the pottery studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wheel, Sculpting Tool, Needle, and Wax. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Figurine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Pottery Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheel, Sculpting Tool, Needle, and Wax and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheel, Sculpting Tool, Needle, and Wax and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wheel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Figurine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the pottery studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Figurine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Figurine",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -785,7 +785,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the pottery studio task. Use Wheel, Sculpting Tool, Needle, Wax, and Figurine in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the pottery studio task. Use Wheel, Sculpting Tool, Needle, Wax, and Figurine in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

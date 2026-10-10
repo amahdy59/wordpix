@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pencil", "Eraser", "Sketchbook"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pencil, Eraser, and Sketchbook and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pencil, Eraser, and Sketchbook and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pencil", "Eraser", "Sketchbook"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Charcoal", "Pastel", "Colored Pencil"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charcoal, Pastel, and Colored Pencil and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charcoal, Pastel, and Colored Pencil and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Charcoal", "Pastel", "Colored Pencil"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fine Liner", "Blending Stump", "Drawing Board"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fine Liner, Blending Stump, and Drawing Board and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fine Liner, Blending Stump, and Drawing Board and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fine Liner", "Blending Stump", "Drawing Board"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Graphite", "Paintbrush", "Palette"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphite, Paintbrush, and Palette and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphite, Paintbrush, and Palette and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Graphite", "Paintbrush", "Palette"],
@@ -100,7 +100,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Easel", "Canvas", "Acrylic Paint"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Easel, Canvas, and Acrylic Paint and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Easel, Canvas, and Acrylic Paint and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Easel", "Canvas", "Acrylic Paint"],
@@ -113,40 +113,40 @@
     },
     "reading": {
       "title": "Getting Ready: The Art Studio",
-      "text": "At the the art studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pencil, Eraser, and Sketchbook. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Charcoal, Pastel, and Colored Pencil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fine Liner, Blending Stump, and Drawing Board. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Graphite, Paintbrush, and Palette. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Easel, Canvas, and Acrylic Paint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the art studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pencil, Eraser, and Sketchbook. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Charcoal, Pastel, and Colored Pencil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fine Liner, Blending Stump, and Drawing Board. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Graphite, Paintbrush, and Palette. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Easel, Canvas, and Acrylic Paint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Art Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pencil, Eraser, and Sketchbook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pencil, Eraser, and Sketchbook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pencil",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charcoal, Pastel, and Colored Pencil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charcoal, Pastel, and Colored Pencil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Charcoal",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fine Liner, Blending Stump, and Drawing Board and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fine Liner, Blending Stump, and Drawing Board and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fine Liner",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphite, Paintbrush, and Palette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphite, Paintbrush, and Palette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Graphite",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Easel, Canvas, and Acrylic Paint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Easel, Canvas, and Acrylic Paint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Easel",
         "contextTag": "scene-5",
         "responseMode": "short-answer",
@@ -173,7 +173,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the art studio task. Use Pencil, Eraser, Sketchbook, Charcoal, Pastel, Colored Pencil, Fine Liner, Blending Stump, Drawing Board, Graphite, Paintbrush, Palette, Easel, Canvas, and Acrylic Paint in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the art studio task. Use Pencil, Eraser, Sketchbook, Charcoal, Pastel, Colored Pencil, Fine Liner, Blending Stump, Drawing Board, Graphite, Paintbrush, Palette, Easel, Canvas, and Acrylic Paint in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -240,7 +240,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Watercolor", "Oil Paint", "Palette Knife"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Watercolor, Oil Paint, and Palette Knife and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Watercolor, Oil Paint, and Palette Knife and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Watercolor", "Oil Paint", "Palette Knife"],
@@ -252,7 +252,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Paint Tube", "Jar of Water", "Clay"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Tube, Jar of Water, and Clay and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Tube, Jar of Water, and Clay and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Paint Tube", "Jar of Water", "Clay"],
@@ -264,7 +264,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Sculpting Tool", "Wire Armature", "Plaster"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpting Tool, Wire Armature, and Plaster and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpting Tool, Wire Armature, and Plaster and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sculpting Tool", "Wire Armature", "Plaster"],
@@ -276,7 +276,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Mold", "Chisel", "Carving Knife"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mold, Chisel, and Carving Knife and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mold, Chisel, and Carving Knife and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mold", "Chisel", "Carving Knife"],
@@ -288,7 +288,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Modeling Stand", "Kiln", "Glaze"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modeling Stand, Kiln, and Glaze and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modeling Stand, Kiln, and Glaze and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Modeling Stand", "Kiln", "Glaze"],
@@ -301,40 +301,40 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Art Studio",
-      "text": "At the the art studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Watercolor, Oil Paint, and Palette Knife. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Paint Tube, Jar of Water, and Clay. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sculpting Tool, Wire Armature, and Plaster. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mold, Chisel, and Carving Knife. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Modeling Stand, Kiln, and Glaze. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the art studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Watercolor, Oil Paint, and Palette Knife. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Paint Tube, Jar of Water, and Clay. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sculpting Tool, Wire Armature, and Plaster. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mold, Chisel, and Carving Knife. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Modeling Stand, Kiln, and Glaze. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Art Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Watercolor, Oil Paint, and Palette Knife and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Watercolor, Oil Paint, and Palette Knife and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Watercolor",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Tube, Jar of Water, and Clay and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Tube, Jar of Water, and Clay and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Paint Tube",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpting Tool, Wire Armature, and Plaster and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpting Tool, Wire Armature, and Plaster and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sculpting Tool",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mold, Chisel, and Carving Knife and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mold, Chisel, and Carving Knife and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mold",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modeling Stand, Kiln, and Glaze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modeling Stand, Kiln, and Glaze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Modeling Stand",
         "contextTag": "scene-5",
         "responseMode": "short-answer",
@@ -361,7 +361,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the art studio task. Use Watercolor, Oil Paint, Palette Knife, Paint Tube, Jar of Water, Clay, Sculpting Tool, Wire Armature, Plaster, Mold, Chisel, Carving Knife, Modeling Stand, Kiln, and Glaze in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the art studio task. Use Watercolor, Oil Paint, Palette Knife, Paint Tube, Jar of Water, Clay, Sculpting Tool, Wire Armature, Plaster, Mold, Chisel, Carving Knife, Modeling Stand, Kiln, and Glaze in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -428,7 +428,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Printing Press", "Ink Roller", "Stencil"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printing Press, Ink Roller, and Stencil and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printing Press, Ink Roller, and Stencil and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Printing Press", "Ink Roller", "Stencil"],
@@ -440,7 +440,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Stamp", "Woodcut Block", "Screen"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Woodcut Block, and Screen and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Woodcut Block, and Screen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stamp", "Woodcut Block", "Screen"],
@@ -452,7 +452,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Squeegee", "Brayer", "Registration Mark"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Squeegee, Brayer, and Registration Mark and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Squeegee, Brayer, and Registration Mark and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Squeegee", "Brayer", "Registration Mark"],
@@ -464,7 +464,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Proof", "Glue", "Scissors"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proof, Glue, and Scissors and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proof, Glue, and Scissors and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Proof", "Glue", "Scissors"],
@@ -476,7 +476,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Ruler", "Craft Paper", "Masking Tape"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ruler, Craft Paper, and Masking Tape and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ruler, Craft Paper, and Masking Tape and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ruler", "Craft Paper", "Masking Tape"],
@@ -489,40 +489,40 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the art studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Printing Press, Ink Roller, and Stencil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stamp, Woodcut Block, and Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Squeegee, Brayer, and Registration Mark. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Proof, Glue, and Scissors. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ruler, Craft Paper, and Masking Tape. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the art studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Printing Press, Ink Roller, and Stencil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stamp, Woodcut Block, and Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Squeegee, Brayer, and Registration Mark. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Proof, Glue, and Scissors. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ruler, Craft Paper, and Masking Tape. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Art Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printing Press, Ink Roller, and Stencil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printing Press, Ink Roller, and Stencil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Printing Press",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Woodcut Block, and Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Woodcut Block, and Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stamp",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Squeegee, Brayer, and Registration Mark and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Squeegee, Brayer, and Registration Mark and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Squeegee",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proof, Glue, and Scissors and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proof, Glue, and Scissors and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Proof",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ruler, Craft Paper, and Masking Tape and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ruler, Craft Paper, and Masking Tape and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ruler",
         "contextTag": "scene-5",
         "responseMode": "short-answer",
@@ -549,7 +549,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the art studio task. Use Printing Press, Ink Roller, Stencil, Stamp, Woodcut Block, Screen, Squeegee, Brayer, Registration Mark, Proof, Glue, Scissors, Ruler, Craft Paper, and Masking Tape in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the art studio task. Use Printing Press, Ink Roller, Stencil, Stamp, Woodcut Block, Screen, Squeegee, Brayer, Registration Mark, Proof, Glue, Scissors, Ruler, Craft Paper, and Masking Tape in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -616,7 +616,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Spray Paint", "Varnish", "Turpentine"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spray Paint, Varnish, and Turpentine and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spray Paint, Varnish, and Turpentine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spray Paint", "Varnish", "Turpentine"],
@@ -628,7 +628,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Sponge", "Rag", "Sketch"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Rag, and Sketch and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Rag, and Sketch and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sponge", "Rag", "Sketch"],
@@ -640,7 +640,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Portrait", "Landscape", "Still Life"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portrait, Landscape, and Still Life and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portrait, Landscape, and Still Life and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Portrait", "Landscape", "Still Life"],
@@ -652,7 +652,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Abstract", "Composition", "Perspective"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Composition, and Perspective and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Composition, and Perspective and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Abstract", "Composition", "Perspective"],
@@ -664,7 +664,7 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Shading", "Highlight", "Texture"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shading, Highlight, and Texture and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shading, Highlight, and Texture and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Shading", "Highlight", "Texture"],
@@ -677,40 +677,40 @@
     },
     "reading": {
       "title": "Getting Ready: The Art Studio",
-      "text": "At the the art studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spray Paint, Varnish, and Turpentine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sponge, Rag, and Sketch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Portrait, Landscape, and Still Life. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Abstract, Composition, and Perspective. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Shading, Highlight, and Texture. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the art studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spray Paint, Varnish, and Turpentine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sponge, Rag, and Sketch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Portrait, Landscape, and Still Life. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Abstract, Composition, and Perspective. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Shading, Highlight, and Texture. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Art Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spray Paint, Varnish, and Turpentine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spray Paint, Varnish, and Turpentine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spray Paint",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Rag, and Sketch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sponge, Rag, and Sketch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sponge",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portrait, Landscape, and Still Life and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portrait, Landscape, and Still Life and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Portrait",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Composition, and Perspective and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Composition, and Perspective and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Abstract",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shading, Highlight, and Texture and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shading, Highlight, and Texture and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Shading",
         "contextTag": "scene-5",
         "responseMode": "short-answer",
@@ -737,7 +737,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the art studio task. Use Spray Paint, Varnish, Turpentine, Sponge, Rag, Sketch, Portrait, Landscape, Still Life, Abstract, Composition, Perspective, Shading, Highlight, and Texture in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the art studio task. Use Spray Paint, Varnish, Turpentine, Sponge, Rag, Sketch, Portrait, Landscape, Still Life, Abstract, Composition, Perspective, Shading, Highlight, and Texture in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -783,7 +783,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Marker", "Ink", "Paper"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marker, Ink, and Paper and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marker, Ink, and Paper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Marker", "Ink", "Paper"],
@@ -795,7 +795,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Draw", "Paint", "Sculpt"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Draw, Paint, and Sculpt and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Draw, Paint, and Sculpt and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Draw", "Paint", "Sculpt"],
@@ -807,7 +807,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Shade", "Blend", "Outline"],
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Blend, and Outline and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Blend, and Outline and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Shade", "Blend", "Outline"],
@@ -819,7 +819,7 @@
         {
           "chunkNumber": 4,
           "targetWords": "Trace",
-          "scenario": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trace and choose the option that fits the situation.",
+          "scenario": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trace and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trace", "Marker", "Ink"],
@@ -832,33 +832,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Art Studio",
-      "text": "At the the art studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Marker, Ink, and Paper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Draw, Paint, and Sculpt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shade, Blend, and Outline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trace. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the art studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Marker, Ink, and Paper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Draw, Paint, and Sculpt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shade, Blend, and Outline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trace. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Art Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marker, Ink, and Paper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marker, Ink, and Paper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Marker",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Draw, Paint, and Sculpt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Draw, Paint, and Sculpt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Draw",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Blend, and Outline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Blend, and Outline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Shade",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trace and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the art studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trace and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trace",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -885,7 +885,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the art studio task. Use Marker, Ink, Paper, Draw, Paint, Sculpt, Shade, Blend, Outline, and Trace in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the art studio task. Use Marker, Ink, Paper, Draw, Paint, Sculpt, Shade, Blend, Outline, and Trace in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

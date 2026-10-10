@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Real Estate Agent", "Broker", "Appraiser", "Inspector"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Real Estate Agent", "Broker", "Appraiser"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Mortgage Lender", "Title Agent", "Property Manager", "Developer"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mortgage Lender", "Title Agent", "Property Manager"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Contractor", "Architect", "Listing", "Open House"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Contractor", "Architect", "Listing"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Showing", "Offer", "Counter Offer"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Showing", "Offer", "Counter Offer"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Conversation: The Real Estate Agency",
-      "text": "At the the real estate agency, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Real Estate Agent, Broker, Appraiser, and Inspector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mortgage Lender, Title Agent, Property Manager, and Developer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Contractor, Architect, Listing, and Open House. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Showing, Offer, and Counter Offer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the real estate agency, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Real Estate Agent, Broker, Appraiser, and Inspector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mortgage Lender, Title Agent, Property Manager, and Developer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Contractor, Architect, Listing, and Open House. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Showing, Offer, and Counter Offer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Real Estate Agent",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mortgage Lender",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Contractor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Showing",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the real estate agency task. Use Real Estate Agent, Broker, Appraiser, Inspector, Mortgage Lender, Title Agent, Property Manager, Developer, Contractor, Architect, Listing, Open House, Showing, Offer, and Counter Offer in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the real estate agency task. Use Real Estate Agent, Broker, Appraiser, Inspector, Mortgage Lender, Title Agent, Property Manager, Developer, Contractor, Architect, Listing, Open House, Showing, Offer, and Counter Offer in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Negotiation", "Appraisal", "Inspection", "Closing"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Negotiation", "Appraisal", "Inspection"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Escrow", "Mortgage", "Down Payment", "Interest Rate"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Escrow", "Mortgage", "Down Payment"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Closing Costs", "Equity", "Appreciation", "Depreciation"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Closing Costs", "Equity", "Appreciation"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Tax Assessment", "HOA Fee", "Pre-Approval"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Tax Assessment", "HOA Fee", "Pre-Approval"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "What You Need to Know: The Real Estate Agency",
-      "text": "At the the real estate agency, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Negotiation, Appraisal, Inspection, and Closing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Escrow, Mortgage, Down Payment, and Interest Rate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Closing Costs, Equity, Appreciation, and Depreciation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tax Assessment, HOA Fee, and Pre-Approval. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the real estate agency, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Negotiation, Appraisal, Inspection, and Closing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Escrow, Mortgage, Down Payment, and Interest Rate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Closing Costs, Equity, Appreciation, and Depreciation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tax Assessment, HOA Fee, and Pre-Approval. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Negotiation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Escrow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Closing Costs",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Tax Assessment",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the real estate agency task. Use Negotiation, Appraisal, Inspection, Closing, Escrow, Mortgage, Down Payment, Interest Rate, Closing Costs, Equity, Appreciation, Depreciation, Tax Assessment, HOA Fee, and Pre-Approval in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the real estate agency task. Use Negotiation, Appraisal, Inspection, Closing, Escrow, Mortgage, Down Payment, Interest Rate, Closing Costs, Equity, Appreciation, Depreciation, Tax Assessment, HOA Fee, and Pre-Approval in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -390,7 +390,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Listing Agreement", "Purchase Agreement", "Deed", "Title"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Listing Agreement", "Purchase Agreement", "Deed"],
@@ -402,7 +402,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Mortgage Note", "Disclosure", "Survey", "Insurance Policy"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mortgage Note", "Disclosure", "Survey"],
@@ -414,7 +414,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Tax Return", "Proof of Income"],
-          "scenario": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.",
+          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tax Return", "Proof of Income", "Listing Agreement"],
@@ -428,26 +428,26 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the real estate agency, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Listing Agreement, Purchase Agreement, Deed, and Title. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mortgage Note, Disclosure, Survey, and Insurance Policy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tax Return and Proof of Income. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the real estate agency, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Listing Agreement, Purchase Agreement, Deed, and Title. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mortgage Note, Disclosure, Survey, and Insurance Policy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tax Return and Proof of Income. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Listing Agreement",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mortgage Note",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tax Return",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -478,7 +478,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the real estate agency task. Use Listing Agreement, Purchase Agreement, Deed, Title, Mortgage Note, Disclosure, Survey, Insurance Policy, Tax Return, and Proof of Income in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the real estate agency task. Use Listing Agreement, Purchase Agreement, Deed, Title, Mortgage Note, Disclosure, Survey, Insurance Policy, Tax Return, and Proof of Income in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Cobra", "Python", "Rattlesnake", "Boa"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cobra", "Python", "Rattlesnake"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Viper", "Corn Snake", "King Snake", "Anaconda"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Viper", "Corn Snake", "King Snake"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Mamba", "Garter Snake", "Gecko", "Iguana"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mamba", "Garter Snake", "Gecko"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Chameleon", "Monitor", "Skink"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Chameleon", "Monitor", "Skink"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Reptile House: Practical Information",
-      "text": "At the the reptile house, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cobra, Python, Rattlesnake, and Boa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Viper, Corn Snake, King Snake, and Anaconda. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mamba, Garter Snake, Gecko, and Iguana. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Chameleon, Monitor, and Skink. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cobra, Python, Rattlesnake, and Boa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Viper, Corn Snake, King Snake, and Anaconda. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mamba, Garter Snake, Gecko, and Iguana. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Chameleon, Monitor, and Skink. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cobra",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Viper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mamba",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Chameleon",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the reptile house task. Use Cobra, Python, Rattlesnake, Boa, Viper, Corn Snake, King Snake, Anaconda, Mamba, Garter Snake, Gecko, Iguana, Chameleon, Monitor, and Skink in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Cobra, Python, Rattlesnake, Boa, Viper, Corn Snake, King Snake, Anaconda, Mamba, Garter Snake, Gecko, Iguana, Chameleon, Monitor, and Skink in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bearded Dragon", "Anole", "Komodo Dragon", "Basilisk"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bearded Dragon", "Anole", "Komodo Dragon"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Horned Lizard", "Turtle", "Tortoise", "Sea Turtle"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Horned Lizard", "Turtle", "Tortoise"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Snapping Turtle", "Crocodile", "Alligator", "Caiman"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snapping Turtle", "Crocodile", "Alligator"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Terrapin", "Softshell", "Gharial"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Terrapin", "Softshell", "Gharial"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Reptile House",
-      "text": "At the the reptile house, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bearded Dragon, Anole, Komodo Dragon, and Basilisk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Horned Lizard, Turtle, Tortoise, and Sea Turtle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snapping Turtle, Crocodile, Alligator, and Caiman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Terrapin, Softshell, and Gharial. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bearded Dragon, Anole, Komodo Dragon, and Basilisk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Horned Lizard, Turtle, Tortoise, and Sea Turtle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snapping Turtle, Crocodile, Alligator, and Caiman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Terrapin, Softshell, and Gharial. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bearded Dragon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Horned Lizard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snapping Turtle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Terrapin",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the reptile house task. Use Bearded Dragon, Anole, Komodo Dragon, Basilisk, Horned Lizard, Turtle, Tortoise, Sea Turtle, Snapping Turtle, Crocodile, Alligator, Caiman, Terrapin, Softshell, and Gharial in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Bearded Dragon, Anole, Komodo Dragon, Basilisk, Horned Lizard, Turtle, Tortoise, Sea Turtle, Snapping Turtle, Crocodile, Alligator, Caiman, Terrapin, Softshell, and Gharial in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Scale", "Shell", "Fang", "Tongue"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scale", "Shell", "Fang"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Tail", "Claw", "Eye", "Jaw"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tail", "Claw", "Eye"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Skin", "Venom", "Terrarium", "Heat Lamp"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Skin", "Venom", "Terrarium"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Water Dish", "Branch", "Rock"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Water Dish", "Branch", "Rock"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Reptile House",
-      "text": "At the the reptile house, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Scale, Shell, Fang, and Tongue. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tail, Claw, Eye, and Jaw. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Skin, Venom, Terrarium, and Heat Lamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Water Dish, Branch, and Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Scale, Shell, Fang, and Tongue. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tail, Claw, Eye, and Jaw. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Skin, Venom, Terrarium, and Heat Lamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Water Dish, Branch, and Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tail",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Skin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Water Dish",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the reptile house task. Use Scale, Shell, Fang, Tongue, Tail, Claw, Eye, Jaw, Skin, Venom, Terrarium, Heat Lamp, Water Dish, Branch, and Rock in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Scale, Shell, Fang, Tongue, Tail, Claw, Eye, Jaw, Skin, Venom, Terrarium, Heat Lamp, Water Dish, Branch, and Rock in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sand", "Moss", "Hide", "Log"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sand", "Moss", "Hide"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Misting System", "Shed", "Bask", "Hunt"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Misting System", "Shed", "Bask"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Swim", "Burrow", "Climb", "Camouflage"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Swim", "Burrow", "Climb"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Hiss", "Strike", "Coil"],
-          "scenario": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.",
+          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.",
           "check": {
             "question": "Which option best describes the main action shown in the scene?",
             "options": ["Hiss", "Strike", "Coil"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "The Reptile House: Practical Information",
-      "text": "At the the reptile house, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sand, Moss, Hide, and Log. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Misting System, Shed, Bask, and Hunt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Swim, Burrow, Climb, and Camouflage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Hiss, Strike, and Coil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sand, Moss, Hide, and Log. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Misting System, Shed, Bask, and Hunt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Swim, Burrow, Climb, and Camouflage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Hiss, Strike, and Coil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Misting System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Swim",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
         "answer": "Hiss",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the reptile house task. Use Sand, Moss, Hide, Log, Misting System, Shed, Bask, Hunt, Swim, Burrow, Climb, Camouflage, Hiss, Strike, and Coil in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Sand, Moss, Hide, Log, Misting System, Shed, Bask, Hunt, Swim, Burrow, Climb, Camouflage, Hiss, Strike, and Coil in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

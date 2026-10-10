@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Server Rack", "Blade Server", "Cable Tray", "Raised Floor"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Server Rack", "Blade Server", "Cable Tray"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Hot Aisle", "Cold Aisle", "Ups", "Generator"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hot Aisle", "Cold Aisle", "Ups"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pdu", "Patch Panel", "Switch", "Router"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pdu", "Patch Panel", "Switch"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Firewall", "Load Balancer", "Fiber Optic"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Firewall", "Load Balancer", "Fiber Optic"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Data Center",
-      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Server Rack, Blade Server, Cable Tray, and Raised Floor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hot Aisle, Cold Aisle, Ups, and Generator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pdu, Patch Panel, Switch, and Router. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Firewall, Load Balancer, and Fiber Optic. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Server Rack, Blade Server, Cable Tray, and Raised Floor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hot Aisle, Cold Aisle, Ups, and Generator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pdu, Patch Panel, Switch, and Router. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Firewall, Load Balancer, and Fiber Optic. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Server Rack",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hot Aisle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pdu",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Firewall",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the data center task. Use Server Rack, Blade Server, Cable Tray, Raised Floor, Hot Aisle, Cold Aisle, Ups, Generator, Pdu, Patch Panel, Switch, Router, Firewall, Load Balancer, and Fiber Optic in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the data center task. Use Server Rack, Blade Server, Cable Tray, Raised Floor, Hot Aisle, Cold Aisle, Ups, Generator, Pdu, Patch Panel, Switch, Router, Firewall, Load Balancer, and Fiber Optic in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Ethernet", "Bandwidth", "Latency", "Dns"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ethernet", "Bandwidth", "Latency"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Vpn", "Hard Drive", "Ssd", "Raid"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Vpn", "Hard Drive", "Ssd"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Nas", "San", "Backup", "Tape Drive"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Nas", "San", "Backup"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cloud Storage", "Snapshot", "Replication"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cloud Storage", "Snapshot", "Replication"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Data Center",
-      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ethernet, Bandwidth, Latency, and Dns. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vpn, Hard Drive, Ssd, and Raid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nas, San, Backup, and Tape Drive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cloud Storage, Snapshot, and Replication. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ethernet, Bandwidth, Latency, and Dns. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vpn, Hard Drive, Ssd, and Raid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nas, San, Backup, and Tape Drive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cloud Storage, Snapshot, and Replication. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ethernet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Vpn",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Nas",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cloud Storage",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the data center task. Use Ethernet, Bandwidth, Latency, Dns, Vpn, Hard Drive, Ssd, Raid, Nas, San, Backup, Tape Drive, Cloud Storage, Snapshot, and Replication in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the data center task. Use Ethernet, Bandwidth, Latency, Dns, Vpn, Hard Drive, Ssd, Raid, Nas, San, Backup, Tape Drive, Cloud Storage, Snapshot, and Replication in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Air Conditioner", "Chiller", "Cooling Tower", "Fan"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Air Conditioner", "Chiller", "Cooling Tower"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Vent", "Heat Exchanger", "Containment", "Thermostat"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Vent", "Heat Exchanger", "Containment"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Humidity Control", "Water Cooling", "Badge Reader", "Biometric"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Humidity Control", "Water Cooling", "Badge Reader"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Mantrap", "Cctv", "Fire Suppression"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mantrap", "Cctv", "Fire Suppression"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Data Center",
-      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Air Conditioner, Chiller, Cooling Tower, and Fan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vent, Heat Exchanger, Containment, and Thermostat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Humidity Control, Water Cooling, Badge Reader, and Biometric. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mantrap, Cctv, and Fire Suppression. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Air Conditioner, Chiller, Cooling Tower, and Fan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vent, Heat Exchanger, Containment, and Thermostat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Humidity Control, Water Cooling, Badge Reader, and Biometric. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mantrap, Cctv, and Fire Suppression. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Air Conditioner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Vent",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Humidity Control",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mantrap",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the data center task. Use Air Conditioner, Chiller, Cooling Tower, Fan, Vent, Heat Exchanger, Containment, Thermostat, Humidity Control, Water Cooling, Badge Reader, Biometric, Mantrap, Cctv, and Fire Suppression in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the data center task. Use Air Conditioner, Chiller, Cooling Tower, Fan, Vent, Heat Exchanger, Containment, Thermostat, Humidity Control, Water Cooling, Badge Reader, Biometric, Mantrap, Cctv, and Fire Suppression in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Access Log", "Cage", "Lock", "Guard"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Access Log", "Cage", "Lock"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Monitoring", "Technician", "Administrator", "Dashboard"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Monitoring", "Technician", "Administrator"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Alert", "Uptime", "Maintenance", "Migration"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Alert", "Uptime", "Maintenance"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Deployment", "Redundancy", "Failover"],
-          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.",
+          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Deployment", "Redundancy", "Failover"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Data Center",
-      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Access Log, Cage, Lock, and Guard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monitoring, Technician, Administrator, and Dashboard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alert, Uptime, Maintenance, and Migration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deployment, Redundancy, and Failover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Access Log, Cage, Lock, and Guard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monitoring, Technician, Administrator, and Dashboard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alert, Uptime, Maintenance, and Migration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deployment, Redundancy, and Failover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Access Log",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Monitoring",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Alert",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Deployment",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the data center task. Use Access Log, Cage, Lock, Guard, Monitoring, Technician, Administrator, Dashboard, Alert, Uptime, Maintenance, Migration, Deployment, Redundancy, and Failover in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the data center task. Use Access Log, Cage, Lock, Guard, Monitoring, Technician, Administrator, Dashboard, Alert, Uptime, Maintenance, Migration, Deployment, Redundancy, and Failover in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

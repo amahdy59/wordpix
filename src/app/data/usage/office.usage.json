@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Desk", "Office Chair", "Filing Cabinet"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cubicle", "Standing Desk", "Conference Table", "Whiteboard"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cubicle", "Standing Desk", "Conference Table"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Bulletin Board", "Partition", "Computer", "Monitor"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bulletin Board", "Partition", "Computer"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Keyboard", "Mouse", "Printer"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Keyboard", "Mouse", "Printer"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Office",
-      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Desk, Office Chair, Filing Cabinet, and Bookshelf. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Cubicle, Standing Desk, Conference Table, and Whiteboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Bulletin Board, Partition, Computer, and Monitor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Keyboard, Mouse, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Desk, Office Chair, Filing Cabinet, and Bookshelf. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Cubicle, Standing Desk, Conference Table, and Whiteboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Bulletin Board, Partition, Computer, and Monitor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Keyboard, Mouse, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cubicle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bulletin Board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Keyboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the office task. Use Desk, Office Chair, Filing Cabinet, Bookshelf, Cubicle, Standing Desk, Conference Table, Whiteboard, Bulletin Board, Partition, Computer, Monitor, Keyboard, Mouse, and Printer in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the office task. Use Desk, Office Chair, Filing Cabinet, Bookshelf, Cubicle, Standing Desk, Conference Table, Whiteboard, Bulletin Board, Partition, Computer, Monitor, Keyboard, Mouse, and Printer in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Scanner", "Projector", "Shredder", "Fax Machine"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scanner", "Projector", "Shredder"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Copier", "Laptop", "Headset", "Webcam"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Copier", "Laptop", "Headset"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Router", "Server", "USB Drive", "External Hard Drive"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Router", "Server", "USB Drive"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Docking Station", "Phone System", "Video Conferencing"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Docking Station", "Phone System", "Video Conferencing"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Office",
-      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Scanner, Projector, Shredder, and Fax Machine. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Copier, Laptop, Headset, and Webcam. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Router, Server, USB Drive, and External Hard Drive. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Docking Station, Phone System, and Video Conferencing. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Scanner, Projector, Shredder, and Fax Machine. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Copier, Laptop, Headset, and Webcam. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Router, Server, USB Drive, and External Hard Drive. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Docking Station, Phone System, and Video Conferencing. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scanner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Copier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Router",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Docking Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the office task. Use Scanner, Projector, Shredder, Fax Machine, Copier, Laptop, Headset, Webcam, Router, Server, USB Drive, External Hard Drive, Docking Station, Phone System, and Video Conferencing in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the office task. Use Scanner, Projector, Shredder, Fax Machine, Copier, Laptop, Headset, Webcam, Router, Server, USB Drive, External Hard Drive, Docking Station, Phone System, and Video Conferencing in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Reception", "Lobby", "Break Room", "Kitchen"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Reception", "Lobby", "Break Room"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Meeting Room", "Corner Office", "Open Floor Plan", "Mailroom"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Meeting Room", "Corner Office", "Open Floor Plan"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Room", "Restroom", "Dress Code", "Happy Hour"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Storage Room", "Restroom", "Dress Code"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Team Building", "Performance Review", "Onboarding"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Team Building", "Performance Review", "Onboarding"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Before You Begin: The Office",
-      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Reception, Lobby, Break Room, and Kitchen. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Corner Office, Open Floor Plan, and Mailroom. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Storage Room, Restroom, Dress Code, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Team Building, Performance Review, and Onboarding. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Reception, Lobby, Break Room, and Kitchen. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Corner Office, Open Floor Plan, and Mailroom. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Storage Room, Restroom, Dress Code, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Team Building, Performance Review, and Onboarding. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Reception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Meeting Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Storage Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Team Building",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the office task. Use Reception, Lobby, Break Room, Kitchen, Meeting Room, Corner Office, Open Floor Plan, Mailroom, Storage Room, Restroom, Dress Code, Happy Hour, Team Building, Performance Review, and Onboarding in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the office task. Use Reception, Lobby, Break Room, Kitchen, Meeting Room, Corner Office, Open Floor Plan, Mailroom, Storage Room, Restroom, Dress Code, Happy Hour, Team Building, Performance Review, and Onboarding in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -554,7 +554,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Remote Work", "Flex Hours", "Open Door Policy", "Water Cooler"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Remote Work", "Flex Hours", "Open Door Policy"],
@@ -566,7 +566,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Office Party"],
-          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.",
+          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Office Party", "Remote Work", "Flex Hours"],
@@ -580,19 +580,19 @@
     },
     "reading": {
       "title": "A Practical Update: The Office",
-      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Remote Work, Flex Hours, Open Door Policy, and Water Cooler. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Office Party. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Remote Work, Flex Hours, Open Door Policy, and Water Cooler. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Office Party. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Remote Work",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Office Party",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -623,7 +623,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the office task. Use Remote Work, Flex Hours, Open Door Policy, Water Cooler, and Office Party in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the office task. Use Remote Work, Flex Hours, Open Door Policy, Water Cooler, and Office Party in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

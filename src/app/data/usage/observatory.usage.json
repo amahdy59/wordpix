@@ -57,7 +57,7 @@
             "Refracting Telescope",
             "Radio Telescope"
           ],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Optical Telescope", "Reflecting Telescope", "Refracting Telescope"],
@@ -69,7 +69,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Telescope Mount", "Eyepiece", "Finder Scope", "Lens"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Telescope Mount", "Eyepiece", "Finder Scope"],
@@ -81,7 +81,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Mirror", "Tripod", "Star", "Planet"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mirror", "Tripod", "Star"],
@@ -93,7 +93,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Moon", "Sun", "Comet"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Moon", "Sun", "Comet"],
@@ -107,33 +107,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Observatory",
-      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Telescope Mount, Eyepiece, Finder Scope, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mirror, Tripod, Star, and Planet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moon, Sun, and Comet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Telescope Mount, Eyepiece, Finder Scope, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mirror, Tripod, Star, and Planet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moon, Sun, and Comet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Optical Telescope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Telescope Mount",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mirror",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Moon",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -164,7 +164,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Optical Telescope, Reflecting Telescope, Refracting Telescope, Radio Telescope, Telescope Mount, Eyepiece, Finder Scope, Lens, Mirror, Tripod, Star, Planet, Moon, Sun, and Comet in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the observatory task. Use Optical Telescope, Reflecting Telescope, Refracting Telescope, Radio Telescope, Telescope Mount, Eyepiece, Finder Scope, Lens, Mirror, Tripod, Star, Planet, Moon, Sun, and Comet in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -231,7 +231,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Asteroid", "Nebula", "Galaxy", "Constellation"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Asteroid", "Nebula", "Galaxy"],
@@ -243,7 +243,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Meteor", "Dome", "Rotating Roof", "Observation Deck"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Meteor", "Dome", "Rotating Roof"],
@@ -255,7 +255,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Control Room", "Computer Lab", "Library", "Lecture Hall"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Control Room", "Computer Lab", "Library"],
@@ -267,7 +267,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Gift Shop", "Parking Area", "Pathway"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Gift Shop", "Parking Area", "Pathway"],
@@ -281,33 +281,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Observatory",
-      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Asteroid, Nebula, Galaxy, and Constellation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Meteor, Dome, Rotating Roof, and Observation Deck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Control Room, Computer Lab, Library, and Lecture Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Gift Shop, Parking Area, and Pathway. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Asteroid, Nebula, Galaxy, and Constellation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Meteor, Dome, Rotating Roof, and Observation Deck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Control Room, Computer Lab, Library, and Lecture Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Gift Shop, Parking Area, and Pathway. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Asteroid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Meteor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Control Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Gift Shop",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -338,7 +338,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Asteroid, Nebula, Galaxy, Constellation, Meteor, Dome, Rotating Roof, Observation Deck, Control Room, Computer Lab, Library, Lecture Hall, Gift Shop, Parking Area, and Pathway in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the observatory task. Use Asteroid, Nebula, Galaxy, Constellation, Meteor, Dome, Rotating Roof, Observation Deck, Control Room, Computer Lab, Library, Lecture Hall, Gift Shop, Parking Area, and Pathway in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -405,7 +405,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Spectrograph", "CCD Camera", "Star Chart", "Planetarium Projector"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spectrograph", "CCD Camera", "Star Chart"],
@@ -417,7 +417,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Computer Monitor", "Data Server", "Clock", "Laser Pointer"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Computer Monitor", "Data Server", "Clock"],
@@ -429,7 +429,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Red Flashlight", "Logbook", "Mercury", "Venus"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Red Flashlight", "Logbook", "Mercury"],
@@ -441,7 +441,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Earth", "Mars", "Jupiter"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Earth", "Mars", "Jupiter"],
@@ -455,33 +455,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Observatory",
-      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spectrograph, CCD Camera, Star Chart, and Planetarium Projector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Monitor, Data Server, Clock, and Laser Pointer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Red Flashlight, Logbook, Mercury, and Venus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Earth, Mars, and Jupiter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spectrograph, CCD Camera, Star Chart, and Planetarium Projector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Monitor, Data Server, Clock, and Laser Pointer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Red Flashlight, Logbook, Mercury, and Venus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Earth, Mars, and Jupiter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spectrograph",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Computer Monitor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Red Flashlight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Earth",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -512,7 +512,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Spectrograph, CCD Camera, Star Chart, Planetarium Projector, Computer Monitor, Data Server, Clock, Laser Pointer, Red Flashlight, Logbook, Mercury, Venus, Earth, Mars, and Jupiter in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the observatory task. Use Spectrograph, CCD Camera, Star Chart, Planetarium Projector, Computer Monitor, Data Server, Clock, Laser Pointer, Red Flashlight, Logbook, Mercury, Venus, Earth, Mars, and Jupiter in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -579,7 +579,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Saturn", "Uranus", "Neptune", "Pluto"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Saturn", "Uranus", "Neptune"],
@@ -591,7 +591,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Asteroid Belt", "Star Gazing", "Photography", "Data Analysis"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Asteroid Belt", "Star Gazing", "Photography"],
@@ -603,7 +603,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Public Viewing", "Night Tour", "Lecture", "Research"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Public Viewing", "Night Tour", "Lecture"],
@@ -615,7 +615,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Sky Mapping", "Eclipse Watching", "Meteor Shower"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Sky Mapping", "Eclipse Watching", "Meteor Shower"],
@@ -629,33 +629,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Observatory",
-      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Saturn, Uranus, Neptune, and Pluto. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Asteroid Belt, Star Gazing, Photography, and Data Analysis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Viewing, Night Tour, Lecture, and Research. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sky Mapping, Eclipse Watching, and Meteor Shower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Saturn, Uranus, Neptune, and Pluto. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Asteroid Belt, Star Gazing, Photography, and Data Analysis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Viewing, Night Tour, Lecture, and Research. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sky Mapping, Eclipse Watching, and Meteor Shower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Saturn",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Asteroid Belt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Public Viewing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Sky Mapping",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -686,7 +686,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Saturn, Uranus, Neptune, Pluto, Asteroid Belt, Star Gazing, Photography, Data Analysis, Public Viewing, Night Tour, Lecture, Research, Sky Mapping, Eclipse Watching, and Meteor Shower in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the observatory task. Use Saturn, Uranus, Neptune, Pluto, Asteroid Belt, Star Gazing, Photography, Data Analysis, Public Viewing, Night Tour, Lecture, Research, Sky Mapping, Eclipse Watching, and Meteor Shower in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -749,7 +749,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Telescope", "Camera", "Photometer", "Computer"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Telescope", "Camera", "Photometer"],
@@ -761,7 +761,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Antenna", "Magnitude", "Orbit", "Light-Year"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Antenna", "Magnitude", "Orbit"],
@@ -773,7 +773,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Spectrum", "Rotation", "Eclipse", "Transit"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spectrum", "Rotation", "Eclipse"],
@@ -785,7 +785,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Discovery"],
-          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.",
+          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Discovery", "Telescope", "Camera"],
@@ -799,33 +799,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Observatory",
-      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Camera, Photometer, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Antenna, Magnitude, Orbit, and Light-Year. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Spectrum, Rotation, Eclipse, and Transit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Discovery. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Camera, Photometer, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Antenna, Magnitude, Orbit, and Light-Year. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Spectrum, Rotation, Eclipse, and Transit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Discovery. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Telescope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Antenna",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spectrum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Discovery",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -856,7 +856,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Telescope, Camera, Photometer, Computer, Antenna, Magnitude, Orbit, Light-Year, Spectrum, Rotation, Eclipse, Transit, and Discovery in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the observatory task. Use Telescope, Camera, Photometer, Computer, Antenna, Magnitude, Orbit, Light-Year, Spectrum, Rotation, Eclipse, Transit, and Discovery in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

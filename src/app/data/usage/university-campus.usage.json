@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lecture Hall", "Library", "Laboratory", "Dormitory"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Lecture Hall", "Library", "Laboratory"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Student Center", "Gymnasium", "Cafeteria", "Administration"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Student Center", "Gymnasium", "Cafeteria"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Auditorium", "Chapel", "Quad", "Courtyard"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Auditorium", "Chapel", "Quad"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Fountain", "Statue", "Clock Tower"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fountain", "Statue", "Clock Tower"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The University Campus",
-      "text": "At the the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Lecture Hall, Library, Laboratory, and Dormitory. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Student Center, Gymnasium, Cafeteria, and Administration. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Auditorium, Chapel, Quad, and Courtyard. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Fountain, Statue, and Clock Tower. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Lecture Hall, Library, Laboratory, and Dormitory. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Student Center, Gymnasium, Cafeteria, and Administration. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Auditorium, Chapel, Quad, and Courtyard. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Fountain, Statue, and Clock Tower. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Lecture Hall",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Student Center",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Auditorium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fountain",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the university campus task. Use Lecture Hall, Library, Laboratory, Dormitory, Student Center, Gymnasium, Cafeteria, Administration, Auditorium, Chapel, Quad, Courtyard, Fountain, Statue, and Clock Tower in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the university campus task. Use Lecture Hall, Library, Laboratory, Dormitory, Student Center, Gymnasium, Cafeteria, Administration, Auditorium, Chapel, Quad, Courtyard, Fountain, Statue, and Clock Tower in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Gate", "Pathway", "Garden", "Parking Lot"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gate", "Pathway", "Garden"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Sports Field", "Computer Lab", "Art Studio", "Music Room"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Sports Field", "Computer Lab", "Art Studio"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Theater", "Swimming Pool", "Track", "Tennis Court"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Theater", "Swimming Pool", "Track"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Health Center", "Counseling Center", "Career Center"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Health Center", "Counseling Center", "Career Center"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The University Campus",
-      "text": "At the the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Gate, Pathway, Garden, and Parking Lot. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Sports Field, Computer Lab, Art Studio, and Music Room. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Theater, Swimming Pool, Track, and Tennis Court. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Health Center, Counseling Center, and Career Center. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Gate, Pathway, Garden, and Parking Lot. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Sports Field, Computer Lab, Art Studio, and Music Room. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Theater, Swimming Pool, Track, and Tennis Court. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Health Center, Counseling Center, and Career Center. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Sports Field",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Theater",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Health Center",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the university campus task. Use Gate, Pathway, Garden, Parking Lot, Sports Field, Computer Lab, Art Studio, Music Room, Theater, Swimming Pool, Track, Tennis Court, Health Center, Counseling Center, and Career Center in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the university campus task. Use Gate, Pathway, Garden, Parking Lot, Sports Field, Computer Lab, Art Studio, Music Room, Theater, Swimming Pool, Track, Tennis Court, Health Center, Counseling Center, and Career Center in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -390,7 +390,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Orientation", "Registration", "Move-In Day", "Commencement"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Orientation", "Registration", "Move-In Day"],
@@ -402,7 +402,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Homecoming", "Spring Break", "Finals Week", "Study Abroad"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Homecoming", "Spring Break", "Finals Week"],
@@ -414,7 +414,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Internship Fair", "Alumni Weekend"],
-          "scenario": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.",
+          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Internship Fair", "Alumni Weekend", "Orientation"],
@@ -428,26 +428,26 @@
     },
     "reading": {
       "title": "Before You Begin: The University Campus",
-      "text": "At the the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Orientation, Registration, Move-In Day, and Commencement. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Homecoming, Spring Break, Finals Week, and Study Abroad. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Internship Fair and Alumni Weekend. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Orientation, Registration, Move-In Day, and Commencement. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Homecoming, Spring Break, Finals Week, and Study Abroad. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Internship Fair and Alumni Weekend. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Orientation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Homecoming",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Internship Fair",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -478,7 +478,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the university campus task. Use Orientation, Registration, Move-In Day, Commencement, Homecoming, Spring Break, Finals Week, Study Abroad, Internship Fair, and Alumni Weekend in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the university campus task. Use Orientation, Registration, Move-In Day, Commencement, Homecoming, Spring Break, Finals Week, Study Abroad, Internship Fair, and Alumni Weekend in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

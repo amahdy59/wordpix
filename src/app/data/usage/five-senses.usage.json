@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Vision", "Eye", "Pupil", "Lens"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Vision", "Eye", "Pupil"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Retina", "Cornea", "Optic Nerve", "Color Vision"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Retina", "Cornea", "Optic Nerve"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Depth Perception", "Peripheral Vision", "Sound", "Ear"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Depth Perception", "Peripheral Vision", "Sound"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Eardrum", "Cochlea", "Pitch"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Eardrum", "Cochlea", "Pitch"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Five Senses",
-      "text": "At the the five senses, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Vision, Eye, Pupil, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Retina, Cornea, Optic Nerve, and Color Vision. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Depth Perception, Peripheral Vision, Sound, and Ear. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Eardrum, Cochlea, and Pitch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Vision, Eye, Pupil, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Retina, Cornea, Optic Nerve, and Color Vision. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Depth Perception, Peripheral Vision, Sound, and Ear. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Eardrum, Cochlea, and Pitch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Vision",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Retina",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Depth Perception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Eardrum",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the five senses task. Use Vision, Eye, Pupil, Lens, Retina, Cornea, Optic Nerve, Color Vision, Depth Perception, Peripheral Vision, Sound, Ear, Eardrum, Cochlea, and Pitch in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the five senses task. Use Vision, Eye, Pupil, Lens, Retina, Cornea, Optic Nerve, Color Vision, Depth Perception, Peripheral Vision, Sound, Ear, Eardrum, Cochlea, and Pitch in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Volume", "Frequency", "Echo", "Vibration"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Volume", "Frequency", "Echo"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Auditory Nerve", "Nose", "Nostril", "Olfactory"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Auditory Nerve", "Nose", "Nostril"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Aroma", "Fragrance", "Odor", "Scent"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Aroma", "Fragrance", "Odor"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Stench", "Pungent", "Nasal Cavity"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stench", "Pungent", "Nasal Cavity"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Five Senses",
-      "text": "At the the five senses, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Volume, Frequency, Echo, and Vibration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Auditory Nerve, Nose, Nostril, and Olfactory. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Aroma, Fragrance, Odor, and Scent. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stench, Pungent, and Nasal Cavity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Volume, Frequency, Echo, and Vibration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Auditory Nerve, Nose, Nostril, and Olfactory. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Aroma, Fragrance, Odor, and Scent. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stench, Pungent, and Nasal Cavity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Volume",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Auditory Nerve",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Aroma",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stench",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the five senses task. Use Volume, Frequency, Echo, Vibration, Auditory Nerve, Nose, Nostril, Olfactory, Aroma, Fragrance, Odor, Scent, Stench, Pungent, and Nasal Cavity in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the five senses task. Use Volume, Frequency, Echo, Vibration, Auditory Nerve, Nose, Nostril, Olfactory, Aroma, Fragrance, Odor, Scent, Stench, Pungent, and Nasal Cavity in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Tongue", "Taste Bud", "Sweet", "Sour"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tongue", "Taste Bud", "Sweet"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Salty", "Bitter", "Umami", "Flavor"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Salty", "Bitter", "Umami"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Palate", "Savor", "Skin", "Nerve Ending"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Palate", "Savor", "Skin"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Pressure", "Temperature", "Texture"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Pressure", "Temperature", "Texture"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Five Senses",
-      "text": "At the the five senses, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tongue, Taste Bud, Sweet, and Sour. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Salty, Bitter, Umami, and Flavor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Palate, Savor, Skin, and Nerve Ending. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pressure, Temperature, and Texture. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tongue, Taste Bud, Sweet, and Sour. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Salty, Bitter, Umami, and Flavor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Palate, Savor, Skin, and Nerve Ending. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pressure, Temperature, and Texture. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tongue",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Salty",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Palate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Pressure",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the five senses task. Use Tongue, Taste Bud, Sweet, Sour, Salty, Bitter, Umami, Flavor, Palate, Savor, Skin, Nerve Ending, Pressure, Temperature, and Texture in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the five senses task. Use Tongue, Taste Bud, Sweet, Sour, Salty, Bitter, Umami, Flavor, Palate, Savor, Skin, Nerve Ending, Pressure, Temperature, and Texture in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pain", "Tickle", "Itch", "Smooth"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pain", "Tickle", "Itch"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Rough", "Bright", "Loud", "Fragrant"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rough", "Bright", "Loud"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Delicious", "Soft", "Dark", "Quiet"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Delicious", "Soft", "Dark"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Stinky", "Bland", "Hard"],
-          "scenario": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.",
+          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stinky", "Bland", "Hard"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Five Senses",
-      "text": "At the the five senses, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pain, Tickle, Itch, and Smooth. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rough, Bright, Loud, and Fragrant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Delicious, Soft, Dark, and Quiet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stinky, Bland, and Hard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pain, Tickle, Itch, and Smooth. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rough, Bright, Loud, and Fragrant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Delicious, Soft, Dark, and Quiet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stinky, Bland, and Hard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rough",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Delicious",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stinky",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the five senses task. Use Pain, Tickle, Itch, Smooth, Rough, Bright, Loud, Fragrant, Delicious, Soft, Dark, Quiet, Stinky, Bland, and Hard in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the five senses task. Use Pain, Tickle, Itch, Smooth, Rough, Bright, Loud, Fragrant, Delicious, Soft, Dark, Quiet, Stinky, Bland, and Hard in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Polar Bear", "Arctic Fox", "Walrus", "Seal"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Polar Bear", "Arctic Fox", "Walrus"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Penguin", "Snowy Owl", "Reindeer", "Arctic Hare"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Penguin", "Snowy Owl", "Reindeer"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Narwhal", "Beluga Whale", "Puffin", "Lemming"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Narwhal", "Beluga Whale", "Puffin"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Iceberg", "Glacier", "Ice Sheet"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Iceberg", "Glacier", "Ice Sheet"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Arctic",
-      "text": "At the the arctic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Polar Bear, Arctic Fox, Walrus, and Seal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Penguin, Snowy Owl, Reindeer, and Arctic Hare. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Narwhal, Beluga Whale, Puffin, and Lemming. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Iceberg, Glacier, and Ice Sheet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Polar Bear, Arctic Fox, Walrus, and Seal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Penguin, Snowy Owl, Reindeer, and Arctic Hare. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Narwhal, Beluga Whale, Puffin, and Lemming. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Iceberg, Glacier, and Ice Sheet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Polar Bear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Penguin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Narwhal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Iceberg",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the arctic task. Use Polar Bear, Arctic Fox, Walrus, Seal, Penguin, Snowy Owl, Reindeer, Arctic Hare, Narwhal, Beluga Whale, Puffin, Lemming, Iceberg, Glacier, and Ice Sheet in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the arctic task. Use Polar Bear, Arctic Fox, Walrus, Seal, Penguin, Snowy Owl, Reindeer, Arctic Hare, Narwhal, Beluga Whale, Puffin, Lemming, Iceberg, Glacier, and Ice Sheet in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Ice Cap", "Snowfield", "Frost", "Icicle"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ice Cap", "Snowfield", "Frost"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Snowflake", "Slush", "Pack Ice", "Crevasse"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snowflake", "Slush", "Pack Ice"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Ice Cave", "Tundra", "Fjord", "Frozen Lake"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ice Cave", "Tundra", "Fjord"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Mountain", "Valley", "Coastline"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mountain", "Valley", "Coastline"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Arctic",
-      "text": "At the the arctic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ice Cap, Snowfield, Frost, and Icicle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snowflake, Slush, Pack Ice, and Crevasse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ice Cave, Tundra, Fjord, and Frozen Lake. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mountain, Valley, and Coastline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ice Cap, Snowfield, Frost, and Icicle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snowflake, Slush, Pack Ice, and Crevasse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ice Cave, Tundra, Fjord, and Frozen Lake. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mountain, Valley, and Coastline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ice Cap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snowflake",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ice Cave",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mountain",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the arctic task. Use Ice Cap, Snowfield, Frost, Icicle, Snowflake, Slush, Pack Ice, Crevasse, Ice Cave, Tundra, Fjord, Frozen Lake, Mountain, Valley, and Coastline in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the arctic task. Use Ice Cap, Snowfield, Frost, Icicle, Snowflake, Slush, Pack Ice, Crevasse, Ice Cave, Tundra, Fjord, Frozen Lake, Mountain, Valley, and Coastline in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Peninsula", "Island", "Bay", "Cliff"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Peninsula", "Island", "Bay"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Parka", "Snow Boots", "Fur Hat", "Mittens"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Parka", "Snow Boots", "Fur Hat"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Scarf", "Thermal Underwear", "Goggles", "Face Mask"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scarf", "Thermal Underwear", "Goggles"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Snow Pants", "Wool Socks", "Dog Sled"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snow Pants", "Wool Socks", "Dog Sled"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Arctic",
-      "text": "At the the arctic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Peninsula, Island, Bay, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Parka, Snow Boots, Fur Hat, and Mittens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scarf, Thermal Underwear, Goggles, and Face Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snow Pants, Wool Socks, and Dog Sled. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Peninsula, Island, Bay, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Parka, Snow Boots, Fur Hat, and Mittens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scarf, Thermal Underwear, Goggles, and Face Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snow Pants, Wool Socks, and Dog Sled. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Peninsula",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Parka",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scarf",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snow Pants",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the arctic task. Use Peninsula, Island, Bay, Cliff, Parka, Snow Boots, Fur Hat, Mittens, Scarf, Thermal Underwear, Goggles, Face Mask, Snow Pants, Wool Socks, and Dog Sled in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the arctic task. Use Peninsula, Island, Bay, Cliff, Parka, Snow Boots, Fur Hat, Mittens, Scarf, Thermal Underwear, Goggles, Face Mask, Snow Pants, Wool Socks, and Dog Sled in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Snowmobile", "Ice Breaker", "Kayak", "Skis"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snowmobile", "Ice Breaker", "Kayak"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Snowshoes", "Helicopter", "Research Vessel", "Sled"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snowshoes", "Helicopter", "Research Vessel"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Toboggan", "Igloo", "Research Station", "Northern Lights"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Toboggan", "Igloo", "Research Station"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Midnight Sun", "Ice Fishing", "Campfire"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Midnight Sun", "Ice Fishing", "Campfire"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Arctic",
-      "text": "At the the arctic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Snowmobile, Ice Breaker, Kayak, and Skis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snowshoes, Helicopter, Research Vessel, and Sled. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Toboggan, Igloo, Research Station, and Northern Lights. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Midnight Sun, Ice Fishing, and Campfire. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Snowmobile, Ice Breaker, Kayak, and Skis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snowshoes, Helicopter, Research Vessel, and Sled. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Toboggan, Igloo, Research Station, and Northern Lights. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Midnight Sun, Ice Fishing, and Campfire. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snowmobile",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snowshoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Toboggan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Midnight Sun",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the arctic task. Use Snowmobile, Ice Breaker, Kayak, Skis, Snowshoes, Helicopter, Research Vessel, Sled, Toboggan, Igloo, Research Station, Northern Lights, Midnight Sun, Ice Fishing, and Campfire in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the arctic task. Use Snowmobile, Ice Breaker, Kayak, Skis, Snowshoes, Helicopter, Research Vessel, Sled, Toboggan, Igloo, Research Station, Northern Lights, Midnight Sun, Ice Fishing, and Campfire in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -742,7 +742,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Telescope", "Flag", "Weather Station", "Satellite Dish"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Telescope", "Flag", "Weather Station"],
@@ -754,7 +754,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Whale", "Permafrost", "Snow", "Aurora"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Whale", "Permafrost", "Snow"],
@@ -766,7 +766,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Snowshoe", "Expedition", "Compass", "Icebreaker"],
-          "scenario": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.",
+          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snowshoe", "Expedition", "Compass"],
@@ -780,26 +780,26 @@
     },
     "reading": {
       "title": "An Adult Learner at The Arctic",
-      "text": "At the the arctic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Flag, Weather Station, and Satellite Dish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whale, Permafrost, Snow, and Aurora. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snowshoe, Expedition, Compass, and Icebreaker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Flag, Weather Station, and Satellite Dish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whale, Permafrost, Snow, and Aurora. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snowshoe, Expedition, Compass, and Icebreaker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Telescope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Whale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snowshoe",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -830,7 +830,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the arctic task. Use Telescope, Flag, Weather Station, Satellite Dish, Whale, Permafrost, Snow, Aurora, Snowshoe, Expedition, Compass, and Icebreaker in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the arctic task. Use Telescope, Flag, Weather Station, Satellite Dish, Whale, Permafrost, Snow, Aurora, Snowshoe, Expedition, Compass, and Icebreaker in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

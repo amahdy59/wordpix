@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Stage", "Curtain", "Spotlight", "Backdrop"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Curtain, Spotlight, and Backdrop and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Curtain, Spotlight, and Backdrop and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stage", "Curtain", "Spotlight"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Trapdoor", "Wings", "Proscenium", "Apron"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trapdoor, Wings, Proscenium, and Apron and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trapdoor, Wings, Proscenium, and Apron and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trapdoor", "Wings", "Proscenium"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fly System", "Cyclorama", "Auditorium", "Orchestra Seats"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fly System, Cyclorama, Auditorium, and Orchestra Seats and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fly System, Cyclorama, Auditorium, and Orchestra Seats and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fly System", "Cyclorama", "Auditorium"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Balcony", "Box Seat", "Aisle"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balcony, Box Seat, and Aisle and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balcony, Box Seat, and Aisle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Balcony", "Box Seat", "Aisle"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Theater: Practical Information",
-      "text": "At the the theater, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Stage, Curtain, Spotlight, and Backdrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Trapdoor, Wings, Proscenium, and Apron. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fly System, Cyclorama, Auditorium, and Orchestra Seats. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Balcony, Box Seat, and Aisle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the theater, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Stage, Curtain, Spotlight, and Backdrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Trapdoor, Wings, Proscenium, and Apron. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fly System, Cyclorama, Auditorium, and Orchestra Seats. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Balcony, Box Seat, and Aisle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Curtain, Spotlight, and Backdrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Curtain, Spotlight, and Backdrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trapdoor, Wings, Proscenium, and Apron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trapdoor, Wings, Proscenium, and Apron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trapdoor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fly System, Cyclorama, Auditorium, and Orchestra Seats and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fly System, Cyclorama, Auditorium, and Orchestra Seats and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fly System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balcony, Box Seat, and Aisle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balcony, Box Seat, and Aisle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Balcony",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the theater task. Use Stage, Curtain, Spotlight, Backdrop, Trapdoor, Wings, Proscenium, Apron, Fly System, Cyclorama, Auditorium, Orchestra Seats, Balcony, Box Seat, and Aisle in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the theater task. Use Stage, Curtain, Spotlight, Backdrop, Trapdoor, Wings, Proscenium, Apron, Fly System, Cyclorama, Auditorium, Orchestra Seats, Balcony, Box Seat, and Aisle in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Row", "Lobby", "Box Office", "Cloakroom"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Row, Lobby, Box Office, and Cloakroom and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Row, Lobby, Box Office, and Cloakroom and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Row", "Lobby", "Box Office"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Program", "Costume", "Wig", "Mask"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Program, Costume, Wig, and Mask and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Program, Costume, Wig, and Mask and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Program", "Costume", "Wig"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Cape", "Crown", "Robe", "Gloves"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Crown, Robe, and Gloves and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Crown, Robe, and Gloves and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cape", "Crown", "Robe"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Stage Makeup", "Face Paint", "Mirror"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage Makeup, Face Paint, and Mirror and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage Makeup, Face Paint, and Mirror and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stage Makeup", "Face Paint", "Mirror"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Theater",
-      "text": "At the the theater, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Row, Lobby, Box Office, and Cloakroom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Program, Costume, Wig, and Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cape, Crown, Robe, and Gloves. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stage Makeup, Face Paint, and Mirror. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the theater, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Row, Lobby, Box Office, and Cloakroom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Program, Costume, Wig, and Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cape, Crown, Robe, and Gloves. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stage Makeup, Face Paint, and Mirror. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Row, Lobby, Box Office, and Cloakroom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Row, Lobby, Box Office, and Cloakroom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Row",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Program, Costume, Wig, and Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Program, Costume, Wig, and Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Program",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Crown, Robe, and Gloves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cape, Crown, Robe, and Gloves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cape",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage Makeup, Face Paint, and Mirror and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage Makeup, Face Paint, and Mirror and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stage Makeup",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the theater task. Use Row, Lobby, Box Office, Cloakroom, Program, Costume, Wig, Mask, Cape, Crown, Robe, Gloves, Stage Makeup, Face Paint, and Mirror in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the theater task. Use Row, Lobby, Box Office, Cloakroom, Program, Costume, Wig, Mask, Cape, Crown, Robe, Gloves, Stage Makeup, Face Paint, and Mirror in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Prop", "Sword", "Goblet", "Throne"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prop, Sword, Goblet, and Throne and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prop, Sword, Goblet, and Throne and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Prop", "Sword", "Goblet"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Table", "Chair", "Candle", "Lantern"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Table, Chair, Candle, and Lantern and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Table, Chair, Candle, and Lantern and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Table", "Chair", "Candle"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Banner", "Treasure Chest", "Actor", "Actress"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Banner, Treasure Chest, Actor, and Actress and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Banner, Treasure Chest, Actor, and Actress and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Banner", "Treasure Chest", "Actor"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Director", "Stage Manager", "Lighting Designer"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Director, Stage Manager, and Lighting Designer and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Director, Stage Manager, and Lighting Designer and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Director", "Stage Manager", "Lighting Designer"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Theater",
-      "text": "At the the theater, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Prop, Sword, Goblet, and Throne. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Table, Chair, Candle, and Lantern. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Banner, Treasure Chest, Actor, and Actress. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Director, Stage Manager, and Lighting Designer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the theater, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Prop, Sword, Goblet, and Throne. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Table, Chair, Candle, and Lantern. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Banner, Treasure Chest, Actor, and Actress. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Director, Stage Manager, and Lighting Designer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prop, Sword, Goblet, and Throne and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prop, Sword, Goblet, and Throne and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Prop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Table, Chair, Candle, and Lantern and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Table, Chair, Candle, and Lantern and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Banner, Treasure Chest, Actor, and Actress and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Banner, Treasure Chest, Actor, and Actress and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Banner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Director, Stage Manager, and Lighting Designer and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Director, Stage Manager, and Lighting Designer and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Director",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the theater task. Use Prop, Sword, Goblet, Throne, Table, Chair, Candle, Lantern, Banner, Treasure Chest, Actor, Actress, Director, Stage Manager, and Lighting Designer in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the theater task. Use Prop, Sword, Goblet, Throne, Table, Chair, Candle, Lantern, Banner, Treasure Chest, Actor, Actress, Director, Stage Manager, and Lighting Designer in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sound Technician", "Costume Designer", "Set Builder", "Prompter"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Technician, Costume Designer, Set Builder, and Prompter and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Technician, Costume Designer, Set Builder, and Prompter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sound Technician", "Costume Designer", "Set Builder"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Usher", "Rehearsal", "Opening Night", "Monologue"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Usher, Rehearsal, Opening Night, and Monologue and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Usher, Rehearsal, Opening Night, and Monologue and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Usher", "Rehearsal", "Opening Night"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Dialogue", "Scene", "Act", "Intermission"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dialogue, Scene, Act, and Intermission and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dialogue, Scene, Act, and Intermission and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dialogue", "Scene", "Act"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Standing Ovation", "Encore", "Curtain Call"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Ovation, Encore, and Curtain Call and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Ovation, Encore, and Curtain Call and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Standing Ovation", "Encore", "Curtain Call"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "The Theater: Practical Information",
-      "text": "At the the theater, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sound Technician, Costume Designer, Set Builder, and Prompter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Usher, Rehearsal, Opening Night, and Monologue. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dialogue, Scene, Act, and Intermission. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Standing Ovation, Encore, and Curtain Call. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the theater, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sound Technician, Costume Designer, Set Builder, and Prompter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Usher, Rehearsal, Opening Night, and Monologue. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dialogue, Scene, Act, and Intermission. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Standing Ovation, Encore, and Curtain Call. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Technician, Costume Designer, Set Builder, and Prompter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Technician, Costume Designer, Set Builder, and Prompter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sound Technician",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Usher, Rehearsal, Opening Night, and Monologue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Usher, Rehearsal, Opening Night, and Monologue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Usher",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dialogue, Scene, Act, and Intermission and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dialogue, Scene, Act, and Intermission and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dialogue",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Ovation, Encore, and Curtain Call and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Ovation, Encore, and Curtain Call and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Standing Ovation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the theater task. Use Sound Technician, Costume Designer, Set Builder, Prompter, Usher, Rehearsal, Opening Night, Monologue, Dialogue, Scene, Act, Intermission, Standing Ovation, Encore, and Curtain Call in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the theater task. Use Sound Technician, Costume Designer, Set Builder, Prompter, Usher, Rehearsal, Opening Night, Monologue, Dialogue, Scene, Act, Intermission, Standing Ovation, Encore, and Curtain Call in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -736,7 +736,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Wing", "Orchestra Pit", "Playwright", "Stagehand"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wing, Orchestra Pit, Playwright, and Stagehand and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wing, Orchestra Pit, Playwright, and Stagehand and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Wing", "Orchestra Pit", "Playwright"],
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Audience", "Understudy", "Script", "Makeup"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Audience, Understudy, Script, and Makeup and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Audience, Understudy, Script, and Makeup and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Audience", "Understudy", "Script"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Ovation"],
-          "scenario": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ovation and choose the option that fits the situation.",
+          "scenario": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ovation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ovation", "Wing", "Orchestra Pit"],
@@ -774,26 +774,26 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Theater",
-      "text": "At the the theater, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wing, Orchestra Pit, Playwright, and Stagehand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Audience, Understudy, Script, and Makeup. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ovation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the theater, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wing, Orchestra Pit, Playwright, and Stagehand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Audience, Understudy, Script, and Makeup. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ovation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wing, Orchestra Pit, Playwright, and Stagehand and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wing, Orchestra Pit, Playwright, and Stagehand and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Wing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Audience, Understudy, Script, and Makeup and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Audience, Understudy, Script, and Makeup and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Audience",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ovation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the theater setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ovation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ovation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -824,7 +824,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the theater task. Use Wing, Orchestra Pit, Playwright, Stagehand, Audience, Understudy, Script, Makeup, and Ovation in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the theater task. Use Wing, Orchestra Pit, Playwright, Stagehand, Audience, Understudy, Script, Makeup, and Ovation in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

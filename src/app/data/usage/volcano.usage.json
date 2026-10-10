@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Crater", "Lava", "Magma", "Vent"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crater", "Lava", "Magma"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Caldera", "Cone", "Lava Tube", "Hot Spring"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Caldera", "Cone", "Lava Tube"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Geyser", "Fumarole", "Eruption", "Lava Flow"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Geyser", "Fumarole", "Eruption"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Ash Cloud", "Pyroclastic Flow", "Tremor"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ash Cloud", "Pyroclastic Flow", "Tremor"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Volcano",
-      "text": "At the the volcano, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crater, Lava, Magma, and Vent. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Caldera, Cone, Lava Tube, and Hot Spring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Geyser, Fumarole, Eruption, and Lava Flow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ash Cloud, Pyroclastic Flow, and Tremor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crater, Lava, Magma, and Vent. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Caldera, Cone, Lava Tube, and Hot Spring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Geyser, Fumarole, Eruption, and Lava Flow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ash Cloud, Pyroclastic Flow, and Tremor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crater",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Caldera",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Geyser",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ash Cloud",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the volcano task. Use Crater, Lava, Magma, Vent, Caldera, Cone, Lava Tube, Hot Spring, Geyser, Fumarole, Eruption, Lava Flow, Ash Cloud, Pyroclastic Flow, and Tremor in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the volcano task. Use Crater, Lava, Magma, Vent, Caldera, Cone, Lava Tube, Hot Spring, Geyser, Fumarole, Eruption, Lava Flow, Ash Cloud, Pyroclastic Flow, and Tremor in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Earthquake", "Explosion", "Steam Vent", "Mudflow"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Earthquake", "Explosion", "Steam Vent"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Gas Emission", "Basalt", "Obsidian", "Pumice"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gas Emission", "Basalt", "Obsidian"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Granite", "Limestone", "Tuff", "Lava Rock"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Granite", "Limestone", "Tuff"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Volcanic Glass", "Mineral Crystal", "Fossil"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Volcanic Glass", "Mineral Crystal", "Fossil"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Volcano",
-      "text": "At the the volcano, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Earthquake, Explosion, Steam Vent, and Mudflow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gas Emission, Basalt, Obsidian, and Pumice. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Granite, Limestone, Tuff, and Lava Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Volcanic Glass, Mineral Crystal, and Fossil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Earthquake, Explosion, Steam Vent, and Mudflow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gas Emission, Basalt, Obsidian, and Pumice. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Granite, Limestone, Tuff, and Lava Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Volcanic Glass, Mineral Crystal, and Fossil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Earthquake",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gas Emission",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Granite",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Volcanic Glass",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the volcano task. Use Earthquake, Explosion, Steam Vent, Mudflow, Gas Emission, Basalt, Obsidian, Pumice, Granite, Limestone, Tuff, Lava Rock, Volcanic Glass, Mineral Crystal, and Fossil in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the volcano task. Use Earthquake, Explosion, Steam Vent, Mudflow, Gas Emission, Basalt, Obsidian, Pumice, Granite, Limestone, Tuff, Lava Rock, Volcanic Glass, Mineral Crystal, and Fossil in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Seismograph", "Tiltmeter", "Gas Analyzer", "Thermal Camera"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Seismograph", "Tiltmeter", "Gas Analyzer"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["GPS Station", "Weather Station", "Drone", "Satellite Image"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["GPS Station", "Weather Station", "Drone"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Sample Kit", "Radiation Detector", "Lava Field", "Volcanic Island"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sample Kit", "Radiation Detector", "Lava Field"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Mountain Peak", "Valley", "Cliff"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mountain Peak", "Valley", "Cliff"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Volcano",
-      "text": "At the the volcano, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers GPS Station, Weather Station, Drone, and Satellite Image. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sample Kit, Radiation Detector, Lava Field, and Volcanic Island. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mountain Peak, Valley, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers GPS Station, Weather Station, Drone, and Satellite Image. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sample Kit, Radiation Detector, Lava Field, and Volcanic Island. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mountain Peak, Valley, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Seismograph",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "GPS Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sample Kit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mountain Peak",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the volcano task. Use Seismograph, Tiltmeter, Gas Analyzer, Thermal Camera, GPS Station, Weather Station, Drone, Satellite Image, Sample Kit, Radiation Detector, Lava Field, Volcanic Island, Mountain Peak, Valley, and Cliff in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the volcano task. Use Seismograph, Tiltmeter, Gas Analyzer, Thermal Camera, GPS Station, Weather Station, Drone, Satellite Image, Sample Kit, Radiation Detector, Lava Field, Volcanic Island, Mountain Peak, Valley, and Cliff in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Cave", "Lake", "Steam Cloud", "Black Sand Beach"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cave", "Lake", "Steam Cloud"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Rock Formation", "Evacuation Route", "Warning Siren", "Gas Mask"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rock Formation", "Evacuation Route", "Warning Siren"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Hard Hat", "Protective Suit", "Emergency Shelter", "Helicopter"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hard Hat", "Protective Suit", "Emergency Shelter"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Rescue Team", "Barrier", "Hazard Zone"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Rescue Team", "Barrier", "Hazard Zone"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Volcano",
-      "text": "At the the volcano, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cave, Lake, Steam Cloud, and Black Sand Beach. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rock Formation, Evacuation Route, Warning Siren, and Gas Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hard Hat, Protective Suit, Emergency Shelter, and Helicopter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rescue Team, Barrier, and Hazard Zone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cave, Lake, Steam Cloud, and Black Sand Beach. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rock Formation, Evacuation Route, Warning Siren, and Gas Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hard Hat, Protective Suit, Emergency Shelter, and Helicopter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rescue Team, Barrier, and Hazard Zone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cave",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rock Formation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hard Hat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Rescue Team",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the volcano task. Use Cave, Lake, Steam Cloud, Black Sand Beach, Rock Formation, Evacuation Route, Warning Siren, Gas Mask, Hard Hat, Protective Suit, Emergency Shelter, Helicopter, Rescue Team, Barrier, and Hazard Zone in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the volcano task. Use Cave, Lake, Steam Cloud, Black Sand Beach, Rock Formation, Evacuation Route, Warning Siren, Gas Mask, Hard Hat, Protective Suit, Emergency Shelter, Helicopter, Rescue Team, Barrier, and Hazard Zone in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -734,7 +734,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Mantle", "Sulfur", "Quartz", "Feldspar"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mantle", "Sulfur", "Quartz"],
@@ -746,7 +746,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Crystal", "Tectonic Plate", "Thermal Vent", "Dormant"],
-          "scenario": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.",
+          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crystal", "Tectonic Plate", "Thermal Vent"],
@@ -760,19 +760,19 @@
     },
     "reading": {
       "title": "A Practical Guide: The Volcano",
-      "text": "At the the volcano, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mantle, Sulfur, Quartz, and Feldspar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crystal, Tectonic Plate, Thermal Vent, and Dormant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mantle, Sulfur, Quartz, and Feldspar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crystal, Tectonic Plate, Thermal Vent, and Dormant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mantle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crystal",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -803,7 +803,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the volcano task. Use Mantle, Sulfur, Quartz, Feldspar, Crystal, Tectonic Plate, Thermal Vent, and Dormant in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the volcano task. Use Mantle, Sulfur, Quartz, Feldspar, Crystal, Tectonic Plate, Thermal Vent, and Dormant in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { afterEach, describe, expect, it } from "vitest";
+import { render, screen } from "@testing-library/react";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
+import { I18nProvider } from "../context/I18nContext";
 
 /**
  * The regression: the home dashboard and the profile both pointed at
@@ -8,26 +9,34 @@ import { LearnerAvatar } from "../shared/LearnerAvatar";
  * rendered a broken image icon in their header. The path was root-absolute
  * too, so it would have 404ed under the configured base even if added.
  */
+afterEach(() => localStorage.removeItem("wordpix:interface-lang"));
 describe("LearnerAvatar", () => {
-  it("resolves the portrait against the configured base", () => {
+  it("renders the initial directly without requesting a missing portrait", () => {
     render(<LearnerAvatar name="Ahmed" />);
     const img = screen.getByRole("img", { name: /ahmed profile/i });
-    expect(img.getAttribute("src")).toMatch(/images\/core\/learner-avatar\.webp$/);
+    expect(img.tagName).toBe("DIV");
+    expect(img).toHaveTextContent("A");
+    expect(document.querySelector("img")).toBeNull();
   });
 
-  it("falls back to an initial rather than a broken image", () => {
-    render(<LearnerAvatar name="Ahmed" />);
-    fireEvent.error(screen.getByRole("img", { name: /ahmed profile/i }));
-
-    // Still an accessible image role, now backed by text instead of a 404.
-    const fallback = screen.getByRole("img", { name: /ahmed profile/i });
-    expect(fallback.tagName).not.toBe("IMG");
-    expect(fallback).toHaveTextContent("A");
+  it("uses a complete Unicode initial and ignores surrounding whitespace", () => {
+    render(<LearnerAvatar name="  𐐀lex  " />);
+    expect(screen.getByRole("img", { name: /𐐀lex profile/ })).toHaveTextContent("𐐀");
   });
 
   it("keeps an accessible name when no learner name is known", () => {
     render(<LearnerAvatar />);
-    fireEvent.error(screen.getByRole("img", { name: /learner profile/i }));
     expect(screen.getByRole("img", { name: /learner profile/i })).toHaveTextContent("L");
+  });
+  it("localizes the accessible name and default initial in Arabic", async () => {
+    localStorage.setItem("wordpix:interface-lang", "ar");
+    render(
+      <I18nProvider>
+        <LearnerAvatar name="  " />
+      </I18nProvider>
+    );
+    expect(await screen.findByRole("img", { name: "الصورة الشخصية لـمتعلّم" })).toHaveTextContent(
+      "م"
+    );
   });
 });

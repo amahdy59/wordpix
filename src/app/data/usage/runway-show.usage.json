@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Catwalk", "Backstage", "Front Row", "Lighting Rig"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Catwalk", "Backstage", "Front Row"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Sound System", "Backdrop", "Stage", "Seating"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sound System", "Backdrop", "Stage"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Press Area", "VIP Section", "Casting", "Fitting"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Press Area", "VIP Section", "Casting"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Rehearsal", "Hair Styling", "Makeup"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Rehearsal", "Hair Styling", "Makeup"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Runway Show",
-      "text": "At the the runway show, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Catwalk, Backstage, Front Row, and Lighting Rig. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sound System, Backdrop, Stage, and Seating. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Press Area, VIP Section, Casting, and Fitting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rehearsal, Hair Styling, and Makeup. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the runway show, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Catwalk, Backstage, Front Row, and Lighting Rig. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sound System, Backdrop, Stage, and Seating. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Press Area, VIP Section, Casting, and Fitting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rehearsal, Hair Styling, and Makeup. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Runway Show. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Catwalk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sound System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Press Area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Rehearsal",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -163,7 +163,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the runway show task. Use Catwalk, Backstage, Front Row, Lighting Rig, Sound System, Backdrop, Stage, Seating, Press Area, VIP Section, Casting, Fitting, Rehearsal, Hair Styling, and Makeup in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the runway show task. Use Catwalk, Backstage, Front Row, Lighting Rig, Sound System, Backdrop, Stage, Seating, Press Area, VIP Section, Casting, Fitting, Rehearsal, Hair Styling, and Makeup in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -230,7 +230,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Dressing", "Lineup", "Choreography", "Music Selection"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Dressing", "Lineup", "Choreography"],
@@ -242,7 +242,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Invitations", "Fashion Week", "Paris", "Milan"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Invitations", "Fashion Week", "Paris"],
@@ -254,7 +254,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["New York", "London", "Designer", "Brand"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["New York", "London", "Designer"],
@@ -266,7 +266,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Label", "House", "Maison"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Label", "House", "Maison"],
@@ -280,33 +280,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Runway Show",
-      "text": "At the the runway show, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dressing, Lineup, Choreography, and Music Selection. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Invitations, Fashion Week, Paris, and Milan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers New York, London, Designer, and Brand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Label, House, and Maison. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the runway show, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dressing, Lineup, Choreography, and Music Selection. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Invitations, Fashion Week, Paris, and Milan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers New York, London, Designer, and Brand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Label, House, and Maison. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Runway Show. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Dressing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Invitations",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "New York",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Label",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -341,7 +341,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the runway show task. Use Dressing, Lineup, Choreography, Music Selection, Invitations, Fashion Week, Paris, Milan, New York, London, Designer, Brand, Label, House, and Maison in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the runway show task. Use Dressing, Lineup, Choreography, Music Selection, Invitations, Fashion Week, Paris, Milan, New York, London, Designer, Brand, Label, House, and Maison in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Fashion Editor", "Photographer", "Fashion Blog", "Magazine"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fashion Editor", "Photographer", "Fashion Blog"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Review", "Coverage", "Social Media", "Influencer"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Review", "Coverage", "Social Media"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Street Style", "Red Carpet"],
-          "scenario": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.",
+          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Street Style", "Red Carpet", "Fashion Editor"],
@@ -436,26 +436,26 @@
     },
     "reading": {
       "title": "Before You Begin: The Runway Show",
-      "text": "At the the runway show, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Fashion Editor, Photographer, Fashion Blog, and Magazine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Review, Coverage, Social Media, and Influencer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Street Style and Red Carpet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the runway show, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Fashion Editor, Photographer, Fashion Blog, and Magazine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Review, Coverage, Social Media, and Influencer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Street Style and Red Carpet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Runway Show. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fashion Editor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Review",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Street Style",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -490,7 +490,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the runway show task. Use Fashion Editor, Photographer, Fashion Blog, Magazine, Review, Coverage, Social Media, Influencer, Street Style, and Red Carpet in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the runway show task. Use Fashion Editor, Photographer, Fashion Blog, Magazine, Review, Coverage, Social Media, Influencer, Street Style, and Red Carpet in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

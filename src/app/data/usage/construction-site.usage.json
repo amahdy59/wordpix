@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Crane", "Bulldozer", "Excavator", "Dump Truck"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Bulldozer, Excavator, and Dump Truck and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Bulldozer, Excavator, and Dump Truck and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crane", "Bulldozer", "Excavator"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cement Mixer", "Forklift", "Steamroller", "Backhoe"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cement Mixer, Forklift, Steamroller, and Backhoe and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cement Mixer, Forklift, Steamroller, and Backhoe and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cement Mixer", "Forklift", "Steamroller"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pile Driver", "Boom Lift", "Brick", "Cement"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pile Driver, Boom Lift, Brick, and Cement and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pile Driver, Boom Lift, Brick, and Cement and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pile Driver", "Boom Lift", "Brick"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Steel Beam", "Plywood", "Glass Pane"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel Beam, Plywood, and Glass Pane and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel Beam, Plywood, and Glass Pane and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Steel Beam", "Plywood", "Glass Pane"],
@@ -101,33 +101,33 @@
     },
     "reading": {
       "title": "The Construction Site: Practical Information",
-      "text": "At the the construction site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crane, Bulldozer, Excavator, and Dump Truck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cement Mixer, Forklift, Steamroller, and Backhoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pile Driver, Boom Lift, Brick, and Cement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Steel Beam, Plywood, and Glass Pane. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crane, Bulldozer, Excavator, and Dump Truck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cement Mixer, Forklift, Steamroller, and Backhoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pile Driver, Boom Lift, Brick, and Cement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Steel Beam, Plywood, and Glass Pane. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Bulldozer, Excavator, and Dump Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Bulldozer, Excavator, and Dump Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crane",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cement Mixer, Forklift, Steamroller, and Backhoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cement Mixer, Forklift, Steamroller, and Backhoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cement Mixer",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pile Driver, Boom Lift, Brick, and Cement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pile Driver, Boom Lift, Brick, and Cement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pile Driver",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel Beam, Plywood, and Glass Pane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel Beam, Plywood, and Glass Pane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Steel Beam",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -158,7 +158,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the construction site task. Use Crane, Bulldozer, Excavator, Dump Truck, Cement Mixer, Forklift, Steamroller, Backhoe, Pile Driver, Boom Lift, Brick, Cement, Steel Beam, Plywood, and Glass Pane in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the construction site task. Use Crane, Bulldozer, Excavator, Dump Truck, Cement Mixer, Forklift, Steamroller, Backhoe, Pile Driver, Boom Lift, Brick, Cement, Steel Beam, Plywood, and Glass Pane in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -225,7 +225,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pipe", "Cable", "Bolt", "Nail"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pipe, Cable, Bolt, and Nail and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pipe, Cable, Bolt, and Nail and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pipe", "Cable", "Bolt"],
@@ -237,7 +237,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Screw", "Rebar", "Drywall", "Hammer"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screw, Rebar, Drywall, and Hammer and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screw, Rebar, Drywall, and Hammer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Screw", "Rebar", "Drywall"],
@@ -249,7 +249,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Wrench", "Screwdriver", "Drill", "Saw"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Drill, and Saw and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Drill, and Saw and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wrench", "Screwdriver", "Drill"],
@@ -261,7 +261,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Tape Measure", "Level", "Pliers"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tape Measure, Level, and Pliers and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tape Measure, Level, and Pliers and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tape Measure", "Level", "Pliers"],
@@ -274,33 +274,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Construction Site",
-      "text": "At the the construction site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pipe, Cable, Bolt, and Nail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Screw, Rebar, Drywall, and Hammer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wrench, Screwdriver, Drill, and Saw. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tape Measure, Level, and Pliers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pipe, Cable, Bolt, and Nail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Screw, Rebar, Drywall, and Hammer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wrench, Screwdriver, Drill, and Saw. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tape Measure, Level, and Pliers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pipe, Cable, Bolt, and Nail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pipe, Cable, Bolt, and Nail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pipe",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screw, Rebar, Drywall, and Hammer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screw, Rebar, Drywall, and Hammer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Screw",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Drill, and Saw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Drill, and Saw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wrench",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tape Measure, Level, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tape Measure, Level, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tape Measure",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -331,7 +331,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the construction site task. Use Pipe, Cable, Bolt, Nail, Screw, Rebar, Drywall, Hammer, Wrench, Screwdriver, Drill, Saw, Tape Measure, Level, and Pliers in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the construction site task. Use Pipe, Cable, Bolt, Nail, Screw, Rebar, Drywall, Hammer, Wrench, Screwdriver, Drill, Saw, Tape Measure, Level, and Pliers in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Chisel", "Utility Knife", "Allen Key", "Socket Set"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chisel, Utility Knife, Allen Key, and Socket Set and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chisel, Utility Knife, Allen Key, and Socket Set and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Chisel", "Utility Knife", "Allen Key"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Hard Hat", "Safety Vest", "Steel-Toe Boots", "Safety Goggles"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hard Hat", "Safety Vest", "Steel-Toe Boots"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Ear Plugs", "Dust Mask", "Harness", "Safety Net"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ear Plugs, Dust Mask, Harness, and Safety Net and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ear Plugs, Dust Mask, Harness, and Safety Net and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ear Plugs", "Dust Mask", "Harness"],
@@ -434,7 +434,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Caution Tape", "Traffic Cone", "Scaffolding"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caution Tape, Traffic Cone, and Scaffolding and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caution Tape, Traffic Cone, and Scaffolding and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Caution Tape", "Traffic Cone", "Scaffolding"],
@@ -447,33 +447,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Construction Site",
-      "text": "At the the construction site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Chisel, Utility Knife, Allen Key, and Socket Set. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ear Plugs, Dust Mask, Harness, and Safety Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Caution Tape, Traffic Cone, and Scaffolding. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Chisel, Utility Knife, Allen Key, and Socket Set. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ear Plugs, Dust Mask, Harness, and Safety Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Caution Tape, Traffic Cone, and Scaffolding. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chisel, Utility Knife, Allen Key, and Socket Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chisel, Utility Knife, Allen Key, and Socket Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Chisel",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hard Hat",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ear Plugs, Dust Mask, Harness, and Safety Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ear Plugs, Dust Mask, Harness, and Safety Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ear Plugs",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caution Tape, Traffic Cone, and Scaffolding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caution Tape, Traffic Cone, and Scaffolding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Caution Tape",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -504,7 +504,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the construction site task. Use Chisel, Utility Knife, Allen Key, Socket Set, Hard Hat, Safety Vest, Steel-Toe Boots, Safety Goggles, Ear Plugs, Dust Mask, Harness, Safety Net, Caution Tape, Traffic Cone, and Scaffolding in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the construction site task. Use Chisel, Utility Knife, Allen Key, Socket Set, Hard Hat, Safety Vest, Steel-Toe Boots, Safety Goggles, Ear Plugs, Dust Mask, Harness, Safety Net, Caution Tape, Traffic Cone, and Scaffolding in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -571,7 +571,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Foundation", "Frame", "Roof Truss", "Concrete Slab"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Frame, Roof Truss, and Concrete Slab and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Frame, Roof Truss, and Concrete Slab and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Foundation", "Frame", "Roof Truss"],
@@ -583,7 +583,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Ramp", "Fence", "Gate", "Container"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ramp, Fence, Gate, and Container and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ramp, Fence, Gate, and Container and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ramp", "Fence", "Gate"],
@@ -595,7 +595,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Portable Toilet", "Architect", "Engineer", "Foreman"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portable Toilet, Architect, Engineer, and Foreman and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portable Toilet, Architect, Engineer, and Foreman and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Portable Toilet", "Architect", "Engineer"],
@@ -607,7 +607,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Electrician", "Plumber", "Carpenter"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electrician, Plumber, and Carpenter and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electrician, Plumber, and Carpenter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Electrician", "Plumber", "Carpenter"],
@@ -620,33 +620,33 @@
     },
     "reading": {
       "title": "The Construction Site: Practical Information",
-      "text": "At the the construction site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Foundation, Frame, Roof Truss, and Concrete Slab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ramp, Fence, Gate, and Container. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Portable Toilet, Architect, Engineer, and Foreman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Electrician, Plumber, and Carpenter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Foundation, Frame, Roof Truss, and Concrete Slab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ramp, Fence, Gate, and Container. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Portable Toilet, Architect, Engineer, and Foreman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Electrician, Plumber, and Carpenter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Frame, Roof Truss, and Concrete Slab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Frame, Roof Truss, and Concrete Slab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Foundation",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ramp, Fence, Gate, and Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ramp, Fence, Gate, and Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ramp",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portable Toilet, Architect, Engineer, and Foreman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portable Toilet, Architect, Engineer, and Foreman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Portable Toilet",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electrician, Plumber, and Carpenter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electrician, Plumber, and Carpenter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Electrician",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -677,7 +677,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the construction site task. Use Foundation, Frame, Roof Truss, Concrete Slab, Ramp, Fence, Gate, Container, Portable Toilet, Architect, Engineer, Foreman, Electrician, Plumber, and Carpenter in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the construction site task. Use Foundation, Frame, Roof Truss, Concrete Slab, Ramp, Fence, Gate, Container, Portable Toilet, Architect, Engineer, Foreman, Electrician, Plumber, and Carpenter in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -721,7 +721,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bricklayer", "Painter", "Welder", "Crane Operator"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bricklayer, Painter, Welder, and Crane Operator and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bricklayer, Painter, Welder, and Crane Operator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bricklayer", "Painter", "Welder"],
@@ -733,7 +733,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Steel", "Wood", "Glass", "Blueprint"],
-          "scenario": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel, Wood, Glass, and Blueprint and choose the option that fits the situation.",
+          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel, Wood, Glass, and Blueprint and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Steel", "Wood", "Glass"],
@@ -746,19 +746,19 @@
     },
     "reading": {
       "title": "A Practical Guide: The Construction Site",
-      "text": "At the the construction site, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bricklayer, Painter, Welder, and Crane Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Steel, Wood, Glass, and Blueprint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bricklayer, Painter, Welder, and Crane Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Steel, Wood, Glass, and Blueprint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bricklayer, Painter, Welder, and Crane Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bricklayer, Painter, Welder, and Crane Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bricklayer",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel, Wood, Glass, and Blueprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel, Wood, Glass, and Blueprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Steel",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
@@ -789,7 +789,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the construction site task. Use Bricklayer, Painter, Welder, Crane Operator, Steel, Wood, Glass, and Blueprint in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the construction site task. Use Bricklayer, Painter, Welder, Crane Operator, Steel, Wood, Glass, and Blueprint in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

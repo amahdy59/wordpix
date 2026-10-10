@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Solar Panel", "Inverter", "Battery Storage", "Charge Controller"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Solar Panel", "Inverter", "Battery Storage"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Mounting Frame", "Tracker", "Junction Box", "Combiner Box"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mounting Frame", "Tracker", "Junction Box"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Transformer", "Grid Connection", "Drill", "Wrench"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Transformer", "Grid Connection", "Drill"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Wire Cutter", "Crimping Tool", "Cable Tie"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wire Cutter", "Crimping Tool", "Cable Tie"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Solar Farm",
-      "text": "At the the solar farm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Solar Panel, Inverter, Battery Storage, and Charge Controller. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mounting Frame, Tracker, Junction Box, and Combiner Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transformer, Grid Connection, Drill, and Wrench. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wire Cutter, Crimping Tool, and Cable Tie. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Solar Panel, Inverter, Battery Storage, and Charge Controller. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mounting Frame, Tracker, Junction Box, and Combiner Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transformer, Grid Connection, Drill, and Wrench. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wire Cutter, Crimping Tool, and Cable Tie. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Solar Panel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mounting Frame",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Transformer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wire Cutter",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the solar farm task. Use Solar Panel, Inverter, Battery Storage, Charge Controller, Mounting Frame, Tracker, Junction Box, Combiner Box, Transformer, Grid Connection, Drill, Wrench, Wire Cutter, Crimping Tool, and Cable Tie in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Solar Panel, Inverter, Battery Storage, Charge Controller, Mounting Frame, Tracker, Junction Box, Combiner Box, Transformer, Grid Connection, Drill, Wrench, Wire Cutter, Crimping Tool, and Cable Tie in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Conduit", "Ground Rod", "Multimeter", "Level"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Conduit", "Ground Rod", "Multimeter"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Ladder", "Control Room", "Security Fence", "Access Road"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ladder", "Control Room", "Security Fence"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Gate", "Weather Station", "Camera", "Substation"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gate", "Weather Station", "Camera"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cable Tray", "Lightning Rod", "Grounding System"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cable Tray", "Lightning Rod", "Grounding System"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Solar Farm",
-      "text": "At the the solar farm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Conduit, Ground Rod, Multimeter, and Level. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ladder, Control Room, Security Fence, and Access Road. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gate, Weather Station, Camera, and Substation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cable Tray, Lightning Rod, and Grounding System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Conduit, Ground Rod, Multimeter, and Level. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ladder, Control Room, Security Fence, and Access Road. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gate, Weather Station, Camera, and Substation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cable Tray, Lightning Rod, and Grounding System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Conduit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ladder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cable Tray",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the solar farm task. Use Conduit, Ground Rod, Multimeter, Level, Ladder, Control Room, Security Fence, Access Road, Gate, Weather Station, Camera, Substation, Cable Tray, Lightning Rod, and Grounding System in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Conduit, Ground Rod, Multimeter, Level, Ladder, Control Room, Security Fence, Access Road, Gate, Weather Station, Camera, Substation, Cable Tray, Lightning Rod, and Grounding System in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sunlight", "Solar Cell", "Electricity", "Voltage"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sunlight", "Solar Cell", "Electricity"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Current", "Watt", "Kilowatt", "Energy Meter"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Current", "Watt", "Kilowatt"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Power Line", "Distribution Panel", "Cleaning Brush", "Water Hose"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Power Line", "Distribution Panel", "Cleaning Brush"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Inspection Drone", "Thermal Camera", "Safety Vest"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Inspection Drone", "Thermal Camera", "Safety Vest"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Solar Farm",
-      "text": "At the the solar farm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sunlight, Solar Cell, Electricity, and Voltage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Current, Watt, Kilowatt, and Energy Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Power Line, Distribution Panel, Cleaning Brush, and Water Hose. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Inspection Drone, Thermal Camera, and Safety Vest. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sunlight, Solar Cell, Electricity, and Voltage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Current, Watt, Kilowatt, and Energy Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Power Line, Distribution Panel, Cleaning Brush, and Water Hose. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Inspection Drone, Thermal Camera, and Safety Vest. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sunlight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Current",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Power Line",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Inspection Drone",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the solar farm task. Use Sunlight, Solar Cell, Electricity, Voltage, Current, Watt, Kilowatt, Energy Meter, Power Line, Distribution Panel, Cleaning Brush, Water Hose, Inspection Drone, Thermal Camera, and Safety Vest in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Sunlight, Solar Cell, Electricity, Voltage, Current, Watt, Kilowatt, Energy Meter, Power Line, Distribution Panel, Cleaning Brush, Water Hose, Inspection Drone, Thermal Camera, and Safety Vest in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Hard Hat", "Gloves", "Tool Belt", "Logbook"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hard Hat", "Gloves", "Tool Belt"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Clipboard", "Open Field", "Clear Sky", "Shadow"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Clipboard", "Open Field", "Clear Sky"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Cloud", "Sunrise", "Sunset", "Grassland"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cloud", "Sunrise", "Sunset"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Wildflower", "Bird", "Fence Post"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wildflower", "Bird", "Fence Post"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Solar Farm",
-      "text": "At the the solar farm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hard Hat, Gloves, Tool Belt, and Logbook. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clipboard, Open Field, Clear Sky, and Shadow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cloud, Sunrise, Sunset, and Grassland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wildflower, Bird, and Fence Post. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hard Hat, Gloves, Tool Belt, and Logbook. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clipboard, Open Field, Clear Sky, and Shadow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cloud, Sunrise, Sunset, and Grassland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wildflower, Bird, and Fence Post. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hard Hat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Clipboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cloud",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wildflower",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the solar farm task. Use Hard Hat, Gloves, Tool Belt, Logbook, Clipboard, Open Field, Clear Sky, Shadow, Cloud, Sunrise, Sunset, Grassland, Wildflower, Bird, and Fence Post in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Hard Hat, Gloves, Tool Belt, Logbook, Clipboard, Open Field, Clear Sky, Shadow, Cloud, Sunrise, Sunset, Grassland, Wildflower, Bird, and Fence Post in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Battery", "Cable", "Mounting Rack", "Meter"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Battery", "Cable", "Mounting Rack"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Grid", "Charge", "Discharge", "Clean Energy"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Grid", "Charge", "Discharge"],
@@ -772,7 +772,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Renewable", "Carbon", "Emission", "Sustainability"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Renewable", "Carbon", "Emission"],
@@ -784,7 +784,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Efficiency", "Conservation", "Recycle"],
-          "scenario": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.",
+          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Efficiency", "Conservation", "Recycle"],
@@ -798,33 +798,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Solar Farm",
-      "text": "At the the solar farm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Battery, Cable, Mounting Rack, and Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Grid, Charge, Discharge, and Clean Energy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Renewable, Carbon, Emission, and Sustainability. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Efficiency, Conservation, and Recycle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Battery, Cable, Mounting Rack, and Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Grid, Charge, Discharge, and Clean Energy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Renewable, Carbon, Emission, and Sustainability. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Efficiency, Conservation, and Recycle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Battery",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Grid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Renewable",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Efficiency",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -855,7 +855,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the solar farm task. Use Battery, Cable, Mounting Rack, Meter, Grid, Charge, Discharge, Clean Energy, Renewable, Carbon, Emission, Sustainability, Efficiency, Conservation, and Recycle in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Battery, Cable, Mounting Rack, Meter, Grid, Charge, Discharge, Clean Energy, Renewable, Carbon, Emission, Sustainability, Efficiency, Conservation, and Recycle in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

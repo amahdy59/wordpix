@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lawyer", "Attorney", "Judge", "Paralegal"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Lawyer", "Attorney", "Judge"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Legal Secretary", "Notary", "Mediator", "Arbitrator"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Legal Secretary", "Notary", "Mediator"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Public Defender", "Prosecutor", "Reception", "Conference Room"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Public Defender", "Prosecutor", "Reception"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Law Library", "Partner Office", "Associate Office"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Law Library", "Partner Office", "Associate Office"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Law Firm",
-      "text": "At the the law firm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lawyer, Attorney, Judge, and Paralegal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Legal Secretary, Notary, Mediator, and Arbitrator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Defender, Prosecutor, Reception, and Conference Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Law Library, Partner Office, and Associate Office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the law firm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lawyer, Attorney, Judge, and Paralegal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Legal Secretary, Notary, Mediator, and Arbitrator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Defender, Prosecutor, Reception, and Conference Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Law Library, Partner Office, and Associate Office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Law Firm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Lawyer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Legal Secretary",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Public Defender",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Law Library",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -163,7 +163,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the law firm task. Use Lawyer, Attorney, Judge, Paralegal, Legal Secretary, Notary, Mediator, Arbitrator, Public Defender, Prosecutor, Reception, Conference Room, Law Library, Partner Office, and Associate Office in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the law firm task. Use Lawyer, Attorney, Judge, Paralegal, Legal Secretary, Notary, Mediator, Arbitrator, Public Defender, Prosecutor, Reception, Conference Room, Law Library, Partner Office, and Associate Office in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -230,7 +230,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Filing Room", "War Room", "Deposition Room", "Waiting Area"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Filing Room", "War Room", "Deposition Room"],
@@ -242,7 +242,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Records Room", "Criminal Law", "Civil Law", "Family Law"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Records Room", "Criminal Law", "Civil Law"],
@@ -254,7 +254,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Corporate Law", "Tax Law", "Immigration Law", "Real Estate Law"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Corporate Law", "Tax Law", "Immigration Law"],
@@ -266,7 +266,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Employment Law", "Environmental Law", "Intellectual Property"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Employment Law", "Environmental Law", "Intellectual Property"],
@@ -280,33 +280,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Law Firm",
-      "text": "At the the law firm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Filing Room, War Room, Deposition Room, and Waiting Area. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Records Room, Criminal Law, Civil Law, and Family Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Corporate Law, Tax Law, Immigration Law, and Real Estate Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Employment Law, Environmental Law, and Intellectual Property. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the law firm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Filing Room, War Room, Deposition Room, and Waiting Area. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Records Room, Criminal Law, Civil Law, and Family Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Corporate Law, Tax Law, Immigration Law, and Real Estate Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Employment Law, Environmental Law, and Intellectual Property. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Law Firm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Filing Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Records Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Corporate Law",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Employment Law",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -341,7 +341,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the law firm task. Use Filing Room, War Room, Deposition Room, Waiting Area, Records Room, Criminal Law, Civil Law, Family Law, Corporate Law, Tax Law, Immigration Law, Real Estate Law, Employment Law, Environmental Law, and Intellectual Property in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the law firm task. Use Filing Room, War Room, Deposition Room, Waiting Area, Records Room, Criminal Law, Civil Law, Family Law, Corporate Law, Tax Law, Immigration Law, Real Estate Law, Employment Law, Environmental Law, and Intellectual Property in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Consult", "Represent", "File", "Appeal"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.",
           "check": {
             "question": "Which option best describes the main action shown in the scene?",
             "options": ["Consult", "Represent", "File"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Negotiate", "Litigate", "Settle", "Draft"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Negotiate", "Litigate", "Settle"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Review", "Advise"],
-          "scenario": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.",
+          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Review", "Advise", "Consult"],
@@ -436,26 +436,26 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the law firm, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Consult, Represent, File, and Appeal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Negotiate, Litigate, Settle, and Draft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Review and Advise. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the law firm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Consult, Represent, File, and Appeal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Negotiate, Litigate, Settle, and Draft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Review and Advise. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Law Firm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
         "answer": "Consult",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Negotiate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Review",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -490,7 +490,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the law firm task. Use Consult, Represent, File, Appeal, Negotiate, Litigate, Settle, Draft, Review, and Advise in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the law firm task. Use Consult, Represent, File, Appeal, Negotiate, Litigate, Settle, Draft, Review, and Advise in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

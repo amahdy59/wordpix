@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Peak", "Summit", "Ridge", "Cliff"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peak, Summit, Ridge, and Cliff and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peak, Summit, Ridge, and Cliff and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Peak", "Summit", "Ridge"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Valley", "Slope", "Boulder", "Ledge"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valley, Slope, Boulder, and Ledge and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valley, Slope, Boulder, and Ledge and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Valley", "Slope", "Boulder"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Crevasse", "Plateau", "Pine Tree", "Wildflower"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crevasse, Plateau, Pine Tree, and Wildflower and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crevasse, Plateau, Pine Tree, and Wildflower and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crevasse", "Plateau", "Pine Tree"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Moss", "Fern", "Lichen"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Fern, and Lichen and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Fern, and Lichen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Moss", "Fern", "Lichen"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Mountain",
-      "text": "At the the mountain, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Peak, Summit, Ridge, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Valley, Slope, Boulder, and Ledge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crevasse, Plateau, Pine Tree, and Wildflower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moss, Fern, and Lichen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mountain, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Peak, Summit, Ridge, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Valley, Slope, Boulder, and Ledge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crevasse, Plateau, Pine Tree, and Wildflower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moss, Fern, and Lichen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peak, Summit, Ridge, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peak, Summit, Ridge, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Peak",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valley, Slope, Boulder, and Ledge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valley, Slope, Boulder, and Ledge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Valley",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crevasse, Plateau, Pine Tree, and Wildflower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crevasse, Plateau, Pine Tree, and Wildflower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crevasse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Fern, and Lichen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Fern, and Lichen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Moss",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mountain task. Use Peak, Summit, Ridge, Cliff, Valley, Slope, Boulder, Ledge, Crevasse, Plateau, Pine Tree, Wildflower, Moss, Fern, and Lichen in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mountain task. Use Peak, Summit, Ridge, Cliff, Valley, Slope, Boulder, Ledge, Crevasse, Plateau, Pine Tree, Wildflower, Moss, Fern, and Lichen in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Shrub", "Alpine Meadow", "Tree Line", "Root"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shrub, Alpine Meadow, Tree Line, and Root and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shrub, Alpine Meadow, Tree Line, and Root and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Shrub", "Alpine Meadow", "Tree Line"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Bark", "Eagle", "Mountain Goat", "Bear"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Eagle, Mountain Goat, and Bear and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Eagle, Mountain Goat, and Bear and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bark", "Eagle", "Mountain Goat"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Deer", "Wolf", "Marmot", "Hawk"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deer, Wolf, Marmot, and Hawk and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deer, Wolf, Marmot, and Hawk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Deer", "Wolf", "Marmot"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Owl", "Fox", "Mountain Lion"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Fox, and Mountain Lion and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Fox, and Mountain Lion and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Owl", "Fox", "Mountain Lion"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Mountain",
-      "text": "At the the mountain, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shrub, Alpine Meadow, Tree Line, and Root. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bark, Eagle, Mountain Goat, and Bear. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Deer, Wolf, Marmot, and Hawk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Owl, Fox, and Mountain Lion. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mountain, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shrub, Alpine Meadow, Tree Line, and Root. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bark, Eagle, Mountain Goat, and Bear. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Deer, Wolf, Marmot, and Hawk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Owl, Fox, and Mountain Lion. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shrub, Alpine Meadow, Tree Line, and Root and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shrub, Alpine Meadow, Tree Line, and Root and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Shrub",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Eagle, Mountain Goat, and Bear and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Eagle, Mountain Goat, and Bear and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bark",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deer, Wolf, Marmot, and Hawk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deer, Wolf, Marmot, and Hawk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Deer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Fox, and Mountain Lion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Fox, and Mountain Lion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Owl",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mountain task. Use Shrub, Alpine Meadow, Tree Line, Root, Bark, Eagle, Mountain Goat, Bear, Deer, Wolf, Marmot, Hawk, Owl, Fox, and Mountain Lion in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mountain task. Use Shrub, Alpine Meadow, Tree Line, Root, Bark, Eagle, Mountain Goat, Bear, Deer, Wolf, Marmot, Hawk, Owl, Fox, and Mountain Lion in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Snow", "Fog", "Wind", "Cloud"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow, Fog, Wind, and Cloud and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow, Fog, Wind, and Cloud and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Snow", "Fog", "Wind"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Lightning", "Sunrise", "Sunset", "Rainbow"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lightning, Sunrise, Sunset, and Rainbow and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lightning, Sunrise, Sunset, and Rainbow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Lightning", "Sunrise", "Sunset"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Frost", "Hail", "Backpack", "Hiking Boots"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost, Hail, Backpack, and Hiking Boots and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost, Hail, Backpack, and Hiking Boots and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Frost", "Hail", "Backpack"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Trekking Pole", "Water Bottle", "Compass"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trekking Pole, Water Bottle, and Compass and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trekking Pole, Water Bottle, and Compass and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trekking Pole", "Water Bottle", "Compass"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Mountain",
-      "text": "At the the mountain, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Snow, Fog, Wind, and Cloud. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lightning, Sunrise, Sunset, and Rainbow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Frost, Hail, Backpack, and Hiking Boots. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trekking Pole, Water Bottle, and Compass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mountain, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Snow, Fog, Wind, and Cloud. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lightning, Sunrise, Sunset, and Rainbow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Frost, Hail, Backpack, and Hiking Boots. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trekking Pole, Water Bottle, and Compass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow, Fog, Wind, and Cloud and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow, Fog, Wind, and Cloud and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Snow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lightning, Sunrise, Sunset, and Rainbow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lightning, Sunrise, Sunset, and Rainbow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Lightning",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost, Hail, Backpack, and Hiking Boots and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost, Hail, Backpack, and Hiking Boots and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Frost",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trekking Pole, Water Bottle, and Compass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trekking Pole, Water Bottle, and Compass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trekking Pole",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mountain task. Use Snow, Fog, Wind, Cloud, Lightning, Sunrise, Sunset, Rainbow, Frost, Hail, Backpack, Hiking Boots, Trekking Pole, Water Bottle, and Compass in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mountain task. Use Snow, Fog, Wind, Cloud, Lightning, Sunrise, Sunset, Rainbow, Frost, Hail, Backpack, Hiking Boots, Trekking Pole, Water Bottle, and Compass in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Map", "Headlamp", "Tent", "Sleeping Bag"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, Headlamp, Tent, and Sleeping Bag and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, Headlamp, Tent, and Sleeping Bag and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Map", "Headlamp", "Tent"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Rope", "Hiking", "Climbing", "Camping"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Hiking, Climbing, and Camping and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Hiking, Climbing, and Camping and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rope", "Hiking", "Climbing"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Skiing", "Snowboarding", "Photography", "Bird Watching"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skiing, Snowboarding, Photography, and Bird Watching and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skiing, Snowboarding, Photography, and Bird Watching and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Skiing", "Snowboarding", "Photography"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Fishing", "Trail Running", "Stargazing"],
-          "scenario": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing, Trail Running, and Stargazing and choose the option that fits the situation.",
+          "scenario": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing, Trail Running, and Stargazing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Fishing", "Trail Running", "Stargazing"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Mountain",
-      "text": "At the the mountain, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Map, Headlamp, Tent, and Sleeping Bag. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rope, Hiking, Climbing, and Camping. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Skiing, Snowboarding, Photography, and Bird Watching. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing, Trail Running, and Stargazing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mountain, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Map, Headlamp, Tent, and Sleeping Bag. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rope, Hiking, Climbing, and Camping. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Skiing, Snowboarding, Photography, and Bird Watching. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing, Trail Running, and Stargazing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, Headlamp, Tent, and Sleeping Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Map, Headlamp, Tent, and Sleeping Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Map",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Hiking, Climbing, and Camping and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Hiking, Climbing, and Camping and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skiing, Snowboarding, Photography, and Bird Watching and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skiing, Snowboarding, Photography, and Bird Watching and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Skiing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing, Trail Running, and Stargazing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the mountain setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing, Trail Running, and Stargazing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Fishing",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mountain task. Use Map, Headlamp, Tent, Sleeping Bag, Rope, Hiking, Climbing, Camping, Skiing, Snowboarding, Photography, Bird Watching, Fishing, Trail Running, and Stargazing in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mountain task. Use Map, Headlamp, Tent, Sleeping Bag, Rope, Hiking, Climbing, Camping, Skiing, Snowboarding, Photography, Bird Watching, Fishing, Trail Running, and Stargazing in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

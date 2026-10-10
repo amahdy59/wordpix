@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Camel", "Scorpion", "Rattlesnake", "Lizard"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camel, Scorpion, Rattlesnake, and Lizard and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camel, Scorpion, Rattlesnake, and Lizard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Camel", "Scorpion", "Rattlesnake"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Vulture", "Fennec Fox", "Roadrunner", "Tortoise"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vulture, Fennec Fox, Roadrunner, and Tortoise and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vulture, Fennec Fox, Roadrunner, and Tortoise and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Vulture", "Fennec Fox", "Roadrunner"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Meerkat", "Armadillo", "Coyote", "Hawk"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meerkat, Armadillo, Coyote, and Hawk and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meerkat, Armadillo, Coyote, and Hawk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Meerkat", "Armadillo", "Coyote"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cactus", "Tumbleweed", "Joshua Tree"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cactus, Tumbleweed, and Joshua Tree and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cactus, Tumbleweed, and Joshua Tree and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cactus", "Tumbleweed", "Joshua Tree"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Desert",
-      "text": "At the the desert, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camel, Scorpion, Rattlesnake, and Lizard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vulture, Fennec Fox, Roadrunner, and Tortoise. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Meerkat, Armadillo, Coyote, and Hawk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cactus, Tumbleweed, and Joshua Tree. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the desert, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camel, Scorpion, Rattlesnake, and Lizard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vulture, Fennec Fox, Roadrunner, and Tortoise. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Meerkat, Armadillo, Coyote, and Hawk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cactus, Tumbleweed, and Joshua Tree. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camel, Scorpion, Rattlesnake, and Lizard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camel, Scorpion, Rattlesnake, and Lizard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Camel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vulture, Fennec Fox, Roadrunner, and Tortoise and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vulture, Fennec Fox, Roadrunner, and Tortoise and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Vulture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meerkat, Armadillo, Coyote, and Hawk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meerkat, Armadillo, Coyote, and Hawk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Meerkat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cactus, Tumbleweed, and Joshua Tree and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cactus, Tumbleweed, and Joshua Tree and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cactus",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the desert task. Use Camel, Scorpion, Rattlesnake, Lizard, Vulture, Fennec Fox, Roadrunner, Tortoise, Meerkat, Armadillo, Coyote, Hawk, Cactus, Tumbleweed, and Joshua Tree in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the desert task. Use Camel, Scorpion, Rattlesnake, Lizard, Vulture, Fennec Fox, Roadrunner, Tortoise, Meerkat, Armadillo, Coyote, Hawk, Cactus, Tumbleweed, and Joshua Tree in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Palm Tree", "Aloe", "Agave", "Sage Brush"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palm Tree, Aloe, Agave, and Sage Brush and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palm Tree, Aloe, Agave, and Sage Brush and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Palm Tree", "Aloe", "Agave"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Prickly Pear", "Barrel Cactus", "Date Palm", "Sand Dune"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prickly Pear, Barrel Cactus, Date Palm, and Sand Dune and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prickly Pear, Barrel Cactus, Date Palm, and Sand Dune and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Prickly Pear", "Barrel Cactus", "Date Palm"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Canyon", "Mesa", "Butte", "Plateau"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canyon, Mesa, Butte, and Plateau and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canyon, Mesa, Butte, and Plateau and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Canyon", "Mesa", "Butte"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Oasis", "Dry Riverbed", "Rocky Outcrop"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oasis, Dry Riverbed, and Rocky Outcrop and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oasis, Dry Riverbed, and Rocky Outcrop and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Oasis", "Dry Riverbed", "Rocky Outcrop"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Desert",
-      "text": "At the the desert, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Palm Tree, Aloe, Agave, and Sage Brush. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Prickly Pear, Barrel Cactus, Date Palm, and Sand Dune. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Canyon, Mesa, Butte, and Plateau. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Oasis, Dry Riverbed, and Rocky Outcrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the desert, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Palm Tree, Aloe, Agave, and Sage Brush. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Prickly Pear, Barrel Cactus, Date Palm, and Sand Dune. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Canyon, Mesa, Butte, and Plateau. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Oasis, Dry Riverbed, and Rocky Outcrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palm Tree, Aloe, Agave, and Sage Brush and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palm Tree, Aloe, Agave, and Sage Brush and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Palm Tree",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prickly Pear, Barrel Cactus, Date Palm, and Sand Dune and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prickly Pear, Barrel Cactus, Date Palm, and Sand Dune and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Prickly Pear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canyon, Mesa, Butte, and Plateau and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canyon, Mesa, Butte, and Plateau and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Canyon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oasis, Dry Riverbed, and Rocky Outcrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oasis, Dry Riverbed, and Rocky Outcrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Oasis",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the desert task. Use Palm Tree, Aloe, Agave, Sage Brush, Prickly Pear, Barrel Cactus, Date Palm, Sand Dune, Canyon, Mesa, Butte, Plateau, Oasis, Dry Riverbed, and Rocky Outcrop in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the desert task. Use Palm Tree, Aloe, Agave, Sage Brush, Prickly Pear, Barrel Cactus, Date Palm, Sand Dune, Canyon, Mesa, Butte, Plateau, Oasis, Dry Riverbed, and Rocky Outcrop in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Crater", "Basin", "Water Canteen", "Sun Hat"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Basin, Water Canteen, and Sun Hat and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Basin, Water Canteen, and Sun Hat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crater", "Basin", "Water Canteen"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Sunscreen", "Sunglasses", "Compass", "Map"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunscreen, Sunglasses, Compass, and Map and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunscreen, Sunglasses, Compass, and Map and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sunscreen", "Sunglasses", "Compass"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Shade", "Tent", "First Aid Kit", "Water Filter"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Tent, First Aid Kit, and Water Filter and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Tent, First Aid Kit, and Water Filter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Shade", "Tent", "First Aid Kit"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Sandstorm", "Heat Wave", "Mirage"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandstorm, Heat Wave, and Mirage and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandstorm, Heat Wave, and Mirage and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sandstorm", "Heat Wave", "Mirage"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Desert",
-      "text": "At the the desert, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crater, Basin, Water Canteen, and Sun Hat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sunscreen, Sunglasses, Compass, and Map. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shade, Tent, First Aid Kit, and Water Filter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sandstorm, Heat Wave, and Mirage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the desert, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crater, Basin, Water Canteen, and Sun Hat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sunscreen, Sunglasses, Compass, and Map. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shade, Tent, First Aid Kit, and Water Filter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sandstorm, Heat Wave, and Mirage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Basin, Water Canteen, and Sun Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Basin, Water Canteen, and Sun Hat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crater",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunscreen, Sunglasses, Compass, and Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunscreen, Sunglasses, Compass, and Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sunscreen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Tent, First Aid Kit, and Water Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shade, Tent, First Aid Kit, and Water Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Shade",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandstorm, Heat Wave, and Mirage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandstorm, Heat Wave, and Mirage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sandstorm",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the desert task. Use Crater, Basin, Water Canteen, Sun Hat, Sunscreen, Sunglasses, Compass, Map, Shade, Tent, First Aid Kit, Water Filter, Sandstorm, Heat Wave, and Mirage in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the desert task. Use Crater, Basin, Water Canteen, Sun Hat, Sunscreen, Sunglasses, Compass, Map, Shade, Tent, First Aid Kit, Water Filter, Sandstorm, Heat Wave, and Mirage in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Drought", "Dry Air", "Hot Sun", "Cool Night"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drought, Dry Air, Hot Sun, and Cool Night and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drought, Dry Air, Hot Sun, and Cool Night and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Drought", "Dry Air", "Hot Sun"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Dust Devil", "Clear Sky", "Starry Night", "Nomad"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dust Devil, Clear Sky, Starry Night, and Nomad and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dust Devil, Clear Sky, Starry Night, and Nomad and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dust Devil", "Clear Sky", "Starry Night"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Caravan", "Campfire", "Bedouin Tent", "Well"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caravan, Campfire, Bedouin Tent, and Well and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caravan, Campfire, Bedouin Tent, and Well and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Caravan", "Campfire", "Bedouin Tent"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Irrigation", "Fossil", "Petroglyph"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, Fossil, and Petroglyph and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, Fossil, and Petroglyph and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Irrigation", "Fossil", "Petroglyph"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Desert",
-      "text": "At the the desert, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drought, Dry Air, Hot Sun, and Cool Night. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dust Devil, Clear Sky, Starry Night, and Nomad. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Caravan, Campfire, Bedouin Tent, and Well. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Irrigation, Fossil, and Petroglyph. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the desert, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drought, Dry Air, Hot Sun, and Cool Night. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dust Devil, Clear Sky, Starry Night, and Nomad. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Caravan, Campfire, Bedouin Tent, and Well. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Irrigation, Fossil, and Petroglyph. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drought, Dry Air, Hot Sun, and Cool Night and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drought, Dry Air, Hot Sun, and Cool Night and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Drought",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dust Devil, Clear Sky, Starry Night, and Nomad and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dust Devil, Clear Sky, Starry Night, and Nomad and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dust Devil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caravan, Campfire, Bedouin Tent, and Well and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caravan, Campfire, Bedouin Tent, and Well and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Caravan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, Fossil, and Petroglyph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, Fossil, and Petroglyph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Irrigation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the desert task. Use Drought, Dry Air, Hot Sun, Cool Night, Dust Devil, Clear Sky, Starry Night, Nomad, Caravan, Campfire, Bedouin Tent, Well, Irrigation, Fossil, and Petroglyph in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the desert task. Use Drought, Dry Air, Hot Sun, Cool Night, Dust Devil, Clear Sky, Starry Night, Nomad, Caravan, Campfire, Bedouin Tent, Well, Irrigation, Fossil, and Petroglyph in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -722,7 +722,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sand Castle", "Footprint", "Sage", "Desert Rose"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand Castle, Footprint, Sage, and Desert Rose and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand Castle, Footprint, Sage, and Desert Rose and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sand Castle", "Footprint", "Sage"],
@@ -734,7 +734,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Sunset"],
-          "scenario": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunset and choose the option that fits the situation.",
+          "scenario": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunset and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sunset", "Sand Castle", "Footprint"],
@@ -748,19 +748,19 @@
     },
     "reading": {
       "title": "A Practical Guide: The Desert",
-      "text": "At the the desert, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sand Castle, Footprint, Sage, and Desert Rose. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sunset. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the desert, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sand Castle, Footprint, Sage, and Desert Rose. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sunset. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand Castle, Footprint, Sage, and Desert Rose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand Castle, Footprint, Sage, and Desert Rose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sand Castle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunset and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the desert setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunset and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sunset",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -791,7 +791,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the desert task. Use Sand Castle, Footprint, Sage, Desert Rose, and Sunset in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the desert task. Use Sand Castle, Footprint, Sage, Desert Rose, and Sunset in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

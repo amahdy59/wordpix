@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sewing Machine", "Dress Form", "Mannequin", "Cutting Table"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sewing Machine", "Dress Form", "Mannequin"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Iron", "Steamer", "Serger", "Embroidery Machine"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Iron", "Steamer", "Serger"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pattern Paper", "Tailor's Chalk", "Needle", "Thread"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pattern Paper", "Tailor's Chalk", "Needle"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Scissors", "Pinking Shears", "Seam Ripper"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scissors", "Pinking Shears", "Seam Ripper"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Fashion Atelier",
-      "text": "At the the fashion atelier, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sewing Machine, Dress Form, Mannequin, and Cutting Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Iron, Steamer, Serger, and Embroidery Machine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pattern Paper, Tailor's Chalk, Needle, and Thread. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Scissors, Pinking Shears, and Seam Ripper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the fashion atelier, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sewing Machine, Dress Form, Mannequin, and Cutting Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Iron, Steamer, Serger, and Embroidery Machine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pattern Paper, Tailor's Chalk, Needle, and Thread. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Scissors, Pinking Shears, and Seam Ripper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Fashion Atelier. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sewing Machine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Iron",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pattern Paper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scissors",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -163,7 +163,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the fashion atelier task. Use Sewing Machine, Dress Form, Mannequin, Cutting Table, Iron, Steamer, Serger, Embroidery Machine, Pattern Paper, Tailor's Chalk, Needle, Thread, Scissors, Pinking Shears, and Seam Ripper in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the fashion atelier task. Use Sewing Machine, Dress Form, Mannequin, Cutting Table, Iron, Steamer, Serger, Embroidery Machine, Pattern Paper, Tailor's Chalk, Needle, Thread, Scissors, Pinking Shears, and Seam Ripper in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -230,7 +230,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pin Cushion", "Measuring Tape", "Thimble", "Bobbin"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pin Cushion", "Measuring Tape", "Thimble"],
@@ -242,7 +242,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Zipper Foot", "Sketch", "Draping", "Pattern Making"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Zipper Foot", "Sketch", "Draping"],
@@ -254,7 +254,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Muslin", "Toile", "Fitting", "Alteration"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Muslin", "Toile", "Fitting"],
@@ -266,7 +266,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Sample", "Prototype", "Production"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sample", "Prototype", "Production"],
@@ -280,33 +280,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Fashion Atelier",
-      "text": "At the the fashion atelier, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pin Cushion, Measuring Tape, Thimble, and Bobbin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Zipper Foot, Sketch, Draping, and Pattern Making. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Muslin, Toile, Fitting, and Alteration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sample, Prototype, and Production. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the fashion atelier, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pin Cushion, Measuring Tape, Thimble, and Bobbin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Zipper Foot, Sketch, Draping, and Pattern Making. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Muslin, Toile, Fitting, and Alteration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sample, Prototype, and Production. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Fashion Atelier. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pin Cushion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Zipper Foot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Muslin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sample",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -341,7 +341,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the fashion atelier task. Use Pin Cushion, Measuring Tape, Thimble, Bobbin, Zipper Foot, Sketch, Draping, Pattern Making, Muslin, Toile, Fitting, Alteration, Sample, Prototype, and Production in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the fashion atelier task. Use Pin Cushion, Measuring Tape, Thimble, Bobbin, Zipper Foot, Sketch, Draping, Pattern Making, Muslin, Toile, Fitting, Alteration, Sample, Prototype, and Production in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Fashion Designer", "Seamstress", "Tailor", "Pattern Maker"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fashion Designer", "Seamstress", "Tailor"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Textile Designer", "Stylist", "Fashion Illustrator", "Merchandiser"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Textile Designer", "Stylist", "Fashion Illustrator"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Buyer", "Model"],
-          "scenario": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.",
+          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Buyer", "Model", "Fashion Designer"],
@@ -436,26 +436,26 @@
     },
     "reading": {
       "title": "Before You Begin: The Fashion Atelier",
-      "text": "At the the fashion atelier, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Fashion Designer, Seamstress, Tailor, and Pattern Maker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Textile Designer, Stylist, Fashion Illustrator, and Merchandiser. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Buyer and Model. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the fashion atelier, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Fashion Designer, Seamstress, Tailor, and Pattern Maker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Textile Designer, Stylist, Fashion Illustrator, and Merchandiser. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Buyer and Model. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Fashion Atelier. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fashion Designer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Textile Designer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Buyer",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -490,7 +490,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the fashion atelier task. Use Fashion Designer, Seamstress, Tailor, Pattern Maker, Textile Designer, Stylist, Fashion Illustrator, Merchandiser, Buyer, and Model in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the fashion atelier task. Use Fashion Designer, Seamstress, Tailor, Pattern Maker, Textile Designer, Stylist, Fashion Illustrator, Merchandiser, Buyer, and Model in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

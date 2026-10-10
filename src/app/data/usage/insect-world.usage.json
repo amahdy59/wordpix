@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Ant", "Bee", "Butterfly", "Ladybug"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ant", "Bee", "Butterfly"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Dragonfly", "Grasshopper", "Beetle", "Fly"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dragonfly", "Grasshopper", "Beetle"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Mosquito", "Cricket", "Wing", "Antenna"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mosquito", "Cricket", "Wing"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Leg", "Thorax", "Abdomen"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Leg", "Thorax", "Abdomen"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Insect World: Practical Information",
-      "text": "At the the insect world, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ant, Bee, Butterfly, and Ladybug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dragonfly, Grasshopper, Beetle, and Fly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mosquito, Cricket, Wing, and Antenna. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Leg, Thorax, and Abdomen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ant, Bee, Butterfly, and Ladybug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dragonfly, Grasshopper, Beetle, and Fly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mosquito, Cricket, Wing, and Antenna. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Leg, Thorax, and Abdomen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dragonfly",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mosquito",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Leg",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the insect world task. Use Ant, Bee, Butterfly, Ladybug, Dragonfly, Grasshopper, Beetle, Fly, Mosquito, Cricket, Wing, Antenna, Leg, Thorax, and Abdomen in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the insect world task. Use Ant, Bee, Butterfly, Ladybug, Dragonfly, Grasshopper, Beetle, Fly, Mosquito, Cricket, Wing, Antenna, Leg, Thorax, and Abdomen in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Head", "Eye", "Mandible", "Stinger"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Head", "Eye", "Mandible"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Proboscis", "Hive", "Anthill", "Web"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Proboscis", "Hive", "Anthill"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Cocoon", "Nest", "Burrow", "Leaf"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cocoon", "Nest", "Burrow"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Bark", "Soil", "Pond Surface"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bark", "Soil", "Pond Surface"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Insect World",
-      "text": "At the the insect world, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Head, Eye, Mandible, and Stinger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Proboscis, Hive, Anthill, and Web. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cocoon, Nest, Burrow, and Leaf. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bark, Soil, and Pond Surface. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Head, Eye, Mandible, and Stinger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Proboscis, Hive, Anthill, and Web. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cocoon, Nest, Burrow, and Leaf. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bark, Soil, and Pond Surface. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Head",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Proboscis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cocoon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bark",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the insect world task. Use Head, Eye, Mandible, Stinger, Proboscis, Hive, Anthill, Web, Cocoon, Nest, Burrow, Leaf, Bark, Soil, and Pond Surface in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the insect world task. Use Head, Eye, Mandible, Stinger, Proboscis, Hive, Anthill, Web, Cocoon, Nest, Burrow, Leaf, Bark, Soil, and Pond Surface in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Egg", "Larva", "Caterpillar", "Pupa"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Egg", "Larva", "Caterpillar"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Chrysalis", "Metamorphosis", "Molt", "Nymph"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Chrysalis", "Metamorphosis", "Molt"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Adult", "Swarm", "Pollinate", "Sting"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Adult", "Swarm", "Pollinate"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Crawl", "Buzz", "Dig"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crawl", "Buzz", "Dig"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Insect World",
-      "text": "At the the insect world, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Egg, Larva, Caterpillar, and Pupa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chrysalis, Metamorphosis, Molt, and Nymph. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Adult, Swarm, Pollinate, and Sting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crawl, Buzz, and Dig. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Egg, Larva, Caterpillar, and Pupa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chrysalis, Metamorphosis, Molt, and Nymph. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Adult, Swarm, Pollinate, and Sting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crawl, Buzz, and Dig. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Egg",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Chrysalis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Adult",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crawl",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the insect world task. Use Egg, Larva, Caterpillar, Pupa, Chrysalis, Metamorphosis, Molt, Nymph, Adult, Swarm, Pollinate, Sting, Crawl, Buzz, and Dig in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the insect world task. Use Egg, Larva, Caterpillar, Pupa, Chrysalis, Metamorphosis, Molt, Nymph, Adult, Swarm, Pollinate, Sting, Crawl, Buzz, and Dig in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -572,7 +572,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Spin", "Camouflage", "Migrate", "Hibernate"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spin", "Camouflage", "Migrate"],
@@ -584,7 +584,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Earthworm", "Snail", "Slug", "Centipede"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Earthworm", "Snail", "Slug"],
@@ -596,7 +596,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Millipede", "Aphid", "Praying Mantis", "Firefly"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Millipede", "Aphid", "Praying Mantis"],
@@ -608,7 +608,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Moth", "Wasp"],
-          "scenario": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.",
+          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Moth", "Wasp", "Spin"],
@@ -622,33 +622,33 @@
     },
     "reading": {
       "title": "The Insect World: Practical Information",
-      "text": "At the the insect world, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spin, Camouflage, Migrate, and Hibernate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Earthworm, Snail, Slug, and Centipede. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Millipede, Aphid, Praying Mantis, and Firefly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moth and Wasp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spin, Camouflage, Migrate, and Hibernate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Earthworm, Snail, Slug, and Centipede. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Millipede, Aphid, Praying Mantis, and Firefly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moth and Wasp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Earthworm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Millipede",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Moth",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -679,7 +679,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the insect world task. Use Spin, Camouflage, Migrate, Hibernate, Earthworm, Snail, Slug, Centipede, Millipede, Aphid, Praying Mantis, Firefly, Moth, and Wasp in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the insect world task. Use Spin, Camouflage, Migrate, Hibernate, Earthworm, Snail, Slug, Centipede, Millipede, Aphid, Praying Mantis, Firefly, Moth, and Wasp in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

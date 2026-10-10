@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Jaguar", "Toucan", "Parrot", "Monkey"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jaguar, Toucan, Parrot, and Monkey and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jaguar, Toucan, Parrot, and Monkey and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Jaguar", "Toucan", "Parrot"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Gorilla", "Sloth", "Tree Frog", "Anaconda"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gorilla, Sloth, Tree Frog, and Anaconda and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gorilla, Sloth, Tree Frog, and Anaconda and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gorilla", "Sloth", "Tree Frog"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Chameleon", "Tapir", "Iguana", "Orangutan"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Tapir, Iguana, and Orangutan and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Tapir, Iguana, and Orangutan and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Chameleon", "Tapir", "Iguana"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Butterfly", "Beetle", "Ant"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, and Ant and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, and Ant and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Butterfly", "Beetle", "Ant"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Jungle",
-      "text": "At the the jungle, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Jaguar, Toucan, Parrot, and Monkey. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gorilla, Sloth, Tree Frog, and Anaconda. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chameleon, Tapir, Iguana, and Orangutan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Butterfly, Beetle, and Ant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the jungle, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Jaguar, Toucan, Parrot, and Monkey. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gorilla, Sloth, Tree Frog, and Anaconda. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chameleon, Tapir, Iguana, and Orangutan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Butterfly, Beetle, and Ant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jaguar, Toucan, Parrot, and Monkey and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jaguar, Toucan, Parrot, and Monkey and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Jaguar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gorilla, Sloth, Tree Frog, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gorilla, Sloth, Tree Frog, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gorilla",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Tapir, Iguana, and Orangutan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Tapir, Iguana, and Orangutan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Chameleon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, and Ant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, and Ant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Butterfly",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the jungle task. Use Jaguar, Toucan, Parrot, Monkey, Gorilla, Sloth, Tree Frog, Anaconda, Chameleon, Tapir, Iguana, Orangutan, Butterfly, Beetle, and Ant in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the jungle task. Use Jaguar, Toucan, Parrot, Monkey, Gorilla, Sloth, Tree Frog, Anaconda, Chameleon, Tapir, Iguana, Orangutan, Butterfly, Beetle, and Ant in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Mosquito", "Dragonfly", "Caterpillar", "Spider"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Dragonfly, Caterpillar, and Spider and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Dragonfly, Caterpillar, and Spider and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mosquito", "Dragonfly", "Caterpillar"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Scorpion", "Centipede", "Termite", "Grasshopper"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scorpion, Centipede, Termite, and Grasshopper and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scorpion, Centipede, Termite, and Grasshopper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scorpion", "Centipede", "Termite"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Firefly", "Palm Tree", "Vine", "Fern"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firefly, Palm Tree, Vine, and Fern and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firefly, Palm Tree, Vine, and Fern and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Firefly", "Palm Tree", "Vine"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Bamboo", "Orchid", "Moss"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bamboo, Orchid, and Moss and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bamboo, Orchid, and Moss and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bamboo", "Orchid", "Moss"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Jungle",
-      "text": "At the the jungle, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mosquito, Dragonfly, Caterpillar, and Spider. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scorpion, Centipede, Termite, and Grasshopper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Firefly, Palm Tree, Vine, and Fern. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bamboo, Orchid, and Moss. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the jungle, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mosquito, Dragonfly, Caterpillar, and Spider. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scorpion, Centipede, Termite, and Grasshopper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Firefly, Palm Tree, Vine, and Fern. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bamboo, Orchid, and Moss. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Dragonfly, Caterpillar, and Spider and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Dragonfly, Caterpillar, and Spider and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mosquito",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scorpion, Centipede, Termite, and Grasshopper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scorpion, Centipede, Termite, and Grasshopper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scorpion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firefly, Palm Tree, Vine, and Fern and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firefly, Palm Tree, Vine, and Fern and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Firefly",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bamboo, Orchid, and Moss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bamboo, Orchid, and Moss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bamboo",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the jungle task. Use Mosquito, Dragonfly, Caterpillar, Spider, Scorpion, Centipede, Termite, Grasshopper, Firefly, Palm Tree, Vine, Fern, Bamboo, Orchid, and Moss in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the jungle task. Use Mosquito, Dragonfly, Caterpillar, Spider, Scorpion, Centipede, Termite, Grasshopper, Firefly, Palm Tree, Vine, Fern, Bamboo, Orchid, and Moss in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Liana", "Canopy", "Root", "Trunk"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Liana, Canopy, Root, and Trunk and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Liana, Canopy, Root, and Trunk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Liana", "Canopy", "Root"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Leaf", "Flower", "Waterfall", "River"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leaf, Flower, Waterfall, and River and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leaf, Flower, Waterfall, and River and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Leaf", "Flower", "Waterfall"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Stream", "Swamp", "Mud", "Rock"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stream, Swamp, Mud, and Rock and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stream, Swamp, Mud, and Rock and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stream", "Swamp", "Mud"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cave", "Cliff", "Ravine"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Cliff, and Ravine and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Cliff, and Ravine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cave", "Cliff", "Ravine"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Jungle",
-      "text": "At the the jungle, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Liana, Canopy, Root, and Trunk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Leaf, Flower, Waterfall, and River. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stream, Swamp, Mud, and Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cave, Cliff, and Ravine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the jungle, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Liana, Canopy, Root, and Trunk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Leaf, Flower, Waterfall, and River. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stream, Swamp, Mud, and Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cave, Cliff, and Ravine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Liana, Canopy, Root, and Trunk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Liana, Canopy, Root, and Trunk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Liana",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leaf, Flower, Waterfall, and River and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leaf, Flower, Waterfall, and River and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Leaf",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stream, Swamp, Mud, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stream, Swamp, Mud, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stream",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Cliff, and Ravine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Cliff, and Ravine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cave",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the jungle task. Use Liana, Canopy, Root, Trunk, Leaf, Flower, Waterfall, River, Stream, Swamp, Mud, Rock, Cave, Cliff, and Ravine in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the jungle task. Use Liana, Canopy, Root, Trunk, Leaf, Flower, Waterfall, River, Stream, Swamp, Mud, Rock, Cave, Cliff, and Ravine in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lagoon", "Understory", "Forest Floor", "Clearing"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lagoon, Understory, Forest Floor, and Clearing and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lagoon, Understory, Forest Floor, and Clearing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lagoon", "Understory", "Forest Floor"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Trail", "Bridge", "Tree House", "Rope"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, Bridge, Tree House, and Rope and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, Bridge, Tree House, and Rope and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trail", "Bridge", "Tree House"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Hammock", "Campsite", "Roar", "Screech"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Campsite, Roar, and Screech and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Campsite, Roar, and Screech and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hammock", "Campsite", "Roar"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Buzz", "Chirp", "Rustle"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buzz, Chirp, and Rustle and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buzz, Chirp, and Rustle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Buzz", "Chirp", "Rustle"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Jungle",
-      "text": "At the the jungle, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lagoon, Understory, Forest Floor, and Clearing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Trail, Bridge, Tree House, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hammock, Campsite, Roar, and Screech. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Buzz, Chirp, and Rustle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the jungle, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lagoon, Understory, Forest Floor, and Clearing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Trail, Bridge, Tree House, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hammock, Campsite, Roar, and Screech. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Buzz, Chirp, and Rustle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lagoon, Understory, Forest Floor, and Clearing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lagoon, Understory, Forest Floor, and Clearing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lagoon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, Bridge, Tree House, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trail, Bridge, Tree House, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trail",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Campsite, Roar, and Screech and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hammock, Campsite, Roar, and Screech and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hammock",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buzz, Chirp, and Rustle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buzz, Chirp, and Rustle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Buzz",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the jungle task. Use Lagoon, Understory, Forest Floor, Clearing, Trail, Bridge, Tree House, Rope, Hammock, Campsite, Roar, Screech, Buzz, Chirp, and Rustle in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the jungle task. Use Lagoon, Understory, Forest Floor, Clearing, Trail, Bridge, Tree House, Rope, Hammock, Campsite, Roar, Screech, Buzz, Chirp, and Rustle in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -736,7 +736,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Splash", "Echo", "Humidity", "Heat"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash, Echo, Humidity, and Heat and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash, Echo, Humidity, and Heat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Splash", "Echo", "Humidity"],
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Shadow", "Banana Plant", "Rubber Tree", "Rope Bridge"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shadow, Banana Plant, Rubber Tree, and Rope Bridge and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shadow, Banana Plant, Rubber Tree, and Rope Bridge and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Shadow", "Banana Plant", "Rubber Tree"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Rainfall"],
-          "scenario": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rainfall and choose the option that fits the situation.",
+          "scenario": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rainfall and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rainfall", "Splash", "Echo"],
@@ -774,26 +774,26 @@
     },
     "reading": {
       "title": "A Practical Guide: The Jungle",
-      "text": "At the the jungle, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Splash, Echo, Humidity, and Heat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shadow, Banana Plant, Rubber Tree, and Rope Bridge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rainfall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the jungle, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Splash, Echo, Humidity, and Heat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shadow, Banana Plant, Rubber Tree, and Rope Bridge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rainfall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash, Echo, Humidity, and Heat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Splash, Echo, Humidity, and Heat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Splash",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shadow, Banana Plant, Rubber Tree, and Rope Bridge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shadow, Banana Plant, Rubber Tree, and Rope Bridge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Shadow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rainfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the jungle setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rainfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rainfall",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -824,7 +824,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the jungle task. Use Splash, Echo, Humidity, Heat, Shadow, Banana Plant, Rubber Tree, Rope Bridge, and Rainfall in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the jungle task. Use Splash, Echo, Humidity, Heat, Shadow, Banana Plant, Rubber Tree, Rope Bridge, and Rainfall in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

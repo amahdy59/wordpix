@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Smart Speaker", "Voice Command", "Wake Word", "Routine"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Smart Speaker", "Voice Command", "Wake Word"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Reminder", "Timer", "Playlist", "News Briefing"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Reminder", "Timer", "Playlist"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Intercom", "Multi Room", "Smart Bulb", "Dimmer"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Intercom", "Multi Room", "Smart Bulb"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Color Changing", "Light Strip", "Motion Sensor"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Color Changing", "Light Strip", "Motion Sensor"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Smart Home",
-      "text": "At the the smart home, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Speaker, Voice Command, Wake Word, and Routine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reminder, Timer, Playlist, and News Briefing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Intercom, Multi Room, Smart Bulb, and Dimmer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Color Changing, Light Strip, and Motion Sensor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Speaker, Voice Command, Wake Word, and Routine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reminder, Timer, Playlist, and News Briefing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Intercom, Multi Room, Smart Bulb, and Dimmer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Color Changing, Light Strip, and Motion Sensor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Smart Speaker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Reminder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Intercom",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Color Changing",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the smart home task. Use Smart Speaker, Voice Command, Wake Word, Routine, Reminder, Timer, Playlist, News Briefing, Intercom, Multi Room, Smart Bulb, Dimmer, Color Changing, Light Strip, and Motion Sensor in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the smart home task. Use Smart Speaker, Voice Command, Wake Word, Routine, Reminder, Timer, Playlist, News Briefing, Intercom, Multi Room, Smart Bulb, Dimmer, Color Changing, Light Strip, and Motion Sensor in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Schedule", "Scene", "Brightness", "Warm White"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Schedule", "Scene", "Brightness"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Daylight", "Smart Lock", "Doorbell Camera", "Security Camera"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Daylight", "Smart Lock", "Doorbell Camera"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Motion Detector", "Alarm System", "Keypad", "Fingerprint"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Motion Detector", "Alarm System", "Keypad"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["App Alert", "Cloud Storage", "Night Vision"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["App Alert", "Cloud Storage", "Night Vision"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Smart Home",
-      "text": "At the the smart home, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Schedule, Scene, Brightness, and Warm White. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Daylight, Smart Lock, Doorbell Camera, and Security Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Motion Detector, Alarm System, Keypad, and Fingerprint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers App Alert, Cloud Storage, and Night Vision. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Schedule, Scene, Brightness, and Warm White. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Daylight, Smart Lock, Doorbell Camera, and Security Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Motion Detector, Alarm System, Keypad, and Fingerprint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers App Alert, Cloud Storage, and Night Vision. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Schedule",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Daylight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Motion Detector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "App Alert",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the smart home task. Use Schedule, Scene, Brightness, Warm White, Daylight, Smart Lock, Doorbell Camera, Security Camera, Motion Detector, Alarm System, Keypad, Fingerprint, App Alert, Cloud Storage, and Night Vision in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the smart home task. Use Schedule, Scene, Brightness, Warm White, Daylight, Smart Lock, Doorbell Camera, Security Camera, Motion Detector, Alarm System, Keypad, Fingerprint, App Alert, Cloud Storage, and Night Vision in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Smart Thermostat", "Temperature Sensor", "Humidity Sensor", "Zone"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Smart Thermostat", "Temperature Sensor", "Humidity Sensor"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Eco Mode", "Geofencing", "Vent", "Air Purifier"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Eco Mode", "Geofencing", "Vent"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fan", "Streaming Device", "Smart Tv", "Soundbar"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fan", "Streaming Device", "Smart Tv"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Projector", "Gaming Console", "Universal Remote"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Projector", "Gaming Console", "Universal Remote"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Smart Home",
-      "text": "At the the smart home, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Eco Mode, Geofencing, Vent, and Air Purifier. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fan, Streaming Device, Smart Tv, and Soundbar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector, Gaming Console, and Universal Remote. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Eco Mode, Geofencing, Vent, and Air Purifier. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fan, Streaming Device, Smart Tv, and Soundbar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector, Gaming Console, and Universal Remote. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Smart Thermostat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Eco Mode",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Projector",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the smart home task. Use Smart Thermostat, Temperature Sensor, Humidity Sensor, Zone, Eco Mode, Geofencing, Vent, Air Purifier, Fan, Streaming Device, Smart Tv, Soundbar, Projector, Gaming Console, and Universal Remote in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the smart home task. Use Smart Thermostat, Temperature Sensor, Humidity Sensor, Zone, Eco Mode, Geofencing, Vent, Air Purifier, Fan, Streaming Device, Smart Tv, Soundbar, Projector, Gaming Console, and Universal Remote in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -572,7 +572,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Hdmi", "Bluetooth", "Wi Fi", "Casting"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hdmi", "Bluetooth", "Wi Fi"],
@@ -584,7 +584,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Robot Vacuum", "Smart Plug", "Smart Oven", "Coffee Maker"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Robot Vacuum", "Smart Plug", "Smart Oven"],
@@ -596,7 +596,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Washer", "Dryer", "Refrigerator", "Dishwasher"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Washer", "Dryer", "Refrigerator"],
@@ -608,7 +608,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Irrigation", "Garage Opener"],
-          "scenario": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.",
+          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Irrigation", "Garage Opener", "Hdmi"],
@@ -622,33 +622,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Smart Home",
-      "text": "At the the smart home, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hdmi, Bluetooth, Wi Fi, and Casting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Washer, Dryer, Refrigerator, and Dishwasher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Irrigation and Garage Opener. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hdmi, Bluetooth, Wi Fi, and Casting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Washer, Dryer, Refrigerator, and Dishwasher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Irrigation and Garage Opener. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hdmi",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Robot Vacuum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Washer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Irrigation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -679,7 +679,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the smart home task. Use Hdmi, Bluetooth, Wi Fi, Casting, Robot Vacuum, Smart Plug, Smart Oven, Coffee Maker, Washer, Dryer, Refrigerator, Dishwasher, Irrigation, and Garage Opener in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the smart home task. Use Hdmi, Bluetooth, Wi Fi, Casting, Robot Vacuum, Smart Plug, Smart Oven, Coffee Maker, Washer, Dryer, Refrigerator, Dishwasher, Irrigation, and Garage Opener in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

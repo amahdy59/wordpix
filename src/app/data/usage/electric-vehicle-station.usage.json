@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Charging Station", "Connector", "Plug", "Cable"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Station, Connector, Plug, and Cable and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Station, Connector, Plug, and Cable and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Charging Station", "Connector", "Plug"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Adapter", "Level 1", "Level 2", "Dc Fast Charger"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Level 1, Level 2, and Dc Fast Charger and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Level 1, Level 2, and Dc Fast Charger and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Adapter", "Level 1", "Level 2"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Charging Port", "Payment Terminal", "Battery Pack", "Electric Motor"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Port, Payment Terminal, Battery Pack, and Electric Motor and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Port, Payment Terminal, Battery Pack, and Electric Motor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Charging Port", "Payment Terminal", "Battery Pack"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Regenerative Braking", "Inverter", "Onboard Charger"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regenerative Braking, Inverter, and Onboard Charger and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regenerative Braking, Inverter, and Onboard Charger and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Regenerative Braking", "Inverter", "Onboard Charger"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Electric Vehicle Station",
-      "text": "At the the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Charging Station, Connector, Plug, and Cable. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Adapter, Level 1, Level 2, and Dc Fast Charger. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Charging Port, Payment Terminal, Battery Pack, and Electric Motor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Regenerative Braking, Inverter, and Onboard Charger. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Charging Station, Connector, Plug, and Cable. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Adapter, Level 1, Level 2, and Dc Fast Charger. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Charging Port, Payment Terminal, Battery Pack, and Electric Motor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Regenerative Braking, Inverter, and Onboard Charger. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Station, Connector, Plug, and Cable and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Station, Connector, Plug, and Cable and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Charging Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Level 1, Level 2, and Dc Fast Charger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Level 1, Level 2, and Dc Fast Charger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Adapter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Port, Payment Terminal, Battery Pack, and Electric Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Port, Payment Terminal, Battery Pack, and Electric Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Charging Port",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regenerative Braking, Inverter, and Onboard Charger and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regenerative Braking, Inverter, and Onboard Charger and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Regenerative Braking",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the electric vehicle station task. Use Charging Station, Connector, Plug, Cable, Adapter, Level 1, Level 2, Dc Fast Charger, Charging Port, Payment Terminal, Battery Pack, Electric Motor, Regenerative Braking, Inverter, and Onboard Charger in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the electric vehicle station task. Use Charging Station, Connector, Plug, Cable, Adapter, Level 1, Level 2, Dc Fast Charger, Charging Port, Payment Terminal, Battery Pack, Electric Motor, Regenerative Braking, Inverter, and Onboard Charger in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Thermal Management", "Drive Unit", "Power Electronics", "Bms"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thermal Management, Drive Unit, Power Electronics, and Bms and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thermal Management, Drive Unit, Power Electronics, and Bms and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Thermal Management", "Drive Unit", "Power Electronics"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cell", "Parking Spot", "Canopy", "Solar Panel"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell, Parking Spot, Canopy, and Solar Panel and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell, Parking Spot, Canopy, and Solar Panel and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cell", "Parking Spot", "Canopy"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Lighting", "Signage", "Bollard", "Curb"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lighting, Signage, Bollard, and Curb and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lighting, Signage, Bollard, and Curb and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Lighting", "Signage", "Bollard"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Handicap Space", "Trash Can", "Bench"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Handicap Space, Trash Can, and Bench and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Handicap Space, Trash Can, and Bench and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Handicap Space", "Trash Can", "Bench"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Preparing for the Next Task: The Electric Vehicle Station",
-      "text": "At the the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Thermal Management, Drive Unit, Power Electronics, and Bms. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cell, Parking Spot, Canopy, and Solar Panel. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Lighting, Signage, Bollard, and Curb. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Handicap Space, Trash Can, and Bench. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Thermal Management, Drive Unit, Power Electronics, and Bms. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cell, Parking Spot, Canopy, and Solar Panel. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Lighting, Signage, Bollard, and Curb. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Handicap Space, Trash Can, and Bench. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thermal Management, Drive Unit, Power Electronics, and Bms and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thermal Management, Drive Unit, Power Electronics, and Bms and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Thermal Management",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell, Parking Spot, Canopy, and Solar Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell, Parking Spot, Canopy, and Solar Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lighting, Signage, Bollard, and Curb and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lighting, Signage, Bollard, and Curb and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Lighting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Handicap Space, Trash Can, and Bench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Handicap Space, Trash Can, and Bench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Handicap Space",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the electric vehicle station task. Use Thermal Management, Drive Unit, Power Electronics, Bms, Cell, Parking Spot, Canopy, Solar Panel, Lighting, Signage, Bollard, Curb, Handicap Space, Trash Can, and Bench in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the electric vehicle station task. Use Thermal Management, Drive Unit, Power Electronics, Bms, Cell, Parking Spot, Canopy, Solar Panel, Lighting, Signage, Bollard, Curb, Handicap Space, Trash Can, and Bench in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Rfid Card", "Mobile App", "Qr Code", "Account"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rfid Card, Mobile App, Qr Code, and Account and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rfid Card, Mobile App, Qr Code, and Account and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rfid Card", "Mobile App", "Qr Code"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Subscription", "Per Kwh", "Session Fee", "Receipt"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subscription, Per Kwh, Session Fee, and Receipt and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subscription, Per Kwh, Session Fee, and Receipt and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Subscription", "Per Kwh", "Session Fee"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Network", "Roaming", "Kilowatt", "State Of Charge"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Network, Roaming, Kilowatt, and State Of Charge and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Network, Roaming, Kilowatt, and State Of Charge and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Network", "Roaming", "Kilowatt"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Range", "Voltage", "Amperage"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Range, Voltage, and Amperage and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Range, Voltage, and Amperage and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Range", "Voltage", "Amperage"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Electric Vehicle Station",
-      "text": "At the the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Rfid Card, Mobile App, Qr Code, and Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Subscription, Per Kwh, Session Fee, and Receipt. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Network, Roaming, Kilowatt, and State Of Charge. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Range, Voltage, and Amperage. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Rfid Card, Mobile App, Qr Code, and Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Subscription, Per Kwh, Session Fee, and Receipt. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Network, Roaming, Kilowatt, and State Of Charge. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Range, Voltage, and Amperage. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rfid Card, Mobile App, Qr Code, and Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rfid Card, Mobile App, Qr Code, and Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rfid Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subscription, Per Kwh, Session Fee, and Receipt and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subscription, Per Kwh, Session Fee, and Receipt and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Subscription",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Network, Roaming, Kilowatt, and State Of Charge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Network, Roaming, Kilowatt, and State Of Charge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Network",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Range, Voltage, and Amperage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Range, Voltage, and Amperage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Range",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the electric vehicle station task. Use Rfid Card, Mobile App, QR Code, Account, Subscription, Per Kwh, Session Fee, Receipt, Network, Roaming, Kilowatt, State Of Charge, Range, Voltage, and Amperage in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the electric vehicle station task. Use Rfid Card, Mobile App, QR Code, Account, Subscription, Per Kwh, Session Fee, Receipt, Network, Roaming, Kilowatt, State Of Charge, Range, Voltage, and Amperage in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Charging Speed", "Time Remaining", "Energy Used", "Cost"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Speed, Time Remaining, Energy Used, and Cost and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Speed, Time Remaining, Energy Used, and Cost and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Charging Speed", "Time Remaining", "Energy Used"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Efficiency", "Ground Fault", "Emergency Stop", "Ventilation"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Ground Fault, Emergency Stop, and Ventilation and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Ground Fault, Emergency Stop, and Ventilation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Efficiency", "Ground Fault", "Emergency Stop"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Inspection", "Firmware Update", "Weatherproof", "Tamper Proof"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection, Firmware Update, Weatherproof, and Tamper Proof and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection, Firmware Update, Weatherproof, and Tamper Proof and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Inspection", "Firmware Update", "Weatherproof"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Lockout", "Certification", "Warranty"],
-          "scenario": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lockout, Certification, and Warranty and choose the option that fits the situation.",
+          "scenario": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lockout, Certification, and Warranty and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lockout", "Certification", "Warranty"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Electric Vehicle Station",
-      "text": "At the the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Charging Speed, Time Remaining, Energy Used, and Cost. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Efficiency, Ground Fault, Emergency Stop, and Ventilation. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Inspection, Firmware Update, Weatherproof, and Tamper Proof. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Lockout, Certification, and Warranty. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the electric vehicle station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Charging Speed, Time Remaining, Energy Used, and Cost. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Efficiency, Ground Fault, Emergency Stop, and Ventilation. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Inspection, Firmware Update, Weatherproof, and Tamper Proof. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Lockout, Certification, and Warranty. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Speed, Time Remaining, Energy Used, and Cost and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charging Speed, Time Remaining, Energy Used, and Cost and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Charging Speed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Ground Fault, Emergency Stop, and Ventilation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Ground Fault, Emergency Stop, and Ventilation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Efficiency",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection, Firmware Update, Weatherproof, and Tamper Proof and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection, Firmware Update, Weatherproof, and Tamper Proof and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Inspection",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lockout, Certification, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the electric vehicle station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lockout, Certification, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lockout",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the electric vehicle station task. Use Charging Speed, Time Remaining, Energy Used, Cost, Efficiency, Ground Fault, Emergency Stop, Ventilation, Inspection, Firmware Update, Weatherproof, Tamper Proof, Lockout, Certification, and Warranty in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the electric vehicle station task. Use Charging Speed, Time Remaining, Energy Used, Cost, Efficiency, Ground Fault, Emergency Stop, Ventilation, Inspection, Firmware Update, Weatherproof, Tamper Proof, Lockout, Certification, and Warranty in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

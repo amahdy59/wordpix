@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Microphone", "Mixing Console", "Headphones", "Monitor Speaker"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Microphone", "Mixing Console", "Headphones"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Transmitter", "Antenna", "Amplifier", "Equalizer"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Transmitter", "Antenna", "Amplifier"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Compressor", "Pop Filter", "Sound Booth", "Acoustic Panel"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Compressor", "Pop Filter", "Sound Booth"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["On-Air Sign", "Desk", "Chair"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["On-Air Sign", "Desk", "Chair"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Radio Station",
-      "text": "At the the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Microphone, Mixing Console, Headphones, and Monitor Speaker. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Transmitter, Antenna, Amplifier, and Equalizer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Compressor, Pop Filter, Sound Booth, and Acoustic Panel. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers On-Air Sign, Desk, and Chair. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Microphone, Mixing Console, Headphones, and Monitor Speaker. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Transmitter, Antenna, Amplifier, and Equalizer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Compressor, Pop Filter, Sound Booth, and Acoustic Panel. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers On-Air Sign, Desk, and Chair. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Microphone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Transmitter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Compressor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "On-Air Sign",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the radio station task. Use Microphone, Mixing Console, Headphones, Monitor Speaker, Transmitter, Antenna, Amplifier, Equalizer, Compressor, Pop Filter, Sound Booth, Acoustic Panel, On-Air Sign, Desk, and Chair in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the radio station task. Use Microphone, Mixing Console, Headphones, Monitor Speaker, Transmitter, Antenna, Amplifier, Equalizer, Compressor, Pop Filter, Sound Booth, Acoustic Panel, On-Air Sign, Desk, and Chair in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Computer", "Clock", "Script Stand", "Water Glass"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Computer", "Clock", "Script Stand"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cable Management", "Audio Interface", "Digital Recorder", "Sound Card"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cable Management", "Audio Interface", "Digital Recorder"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Phantom Power", "XLR Cable", "Headphone Amplifier", "Audio Software"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Phantom Power", "XLR Cable", "Headphone Amplifier"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Waveform", "Playback Button", "Record Button"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Waveform", "Playback Button", "Record Button"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Radio Station",
-      "text": "At the the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Computer, Clock, Script Stand, and Water Glass. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cable Management, Audio Interface, Digital Recorder, and Sound Card. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Waveform, Playback Button, and Record Button. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Computer, Clock, Script Stand, and Water Glass. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cable Management, Audio Interface, Digital Recorder, and Sound Card. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Waveform, Playback Button, and Record Button. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Computer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cable Management",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Phantom Power",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Waveform",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the radio station task. Use Computer, Clock, Script Stand, Water Glass, Cable Management, Audio Interface, Digital Recorder, Sound Card, Phantom Power, XLR Cable, Headphone Amplifier, Audio Software, Waveform, Playback Button, and Record Button in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the radio station task. Use Computer, Clock, Script Stand, Water Glass, Cable Management, Audio Interface, Digital Recorder, Sound Card, Phantom Power, XLR Cable, Headphone Amplifier, Audio Software, Waveform, Playback Button, and Record Button in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Playlist", "Jingle", "Sound Effect", "Station ID"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Playlist", "Jingle", "Sound Effect"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Commercial Break", "News Bulletin", "Weather Update", "Traffic Report"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Commercial Break", "News Bulletin", "Weather Update"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Interview Segment", "Music Block", "Radio Host", "DJ"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Interview Segment", "Music Block", "Radio Host"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Producer", "Sound Engineer", "News Anchor"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Producer", "Sound Engineer", "News Anchor"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Before You Begin: The Radio Station",
-      "text": "At the the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Playlist, Jingle, Sound Effect, and Station ID. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Commercial Break, News Bulletin, Weather Update, and Traffic Report. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Interview Segment, Music Block, Radio Host, and DJ. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Producer, Sound Engineer, and News Anchor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Playlist, Jingle, Sound Effect, and Station ID. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Commercial Break, News Bulletin, Weather Update, and Traffic Report. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Interview Segment, Music Block, Radio Host, and DJ. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Producer, Sound Engineer, and News Anchor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Playlist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Commercial Break",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Interview Segment",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Producer",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the radio station task. Use Playlist, Jingle, Sound Effect, Station ID, Commercial Break, News Bulletin, Weather Update, Traffic Report, Interview Segment, Music Block, Radio Host, DJ, Producer, Sound Engineer, and News Anchor in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the radio station task. Use Playlist, Jingle, Sound Effect, Station ID, Commercial Break, News Bulletin, Weather Update, Traffic Report, Interview Segment, Music Block, Radio Host, DJ, Producer, Sound Engineer, and News Anchor in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -579,7 +579,7 @@
             "Sales Manager",
             "Program Director"
           ],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Traffic Reporter", "Weather Presenter", "Sales Manager"],
@@ -591,7 +591,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Intern", "Radio Receiver", "Car Radio", "Portable Radio"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Intern", "Radio Receiver", "Car Radio"],
@@ -603,7 +603,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Smartphone App", "Podcast", "Streaming", "Listener"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Smartphone App", "Podcast", "Streaming"],
@@ -615,7 +615,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Frequency Dial", "Volume Knob", "Tuner"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Frequency Dial", "Volume Knob", "Tuner"],
@@ -629,33 +629,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Radio Station",
-      "text": "At the the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Traffic Reporter, Weather Presenter, Sales Manager, and Program Director. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Intern, Radio Receiver, Car Radio, and Portable Radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Smartphone App, Podcast, Streaming, and Listener. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Frequency Dial, Volume Knob, and Tuner. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Traffic Reporter, Weather Presenter, Sales Manager, and Program Director. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Intern, Radio Receiver, Car Radio, and Portable Radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Smartphone App, Podcast, Streaming, and Listener. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Frequency Dial, Volume Knob, and Tuner. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Traffic Reporter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Intern",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Smartphone App",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Frequency Dial",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -686,7 +686,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the radio station task. Use Traffic Reporter, Weather Presenter, Sales Manager, Program Director, Intern, Radio Receiver, Car Radio, Portable Radio, Smartphone App, Podcast, Streaming, Listener, Frequency Dial, Volume Knob, and Tuner in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the radio station task. Use Traffic Reporter, Weather Presenter, Sales Manager, Program Director, Intern, Radio Receiver, Car Radio, Portable Radio, Smartphone App, Podcast, Streaming, Listener, Frequency Dial, Volume Knob, and Tuner in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -747,7 +747,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Turntable", "Speaker", "Soundproof Booth", "On-Air Light"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Turntable", "Speaker", "Soundproof Booth"],
@@ -759,7 +759,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Control Room", "Recording Booth", "Cue Card", "Script"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Control Room", "Recording Booth", "Cue Card"],
@@ -771,7 +771,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Frequency", "Channel", "Commercial", "Interview"],
-          "scenario": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.",
+          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Frequency", "Channel", "Commercial"],
@@ -785,26 +785,26 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Radio Station",
-      "text": "At the the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Turntable, Speaker, Soundproof Booth, and On-Air Light. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Control Room, Recording Booth, Cue Card, and Script. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Frequency, Channel, Commercial, and Interview. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Turntable, Speaker, Soundproof Booth, and On-Air Light. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Control Room, Recording Booth, Cue Card, and Script. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Frequency, Channel, Commercial, and Interview. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Turntable",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Control Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Frequency",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -835,7 +835,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the radio station task. Use Turntable, Speaker, Soundproof Booth, On-Air Light, Control Room, Recording Booth, Cue Card, Script, Frequency, Channel, Commercial, and Interview in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the radio station task. Use Turntable, Speaker, Soundproof Booth, On-Air Light, Control Room, Recording Booth, Cue Card, Script, Frequency, Channel, Commercial, and Interview in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

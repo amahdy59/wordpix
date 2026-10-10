@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Newsroom", "Editor's Desk", "Whiteboard", "Pinboard"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsroom, Editor's Desk, Whiteboard, and Pinboard and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsroom, Editor's Desk, Whiteboard, and Pinboard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Newsroom", "Editor's Desk", "Whiteboard"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Computer Terminal", "Telephone", "Coffee Cup", "Filing Cabinet"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Terminal, Telephone, Coffee Cup, and Filing Cabinet and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Terminal, Telephone, Coffee Cup, and Filing Cabinet and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Computer Terminal", "Telephone", "Coffee Cup"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Notepad", "Wall Clock", "Newspaper", "Headline"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Notepad, Wall Clock, Newspaper, and Headline and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Notepad, Wall Clock, Newspaper, and Headline and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Notepad", "Wall Clock", "Newspaper"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Article", "Column", "Photograph"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Article, Column, and Photograph and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Article, Column, and Photograph and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Article", "Column", "Photograph"],
@@ -101,33 +101,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Newspaper Office",
-      "text": "At the the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Newsroom, Editor's Desk, Whiteboard, and Pinboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Computer Terminal, Telephone, Coffee Cup, and Filing Cabinet. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Notepad, Wall Clock, Newspaper, and Headline. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Article, Column, and Photograph. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Newsroom, Editor's Desk, Whiteboard, and Pinboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Computer Terminal, Telephone, Coffee Cup, and Filing Cabinet. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Notepad, Wall Clock, Newspaper, and Headline. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Article, Column, and Photograph. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsroom, Editor's Desk, Whiteboard, and Pinboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsroom, Editor's Desk, Whiteboard, and Pinboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Newsroom",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Terminal, Telephone, Coffee Cup, and Filing Cabinet and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Terminal, Telephone, Coffee Cup, and Filing Cabinet and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Computer Terminal",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Notepad, Wall Clock, Newspaper, and Headline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Notepad, Wall Clock, Newspaper, and Headline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Notepad",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Article, Column, and Photograph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Article, Column, and Photograph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Article",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -158,7 +158,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the newspaper office task. Use Newsroom, Editor's Desk, Whiteboard, Pinboard, Computer Terminal, Telephone, Coffee Cup, Filing Cabinet, Notepad, Wall Clock, Newspaper, Headline, Article, Column, and Photograph in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the newspaper office task. Use Newsroom, Editor's Desk, Whiteboard, Pinboard, Computer Terminal, Telephone, Coffee Cup, Filing Cabinet, Notepad, Wall Clock, Newspaper, Headline, Article, Column, and Photograph in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -225,7 +225,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Caption", "Classified Ad", "Editorial", "Front Page"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caption, Classified Ad, Editorial, and Front Page and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caption, Classified Ad, Editorial, and Front Page and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Caption", "Classified Ad", "Editorial"],
@@ -237,7 +237,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Back Page", "Reporter", "Editor", "Photographer"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Back Page, Reporter, Editor, and Photographer and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Back Page, Reporter, Editor, and Photographer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Back Page", "Reporter", "Editor"],
@@ -249,7 +249,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Columnist", "Cartoonist", "Proofreader", "Copy Editor"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Columnist, Cartoonist, Proofreader, and Copy Editor and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Columnist, Cartoonist, Proofreader, and Copy Editor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Columnist", "Cartoonist", "Proofreader"],
@@ -261,7 +261,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Correspondent", "Intern", "Publisher"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Correspondent, Intern, and Publisher and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Correspondent, Intern, and Publisher and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Correspondent", "Intern", "Publisher"],
@@ -274,33 +274,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Newspaper Office",
-      "text": "At the the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Caption, Classified Ad, Editorial, and Front Page. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Back Page, Reporter, Editor, and Photographer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Columnist, Cartoonist, Proofreader, and Copy Editor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Correspondent, Intern, and Publisher. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Caption, Classified Ad, Editorial, and Front Page. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Back Page, Reporter, Editor, and Photographer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Columnist, Cartoonist, Proofreader, and Copy Editor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Correspondent, Intern, and Publisher. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caption, Classified Ad, Editorial, and Front Page and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caption, Classified Ad, Editorial, and Front Page and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Caption",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Back Page, Reporter, Editor, and Photographer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Back Page, Reporter, Editor, and Photographer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Back Page",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Columnist, Cartoonist, Proofreader, and Copy Editor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Columnist, Cartoonist, Proofreader, and Copy Editor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Columnist",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Correspondent, Intern, and Publisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Correspondent, Intern, and Publisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Correspondent",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -331,7 +331,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the newspaper office task. Use Caption, Classified Ad, Editorial, Front Page, Back Page, Reporter, Editor, Photographer, Columnist, Cartoonist, Proofreader, Copy Editor, Correspondent, Intern, and Publisher in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the newspaper office task. Use Caption, Classified Ad, Editorial, Front Page, Back Page, Reporter, Editor, Photographer, Columnist, Cartoonist, Proofreader, Copy Editor, Correspondent, Intern, and Publisher in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Press Pass", "Notebook", "Pen", "Voice Recorder"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Pass, Notebook, Pen, and Voice Recorder and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Pass, Notebook, Pen, and Voice Recorder and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Press Pass", "Notebook", "Pen"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Camera", "Laptop", "Microphone", "Tripod"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Laptop, Microphone, and Tripod and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Laptop, Microphone, and Tripod and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Camera", "Laptop", "Microphone"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Press Release", "Interview Notes", "Draft", "Deadline"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Release, Interview Notes, Draft, and Deadline and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Release, Interview Notes, Draft, and Deadline and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Press Release", "Interview Notes", "Draft"],
@@ -434,7 +434,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Layout", "Proof", "Printing Press"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layout, Proof, and Printing Press and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layout, Proof, and Printing Press and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Layout", "Proof", "Printing Press"],
@@ -447,33 +447,33 @@
     },
     "reading": {
       "title": "Before You Begin: The Newspaper Office",
-      "text": "At the the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Press Pass, Notebook, Pen, and Voice Recorder. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Camera, Laptop, Microphone, and Tripod. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Press Release, Interview Notes, Draft, and Deadline. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Layout, Proof, and Printing Press. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Press Pass, Notebook, Pen, and Voice Recorder. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Camera, Laptop, Microphone, and Tripod. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Press Release, Interview Notes, Draft, and Deadline. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Layout, Proof, and Printing Press. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Pass, Notebook, Pen, and Voice Recorder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Pass, Notebook, Pen, and Voice Recorder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Press Pass",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Laptop, Microphone, and Tripod and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Laptop, Microphone, and Tripod and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Camera",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Release, Interview Notes, Draft, and Deadline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Release, Interview Notes, Draft, and Deadline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Press Release",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layout, Proof, and Printing Press and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layout, Proof, and Printing Press and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Layout",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -504,7 +504,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the newspaper office task. Use Press Pass, Notebook, Pen, Voice Recorder, Camera, Laptop, Microphone, Tripod, Press Release, Interview Notes, Draft, Deadline, Layout, Proof, and Printing Press in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the newspaper office task. Use Press Pass, Notebook, Pen, Voice Recorder, Camera, Laptop, Microphone, Tripod, Press Release, Interview Notes, Draft, Deadline, Layout, Proof, and Printing Press in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -571,7 +571,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Ink", "Paper Roll", "Folding Machine", "Delivery Truck"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ink, Paper Roll, Folding Machine, and Delivery Truck and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ink, Paper Roll, Folding Machine, and Delivery Truck and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ink", "Paper Roll", "Folding Machine"],
@@ -583,7 +583,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Newsstand", "Breaking News", "Feature Story", "Opinion Piece"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsstand, Breaking News, Feature Story, and Opinion Piece and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsstand, Breaking News, Feature Story, and Opinion Piece and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Newsstand", "Breaking News", "Feature Story"],
@@ -595,7 +595,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Review", "Interview", "Investigation", "Weather Report"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Interview, Investigation, and Weather Report and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Interview, Investigation, and Weather Report and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Review", "Interview", "Investigation"],
@@ -607,7 +607,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Sports Score", "Obituary", "Advertisement"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Score, Obituary, and Advertisement and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Score, Obituary, and Advertisement and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sports Score", "Obituary", "Advertisement"],
@@ -620,33 +620,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Newspaper Office",
-      "text": "At the the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Ink, Paper Roll, Folding Machine, and Delivery Truck. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Newsstand, Breaking News, Feature Story, and Opinion Piece. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Review, Interview, Investigation, and Weather Report. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Sports Score, Obituary, and Advertisement. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Ink, Paper Roll, Folding Machine, and Delivery Truck. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Newsstand, Breaking News, Feature Story, and Opinion Piece. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Review, Interview, Investigation, and Weather Report. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Sports Score, Obituary, and Advertisement. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ink, Paper Roll, Folding Machine, and Delivery Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ink, Paper Roll, Folding Machine, and Delivery Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ink",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsstand, Breaking News, Feature Story, and Opinion Piece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newsstand, Breaking News, Feature Story, and Opinion Piece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Newsstand",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Interview, Investigation, and Weather Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Interview, Investigation, and Weather Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Review",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Score, Obituary, and Advertisement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Score, Obituary, and Advertisement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sports Score",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -677,7 +677,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the newspaper office task. Use Ink, Paper Roll, Folding Machine, Delivery Truck, Newsstand, Breaking News, Feature Story, Opinion Piece, Review, Interview, Investigation, Weather Report, Sports Score, Obituary, and Advertisement in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the newspaper office task. Use Ink, Paper Roll, Folding Machine, Delivery Truck, Newsstand, Breaking News, Feature Story, Opinion Piece, Review, Interview, Investigation, Weather Report, Sports Score, Obituary, and Advertisement in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -740,7 +740,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Classified", "Cartoon", "Photo", "Journalist"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classified, Cartoon, Photo, and Journalist and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classified, Cartoon, Photo, and Journalist and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Classified", "Cartoon", "Photo"],
@@ -752,7 +752,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Printer", "Layout Designer", "Source", "Publish"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Layout Designer, Source, and Publish and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Layout Designer, Source, and Publish and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Printer", "Layout Designer", "Source"],
@@ -764,7 +764,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Print", "Distribute", "Subscribe", "Proofread"],
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print, Distribute, Subscribe, and Proofread and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print, Distribute, Subscribe, and Proofread and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Print", "Distribute", "Subscribe"],
@@ -776,7 +776,7 @@
         {
           "chunkNumber": 4,
           "targetWords": "Archive",
-          "scenario": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Archive and choose the option that fits the situation.",
+          "scenario": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Archive and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Archive", "Classified", "Cartoon"],
@@ -789,33 +789,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Newspaper Office",
-      "text": "At the the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Classified, Cartoon, Photo, and Journalist. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Printer, Layout Designer, Source, and Publish. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Print, Distribute, Subscribe, and Proofread. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Archive. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the newspaper office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Classified, Cartoon, Photo, and Journalist. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Printer, Layout Designer, Source, and Publish. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Print, Distribute, Subscribe, and Proofread. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Archive. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classified, Cartoon, Photo, and Journalist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classified, Cartoon, Photo, and Journalist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Classified",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Layout Designer, Source, and Publish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Layout Designer, Source, and Publish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Printer",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print, Distribute, Subscribe, and Proofread and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print, Distribute, Subscribe, and Proofread and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Print",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Archive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the newspaper office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Archive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Archive",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -846,7 +846,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the newspaper office task. Use Classified, Cartoon, Photo, Journalist, Printer, Layout Designer, Source, Publish, Print, Distribute, Subscribe, Proofread, and Archive in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the newspaper office task. Use Classified, Cartoon, Photo, Journalist, Printer, Layout Designer, Source, Publish, Print, Distribute, Subscribe, Proofread, and Archive in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

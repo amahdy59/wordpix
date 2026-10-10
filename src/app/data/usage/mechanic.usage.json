@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Wrench", "Screwdriver", "Socket Set", "Pliers"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wrench", "Screwdriver", "Socket Set"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Jack", "Torque Wrench", "Hammer", "Pry Bar"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Jack", "Torque Wrench", "Hammer"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Multimeter", "Drill", "Engine", "Tire"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Multimeter", "Drill", "Engine"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Brake Pad", "Battery", "Alternator"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Brake Pad", "Battery", "Alternator"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Mechanic: Practical Information",
-      "text": "At the the mechanic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wrench, Screwdriver, Socket Set, and Pliers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Jack, Torque Wrench, Hammer, and Pry Bar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Multimeter, Drill, Engine, and Tire. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Pad, Battery, and Alternator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wrench, Screwdriver, Socket Set, and Pliers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Jack, Torque Wrench, Hammer, and Pry Bar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Multimeter, Drill, Engine, and Tire. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Pad, Battery, and Alternator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wrench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Jack",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Multimeter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Brake Pad",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mechanic task. Use Wrench, Screwdriver, Socket Set, Pliers, Jack, Torque Wrench, Hammer, Pry Bar, Multimeter, Drill, Engine, Tire, Brake Pad, Battery, and Alternator in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Wrench, Screwdriver, Socket Set, Pliers, Jack, Torque Wrench, Hammer, Pry Bar, Multimeter, Drill, Engine, Tire, Brake Pad, Battery, and Alternator in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Radiator", "Muffler", "Spark Plug", "Air Filter"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Radiator", "Muffler", "Spark Plug"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Oil Filter", "Transmission", "Suspension", "Exhaust"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Oil Filter", "Transmission", "Suspension"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Cooling System", "Steering", "Fuel System", "Electrical"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cooling System", "Steering", "Fuel System"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Brakes", "Drivetrain", "Ac System"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Brakes", "Drivetrain", "Ac System"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Mechanic",
-      "text": "At the the mechanic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Radiator, Muffler, Spark Plug, and Air Filter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Oil Filter, Transmission, Suspension, and Exhaust. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cooling System, Steering, Fuel System, and Electrical. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brakes, Drivetrain, and Ac System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Radiator, Muffler, Spark Plug, and Air Filter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Oil Filter, Transmission, Suspension, and Exhaust. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cooling System, Steering, Fuel System, and Electrical. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brakes, Drivetrain, and Ac System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Radiator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Oil Filter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cooling System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Brakes",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mechanic task. Use Radiator, Muffler, Spark Plug, Air Filter, Oil Filter, Transmission, Suspension, Exhaust, Cooling System, Steering, Fuel System, Electrical, Brakes, Drivetrain, and Ac System in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Radiator, Muffler, Spark Plug, Air Filter, Oil Filter, Transmission, Suspension, Exhaust, Cooling System, Steering, Fuel System, Electrical, Brakes, Drivetrain, and Ac System in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lift", "Diagnostic Scanner", "Air Compressor", "Creeper"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lift", "Diagnostic Scanner", "Air Compressor"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Toolbox", "Oil Drain", "Tire Changer", "Balancer"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Toolbox", "Oil Drain", "Tire Changer"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Welder", "Grinder", "Motor Oil", "Coolant"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Welder", "Grinder", "Motor Oil"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Brake Fluid", "Transmission Fluid", "Grease"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Brake Fluid", "Transmission Fluid", "Grease"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the mechanic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lift, Diagnostic Scanner, Air Compressor, and Creeper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Toolbox, Oil Drain, Tire Changer, and Balancer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Welder, Grinder, Motor Oil, and Coolant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Fluid, Transmission Fluid, and Grease. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lift, Diagnostic Scanner, Air Compressor, and Creeper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Toolbox, Oil Drain, Tire Changer, and Balancer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Welder, Grinder, Motor Oil, and Coolant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Fluid, Transmission Fluid, and Grease. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lift",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Toolbox",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Welder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Brake Fluid",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mechanic task. Use Lift, Diagnostic Scanner, Air Compressor, Creeper, Toolbox, Oil Drain, Tire Changer, Balancer, Welder, Grinder, Motor Oil, Coolant, Brake Fluid, Transmission Fluid, and Grease in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Lift, Diagnostic Scanner, Air Compressor, Creeper, Toolbox, Oil Drain, Tire Changer, Balancer, Welder, Grinder, Motor Oil, Coolant, Brake Fluid, Transmission Fluid, and Grease in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Gasket", "Bolt", "Nut", "Washer"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gasket", "Bolt", "Nut"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Hose Clamp", "Oil Change", "Tire Rotation", "Brake Repair"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hose Clamp", "Oil Change", "Tire Rotation"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Tune Up", "Alignment", "Inspection", "Bodywork"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tune Up", "Alignment", "Inspection"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Paint Job", "Tow Truck", "Estimate"],
-          "scenario": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.",
+          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Paint Job", "Tow Truck", "Estimate"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "The Mechanic: Practical Information",
-      "text": "At the the mechanic, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Gasket, Bolt, Nut, and Washer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hose Clamp, Oil Change, Tire Rotation, and Brake Repair. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tune Up, Alignment, Inspection, and Bodywork. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Paint Job, Tow Truck, and Estimate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Gasket, Bolt, Nut, and Washer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hose Clamp, Oil Change, Tire Rotation, and Brake Repair. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tune Up, Alignment, Inspection, and Bodywork. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Paint Job, Tow Truck, and Estimate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gasket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hose Clamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tune Up",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Paint Job",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the mechanic task. Use Gasket, Bolt, Nut, Washer, Hose Clamp, Oil Change, Tire Rotation, Brake Repair, Tune Up, Alignment, Inspection, Bodywork, Paint Job, Tow Truck, and Estimate in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Gasket, Bolt, Nut, Washer, Hose Clamp, Oil Change, Tire Rotation, Brake Repair, Tune Up, Alignment, Inspection, Bodywork, Paint Job, Tow Truck, and Estimate in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

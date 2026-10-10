@@ -1,14 +1,61 @@
 {
-  "version": "0.1.10",
+  "version": "0.1.11",
   "notes": [
-    "Clear visual vocabulary references with descriptive captions.",
-    "Reviewed images can support more than one compatible lesson question."
+    "More precise airport phrases and clearer 3D printing explanations.",
+    "Lesson questions now include the context needed to answer them."
   ],
   "notesAr": [
-    "مراجع بصرية واضحة للمفردات مع أوصاف دقيقة للصور.",
-    "يمكن للصورة التي تمت مراجعتها دعم أكثر من سؤال متوافق في الدروس."
+    "عبارات أدق للمطار وشروح أوضح لمفردات الطباعة ثلاثية الأبعاد.",
+    "تتضمن أسئلة الدروس الآن السياق اللازم للإجابة عنها."
   ],
   "releases": [
+    {
+      "id": "0.1.11",
+      "version": "0.1.11",
+      "date": "2026-10-10",
+      "title": {
+        "en": "Clearer language and practice",
+        "ar": "لغة وتدريبات أوضح"
+      },
+      "changes": [
+        {
+          "id": "airport-language-precision",
+          "category": "fixed",
+          "en": "Airport expressions now use flight-specific language, with matching Arabic meanings and clearer grammar patterns.",
+          "ar": "تستخدم عبارات المطار الآن لغة خاصة بالرحلات الجوية، مع معانٍ عربية مطابقة وأنماط نحوية أوضح."
+        },
+        {
+          "id": "printer-context-readings",
+          "category": "improved",
+          "en": "3D Printer Lab situations explain concrete parts and design tasks instead of repeating vocabulary lists.",
+          "ar": "تشرح مواقف مختبر الطباعة ثلاثية الأبعاد أجزاء فعلية ومهام تصميم، بدلًا من تكرار قوائم المفردات."
+        },
+        {
+          "id": "usage-question-context",
+          "category": "fixed",
+          "en": "Updated classroom, office, fruit, vegetable and shopping questions include their situation and agree with the intended answer. Supermarket readings retain the lesson vocabulary in coherent contexts.",
+          "ar": "تتضمن الأسئلة المحدّثة عن الفصل والمكتب والفواكه والخضروات والتسوّق مواقفها وتتوافق مع الإجابة المقصودة. وتحافظ قراءات السوبرماركت على مفردات الدرس ضمن سياقات مترابطة."
+        },
+        {
+          "id": "shopping-and-role-senses",
+          "category": "fixed",
+          "en": "Market situations distinguish pepper as a spice and dishwasher as a restaurant worker. Shopping questions use written context for quantities, offers and product labels.",
+          "ar": "تميّز مواقف السوق بين الفلفل بوصفه تابلًا وعامل غسل الأطباق بوصفه موظفًا في المطعم. وتستخدم أسئلة التسوّق السياق المكتوب للكميات والعروض وملصقات المنتجات."
+        },
+        {
+          "id": "learner-initial-without-failed-image",
+          "category": "fixed",
+          "en": "Home and Profile show your initial immediately, with an English or Arabic screen-reader name, without waiting for a missing portrait image.",
+          "ar": "تعرض صفحتا الرئيسية والملف الشخصي الحرف الأول من اسمك فورًا، مع وصف لقارئ الشاشة بالإنجليزية أو العربية، دون انتظار صورة شخصية غير موجودة."
+        },
+        {
+          "id": "duplicate-article-copy",
+          "category": "fixed",
+          "en": "Repeated wording has been corrected in readings while preserving established image references.",
+          "ar": "صُححت الصياغة المكررة في القراءات مع الحفاظ على مراجع الصور المعتمدة."
+        }
+      ]
+    },
     {
       "id": "0.1.10",
       "version": "0.1.10",

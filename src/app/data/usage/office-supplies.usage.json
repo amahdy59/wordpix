@@ -58,7 +58,7 @@
             "options": ["Pen", "Pencil", "Highlighter"],
             "expectedAnswer": "Pen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Pen as the central item; include Pen, Pencil, and Highlighter naturally where visually appropriate, but make the real-world use of Pen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: On the executive conference table, an elegant black rollerball pen rests beside a signature document ready for signing. Question: Which writing instrument with fluid ink is used to sign the official document? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -70,7 +70,7 @@
             "options": ["Eraser", "Mechanical Pencil", "Fountain Pen"],
             "expectedAnswer": "Eraser"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Eraser as the central item; include Eraser, Mechanical Pencil, and Fountain Pen naturally where visually appropriate, but make the real-world use of Eraser the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To remove a pencil sketch mark without damaging the drafting paper, the designer uses a soft white vinyl eraser. Question: Which tool cleanly removes graphite pencil marks from paper? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -82,7 +82,7 @@
             "options": ["Correction Tape", "Whiteboard Marker", "Paper"],
             "expectedAnswer": "Correction Tape"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Correction Tape as the central item; include Correction Tape, Whiteboard Marker, and Paper naturally where visually appropriate, but make the real-world use of Correction Tape the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To quickly mask a typed typo on a printed invoice, the accountant glides a compact dispenser of white correction tape across the line. Question: Which handheld dispenser applies an opaque white strip to cover ink errors instantly? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -94,16 +94,16 @@
             "options": ["Legal Pad", "Sticky Note", "Index Card"],
             "expectedAnswer": "Legal Pad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Legal Pad as the central item; include Legal Pad, Sticky Note, and Index Card naturally where visually appropriate, but make the real-world use of Legal Pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: During the client meeting, the attorney takes quick legal notes on a classic yellow lined legal pad with a stiff cardboard backing. Question: Which ruled yellow paper tablet is commonly used for taking detailed business and legal notes? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Office Supplies",
-      "text": "At the office supplies, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Pen, Pencil, Highlighter, and Marker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Eraser, Mechanical Pencil, Fountain Pen, and Felt-Tip Pen. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Correction Tape, Whiteboard Marker, Paper, and Notebook. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Legal Pad, Sticky Note, and Index Card. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Office Supplies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Office supplies 1: Preparing and organising work",
+      "text": "Mina prepares notes for an office meeting. She writes with a pen and sketches a plan with a pencil. A highlighter marks an important line, while a marker and whiteboard marker stay beside the board. An eraser helps her change the sketch. Her case holds a mechanical pencil, fountain pen and felt-tip pen. She uses correction tape on a paper copy, then puts her notebook and legal pad beside it. A sticky note marks a page, and an index card holds a question.",
+      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
     },
     "exercises": [
       {
@@ -135,6 +135,20 @@
         "contextTag": "scene-4"
       },
       {
+        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Pen, Pencil, Highlighter, Marker, Eraser, Mechanical Pencil, Fountain Pen, Felt-Tip Pen, Correction Tape, Whiteboard Marker, Paper, Notebook, Legal Pad, Sticky Note, and Index Card in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
+      },
+      {
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Pen” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "office-supplies-1-transfer"
+      },
+      {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
         "answer": "The main case described"
       },
@@ -157,13 +171,6 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Chat” in a sentence connected to this lesson.",
         "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Pen, Pencil, Highlighter, Marker, Eraser, Mechanical Pencil, Fountain Pen, Felt-Tip Pen, Correction Tape, Whiteboard Marker, Paper, Notebook, Legal Pad, Sticky Note, and Index Card in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -232,7 +239,7 @@
             "options": ["Envelope", "Folder", "Binder"],
             "expectedAnswer": "Envelope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Envelope as the central item; include Envelope, Folder, and Binder naturally where visually appropriate, but make the real-world use of Envelope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To send a confidential contract by courier, the office administrator slips the folded document into a crisp white mailing envelope. Question: Which paper packet encloses and protects letters and contracts during mailing? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -244,7 +251,7 @@
             "options": ["Label", "Stapler", "Paper Clip"],
             "expectedAnswer": "Label"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Label as the central item; include Label, Stapler, and Paper Clip naturally where visually appropriate, but make the real-world use of Label the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To identify the project archive box, an office assistant peels a self-adhesive white label from the backing sheet. Question: Which sticky paper tag is adhered to folders and boxes to mark their contents? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -256,7 +263,7 @@
             "options": ["Rubber Band", "Pushpin", "Thumbtack"],
             "expectedAnswer": "Rubber Band"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Rubber Band as the central item; include Rubber Band, Pushpin, and Thumbtack naturally where visually appropriate, but make the real-world use of Rubber Band the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To keep a stack of client receipts bundled securely, the accountant snaps a durable rubber band around the middle. Question: Which elastic band keeps loose receipts and cards gathered tightly together? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -268,16 +275,16 @@
             "options": ["Glue Stick", "Fastener", "Magnet"],
             "expectedAnswer": "Glue Stick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Glue Stick as the central item; include Glue Stick, Fastener, and Magnet naturally where visually appropriate, but make the real-world use of Glue Stick the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To mount receipts neatly onto an expense report, the clerk applies a clean swipe of a solid non-toxic glue stick. Question: Which twist-up cylindrical adhesive applies solid glue cleanly without wrinkling paper? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Office Supplies",
-      "text": "At the office supplies, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Envelope, Folder, Binder, and Manila Folder. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Label, Stapler, Paper Clip, and Binder Clip. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Rubber Band, Pushpin, Thumbtack, and Tape. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Glue Stick, Fastener, and Magnet. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Office Supplies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Office supplies 2: Preparing and organising work",
+      "text": "Mina sorts the meeting papers before sending them. She puts a folder in a binder and keeps a manila folder for receipts. A label identifies the envelope. A stapler holds several pages together; a paper clip is enough for a short note. A binder clip and rubber band secure thicker bundles. A pushpin and thumbtack stay on the noticeboard. She keeps tape, a glue stick and a spare fastener in a drawer. A magnet holds the meeting reminder on a metal board.",
+      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
     },
     "exercises": [
       {
@@ -309,6 +316,20 @@
         "contextTag": "scene-4"
       },
       {
+        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Envelope, Folder, Binder, Manila Folder, Label, Stapler, Paper Clip, Binder Clip, Rubber Band, Pushpin, Thumbtack, Tape, Glue Stick, Fastener, and Magnet in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
+      },
+      {
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Envelope” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "office-supplies-2-transfer"
+      },
+      {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
         "answer": "The main case described"
       },
@@ -331,13 +352,6 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Pen” in a sentence connected to this lesson.",
         "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Envelope, Folder, Binder, Manila Folder, Label, Stapler, Paper Clip, Binder Clip, Rubber Band, Pushpin, Thumbtack, Tape, Glue Stick, Fastener, and Magnet in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -406,7 +420,7 @@
             "options": ["Desk Organizer", "Pencil Cup", "Tape Dispenser"],
             "expectedAnswer": "Desk Organizer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Desk Organizer as the central item; include Desk Organizer, Pencil Cup, and Tape Dispenser naturally where visually appropriate, but make the real-world use of Desk Organizer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To eliminate desktop clutter, all pens, paperclips, and note pads are arranged neatly in a compartmentalized wooden desk organizer. Question: Which multi-compartment caddy keeps daily desktop stationery arranged and within easy reach? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -418,7 +432,7 @@
             "options": ["Desk Lamp", "Mouse Pad", "Wrist Rest"],
             "expectedAnswer": "Desk Lamp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Desk Lamp as the central item; include Desk Lamp, Mouse Pad, and Wrist Rest naturally where visually appropriate, but make the real-world use of Desk Lamp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: Working late at the office, the consultant illuminates his paperwork with the warm, focused beam of an adjustable LED desk lamp. Question: Which adjustable task light directs focused illumination onto a work surface? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -430,7 +444,7 @@
             "options": ["Cable Organizer", "Desk Calendar", "Stamp"],
             "expectedAnswer": "Cable Organizer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Cable Organizer as the central item; include Cable Organizer, Desk Calendar, and Stamp naturally where visually appropriate, but make the real-world use of Cable Organizer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: Along the back edge of the workstation, a silicone cable organizer keeps phone chargers and monitor cords neatly separated and off the floor. Question: Which channel clip manages charging cords and prevents messy cable tangles? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -442,16 +456,16 @@
             "options": ["Packing Tape", "Bubble Wrap", "Box"],
             "expectedAnswer": "Packing Tape"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Packing Tape as the central item; include Packing Tape, Bubble Wrap, and Box naturally where visually appropriate, but make the real-world use of Packing Tape the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: Before dispatching the outgoing carton of manuals, the mailroom clerk seals the top flaps with heavy-duty brown packing tape. Question: Which wide, reinforced adhesive roll securely seals heavy cardboard boxes for shipping? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Office Supplies",
-      "text": "At the office supplies, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Desk Organizer, Pencil Cup, Tape Dispenser, and Letter Tray. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Desk Lamp, Mouse Pad, Wrist Rest, and Monitor Stand. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Cable Organizer, Desk Calendar, Stamp, and Shipping Label. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Packing Tape, Bubble Wrap, and Box. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Office Supplies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Office supplies 3: Preparing and organising work",
+      "text": "Mina clears the shared desk. She puts pens in a pencil cup inside the desk organizer and papers in the letter tray. A tape dispenser sits beside the desk lamp. The mouse pad and wrist rest stay near the keyboard; the monitor stand raises the screen and a cable organizer keeps wires together. She checks the desk calendar before preparing a parcel. A shipping label goes on the box. Packing tape closes it, while bubble wrap protects the contents. A stamp is ready for a separate letter.",
+      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
     },
     "exercises": [
       {
@@ -483,6 +497,20 @@
         "contextTag": "scene-4"
       },
       {
+        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Desk Organizer, Pencil Cup, Tape Dispenser, Letter Tray, Desk Lamp, Mouse Pad, Wrist Rest, Monitor Stand, Cable Organizer, Desk Calendar, Stamp, Shipping Label, Packing Tape, Bubble Wrap, and Box in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
+      },
+      {
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Desk Organizer” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "office-supplies-3-transfer"
+      },
+      {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
         "answer": "The main case described"
       },
@@ -505,13 +533,6 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Envelope” in a sentence connected to this lesson.",
         "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Desk Organizer, Pencil Cup, Tape Dispenser, Letter Tray, Desk Lamp, Mouse Pad, Wrist Rest, Monitor Stand, Cable Organizer, Desk Calendar, Stamp, Shipping Label, Packing Tape, Bubble Wrap, and Box in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -560,7 +581,7 @@
             "options": ["Padded Envelope", "Return Label", "Postage Meter"],
             "expectedAnswer": "Padded Envelope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Padded Envelope as the central item; include Padded Envelope, Return Label, and Postage Meter naturally where visually appropriate, but make the real-world use of Padded Envelope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To mail delicate electronic components safely, the clerk encloses them in a bubble-lined cushioned padded envelope. Question: Which protective mailing pouch contains internal bubble cushioning to safeguard fragile items? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
@@ -572,16 +593,16 @@
             "options": ["Letter Opener", "Padded Envelope", "Return Label"],
             "expectedAnswer": "Letter Opener"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Letter Opener as the central item; include Letter Opener, Padded Envelope, and Return Label naturally where visually appropriate, but make the real-world use of Letter Opener the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageBrief": "Adult learning visual support for this exact situation: To slice open incoming correspondence neatly without tearing the documents inside, the secretary uses a slim stainless steel letter opener. Question: Which slender bladed desktop tool cleanly slits open paper envelope seams? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
           "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Office Supplies",
-      "text": "At the office supplies, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Padded Envelope, Return Label, Postage Meter, and Mail Slot. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Letter Opener. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Office Supplies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Office supplies 4: Preparing and organising work",
+      "text": "Mina receives a small parcel in a padded envelope. The return label identifies where it came from. At the office, a postage meter is used to prepare outgoing mail, and a mail slot collects letters. Mina keeps a letter opener on the desk so that she can open ordinary envelopes neatly. She checks the contents before filing the papers.",
+      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
     },
     "exercises": [
       {
@@ -597,6 +618,20 @@
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Padded Envelope, Return Label, Postage Meter, Mail Slot, and Letter Opener in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
+      },
+      {
+        "prompt": "Ask someone to explain a lesson word in a new situation.",
+        "answer": "What does “Padded Envelope” mean here?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "office-supplies-4-transfer"
       },
       {
         "prompt": "Gist: What decision, issue, or consequence is central to the text?",
@@ -621,13 +656,6 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Desk Organizer” in a sentence connected to this lesson.",
         "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Padded Envelope, Return Label, Postage Meter, Mail Slot, and Letter Opener in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

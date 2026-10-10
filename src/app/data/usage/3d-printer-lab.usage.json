@@ -52,118 +52,101 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Print Head", "Build Plate", "Filament Spool", "Extruder"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print Head, Build Plate, Filament Spool, and Extruder and choose the option that fits the situation.",
+          "scenario": "During a printer demonstration, the technician identifies the moving print head above the build plate. A filament spool supplies material to the extruder.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which moving assembly sits above the build plate?",
             "options": ["Print Head", "Build Plate", "Filament Spool"],
             "expectedAnswer": "Print Head"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Print Head as the central item; include Print Head, Build Plate, and Filament Spool naturally where visually appropriate, but make the real-world use of Print Head the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Print Head. Context: During a printer demonstration, the technician identifies the moving print head above the build plate. A filament spool supplies material to the extruder. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Nozzle", "Stepper Motor", "Belt", "Guide Rail"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nozzle, Stepper Motor, Belt, and Guide Rail and choose the option that fits the situation.",
+          "scenario": "The technician points to the nozzle, the small outlet where melted filament leaves the print head. A stepper motor moves the belt along the guide rail.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What is the small outlet where melted filament leaves the print head?",
             "options": ["Nozzle", "Stepper Motor", "Belt"],
             "expectedAnswer": "Nozzle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Nozzle as the central item; include Nozzle, Stepper Motor, and Belt naturally where visually appropriate, but make the real-world use of Nozzle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Nozzle. Context: The technician points to the nozzle, the small outlet where melted filament leaves the print head. A stepper motor moves the belt along the guide rail. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cooling Fan", "LCD Screen", "PLA Filament", "ABS Filament"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling Fan, LCD Screen, PLA Filament, and ABS Filament and choose the option that fits the situation.",
+          "scenario": "The technician identifies the cooling fan beside the print head and checks the LCD screen. PLA filament and ABS filament are stored separately.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which part moves air beside the print head?",
             "options": ["Cooling Fan", "LCD Screen", "PLA Filament"],
             "expectedAnswer": "Cooling Fan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cooling Fan as the central item; include Cooling Fan, LCD Screen, and PLA Filament naturally where visually appropriate, but make the real-world use of Cooling Fan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Cooling Fan. Context: The technician identifies the cooling fan beside the print head and checks the LCD screen. PLA filament and ABS filament are stored separately. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["PETG Filament", "Resin", "Nylon"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare PETG Filament, Resin, and Nylon and choose the option that fits the situation.",
+          "scenario": "The lab stores PETG filament on a spool. Resin is kept in a closed container for a different printing process, and nylon is another available material.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which named material is stored on the spool in this description?",
             "options": ["PETG Filament", "Resin", "Nylon"],
             "expectedAnswer": "PETG Filament"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating PETG Filament through a realistic adult task; include PETG Filament, Resin, and Nylon naturally where visually appropriate, but make the real-world use of PETG Filament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for PETG Filament. Context: The lab stores PETG filament on a spool. Resin is kept in a closed container for a different printing process, and nylon is another available material. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The 3D Printer Lab",
-      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Print Head, Build Plate, Filament Spool, and Extruder. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Nozzle, Stepper Motor, Belt, and Guide Rail. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Cooling Fan, LCD Screen, PLA Filament, and ABS Filament. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers PETG Filament, Resin, and Nylon. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "3D printer lab 1: Understanding a design task",
+      "text": "A designer visits the lab to compare printing methods. On one machine, a filament spool supplies the extruder, and the print head moves above the build plate. Melted material leaves through the nozzle. A stepper motor drives a belt along a guide rail, while a cooling fan moves air near the print. The LCD screen shows information about the job. The lab keeps PLA filament, ABS filament, PETG filament and nylon in separate storage areas. Resin belongs to a different printing process. The designer records the part names and asks about material differences before choosing a sample.",
+      "imageBrief": "Unbranded 3D printing workspace; contextual support only."
     },
     "exercises": [
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print Head, Build Plate, Filament Spool, and Extruder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "During a printer demonstration, the technician identifies the moving print head above the build plate. A filament spool supplies material to the extruder.\nWhich moving assembly sits above the build plate?",
         "answer": "Print Head",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nozzle, Stepper Motor, Belt, and Guide Rail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The technician points to the nozzle, the small outlet where melted filament leaves the print head. A stepper motor moves the belt along the guide rail.\nWhat is the small outlet where melted filament leaves the print head?",
         "answer": "Nozzle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling Fan, LCD Screen, PLA Filament, and ABS Filament and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The technician identifies the cooling fan beside the print head and checks the LCD screen. PLA filament and ABS filament are stored separately.\nWhich part moves air beside the print head?",
         "answer": "Cooling Fan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare PETG Filament, Resin, and Nylon and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The lab stores PETG filament on a spool. Resin is kept in a closed container for a different printing process, and nylon is another available material.\nWhich named material is stored on the spool in this description?",
         "answer": "PETG Filament",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Print Head"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Charging Speed” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Print Head, Build Plate, Filament Spool, Extruder, Nozzle, Stepper Motor, Belt, Guide Rail, Cooling Fan, LCD Screen, PLA Filament, ABS Filament, PETG Filament, Resin, and Nylon in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one part of the design task using two lesson words.",
+        "answer": "During a printer demonstration, the technician identifies the moving print head above the build plate. A filament spool supplies material to the extruder.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-1-personal-use"
+      },
+      {
+        "prompt": "Ask a colleague one question about a different model using a lesson word.",
+        "answer": "Could you explain how print head relates to this model?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-1-transfer"
       }
     ],
     "video": {
@@ -231,118 +214,101 @@
             "Metal Filament",
             "Support Material"
           ],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flexible Filament, Wood Filament, Metal Filament, and Support Material and choose the option that fits the situation.",
+          "scenario": "For a flexible sample, the designer chooses flexible filament. Wood filament and metal filament samples are displayed beside a piece of support material.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "What material does the designer choose for the flexible sample?",
             "options": ["Flexible Filament", "Wood Filament", "Metal Filament"],
             "expectedAnswer": "Flexible Filament"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Flexible Filament through a realistic adult task; include Flexible Filament, Wood Filament, and Metal Filament naturally where visually appropriate, but make the real-world use of Flexible Filament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Flexible Filament. Context: For a flexible sample, the designer chooses flexible filament. Wood filament and metal filament samples are displayed beside a piece of support material. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Glue Stick", "Computer", "3D Software", "Mouse"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Glue Stick, Computer, 3D Software, and Mouse and choose the option that fits the situation.",
+          "scenario": "A glue stick rests beside the computer. The designer moves the mouse to inspect a model in 3D software, then picks up the glue stick for a separate craft task.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item does the designer pick up for the craft task?",
             "options": ["Glue Stick", "Computer", "3D Software"],
             "expectedAnswer": "Glue Stick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Glue Stick as the central item; include Glue Stick, Computer, and 3D Software naturally where visually appropriate, but make the real-world use of Glue Stick the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Glue Stick. Context: A glue stick rests beside the computer. The designer moves the mouse to inspect a model in 3D software, then picks up the glue stick for a separate craft task. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Graphics Tablet", "Ruler", "Caliper", "Protractor"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphics Tablet, Ruler, Caliper, and Protractor and choose the option that fits the situation.",
+          "scenario": "The designer draws a shape on a graphics tablet. A ruler, caliper and protractor lie beside it for comparing lengths and angles.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What device does the designer draw on?",
             "options": ["Graphics Tablet", "Ruler", "Caliper"],
             "expectedAnswer": "Graphics Tablet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Graphics Tablet as the central item; include Graphics Tablet, Ruler, and Caliper naturally where visually appropriate, but make the real-world use of Graphics Tablet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Graphics Tablet. Context: The designer draws a shape on a graphics tablet. A ruler, caliper and protractor lie beside it for comparing lengths and angles. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Grid Paper", "Sketchbook", "Reference Model"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid Paper, Sketchbook, and Reference Model and choose the option that fits the situation.",
+          "scenario": "The designer sketches a plan on grid paper before adding it to a sketchbook. A reference model sits beside the sheet.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What paper does the designer use for the first sketch?",
             "options": ["Grid Paper", "Sketchbook", "Reference Model"],
             "expectedAnswer": "Grid Paper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Grid Paper as the central item; include Grid Paper, Sketchbook, and Reference Model naturally where visually appropriate, but make the real-world use of Grid Paper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Grid Paper. Context: The designer sketches a plan on grid paper before adding it to a sketchbook. A reference model sits beside the sheet. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The 3D Printer Lab",
-      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Flexible Filament, Wood Filament, Metal Filament, and Support Material. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Glue Stick, Computer, 3D Software, and Mouse. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graphics Tablet, Ruler, Caliper, and Protractor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Grid Paper, Sketchbook, and Reference Model. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "3D printer lab 2: Understanding a design task",
+      "text": "The designer prepares a small model on the computer using 3D software and a mouse. A graphics tablet helps with drawing. The first plan is on grid paper in a sketchbook, beside a reference model. A ruler, caliper and protractor help compare lengths and angles. Flexible filament suits a sample that needs to bend; wood filament and metal filament give other material options. Support material is considered for overhanging sections. A glue stick remains with the craft supplies. The designer checks the measurements before saving the model.",
+      "imageBrief": "Unbranded 3D printing workspace; contextual support only."
     },
     "exercises": [
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flexible Filament, Wood Filament, Metal Filament, and Support Material and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "For a flexible sample, the designer chooses flexible filament. Wood filament and metal filament samples are displayed beside a piece of support material.\nWhat material does the designer choose for the flexible sample?",
         "answer": "Flexible Filament",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Glue Stick, Computer, 3D Software, and Mouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A glue stick rests beside the computer. The designer moves the mouse to inspect a model in 3D software, then picks up the glue stick for a separate craft task.\nWhich item does the designer pick up for the craft task?",
         "answer": "Glue Stick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphics Tablet, Ruler, Caliper, and Protractor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The designer draws a shape on a graphics tablet. A ruler, caliper and protractor lie beside it for comparing lengths and angles.\nWhat device does the designer draw on?",
         "answer": "Graphics Tablet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid Paper, Sketchbook, and Reference Model and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The designer sketches a plan on grid paper before adding it to a sketchbook. A reference model sits beside the sheet.\nWhat paper does the designer use for the first sketch?",
         "answer": "Grid Paper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Flexible Filament"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Print Head” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Flexible Filament, Wood Filament, Metal Filament, Support Material, Glue Stick, Computer, 3D Software, Mouse, Graphics Tablet, Ruler, Caliper, Protractor, Grid Paper, Sketchbook, and Reference Model in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one part of the design task using two lesson words.",
+        "answer": "For a flexible sample, the designer chooses flexible filament. Wood filament and metal filament samples are displayed beside a piece of support material.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-2-personal-use"
+      },
+      {
+        "prompt": "Ask a colleague one question about a different model using a lesson word.",
+        "answer": "Could you explain how flexible filament relates to this model?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-2-transfer"
       }
     ],
     "video": {
@@ -405,118 +371,101 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sandpaper", "File", "Craft Knife", "Pliers"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandpaper, File, Craft Knife, and Pliers and choose the option that fits the situation.",
+          "scenario": "The finished sample has a rough edge. The technician identifies a sheet of sandpaper for smoothing it; a file, craft knife and pliers remain in the tool tray.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which sheet is identified for smoothing the rough edge?",
             "options": ["Sandpaper", "File", "Craft Knife"],
             "expectedAnswer": "Sandpaper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Sandpaper as the central item; include Sandpaper, File, and Craft Knife naturally where visually appropriate, but make the real-world use of Sandpaper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Sandpaper. Context: The finished sample has a rough edge. The technician identifies a sheet of sandpaper for smoothing it; a file, craft knife and pliers remain in the tool tray. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tweezers", "Paint", "Paintbrush", "Primer"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tweezers, Paint, Paintbrush, and Primer and choose the option that fits the situation.",
+          "scenario": "The technician uses tweezers to pick up a tiny decorative part. Paint, a paintbrush and primer are set aside for a later finishing task.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which tool picks up the tiny part?",
             "options": ["Tweezers", "Paint", "Paintbrush"],
             "expectedAnswer": "Tweezers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Tweezers as the central item; include Tweezers, Paint, and Paintbrush naturally where visually appropriate, but make the real-world use of Tweezers the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Tweezers. Context: The technician uses tweezers to pick up a tiny decorative part. Paint, a paintbrush and primer are set aside for a later finishing task. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Acetone", "UV Curing Lamp", "Figurine", "Phone Case"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acetone, UV Curing Lamp, Figurine, and Phone Case and choose the option that fits the situation.",
+          "scenario": "A closed container marked in the written inventory as acetone is stored separately from a UV curing lamp. A figurine and phone case are finished display samples.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which substance is kept in the closed container?",
             "options": ["Acetone", "UV Curing Lamp", "Figurine"],
             "expectedAnswer": "Acetone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Acetone as the central item; include Acetone, UV Curing Lamp, and Figurine naturally where visually appropriate, but make the real-world use of Acetone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Acetone. Context: A closed container marked in the written inventory as acetone is stored separately from a UV curing lamp. A figurine and phone case are finished display samples. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gear", "Bracket", "Vase"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Bracket, and Vase and choose the option that fits the situation.",
+          "scenario": "The display has a gear with teeth around its edge, an angled bracket and a small vase. The designer compares their shapes before choosing a sample.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which displayed object has teeth around its edge?",
             "options": ["Gear", "Bracket", "Vase"],
             "expectedAnswer": "Gear"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Gear as the central item; include Gear, Bracket, and Vase naturally where visually appropriate, but make the real-world use of Gear the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Gear. Context: The display has a gear with teeth around its edge, an angled bracket and a small vase. The designer compares their shapes before choosing a sample. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The 3D Printer Lab",
-      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Sandpaper, File, Craft Knife, and Pliers. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Tweezers, Paint, Paintbrush, and Primer. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Acetone, UV Curing Lamp, Figurine, and Phone Case. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Gear, Bracket, and Vase. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "3D printer lab 3: Understanding a design task",
+      "text": "The team reviews several finished samples: a figurine, phone case, gear, bracket and vase. One sample has a rough edge, so the technician discusses sandpaper and a file. A craft knife, pliers and tweezers are separate tools with different purposes. Paint, a paintbrush and primer are available for suitable finishing work. A UV curing lamp belongs to the resin workflow. Acetone is kept in separate controlled storage. The language task is to identify these items and explain their roles, rather than to follow a treatment or chemical-handling procedure.",
+      "imageBrief": "Unbranded 3D printing workspace; contextual support only."
     },
     "exercises": [
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandpaper, File, Craft Knife, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The finished sample has a rough edge. The technician identifies a sheet of sandpaper for smoothing it; a file, craft knife and pliers remain in the tool tray.\nWhich sheet is identified for smoothing the rough edge?",
         "answer": "Sandpaper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tweezers, Paint, Paintbrush, and Primer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The technician uses tweezers to pick up a tiny decorative part. Paint, a paintbrush and primer are set aside for a later finishing task.\nWhich tool picks up the tiny part?",
         "answer": "Tweezers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acetone, UV Curing Lamp, Figurine, and Phone Case and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A closed container marked in the written inventory as acetone is stored separately from a UV curing lamp. A figurine and phone case are finished display samples.\nWhich substance is kept in the closed container?",
         "answer": "Acetone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Bracket, and Vase and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The display has a gear with teeth around its edge, an angled bracket and a small vase. The designer compares their shapes before choosing a sample.\nWhich displayed object has teeth around its edge?",
         "answer": "Gear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Sandpaper"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Flexible Filament” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Sandpaper, File, Craft Knife, Pliers, Tweezers, Paint, Paintbrush, Primer, Acetone, UV Curing Lamp, Figurine, Phone Case, Gear, Bracket, and Vase in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one part of the design task using two lesson words.",
+        "answer": "The finished sample has a rough edge. The technician identifies a sheet of sandpaper for smoothing it; a file, craft knife and pliers remain in the tool tray.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-3-personal-use"
+      },
+      {
+        "prompt": "Ask a colleague one question about a different model using a lesson word.",
+        "answer": "Could you explain how sandpaper relates to this model?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-3-transfer"
       }
     ],
     "video": {
@@ -579,118 +528,101 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Keychain", "Cookie Cutter", "Whistle", "Chess Piece"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keychain, Cookie Cutter, Whistle, and Chess Piece and choose the option that fits the situation.",
+          "scenario": "The maker attaches a keychain to a set of keys. A cookie cutter, whistle and chess piece are displayed as other small projects.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which project is attached to the keys?",
             "options": ["Keychain", "Cookie Cutter", "Whistle"],
             "expectedAnswer": "Keychain"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Keychain as the central item; include Keychain, Cookie Cutter, and Whistle naturally where visually appropriate, but make the real-world use of Keychain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Keychain. Context: The maker attaches a keychain to a set of keys. A cookie cutter, whistle and chess piece are displayed as other small projects. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Architectural Model", "Workstation", "Storage Shelf", "Ventilation Fan"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Architectural Model, Workstation, Storage Shelf, and Ventilation Fan and choose the option that fits the situation.",
+          "scenario": "An architectural model shows a small building on the workstation. A storage shelf holds spare parts, and a ventilation fan is visible nearby.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What model shows a small building?",
             "options": ["Architectural Model", "Workstation", "Storage Shelf"],
             "expectedAnswer": "Architectural Model"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Architectural Model as the central item; include Architectural Model, Workstation, and Storage Shelf naturally where visually appropriate, but make the real-world use of Architectural Model the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Architectural Model. Context: An architectural model shows a small building on the workstation. A storage shelf holds spare parts, and a ventilation fan is visible nearby. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fire Extinguisher", "Safety Glasses", "Gloves", "Trash Bin"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Extinguisher, Safety Glasses, Gloves, and Trash Bin and choose the option that fits the situation.",
+          "scenario": "During a safety tour, the instructor identifies a fire extinguisher beside the door. Safety glasses and gloves are stored nearby, and a trash bin holds ordinary waste.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item does the instructor identify beside the door?",
             "options": ["Fire Extinguisher", "Safety Glasses", "Gloves"],
             "expectedAnswer": "Fire Extinguisher"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Fire Extinguisher as the central item; include Fire Extinguisher, Safety Glasses, and Gloves naturally where visually appropriate, but make the real-world use of Fire Extinguisher the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Fire Extinguisher. Context: During a safety tour, the instructor identifies a fire extinguisher beside the door. Safety glasses and gloves are stored nearby, and a trash bin holds ordinary waste. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Label Maker", "Zip Bag", "Desiccant Pack"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label Maker, Zip Bag, and Desiccant Pack and choose the option that fits the situation.",
+          "scenario": "The maker uses a label maker to identify a storage box. A zip bag contains a desiccant pack to help keep stored material dry.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device does the maker use to identify the box?",
             "options": ["Label Maker", "Zip Bag", "Desiccant Pack"],
             "expectedAnswer": "Label Maker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Label Maker as the central item; include Label Maker, Zip Bag, and Desiccant Pack naturally where visually appropriate, but make the real-world use of Label Maker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Label Maker. Context: The maker uses a label maker to identify a storage box. A zip bag contains a desiccant pack to help keep stored material dry. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The 3D Printer Lab",
-      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Keychain, Cookie Cutter, Whistle, and Chess Piece. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Architectural Model, Workstation, Storage Shelf, and Ventilation Fan. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Fire Extinguisher, Safety Glasses, Gloves, and Trash Bin. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Label Maker, Zip Bag, and Desiccant Pack. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "3D printer lab 4: Understanding a design task",
+      "text": "The maker arranges a keychain, cookie cutter, whistle and chess piece beside an architectural model. At the workstation, a storage shelf keeps spare parts organised, and a ventilation fan is part of the room setup. During a safety tour, the instructor identifies the fire extinguisher, safety glasses and gloves. Ordinary waste goes into the trash bin. A label maker identifies storage boxes. A zip bag and desiccant pack help organise stored material. The maker records where each item belongs before leaving the lab.",
+      "imageBrief": "Unbranded 3D printing workspace; contextual support only."
     },
     "exercises": [
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keychain, Cookie Cutter, Whistle, and Chess Piece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The maker attaches a keychain to a set of keys. A cookie cutter, whistle and chess piece are displayed as other small projects.\nWhich project is attached to the keys?",
         "answer": "Keychain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Architectural Model, Workstation, Storage Shelf, and Ventilation Fan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An architectural model shows a small building on the workstation. A storage shelf holds spare parts, and a ventilation fan is visible nearby.\nWhat model shows a small building?",
         "answer": "Architectural Model",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Extinguisher, Safety Glasses, Gloves, and Trash Bin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "During a safety tour, the instructor identifies a fire extinguisher beside the door. Safety glasses and gloves are stored nearby, and a trash bin holds ordinary waste.\nWhich item does the instructor identify beside the door?",
         "answer": "Fire Extinguisher",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label Maker, Zip Bag, and Desiccant Pack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The maker uses a label maker to identify a storage box. A zip bag contains a desiccant pack to help keep stored material dry.\nWhich device does the maker use to identify the box?",
         "answer": "Label Maker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Keychain"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sandpaper” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Keychain, Cookie Cutter, Whistle, Chess Piece, Architectural Model, Workstation, Storage Shelf, Ventilation Fan, Fire Extinguisher, Safety Glasses, Gloves, Trash Bin, Label Maker, Zip Bag, and Desiccant Pack in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one part of the design task using two lesson words.",
+        "answer": "The maker attaches a keychain to a set of keys. A cookie cutter, whistle and chess piece are displayed as other small projects.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-4-personal-use"
+      },
+      {
+        "prompt": "Ask a colleague one question about a different model using a lesson word.",
+        "answer": "Could you explain how keychain relates to this model?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-4-transfer"
       }
     ],
     "video": {
@@ -753,118 +685,101 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Frame", "Fan", "Display", "PLA"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Fan, Display, and PLA and choose the option that fits the situation.",
+          "scenario": "The printer’s frame supports the machine. A fan sits beside the print head, and the display shows the job information for a PLA sample.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure supports the machine?",
             "options": ["Frame", "Fan", "Display"],
             "expectedAnswer": "Frame"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Frame as the central item; include Frame, Fan, and Display naturally where visually appropriate, but make the real-world use of Frame the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Frame. Context: The printer’s frame supports the machine. A fan sits beside the print head, and the display shows the job information for a PLA sample. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["ABS", "PETG", "TPU", "Carbon Fiber"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ABS, PETG, TPU, and Carbon Fiber and choose the option that fits the situation.",
+          "scenario": "The materials list includes ABS, PETG and TPU. A separate sample contains carbon fiber. The technician selects ABS for the sample described in the job record.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which material does the technician select in the job record?",
             "options": ["ABS", "PETG", "TPU"],
             "expectedAnswer": "ABS"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the ABS as the central item; include ABS, PETG, and TPU naturally where visually appropriate, but make the real-world use of ABS the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for ABS. Context: The materials list includes ABS, PETG and TPU. A separate sample contains carbon fiber. The technician selects ABS for the sample described in the job record. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wood Fill", "Design", "Slice", "Print"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wood Fill, Design, Slice, and Print and choose the option that fits the situation.",
+          "scenario": "The designer chooses a wood fill material for a decorative sample. After finishing the design, the next software task is to slice the model before the print starts.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which material does the designer choose for the decorative sample?",
             "options": ["Wood Fill", "Design", "Slice"],
             "expectedAnswer": "Wood Fill"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wood Fill as the central item; include Wood Fill, Design, and Slice naturally where visually appropriate, but make the real-world use of Wood Fill the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Wood Fill. Context: The designer chooses a wood fill material for a decorative sample. After finishing the design, the next software task is to slice the model before the print starts. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Layer", "Support", "Infill"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layer, Support, and Infill and choose the option that fits the situation.",
+          "scenario": "The sample is built one layer at a time. Support holds an overhanging section, while infill forms a pattern inside the model.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What is each thin level of the sample called?",
             "options": ["Layer", "Support", "Infill"],
             "expectedAnswer": "Layer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Layer as the central item; include Layer, Support, and Infill naturally where visually appropriate, but make the real-world use of Layer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Layer. Context: The sample is built one layer at a time. Support holds an overhanging section, while infill forms a pattern inside the model. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The 3D Printer Lab",
-      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Frame, Fan, Display, and PLA. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers ABS, PETG, TPU, and Carbon Fiber. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Wood Fill, Design, Slice, and Print. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Layer, Support, and Infill. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "3D printer lab 5: Understanding a design task",
+      "text": "The designer starts with a digital design, then uses software to slice it before sending a print job. The printer’s frame supports the machine; a fan and display have separate roles. The materials list includes PLA, ABS, PETG, TPU, carbon fiber and wood fill. The designer compares these choices for the sample. During printing, the model forms one layer at a time. Support holds an overhanging section, and infill creates a pattern inside. The designer records the chosen material and checks the sample against the plan.",
+      "imageBrief": "Unbranded 3D printing workspace; contextual support only."
     },
     "exercises": [
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Fan, Display, and PLA and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The printer’s frame supports the machine. A fan sits beside the print head, and the display shows the job information for a PLA sample.\nWhich structure supports the machine?",
         "answer": "Frame",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ABS, PETG, TPU, and Carbon Fiber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The materials list includes ABS, PETG and TPU. A separate sample contains carbon fiber. The technician selects ABS for the sample described in the job record.\nWhich material does the technician select in the job record?",
         "answer": "ABS",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wood Fill, Design, Slice, and Print and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The designer chooses a wood fill material for a decorative sample. After finishing the design, the next software task is to slice the model before the print starts.\nWhich material does the designer choose for the decorative sample?",
         "answer": "Wood Fill",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layer, Support, and Infill and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The sample is built one layer at a time. Support holds an overhanging section, while infill forms a pattern inside the model.\nWhat is each thin level of the sample called?",
         "answer": "Layer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Frame"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Keychain” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Frame, Fan, Display, PLA, ABS, PETG, TPU, Carbon Fiber, Wood Fill, Design, Slice, Print, Layer, Support, and Infill in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one part of the design task using two lesson words.",
+        "answer": "The printer’s frame supports the machine. A fan sits beside the print head, and the display shows the job information for a PLA sample.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-5-personal-use"
+      },
+      {
+        "prompt": "Ask a colleague one question about a different model using a lesson word.",
+        "answer": "Could you explain how frame relates to this model?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-5-transfer"
       }
     ],
     "video": {
@@ -895,61 +810,44 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Calibrate", "Prototype"],
-          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Calibrate, and Prototype and choose the option that fits the situation.",
+          "scenario": "Before assessing a prototype, the technician checks the printer’s accuracy. The job record calls this check “calibrate”, meaning adjust or check the machine against a known reference.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which verb describes the accuracy check in the job record?",
             "options": ["Calibrate", "Prototype", "Option 1"],
             "expectedAnswer": "Calibrate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Calibrate through a realistic adult task; include Calibrate, Prototype, and Option 1 naturally where visually appropriate, but make the real-world use of Calibrate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "A clear adult-learning reference for Calibrate. Context: Before assessing a prototype, the technician checks the printer’s accuracy. The job record calls this check “calibrate”, meaning adjust or check the machine against a known reference. Show actual physical structure without labels, logos, readable screen text or people. Abstract materials, processes and hidden properties require the written context; do not imply a photograph proves them.",
+          "imageAlt": "3D printing vocabulary reference; describe only visible details after review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The 3D Printer Lab",
-      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Calibrate and Prototype. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "3D printer lab 6: Understanding a design task",
+      "text": "The technician wants to compare a prototype with its design. Before assessing the sample, the technician checks the printer’s accuracy against a known reference. The verb calibrate describes this checking or adjustment. A prototype is an early model used to test an idea. The team records what the prototype shows and decides what needs changing before making another version.",
+      "imageBrief": "Unbranded 3D printing workspace; contextual support only."
     },
     "exercises": [
       {
-        "prompt": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Calibrate, and Prototype and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Before assessing a prototype, the technician checks the printer’s accuracy. The job record calls this check “calibrate”, meaning adjust or check the machine against a known reference.\nWhich verb describes the accuracy check in the job record?",
         "answer": "Calibrate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Calibrate"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Frame” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Calibrate, and Prototype in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one part of the design task using two lesson words.",
+        "answer": "Before assessing a prototype, the technician checks the printer’s accuracy. The job record calls this check “calibrate”, meaning adjust or check the machine against a known reference.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-6-personal-use"
+      },
+      {
+        "prompt": "Ask a colleague one question about a different model using a lesson word.",
+        "answer": "Could you explain how calibrate relates to this model?",
+        "questionType": "transfer",
+        "responseMode": "sentence",
+        "contextTag": "3d-printer-lab-6-transfer"
       }
     ],
     "video": {

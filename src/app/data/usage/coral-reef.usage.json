@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Clownfish", "Angelfish", "Parrotfish", "Pufferfish"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Clownfish", "Angelfish", "Parrotfish"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Lionfish", "Surgeonfish", "Butterflyfish", "Grouper"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lionfish", "Surgeonfish", "Butterflyfish"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Moray Eel", "Barracuda", "Seahorse", "Triggerfish"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Moray Eel", "Barracuda", "Seahorse"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Dolphin", "Sea Turtle", "Manatee"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dolphin", "Sea Turtle", "Manatee"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Coral Reef",
-      "text": "At the the coral reef, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Clownfish, Angelfish, Parrotfish, and Pufferfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lionfish, Surgeonfish, Butterflyfish, and Grouper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Moray Eel, Barracuda, Seahorse, and Triggerfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dolphin, Sea Turtle, and Manatee. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Clownfish, Angelfish, Parrotfish, and Pufferfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lionfish, Surgeonfish, Butterflyfish, and Grouper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Moray Eel, Barracuda, Seahorse, and Triggerfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dolphin, Sea Turtle, and Manatee. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Clownfish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lionfish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Moray Eel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dolphin",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coral reef task. Use Clownfish, Angelfish, Parrotfish, Pufferfish, Lionfish, Surgeonfish, Butterflyfish, Grouper, Moray Eel, Barracuda, Seahorse, Triggerfish, Dolphin, Sea Turtle, and Manatee in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Clownfish, Angelfish, Parrotfish, Pufferfish, Lionfish, Surgeonfish, Butterflyfish, Grouper, Moray Eel, Barracuda, Seahorse, Triggerfish, Dolphin, Sea Turtle, and Manatee in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Whale Shark", "Manta Ray", "Stingray", "Sea Snake"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Whale Shark", "Manta Ray", "Stingray"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Dugong", "Humpback Whale", "Otter", "Coral"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dugong", "Humpback Whale", "Otter"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Sea Anemone", "Starfish", "Sea Urchin", "Jellyfish"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sea Anemone", "Starfish", "Sea Urchin"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Octopus", "Squid", "Crab"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Octopus", "Squid", "Crab"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Coral Reef",
-      "text": "At the the coral reef, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Whale Shark, Manta Ray, Stingray, and Sea Snake. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dugong, Humpback Whale, Otter, and Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sea Anemone, Starfish, Sea Urchin, and Jellyfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Octopus, Squid, and Crab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Whale Shark, Manta Ray, Stingray, and Sea Snake. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dugong, Humpback Whale, Otter, and Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sea Anemone, Starfish, Sea Urchin, and Jellyfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Octopus, Squid, and Crab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Whale Shark",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dugong",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sea Anemone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Octopus",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coral reef task. Use Whale Shark, Manta Ray, Stingray, Sea Snake, Dugong, Humpback Whale, Otter, Coral, Sea Anemone, Starfish, Sea Urchin, Jellyfish, Octopus, Squid, and Crab in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Whale Shark, Manta Ray, Stingray, Sea Snake, Dugong, Humpback Whale, Otter, Coral, Sea Anemone, Starfish, Sea Urchin, Jellyfish, Octopus, Squid, and Crab in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lobster", "Shrimp", "Sea Cucumber", "Sponge"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lobster", "Shrimp", "Sea Cucumber"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Coral Reef", "Seagrass", "Kelp", "Algae"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Coral Reef", "Seagrass", "Kelp"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Tide Pool", "Lagoon", "Sand Bar", "Underwater Cave"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tide Pool", "Lagoon", "Sand Bar"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Rock Formation", "Current", "Snorkel"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rock Formation", "Current", "Snorkel"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Coral Reef",
-      "text": "At the the coral reef, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lobster, Shrimp, Sea Cucumber, and Sponge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Coral Reef, Seagrass, Kelp, and Algae. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tide Pool, Lagoon, Sand Bar, and Underwater Cave. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rock Formation, Current, and Snorkel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lobster, Shrimp, Sea Cucumber, and Sponge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Coral Reef, Seagrass, Kelp, and Algae. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tide Pool, Lagoon, Sand Bar, and Underwater Cave. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rock Formation, Current, and Snorkel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lobster",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Coral Reef",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tide Pool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rock Formation",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coral reef task. Use Lobster, Shrimp, Sea Cucumber, Sponge, Coral Reef, Seagrass, Kelp, Algae, Tide Pool, Lagoon, Sand Bar, Underwater Cave, Rock Formation, Current, and Snorkel in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Lobster, Shrimp, Sea Cucumber, Sponge, Coral Reef, Seagrass, Kelp, Algae, Tide Pool, Lagoon, Sand Bar, Underwater Cave, Rock Formation, Current, and Snorkel in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Diving Mask", "Fins", "Wetsuit", "Oxygen Tank"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Diving Mask", "Fins", "Wetsuit"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Regulator", "Dive Computer", "Underwater Camera", "Weight Belt"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Regulator", "Dive Computer", "Underwater Camera"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Dive Flag", "Marine Reserve", "Coral Bleaching", "Pollution"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dive Flag", "Marine Reserve", "Coral Bleaching"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Plastic Waste", "Fishing Net", "Conservation Sign"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Plastic Waste", "Fishing Net", "Conservation Sign"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Coral Reef",
-      "text": "At the the coral reef, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Diving Mask, Fins, Wetsuit, and Oxygen Tank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Regulator, Dive Computer, Underwater Camera, and Weight Belt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dive Flag, Marine Reserve, Coral Bleaching, and Pollution. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plastic Waste, Fishing Net, and Conservation Sign. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Diving Mask, Fins, Wetsuit, and Oxygen Tank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Regulator, Dive Computer, Underwater Camera, and Weight Belt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dive Flag, Marine Reserve, Coral Bleaching, and Pollution. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plastic Waste, Fishing Net, and Conservation Sign. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Diving Mask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Regulator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dive Flag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Plastic Waste",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coral reef task. Use Diving Mask, Fins, Wetsuit, Oxygen Tank, Regulator, Dive Computer, Underwater Camera, Weight Belt, Dive Flag, Marine Reserve, Coral Bleaching, Pollution, Plastic Waste, Fishing Net, and Conservation Sign in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Diving Mask, Fins, Wetsuit, Oxygen Tank, Regulator, Dive Computer, Underwater Camera, Weight Belt, Dive Flag, Marine Reserve, Coral Bleaching, Pollution, Plastic Waste, Fishing Net, and Conservation Sign in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Research Boat", "Water Sample", "Reef Restoration", "Aquarium"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Research Boat", "Water Sample", "Reef Restoration"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Brain Coral", "Fan Coral", "Staghorn Coral", "Tube Coral"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Brain Coral", "Fan Coral", "Staghorn Coral"],
@@ -772,7 +772,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fire Coral", "Mushroom Coral", "Table Coral", "Soft Coral"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fire Coral", "Mushroom Coral", "Table Coral"],
@@ -784,7 +784,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Reef Wall", "Anemone", "Sandy Bottom"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Reef Wall", "Anemone", "Sandy Bottom"],
@@ -798,33 +798,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Coral Reef",
-      "text": "At the the coral reef, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Research Boat, Water Sample, Reef Restoration, and Aquarium. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fire Coral, Mushroom Coral, Table Coral, and Soft Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Reef Wall, Anemone, and Sandy Bottom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Research Boat, Water Sample, Reef Restoration, and Aquarium. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fire Coral, Mushroom Coral, Table Coral, and Soft Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Reef Wall, Anemone, and Sandy Bottom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Research Boat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Brain Coral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fire Coral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Reef Wall",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -855,7 +855,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coral reef task. Use Research Boat, Water Sample, Reef Restoration, Aquarium, Brain Coral, Fan Coral, Staghorn Coral, Tube Coral, Fire Coral, Mushroom Coral, Table Coral, Soft Coral, Reef Wall, Anemone, and Sandy Bottom in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Research Boat, Water Sample, Reef Restoration, Aquarium, Brain Coral, Fan Coral, Staghorn Coral, Tube Coral, Fire Coral, Mushroom Coral, Table Coral, Soft Coral, Reef Wall, Anemone, and Sandy Bottom in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -890,7 +890,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Shipwreck"],
-          "scenario": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.",
+          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Shipwreck", "Option 1", "Option 2"],
@@ -904,12 +904,12 @@
     },
     "reading": {
       "title": "Important Information: The Coral Reef",
-      "text": "At the the coral reef, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shipwreck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shipwreck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Shipwreck",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -940,7 +940,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coral reef task. Use Shipwreck in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Shipwreck in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

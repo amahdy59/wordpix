@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Blueprint", "Floor Plan", "Elevation", "Cross-Section"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Blueprint", "Floor Plan", "Elevation"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Scale Model", "Rendering", "Sketch", "CAD Software"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scale Model", "Rendering", "Sketch"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["3D Model", "Site Plan", "T-Square", "Triangle"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["3D Model", "Site Plan", "T-Square"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Compass", "Protractor", "Scale Ruler"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Compass", "Protractor", "Scale Ruler"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Architect's Studio",
-      "text": "At the the architect's studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Blueprint, Floor Plan, Elevation, and Cross-Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scale Model, Rendering, Sketch, and CAD Software. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers 3D Model, Site Plan, T-Square, and Triangle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Compass, Protractor, and Scale Ruler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the architect's studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Blueprint, Floor Plan, Elevation, and Cross-Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scale Model, Rendering, Sketch, and CAD Software. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers 3D Model, Site Plan, T-Square, and Triangle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Compass, Protractor, and Scale Ruler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Blueprint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scale Model",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "3D Model",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Compass",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -163,7 +163,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the architect's studio task. Use Blueprint, Floor Plan, Elevation, Cross-Section, Scale Model, Rendering, Sketch, CAD Software, 3D Model, Site Plan, T-Square, Triangle, Compass, Protractor, and Scale Ruler in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the architect's studio task. Use Blueprint, Floor Plan, Elevation, Cross-Section, Scale Model, Rendering, Sketch, CAD Software, 3D Model, Site Plan, T-Square, Triangle, Compass, Protractor, and Scale Ruler in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -230,7 +230,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Drafting Table", "Tracing Paper", "Pencil Set", "Eraser Shield"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Drafting Table", "Tracing Paper", "Pencil Set"],
@@ -242,7 +242,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["French Curve", "Proportion", "Scale", "Symmetry"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["French Curve", "Proportion", "Scale"],
@@ -254,7 +254,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Balance", "Rhythm", "Contrast", "Unity"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Balance", "Rhythm", "Contrast"],
@@ -266,7 +266,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Emphasis", "Space", "Form"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Emphasis", "Space", "Form"],
@@ -280,33 +280,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Architect's Studio",
-      "text": "At the the architect's studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers French Curve, Proportion, Scale, and Symmetry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Balance, Rhythm, Contrast, and Unity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Emphasis, Space, and Form. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the architect's studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers French Curve, Proportion, Scale, and Symmetry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Balance, Rhythm, Contrast, and Unity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Emphasis, Space, and Form. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Drafting Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "French Curve",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Balance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Emphasis",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -341,7 +341,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the architect's studio task. Use Drafting Table, Tracing Paper, Pencil Set, Eraser Shield, French Curve, Proportion, Scale, Symmetry, Balance, Rhythm, Contrast, Unity, Emphasis, Space, and Form in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the architect's studio task. Use Drafting Table, Tracing Paper, Pencil Set, Eraser Shield, French Curve, Proportion, Scale, Symmetry, Balance, Rhythm, Contrast, Unity, Emphasis, Space, and Form in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Model Making Kit", "Laser Cutter", "3D Printer", "Light Table"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Model Making Kit", "Laser Cutter", "3D Printer"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pin-Up Board", "Material Samples", "Color Charts", "Reference Books"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pin-Up Board", "Material Samples", "Color Charts"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Projector", "Plotter"],
-          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.",
+          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Projector", "Plotter", "Model Making Kit"],
@@ -436,26 +436,26 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Architect's Studio",
-      "text": "At the the architect's studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Model Making Kit, Laser Cutter, 3D Printer, and Light Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pin-Up Board, Material Samples, Color Charts, and Reference Books. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector and Plotter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the architect's studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Model Making Kit, Laser Cutter, 3D Printer, and Light Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pin-Up Board, Material Samples, Color Charts, and Reference Books. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector and Plotter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Model Making Kit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pin-Up Board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Projector",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -490,7 +490,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the architect's studio task. Use Model Making Kit, Laser Cutter, 3D Printer, Light Table, Pin-Up Board, Material Samples, Color Charts, Reference Books, Projector, and Plotter in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the architect's studio task. Use Model Making Kit, Laser Cutter, 3D Printer, Light Table, Pin-Up Board, Material Samples, Color Charts, Reference Books, Projector, and Plotter in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Hull", "Conning Tower", "Periscope", "Hatch"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hull", "Conning Tower", "Periscope"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Porthole", "Ballast Tank", "Propeller", "Rudder"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Porthole", "Ballast Tank", "Propeller"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Torpedo Tube", "Sonar Dome", "Control Panel", "Navigation Screen"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Torpedo Tube", "Sonar Dome", "Control Panel"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Depth Gauge", "Compass", "Radar"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Depth Gauge", "Compass", "Radar"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Submarine",
-      "text": "At the the submarine, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hull, Conning Tower, Periscope, and Hatch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Porthole, Ballast Tank, Propeller, and Rudder. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Depth Gauge, Compass, and Radar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hull, Conning Tower, Periscope, and Hatch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Porthole, Ballast Tank, Propeller, and Rudder. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Depth Gauge, Compass, and Radar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hull",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Porthole",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Torpedo Tube",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Depth Gauge",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the submarine task. Use Hull, Conning Tower, Periscope, Hatch, Porthole, Ballast Tank, Propeller, Rudder, Torpedo Tube, Sonar Dome, Control Panel, Navigation Screen, Depth Gauge, Compass, and Radar in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the submarine task. Use Hull, Conning Tower, Periscope, Hatch, Porthole, Ballast Tank, Propeller, Rudder, Torpedo Tube, Sonar Dome, Control Panel, Navigation Screen, Depth Gauge, Compass, and Radar in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sonar Display", "Helm", "Throttle", "Communication Radio"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sonar Display", "Helm", "Throttle"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Alarm", "Bunk Bed", "Galley", "Mess Hall"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Alarm", "Bunk Bed", "Galley"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Locker", "Bathroom", "Shower", "Laundry"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Storage Locker", "Bathroom", "Shower"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Library", "Recreation Room", "Captain's Cabin"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Library", "Recreation Room", "Captain's Cabin"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Submarine",
-      "text": "At the the submarine, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sonar Display, Helm, Throttle, and Communication Radio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alarm, Bunk Bed, Galley, and Mess Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Storage Locker, Bathroom, Shower, and Laundry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Library, Recreation Room, and Captain's Cabin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sonar Display, Helm, Throttle, and Communication Radio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alarm, Bunk Bed, Galley, and Mess Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Storage Locker, Bathroom, Shower, and Laundry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Library, Recreation Room, and Captain's Cabin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sonar Display",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Alarm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Storage Locker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Library",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the submarine task. Use Sonar Display, Helm, Throttle, Communication Radio, Alarm, Bunk Bed, Galley, Mess Hall, Storage Locker, Bathroom, Shower, Laundry, Library, Recreation Room, and Captain's Cabin in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the submarine task. Use Sonar Display, Helm, Throttle, Communication Radio, Alarm, Bunk Bed, Galley, Mess Hall, Storage Locker, Bathroom, Shower, Laundry, Library, Recreation Room, and Captain's Cabin in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Captain", "Navigator", "Engineer", "Sonar Operator"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Captain", "Navigator", "Engineer"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Radio Operator", "Cook", "Medic", "Diver"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Radio Operator", "Cook", "Medic"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Technician", "First Officer", "Depth Meter", "Sea Chart"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Technician", "First Officer", "Depth Meter"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["GPS", "Buoy", "Anchor"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["GPS", "Buoy", "Anchor"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Submarine",
-      "text": "At the the submarine, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Captain, Navigator, Engineer, and Sonar Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Radio Operator, Cook, Medic, and Diver. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Technician, First Officer, Depth Meter, and Sea Chart. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers GPS, Buoy, and Anchor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Captain, Navigator, Engineer, and Sonar Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Radio Operator, Cook, Medic, and Diver. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Technician, First Officer, Depth Meter, and Sea Chart. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers GPS, Buoy, and Anchor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Captain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Radio Operator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Technician",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "GPS",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the submarine task. Use Captain, Navigator, Engineer, Sonar Operator, Radio Operator, Cook, Medic, Diver, Technician, First Officer, Depth Meter, Sea Chart, GPS, Buoy, and Anchor in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the submarine task. Use Captain, Navigator, Engineer, Sonar Operator, Radio Operator, Cook, Medic, Diver, Technician, First Officer, Depth Meter, Sea Chart, GPS, Buoy, and Anchor in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Searchlight", "Underwater Camera", "Echo Sounder", "Current Meter"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Searchlight", "Underwater Camera", "Echo Sounder"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Logbook", "Whale", "Shark", "Jellyfish"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Logbook", "Whale", "Shark"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Giant Squid", "Anglerfish", "Sea Turtle", "Coral"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Giant Squid", "Anglerfish", "Sea Turtle"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Seaweed", "Plankton", "Shipwreck"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Seaweed", "Plankton", "Shipwreck"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Submarine",
-      "text": "At the the submarine, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Searchlight, Underwater Camera, Echo Sounder, and Current Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Logbook, Whale, Shark, and Jellyfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Giant Squid, Anglerfish, Sea Turtle, and Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Seaweed, Plankton, and Shipwreck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Searchlight, Underwater Camera, Echo Sounder, and Current Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Logbook, Whale, Shark, and Jellyfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Giant Squid, Anglerfish, Sea Turtle, and Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Seaweed, Plankton, and Shipwreck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Searchlight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Logbook",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Giant Squid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Seaweed",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the submarine task. Use Searchlight, Underwater Camera, Echo Sounder, Current Meter, Logbook, Whale, Shark, Jellyfish, Giant Squid, Anglerfish, Sea Turtle, Coral, Seaweed, Plankton, and Shipwreck in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the submarine task. Use Searchlight, Underwater Camera, Echo Sounder, Current Meter, Logbook, Whale, Shark, Jellyfish, Giant Squid, Anglerfish, Sea Turtle, Coral, Seaweed, Plankton, and Shipwreck in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -716,7 +716,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sonar", "Radio", "Engine", "Pump"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sonar", "Radio", "Engine"],
@@ -728,7 +728,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Valve", "Officer"],
-          "scenario": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.",
+          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Valve", "Officer", "Sonar"],
@@ -742,19 +742,19 @@
     },
     "reading": {
       "title": "An Adult Learner at The Submarine",
-      "text": "At the the submarine, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sonar, Radio, Engine, and Pump. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Valve and Officer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sonar, Radio, Engine, and Pump. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Valve and Officer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sonar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Valve",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -785,7 +785,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the submarine task. Use Sonar, Radio, Engine, Pump, Valve, and Officer in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the submarine task. Use Sonar, Radio, Engine, Pump, Valve, and Officer in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

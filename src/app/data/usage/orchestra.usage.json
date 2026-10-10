@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Violin", "Viola", "Cello", "Double Bass"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Violin", "Viola", "Cello"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Harp", "Guitar", "Bow", "String"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Harp", "Guitar", "Bow"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Tuning Peg", "Chin Rest", "Flute", "Clarinet"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tuning Peg", "Chin Rest", "Flute"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Oboe", "Bassoon", "Piccolo"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Oboe", "Bassoon", "Piccolo"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Conversation: The Orchestra",
-      "text": "At the the orchestra, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Violin, Viola, Cello, and Double Bass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Harp, Guitar, Bow, and String. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tuning Peg, Chin Rest, Flute, and Clarinet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Oboe, Bassoon, and Piccolo. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Violin, Viola, Cello, and Double Bass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Harp, Guitar, Bow, and String. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tuning Peg, Chin Rest, Flute, and Clarinet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Oboe, Bassoon, and Piccolo. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Violin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Harp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tuning Peg",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Oboe",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the orchestra task. Use Violin, Viola, Cello, Double Bass, Harp, Guitar, Bow, String, Tuning Peg, Chin Rest, Flute, Clarinet, Oboe, Bassoon, and Piccolo in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Violin, Viola, Cello, Double Bass, Harp, Guitar, Bow, String, Tuning Peg, Chin Rest, Flute, Clarinet, Oboe, Bassoon, and Piccolo in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Recorder", "Saxophone", "Reed", "Mouthpiece"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Recorder", "Saxophone", "Reed"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Key", "Trumpet", "Trombone", "French Horn"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Key", "Trumpet", "Trombone"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Tuba", "Cornet", "Bugle", "Valve"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tuba", "Cornet", "Bugle"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Bell", "Mute", "Slide"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bell", "Mute", "Slide"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Orchestra",
-      "text": "At the the orchestra, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Recorder, Saxophone, Reed, and Mouthpiece. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Key, Trumpet, Trombone, and French Horn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tuba, Cornet, Bugle, and Valve. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bell, Mute, and Slide. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Recorder, Saxophone, Reed, and Mouthpiece. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Key, Trumpet, Trombone, and French Horn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tuba, Cornet, Bugle, and Valve. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bell, Mute, and Slide. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Recorder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Key",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tuba",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bell",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the orchestra task. Use Recorder, Saxophone, Reed, Mouthpiece, Key, Trumpet, Trombone, French Horn, Tuba, Cornet, Bugle, Valve, Bell, Mute, and Slide in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Recorder, Saxophone, Reed, Mouthpiece, Key, Trumpet, Trombone, French Horn, Tuba, Cornet, Bugle, Valve, Bell, Mute, and Slide in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Drum", "Snare Drum", "Bass Drum", "Timpani"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Drum", "Snare Drum", "Bass Drum"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cymbal", "Triangle", "Xylophone", "Tambourine"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cymbal", "Triangle", "Xylophone"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Gong", "Drumstick", "Concert Hall", "Stage"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gong", "Drumstick", "Concert Hall"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Music Stand", "Conductor's Podium", "Baton"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Music Stand", "Conductor's Podium", "Baton"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Orchestra",
-      "text": "At the the orchestra, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drum, Snare Drum, Bass Drum, and Timpani. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cymbal, Triangle, Xylophone, and Tambourine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gong, Drumstick, Concert Hall, and Stage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Music Stand, Conductor's Podium, and Baton. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drum, Snare Drum, Bass Drum, and Timpani. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cymbal, Triangle, Xylophone, and Tambourine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gong, Drumstick, Concert Hall, and Stage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Music Stand, Conductor's Podium, and Baton. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Drum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cymbal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gong",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Music Stand",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the orchestra task. Use Drum, Snare Drum, Bass Drum, Timpani, Cymbal, Triangle, Xylophone, Tambourine, Gong, Drumstick, Concert Hall, Stage, Music Stand, Conductor's Podium, and Baton in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Drum, Snare Drum, Bass Drum, Timpani, Cymbal, Triangle, Xylophone, Tambourine, Gong, Drumstick, Concert Hall, Stage, Music Stand, Conductor's Podium, and Baton in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sheet Music", "Score", "Tuning Fork", "Metronome"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sheet Music", "Score", "Tuning Fork"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Orchestra Pit", "Conductor", "Concertmaster", "Soloist"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Orchestra Pit", "Conductor", "Concertmaster"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["First Chair", "Section Leader", "Accompanist", "Composer"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["First Chair", "Section Leader", "Accompanist"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Arranger", "Page Turner", "Audience"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Arranger", "Page Turner", "Audience"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Practical Conversation: The Orchestra",
-      "text": "At the the orchestra, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sheet Music, Score, Tuning Fork, and Metronome. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Orchestra Pit, Conductor, Concertmaster, and Soloist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers First Chair, Section Leader, Accompanist, and Composer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Arranger, Page Turner, and Audience. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sheet Music, Score, Tuning Fork, and Metronome. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Orchestra Pit, Conductor, Concertmaster, and Soloist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers First Chair, Section Leader, Accompanist, and Composer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Arranger, Page Turner, and Audience. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sheet Music",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Orchestra Pit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "First Chair",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Arranger",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the orchestra task. Use Sheet Music, Score, Tuning Fork, Metronome, Orchestra Pit, Conductor, Concertmaster, Soloist, First Chair, Section Leader, Accompanist, Composer, Arranger, Page Turner, and Audience in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Sheet Music, Score, Tuning Fork, Metronome, Orchestra Pit, Conductor, Concertmaster, Soloist, First Chair, Section Leader, Accompanist, Composer, Arranger, Page Turner, and Audience in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -716,7 +716,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Podium", "Symphony", "Rehearsal", "Program"],
-          "scenario": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.",
+          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Podium", "Symphony", "Rehearsal"],
@@ -730,12 +730,12 @@
     },
     "reading": {
       "title": "A Practical Guide: The Orchestra",
-      "text": "At the the orchestra, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Podium, Symphony, Rehearsal, and Program. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Podium, Symphony, Rehearsal, and Program. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Podium",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -766,7 +766,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the orchestra task. Use Podium, Symphony, Rehearsal, and Program in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Podium, Symphony, Rehearsal, and Program in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

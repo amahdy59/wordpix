@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Desktop Computer", "Laptop", "Monitor", "Keyboard"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desktop Computer, Laptop, Monitor, and Keyboard and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desktop Computer, Laptop, Monitor, and Keyboard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Desktop Computer", "Laptop", "Monitor"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Mouse", "Trackpad", "Webcam", "Headset"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mouse, Trackpad, Webcam, and Headset and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mouse, Trackpad, Webcam, and Headset and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mouse", "Trackpad", "Webcam"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Printer", "Scanner", "USB Drive", "External Hard Drive"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, USB Drive, and External Hard Drive and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, USB Drive, and External Hard Drive and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Printer", "Scanner", "USB Drive"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Operating System", "Browser", "Search Engine"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Operating System, Browser, and Search Engine and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Operating System, Browser, and Search Engine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Operating System", "Browser", "Search Engine"],
@@ -101,33 +101,33 @@
     },
     "reading": {
       "title": "A Practical Conversation: The Computer Lab",
-      "text": "At the the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Desktop Computer, Laptop, Monitor, and Keyboard. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Mouse, Trackpad, Webcam, and Headset. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Printer, Scanner, USB Drive, and External Hard Drive. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Operating System, Browser, and Search Engine. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Desktop Computer, Laptop, Monitor, and Keyboard. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Mouse, Trackpad, Webcam, and Headset. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Printer, Scanner, USB Drive, and External Hard Drive. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Operating System, Browser, and Search Engine. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desktop Computer, Laptop, Monitor, and Keyboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desktop Computer, Laptop, Monitor, and Keyboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Desktop Computer",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mouse, Trackpad, Webcam, and Headset and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mouse, Trackpad, Webcam, and Headset and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mouse",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Printer",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Operating System, Browser, and Search Engine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Operating System, Browser, and Search Engine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Operating System",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -158,7 +158,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the computer lab task. Use Desktop Computer, Laptop, Monitor, Keyboard, Mouse, Trackpad, Webcam, Headset, Printer, Scanner, USB Drive, External Hard Drive, Operating System, Browser, and Search Engine in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the computer lab task. Use Desktop Computer, Laptop, Monitor, Keyboard, Mouse, Trackpad, Webcam, Headset, Printer, Scanner, USB Drive, External Hard Drive, Operating System, Browser, and Search Engine in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -225,7 +225,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["App", "Icon", "Menu", "Toolbar"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App, Icon, Menu, and Toolbar and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App, Icon, Menu, and Toolbar and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["App", "Icon", "Menu"],
@@ -237,7 +237,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cursor", "Folder", "File", "Window"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cursor, Folder, File, and Window and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cursor, Folder, File, and Window and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cursor", "Folder", "File"],
@@ -249,7 +249,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Tab", "Wi-Fi Router", "Ethernet Cable", "Server"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Wi-Fi Router, Ethernet Cable, and Server and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Wi-Fi Router, Ethernet Cable, and Server and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Tab", "Wi-Fi Router", "Ethernet Cable"],
@@ -261,7 +261,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Modem", "Network Switch", "Hotspot"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modem, Network Switch, and Hotspot and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modem, Network Switch, and Hotspot and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Modem", "Network Switch", "Hotspot"],
@@ -274,33 +274,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Computer Lab",
-      "text": "At the the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers App, Icon, Menu, and Toolbar. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Cursor, Folder, File, and Window. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Tab, Wi-Fi Router, Ethernet Cable, and Server. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Modem, Network Switch, and Hotspot. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers App, Icon, Menu, and Toolbar. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Cursor, Folder, File, and Window. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Tab, Wi-Fi Router, Ethernet Cable, and Server. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Modem, Network Switch, and Hotspot. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App, Icon, Menu, and Toolbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App, Icon, Menu, and Toolbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "App",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cursor, Folder, File, and Window and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cursor, Folder, File, and Window and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cursor",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Wi-Fi Router, Ethernet Cable, and Server and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Wi-Fi Router, Ethernet Cable, and Server and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Tab",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modem, Network Switch, and Hotspot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Modem, Network Switch, and Hotspot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Modem",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -331,7 +331,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the computer lab task. Use App, Icon, Menu, Toolbar, Cursor, Folder, File, Window, Tab, Wi-Fi Router, Ethernet Cable, Server, Modem, Network Switch, and Hotspot in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the computer lab task. Use App, Icon, Menu, Toolbar, Cursor, Folder, File, Window, Tab, Wi-Fi Router, Ethernet Cable, Server, Modem, Network Switch, and Hotspot in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Firewall", "Cloud Storage", "Download", "Upload"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Cloud Storage, Download, and Upload and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Cloud Storage, Download, and Upload and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Firewall", "Cloud Storage", "Download"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Charger", "Power Strip", "Surge Protector", "USB Cable"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charger, Power Strip, Surge Protector, and USB Cable and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charger, Power Strip, Surge Protector, and USB Cable and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Charger", "Power Strip", "Surge Protector"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Adapter", "Mouse Pad", "Laptop Stand", "Docking Station"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Mouse Pad, Laptop Stand, and Docking Station and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Mouse Pad, Laptop Stand, and Docking Station and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Adapter", "Mouse Pad", "Laptop Stand"],
@@ -434,7 +434,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Stylus", "Screen Protector", "Typing"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Screen Protector, and Typing and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Screen Protector, and Typing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stylus", "Screen Protector", "Typing"],
@@ -447,33 +447,33 @@
     },
     "reading": {
       "title": "Before You Begin: The Computer Lab",
-      "text": "At the the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Firewall, Cloud Storage, Download, and Upload. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Charger, Power Strip, Surge Protector, and USB Cable. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Adapter, Mouse Pad, Laptop Stand, and Docking Station. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Stylus, Screen Protector, and Typing. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Firewall, Cloud Storage, Download, and Upload. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Charger, Power Strip, Surge Protector, and USB Cable. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Adapter, Mouse Pad, Laptop Stand, and Docking Station. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Stylus, Screen Protector, and Typing. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Cloud Storage, Download, and Upload and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Cloud Storage, Download, and Upload and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Firewall",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charger, Power Strip, Surge Protector, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Charger, Power Strip, Surge Protector, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Charger",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Mouse Pad, Laptop Stand, and Docking Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adapter, Mouse Pad, Laptop Stand, and Docking Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Adapter",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Screen Protector, and Typing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Screen Protector, and Typing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stylus",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -504,7 +504,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the computer lab task. Use Firewall, Cloud Storage, Download, Upload, Charger, Power Strip, Surge Protector, USB Cable, Adapter, Mouse Pad, Laptop Stand, Docking Station, Stylus, Screen Protector, and Typing in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the computer lab task. Use Firewall, Cloud Storage, Download, Upload, Charger, Power Strip, Surge Protector, USB Cable, Adapter, Mouse Pad, Laptop Stand, Docking Station, Stylus, Screen Protector, and Typing in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -571,7 +571,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Scrolling", "Clicking", "Dragging", "Copying"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scrolling, Clicking, Dragging, and Copying and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scrolling, Clicking, Dragging, and Copying and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Scrolling", "Clicking", "Dragging"],
@@ -583,7 +583,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pasting", "Saving", "Printing", "Editing"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pasting, Saving, Printing, and Editing and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pasting, Saving, Printing, and Editing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Pasting", "Saving", "Printing"],
@@ -595,7 +595,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Searching", "Password", "Username", "Log In"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Password, Username, and Log In and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Password, Username, and Log In and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Searching", "Password", "Username"],
@@ -607,7 +607,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Log Out", "Update", "Backup"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Out, Update, and Backup and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Out, Update, and Backup and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Log Out", "Update", "Backup"],
@@ -620,33 +620,33 @@
     },
     "reading": {
       "title": "A Practical Conversation: The Computer Lab",
-      "text": "At the the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Scrolling, Clicking, Dragging, and Copying. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Pasting, Saving, Printing, and Editing. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Searching, Password, Username, and Log In. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Log Out, Update, and Backup. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Scrolling, Clicking, Dragging, and Copying. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Pasting, Saving, Printing, and Editing. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Searching, Password, Username, and Log In. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Log Out, Update, and Backup. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scrolling, Clicking, Dragging, and Copying and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scrolling, Clicking, Dragging, and Copying and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Scrolling",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pasting, Saving, Printing, and Editing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pasting, Saving, Printing, and Editing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Pasting",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Password, Username, and Log In and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Password, Username, and Log In and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Searching",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Out, Update, and Backup and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Out, Update, and Backup and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Log Out",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -677,7 +677,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the computer lab task. Use Scrolling, Clicking, Dragging, Copying, Pasting, Saving, Printing, Editing, Searching, Password, Username, Log In, Log Out, Update, and Backup in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the computer lab task. Use Scrolling, Clicking, Dragging, Copying, Pasting, Saving, Printing, Editing, Searching, Password, Username, Log In, Log Out, Update, and Backup in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -744,7 +744,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Antivirus", "Spam", "Pop-Up", "Privacy Settings"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antivirus, Spam, Pop-Up, and Privacy Settings and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antivirus, Spam, Pop-Up, and Privacy Settings and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Antivirus", "Spam", "Pop-Up"],
@@ -756,7 +756,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Computer", "Speaker", "Email", "Document"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Speaker, Email, and Document and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Speaker, Email, and Document and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Computer", "Speaker", "Email"],
@@ -768,7 +768,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Spreadsheet", "Presentation", "Type", "Click"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spreadsheet, Presentation, Type, and Click and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spreadsheet, Presentation, Type, and Click and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spreadsheet", "Presentation", "Type"],
@@ -780,7 +780,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Scroll", "Save", "Search"],
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scroll, Save, and Search and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scroll, Save, and Search and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scroll", "Save", "Search"],
@@ -793,33 +793,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Computer Lab",
-      "text": "At the the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Antivirus, Spam, Pop-Up, and Privacy Settings. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Computer, Speaker, Email, and Document. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Spreadsheet, Presentation, Type, and Click. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Scroll, Save, and Search. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Antivirus, Spam, Pop-Up, and Privacy Settings. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Computer, Speaker, Email, and Document. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Spreadsheet, Presentation, Type, and Click. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Scroll, Save, and Search. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antivirus, Spam, Pop-Up, and Privacy Settings and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antivirus, Spam, Pop-Up, and Privacy Settings and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Antivirus",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Speaker, Email, and Document and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Speaker, Email, and Document and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Computer",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spreadsheet, Presentation, Type, and Click and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spreadsheet, Presentation, Type, and Click and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spreadsheet",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scroll, Save, and Search and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scroll, Save, and Search and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scroll",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -850,7 +850,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the computer lab task. Use Antivirus, Spam, Pop-Up, Privacy Settings, Computer, Speaker, Email, Document, Spreadsheet, Presentation, Type, Click, Scroll, Save, and Search in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the computer lab task. Use Antivirus, Spam, Pop-Up, Privacy Settings, Computer, Speaker, Email, Document, Spreadsheet, Presentation, Type, Click, Scroll, Save, and Search in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -885,7 +885,7 @@
         {
           "chunkNumber": 1,
           "targetWords": "Code",
-          "scenario": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Code and choose the option that fits the situation.",
+          "scenario": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Code and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Code", "Option 1", "Option 2"],
@@ -898,12 +898,12 @@
     },
     "reading": {
       "title": "Before You Begin: The Computer Lab",
-      "text": "At the the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Code. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the computer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Code. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the computer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Code",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
@@ -934,7 +934,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the computer lab task. Use Code in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the computer lab task. Use Code in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

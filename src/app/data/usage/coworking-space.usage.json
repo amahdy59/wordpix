@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Hot Desk", "Dedicated Desk", "Private Office", "Phone Booth"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Desk, Dedicated Desk, Private Office, and Phone Booth and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Desk, Dedicated Desk, Private Office, and Phone Booth and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hot Desk", "Dedicated Desk", "Private Office"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Meeting Room", "Lounge Area", "Kitchen", "Rooftop Terrace"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Meeting Room", "Lounge Area", "Kitchen"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Event Space", "Podcast Room", "High-Speed WiFi", "Printer"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Event Space, Podcast Room, High-Speed WiFi, and Printer and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Event Space, Podcast Room, High-Speed WiFi, and Printer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Event Space", "Podcast Room", "High-Speed WiFi"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Scanner", "Coffee Machine", "Snack Bar"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Coffee Machine, and Snack Bar and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Coffee Machine, and Snack Bar and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scanner", "Coffee Machine", "Snack Bar"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Coworking Space",
-      "text": "At the the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Hot Desk, Dedicated Desk, Private Office, and Phone Booth. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Event Space, Podcast Room, High-Speed WiFi, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Scanner, Coffee Machine, and Snack Bar. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Hot Desk, Dedicated Desk, Private Office, and Phone Booth. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Event Space, Podcast Room, High-Speed WiFi, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Scanner, Coffee Machine, and Snack Bar. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Desk, Dedicated Desk, Private Office, and Phone Booth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Desk, Dedicated Desk, Private Office, and Phone Booth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hot Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Meeting Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Event Space, Podcast Room, High-Speed WiFi, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Event Space, Podcast Room, High-Speed WiFi, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Event Space",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Coffee Machine, and Snack Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Coffee Machine, and Snack Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scanner",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coworking space task. Use Hot Desk, Dedicated Desk, Private Office, Phone Booth, Meeting Room, Lounge Area, Kitchen, Rooftop Terrace, Event Space, Podcast Room, High-Speed WiFi, Printer, Scanner, Coffee Machine, and Snack Bar in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coworking space task. Use Hot Desk, Dedicated Desk, Private Office, Phone Booth, Meeting Room, Lounge Area, Kitchen, Rooftop Terrace, Event Space, Podcast Room, High-Speed WiFi, Printer, Scanner, Coffee Machine, and Snack Bar in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bike Storage", "Shower", "Locker", "Mail Service"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bike Storage, Shower, Locker, and Mail Service and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bike Storage, Shower, Locker, and Mail Service and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bike Storage", "Shower", "Locker"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Reception", "Day Pass", "Monthly Plan", "Annual Plan"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Day Pass, Monthly Plan, and Annual Plan and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Day Pass, Monthly Plan, and Annual Plan and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Reception", "Day Pass", "Monthly Plan"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Flex Plan", "Team Plan", "Virtual Office", "Meeting Room Credits"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Flex Plan", "Team Plan", "Virtual Office"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Guest Pass", "Community Access", "24/7 Access"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guest Pass, Community Access, and 24/7 Access and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guest Pass, Community Access, and 24/7 Access and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Guest Pass", "Community Access", "24/7 Access"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Coworking Space",
-      "text": "At the the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Bike Storage, Shower, Locker, and Mail Service. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Reception, Day Pass, Monthly Plan, and Annual Plan. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Guest Pass, Community Access, and 24/7 Access. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Bike Storage, Shower, Locker, and Mail Service. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Reception, Day Pass, Monthly Plan, and Annual Plan. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Guest Pass, Community Access, and 24/7 Access. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bike Storage, Shower, Locker, and Mail Service and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bike Storage, Shower, Locker, and Mail Service and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bike Storage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Day Pass, Monthly Plan, and Annual Plan and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Day Pass, Monthly Plan, and Annual Plan and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Reception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Flex Plan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guest Pass, Community Access, and 24/7 Access and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guest Pass, Community Access, and 24/7 Access and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Guest Pass",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coworking space task. Use Bike Storage, Shower, Locker, Mail Service, Reception, Day Pass, Monthly Plan, Annual Plan, Flex Plan, Team Plan, Virtual Office, Meeting Room Credits, Guest Pass, Community Access, and 24/7 Access in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coworking space task. Use Bike Storage, Shower, Locker, Mail Service, Reception, Day Pass, Monthly Plan, Annual Plan, Flex Plan, Team Plan, Virtual Office, Meeting Room Credits, Guest Pass, Community Access, and 24/7 Access in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -390,7 +390,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Networking Event", "Workshop", "Lunch & Learn", "Happy Hour"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Networking Event, Workshop, Lunch & Learn, and Happy Hour and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Networking Event, Workshop, Lunch & Learn, and Happy Hour and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Networking Event", "Workshop", "Lunch & Learn"],
@@ -402,7 +402,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pitch Night", "Demo Day", "Mentorship", "Slack Channel"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pitch Night, Demo Day, Mentorship, and Slack Channel and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pitch Night, Demo Day, Mentorship, and Slack Channel and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pitch Night", "Demo Day", "Mentorship"],
@@ -414,7 +414,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Community Manager", "Member Directory"],
-          "scenario": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Community Manager, and Member Directory and choose the option that fits the situation.",
+          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Community Manager, and Member Directory and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Community Manager", "Member Directory", "Networking Event"],
@@ -428,26 +428,26 @@
     },
     "reading": {
       "title": "Before You Begin: The Coworking Space",
-      "text": "At the the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Networking Event, Workshop, Lunch & Learn, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Pitch Night, Demo Day, Mentorship, and Slack Channel. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Community Manager and Member Directory. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Networking Event, Workshop, Lunch & Learn, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Pitch Night, Demo Day, Mentorship, and Slack Channel. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Community Manager and Member Directory. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Networking Event, Workshop, Lunch & Learn, and Happy Hour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Networking Event, Workshop, Lunch & Learn, and Happy Hour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Networking Event",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pitch Night, Demo Day, Mentorship, and Slack Channel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pitch Night, Demo Day, Mentorship, and Slack Channel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pitch Night",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Community Manager, and Member Directory and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Community Manager, and Member Directory and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "Community Manager",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -478,7 +478,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the coworking space task. Use Networking Event, Workshop, Lunch & Learn, Happy Hour, Pitch Night, Demo Day, Mentorship, Slack Channel, Community Manager, and Member Directory in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the coworking space task. Use Networking Event, Workshop, Lunch & Learn, Happy Hour, Pitch Night, Demo Day, Mentorship, Slack Channel, Community Manager, and Member Directory in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

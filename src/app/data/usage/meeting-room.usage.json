@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Projector Screen", "Laser Pointer", "Microphone", "Speaker"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Projector Screen", "Laser Pointer", "Microphone"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Camera", "Flip Chart", "Marker", "Remote Clicker"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Camera", "Flip Chart", "Marker"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Name Plate", "Agenda", "Staff Meeting", "Board Meeting"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Name Plate", "Agenda", "Staff Meeting"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["One-on-One", "Brainstorm", "Stand-Up"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["One-on-One", "Brainstorm", "Stand-Up"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Practical Update: The Meeting Room",
-      "text": "At the the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Projector Screen, Laser Pointer, Microphone, and Speaker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Camera, Flip Chart, Marker, and Remote Clicker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Name Plate, Agenda, Staff Meeting, and Board Meeting. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers One-on-One, Brainstorm, and Stand-Up. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Projector Screen, Laser Pointer, Microphone, and Speaker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Camera, Flip Chart, Marker, and Remote Clicker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Name Plate, Agenda, Staff Meeting, and Board Meeting. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers One-on-One, Brainstorm, and Stand-Up. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Projector Screen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Camera",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Name Plate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "One-on-One",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the meeting room task. Use Projector Screen, Laser Pointer, Microphone, Speaker, Camera, Flip Chart, Marker, Remote Clicker, Name Plate, Agenda, Staff Meeting, Board Meeting, One-on-One, Brainstorm, and Stand-Up in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Projector Screen, Laser Pointer, Microphone, Speaker, Camera, Flip Chart, Marker, Remote Clicker, Name Plate, Agenda, Staff Meeting, Board Meeting, One-on-One, Brainstorm, and Stand-Up in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Town Hall", "Workshop", "Webinar", "Kick-Off"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Town Hall", "Workshop", "Webinar"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Retrospective", "Slide Deck", "Handout", "Report"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Retrospective", "Slide Deck", "Handout"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Chart", "Graph", "Diagram", "Flowchart"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Chart", "Graph", "Diagram"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Timeline", "Spreadsheet", "Dashboard"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Timeline", "Spreadsheet", "Dashboard"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Meeting Room",
-      "text": "At the the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Town Hall, Workshop, Webinar, and Kick-Off. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Retrospective, Slide Deck, Handout, and Report. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Chart, Graph, Diagram, and Flowchart. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Timeline, Spreadsheet, and Dashboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Town Hall, Workshop, Webinar, and Kick-Off. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Retrospective, Slide Deck, Handout, and Report. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Chart, Graph, Diagram, and Flowchart. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Timeline, Spreadsheet, and Dashboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Town Hall",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Retrospective",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Chart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Timeline",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the meeting room task. Use Town Hall, Workshop, Webinar, Kick-Off, Retrospective, Slide Deck, Handout, Report, Chart, Graph, Diagram, Flowchart, Timeline, Spreadsheet, and Dashboard in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Town Hall, Workshop, Webinar, Kick-Off, Retrospective, Slide Deck, Handout, Report, Chart, Graph, Diagram, Flowchart, Timeline, Spreadsheet, and Dashboard in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Present", "Discuss", "Vote", "Approve"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Present", "Discuss", "Vote"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Reject", "Table", "Follow Up", "Assign"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.",
           "check": {
             "question": "Which option best describes the main action shown in the scene?",
             "options": ["Reject", "Table", "Follow Up"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Minute", "Adjourn", "Zoom", "Teams"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Minute", "Adjourn", "Zoom"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Screen Share", "Mute", "Unmute"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Screen Share", "Mute", "Unmute"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Before You Begin: The Meeting Room",
-      "text": "At the the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Present, Discuss, Vote, and Approve. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Reject, Table, Follow Up, and Assign. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Minute, Adjourn, Zoom, and Teams. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Screen Share, Mute, and Unmute. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Present, Discuss, Vote, and Approve. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Reject, Table, Follow Up, and Assign. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Minute, Adjourn, Zoom, and Teams. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Screen Share, Mute, and Unmute. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Present",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
         "answer": "Reject",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Minute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Screen Share",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the meeting room task. Use Present, Discuss, Vote, Approve, Reject, Table, Follow Up, Assign, Minute, Adjourn, Zoom, Teams, Screen Share, Mute, and Unmute in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Present, Discuss, Vote, Approve, Reject, Table, Follow Up, Assign, Minute, Adjourn, Zoom, Teams, Screen Share, Mute, and Unmute in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -548,7 +548,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Chat", "Breakout Room", "Waiting Room", "Recording"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Chat", "Breakout Room", "Waiting Room"],
@@ -560,7 +560,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Virtual Background"],
-          "scenario": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.",
+          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Virtual Background", "Chat", "Breakout Room"],
@@ -574,19 +574,19 @@
     },
     "reading": {
       "title": "A Practical Update: The Meeting Room",
-      "text": "At the the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Chat, Breakout Room, Waiting Room, and Recording. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Virtual Background. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Chat, Breakout Room, Waiting Room, and Recording. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Virtual Background. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Chat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Virtual Background",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -617,7 +617,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the meeting room task. Use Chat, Breakout Room, Waiting Room, Recording, and Virtual Background in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Chat, Breakout Room, Waiting Room, Recording, and Virtual Background in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

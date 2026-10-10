@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bull Market", "Bear Market", "IPO", "Market Cap"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bull Market, Bear Market, IPO, and Market Cap and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bull Market, Bear Market, IPO, and Market Cap and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bull Market", "Bear Market", "IPO"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Volume", "Volatility", "Index", "NASDAQ"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Volatility, Index, and NASDAQ and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Volatility, Index, and NASDAQ and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Volume", "Volatility", "Index"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["NYSE", "Dow Jones", "Buy", "Sell"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NYSE, Dow Jones, Buy, and Sell and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NYSE, Dow Jones, Buy, and Sell and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["NYSE", "Dow Jones", "Buy"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Trade", "Bid", "Ask"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trade, Bid, and Ask and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trade, Bid, and Ask and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trade", "Bid", "Ask"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Stock Exchange: Practical Information",
-      "text": "At the the stock exchange, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bull Market, Bear Market, IPO, and Market Cap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Volume, Volatility, Index, and NASDAQ. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers NYSE, Dow Jones, Buy, and Sell. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trade, Bid, and Ask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the stock exchange, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bull Market, Bear Market, IPO, and Market Cap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Volume, Volatility, Index, and NASDAQ. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers NYSE, Dow Jones, Buy, and Sell. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Trade, Bid, and Ask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Stock Exchange. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bull Market, Bear Market, IPO, and Market Cap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bull Market, Bear Market, IPO, and Market Cap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bull Market",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Volatility, Index, and NASDAQ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Volatility, Index, and NASDAQ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Volume",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NYSE, Dow Jones, Buy, and Sell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NYSE, Dow Jones, Buy, and Sell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "NYSE",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trade, Bid, and Ask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trade, Bid, and Ask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trade",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the stock exchange task. Use Bull Market, Bear Market, IPO, Market Cap, Volume, Volatility, Index, NASDAQ, NYSE, Dow Jones, Buy, Sell, Trade, Bid, and Ask in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the stock exchange task. Use Bull Market, Bear Market, IPO, Market Cap, Volume, Volatility, Index, NASDAQ, NYSE, Dow Jones, Buy, Sell, Trade, Bid, and Ask in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Spread", "Limit Order", "Market Order", "Stop Loss"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spread, Limit Order, Market Order, and Stop Loss and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spread, Limit Order, Market Order, and Stop Loss and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spread", "Limit Order", "Market Order"],
@@ -243,7 +243,7 @@
             "Fundamental Analysis",
             "P/E Ratio"
           ],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Short Selling", "Technical Analysis", "Fundamental Analysis"],
@@ -255,7 +255,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Earnings Report", "Revenue", "Profit Margin", "Balance Sheet"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earnings Report, Revenue, Profit Margin, and Balance Sheet and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earnings Report, Revenue, Profit Margin, and Balance Sheet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Earnings Report", "Revenue", "Profit Margin"],
@@ -267,7 +267,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cash Flow", "Market Trend", "Forecast"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cash Flow, Market Trend, and Forecast and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cash Flow, Market Trend, and Forecast and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Cash Flow", "Market Trend", "Forecast"],
@@ -281,33 +281,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Stock Exchange",
-      "text": "At the the stock exchange, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spread, Limit Order, Market Order, and Stop Loss. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Earnings Report, Revenue, Profit Margin, and Balance Sheet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cash Flow, Market Trend, and Forecast. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the stock exchange, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spread, Limit Order, Market Order, and Stop Loss. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Earnings Report, Revenue, Profit Margin, and Balance Sheet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cash Flow, Market Trend, and Forecast. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Stock Exchange. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spread, Limit Order, Market Order, and Stop Loss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spread, Limit Order, Market Order, and Stop Loss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spread",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Short Selling, Technical Analysis, Fundamental Analysis, and P/E Ratio and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Short Selling",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earnings Report, Revenue, Profit Margin, and Balance Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earnings Report, Revenue, Profit Margin, and Balance Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Earnings Report",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cash Flow, Market Trend, and Forecast and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cash Flow, Market Trend, and Forecast and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Cash Flow",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -338,7 +338,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the stock exchange task. Use Spread, Limit Order, Market Order, Stop Loss, Short Selling, Technical Analysis, Fundamental Analysis, P/E Ratio, Earnings Report, Revenue, Profit Margin, Balance Sheet, Cash Flow, Market Trend, and Forecast in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the stock exchange task. Use Spread, Limit Order, Market Order, Stop Loss, Short Selling, Technical Analysis, Fundamental Analysis, P/E Ratio, Earnings Report, Revenue, Profit Margin, Balance Sheet, Cash Flow, Market Trend, and Forecast in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -395,7 +395,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Trader", "Broker", "Analyst", "Floor"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trader, Broker, Analyst, and Floor and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trader, Broker, Analyst, and Floor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Trader", "Broker", "Analyst"],
@@ -407,7 +407,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Bell", "Ticker", "Screen", "Trading Desk"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Ticker, Screen, and Trading Desk and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Ticker, Screen, and Trading Desk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bell", "Ticker", "Screen"],
@@ -419,7 +419,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Pit", "Exchange Rate"],
-          "scenario": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pit, and Exchange Rate and choose the option that fits the situation.",
+          "scenario": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pit, and Exchange Rate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pit", "Exchange Rate", "Trader"],
@@ -433,26 +433,26 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the stock exchange, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Trader, Broker, Analyst, and Floor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bell, Ticker, Screen, and Trading Desk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pit and Exchange Rate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the stock exchange, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Trader, Broker, Analyst, and Floor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bell, Ticker, Screen, and Trading Desk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pit and Exchange Rate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Stock Exchange. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trader, Broker, Analyst, and Floor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trader, Broker, Analyst, and Floor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Trader",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Ticker, Screen, and Trading Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Ticker, Screen, and Trading Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pit, and Exchange Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the stock exchange setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pit, and Exchange Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pit",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -483,7 +483,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the stock exchange task. Use Trader, Broker, Analyst, Floor, Bell, Ticker, Screen, Trading Desk, Pit, and Exchange Rate in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the stock exchange task. Use Trader, Broker, Analyst, Floor, Bell, Ticker, Screen, Trading Desk, Pit, and Exchange Rate in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

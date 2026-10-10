@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Module", "Airlock", "Solar Array", "Docking Port"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Module", "Airlock", "Solar Array"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cupola", "Truss", "Radiator Panel", "Antenna"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cupola", "Truss", "Radiator Panel"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Hatch", "Window", "Spacesuit", "Helmet"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hatch", "Window", "Spacesuit"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Gloves", "Boots", "Tether"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gloves", "Boots", "Tether"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Space Station",
-      "text": "At the the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Module, Airlock, Solar Array, and Docking Port. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cupola, Truss, Radiator Panel, and Antenna. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Hatch, Window, Spacesuit, and Helmet. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Gloves, Boots, and Tether. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Module, Airlock, Solar Array, and Docking Port. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cupola, Truss, Radiator Panel, and Antenna. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Hatch, Window, Spacesuit, and Helmet. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Gloves, Boots, and Tether. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Module",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cupola",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hatch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Gloves",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the space station task. Use Module, Airlock, Solar Array, Docking Port, Cupola, Truss, Radiator Panel, Antenna, Hatch, Window, Spacesuit, Helmet, Gloves, Boots, and Tether in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the space station task. Use Module, Airlock, Solar Array, Docking Port, Cupola, Truss, Radiator Panel, Antenna, Hatch, Window, Spacesuit, Helmet, Gloves, Boots, and Tether in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Jet Pack", "Tool Belt", "Visor", "Oxygen Tank"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Jet Pack", "Tool Belt", "Visor"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Communication Headset", "Sleeping Pod", "Galley", "Exercise Machine"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Communication Headset", "Sleeping Pod", "Galley"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Toilet", "Shower Bag", "Velcro Strip", "Laptop"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Toilet", "Shower Bag", "Velcro Strip"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Book", "Photo", "Personal Locker"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Book", "Photo", "Personal Locker"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Space Station",
-      "text": "At the the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Jet Pack, Tool Belt, Visor, and Oxygen Tank. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Communication Headset, Sleeping Pod, Galley, and Exercise Machine. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Toilet, Shower Bag, Velcro Strip, and Laptop. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Book, Photo, and Personal Locker. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Jet Pack, Tool Belt, Visor, and Oxygen Tank. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Communication Headset, Sleeping Pod, Galley, and Exercise Machine. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Toilet, Shower Bag, Velcro Strip, and Laptop. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Book, Photo, and Personal Locker. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Jet Pack",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Communication Headset",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Toilet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the space station task. Use Jet Pack, Tool Belt, Visor, Oxygen Tank, Communication Headset, Sleeping Pod, Galley, Exercise Machine, Toilet, Shower Bag, Velcro Strip, Laptop, Book, Photo, and Personal Locker in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the space station task. Use Jet Pack, Tool Belt, Visor, Oxygen Tank, Communication Headset, Sleeping Pod, Galley, Exercise Machine, Toilet, Shower Bag, Velcro Strip, Laptop, Book, Photo, and Personal Locker in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Microscope", "Centrifuge", "Glove Box", "Plant Growth Chamber"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Microscope", "Centrifuge", "Glove Box"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Water Recycler", "Air Filter", "Spectrometer", "Sample Container"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Water Recycler", "Air Filter", "Spectrometer"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Data Logger", "Experiment Rack", "Control Panel", "Monitor"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Data Logger", "Experiment Rack", "Control Panel"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Keyboard", "Joystick", "Radio"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Keyboard", "Joystick", "Radio"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Space Station",
-      "text": "At the the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Microscope, Centrifuge, Glove Box, and Plant Growth Chamber. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Water Recycler, Air Filter, Spectrometer, and Sample Container. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Data Logger, Experiment Rack, Control Panel, and Monitor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Keyboard, Joystick, and Radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Microscope, Centrifuge, Glove Box, and Plant Growth Chamber. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Water Recycler, Air Filter, Spectrometer, and Sample Container. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Data Logger, Experiment Rack, Control Panel, and Monitor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Keyboard, Joystick, and Radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Microscope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Water Recycler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Data Logger",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Keyboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the space station task. Use Microscope, Centrifuge, Glove Box, Plant Growth Chamber, Water Recycler, Air Filter, Spectrometer, Sample Container, Data Logger, Experiment Rack, Control Panel, Monitor, Keyboard, Joystick, and Radio in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the space station task. Use Microscope, Centrifuge, Glove Box, Plant Growth Chamber, Water Recycler, Air Filter, Spectrometer, Sample Container, Data Logger, Experiment Rack, Control Panel, Monitor, Keyboard, Joystick, and Radio in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Clock", "Map Display", "Camera", "Alarm"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Clock", "Map Display", "Camera"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Checklist", "Earth View", "Stars", "Moon"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Checklist", "Earth View", "Stars"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Sun", "Satellite", "Space Debris", "Cargo Ship"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sun", "Satellite", "Space Debris"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Robotic Arm", "Solar Flare", "Aurora"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Robotic Arm", "Solar Flare", "Aurora"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Space Station",
-      "text": "At the the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Clock, Map Display, Camera, and Alarm. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Checklist, Earth View, Stars, and Moon. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Sun, Satellite, Space Debris, and Cargo Ship. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Robotic Arm, Solar Flare, and Aurora. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Clock, Map Display, Camera, and Alarm. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Checklist, Earth View, Stars, and Moon. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Sun, Satellite, Space Debris, and Cargo Ship. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Robotic Arm, Solar Flare, and Aurora. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Clock",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Checklist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sun",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Robotic Arm",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the space station task. Use Clock, Map Display, Camera, Alarm, Checklist, Earth View, Stars, Moon, Sun, Satellite, Space Debris, Cargo Ship, Robotic Arm, Solar Flare, and Aurora in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the space station task. Use Clock, Map Display, Camera, Alarm, Checklist, Earth View, Stars, Moon, Sun, Satellite, Space Debris, Cargo Ship, Robotic Arm, Solar Flare, and Aurora in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lab Module", "Crew Quarters", "Node", "Jetpack"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Lab Module", "Crew Quarters", "Node"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Treadmill", "Oxygen Generator", "Comm Dish", "Viewport"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Treadmill", "Oxygen Generator", "Comm Dish"],
@@ -772,7 +772,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Spacewalk", "Experiment", "Dock", "Orbit"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spacewalk", "Experiment", "Dock"],
@@ -784,7 +784,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Float", "Exercise", "Repair"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Float", "Exercise", "Repair"],
@@ -798,33 +798,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Space Station",
-      "text": "At the the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Lab Module, Crew Quarters, Node, and Jetpack. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Treadmill, Oxygen Generator, Comm Dish, and Viewport. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Spacewalk, Experiment, Dock, and Orbit. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Float, Exercise, and Repair. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Lab Module, Crew Quarters, Node, and Jetpack. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Treadmill, Oxygen Generator, Comm Dish, and Viewport. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Spacewalk, Experiment, Dock, and Orbit. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Float, Exercise, and Repair. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Lab Module",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Treadmill",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spacewalk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Float",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -855,7 +855,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the space station task. Use Lab Module, Crew Quarters, Node, Jetpack, Treadmill, Oxygen Generator, Comm Dish, Viewport, Spacewalk, Experiment, Dock, Orbit, Float, Exercise, and Repair in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the space station task. Use Lab Module, Crew Quarters, Node, Jetpack, Treadmill, Oxygen Generator, Comm Dish, Viewport, Spacewalk, Experiment, Dock, Orbit, Float, Exercise, and Repair in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -890,7 +890,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Communicate"],
-          "scenario": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.",
+          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Communicate", "Option 1", "Option 2"],
@@ -904,12 +904,12 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Space Station",
-      "text": "At the the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Communicate. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Communicate. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Communicate",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -940,7 +940,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the space station task. Use Communicate in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the space station task. Use Communicate in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

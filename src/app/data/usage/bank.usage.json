@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Lobby", "Teller Window", "Vault", "Safe Deposit Box"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lobby", "Teller Window", "Vault"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["ATM", "Drive-Through", "Office", "Waiting Area"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["ATM", "Drive-Through", "Office"],
@@ -81,7 +81,7 @@
             "Checking Account",
             "Savings Account"
           ],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Security Desk", "Currency Exchange", "Checking Account"],
@@ -93,7 +93,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Joint Account", "Business Account", "Certificate of Deposit"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Joint Account", "Business Account", "Certificate of Deposit"],
@@ -107,33 +107,33 @@
     },
     "reading": {
       "title": "The Bank: Practical Information",
-      "text": "At the the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Lobby, Teller Window, Vault, and Safe Deposit Box. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers ATM, Drive-Through, Office, and Waiting Area. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Security Desk, Currency Exchange, Checking Account, and Savings Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Joint Account, Business Account, and Certificate of Deposit. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Lobby, Teller Window, Vault, and Safe Deposit Box. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers ATM, Drive-Through, Office, and Waiting Area. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Security Desk, Currency Exchange, Checking Account, and Savings Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Joint Account, Business Account, and Certificate of Deposit. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lobby",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "ATM",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Security Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Joint Account",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -164,7 +164,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bank task. Use Lobby, Teller Window, Vault, Safe Deposit Box, ATM, Drive-Through, Office, Waiting Area, Security Desk, Currency Exchange, Checking Account, Savings Account, Joint Account, Business Account, and Certificate of Deposit in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bank task. Use Lobby, Teller Window, Vault, Safe Deposit Box, ATM, Drive-Through, Office, Waiting Area, Security Desk, Currency Exchange, Checking Account, Savings Account, Joint Account, Business Account, and Certificate of Deposit in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -231,7 +231,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Money Market", "Retirement Account", "Student Account", "Trust Account"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Money Market", "Retirement Account", "Student Account"],
@@ -243,7 +243,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Escrow", "Deposit", "Withdraw", "Transfer"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Escrow", "Deposit", "Withdraw"],
@@ -255,7 +255,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Wire", "Cash Check", "Open Account", "Close Account"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wire", "Cash Check", "Open Account"],
@@ -267,7 +267,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Apply for Loan", "Pay Bill", "Check Balance"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Apply for Loan", "Pay Bill", "Check Balance"],
@@ -281,33 +281,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Bank",
-      "text": "At the the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Money Market, Retirement Account, Student Account, and Trust Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Escrow, Deposit, Withdraw, and Transfer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Wire, Cash Check, Open Account, and Close Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Apply for Loan, Pay Bill, and Check Balance. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Money Market, Retirement Account, Student Account, and Trust Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Escrow, Deposit, Withdraw, and Transfer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Wire, Cash Check, Open Account, and Close Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Apply for Loan, Pay Bill, and Check Balance. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Money Market",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Escrow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wire",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Apply for Loan",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -338,7 +338,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bank task. Use Money Market, Retirement Account, Student Account, Trust Account, Escrow, Deposit, Withdraw, Transfer, Wire, Cash Check, Open Account, Close Account, Apply for Loan, Pay Bill, and Check Balance in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bank task. Use Money Market, Retirement Account, Student Account, Trust Account, Escrow, Deposit, Withdraw, Transfer, Wire, Cash Check, Open Account, Close Account, Apply for Loan, Pay Bill, and Check Balance in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -395,7 +395,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Teller", "Bank Manager", "Loan Officer", "Financial Advisor"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Teller", "Bank Manager", "Loan Officer"],
@@ -407,7 +407,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Security Guard", "Accountant", "Auditor", "Branch Manager"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Security Guard", "Accountant", "Auditor"],
@@ -419,7 +419,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Customer Service", "Compliance Officer"],
-          "scenario": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.",
+          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Customer Service", "Compliance Officer", "Teller"],
@@ -433,26 +433,26 @@
     },
     "reading": {
       "title": "An Update Before the Next Step",
-      "text": "At the the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Teller, Bank Manager, Loan Officer, and Financial Advisor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Security Guard, Accountant, Auditor, and Branch Manager. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Customer Service and Compliance Officer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Teller, Bank Manager, Loan Officer, and Financial Advisor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Security Guard, Accountant, Auditor, and Branch Manager. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Customer Service and Compliance Officer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Teller",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Security Guard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Customer Service",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -483,7 +483,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bank task. Use Teller, Bank Manager, Loan Officer, Financial Advisor, Security Guard, Accountant, Auditor, Branch Manager, Customer Service, and Compliance Officer in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bank task. Use Teller, Bank Manager, Loan Officer, Financial Advisor, Security Guard, Accountant, Auditor, Branch Manager, Customer Service, and Compliance Officer in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

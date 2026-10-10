@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Skull", "Cranium", "Jaw Bone", "Cheekbone"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Skull", "Cranium", "Jaw Bone"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Eye Socket", "Nasal Bone", "Temple Bone", "Foramen Magnum"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Eye Socket", "Nasal Bone", "Temple Bone"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Mandible", "Maxilla", "Spine", "Vertebra"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mandible", "Maxilla", "Spine"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cervical Spine", "Thoracic Spine", "Lumbar Spine"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cervical Spine", "Thoracic Spine", "Lumbar Spine"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Skeleton",
-      "text": "At the the skeleton, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Skull, Cranium, Jaw Bone, and Cheekbone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mandible, Maxilla, Spine, and Vertebra. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cervical Spine, Thoracic Spine, and Lumbar Spine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Skull, Cranium, Jaw Bone, and Cheekbone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mandible, Maxilla, Spine, and Vertebra. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cervical Spine, Thoracic Spine, and Lumbar Spine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Skull",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Eye Socket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mandible",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cervical Spine",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the skeleton task. Use Skull, Cranium, Jaw Bone, Cheekbone, Eye Socket, Nasal Bone, Temple Bone, Foramen Magnum, Mandible, Maxilla, Spine, Vertebra, Cervical Spine, Thoracic Spine, and Lumbar Spine in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Skull, Cranium, Jaw Bone, Cheekbone, Eye Socket, Nasal Bone, Temple Bone, Foramen Magnum, Mandible, Maxilla, Spine, Vertebra, Cervical Spine, Thoracic Spine, and Lumbar Spine in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sacrum", "Coccyx", "Rib", "Sternum"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sacrum", "Coccyx", "Rib"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Ribcage", "Clavicle", "Scapula", "Humerus"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ribcage", "Clavicle", "Scapula"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Radius", "Ulna", "Carpals", "Metacarpals"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Radius", "Ulna", "Carpals"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Phalanges", "Shoulder Joint", "Elbow Joint"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Phalanges", "Shoulder Joint", "Elbow Joint"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Skeleton",
-      "text": "At the the skeleton, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sacrum, Coccyx, Rib, and Sternum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ribcage, Clavicle, Scapula, and Humerus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Radius, Ulna, Carpals, and Metacarpals. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Phalanges, Shoulder Joint, and Elbow Joint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sacrum, Coccyx, Rib, and Sternum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ribcage, Clavicle, Scapula, and Humerus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Radius, Ulna, Carpals, and Metacarpals. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Phalanges, Shoulder Joint, and Elbow Joint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sacrum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ribcage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Radius",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Phalanges",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the skeleton task. Use Sacrum, Coccyx, Rib, Sternum, Ribcage, Clavicle, Scapula, Humerus, Radius, Ulna, Carpals, Metacarpals, Phalanges, Shoulder Joint, and Elbow Joint in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Sacrum, Coccyx, Rib, Sternum, Ribcage, Clavicle, Scapula, Humerus, Radius, Ulna, Carpals, Metacarpals, Phalanges, Shoulder Joint, and Elbow Joint in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Pelvis", "Femur", "Patella", "Tibia"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pelvis", "Femur", "Patella"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Fibula", "Tarsals", "Metatarsals", "Toe Bones"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fibula", "Tarsals", "Metatarsals"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Hip Joint", "Knee Joint", "Joint", "Cartilage"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hip Joint", "Knee Joint", "Joint"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Ligament", "Tendon", "Bone Marrow"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Ligament", "Tendon", "Bone Marrow"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Skeleton",
-      "text": "At the the skeleton, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pelvis, Femur, Patella, and Tibia. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fibula, Tarsals, Metatarsals, and Toe Bones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hip Joint, Knee Joint, Joint, and Cartilage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ligament, Tendon, and Bone Marrow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pelvis, Femur, Patella, and Tibia. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fibula, Tarsals, Metatarsals, and Toe Bones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hip Joint, Knee Joint, Joint, and Cartilage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ligament, Tendon, and Bone Marrow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pelvis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fibula",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hip Joint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Ligament",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the skeleton task. Use Pelvis, Femur, Patella, Tibia, Fibula, Tarsals, Metatarsals, Toe Bones, Hip Joint, Knee Joint, Joint, Cartilage, Ligament, Tendon, and Bone Marrow in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Pelvis, Femur, Patella, Tibia, Fibula, Tarsals, Metatarsals, Toe Bones, Hip Joint, Knee Joint, Joint, Cartilage, Ligament, Tendon, and Bone Marrow in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Periosteum", "Synovial Fluid", "Disc", "Meniscus"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Periosteum", "Synovial Fluid", "Disc"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Bursa", "Calcium", "Vitamin D", "Osteoporosis"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bursa", "Calcium", "Vitamin D"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fracture", "X-Ray", "Cast", "Splint"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Fracture", "X-Ray", "Cast"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Bone Density", "Growth Plate", "Skeleton Model"],
-          "scenario": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.",
+          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Bone Density", "Growth Plate", "Skeleton Model"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Skeleton",
-      "text": "At the the skeleton, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Periosteum, Synovial Fluid, Disc, and Meniscus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bursa, Calcium, Vitamin D, and Osteoporosis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fracture, X-Ray, Cast, and Splint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bone Density, Growth Plate, and Skeleton Model. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Periosteum, Synovial Fluid, Disc, and Meniscus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bursa, Calcium, Vitamin D, and Osteoporosis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fracture, X-Ray, Cast, and Splint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bone Density, Growth Plate, and Skeleton Model. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Periosteum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bursa",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Fracture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Bone Density",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the skeleton task. Use Periosteum, Synovial Fluid, Disc, Meniscus, Bursa, Calcium, Vitamin D, Osteoporosis, Fracture, X-Ray, Cast, Splint, Bone Density, Growth Plate, and Skeleton Model in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Periosteum, Synovial Fluid, Disc, Meniscus, Bursa, Calcium, Vitamin D, Osteoporosis, Fracture, X-Ray, Cast, Splint, Bone Density, Growth Plate, and Skeleton Model in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

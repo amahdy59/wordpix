@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Showroom", "Lot", "Service Center", "Parts Department"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Showroom", "Lot", "Service Center"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Finance Office", "Waiting Room", "Detail Bay", "Test Drive Route"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Finance Office", "Waiting Room", "Detail Bay"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Reception", "Manager's Office", "Test Drive", "Trade-In"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Reception", "Manager's Office", "Test Drive"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Financing", "Lease", "Down Payment"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Financing", "Lease", "Down Payment"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Auto Dealership: Practical Information",
-      "text": "At the the auto dealership, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Showroom, Lot, Service Center, and Parts Department. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Finance Office, Waiting Room, Detail Bay, and Test Drive Route. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reception, Manager's Office, Test Drive, and Trade-In. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Financing, Lease, and Down Payment. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the auto dealership, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Showroom, Lot, Service Center, and Parts Department. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Finance Office, Waiting Room, Detail Bay, and Test Drive Route. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reception, Manager's Office, Test Drive, and Trade-In. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Financing, Lease, and Down Payment. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Showroom",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Finance Office",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Reception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Financing",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the auto dealership task. Use Showroom, Lot, Service Center, Parts Department, Finance Office, Waiting Room, Detail Bay, Test Drive Route, Reception, Manager's Office, Test Drive, Trade-In, Financing, Lease, and Down Payment in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the auto dealership task. Use Showroom, Lot, Service Center, Parts Department, Finance Office, Waiting Room, Detail Bay, Test Drive Route, Reception, Manager's Office, Test Drive, Trade-In, Financing, Lease, and Down Payment in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Monthly Payment", "MSRP", "Sticker Price", "Negotiation"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Monthly Payment", "MSRP", "Sticker Price"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Closing", "New", "Used", "Certified Pre-Owned"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Closing", "New", "Used"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Demo", "Mileage", "Carfax", "Warranty"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Demo", "Mileage", "Carfax"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Extended Warranty", "Recall", "Lemon Law"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Extended Warranty", "Recall", "Lemon Law"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Auto Dealership",
-      "text": "At the the auto dealership, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Monthly Payment, MSRP, Sticker Price, and Negotiation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Closing, New, Used, and Certified Pre-Owned. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Demo, Mileage, Carfax, and Warranty. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Extended Warranty, Recall, and Lemon Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the auto dealership, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Monthly Payment, MSRP, Sticker Price, and Negotiation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Closing, New, Used, and Certified Pre-Owned. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Demo, Mileage, Carfax, and Warranty. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Extended Warranty, Recall, and Lemon Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Monthly Payment",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Closing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Demo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Extended Warranty",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the auto dealership task. Use Monthly Payment, MSRP, Sticker Price, Negotiation, Closing, New, Used, Certified Pre-Owned, Demo, Mileage, Carfax, Warranty, Extended Warranty, Recall, and Lemon Law in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the auto dealership task. Use Monthly Payment, MSRP, Sticker Price, Negotiation, Closing, New, Used, Certified Pre-Owned, Demo, Mileage, Carfax, Warranty, Extended Warranty, Recall, and Lemon Law in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -390,7 +390,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sales Associate", "Finance Manager", "Service Advisor", "Technician"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sales Associate", "Finance Manager", "Service Advisor"],
@@ -402,7 +402,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["General Manager", "Receptionist", "Detailer", "Parts Specialist"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["General Manager", "Receptionist", "Detailer"],
@@ -414,7 +414,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Lot Attendant", "Title Clerk"],
-          "scenario": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.",
+          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Lot Attendant", "Title Clerk", "Sales Associate"],
@@ -428,26 +428,26 @@
     },
     "reading": {
       "title": "Before You Begin: The Auto Dealership",
-      "text": "At the the auto dealership, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sales Associate, Finance Manager, Service Advisor, and Technician. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers General Manager, Receptionist, Detailer, and Parts Specialist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lot Attendant and Title Clerk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the auto dealership, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sales Associate, Finance Manager, Service Advisor, and Technician. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers General Manager, Receptionist, Detailer, and Parts Specialist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lot Attendant and Title Clerk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sales Associate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
         "answer": "General Manager",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Lot Attendant",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -478,7 +478,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the auto dealership task. Use Sales Associate, Finance Manager, Service Advisor, Technician, General Manager, Receptionist, Detailer, Parts Specialist, Lot Attendant, and Title Clerk in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the auto dealership task. Use Sales Associate, Finance Manager, Service Advisor, Technician, General Manager, Receptionist, Detailer, Parts Specialist, Lot Attendant, and Title Clerk in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

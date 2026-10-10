@@ -1,7 +1,14 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { validateJobs, requestFor, assertCurrentScene } from "../generate_reviewed_scene_batch.mjs";
+import os from "node:os";
+import path from "node:path";
+import {
+  validateJobs,
+  requestFor,
+  assertCurrentScene,
+  generateBatch,
+} from "../generate_reviewed_scene_batch.mjs";
 const source = JSON.parse(fs.readFileSync("src/app/data/usage/classroom.usage.json"))[0];
 const scene = source.usage.scenes[0];
 const job = {
@@ -36,4 +43,24 @@ test("requests a bounded real image without cropping or fabricated output", () =
   assert.equal(request.generationConfig.maxOutputTokens, 4096);
   assert.equal(request.generationConfig.imageConfig.aspectRatio, "4:3");
   assert.ok(request.generationConfig.responseModalities.includes("IMAGE"));
+});
+test("the paid runner refuses an unreviewed whole lesson before contacting the service", async (t) => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "wordpix-runner-review-"));
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+  const queue = path.join(dir, "queue.json");
+  fs.writeFileSync(queue, JSON.stringify({ items: [job] }));
+  let requests = 0;
+  const original = globalThis.fetch;
+  globalThis.fetch = async () => {
+    requests++;
+    throw new Error("Unexpected service request");
+  };
+  t.after(() => {
+    globalThis.fetch = original;
+  });
+  await assert.rejects(
+    generateBatch({ queue, sourceRoot: ".", generate: true }),
+    /whole-lesson|Content repair/
+  );
+  assert.equal(requests, 0);
 });

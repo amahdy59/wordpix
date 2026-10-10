@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Beaker", "Flask", "Test Tube", "Pipette"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Beaker", "Flask", "Test Tube"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Graduated Cylinder", "Petri Dish", "Funnel", "Burette"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Graduated Cylinder", "Petri Dish", "Funnel"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Erlenmeyer Flask", "Volumetric Flask", "Watch Glass", "Dropper"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Erlenmeyer Flask", "Volumetric Flask", "Watch Glass"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Microscope", "Bunsen Burner", "Centrifuge"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Microscope", "Bunsen Burner", "Centrifuge"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Laboratory",
-      "text": "At the the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Beaker, Flask, Test Tube, and Pipette. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graduated Cylinder, Petri Dish, Funnel, and Burette. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Microscope, Bunsen Burner, and Centrifuge. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Beaker, Flask, Test Tube, and Pipette. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graduated Cylinder, Petri Dish, Funnel, and Burette. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Microscope, Bunsen Burner, and Centrifuge. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Beaker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Graduated Cylinder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Erlenmeyer Flask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Microscope",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the laboratory task. Use Beaker, Flask, Test Tube, Pipette, Graduated Cylinder, Petri Dish, Funnel, Burette, Erlenmeyer Flask, Volumetric Flask, Watch Glass, Dropper, Microscope, Bunsen Burner, and Centrifuge in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Beaker, Flask, Test Tube, Pipette, Graduated Cylinder, Petri Dish, Funnel, Burette, Erlenmeyer Flask, Volumetric Flask, Watch Glass, Dropper, Microscope, Bunsen Burner, and Centrifuge in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Hot Plate", "Scale", "Thermometer", "pH Meter"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hot Plate", "Scale", "Thermometer"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Spectrometer", "Incubator", "Fume Hood", "Lab Coat"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Spectrometer", "Incubator", "Fume Hood"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Safety Goggles", "Latex Gloves", "Face Shield", "Fire Extinguisher"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Safety Goggles", "Latex Gloves", "Face Shield"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Eyewash Station", "Chemical Shower", "First Aid Kit"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.",
           "check": {
             "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Eyewash Station", "Chemical Shower", "First Aid Kit"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Laboratory",
-      "text": "At the the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Hot Plate, Scale, Thermometer, and pH Meter. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Spectrometer, Incubator, Fume Hood, and Lab Coat. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Eyewash Station, Chemical Shower, and First Aid Kit. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Hot Plate, Scale, Thermometer, and pH Meter. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Spectrometer, Incubator, Fume Hood, and Lab Coat. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Eyewash Station, Chemical Shower, and First Aid Kit. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hot Plate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Spectrometer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Safety Goggles",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
         "answer": "Eyewash Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the laboratory task. Use Hot Plate, Scale, Thermometer, pH Meter, Spectrometer, Incubator, Fume Hood, Lab Coat, Safety Goggles, Latex Gloves, Face Shield, Fire Extinguisher, Eyewash Station, Chemical Shower, and First Aid Kit in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Hot Plate, Scale, Thermometer, pH Meter, Spectrometer, Incubator, Fume Hood, Lab Coat, Safety Goggles, Latex Gloves, Face Shield, Fire Extinguisher, Eyewash Station, Chemical Shower, and First Aid Kit in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Hazard Sign", "Apron", "Tongs", "Clamp"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Hazard Sign", "Apron", "Tongs"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Ring Stand", "Spatula", "Stirring Rod", "Mortar and Pestle"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Ring Stand", "Spatula", "Stirring Rod"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Scalpel", "Forceps", "Syringe", "Magnifying Glass"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Scalpel", "Forceps", "Syringe"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Acid", "Base", "Solution"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Acid", "Base", "Solution"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Getting the Information You Need: The Laboratory",
-      "text": "At the the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Hazard Sign, Apron, Tongs, and Clamp. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Scalpel, Forceps, Syringe, and Magnifying Glass. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Acid, Base, and Solution. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Hazard Sign, Apron, Tongs, and Clamp. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Scalpel, Forceps, Syringe, and Magnifying Glass. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Acid, Base, and Solution. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Hazard Sign",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Ring Stand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Scalpel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Acid",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the laboratory task. Use Hazard Sign, Apron, Tongs, Clamp, Ring Stand, Spatula, Stirring Rod, Mortar and Pestle, Scalpel, Forceps, Syringe, Magnifying Glass, Acid, Base, and Solution in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Hazard Sign, Apron, Tongs, Clamp, Ring Stand, Spatula, Stirring Rod, Mortar and Pestle, Scalpel, Forceps, Syringe, Magnifying Glass, Acid, Base, and Solution in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Indicator", "Reagent", "Sample", "Specimen"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Indicator", "Reagent", "Sample"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Slide", "Stain", "Crystal", "Lab Notebook"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Slide", "Stain", "Crystal"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Graph Paper", "Calculator", "Computer", "Data Chart"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Graph Paper", "Calculator", "Computer"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Timer", "Label", "Barcode"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Timer", "Label", "Barcode"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "Getting Ready: The Laboratory",
-      "text": "At the the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Indicator, Reagent, Sample, and Specimen. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Slide, Stain, Crystal, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graph Paper, Calculator, Computer, and Data Chart. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Timer, Label, and Barcode. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Indicator, Reagent, Sample, and Specimen. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Slide, Stain, Crystal, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graph Paper, Calculator, Computer, and Data Chart. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Timer, Label, and Barcode. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Indicator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Slide",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Graph Paper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Timer",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the laboratory task. Use Indicator, Reagent, Sample, Specimen, Slide, Stain, Crystal, Lab Notebook, Graph Paper, Calculator, Computer, Data Chart, Timer, Label, and Barcode in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Indicator, Reagent, Sample, Specimen, Slide, Stain, Crystal, Lab Notebook, Graph Paper, Calculator, Computer, Data Chart, Timer, Label, and Barcode in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -748,7 +748,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Log Sheet", "Report", "Autoclave", "Compound"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Log Sheet", "Report", "Autoclave"],
@@ -760,7 +760,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Catalyst", "Solvent", "Enzyme", "Analyze"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Catalyst", "Solvent", "Enzyme"],
@@ -772,7 +772,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Synthesize", "Calibrate", "Filter", "Extract"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Synthesize", "Calibrate", "Filter"],
@@ -784,7 +784,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Sterilize", "Document", "Peer Review"],
-          "scenario": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.",
+          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sterilize", "Document", "Peer Review"],
@@ -798,33 +798,33 @@
     },
     "reading": {
       "title": "An Adult Learner at The Laboratory",
-      "text": "At the the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Log Sheet, Report, Autoclave, and Compound. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Catalyst, Solvent, Enzyme, and Analyze. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Synthesize, Calibrate, Filter, and Extract. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Sterilize, Document, and Peer Review. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Log Sheet, Report, Autoclave, and Compound. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Catalyst, Solvent, Enzyme, and Analyze. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Synthesize, Calibrate, Filter, and Extract. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Sterilize, Document, and Peer Review. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Log Sheet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Catalyst",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Synthesize",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sterilize",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -855,7 +855,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the laboratory task. Use Log Sheet, Report, Autoclave, Compound, Catalyst, Solvent, Enzyme, Analyze, Synthesize, Calibrate, Filter, Extract, Sterilize, Document, and Peer Review in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Log Sheet, Report, Autoclave, Compound, Catalyst, Solvent, Enzyme, Analyze, Synthesize, Calibrate, Filter, Extract, Sterilize, Document, and Peer Review in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

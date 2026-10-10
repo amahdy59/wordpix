@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Oak", "Maple", "Birch", "Pine"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak, Maple, Birch, and Pine and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak, Maple, Birch, and Pine and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Oak", "Maple", "Birch"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Willow", "Cedar", "Elm", "Redwood"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Willow, Cedar, Elm, and Redwood and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Willow, Cedar, Elm, and Redwood and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Willow", "Cedar", "Elm"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Beech", "Spruce", "Fern", "Moss"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beech, Spruce, Fern, and Moss and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beech, Spruce, Fern, and Moss and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Beech", "Spruce", "Fern"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Mushroom", "Ivy", "Berry Bush"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Ivy, and Berry Bush and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Ivy, and Berry Bush and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mushroom", "Ivy", "Berry Bush"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Forest",
-      "text": "At the the forest, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Oak, Maple, Birch, and Pine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Willow, Cedar, Elm, and Redwood. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Beech, Spruce, Fern, and Moss. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mushroom, Ivy, and Berry Bush. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the forest, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Oak, Maple, Birch, and Pine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Willow, Cedar, Elm, and Redwood. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Beech, Spruce, Fern, and Moss. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mushroom, Ivy, and Berry Bush. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak, Maple, Birch, and Pine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak, Maple, Birch, and Pine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Oak",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Willow, Cedar, Elm, and Redwood and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Willow, Cedar, Elm, and Redwood and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Willow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beech, Spruce, Fern, and Moss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beech, Spruce, Fern, and Moss and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Beech",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Ivy, and Berry Bush and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mushroom, Ivy, and Berry Bush and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mushroom",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the forest task. Use Oak, Maple, Birch, Pine, Willow, Cedar, Elm, Redwood, Beech, Spruce, Fern, Moss, Mushroom, Ivy, and Berry Bush in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the forest task. Use Oak, Maple, Birch, Pine, Willow, Cedar, Elm, Redwood, Beech, Spruce, Fern, Moss, Mushroom, Ivy, and Berry Bush in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Wildflower", "Lichen", "Vine", "Acorn"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Lichen, Vine, and Acorn and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Lichen, Vine, and Acorn and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wildflower", "Lichen", "Vine"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pinecone", "Deer", "Squirrel", "Rabbit"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinecone, Deer, Squirrel, and Rabbit and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinecone, Deer, Squirrel, and Rabbit and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pinecone", "Deer", "Squirrel"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Fox", "Bear", "Owl", "Woodpecker"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fox, Bear, Owl, and Woodpecker and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fox, Bear, Owl, and Woodpecker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fox", "Bear", "Owl"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Raccoon", "Hedgehog", "Badger"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Raccoon, Hedgehog, and Badger and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Raccoon, Hedgehog, and Badger and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Raccoon", "Hedgehog", "Badger"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The Forest",
-      "text": "At the the forest, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wildflower, Lichen, Vine, and Acorn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pinecone, Deer, Squirrel, and Rabbit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fox, Bear, Owl, and Woodpecker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Raccoon, Hedgehog, and Badger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the forest, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wildflower, Lichen, Vine, and Acorn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pinecone, Deer, Squirrel, and Rabbit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fox, Bear, Owl, and Woodpecker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Raccoon, Hedgehog, and Badger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Lichen, Vine, and Acorn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Lichen, Vine, and Acorn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wildflower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinecone, Deer, Squirrel, and Rabbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pinecone, Deer, Squirrel, and Rabbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pinecone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fox, Bear, Owl, and Woodpecker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fox, Bear, Owl, and Woodpecker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fox",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Raccoon, Hedgehog, and Badger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Raccoon, Hedgehog, and Badger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Raccoon",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the forest task. Use Wildflower, Lichen, Vine, Acorn, Pinecone, Deer, Squirrel, Rabbit, Fox, Bear, Owl, Woodpecker, Raccoon, Hedgehog, and Badger in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the forest task. Use Wildflower, Lichen, Vine, Acorn, Pinecone, Deer, Squirrel, Rabbit, Fox, Bear, Owl, Woodpecker, Raccoon, Hedgehog, and Badger in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Butterfly", "Beetle", "Ant", "Firefly"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, Ant, and Firefly and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, Ant, and Firefly and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Butterfly", "Beetle", "Ant"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Dragonfly", "Spider", "Caterpillar", "Ladybug"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Spider, Caterpillar, and Ladybug and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Spider, Caterpillar, and Ladybug and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dragonfly", "Spider", "Caterpillar"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Bee", "Moth", "Trail", "Stream"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bee, Moth, Trail, and Stream and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bee, Moth, Trail, and Stream and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bee", "Moth", "Trail"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Clearing", "Log", "Stump"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clearing, Log, and Stump and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clearing, Log, and Stump and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Clearing", "Log", "Stump"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The Forest",
-      "text": "At the the forest, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Butterfly, Beetle, Ant, and Firefly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dragonfly, Spider, Caterpillar, and Ladybug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bee, Moth, Trail, and Stream. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Clearing, Log, and Stump. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the forest, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Butterfly, Beetle, Ant, and Firefly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dragonfly, Spider, Caterpillar, and Ladybug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bee, Moth, Trail, and Stream. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Clearing, Log, and Stump. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, Ant, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Butterfly, Beetle, Ant, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Butterfly",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Spider, Caterpillar, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Spider, Caterpillar, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dragonfly",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bee, Moth, Trail, and Stream and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bee, Moth, Trail, and Stream and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bee",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clearing, Log, and Stump and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clearing, Log, and Stump and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Clearing",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the forest task. Use Butterfly, Beetle, Ant, Firefly, Dragonfly, Spider, Caterpillar, Ladybug, Bee, Moth, Trail, Stream, Clearing, Log, and Stump in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the forest task. Use Butterfly, Beetle, Ant, Firefly, Dragonfly, Spider, Caterpillar, Ladybug, Bee, Moth, Trail, Stream, Clearing, Log, and Stump in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Canopy", "Undergrowth", "Bridge", "Waterfall"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canopy, Undergrowth, Bridge, and Waterfall and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canopy, Undergrowth, Bridge, and Waterfall and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Canopy", "Undergrowth", "Bridge"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Pond", "Spring Bloom", "Summer Green", "Autumn Leaves"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pond, Spring Bloom, Summer Green, and Autumn Leaves and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pond, Spring Bloom, Summer Green, and Autumn Leaves and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Pond", "Spring Bloom", "Summer Green"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Winter Snow", "Bird Nest", "Migration", "Hibernation"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Winter Snow, Bird Nest, Migration, and Hibernation and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Winter Snow, Bird Nest, Migration, and Hibernation and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Winter Snow", "Bird Nest", "Migration"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Seedling", "Fallen Leaf", "Icicle"],
-          "scenario": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seedling, Fallen Leaf, and Icicle and choose the option that fits the situation.",
+          "scenario": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seedling, Fallen Leaf, and Icicle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Seedling", "Fallen Leaf", "Icicle"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The Forest",
-      "text": "At the the forest, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Canopy, Undergrowth, Bridge, and Waterfall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pond, Spring Bloom, Summer Green, and Autumn Leaves. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Winter Snow, Bird Nest, Migration, and Hibernation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Seedling, Fallen Leaf, and Icicle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the forest, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Canopy, Undergrowth, Bridge, and Waterfall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pond, Spring Bloom, Summer Green, and Autumn Leaves. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Winter Snow, Bird Nest, Migration, and Hibernation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Seedling, Fallen Leaf, and Icicle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canopy, Undergrowth, Bridge, and Waterfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canopy, Undergrowth, Bridge, and Waterfall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Canopy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pond, Spring Bloom, Summer Green, and Autumn Leaves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pond, Spring Bloom, Summer Green, and Autumn Leaves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Pond",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Winter Snow, Bird Nest, Migration, and Hibernation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Winter Snow, Bird Nest, Migration, and Hibernation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Winter Snow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seedling, Fallen Leaf, and Icicle and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the forest setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seedling, Fallen Leaf, and Icicle and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Seedling",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the forest task. Use Canopy, Undergrowth, Bridge, Waterfall, Pond, Spring Bloom, Summer Green, Autumn Leaves, Winter Snow, Bird Nest, Migration, Hibernation, Seedling, Fallen Leaf, and Icicle in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the forest task. Use Canopy, Undergrowth, Bridge, Waterfall, Pond, Spring Bloom, Summer Green, Autumn Leaves, Winter Snow, Bird Nest, Migration, Hibernation, Seedling, Fallen Leaf, and Icicle in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

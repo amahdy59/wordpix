@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Robin", "Sparrow", "Blue Jay", "Cardinal"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Robin", "Sparrow", "Blue Jay"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Crow", "Pigeon", "Dove", "Finch"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crow", "Pigeon", "Dove"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Wren", "Starling", "Duck", "Swan"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wren", "Starling", "Duck"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Goose", "Heron", "Pelican"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Goose", "Heron", "Pelican"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "The Bird Sanctuary: Practical Information",
-      "text": "At the the bird sanctuary, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Robin, Sparrow, Blue Jay, and Cardinal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crow, Pigeon, Dove, and Finch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wren, Starling, Duck, and Swan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Goose, Heron, and Pelican. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Robin, Sparrow, Blue Jay, and Cardinal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crow, Pigeon, Dove, and Finch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wren, Starling, Duck, and Swan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Goose, Heron, and Pelican. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Robin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Wren",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Goose",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bird sanctuary task. Use Robin, Sparrow, Blue Jay, Cardinal, Crow, Pigeon, Dove, Finch, Wren, Starling, Duck, Swan, Goose, Heron, and Pelican in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Robin, Sparrow, Blue Jay, Cardinal, Crow, Pigeon, Dove, Finch, Wren, Starling, Duck, Swan, Goose, Heron, and Pelican in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Flamingo", "Crane", "Seagull", "Kingfisher"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Flamingo", "Crane", "Seagull"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cormorant", "Eagle", "Hawk", "Falcon"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cormorant", "Eagle", "Hawk"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Owl", "Osprey", "Vulture", "Kite"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Owl", "Osprey", "Vulture"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Harrier", "Kestrel", "Condor"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Harrier", "Kestrel", "Condor"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The Bird Sanctuary",
-      "text": "At the the bird sanctuary, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Flamingo, Crane, Seagull, and Kingfisher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cormorant, Eagle, Hawk, and Falcon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Owl, Osprey, Vulture, and Kite. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Harrier, Kestrel, and Condor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Flamingo, Crane, Seagull, and Kingfisher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cormorant, Eagle, Hawk, and Falcon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Owl, Osprey, Vulture, and Kite. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Harrier, Kestrel, and Condor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Flamingo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cormorant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Owl",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Harrier",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bird sanctuary task. Use Flamingo, Crane, Seagull, Kingfisher, Cormorant, Eagle, Hawk, Falcon, Owl, Osprey, Vulture, Kite, Harrier, Kestrel, and Condor in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Flamingo, Crane, Seagull, Kingfisher, Cormorant, Eagle, Hawk, Falcon, Owl, Osprey, Vulture, Kite, Harrier, Kestrel, and Condor in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Beak", "Feather", "Wing", "Talon"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Beak", "Feather", "Wing"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Crest", "Tail", "Breast", "Egg"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crest", "Tail", "Breast"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Nest", "Perch", "Fly", "Sing"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Nest", "Perch", "Fly"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Migrate", "Nest Building", "Feed"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.",
           "check": {
             "question": "Which option best describes the main action shown in the scene?",
             "options": ["Migrate", "Nest Building", "Feed"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Making a Practical Decision: The Bird Sanctuary",
-      "text": "At the the bird sanctuary, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Beak, Feather, Wing, and Talon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crest, Tail, Breast, and Egg. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nest, Perch, Fly, and Sing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Migrate, Nest Building, and Feed. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Beak, Feather, Wing, and Talon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crest, Tail, Breast, and Egg. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nest, Perch, Fly, and Sing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Migrate, Nest Building, and Feed. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Beak",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Nest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
         "answer": "Migrate",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bird sanctuary task. Use Beak, Feather, Wing, Talon, Crest, Tail, Breast, Egg, Nest, Perch, Fly, Sing, Migrate, Nest Building, and Feed in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Beak, Feather, Wing, Talon, Crest, Tail, Breast, Egg, Nest, Perch, Fly, Sing, Migrate, Nest Building, and Feed in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Preen", "Soar", "Dive", "Flock"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.",
           "check": {
             "question": "Which option best describes the main action shown in the scene?",
             "options": ["Preen", "Soar", "Dive"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Roost", "Tree", "Branch", "Birdhouse"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Roost", "Tree", "Branch"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Feeder", "Bath", "Pond", "Wetland"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Feeder", "Bath", "Pond"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Meadow", "Cliff", "Hedge"],
-          "scenario": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.",
+          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Meadow", "Cliff", "Hedge"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "The Bird Sanctuary: Practical Information",
-      "text": "At the the bird sanctuary, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Preen, Soar, Dive, and Flock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Roost, Tree, Branch, and Birdhouse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Feeder, Bath, Pond, and Wetland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Meadow, Cliff, and Hedge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Preen, Soar, Dive, and Flock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Roost, Tree, Branch, and Birdhouse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Feeder, Bath, Pond, and Wetland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Meadow, Cliff, and Hedge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
         "answer": "Preen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Roost",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Feeder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Meadow",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the bird sanctuary task. Use Preen, Soar, Dive, Flock, Roost, Tree, Branch, Birdhouse, Feeder, Bath, Pond, Wetland, Meadow, Cliff, and Hedge in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Preen, Soar, Dive, Flock, Roost, Tree, Branch, Birdhouse, Feeder, Bath, Pond, Wetland, Meadow, Cliff, and Hedge in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

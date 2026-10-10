@@ -4,40 +4,40 @@
     "lessonId": "airport-1",
     "slot": "core-1",
     "unitId": "airport",
-    "phrase": "confirm the platform",
+    "phrase": "check the gate number",
     "kind": "collocation",
-    "meaning": "verify the correct platform for a journey",
-    "arabicMeaning": "يتأكد من الرصيف",
-    "example": "She confirmed the platform before boarding.",
-    "learnerPurpose": "Use “confirm the platform” accurately in a realistic adult context.",
-    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "meaning": "find or confirm the boarding gate assigned to your flight",
+    "arabicMeaning": "يتأكد من رقم بوابة الصعود",
+    "example": "Check the gate number on your boarding pass before going to the departure area.",
+    "learnerPurpose": "Use “check the gate number” when planning or taking a flight.",
+    "pattern": "check + the gate number; check the gate number on your boarding pass",
     "cefrStage": "B1",
     "register": "neutral",
-    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/confirm",
+    "frequencyEvidence": "Selected for a useful airport communicative task; no numerical corpus rank or independently measured complete-phrase frequency is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/gate?topic=airports-and-landing-strips",
     "check": {
-      "question": "Which phrase matches this meaning: verify the correct platform for a journey",
-      "expectedAnswer": "confirm the platform",
-      "explanation": "verify the correct platform for a journey"
+      "question": "Which phrase means: find or confirm the boarding gate assigned to your flight?",
+      "expectedAnswer": "check the gate number",
+      "explanation": "find or confirm the boarding gate assigned to your flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “confirm the platform”.",
-      "personalUse": "Write one realistic adult-life sentence using “confirm the platform”.",
-      "laterReview": "Reuse “confirm the platform” in a later review or conversation."
+      "retrieval": "Complete a sentence using “check the gate number” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “check the gate number”.",
+      "laterReview": "Use “check the gate number” to help someone plan a later journey."
     },
     "sceneId": "airport-1-usage-scene-1",
-    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceStatus": "Dictionary senses verified online; wording, Arabic and patterns reviewed editorially on 2026-10-09.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/confirm",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/confirm-the-platform",
-      "finding": "Workbook evidence supports the taught sense and pattern for confirm the platform; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/gate?topic=airports-and-landing-strips",
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/gate",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -50,35 +50,35 @@
     "meaning": "ask for the place used by departing passengers",
     "arabicMeaning": "أين منطقة المغادرة؟",
     "example": "Excuse me, where is the departure area?",
-    "learnerPurpose": "Use “Where is the departure area?” accurately in a realistic adult context.",
-    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "learnerPurpose": "Use “Where is the departure area?” when planning or taking a flight.",
+    "pattern": "Where is + noun phrase? Use “the departure area” when asking for this airport facility.",
     "cefrStage": "B1",
     "register": "everyday spoken",
     "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
     "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/departure",
     "check": {
-      "question": "Which phrase matches this meaning: ask for the place used by departing passengers",
+      "question": "Which phrase means: ask for the place used by departing passengers?",
       "expectedAnswer": "Where is the departure area?",
       "explanation": "ask for the place used by departing passengers"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “Where is the departure area?”.",
-      "personalUse": "Write one realistic adult-life sentence using “Where is the departure area?”.",
-      "laterReview": "Reuse “Where is the departure area?” in a later review or conversation."
+      "retrieval": "Complete a sentence using “Where is the departure area?” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “Where is the departure area?”.",
+      "laterReview": "Use “Where is the departure area?” to help someone plan a later journey."
     },
     "sceneId": "airport-1-usage-scene-2",
     "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-10",
       "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/departure",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/where-is-the-departure-area",
-      "finding": "Workbook evidence supports the taught sense and pattern for Where is the departure area?; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/departure",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -88,38 +88,38 @@
     "unitId": "airport",
     "phrase": "check in",
     "kind": "phrasal-verb",
-    "meaning": "complete the arrival or registration process before travel",
-    "arabicMeaning": "يسجل الوصول",
-    "example": "The passenger checked in before going to the departure area.",
-    "learnerPurpose": "Use “check in” accurately in a realistic adult context.",
-    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
-    "cefrStage": "B2",
+    "meaning": "complete the airline registration process before a flight",
+    "arabicMeaning": "يُتمّ إجراءات السفر قبل الرحلة",
+    "example": "Omar checks in online before travelling to the airport.",
+    "learnerPurpose": "Use “check in” when planning or taking a flight.",
+    "pattern": "check in for a flight; check in online. Use two words for the verb check in and a hyphen for the noun or adjective check-in.",
+    "cefrStage": "B1",
     "register": "neutral",
-    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "frequencyEvidence": "Selected for a useful airport communicative task; no numerical corpus rank or independently measured complete-phrase frequency is claimed.",
     "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check-in",
     "check": {
-      "question": "Which phrase matches this meaning: complete the arrival or registration process before travel",
+      "question": "Which phrase means: complete the airline registration process before a flight?",
       "expectedAnswer": "check in",
-      "explanation": "complete the arrival or registration process before travel"
+      "explanation": "complete the airline registration process before a flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “check in”.",
-      "personalUse": "Write one realistic adult-life sentence using “check in”.",
-      "laterReview": "Reuse “check in” in a later review or conversation."
+      "retrieval": "Complete a sentence using “check in” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “check in”.",
+      "laterReview": "Use “check in” to help someone plan a later journey."
     },
     "sceneId": "airport-1-usage-scene-3",
-    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceStatus": "Dictionary senses verified online; wording, Arabic and patterns reviewed editorially on 2026-10-09.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-10",
       "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check-in",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/check-in",
-      "finding": "Workbook evidence supports the taught sense and pattern for check in; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "secondaryUrl": "https://dictionary.cambridge.org/us/dictionary/learner-english/check-in",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -129,38 +129,38 @@
     "unitId": "airport",
     "phrase": "collect your luggage",
     "kind": "collocation",
-    "meaning": "pick up your bags after travel",
-    "arabicMeaning": "يستلم أمتعته",
-    "example": "Passengers collected their luggage after the arrival notice.",
-    "learnerPurpose": "Use “collect your luggage” accurately in a realistic adult context.",
-    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "meaning": "pick up your bags at baggage claim after a flight",
+    "arabicMeaning": "يستلم أمتعته بعد الرحلة",
+    "example": "After landing, collect your luggage at baggage claim.",
+    "learnerPurpose": "Use “collect your luggage” when planning or taking a flight.",
+    "pattern": "collect + your/my/their luggage. Luggage is uncountable; say a bag or a piece of luggage when counting.",
     "cefrStage": "B1",
     "register": "neutral",
-    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/collect",
+    "frequencyEvidence": "Selected for a useful airport communicative task; no numerical corpus rank or independently measured complete-phrase frequency is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/us/dictionary/english/luggage",
     "check": {
-      "question": "Which phrase matches this meaning: pick up your bags after travel",
+      "question": "Which phrase means: pick up your bags at baggage claim after a flight?",
       "expectedAnswer": "collect your luggage",
-      "explanation": "pick up your bags after travel"
+      "explanation": "pick up your bags at baggage claim after a flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “collect your luggage”.",
-      "personalUse": "Write one realistic adult-life sentence using “collect your luggage”.",
-      "laterReview": "Reuse “collect your luggage” in a later review or conversation."
+      "retrieval": "Complete a sentence using “collect your luggage” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “collect your luggage”.",
+      "laterReview": "Use “collect your luggage” to help someone plan a later journey."
     },
     "sceneId": "airport-2-usage-scene-1",
-    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceStatus": "Dictionary senses verified online; wording, Arabic and patterns reviewed editorially on 2026-10-09.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/collect",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/collect-your-luggage",
-      "finding": "Workbook evidence supports the taught sense and pattern for collect your luggage; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/us/dictionary/english/luggage",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/us/definition/english/luggage",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -168,40 +168,40 @@
     "lessonId": "airport-2",
     "slot": "core-2",
     "unitId": "airport",
-    "phrase": "Which platform does it leave from?",
+    "phrase": "Which gate does the flight leave from?",
     "kind": "everyday-expression",
-    "meaning": "ask where a train or service departs",
-    "arabicMeaning": "من أي رصيف تنطلق الرحلة؟",
-    "example": "Which platform does it leave from this afternoon?",
-    "learnerPurpose": "Use “Which platform does it leave from?” accurately in a realistic adult context.",
-    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "meaning": "ask which boarding gate to use for a flight",
+    "arabicMeaning": "من أي بوابة تغادر الرحلة؟",
+    "example": "Excuse me, which gate does the flight leave from?",
+    "learnerPurpose": "Use “Which gate does the flight leave from?” when planning or taking a flight.",
+    "pattern": "Which gate + does + the flight + leave from? Use does with the base verb leave.",
     "cefrStage": "B1",
     "register": "everyday spoken",
-    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/platform",
+    "frequencyEvidence": "Selected for a useful airport communicative task; no numerical corpus rank or independently measured complete-phrase frequency is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/gate?topic=airports-and-landing-strips",
     "check": {
-      "question": "Which phrase matches this meaning: ask where a train or service departs",
-      "expectedAnswer": "Which platform does it leave from?",
-      "explanation": "ask where a train or service departs"
+      "question": "Which phrase means: ask which boarding gate to use for a flight?",
+      "expectedAnswer": "Which gate does the flight leave from?",
+      "explanation": "ask which boarding gate to use for a flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “Which platform does it leave from?”.",
-      "personalUse": "Write one realistic adult-life sentence using “Which platform does it leave from?”.",
-      "laterReview": "Reuse “Which platform does it leave from?” in a later review or conversation."
+      "retrieval": "Complete a sentence using “Which gate does the flight leave from?” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “Which gate does the flight leave from?”.",
+      "laterReview": "Use “Which gate does the flight leave from?” to help someone plan a later journey."
     },
     "sceneId": "airport-2-usage-scene-2",
-    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceStatus": "Dictionary senses verified online; wording, Arabic and patterns reviewed editorially on 2026-10-09.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/platform",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/which-platform-does-it-leave-from",
-      "finding": "Workbook evidence supports the taught sense and pattern for Which platform does it leave from?; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/gate?topic=airports-and-landing-strips",
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/gate",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -213,36 +213,36 @@
     "kind": "phrasal-verb",
     "meaning": "begin a journey",
     "arabicMeaning": "ينطلق",
-    "example": "The service set off after the final boarding announcement.",
-    "learnerPurpose": "Use “set off” accurately in a realistic adult context.",
-    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
-    "cefrStage": "B2",
+    "example": "Omar sets off for the airport early to leave time for check-in.",
+    "learnerPurpose": "Use “set off” when planning or taking a flight.",
+    "pattern": "set off for + destination; set off at + time. This journey sense has no direct object.",
+    "cefrStage": "B1",
     "register": "neutral",
     "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
     "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/set-off",
     "check": {
-      "question": "Which phrase matches this meaning: begin a journey",
+      "question": "Which phrase means: begin a journey?",
       "expectedAnswer": "set off",
       "explanation": "begin a journey"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “set off”.",
-      "personalUse": "Write one realistic adult-life sentence using “set off”.",
-      "laterReview": "Reuse “set off” in a later review or conversation."
+      "retrieval": "Complete a sentence using “set off” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “set off”.",
+      "laterReview": "Use “set off” to help someone plan a later journey."
     },
     "sceneId": "airport-2-usage-scene-3",
     "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-10",
       "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/set-off",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/set-off",
-      "finding": "Workbook evidence supports the taught sense and pattern for set off; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/set-off",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -250,40 +250,40 @@
     "lessonId": "airport-3",
     "slot": "core-1",
     "unitId": "airport",
-    "phrase": "check the timetable",
+    "phrase": "check the departure time",
     "kind": "collocation",
-    "meaning": "look at scheduled departure or arrival times",
-    "arabicMeaning": "يتحقق من الجدول الزمني",
-    "example": "I checked the timetable before leaving for the station.",
-    "learnerPurpose": "Use “check the timetable” accurately in a realistic adult context.",
-    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "meaning": "verify when a flight is scheduled to leave",
+    "arabicMeaning": "يتحقق من موعد المغادرة",
+    "example": "Omar checks the departure time before leaving for the airport.",
+    "learnerPurpose": "Use “check the departure time” when planning or taking a flight.",
+    "pattern": "check + the departure time; check the departure time on + a display or boarding pass.",
     "cefrStage": "B1",
     "register": "neutral",
     "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/departure",
     "check": {
-      "question": "Which phrase matches this meaning: look at scheduled departure or arrival times",
-      "expectedAnswer": "check the timetable",
-      "explanation": "look at scheduled departure or arrival times"
+      "question": "Which phrase means: verify when a flight is scheduled to leave?",
+      "expectedAnswer": "check the departure time",
+      "explanation": "verify when a flight is scheduled to leave"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “check the timetable”.",
-      "personalUse": "Write one realistic adult-life sentence using “check the timetable”.",
-      "laterReview": "Reuse “check the timetable” in a later review or conversation."
+      "retrieval": "Complete a sentence using “check the departure time” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “check the departure time”.",
+      "laterReview": "Use “check the departure time” to help someone plan a later journey."
     },
     "sceneId": "airport-3-usage-scene-1",
     "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/check-the-timetable",
-      "finding": "Workbook evidence supports the taught sense and pattern for check the timetable; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/departure",
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/departure",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -291,40 +291,40 @@
     "lessonId": "airport-3",
     "slot": "core-2",
     "unitId": "airport",
-    "phrase": "Is the service on time?",
+    "phrase": "Is the flight on time?",
     "kind": "everyday-expression",
-    "meaning": "ask whether a train, flight, or other service is running as scheduled",
+    "meaning": "ask whether the flight is following its scheduled time",
     "arabicMeaning": "هل الرحلة في موعدها؟",
-    "example": "Is the service on time according to the latest announcement?",
-    "learnerPurpose": "Use “Is the service on time?” accurately in a realistic adult context.",
-    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "example": "Excuse me, is the flight on time?",
+    "learnerPurpose": "Use “Is the flight on time?” when planning or taking a flight.",
+    "pattern": "Is + the flight + on time? Use “on time” after the verb; “on-time” is an adjective before a noun.",
     "cefrStage": "B1",
     "register": "everyday spoken",
     "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/time",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/right-on-time?topic=at-the-right-time",
     "check": {
-      "question": "Which phrase matches this meaning: ask whether a train, flight, or other service is running as scheduled",
-      "expectedAnswer": "Is the service on time?",
-      "explanation": "ask whether a train, flight, or other service is running as scheduled"
+      "question": "Which phrase means: ask whether the flight is following its scheduled time?",
+      "expectedAnswer": "Is the flight on time?",
+      "explanation": "ask whether the flight is following its scheduled time"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “Is the service on time?”.",
-      "personalUse": "Write one realistic adult-life sentence using “Is the service on time?”.",
-      "laterReview": "Reuse “Is the service on time?” in a later review or conversation."
+      "retrieval": "Complete a sentence using “Is the flight on time?” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “Is the flight on time?”.",
+      "laterReview": "Use “Is the flight on time?” to help someone plan a later journey."
     },
     "sceneId": "airport-3-usage-scene-2",
     "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/time",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/is-the-service-on-time",
-      "finding": "Workbook evidence supports the taught sense and pattern for Is the service on time?; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/right-on-time?topic=at-the-right-time",
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/on-time",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -332,40 +332,40 @@
     "lessonId": "airport-3",
     "slot": "optional-1",
     "unitId": "airport",
-    "phrase": "get on",
-    "kind": "phrasal-verb",
-    "meaning": "enter a bus, train, or other public transport vehicle",
-    "arabicMeaning": "يصعد إلى",
-    "example": "Passengers got on after staff opened boarding.",
-    "learnerPurpose": "Use “get on” accurately in a realistic adult context.",
-    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
-    "cefrStage": "B2",
+    "phrase": "board the plane",
+    "kind": "collocation",
+    "meaning": "get onto an aircraft before a flight",
+    "arabicMeaning": "يصعد إلى الطائرة",
+    "example": "Passengers board the plane after the gate agent calls their group.",
+    "learnerPurpose": "Use “board the plane” when planning or taking a flight.",
+    "pattern": "board + the plane or flight; do not add “on” after the verb “board”.",
+    "cefrStage": "B1",
     "register": "everyday spoken",
     "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/get-on",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/board",
     "check": {
-      "question": "Which phrase matches this meaning: enter a bus, train, or other public transport vehicle",
-      "expectedAnswer": "get on",
-      "explanation": "enter a bus, train, or other public transport vehicle"
+      "question": "Which phrase means: get onto an aircraft before a flight?",
+      "expectedAnswer": "board the plane",
+      "explanation": "get onto an aircraft before a flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “get on”.",
-      "personalUse": "Write one realistic adult-life sentence using “get on”.",
-      "laterReview": "Reuse “get on” in a later review or conversation."
+      "retrieval": "Complete a sentence using “board the plane” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “board the plane”.",
+      "laterReview": "Use “board the plane” to help someone plan a later journey."
     },
     "sceneId": "airport-3-usage-scene-3",
     "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/get-on",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/get-on",
-      "finding": "Workbook evidence supports the taught sense and pattern for get on; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/board",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/board_2",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -373,40 +373,40 @@
     "lessonId": "airport-4",
     "slot": "core-1",
     "unitId": "airport",
-    "phrase": "confirm the platform",
+    "phrase": "check the gate number",
     "kind": "collocation",
-    "meaning": "verify the correct platform for a journey",
-    "arabicMeaning": "يتأكد من الرصيف",
-    "example": "She confirmed the platform before boarding.",
-    "learnerPurpose": "Use “confirm the platform” accurately in a realistic adult context.",
-    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "meaning": "find or confirm the boarding gate assigned to your flight",
+    "arabicMeaning": "يتأكد من رقم بوابة الصعود",
+    "example": "Check the gate number on your boarding pass before going to the departure area.",
+    "learnerPurpose": "Use “check the gate number” when planning or taking a flight.",
+    "pattern": "check + the gate number; check the gate number on your boarding pass",
     "cefrStage": "B1",
     "register": "neutral",
-    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/confirm",
+    "frequencyEvidence": "Selected for a useful airport communicative task; no numerical corpus rank or independently measured complete-phrase frequency is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/gate?topic=airports-and-landing-strips",
     "check": {
-      "question": "Which phrase matches this meaning: verify the correct platform for a journey",
-      "expectedAnswer": "confirm the platform",
-      "explanation": "verify the correct platform for a journey"
+      "question": "Which phrase means: find or confirm the boarding gate assigned to your flight?",
+      "expectedAnswer": "check the gate number",
+      "explanation": "find or confirm the boarding gate assigned to your flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “confirm the platform”.",
-      "personalUse": "Write one realistic adult-life sentence using “confirm the platform”.",
-      "laterReview": "Reuse “confirm the platform” in a later review or conversation."
+      "retrieval": "Complete a sentence using “check the gate number” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “check the gate number”.",
+      "laterReview": "Use “check the gate number” to help someone plan a later journey."
     },
     "sceneId": "airport-4-usage-scene-1",
-    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceStatus": "Dictionary senses verified online; wording, Arabic and patterns reviewed editorially on 2026-10-09.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/confirm",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/confirm-the-platform",
-      "finding": "Workbook evidence supports the taught sense and pattern for confirm the platform; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "reviewedAt": "2026-10-10",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/gate?topic=airports-and-landing-strips",
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/gate",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -419,35 +419,35 @@
     "meaning": "ask for the place used by departing passengers",
     "arabicMeaning": "أين منطقة المغادرة؟",
     "example": "Excuse me, where is the departure area?",
-    "learnerPurpose": "Use “Where is the departure area?” accurately in a realistic adult context.",
-    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "learnerPurpose": "Use “Where is the departure area?” when planning or taking a flight.",
+    "pattern": "Where is + noun phrase? Use “the departure area” when asking for this airport facility.",
     "cefrStage": "B1",
     "register": "everyday spoken",
     "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
     "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/departure",
     "check": {
-      "question": "Which phrase matches this meaning: ask for the place used by departing passengers",
+      "question": "Which phrase means: ask for the place used by departing passengers?",
       "expectedAnswer": "Where is the departure area?",
       "explanation": "ask for the place used by departing passengers"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “Where is the departure area?”.",
-      "personalUse": "Write one realistic adult-life sentence using “Where is the departure area?”.",
-      "laterReview": "Reuse “Where is the departure area?” in a later review or conversation."
+      "retrieval": "Complete a sentence using “Where is the departure area?” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “Where is the departure area?”.",
+      "laterReview": "Use “Where is the departure area?” to help someone plan a later journey."
     },
     "sceneId": "airport-4-usage-scene-2",
     "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-10",
       "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/departure",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/where-is-the-departure-area",
-      "finding": "Workbook evidence supports the taught sense and pattern for Where is the departure area?; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "secondaryUrl": "https://www.collinsdictionary.com/dictionary/english/departure",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   },
   {
@@ -457,38 +457,38 @@
     "unitId": "airport",
     "phrase": "check in",
     "kind": "phrasal-verb",
-    "meaning": "complete the arrival or registration process before travel",
-    "arabicMeaning": "يسجل الوصول",
-    "example": "The passenger checked in before going to the departure area.",
-    "learnerPurpose": "Use “check in” accurately in a realistic adult context.",
-    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
-    "cefrStage": "B2",
+    "meaning": "complete the airline registration process before a flight",
+    "arabicMeaning": "يُتمّ إجراءات السفر قبل الرحلة",
+    "example": "Omar checks in online before travelling to the airport.",
+    "learnerPurpose": "Use “check in” when planning or taking a flight.",
+    "pattern": "check in for a flight; check in online. Use two words for the verb check in and a hyphen for the noun or adjective check-in.",
+    "cefrStage": "B1",
     "register": "neutral",
-    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "frequencyEvidence": "Selected for a useful airport communicative task; no numerical corpus rank or independently measured complete-phrase frequency is claimed.",
     "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check-in",
     "check": {
-      "question": "Which phrase matches this meaning: complete the arrival or registration process before travel",
+      "question": "Which phrase means: complete the airline registration process before a flight?",
       "expectedAnswer": "check in",
-      "explanation": "complete the arrival or registration process before travel"
+      "explanation": "complete the airline registration process before a flight"
     },
     "practice": {
-      "retrieval": "Complete a sentence using “check in”.",
-      "personalUse": "Write one realistic adult-life sentence using “check in”.",
-      "laterReview": "Reuse “check in” in a later review or conversation."
+      "retrieval": "Complete a sentence using “check in” without looking at the example.",
+      "personalUse": "Write or say a travel sentence using “check in”.",
+      "laterReview": "Use “check in” to help someone plan a later journey."
     },
     "sceneId": "airport-4-usage-scene-3",
-    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceStatus": "Dictionary senses verified online; wording, Arabic and patterns reviewed editorially on 2026-10-09.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-10",
       "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check-in",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/check-in",
-      "finding": "Workbook evidence supports the taught sense and pattern for check in; Arabic meaning and CEFR label were retained from the approved editorial row."
+      "secondaryUrl": "https://dictionary.cambridge.org/us/dictionary/learner-english/check-in",
+      "finding": "Original airport example and Arabic reviewed together. Sources support the relevant word or sense; complete collocations and sentence-level difficulty are editorial judgments, not corpus frequency measurements."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Editorial Agent - GPT-5.6 Sol",
-      "revision": "Rev 1.0"
+      "reviewer": "Codex language review",
+      "revision": "airport-image-preflight-2026-10-09"
     }
   }
 ]

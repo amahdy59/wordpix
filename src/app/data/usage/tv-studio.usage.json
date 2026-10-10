@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Camera", "Tripod", "Boom Microphone", "Spotlight"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Tripod, Boom Microphone, and Spotlight and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Tripod, Boom Microphone, and Spotlight and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Camera", "Tripod", "Boom Microphone"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Softbox Light", "Teleprompter", "Green Screen", "Dolly"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Softbox Light, Teleprompter, Green Screen, and Dolly and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Softbox Light, Teleprompter, Green Screen, and Dolly and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Softbox Light", "Teleprompter", "Green Screen"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Jib Crane", "Monitor Wall", "Anchor Desk", "Background Set"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jib Crane, Monitor Wall, Anchor Desk, and Background Set and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jib Crane, Monitor Wall, Anchor Desk, and Background Set and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Jib Crane", "Monitor Wall", "Anchor Desk"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Stage", "Platform", "Curtain"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Platform, and Curtain and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Platform, and Curtain and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Stage", "Platform", "Curtain"],
@@ -101,33 +101,33 @@
     },
     "reading": {
       "title": "A Practical Update: The TV Studio",
-      "text": "At the the tv studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camera, Tripod, Boom Microphone, and Spotlight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Softbox Light, Teleprompter, Green Screen, and Dolly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Jib Crane, Monitor Wall, Anchor Desk, and Background Set. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stage, Platform, and Curtain. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the tv studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camera, Tripod, Boom Microphone, and Spotlight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Softbox Light, Teleprompter, Green Screen, and Dolly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Jib Crane, Monitor Wall, Anchor Desk, and Background Set. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stage, Platform, and Curtain. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The TV Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Tripod, Boom Microphone, and Spotlight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Tripod, Boom Microphone, and Spotlight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Camera",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Softbox Light, Teleprompter, Green Screen, and Dolly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Softbox Light, Teleprompter, Green Screen, and Dolly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Softbox Light",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jib Crane, Monitor Wall, Anchor Desk, and Background Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jib Crane, Monitor Wall, Anchor Desk, and Background Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Jib Crane",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Platform, and Curtain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stage, Platform, and Curtain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Stage",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -158,7 +158,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the tv studio task. Use Camera, Tripod, Boom Microphone, Spotlight, Softbox Light, Teleprompter, Green Screen, Dolly, Jib Crane, Monitor Wall, Anchor Desk, Background Set, Stage, Platform, and Curtain in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the tv studio task. Use Camera, Tripod, Boom Microphone, Spotlight, Softbox Light, Teleprompter, Green Screen, Dolly, Jib Crane, Monitor Wall, Anchor Desk, Background Set, Stage, Platform, and Curtain in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -225,7 +225,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Props", "Clock", "Logo", "Backdrop"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Props, Clock, Logo, and Backdrop and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Props, Clock, Logo, and Backdrop and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Props", "Clock", "Logo"],
@@ -237,7 +237,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Floor Marking", "Director", "Producer", "Camera Operator"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor Marking, Director, Producer, and Camera Operator and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor Marking, Director, Producer, and Camera Operator and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Floor Marking", "Director", "Producer"],
@@ -249,7 +249,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Sound Engineer", "Lighting Technician", "Makeup Artist", "Set Designer"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Engineer, Lighting Technician, Makeup Artist, and Set Designer and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Engineer, Lighting Technician, Makeup Artist, and Set Designer and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sound Engineer", "Lighting Technician", "Makeup Artist"],
@@ -261,7 +261,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Script Writer", "Editor", "Stage Manager"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Script Writer, Editor, and Stage Manager and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Script Writer, Editor, and Stage Manager and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Script Writer", "Editor", "Stage Manager"],
@@ -274,33 +274,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The TV Studio",
-      "text": "At the the tv studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Props, Clock, Logo, and Backdrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Floor Marking, Director, Producer, and Camera Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sound Engineer, Lighting Technician, Makeup Artist, and Set Designer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Script Writer, Editor, and Stage Manager. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the tv studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Props, Clock, Logo, and Backdrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Floor Marking, Director, Producer, and Camera Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sound Engineer, Lighting Technician, Makeup Artist, and Set Designer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Script Writer, Editor, and Stage Manager. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The TV Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Props, Clock, Logo, and Backdrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Props, Clock, Logo, and Backdrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Props",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor Marking, Director, Producer, and Camera Operator and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor Marking, Director, Producer, and Camera Operator and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Floor Marking",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Engineer, Lighting Technician, Makeup Artist, and Set Designer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Engineer, Lighting Technician, Makeup Artist, and Set Designer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sound Engineer",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Script Writer, Editor, and Stage Manager and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Script Writer, Editor, and Stage Manager and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Script Writer",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -331,7 +331,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the tv studio task. Use Props, Clock, Logo, Backdrop, Floor Marking, Director, Producer, Camera Operator, Sound Engineer, Lighting Technician, Makeup Artist, Set Designer, Script Writer, Editor, and Stage Manager in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the tv studio task. Use Props, Clock, Logo, Backdrop, Floor Marking, Director, Producer, Camera Operator, Sound Engineer, Lighting Technician, Makeup Artist, Set Designer, Script Writer, Editor, and Stage Manager in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -398,7 +398,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Live Broadcast", "Recording", "Satellite Dish", "Antenna"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Live Broadcast, Recording, Satellite Dish, and Antenna and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Live Broadcast, Recording, Satellite Dish, and Antenna and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Live Broadcast", "Recording", "Satellite Dish"],
@@ -410,7 +410,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Transmitter", "Signal", "Channel", "Frequency"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Signal, Channel, and Frequency and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Signal, Channel, and Frequency and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Transmitter", "Signal", "Channel"],
@@ -422,7 +422,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Broadcast Tower", "Control Room", "Microphone", "Headphones"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Broadcast Tower, Control Room, Microphone, and Headphones and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Broadcast Tower, Control Room, Microphone, and Headphones and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Broadcast Tower", "Control Room", "Microphone"],
@@ -434,7 +434,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Mixer", "Amplifier", "Speaker"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mixer, Amplifier, and Speaker and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mixer, Amplifier, and Speaker and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mixer", "Amplifier", "Speaker"],
@@ -447,33 +447,33 @@
     },
     "reading": {
       "title": "Before You Begin: The TV Studio",
-      "text": "At the the tv studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Live Broadcast, Recording, Satellite Dish, and Antenna. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transmitter, Signal, Channel, and Frequency. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Broadcast Tower, Control Room, Microphone, and Headphones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mixer, Amplifier, and Speaker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the tv studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Live Broadcast, Recording, Satellite Dish, and Antenna. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transmitter, Signal, Channel, and Frequency. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Broadcast Tower, Control Room, Microphone, and Headphones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mixer, Amplifier, and Speaker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The TV Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Live Broadcast, Recording, Satellite Dish, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Live Broadcast, Recording, Satellite Dish, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Live Broadcast",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Signal, Channel, and Frequency and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Signal, Channel, and Frequency and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Transmitter",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Broadcast Tower, Control Room, Microphone, and Headphones and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Broadcast Tower, Control Room, Microphone, and Headphones and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Broadcast Tower",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mixer, Amplifier, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mixer, Amplifier, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Mixer",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -504,7 +504,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the tv studio task. Use Live Broadcast, Recording, Satellite Dish, Antenna, Transmitter, Signal, Channel, Frequency, Broadcast Tower, Control Room, Microphone, Headphones, Mixer, Amplifier, and Speaker in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the tv studio task. Use Live Broadcast, Recording, Satellite Dish, Antenna, Transmitter, Signal, Channel, Frequency, Broadcast Tower, Control Room, Microphone, Headphones, Mixer, Amplifier, and Speaker in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -571,7 +571,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Sound Board", "Clip-On Mic", "Pop Filter", "Audio Cable"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Board, Clip-On Mic, Pop Filter, and Audio Cable and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Board, Clip-On Mic, Pop Filter, and Audio Cable and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sound Board", "Clip-On Mic", "Pop Filter"],
@@ -583,7 +583,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Equalizer", "Editing Suite", "Timeline", "Cut"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Equalizer, Editing Suite, Timeline, and Cut and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Equalizer, Editing Suite, Timeline, and Cut and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Equalizer", "Editing Suite", "Timeline"],
@@ -595,7 +595,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Transition", "Special Effect", "Color Grading", "Subtitle"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transition, Special Effect, Color Grading, and Subtitle and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transition, Special Effect, Color Grading, and Subtitle and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Transition", "Special Effect", "Color Grading"],
@@ -607,7 +607,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Voiceover", "Render", "Export"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Voiceover, Render, and Export and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Voiceover, Render, and Export and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Voiceover", "Render", "Export"],
@@ -620,33 +620,33 @@
     },
     "reading": {
       "title": "A Practical Update: The TV Studio",
-      "text": "At the the tv studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sound Board, Clip-On Mic, Pop Filter, and Audio Cable. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Equalizer, Editing Suite, Timeline, and Cut. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transition, Special Effect, Color Grading, and Subtitle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Voiceover, Render, and Export. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the tv studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sound Board, Clip-On Mic, Pop Filter, and Audio Cable. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Equalizer, Editing Suite, Timeline, and Cut. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transition, Special Effect, Color Grading, and Subtitle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Voiceover, Render, and Export. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The TV Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Board, Clip-On Mic, Pop Filter, and Audio Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound Board, Clip-On Mic, Pop Filter, and Audio Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sound Board",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Equalizer, Editing Suite, Timeline, and Cut and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Equalizer, Editing Suite, Timeline, and Cut and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Equalizer",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transition, Special Effect, Color Grading, and Subtitle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transition, Special Effect, Color Grading, and Subtitle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Transition",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Voiceover, Render, and Export and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Voiceover, Render, and Export and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Voiceover",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -677,7 +677,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the tv studio task. Use Sound Board, Clip-On Mic, Pop Filter, Audio Cable, Equalizer, Editing Suite, Timeline, Cut, Transition, Special Effect, Color Grading, Subtitle, Voiceover, Render, and Export in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the tv studio task. Use Sound Board, Clip-On Mic, Pop Filter, Audio Cable, Equalizer, Editing Suite, Timeline, Cut, Transition, Special Effect, Color Grading, Subtitle, Voiceover, Render, and Export in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -726,7 +726,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Monitor", "Boom Mic", "Clapperboard", "Anchor"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitor, Boom Mic, Clapperboard, and Anchor and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitor, Boom Mic, Clapperboard, and Anchor and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Monitor", "Boom Mic", "Clapperboard"],
@@ -738,7 +738,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Reporter", "Cameraman", "Technician", "Live"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reporter, Cameraman, Technician, and Live and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reporter, Cameraman, Technician, and Live and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Reporter", "Cameraman", "Technician"],
@@ -750,7 +750,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Commercial", "Interview", "Segment", "Headline"],
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial, Interview, Segment, and Headline and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial, Interview, Segment, and Headline and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Commercial", "Interview", "Segment"],
@@ -762,7 +762,7 @@
         {
           "chunkNumber": 4,
           "targetWords": "Weather Map",
-          "scenario": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weather Map and choose the option that fits the situation.",
+          "scenario": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weather Map and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Weather Map", "Monitor", "Boom Mic"],
@@ -775,33 +775,33 @@
     },
     "reading": {
       "title": "Clarifying the Next Step: The TV Studio",
-      "text": "At the the tv studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Monitor, Boom Mic, Clapperboard, and Anchor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reporter, Cameraman, Technician, and Live. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Commercial, Interview, Segment, and Headline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Weather Map. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the tv studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Monitor, Boom Mic, Clapperboard, and Anchor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reporter, Cameraman, Technician, and Live. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Commercial, Interview, Segment, and Headline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Weather Map. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The TV Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitor, Boom Mic, Clapperboard, and Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitor, Boom Mic, Clapperboard, and Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Monitor",
         "contextTag": "scene-1",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reporter, Cameraman, Technician, and Live and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reporter, Cameraman, Technician, and Live and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Reporter",
         "contextTag": "scene-2",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial, Interview, Segment, and Headline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial, Interview, Segment, and Headline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Commercial",
         "contextTag": "scene-3",
         "responseMode": "short-answer",
         "questionType": "meaning"
       },
       {
-        "prompt": "In the the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weather Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the tv studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weather Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Weather Map",
         "contextTag": "scene-4",
         "responseMode": "short-answer",
@@ -832,7 +832,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the tv studio task. Use Monitor, Boom Mic, Clapperboard, Anchor, Reporter, Cameraman, Technician, Live, Commercial, Interview, Segment, Headline, and Weather Map in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the tv studio task. Use Monitor, Boom Mic, Clapperboard, Anchor, Reporter, Cameraman, Technician, Live, Commercial, Interview, Segment, Headline, and Weather Map in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",

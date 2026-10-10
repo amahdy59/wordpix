@@ -52,7 +52,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Current", "Rapids", "Waterfall", "Pool"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Rapids, Waterfall, and Pool and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Rapids, Waterfall, and Pool and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Current", "Rapids", "Waterfall"],
@@ -64,7 +64,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Bend", "Delta", "Tributary", "Bank"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bend, Delta, Tributary, and Bank and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bend, Delta, Tributary, and Bank and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bend", "Delta", "Tributary"],
@@ -76,7 +76,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Bed", "Estuary", "Fish", "Frog"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bed, Estuary, Fish, and Frog and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bed, Estuary, Fish, and Frog and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bed", "Estuary", "Fish"],
@@ -88,7 +88,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Turtle", "Heron", "Otter"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turtle, Heron, and Otter and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turtle, Heron, and Otter and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Turtle", "Heron", "Otter"],
@@ -102,33 +102,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The River",
-      "text": "At the the river, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Current, Rapids, Waterfall, and Pool. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bend, Delta, Tributary, and Bank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bed, Estuary, Fish, and Frog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Turtle, Heron, and Otter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Current, Rapids, Waterfall, and Pool. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bend, Delta, Tributary, and Bank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bed, Estuary, Fish, and Frog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Turtle, Heron, and Otter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Rapids, Waterfall, and Pool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Rapids, Waterfall, and Pool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Current",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bend, Delta, Tributary, and Bank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bend, Delta, Tributary, and Bank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bend",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bed, Estuary, Fish, and Frog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bed, Estuary, Fish, and Frog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turtle, Heron, and Otter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turtle, Heron, and Otter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Turtle",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -159,7 +159,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the river task. Use Current, Rapids, Waterfall, Pool, Bend, Delta, Tributary, Bank, Bed, Estuary, Fish, Frog, Turtle, Heron, and Otter in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the river task. Use Current, Rapids, Waterfall, Pool, Bend, Delta, Tributary, Bank, Bed, Estuary, Fish, Frog, Turtle, Heron, and Otter in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -226,7 +226,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Beaver", "Dragonfly", "Duck", "Salmon"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaver, Dragonfly, Duck, and Salmon and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaver, Dragonfly, Duck, and Salmon and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Beaver", "Dragonfly", "Duck"],
@@ -238,7 +238,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Crayfish", "Reed", "Lily Pad", "Cattail"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crayfish, Reed, Lily Pad, and Cattail and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crayfish, Reed, Lily Pad, and Cattail and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Crayfish", "Reed", "Lily Pad"],
@@ -250,7 +250,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Algae", "Willow", "Duckweed", "Water Lily"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algae, Willow, Duckweed, and Water Lily and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algae, Willow, Duckweed, and Water Lily and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Algae", "Willow", "Duckweed"],
@@ -262,7 +262,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Moss", "Riverside Grass", "Mangrove"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Riverside Grass, and Mangrove and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Riverside Grass, and Mangrove and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Moss", "Riverside Grass", "Mangrove"],
@@ -276,33 +276,33 @@
     },
     "reading": {
       "title": "A Practical Guide: The River",
-      "text": "At the the river, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Beaver, Dragonfly, Duck, and Salmon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crayfish, Reed, Lily Pad, and Cattail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Algae, Willow, Duckweed, and Water Lily. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moss, Riverside Grass, and Mangrove. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Beaver, Dragonfly, Duck, and Salmon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crayfish, Reed, Lily Pad, and Cattail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Algae, Willow, Duckweed, and Water Lily. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moss, Riverside Grass, and Mangrove. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaver, Dragonfly, Duck, and Salmon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaver, Dragonfly, Duck, and Salmon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Beaver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crayfish, Reed, Lily Pad, and Cattail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crayfish, Reed, Lily Pad, and Cattail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Crayfish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algae, Willow, Duckweed, and Water Lily and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algae, Willow, Duckweed, and Water Lily and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Algae",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Riverside Grass, and Mangrove and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Riverside Grass, and Mangrove and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Moss",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -333,7 +333,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the river task. Use Beaver, Dragonfly, Duck, Salmon, Crayfish, Reed, Lily Pad, Cattail, Algae, Willow, Duckweed, Water Lily, Moss, Riverside Grass, and Mangrove in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the river task. Use Beaver, Dragonfly, Duck, Salmon, Crayfish, Reed, Lily Pad, Cattail, Algae, Willow, Duckweed, Water Lily, Moss, Riverside Grass, and Mangrove in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -400,7 +400,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Canoe", "Kayak", "Raft", "Rowboat"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoe, Kayak, Raft, and Rowboat and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoe, Kayak, Raft, and Rowboat and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Canoe", "Kayak", "Raft"],
@@ -412,7 +412,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Motorboat", "Paddleboard", "Inner Tube", "Pontoon"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorboat, Paddleboard, Inner Tube, and Pontoon and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorboat, Paddleboard, Inner Tube, and Pontoon and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Motorboat", "Paddleboard", "Inner Tube"],
@@ -424,7 +424,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Sailboat", "Fishing Boat", "Paddle", "Life Jacket"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sailboat, Fishing Boat, Paddle, and Life Jacket and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sailboat, Fishing Boat, Paddle, and Life Jacket and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sailboat", "Fishing Boat", "Paddle"],
@@ -436,7 +436,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Fishing Rod", "Tackle Box", "Net"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Tackle Box, and Net and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Tackle Box, and Net and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Fishing Rod", "Tackle Box", "Net"],
@@ -450,33 +450,33 @@
     },
     "reading": {
       "title": "Important Information: The River",
-      "text": "At the the river, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Canoe, Kayak, Raft, and Rowboat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Motorboat, Paddleboard, Inner Tube, and Pontoon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sailboat, Fishing Boat, Paddle, and Life Jacket. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing Rod, Tackle Box, and Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Canoe, Kayak, Raft, and Rowboat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Motorboat, Paddleboard, Inner Tube, and Pontoon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sailboat, Fishing Boat, Paddle, and Life Jacket. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing Rod, Tackle Box, and Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoe, Kayak, Raft, and Rowboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoe, Kayak, Raft, and Rowboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Canoe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorboat, Paddleboard, Inner Tube, and Pontoon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorboat, Paddleboard, Inner Tube, and Pontoon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Motorboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sailboat, Fishing Boat, Paddle, and Life Jacket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sailboat, Fishing Boat, Paddle, and Life Jacket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sailboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Tackle Box, and Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Tackle Box, and Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Fishing Rod",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -507,7 +507,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the river task. Use Canoe, Kayak, Raft, Rowboat, Motorboat, Paddleboard, Inner Tube, Pontoon, Sailboat, Fishing Boat, Paddle, Life Jacket, Fishing Rod, Tackle Box, and Net in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the river task. Use Canoe, Kayak, Raft, Rowboat, Motorboat, Paddleboard, Inner Tube, Pontoon, Sailboat, Fishing Boat, Paddle, Life Jacket, Fishing Rod, Tackle Box, and Net in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
@@ -574,7 +574,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bucket", "Waders", "Anchor", "Rope"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Waders, Anchor, and Rope and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Waders, Anchor, and Rope and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bucket", "Waders", "Anchor"],
@@ -586,7 +586,7 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Cooler", "Fishing", "Swimming", "Kayaking"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooler, Fishing, Swimming, and Kayaking and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooler, Fishing, Swimming, and Kayaking and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cooler", "Fishing", "Swimming"],
@@ -598,7 +598,7 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Rafting", "Canoeing", "Tubing", "Wading"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rafting, Canoeing, Tubing, and Wading and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rafting, Canoeing, Tubing, and Wading and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Rafting", "Canoeing", "Tubing"],
@@ -610,7 +610,7 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Bird Watching", "Picnic", "Skipping Stones"],
-          "scenario": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bird Watching, Picnic, and Skipping Stones and choose the option that fits the situation.",
+          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bird Watching, Picnic, and Skipping Stones and choose the option that fits the situation.",
           "check": {
             "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Bird Watching", "Picnic", "Skipping Stones"],
@@ -624,33 +624,33 @@
     },
     "reading": {
       "title": "A Real-World Task: The River",
-      "text": "At the the river, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bucket, Waders, Anchor, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cooler, Fishing, Swimming, and Kayaking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rafting, Canoeing, Tubing, and Wading. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bird Watching, Picnic, and Skipping Stones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bucket, Waders, Anchor, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cooler, Fishing, Swimming, and Kayaking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rafting, Canoeing, Tubing, and Wading. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bird Watching, Picnic, and Skipping Stones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Waders, Anchor, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Waders, Anchor, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Bucket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooler, Fishing, Swimming, and Kayaking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooler, Fishing, Swimming, and Kayaking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cooler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rafting, Canoeing, Tubing, and Wading and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rafting, Canoeing, Tubing, and Wading and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Rafting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bird Watching, Picnic, and Skipping Stones and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bird Watching, Picnic, and Skipping Stones and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Bird Watching",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -681,7 +681,7 @@
         "answer": "Open response"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the the river task. Use Bucket, Waders, Anchor, Rope, Cooler, Fishing, Swimming, Kayaking, Rafting, Canoeing, Tubing, Wading, Bird Watching, Picnic, and Skipping Stones in a connected response and explain one choice.",
+        "prompt": "Apply the lesson vocabulary in the river task. Use Bucket, Waders, Anchor, Rope, Cooler, Fishing, Swimming, Kayaking, Rafting, Canoeing, Tubing, Wading, Bird Watching, Picnic, and Skipping Stones in a connected response and explain one choice.",
         "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
