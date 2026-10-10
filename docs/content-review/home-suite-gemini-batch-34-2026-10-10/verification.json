@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-10T20:12:00.000Z",
+  "localGalleryImagesVerified": 34,
+  "newGeminiImagesVerified": 34,
+  "protectedFilesVerified": 12440,
+  "trackedChanges": 0,
+  "r2Writes": 0,
+  "audioMappingChanges": 0,
+  "checks": [
+    {
+      "command": "node scripts/verify_protected_baseline.mjs",
+      "exitCode": 0,
+      "verifiedFiles": 12440
+    },
+    {
+      "command": "node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs scripts/tests/check-image-review-policy.mjs scripts/tests/check-gemini-vocabulary-runner.mjs",
+      "exitCode": 0,
+      "testsPassed": 29
+    }
+  ],
+  "checkEvidence": "Command exit statuses and Vitest/Node test summaries returned by execution tools during this batch. Media mappings and R2 remain strictly read-only; audio assets immutable."
+}
