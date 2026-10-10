@@ -1,14 +1,37 @@
 {
-  "version": "0.1.12",
+  "version": "0.1.13",
   "notes": [
-    "Clearer lesson situations, readings and practice across the vocabulary curriculum.",
-    "More complete Arabic meanings and examples, with clearer distinctions between similar words."
+    "86 reviewed pictures now support clothing, accessories, footwear, first-aid and pharmacy vocabulary.",
+    "Picture descriptions now describe the objects actually shown; lesson text supplies the situations and roles."
   ],
   "notesAr": [
-    "مواقف وقراءات وتدريبات أوضح في دروس المفردات.",
-    "معانٍ وأمثلة عربية أكثر اكتمالًا، مع توضيح الفروق بين الكلمات المتشابهة."
+    "تدعم 86 صورة تمت مراجعتها مفردات الملابس والإكسسوارات والأحذية والإسعافات الأولية والصيدلية.",
+    "تصف أوصاف الصور الأشياء الظاهرة فعلًا، بينما يوضّح نص الدرس المواقف والأدوار."
   ],
   "releases": [
+    {
+      "id": "0.1.13",
+      "version": "0.1.13",
+      "date": "2026-10-10",
+      "title": {
+        "en": "Reviewed vocabulary pictures",
+        "ar": "صور مفردات تمت مراجعتها"
+      },
+      "changes": [
+        {
+          "id": "reviewed-vocabulary-pictures",
+          "category": "added",
+          "en": "86 reviewed pictures now support clothing, accessories, footwear, first-aid and pharmacy vocabulary.",
+          "ar": "تدعم 86 صورة تمت مراجعتها مفردات الملابس والإكسسوارات والأحذية والإسعافات الأولية والصيدلية."
+        },
+        {
+          "id": "literal-picture-descriptions",
+          "category": "improved",
+          "en": "Picture descriptions now describe the objects actually shown; lesson text supplies the situations and roles.",
+          "ar": "تصف أوصاف الصور الأشياء الظاهرة فعلًا، بينما يوضّح نص الدرس المواقف والأدوار."
+        }
+      ]
+    },
     {
       "id": "0.1.12",
       "version": "0.1.12",

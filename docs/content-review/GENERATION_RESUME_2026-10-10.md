@@ -81,3 +81,21 @@ the bounded queues, `first-three-prompts.json`, draft/hash inventories and
 `budget-reconciliation.json`. The deployment doctor reports the existing live
 release healthy; this does not mean these local changes are deployed. No main
 push, paid generation, R2 upload or URL remapping occurred in this continuation.
+
+## Approved image publication — 10 October 2026
+
+Ahmed Mahdy reviewed and explicitly approved the complete 86-candidate gallery.
+This specific authorization supersedes the earlier handoff's lack of publication
+authorization for these new references only. All 86 new content-addressed images
+were uploaded with create-only writes and independently byte-verified through
+authenticated R2 GET and public GET. Existing objects, historical mappings and
+all local candidates (including rejected variants) are preserved. The application
+manifest adds 86 vocabulary-reference entries with literal image descriptions.
+Eighteen brief-only refinements and 12 current lesson-review digests match the
+reviewed outputs; written tasks, phrases and bilingual catalogs are unchanged.
+The historical scope now has 88 published references and 41 explicit content
+holds. All 51 curriculum holds (including ten number scenes) remain in force.
+The human-approval and hash inventory is recorded in
+`image-publication-2026-10-10.json`; exact prompts, variants and upload receipts
+remain in the ignored local output folders. Release 0.1.13 documents these
+learner-visible additions in English and Arabic.

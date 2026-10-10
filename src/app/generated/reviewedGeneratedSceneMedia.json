@@ -482,5 +482,693 @@
     "imagePath": "question-images/v3/shared/blouse-cream-long-sleeves-hanger/50b761e32c93429436923c7487b58467164849b2c08e4335bbbefb3d1930f69b.webp",
     "imageAlt": "A cream long-sleeved blouse with a short front button placket hanging from a wooden hanger against a plain wall.",
     "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-1-usage-scene-2": {
+    "reviewedScenario": "Omar wants a warm knitted sweater for the office. He leaves the hoodie and tank top on the shelf because he has chosen the knitted item. A polo shirt has a collar and a short buttoned neck, but Omar wants a sweater today.",
+    "reviewedQuestion": "Which item does Omar choose for the office?",
+    "reviewedAnswer": "Sweater",
+    "imagePath": "question-images/v3/shared/everyday-clothing-sweater/44cd6b761d9584981fef2b4f2d23b465cdfcb14984d8ede04c8d1ccba4c012aa.webp",
+    "imageAlt": "An olive-green knitted sweater with long sleeves and a round neck lies flat on a pale wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-1-usage-scene-3": {
+    "reviewedScenario": "Omar tries on a cardigan with buttons down the front. He can open it without pulling it over his head. The pullover has no front opening.",
+    "reviewedQuestion": "Which item can Omar open at the front?",
+    "reviewedAnswer": "Cardigan",
+    "imagePath": "question-images/v3/shared/everyday-clothing-cardigan/41d72943f25d525bcb484eb151f7653ff0fb166928b97f034b3bd481b68a6803.webp",
+    "imageAlt": "A gray knitted cardigan with long sleeves, a V-neck, and five brown buttons lies flat on dark wooden boards.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-1-usage-scene-4": {
+    "reviewedScenario": "The pants in the fitting room are too small. Omar asks for a larger size. The vest and jeans already fit him.",
+    "reviewedQuestion": "Which item does Omar need in a larger size?",
+    "reviewedAnswer": "Pants",
+    "imagePath": "question-images/v3/shared/everyday-clothing-pants/22af9ce1cf0bc0db45ad71b50dbfe17d756fe3f23c4cb3de6f760e5a0ae98e3b.webp",
+    "imageAlt": "A pair of dark gray full-length pants with belt loops lies flat on a pale wooden floor.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-1-usage-scene-5": {
+    "reviewedScenario": "Omar packs shorts for the weekend. They finish above his knees. He leaves the skirt and leggings in the shop.",
+    "reviewedQuestion": "Which item does Omar pack for the weekend?",
+    "reviewedAnswer": "Shorts",
+    "imagePath": "question-images/v3/shared/everyday-clothing-shorts/4268f00d75745608c4ba0d52e6af63be36e6c25157430671670b3ca5ac2a17f4.webp",
+    "imageAlt": "A pair of olive-gray shorts with a buttoned waistband, belt loops, and two short legs lies flat on a wooden table.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-2-usage-scene-1": {
+    "reviewedScenario": "Sam wants soft casual pants for an evening at home. He chooses sweatpants instead of cargo pants with side pockets or his khakis.",
+    "reviewedQuestion": "Which pants does Sam choose for an evening at home?",
+    "reviewedAnswer": "Sweatpants",
+    "imagePath": "question-images/v3/shared/everyday-clothing-sweatpants/146a44b3b88b915e4b163256000e9dda210a3bcf16a2092514a2c8478e3d9cc5.webp",
+    "imageAlt": "Gray sweatpants with a drawstring waist and ribbed ankle cuffs lie flat on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-2-usage-scene-2": {
+    "reviewedScenario": "In the shop, Sam sees culottes with two wide legs ending below the knees. The capris have narrower legs, and the jacket hangs above them.",
+    "reviewedQuestion": "Which item has two wide legs ending below the knees?",
+    "reviewedAnswer": "Culottes",
+    "imagePath": "question-images/v3/shared/everyday-clothing-culottes/89b4d143fcb58abba06693ef02651f5184b616acba3a10f197deabed9dec7893.webp",
+    "imageAlt": "Dark gray wide-legged cropped pants with belt loops lie flat on a pale wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-2-usage-scene-3": {
+    "reviewedScenario": "Sam packs a light windbreaker for a breezy walk. He keeps the heavy coat at home. He packs the raincoat separately for wet weather.",
+    "reviewedQuestion": "Which item does Sam pack for a breezy walk?",
+    "reviewedAnswer": "Windbreaker",
+    "imagePath": "question-images/v3/shared/everyday-clothing-windbreaker/ecc2e86ecaaa90f7cc427dcb1179d9a296d4c6ff6a6f55131b55de642fbb1c5b.webp",
+    "imageAlt": "A dark blue jacket with a front zipper, standing collar, and gathered cuffs lies flat on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-2-usage-scene-4": {
+    "reviewedScenario": "The mountain forecast is very cold. Sam packs his insulated parka with a hood. His blazer and trench coat stay in the wardrobe.",
+    "reviewedQuestion": "Which item does Sam pack for the very cold trip?",
+    "reviewedAnswer": "Parka",
+    "imagePath": "question-images/v3/shared/everyday-clothing-parka/6cdfa6e8bcb1470843c4326ce615e7bfe8774094129cf8128da88c648ff6d0f4.webp",
+    "imageAlt": "An olive-green hooded coat with dark lining, a front zipper, buttons, and flap pockets lies flat on wooden boards.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-2-usage-scene-5": {
+    "reviewedScenario": "For dinner with his friend, Sam chooses the jacket made from blue denim. The puffer jacket and fleece stay in his bag.",
+    "reviewedQuestion": "Which jacket does Sam choose for dinner?",
+    "reviewedAnswer": "Denim Jacket",
+    "imagePath": "question-images/v3/shared/everyday-clothing-denim-jacket/ac0f618926c529b7767ceec4a28f6472a32761deca6dd6c672ce3943fe40ad41.webp",
+    "imageAlt": "A blue denim jacket with a collar, metal buttons, and two chest pockets lies flat on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-3-usage-scene-2": {
+    "reviewedScenario": "Leila folds a romper for her adult sister. It is one garment with a top joined to shorts. The jumpsuit has full-length legs.",
+    "reviewedQuestion": "Which garment has a top joined to shorts?",
+    "reviewedAnswer": "Romper",
+    "imagePath": "question-images/v3/shared/everyday-clothing-romper/9c9bdaba2e30562b68b699747a982d37e5a3bec0b6dfef69bbd7fa75af580923.webp",
+    "imageAlt": "A blue one-piece garment with short sleeves, a drawstring waist, and two short legs lies flat on a pale wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-3-usage-scene-1": {
+    "reviewedScenario": "Leila hangs a light sleeveless sundress in the wardrobe. The other dress is for work, and the maxi dress reaches her ankles. The mini dress is much shorter than the maxi dress.",
+    "reviewedQuestion": "Which item does Leila hang in the wardrobe?",
+    "reviewedAnswer": "Sundress",
+    "imagePath": "question-images/v3/shared/everyday-clothing-sundress/1bb7aa09eafc0488fe4396701b3378d0039433ad19bd0f66aa4f92c3fb858300.webp",
+    "imageAlt": "A blue sleeveless dress with thin shoulder straps and a flared skirt hangs from a wooden hanger against a plain pale wall.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-3-usage-scene-3": {
+    "reviewedScenario": "Leila puts her work overalls on a separate shelf. They have a bib at the front and straps over the shoulders. Her tracksuit stays in a drawer. Leila also prepares her uniform, the standard clothing she wears at work.",
+    "reviewedQuestion": "Which item has a front bib and shoulder straps?",
+    "reviewedAnswer": "Overalls",
+    "imagePath": "question-images/v3/shared/everyday-clothing-overalls/70703c421db6675992b1bcd55a6b13f6a0435335ab785d7e6cf6dad371417df0.webp",
+    "imageAlt": "Blue denim overalls with adjustable shoulder straps, a bib pocket, and two full-length legs lie flat on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-3-usage-scene-4": {
+    "reviewedScenario": "Leila puts the family's underwear in a drawer. She hangs the adult onesie in the wardrobe and folds the bra on another shelf.",
+    "reviewedQuestion": "Which general category goes in the drawer?",
+    "reviewedAnswer": "Underwear",
+    "imagePath": "question-images/v3/shared/everyday-clothing-underwear/152c40f69d0ea329e385dde247e7972cee5789f66ac52cb53578db0aed5fd00b.webp",
+    "imageAlt": "A pair of dark gray boxer briefs with a broad waistband and two short leg openings lies flat on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-3-usage-scene-5": {
+    "reviewedScenario": "Leila folds her husband's loose boxer shorts. His socks are already paired, and his undershirt is hanging to dry.",
+    "reviewedQuestion": "Which item does Leila fold?",
+    "reviewedAnswer": "Boxer Shorts",
+    "imagePath": "question-images/v3/shared/everyday-clothing-boxer-shorts/57032f551193e4aa5ff5b17649210055e71c7ab7b56ad42a346cdede63afdb98.webp",
+    "imageAlt": "Blue-and-white checked boxer shorts with an elastic waistband lie flat on pale fabric.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-4-usage-scene-1": {
+    "reviewedScenario": "Sam wears a robe over his pajamas while reading before bed. A nightgown is hanging in the wardrobe.",
+    "reviewedQuestion": "Which garment does Sam wear over his pajamas?",
+    "reviewedAnswer": "Robe",
+    "imagePath": "question-images/v3/shared/everyday-clothing-robe/e02fb07198ab1c541962a196352cdb9c21710018054f5eff5d78fcfb2a01a726.webp",
+    "imageAlt": "A dark blue robe with a tied belt and two front pockets lies flat on a wooden table.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-1-usage-scene-2": {
+    "reviewedScenario": "Nabil puts a soft round beret on the upper shelf. He puts the headband and hair clip in a small tray below it.",
+    "reviewedQuestion": "Which item goes on the upper shelf?",
+    "reviewedAnswer": "Beret",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-beret/c3728dd83facd27a57b2a0e10e7de3c4b037c6781c94472490feeb58cd7bfc78.webp",
+    "imageAlt": "A dark blue beret lies on a pale upholstered surface beside a green headband and a brown hair clip.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-1-usage-scene-3": {
+    "reviewedScenario": "The costume display contains a tiara and a visor. Nabil places a turban made from wrapped cloth on the middle stand.",
+    "reviewedQuestion": "Which item is made from wrapped cloth?",
+    "reviewedAnswer": "Turban",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-turban/2fd7f91d9bc6fe62152f9a0a11c94cbfb9b065591860c6350e57ea3db42d4774.webp",
+    "imageAlt": "A blue wrapped-cloth turban rests on a wooden display stand beside rolls of fabric.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-1-usage-scene-4": {
+    "reviewedScenario": "Nabil repairs the small pendant hanging from a necklace. The fedora is on a hat stand across the shop.",
+    "reviewedQuestion": "Which part of the necklace does Nabil repair?",
+    "reviewedAnswer": "Pendant",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-pendant/4cb80551c499b1cc4015d763abeac90649c8930de19563d86ffaedb2826243e4.webp",
+    "imageAlt": "An oval blue pendant in a silver-colored setting hangs from a chain above a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-1-usage-scene-5": {
+    "reviewedScenario": "A customer requests a necklace that fits closely around the neck. Nabil shows a choker, then leaves the loose chain and bracelet in the case.",
+    "reviewedQuestion": "Which type of necklace does Nabil show?",
+    "reviewedAnswer": "Choker",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-choker/17bdef1d1dea457b9dee14643739365ab5893379f163b65505eb6bbf676a5dc3.webp",
+    "imageAlt": "A plain black band necklace encircles the neck of a pale fabric jewelry stand.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-2-usage-scene-1": {
+    "reviewedScenario": "Mina checks a rigid circular bangle that slips over the hand. The watch and soft wristband are in separate boxes.",
+    "reviewedQuestion": "Which item is a rigid circular bracelet?",
+    "reviewedAnswer": "Bangle",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-bangle/38e91faf6dc89c5c80b3164dd60004eceec0a999d0decd06a8800871f0b2f2c8.webp",
+    "imageAlt": "A smooth silver-colored bangle rests beside an empty cardboard box on pale fabric.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-2-usage-scene-3": {
+    "reviewedScenario": "Mina checks a signet ring with a raised oval face. The engagement ring and wedding band are already packed.",
+    "reviewedQuestion": "Which ring does Mina still need to check?",
+    "reviewedAnswer": "Signet Ring",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-signet-ring/35fe934dad5c84b80c955cbdf9792ec14ba93464c1e51b38a66a5ef2896ae2d5.webp",
+    "imageAlt": "A gold-colored ring with a broad plain oval face rests on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-2-usage-scene-4": {
+    "reviewedScenario": "Mina checks that the earring clasp closes securely. A tiny stud and a large hoop are already in separate boxes.",
+    "reviewedQuestion": "Which general piece of ear jewelry is Mina checking?",
+    "reviewedAnswer": "Earring",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-earring/964467fcfb50f80891a08753eb44f89c48a2e87377fe997ae6f59f93147a9d84.webp",
+    "imageAlt": "A silver-colored hoop earring with its clasp open rests on a dark jewelry tray.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-2-usage-scene-5": {
+    "reviewedScenario": "The customer wants an ear cuff that grips the outer ear. Mina packs it separately from the dangle earring and piercing jewelry.",
+    "reviewedQuestion": "Which item grips the outer ear?",
+    "reviewedAnswer": "Ear Cuff",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-ear-cuff/a88a86d5a84422e2ddee8373e4ab5426cf22330f14c59fbfcea367aef3258005.webp",
+    "imageAlt": "A small silver-colored curved double band with an open gap rests on a pale tray.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-3-usage-scene-2": {
+    "reviewedScenario": "Omar puts his cards and banknotes in a wallet. His messenger bag is on the chair, and the clutch belongs to his colleague.",
+    "reviewedQuestion": "Which item holds Omar's cards and banknotes?",
+    "reviewedAnswer": "Wallet",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-wallet/07ab9a75712df10d807bc4a0cf61c1ce4c19681c1419d40ef00cd131c6b29b2c.webp",
+    "imageAlt": "An open brown wallet with empty card slots and a clear window stands on a wooden table.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-3-usage-scene-3": {
+    "reviewedScenario": "Omar uses a small coin purse for the parking meter money. His briefcase holds documents, and his duffel bag holds clothes.",
+    "reviewedQuestion": "Which small item holds the coins in this British English use?",
+    "reviewedAnswer": "Purse",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-purse/d78147ab9326ba27d0a7ab22a1e53a0cab54f2b459533e4eefc336b081b91167.webp",
+    "imageAlt": "A small brown coin purse with a metal clasp rests on a pale wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-3-usage-scene-4": {
+    "reviewedScenario": "Omar packs sunglasses with dark lenses for the afternoon. His clear-lens glasses and fanny pack are already in his bag.",
+    "reviewedQuestion": "Which item has dark lenses?",
+    "reviewedAnswer": "Sunglasses",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-sunglasses/c340a53b79a19164e9a31c08e6f232df35e54cc51ca90114892b3fb524b3b547.webp",
+    "imageAlt": "Black-framed sunglasses with dark lenses and unfolded arms rest on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-3-usage-scene-5": {
+    "reviewedScenario": "Omar threads a belt through the loops in his pants. His scarf and gloves stay in his bag.",
+    "reviewedQuestion": "Which item goes through the loops in Omar's pants?",
+    "reviewedAnswer": "Belt",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-belt/e1098d0cd36471c596cef6082d97219737bf2008aae74d70294e84d394b74251.webp",
+    "imageAlt": "A brown belt with a metal buckle and adjustment holes forms a loop on pale fabric.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-4-usage-scene-1": {
+    "reviewedScenario": "Karim finds a brooch with a pin fastening at reception. An umbrella and a tie pin are already in the lost-property cupboard.",
+    "reviewedQuestion": "Which decorative item does Karim find at reception?",
+    "reviewedAnswer": "Brooch",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-brooch/26b9638a9560a1c599c30bb044e2a43eb8c587375da567fb05862b507eef53e1.webp",
+    "imageAlt": "A plain oval gold-colored brooch with a visible pin fastening rests on dark blue fabric.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-4-usage-scene-2": {
+    "reviewedScenario": "A visitor asks Karim for a pocket watch attached to a chain. The cane is still in the lost-property cupboard.",
+    "reviewedQuestion": "Which item is attached to a chain?",
+    "reviewedAnswer": "Pocket Watch",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-pocket-watch/97f1f2e5ebc5eb382f49b5c31eeb58ccff7675e4ff4e3cd507317c1a01316949.webp",
+    "imageAlt": "A closed silver-colored pocket watch with a chain rests on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-1-usage-scene-1": {
+    "reviewedScenario": "Omar wants shoes he can put on without tying laces. He chooses slip-ons. The sneakers and canvas shoes he tried have laces.",
+    "reviewedQuestion": "Which shoes does Omar choose?",
+    "reviewedAnswer": "Slip-Ons",
+    "imagePath": "question-images/v3/shared/footwear-slip-ons/e478ef8727eda386f0f096b9f3c28518bbc16cd8c0d8d7482810df2c6e3b9d51.webp",
+    "imageAlt": "Two gray canvas shoes without laces rest on a woven mat on a wooden floor.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-1-usage-scene-2": {
+    "reviewedScenario": "Omar examines espadrilles with canvas uppers and woven rope around the soles. The moccasins and boat shoes beside them have different soles.",
+    "reviewedQuestion": "Which shoes have woven rope around the soles?",
+    "reviewedAnswer": "Espadrilles",
+    "imagePath": "question-images/v3/shared/footwear-espadrilles/c07c454ef43198cc5389e22c2d6d9af26fd8410acac90c689f742ba11ecc2c0a.webp",
+    "imageAlt": "Two pale canvas shoes with braided rope-covered soles rest on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-1-usage-scene-3": {
+    "reviewedScenario": "Omar compares high-tops that rise above the ankles with low-tops that finish below them. The platform shoes have much thicker soles. The skate shoes have flat soles designed for skateboarding, but Omar is comparing ankle heights.",
+    "reviewedQuestion": "Which shoes rise above the ankles?",
+    "reviewedAnswer": "High-Tops",
+    "imagePath": "question-images/v3/shared/footwear-high-tops/fe7818b3bb06ef3b9b6bc31fad4eb414dbd59ea87479bed3ec82ca9a89015549.webp",
+    "imageAlt": "Two black canvas ankle-high sneakers with white laces and rubber toe caps rest on a wooden floor.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-1-usage-scene-4": {
+    "reviewedScenario": "The assistant shows Derby shoes with open lacing. The lace panels sit on top of the upper. The Oxford shoes have closed lacing.",
+    "reviewedQuestion": "Which shoes have open lacing in the description?",
+    "reviewedAnswer": "Derby Shoes",
+    "imagePath": "question-images/v3/shared/footwear-derby-shoes/7be8d6a4e75535c9e33a05800ec19d8f272883ad7f4c40fae95f835261719ce5.webp",
+    "imageAlt": "A close view of two brown lace-up shoes shows separate lace panels above the uppers; the toes extend outside the frame.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-1-usage-scene-5": {
+    "reviewedScenario": "Omar tries loafers that slip onto his feet. He leaves the brogues and the monk-strap shoes with buckles on the shelf.",
+    "reviewedQuestion": "Which shoes does Omar try?",
+    "reviewedAnswer": "Loafers",
+    "imagePath": "question-images/v3/shared/footwear-loafers/7c49bd19488c8b440f9085770505bbdac0d3119176d56492311bdc002682450a.webp",
+    "imageAlt": "Two brown slip-on shoes with stitched toes and low heels rest on a wooden floor.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-2-usage-scene-1": {
+    "reviewedScenario": "Mina puts low-cut closed pumps on the formal shelf. The stilettos have much thinner high heels, and the kitten heels have short slender heels.",
+    "reviewedQuestion": "Which low-cut closed shoes does Mina put on the shelf?",
+    "reviewedAnswer": "Pumps",
+    "imagePath": "question-images/v3/shared/footwear-pumps/7f5bf114b45e9413a0ae09157750ae74b5a3e85f08a331c658b1eec45a0a86d1.webp",
+    "imageAlt": "A black closed-toe shoe with a low-cut opening and a block heel rests on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-2-usage-scene-2": {
+    "reviewedScenario": "A customer needs shoes for a formal meeting. Mina shows the dress shoes. The block heels and ankle boots are on another shelf.",
+    "reviewedQuestion": "Which general category does Mina show for the formal meeting?",
+    "reviewedAnswer": "Dress Shoes",
+    "imagePath": "question-images/v3/shared/footwear-dress-shoes/355ead9d88e5e016173152b016b4c7748af3a767c0707825a0858cf64d86fec2.webp",
+    "imageAlt": "Two polished brown lace-up shoes with low heels rest on a wooden floor.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-2-usage-scene-3": {
+    "reviewedScenario": "Mina checks Chelsea boots with elastic panels at the sides. The knee-high boots are taller, and the combat boots have laces.",
+    "reviewedQuestion": "Which boots have elastic side panels?",
+    "reviewedAnswer": "Chelsea Boots",
+    "imagePath": "question-images/v3/shared/footwear-chelsea-boots/76a2c74a901a49f1a3d6e75b24a7a6ea9c2b2f4c3d1e85d471c1ba3f24c0ddf4.webp",
+    "imageAlt": "Two brown ankle boots with black elastic side panels and pull tabs stand on a wooden bench.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-2-usage-scene-4": {
+    "reviewedScenario": "Mina places cowboy boots on a separate shelf. They have tall shafts and angled heels. The rain boots and snow boots are elsewhere.",
+    "reviewedQuestion": "Which boots does Mina place on a separate shelf?",
+    "reviewedAnswer": "Cowboy Boots",
+    "imagePath": "question-images/v3/shared/footwear-cowboy-boots/d3d884de3ae04132cb388fb62650b99bca391b7e7267e125cd01f2775e877665.webp",
+    "imageAlt": "Two tall brown boots with stitched shafts and angled heels stand on wooden boards.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-2-usage-scene-5": {
+    "reviewedScenario": "The customer asks to see the work boots near the counter. Mina brings them over and leaves the hiking and riding boots on their shelves. The hiking boots are for walks on rough ground; the customer asks for work boots today.",
+    "reviewedQuestion": "Which boots does the customer ask to see?",
+    "reviewedAnswer": "Work Boots",
+    "imagePath": "question-images/v3/shared/footwear-work-boots/08ab51f664c8472f9fd7793e7b5d1886ca1c886ddce2271aac61b9e453699d3f.webp",
+    "imageAlt": "Two worn brown lace-up boots with padded collars and thick treaded soles stand on wooden boards beside gravel.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-3-usage-scene-1": {
+    "reviewedScenario": "Nabil checks flip-flops with a Y-shaped strap between the toes. The sandals and slides beside them have other strap designs.",
+    "reviewedQuestion": "Which footwear has a Y-shaped strap between the toes?",
+    "reviewedAnswer": "Flip-Flops",
+    "imagePath": "question-images/v3/shared/footwear-flip-flops/93209837d457ad9310c7bb650e38a63dcc0f75f1a403245f06b8e6018ad882e0.webp",
+    "imageAlt": "Two blue flip-flops with Y-shaped straps rest on pale paving stones.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-3-usage-scene-2": {
+    "reviewedScenario": "Nabil checks platform sandals with thick raised soles. The gladiator sandals have many straps, and the wedges rise mainly under the heels.",
+    "reviewedQuestion": "Which sandals have thick raised soles?",
+    "reviewedAnswer": "Platform Sandals",
+    "imagePath": "question-images/v3/shared/footwear-platform-sandals/92f96859c9c0115b2c35ad644db4c87cad9e656461cfd46ce61d0045b89ffce2.webp",
+    "imageAlt": "Two brown sandals with ankle straps and thick rope-covered soles rest on stone paving.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-3-usage-scene-3": {
+    "reviewedScenario": "Nabil packs strappy sandals with several narrow straps. The woven huaraches and closed clogs go in other boxes.",
+    "reviewedQuestion": "Which sandals have several narrow straps?",
+    "reviewedAnswer": "Strappy Sandals",
+    "imagePath": "question-images/v3/shared/footwear-strappy-sandals/e048f519b385e6a9cdaa39677d399871cc5bdfbe1235959a11f9fdabc745ad8b.webp",
+    "imageAlt": "Two brown sandals with crossing straps and buckled ankle straps rest on a wooden bench.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-3-usage-scene-4": {
+    "reviewedScenario": "The order list requests running shoes for a running club. Nabil packs those and leaves the mules and cross-trainers on the shelf.",
+    "reviewedQuestion": "Which shoes does the running club order?",
+    "reviewedAnswer": "Running Shoes",
+    "imagePath": "question-images/v3/shared/footwear-running-shoes/b1680f1de826c32d799098457b1c053ed22b0d2206e648117c9340883a0cc79f.webp",
+    "imageAlt": "Two gray lace-up mesh sneakers with thick white soles rest on a paved path.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-3-usage-scene-5": {
+    "reviewedScenario": "The tennis club orders tennis shoes. Nabil packs the requested pair, not the basketball shoes or soccer cleats.",
+    "reviewedQuestion": "Which shoes does the tennis club order?",
+    "reviewedAnswer": "Tennis Shoes",
+    "imagePath": "question-images/v3/shared/footwear-tennis-shoes/6680a5a6464f6907d9e36f9616576c48ae7889da864834738c6cdfd08699f18f.webp",
+    "imageAlt": "Two white lace-up shoes rest on a blue court surface, with one shoe turned to show its zigzag sole tread.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-1-usage-scene-1": {
+    "reviewedScenario": "In a vocabulary class, the trainer opens a first aid kit. A bandage and gauze are inside the box. Omar writes down the name of the complete set.",
+    "reviewedQuestion": "What is the complete set of supplies called?",
+    "reviewedAnswer": "First Aid Kit",
+    "imagePath": "question-images/v3/shared/first-aid-room-first-aid-kit/33edd6f06dc6c7eae3cd285b06c0429b9671d65040e68247042291dd75e6649b.webp",
+    "imageAlt": "An open red-and-white portable box contains bandage rolls, gauze, scissors, tape, packaged plasters and blue gloves.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-1-usage-scene-2": {
+    "reviewedScenario": "The trainer points to a roll of adhesive tape with a sticky side. The antiseptic wipe is still in its packet, and the scissors are closed.",
+    "reviewedQuestion": "Which item has a sticky side?",
+    "reviewedAnswer": "Adhesive Tape",
+    "imagePath": "question-images/v3/shared/first-aid-room-adhesive-tape/ec361d959d243566b3b3fb5231c8076c4a38cb0c7c8bcebffabb724d4ea09b74.webp",
+    "imageAlt": "A roll of pale fabric tape with a loose strip rests on a white surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-1-usage-scene-3": {
+    "reviewedScenario": "Omar examines the tweezers, a small tool with two narrow arms. A safety pin and an elastic bandage are also on the table.",
+    "reviewedQuestion": "Which tool has two narrow arms?",
+    "reviewedAnswer": "Tweezers",
+    "imagePath": "question-images/v3/shared/first-aid-room-tweezers/07e47b07f1a50ad98f5461e7b65b372e3c538929c5d1b2b00f77a136ebed5f72.webp",
+    "imageAlt": "Silver-colored tweezers with rounded tips and a textured grip rest on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-1-usage-scene-4": {
+    "reviewedScenario": "The trainer unfolds a triangular bandage to show its three corners. The gauze pad and burn cream stay on the table.",
+    "reviewedQuestion": "Which item has three corners when unfolded?",
+    "reviewedAnswer": "Triangular Bandage",
+    "imagePath": "question-images/v3/shared/first-aid-room-triangular-bandage/6540e43e5939b273b7efb456237e87e6934bed695258a97391f3935c38a05c98.webp",
+    "imageAlt": "A pale triangular cloth with three corners lies unfolded on a dark surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-2-usage-scene-1": {
+    "reviewedScenario": "Omar opens a drawer containing medical tape. The antibiotic ointment and hydrocortisone cream are in a separate cabinet. He records the tape, not a medicine.",
+    "reviewedQuestion": "Which item does Omar record from the drawer?",
+    "reviewedAnswer": "Medical Tape",
+    "imagePath": "question-images/v3/shared/first-aid-room-medical-tape/c657b14d76c2bc814ab7e384f2397818bb349d037fa60972c452a2f554e31cb7.webp",
+    "imageAlt": "A roll of pale tape rests on a metal tray.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-2-usage-scene-2": {
+    "reviewedScenario": "The trainer shows an empty stretcher used to carry a person lying down. A wheelchair and a crutch are next to it.",
+    "reviewedQuestion": "Which item can carry a person lying down?",
+    "reviewedAnswer": "Stretcher",
+    "imagePath": "question-images/v3/shared/first-aid-room-stretcher/223e4de1890a54590670fec9ce775ab46dbc8618af2982e13b32e697c33088bf.webp",
+    "imageAlt": "An empty wheeled medical trolley with a blue mattress, rails and securing straps stands in a clinical room.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-2-usage-scene-3": {
+    "reviewedScenario": "A splint is on the training table. The trainer calls it a firm support. A neck brace and an ice pack are on the shelf.",
+    "reviewedQuestion": "Which firm support is on the table?",
+    "reviewedAnswer": "Splint",
+    "imagePath": "question-images/v3/shared/first-aid-room-splint/55c87514d060c066f0025dec10da71e68b5e2df49bdb13d721a7f0f566dc7304.webp",
+    "imageAlt": "A blue padded limb support with black fastening straps lies on a table beside bandage rolls and scissors.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-2-usage-scene-5": {
+    "reviewedScenario": "Omar sees a small pulse oximeter with a finger clip. The eye wash station is by the wall, and a CPR mask is in a box.",
+    "reviewedQuestion": "Which device has a finger clip?",
+    "reviewedAnswer": "Pulse Oximeter",
+    "imagePath": "question-images/v3/shared/first-aid-room-pulse-oximeter/94240c0b1814d1633624c0f373e36c99958aa0e474ff28e93479ac988d593895.webp",
+    "imageAlt": "A blue-and-white finger-clip device with a blank screen and wrist strap rests on a table.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-3-usage-scene-3": {
+    "reviewedScenario": "In this lesson, plaster means a small adhesive wound covering, not building material. The butterfly strip and larger wound dressing are in separate packets.",
+    "reviewedQuestion": "Which word means a small adhesive wound covering here?",
+    "reviewedAnswer": "Plaster",
+    "imagePath": "question-images/v3/shared/first-aid-room-plaster/8300d17e86f38b8725cefef2d91fa3418f55efe474bf734da44f90db4f403014.webp",
+    "imageAlt": "A small beige adhesive strip with a white central pad and peeled backing lies on a wooden surface beside plain paper.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-3-usage-scene-5": {
+    "reviewedScenario": "Omar identifies a cotton swab with cotton on the ends of a small stick. The sterile gloves and syringe remain in their packets.",
+    "reviewedQuestion": "Which item has cotton on a small stick?",
+    "reviewedAnswer": "Cotton Swab",
+    "imagePath": "question-images/v3/shared/first-aid-room-cotton-swab/0c352f1d3706c2d41e3f2e08f617baee97dee1bdb9d535711b9cca9aeff0e7e7.webp",
+    "imageAlt": "A single white stick with cotton tips at both ends rests on pale fabric.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-4-usage-scene-5": {
+    "reviewedScenario": "The trainer unfolds a shiny emergency blanket. Omar names it, then points to a whistle and flashlight on the shelf.",
+    "reviewedQuestion": "Which item does the trainer unfold?",
+    "reviewedAnswer": "Emergency Blanket",
+    "imagePath": "question-images/v3/shared/first-aid-room-emergency-blanket/c575e9e973dbc09ebacecb7c46369242980ccf5bd8df0e9e60d480de6a71957c.webp",
+    "imageAlt": "A partly unfolded crinkled silver-and-gold reflective sheet lies on a wooden table.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-5-usage-scene-2": {
+    "reviewedScenario": "The trainer shows a cervical collar, a medical neck support. The spine board and snakebite kit stay in storage. Omar writes collar in his notebook.",
+    "reviewedQuestion": "Which item is a medical neck support?",
+    "reviewedAnswer": "Cervical Collar",
+    "imagePath": "question-images/v3/shared/first-aid-room-cervical-collar/4ed2d087c000d918fa6a7ce38dbda469b7adbb2943986450e326cb8e02fc31bf.webp",
+    "imageAlt": "A blue-and-white rigid padded collar with fastening straps rests on a metal shelf.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-5-usage-scene-3": {
+    "reviewedScenario": "The trainer names a small tick remover used by the clinic. The medical ID bracelet and examination table are other items on the inventory.",
+    "reviewedQuestion": "Which small tool does the trainer name?",
+    "reviewedAnswer": "Tick Remover",
+    "imagePath": "question-images/v3/shared/first-aid-room-tick-remover/83b87ec74a66f04e9c200000e658cf46671178044e90e583a66dbf7d7556fae6.webp",
+    "imageAlt": "A green plastic hook-shaped tool and a silver-colored fork-ended tool rest on a metal tray.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-5-usage-scene-4": {
+    "reviewedScenario": "Omar draws the curtain beside the examination table on his room plan. The sink and soap dispenser are across the room.",
+    "reviewedQuestion": "Which item gives privacy beside the table?",
+    "reviewedAnswer": "Curtain",
+    "imagePath": "question-images/v3/shared/first-aid-room-curtain/6b84c7c263212c03aac4544efe47b27015afb2d2d22da4e5d714972bdcd52fca.webp",
+    "imageAlt": "A pale blue hanging curtain stands beside an empty examination couch in a clinical room.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-5-usage-scene-5": {
+    "reviewedScenario": "Omar takes a paper towel from the dispenser above the sink. The waste bin is below, and the medicine cabinet is locked.",
+    "reviewedQuestion": "Which item does Omar take from the dispenser?",
+    "reviewedAnswer": "Paper Towel",
+    "imagePath": "question-images/v3/shared/first-aid-room-paper-towel/bed417afeae49483e04c21fdc2a7c16243807a3aa4a0a8689c68fbffd62d27eb.webp",
+    "imageAlt": "A white paper towel hangs from a dark wall-mounted dispenser against pale tiles.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-6-usage-scene-2": {
+    "reviewedScenario": "The trainer moves a privacy screen beside the empty examination table. The emergency contact card and incident report form stay on the desk.",
+    "reviewedQuestion": "Which item does the trainer move to give privacy?",
+    "reviewedAnswer": "Privacy Screen",
+    "imagePath": "question-images/v3/shared/first-aid-room-privacy-screen/eb7d8f829833d361dfa6fc77f6770a304a4a62da43bc053ab8f23f225c0c0e87.webp",
+    "imageAlt": "A blue four-panel folding screen on small wheels stands in an empty clinical room.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-6-usage-scene-4": {
+    "reviewedScenario": "Omar names the closed sharps container for used needles and other sharp medical items. Cut and bruise are injury words, not containers.",
+    "reviewedQuestion": "Which item is a container for sharp medical waste?",
+    "reviewedAnswer": "Sharps Container",
+    "imagePath": "question-images/v3/shared/first-aid-room-sharps-container/23c65593d12ac69b25bbbbcd5f4824cf0f25afdc7bc3e668a49672483ee04cc4.webp",
+    "imageAlt": "A red rigid container with a closed pale lid stands on a counter beside a blue box.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-7-usage-scene-5": {
+    "reviewedScenario": "Omar names the roll of tape on the table. The antiseptic is in a sealed bottle, and the sling is folded beside it.",
+    "reviewedQuestion": "Which item is on a roll?",
+    "reviewedAnswer": "Tape",
+    "imagePath": "question-images/v3/shared/first-aid-room-tape/1cee7fd16b29fe5b310cfb0496b45be11302802a0b0b3a0f228be87de7b19769.webp",
+    "imageAlt": "A roll of pale fabric tape with a short loose end rests on a dark padded surface.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-1-usage-scene-1": {
+    "reviewedScenario": "The pharmacist explains that a tablet is a solid medicine form. A capsule has a shell, while syrup is liquid. Omar asks to hear the word tablet again.",
+    "reviewedQuestion": "Which solid medicine form does Omar ask to hear again?",
+    "reviewedAnswer": "Tablet",
+    "imagePath": "question-images/v3/shared/pharmacy-tablet/086a2fbd497306102aae6bd19ecfef96b0ee4b016fb6a602c6c02fcc1132f6bc.webp",
+    "imageAlt": "One round unmarked white tablet rests on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-1-usage-scene-3": {
+    "reviewedScenario": "Omar asks the name of the medicine device held in the hand for breathing in a dose. The pharmacist calls it an inhaler. Injection and patch are different terms.",
+    "reviewedQuestion": "What does the pharmacist call the breathing device?",
+    "reviewedAnswer": "Inhaler",
+    "imagePath": "question-images/v3/shared/pharmacy-inhaler/91e752299f2266f9493690a1622528da1a05384276175715836fd098aa18ee91.webp",
+    "imageAlt": "A plain blue inhaler with a silver-colored canister and capped mouthpiece stands on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-1-usage-scene-5": {
+    "reviewedScenario": "Omar reads suppository on his vocabulary list. The pharmacist explains that it is a solid form inserted into a body opening. Nasal spray and ear drops are different forms.",
+    "reviewedQuestion": "Which form does the pharmacist explain from the list?",
+    "reviewedAnswer": "Suppository",
+    "imagePath": "question-images/v3/shared/pharmacy-suppository/e9e5aeef51fdbd4a3cfeebddcff96ebb2f17581fe5b380391496908c23e0e5fa.webp",
+    "imageAlt": "A pale bullet-shaped object rests beside a plain sealed wrapper on a light surface.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-2-usage-scene-3": {
+    "reviewedScenario": "The supervisor shows a refrigerator reserved for pharmacy stock. A scale and mortar and pestle stand on the workbench. The trainee does not change any temperature setting.",
+    "reviewedQuestion": "Which appliance stores the stock described in the tour?",
+    "reviewedAnswer": "Refrigerator",
+    "imagePath": "question-images/v3/shared/pharmacy-refrigerator/e259af597edc835440126f21f3dc7c78f31208b7601db5cec45ffd2d025fdf65.webp",
+    "imageAlt": "A tall glass-fronted refrigerator contains shelves of plain boxes and bottles in a clinical work area.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-3-usage-scene-3": {
+    "reviewedScenario": "The delivery includes a bandage roll. A small plaster and thermometer are in another box. The clerk records the roll first.",
+    "reviewedQuestion": "Which rolled item does the clerk record first?",
+    "reviewedAnswer": "Bandage",
+    "imagePath": "question-images/v3/shared/pharmacy-bandage/e687281891ff0b6b63d7c865123578f6b649f3b4d5eb292d8bff2e9d7622ffe3.webp",
+    "imageAlt": "A rolled pale cloth bandage with a loose end rests on a metal tray.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-4-usage-scene-1": {
+    "reviewedScenario": "The clerk finds gauze, a loosely woven medical cloth, in the supplies box. Vitamin and mineral supplements are on a different shelf. A vitamin supplement supplies vitamins, while a mineral supplement supplies minerals.",
+    "reviewedQuestion": "Which item is a loosely woven medical cloth?",
+    "reviewedAnswer": "Gauze",
+    "imagePath": "question-images/v3/shared/pharmacy-gauze/bca0956d1dd9426acd97e4cf724162a7ac98bae794ca2784e88d3c305b58683d.webp",
+    "imageAlt": "A stack of white gauze squares and a loose open-weave piece rest on a metal tray.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-6-usage-scene-1": {
+    "reviewedScenario": "The delivery driver collects prepared packages from the pharmacy. The manager checks the schedule, and the stock clerk stays in the store room.",
+    "reviewedQuestion": "Who collects the prepared packages?",
+    "reviewedAnswer": "Delivery Driver",
+    "imagePath": "question-images/v3/shared/pharmacy-delivery-driver/0f8b8803a2dbf460a2527761a84b61e5b836ef86c8b8d5b61d2d8edd2284f240.webp",
+    "imageAlt": "A man in a dark jacket and trousers carries three plain cardboard boxes beside an open white van.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-7-usage-scene-2": {
+    "reviewedScenario": "Mina puts a small purchase in a shopping basket. The cashier gives her a bag and receipt after payment.",
+    "reviewedQuestion": "Which item holds the purchase before payment?",
+    "reviewedAnswer": "Shopping Basket",
+    "imagePath": "question-images/v3/shared/pharmacy-shopping-basket/2b6d49af70f77d98e0312a9bfe86919410fc30c4e973f36c59068c9062fe91e4.webp",
+    "imageAlt": "An empty red plastic shopping basket with metal handles rests on a counter.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-8-usage-scene-1": {
+    "reviewedScenario": "The trainee holds the pestle, the tool used with a mortar to crush substances. The medicine bottle and label remain on the workbench. Nothing is prepared.",
+    "reviewedQuestion": "Which tool is used with a mortar?",
+    "reviewedAnswer": "Pestle",
+    "imagePath": "question-images/v3/shared/pharmacy-pestle/3d9661be2c6ce56048ff5c2c7a032eed3f9624eb208700401fd4d2440a0bde4c.webp",
+    "imageAlt": "A gray stone pestle rests beside an empty matching mortar on a wooden surface.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-2-usage-scene-2": {
+    "reviewedScenario": "The customer wants a charm bracelet with small decorations hanging from it. Mina leaves the plain cuff and ring in their boxes.",
+    "reviewedQuestion": "Which item has small decorations hanging from it?",
+    "reviewedAnswer": "Charm Bracelet",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-charm-bracelet/b9591bb8a7ccdf72e47a36a837cbed2c3dabb645de43045fd23c902adb719a9f.webp",
+    "imageAlt": "A silver-colored chain bracelet with heart, flower, leaf and spherical charms rests on a plain gray mat.",
+    "imagePurpose": "word-reference"
+  },
+  "everyday-clothing-4-usage-scene-2": {
+    "reviewedScenario": "Sam hangs his absorbent bathrobe near the shower. His slippers stay beside the bed so he can find them later.",
+    "reviewedQuestion": "Which item does Sam hang near the shower?",
+    "reviewedAnswer": "Bathrobe",
+    "imagePath": "question-images/v3/shared/everyday-clothing-bathrobe/590981ee65d492fef32b2185e190719560ef1963011f26b3b327c2c95c9c85f3.webp",
+    "imageAlt": "A complete white textured bathrobe with a tied belt and two front pockets hangs from a wooden hanger against a blank wall.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-4-usage-scene-1": {
+    "reviewedScenario": "Sam brings dance shoes to his adult dance class. He leaves his climbing shoes and cycling shoes in the sports cupboard.",
+    "reviewedQuestion": "Which shoes does Sam bring to the class?",
+    "reviewedAnswer": "Dance Shoes",
+    "imagePath": "question-images/v3/shared/footwear-dance-shoes/c4d20fa07c263274686aa260e05b34ccd6d740e3682e0522bd0006a5d75774d1.webp",
+    "imageAlt": "A matching pair of black lace-up low-heeled shoes rests on an empty wooden studio floor.",
+    "imagePurpose": "word-reference"
+  },
+  "footwear-4-usage-scene-2": {
+    "reviewedScenario": "At the bowling alley, Sam collects bowling shoes from the desk. His soft slippers are at home.",
+    "reviewedQuestion": "Which shoes does Sam collect from the desk?",
+    "reviewedAnswer": "Bowling Shoes",
+    "imagePath": "question-images/v3/shared/footwear-bowling-shoes/ab8522ba910177cbba9eae23700e2458c2fb0ec0c4f35c06c9f4db5087abfdfc.webp",
+    "imageAlt": "A matching pair of cream-and-dark-brown lace-up shoes sits alone on a shelf in front of blurred empty bowling lanes.",
+    "imagePurpose": "word-reference"
+  },
+  "accessories-jewelry-3-usage-scene-1": {
+    "reviewedScenario": "Omar puts his laptop in a backpack with two shoulder straps. The handbag and open tote bag stay at home.",
+    "reviewedQuestion": "Which bag does Omar use for his laptop?",
+    "reviewedAnswer": "Backpack",
+    "imagePath": "question-images/v3/shared/accessories-jewelry-backpack/ef0178d3ec2fd8a24a958017fe5d3f2d70f97d69f1540d4046b95a7cf0f498db.webp",
+    "imageAlt": "The back of an olive-green backpack shows two separate padded shoulder straps with adjustment buckles on a plain surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-3-usage-scene-1": {
+    "reviewedScenario": "The trainer names an AED, short for automated external defibrillator. The first aid manual and blood glucose monitor are separate items. The AED stays switched off.",
+    "reviewedQuestion": "Which item has the abbreviation AED?",
+    "reviewedAnswer": "AED",
+    "imagePath": "question-images/v3/shared/first-aid-room-aed/66b318720ea8b47d5ebeb24b664091e60548b13b27f6b2dfacedda3f5bf51279.webp",
+    "imageAlt": "A red-and-gray device with a blank display sits beside two plain white wired pads on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-3-usage-scene-2": {
+    "reviewedScenario": "Omar names the blood pressure cuff wrapped around the training model's upper arm. The penlight and tongue depressor are on the table.",
+    "reviewedQuestion": "Which item wraps around the model's upper arm?",
+    "reviewedAnswer": "Blood Pressure Cuff",
+    "imagePath": "question-images/v3/shared/first-aid-room-blood-pressure-cuff/68f07a95346a7a327ff83fd94dec1b997dbd9466cc8943303769a5c5505b4923.webp",
+    "imageAlt": "A partly open dark blue fabric cuff with an attached hose rests alone on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-4-usage-scene-2": {
+    "reviewedScenario": "The inventory names an irrigation syringe for clinical wound rinsing. The rubbing alcohol and burn gel stay in sealed containers. No treatment takes place.",
+    "reviewedQuestion": "Which item is a syringe for clinical wound rinsing?",
+    "reviewedAnswer": "Irrigation Syringe",
+    "imagePath": "question-images/v3/shared/first-aid-room-irrigation-syringe/9d82f32bb50f36680146ad0175fd8ca1c719b59c839077032e3280cb3cbe7265.webp",
+    "imageAlt": "A clear needle-free syringe with a plunger and long blunt nozzle lies alone on a pale surface.",
+    "imagePurpose": "word-reference"
+  },
+  "first-aid-room-6-usage-scene-1": {
+    "reviewedScenario": "The trainer points to a wall chart that displays reference information. The clock and hand sanitizer are beside it. Omar repeats wall chart.",
+    "reviewedQuestion": "Which item displays reference information on the wall?",
+    "reviewedAnswer": "Wall Chart",
+    "imagePath": "question-images/v3/shared/first-aid-room-wall-chart/0af5a393b0147563aba777a922dbfcfd227e8b8b785c185f2e343a0dd964230a.webp",
+    "imageAlt": "A framed chart with a grid of colored circles and rectangles hangs on a plain wall.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-2-usage-scene-4": {
+    "reviewedScenario": "The trainee sees a pill counter used to count tablets. The label printer and barcode scanner are beside it. No medicine is dispensed during the tour.",
+    "reviewedQuestion": "Which item counts tablets?",
+    "reviewedAnswer": "Pill Counter",
+    "imagePath": "question-images/v3/shared/pharmacy-pill-counter/6af47689b8585321b0af28c7e805e9c474948701618f3590e27ea35384e2ac1f.webp",
+    "imageAlt": "A blue tray with a narrow channel rests beside a metal spatula with a black handle.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-2-usage-scene-5": {
+    "reviewedScenario": "The supervisor opens a training program on the computer. The pill cutter and pill organizer stay in the drawer.",
+    "reviewedQuestion": "Which device runs the training program?",
+    "reviewedAnswer": "Computer",
+    "imagePath": "question-images/v3/shared/pharmacy-computer/2f36d5cf0305a687f798235ccfb3d567581bbb1fd962b77eb33b61fc81c198d4.webp",
+    "imageAlt": "A desktop tower, blank monitor, keyboard with blank keys and mouse stand on an empty counter.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-3-usage-scene-4": {
+    "reviewedScenario": "The pharmacist checks a blood pressure monitor with an arm cuff. The glucose meter and pregnancy test are different products in the delivery.",
+    "reviewedQuestion": "Which monitor has an arm cuff?",
+    "reviewedAnswer": "Blood Pressure Monitor",
+    "imagePath": "question-images/v3/shared/pharmacy-blood-pressure-monitor/094fc78d7d0026b414b153be7c4387acc5a172fce9d5a47dc3290c496307ff07.webp",
+    "imageAlt": "A white device with a blank black display and two plain round buttons sits beside a dark fabric cuff and hose.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-5-usage-scene-4": {
+    "reviewedScenario": "The supervisor shows a compounding area where pharmacy staff prepare some medicines. The clean room is a separate controlled space. The pharmacist leads the tour.",
+    "reviewedQuestion": "Which area does the supervisor show?",
+    "reviewedAnswer": "Compounding Area",
+    "imagePath": "question-images/v3/shared/pharmacy-compounding-area/7e7a7cca8467b90bdee39600b9fd6f411374444d31c8a1a4eb51ae2ff578d4c5.webp",
+    "imageAlt": "A metal workbench holds a white mortar and pestle, an empty glass bowl, a metal spatula and two closed brown bottles against a blank wall.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-6-usage-scene-5": {
+    "reviewedScenario": "A customer collects an order at the drive-through window without entering the pharmacy. The consultation room and waiting area are inside.",
+    "reviewedQuestion": "Where does the customer collect the order?",
+    "reviewedAnswer": "Drive-Through Window",
+    "imagePath": "question-images/v3/shared/pharmacy-drive-through-window/53a1f6ea856bd45fff0aa6fcec26a577a0775c470a7f6158108525feb4e1f640.webp",
+    "imageAlt": "A sliding service window and metal drawer sit in an exterior brick wall beside two yellow bollards and an unmarked paved lane.",
+    "imagePurpose": "word-reference"
+  },
+  "pharmacy-3-usage-scene-2": {
+    "reviewedScenario": "A customer waits at the pharmacy counter. The digital scale is behind it, and a patient profile is private information in the pharmacy system.",
+    "reviewedQuestion": "Where does the customer wait?",
+    "reviewedAnswer": "Pharmacy Counter",
+    "imagePath": "question-images/v3/shared/pharmacy-pharmacy-counter/f40886397f98061551f4b7eeb0bb9aaeaa1d7d3bcb20fe783504d4f203b37eb1.webp",
+    "imageAlt": "An empty wooden service counter with a frosted-glass front stands before empty wooden shelves.",
+    "imagePurpose": "word-reference"
   }
 }
