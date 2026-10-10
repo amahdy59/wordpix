@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-10T18:29:17.491Z",
+  "localGalleryImagesVerified": 40,
+  "newGeminiImagesVerified": 28,
+  "protectedFilesVerified": 12695,
+  "trackedChanges": 0,
+  "r2Writes": 0,
+  "audioMappingChanges": 0,
+  "checks": [
+    {
+      "command": "npx tsc --noEmit",
+      "exitCode": 0
+    },
+    {
+      "command": "npx vitest run --maxWorkers=2",
+      "exitCode": 0,
+      "filesPassed": 145,
+      "testsPassed": 2820,
+      "durationSeconds": 179.6
+    },
+    {
+      "command": "pnpm run lint",
+      "exitCode": 0
+    }
+  ],
+  "checkEvidence": "Command exit statuses and Vitest summary returned by execution tools during this batch. No application flow was changed; no E2E or deployment run was required."
+}

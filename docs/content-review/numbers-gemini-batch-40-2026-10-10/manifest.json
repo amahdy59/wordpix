@@ -1,0 +1,1514 @@
+{
+  "batchWords": 40,
+  "clearOriginalImagesRetained": 12,
+  "geminiImagesGeneratedAndSelected": 28,
+  "model": "gemini-nano-banana-2.1",
+  "completedAt": "2026-10-10T18:24:11.819Z",
+  "paidGenerationRequests": 34,
+  "noImageResponses": 6,
+  "successfulResponseUsageEstimateUsd": 1.2585,
+  "estimateLimitation": "Token-based estimate for the 28 successful responses only. Six earlier no-image responses have no saved usage metadata, so this is not the total bill. Actual charge requires provider billing reconciliation.",
+  "pricingSource": "https://ai.google.dev/gemini-api/docs/pricing",
+  "all18RenderedCountAuditsPassed": true,
+  "all28NewImagesVisuallyInspected": true,
+  "approvalEvidence": "I'm viewing the images as you're creating them and I do approve them. no need to get back to me for reviewal unless critical.",
+  "localGenerationComplete": true,
+  "publicationStatus": "Not published; assets and existing mappings remain read-only.",
+  "figmaUsedForThisGeneration": false,
+  "blocker": null,
+  "r2Writes": 0,
+  "r2Deletes": 0,
+  "r2Overwrites": 0,
+  "audioMappingChanges": 0,
+  "items": [
+    {
+      "word": "One",
+      "originalPath": "word-images/numbers-counting/one.avif",
+      "sha256": "d2a3723012327cbc1e6fcad97e016cdfc5bf6fbff7d354db8a6780e2f8282853",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 1 appears beside a single red apple and the words COUNT: 1 APPLE.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/one.avif"
+    },
+    {
+      "word": "Two",
+      "originalPath": "word-images/numbers-counting/two.avif",
+      "originalSha256": "2d068d0e0a89624cb1855d633221d7608ce48ec153640e521f30fc9d5d8a9693",
+      "kind": "count",
+      "number": 2,
+      "shapeKind": "triangles",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Two\". Large numeral below heading: \"2\". Below numeral show exactly 2 separate shapes in 1 horizontal rows. Row 1: exactly 2 triangles, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Two\" and \"2\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "b9025cc465ae8abd24fa3012b4011700e57876f22324175c38ad899352d60193",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.368Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "3f7ea0010ec5153648de22bb005712b4073ed5c8d94c196ceaff2b01da6433ba",
+      "sha256": "c0c03f758342ee45fede13ad4b15be8d39ecb04fa784d6d0fe4725ea1fd39228",
+      "bytes": 26146,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 170,
+        "candidatesTokenCount": 1434,
+        "totalTokenCount": 2382,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 170
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 778,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 13995,
+      "selection": "gemini-replacement",
+      "reason": "Contains an unnecessary female figure; use a clear human-free count reference.",
+      "imageAlt": "The word Two and numeral 2 appear above exactly 2 colorful triangles.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/two-v1-b9025cc465ae.webp",
+      "preview": "assets/two-v1-b9025cc465ae.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/two-v1-b9025cc465ae-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Three",
+      "originalPath": "word-images/numbers-counting/three.avif",
+      "originalSha256": "f5eaca22aad79979f4aad25d93a123e0ec9ec42f1dc59450807387bc5539f9a1",
+      "kind": "count",
+      "number": 3,
+      "shapeKind": "squares",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Three\". Large numeral below heading: \"3\". Below numeral show exactly 3 separate shapes in 1 horizontal rows. Row 1: exactly 3 squares, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Three\" and \"3\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "addd5e996aee1e59e552bd4f65120abaa0262c8a3778b1abb09e22b7407e8073",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.395Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "f4edfe08405c79e344f2a9df9eeba6ef212a9dd0f05c43e7834cbc6bea2c089d",
+      "sha256": "ce94a9140fcb109c5106c2d59abf8425ca77a8ec673b73798e53b69f9c40369c",
+      "bytes": 47984,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 170,
+        "candidatesTokenCount": 1381,
+        "totalTokenCount": 2583,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 170
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1032,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 17961,
+      "selection": "gemini-replacement",
+      "reason": "The three stars are accompanied by four hands and nine dots, producing conflicting counts.",
+      "imageAlt": "The word Three and numeral 3 appear above exactly 3 colorful squares.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/three-v1-addd5e996aee.webp",
+      "preview": "assets/three-v1-addd5e996aee.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/three-v1-addd5e996aee-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Four",
+      "originalPath": "word-images/numbers-counting/four.avif",
+      "sha256": "b39bfc47918d0f485e9da08ae6d166c698cc5616e6cda787372752a0a08cee4a",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 4 is surrounded by four butterflies above FOUR and 4 BUTTERFLIES.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/four.avif"
+    },
+    {
+      "word": "Five",
+      "originalPath": "word-images/numbers-counting/five.avif",
+      "sha256": "62c31dd9decef264e82a4c6191092ee3cece6b77e2e36341726a1e5282eaad47",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 5 appears beside a hand with five fingers and a row of five objects.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/five.avif"
+    },
+    {
+      "word": "Six",
+      "originalPath": "word-images/numbers-counting/six.avif",
+      "originalSha256": "6319db22f7775e98c5099f7202a71508f331cc5f272bb3b33d01d666af41c775",
+      "kind": "count",
+      "number": 6,
+      "shapeKind": "hexagons",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Six\". Large numeral below heading: \"6\". Below numeral show exactly 6 separate shapes in 2 horizontal rows. Row 1: exactly 5 hexagons, evenly spaced. Row 2: exactly 1 hexagons, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Six\" and \"6\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "eeedb07d85f122ca8806b6db5831b8dc27aae75f601a1e228166981307295a39",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.396Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "4f5e6c5801f2d8ca765b0d2d4c1bc701b3a0a357e5752196ab673ccaeea27e9f",
+      "sha256": "83ef7b113dc2f8c6e6bc6d2cbf58134a6cfbcc3ca7fe913704287adb3aaf3fa4",
+      "bytes": 142334,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 182,
+        "candidatesTokenCount": 1447,
+        "totalTokenCount": 2487,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 182
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 858,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 16101,
+      "selection": "gemini-replacement",
+      "reason": "Six balloons are accompanied by only five counting circles.",
+      "imageAlt": "The word Six and numeral 6 appear above exactly 6 colorful hexagons.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/six-v1-eeedb07d85f1.webp",
+      "preview": "assets/six-v1-eeedb07d85f1.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/six-v1-eeedb07d85f1-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Seven",
+      "originalPath": "word-images/numbers-counting/seven.avif",
+      "originalSha256": "a3fa7d9c9b3f74a21be829f58183639f9cc42819a96dd23a0f8fa72e33823711",
+      "kind": "count",
+      "number": 7,
+      "shapeKind": "pentagons",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Seven\". Large numeral below heading: \"7\". Below numeral show exactly 7 separate shapes in 2 horizontal rows. Row 1: exactly 5 pentagons, evenly spaced. Row 2: exactly 2 pentagons, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Seven\" and \"7\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "0844d2c0ca591a44a3559fadeba3462bf3b3478b24504fa5b822302d0f0dca65",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.397Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "5dfc2c2432ff4b513eb7812102022ec9e3fd3482814d3893177ede6adfbaba1c",
+      "sha256": "a646aff926f045158d3a574e3e618cec3cfab81e1db5e7d946f7f6f4ebdae6e2",
+      "bytes": 51204,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 184,
+        "candidatesTokenCount": 1467,
+        "totalTokenCount": 2468,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 184
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 817,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 17900,
+      "selection": "gemini-replacement",
+      "reason": "The object array and garbled lower count sequence do not clearly represent seven.",
+      "imageAlt": "The word Seven and numeral 7 appear above exactly 7 colorful pentagons.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/seven-v1-0844d2c0ca59.webp",
+      "preview": "assets/seven-v1-0844d2c0ca59.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/seven-v1-0844d2c0ca59-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Eight",
+      "originalPath": "word-images/numbers-counting/eight.avif",
+      "originalSha256": "2a37150cd4142b01f4115423cda2ca306734a9da6403079c8f294bbe5ea5bb6e",
+      "kind": "count",
+      "number": 8,
+      "shapeKind": "stars",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Eight\". Large numeral below heading: \"8\". Below numeral show exactly 8 separate shapes in 2 horizontal rows. Row 1: exactly 5 stars, evenly spaced. Row 2: exactly 3 stars, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Eight\" and \"8\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "cc6a12cf232f8c92fed42669ab9d496c66294eb1c4a6485782baa3642dbce042",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.398Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "6e2d3c48398ebc2a1c7ba02f8b86e17351c2604b57ad942359548a1efe2be25b",
+      "sha256": "9e29ce15571187114914bae5c44bddde3ebe69a9ab6a855e5cb0a795aed927d2",
+      "bytes": 56538,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 182,
+        "candidatesTokenCount": 1449,
+        "totalTokenCount": 1955,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 182
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 324,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 11791,
+      "selection": "gemini-replacement",
+      "reason": "The numeral 8 appears beside five crayons and an incomplete counting sequence.",
+      "imageAlt": "The word Eight and numeral 8 appear above exactly 8 colorful stars.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/eight-v1-cc6a12cf232f.webp",
+      "preview": "assets/eight-v1-cc6a12cf232f.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/eight-v1-cc6a12cf232f-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Nine",
+      "originalPath": "word-images/numbers-counting/nine.avif",
+      "originalSha256": "09fdccd86ca67c3ef0e7190a2b594388d2a61b15b697bcefcaa202c37f5b7530",
+      "kind": "count",
+      "number": 9,
+      "shapeKind": "diamonds",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Nine\". Large numeral below heading: \"9\". Below numeral show exactly 9 separate shapes in 2 horizontal rows. Row 1: exactly 5 diamonds, evenly spaced. Row 2: exactly 4 diamonds, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Nine\" and \"9\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "300df11bb248af10cce9d26eda0283ec7f05bda1cab597b843944a3274c48b71",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.399Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "1acd09f111e8010fdff4e601be8eed125583b6c71e6b8a7d25aec65f8567ece2",
+      "sha256": "9601e36a300ab94f49cb569a885e108d14232c3662b4faf6dc46cd5502fec31a",
+      "bytes": 88652,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 182,
+        "candidatesTokenCount": 1485,
+        "totalTokenCount": 2736,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 182
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1069,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 19187,
+      "selection": "gemini-replacement",
+      "reason": "The count-to-nine image shows only eight hearts.",
+      "imageAlt": "The word Nine and numeral 9 appear above exactly 9 colorful diamonds.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/nine-v1-300df11bb248.webp",
+      "preview": "assets/nine-v1-300df11bb248.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/nine-v1-300df11bb248-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Ten",
+      "originalPath": "word-images/numbers-counting/ten.avif",
+      "originalSha256": "38fc62801ed9661e2f9a64370c39565433d42e7113de0db38489233572a86818",
+      "kind": "count",
+      "number": 10,
+      "shapeKind": "rectangles",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Ten\". Large numeral below heading: \"10\". Below numeral show exactly 10 separate shapes in 2 horizontal rows. Row 1: exactly 5 rectangles, evenly spaced. Row 2: exactly 5 rectangles, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Ten\" and \"10\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "9a7a25441534c6303545c8dfcd209370039e8d2c0f95e90b009e2788637b9f2d",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.400Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "89acb802ca0b8a562acf0973679b11fabd16b37e12c1bd39abc7f8a3049d4355",
+      "sha256": "37aececc5b6da9dc1136e50ea950de6c7c111d6372c52211f1672c085b16fa08",
+      "bytes": 38710,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 185,
+        "candidatesTokenCount": 1480,
+        "totalTokenCount": 2664,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 185
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 999,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 17489,
+      "selection": "gemini-replacement",
+      "reason": "The count diagram has twelve circles rather than ten.",
+      "imageAlt": "The word Ten and numeral 10 appear above exactly 10 colorful rectangles.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/ten-v1-9a7a25441534.webp",
+      "preview": "assets/ten-v1-9a7a25441534.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/ten-v1-9a7a25441534-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Eleven",
+      "originalPath": "word-images/numbers-counting/eleven.avif",
+      "originalSha256": "a86ad7741274eb9271dd7718671b07ae13f12e6f7385588086682524c9b8537f",
+      "kind": "count",
+      "number": 11,
+      "shapeKind": "triangles",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Eleven\". Large numeral below heading: \"11\". Below numeral show exactly 11 separate shapes in 2 horizontal rows. Row 1: exactly 10 triangles, evenly spaced. Row 2: exactly 1 triangles, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Eleven\" and \"11\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "b3184604d2a12ae95b70696bc0f6bf7cc4387458176a1b22db94929038840397",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:37.400Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "3ac700777789096762e2682a24e13b0d9d6ede5e7ff6f7cbd9825c2951cc19f0",
+      "sha256": "77fc4aaa5b28d9cbd9a61ff2d591e0e9a8b6ef27f20343ae0f3516f047537e2e",
+      "bytes": 42084,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 186,
+        "candidatesTokenCount": 1480,
+        "totalTokenCount": 2879,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 186
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1213,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 18703,
+      "selection": "gemini-replacement",
+      "reason": "The object array contains thirteen objects rather than eleven.",
+      "imageAlt": "The word Eleven and numeral 11 appear above exactly 11 colorful triangles.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/eleven-v1-b3184604d2a1.webp",
+      "preview": "assets/eleven-v1-b3184604d2a1.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/eleven-v1-b3184604d2a1-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Twelve",
+      "originalPath": "word-images/numbers-counting/twelve.avif",
+      "originalSha256": "18b853dfa10580f6de0aba6a776cdfda9fdd2ed5eee3d6e85381a150b04246d4",
+      "kind": "count",
+      "number": 12,
+      "shapeKind": "squares",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Twelve\". Large numeral below heading: \"12\". Below numeral show exactly 12 separate shapes in 2 horizontal rows. Row 1: exactly 10 squares, evenly spaced. Row 2: exactly 2 squares, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Twelve\" and \"12\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "9dbd927dfbc0617572b73c5272a941cf0c218a2c3d21516d9cb2aac1e96e35f2",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:49.190Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "c2a7dc5d1c102bc1952a1339d0bd15d918c7815b2e94a14b4134c314a33b433b",
+      "sha256": "99db24358985ffd7040b5295b9d0bc6fb27acd4916180bda7c861b5d3a037de9",
+      "bytes": 68632,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 186,
+        "candidatesTokenCount": 1464,
+        "totalTokenCount": 2415,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 186
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 765,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 13311,
+      "selection": "gemini-replacement",
+      "reason": "The counting strip has nine objects and malformed labels; the clock face also has malformed numerals.",
+      "imageAlt": "The word Twelve and numeral 12 appear above exactly 12 colorful squares.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/twelve-v1-9dbd927dfbc0.webp",
+      "preview": "assets/twelve-v1-9dbd927dfbc0.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/twelve-v1-9dbd927dfbc0-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Thirteen",
+      "originalPath": "word-images/numbers-counting/thirteen.avif",
+      "originalSha256": "27d9e53675a0e99b3f9cd1bba2b0249718d102ce27cacc79e4291c46970669b8",
+      "kind": "count",
+      "number": 13,
+      "shapeKind": "hexagons",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Thirteen\". Large numeral below heading: \"13\". Below numeral show exactly 13 separate shapes in 2 horizontal rows. Row 1: exactly 10 hexagons, evenly spaced. Row 2: exactly 3 hexagons, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Thirteen\" and \"13\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "21733ff3743da44a12445484f895ffe40b02ea00cac89bf9d28322e914e82e71",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:51.364Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "17ceb20e4cc06e1c2d9774a92b94a34f9a1143686b6365063f1f966ef179d542",
+      "sha256": "d610d6b088f86a2014cbe6707571fe138c57f4a8a74a819515854006ecceb7e6",
+      "bytes": 54366,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 188,
+        "candidatesTokenCount": 1467,
+        "totalTokenCount": 2386,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 188
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 731,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 12433,
+      "selection": "gemini-replacement",
+      "reason": "The object array and scattered counting markers do not consistently represent thirteen.",
+      "imageAlt": "The word Thirteen and numeral 13 appear above exactly 13 colorful hexagons.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/thirteen-v1-21733ff3743d.webp",
+      "preview": "assets/thirteen-v1-21733ff3743d.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/thirteen-v1-21733ff3743d-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Fourteen",
+      "originalPath": "word-images/numbers-counting/fourteen.avif",
+      "sha256": "604775b26e733b26cf4b1d7fe837af9f1bb0a007195631fc8af9c55571dcf6f3",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 14 appears beside ten balloons and four apples, above FOURTEEN and 10 + 4 = 14.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/fourteen.avif"
+    },
+    {
+      "word": "Fifteen",
+      "originalPath": "word-images/numbers-counting/fifteen.avif",
+      "originalSha256": "2761a9a5c7ada484db8162ad610b97a815c6416f5beeffed2bf98a4a2264e838",
+      "kind": "count",
+      "number": 15,
+      "shapeKind": "pentagons",
+      "variant": "v2",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Fifteen\". Large numeral below heading: \"15\". Below numeral show exactly 15 separate shapes in 2 horizontal rows. Row 1: exactly 10 pentagons, evenly spaced. Row 2: exactly 5 pentagons, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Fifteen\" and \"15\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "784d9c6207100caea8e517141b1170d16da8e915c850804b191b3e4cea596be3",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:22:17.978Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 190,
+        "candidatesTokenCount": 1919,
+        "totalTokenCount": 3157,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 190
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1048,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "4fbfeaa58a2379b1da6ee05ee3b16154e88372b4239578a60a481d83aac171ad",
+      "sha256": "5f667e193835ec362d6403b693764344767f055e725f651ab0d404cfa590b680",
+      "bytes": 105436,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 35640,
+      "selection": "gemini-replacement",
+      "reason": "Five rows of four objects show twenty rather than fifteen.",
+      "imageAlt": "The word Fifteen and numeral 15 appear above exactly 15 colorful pentagons.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/fifteen-v2-784d9c620710.webp",
+      "preview": "assets/fifteen-v2-784d9c620710.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/fifteen-v2-784d9c620710-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Sixteen",
+      "originalPath": "word-images/numbers-counting/sixteen.avif",
+      "originalSha256": "e8551d95e2eb45864630e2a38523a12131353e7cb6cb77593d4aa72322186d22",
+      "kind": "count",
+      "number": 16,
+      "shapeKind": "stars",
+      "variant": "v2",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Sixteen\". Large numeral below heading: \"16\". Below numeral show exactly 16 separate shapes in 2 horizontal rows. Row 1: exactly 10 stars, evenly spaced. Row 2: exactly 6 stars, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Sixteen\" and \"16\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "d34d5df7867f3fdc008fbec94e2d538cfafab8abb7afb5d0f6abe962dfdd472d",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:22:18.029Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 188,
+        "candidatesTokenCount": 1435,
+        "totalTokenCount": 2438,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 188
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 815,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "d62f3204fa1b785d7ae5897435a84ef8d42340480fde6f586d9451968c63f78a",
+      "sha256": "6196f3c59353d2e7003ade505c801ccd2278037194c430524593386b9ed4c737",
+      "bytes": 48082,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 14298,
+      "selection": "gemini-replacement",
+      "reason": "The array contains twenty-three objects rather than sixteen.",
+      "imageAlt": "The word Sixteen and numeral 16 appear above exactly 16 colorful stars.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/sixteen-v2-d34d5df7867f.webp",
+      "preview": "assets/sixteen-v2-d34d5df7867f.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/sixteen-v2-d34d5df7867f-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Seventeen",
+      "originalPath": "word-images/numbers-counting/seventeen.avif",
+      "originalSha256": "b88a391b165435999077c608d9e0865009663e091958afd92719b712b9cc2833",
+      "kind": "count",
+      "number": 17,
+      "shapeKind": "diamonds",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Seventeen\". Large numeral below heading: \"17\". Below numeral show exactly 17 separate shapes in 2 horizontal rows. Row 1: exactly 10 diamonds, evenly spaced. Row 2: exactly 7 diamonds, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Seventeen\" and \"17\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "73a7a060d6ed6659cff42e89da17ff93d63e680c3068d88c7b5361fcdcd82163",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:55.299Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "52a0a3be58ff7c74a937374f67a08ca6d95baeb5914ade26186b495351c17104",
+      "sha256": "cb80caa68df0bdbd009def7724d2c6c310834975870f99668b52df3208166b66",
+      "bytes": 79720,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 190,
+        "candidatesTokenCount": 1491,
+        "totalTokenCount": 2712,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 190
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1031,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 15764,
+      "selection": "gemini-replacement",
+      "reason": "The counting markers are out of order and do not label seventeen objects.",
+      "imageAlt": "The word Seventeen and numeral 17 appear above exactly 17 colorful diamonds.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/seventeen-v1-73a7a060d6ed.webp",
+      "preview": "assets/seventeen-v1-73a7a060d6ed.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/seventeen-v1-73a7a060d6ed-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Nineteen",
+      "originalPath": "word-images/numbers-counting/nineteen.avif",
+      "originalSha256": "9bf8abaa669d262d92fc6eac99db1c69d1a8d0e057241f890e70cb871460e722",
+      "kind": "count",
+      "number": 19,
+      "shapeKind": "rectangles",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Nineteen\". Large numeral below heading: \"19\". Below numeral show exactly 19 separate shapes in 2 horizontal rows. Row 1: exactly 10 rectangles, evenly spaced. Row 2: exactly 9 rectangles, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Nineteen\" and \"19\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "2b90f25166d8536002b574bba2f7af5fc78728b4d31fc2d769e4c10259633a39",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:55.357Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "5f9ac99bd71d65a5a6aa9b929de5e41e5fe8141d0862f6782f0fe54b5880f856",
+      "sha256": "a24af21baff809dd640712ed2ca7c795e68f8c3d19d0166a9c2a889ca34730d7",
+      "bytes": 40366,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 188,
+        "candidatesTokenCount": 1511,
+        "totalTokenCount": 2888,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 188
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1189,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 16533,
+      "selection": "gemini-replacement",
+      "reason": "The array has twenty objects rather than nineteen.",
+      "imageAlt": "The word Nineteen and numeral 19 appear above exactly 19 colorful rectangles.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/nineteen-v1-2b90f25166d8.webp",
+      "preview": "assets/nineteen-v1-2b90f25166d8.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/nineteen-v1-2b90f25166d8-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Thirty",
+      "originalPath": "word-images/numbers-counting/thirty.avif",
+      "originalSha256": "40513c8a0900d8a344b33b3cd28e73c67ce1182fc485ad2b0568fbbaed880ae8",
+      "kind": "count",
+      "number": 30,
+      "shapeKind": "mixed geometric shapes",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Thirty\". Large numeral below heading: \"30\". Below numeral show exactly 30 separate shapes in 3 horizontal rows. Row 1: exactly 10 triangles, evenly spaced. Row 2: exactly 10 squares, evenly spaced. Row 3: exactly 10 hexagons, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Thirty\" and \"30\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "fbe286f1d5aabbd05eeb504e89100789edbd45c6171dc4d6314c93a06a3b22cd",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:56.105Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "422c359367486b12082122112f9165d00b7a03f68c45d32c937140c20953fdb4",
+      "sha256": "759a524e7752537832ef902799668580080ea9f809be8f4e2ab6a55c5ec1a052",
+      "bytes": 59816,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 200,
+        "candidatesTokenCount": 1458,
+        "totalTokenCount": 2565,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 200
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 907,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 16608,
+      "selection": "gemini-replacement",
+      "reason": "The illustrated array and abacus do not clearly represent thirty.",
+      "imageAlt": "The word Thirty and numeral 30 appear above exactly 30 colorful geometric shapes in rows of ten, using triangles, squares, hexagons, pentagons.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/thirty-v1-fbe286f1d5aa.webp",
+      "preview": "assets/thirty-v1-fbe286f1d5aa.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/thirty-v1-fbe286f1d5aa-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Forty",
+      "originalPath": "word-images/numbers-counting/forty.avif",
+      "originalSha256": "7e5052711a0478b5613d865b4a25a306714ec9c565e74cd4fca6e2c142c66298",
+      "kind": "count",
+      "number": 40,
+      "shapeKind": "mixed geometric shapes",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Forty\". Large numeral below heading: \"40\". Below numeral show exactly 40 separate shapes in 4 horizontal rows. Row 1: exactly 10 triangles, evenly spaced. Row 2: exactly 10 squares, evenly spaced. Row 3: exactly 10 hexagons, evenly spaced. Row 4: exactly 10 pentagons, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Forty\" and \"40\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "66ecd7dec646cf738a0b23e8a547234ce938e97c2d4aaf205a93e4bc0450f098",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:20:56.588Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "84b6543f930141e8c6bdacb24a19359d52a885513cc61e008dd9e28d6d76a00c",
+      "sha256": "51d50647dcd68b92f8a9555ae1c25144d0ac3de652d0040bf48993c03d6205a0",
+      "bytes": 180998,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 214,
+        "candidatesTokenCount": 1454,
+        "totalTokenCount": 2821,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 214
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1153,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 16354,
+      "selection": "gemini-replacement",
+      "reason": "The two apple grids and two bird grids show forty-eight rather than forty.",
+      "imageAlt": "The word Forty and numeral 40 appear above exactly 40 colorful geometric shapes in rows of ten, using triangles, squares, hexagons, pentagons.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/forty-v1-66ecd7dec646.webp",
+      "preview": "assets/forty-v1-66ecd7dec646.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/forty-v1-66ecd7dec646-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Fifty",
+      "originalPath": "word-images/numbers-counting/fifty.avif",
+      "originalSha256": "16347d753d3759a3717a28a9aaa6344fb0bcc7e31903f43dcb3ae2bacfb9733a",
+      "kind": "count",
+      "number": 50,
+      "shapeKind": "mixed geometric shapes",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Fifty\". Large numeral below heading: \"50\". Below numeral show exactly 50 separate shapes in 5 horizontal rows. Row 1: exactly 10 triangles, evenly spaced. Row 2: exactly 10 squares, evenly spaced. Row 3: exactly 10 hexagons, evenly spaced. Row 4: exactly 10 pentagons, evenly spaced. Row 5: exactly 10 stars, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Fifty\" and \"50\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "71b7adb5095149eea39ff441fea7092b9e70fe9dbd13de83f277dedc23501e7f",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:02.503Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "a23716fcd8f61eb2056f381bc45c1e0b4de88c6ac680dff8ae873e363d7c5021",
+      "sha256": "10945c64ad587e4543e58ef770f09b0ce9a4710fa82f0a233efb71d475994305",
+      "bytes": 87280,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 227,
+        "candidatesTokenCount": 1476,
+        "totalTokenCount": 2903,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 227
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1200,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 14551,
+      "selection": "gemini-replacement",
+      "reason": "The connected object array does not show fifty.",
+      "imageAlt": "The word Fifty and numeral 50 appear above exactly 50 colorful geometric shapes in rows of ten, using triangles, squares, hexagons, pentagons, stars.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/fifty-v1-71b7adb50951.webp",
+      "preview": "assets/fifty-v1-71b7adb50951.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/fifty-v1-71b7adb50951-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Seventy",
+      "originalPath": "word-images/numbers-counting/seventy.avif",
+      "originalSha256": "86394fa9db7cfda664d0971b86e0566be16e010e59717666e37ddb99728e80b3",
+      "kind": "count",
+      "number": 70,
+      "shapeKind": "mixed geometric shapes",
+      "variant": "v2",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Main heading at top: \"Seventy\". Large numeral below heading: \"70\". Below numeral show exactly 70 separate shapes in 7 horizontal rows. Row 1: exactly 10 triangles, evenly spaced. Row 2: exactly 10 squares, evenly spaced. Row 3: exactly 10 hexagons, evenly spaced. Row 4: exactly 10 pentagons, evenly spaced. Row 5: exactly 10 stars, evenly spaced. Row 6: exactly 10 diamonds, evenly spaced. Row 7: exactly 10 rectangles, evenly spaced. Each row has one shape type. Count and verify every row before finishing. Do not repeat the shape grid or add smaller decorative shapes. Only text is \"Seventy\" and \"70\".",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "cf2ccaa144e2a1eb843b93c77befaed37a12081b5b74a10ca010b3c8ae58ee4f",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:22:18.031Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 255,
+        "candidatesTokenCount": 1934,
+        "totalTokenCount": 3209,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 255
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1020,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "d17270b03c77b9f39d80c4bf3615045e465e1a1f9908b442d5dd78f0ff478777",
+      "sha256": "dde179d864da4d16796c8202b6b7729bd29444fedf31d22cbf577273ceb4f0e6",
+      "bytes": 176928,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 38017,
+      "selection": "gemini-replacement",
+      "reason": "Several disconnected small arrays do not clearly show seventy.",
+      "imageAlt": "The word Seventy and numeral 70 appear above exactly 70 colorful geometric shapes in rows of ten, using triangles, squares, hexagons, pentagons, stars, diamonds and rectangles.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/seventy-v2-cf2ccaa144e2.webp",
+      "preview": "assets/seventy-v2-cf2ccaa144e2.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/seventy-v2-cf2ccaa144e2-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Ninety",
+      "originalPath": "word-images/numbers-counting/ninety.avif",
+      "sha256": "f5434e0d95624b468a72ebdd1a461aeed964ae58e113ee1735da2c80e46eeb13",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 90 contains decorative pictures above NINETY.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/ninety.avif"
+    },
+    {
+      "word": "Hundred",
+      "originalPath": "word-images/numbers-counting/hundred.avif",
+      "sha256": "df61f4f199569537ae511309b367aac69cc9accf1c4615251f00785e0e3fd53c",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 100 appears above ONE HUNDRED amid decorative confetti and leaves.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/hundred.avif"
+    },
+    {
+      "word": "Thousand",
+      "originalPath": "word-images/numbers-counting/thousand.avif",
+      "sha256": "16578747ebd3b19229ccc3abfeea16056c300f9b69f51a5944481cd9a9bab95b",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 1000 appears above THOUSAND amid decorative blocks and other small illustrations.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/thousand.avif"
+    },
+    {
+      "word": "First",
+      "originalPath": "word-images/numbers-counting/first.avif",
+      "sha256": "6fda155a8815b9f3701e5d07cfcd50954ed44e310a0c80423c90c8d9ba621c4c",
+      "selection": "reuse-existing",
+      "imageAlt": "A gold medal marked 1 appears beside 1st and the words 1ST PLACE and FIRST POSITION.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/first.avif"
+    },
+    {
+      "word": "Second",
+      "originalPath": "word-images/numbers-counting/second.avif",
+      "sha256": "bc12fa322605f93b4d59d044f45d79f8c53619cd2a74418db2725adda4aae70e",
+      "selection": "reuse-existing",
+      "imageAlt": "A silver medal marked 2 and 2ND PLACE appears beside SECOND POSITION.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/second.avif"
+    },
+    {
+      "word": "Third",
+      "originalPath": "word-images/numbers-counting/third.avif",
+      "sha256": "4c769cacb8a6e0c367bfa0043d043b79e53b540cfaec88f9693813ae827b2c6f",
+      "selection": "reuse-existing",
+      "imageAlt": "A bronze medal marked 3 and 3RD PLACE appears below 3RD and THIRD POSITION.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/third.avif"
+    },
+    {
+      "word": "Fourth",
+      "originalPath": "word-images/numbers-counting/fourth.avif",
+      "originalSha256": "fbf4e7420cd9b7e1c74e29e5177e27dce0f22adb12d14f46ec85c6d0551b6f26",
+      "kind": "ordinal",
+      "number": 4,
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Fourth\" and large \"4th\" at top. Below show a single horizontal sequence of exactly eight colorful geometric tiles, labelled in this exact left-to-right order: \"1st\", \"2nd\", \"3rd\", \"4th\", \"5th\", \"6th\", \"7th\", \"8th\". Emphasize only position 4 by making its tile orange, and use teal for the others. Keep all tiles equally spaced and fully visible. Only these specified ordinal labels and heading appear. Do not append a second suffix to 4th.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "f0302c9ab712c6cad712bd26529e7c0087a7016f4b47daef0497c90143bc71dc",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:11.063Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "f94103cf8329dd7f5de6bc58e92b5f3c5f7ad61791746ce311b2e84fdb0fc024",
+      "sha256": "1c3c934fb0231614611fb057820dcb4f90d40eb050d5b7a877643a6924a286d5",
+      "bytes": 62798,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 209,
+        "candidatesTokenCount": 1414,
+        "totalTokenCount": 3177,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 209
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1554,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 16869,
+      "selection": "gemini-replacement",
+      "reason": "A trophy marked 4 stands on the first-place podium, creating conflicting position cues.",
+      "imageAlt": "The word Fourth and 4th appear above eight tiles labelled 1st through 8th, with the 4th tile orange and the others teal.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/fourth-v1-f0302c9ab712.webp",
+      "preview": "assets/fourth-v1-f0302c9ab712.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/fourth-v1-f0302c9ab712-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Sixth",
+      "originalPath": "word-images/numbers-counting/sixth.avif",
+      "originalSha256": "6b4477a01648ad81233b1e5b3dcb9cb499ea1543839e7552ddc2877e206f5add",
+      "kind": "ordinal",
+      "number": 6,
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Sixth\" and large \"6th\" at top. Below show a single horizontal sequence of exactly eight colorful geometric tiles, labelled in this exact left-to-right order: \"1st\", \"2nd\", \"3rd\", \"4th\", \"5th\", \"6th\", \"7th\", \"8th\". Emphasize only position 6 by making its tile orange, and use teal for the others. Keep all tiles equally spaced and fully visible. Only these specified ordinal labels and heading appear. Do not append a second suffix to 6th.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "fbe304003342a57ec770d1eed37ebc86b0872da14ac0d7bc763ef22772361804",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:11.891Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "24e4a0be8d2c5527b99b27af5720121b6591e847abc94dfa4ab3b6362f534105",
+      "sha256": "3e2d3a6a8a1470c8176bec7042151691762390efeee9765230b113050ae394ad",
+      "bytes": 51004,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 209,
+        "candidatesTokenCount": 1615,
+        "totalTokenCount": 2817,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 209
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 993,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 15281,
+      "selection": "gemini-replacement",
+      "reason": "The ordinal is written as 6TH with another th suffix.",
+      "imageAlt": "The word Sixth and 6th appear above eight tiles labelled 1st through 8th, with the 6th tile orange and the others teal.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/sixth-v1-fbe304003342.webp",
+      "preview": "assets/sixth-v1-fbe304003342.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/sixth-v1-fbe304003342-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Seventh",
+      "originalPath": "word-images/numbers-counting/seventh.avif",
+      "sha256": "1d53a96f636dc5be792511919dae9ee223e907756c05186a875e3b44afc95379",
+      "selection": "reuse-existing",
+      "imageAlt": "A colorful numeral 7 with the suffix th appears above SEVENTH ORDINAL.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/seventh.avif"
+    },
+    {
+      "word": "Eighth",
+      "originalPath": "word-images/numbers-counting/eighth.avif",
+      "originalSha256": "6cbac3cf8d232afa8cd76f5ed966ccdb999516e7f5293845be1c21fc828d2c96",
+      "kind": "ordinal",
+      "number": 8,
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Eighth\" and large \"8th\" at top. Below show a single horizontal sequence of exactly eight colorful geometric tiles, labelled in this exact left-to-right order: \"1st\", \"2nd\", \"3rd\", \"4th\", \"5th\", \"6th\", \"7th\", \"8th\". Emphasize only position 8 by making its tile orange, and use teal for the others. Keep all tiles equally spaced and fully visible. Only these specified ordinal labels and heading appear. Do not append a second suffix to 8th.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "ad6e866e69b143f81b48e049c55b770c1aa4b27378cc1c2d92b001fd302b9f8f",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:12.714Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "655bebf92911b5343498c51755b4b9e6f40414790a3038711eca7ccd4b51ad43",
+      "sha256": "69b4bc8c636a3e1308c7534862683fe99b441aa39335a92d3b055d36281f69b2",
+      "bytes": 51598,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 210,
+        "candidatesTokenCount": 1460,
+        "totalTokenCount": 3011,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 210
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1341,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 17907,
+      "selection": "gemini-replacement",
+      "reason": "The surrounding ordinal sequence contains incorrect suffixes and ordering.",
+      "imageAlt": "The word Eighth and 8th appear above eight tiles labelled 1st through 8th, with the 8th tile orange and the others teal.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/eighth-v1-ad6e866e69b1.webp",
+      "preview": "assets/eighth-v1-ad6e866e69b1.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/eighth-v1-ad6e866e69b1-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Ninth",
+      "originalPath": "word-images/numbers-counting/ninth.avif",
+      "sha256": "18bb7b2dd91d943e42e3f828f31862551b93ffab3fe0a914c84e8e3ffb8b3f34",
+      "selection": "reuse-existing",
+      "imageAlt": "The numeral 9 appears beside a decorative segmented ring and the suffix th, above NINTH POSITION.",
+      "reason": "Existing image clearly identifies the word without conflicting count or equation.",
+      "visualReview": "previously-visually-inspected",
+      "preview": "../../../public/word-images/numbers-counting/ninth.avif"
+    },
+    {
+      "word": "Addition",
+      "originalPath": "word-images/numbers-counting/addition.avif",
+      "originalSha256": "eabfe8c1845662f46efc22a1a1e53ce749df52d5b6319130e198781c3aaa3339",
+      "kind": "operator",
+      "equation": "3 + 2 = 5",
+      "variant": "v2",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Addition\" at top. Large operator \"+\" beneath the heading. Show three teal triangles, then a plus sign, then two orange triangles, then an equals sign, then five blue triangles. Keep operands and result visually separate. Exact equation, clearly readable: \"3 + 2 = 5\". Verify all group sizes and arithmetic. Only heading, operator, equation appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "f59baaf8887a88a66c059079d7b63429b34af567160bd39fc038c9bae47aff18",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:22:18.033Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 169,
+        "candidatesTokenCount": 1545,
+        "totalTokenCount": 2803,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 169
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1089,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "90990b53d77f8baef9eb48ae2c65378b2b497d0727cfed41630f53f57d13af9f",
+      "sha256": "046988bec0520797e7a3c1ffd90124dd4fdff9ab27908b0bf6a0a348c202019d",
+      "bytes": 31650,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 16162,
+      "selection": "gemini-replacement",
+      "reason": "The illustrated operands and result have counts inconsistent with 3 + 2 = 5.",
+      "imageAlt": "The word Addition and its operator appear above three teal triangles plus two orange triangles equal five blue triangles, above 3 + 2 = 5.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/addition-v2-f59baaf8887a.webp",
+      "preview": "assets/addition-v2-f59baaf8887a.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/addition-v2-f59baaf8887a-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Subtraction",
+      "originalPath": "word-images/numbers-counting/subtraction.avif",
+      "originalSha256": "31c7d9289b335235e7a1460ab408adda9883f413bb4756473f4388164c0e187a",
+      "kind": "operator",
+      "equation": "5 − 2 = 3",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Subtraction\" at top. Large operator \"−\" beneath the heading. Show five teal hexagons in one row with exactly the last two crossed out by thin orange diagonal strokes. Beneath them show the equation. Exactly three hexagons remain uncrossed. Exact equation, clearly readable: \"5 − 2 = 3\". Verify all group sizes and arithmetic. Only heading, operator, equation appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "6f5f3bc8b7e291840388ec30ee1d6ca5afe390d80423d7b6ba5b97162e2a7984",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:13.248Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "bde76f41511f6e487f484a2e4b38ddab6fb12c61cf12a0dbd364bb7d942ffd3d",
+      "sha256": "42294285b3364dc8b15edd993ee91adcffd048ded47b62e5d9c02eeca1e5066e",
+      "bytes": 88222,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 172,
+        "candidatesTokenCount": 1458,
+        "totalTokenCount": 2698,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 172
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1068,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 17015,
+      "selection": "gemini-replacement",
+      "reason": "The five-apple example crosses out only one apple beside 5 − 2 = 3.",
+      "imageAlt": "The word Subtraction and its operator appear above five teal hexagons, with the last two crossed out and three remaining, above 5 − 2 = 3.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/subtraction-v1-6f5f3bc8b7e2.webp",
+      "preview": "assets/subtraction-v1-6f5f3bc8b7e2.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/subtraction-v1-6f5f3bc8b7e2-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Multiplication",
+      "originalPath": "word-images/numbers-counting/multiplication.avif",
+      "originalSha256": "b31de7956ea45166e1a25f3634b3110e6a343db05950853a104e688d866996ff",
+      "kind": "operator",
+      "equation": "3 × 4 = 12",
+      "variant": "v2",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Multiplication\" at top. Large operator \"×\" beneath the heading. Show exactly three clearly separated groups of four triangles each, twelve triangles total. Put a small 4 under each group. Beneath the groups show the equation. Exact equation, clearly readable: \"3 × 4 = 12\". Verify all group sizes and arithmetic. Only heading, operator, equation and the three group-size labels 4 appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "f7b22cb136a00b46d1a16de67aa2c1ad866d2de56f8f6041946a037725a23ad1",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:22:18.035Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 181,
+        "candidatesTokenCount": 1910,
+        "totalTokenCount": 3533,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 181
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1442,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "c57ccb223a7a46836e72f756bd91381df4bd5e61e0265ea1948632f7cf01efd4",
+      "sha256": "3dc741a4f11da5fe4010ee324a8f28bc9a5a8700a671ce356c9593a12414d8c9",
+      "bytes": 161640,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 38668,
+      "selection": "gemini-replacement",
+      "reason": "The three illustrated groups each contain five apples beside 3 × 4 = 12.",
+      "imageAlt": "The word Multiplication and its operator appear above three separated groups of four triangles, each labelled 4, above 3 × 4 = 12.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/multiplication-v2-f7b22cb136a0.webp",
+      "preview": "assets/multiplication-v2-f7b22cb136a0.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/multiplication-v2-f7b22cb136a0-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Division",
+      "originalPath": "word-images/numbers-counting/division.avif",
+      "originalSha256": "946a3eb1f02c732498364436baaadd72e2045709ff6ec2916318399cc406f553",
+      "kind": "operator",
+      "equation": "12 ÷ 3 = 4",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Division\" at top. Large operator \"÷\" beneath the heading. Show exactly three trays each containing four hexagons, twelve hexagons total. The three trays represent equal groups. Beneath them show the equation. Exact equation, clearly readable: \"12 ÷ 3 = 4\". Verify all group sizes and arithmetic. Only heading, operator, equation appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "beaac8ac10cd40cafaf798ecb1a2bf355eb34b956cd124b34b58caaeea713f26",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:17.175Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "0feb5025d8ecdc105f61636f259f4cb04c937dd5b127a00f593b21f756211949",
+      "sha256": "51134d3372ffaf9ee285325abd6bb74acc8302fa00322292659b155bc8862d1d",
+      "bytes": 67630,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 166,
+        "candidatesTokenCount": 1463,
+        "totalTokenCount": 2875,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 166
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1246,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 15960,
+      "selection": "gemini-replacement",
+      "reason": "The top equation is malformed as 12 = 3 = 4.",
+      "imageAlt": "The word Division and its operator appear above three trays each containing four orange hexagons above 12 ÷ 3 = 4.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/division-v1-beaac8ac10cd.webp",
+      "preview": "assets/division-v1-beaac8ac10cd.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/division-v1-beaac8ac10cd-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Plus",
+      "originalPath": "word-images/numbers-counting/plus.avif",
+      "originalSha256": "482979a68ff4336f23c58b790d4b9cf7878f780f4a0b792431cc69fb1fdfd977",
+      "kind": "operator",
+      "equation": "3 + 2 = 5",
+      "variant": "v2",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Plus\" at top. Large operator \"+\" beneath the heading. Show three teal squares, then a plus sign, then two orange squares, then an equals sign, then five blue squares. Keep operands and result visually separate. Exact equation, clearly readable: \"3 + 2 = 5\". Verify all group sizes and arithmetic. Only heading, operator, equation appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "4234b80ab3a706f5ac2f8d2bde8685603721a045273bea9c6aa173102be58601",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:22:18.037Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 169,
+        "candidatesTokenCount": 1904,
+        "totalTokenCount": 3052,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 169
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 979,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "a65d1bcde4b19ab12adccb9ddd1f3bc0a0de622e1ac4cdcf0f77338dc179b828",
+      "sha256": "5049ee1b4d1839dd6242711955d9a65194be032d719db67090313d920ad87f60",
+      "bytes": 23348,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 26354,
+      "selection": "gemini-replacement",
+      "reason": "The result illustration has three apples beside 3 + 2 = 5.",
+      "imageAlt": "The word Plus and its operator appear above three teal squares plus two orange squares equal five blue squares, above 3 + 2 = 5.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/plus-v2-4234b80ab3a7.webp",
+      "preview": "assets/plus-v2-4234b80ab3a7.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/plus-v2-4234b80ab3a7-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Times",
+      "originalPath": "word-images/numbers-counting/times.avif",
+      "originalSha256": "b1190d991eeb81d083880f8c458a6a1dc0bae0326bc68d8e11d4ec0eeffe1475",
+      "kind": "operator",
+      "equation": "4 × 2 = 8",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Times\" at top. Large operator \"×\" beneath the heading. Show exactly four clearly separated groups of two squares each, eight squares total. Beneath the groups show the equation. Exact equation, clearly readable: \"4 × 2 = 8\". Verify all group sizes and arithmetic. Only heading, operator, equation appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "4ead6590f116bb6e04a17380edd9d2dc8b037b194f9007c3345791b5bca12d53",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:27.173Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "7d42e28391b049c04870c82630af83dd6a0f0d7c787e7261c427322d3d4fc60f",
+      "sha256": "ba78d66778e1f4dcd4418eff682636ecbffad282ba90f66bd9f178eac7d5fb2a",
+      "bytes": 153400,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 161,
+        "candidatesTokenCount": 1466,
+        "totalTokenCount": 3159,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 161
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1532,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 20384,
+      "selection": "gemini-replacement",
+      "reason": "Four apples are labelled 6 apples and nine stars accompany 4 × 2 = 8 stars.",
+      "imageAlt": "The word Times and its operator appear above four separated groups of two squares above 4 × 2 = 8.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/times-v1-4ead6590f116.webp",
+      "preview": "assets/times-v1-4ead6590f116.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/times-v1-4ead6590f116-original.jpg",
+      "rawOutputPreservedLocally": true
+    },
+    {
+      "word": "Divided By",
+      "originalPath": "word-images/numbers-counting/divided-by.avif",
+      "originalSha256": "5bba07f8ef973b09daeb4b0b845498ec9dbc86273274e557a45d7fe9c6bbfe31",
+      "kind": "operator",
+      "equation": "6 ÷ 2 = 3",
+      "variant": "v1",
+      "prompt": "Use case: scientific-educational. Create a polished adult English vocabulary learning illustration, landscape 4:3, white background, dark readable sans-serif labels, vivid teal, blue, orange and purple geometric shapes with subtle tactile paper texture. Keep generous spacing and strong contrast. Exact mathematical accuracy is essential. No people, no dots, no decorative extra countable objects, no logo, no watermark, no borders, no other text beyond the specified labels. Heading \"Divided By\" at top. Large operator \"÷\" beneath the heading. Show exactly two trays each containing three triangles, six triangles total. The two trays represent equal groups. Beneath them show the equation. Exact equation, clearly readable: \"6 ÷ 2 = 3\". Verify all group sizes and arithmetic. Only heading, operator, equation appear as text.",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "1759a061aa1d78c11035869a7f4d31b9235c4fe46deb281ed985f8596137ecc8",
+      "status": "generated",
+      "startedAt": "2026-10-10T18:21:27.939Z",
+      "reviewStatus": "visually-inspected-standing-user-approval",
+      "httpStatus": 200,
+      "rawSha256": "b5785ee59e6a01e1cf2bcf23d1ecc3345a534ccaca8bc8653f20659f5b2a5ae1",
+      "sha256": "41bee22b9aa1b4d7faac8a86ed097601852e6534fe10f8d12eef0cdb288ea596",
+      "bytes": 68724,
+      "width": 1200,
+      "height": 896,
+      "usage": {
+        "promptTokenCount": 167,
+        "candidatesTokenCount": 1481,
+        "totalTokenCount": 3166,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 167
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1518,
+        "serviceTier": "standard"
+      },
+      "elapsedMs": 18122,
+      "selection": "gemini-replacement",
+      "reason": "An arrow replaces the division sign, and the equal-groups equation is malformed.",
+      "imageAlt": "The word Divided By and its operator appear above two trays each containing three orange triangles above 6 ÷ 2 = 3.",
+      "visualReview": "visually-inspected-counts-labels-equations-and-composition",
+      "file": "assets/divided-by-v1-1759a061aa1d.webp",
+      "preview": "assets/divided-by-v1-1759a061aa1d.webp",
+      "rawOutputLocation": "output/numbers-image-batch-40-2026-10-10/gemini/divided-by-v1-1759a061aa1d-original.jpg",
+      "rawOutputPreservedLocally": true
+    }
+  ],
+  "purpose": "Tracked local staging and handoff; not app runtime media or R2 publication."
+}
