@@ -16,7 +16,6 @@ import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { staggerContainer, staggerItem } from "../shared/animations";
-import { SpecializedTracksCard } from "./SpecializedTracksCard";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -129,34 +128,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         )}
       </header>
 
-      <section aria-label={t("dashboard.dailyTarget")} className="w-full">
-        <ProgressBar
-          progressPercent={dailyTargetPct}
-          label={t("dashboard.dailyTarget")}
-          labelRight={
-            isDailyTargetMet
-              ? t("dashboard.targetMet")
-              : t("dashboard.wordsProgress", {
-                  current: num(todayReviewedCount),
-                  total: num(dailyWordTarget),
-                })
-          }
-          ariaLabel={t("dashboard.dailyTargetAria", {
-            current: todayReviewedCount,
-            total: dailyWordTarget,
-          })}
-        />
-      </section>
-
       {/* Main Content: one column beside the compact desktop shell, then split once space allows. */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="grid w-full grid-cols-1 gap-5 mt-2 sm:gap-6 xl:grid-cols-12"
+        className="grid w-full grid-cols-1 gap-4 mt-2 sm:gap-5 xl:grid-cols-12"
       >
         {/* LEFT COLUMN: Main Learning Loop */}
-        <div className="flex flex-col gap-6 xl:col-span-7">
+        <div className="flex flex-col gap-4 xl:col-span-7">
           {/* SECTION 1: TODAY'S LESSON */}
           <motion.div variants={staggerItem}>
             <Section id="section-today" title={t("dashboard.today")}>
@@ -239,20 +219,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               </Card>
             </Section>
           </motion.div>
-
-          {/* SECTION 1.5: SPECIALIZED CURRICULA */}
-          <motion.div variants={staggerItem}>
-            <Section
-              id="section-specialized"
-              title={t("dashboard.specializedTracks") || "Specialized Tracks"}
-            >
-              <SpecializedTracksCard dispatch={dispatch} />
-            </Section>
-          </motion.div>
         </div>
 
         {/* RIGHT COLUMN: Review Queue & Spaced Repetition */}
-        <div className="flex flex-col gap-6 xl:col-span-5">
+        <div className="flex flex-col gap-4 xl:col-span-5">
           {/* SECTION 2: REVIEW */}
           <motion.div variants={staggerItem}>
             <Section id="section-review" title={t("dashboard.review")}>
@@ -356,6 +326,32 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </motion.div>
         </div>
       </motion.div>
+      <section aria-label={t("dashboard.dailyTarget")} className="w-full">
+        <ProgressBar
+          progressPercent={dailyTargetPct}
+          label={t("dashboard.dailyTarget")}
+          labelRight={
+            isDailyTargetMet
+              ? t("dashboard.targetMet")
+              : t("dashboard.wordsProgress", {
+                  current: num(todayReviewedCount),
+                  total: num(dailyWordTarget),
+                })
+          }
+          ariaLabel={t("dashboard.dailyTargetAria", {
+            current: todayReviewedCount,
+            total: dailyWordTarget,
+          })}
+        />
+      </section>
+      <button
+        type="button"
+        onClick={() => dispatch({ type: "GO", to: "learn" })}
+        className="inline-flex min-h-11 items-center justify-between gap-3 border-t border-border py-3 text-start font-semibold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        {t("learn.specialCurricula")}
+        <ArrowRight className="size-4 shrink-0 rtl:rotate-180" aria-hidden />
+      </button>
       <ReleaseNotesCard />
     </PageContainer>
   );

@@ -41,10 +41,10 @@ export function BusinessExerciseStage({
   };
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <HelpCircle className="size-4" aria-hidden />
           {t("business.exercises.stageTag")}
         </span>

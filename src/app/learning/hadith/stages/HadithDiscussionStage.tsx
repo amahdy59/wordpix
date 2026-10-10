@@ -31,7 +31,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
 
   return (
     <section className="wp-container-content space-y-5" aria-labelledby="stage-discussion-heading">
-      <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
+      <header className="border-b border-border pb-3">
         <p className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.18em] text-primary">
           <MessagesSquare className="size-4" aria-hidden />
           {t("hadith.discussionLabel")}
@@ -39,7 +39,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
         <h2
           id="stage-discussion-heading"
           tabIndex={-1}
-          className="wp-type-stage-title mt-3 font-black tracking-tight text-foreground outline-none"
+          className="wp-type-stage-title mt-2 font-black tracking-tight text-foreground outline-none"
         >
           {t("hadith.discussionTitle")}
         </h2>
@@ -51,9 +51,9 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
       <ol className="grid gap-4">
         {questions.map((item, index) => (
           <li key={`${index}-${item.question}`}>
-            <article className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs">
-              <div className="flex items-start gap-4 p-5 sm:p-6">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary font-black text-primary">
+            <article className="rounded-2xl border border-border bg-card">
+              <div className="flex items-start gap-3 p-4">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-xl bg-secondary font-black text-primary">
                   {index + 1}
                 </span>
                 <div className="min-w-0 flex-1">
@@ -63,15 +63,13 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
                       {item.question}
                     </h3>
                   </div>
-                  <p className="mt-2 text-base leading-6 text-muted-foreground">
-                    {t("hadith.discussionPrompt")}
-                  </p>
+                  <p className="sr-only">{t("hadith.discussionPrompt")}</p>
                 </div>
               </div>
 
               <details className="group border-t border-border bg-muted/20">
                 <summary
-                  className={`flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-5 py-3 font-black text-primary hover:bg-secondary sm:px-6 ${focusRing}`}
+                  className={`flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-4 py-2 font-black text-primary hover:bg-secondary sm:px-4 ${focusRing}`}
                 >
                   <span className="inline-flex items-center gap-2">
                     <Lightbulb className="size-4" aria-hidden />

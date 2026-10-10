@@ -245,8 +245,14 @@ describe("Responsive Bottom-Sheet Modal Behavior", () => {
 describe("Word Formation Responsive Stacked Cards", () => {
   const source = stripComments(read("learning/LearningMaterialsScreen.tsx"));
 
-  it("provides mobile stacked cards alongside desktop semantic table", () => {
-    expect(source).toMatch(/block\s+sm:hidden/);
-    expect(source).toMatch(/hidden\s+sm:block/);
+  it("uses the shared container-responsive table with labeled narrow fields", () => {
+    expect(source).toContain("<ReferenceTable");
+    const table = stripComments(read("shared/ReferenceTable.tsx"));
+    expect(table).toContain('scope="col"');
+    expect(table).toContain('scope="row"');
+    expect(table).toContain("wp-reference-wide");
+    expect(table).toContain("wp-reference-narrow");
+    expect(table).toContain("<dt");
+    expect(table).toContain("<dd");
   });
 });

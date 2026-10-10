@@ -18,8 +18,7 @@ export const Card = memo(function Card({
   className = "",
   onClick,
 }: Props) {
-  const baseStyles =
-    "bg-wp-card rounded-2xl p-5 sm:p-6 flex flex-col gap-4 shadow-wp-xs transition-colors";
+  const baseStyles = "bg-wp-card rounded-2xl p-4 sm:p-5 flex flex-col gap-3 transition-colors";
 
   const variantStyles = variant === "primary" ? "border border-primary/30" : "border border-border";
 

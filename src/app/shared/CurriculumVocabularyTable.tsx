@@ -105,7 +105,7 @@ export function CurriculumVocabularyTable({
     );
 
   return (
-    <div className={`wp-vocabulary space-y-3 sm:space-y-6 ${className}`}>
+    <div className={`wp-vocabulary space-y-3 sm:space-y-4 ${className}`}>
       {/* Top View Toggle Toolbar */}
       {allowViewToggle && (
         <div className="flex flex-wrap items-center justify-between gap-2">
@@ -154,7 +154,7 @@ export function CurriculumVocabularyTable({
       {viewMode === "table" && (
         <>
           {/* Reflow according to available lesson width, including sidebar layouts. */}
-          <div className="wp-vocabulary-table overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs">
+          <div className="wp-vocabulary-table overflow-hidden rounded-2xl border border-border bg-card shadow-wp-xs">
             <table className="w-full table-fixed border-collapse text-start">
               <caption className="sr-only">
                 {caption || t("vocabulary.tableCaption") || "Vocabulary and Collocations Table"}
@@ -163,25 +163,25 @@ export function CurriculumVocabularyTable({
                 <tr className="border-b border-border bg-muted/40">
                   <th
                     scope="col"
-                    className="w-[14%] py-4 ps-6 pe-3 text-start text-sm font-bold uppercase tracking-wider text-primary"
+                    className="w-[14%] py-3 ps-4 pe-3 text-start text-sm font-bold text-primary"
                   >
                     {t("vocabulary.imageHeader") || "Image"}
                   </th>
                   <th
                     scope="col"
-                    className="w-[25%] py-4 px-3 text-start text-sm font-bold uppercase tracking-wider text-primary"
+                    className="w-[25%] py-3 px-3 text-start text-sm font-bold text-primary"
                   >
                     {t("vocabulary.wordHeader") || "Word/Phrase"}
                   </th>
                   <th
                     scope="col"
-                    className="w-[28%] py-4 px-3 text-start text-sm font-bold uppercase tracking-wider text-primary"
+                    className="w-[28%] py-3 px-3 text-start text-sm font-bold text-primary"
                   >
                     {t("vocabulary.definitionHeader") || "Definition"}
                   </th>
                   <th
                     scope="col"
-                    className="py-4 ps-3 pe-6 text-start text-sm font-black uppercase tracking-wider text-primary"
+                    className="py-3 ps-3 pe-4 text-start text-sm font-black text-primary"
                   >
                     {t("vocabulary.exampleHeader") || "Example"}
                   </th>
@@ -202,8 +202,8 @@ export function CurriculumVocabularyTable({
                       }`}
                     >
                       {/* Column 1: Image Thumbnail + Enlarge Trigger */}
-                      <td className="py-5 ps-6 pe-3 align-top">
-                        <div className="relative group/thumb aspect-[4/3] w-full shrink-0 overflow-hidden rounded-xl border border-border bg-muted/40 shadow-wp-xs">
+                      <td className="py-3 ps-4 pe-3 align-top">
+                        <div className="relative group/thumb aspect-[4/3] w-full max-w-24 shrink-0 overflow-hidden rounded-xl border border-border bg-muted/40 shadow-wp-xs">
                           {hasImg ? (
                             <img
                               src={item.imageSrc}
@@ -237,11 +237,11 @@ export function CurriculumVocabularyTable({
                       </td>
 
                       {/* Column 2: Word/Phrase + Pronounce Button + Arabic Subtitle */}
-                      <td className="py-5 px-3 align-top">
+                      <th scope="row" className="py-3 px-3 align-top text-start font-normal">
                         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3">
                           <div className="min-w-0">
                             <span
-                              className="block break-words text-lg font-bold leading-relaxed text-foreground"
+                              className="block break-words text-base font-bold leading-relaxed text-foreground"
                               lang="en"
                               dir="ltr"
                             >
@@ -273,11 +273,15 @@ export function CurriculumVocabularyTable({
                             />
                           )}
                         </div>
-                      </td>
+                      </th>
 
                       {/* Column 3: Definition */}
-                      <td className="py-5 px-3 align-top">
-                        <p className="text-lg leading-relaxed text-foreground" lang="en" dir="ltr">
+                      <td className="py-3 px-3 align-top">
+                        <p
+                          className="text-base leading-relaxed text-foreground"
+                          lang="en"
+                          dir="ltr"
+                        >
                           {item.definition}
                         </p>
                         {showArabic && item.definitionAr && (
@@ -292,9 +296,9 @@ export function CurriculumVocabularyTable({
                       </td>
 
                       {/* Column 4: Example */}
-                      <td className="py-5 ps-3 pe-6 align-top">
+                      <td className="py-3 ps-3 pe-4 align-top">
                         <p
-                          className="border-s-2 border-primary ps-3 text-lg leading-relaxed text-foreground"
+                          className="border-s-2 border-primary ps-3 text-base leading-relaxed text-foreground"
                           lang="en"
                           dir="ltr"
                         >
@@ -430,7 +434,7 @@ export function CurriculumVocabularyTable({
             return (
               <article
                 key={item.id}
-                className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs transition-all hover:border-primary/40 hover:shadow-wp-sm"
+                className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs transition-all "
               >
                 {/* Gallery Image Header */}
                 <div className="relative group/thumb h-36 sm:h-48 w-full bg-muted/40 overflow-hidden shrink-0 border-b border-border/60">
@@ -493,7 +497,7 @@ export function CurriculumVocabularyTable({
                           {item.term}
                         </h3>
                         {item.type && (
-                          <span className="mt-1 inline-block rounded-md bg-muted px-2 py-0.5 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+                          <span className="mt-1 inline-block rounded-md bg-muted px-2 py-0.5 text-sm font-bold text-muted-foreground">
                             {item.type}
                           </span>
                         )}
@@ -619,7 +623,7 @@ export function CurriculumVocabularyTable({
                 <div className="absolute bottom-4 start-6 end-6 flex items-end justify-between gap-3">
                   <div>
                     {activeModalItem.type && (
-                      <span className="inline-block rounded-md bg-secondary text-primary-foreground text-sm font-black uppercase tracking-wider px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/30">
+                      <span className="inline-block rounded-md bg-secondary text-primary-foreground text-sm font-black px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/30">
                         {activeModalItem.type}
                       </span>
                     )}
@@ -657,7 +661,7 @@ export function CurriculumVocabularyTable({
               {/* Meaning & Context Panel */}
               <div className="p-6 space-y-4 overflow-y-auto">
                 <div>
-                  <span className="text-sm font-black uppercase tracking-wider text-primary block mb-1">
+                  <span className="text-sm font-black text-primary block mb-1">
                     {t("vocabulary.definitionHeader") || "Definition"}
                   </span>
                   <p className="text-base font-medium leading-relaxed text-foreground">
@@ -675,7 +679,7 @@ export function CurriculumVocabularyTable({
                 </div>
 
                 <div className="rounded-2xl border border-border/80 bg-muted/40 p-4">
-                  <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground block mb-1">
+                  <span className="text-sm font-bold text-muted-foreground block mb-1">
                     {t("vocabulary.exampleInContext") || "Example in Context"}
                   </span>
                   <p

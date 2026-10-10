@@ -66,21 +66,21 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
   }));
 
   return (
-    <div className="wp-container-content flex flex-col gap-3 sm:gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Stage Header Tag */}
-      <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <BookOpen className="size-4" aria-hidden />
           {t("business.vocabStage.stageTag")}
         </span>
-        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-semibold text-muted-foreground">
           {t("business.vocabStage.targetTermsCount", { count: unit.languageBank.length })}
         </span>
       </div>
 
       {/* Intro & Controls Header */}
       <section
-        className="rounded-3xl border border-border bg-card p-3 sm:p-6 shadow-wp-xs flex flex-col gap-3"
+        className="border-b border-border pb-3 flex flex-col gap-3"
         aria-labelledby="vocab-stage-heading"
       >
         <div>

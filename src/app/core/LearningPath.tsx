@@ -173,7 +173,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
       <section
         aria-labelledby="recommended-heading"
-        className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-secondary p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
+        className="grid gap-4 rounded-2xl border border-primary/35 bg-secondary p-4 sm:p-5 lg:grid-cols-[1fr_auto] lg:items-center"
       >
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
@@ -206,10 +206,8 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5"
       >
         <span>
-          <span className="block text-sm font-black uppercase tracking-wide text-primary">
-            {t("learn.routeBadge")}
-          </span>
-          <span className="mt-1 block text-xl font-black text-foreground">
+          <span className="block text-sm font-bold text-primary">{t("learn.routeBadge")}</span>
+          <span className="mt-1 block text-lg font-bold text-foreground">
             {t("learn.routeToggle")}
           </span>
           <span className="mt-1 block text-base font-medium text-muted-foreground">
@@ -356,12 +354,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
                 <Headphones className="size-7 text-primary" aria-hidden />
-                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
                   {t("learn.pronunciationScope")}
                 </span>
               </div>
@@ -392,12 +390,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
                 <BookOpen className="size-7 text-primary" aria-hidden />
-                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
                   {t("learn.hadithScope")}
                 </span>
               </div>
@@ -428,12 +426,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
                 <MessagesSquare className="size-7 text-primary" aria-hidden />
-                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
                   {t("learn.conversationScope")}
                 </span>
               </div>
@@ -462,12 +460,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-            className="group min-h-[160px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
                 <Briefcase className="size-7 text-primary" aria-hidden />
-                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
                   {t("learn.businessScope")}
                 </span>
               </div>

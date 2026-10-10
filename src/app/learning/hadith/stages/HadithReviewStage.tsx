@@ -86,7 +86,7 @@ export function HadithReviewStage({
       {/* Stage Header */}
       <header className="space-y-3 py-3">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-semibold text-primary">
             <Target className="size-3.5" aria-hidden />
             {t("hadith.stageLabels.review") || "Review & Apply"}
           </span>
@@ -171,7 +171,7 @@ export function HadithReviewStage({
                   ) : (
                     <div className="space-y-3">
                       <div className="rounded-xl border border-primary/20 bg-secondary p-4">
-                        <p className="text-sm font-black uppercase tracking-wider text-primary">
+                        <p className="text-sm font-semibold text-primary">
                           {t("hadith.modelLabel") || "Model Answer"}
                         </p>
                         <p className="wp-prose mt-1 text-base font-semibold leading-relaxed text-foreground">
@@ -268,7 +268,7 @@ export function HadithReviewStage({
 
         {speakTask?.frames && speakTask.frames.length > 0 && (
           <div className="mt-4 rounded-xl border border-border bg-background/80 p-4">
-            <span className="text-sm font-black uppercase tracking-wider text-muted-foreground">
+            <span className="text-sm font-semibold text-muted-foreground">
               {t("hadith.sentenceFrame") || "Useful sentence starter"}
             </span>
             <p className="mt-1 text-base font-medium leading-7 text-foreground">
@@ -324,7 +324,7 @@ export function HadithReviewStage({
       >
         <legend
           id="confidence-heading"
-          className="flex items-center gap-2 px-2 text-sm font-black uppercase tracking-wider text-primary"
+          className="flex items-center gap-2 px-2 text-sm font-semibold text-primary"
         >
           <CheckCircle2 className="size-4" aria-hidden />
           {t("hadith.confidenceHeading") || "How ready do you feel?"}

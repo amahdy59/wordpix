@@ -58,7 +58,7 @@ export function QuizQuestionCard<T extends string>({
           </div>
 
           <ChoiceOptionGroup
-            className={`md:col-start-1 md:row-start-2 mt-3 sm:mt-5 ${
+            className={`md:col-start-1 md:row-start-2 mt-3 sm:mt-4 ${
               options.every((option) => !option.secondary && option.accessibleLabel.length <= 18)
                 ? answerLayout(options.map((option) => option.accessibleLabel))
                 : `grid gap-2 ${optionColumns === "two" ? "sm:grid-cols-2" : ""}`
@@ -90,7 +90,7 @@ export function QuizQuestionCard<T extends string>({
         <div
           role="status"
           aria-live="polite"
-          className={`flex flex-wrap gap-3 border-t px-5 py-4 text-sm font-semibold leading-6 sm:px-6 ${
+          className={`flex flex-wrap gap-3 border-t px-4 py-3 text-sm font-semibold leading-6 sm:px-5 ${
             correct
               ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
               : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"

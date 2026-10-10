@@ -62,7 +62,7 @@ export function CourseLessonNavigation({
         })}
       </div>
       {currentStages.length > 1 && (
-        <div className="flex gap-1 overflow-x-auto px-1 py-1">
+        <div className="flex flex-wrap gap-1 px-1 py-1">
           {currentStages.map((stage) => (
             <button
               key={stage.id}

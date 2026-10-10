@@ -71,21 +71,26 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
     if (unit) stagePanelRef.current?.focus();
   }, [activeStageIdx, unit]);
 
-  // Keyboard navigation: [ / ] or PageUp / PageDown
+  // Keep PageUp/PageDown available for scrolling and native form controls.
   useEffect(() => {
     if (!unit) return;
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLSelectElement ||
+        (e.target instanceof HTMLElement && e.target.isContentEditable)
+      ) {
         return;
       }
-      if (e.key === "[" || e.key === "PageUp") {
+      if (e.key === "[") {
         e.preventDefault();
         setActiveStageIdx((prev) => {
           const next = Math.max(0, prev - 1);
           checkpointBusiness(unit.id, next);
           return next;
         });
-      } else if (e.key === "]" || e.key === "PageDown") {
+      } else if (e.key === "]") {
         e.preventDefault();
         setActiveStageIdx((prev) => {
           const next = Math.min(maxUnlockedIndex, prev + 1);

@@ -172,14 +172,14 @@ export function BusinessSpeakingStage({
   };
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <Mic className="size-4" aria-hidden />
           {t("business.speaking.stageTag")}
         </span>
-        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-semibold text-muted-foreground">
           {t("business.speaking.simulationTag", { level: unit.level })}
         </span>
       </div>
@@ -189,9 +189,7 @@ export function BusinessSpeakingStage({
         className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="speaking-task-title"
       >
-        <p className="text-sm font-black uppercase tracking-widest text-primary">
-          {t("business.speaking.RolePlayBrief")}
-        </p>
+        <p className="text-sm font-semibold text-primary">{t("business.speaking.RolePlayBrief")}</p>
         <h2
           id="speaking-task-title"
           className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight"

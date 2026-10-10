@@ -57,7 +57,8 @@
     "profile": "الملف الشخصي",
     "settings": "الإعدادات",
     "mobileHeader": "التنقل على الهاتف",
-    "brandHome": "الصفحة الرئيسية في WordPix"
+    "brandHome": "الصفحة الرئيسية في WordPix",
+    "sidebarLabel": "التنقّل الجانبي"
   },
   "action": {
     "getStarted": "ابدأ الآن",
@@ -525,6 +526,7 @@
     "startLearning": "ابدأ الدرس الأول"
   },
   "settings": {
+    "openSettings": "فتح الإعدادات",
     "title": "الإعدادات وإمكانية الوصول",
     "subtitle": "إدارة أوضاع المظهر، وسرعة الصوت، وحجم النصوص، والخيارات الشاملة.",
     "closeLabel": "إغلاق الإعدادات",
@@ -697,7 +699,14 @@
     "selfAssessment": "التقييم الذاتي وقائمة الكفاءات",
     "selfAssessmentDesc": "قيّم مستوى ثقتك: 1 = أتعرف عليها · 2 = أستطيع استخدامها · 3 = أستطيع شرحها",
     "selectWord": "اختر كلمة…",
-    "rewritePlaceholder": "أعد كتابة الجملة باستخدام التلميح…"
+    "rewritePlaceholder": "أعد كتابة الجملة باستخدام التلميح…",
+    "wordFormLabels": {
+      "base": "الكلمة الأساسية",
+      "noun": "اسم",
+      "verb": "فعل",
+      "adjective": "صفة",
+      "adverb": "ظرف"
+    }
   },
   "study": {
     "videoContext": "سياق الفيديو",
@@ -1013,7 +1022,8 @@
     },
     "micRequired": "يتطلب ميكروفونًا",
     "timedDrill": "تدريب محدد الوقت",
-    "selfPaced": "تعلّم بالوتيرة التي تناسبك"
+    "selfPaced": "تعلّم بالوتيرة التي تناسبك",
+    "estimatedTime": "الوقت التقديري: ٣–٥ دقائق"
   },
   "releaseNotes": {
     "versionLabel": "v{version}",
@@ -1897,6 +1907,7 @@
     "discussionStage": "المرحلة 6: استوديو النقاش (6 أسئلة)",
     "notesLabel": "ملاحظات التأمل والتحدث الشخصية",
     "notesPlaceholder": "دوّن حججك الأساسية أو العبارات التي تريد استخدامها أو أمثلة شخصية...",
+    "chooseSpeakingPrompt": "السؤال الذي تريد التدرّب عليه بصوت عالٍ",
     "practiceThisPrompt": "تدرّب على هذا السؤال",
     "speakingPromptSelected": "محدد للتحدث",
     "discussionSpeakingStudio": "استوديو التحدث للنقاش",
@@ -2201,6 +2212,7 @@
     "mastered": "متقن"
   },
   "courseLesson": {
+    "showDiscussionGuidance": "إجابة مقترحة وسبب ومثال",
     "navigation": "أقسام الدرس",
     "input": "اقرأ واستمع",
     "language": "اللغة",

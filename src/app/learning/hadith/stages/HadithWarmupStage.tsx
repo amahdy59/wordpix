@@ -38,12 +38,12 @@ export function HadithWarmupStage({
 
   return (
     <section
-      className="wp-container-content relative overflow-hidden rounded-3xl border border-border bg-card p-4 shadow-wp-sm sm:p-5"
+      className="wp-container-content min-w-0 rounded-2xl border border-border bg-card p-4 sm:p-5"
       aria-labelledby="stage-warmup-heading"
     >
       {/* Top Header Row */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1 text-sm font-semibold text-primary">
           <Sparkles className="size-3.5" aria-hidden />
           {t("hadith.pilot.warmup.eyebrow") || "Notice Before Reading"}
         </span>
@@ -78,7 +78,7 @@ export function HadithWarmupStage({
       <div className="mt-4 grid gap-4 lg:grid-cols-[1fr_1.15fr] lg:items-start">
         {/* Left Column: Scenario & Preview Terms */}
         <div className="space-y-5">
-          <div className="flex gap-4 rounded-2xl border border-border border-s-4 border-s-primary bg-muted/40 p-5">
+          <div className="flex gap-3 border-s-2 border-primary ps-3 py-2">
             <MessageSquareQuote className="mt-0.5 size-6 shrink-0 text-primary" aria-hidden />
             <div className="space-y-2">
               <p className="text-base font-black leading-snug text-foreground">{warmup.scenario}</p>
@@ -91,10 +91,7 @@ export function HadithWarmupStage({
           </div>
 
           {warmup.previewTerms.length > 0 && (
-            <details
-              open
-              className="group overflow-hidden rounded-2xl border border-border bg-background transition-colors"
-            >
+            <details className="group overflow-hidden rounded-2xl border border-border bg-background transition-colors">
               <summary
                 className={`flex min-h-12 cursor-pointer list-none items-center justify-between px-4 py-3 text-base font-black text-foreground transition-colors hover:bg-muted/50 ${focusRing}`}
               >
@@ -133,7 +130,7 @@ export function HadithWarmupStage({
         </div>
 
         {/* Right Column: Interactive Self-Check Poll */}
-        <div className="rounded-2xl border border-border bg-background/60 p-5 sm:p-6">
+        <div className="border-t border-border pt-3 lg:border-t-0 lg:border-s lg:ps-4">
           <fieldset aria-labelledby="warmup-question-legend">
             <legend
               id="warmup-question-legend"

@@ -78,7 +78,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
   );
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-container-content wp-stage-flow flex flex-col gap-4 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
@@ -92,7 +92,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
 
       {/* Hero Card */}
       <section className="space-y-2" aria-labelledby="usage-focus-title">
-        <p className="text-sm font-black uppercase tracking-widest text-primary">
+        <p className="text-sm font-semibold text-primary">
           {t("business.usage.linguisticFramework")}
         </p>
         <h2
@@ -127,7 +127,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
 
                 {card.context && (
                   <div className="mt-3">
-                    <span className="block text-sm font-black uppercase tracking-widest text-muted-foreground">
+                    <span className="block text-sm font-semibold text-muted-foreground">
                       {t("business.usage.contextFunctionLabel")}
                     </span>
                     <p className="mt-0.5 text-base font-bold text-foreground">{card.context}</p>

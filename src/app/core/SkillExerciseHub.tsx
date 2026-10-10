@@ -120,24 +120,22 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   const availableCount = countAvailableExercises(includeSpeaking, includeListening, learnerLevel);
 
   return (
-    <PageContainer size="wide" className="gap-7 sm:gap-8">
+    <PageContainer size="wide" className="gap-4 sm:gap-5">
       <PageHeader variant="plain" headingLevel="h1" title={t("nav.practice")} />
 
       {/* ── Section 1: Reviews Due Today (Spaced-Repetition Hero) ──────────────── */}
       <section aria-label={t("masteryReview.todayReview")} className="flex flex-col gap-3">
         {totalDue > 0 ? (
-          <div className="rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-wp-card to-wp-card p-5 sm:p-7 shadow-wp-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="rounded-2xl border border-primary/30 bg-secondary p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="flex items-start gap-4">
-              <div className="size-20 sm:size-24 rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
+              <div className="size-14 sm:size-16 rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
                 <span className="text-3xl sm:text-4xl font-black leading-none">{totalDue}</span>
-                <span className="text-[10px] sm:text-sm font-bold uppercase mt-1 tracking-wider opacity-90">
-                  {t("masteryReview.wordsDue")}
-                </span>
+                <span className="text-sm font-bold mt-1">{t("masteryReview.wordsDue")}</span>
               </div>
 
               <div className="min-w-0 flex flex-col gap-1.5">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-primary">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary">
                     <Clock className="size-3.5" aria-hidden="true" />
                     <span>{t("masteryReview.todayReview")}</span>
                   </span>
@@ -185,7 +183,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </div>
           </div>
         ) : hasLearningHistory ? (
-          <div className="rounded-3xl border border-border bg-wp-card p-5 sm:p-6 shadow-wp-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3.5">
               <div className="size-12 rounded-xl bg-wp-green/10 text-wp-green flex items-center justify-center shrink-0">
                 <CheckCircle2 className="size-6" aria-hidden="true" />
@@ -224,7 +222,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </Button>
           </div>
         ) : (
-          <div className="rounded-3xl border border-primary/25 bg-secondary p-5 sm:p-6 shadow-wp-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="rounded-2xl border border-primary/25 bg-secondary p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3.5">
               <div className="size-12 rounded-xl bg-secondary text-primary flex items-center justify-center shrink-0">
                 <BookOpen className="size-6" aria-hidden="true" />
@@ -262,7 +260,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
           headingLevel="h2"
           titleId="skill-drills-heading"
           eyebrow={
-            <span className="flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-primary">
+            <span className="flex items-center gap-1.5 text-sm font-bold text-primary">
               <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden="true" />
               <span>
                 {t("skillHub.multimodalExercises", {
@@ -316,7 +314,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <button
                 type="button"
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors group"
+                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors group"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2">
@@ -328,7 +326,12 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                     </span>
                   </div>
 
-                  <div className="flex items-center gap-1.5 flex-wrap mt-3">
+                  <div className="flex items-center gap-1.5 flex-wrap mt-2">
+                    {!ex.isTimed && (
+                      <span className="text-sm font-semibold text-muted-foreground">
+                        {t("skillHub.estimatedTime")}
+                      </span>
+                    )}
                     {ex.requiresMic && (
                       <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <Mic className="size-3" aria-hidden="true" />

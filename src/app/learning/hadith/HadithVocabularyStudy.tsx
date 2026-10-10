@@ -1,3 +1,4 @@
+import { ReferenceTable } from "../../shared/ReferenceTable";
 import { LanguageInsightCard } from "../../shared/LanguageInsightCard";
 import { useMemo, useState } from "react";
 import { Check, Image as ImageIcon, Volume2 } from "lucide-react";
@@ -207,44 +208,33 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
         <p className="mt-2 text-base text-muted-foreground">
           {t("hadith.completeLanguageBankDescription")}
         </p>
-        <div className="mt-5 overflow-x-auto rounded-2xl border border-border">
-          <table className="w-full min-w-[42rem] border-collapse text-base">
-            <thead className="bg-muted">
-              <tr>
-                <th className="p-4 text-start font-black">{t("hadith.category")}</th>
-                <th className="p-4 text-start font-black">{t("hadith.expression")}</th>
-                <th className="p-4 text-start font-black">{t("hadith.meaningOrExample")}</th>
-                <th className="p-4">
-                  <span className="sr-only">{t("hadith.audio")}</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {languageRows.map((item) => (
-                <tr
-                  key={`${item.category}-${item.expression}`}
-                  className="border-t border-border align-top"
-                >
-                  <td className="p-4 text-sm font-black uppercase tracking-wide text-primary">
-                    {item.category}
-                  </td>
-                  <td className="p-4 font-black" lang="en" dir="ltr">
+        <div className="mt-3">
+          <ReferenceTable
+            caption={t("hadith.languageBankTableCaption")}
+            columns={[
+              { key: "category", label: t("hadith.category") },
+              { key: "expression", label: t("hadith.expression"), rowHeader: true },
+              { key: "meaning", label: t("hadith.meaningOrExample") },
+              { key: "audio", label: t("hadith.audio") },
+            ]}
+            rows={languageRows.map((item) => ({
+              id: item.category + "-" + item.expression,
+              cells: {
+                category: item.category,
+                expression: (
+                  <bdi lang="en" dir="ltr">
                     {item.expression}
-                  </td>
-                  <td
-                    className="p-4 font-semibold leading-6 text-muted-foreground"
-                    lang="en"
-                    dir="ltr"
-                  >
+                  </bdi>
+                ),
+                meaning: (
+                  <bdi lang="en" dir="ltr">
                     {item.explanation}
-                  </td>
-                  <td className="p-3">
-                    <AudioAction text={item.expression.replace(/\+.*$/, "").trim()} />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                  </bdi>
+                ),
+                audio: <AudioAction text={item.expression.replace(/\+.*$/, "").trim()} />,
+              },
+            }))}
+          />
         </div>
         <div className="mt-4 grid items-start gap-3 md:grid-cols-3">
           <LanguageInsightCard

@@ -121,7 +121,7 @@ function QuestionCard({
         <div className="min-w-0">
           {/* Counter label (single-question mode) */}
           {showCounter && (
-            <p className="mb-3 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+            <p className="mb-3 text-sm font-semibold text-muted-foreground">
               {t("quiz.questionOf", {
                 current: index + 1,
                 total,
@@ -134,7 +134,7 @@ function QuestionCard({
             ref={headingRef}
             id={questionHeadingId}
             tabIndex={-1}
-            className="text-xl font-black leading-snug text-foreground focus-visible:outline-none sm:text-2xl"
+            className="text-lg font-bold leading-snug text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:text-xl"
           >
             {/* Question number badge in desktop multi-question mode */}
             {!showCounter && (
@@ -158,7 +158,7 @@ function QuestionCard({
             </div>
           ) : question.options ? (
             <ChoiceOptionGroup
-              className={`mt-6 grid gap-3.5 ${
+              className={`mt-4 grid gap-2 ${
                 question.optionColumns === "two" || (!question.optionColumns && showCounter)
                   ? "sm:grid-cols-2"
                   : ""
@@ -173,9 +173,7 @@ function QuestionCard({
             />
           ) : null}
         </div>
-        {question.media && (
-          <div className="order-first min-w-0 md:order-none">{question.media}</div>
-        )}
+        {question.media && <div className="min-w-0">{question.media}</div>}
       </div>
 
       {/* Feedback Panel */}
@@ -596,7 +594,7 @@ export function CurriculumQuizEngine({
   const progressPills = (
     <ol
       aria-label={t("courseLesson.questionNavigation")}
-      className="flex gap-2 overflow-x-auto p-1"
+      className="flex max-w-full gap-2 overflow-x-auto p-1"
     >
       {questions.map((q, i) => {
         const isAnswered = answers[q.id] !== undefined;
@@ -667,7 +665,7 @@ export function CurriculumQuizEngine({
       )}
 
       {/* Mobile Navigation */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         {mobileIndex > 0 ? (
           <button
             type="button"
@@ -751,7 +749,7 @@ export function CurriculumQuizEngine({
       </div>
 
       {/* Desktop Navigation */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         {desktopPage > 0 ? (
           <button
             type="button"

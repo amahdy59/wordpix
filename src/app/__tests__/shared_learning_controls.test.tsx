@@ -172,8 +172,11 @@ describe("shared learning controls", () => {
     expect(screen.getByRole("status")).toHaveTextContent("Not yet");
     expect(screen.getByRole("status")).toHaveTextContent("B is the supported answer.");
     const option = screen.getByRole("radio", { name: "Answer B" });
-    expect(option).toBeDisabled();
+    expect(option).toHaveAttribute("aria-disabled", "true");
+    option.focus();
+    expect(option).toHaveFocus();
     await user.click(option);
+    await user.keyboard("{ArrowLeft}{Enter}");
     expect(option).toHaveAttribute("aria-checked", "false");
   });
 });

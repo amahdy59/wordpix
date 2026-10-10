@@ -53,10 +53,10 @@ export function ChallengeStage({
   const canFinish = prerequisitesComplete && allTasksComplete && response.length > 0;
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <Award className="size-4" aria-hidden />
           {t("conversation.challengeStage")}
         </span>
@@ -74,7 +74,7 @@ export function ChallengeStage({
         className="rounded-3xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="challenge-heading"
       >
-        <span className="text-sm font-black uppercase tracking-wider text-primary">
+        <span className="text-sm font-semibold text-primary">
           {t("conversation.realWorldChallenge")}
         </span>
         <h2
@@ -233,7 +233,7 @@ export function ChallengeStage({
       )}
 
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex items-center justify-between">
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
         <button
           type="button"
           onClick={onPrev}

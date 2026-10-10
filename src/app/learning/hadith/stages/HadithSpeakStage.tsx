@@ -40,7 +40,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
     <section className="wp-container-content space-y-6" aria-labelledby="stage-speak-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-black uppercase tracking-wider text-primary">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-semibold text-primary">
             <Mic className="size-3.5" aria-hidden />
             {t("hadith.speakLabel") || "Transfer Task"}
           </span>
@@ -65,7 +65,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
         {/* Sentence Frame Card */}
         {speakData.frames.length > 0 ? (
           <div className="mt-6 space-y-2 rounded-2xl border-2 border-primary/20 bg-secondary p-5">
-            <p className="text-sm font-black uppercase tracking-wider text-primary">
+            <p className="text-sm font-semibold text-primary">
               {t("hadith.pilot.speak.frameLabel") || "Sentence Frame"}
             </p>
             {speakData.frames.map((frame, i) => (
@@ -76,7 +76,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
           </div>
         ) : (
           <div className="mt-6 rounded-2xl border-2 border-primary/20 bg-secondary p-5">
-            <p className="text-sm font-black uppercase tracking-wider text-primary">
+            <p className="text-sm font-semibold text-primary">
               {t("hadith.pilot.speak.frameLabel") || "Sentence Frame"}
             </p>
             <p className="mt-2 text-lg font-black text-foreground" lang="en" dir="ltr">

@@ -63,10 +63,13 @@ export function ChoiceOptionGroup<T extends string>({
             role="radio"
             aria-checked={selected}
             aria-label={option.accessibleLabel}
-            disabled={disabled}
+            aria-disabled={disabled || undefined}
             tabIndex={selected || (!value && index === 0) ? 0 : -1}
-            onClick={() => onChange(option.value)}
+            onClick={() => {
+              if (!disabled) onChange(option.value);
+            }}
             onKeyDown={(event) => {
+              if (disabled) return;
               if (event.key === "ArrowRight" || event.key === "ArrowDown") {
                 event.preventDefault();
                 move(index, 1);
@@ -90,7 +93,7 @@ export function ChoiceOptionGroup<T extends string>({
                 }
               }
             }}
-            className={`group relative flex min-h-[48px] min-w-0 items-center gap-2 rounded-xl border-2 p-3 text-start text-base font-semibold transition-all duration-150 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${revealFeedback ? "disabled:opacity-100" : ""} ${
+            className={`group relative flex min-h-[48px] min-w-0 items-center gap-2 rounded-xl border p-3 text-start text-base font-semibold motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${disabled ? "cursor-default" : ""} ${
               correct
                 ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground shadow-wp-xs"
                 : incorrect
@@ -98,8 +101,8 @@ export function ChoiceOptionGroup<T extends string>({
                   : selected
                     ? "border-primary bg-secondary text-foreground shadow-wp-sm"
                     : muted
-                      ? "border-border/40 bg-card/40 text-muted-foreground"
-                      : "border-border/80 bg-card text-foreground hover:border-primary/50 hover:bg-secondary motion-safe:hover:translate-y-[-1px] shadow-wp-xs"
+                      ? "border-border bg-card text-muted-foreground"
+                      : "border-border bg-card text-foreground hover:border-primary hover:bg-secondary"
             }`}
           >
             {option.prefix && (

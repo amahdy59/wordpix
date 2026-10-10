@@ -1,3 +1,4 @@
+import { ReferenceTable } from "../../../shared/ReferenceTable";
 import { parseHadithVocabulary } from "../hadithVocabularyContent";
 import learnerGlosses from "../hadithLearnerGlosses.json";
 export { parseHadithVocabulary } from "../hadithVocabularyContent";
@@ -290,105 +291,49 @@ export function HadithVocabularyStage({
           {t("hadith.completeLanguageBank") || "Complete language bank"}
         </h3>
 
-        {/* Desktop Table View */}
-        <div className="mt-5 hidden overflow-x-auto rounded-2xl border border-border md:block">
-          <table className="w-full border-collapse text-base">
-            <caption className="sr-only">{t("hadith.languageBankTableCaption")}</caption>
-            <thead className="bg-muted/70">
-              <tr>
-                <th className="p-4 text-start font-black text-foreground">
-                  {t("hadith.expression") || "Word or expression"}
-                </th>
-                <th className="p-4 text-start font-black text-foreground">
-                  {t("hadith.meaningOrExample") || "Meaning or example"}
-                </th>
-                <th className="p-4 text-end">
-                  <span className="sr-only">{t("hadith.audio") || "Audio"}</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {languageRows.map((item) => (
-                <tr
-                  key={`${item.category}-${item.expression}`}
-                  className="border-t border-border align-top transition-colors hover:bg-muted/30"
-                >
-                  <td className="p-4 font-black text-foreground" lang="en" dir="ltr">
+        <div className="mt-3">
+          <ReferenceTable
+            caption={t("hadith.languageBankTableCaption")}
+            columns={[
+              { key: "expression", label: t("hadith.expression"), rowHeader: true },
+              { key: "meaning", label: t("hadith.meaningOrExample") },
+              { key: "audio", label: t("hadith.audio") },
+            ]}
+            rows={languageRows.map((item) => ({
+              id: item.category + "-" + item.expression,
+              cells: {
+                expression: (
+                  <bdi lang="en" dir="ltr">
                     {item.expression}
-                  </td>
-                  <td
-                    className="p-4 font-semibold leading-relaxed text-muted-foreground"
-                    lang="en"
-                    dir="ltr"
-                  >
+                  </bdi>
+                ),
+                meaning: (
+                  <bdi lang="en" dir="ltr">
                     {item.explanation}
-                  </td>
-                  <td className="p-3 text-end">
-                    <AudioButton
-                      onPlay={() => playAudio(item.expression.replace(/\+.*$/, "").trim())}
-                      isPlaying={
-                        audio.isPlaying &&
-                        activeAudioText === item.expression.replace(/\+.*$/, "").trim()
-                      }
-                      isError={
-                        audio.isError &&
-                        activeAudioText === item.expression.replace(/\+.*$/, "").trim()
-                      }
-                      label={
-                        t("hadith.playVocabulary", { word: item.expression }) ||
-                        `Listen to ${item.expression}`
-                      }
-                      size="sm"
-                      className="border-primary/40 bg-secondary text-primary hover:bg-secondary"
-                    />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        {/* Mobile Reflow Cards (Prevents horizontal table scroll) */}
-        <div className="mt-4 space-y-3 md:hidden">
-          {languageRows.map((item) => (
-            <div
-              key={`m-${item.category}-${item.expression}`}
-              className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 gap-y-1 border-t border-border py-3"
-            >
-              <p
-                className="min-w-0 break-words text-base font-bold text-foreground"
-                lang="en"
-                dir="ltr"
-              >
-                {item.expression}
-              </p>
-              <div className="row-span-2">
-                <AudioButton
-                  onPlay={() => playAudio(item.expression.replace(/\+.*$/, "").trim())}
-                  isPlaying={
-                    audio.isPlaying &&
-                    activeAudioText === item.expression.replace(/\+.*$/, "").trim()
-                  }
-                  isError={
-                    audio.isError && activeAudioText === item.expression.replace(/\+.*$/, "").trim()
-                  }
-                  label={
-                    t("hadith.playVocabulary", { word: item.expression }) ||
-                    `Listen to ${item.expression}`
-                  }
-                  size="sm"
-                  className="border-primary/40 bg-secondary text-primary hover:bg-secondary"
-                />
-              </div>
-              <p
-                className="wp-prose min-w-0 text-base leading-relaxed text-foreground"
-                lang="en"
-                dir="ltr"
-              >
-                {item.explanation}
-              </p>
-            </div>
-          ))}
+                  </bdi>
+                ),
+                audio: (
+                  <AudioButton
+                    onPlay={() => playAudio(item.expression.replace(/\+.*$/, "").trim())}
+                    isPlaying={
+                      audio.isPlaying &&
+                      activeAudioText === item.expression.replace(/\+.*$/, "").trim()
+                    }
+                    isError={
+                      audio.isError &&
+                      activeAudioText === item.expression.replace(/\+.*$/, "").trim()
+                    }
+                    label={
+                      t("hadith.playVocabulary", { word: item.expression }) ||
+                      `Listen to ${item.expression}`
+                    }
+                    size="sm"
+                    className="border-primary/40 bg-secondary text-primary hover:bg-secondary"
+                  />
+                ),
+              },
+            }))}
+          />
         </div>
       </section>
     </section>

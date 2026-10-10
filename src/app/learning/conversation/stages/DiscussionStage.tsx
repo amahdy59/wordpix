@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { MessageSquareText, ArrowRight, ArrowLeft, Mic } from "lucide-react";
+import { MessageSquareText, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
+import { DiscussionPromptSelect } from "../../../shared/DiscussionPromptSelect";
+import { RichPassageText } from "../../../shared/RichPassageText";
 import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
 import { BilingualTextBlock, LanguageToggle } from "../../../shared/BilingualText";
 
@@ -22,10 +24,10 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
   );
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <MessageSquareText className="size-4" aria-hidden />
           {t("conversation.discussionStage")}
         </span>
@@ -40,49 +42,37 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
       </div>
 
       {/* 6 Discussion Prompts */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        {unit.discussion.map((item, index) => (
+      <div className="grid gap-3 sm:grid-cols-2">
+        {unit.discussion.map((item) => (
           <article
             key={item.id}
-            className="flex flex-col justify-between rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs hover:border-primary/40"
+            className="flex flex-col justify-between rounded-2xl border border-border bg-card p-4"
           >
             <div>
               <div className="flex items-center gap-2">
                 <span className="flex size-6 items-center justify-center rounded-md bg-secondary font-black text-sm text-primary">
                   {item.id}
                 </span>
-                <h2 className="wp-type-stage-title text-base font-black uppercase tracking-wide text-primary">
-                  {item.title}
-                </h2>
+                <h2 className="text-base font-bold text-foreground">{item.title}</h2>
               </div>
               <BilingualTextBlock
-                english={item.prompt}
+                english={<RichPassageText text={item.prompt} />}
                 arabic={item.promptAr}
                 showArabic={showArabic}
-                className="mt-3"
+                className="mt-2"
                 englishClassName="text-base font-semibold leading-relaxed text-foreground"
                 arabicClassName="text-base font-medium leading-relaxed text-muted-foreground"
               />
-              <button
-                type="button"
-                onClick={() => setPracticePromptIndex(index)}
-                aria-pressed={practicePromptIndex === index}
-                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border px-3 text-base font-black transition-colors motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  practicePromptIndex === index
-                    ? "border-primary bg-primary text-primary-foreground"
-                    : "border-border bg-background text-foreground hover:bg-muted"
-                }`}
-              >
-                <Mic className="size-4" aria-hidden />
-                {practicePromptIndex === index
-                  ? t("conversation.speakingPromptSelected")
-                  : t("conversation.practiceThisPrompt")}
-              </button>
             </div>
           </article>
         ))}
       </div>
 
+      <DiscussionPromptSelect
+        prompts={unit.discussion}
+        selectedIndex={practicePromptIndex}
+        onSelect={setPracticePromptIndex}
+      />
       <SpeechRecordCompare
         key={unit.discussion[practicePromptIndex]?.id}
         target={unit.discussion[practicePromptIndex]?.prompt ?? unit.discussion[0]?.prompt ?? ""}
@@ -91,10 +81,6 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
         description={t("conversation.discussionSpeakingHelp")}
         maxDurationSeconds={90}
       />
-
-      <p className="rounded-2xl border border-primary/20 bg-secondary p-4 text-base font-semibold text-foreground">
-        {t("conversation.discussionSpeakingHelp")}
-      </p>
 
       <div className="grid gap-3 md:grid-cols-3" aria-label={t("hadith.discussionLabel")}>
         {["discussionReason", "discussionAlternative", "discussionRole"].map((key) => (
@@ -108,7 +94,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
       </div>
 
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex items-center justify-between">
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
         <button
           type="button"
           onClick={onPrev}

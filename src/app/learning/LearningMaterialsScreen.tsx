@@ -1,3 +1,4 @@
+import { ReferenceTable } from "../shared/ReferenceTable";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { Volume2, Eye, EyeOff } from "lucide-react";
 import { useAudio } from "../shared/useAudio";
@@ -624,7 +625,9 @@ const WORD_FORM_COLUMNS = [
 export function WordFormationSection({ materials }: { materials: UnitLearningMaterials }) {
   const { t } = useI18n();
   const rows = materials.wordFormation ?? [];
-  const columns = WORD_FORM_COLUMNS.filter(({ key }) => rows.some((row) => row[key] != null));
+  const columns = WORD_FORM_COLUMNS.filter(({ key }) => rows.some((row) => row[key] != null)).map(
+    ({ key }) => ({ key, label: t(`learningMaterials.wordFormLabels.${key}`) })
+  );
 
   return (
     <section className={CARD} aria-labelledby="word-formation-heading">
@@ -637,75 +640,16 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
         </p>
       </div>
 
-      {/* Mobile Stacked Word Family Cards (<640px) */}
-      <div className="block sm:hidden space-y-3">
-        {rows.map((row, rowIndex) => (
-          <div
-            key={`${row.base ?? row.noun}-${rowIndex}`}
-            className="rounded-2xl border border-border p-4 bg-background flex flex-col gap-2.5 shadow-xs"
-          >
-            <div className="flex items-center justify-between border-b border-border/50 pb-2">
-              <span className="font-sans font-black text-base text-foreground">
-                {row.base || row.noun || "Word"}
-              </span>
-              <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
-                {t("learningMaterials.wordFamilyBadge")}
-              </span>
-            </div>
-            <div className="grid grid-cols-2 gap-2 text-sm">
-              {columns.map(({ label, key }) => {
-                const val = row[key];
-                if (!val) return null;
-                return (
-                  <div
-                    key={key}
-                    className="flex flex-col gap-0.5 bg-secondary/30 rounded-xl p-2 border border-border/40"
-                  >
-                    <span className="text-sm font-bold uppercase text-muted-foreground">
-                      {label}
-                    </span>
-                    <span className="font-semibold text-foreground text-base">{val}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Desktop / Tablet Semantic Table (>=640px) */}
-      <div className="hidden sm:block overflow-x-auto rounded-2xl border border-border/80 bg-background">
-        <table className="w-full text-start border-collapse min-w-[32rem]">
-          <caption className="sr-only">{t("learningMaterials.wordFormsCaption")}</caption>
-          <thead>
-            <tr className="border-b border-border bg-secondary/30">
-              {columns.map(({ label }) => (
-                <th
-                  key={label}
-                  scope="col"
-                  className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4"
-                >
-                  {label}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-border/50">
-            {rows.map((row, rowIndex) => (
-              <tr
-                key={`${row.base ?? row.noun}-${rowIndex}`}
-                className="hover:bg-secondary/20 transition-colors"
-              >
-                {columns.map(({ key }) => (
-                  <td key={key} className="text-base text-foreground py-3 px-4 font-medium">
-                    {row[key] ?? <span className="text-muted-foreground">—</span>}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <ReferenceTable
+        caption={t("learningMaterials.wordFormsCaption")}
+        columns={columns.map((column, index) => ({ ...column, rowHeader: index === 0 }))}
+        rows={rows.map((row, index) => ({
+          id: String(index),
+          cells: Object.fromEntries(
+            columns.map(({ key }) => [key, <bdi lang="en">{row[key] ?? "—"}</bdi>])
+          ),
+        }))}
+      />
     </section>
   );
 }
@@ -923,74 +867,49 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
       </div>
 
       {/* Accessible Table */}
-      <div className="mt-4 overflow-x-auto rounded-2xl border border-border/80 bg-background">
-        <table className="w-full border-collapse min-w-[34rem]">
-          <caption className="sr-only">{t("learningMaterials.tableCaption")}</caption>
-          <thead>
-            <tr className="border-b border-border bg-secondary/30">
-              {[
-                t("learningMaterials.colWord"),
-                t("learningMaterials.colPos"),
-                t("learningMaterials.colFrequency"),
-                t("learningMaterials.colCollocations"),
-              ].map((h) => (
-                <th
-                  key={h}
-                  scope="col"
-                  className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4"
-                >
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-border/50">
-            {filtered.length === 0 ? (
-              <tr>
-                <td colSpan={4} className="py-8 text-center text-base text-muted-foreground">
-                  {t("learningMaterials.noMatches")}
-                </td>
-              </tr>
-            ) : (
-              filtered.map((entry) => (
-                <tr key={entry.word} className="hover:bg-secondary/20 transition-colors align-top">
-                  <th
-                    scope="row"
-                    className="font-bold text-base text-foreground py-3 px-4 text-start"
+      <div className="mt-3">
+        <ReferenceTable
+          caption={t("learningMaterials.tableCaption")}
+          emptyMessage={t("learningMaterials.noMatches")}
+          columns={[
+            { key: "word", label: t("learningMaterials.colWord"), rowHeader: true },
+            { key: "pos", label: t("learningMaterials.colPos") },
+            { key: "frequency", label: t("learningMaterials.colFrequency") },
+            { key: "collocations", label: t("learningMaterials.colCollocations") },
+          ]}
+          rows={filtered.map((entry) => ({
+            id: entry.word,
+            cells: {
+              word: (
+                <div className="flex flex-wrap items-center gap-2">
+                  <bdi lang="en" dir="ltr">
+                    {entry.word}
+                  </bdi>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      stop();
+                      speak(entry.word);
+                    }}
+                    className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    aria-label={t("vocabulary.playPronunciation", { term: entry.word })}
                   >
-                    <div className="flex items-center gap-2">
-                      <span>{entry.word}</span>
-                      <button
-                        onClick={() => {
-                          stop();
-                          speak(entry.word);
-                        }}
-                        className="size-11 shrink-0 rounded-xl bg-secondary/80 text-primary inline-flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
-                        aria-label={`Pronounce ${entry.word}`}
-                      >
-                        <Volume2 className="size-4" aria-hidden />
-                      </button>
-                    </div>
-                  </th>
-                  <td className="text-base text-muted-foreground py-3 px-4">
-                    {entry.partOfSpeech}
-                  </td>
-                  <td className="text-base py-3 px-4">
-                    <span aria-hidden className="text-wp-amber-foreground font-mono text-base">
-                      {"★".repeat(entry.frequency)}
-                    </span>
-                    <span className="sr-only">
-                      {t("learningMaterials.freqRating", { rating: entry.frequency })}
-                    </span>
-                  </td>
-                  <td className="text-base text-foreground py-3 px-4 font-medium">
-                    {entry.collocations.join(", ")}
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
+                    <Volume2 className="size-4" aria-hidden />
+                  </button>
+                </div>
+              ),
+              pos: entry.partOfSpeech,
+              frequency: (
+                <span>{t("learningMaterials.freqRating", { rating: entry.frequency })}</span>
+              ),
+              collocations: (
+                <bdi lang="en" dir="ltr">
+                  {entry.collocations.join(", ")}
+                </bdi>
+              ),
+            },
+          }))}
+        />
       </div>
     </section>
   );

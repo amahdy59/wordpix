@@ -1,5 +1,5 @@
 import { HelpDisclosure } from "../shared/HelpDisclosure";
-import { memo, useMemo, useState } from "react";
+import { lazy, memo, Suspense, useMemo, useState } from "react";
 import {
   Flame,
   Sparkles,
@@ -26,6 +26,10 @@ import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { useI18n } from "../context/I18nContext";
 import { Button, EmptyState, PageContainer, PageHeader, Surface } from "../shared";
 import { summarizeSkillMastery, type MasteryDimension } from "../../features/gamification/sm2";
+
+const SettingsModal = lazy(() =>
+  import("./SettingsModal").then((m) => ({ default: m.SettingsModal }))
+);
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -154,15 +158,22 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
     },
   ];
 
+  const [showSettings, setShowSettings] = useState(false);
+
   return (
     <PageContainer size="wide">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="flex w-full flex-col gap-6 pb-8"
+        className="flex w-full flex-col gap-4 pb-4"
       >
         {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+        {showSettings && (
+          <Suspense fallback={null}>
+            <SettingsModal isOpen onClose={() => setShowSettings(false)} />
+          </Suspense>
+        )}
 
         <PageHeader
           variant="plain"
@@ -180,10 +191,10 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
             variant="card"
             radius="xl"
             padding="md"
-            className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between xl:flex-col xl:items-stretch"
+            className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between xl:flex-col xl:items-stretch"
           >
             <motion.div variants={staggerItem} className="flex flex-row items-center gap-4">
-              <div className="relative size-12 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
+              <div className="relative size-12 md:size-16 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
                 <LearnerAvatar />
               </div>
 
@@ -352,7 +363,15 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
             })}
           </div>
         </motion.section>
-        <section className="border-t border-border py-5" aria-labelledby="release-notes-heading">
+        <section className="border-t border-border py-3" aria-labelledby="profile-settings-heading">
+          <h2 id="profile-settings-heading" className="text-lg font-bold text-foreground">
+            {t("settings.title")}
+          </h2>
+          <Button variant="outline" className="mt-2" onClick={() => setShowSettings(true)}>
+            {t("settings.openSettings")}
+          </Button>
+        </section>
+        <section className="border-t border-border py-3" aria-labelledby="release-notes-heading">
           <h2 id="release-notes-heading" className="text-lg font-bold text-foreground">
             {t("releaseNotes.pageTitle")}
           </h2>

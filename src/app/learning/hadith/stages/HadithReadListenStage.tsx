@@ -91,7 +91,7 @@ export function HadithReadListenStage({
           </button>
         </div>
       </header>
-      <div className={parallelReading ? "grid min-w-0 gap-8 lg:grid-cols-2" : "space-y-8"}>
+      <div className={parallelReading ? "grid min-w-0 gap-4 lg:grid-cols-2" : "space-y-4"}>
         <article aria-labelledby="hadith-arabic-heading" className="min-w-0 space-y-5">
           <h3 id="hadith-arabic-heading" className="text-base font-semibold text-foreground">
             {t("hadith.arabic")}

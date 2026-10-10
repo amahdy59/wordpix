@@ -209,7 +209,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
-      className="wp-container-wide flex flex-col gap-5 sm:gap-6"
+      className="wp-container-wide flex flex-col gap-4 sm:gap-5"
     >
       {/* Page Header */}
       <motion.div variants={staggerItem}>
@@ -217,10 +217,16 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
       </motion.div>
 
       {/* Search & Filter Controls */}
-      <motion.div variants={staggerItem} className="flex flex-col gap-3">
+      <motion.div
+        variants={staggerItem}
+        className="wp-sticky-controls sticky top-0 z-20 flex flex-col gap-2 bg-background py-2"
+      >
         {/* Search Input */}
         <div className="relative w-full">
-          <label htmlFor={searchInputId} className="sr-only">
+          <label
+            htmlFor={searchInputId}
+            className="mb-2 block text-sm font-semibold text-foreground"
+          >
             {t("explore.searchLabel")}
           </label>
           <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-muted-foreground">
@@ -245,7 +251,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
             </button>
           )}
         </div>
-        <p className="text-xs text-muted-foreground px-1 -mt-1">
+        <p className="text-sm text-muted-foreground px-1">
           {t("explore.searchClarification", {
             defaultValue: "Word searches return topic units containing matching vocabulary.",
           })}

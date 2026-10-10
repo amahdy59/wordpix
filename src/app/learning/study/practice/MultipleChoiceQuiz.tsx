@@ -91,14 +91,14 @@ export function MultipleChoiceQuiz({
 
   return (
     <div
-      className={`rounded-3xl border border-border p-6 sm:p-7 bg-card shadow-xs h-full flex flex-col justify-center ${
+      className={`rounded-2xl border border-border p-4 sm:p-5 bg-card min-w-0 flex flex-col ${
         reduceMotion ? "" : "animate-in fade-in duration-200"
       }`}
     >
       {/* Question — English learning content always carries explicit lang+dir */}
       <div
         id={questionId}
-        className="mb-6 font-extrabold text-lg sm:text-xl text-foreground leading-relaxed"
+        className="mb-4 font-bold text-lg sm:text-xl text-foreground leading-relaxed"
         lang="en"
         dir="ltr"
       >
@@ -106,7 +106,7 @@ export function MultipleChoiceQuiz({
       </div>
 
       {/* Answer choices — grouped for screen readers */}
-      <div role="group" aria-labelledby={questionId} className="grid gap-3">
+      <div role="group" aria-labelledby={questionId} className="grid gap-2">
         {options.map((opt, i) => {
           const isPickedCorrect = phase === "answered_correct" && localPick === i;
           const isPickedWrong = phase === "answered_wrong" && localPick === i;
@@ -124,15 +124,16 @@ export function MultipleChoiceQuiz({
               key={i}
               type="button"
               aria-disabled={isDisabled ? "true" : undefined}
+              aria-pressed={localPick === i}
               onClick={() => !isDisabled && handlePick(i)}
-              className={`w-full text-start p-4 rounded-2xl border transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-base sm:text-base min-h-[56px] ${
+              className={`w-full text-start p-3 rounded-xl border motion-safe:transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary text-base min-h-[48px] ${
                 visualState === "correct"
-                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-xs"
+                  ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground font-bold"
                   : visualState === "wrong"
-                    ? "border-destructive/40 bg-destructive/5 text-destructive font-semibold"
+                    ? "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground font-semibold"
                     : isDisabled
-                      ? "border-border opacity-60 font-medium cursor-default"
-                      : "border-border hover:border-primary/50 hover:bg-secondary/40 font-medium motion-safe:active:scale-[0.99]"
+                      ? "border-border text-muted-foreground font-medium cursor-default"
+                      : "border-border text-foreground hover:border-primary hover:bg-secondary font-medium"
               }`}
             >
               <div className="flex items-center gap-3">

@@ -243,7 +243,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </p>
             <h1
               id="pronunciation-complete-title"
-              className="mt-2 text-3xl font-black"
+              className="mt-2 text-xl sm:text-2xl font-bold"
               lang="en"
               dir="ltr"
             >
@@ -350,10 +350,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
           <span>{t("pronunciation.back")}</span>
         </button>
-        <header className="rounded-3xl bg-gradient-to-br from-primary/15 via-card to-card p-6 shadow-sm">
+        <header className="border-b border-border pb-4">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.18em] text-primary">
+              <p className="text-sm font-semibold text-primary">
                 {t("pronunciation.badge", { current: lessonNumber, total: 68 })}
               </p>
               <h1

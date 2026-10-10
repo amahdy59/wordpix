@@ -38,10 +38,9 @@ export const PageHeader = memo(function PageHeader({
 
   const containerStyles =
     variant === "hero"
-      ? "relative overflow-hidden rounded-3xl border border-primary/25 bg-wp-card p-5 shadow-wp-sm sm:p-7 grid gap-5 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center before:absolute before:inset-y-0 before:start-0 before:w-1 before:bg-primary"
+      ? "grid gap-3 border-b border-border pb-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center"
       : "flex flex-col sm:flex-row sm:items-end justify-between gap-4 py-1 sm:py-2";
-  const headingStyles =
-    headingLevel === "h1" ? "text-2xl sm:text-3xl lg:text-4xl" : "text-xl sm:text-2xl lg:text-3xl";
+  const headingStyles = headingLevel === "h1" ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl";
 
   return (
     <header className={`${containerStyles} ${className}`}>

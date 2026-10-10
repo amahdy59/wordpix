@@ -22,7 +22,7 @@ export const PageContainer = memo(function PageContainer({
   size = "content",
 }: Props) {
   return (
-    <div className={`flex flex-col gap-5 sm:gap-6 ${sizeStyles[size]} ${className}`}>
+    <div className={`flex flex-col gap-4 sm:gap-5 ${sizeStyles[size]} ${className}`}>
       {children}
     </div>
   );

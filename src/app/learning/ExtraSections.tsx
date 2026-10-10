@@ -1,3 +1,4 @@
+import { ReferenceTable } from "../shared/ReferenceTable";
 import { useState } from "react";
 import type { UnitLearningMaterials, RewriteExercise, MatchingExercise } from "./types";
 import type { UnitStudyProgress } from "./study/types";
@@ -209,32 +210,34 @@ export function SynonymsAntonymsSection({ materials }: { materials: UnitLearning
           {t("learningMaterials.synonymsAntonymsDesc")}
         </p>
       </div>
-      <div className="overflow-x-auto rounded-2xl border border-border bg-background">
-        <table className="w-full text-start border-collapse min-w-[32rem]">
-          <thead>
-            <tr className="border-b border-border bg-secondary/30">
-              <th className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4">
-                {t("learningMaterials.colWord")}
-              </th>
-              <th className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4">
-                {t("learningMaterials.colSynonym")}
-              </th>
-              <th className="text-start font-bold text-sm uppercase tracking-wider text-muted-foreground py-3 px-4">
-                {t("learningMaterials.colAntonym")}
-              </th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-border/50">
-            {materials.synonymsAntonyms.map((item, i) => (
-              <tr key={i} className="hover:bg-secondary/20 transition-colors">
-                <td className="font-bold text-base text-foreground py-3 px-4">{item.word}</td>
-                <td className="text-base text-wp-green font-medium py-3 px-4">{item.synonym}</td>
-                <td className="text-base text-destructive font-medium py-3 px-4">{item.antonym}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <ReferenceTable
+        caption={t("learningMaterials.synonymsAntonyms")}
+        columns={[
+          { key: "word", label: t("learningMaterials.colWord"), rowHeader: true },
+          { key: "synonym", label: t("learningMaterials.colSynonym") },
+          { key: "antonym", label: t("learningMaterials.colAntonym") },
+        ]}
+        rows={materials.synonymsAntonyms.map((item) => ({
+          id: item.word,
+          cells: {
+            word: (
+              <bdi lang="en" dir="ltr">
+                {item.word}
+              </bdi>
+            ),
+            synonym: (
+              <bdi lang="en" dir="ltr">
+                {item.synonym}
+              </bdi>
+            ),
+            antonym: (
+              <bdi lang="en" dir="ltr">
+                {item.antonym}
+              </bdi>
+            ),
+          },
+        }))}
+      />
     </section>
   );
 }

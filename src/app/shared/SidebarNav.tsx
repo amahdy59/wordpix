@@ -21,8 +21,8 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
   return (
     <aside
       className="hidden lg:flex flex-col items-stretch bg-wp-card border-e border-border
-                 w-[240px] shrink-0 h-dvh sticky top-0 start-0 overflow-y-auto py-8 justify-between select-none z-30"
-      aria-label="Sidebar navigation"
+                 w-[240px] shrink-0 h-dvh sticky top-0 start-0 overflow-y-auto py-5 justify-between select-none z-30"
+      aria-label={t("nav.sidebarLabel")}
     >
       {showSettingsModal && (
         <Suspense fallback={null}>
@@ -35,8 +35,8 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "home" })}
-          title="WordPix Home"
-          aria-label="WordPix Home"
+          title={t("nav.home")}
+          aria-label={t("nav.home")}
           className="flex w-full items-center justify-start gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group"
         >
           <div className="size-11 rounded-2xl bg-primary flex items-center justify-center shadow-wp-xs group-transition-all shrink-0">
@@ -61,7 +61,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
                 aria-label={label}
                 title={label}
                 className={`
-                  relative h-12 w-full px-4 rounded-xl flex items-center justify-start
+                  relative min-h-11 w-full py-2 px-4 rounded-xl flex items-center justify-start
                   focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2
                   focus-visible:outline-primary transition-all group
                   ${
@@ -85,8 +85,8 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         <button
           type="button"
           onClick={() => setShowSettingsModal(true)}
-          title="Settings & Accessibility"
-          aria-label="Settings & Accessibility"
+          title={t("settings.title")}
+          aria-label={t("settings.title")}
           className="h-12 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
         >
           <Sliders className="size-5 shrink-0" />

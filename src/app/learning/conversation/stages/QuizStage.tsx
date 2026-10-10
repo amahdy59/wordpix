@@ -39,10 +39,10 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev, onSki
   };
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Stage Header */}
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <HelpCircle className="size-4" aria-hidden />
           {t("conversation.quizStage")}
         </span>
@@ -81,7 +81,7 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev, onSki
         {t("quiz.continueLesson")}
       </button>
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex items-center justify-between">
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
         <button
           type="button"
           onClick={onPrev}

@@ -25,10 +25,10 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
   };
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Top Controls */}
-      <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <MessageSquare className="size-4" aria-hidden />
           {t("conversation.warmupStage")}
         </span>
@@ -44,15 +44,13 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
 
       {/* Big Question Hero Card */}
       <section
-        className="rounded-3xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-8 shadow-wp-sm"
+        className="rounded-2xl border border-border bg-card p-4 sm:p-5"
         aria-labelledby="big-question-heading"
       >
-        <p className="text-sm font-black uppercase tracking-widest text-primary">
-          {t("conversation.centralQuestion")}
-        </p>
+        <p className="text-sm font-semibold text-primary">{t("conversation.centralQuestion")}</p>
         <h2
           id="big-question-heading"
-          className="wp-type-stage-title mt-3 lg:text-4xl font-black text-foreground tracking-tight leading-snug"
+          className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight leading-snug"
         >
           <BilingualTextBlock
             english={`“${unit.warmup.bigQuestion}”`}
@@ -62,28 +60,25 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           />
         </h2>
         {unit.speakingSkill && (
-          <p className="mt-4 rounded-xl bg-secondary px-4 py-3 text-base font-semibold text-primary">
+          <p className="mt-3 border-s-2 border-primary ps-3 text-base font-semibold text-primary">
             {t("conversation.skill", { skill: unit.speakingSkill })}
           </p>
         )}
       </section>
 
       {/* Discussion Activation Prompts */}
-      <section
-        className="rounded-2xl border border-border bg-card p-5 sm:p-7 shadow-wp-xs"
-        aria-labelledby="discussion-prompts-title"
-      >
+      <section className="border-b border-border pb-3" aria-labelledby="discussion-prompts-title">
         <h2
           id="discussion-prompts-title"
           className="wp-type-stage-title text-base font-black text-foreground"
         >
           {t("conversation.reflectBeforeReading")}
         </h2>
-        <ol className="mt-4 flex flex-col gap-3">
+        <ol className="mt-3 flex flex-col divide-y divide-border">
           {unit.warmup.prompts.map((prompt, idx) => (
             <li
               key={idx}
-              className="flex items-start gap-3 rounded-xl bg-muted/40 p-3.5 text-base sm:text-base font-medium text-foreground leading-relaxed"
+              className="flex items-start gap-3 py-3 text-base sm:text-base font-medium text-foreground leading-relaxed"
             >
               <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary">
                 {idx + 1}
@@ -101,7 +96,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
 
       {/* Quick Vote Interactive Poll */}
       <section
-        className="rounded-2xl border-2 border-primary/30 bg-card p-5 sm:p-7 shadow-wp-xs"
+        className="rounded-2xl border border-border bg-card p-4 sm:p-5"
         aria-labelledby="quick-vote-title"
       >
         <div className="flex items-center gap-2">
@@ -118,7 +113,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         </p>
 
         <ChoiceOptionGroup
-          className="mt-5 grid gap-3 sm:grid-cols-3"
+          className="mt-3 grid gap-2 sm:grid-cols-3"
           label={t("conversation.quickVoteOptions")}
           value={selectedVote}
           onChange={handleSelectVote}

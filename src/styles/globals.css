@@ -162,6 +162,35 @@
     container-type: inline-size;
   }
 
+  .wp-reference-table {
+    container-type: inline-size;
+  }
+
+  .wp-reference-wide {
+    display: none;
+  }
+
+  .wp-reference-narrow {
+    display: block;
+  }
+
+  @container (min-width: 48rem) {
+    .wp-reference-wide {
+      display: block;
+    }
+    .wp-reference-narrow {
+      display: none;
+    }
+  }
+
+  .wp-stage-flow {
+    min-width: 0;
+  }
+
+  .wp-stage-flow > :is(header, section, article) {
+    min-width: 0;
+  }
+
   .wp-vocabulary-table {
     display: none;
   }
@@ -184,6 +213,21 @@
   .wp-lesson-session {
     --wp-course-nav-height: 4.5rem;
     scroll-padding-block: 12rem;
+  }
+
+  /* The main landmark owns scrolling. Lessons must grow with content,
+     so sticky navigation and keyboard focus share the same scroll viewport. */
+  #main-content .wp-lesson-session {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  #main-content:has(.wp-lesson-session) {
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-padding-block-start: 12rem;
   }
 
   .wp-lesson-session :is(button, a, input, textarea, select, summary, [tabindex]) {

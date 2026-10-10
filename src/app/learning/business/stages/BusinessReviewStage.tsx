@@ -31,14 +31,14 @@ export function BusinessReviewStage({
   };
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <Award className="size-4" aria-hidden />
           {t("business.review.stageTag")}
         </span>
-        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-semibold text-muted-foreground">
           {t("business.review.retentionTag", { level: unit.level })}
         </span>
       </div>
@@ -48,7 +48,7 @@ export function BusinessReviewStage({
         className="rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/15 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="congrats-title"
       >
-        <span className="inline-flex items-center gap-1 text-sm font-black uppercase tracking-widest text-feedback-success-foreground">
+        <span className="inline-flex items-center gap-1 text-sm font-semibold text-feedback-success-foreground">
           <CheckCircle2 className="size-4" aria-hidden />{" "}
           {t("business.review.lessonCompletedBadge")}
         </span>

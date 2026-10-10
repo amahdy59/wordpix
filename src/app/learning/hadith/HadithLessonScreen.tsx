@@ -181,7 +181,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
       className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
       aria-labelledby="hadith-title"
     >
-      <div className="wp-container-content wp-layout-gutter flex flex-col gap-4 py-3 sm:gap-6 sm:py-8">
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-4 py-3 sm:gap-4 sm:py-5">
         {/* Top Action Bar */}
         <div className="flex flex-wrap items-center justify-between gap-3">
           <button
@@ -214,17 +214,17 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         </div>
 
         {/* Lesson Header & Stepper */}
-        <header className="rounded-2xl border border-border bg-card p-3 shadow-wp-xs sm:p-7">
+        <header className="border-b border-border pb-3">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="min-w-0 flex-1 basis-72">
-              <p className="text-base font-semibold uppercase text-primary">
+              <p className="text-sm font-semibold text-primary">
                 {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
               </p>
               <h1
                 id="hadith-title"
                 lang="en"
                 dir="ltr"
-                className="mt-0.5 break-words text-lg font-bold leading-tight text-foreground sm:mt-1.5 sm:text-3xl"
+                className="mt-0.5 break-words text-lg font-bold leading-tight text-foreground sm:mt-1.5 sm:text-2xl"
               >
                 {lesson.title}
               </h1>

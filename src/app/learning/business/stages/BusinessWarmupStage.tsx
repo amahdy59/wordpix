@@ -48,25 +48,25 @@ export function BusinessWarmupStage({
   const allAnswered = prompts.length > 0 && answeredCount === prompts.length;
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Header Tag */}
-      <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <MessageSquare className="size-4" aria-hidden />
           {t("business.warmup.stageTag")}
         </span>
-        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-semibold text-muted-foreground">
           {`${unit.level} · ${unit.sectionTitle}`}
         </span>
       </div>
 
       {/* Essential Question Hero Card with Thumbnail */}
       <section
-        className="overflow-hidden rounded-3xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card shadow-wp-sm"
+        className="overflow-hidden rounded-2xl border border-border bg-card grid gap-3 p-4 sm:p-5 md:grid-cols-[minmax(0,1fr)_8rem] md:items-start"
         aria-labelledby="big-question-heading"
       >
         {unit.heroImageSrc && (
-          <div className="relative h-48 sm:h-64 w-full overflow-hidden bg-muted/40">
+          <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl bg-muted md:col-start-2 md:row-start-1 md:block">
             <img
               src={resolveAssetUrl(unit.heroImageSrc)}
               alt=""
@@ -80,25 +80,23 @@ export function BusinessWarmupStage({
             <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
           </div>
         )}
-        <div className="p-6 sm:p-8">
-          <p className="text-sm font-black uppercase tracking-widest text-primary">
+        <div className="min-w-0 md:col-start-1 md:row-start-1">
+          <p className="text-sm font-semibold text-primary">
             {t("business.warmup.essentialQuestion")}
           </p>
           <h2
             id="big-question-heading"
             lang="en"
             dir="ltr"
-            className="wp-type-stage-title mt-3 lg:text-4xl font-black text-foreground tracking-tight leading-snug"
+            className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight leading-snug"
           >
             {`“${unit.essentialQuestion}”`}
           </h2>
           {unit.speakingGoal && (
-            <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-secondary p-3.5 text-base font-semibold text-primary">
+            <div className="mt-3 flex items-start gap-2 border-s-2 border-primary ps-3 text-base font-semibold text-primary">
               <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
               <div>
-                <span className="font-black uppercase tracking-wide me-1.5">
-                  {t("business.warmup.speakingGoalLabel")}
-                </span>
+                <span className="font-bold me-1.5">{t("business.warmup.speakingGoalLabel")}</span>
                 <bdi lang="en" dir="ltr">
                   {unit.speakingGoal}
                 </bdi>
@@ -109,8 +107,8 @@ export function BusinessWarmupStage({
       </section>
 
       {/* Multiple-Choice Warm-up Workplace Scenarios */}
-      <section className="space-y-4 py-3" aria-labelledby="reflection-prompts-title">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-border/70">
+      <section className="space-y-3" aria-labelledby="reflection-prompts-title">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-border/70">
           <div>
             <div className="flex items-center gap-2">
               <HelpCircle className="size-5 text-primary" aria-hidden />
@@ -146,7 +144,7 @@ export function BusinessWarmupStage({
         <p className="mt-4 text-sm font-semibold text-muted-foreground">
           {t("quiz.questionOf", { current: activeIdx + 1, total: prompts.length })}
         </p>
-        <div className="mt-4 flex flex-col gap-4">
+        <div className="mt-3 flex flex-col gap-3">
           {prompts.slice(activeIdx, activeIdx + 1).map((prompt) => {
             const idx = activeIdx;
             const hasOptions = Array.isArray(prompt.options) && prompt.options.length > 0;
@@ -221,7 +219,7 @@ export function BusinessWarmupStage({
                 {isAnswered && prompt.explanation && (
                   <div
                     aria-live="polite"
-                    className="mt-2 flex items-start gap-3 rounded-2xl border border-primary/25 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-4 sm:p-5 shadow-wp-xs"
+                    className="mt-2 flex items-start gap-3 rounded-xl border border-border bg-muted p-3"
                   >
                     <Lightbulb className="size-5 shrink-0 text-primary mt-0.5" aria-hidden />
                     <div className="flex-1 min-w-0">

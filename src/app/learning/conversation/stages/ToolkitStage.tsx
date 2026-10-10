@@ -31,10 +31,10 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
   };
 
   return (
-    <div className="wp-container-content flex flex-col gap-6 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <MessageCircle className="size-4" aria-hidden />
           {t("conversation.toolkitStage")}
         </span>
@@ -58,7 +58,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         className="rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-8 shadow-wp-sm"
         aria-labelledby="toolkit-title"
       >
-        <span className="text-sm font-black uppercase tracking-wider text-primary">
+        <span className="text-sm font-semibold text-primary">
           {t("conversation.targetSpeakingSkill")}
         </span>
         <h2 id="toolkit-title" className="wp-type-stage-title mt-2 font-black text-foreground">
@@ -135,9 +135,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         </div>
 
         <div className="mt-5 rounded-2xl border border-primary/25 bg-secondary p-4">
-          <p className="text-sm font-black uppercase tracking-wider text-primary">
-            {t("conversation.partnerPrompt")}
-          </p>
+          <p className="text-sm font-semibold text-primary">{t("conversation.partnerPrompt")}</p>
           <p className="wp-prose mt-2 text-base font-bold leading-relaxed text-foreground">
             {unit.warmup.bigQuestion}
           </p>
@@ -195,7 +193,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
       </section>
 
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex items-center justify-between">
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
         <button
           type="button"
           onClick={onPrev}
